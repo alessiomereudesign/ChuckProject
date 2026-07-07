@@ -2,11 +2,12 @@
 
 ## Summary
 
-- UpToDate: 80
+- UpToDate: 81
 - UpToDateWithWarnings: 3
-- NotApplicable: 26
-- Error: 1
+- NotApplicable: 27
+
+Tutti gli asset con stato applicabile risultano UpToDate.
 
 ## Assets With Problems
 
-- WBP_ArmorSelector - Error
+- Nessuno rilevato.

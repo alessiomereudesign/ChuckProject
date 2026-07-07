@@ -8,11 +8,11 @@ Sistemi dedotti euristicamente; non sono dichiarazioni sul gameplay design.
 
 - [[ALS_AnimBP]]
 - [[ALS_ChuckBP]]
-- [[ALS_OverlayState]]
+- [[ALS_BaseCharacterBP]]
 
 ### Secondary Assets
 
-- [[ALS_BaseCharacterBP]]
+- [[ALS_OverlayState]]
 - [[ALS_RotationMode]]
 - [[ALS_MovementState]]
 - [[ALS_MovementAction]]
@@ -22,37 +22,37 @@ Sistemi dedotti euristicamente; non sono dichiarazioni sul gameplay design.
 - [[ALS_Character_BPI]]
 - [[ALS_Controller_BPI]]
 - [[ALS_Camera_BPI]]
+- [[ALS_Player_Controller]]
 - [[ALS_MacroLibrary]]
 - [[ALS_Animation_BPI]]
 - [[MovementSettings]]
-- [[ALS_Player_Controller]]
 - [[GroundedEntryState]]
 - [[ALS_ComponentAndTransform]]
 - [[ALS_PlayerCameraManager]]
 - [[ALS_PlayerCameraBehavior]]
 - [[ALS_AI_Controller]]
-- [[Mantle_Asset]]
-- [[MovementSettings_Stance]]
-- [[MantleType]]
-- [[CameraSettings]]
-- [[MovementSettings_State]]
 - [[AnimCurveCreationData]]
+- [[CameraSettings]]
+- [[MantleType]]
+- [[MovementSettings_Stance]]
+- [[MovementSettings_State]]
+- [[Mantle_Asset]]
 - [[SimpleObjectBuilder]]
 - [[Bow_AnimBP]]
 - [[AIC_EnemyALS]]
+- [[CameraSettings_Gait]]
 - [[Mantle_Params]]
 - [[Mantle_TraceSettings]]
-- [[MovementModelTable]]
-- [[CameraSettings_Gait]]
-- [[AnimCurveCreationParams]]
-- [[DynamicMontageParams]]
 - [[LeanAmount]]
 - [[RotateInPlace_Asset]]
-- [[TurnInPlace_Asset]]
+- [[DynamicMontageParams]]
 - [[VelocityBlend]]
-- [[MovementDirection]]
-- [[HipsDirection]]
+- [[AnimCurveCreationParams]]
+- [[TurnInPlace_Asset]]
 - [[FootstepType]]
+- [[MovementDirection]]
+- [[MovementModelTable]]
+- [[HipsDirection]]
 - [[SimpleMovingObject]]
 - [[EarlyBlendOut_NotifyState]]
 - [[Calculate_RotationAmount]]
@@ -69,28 +69,28 @@ Sistemi dedotti euristicamente; non sono dichiarazioni sul gameplay design.
 - [[Editor]]
 - [[ALS_BTTask_SetFocus]]
 - [[ALS_GameMode_SP]]
+- [[AnimFeatureExample]]
 - [[CameraSettings_State]]
 - [[Sprint_CameraShake]]
-- [[AnimFeatureExample]]
 
 ### Structs
 
 - [[MovementSettings]]
 - [[ALS_ComponentAndTransform]]
-- [[Mantle_Asset]]
-- [[MovementSettings_Stance]]
-- [[CameraSettings]]
-- [[MovementSettings_State]]
 - [[AnimCurveCreationData]]
+- [[CameraSettings]]
+- [[MovementSettings_Stance]]
+- [[MovementSettings_State]]
+- [[Mantle_Asset]]
+- [[CameraSettings_Gait]]
 - [[Mantle_Params]]
 - [[Mantle_TraceSettings]]
-- [[CameraSettings_Gait]]
-- [[AnimCurveCreationParams]]
-- [[DynamicMontageParams]]
 - [[LeanAmount]]
 - [[RotateInPlace_Asset]]
-- [[TurnInPlace_Asset]]
+- [[DynamicMontageParams]]
 - [[VelocityBlend]]
+- [[AnimCurveCreationParams]]
+- [[TurnInPlace_Asset]]
 - [[CameraSettings_State]]
 
 ### Enums
@@ -104,9 +104,9 @@ Sistemi dedotti euristicamente; non sono dichiarazioni sul gameplay design.
 - [[ALS_Stance]]
 - [[GroundedEntryState]]
 - [[MantleType]]
+- [[FootstepType]]
 - [[MovementDirection]]
 - [[HipsDirection]]
-- [[FootstepType]]
 - [[AnimFeatureExample]]
 
 ### Data Tables
@@ -121,9 +121,9 @@ Sistemi dedotti euristicamente; non sono dichiarazioni sul gameplay design.
 - [[ALS_Character_BPI]]
 - [[ALS_Controller_BPI]]
 - [[ALS_Camera_BPI]]
+- [[ALS_Player_Controller]]
 - [[ALS_MacroLibrary]]
 - [[ALS_Animation_BPI]]
-- [[ALS_Player_Controller]]
 - [[ALS_PlayerCameraManager]]
 - [[ALS_PlayerCameraBehavior]]
 - [[ALS_AI_Controller]]
@@ -157,12 +157,10 @@ Classificazione euristica dedotta da nome, path e tipo asset (ALS / Locomotion).
 ### Primary Assets
 
 - [[BPI_Interaction]]
-- [[BP_MasterPickUpStaticMesh]]
-- [[BP_MasterPickUpSkeletalMesh]]
 
 ### Secondary Assets
 
-- [[BP_TestTrigger]]
+- Nessuno rilevato.
 
 ### Structs
 
@@ -179,13 +177,40 @@ Classificazione euristica dedotta da nome, path e tipo asset (ALS / Locomotion).
 ### Blueprint / Widget
 
 - [[BPI_Interaction]]
-- [[BP_MasterPickUpStaticMesh]]
-- [[BP_MasterPickUpSkeletalMesh]]
-- [[BP_TestTrigger]]
 
 ### Notes
 
 Classificazione euristica dedotta da nome, path e tipo asset (Interaction).
+
+## Misc / Unknown
+
+### Primary Assets
+
+- [[BP_TestTrigger]]
+
+### Secondary Assets
+
+- Nessuno rilevato.
+
+### Structs
+
+- Nessuno rilevato.
+
+### Enums
+
+- Nessuno rilevato.
+
+### Data Tables
+
+- Nessuno rilevato.
+
+### Blueprint / Widget
+
+- [[BP_TestTrigger]]
+
+### Notes
+
+Nessuna parola chiave chiara nel nome o nel path.
 
 ## Player / Character
 
@@ -226,14 +251,12 @@ Classificazione euristica dedotta da nome, path e tipo asset (Player / Character
 ### Primary Assets
 
 - [[WBP_MenuArchive]]
-- [[S_WeaponData]]
-- [[E_WeaponSlot]]
+- [[S_ArmorData]]
+- [[E_ArmorSlot]]
 
 ### Secondary Assets
 
-- [[DT_Weapon]]
-- [[E_ArmorSlot]]
-- [[S_ArmorData]]
+- [[WBP_HUD]]
 - [[WBP_Tip]]
 - [[WBP_WeaponSelector]]
 - [[F_CharacterData]]
@@ -241,7 +264,6 @@ Classificazione euristica dedotta da nome, path e tipo asset (Player / Character
 - [[WBP_SelectorButton]]
 - [[E_CharactersAffiliates]]
 - [[WBP_MenuPausa]]
-- [[WBP_HUD]]
 - [[WBP_CustomRadialMenu]]
 - [[OverlayStateButton]]
 - [[OverlayStateSwitcher]]
@@ -254,22 +276,21 @@ Classificazione euristica dedotta da nome, path e tipo asset (Player / Character
 - [[WBP_ArmorSelector]]
 - [[BPI_ChuckHUD]]
 - [[OverlayStateButtonParams]]
-- [[E_WheelActionType]]
-- [[E_ObjectsCategory]]
 - [[DT_CharacterData]]
+- [[E_WheelActionType]]
 - [[F_ObjectData]]
 - [[S_ConsumableData]]
 - [[S_ItemsData]]
+- [[E_ObjectsCategory]]
 - [[WBP_MenuPrincipale]]
 - [[Chuck_HUD]]
-- [[DT_ObjectsData]]
-- [[DT_Items]]
-- [[S_WheelSlotData]]
 - [[DT_Consumable]]
+- [[S_WheelSlotData]]
+- [[DT_Items]]
+- [[DT_ObjectsData]]
 
 ### Structs
 
-- [[S_WeaponData]]
 - [[S_ArmorData]]
 - [[F_CharacterData]]
 - [[OverlayStateButtonParams]]
@@ -280,7 +301,6 @@ Classificazione euristica dedotta da nome, path e tipo asset (Player / Character
 
 ### Enums
 
-- [[E_WeaponSlot]]
 - [[E_ArmorSlot]]
 - [[E_CharactersAffiliates]]
 - [[E_WheelActionType]]
@@ -288,22 +308,21 @@ Classificazione euristica dedotta da nome, path e tipo asset (Player / Character
 
 ### Data Tables
 
-- [[DT_Weapon]]
 - [[DT_Armor]]
 - [[Text]]
 - [[DT_CharacterData]]
-- [[DT_ObjectsData]]
-- [[DT_Items]]
 - [[DT_Consumable]]
+- [[DT_Items]]
+- [[DT_ObjectsData]]
 
 ### Blueprint / Widget
 
 - [[WBP_MenuArchive]]
+- [[WBP_HUD]]
 - [[WBP_Tip]]
 - [[WBP_WeaponSelector]]
 - [[WBP_SelectorButton]]
 - [[WBP_MenuPausa]]
-- [[WBP_HUD]]
 - [[WBP_CustomRadialMenu]]
 - [[OverlayStateButton]]
 - [[OverlayStateSwitcher]]
@@ -325,28 +344,36 @@ Classificazione euristica dedotta da nome, path e tipo asset (UI / Widgets).
 
 ### Primary Assets
 
-- [[BP_WeaponProjectileData]]
-- [[BP_WeaponMaster]]
+- [[S_WeaponData]]
+- [[E_AmmoType]]
+- [[E_WeaponSlot]]
 
 ### Secondary Assets
 
-- Nessuno rilevato.
+- [[BP_WeaponProjectileData]]
+- [[DT_Weapon]]
+- [[BP_MasterPickUpSkeletalMesh]]
+- [[BP_MasterPickUpStaticMesh]]
+- [[BP_WeaponMaster]]
 
 ### Structs
 
-- Nessuno rilevato.
+- [[S_WeaponData]]
 
 ### Enums
 
-- Nessuno rilevato.
+- [[E_AmmoType]]
+- [[E_WeaponSlot]]
 
 ### Data Tables
 
-- Nessuno rilevato.
+- [[DT_Weapon]]
 
 ### Blueprint / Widget
 
 - [[BP_WeaponProjectileData]]
+- [[BP_MasterPickUpSkeletalMesh]]
+- [[BP_MasterPickUpStaticMesh]]
 - [[BP_WeaponMaster]]
 
 ### Notes

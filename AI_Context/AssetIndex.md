@@ -377,13 +377,13 @@
 ## ALS_ChuckBP
 
 - Type: Blueprint
-- Unreal Path: /Game/ChuckContent/ALS_ChuckBP.ALS_ChuckBP
-- JSON: ../Game_ChuckContent_ALS_ChuckBP.json
+- Unreal Path: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+- JSON: ../Game_ChuckContent_Blueprints_ALS_ChuckBP.json
 - Compile Status: UpToDate
-- Graphs: 28
-- Nodes: 1216
-- Pins: 4287
-- Links: 1385
+- Graphs: 27
+- Nodes: 1272
+- Pins: 4474
+- Links: 1441
 
 ### Main Dependencies
 
@@ -428,18 +428,19 @@
 - /Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/H2H/AM_MM_H2H_LeftPunch
 - /Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/H2H/AM_MM_H2H_RightBigPunch
 - /Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/H2H/AM_MM_H2H_RightPunch
-- /Game/ChuckContent/BP_Interactions/BP_WeaponProjectileData
-- /Game/ChuckContent/BP_Interactions/BPI_Interaction
+- /Game/ChuckContent/Blueprints/BPI_Interaction
 - /Game/ChuckContent/Input/IA_Interact
+- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData
+- /Game/ChuckContent/Systems/Weapons/Data/DT_Weapon
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/Interfaces/WBP_Tip
 - /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/MINIMAP/RT_Minimap
 - /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/DT_Armor
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/DT_Weapon
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
 - /Game/ChuckContent/UI/WIDGET_MENU/WBP_MenuPausa
 
 ## ALS_Player_Controller
@@ -449,9 +450,9 @@
 - JSON: ../Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_Player_Controller.json
 - Compile Status: UpToDate
 - Graphs: 5
-- Nodes: 154
-- Pins: 512
-- Links: 147
+- Nodes: 159
+- Pins: 526
+- Links: 153
 
 ### Main Dependencies
 
@@ -462,34 +463,35 @@
 - /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Controller_BPI
 - /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Libraries/ALS_MacroLibrary
 - /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateSwitcher
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
 - /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD
 - /Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/WBP_CustomRadialMenu
-
-## BP_WeaponProjectileData
-
-- Type: Blueprint
-- Unreal Path: /Game/ChuckContent/BP_Interactions/BP_WeaponProjectileData.BP_WeaponProjectileData
-- JSON: ../Game_ChuckContent_BP_Interactions_BP_WeaponProjectileData.json
-- Compile Status: UpToDate
-- Graphs: 2
-- Nodes: 23
-- Pins: 112
-- Links: 23
-
-### Main Dependencies
-
-- Nessuno rilevato.
 
 ## BPI_Interaction
 
 - Type: Blueprint
-- Unreal Path: /Game/ChuckContent/BP_Interactions/BPI_Interaction.BPI_Interaction
-- JSON: ../Game_ChuckContent_BP_Interactions_BPI_Interaction.json
+- Unreal Path: /Game/ChuckContent/Blueprints/BPI_Interaction.BPI_Interaction
+- JSON: ../Game_ChuckContent_Blueprints_BPI_Interaction.json
 - Compile Status: UpToDate
 - Graphs: 1
 - Nodes: 1
 - Pins: 1
 - Links: 0
+
+### Main Dependencies
+
+- Nessuno rilevato.
+
+## BP_WeaponProjectileData
+
+- Type: Blueprint
+- Unreal Path: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData
+- JSON: ../Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData.json
+- Compile Status: UpToDate
+- Graphs: 2
+- Nodes: 23
+- Pins: 112
+- Links: 23
 
 ### Main Dependencies
 
@@ -510,98 +512,6 @@
 
 - /Engine/EditorResources/LightIcons/S_LightError
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/RT_CharacterPreview
-
-## AIC_EnemyALS
-
-- Type: Blueprint
-- Unreal Path: /Game/ChuckContent/Enemies/AIC_EnemyALS.AIC_EnemyALS
-- JSON: ../Game_ChuckContent_Enemies_AIC_EnemyALS.json
-- Compile Status: UpToDate
-- Graphs: 2
-- Nodes: 4
-- Pins: 9
-- Links: 1
-
-### Main Dependencies
-
-- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_AI_Controller
-
-## BP_EnemyALS
-
-- Type: Blueprint
-- Unreal Path: /Game/ChuckContent/Enemies/BP_EnemyALS.BP_EnemyALS
-- JSON: ../Game_ChuckContent_Enemies_BP_EnemyALS.json
-- Compile Status: UpToDate
-- Graphs: 2
-- Nodes: 20
-- Pins: 71
-- Links: 20
-
-### Main Dependencies
-
-- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP
-- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP
-- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/Meshes/AnimMan
-- /Game/ChuckContent/Enemies/AIC_EnemyALS
-
-## ALS_GameMode_SP
-
-- Type: Blueprint
-- Unreal Path: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/GameModes/ALS_GameMode_SP.ALS_GameMode_SP
-- JSON: ../Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_GameModes_ALS_GameMode_SP.json
-- Compile Status: UpToDate
-- Graphs: 2
-- Nodes: 2
-- Pins: 3
-- Links: 0
-
-### Main Dependencies
-
-- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller
-- /Game/ChuckContent/ALS_ChuckBP
-
-## BP_MasterPickUpSkeletalMesh
-
-- Type: Blueprint
-- Unreal Path: /Game/ChuckContent/BP_Interactions/BP_MasterPickUpSkeletalMesh.BP_MasterPickUpSkeletalMesh
-- JSON: ../Game_ChuckContent_BP_Interactions_BP_MasterPickUpSkeletalMesh.json
-- Compile Status: UpToDate
-- Graphs: 2
-- Nodes: 51
-- Pins: 223
-- Links: 58
-
-### Main Dependencies
-
-- /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Sound/RocketLauncher/wavs/RocketLauncher_Reload02
-- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState
-- /Game/ChuckContent/ALS_ChuckBP
-- /Game/ChuckContent/BP_Interactions/BP_WeaponProjectileData
-- /Game/ChuckContent/UI/files/MI_Outline
-- /Game/ChuckContent/UI/Interfaces/WBP_Tip
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_AssetName
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/DT_Weapon
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
-
-## BP_MasterPickUpStaticMesh
-
-- Type: Blueprint
-- Unreal Path: /Game/ChuckContent/BP_Interactions/BP_MasterPickUpStaticMesh.BP_MasterPickUpStaticMesh
-- JSON: ../Game_ChuckContent_BP_Interactions_BP_MasterPickUpStaticMesh.json
-- Compile Status: UpToDate
-- Graphs: 2
-- Nodes: 63
-- Pins: 217
-- Links: 70
-
-### Main Dependencies
-
-- /Engine/EditorBlueprintResources/StandardMacros
-- /Game/ChuckContent/ALS_ChuckBP
-- /Game/ChuckContent/UI/files/MI_Outline
-- /Game/ChuckContent/UI/Interfaces/WBP_Tip
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_AssetName
 
 ## MovementModelTable
 
@@ -657,8 +567,8 @@
 ## DT_Weapon
 
 - Type: DataTable
-- Unreal Path: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/DT_Weapon.DT_Weapon
-- JSON: ../Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_Weapons_DT_Weapon.json
+- Unreal Path: /Game/ChuckContent/Systems/Weapons/Data/DT_Weapon.DT_Weapon
+- JSON: ../Game_ChuckContent_Systems_Weapons_Data_DT_Weapon.json
 - Compile Status: NotApplicable
 - Graphs: 0
 - Nodes: 0
@@ -715,10 +625,10 @@
 - /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Sniper_Rifle_A
 - /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/SniperRifleA_Ammo
 - /Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/Paired/MM_AM_Knife_Attack
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/files/ICONS/knife
 - /Game/ChuckContent/UI/files/ICONS/pistol
 - /Game/ChuckContent/UI/files/ICONS/rifle
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
 
 ## DT_CharacterData
 
@@ -952,8 +862,8 @@
 ## S_WeaponData
 
 - Type: Struct
-- Unreal Path: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData.S_WeaponData
-- JSON: ../Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_Weapons_S_WeaponData.json
+- Unreal Path: /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData
+- JSON: ../Game_ChuckContent_Systems_Weapons_Data_S_WeaponData.json
 - Compile Status: UpToDate
 - Graphs: 0
 - Nodes: 0
@@ -963,8 +873,9 @@
 ### Main Dependencies
 
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState
-- /Game/ChuckContent/BP_Interactions/BP_WeaponProjectileData
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
 
 ## OverlayStateButtonParams
 
@@ -1195,8 +1106,23 @@
 ## E_WeaponSlot
 
 - Type: Enum
-- Unreal Path: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot.E_WeaponSlot
-- JSON: ../Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_Weapons_E_WeaponSlot.json
+- Unreal Path: /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot.E_WeaponSlot
+- JSON: ../Game_ChuckContent_Systems_Weapons_Data_E_WeaponSlot.json
+- Compile Status: NotApplicable
+- Graphs: 0
+- Nodes: 0
+- Pins: 0
+- Links: 0
+
+### Main Dependencies
+
+- Nessuno rilevato.
+
+## E_AmmoType
+
+- Type: Enum
+- Unreal Path: /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType.E_AmmoType
+- JSON: ../Game_ChuckContent_Systems_Weapons_Data_E_AmmoType.json
 - Compile Status: NotApplicable
 - Graphs: 0
 - Nodes: 0
@@ -1237,46 +1163,16 @@
 
 - Nessuno rilevato.
 
-## AnimFeatureExample
+## OverlayStateButton
 
-- Type: Enum
-- Unreal Path: /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/AnimFeatureExample.AnimFeatureExample
-- JSON: ../Game_AdditionalContents_AdvancedLocomotionV4_Data_Enums_AnimFeatureExample.json
-- Compile Status: NotApplicable
-- Graphs: 0
-- Nodes: 0
-- Pins: 0
-- Links: 0
-
-### Main Dependencies
-
-- Nessuno rilevato.
-
-## E_WheelActionType
-
-- Type: Enum
-- Unreal Path: /Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/E_WheelActionType.E_WheelActionType
-- JSON: ../Game_ChuckContent_UI_WIDGET_MENU_2_MENU_RAPIDO_E_WheelActionType.json
-- Compile Status: NotApplicable
-- Graphs: 0
-- Nodes: 0
-- Pins: 0
-- Links: 0
-
-### Main Dependencies
-
-- Nessuno rilevato.
-
-## E_ObjectsCategory
-
-- Type: Enum
-- Unreal Path: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/E_ObjectsCategory.E_ObjectsCategory
-- JSON: ../Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_Data_E_ObjectsCategory.json
-- Compile Status: NotApplicable
-- Graphs: 0
-- Nodes: 0
-- Pins: 0
-- Links: 0
+- Type: Blueprint
+- Unreal Path: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateButton.OverlayStateButton
+- JSON: ../Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateButton.json
+- Compile Status: UpToDate
+- Graphs: 2
+- Nodes: 16
+- Pins: 42
+- Links: 16
 
 ### Main Dependencies
 
@@ -1308,22 +1204,7 @@
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode
-- /Game/ChuckContent/ALS_ChuckBP
-
-## OverlayStateButton
-
-- Type: Blueprint
-- Unreal Path: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateButton.OverlayStateButton
-- JSON: ../Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateButton.json
-- Compile Status: UpToDate
-- Graphs: 2
-- Nodes: 16
-- Pins: 42
-- Links: 16
-
-### Main Dependencies
-
-- Nessuno rilevato.
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
 
 ## WBP_Tip
 
@@ -1348,21 +1229,21 @@
 - JSON: ../Game_ChuckContent_UI_WIDGET_MENU_01_HUD_WBP_HUD.json
 - Compile Status: UpToDate
 - Graphs: 1
-- Nodes: 37
-- Pins: 121
-- Links: 42
+- Nodes: 35
+- Pins: 113
+- Links: 43
 
 ### Main Dependencies
 
 - /Engine/EditorBlueprintResources/StandardMacros
-- /Game/ChuckContent/ALS_ChuckBP
-- /Game/ChuckContent/BP_Interactions/BP_WeaponProjectileData
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/files/ICONS/Fist
 - /Game/ChuckContent/UI/files/img/pngtree-design-element-collimation-material-png-image_7185230
 - /Game/ChuckContent/UI/files/Text/Text
 - /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/MINIMAP/M_Minimap_UI
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
 
 ## WBP_MenuArchive
 
@@ -1372,7 +1253,7 @@
 - Compile Status: UpToDate
 - Graphs: 9
 - Nodes: 975
-- Pins: 3269
+- Pins: 3273
 - Links: 1091
 
 ### Main Dependencies
@@ -1383,8 +1264,12 @@
 - /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Sound/Knife/Wavs/Knife_Raise
 - /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Sound/Knife/Wavs/KnifeA_Swing02
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState
-- /Game/ChuckContent/ALS_ChuckBP
-- /Game/ChuckContent/BP_Interactions/BP_WeaponProjectileData
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData
+- /Game/ChuckContent/Systems/Weapons/Data/DT_Weapon
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/files/ICONS/Antiprojectile_W
 - /Game/ChuckContent/UI/files/ICONS/Backpack_W
 - /Game/ChuckContent/UI/files/ICONS/medikit
@@ -1397,9 +1282,6 @@
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/M_CharacterPreview_UI
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_SelectorButton
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/DT_Weapon
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/DT_CharacterData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/F_CharacterData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterCard
@@ -1450,10 +1332,10 @@
 
 - /Engine/EditorBlueprintResources/StandardMacros
 - /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Sound/Rifle/Wavs/Rifle_Reload01
-- /Game/ChuckContent/ALS_ChuckBP
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/files/Text/ocr-a-bold_Font
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive
 
 ## WBP_WeaponSelector
@@ -1464,20 +1346,21 @@
 - Compile Status: UpToDate
 - Graphs: 1
 - Nodes: 108
-- Pins: 387
+- Pins: 388
 - Links: 161
 
 ### Main Dependencies
 
 - /Engine/EditorBlueprintResources/StandardMacros
-- /Game/ChuckContent/ALS_ChuckBP
-- /Game/ChuckContent/BP_Interactions/BP_WeaponProjectileData
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/DT_Armor
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_SelectorButton
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive
 
 ## WBP_MenuPausa
@@ -1524,15 +1407,18 @@
 - JSON: ../Game_ChuckContent_UI_WIDGET_MENU_2_MENU_RAPIDO_WBP_CustomRadialMenu.json
 - Compile Status: UpToDate
 - Graphs: 1
-- Nodes: 129
-- Pins: 423
-- Links: 159
+- Nodes: 137
+- Pins: 451
+- Links: 169
 
 ### Main Dependencies
 
 - /Engine/EditorBlueprintResources/StandardMacros
 - /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Sound/Pistol/Wavs/Pistol_Reload01
-- /Game/ChuckContent/ALS_ChuckBP
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/files/ICONS/Fist
 - /Game/ChuckContent/UI/files/ICONS/glasses
 - /Game/ChuckContent/UI/files/ICONS/knife
@@ -1540,8 +1426,7 @@
 - /Game/ChuckContent/UI/files/ICONS/pistol
 - /Game/ChuckContent/UI/files/ICONS/rifle
 - /Game/ChuckContent/UI/files/ICONS/sandwitch
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
+- /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD
 - /Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/tast
 
 ## WBP_MenuPrincipale
@@ -1563,21 +1448,6 @@
 - /Game/ChuckContent/UI/files/Text/ocr-a-bold_Font
 - /Game/ChuckContent/UI/files/Text/OCRAEXT_Font
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive
-
-## WBP_AssetName
-
-- Type: Blueprint
-- Unreal Path: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_AssetName.WBP_AssetName
-- JSON: ../Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_AssetName.json
-- Compile Status: UpToDate
-- Graphs: 2
-- Nodes: 9
-- Pins: 22
-- Links: 5
-
-### Main Dependencies
-
-- /Game/ChuckContent/UI/files/Text/ocr-a-bold_Font
 
 ## ALS_AnimBP
 
@@ -1768,11 +1638,110 @@
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode
 
+## BP_MasterPickUpSkeletalMesh
+
+- Type: Blueprint
+- Unreal Path: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_MasterPickUpSkeletalMesh.BP_MasterPickUpSkeletalMesh
+- JSON: ../Game_ChuckContent_Systems_Weapons_Blueprints_BP_MasterPickUpSkeletalMesh.json
+- Compile Status: UpToDate
+- Graphs: 2
+- Nodes: 51
+- Pins: 223
+- Links: 58
+
+### Main Dependencies
+
+- /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Sound/RocketLauncher/wavs/RocketLauncher_Reload02
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData
+- /Game/ChuckContent/Systems/Weapons/Data/DT_Weapon
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
+- /Game/ChuckContent/UI/files/MI_Outline
+- /Game/ChuckContent/UI/Interfaces/WBP_Tip
+- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_AssetName
+
+## BP_MasterPickUpStaticMesh
+
+- Type: Blueprint
+- Unreal Path: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_MasterPickUpStaticMesh.BP_MasterPickUpStaticMesh
+- JSON: ../Game_ChuckContent_Systems_Weapons_Blueprints_BP_MasterPickUpStaticMesh.json
+- Compile Status: UpToDate
+- Graphs: 2
+- Nodes: 40
+- Pins: 153
+- Links: 45
+
+### Main Dependencies
+
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/UI/files/MI_Outline
+- /Game/ChuckContent/UI/Interfaces/WBP_Tip
+- /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD
+- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_AssetName
+
+## BP_WeaponMaster
+
+- Type: Blueprint
+- Unreal Path: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponMaster.BP_WeaponMaster
+- JSON: ../Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponMaster.json
+- Compile Status: UpToDate
+- Graphs: 2
+- Nodes: 5
+- Pins: 47
+- Links: 4
+
+### Main Dependencies
+
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState
+- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData
+- /Game/ChuckContent/Systems/Weapons/Data/DT_Weapon
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
+
+## AIC_EnemyALS
+
+- Type: Blueprint
+- Unreal Path: /Game/ChuckContent/Blueprints/Enemies/AIC_EnemyALS.AIC_EnemyALS
+- JSON: ../Game_ChuckContent_Blueprints_Enemies_AIC_EnemyALS.json
+- Compile Status: UpToDate
+- Graphs: 2
+- Nodes: 4
+- Pins: 9
+- Links: 1
+
+### Main Dependencies
+
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_AI_Controller
+
+## BP_EnemyALS
+
+- Type: Blueprint
+- Unreal Path: /Game/ChuckContent/Blueprints/Enemies/BP_EnemyALS.BP_EnemyALS
+- JSON: ../Game_ChuckContent_Blueprints_Enemies_BP_EnemyALS.json
+- Compile Status: UpToDate
+- Graphs: 2
+- Nodes: 20
+- Pins: 71
+- Links: 20
+
+### Main Dependencies
+
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/Meshes/AnimMan
+- /Game/ChuckContent/Blueprints/Enemies/AIC_EnemyALS
+
 ## BP_TestTrigger
 
 - Type: Blueprint
-- Unreal Path: /Game/ChuckContent/BP_Interactions/BP_TestTrigger.BP_TestTrigger
-- JSON: ../Game_ChuckContent_BP_Interactions_BP_TestTrigger.json
+- Unreal Path: /Game/ChuckContent/Blueprints/BP_TestTrigger.BP_TestTrigger
+- JSON: ../Game_ChuckContent_Blueprints_BP_TestTrigger.json
 - Compile Status: UpToDateWithWarnings
 - Graphs: 2
 - Nodes: 8
@@ -1783,26 +1752,8 @@
 
 - /Engine/BasicShapes/BasicShapeMaterial
 - /Engine/BasicShapes/Cube
-- /Game/ChuckContent/ALS_ChuckBP
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
-
-## BP_WeaponMaster
-
-- Type: Blueprint
-- Unreal Path: /Game/ChuckContent/BP_Interactions/BP_WeaponMaster.BP_WeaponMaster
-- JSON: ../Game_ChuckContent_BP_Interactions_BP_WeaponMaster.json
-- Compile Status: UpToDate
-- Graphs: 2
-- Nodes: 5
-- Pins: 47
-- Links: 4
-
-### Main Dependencies
-
-- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/DT_Weapon
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 
 ## BPI_ChuckHUD
 
@@ -1835,6 +1786,21 @@
 - /Engine/EditorBlueprintResources/StandardMacros
 - /Game/ChuckContent/UI/Interfaces/BPI_ChuckHUD
 - /Game/ChuckContent/UI/Interfaces/WBP_Tip
+
+## E_WheelActionType
+
+- Type: Enum
+- Unreal Path: /Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/E_WheelActionType.E_WheelActionType
+- JSON: ../Game_ChuckContent_UI_WIDGET_MENU_2_MENU_RAPIDO_E_WheelActionType.json
+- Compile Status: NotApplicable
+- Graphs: 0
+- Nodes: 0
+- Pins: 0
+- Links: 0
+
+### Main Dependencies
+
+- Nessuno rilevato.
 
 ## S_WheelSlotData
 
@@ -1917,26 +1883,41 @@
 - Type: Blueprint
 - Unreal Path: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_ArmorSelector.WBP_ArmorSelector
 - JSON: ../Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_ArmorSelector.json
-- Compile Status: Error
+- Compile Status: UpToDate
 - Graphs: 1
-- Nodes: 106
-- Pins: 406
-- Links: 158
+- Nodes: 108
+- Pins: 388
+- Links: 161
 
 ### Main Dependencies
 
 - /Engine/EditorBlueprintResources/StandardMacros
-- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState
-- /Game/ChuckContent/ALS_ChuckBP
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/DT_Armor
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_SelectorButton
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/DT_Weapon
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive
+
+## WBP_AssetName
+
+- Type: Blueprint
+- Unreal Path: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_AssetName.WBP_AssetName
+- JSON: ../Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_AssetName.json
+- Compile Status: UpToDate
+- Graphs: 2
+- Nodes: 9
+- Pins: 22
+- Links: 5
+
+### Main Dependencies
+
+- /Game/ChuckContent/UI/files/Text/ocr-a-bold_Font
 
 ## DT_ObjectsData
 
@@ -1952,6 +1933,21 @@
 ### Main Dependencies
 
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/F_ObjectData
+
+## E_ObjectsCategory
+
+- Type: Enum
+- Unreal Path: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/E_ObjectsCategory.E_ObjectsCategory
+- JSON: ../Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_Data_E_ObjectsCategory.json
+- Compile Status: NotApplicable
+- Graphs: 0
+- Nodes: 0
+- Pins: 0
+- Links: 0
+
+### Main Dependencies
+
+- Nessuno rilevato.
 
 ## F_ObjectData
 
@@ -2095,6 +2091,21 @@
 
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/CameraSettings_Gait
 
+## AnimFeatureExample
+
+- Type: Enum
+- Unreal Path: /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/AnimFeatureExample.AnimFeatureExample
+- JSON: ../Game_AdditionalContents_AdvancedLocomotionV4_Data_Enums_AnimFeatureExample.json
+- Compile Status: NotApplicable
+- Graphs: 0
+- Nodes: 0
+- Pins: 0
+- Links: 0
+
+### Main Dependencies
+
+- Nessuno rilevato.
+
 ## ALS_HUD
 
 - Type: Blueprint
@@ -2120,7 +2131,23 @@
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode
-- /Game/ChuckContent/ALS_ChuckBP
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+
+## ALS_GameMode_SP
+
+- Type: Blueprint
+- Unreal Path: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/GameModes/ALS_GameMode_SP.ALS_GameMode_SP
+- JSON: ../Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_GameModes_ALS_GameMode_SP.json
+- Compile Status: UpToDate
+- Graphs: 2
+- Nodes: 2
+- Pins: 3
+- Links: 0
+
+### Main Dependencies
+
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
 
 ## Editor
 

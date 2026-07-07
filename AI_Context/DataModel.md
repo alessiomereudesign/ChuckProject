@@ -211,7 +211,7 @@ Used by:
 
 ### S_WeaponData
 
-- Path: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData.S_WeaponData
+- Path: /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData
 
 Fields:
 - RowName_80_90C885E245FEA60369938EAC6E1FCB25: FName = None
@@ -233,7 +233,6 @@ Fields:
 - MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D: int32 = 0
 - CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8: int32 = 0
 - CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22: int32 = 0
-- AmmoType_71_6DFBCCD3458A2AC852AA349DF9FAD1DD: FName = None
 - IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA: bool = False
 - IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1: bool = False
 - IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC: bool = False
@@ -245,6 +244,7 @@ Fields:
 - bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0: bool = False
 - ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8: UStaticMesh* = None
 - ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5: double = 0.000000
+- AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4: TEnumAsByte<E_AmmoType> = NewEnumerator0
 
 Used by:
 
@@ -552,7 +552,6 @@ Used by:
 - [[OverlayStateSwitcher]]
 - [[S_WeaponData]]
 - [[S_WheelSlotData]]
-- [[WBP_ArmorSelector]]
 - [[WBP_MenuArchive]]
 
 ### ALS_RotationMode
@@ -681,7 +680,7 @@ Used by:
 
 ### E_WeaponSlot
 
-- Path: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot.E_WeaponSlot
+- Path: /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot.E_WeaponSlot
 
 Values:
 - NewEnumerator0 / Fists (index 0, value 0)
@@ -699,6 +698,32 @@ Used by:
 - [[S_WeaponData]]
 - [[WBP_ArmorSelector]]
 - [[WBP_CustomRadialMenu]]
+- [[WBP_HUD]]
+- [[WBP_MenuArchive]]
+- [[WBP_WeaponSelector]]
+
+### E_AmmoType
+
+- Path: /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType.E_AmmoType
+
+Values:
+- NewEnumerator0 / None (index 0, value 0)
+- NewEnumerator1 / Pistol (index 1, value 1)
+- NewEnumerator2 / ShotGun (index 2, value 2)
+- NewEnumerator3 / AssaultRifle (index 3, value 3)
+- NewEnumerator4 / SniperRifle (index 4, value 4)
+- NewEnumerator5 / GrenadeLauncher (index 5, value 5)
+- NewEnumerator6 / RocketLauncher (index 6, value 6)
+- E_MAX / E MAX (index 7, value 7)
+
+Used by:
+
+- [[ALS_ChuckBP]]
+- [[BP_MasterPickUpSkeletalMesh]]
+- [[BP_MasterPickUpStaticMesh]]
+- [[BP_WeaponMaster]]
+- [[S_WeaponData]]
+- [[WBP_ArmorSelector]]
 - [[WBP_HUD]]
 - [[WBP_MenuArchive]]
 - [[WBP_WeaponSelector]]
@@ -746,20 +771,6 @@ Used by:
 - [[WBP_TabIntersect_CharacterCard]]
 - [[WBP_TabIntersect_CharacterSlot]]
 
-### AnimFeatureExample
-
-- Path: /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/AnimFeatureExample.AnimFeatureExample
-
-Values:
-- NewEnumerator0 / Stride Blending (index 0, value 0)
-- NewEnumerator1 / Additive Leaning (index 1, value 1)
-- NewEnumerator2 / Sprint Impulse (index 2, value 2)
-- AnimFeatureExample_MAX / Anim Feature Example MAX (index 3, value 3)
-
-Used by:
-
-- Nessuno rilevato.
-
 ### E_WheelActionType
 
 - Path: /Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/E_WheelActionType.E_WheelActionType
@@ -789,6 +800,20 @@ Values:
 Used by:
 
 - [[F_ObjectData]]
+
+### AnimFeatureExample
+
+- Path: /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/AnimFeatureExample.AnimFeatureExample
+
+Values:
+- NewEnumerator0 / Stride Blending (index 0, value 0)
+- NewEnumerator1 / Additive Leaning (index 1, value 1)
+- NewEnumerator2 / Sprint Impulse (index 2, value 2)
+- AnimFeatureExample_MAX / Anim Feature Example MAX (index 3, value 3)
+
+Used by:
+
+- Nessuno rilevato.
 
 ## Data Tables
 
@@ -875,9 +900,9 @@ Referenced by:
 
 ### DT_Weapon
 
-- Row Struct: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData.S_WeaponData
+- Row Struct: /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData
 - Row Count: 14
-- Path: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/DT_Weapon.DT_Weapon
+- Path: /Game/ChuckContent/Systems/Weapons/Data/DT_Weapon.DT_Weapon
 
 Fields:
 - RowName_80_90C885E245FEA60369938EAC6E1FCB25: FName
@@ -899,7 +924,6 @@ Fields:
 - MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D: int32
 - CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8: int32
 - CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22: int32
-- AmmoType_71_6DFBCCD3458A2AC852AA349DF9FAD1DD: FName
 - IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA: bool
 - IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1: bool
 - IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC: bool
@@ -911,6 +935,7 @@ Fields:
 - bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0: bool
 - ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8: UStaticMesh*
 - ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5: double
+- AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4: TEnumAsByte<E_AmmoType>
 
 Rows:
 
@@ -934,7 +959,6 @@ Referenced by:
 - [[ALS_ChuckBP]]
 - [[BP_MasterPickUpSkeletalMesh]]
 - [[BP_WeaponMaster]]
-- [[WBP_ArmorSelector]]
 - [[WBP_MenuArchive]]
 
 ### DT_CharacterData

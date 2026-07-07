@@ -6,11 +6,11 @@ Export statico e in sola lettura del progetto Chuck_The_Game.
 
 - Unreal Engine: 5.4.4-35576357+++UE5+Release-5.4
 - Schema Version: 2.1
-- Assets Exported: 110
+- Assets Exported: 111
 - Blueprint: 59
 - Data Tables: 8
 - Structs: 25
-- Enums: 18
+- Enums: 19
 - Assets With Errors: 0
 
 ## Recommended Reading Order

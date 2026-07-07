@@ -70,10 +70,11 @@ Categorie euristiche basate su nome, path e tipo asset.
 
 ## Interaction
 
-- [[BP_MasterPickUpSkeletalMesh]]
-- [[BP_MasterPickUpStaticMesh]]
-- [[BP_TestTrigger]]
 - [[BPI_Interaction]]
+
+## Misc / Unknown
+
+- [[BP_TestTrigger]]
 
 ## Player / Character
 
@@ -92,11 +93,9 @@ Categorie euristiche basate su nome, path e tipo asset.
 - [[DT_Consumable]]
 - [[DT_Items]]
 - [[DT_ObjectsData]]
-- [[DT_Weapon]]
 - [[E_ArmorSlot]]
 - [[E_CharactersAffiliates]]
 - [[E_ObjectsCategory]]
-- [[E_WeaponSlot]]
 - [[E_WheelActionType]]
 - [[F_CharacterData]]
 - [[F_ObjectData]]
@@ -106,7 +105,6 @@ Categorie euristiche basate su nome, path e tipo asset.
 - [[S_ArmorData]]
 - [[S_ConsumableData]]
 - [[S_ItemsData]]
-- [[S_WeaponData]]
 - [[S_WheelSlotData]]
 - [[Text]]
 - [[WBP_ArmorSelector]]
@@ -124,5 +122,11 @@ Categorie euristiche basate su nome, path e tipo asset.
 
 ## Weapons / Combat
 
+- [[BP_MasterPickUpSkeletalMesh]]
+- [[BP_MasterPickUpStaticMesh]]
 - [[BP_WeaponMaster]]
 - [[BP_WeaponProjectileData]]
+- [[DT_Weapon]]
+- [[E_AmmoType]]
+- [[E_WeaponSlot]]
+- [[S_WeaponData]]

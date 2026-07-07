@@ -5,9 +5,9 @@ Ordinati per nodeCount, pinCount e linkCount.
 ## ALS_ChuckBP / EventGraph
 
 - Type: EventGraph
-- Nodes: 374
-- Pins: 1325
-- Links: 418
+- Nodes: 391
+- Pins: 1396
+- Links: 439
 
 Entry points:
 
@@ -56,9 +56,9 @@ Custom Event
 ## ALS_ChuckBP / AttackGraph
 
 - Type: EventGraph
-- Nodes: 299
-- Pins: 1253
-- Links: 369
+- Nodes: 359
+- Pins: 1441
+- Links: 437
 
 Entry points:
 
@@ -66,7 +66,9 @@ Entry points:
 Custom Event
 - EventLoopHit
 Custom Event
-- ReloadWeapon
+- ReloadCurrentWeapon
+Custom Event
+- TryAutoReloadCurrentWeapon
 Custom Event
 
 ## WBP_MenuArchive / EventGraph
@@ -113,7 +115,7 @@ Entry points:
 
 - Type: EventGraph
 - Nodes: 183
-- Pins: 731
+- Pins: 735
 - Links: 198
 
 Entry points:
@@ -156,9 +158,9 @@ Entry points:
 ## WBP_CustomRadialMenu / EventGraph
 
 - Type: EventGraph
-- Nodes: 129
-- Pins: 423
-- Links: 159
+- Nodes: 137
+- Pins: 451
+- Links: 169
 
 Entry points:
 
@@ -177,6 +179,18 @@ Custom Event
 Entry points:
 
 - Custom Camera Behavior
+
+## ALS_Player_Controller / EventGraph
+
+- Type: EventGraph
+- Nodes: 120
+- Pins: 411
+- Links: 111
+
+Entry points:
+
+- Evento On Possess
+- Evento BeginPlay
 
 ## ALS_AnimBP / EventGraph
 
@@ -222,18 +236,6 @@ Da ALS Animation BPI
 - AnimNotify_Pistol 2H Ready->Relaxed
 - AnimNotify_Pistol 2H Relaxed->Ready
 
-## ALS_Player_Controller / EventGraph
-
-- Type: EventGraph
-- Nodes: 115
-- Pins: 397
-- Links: 105
-
-Entry points:
-
-- Evento On Possess
-- Evento BeginPlay
-
 ## ALS_BaseCharacterBP / PlayerInputGraph
 
 - Type: EventGraph
@@ -248,11 +250,11 @@ Entry points:
 - InputAxis LookUp/Down
 - InputAxis LookLeft/Right
 
-## WBP_WeaponSelector / EventGraph
+## WBP_ArmorSelector / EventGraph
 
 - Type: EventGraph
 - Nodes: 108
-- Pins: 387
+- Pins: 388
 - Links: 161
 
 Entry points:
@@ -261,12 +263,12 @@ Entry points:
 - EquipAndClose
 Custom Event
 
-## WBP_ArmorSelector / EventGraph
+## WBP_WeaponSelector / EventGraph
 
 - Type: EventGraph
-- Nodes: 106
-- Pins: 406
-- Links: 158
+- Nodes: 108
+- Pins: 388
+- Links: 161
 
 Entry points:
 
@@ -457,19 +459,6 @@ Custom Event
 Entry points:
 
 - Update Weapon Slots
-
-## BP_MasterPickUpStaticMesh / EventGraph
-
-- Type: EventGraph
-- Nodes: 62
-- Pins: 216
-- Links: 70
-
-Entry points:
-
-- Evento BeginPlay
-- On Component Begin Overlap (Sphere)
-- On Component End Overlap (Sphere)
 
 ## ALS_AnimBP / UpdateAimingValues
 
@@ -701,6 +690,19 @@ Entry points:
 
 - Nessuno rilevato.
 
+## BP_MasterPickUpStaticMesh / EventGraph
+
+- Type: EventGraph
+- Nodes: 39
+- Pins: 152
+- Links: 45
+
+Entry points:
+
+- Evento BeginPlay
+- On Component Begin Overlap (Sphere)
+- On Component End Overlap (Sphere)
+
 ## ALS_AnimBP / SetPelvisIKOffset
 
 - Type: Function
@@ -733,19 +735,6 @@ Entry points:
 Entry points:
 
 - Evento On Apply
-
-## WBP_HUD / EventGraph
-
-- Type: EventGraph
-- Nodes: 37
-- Pins: 121
-- Links: 42
-
-Entry points:
-
-- UpdateWeaponDisplay
-Custom Event
-- Evento Construct
 
 ## ALS_AnimBP / UpdateMovementValues
 
@@ -790,6 +779,19 @@ Entry points:
 Entry points:
 
 - Nessuno rilevato.
+
+## WBP_HUD / EventGraph
+
+- Type: EventGraph
+- Nodes: 35
+- Pins: 113
+- Links: 43
+
+Entry points:
+
+- UpdateWeaponDisplay
+Custom Event
+- Evento Construct
 
 ## ALS_AnimBP / Rifle Relaxed
 
@@ -1173,7 +1175,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Fists
+## ALS_AnimBP / Box
 
 - Type: AnimationStateGraph
 - Nodes: 24
@@ -1184,7 +1186,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Box
+## ALS_AnimBP / Fists
 
 - Type: AnimationStateGraph
 - Nodes: 24
@@ -1219,17 +1221,6 @@ Entry points:
 - SelectOverlayState
 Custom Event
 - Evento Tick
-
-## ALS_ChuckBP / UpdateWeaponAmmoHUD
-
-- Type: Function
-- Nodes: 23
-- Pins: 75
-- Links: 33
-
-Entry points:
-
-- Update Weapon Ammo HUD
 
 ## ALS_BaseCharacterBP / GetActualGait
 
@@ -1331,7 +1322,18 @@ Entry points:
 
 - Calculate Standing Play Rate
 
-## ALS_AnimBP / Pistol 1H Aiming
+## ALS_AnimBP / Rifle Aiming
+
+- Type: AnimationStateGraph
+- Nodes: 21
+- Pins: 49
+- Links: 15
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Bow Aiming
 
 - Type: AnimationStateGraph
 - Nodes: 21
@@ -1353,18 +1355,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Rifle Aiming
-
-- Type: AnimationStateGraph
-- Nodes: 21
-- Pins: 49
-- Links: 15
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Bow Aiming
+## ALS_AnimBP / Pistol 1H Aiming
 
 - Type: AnimationStateGraph
 - Nodes: 21
@@ -1451,6 +1442,17 @@ Entry points:
 Entry points:
 
 - On Movement State Changed
+
+## ALS_ChuckBP / AddWeaponToInventory
+
+- Type: Function
+- Nodes: 20
+- Pins: 58
+- Links: 23
+
+Entry points:
+
+- Add Weapon to Inventory
 
 ## ALS_HUD / Get_AnimCurveValues
 
@@ -1540,7 +1542,7 @@ Entry points:
 
 - Get Input Keys
 
-## ALS_AnimBP / Injured
+## ALS_AnimBP / Hands Tied
 
 - Type: AnimationStateGraph
 - Nodes: 18
@@ -1562,7 +1564,29 @@ Entry points:
 
 - Update in Air Values
 
+## ALS_AnimBP / Feminine
+
+- Type: AnimationStateGraph
+- Nodes: 18
+- Pins: 47
+- Links: 14
+
+Entry points:
+
+- Nessuno rilevato.
+
 ## ALS_AnimBP / Default
+
+- Type: AnimationStateGraph
+- Nodes: 18
+- Pins: 47
+- Links: 14
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Injured
 
 - Type: AnimationStateGraph
 - Nodes: 18
@@ -1584,23 +1608,12 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Hands Tied
+## ALS_AnimBP / Pistol 2H Relaxed
 
 - Type: AnimationStateGraph
 - Nodes: 18
-- Pins: 47
-- Links: 14
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Feminine
-
-- Type: AnimationStateGraph
-- Nodes: 18
-- Pins: 47
-- Links: 14
+- Pins: 37
+- Links: 11
 
 Entry points:
 
@@ -1617,18 +1630,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Pistol 2H Relaxed
-
-- Type: AnimationStateGraph
-- Nodes: 18
-- Pins: 37
-- Links: 11
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / (CLF) Locomotion States
+## ALS_AnimBP / (N) Locomotion States
 
 - Type: AnimationStateMachineGraph
 - Nodes: 18
@@ -1639,7 +1641,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / (N) Locomotion States
+## ALS_AnimBP / (CLF) Locomotion States
 
 - Type: AnimationStateMachineGraph
 - Nodes: 18
@@ -1706,17 +1708,6 @@ Entry points:
 - ShowTip_1
 Custom Event
 
-## ALS_ChuckBP / AddWeaponToInventory
-
-- Type: Function
-- Nodes: 17
-- Pins: 51
-- Links: 19
-
-Entry points:
-
-- Add Weapon to Inventory
-
 ## ALS_PlayerCameraBehavior / UpdateCharacterInfo
 
 - Type: Function
@@ -1727,17 +1718,6 @@ Entry points:
 Entry points:
 
 - Update Character Info
-
-## ALS_PlayerCameraBehavior / Looking Direction
-
-- Type: AnimationStateGraph
-- Nodes: 16
-- Pins: 86
-- Links: 15
-
-Entry points:
-
-- Nessuno rilevato.
 
 ## ALS_PlayerCameraBehavior / Velocity Direction
 
@@ -1751,6 +1731,17 @@ Entry points:
 - Nessuno rilevato.
 
 ## ALS_PlayerCameraBehavior / Aiming
+
+- Type: AnimationStateGraph
+- Nodes: 16
+- Pins: 86
+- Links: 15
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_PlayerCameraBehavior / Looking Direction
 
 - Type: AnimationStateGraph
 - Nodes: 16
@@ -1843,7 +1834,7 @@ Entry points:
 
 - Type: Function
 - Nodes: 15
-- Pins: 72
+- Pins: 73
 - Links: 22
 
 Entry points:
@@ -1927,18 +1918,7 @@ Entry points:
 
 - Calculate Stride Blend
 
-## ALS_AnimBP / Pistol 2H Ready
-
-- Type: AnimationStateGraph
-- Nodes: 15
-- Pins: 29
-- Links: 9
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Barrel
+## ALS_AnimBP / Rifle Ready
 
 - Type: AnimationStateGraph
 - Nodes: 15
@@ -1960,7 +1940,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Rifle Ready
+## ALS_AnimBP / Barrel
 
 - Type: AnimationStateGraph
 - Nodes: 15
@@ -1972,6 +1952,17 @@ Entry points:
 - Nessuno rilevato.
 
 ## ALS_AnimBP / Pistol 1H Ready
+
+- Type: AnimationStateGraph
+- Nodes: 15
+- Pins: 29
+- Links: 9
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Pistol 2H Ready
 
 - Type: AnimationStateGraph
 - Nodes: 15
@@ -2081,17 +2072,6 @@ Entry points:
 
 - Evento Receive Execute AI
 
-## ALS_ChuckBP / On Begin Play
-
-- Type: Function
-- Nodes: 12
-- Pins: 42
-- Links: 16
-
-Entry points:
-
-- On Begin Play
-
 ## SimpleMovingObject / UpdateObjectLocation
 
 - Type: Function
@@ -2136,17 +2116,6 @@ Entry points:
 
 - Calculate Crouching Play Rate
 
-## ALS_BaseCharacterBP / BPI_Get_EssentialValues
-
-- Type: EdGraph
-- Nodes: 12
-- Pins: 31
-- Links: 11
-
-Entry points:
-
-- BPI Get Essential Values
-
 ## ALS_BaseCharacterBP / BPI_Get_CurrentStates
 
 - Type: EdGraph
@@ -2157,6 +2126,17 @@ Entry points:
 Entry points:
 
 - BPI Get Current States
+
+## ALS_BaseCharacterBP / BPI_Get_EssentialValues
+
+- Type: EdGraph
+- Nodes: 12
+- Pins: 31
+- Links: 11
+
+Entry points:
+
+- BPI Get Essential Values
 
 ## ALS_AnimBP / Rifle
 
@@ -2235,6 +2215,17 @@ Entry points:
 
 - Received Notify End
 
+## ALS_ChuckBP / On Begin Play
+
+- Type: Function
+- Nodes: 11
+- Pins: 37
+- Links: 12
+
+Entry points:
+
+- On Begin Play
+
 ## ALS_PlayerCameraManager / EventGraph
 
 - Type: EventGraph
@@ -2269,7 +2260,7 @@ Entry points:
 
 - BPI Get 3P Trace Params
 
-## ALS_AnimBP / Move RF
+## ALS_AnimBP / Move LF
 
 - Type: AnimationStateGraph
 - Nodes: 11
@@ -2280,7 +2271,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Move RB
+## ALS_AnimBP / Move LB
 
 - Type: AnimationStateGraph
 - Nodes: 11
@@ -2292,6 +2283,28 @@ Entry points:
 - Nessuno rilevato.
 
 ## ALS_AnimBP / Move LF
+
+- Type: AnimationStateGraph
+- Nodes: 11
+- Pins: 25
+- Links: 11
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Move F
+
+- Type: AnimationStateGraph
+- Nodes: 11
+- Pins: 25
+- Links: 11
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Move F
 
 - Type: AnimationStateGraph
 - Nodes: 11
@@ -2324,61 +2337,6 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Move F
-
-- Type: AnimationStateGraph
-- Nodes: 11
-- Pins: 25
-- Links: 11
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Move B
-
-- Type: AnimationStateGraph
-- Nodes: 11
-- Pins: 25
-- Links: 11
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Move LF
-
-- Type: AnimationStateGraph
-- Nodes: 11
-- Pins: 25
-- Links: 11
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Move LB
-
-- Type: AnimationStateGraph
-- Nodes: 11
-- Pins: 25
-- Links: 11
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Move F
-
-- Type: AnimationStateGraph
-- Nodes: 11
-- Pins: 25
-- Links: 11
-
-Entry points:
-
-- Nessuno rilevato.
-
 ## ALS_AnimBP / Move RF
 
 - Type: AnimationStateGraph
@@ -2391,6 +2349,39 @@ Entry points:
 - Nessuno rilevato.
 
 ## ALS_AnimBP / Move B
+
+- Type: AnimationStateGraph
+- Nodes: 11
+- Pins: 25
+- Links: 11
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Move B
+
+- Type: AnimationStateGraph
+- Nodes: 11
+- Pins: 25
+- Links: 11
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Move RB
+
+- Type: AnimationStateGraph
+- Nodes: 11
+- Pins: 25
+- Links: 11
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Move RF
 
 - Type: AnimationStateGraph
 - Nodes: 11
@@ -2445,7 +2436,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_MacroLibrary / ML_GetPreviousArrayItem
+## ALS_MacroLibrary / ML_GetNextArrayItem
 
 - Type: Macro
 - Nodes: 10
@@ -2456,7 +2447,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_MacroLibrary / ML_GetNextArrayItem
+## ALS_MacroLibrary / ML_GetPreviousArrayItem
 
 - Type: Macro
 - Nodes: 10
@@ -2500,17 +2491,6 @@ Entry points:
 
 - Get Calpsule Base Location
 
-## ALS_AnimBP / CanTurnInPlace
-
-- Type: Function
-- Nodes: 10
-- Pins: 25
-- Links: 8
-
-Entry points:
-
-- Can Turn in Place
-
 ## ALS_BaseCharacterBP / CalculateGroundedRotationRate
 
 - Type: Function
@@ -2521,6 +2501,17 @@ Entry points:
 Entry points:
 
 - Calculate Grounded Rotation Rate
+
+## ALS_AnimBP / CanTurnInPlace
+
+- Type: Function
+- Nodes: 10
+- Pins: 25
+- Links: 8
+
+Entry points:
+
+- Can Turn in Place
 
 ## ALS_HUD / Get_ShowDebugShapes_Color
 
@@ -2544,6 +2535,17 @@ Entry points:
 
 - Get Show Layer Colors Color
 
+## ALS_HUD / Get_ShowTraces_Color
+
+- Type: Function
+- Nodes: 10
+- Pins: 23
+- Links: 9
+
+Entry points:
+
+- Get Show Traces Color
+
 ## ALS_HUD / Get_Slomo_Color
 
 - Type: Function
@@ -2554,6 +2556,17 @@ Entry points:
 Entry points:
 
 - Get Slomo Color
+
+## ALS_HUD / Get_DebugView_Color
+
+- Type: Function
+- Nodes: 10
+- Pins: 23
+- Links: 9
+
+Entry points:
+
+- Get Debug View Color
 
 ## ALS_HUD / Get_ShowHUD_Color
 
@@ -2577,51 +2590,7 @@ Entry points:
 
 - Get Show Character Info Color
 
-## ALS_HUD / Get_DebugView_Color
-
-- Type: Function
-- Nodes: 10
-- Pins: 23
-- Links: 9
-
-Entry points:
-
-- Get Debug View Color
-
-## ALS_HUD / Get_ShowTraces_Color
-
-- Type: Function
-- Nodes: 10
-- Pins: 23
-- Links: 9
-
-Entry points:
-
-- Get Show Traces Color
-
-## ALS_AnimBP / Rifle States
-
-- Type: AnimationStateMachineGraph
-- Nodes: 10
-- Pins: 19
-- Links: 13
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Pistol 2H States
-
-- Type: AnimationStateMachineGraph
-- Nodes: 10
-- Pins: 19
-- Links: 13
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Pistol 1H States
+## ALS_AnimBP / Bow States
 
 - Type: AnimationStateMachineGraph
 - Nodes: 10
@@ -2643,7 +2612,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Bow States
+## ALS_AnimBP / Pistol 2H States
 
 - Type: AnimationStateMachineGraph
 - Nodes: 10
@@ -2654,7 +2623,29 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / (N) Walk->Run
+## ALS_AnimBP / Rifle States
+
+- Type: AnimationStateMachineGraph
+- Nodes: 10
+- Pins: 19
+- Links: 13
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Pistol 1H States
+
+- Type: AnimationStateMachineGraph
+- Nodes: 10
+- Pins: 19
+- Links: 13
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Second Pivot
 
 - Type: AnimationStateGraph
 - Nodes: 9
@@ -2665,7 +2656,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Second Pivot
+## ALS_AnimBP / First Pivot
 
 - Type: AnimationStateGraph
 - Nodes: 9
@@ -2687,7 +2678,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / First Pivot
+## ALS_AnimBP / (N) Walk->Run
 
 - Type: AnimationStateGraph
 - Nodes: 9
@@ -3064,6 +3055,17 @@ Entry points:
 
 - Can Overlay Transition
 
+## ALS_BaseCharacterBP / GetTraceDebugType
+
+- Type: Function
+- Nodes: 6
+- Pins: 25
+- Links: 7
+
+Entry points:
+
+- Get Trace Debug Type
+
 ## ALS_AnimBP / GetDebugTraceType
 
 - Type: Function
@@ -3085,17 +3087,6 @@ Entry points:
 Entry points:
 
 - Get Debug Trace Type
-
-## ALS_BaseCharacterBP / GetTraceDebugType
-
-- Type: Function
-- Nodes: 6
-- Pins: 25
-- Links: 7
-
-Entry points:
-
-- Get Trace Debug Type
 
 ## ALS_AnimBP / Transition
 
@@ -3152,17 +3143,6 @@ Entry points:
 
 - Clear Held Object
 
-## ALS_AnimBP / AnimationTransitionGraph_0
-
-- Type: AnimationTransitionGraph
-- Nodes: 6
-- Pins: 19
-- Links: 5
-
-Entry points:
-
-- Nessuno rilevato.
-
 ## ALS_AnimBP / AnimationTransitionGraph_1
 
 - Type: AnimationTransitionGraph
@@ -3196,7 +3176,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Transition
+## ALS_AnimBP / AnimationTransitionGraph_1
 
 - Type: AnimationTransitionGraph
 - Nodes: 6
@@ -3229,7 +3209,18 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / AnimationTransitionGraph_1
+## ALS_AnimBP / AnimationTransitionGraph_0
+
+- Type: AnimationTransitionGraph
+- Nodes: 6
+- Pins: 19
+- Links: 5
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
 
 - Type: AnimationTransitionGraph
 - Nodes: 6
@@ -3284,6 +3275,17 @@ Entry points:
 
 - Nessuno rilevato.
 
+## ALS_AnimBP / AnimationTransitionGraph_0
+
+- Type: AnimationTransitionGraph
+- Nodes: 6
+- Pins: 17
+- Links: 5
+
+Entry points:
+
+- Nessuno rilevato.
+
 ## WBP_Tip / EventGraph
 
 - Type: EventGraph
@@ -3296,17 +3298,6 @@ Entry points:
 - Evento Construct
 - ShowTip
 Custom Event
-
-## ALS_AnimBP / AnimationTransitionGraph_0
-
-- Type: AnimationTransitionGraph
-- Nodes: 6
-- Pins: 17
-- Links: 5
-
-Entry points:
-
-- Nessuno rilevato.
 
 ## ALS_AnimBP / (CLF) Stop
 
@@ -3352,7 +3343,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / AnimationTransitionGraph_0
+## ALS_AnimBP / AnimationTransitionGraph_1
 
 - Type: AnimationTransitionGraph
 - Nodes: 6
@@ -3363,7 +3354,18 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / AnimationTransitionGraph_1
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 6
+- Pins: 15
+- Links: 5
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
 
 - Type: AnimationTransitionGraph
 - Nodes: 6
@@ -3396,31 +3398,20 @@ Entry points:
 
 - Nessuno rilevato.
 
+## ALS_AnimBP / AnimationTransitionGraph_0
+
+- Type: AnimationTransitionGraph
+- Nodes: 6
+- Pins: 15
+- Links: 5
+
+Entry points:
+
+- Nessuno rilevato.
+
 ## ALS_AnimBP / (CLF) Not Moving
 
 - Type: AnimationStateGraph
-- Nodes: 6
-- Pins: 15
-- Links: 5
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 6
-- Pins: 15
-- Links: 5
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
 - Nodes: 6
 - Pins: 15
 - Links: 5
@@ -3451,7 +3442,18 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / (N) Rotate Right 90
+## ALS_AnimBP / CalculateWalkRunBlend
+
+- Type: Function
+- Nodes: 6
+- Pins: 13
+- Links: 5
+
+Entry points:
+
+- Calculate Walk Run Blend
+
+## ALS_AnimBP / (CLF) Rotate Left
 
 - Type: AnimationStateGraph
 - Nodes: 6
@@ -3473,18 +3475,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / CalculateWalkRunBlend
-
-- Type: Function
-- Nodes: 6
-- Pins: 13
-- Links: 5
-
-Entry points:
-
-- Calculate Walk Run Blend
-
-## ALS_AnimBP / (CLF) Rotate Left
+## ALS_AnimBP / (N) Rotate Right 90
 
 - Type: AnimationStateGraph
 - Nodes: 6
@@ -3583,7 +3574,7 @@ Entry points:
 
 - Set Movement Model
 
-## MovementAction_NotifyState / Received_NotifyBegin
+## OverlayOverride_NotifyState / Received_NotifyBegin
 
 - Type: Function
 - Nodes: 5
@@ -3594,7 +3585,7 @@ Entry points:
 
 - Received Notify Begin
 
-## OverlayOverride_NotifyState / Received_NotifyBegin
+## MovementAction_NotifyState / Received_NotifyBegin
 
 - Type: Function
 - Nodes: 5
@@ -3638,7 +3629,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / AnimationTransitionGraph_0
+## ALS_AnimBP / Transition
 
 - Type: AnimationTransitionGraph
 - Nodes: 5
@@ -3649,7 +3640,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Transition
+## ALS_AnimBP / AnimationTransitionGraph_0
 
 - Type: AnimationTransitionGraph
 - Nodes: 5
@@ -3693,17 +3684,6 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 5
-- Pins: 12
-- Links: 4
-
-Entry points:
-
-- Nessuno rilevato.
-
 ## OverlayOverride_NotifyState / GetNotifyName
 
 - Type: Function
@@ -3714,6 +3694,17 @@ Entry points:
 Entry points:
 
 - Get Notify Name
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 5
+- Pins: 12
+- Links: 4
+
+Entry points:
+
+- Nessuno rilevato.
 
 ## ALS_AnimBP / Transition
 
@@ -3737,18 +3728,18 @@ Entry points:
 
 - Set Asset Name
 
-## ALS_BaseCharacterBP / BPI_Get_CameraParameters
+## GroundedEntryState_AnimNotify / GetNotifyName
 
-- Type: EdGraph
+- Type: Function
 - Nodes: 5
 - Pins: 11
 - Links: 4
 
 Entry points:
 
-- BPI Get Camera Parameters
+- Get Notify Name
 
-## GroundedEntryState_AnimNotify / GetNotifyName
+## MovementAction_NotifyState / GetNotifyName
 
 - Type: Function
 - Nodes: 5
@@ -3770,16 +3761,16 @@ Entry points:
 
 - Get HUD Visibility
 
-## MovementAction_NotifyState / GetNotifyName
+## ALS_BaseCharacterBP / BPI_Get_CameraParameters
 
-- Type: Function
+- Type: EdGraph
 - Nodes: 5
 - Pins: 11
 - Links: 4
 
 Entry points:
 
-- Get Notify Name
+- BPI Get Camera Parameters
 
 ## ALS_AnimBP / CanDynamicTransition
 
@@ -3792,7 +3783,7 @@ Entry points:
 
 - Can Dynamic Transition
 
-## ALS_AnimBP / Aim Offset Behavior States
+## ALS_AnimBP / Look Towards Input States
 
 - Type: AnimationStateMachineGraph
 - Nodes: 5
@@ -3803,7 +3794,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Look Towards Input States
+## ALS_AnimBP / Aim Offset Behavior States
 
 - Type: AnimationStateMachineGraph
 - Nodes: 5
@@ -3880,17 +3871,6 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Looking Right and Back
-
-- Type: AnimationStateGraph
-- Nodes: 4
-- Pins: 11
-- Links: 3
-
-Entry points:
-
-- Nessuno rilevato.
-
 ## ALS_AnimBP / Looking Forwards
 
 - Type: AnimationStateGraph
@@ -3914,6 +3894,17 @@ Entry points:
 - Nessuno rilevato.
 
 ## ALS_AnimBP / Looking Left and Back
+
+- Type: AnimationStateGraph
+- Nodes: 4
+- Pins: 11
+- Links: 3
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Looking Right and Back
 
 - Type: AnimationStateGraph
 - Nodes: 4
@@ -3981,9 +3972,9 @@ Entry points:
 
 - On Gait Changed
 
-## ALS_BaseCharacterBP / BPI_Get_FP_CameraTarget
+## ALS_ChuckBP / BPI_Get_FP_CameraTarget
 
-- Type: EdGraph
+- Type: Function
 - Nodes: 4
 - Pins: 8
 - Links: 3
@@ -3992,9 +3983,9 @@ Entry points:
 
 - BPI Get FP Camera Target
 
-## ALS_ChuckBP / BPI_Get_FP_CameraTarget
+## ALS_BaseCharacterBP / BPI_Get_FP_CameraTarget
 
-- Type: Function
+- Type: EdGraph
 - Nodes: 4
 - Pins: 8
 - Links: 3
@@ -4058,51 +4049,29 @@ Entry points:
 
 - On Overlay State Changed
 
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 9
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 9
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
 ## ALS_AnimBP / AnimationTransitionGraph_0
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 9
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 9
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 9
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 9
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
 
 - Type: AnimationTransitionGraph
 - Nodes: 3
@@ -4138,6 +4107,28 @@ Entry points:
 ## ALS_AnimBP / SwitchSidesBlendPose
 
 - Type: AnimationStateGraph
+- Nodes: 3
+- Pins: 9
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 9
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
 - Nodes: 3
 - Pins: 9
 - Links: 2
@@ -4280,7 +4271,7 @@ Entry points:
 - Evento ActorBeginOverlap
 - Evento Tick
 
-## BP_Sword_Mann / EventGraph
+## BP_Knife_Mann / EventGraph
 
 - Type: EventGraph
 - Nodes: 3
@@ -4293,7 +4284,7 @@ Entry points:
 - Evento ActorBeginOverlap
 - Evento Tick
 
-## BP_Knife_Mann / EventGraph
+## BP_Sword_Mann / EventGraph
 
 - Type: EventGraph
 - Nodes: 3
@@ -4317,6 +4308,17 @@ Entry points:
 
 - Is Active Input Device
 
+## ALS_ChuckBP / MantleEnd
+
+- Type: Function
+- Nodes: 3
+- Pins: 7
+- Links: 2
+
+Entry points:
+
+- Mantle End
+
 ## ALS_ChuckBP / RagdollEnd
 
 - Type: Function
@@ -4327,6 +4329,17 @@ Entry points:
 Entry points:
 
 - Ragdoll End
+
+## ALS_BaseCharacterBP / BPI_Get_3P_TraceParams
+
+- Type: EdGraph
+- Nodes: 3
+- Pins: 7
+- Links: 2
+
+Entry points:
+
+- BPI Get 3P Trace Params
 
 ## ALS_AnimBP / From Roll
 
@@ -4350,172 +4363,7 @@ Entry points:
 
 - Ragdoll Start
 
-## ALS_ChuckBP / MantleEnd
-
-- Type: Function
-- Nodes: 3
-- Pins: 7
-- Links: 2
-
-Entry points:
-
-- Mantle End
-
-## ALS_BaseCharacterBP / BPI_Get_3P_TraceParams
-
-- Type: EdGraph
-- Nodes: 3
-- Pins: 7
-- Links: 2
-
-Entry points:
-
-- BPI Get 3P Trace Params
-
 ## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / AnimationTransitionGraph_0
 
 - Type: AnimationTransitionGraph
 - Nodes: 3
@@ -4593,105 +4441,6 @@ Entry points:
 - Nessuno rilevato.
 
 ## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / ->Land
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / AnimationTransitionGraph_1
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / AnimationTransitionGraph_1
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / (CLF) Crouching LF
-
-- Type: AnimationStateGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / AnimationTransitionGraph_1
 
 - Type: AnimationTransitionGraph
 - Nodes: 3
@@ -4735,183 +4484,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / AnimationTransitionGraph_0
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / AnimationTransitionGraph_0
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / AnimationTransitionGraph_0
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Grounded
-
-- Type: AnimationStateGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
+## ALS_AnimBP / AnimationTransitionGraph_1
 
 - Type: AnimationTransitionGraph
 - Nodes: 3
@@ -4955,29 +4528,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / AnimationTransitionGraph_1
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / AnimationTransitionGraph_1
+## ALS_AnimBP / AnimationTransitionGraph_0
 
 - Type: AnimationTransitionGraph
 - Nodes: 3
@@ -5076,7 +4627,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Transition
+## ALS_AnimBP / AnimationTransitionGraph_0
 
 - Type: AnimationTransitionGraph
 - Nodes: 3
@@ -5087,62 +4638,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_PlayerCameraBehavior / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_PlayerCameraBehavior / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 3
-- Pins: 6
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
+## ALS_AnimBP / AnimationTransitionGraph_0
 
 - Type: AnimationTransitionGraph
 - Nodes: 3
@@ -5208,7 +4704,502 @@ Entry points:
 
 - Nessuno rilevato.
 
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / (CLF) Crouching LF
+
+- Type: AnimationStateGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / AnimationTransitionGraph_1
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / AnimationTransitionGraph_1
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / AnimationTransitionGraph_1
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / AnimationTransitionGraph_1
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
 ## ALS_PlayerCameraBehavior / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / ->Land
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_PlayerCameraBehavior / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_PlayerCameraBehavior / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / AnimationTransitionGraph_0
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Grounded
+
+- Type: AnimationStateGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 3
+- Pins: 6
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
 
 - Type: AnimationTransitionGraph
 - Nodes: 3
@@ -5230,18 +5221,7 @@ Entry points:
 
 - Evento Blueprint Update Animation
 
-## ALS_BaseCharacterBP / BPI_Get_3P_PivotTarget
-
-- Type: EdGraph
-- Nodes: 3
-- Pins: 5
-- Links: 2
-
-Entry points:
-
-- BPI Get 3P Pivot Target
-
-## ALS_AnimBP / Lock Right Foot
+## ALS_AnimBP / (N) Standing
 
 - Type: AnimationStateGraph
 - Nodes: 3
@@ -5252,7 +5232,18 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / (N) Standing
+## ALS_AnimBP / GetAnimCurve_Compact
+
+- Type: Macro
+- Nodes: 3
+- Pins: 5
+- Links: 2
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Jump Loop
 
 - Type: AnimationStateGraph
 - Nodes: 3
@@ -5274,7 +5265,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / In Ragdoll
+## ALS_AnimBP / Lock Right Foot
 
 - Type: AnimationStateGraph
 - Nodes: 3
@@ -5284,6 +5275,17 @@ Entry points:
 Entry points:
 
 - Nessuno rilevato.
+
+## ALS_BaseCharacterBP / BPI_Get_3P_PivotTarget
+
+- Type: EdGraph
+- Nodes: 3
+- Pins: 5
+- Links: 2
+
+Entry points:
+
+- BPI Get 3P Pivot Target
 
 ## Bow_AnimBP / AnimGraph
 
@@ -5296,18 +5298,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / GetAnimCurve_Compact
-
-- Type: Macro
-- Nodes: 3
-- Pins: 5
-- Links: 2
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Jump Loop
+## ALS_AnimBP / In Ragdoll
 
 - Type: AnimationStateGraph
 - Nodes: 3
@@ -5351,17 +5342,6 @@ Entry points:
 
 - Get Get Up Animation
 
-## ALS_BaseCharacterBP / GetRollAnimation
-
-- Type: Function
-- Nodes: 3
-- Pins: 3
-- Links: 1
-
-Entry points:
-
-- Get Roll Animation
-
 ## ALS_AnimBP / Blend Out Pose
 
 - Type: AnimationStateGraph
@@ -5372,6 +5352,17 @@ Entry points:
 Entry points:
 
 - Nessuno rilevato.
+
+## ALS_BaseCharacterBP / GetRollAnimation
+
+- Type: Function
+- Nodes: 3
+- Pins: 3
+- Links: 1
+
+Entry points:
+
+- Get Roll Animation
 
 ## ALS_Character_BPI / BPI_Get_EssentialValues
 
@@ -5417,17 +5408,6 @@ Entry points:
 
 - Evento On Possess
 
-## ALS_AnimBP / No Offset
-
-- Type: AnimationStateGraph
-- Nodes: 2
-- Pins: 5
-- Links: 1
-
-Entry points:
-
-- Nessuno rilevato.
-
 ## ALS_Camera_BPI / BPI_Get_CameraParameters
 
 - Type: Function
@@ -5438,6 +5418,17 @@ Entry points:
 Entry points:
 
 - BPI Get Camera Parameters
+
+## ALS_AnimBP / No Offset
+
+- Type: AnimationStateGraph
+- Nodes: 2
+- Pins: 5
+- Links: 1
+
+Entry points:
+
+- Nessuno rilevato.
 
 ## ALS_Camera_BPI / BPI_Get_3P_TraceParams
 
@@ -5450,18 +5441,6 @@ Entry points:
 
 - BPI Get 3P Trace Params
 
-## AIC_EnemyALS / EventGraph
-
-- Type: EventGraph
-- Nodes: 2
-- Pins: 5
-- Links: 0
-
-Entry points:
-
-- Evento BeginPlay
-- Evento Tick
-
 ## Bow_AnimBP / EventGraph
 
 - Type: EventGraph
@@ -5473,16 +5452,17 @@ Entry points:
 
 - Evento Blueprint Update Animation
 
-## AIC_EnemyALS / UserConstructionScript
+## AIC_EnemyALS / EventGraph
 
-- Type: Function
+- Type: EventGraph
 - Nodes: 2
-- Pins: 4
-- Links: 1
+- Pins: 5
+- Links: 0
 
 Entry points:
 
-- Construction Script
+- Evento BeginPlay
+- Evento Tick
 
 ## ALS_Controller_BPI / GetInputKeys
 
@@ -5506,7 +5486,51 @@ Entry points:
 
 - Construction Script
 
-## ALS_AnimBP / (N)->(CLF) Transition
+## AIC_EnemyALS / UserConstructionScript
+
+- Type: Function
+- Nodes: 2
+- Pins: 4
+- Links: 1
+
+Entry points:
+
+- Construction Script
+
+## ALS_AnimBP / No Input
+
+- Type: AnimationStateGraph
+- Nodes: 2
+- Pins: 3
+- Links: 1
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / (CLF) Locomotion Cycles
+
+- Type: AnimationStateMachineGraph
+- Nodes: 2
+- Pins: 3
+- Links: 1
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / (N) Locomotion Cycles
+
+- Type: AnimationStateMachineGraph
+- Nodes: 2
+- Pins: 3
+- Links: 1
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Flail
 
 - Type: AnimationStateGraph
 - Nodes: 2
@@ -5539,17 +5563,6 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 2
-- Pins: 3
-- Links: 1
-
-Entry points:
-
-- Nessuno rilevato.
-
 ## EarlyBlendOut_NotifyState / GetNotifyName
 
 - Type: Function
@@ -5560,83 +5573,6 @@ Entry points:
 Entry points:
 
 - Get Notify Name
-
-## ALS_AnimBP / (N) Locomotion Cycles
-
-- Type: AnimationStateMachineGraph
-- Nodes: 2
-- Pins: 3
-- Links: 1
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 2
-- Pins: 3
-- Links: 1
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / No Input
-
-- Type: AnimationStateGraph
-- Nodes: 2
-- Pins: 3
-- Links: 1
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 2
-- Pins: 3
-- Links: 1
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 2
-- Pins: 3
-- Links: 1
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 2
-- Pins: 3
-- Links: 1
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Flail
-
-- Type: AnimationStateGraph
-- Nodes: 2
-- Pins: 3
-- Links: 1
-
-Entry points:
-
-- Nessuno rilevato.
 
 ## ALS_Camera_BPI / BPI_Get_FP_CameraTarget
 
@@ -5649,16 +5585,38 @@ Entry points:
 
 - BPI Get FP Camera Target
 
-## ALS_Camera_BPI / BPI_Get_3P_PivotTarget
+## ALS_AnimBP / Transition
 
-- Type: Function
+- Type: AnimationTransitionGraph
 - Nodes: 2
 - Pins: 3
 - Links: 1
 
 Entry points:
 
-- BPI Get 3P Pivot Target
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 2
+- Pins: 3
+- Links: 1
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 2
+- Pins: 3
+- Links: 1
+
+Entry points:
+
+- Nessuno rilevato.
 
 ## ALS_AnimBP / Transition
 
@@ -5693,11 +5651,66 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / (CLF) Locomotion Cycles
+## ALS_Camera_BPI / BPI_Get_3P_PivotTarget
 
-- Type: AnimationStateMachineGraph
+- Type: Function
 - Nodes: 2
 - Pins: 3
+- Links: 1
+
+Entry points:
+
+- BPI Get 3P Pivot Target
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 2
+- Pins: 3
+- Links: 1
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 2
+- Pins: 3
+- Links: 1
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / (N)->(CLF) Transition
+
+- Type: AnimationStateGraph
+- Nodes: 2
+- Pins: 3
+- Links: 1
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / AimOffsetBehaviors
+
+- Type: Function
+- Nodes: 2
+- Pins: 2
+- Links: 1
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / (CLF) Moving
+
+- Type: AnimationStateGraph
+- Nodes: 2
+- Pins: 2
 - Links: 1
 
 Entry points:
@@ -5715,7 +5728,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / (N) Walking
+## ALS_AnimBP / (N) Moving
 
 - Type: AnimationStateGraph
 - Nodes: 2
@@ -5748,39 +5761,6 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / AimOffsetBehaviors
-
-- Type: Function
-- Nodes: 2
-- Pins: 2
-- Links: 1
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / (N) Moving
-
-- Type: AnimationStateGraph
-- Nodes: 2
-- Pins: 2
-- Links: 1
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / (CLF) Moving
-
-- Type: AnimationStateGraph
-- Nodes: 2
-- Pins: 2
-- Links: 1
-
-Entry points:
-
-- Nessuno rilevato.
-
 ## ALS_AnimBP / Pre-Stop
 
 - Type: AnimationStateGraph
@@ -5793,6 +5773,17 @@ Entry points:
 - Nessuno rilevato.
 
 ## ALS_AnimBP / (N) Running
+
+- Type: AnimationStateGraph
+- Nodes: 2
+- Pins: 2
+- Links: 1
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / (N) Walking
 
 - Type: AnimationStateGraph
 - Nodes: 2
@@ -5825,6 +5816,17 @@ Entry points:
 
 - BPI Set Rotation Mode
 
+## ALS_Character_BPI / BPI_Set_Gait
+
+- Type: Function
+- Nodes: 1
+- Pins: 2
+- Links: 0
+
+Entry points:
+
+- BPI Set Gait
+
 ## ALS_GameMode_SP / EventGraph
 
 - Type: EventGraph
@@ -5835,17 +5837,6 @@ Entry points:
 Entry points:
 
 - Evento BeginPlay
-
-## ALS_Character_BPI / BPI_Set_MovementState
-
-- Type: Function
-- Nodes: 1
-- Pins: 2
-- Links: 0
-
-Entry points:
-
-- BPI Set Movement State
 
 ## WBP_TabIntersect_CharacterSlot / OnSlotSelected
 
@@ -5869,7 +5860,7 @@ Entry points:
 
 - BPI Set Overlay State
 
-## ALS_Character_BPI / BPI_Set_ViewMode
+## ALS_Character_BPI / BPI_Set_MovementState
 
 - Type: Function
 - Nodes: 1
@@ -5878,9 +5869,9 @@ Entry points:
 
 Entry points:
 
-- BPI Set View Mode
+- BPI Set Movement State
 
-## ALS_Character_BPI / BPI_Set_Gait
+## ALS_Animation_BPI / BPI_SetGroundedEntryState
 
 - Type: Function
 - Nodes: 1
@@ -5889,7 +5880,7 @@ Entry points:
 
 Entry points:
 
-- BPI Set Gait
+- BPI Set Grounded Entry State
 
 ## ALS_Character_BPI / BPI_Set_MovementAction
 
@@ -5902,7 +5893,7 @@ Entry points:
 
 - BPI Set Movement Action
 
-## ALS_Animation_BPI / BPI_SetGroundedEntryState
+## ALS_Character_BPI / BPI_Set_ViewMode
 
 - Type: Function
 - Nodes: 1
@@ -5911,7 +5902,7 @@ Entry points:
 
 Entry points:
 
-- BPI Set Grounded Entry State
+- BPI Set View Mode
 
 ## ALS_Animation_BPI / BPI_SetOverlayOverrideState
 
@@ -5935,226 +5926,6 @@ Entry points:
 
 - Nessuno rilevato.
 
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / <-MovementState->
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## BP_MasterPickUpStaticMesh / UserConstructionScript
-
-- Type: Function
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Construction Script
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / ->Run
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Entry
-
-- Type: AnimationStateGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_GameMode_SP / UserConstructionScript
-
-- Type: Function
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Construction Script
-
-## ALS_AnimBP / Entry
-
-- Type: AnimationStateGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / <--Overlay State->
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_Player_Controller / UserConstructionScript
-
-- Type: Function
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Construction Script
-
-## BP_Knife_GripVariant_Mann / UserConstructionScript
-
-- Type: Function
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Construction Script
-
-## ALS_AnimBP / ->InAir
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## BP_Knife_Mann / UserConstructionScript
-
-- Type: Function
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Construction Script
-
-## ALS_AnimBP / Foot Down
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## BP_Sword_Mann / UserConstructionScript
-
-- Type: Function
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Construction Script
-
-## ALS_AnimBP / Foot Up
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_BaseCharacterBP / UserConstructionScript
-
-- Type: Function
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Construction Script
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
 ## BP_WeaponMaster / UserConstructionScript
 
 - Type: Function
@@ -6166,7 +5937,18 @@ Entry points:
 
 - Construction Script
 
-## ALS_PlayerCameraManager / UserConstructionScript
+## ALS_AI_Controller / UserConstructionScript
+
+- Type: Function
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Construction Script
+
+## BP_Knife_GripVariant_Mann / UserConstructionScript
 
 - Type: Function
 - Nodes: 1
@@ -6210,83 +5992,6 @@ Entry points:
 
 - Construction Script
 
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## BP_TestTrigger / UserConstructionScript
-
-- Type: Function
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Construction Script
-
-## BP_CharacterPreview / UserConstructionScript
-
-- Type: Function
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Construction Script
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
-## ALS_AnimBP / Transition
-
-- Type: AnimationTransitionGraph
-- Nodes: 1
-- Pins: 1
-- Links: 0
-
-Entry points:
-
-- Nessuno rilevato.
-
 ## BPI_Interaction / Interact
 
 - Type: Function
@@ -6298,7 +6003,84 @@ Entry points:
 
 - Interact
 
-## BP_WeaponProjectileData / UserConstructionScript
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## BP_Knife_Mann / UserConstructionScript
+
+- Type: Function
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Construction Script
+
+## ALS_AnimBP / <--Overlay State->
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Foot Up
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## BP_Sword_Mann / UserConstructionScript
 
 - Type: Function
 - Nodes: 1
@@ -6312,6 +6094,72 @@ Entry points:
 ## ALS_AnimBP / Transition
 
 - Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Foot Down
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_PlayerCameraManager / UserConstructionScript
+
+- Type: Function
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Construction Script
+
+## ALS_AnimBP / Entry
+
+- Type: AnimationStateGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Entry
+
+- Type: AnimationStateGraph
 - Nodes: 1
 - Pins: 1
 - Links: 0
@@ -6331,7 +6179,7 @@ Entry points:
 
 - BPI Jumped
 
-## ALS_AI_Controller / UserConstructionScript
+## BP_CharacterPreview / UserConstructionScript
 
 - Type: Function
 - Nodes: 1
@@ -6342,7 +6190,150 @@ Entry points:
 
 - Construction Script
 
-## OverlayStateButton / EventGraph
+## BP_WeaponProjectileData / UserConstructionScript
+
+- Type: Function
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Construction Script
+
+## BP_TestTrigger / UserConstructionScript
+
+- Type: Function
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Construction Script
+
+## BP_MasterPickUpStaticMesh / UserConstructionScript
+
+- Type: Function
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Construction Script
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_BaseCharacterBP / UserConstructionScript
+
+- Type: Function
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Construction Script
+
+## ALS_Player_Controller / UserConstructionScript
+
+- Type: Function
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Construction Script
+
+## ALS_AnimBP / <-MovementState->
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / ->InAir
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / Transition
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_AnimBP / ->Run
+
+- Type: AnimationTransitionGraph
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Nessuno rilevato.
+
+## ALS_GameMode_SP / UserConstructionScript
+
+- Type: Function
+- Nodes: 1
+- Pins: 1
+- Links: 0
+
+Entry points:
+
+- Construction Script
+
+## SimpleObjectBuilder / EventGraph
 
 - Type: EventGraph
 - Nodes: 0
@@ -6375,7 +6366,7 @@ Entry points:
 
 - Nessuno rilevato.
 
-## SimpleObjectBuilder / EventGraph
+## OverlayStateButton / EventGraph
 
 - Type: EventGraph
 - Nodes: 0

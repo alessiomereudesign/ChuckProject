@@ -197,6 +197,7 @@ Depends on:
 - [[BPI_Interaction]]
 - [[DT_Armor]]
 - [[DT_Weapon]]
+- [[E_AmmoType]]
 - [[E_ArmorSlot]]
 - [[E_WeaponSlot]]
 - [[Mantle_Asset]]
@@ -213,6 +214,7 @@ Depends on:
 Depends on:
 
 - [[ALS_BaseCharacterBP]]
+- [[ALS_ChuckBP]]
 - [[ALS_Controller_BPI]]
 - [[ALS_MacroLibrary]]
 - [[ALS_PlayerCameraManager]]
@@ -221,13 +223,13 @@ Depends on:
 - [[WBP_CustomRadialMenu]]
 - [[WBP_HUD]]
 
-## BP_WeaponProjectileData
+## BPI_Interaction
 
 Depends on:
 
 - Nessuno rilevato.
 
-## BPI_Interaction
+## BP_WeaponProjectileData
 
 Depends on:
 
@@ -238,49 +240,6 @@ Depends on:
 Depends on:
 
 - Nessuno rilevato.
-
-## AIC_EnemyALS
-
-Depends on:
-
-- [[ALS_AI_Controller]]
-
-## BP_EnemyALS
-
-Depends on:
-
-- [[AIC_EnemyALS]]
-- [[ALS_AnimBP]]
-- [[ALS_BaseCharacterBP]]
-
-## ALS_GameMode_SP
-
-Depends on:
-
-- [[ALS_ChuckBP]]
-- [[ALS_Player_Controller]]
-
-## BP_MasterPickUpSkeletalMesh
-
-Depends on:
-
-- [[ALS_ChuckBP]]
-- [[ALS_OverlayState]]
-- [[BP_WeaponProjectileData]]
-- [[DT_Weapon]]
-- [[E_WeaponSlot]]
-- [[S_WeaponData]]
-- [[WBP_AssetName]]
-- [[WBP_Tip]]
-
-## BP_MasterPickUpStaticMesh
-
-Depends on:
-
-- [[ALS_ChuckBP]]
-- [[StandardMacros]]
-- [[WBP_AssetName]]
-- [[WBP_Tip]]
 
 ## MovementModelTable
 
@@ -404,6 +363,7 @@ Depends on:
 
 - [[ALS_OverlayState]]
 - [[BP_WeaponProjectileData]]
+- [[E_AmmoType]]
 - [[E_WeaponSlot]]
 
 ## OverlayStateButtonParams
@@ -503,6 +463,12 @@ Depends on:
 
 - Nessuno rilevato.
 
+## E_AmmoType
+
+Depends on:
+
+- Nessuno rilevato.
+
 ## E_ArmorSlot
 
 Depends on:
@@ -515,19 +481,7 @@ Depends on:
 
 - Nessuno rilevato.
 
-## AnimFeatureExample
-
-Depends on:
-
-- Nessuno rilevato.
-
-## E_WheelActionType
-
-Depends on:
-
-- Nessuno rilevato.
-
-## E_ObjectsCategory
+## OverlayStateButton
 
 Depends on:
 
@@ -552,12 +506,6 @@ Depends on:
 - [[OverlayStateButtonParams]]
 - [[StandardMacros]]
 
-## OverlayStateButton
-
-Depends on:
-
-- Nessuno rilevato.
-
 ## WBP_Tip
 
 Depends on:
@@ -569,7 +517,7 @@ Depends on:
 Depends on:
 
 - [[ALS_ChuckBP]]
-- [[BP_WeaponProjectileData]]
+- [[E_AmmoType]]
 - [[E_WeaponSlot]]
 - [[S_WeaponData]]
 - [[StandardMacros]]
@@ -586,6 +534,7 @@ Depends on:
 - [[DT_Armor]]
 - [[DT_CharacterData]]
 - [[DT_Weapon]]
+- [[E_AmmoType]]
 - [[E_ArmorSlot]]
 - [[E_WeaponSlot]]
 - [[F_CharacterData]]
@@ -623,6 +572,7 @@ Depends on:
 - [[ALS_ChuckBP]]
 - [[BP_WeaponProjectileData]]
 - [[DT_Armor]]
+- [[E_AmmoType]]
 - [[E_ArmorSlot]]
 - [[E_WeaponSlot]]
 - [[S_ArmorData]]
@@ -650,9 +600,11 @@ Depends on:
 Depends on:
 
 - [[ALS_ChuckBP]]
+- [[ALS_Player_Controller]]
 - [[E_WeaponSlot]]
 - [[S_WeaponData]]
 - [[StandardMacros]]
+- [[WBP_HUD]]
 
 ## WBP_MenuPrincipale
 
@@ -660,12 +612,6 @@ Depends on:
 
 - [[StandardMacros]]
 - [[WBP_MenuArchive]]
-
-## WBP_AssetName
-
-Depends on:
-
-- Nessuno rilevato.
 
 ## ALS_AnimBP
 
@@ -713,12 +659,30 @@ Depends on:
 - [[ALS_Stance]]
 - [[ALS_ViewMode]]
 
-## BP_TestTrigger
+## BP_MasterPickUpSkeletalMesh
 
 Depends on:
 
 - [[ALS_ChuckBP]]
+- [[ALS_OverlayState]]
+- [[BP_WeaponProjectileData]]
+- [[DT_Weapon]]
+- [[E_AmmoType]]
+- [[E_WeaponSlot]]
 - [[S_WeaponData]]
+- [[WBP_AssetName]]
+- [[WBP_Tip]]
+
+## BP_MasterPickUpStaticMesh
+
+Depends on:
+
+- [[ALS_ChuckBP]]
+- [[ALS_Player_Controller]]
+- [[E_AmmoType]]
+- [[WBP_AssetName]]
+- [[WBP_HUD]]
+- [[WBP_Tip]]
 
 ## BP_WeaponMaster
 
@@ -727,7 +691,29 @@ Depends on:
 - [[ALS_OverlayState]]
 - [[BP_WeaponProjectileData]]
 - [[DT_Weapon]]
+- [[E_AmmoType]]
 - [[E_WeaponSlot]]
+- [[S_WeaponData]]
+
+## AIC_EnemyALS
+
+Depends on:
+
+- [[ALS_AI_Controller]]
+
+## BP_EnemyALS
+
+Depends on:
+
+- [[AIC_EnemyALS]]
+- [[ALS_AnimBP]]
+- [[ALS_BaseCharacterBP]]
+
+## BP_TestTrigger
+
+Depends on:
+
+- [[ALS_ChuckBP]]
 - [[S_WeaponData]]
 
 ## BPI_ChuckHUD
@@ -743,6 +729,12 @@ Depends on:
 - [[BPI_ChuckHUD]]
 - [[StandardMacros]]
 - [[WBP_Tip]]
+
+## E_WheelActionType
+
+Depends on:
+
+- Nessuno rilevato.
 
 ## S_WheelSlotData
 
@@ -780,10 +772,9 @@ Depends on:
 Depends on:
 
 - [[ALS_ChuckBP]]
-- [[ALS_OverlayState]]
 - [[BP_WeaponProjectileData]]
 - [[DT_Armor]]
-- [[DT_Weapon]]
+- [[E_AmmoType]]
 - [[E_ArmorSlot]]
 - [[E_WeaponSlot]]
 - [[S_ArmorData]]
@@ -793,11 +784,23 @@ Depends on:
 - [[WBP_SelectorButton]]
 - [[WBP_WeaponSelector]]
 
+## WBP_AssetName
+
+Depends on:
+
+- Nessuno rilevato.
+
 ## DT_ObjectsData
 
 Depends on:
 
 - [[F_ObjectData]]
+
+## E_ObjectsCategory
+
+Depends on:
+
+- Nessuno rilevato.
 
 ## F_ObjectData
 
@@ -855,6 +858,12 @@ Depends on:
 - [[CameraSettings]]
 - [[CameraSettings_Gait]]
 
+## AnimFeatureExample
+
+Depends on:
+
+- Nessuno rilevato.
+
 ## ALS_HUD
 
 Depends on:
@@ -871,6 +880,13 @@ Depends on:
 - [[ALS_Stance]]
 - [[ALS_ViewMode]]
 - [[StandardMacros]]
+
+## ALS_GameMode_SP
+
+Depends on:
+
+- [[ALS_ChuckBP]]
+- [[ALS_Player_Controller]]
 
 ## Editor
 
@@ -1038,6 +1054,7 @@ Used by:
 
 - [[ALS_GameMode_SP]]
 - [[ALS_HUD]]
+- [[ALS_Player_Controller]]
 - [[BP_MasterPickUpSkeletalMesh]]
 - [[BP_MasterPickUpStaticMesh]]
 - [[BP_TestTrigger]]
@@ -1055,6 +1072,14 @@ Used by:
 
 - [[ALS_ChuckBP]]
 - [[ALS_GameMode_SP]]
+- [[BP_MasterPickUpStaticMesh]]
+- [[WBP_CustomRadialMenu]]
+
+## BPI_Interaction
+
+Used by:
+
+- [[ALS_ChuckBP]]
 
 ## BP_WeaponProjectileData
 
@@ -1065,51 +1090,14 @@ Used by:
 - [[BP_WeaponMaster]]
 - [[S_WeaponData]]
 - [[WBP_ArmorSelector]]
-- [[WBP_HUD]]
 - [[WBP_MenuArchive]]
 - [[WBP_WeaponSelector]]
-
-## BPI_Interaction
-
-Used by:
-
-- [[ALS_ChuckBP]]
 
 ## BP_CharacterPreview
 
 Used by:
 
 - [[WBP_MenuArchive]]
-
-## AIC_EnemyALS
-
-Used by:
-
-- [[BP_EnemyALS]]
-
-## BP_EnemyALS
-
-Used by:
-
-- Nessuno rilevato.
-
-## ALS_GameMode_SP
-
-Used by:
-
-- Nessuno rilevato.
-
-## BP_MasterPickUpSkeletalMesh
-
-Used by:
-
-- Nessuno rilevato.
-
-## BP_MasterPickUpStaticMesh
-
-Used by:
-
-- Nessuno rilevato.
 
 ## MovementModelTable
 
@@ -1140,7 +1128,6 @@ Used by:
 - [[ALS_ChuckBP]]
 - [[BP_MasterPickUpSkeletalMesh]]
 - [[BP_WeaponMaster]]
-- [[WBP_ArmorSelector]]
 - [[WBP_MenuArchive]]
 
 ## DT_CharacterData
@@ -1348,7 +1335,6 @@ Used by:
 - [[OverlayStateSwitcher]]
 - [[S_WeaponData]]
 - [[S_WheelSlotData]]
-- [[WBP_ArmorSelector]]
 - [[WBP_MenuArchive]]
 
 ## ALS_RotationMode
@@ -1430,6 +1416,20 @@ Used by:
 - [[WBP_MenuArchive]]
 - [[WBP_WeaponSelector]]
 
+## E_AmmoType
+
+Used by:
+
+- [[ALS_ChuckBP]]
+- [[BP_MasterPickUpSkeletalMesh]]
+- [[BP_MasterPickUpStaticMesh]]
+- [[BP_WeaponMaster]]
+- [[S_WeaponData]]
+- [[WBP_ArmorSelector]]
+- [[WBP_HUD]]
+- [[WBP_MenuArchive]]
+- [[WBP_WeaponSelector]]
+
 ## E_ArmorSlot
 
 Used by:
@@ -1448,36 +1448,18 @@ Used by:
 - [[WBP_TabIntersect_CharacterCard]]
 - [[WBP_TabIntersect_CharacterSlot]]
 
-## AnimFeatureExample
-
-Used by:
-
-- Nessuno rilevato.
-
-## E_WheelActionType
-
-Used by:
-
-- [[S_WheelSlotData]]
-
-## E_ObjectsCategory
-
-Used by:
-
-- [[F_ObjectData]]
-
-## OverlayStateSwitcher
-
-Used by:
-
-- [[ALS_Player_Controller]]
-
 ## OverlayStateButton
 
 Used by:
 
 - [[OverlayStateButtonParams]]
 - [[OverlayStateSwitcher]]
+
+## OverlayStateSwitcher
+
+Used by:
+
+- [[ALS_Player_Controller]]
 
 ## WBP_Tip
 
@@ -1494,6 +1476,8 @@ Used by:
 
 - [[ALS_ChuckBP]]
 - [[ALS_Player_Controller]]
+- [[BP_MasterPickUpStaticMesh]]
+- [[WBP_CustomRadialMenu]]
 
 ## WBP_MenuArchive
 
@@ -1553,13 +1537,6 @@ Used by:
 
 - Nessuno rilevato.
 
-## WBP_AssetName
-
-Used by:
-
-- [[BP_MasterPickUpSkeletalMesh]]
-- [[BP_MasterPickUpStaticMesh]]
-
 ## ALS_AnimBP
 
 Used by:
@@ -1579,13 +1556,37 @@ Used by:
 
 - [[ALS_PlayerCameraManager]]
 
-## BP_TestTrigger
+## BP_MasterPickUpSkeletalMesh
+
+Used by:
+
+- Nessuno rilevato.
+
+## BP_MasterPickUpStaticMesh
 
 Used by:
 
 - Nessuno rilevato.
 
 ## BP_WeaponMaster
+
+Used by:
+
+- Nessuno rilevato.
+
+## AIC_EnemyALS
+
+Used by:
+
+- [[BP_EnemyALS]]
+
+## BP_EnemyALS
+
+Used by:
+
+- Nessuno rilevato.
+
+## BP_TestTrigger
 
 Used by:
 
@@ -1602,6 +1603,12 @@ Used by:
 Used by:
 
 - Nessuno rilevato.
+
+## E_WheelActionType
+
+Used by:
+
+- [[S_WheelSlotData]]
 
 ## S_WheelSlotData
 
@@ -1639,11 +1646,24 @@ Used by:
 
 - Nessuno rilevato.
 
+## WBP_AssetName
+
+Used by:
+
+- [[BP_MasterPickUpSkeletalMesh]]
+- [[BP_MasterPickUpStaticMesh]]
+
 ## DT_ObjectsData
 
 Used by:
 
 - Nessuno rilevato.
+
+## E_ObjectsCategory
+
+Used by:
+
+- [[F_ObjectData]]
 
 ## F_ObjectData
 
@@ -1700,7 +1720,19 @@ Used by:
 
 - Nessuno rilevato.
 
+## AnimFeatureExample
+
+Used by:
+
+- Nessuno rilevato.
+
 ## ALS_HUD
+
+Used by:
+
+- Nessuno rilevato.
+
+## ALS_GameMode_SP
 
 Used by:
 

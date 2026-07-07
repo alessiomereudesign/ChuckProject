@@ -1132,10 +1132,10 @@ Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; ri
 
 - Probable System: ALS / Locomotion (heuristic)
 - Parent Class: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C
-- Main Class: /Game/ChuckContent/ALS_ChuckBP.ALS_ChuckBP_C
+- Main Class: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C
 - Compile Status: UpToDate
-- Graph Count: 28
-- Node Count: 1216
+- Graph Count: 27
+- Node Count: 1272
 
 ### Important Variables
 
@@ -1156,9 +1156,9 @@ Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; ri
 - As ALS Player Controller
 - CurrentMagazineAmmo
 - InventoryAmmo
-- CurrentMaxMagazineCapacity
 - Inventory
-- OwnedWeaponData
+- CurrentWeaponData
+- CurrentWeaponIndex
 
 ### Interfaces
 
@@ -1185,10 +1185,11 @@ Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; ri
 - Evento Tick
 - FistsState
 - Flash
-- ReloadWeapon
+- ReloadCurrentWeapon
 - ResetCombo
 - ToggleArmorVisibility
 - ToggleWeaponsVisibility
+- TryAutoReloadCurrentWeapon
 - UnarmedState
 - UseConsumable
 
@@ -1218,7 +1219,6 @@ Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; ri
 - UpdateHeldObject
 - UpdateHeldObjectAnimations
 - UpdateLayeringColors
-- UpdateWeaponAmmoHUD
 - UserConstructionScript
 
 ### Macros
@@ -1227,8 +1227,8 @@ Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; ri
 
 ### Large Graphs
 
-- EventGraph (EventGraph): 374 nodes, 1325 pins, 418 links
-- AttackGraph (EventGraph): 299 nodes, 1253 pins, 369 links
+- EventGraph (EventGraph): 391 nodes, 1396 pins, 439 links
+- AttackGraph (EventGraph): 359 nodes, 1441 pins, 437 links
 - Set/ResetColors (Function): 104 nodes, 277 pins, 103 links
 - UpdateLayeringColors (Function): 80 nodes, 248 pins, 81 links
 - SetDynamicMaterials (Function): 48 nodes, 210 pins, 61 links
@@ -1276,25 +1276,26 @@ Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; ri
 - /Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/H2H/AM_MM_H2H_LeftPunch
 - /Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/H2H/AM_MM_H2H_RightBigPunch
 - /Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/H2H/AM_MM_H2H_RightPunch
-- /Game/ChuckContent/BP_Interactions/BP_WeaponProjectileData
-- /Game/ChuckContent/BP_Interactions/BPI_Interaction
+- /Game/ChuckContent/Blueprints/BPI_Interaction
 - /Game/ChuckContent/Input/IA_Interact
+- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData
+- /Game/ChuckContent/Systems/Weapons/Data/DT_Weapon
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/Interfaces/WBP_Tip
 - /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/MINIMAP/RT_Minimap
 - /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/DT_Armor
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/DT_Weapon
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
 - /Game/ChuckContent/UI/WIDGET_MENU/WBP_MenuPausa
 
 ### Notes
 
 Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
 
-[JSON completo](../Game_ChuckContent_ALS_ChuckBP.json)
+[JSON completo](../Game_ChuckContent_Blueprints_ALS_ChuckBP.json)
 
 ## ALS_Player_Controller
 
@@ -1303,7 +1304,7 @@ Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; ri
 - Main Class: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller.ALS_Player_Controller_C
 - Compile Status: UpToDate
 - Graph Count: 5
-- Node Count: 154
+- Node Count: 159
 
 ### Important Variables
 
@@ -1342,7 +1343,7 @@ Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; ri
 
 ### Large Graphs
 
-- EventGraph (EventGraph): 115 nodes, 397 pins, 105 links
+- EventGraph (EventGraph): 120 nodes, 411 pins, 111 links
 - GetInputKeys (EdGraph): 22 nodes, 72 pins, 27 links
 - BPI_Get_DebugInfo (EdGraph): 13 nodes, 35 pins, 12 links
 - IsActiveInputDevice (Function): 3 nodes, 7 pins, 3 links
@@ -1357,6 +1358,7 @@ Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; ri
 - /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Controller_BPI
 - /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Libraries/ALS_MacroLibrary
 - /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateSwitcher
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
 - /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD
 - /Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/WBP_CustomRadialMenu
 
@@ -1366,11 +1368,54 @@ Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; ri
 
 [JSON completo](../Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_Player_Controller.json)
 
+## BPI_Interaction
+
+- Probable System: Interaction (heuristic)
+- Parent Class: /Script/CoreUObject.Interface
+- Main Class: /Game/ChuckContent/Blueprints/BPI_Interaction.BPI_Interaction_C
+- Compile Status: UpToDate
+- Graph Count: 1
+- Node Count: 1
+
+### Important Variables
+
+- Nessuno rilevato.
+
+### Interfaces
+
+- Nessuno rilevato.
+
+### Events
+
+- Nessuno rilevato.
+
+### Functions
+
+- Interact
+
+### Macros
+
+- Nessuno rilevato.
+
+### Large Graphs
+
+- Interact (Function): 1 nodes, 1 pins, 0 links
+
+### Dependencies
+
+- Nessuno rilevato.
+
+### Notes
+
+Blueprint probabilmente collegato a 'Interaction' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
+
+[JSON completo](../Game_ChuckContent_Blueprints_BPI_Interaction.json)
+
 ## BP_WeaponProjectileData
 
 - Probable System: Weapons / Combat (heuristic)
 - Parent Class: /Script/Engine.Actor
-- Main Class: /Game/ChuckContent/BP_Interactions/BP_WeaponProjectileData.BP_WeaponProjectileData_C
+- Main Class: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C
 - Compile Status: UpToDate
 - Graph Count: 2
 - Node Count: 23
@@ -1414,50 +1459,7 @@ Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; ri
 
 Blueprint probabilmente collegato a 'Weapons / Combat' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
 
-[JSON completo](../Game_ChuckContent_BP_Interactions_BP_WeaponProjectileData.json)
-
-## BPI_Interaction
-
-- Probable System: Interaction (heuristic)
-- Parent Class: /Script/CoreUObject.Interface
-- Main Class: /Game/ChuckContent/BP_Interactions/BPI_Interaction.BPI_Interaction_C
-- Compile Status: UpToDate
-- Graph Count: 1
-- Node Count: 1
-
-### Important Variables
-
-- Nessuno rilevato.
-
-### Interfaces
-
-- Nessuno rilevato.
-
-### Events
-
-- Nessuno rilevato.
-
-### Functions
-
-- Interact
-
-### Macros
-
-- Nessuno rilevato.
-
-### Large Graphs
-
-- Interact (Function): 1 nodes, 1 pins, 0 links
-
-### Dependencies
-
-- Nessuno rilevato.
-
-### Notes
-
-Blueprint probabilmente collegato a 'Interaction' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
-
-[JSON completo](../Game_ChuckContent_BP_Interactions_BPI_Interaction.json)
+[JSON completo](../Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData.json)
 
 ## BP_CharacterPreview
 
@@ -1504,18 +1506,21 @@ Blueprint probabilmente collegato a 'UI / Widgets' in base a nome e path; riepil
 
 [JSON completo](../Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_CharacterPreview_BP_CharacterPreview.json)
 
-## AIC_EnemyALS
+## OverlayStateButton
 
-- Probable System: ALS / Locomotion (heuristic)
-- Parent Class: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_AI_Controller.ALS_AI_Controller_C
-- Main Class: /Game/ChuckContent/Enemies/AIC_EnemyALS.AIC_EnemyALS_C
+- Probable System: UI / Widgets (heuristic)
+- Parent Class: /Script/UMG.UserWidget
+- Main Class: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateButton.OverlayStateButton_C
 - Compile Status: UpToDate
 - Graph Count: 2
-- Node Count: 4
+- Node Count: 16
 
 ### Important Variables
 
-- Nessuno rilevato.
+- BackgroundSelectedColor
+- BackgroundUnSelectedColor
+- TextSelectedColor
+- TextUnSelectedColor
 
 ### Interfaces
 
@@ -1523,12 +1528,11 @@ Blueprint probabilmente collegato a 'UI / Widgets' in base a nome e path; riepil
 
 ### Events
 
-- Evento BeginPlay
-- Evento Tick
+- Nessuno rilevato.
 
 ### Functions
 
-- UserConstructionScript
+- SetVisualParameters
 
 ### Macros
 
@@ -1536,215 +1540,18 @@ Blueprint probabilmente collegato a 'UI / Widgets' in base a nome e path; riepil
 
 ### Large Graphs
 
-- EventGraph (EventGraph): 2 nodes, 5 pins, 0 links
-- UserConstructionScript (Function): 2 nodes, 4 pins, 1 links
+- SetVisualParameters (Function): 16 nodes, 42 pins, 16 links
+- EventGraph (EventGraph): 0 nodes, 0 pins, 0 links
 
 ### Dependencies
 
-- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_AI_Controller
+- Nessuno rilevato.
 
 ### Notes
 
-Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
+Widget Blueprint dedotto da prefisso o parent class; il comportamento va verificato tramite grafi e links.
 
-[JSON completo](../Game_ChuckContent_Enemies_AIC_EnemyALS.json)
-
-## BP_EnemyALS
-
-- Probable System: ALS / Locomotion (heuristic)
-- Parent Class: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C
-- Main Class: /Game/ChuckContent/Enemies/BP_EnemyALS.BP_EnemyALS_C
-- Compile Status: UpToDate
-- Graph Count: 2
-- Node Count: 20
-
-### Important Variables
-
-- Health
-
-### Interfaces
-
-- Nessuno rilevato.
-
-### Events
-
-- Evento AnyDamage
-
-### Functions
-
-- UserConstructionScript
-
-### Macros
-
-- Nessuno rilevato.
-
-### Large Graphs
-
-- EventGraph (EventGraph): 18 nodes, 67 pins, 19 links
-- UserConstructionScript (Function): 2 nodes, 4 pins, 1 links
-
-### Dependencies
-
-- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP
-- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP
-- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/Meshes/AnimMan
-- /Game/ChuckContent/Enemies/AIC_EnemyALS
-
-### Notes
-
-Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
-
-[JSON completo](../Game_ChuckContent_Enemies_BP_EnemyALS.json)
-
-## ALS_GameMode_SP
-
-- Probable System: ALS / Locomotion (heuristic)
-- Parent Class: /Script/Engine.GameModeBase
-- Main Class: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/GameModes/ALS_GameMode_SP.ALS_GameMode_SP_C
-- Compile Status: UpToDate
-- Graph Count: 2
-- Node Count: 2
-
-### Important Variables
-
-- Nessuno rilevato.
-
-### Interfaces
-
-- Nessuno rilevato.
-
-### Events
-
-- Evento BeginPlay
-
-### Functions
-
-- UserConstructionScript
-
-### Macros
-
-- Nessuno rilevato.
-
-### Large Graphs
-
-- EventGraph (EventGraph): 1 nodes, 2 pins, 0 links
-- UserConstructionScript (Function): 1 nodes, 1 pins, 0 links
-
-### Dependencies
-
-- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller
-- /Game/ChuckContent/ALS_ChuckBP
-
-### Notes
-
-Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
-
-[JSON completo](../Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_GameModes_ALS_GameMode_SP.json)
-
-## BP_MasterPickUpSkeletalMesh
-
-- Probable System: Interaction (heuristic)
-- Parent Class: /Script/Engine.Actor
-- Main Class: /Game/ChuckContent/BP_Interactions/BP_MasterPickUpSkeletalMesh.BP_MasterPickUpSkeletalMesh_C
-- Compile Status: UpToDate
-- Graph Count: 2
-- Node Count: 51
-
-### Important Variables
-
-- InstanceWeaponData
-
-### Interfaces
-
-- Nessuno rilevato.
-
-### Events
-
-- Evento BeginPlay
-- On Component Begin Overlap (Sphere)
-- On Component End Overlap (Sphere)
-
-### Functions
-
-- UserConstructionScript
-
-### Macros
-
-- Nessuno rilevato.
-
-### Large Graphs
-
-- EventGraph (EventGraph): 47 nodes, 209 pins, 54 links
-- UserConstructionScript (Function): 4 nodes, 14 pins, 4 links
-
-### Dependencies
-
-- /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Sound/RocketLauncher/wavs/RocketLauncher_Reload02
-- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState
-- /Game/ChuckContent/ALS_ChuckBP
-- /Game/ChuckContent/BP_Interactions/BP_WeaponProjectileData
-- /Game/ChuckContent/UI/files/MI_Outline
-- /Game/ChuckContent/UI/Interfaces/WBP_Tip
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_AssetName
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/DT_Weapon
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
-
-### Notes
-
-Blueprint probabilmente collegato a 'Interaction' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
-
-[JSON completo](../Game_ChuckContent_BP_Interactions_BP_MasterPickUpSkeletalMesh.json)
-
-## BP_MasterPickUpStaticMesh
-
-- Probable System: Interaction (heuristic)
-- Parent Class: /Script/Engine.Actor
-- Main Class: /Game/ChuckContent/BP_Interactions/BP_MasterPickUpStaticMesh.BP_MasterPickUpStaticMesh_C
-- Compile Status: UpToDate
-- Graph Count: 2
-- Node Count: 63
-
-### Important Variables
-
-- AmmoAmount
-
-### Interfaces
-
-- Nessuno rilevato.
-
-### Events
-
-- Evento BeginPlay
-- On Component Begin Overlap (Sphere)
-- On Component End Overlap (Sphere)
-
-### Functions
-
-- UserConstructionScript
-
-### Macros
-
-- Nessuno rilevato.
-
-### Large Graphs
-
-- EventGraph (EventGraph): 62 nodes, 216 pins, 70 links
-- UserConstructionScript (Function): 1 nodes, 1 pins, 0 links
-
-### Dependencies
-
-- /Engine/EditorBlueprintResources/StandardMacros
-- /Game/ChuckContent/ALS_ChuckBP
-- /Game/ChuckContent/UI/files/MI_Outline
-- /Game/ChuckContent/UI/Interfaces/WBP_Tip
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_AssetName
-
-### Notes
-
-Blueprint probabilmente collegato a 'Interaction' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
-
-[JSON completo](../Game_ChuckContent_BP_Interactions_BP_MasterPickUpStaticMesh.json)
+[JSON completo](../Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateButton.json)
 
 ## OverlayStateSwitcher
 
@@ -1802,60 +1609,13 @@ Blueprint probabilmente collegato a 'Interaction' in base a nome e path; riepilo
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode
-- /Game/ChuckContent/ALS_ChuckBP
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
 
 ### Notes
 
 Widget Blueprint dedotto da prefisso o parent class; il comportamento va verificato tramite grafi e links.
 
 [JSON completo](../Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher.json)
-
-## OverlayStateButton
-
-- Probable System: UI / Widgets (heuristic)
-- Parent Class: /Script/UMG.UserWidget
-- Main Class: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateButton.OverlayStateButton_C
-- Compile Status: UpToDate
-- Graph Count: 2
-- Node Count: 16
-
-### Important Variables
-
-- BackgroundSelectedColor
-- BackgroundUnSelectedColor
-- TextSelectedColor
-- TextUnSelectedColor
-
-### Interfaces
-
-- Nessuno rilevato.
-
-### Events
-
-- Nessuno rilevato.
-
-### Functions
-
-- SetVisualParameters
-
-### Macros
-
-- Nessuno rilevato.
-
-### Large Graphs
-
-- SetVisualParameters (Function): 16 nodes, 42 pins, 16 links
-- EventGraph (EventGraph): 0 nodes, 0 pins, 0 links
-
-### Dependencies
-
-- Nessuno rilevato.
-
-### Notes
-
-Widget Blueprint dedotto da prefisso o parent class; il comportamento va verificato tramite grafi e links.
-
-[JSON completo](../Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateButton.json)
 
 ## WBP_Tip
 
@@ -1910,7 +1670,7 @@ Widget Blueprint dedotto da prefisso o parent class; il comportamento va verific
 - Main Class: /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD.WBP_HUD_C
 - Compile Status: UpToDate
 - Graph Count: 1
-- Node Count: 37
+- Node Count: 35
 
 ### Important Variables
 
@@ -1935,19 +1695,19 @@ Widget Blueprint dedotto da prefisso o parent class; il comportamento va verific
 
 ### Large Graphs
 
-- EventGraph (EventGraph): 37 nodes, 121 pins, 42 links
+- EventGraph (EventGraph): 35 nodes, 113 pins, 43 links
 
 ### Dependencies
 
 - /Engine/EditorBlueprintResources/StandardMacros
-- /Game/ChuckContent/ALS_ChuckBP
-- /Game/ChuckContent/BP_Interactions/BP_WeaponProjectileData
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/files/ICONS/Fist
 - /Game/ChuckContent/UI/files/img/pngtree-design-element-collimation-material-png-image_7185230
 - /Game/ChuckContent/UI/files/Text/Text
 - /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/MINIMAP/M_Minimap_UI
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
 
 ### Notes
 
@@ -2030,7 +1790,7 @@ Widget Blueprint dedotto da prefisso o parent class; il comportamento va verific
 
 - EventGraph (EventGraph): 259 nodes, 778 pins, 300 links
 - OnKeyDown (Function): 245 nodes, 712 pins, 259 links
-- InventoryGraph (EventGraph): 183 nodes, 731 pins, 198 links
+- InventoryGraph (EventGraph): 183 nodes, 735 pins, 198 links
 - IntersectGraph (EventGraph): 95 nodes, 310 pins, 103 links
 - UpdateEquipmentSlots (Function): 70 nodes, 244 pins, 80 links
 
@@ -2042,8 +1802,12 @@ Widget Blueprint dedotto da prefisso o parent class; il comportamento va verific
 - /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Sound/Knife/Wavs/Knife_Raise
 - /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Sound/Knife/Wavs/KnifeA_Swing02
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState
-- /Game/ChuckContent/ALS_ChuckBP
-- /Game/ChuckContent/BP_Interactions/BP_WeaponProjectileData
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData
+- /Game/ChuckContent/Systems/Weapons/Data/DT_Weapon
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/files/ICONS/Antiprojectile_W
 - /Game/ChuckContent/UI/files/ICONS/Backpack_W
 - /Game/ChuckContent/UI/files/ICONS/medikit
@@ -2056,9 +1820,6 @@ Widget Blueprint dedotto da prefisso o parent class; il comportamento va verific
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/M_CharacterPreview_UI
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_SelectorButton
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/DT_Weapon
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/DT_CharacterData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/F_CharacterData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterCard
@@ -2179,10 +1940,10 @@ Widget Blueprint dedotto da prefisso o parent class; il comportamento va verific
 
 - /Engine/EditorBlueprintResources/StandardMacros
 - /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Sound/Rifle/Wavs/Rifle_Reload01
-- /Game/ChuckContent/ALS_ChuckBP
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/files/Text/ocr-a-bold_Font
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive
 
 ### Notes
@@ -2226,19 +1987,20 @@ Widget Blueprint dedotto da prefisso o parent class; il comportamento va verific
 
 ### Large Graphs
 
-- EventGraph (EventGraph): 108 nodes, 387 pins, 161 links
+- EventGraph (EventGraph): 108 nodes, 388 pins, 161 links
 
 ### Dependencies
 
 - /Engine/EditorBlueprintResources/StandardMacros
-- /Game/ChuckContent/ALS_ChuckBP
-- /Game/ChuckContent/BP_Interactions/BP_WeaponProjectileData
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/DT_Armor
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_SelectorButton
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive
 
 ### Notes
@@ -2362,12 +2124,13 @@ Widget Blueprint dedotto da prefisso o parent class; il comportamento va verific
 - Main Class: /Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/WBP_CustomRadialMenu.WBP_CustomRadialMenu_C
 - Compile Status: UpToDate
 - Graph Count: 1
-- Node Count: 129
+- Node Count: 137
 
 ### Important Variables
 
 - TargetIndex
 - CurrentSelectedSlot
+- As ALS Player Controller
 
 ### Interfaces
 
@@ -2389,13 +2152,16 @@ Widget Blueprint dedotto da prefisso o parent class; il comportamento va verific
 
 ### Large Graphs
 
-- EventGraph (EventGraph): 129 nodes, 423 pins, 159 links
+- EventGraph (EventGraph): 137 nodes, 451 pins, 169 links
 
 ### Dependencies
 
 - /Engine/EditorBlueprintResources/StandardMacros
 - /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Sound/Pistol/Wavs/Pistol_Reload01
-- /Game/ChuckContent/ALS_ChuckBP
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/files/ICONS/Fist
 - /Game/ChuckContent/UI/files/ICONS/glasses
 - /Game/ChuckContent/UI/files/ICONS/knife
@@ -2403,8 +2169,7 @@ Widget Blueprint dedotto da prefisso o parent class; il comportamento va verific
 - /Game/ChuckContent/UI/files/ICONS/pistol
 - /Game/ChuckContent/UI/files/ICONS/rifle
 - /Game/ChuckContent/UI/files/ICONS/sandwitch
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
+- /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD
 - /Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/tast
 
 ### Notes
@@ -2467,52 +2232,6 @@ Widget Blueprint dedotto da prefisso o parent class; il comportamento va verific
 Widget Blueprint dedotto da prefisso o parent class; il comportamento va verificato tramite grafi e links.
 
 [JSON completo](../Game_ChuckContent_UI_WIDGET_MENU_0_MAIN_MENU_WBP_MenuPrincipale.json)
-
-## WBP_AssetName
-
-- Probable System: UI / Widgets (heuristic)
-- Parent Class: /Script/UMG.UserWidget
-- Main Class: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_AssetName.WBP_AssetName_C
-- Compile Status: UpToDate
-- Graph Count: 2
-- Node Count: 9
-
-### Important Variables
-
-- Nessuno rilevato.
-
-### Interfaces
-
-- Nessuno rilevato.
-
-### Events
-
-- Evento Construct
-- Evento Pre Construct
-- Evento Tick
-
-### Functions
-
-- SetAssetName
-
-### Macros
-
-- Nessuno rilevato.
-
-### Large Graphs
-
-- SetAssetName (Function): 5 nodes, 11 pins, 5 links
-- EventGraph (EventGraph): 4 nodes, 11 pins, 0 links
-
-### Dependencies
-
-- /Game/ChuckContent/UI/files/Text/ocr-a-bold_Font
-
-### Notes
-
-Widget Blueprint dedotto da prefisso o parent class; il comportamento va verificato tramite grafi e links.
-
-[JSON completo](../Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_AssetName.json)
 
 ## ALS_AnimBP
 
@@ -2877,11 +2596,263 @@ Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; ri
 
 [JSON completo](../Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraBehavior.json)
 
+## BP_MasterPickUpSkeletalMesh
+
+- Probable System: Weapons / Combat (heuristic)
+- Parent Class: /Script/Engine.Actor
+- Main Class: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_MasterPickUpSkeletalMesh.BP_MasterPickUpSkeletalMesh_C
+- Compile Status: UpToDate
+- Graph Count: 2
+- Node Count: 51
+
+### Important Variables
+
+- InstanceWeaponData
+
+### Interfaces
+
+- Nessuno rilevato.
+
+### Events
+
+- Evento BeginPlay
+- On Component Begin Overlap (Sphere)
+- On Component End Overlap (Sphere)
+
+### Functions
+
+- UserConstructionScript
+
+### Macros
+
+- Nessuno rilevato.
+
+### Large Graphs
+
+- EventGraph (EventGraph): 47 nodes, 209 pins, 54 links
+- UserConstructionScript (Function): 4 nodes, 14 pins, 4 links
+
+### Dependencies
+
+- /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Sound/RocketLauncher/wavs/RocketLauncher_Reload02
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData
+- /Game/ChuckContent/Systems/Weapons/Data/DT_Weapon
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
+- /Game/ChuckContent/UI/files/MI_Outline
+- /Game/ChuckContent/UI/Interfaces/WBP_Tip
+- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_AssetName
+
+### Notes
+
+Blueprint probabilmente collegato a 'Weapons / Combat' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
+
+[JSON completo](../Game_ChuckContent_Systems_Weapons_Blueprints_BP_MasterPickUpSkeletalMesh.json)
+
+## BP_MasterPickUpStaticMesh
+
+- Probable System: Weapons / Combat (heuristic)
+- Parent Class: /Script/Engine.Actor
+- Main Class: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_MasterPickUpStaticMesh.BP_MasterPickUpStaticMesh_C
+- Compile Status: UpToDate
+- Graph Count: 2
+- Node Count: 40
+
+### Important Variables
+
+- AmmoAmount
+- AmmoType
+- As ALS Player Controller
+
+### Interfaces
+
+- Nessuno rilevato.
+
+### Events
+
+- Evento BeginPlay
+- On Component Begin Overlap (Sphere)
+- On Component End Overlap (Sphere)
+
+### Functions
+
+- UserConstructionScript
+
+### Macros
+
+- Nessuno rilevato.
+
+### Large Graphs
+
+- EventGraph (EventGraph): 39 nodes, 152 pins, 45 links
+- UserConstructionScript (Function): 1 nodes, 1 pins, 0 links
+
+### Dependencies
+
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/UI/files/MI_Outline
+- /Game/ChuckContent/UI/Interfaces/WBP_Tip
+- /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD
+- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_AssetName
+
+### Notes
+
+Blueprint probabilmente collegato a 'Weapons / Combat' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
+
+[JSON completo](../Game_ChuckContent_Systems_Weapons_Blueprints_BP_MasterPickUpStaticMesh.json)
+
+## BP_WeaponMaster
+
+- Probable System: Weapons / Combat (heuristic)
+- Parent Class: /Script/Engine.Actor
+- Main Class: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponMaster.BP_WeaponMaster_C
+- Compile Status: UpToDate
+- Graph Count: 2
+- Node Count: 5
+
+### Important Variables
+
+- WeaponName
+- CurrentMagazineAmmo
+
+### Interfaces
+
+- Nessuno rilevato.
+
+### Events
+
+- Evento BeginPlay
+
+### Functions
+
+- UserConstructionScript
+
+### Macros
+
+- Nessuno rilevato.
+
+### Large Graphs
+
+- EventGraph (EventGraph): 4 nodes, 46 pins, 4 links
+- UserConstructionScript (Function): 1 nodes, 1 pins, 0 links
+
+### Dependencies
+
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState
+- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData
+- /Game/ChuckContent/Systems/Weapons/Data/DT_Weapon
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
+
+### Notes
+
+Blueprint probabilmente collegato a 'Weapons / Combat' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
+
+[JSON completo](../Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponMaster.json)
+
+## AIC_EnemyALS
+
+- Probable System: ALS / Locomotion (heuristic)
+- Parent Class: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_AI_Controller.ALS_AI_Controller_C
+- Main Class: /Game/ChuckContent/Blueprints/Enemies/AIC_EnemyALS.AIC_EnemyALS_C
+- Compile Status: UpToDate
+- Graph Count: 2
+- Node Count: 4
+
+### Important Variables
+
+- Nessuno rilevato.
+
+### Interfaces
+
+- Nessuno rilevato.
+
+### Events
+
+- Evento BeginPlay
+- Evento Tick
+
+### Functions
+
+- UserConstructionScript
+
+### Macros
+
+- Nessuno rilevato.
+
+### Large Graphs
+
+- EventGraph (EventGraph): 2 nodes, 5 pins, 0 links
+- UserConstructionScript (Function): 2 nodes, 4 pins, 1 links
+
+### Dependencies
+
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_AI_Controller
+
+### Notes
+
+Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
+
+[JSON completo](../Game_ChuckContent_Blueprints_Enemies_AIC_EnemyALS.json)
+
+## BP_EnemyALS
+
+- Probable System: ALS / Locomotion (heuristic)
+- Parent Class: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C
+- Main Class: /Game/ChuckContent/Blueprints/Enemies/BP_EnemyALS.BP_EnemyALS_C
+- Compile Status: UpToDate
+- Graph Count: 2
+- Node Count: 20
+
+### Important Variables
+
+- Health
+
+### Interfaces
+
+- Nessuno rilevato.
+
+### Events
+
+- Evento AnyDamage
+
+### Functions
+
+- UserConstructionScript
+
+### Macros
+
+- Nessuno rilevato.
+
+### Large Graphs
+
+- EventGraph (EventGraph): 18 nodes, 67 pins, 19 links
+- UserConstructionScript (Function): 2 nodes, 4 pins, 1 links
+
+### Dependencies
+
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/Meshes/AnimMan
+- /Game/ChuckContent/Blueprints/Enemies/AIC_EnemyALS
+
+### Notes
+
+Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
+
+[JSON completo](../Game_ChuckContent_Blueprints_Enemies_BP_EnemyALS.json)
+
 ## BP_TestTrigger
 
-- Probable System: Interaction (heuristic)
+- Probable System: Misc / Unknown (heuristic)
 - Parent Class: /Script/Engine.Actor
-- Main Class: /Game/ChuckContent/BP_Interactions/BP_TestTrigger.BP_TestTrigger_C
+- Main Class: /Game/ChuckContent/Blueprints/BP_TestTrigger.BP_TestTrigger_C
 - Compile Status: UpToDateWithWarnings
 - Graph Count: 2
 - Node Count: 8
@@ -2918,62 +2889,14 @@ Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; ri
 
 - /Engine/BasicShapes/BasicShapeMaterial
 - /Engine/BasicShapes/Cube
-- /Game/ChuckContent/ALS_ChuckBP
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 
 ### Notes
 
-Blueprint probabilmente collegato a 'Interaction' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
+Blueprint probabilmente collegato a 'Misc / Unknown' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
 
-[JSON completo](../Game_ChuckContent_BP_Interactions_BP_TestTrigger.json)
-
-## BP_WeaponMaster
-
-- Probable System: Weapons / Combat (heuristic)
-- Parent Class: /Script/Engine.Actor
-- Main Class: /Game/ChuckContent/BP_Interactions/BP_WeaponMaster.BP_WeaponMaster_C
-- Compile Status: UpToDate
-- Graph Count: 2
-- Node Count: 5
-
-### Important Variables
-
-- WeaponName
-- CurrentMagazineAmmo
-
-### Interfaces
-
-- Nessuno rilevato.
-
-### Events
-
-- Evento BeginPlay
-
-### Functions
-
-- UserConstructionScript
-
-### Macros
-
-- Nessuno rilevato.
-
-### Large Graphs
-
-- EventGraph (EventGraph): 4 nodes, 46 pins, 4 links
-- UserConstructionScript (Function): 1 nodes, 1 pins, 0 links
-
-### Dependencies
-
-- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/DT_Weapon
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
-
-### Notes
-
-Blueprint probabilmente collegato a 'Weapons / Combat' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
-
-[JSON completo](../Game_ChuckContent_BP_Interactions_BP_WeaponMaster.json)
+[JSON completo](../Game_ChuckContent_Blueprints_BP_TestTrigger.json)
 
 ## BPI_ChuckHUD
 
@@ -3069,9 +2992,9 @@ Blueprint probabilmente collegato a 'UI / Widgets' in base a nome e path; riepil
 - Probable System: UI / Widgets (heuristic)
 - Parent Class: /Script/UMG.UserWidget
 - Main Class: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_ArmorSelector.WBP_ArmorSelector_C
-- Compile Status: Error
+- Compile Status: UpToDate
 - Graph Count: 1
-- Node Count: 106
+- Node Count: 108
 
 ### Important Variables
 
@@ -3099,21 +3022,21 @@ Blueprint probabilmente collegato a 'UI / Widgets' in base a nome e path; riepil
 
 ### Large Graphs
 
-- EventGraph (EventGraph): 106 nodes, 406 pins, 158 links
+- EventGraph (EventGraph): 108 nodes, 388 pins, 161 links
 
 ### Dependencies
 
 - /Engine/EditorBlueprintResources/StandardMacros
-- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState
-- /Game/ChuckContent/ALS_ChuckBP
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/DT_Armor
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_SelectorButton
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/DT_Weapon
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/E_WeaponSlot
-- /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Weapons/S_WeaponData
 - /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive
 
 ### Notes
@@ -3121,6 +3044,52 @@ Blueprint probabilmente collegato a 'UI / Widgets' in base a nome e path; riepil
 Widget Blueprint dedotto da prefisso o parent class; il comportamento va verificato tramite grafi e links.
 
 [JSON completo](../Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_ArmorSelector.json)
+
+## WBP_AssetName
+
+- Probable System: UI / Widgets (heuristic)
+- Parent Class: /Script/UMG.UserWidget
+- Main Class: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_AssetName.WBP_AssetName_C
+- Compile Status: UpToDate
+- Graph Count: 2
+- Node Count: 9
+
+### Important Variables
+
+- Nessuno rilevato.
+
+### Interfaces
+
+- Nessuno rilevato.
+
+### Events
+
+- Evento Construct
+- Evento Pre Construct
+- Evento Tick
+
+### Functions
+
+- SetAssetName
+
+### Macros
+
+- Nessuno rilevato.
+
+### Large Graphs
+
+- SetAssetName (Function): 5 nodes, 11 pins, 5 links
+- EventGraph (EventGraph): 4 nodes, 11 pins, 0 links
+
+### Dependencies
+
+- /Game/ChuckContent/UI/files/Text/ocr-a-bold_Font
+
+### Notes
+
+Widget Blueprint dedotto da prefisso o parent class; il comportamento va verificato tramite grafi e links.
+
+[JSON completo](../Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_AssetName.json)
 
 ## BP_Knife_GripVariant_Mann
 
@@ -3444,13 +3413,58 @@ Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; ri
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode
-- /Game/ChuckContent/ALS_ChuckBP
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
 
 ### Notes
 
 Widget Blueprint dedotto da prefisso o parent class; il comportamento va verificato tramite grafi e links.
 
 [JSON completo](../Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD.json)
+
+## ALS_GameMode_SP
+
+- Probable System: ALS / Locomotion (heuristic)
+- Parent Class: /Script/Engine.GameModeBase
+- Main Class: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/GameModes/ALS_GameMode_SP.ALS_GameMode_SP_C
+- Compile Status: UpToDate
+- Graph Count: 2
+- Node Count: 2
+
+### Important Variables
+
+- Nessuno rilevato.
+
+### Interfaces
+
+- Nessuno rilevato.
+
+### Events
+
+- Evento BeginPlay
+
+### Functions
+
+- UserConstructionScript
+
+### Macros
+
+- Nessuno rilevato.
+
+### Large Graphs
+
+- EventGraph (EventGraph): 1 nodes, 2 pins, 0 links
+- UserConstructionScript (Function): 1 nodes, 1 pins, 0 links
+
+### Dependencies
+
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller
+- /Game/ChuckContent/Blueprints/ALS_ChuckBP
+
+### Notes
+
+Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.
+
+[JSON completo](../Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_GameModes_ALS_GameMode_SP.json)
 
 ## Editor
 
