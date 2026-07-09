@@ -5,12 +5,12 @@ Export statico e in sola lettura del progetto Chuck_The_Game.
 ## Export Summary
 
 - Unreal Engine: 5.4.4-35576357+++UE5+Release-5.4
-- Schema Version: 2.1
-- Assets Exported: 45
-- Blueprint: 24
-- Data Tables: 7
-- Structs: 8
-- Enums: 6
+- Schema Version: 2.2
+- Assets Exported: 113
+- Blueprint: 60
+- Data Tables: 8
+- Structs: 26
+- Enums: 19
 - Assets With Errors: 0
 
 ## Recommended Reading Order
@@ -36,6 +36,9 @@ Export statico e in sola lettura del progetto Chuck_The_Game.
 - [Compile Status](CompileStatus.md)
 - [AI Instructions](AI_Instructions.md)
 - [Semantic Summary](SemanticSummary.json)
+- [Export Summary](ExportSummary.md)
+- [Change Report](ChangeReport.md)
+- [Semantic Diff](SemanticDiff.json)
 
 ## Important Notes
 

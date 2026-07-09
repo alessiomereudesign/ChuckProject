@@ -6,31 +6,147 @@ Sistemi dedotti euristicamente; non sono dichiarazioni sul gameplay design.
 
 ### Primary Assets
 
+- [[ALS_AnimBP]]
 - [[ALS_ChuckBP]]
-- [[AIC_EnemyALS]]
-- [[BP_EnemyALS]]
+- [[ALS_BaseCharacterBP]]
 
 ### Secondary Assets
 
-- Nessuno rilevato.
+- [[ALS_OverlayState]]
+- [[ALS_RotationMode]]
+- [[ALS_MovementState]]
+- [[ALS_MovementAction]]
+- [[ALS_Gait]]
+- [[ALS_ViewMode]]
+- [[ALS_Stance]]
+- [[ALS_Character_BPI]]
+- [[ALS_Controller_BPI]]
+- [[ALS_Player_Controller]]
+- [[ALS_Camera_BPI]]
+- [[ALS_MacroLibrary]]
+- [[ALS_Animation_BPI]]
+- [[MovementSettings]]
+- [[GroundedEntryState]]
+- [[ALS_ComponentAndTransform]]
+- [[ALS_PlayerCameraManager]]
+- [[ALS_PlayerCameraBehavior]]
+- [[ALS_AI_Controller]]
+- [[Mantle_Asset]]
+- [[MovementSettings_Stance]]
+- [[MantleType]]
+- [[CameraSettings]]
+- [[MovementSettings_State]]
+- [[AnimCurveCreationData]]
+- [[SimpleObjectBuilder]]
+- [[Bow_AnimBP]]
+- [[AIC_EnemyALS]]
+- [[Mantle_Params]]
+- [[Mantle_TraceSettings]]
+- [[MovementModelTable]]
+- [[CameraSettings_Gait]]
+- [[AnimCurveCreationParams]]
+- [[DynamicMontageParams]]
+- [[LeanAmount]]
+- [[RotateInPlace_Asset]]
+- [[TurnInPlace_Asset]]
+- [[VelocityBlend]]
+- [[MovementDirection]]
+- [[HipsDirection]]
+- [[FootstepType]]
+- [[SimpleMovingObject]]
+- [[EarlyBlendOut_NotifyState]]
+- [[Calculate_RotationAmount]]
+- [[Create_LayeringCurves]]
+- [[Create_Curves]]
+- [[Copy_Curves]]
+- [[Footstep_AnimNotify]]
+- [[BP_EnemyALS]]
+- [[MovementAction_NotifyState]]
+- [[OverlayOverride_NotifyState]]
+- [[ALS_BTTask_GetRandomLocation]]
+- [[CameraShake_Notify]]
+- [[GroundedEntryState_AnimNotify]]
+- [[Editor]]
+- [[ALS_BTTask_SetFocus]]
+- [[ALS_GameMode_SP]]
+- [[CameraSettings_State]]
+- [[Sprint_CameraShake]]
+- [[AnimFeatureExample]]
 
 ### Structs
 
-- Nessuno rilevato.
+- [[MovementSettings]]
+- [[ALS_ComponentAndTransform]]
+- [[Mantle_Asset]]
+- [[MovementSettings_Stance]]
+- [[CameraSettings]]
+- [[MovementSettings_State]]
+- [[AnimCurveCreationData]]
+- [[Mantle_Params]]
+- [[Mantle_TraceSettings]]
+- [[CameraSettings_Gait]]
+- [[AnimCurveCreationParams]]
+- [[DynamicMontageParams]]
+- [[LeanAmount]]
+- [[RotateInPlace_Asset]]
+- [[TurnInPlace_Asset]]
+- [[VelocityBlend]]
+- [[CameraSettings_State]]
 
 ### Enums
 
-- Nessuno rilevato.
+- [[ALS_OverlayState]]
+- [[ALS_RotationMode]]
+- [[ALS_MovementState]]
+- [[ALS_MovementAction]]
+- [[ALS_Gait]]
+- [[ALS_ViewMode]]
+- [[ALS_Stance]]
+- [[GroundedEntryState]]
+- [[MantleType]]
+- [[MovementDirection]]
+- [[HipsDirection]]
+- [[FootstepType]]
+- [[AnimFeatureExample]]
 
 ### Data Tables
 
-- Nessuno rilevato.
+- [[MovementModelTable]]
 
 ### Blueprint / Widget
 
+- [[ALS_AnimBP]]
 - [[ALS_ChuckBP]]
+- [[ALS_BaseCharacterBP]]
+- [[ALS_Character_BPI]]
+- [[ALS_Controller_BPI]]
+- [[ALS_Player_Controller]]
+- [[ALS_Camera_BPI]]
+- [[ALS_MacroLibrary]]
+- [[ALS_Animation_BPI]]
+- [[ALS_PlayerCameraManager]]
+- [[ALS_PlayerCameraBehavior]]
+- [[ALS_AI_Controller]]
+- [[SimpleObjectBuilder]]
+- [[Bow_AnimBP]]
 - [[AIC_EnemyALS]]
+- [[SimpleMovingObject]]
+- [[EarlyBlendOut_NotifyState]]
+- [[Calculate_RotationAmount]]
+- [[Create_LayeringCurves]]
+- [[Create_Curves]]
+- [[Copy_Curves]]
+- [[Footstep_AnimNotify]]
 - [[BP_EnemyALS]]
+- [[MovementAction_NotifyState]]
+- [[OverlayOverride_NotifyState]]
+- [[ALS_BTTask_GetRandomLocation]]
+- [[CameraShake_Notify]]
+- [[GroundedEntryState_AnimNotify]]
+- [[Editor]]
+- [[ALS_BTTask_SetFocus]]
+- [[ALS_GameMode_SP]]
+- [[Sprint_CameraShake]]
 
 ### Notes
 
@@ -40,8 +156,8 @@ Classificazione euristica dedotta da nome, path e tipo asset (ALS / Locomotion).
 
 ### Primary Assets
 
-- [[BPI_Interaction]]
 - [[S_InteractionPrompt]]
+- [[BPI_Interaction]]
 
 ### Secondary Assets
 
@@ -97,53 +213,92 @@ Classificazione euristica dedotta da nome, path e tipo asset (Interaction).
 
 Nessuna parola chiave chiara nel nome o nel path.
 
+## Player / Character
+
+### Primary Assets
+
+- [[BP_Knife_Mann]]
+- [[BP_Sword_Mann]]
+- [[BP_Knife_GripVariant_Mann]]
+
+### Secondary Assets
+
+- Nessuno rilevato.
+
+### Structs
+
+- Nessuno rilevato.
+
+### Enums
+
+- Nessuno rilevato.
+
+### Data Tables
+
+- Nessuno rilevato.
+
+### Blueprint / Widget
+
+- [[BP_Knife_Mann]]
+- [[BP_Sword_Mann]]
+- [[BP_Knife_GripVariant_Mann]]
+
+### Notes
+
+Classificazione euristica dedotta da nome, path e tipo asset (Player / Character).
+
 ## UI / Widgets
 
 ### Primary Assets
 
 - [[WBP_MenuArchive]]
-- [[S_ArmorData]]
-- [[E_ArmorSlot]]
+- [[WBP_HUD]]
+- [[WBP_WeaponSelector]]
 
 ### Secondary Assets
 
-- [[WBP_Tip]]
-- [[WBP_WeaponSelector]]
-- [[DT_Armor]]
 - [[F_CharacterData]]
-- [[WBP_HUD]]
+- [[S_ArmorData]]
+- [[E_ArmorSlot]]
 - [[WBP_SelectorButton]]
 - [[E_CharactersAffiliates]]
+- [[DT_Armor]]
 - [[WBP_MenuPausa]]
-- [[WBP_AssetName]]
-- [[Text]]
-- [[WBP_TabIntersect_CharacterCard]]
 - [[WBP_CustomRadialMenu]]
+- [[WBP_Tip]]
+- [[OverlayStateButton]]
+- [[OverlayStateSwitcher]]
+- [[Text]]
+- [[ALS_HUD]]
+- [[WBP_TabIntersect_CharacterCard]]
 - [[WBP_TabIntersect_CharacterSlot]]
 - [[BP_CharacterPreview]]
+- [[WBP_AssetName]]
+- [[WBP_GenericPrompt]]
 - [[WBP_ArmorSelector]]
 - [[BPI_ChuckHUD]]
-- [[E_WheelActionType]]
-- [[S_ConsumableData]]
+- [[F_ObjectData]]
 - [[DT_CharacterData]]
+- [[S_ConsumableData]]
+- [[OverlayStateButtonParams]]
+- [[E_WheelActionType]]
 - [[E_ObjectsCategory]]
 - [[S_ItemsData]]
-- [[F_ObjectData]]
 - [[WBP_MenuPrincipale]]
 - [[Chuck_HUD]]
 - [[S_WheelSlotData]]
 - [[DT_Consumable]]
-- [[DT_Items]]
 - [[DT_ObjectsData]]
-- [[WBP_GenericPrompt]]
+- [[DT_Items]]
 
 ### Structs
 
-- [[S_ArmorData]]
 - [[F_CharacterData]]
-- [[S_ConsumableData]]
-- [[S_ItemsData]]
+- [[S_ArmorData]]
 - [[F_ObjectData]]
+- [[S_ConsumableData]]
+- [[OverlayStateButtonParams]]
+- [[S_ItemsData]]
 - [[S_WheelSlotData]]
 
 ### Enums
@@ -159,27 +314,30 @@ Nessuna parola chiave chiara nel nome o nel path.
 - [[Text]]
 - [[DT_CharacterData]]
 - [[DT_Consumable]]
-- [[DT_Items]]
 - [[DT_ObjectsData]]
+- [[DT_Items]]
 
 ### Blueprint / Widget
 
 - [[WBP_MenuArchive]]
-- [[WBP_Tip]]
-- [[WBP_WeaponSelector]]
 - [[WBP_HUD]]
+- [[WBP_WeaponSelector]]
 - [[WBP_SelectorButton]]
 - [[WBP_MenuPausa]]
-- [[WBP_AssetName]]
-- [[WBP_TabIntersect_CharacterCard]]
 - [[WBP_CustomRadialMenu]]
+- [[WBP_Tip]]
+- [[OverlayStateButton]]
+- [[OverlayStateSwitcher]]
+- [[ALS_HUD]]
+- [[WBP_TabIntersect_CharacterCard]]
 - [[WBP_TabIntersect_CharacterSlot]]
 - [[BP_CharacterPreview]]
+- [[WBP_AssetName]]
+- [[WBP_GenericPrompt]]
 - [[WBP_ArmorSelector]]
 - [[BPI_ChuckHUD]]
 - [[WBP_MenuPrincipale]]
 - [[Chuck_HUD]]
-- [[WBP_GenericPrompt]]
 
 ### Notes
 
@@ -196,9 +354,10 @@ Classificazione euristica dedotta da nome, path e tipo asset (UI / Widgets).
 ### Secondary Assets
 
 - [[BP_WeaponProjectileData]]
+- [[BP_WeaponBase]]
 - [[DT_Weapon]]
-- [[BP_MasterPickUpSkeletalMesh]]
-- [[BP_MasterPickUpStaticMesh]]
+- [[BP_WeaponPickUp]]
+- [[BP_AmmoPickUp]]
 
 ### Structs
 
@@ -216,8 +375,9 @@ Classificazione euristica dedotta da nome, path e tipo asset (UI / Widgets).
 ### Blueprint / Widget
 
 - [[BP_WeaponProjectileData]]
-- [[BP_MasterPickUpSkeletalMesh]]
-- [[BP_MasterPickUpStaticMesh]]
+- [[BP_WeaponBase]]
+- [[BP_WeaponPickUp]]
+- [[BP_AmmoPickUp]]
 
 ### Notes
 

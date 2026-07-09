@@ -1,0 +1,257 @@
+# Change Report
+
+- Export date: 2026-07-10 00:23:17
+- Assets exported: 113
+- First export detected.
+
+## Asset esportati
+
+- ALS_MacroLibrary (Blueprint)
+- ALS_BTTask_GetRandomLocation (Blueprint)
+- ALS_BTTask_SetFocus (Blueprint)
+- ALS_AI_Controller (Blueprint)
+- ALS_Animation_BPI (Blueprint)
+- ALS_Camera_BPI (Blueprint)
+- ALS_Character_BPI (Blueprint)
+- ALS_Controller_BPI (Blueprint)
+- ALS_BaseCharacterBP (Blueprint)
+- CameraShake_Notify (Blueprint)
+- GroundedEntryState_AnimNotify (Blueprint)
+- Sprint_CameraShake (Blueprint)
+- Footstep_AnimNotify (Blueprint)
+- Calculate_RotationAmount (Blueprint)
+- Create_LayeringCurves (Blueprint)
+- Copy_Curves (Blueprint)
+- Create_Curves (Blueprint)
+- MovementAction_NotifyState (Blueprint)
+- OverlayOverride_NotifyState (Blueprint)
+- EarlyBlendOut_NotifyState (Blueprint)
+- ALS_PlayerCameraManager (Blueprint)
+- ALS_ChuckBP (Blueprint)
+- ALS_Player_Controller (Blueprint)
+- BPI_Interaction (Blueprint)
+- BP_WeaponProjectileData (Blueprint)
+- BP_WeaponBase (Blueprint)
+- BP_CharacterPreview (Blueprint)
+- AIC_EnemyALS (Blueprint)
+- BP_EnemyALS (Blueprint)
+- ALS_GameMode_SP (Blueprint)
+- BP_AmmoPickUp (Blueprint)
+- BP_WeaponPickUp (Blueprint)
+- MovementModelTable (DataTable)
+- Text (DataTable)
+- DT_Armor (DataTable)
+- DT_Weapon (DataTable)
+- DT_CharacterData (DataTable)
+- ALS_ComponentAndTransform (Struct)
+- MovementSettings (Struct)
+- MovementSettings_Stance (Struct)
+- MovementSettings_State (Struct)
+- Mantle_Asset (Struct)
+- Mantle_Params (Struct)
+- Mantle_TraceSettings (Struct)
+- AnimCurveCreationData (Struct)
+- AnimCurveCreationParams (Struct)
+- DynamicMontageParams (Struct)
+- LeanAmount (Struct)
+- RotateInPlace_Asset (Struct)
+- TurnInPlace_Asset (Struct)
+- VelocityBlend (Struct)
+- S_WeaponData (Struct)
+- S_InteractionPrompt (Struct)
+- OverlayStateButtonParams (Struct)
+- S_ArmorData (Struct)
+- F_CharacterData (Struct)
+- GroundedEntryState (Enum)
+- ALS_Gait (Enum)
+- ALS_MovementAction (Enum)
+- ALS_MovementState (Enum)
+- ALS_OverlayState (Enum)
+- ALS_RotationMode (Enum)
+- ALS_Stance (Enum)
+- ALS_ViewMode (Enum)
+- MantleType (Enum)
+- FootstepType (Enum)
+- HipsDirection (Enum)
+- MovementDirection (Enum)
+- E_WeaponSlot (Enum)
+- E_AmmoType (Enum)
+- E_ArmorSlot (Enum)
+- E_CharactersAffiliates (Enum)
+- E_WheelActionType (Enum)
+- AnimFeatureExample (Enum)
+- E_ObjectsCategory (Enum)
+- OverlayStateButton (Blueprint)
+- OverlayStateSwitcher (Blueprint)
+- WBP_Tip (Blueprint)
+- WBP_HUD (Blueprint)
+- WBP_MenuArchive (Blueprint)
+- WBP_TabIntersect_CharacterSlot (Blueprint)
+- WBP_SelectorButton (Blueprint)
+- WBP_WeaponSelector (Blueprint)
+- WBP_MenuPausa (Blueprint)
+- WBP_TabIntersect_CharacterCard (Blueprint)
+- WBP_GenericPrompt (Blueprint)
+- WBP_CustomRadialMenu (Blueprint)
+- WBP_MenuPrincipale (Blueprint)
+- WBP_AssetName (Blueprint)
+- ALS_AnimBP (Blueprint)
+- Bow_AnimBP (Blueprint)
+- ALS_PlayerCameraBehavior (Blueprint)
+- BP_Knife_GripVariant_Mann (Blueprint)
+- BP_Knife_Mann (Blueprint)
+- BP_Sword_Mann (Blueprint)
+- SimpleMovingObject (Blueprint)
+- SimpleObjectBuilder (Blueprint)
+- CameraSettings (Struct)
+- CameraSettings_Gait (Struct)
+- CameraSettings_State (Struct)
+- F_ObjectData (Struct)
+- DT_ObjectsData (DataTable)
+- ALS_HUD (Blueprint)
+- WBP_ArmorSelector (Blueprint)
+- S_ItemsData (Struct)
+- S_ConsumableData (Struct)
+- DT_Items (DataTable)
+- DT_Consumable (DataTable)
+- S_WheelSlotData (Struct)
+- Editor (Blueprint)
+- Chuck_HUD (Blueprint)
+- BPI_ChuckHUD (Blueprint)
+- BP_TestTrigger (Blueprint)
+
+## Asset aggiunti
+
+- AIC_EnemyALS
+- ALS_AI_Controller
+- ALS_Animation_BPI
+- ALS_AnimBP
+- ALS_BaseCharacterBP
+- ALS_BTTask_GetRandomLocation
+- ALS_BTTask_SetFocus
+- ALS_Camera_BPI
+- ALS_Character_BPI
+- ALS_ChuckBP
+- ALS_ComponentAndTransform
+- ALS_Controller_BPI
+- ALS_Gait
+- ALS_GameMode_SP
+- ALS_HUD
+- ALS_MacroLibrary
+- ALS_MovementAction
+- ALS_MovementState
+- ALS_OverlayState
+- ALS_Player_Controller
+- ALS_PlayerCameraBehavior
+- ALS_PlayerCameraManager
+- ALS_RotationMode
+- ALS_Stance
+- ALS_ViewMode
+- AnimCurveCreationData
+- AnimCurveCreationParams
+- AnimFeatureExample
+- Bow_AnimBP
+- BP_AmmoPickUp
+- BP_CharacterPreview
+- BP_EnemyALS
+- BP_Knife_GripVariant_Mann
+- BP_Knife_Mann
+- BP_Sword_Mann
+- BP_TestTrigger
+- BP_WeaponBase
+- BP_WeaponPickUp
+- BP_WeaponProjectileData
+- BPI_ChuckHUD
+- BPI_Interaction
+- Calculate_RotationAmount
+- CameraSettings
+- CameraSettings_Gait
+- CameraSettings_State
+- CameraShake_Notify
+- Chuck_HUD
+- Copy_Curves
+- Create_Curves
+- Create_LayeringCurves
+- DT_Armor
+- DT_CharacterData
+- DT_Consumable
+- DT_Items
+- DT_ObjectsData
+- DT_Weapon
+- DynamicMontageParams
+- E_AmmoType
+- E_ArmorSlot
+- E_CharactersAffiliates
+- E_ObjectsCategory
+- E_WeaponSlot
+- E_WheelActionType
+- EarlyBlendOut_NotifyState
+- Editor
+- F_CharacterData
+- F_ObjectData
+- Footstep_AnimNotify
+- FootstepType
+- GroundedEntryState
+- GroundedEntryState_AnimNotify
+- HipsDirection
+- LeanAmount
+- Mantle_Asset
+- Mantle_Params
+- Mantle_TraceSettings
+- MantleType
+- MovementAction_NotifyState
+- MovementDirection
+- MovementModelTable
+- MovementSettings
+- MovementSettings_Stance
+- MovementSettings_State
+- OverlayOverride_NotifyState
+- OverlayStateButton
+- OverlayStateButtonParams
+- OverlayStateSwitcher
+- RotateInPlace_Asset
+- S_ArmorData
+- S_ConsumableData
+- S_InteractionPrompt
+- S_ItemsData
+- S_WeaponData
+- S_WheelSlotData
+- SimpleMovingObject
+- SimpleObjectBuilder
+- Sprint_CameraShake
+- Text
+- TurnInPlace_Asset
+- VelocityBlend
+- WBP_ArmorSelector
+- WBP_AssetName
+- WBP_CustomRadialMenu
+- WBP_GenericPrompt
+- WBP_HUD
+- WBP_MenuArchive
+- WBP_MenuPausa
+- WBP_MenuPrincipale
+- WBP_SelectorButton
+- WBP_TabIntersect_CharacterCard
+- WBP_TabIntersect_CharacterSlot
+- WBP_Tip
+- WBP_WeaponSelector
+
+## Asset modificati
+
+- Nessuno.
+
+## Asset rimossi
+
+- Nessuno.
+
+## File aggiunti/modificati/rimossi
+
+- Baseline precedente assente: considera tutti i file esportati come nuovi.
+
+## Problemi e warning
+
+- Nessuno.
+
+## Suggerimento per AI analysis
+
+Apri prima `AI_Context.md`, poi `SemanticDiff.json` e infine i JSON degli asset modificati. Considera il report come differenza statica tra export, non come comportamento runtime.

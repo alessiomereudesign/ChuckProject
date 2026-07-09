@@ -2,9 +2,9 @@
 
 ## Summary
 
-- UpToDate: 31
-- NotApplicable: 13
-- UpToDateWithWarnings: 1
+- UpToDate: 83
+- UpToDateWithWarnings: 3
+- NotApplicable: 27
 
 Tutti gli asset con stato applicabile risultano UpToDate.
 
