@@ -1,0 +1,251 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+	"graph": "CalculateWalkRunBlend",
+	"entryName": "Calculate Walk Run Blend",
+	"entryNodeGuid": "2320637140CE0B75D99E0F9025B1DE9B",
+	"nodes": [
+		{
+			"nodeGuid": "2320637140CE0B75D99E0F9025B1DE9B",
+			"class": "K2Node_FunctionEntry",
+			"title": "Calculate Walk Run Blend",
+			"comment": "",
+			"x": 43,
+			"y": 100,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A8804B0A4A1A85AEB55F78AE96E57386",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E28C640544469A3FB7A8EE92420A3A78",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on ALS_Gait",
+			"comment": "",
+			"x": 283,
+			"y": 100,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F0665C8345E9A474F01E1E85D5CFE161",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D99D344E48C76F4498EDD2BD2E584387",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "E63DCB0F4818BBF56CD9C18DC9264C90",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "F2618A8A444439E79E8A0FAF8A254D07",
+					"name": "NewEnumerator0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ADD7692E4107D7B124A199B4BE449835",
+					"name": "NewEnumerator1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "76A5031B43E47CA5714AE780F2E783C8",
+					"name": "NewEnumerator2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3CF4A1BC471CFB7E7EDE6AA482A203E3",
+			"class": "K2Node_VariableGet",
+			"title": "Get Gait",
+			"comment": "",
+			"x": 283,
+			"y": 212,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EE037DAB4524C14DB70C73BA6E553248",
+					"name": "Gait",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "2BA58E3D45400E04BF844E832D1DEB59",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8C3F31284A248DA7FB9ED6BAF81C3CAF",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 507,
+			"y": 100,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A82F7DCD491309424D4F978E4DAAEA36",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4928718C42D1FECB41AEFEA66CF3B8EC",
+					"name": "WalkRunBlend",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "85AED09648C1C67E8CC7EB81029CE63E",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 507,
+			"y": 196,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A82F7DCD491309424D4F978E4DAAEA36",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4928718C42D1FECB41AEFEA66CF3B8EC",
+					"name": "WalkRunBlend",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "1.000000"
+				}
+			]
+		},
+		{
+			"nodeGuid": "D975E49A41595891271F4783AD6B57F9",
+			"class": "EdGraphNode_Comment",
+			"title": "Calculate the Walk Run Blend. This value is used within the Blendspaces to blend between walking and running.",
+			"comment": "Calculate the Walk Run Blend. This value is used within the Blendspaces to blend between walking and running.",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateWalkRunBlend",
+			"edgeType": "exec",
+			"fromNodeGuid": "2320637140CE0B75D99E0F9025B1DE9B",
+			"fromPinId": "A8804B0A4A1A85AEB55F78AE96E57386",
+			"fromPinName": "then",
+			"toNodeGuid": "E28C640544469A3FB7A8EE92420A3A78",
+			"toPinId": "F0665C8345E9A474F01E1E85D5CFE161",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateWalkRunBlend",
+			"edgeType": "data",
+			"fromNodeGuid": "3CF4A1BC471CFB7E7EDE6AA482A203E3",
+			"fromPinId": "EE037DAB4524C14DB70C73BA6E553248",
+			"fromPinName": "Gait",
+			"toNodeGuid": "E28C640544469A3FB7A8EE92420A3A78",
+			"toPinId": "D99D344E48C76F4498EDD2BD2E584387",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateWalkRunBlend",
+			"edgeType": "exec",
+			"fromNodeGuid": "E28C640544469A3FB7A8EE92420A3A78",
+			"fromPinId": "F2618A8A444439E79E8A0FAF8A254D07",
+			"fromPinName": "NewEnumerator0",
+			"toNodeGuid": "8C3F31284A248DA7FB9ED6BAF81C3CAF",
+			"toPinId": "A82F7DCD491309424D4F978E4DAAEA36",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateWalkRunBlend",
+			"edgeType": "exec",
+			"fromNodeGuid": "E28C640544469A3FB7A8EE92420A3A78",
+			"fromPinId": "ADD7692E4107D7B124A199B4BE449835",
+			"fromPinName": "NewEnumerator1",
+			"toNodeGuid": "85AED09648C1C67E8CC7EB81029CE63E",
+			"toPinId": "A82F7DCD491309424D4F978E4DAAEA36",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateWalkRunBlend",
+			"edgeType": "exec",
+			"fromNodeGuid": "E28C640544469A3FB7A8EE92420A3A78",
+			"fromPinId": "76A5031B43E47CA5714AE780F2E783C8",
+			"fromPinName": "NewEnumerator2",
+			"toNodeGuid": "85AED09648C1C67E8CC7EB81029CE63E",
+			"toPinId": "A82F7DCD491309424D4F978E4DAAEA36",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [
+		"Get Gait"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G290",
+	"assetName": "ALS_AnimBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP"
+}

@@ -1,0 +1,314 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "ClearHeldObject",
+	"entryName": "Clear Held Object",
+	"entryNodeGuid": "B858521146CE783F90EE968BFBF767DB",
+	"nodes": [
+		{
+			"nodeGuid": "B858521146CE783F90EE968BFBF767DB",
+			"class": "K2Node_FunctionEntry",
+			"title": "Clear Held Object",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DFC107F64A9DBD4FC73ABB935B321848",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "90EAF38E4376EF64A5C44FBED2E33937",
+			"class": "K2Node_VariableGet",
+			"title": "Get SkeletalMesh",
+			"comment": "",
+			"x": 528,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5EBCB0454C0BE4970A7B03A02CA25C33",
+					"name": "SkeletalMesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2BAEDB5843F1AC4A3093C3BAA9B70BA7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1BCDBD9944BFFD81B8B3FFAA925CC62B",
+			"class": "K2Node_CallFunction",
+			"title": "Set Anim Instance Class\nLa destinazione è Componente mesh scheletrica",
+			"comment": "",
+			"x": 944,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C54A5ABB427990B5D935ABAB104D258C",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "35A7E49E427D8157E5D7B4BA24D41C56",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "47A6985141549243CDBE399C3977F35A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5B9BB5FF432A436A818E4BB8D23AB144",
+					"name": "NewClass",
+					"direction": "Input",
+					"type": "class|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C0CA15664F3FEBB7FDB31DA6F06C48BE",
+			"class": "K2Node_VariableGet",
+			"title": "Get StaticMesh",
+			"comment": "",
+			"x": 96,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D4A8E38141C4DB8AD79F3C8501E8A2BE",
+					"name": "StaticMesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.StaticMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2568212744745D88703A0DA1ECDAD68E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F940F0694C043A7FEF62F08CD24C30E5",
+			"class": "K2Node_CallFunction",
+			"title": "Set Skinned Asset and Update\nLa destinazione è Componente della mesh con pelle",
+			"comment": "",
+			"x": 672,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "258D1BEA45B9B4D76D4EFE99A1F3E230",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F14A2A2D466E7A12546849AD089452ED",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "97C42F3B49B38C63B28164A916999E61",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkinnedMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5C9791874A02685D06878F90A3A9E9B0",
+					"name": "NewMesh",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkinnedAsset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A9C5A0AD486D2D2B209E0FB90363B8A6",
+					"name": "bReinitPose",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "95E5676047F90986709D4B80D10C8830",
+			"class": "K2Node_CallFunction",
+			"title": "Set Static Mesh\nLa destinazione è Componente con mesh statica",
+			"comment": "",
+			"x": 240,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "213ECA834FB4E9ABBE67ADBF9A7344E4",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8E748B4B4BA27140B28A41B5AD30BC7E",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6B9F0CE248F52DE45D6788BEF64AAF8B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.StaticMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "749374254B53E3E94CEC219D85D8EBF5",
+					"name": "NewMesh",
+					"direction": "Input",
+					"type": "object|/Script/Engine.StaticMesh",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2544DA674FB5FDC1FE5100BE77CD984A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "ClearHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "B858521146CE783F90EE968BFBF767DB",
+			"fromPinId": "DFC107F64A9DBD4FC73ABB935B321848",
+			"fromPinName": "then",
+			"toNodeGuid": "95E5676047F90986709D4B80D10C8830",
+			"toPinId": "213ECA834FB4E9ABBE67ADBF9A7344E4",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "ClearHeldObject",
+			"edgeType": "data",
+			"fromNodeGuid": "90EAF38E4376EF64A5C44FBED2E33937",
+			"fromPinId": "5EBCB0454C0BE4970A7B03A02CA25C33",
+			"fromPinName": "SkeletalMesh",
+			"toNodeGuid": "F940F0694C043A7FEF62F08CD24C30E5",
+			"toPinId": "97C42F3B49B38C63B28164A916999E61",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "ClearHeldObject",
+			"edgeType": "data",
+			"fromNodeGuid": "90EAF38E4376EF64A5C44FBED2E33937",
+			"fromPinId": "5EBCB0454C0BE4970A7B03A02CA25C33",
+			"fromPinName": "SkeletalMesh",
+			"toNodeGuid": "1BCDBD9944BFFD81B8B3FFAA925CC62B",
+			"toPinId": "47A6985141549243CDBE399C3977F35A",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "ClearHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "F940F0694C043A7FEF62F08CD24C30E5",
+			"fromPinId": "F14A2A2D466E7A12546849AD089452ED",
+			"fromPinName": "then",
+			"toNodeGuid": "1BCDBD9944BFFD81B8B3FFAA925CC62B",
+			"toPinId": "C54A5ABB427990B5D935ABAB104D258C",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "ClearHeldObject",
+			"edgeType": "data",
+			"fromNodeGuid": "C0CA15664F3FEBB7FDB31DA6F06C48BE",
+			"fromPinId": "D4A8E38141C4DB8AD79F3C8501E8A2BE",
+			"fromPinName": "StaticMesh",
+			"toNodeGuid": "95E5676047F90986709D4B80D10C8830",
+			"toPinId": "6B9F0CE248F52DE45D6788BEF64AAF8B",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "ClearHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "95E5676047F90986709D4B80D10C8830",
+			"fromPinId": "8E748B4B4BA27140B28A41B5AD30BC7E",
+			"fromPinName": "then",
+			"toNodeGuid": "F940F0694C043A7FEF62F08CD24C30E5",
+			"toPinId": "258D1BEA45B9B4D76D4EFE99A1F3E230",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [
+		"Get SkeletalMesh",
+		"Get StaticMesh"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Set Anim Instance Class\nLa destinazione è Componente mesh scheletrica",
+		"Set Skinned Asset and Update\nLa destinazione è Componente della mesh con pelle",
+		"Set Static Mesh\nLa destinazione è Componente con mesh statica"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Set Anim Instance Class\nLa destinazione è Componente mesh scheletrica",
+		"Set Skinned Asset and Update\nLa destinazione è Componente della mesh con pelle",
+		"Set Static Mesh\nLa destinazione è Componente con mesh statica"
+	],
+	"flowId": "F001",
+	"graphId": "G009",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

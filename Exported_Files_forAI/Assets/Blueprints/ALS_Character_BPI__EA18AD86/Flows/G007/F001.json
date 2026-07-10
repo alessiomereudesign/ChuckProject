@@ -1,0 +1,47 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Character_BPI",
+	"graph": "BPI_Set_RotationMode",
+	"entryName": "BPI Set Rotation Mode",
+	"entryNodeGuid": "68A9504041993A172AB5B0971B31397E",
+	"nodes": [
+		{
+			"nodeGuid": "68A9504041993A172AB5B0971B31397E",
+			"class": "K2Node_FunctionEntry",
+			"title": "BPI Set Rotation Mode",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ACEBFBFD4B91741788B8D6AC802A32F5",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "06BEF085400DCC620C610185796AE077",
+					"name": "NewRotationMode",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		}
+	],
+	"edges": [],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G007",
+	"assetName": "ALS_Character_BPI",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Character_BPI.ALS_Character_BPI"
+}

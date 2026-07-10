@@ -1,0 +1,25 @@
+{
+	"graphId": "G018",
+	"name": "On Begin Play",
+	"graphName": "On Begin Play",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 11,
+	"edgeCount": 12,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G018/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G018/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G018/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "On Begin Play",
+			"entryNodeGuid": "7F51293E493911A7524B628A1E786F9E",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G018/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G018/F001.json",
+			"textFile": "Flows/G018/F001.txt",
+			"jsonFile": "Flows/G018/F001.json",
+			"nodeCount": 11
+		}
+	]
+}

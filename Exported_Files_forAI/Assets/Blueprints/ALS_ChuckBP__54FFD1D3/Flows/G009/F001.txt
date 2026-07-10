@@ -1,0 +1,48 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G009
+Graph: ClearHeldObject
+FlowId: F001
+Entry: Clear Held Object
+NodeGuid: B858521146CE783F90EE968BFBF767DB
+
+Exec Flow:
+1. Clear Held Object [K2Node_FunctionEntry] B858521146CE783F90EE968BFBF767DB
+2. Get SkeletalMesh [K2Node_VariableGet] 90EAF38E4376EF64A5C44FBED2E33937
+3. Set Anim Instance Class
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 1BCDBD9944BFFD81B8B3FFAA925CC62B
+4. Get StaticMesh [K2Node_VariableGet] C0CA15664F3FEBB7FDB31DA6F06C48BE
+5. Set Skinned Asset and Update
+La destinazione è Componente della mesh con pelle [K2Node_CallFunction] F940F0694C043A7FEF62F08CD24C30E5
+6. Set Static Mesh
+La destinazione è Componente con mesh statica [K2Node_CallFunction] 95E5676047F90986709D4B80D10C8830
+
+Variables Read:
+- Get SkeletalMesh
+- Get StaticMesh
+
+Variables Written:
+- none
+
+External Calls:
+- Set Anim Instance Class
+La destinazione è Componente mesh scheletrica
+- Set Skinned Asset and Update
+La destinazione è Componente della mesh con pelle
+- Set Static Mesh
+La destinazione è Componente con mesh statica
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Set Anim Instance Class
+La destinazione è Componente mesh scheletrica
+- Set Skinned Asset and Update
+La destinazione è Componente della mesh con pelle
+- Set Static Mesh
+La destinazione è Componente con mesh statica

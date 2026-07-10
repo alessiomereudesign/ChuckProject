@@ -1,0 +1,91 @@
+Asset: WBP_MenuArchive
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive
+GraphId: G004
+Graph: OnAnalogValueChanged
+FlowId: F001
+Entry: On Analog Value Changed
+NodeGuid: 00220CD04DC4E663234E8F93BCC940A0
+
+Exec Flow:
+1. On Analog Value Changed [K2Node_FunctionEntry] 00220CD04DC4E663234E8F93BCC940A0
+2. Nodo di restituzione [K2Node_FunctionResult] 0A8686C9467FEB7367E23B9EE86C13B2
+3. Get Key [K2Node_CallFunction] E05056554DD6060848B11FBBB4206BAB
+4. Get Key Event from Analog Input Event [K2Node_CallFunction] 416046414BD15BD8F3676FB376E95562
+5. Equal (Key) [K2Node_PromotableOperator] 6E07B23C44255B7EE3C40F9732F795B1
+6. Ramo [K2Node_IfThenElse] 9145304D4A4D7647819562BD189A7868
+7. Get Analog Value [K2Node_CallFunction] C77C00B647C0AD83D7258C9E27EDCC84
+8. float * float [K2Node_PromotableOperator] AD8CF85346BF28153D75B094E96969A1
+9. Get CharactersPage [K2Node_VariableGet] 9ACB507C414321D8E3BFCD9684C0992E
+10. Get Scroll Offset
+La destinazione è Scroll Box [K2Node_CallFunction] 5D77169046131BF8387F4DAD4E5BCFA2
+11. float - float [K2Node_PromotableOperator] 3E96B18A4BCC3136F7B90B88FB270A35
+12. Set Scroll Offset
+La destinazione è Scroll Box [K2Node_CallFunction] 5D4AB4FF49230631061B149029679804
+13. Gestito [K2Node_CallFunction] B1D2E83649EF1AEF59CC49A4CD055D6B
+14. Nodo di restituzione [K2Node_FunctionResult] EC22493F4F918D255212F798D1EE282F
+15. Unhandled [K2Node_CallFunction] 6684D87A4DE144EAD26409B7AA82414C
+16. Nodo di reindirizzamento [K2Node_Knot] 701B31BE441723BD8362D488CA8B0F02
+17. Nodo di reindirizzamento [K2Node_Knot] 7FB393D44630565199A0E090A00D4FC0
+18. Setting Left Thumb Y per scrollare [EdGraphNode_Comment] 8D92CD374192D1734111C78FEA06494D
+19. Cast To WBP_TabIntersect_CharacterSlot [K2Node_DynamicCast] 62EBE5134BEAB2A6E1390F8DFB47A8E5
+20. float / float [K2Node_PromotableOperator] 43A1968C4468E1BEB0312C977BB12F80
+21. Truncate [K2Node_CallFunction] E89C03D94166750C96FD3E899142979D
+22. int * int [K2Node_PromotableOperator] 85E774AC4E3CB36A94ECF3B53CC06FDC
+23. Get Child At
+La destinazione è Panel Widget [K2Node_CallFunction] 3BC057FA41602665E78C8BA2928BDBC1
+24. Get Btn_Slot [K2Node_VariableGet] FD608F6041D217E053C7F8A11E0E6F2D
+25. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] EC07C8F2489443A6F69A8D9DA251DEE8
+26. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 2EED3B0C4F60645EB93FE18014F2998B
+
+Variables Read:
+- Get Btn_Slot
+- Get CharactersPage
+
+Variables Written:
+- none
+
+External Calls:
+- Gestito
+- Get Analog Value
+- Get Child At
+La destinazione è Panel Widget
+- Get Key
+- Get Key Event from Analog Input Event
+- Get Owning Player
+La destinazione è Widget
+- Get Scroll Offset
+La destinazione è Scroll Box
+- Set Scroll Offset
+La destinazione è Scroll Box
+- Set User Focus
+La destinazione è Widget
+- Truncate
+- Unhandled
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Cast To WBP_TabIntersect_CharacterSlot
+- Gestito
+- Get Analog Value
+- Get Child At
+La destinazione è Panel Widget
+- Get Key
+- Get Key Event from Analog Input Event
+- Get Owning Player
+La destinazione è Widget
+- Get Scroll Offset
+La destinazione è Scroll Box
+- Set Scroll Offset
+La destinazione è Scroll Box
+- Set User Focus
+La destinazione è Widget
+- Truncate
+- Unhandled

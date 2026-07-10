@@ -1,0 +1,5283 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"graph": "MantleCheck",
+	"entryName": "Mantle Check",
+	"entryNodeGuid": "58A13E514DAFBA06B31D6BAEA7611FE0",
+	"nodes": [
+		{
+			"nodeGuid": "58A13E514DAFBA06B31D6BAEA7611FE0",
+			"class": "K2Node_FunctionEntry",
+			"title": "Mantle Check",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C7B3C7354834CC019BC1F1849FCFAD6F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D7899B31484ED55B5E5E3AB56CE1D41B",
+					"name": "Trace Settings",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_TraceSettings.Mantle_TraceSettings",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EE873A9B4E96EE8E401DBCB325385C7F",
+					"name": "DebugType",
+					"direction": "Output",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "2CE92A4445D6B4EE7DB3729423692108",
+			"class": "K2Node_CallFunction",
+			"title": "Capsule Trace By Channel",
+			"comment": "",
+			"x": 2128,
+			"y": -1136,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "46F81D80483E337D9EF2FDB6E0616906",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D72D9CB44AD769D6004814B16768AA7B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A501D5424A4B75D4B07220A5AE96C8FB",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetSystemLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"pinId": "9707A065452ACD691F6F2387EE8DDA66",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4CC3E4284A2000F8BBB70DA2F5C9E30C",
+					"name": "Start",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector|const",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "57A667A04DF0FD37E002C088B7D38642",
+					"name": "End",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector|const",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "2C72E71E4EF97FAD186C3AA4649BE1ED",
+					"name": "Radius",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "B91D1F7C4CA388661C1A20884987A001",
+					"name": "HalfHeight",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "0E291FAF46A95E8195ABD8A703792197",
+					"name": "TraceChannel",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.ETraceTypeQuery",
+					"defaultValue": "TraceTypeQuery3"
+				},
+				{
+					"pinId": "B20A84D148505A8B72F8E79BE15CD3D8",
+					"name": "bTraceComplex",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "23A4642E4ADF2D2FF289CBA70621ED43",
+					"name": "ActorsToIgnore",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor|container=Array|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "571C612E4D04FC1882B7CAAE018A0A60",
+					"name": "DrawDebugType",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "C3CF1BED40C3145636232A8F64F565B9",
+					"name": "OutHit",
+					"direction": "Output",
+					"type": "struct|/Script/Engine.HitResult",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F452DE9F45A859971C6D3DA3B42B7693",
+					"name": "bIgnoreSelf",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "147CB9FE4ABCA3C74D327296832851C5",
+					"name": "TraceColor",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": "(R=0.000000,G=0.000000,B=0.000000,A=1.000000)"
+				},
+				{
+					"pinId": "6B2A49FF42265B6BB9E6A296A40E320F",
+					"name": "TraceHitColor",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": "(R=0.000000,G=0.000000,B=0.000000,A=1.000000)"
+				},
+				{
+					"pinId": "6BCC5AE34EF15089312E92A095933B93",
+					"name": "DrawTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "1.000000"
+				},
+				{
+					"pinId": "6EB6204C4A191DC985370ABCAA980E69",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "71EC941748AA4DDD81B1A7ACB681BEFA",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 3344,
+			"y": -1040,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "650FFFBB48CAAB416ACFDC89C71F9FDA",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7BA8774947CE22E88645028871FB39B1",
+					"name": "CanClimb/Vault",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "43B321AE485BC24CAEED8BB4AE29F5BA",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 3136,
+			"y": -1136,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "31615FE743BD5DC53061C19037A77925",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5296DD9B4A942BBEA1B81A9184940AED",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "795A613941FB0651EE1839A3F0A18C4D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8D67018141D8B2460339AD9DCF0DC1D3",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D92982494A5F66B0BEE5828F5D15D610",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 2752,
+			"y": -352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "650FFFBB48CAAB416ACFDC89C71F9FDA",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7BA8774947CE22E88645028871FB39B1",
+					"name": "CanClimb/Vault",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "7F02B1DE4388AAB5A3F9A1A188DEE379",
+			"class": "K2Node_CallFunction",
+			"title": "Sphere Trace By Channel",
+			"comment": "",
+			"x": 1856,
+			"y": -448,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "430D46B54917F4B0739F1A996BF972E6",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6552906B49E70EC03A3DC5B2CA54993B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E4D51EF04418C54B22E73683544DE25D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetSystemLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"pinId": "D6B0154E49BB8DA88C6CCBB8B46E3E44",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8048FC00446B58A2E11EAE867C7BB917",
+					"name": "Start",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector|const",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "9421D7844BCA0A3C050F8580B4CE52C8",
+					"name": "End",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector|const",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "947499CB495B1E501E70388E9698BB35",
+					"name": "Radius",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "BA5E77104D0CE1E62915B9800B51E93A",
+					"name": "TraceChannel",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.ETraceTypeQuery",
+					"defaultValue": "TraceTypeQuery3"
+				},
+				{
+					"pinId": "692295944D28865B8AA92A817641485D",
+					"name": "bTraceComplex",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "776597DF452B98887DCCC7ADBB4D1298",
+					"name": "ActorsToIgnore",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor|container=Array|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2338936E4EF6DEFF77274AA007BEEC01",
+					"name": "DrawDebugType",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "0A5F354147B265C7FD6E10A22CD15FC8",
+					"name": "OutHit",
+					"direction": "Output",
+					"type": "struct|/Script/Engine.HitResult",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C62AFA864E61FFD67FACABA3E67E6365",
+					"name": "bIgnoreSelf",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "DF415BD147CABD50A55BCDBDAA8D47AC",
+					"name": "TraceColor",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": "(R=0.896269,G=0.388383,B=0.000000,A=1.000000)"
+				},
+				{
+					"pinId": "A693548C4B87B6989462F69A8D788540",
+					"name": "TraceHitColor",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": "(R=1.000000,G=0.000000,B=0.049349,A=1.000000)"
+				},
+				{
+					"pinId": "89CEC3414B8312E21B76C78D28CD2263",
+					"name": "DrawTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "1.000000"
+				},
+				{
+					"pinId": "2CCC961146090A09EE083AB7815E0567",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "FB60871644A68AE19C97ADADE17111C7",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 2544,
+			"y": -448,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FE06714242E0BE3E6DEFAB8E5DD1B282",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "033921A4489B6C85C6D2F18BE438BD3A",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "A7EC19AF421580476F67428FE73EF57B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0AE9922542CF45B0BC77528A8DF349CD",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "17A580E345D37F338672DB970C4718ED",
+			"class": "K2Node_VariableSet",
+			"title": "Set InitialTrace_ImpactPoint",
+			"comment": "",
+			"x": 3344,
+			"y": -1120,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "18FF757042F36D818DD982931C2F7532",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DD9AF83140840449020FE69AAEB2B572",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "69B2AFCB4665A69CDFFFEDBA2FE62E56",
+					"name": "InitialTrace_ImpactPoint",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "47C8163F48E35FC270916CA0D405701F",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "1DD1DC844D1DCD67134D9B91C0F9E2BC",
+			"class": "K2Node_VariableSet",
+			"title": "Set InitialTrace_Normal",
+			"comment": "",
+			"x": 3600,
+			"y": -1120,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E181C6DD471EF86461AD06B8AFE5DA78",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DA93876D47E47A3545CD46AD8BF8517B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CA432E99483521BCB6A006B1B4C7A016",
+					"name": "InitialTrace_Normal",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "DCBD727946EE34806AFC3DB9810E51EB",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "648D51A24629C57DC2FF54B185725FF7",
+			"class": "K2Node_ExecutionSequence",
+			"title": "Sequenza",
+			"comment": "",
+			"x": 160,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "129F93B241A6DDCB663842879124F25F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C554E7DB4E6CE4272113FBBCEC8F49EB",
+					"name": "then_0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FE7D83C944BE3997DD8331A26D5E81E6",
+					"name": "then_1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F937CB094E1050BA137CA696474B20E1",
+					"name": "then_2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "30BA61984EFFB3CF85944395C8EC05ED",
+					"name": "then_3",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1042903846063B90142D87BA602C0C6C",
+					"name": "then_4",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8443D57B474E02DBECB26790DC5A87CE",
+					"name": "then_5",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5CD5BB5E44ED633B49DC6699BA15F0FB",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 912,
+			"y": -1104,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FEF2D9E441617A09B4117FAA863FEC7B",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ED81FE5C4683C42F9DBF28862AC77827",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "65BA965344102242B815D5B6A39743DB",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 912,
+			"y": -416,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C784928F4CC36BE24F70D48D8F8EAACF",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "08217E884FEA447B5AB94585844F72D0",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "63B9A64B46247A6E9C4AFA9C0B0D0F05",
+			"class": "K2Node_CallFunction",
+			"title": "Make Vector",
+			"comment": "",
+			"x": 2432,
+			"y": -288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "52920F924A0D68FD05CB038346079023",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "BCB4725246369E830C8315B81E512932",
+					"name": "X",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "AA8F6081421D089E38BA44BB966FF2BA",
+					"name": "Y",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "538377BD40EAAA3F1CBE4B808EA6E8DC",
+					"name": "Z",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "FD6B5D95448E16E2466DF58266DB8DF7",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "397013EF46F65571C87331886C3A27A4",
+			"class": "K2Node_VariableSet",
+			"title": "Set DownTraceLocation",
+			"comment": "",
+			"x": 2752,
+			"y": -432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3B5C922244146D800D575F8272ECB71A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A866F8DA468F94AE1E0F4CA2AF808CAD",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "684D402A4809D5553725D2ACF0ED6312",
+					"name": "DownTraceLocation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "A1C63A2E4A12D4B3733A0B95019FCC98",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "AEAE2127480175E3082FEDA7D06BFC6D",
+			"class": "K2Node_VariableSet",
+			"title": "Set HitComponent",
+			"comment": "",
+			"x": 2992,
+			"y": -432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BF8DA6AE45C8705ECD5E548F7E75AB74",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "27D2DCF2422DEA8315AAF6A995C7D0F1",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E82925674C000D7252106993181E5AA9",
+					"name": "HitComponent",
+					"direction": "Input",
+					"type": "object|/Script/Engine.PrimitiveComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EB9296D241BA18E48E5CCB965E28967D",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PrimitiveComponent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "896CAFB84842F854B28526AD1A089986",
+			"class": "K2Node_CallFunction",
+			"title": "Is Walkable\nLa destinazione è Componente movimento personaggio",
+			"comment": "",
+			"x": 2224,
+			"y": -512,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2CFC7D0F43D643160A8397B7EDBE4EBE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.CharacterMovementComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1F40151A4A29F60343721ABE335ED4DE",
+					"name": "Hit",
+					"direction": "Input",
+					"type": "struct|/Script/Engine.HitResult|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B2A343E542C91DE7F7E9BAB14CE92360",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "92C7B5E74B0077CB0A03B9A8E52F3FD5",
+			"class": "K2Node_VariableGet",
+			"title": "Get CharacterMovement",
+			"comment": "",
+			"x": 2032,
+			"y": -496,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "59E13AAA433A8FEFF6BA2E9B47A5213B",
+					"name": "CharacterMovement",
+					"direction": "Output",
+					"type": "object|/Script/Engine.CharacterMovementComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9483355448D076B6E02546B52BDEBDC8",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AF165B9443DAD94A7FD5ABB39C223FC5",
+			"class": "K2Node_CallFunction",
+			"title": "Break Hit Result",
+			"comment": "",
+			"x": 2224,
+			"y": -400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C2E15CAF41973DD4A1589DB5994C023D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "BFA453574041F3A82D6F5C901EFC7E6A",
+					"name": "Hit",
+					"direction": "Input",
+					"type": "struct|/Script/Engine.HitResult|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "165860C842790476A91D7F8028017871",
+					"name": "bBlockingHit",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "AB8DFE854038A7333E6BE8AD2D4E0131",
+					"name": "bInitialOverlap",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "9BEDFDCE45C9FA8403A99BB4908230E7",
+					"name": "Time",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "C7C0CCBE4FFD525381EB7599E6CEAA3D",
+					"name": "Distance",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "19D22C8442895DE3C137E5AD061769C6",
+					"name": "Location",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "A4AD6C6F468FB407C5B972B2B1645BE7",
+					"name": "Location_X",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "759ADA8D42413B64ADEA2C9024F74882",
+					"name": "Location_Y",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "AB93EBB44054F8F0CD81F3902220CDAE",
+					"name": "Location_Z",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "BFEB074F4BE76DB609747ABFBD9165E3",
+					"name": "ImpactPoint",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "D5A3AB41445CAB965C880BA4ECA9E389",
+					"name": "ImpactPoint_X",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "D26920BC424BA32C1E82FEB7DBCC7A97",
+					"name": "ImpactPoint_Y",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "29A8B98B4853705E394447884C4B8C30",
+					"name": "ImpactPoint_Z",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "59134DBE4D78C209FBC6AF980FF55403",
+					"name": "Normal",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "D46B468C466CA997EE18A38200A9B7E3",
+					"name": "ImpactNormal",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "53E822CE44BFF2BD62A90BA34BB8D6FF",
+					"name": "PhysMat",
+					"direction": "Output",
+					"type": "object|/Script/PhysicsCore.PhysicalMaterial",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9BA2117949A6F12C7744F7AC85EB63EB",
+					"name": "HitActor",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CCA0C4AC4DD85F743747278A9AD3AAB2",
+					"name": "HitComponent",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PrimitiveComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5830387C4CC8D69CBAC3DA9676D73314",
+					"name": "HitBoneName",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "8CA45BA34EAF2BAE3C220CAF01C26266",
+					"name": "BoneName",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "13600D2E42DC57BF46070C8B28615464",
+					"name": "HitItem",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "D67FD81F474796AEFB638BA33F3ADFCC",
+					"name": "ElementIndex",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "1AA1F7CD4A1D51FF4903558BD596E633",
+					"name": "FaceIndex",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "7F2E92EE4B1A56CBCC710F93B9FCDB95",
+					"name": "TraceStart",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "2A2333E142529B6DB269CC8D70DDF492",
+					"name": "TraceEnd",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "992446A841CA9B9C1DC89EAF48CE70DA",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "AND Boolean",
+			"comment": "",
+			"x": 2544,
+			"y": -352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D05FA2C7460E3DD2F1C50AAAB4BA0F12",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "B247726E4534E53E0B8959BF9E6428AB",
+					"name": "A",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "9A12CA5F48708511DF48D58C21952F5C",
+					"name": "B",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "66A573CD4351A6A8FACAD28B180B733C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "2D5F0131447F35D316E8B5B717362FFA",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 912,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E26FD1A84E6D512B7B2A45B6EB58345E",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C5378BF9446D4CE9E5FC0BBF721E1C19",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6E5D6ABC48D154400A556AB658119301",
+			"class": "K2Node_CallFunction",
+			"title": "Capsule Has Room Check",
+			"comment": "",
+			"x": 1616,
+			"y": 192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "575B6E7C4C4166495C4904B09ADB4A22",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9BC3EB064A4A404DD9B38B899AB94D06",
+					"name": "Capsule",
+					"direction": "Input",
+					"type": "object|/Script/Engine.CapsuleComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8C15AA5446841C177CBA24869DF34653",
+					"name": "TargetLocation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "021FB8E64F2E5B0A6B42549E6A721E9B",
+					"name": "HeightOffset",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "70934911416A500D8768ABBDFEE3D007",
+					"name": "RadiusOffset",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "B895AF104A50BB3AF8C743BA0E430B3F",
+					"name": "DebugType",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "CB4D7FFE4FCB7A22E2F4EFAB74BF6D33",
+					"name": "HasRoom",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "B7FFE95E47BAA1115F36E89B10E6053E",
+			"class": "K2Node_VariableGet",
+			"title": "Get CapsuleComponent",
+			"comment": "",
+			"x": 1440,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "800379464AB1B23A13DF90B9E920F3D2",
+					"name": "CapsuleComponent",
+					"direction": "Output",
+					"type": "object|/Script/Engine.CapsuleComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "623E3BCA4C44ADD8B65065800805EB70",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "22A067B1446C1C09DBEEF098AE2BF810",
+			"class": "K2Node_VariableGet",
+			"title": "Get DownTraceLocation",
+			"comment": "",
+			"x": 1088,
+			"y": 352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "495BA00C47BC7E19DB2E4DA088D7C040",
+					"name": "DownTraceLocation",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "C52F8B5A4E55F28F8691C6A9B80A4900",
+			"class": "K2Node_CallFunction",
+			"title": "Make Transform",
+			"comment": "",
+			"x": 1616,
+			"y": 432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "316A97334B1A0805074E8C9762B95BEE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "E79A1A46491CEE5B6A3688B2B171D77A",
+					"name": "Location",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "C1029E13426D6A07092802BE5303FCCA",
+					"name": "Rotation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "6FCBA5824AD0499A25B74DB9000CDC1A",
+					"name": "Scale",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "1.000000,1.000000,1.000000"
+				},
+				{
+					"pinId": "F6DA806849622ECF426A8DA1791B798F",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Transform",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "748EDAF1466BA66C2F4070BC2034D04D",
+			"class": "K2Node_VariableGet",
+			"title": "Get InitialTrace_Normal",
+			"comment": "",
+			"x": 944,
+			"y": 496,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3E5D26B748B46C4892AE90B172C5D35A",
+					"name": "InitialTrace_Normal",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "6FA1DCD64DAF107B331A3E8418757A17",
+			"class": "K2Node_CallFunction",
+			"title": "Rotation From X Vector",
+			"comment": "",
+			"x": 1392,
+			"y": 480,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "526A21594E1BE04E2C6DB39B87557B75",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "C0601B114F79AE5E7080C8B18C5D4803",
+					"name": "InVec",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "578832784E37DAEB52FC55B5678D80AF",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "066B788C45DA8E0F4C27A095D069585E",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "vector * vector",
+			"comment": "",
+			"x": 1120,
+			"y": 496,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E2FE7A4544EBC0750A6E3298B3E3D527",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "EEA696EA43B40B7E5BB99980BDAA2BB0",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "88601E614E55B8139DC2ABADC44E50EC",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "-1.000000,-1.000000, 0"
+				},
+				{
+					"pinId": "98BB57C745436F25293AA5A13168DFE8",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "BB1BFC3849C7347EB5463D8642890384",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1872,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "953602F144F3E3DD1ED28E9D64F761E1",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "494C25D74632BEBFEDF68AB3B9E1E9A4",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "034BA70145604101C3629E8C5A326730",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "40DAA2984A18FF2536817CBD5688C933",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "850EC54D49FDB1828699D5BA50496CD6",
+			"class": "K2Node_VariableGet",
+			"title": "Get HitComponent",
+			"comment": "",
+			"x": 928,
+			"y": 1264,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E42C202D4EBF3545C54434B29B7695D6",
+					"name": "HitComponent",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PrimitiveComponent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2C1647B84C5433AC193588896BF79B05",
+			"class": "K2Node_CallFunction",
+			"title": "Get Player Movement Input",
+			"comment": "",
+			"x": 1168,
+			"y": -784,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "82AB0B3048298DD3A9A3DB9A5552DF52",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "066851994D4AC72460158F8A19B602B8",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "76F4FE5743ED18ECD9B07AA6440691C1",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "vector + vector",
+			"comment": "",
+			"x": 1936,
+			"y": -992,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "87FB24B64B90B37D9DDAF39CBCCE91EF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "55376036455EA4080B60619BC428025D",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "985F4C1149CDC354F472DCB4C974979F",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "E30F5325427466682F309BB42AB9BC26",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "D220981144E49CACDEB47489A41355AA",
+			"class": "K2Node_CallFunction",
+			"title": "vector * float",
+			"comment": "",
+			"x": 1792,
+			"y": -864,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7539268C43B37DD916CDB18D32A88E05",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "96CD93994F97914C6635D6A58080C602",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "F267A95643169F093798AA9D67760C4D",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "D4F83CC04F8D2D25ECE459B9501D83E8",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E8230D8F45CAE7E1788B4FAF89B59A50",
+			"class": "K2Node_CallFunction",
+			"title": "Is Walkable\nLa destinazione è Componente movimento personaggio",
+			"comment": "",
+			"x": 2496,
+			"y": -1216,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2CFC7D0F43D643160A8397B7EDBE4EBE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.CharacterMovementComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1F40151A4A29F60343721ABE335ED4DE",
+					"name": "Hit",
+					"direction": "Input",
+					"type": "struct|/Script/Engine.HitResult|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B2A343E542C91DE7F7E9BAB14CE92360",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "CF59D78B4EE42294DEA40F9E8F44EA33",
+			"class": "K2Node_CallFunction",
+			"title": "Break Hit Result",
+			"comment": "",
+			"x": 2496,
+			"y": -1072,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C2E15CAF41973DD4A1589DB5994C023D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "BFA453574041F3A82D6F5C901EFC7E6A",
+					"name": "Hit",
+					"direction": "Input",
+					"type": "struct|/Script/Engine.HitResult|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "165860C842790476A91D7F8028017871",
+					"name": "bBlockingHit",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "AB8DFE854038A7333E6BE8AD2D4E0131",
+					"name": "bInitialOverlap",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "9BEDFDCE45C9FA8403A99BB4908230E7",
+					"name": "Time",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "C7C0CCBE4FFD525381EB7599E6CEAA3D",
+					"name": "Distance",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "19D22C8442895DE3C137E5AD061769C6",
+					"name": "Location",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "BFEB074F4BE76DB609747ABFBD9165E3",
+					"name": "ImpactPoint",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "59134DBE4D78C209FBC6AF980FF55403",
+					"name": "Normal",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "D46B468C466CA997EE18A38200A9B7E3",
+					"name": "ImpactNormal",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "53E822CE44BFF2BD62A90BA34BB8D6FF",
+					"name": "PhysMat",
+					"direction": "Output",
+					"type": "object|/Script/PhysicsCore.PhysicalMaterial",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9BA2117949A6F12C7744F7AC85EB63EB",
+					"name": "HitActor",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CCA0C4AC4DD85F743747278A9AD3AAB2",
+					"name": "HitComponent",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PrimitiveComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5830387C4CC8D69CBAC3DA9676D73314",
+					"name": "HitBoneName",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "DA5F7EBB419FAE5D2EE4AEB88B3C7C59",
+					"name": "BoneName",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "13600D2E42DC57BF46070C8B28615464",
+					"name": "HitItem",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "61404E8A49A8571324D7EBADE1A8B2F3",
+					"name": "ElementIndex",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "1AA1F7CD4A1D51FF4903558BD596E633",
+					"name": "FaceIndex",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "7F2E92EE4B1A56CBCC710F93B9FCDB95",
+					"name": "TraceStart",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "2A2333E142529B6DB269CC8D70DDF492",
+					"name": "TraceEnd",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "DBAB3DB34A50A6A94FE568A276C70BDD",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "AND Boolean",
+			"comment": "",
+			"x": 2960,
+			"y": -1072,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D05FA2C7460E3DD2F1C50AAAB4BA0F12",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "B247726E4534E53E0B8959BF9E6428AB",
+					"name": "A",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "9A12CA5F48708511DF48D58C21952F5C",
+					"name": "B",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "66A573CD4351A6A8FACAD28B180B733C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "8502ADC048F2FDEE12639DAE9F16BA67",
+					"name": "C",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "238898BA4D1EFFD879E441B652E1741A",
+			"class": "K2Node_VariableGet",
+			"title": "Get CharacterMovement",
+			"comment": "",
+			"x": 2304,
+			"y": -1184,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "59E13AAA433A8FEFF6BA2E9B47A5213B",
+					"name": "CharacterMovement",
+					"direction": "Output",
+					"type": "object|/Script/Engine.CharacterMovementComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9483355448D076B6E02546B52BDEBDC8",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2BE70C584C7FDDF8D030B499872CEDE8",
+			"class": "K2Node_CallFunction",
+			"title": "NOT Boolean",
+			"comment": "",
+			"x": 2800,
+			"y": -1168,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2E097D3F453EBE5CF149C78F64717164",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "66B848244AD5BD92B3C4D299B40120F4",
+					"name": "A",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "30A2BED34E113B0776FE7A89A98470D7",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "603E2DEE4EF297DBEAE8CD9A37E4357F",
+			"class": "K2Node_VariableGet",
+			"title": "Get Trace Settings",
+			"comment": "",
+			"x": 928,
+			"y": -928,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5E149FB74A1FAD92DC7CCF9FBC6D7923",
+					"name": "Trace Settings",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_TraceSettings.Mantle_TraceSettings",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "075ACBB4475E964346123CBBFA3F0491",
+			"class": "K2Node_BreakStruct",
+			"title": "Break Mantle_TraceSettings",
+			"comment": "",
+			"x": 1072,
+			"y": -944,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F38CB3B6485727681DA9158D4161CD1C",
+					"name": "Mantle_TraceSettings",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_TraceSettings.Mantle_TraceSettings|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9EA967B444088EE5CAC73CBEAAC709AE",
+					"name": "MaxLedgeHeight_15_DC0D8FBF4C01FDE39D0AFDB1B04955A8",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "96B6F8944712E560990952BF5FC6BA4D",
+					"name": "MinLedgeHeight_14_857E2CDE423BEE7929567D8802243370",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "722AA4ED42967AE28316EEB660D78232",
+					"name": "ReachDistance_2_B3C154AA46EBFD9C1E67EB8DFBB7010E",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "57CC998140DB2310DBB189B240028E17",
+					"name": "ForwardTraceRadius_9_C1A792084D8AAADBD22D8F8DE31A3A1C",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "34190DAA44A320AF8931C7BF9445415F",
+			"class": "K2Node_CallFunction",
+			"title": "float - float",
+			"comment": "",
+			"x": 1488,
+			"y": -912,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BDF82E564EDFAFDAD1EB6A8720318746",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "BCB637194B7DDE59DDC1C3B9B11154D4",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "8F82A58A449DC446AC1F308CC8F02A6B",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "1.000000"
+				},
+				{
+					"pinId": "CB6D9DEA4E3E5CC5B2067FA8CA7D9F9E",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "041CAF3F422B4AB0DC7887910C200BF4",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "float + float",
+			"comment": "",
+			"x": 1488,
+			"y": -976,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9E4C379245CCF26A8228888941642E8C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "53B8774B4E8E764F847BFABF1D3F79D6",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "574081074A26BA82C99800BE4DEDF967",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "1.000000"
+				},
+				{
+					"pinId": "086318164ED1F0DAD40D6DAD474FD105",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "1CD40636417EE840874A8F9B5C4447A5",
+			"class": "K2Node_CallFunction",
+			"title": "float / float",
+			"comment": "",
+			"x": 1632,
+			"y": -976,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "15C7B6534862EBEC4E6D0986E35A6762",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "D8395A884D685A41D3ED0589F658A3E9",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "33207E6544CC954CFB959F991AABBA35",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "2.000000"
+				},
+				{
+					"pinId": "1AB33324407CBB4E2F9885B3DF9B1977",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "0819931E41AB4977C63F188AF945556E",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "vector + vector",
+			"comment": "",
+			"x": 1776,
+			"y": -1056,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6C615A52449D16311C74909D0CA12304",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "6C8E151445315CB7097660A847BBDA1E",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "9A65DD22401B525D7008EDA745D7B760",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "23E0ACAA4BF674C49500AB8C167F179A",
+					"name": "B_X",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "E81287E44EE74DCDDF37699DE6F6497C",
+					"name": "B_Y",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "448104EA4480E7FE617E7C8A70DB6A29",
+					"name": "B_Z",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "E310F3074F2439C062869EA808529168",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "B11CDBB74559C1EA7829A99D7BFA40C6",
+			"class": "K2Node_CallFunction",
+			"title": "float / float",
+			"comment": "",
+			"x": 1632,
+			"y": -900,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "15C7B6534862EBEC4E6D0986E35A6762",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "D8395A884D685A41D3ED0589F658A3E9",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "33207E6544CC954CFB959F991AABBA35",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "2.000000"
+				},
+				{
+					"pinId": "1AB33324407CBB4E2F9885B3DF9B1977",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "FA64132C45E725F93536E58EA9E58066",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1488,
+			"y": -832,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "724389B94F1F70F84C18F4A9990B5D53",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DE506255409B9F931D5056B4B73CC503",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0C3F717E4D93B895A4EB418331496B9E",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1488,
+			"y": -800,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "257EB6D34E7B305E8C5812B53C0B67B2",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0D33C5B14BFFF84AC1DB5F88D068E416",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F8584CD34F94E41F5D76A28E018053E6",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 2032,
+			"y": -800,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5660A6964B06F51048350DB2336E5D66",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "58C7D9B347F85B83FC6EFA898556549D",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BA87471644B80B6DDEB7A88376FB349D",
+			"class": "K2Node_VariableGet",
+			"title": "Get Trace Settings",
+			"comment": "",
+			"x": 944,
+			"y": -80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5E149FB74A1FAD92DC7CCF9FBC6D7923",
+					"name": "Trace Settings",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_TraceSettings.Mantle_TraceSettings",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "01AA2EE44914F550C1E8B28BF25BF274",
+			"class": "K2Node_BreakStruct",
+			"title": "Break Mantle_TraceSettings",
+			"comment": "",
+			"x": 1088,
+			"y": -112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F38CB3B6485727681DA9158D4161CD1C",
+					"name": "Mantle_TraceSettings",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_TraceSettings.Mantle_TraceSettings|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9EA967B444088EE5CAC73CBEAAC709AE",
+					"name": "MaxLedgeHeight_15_DC0D8FBF4C01FDE39D0AFDB1B04955A8",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8093DCDD4AE2473927895D889C75CCB4",
+					"name": "DownwardTraceRadius_12_7FE8C297416A916F74A892B85131B1BC",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "895FDF304239AB8EC9F501AAB15FD9C3",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 1200,
+			"y": -400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A742453641B0AD7E529E92B904B348B2",
+					"name": "InitialTrace_ImpactPoint",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "161303CD44BBAE0EF74A7284A047B1D3",
+					"name": "InitialTrace_ImpactPoint_X",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "1F587FC84EBDAA1712EF72BF738249FD",
+					"name": "InitialTrace_ImpactPoint_Y",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "5AD1EA714A1C6F88229EA4B8FB262A59",
+					"name": "InitialTrace_ImpactPoint_Z",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "943D049E4C5F42D38319C9BC867DA2DF",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "vector + vector",
+			"comment": "",
+			"x": 1472,
+			"y": -336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A7DCDDED4DB9FEBA2C5A289ADAF08C25",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "1321F259498E4438F38A539883A8CAA5",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "F8231FFB45DE1C99BC61D48307F3B612",
+					"name": "A_X",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "C642902B4D8EB006FE0DA380BAD91B54",
+					"name": "A_Y",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "A23296B641BBFDDEF719F39FDDD21570",
+					"name": "A_Z",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "C1B7435647982351D4799EBB69DEEE56",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "2D8BED574DE74872F98B5B9CF98FEDAD",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "35DFC95340F62CD48D1A178C31143F07",
+			"class": "K2Node_CallFunction",
+			"title": "vector * float",
+			"comment": "",
+			"x": 1472,
+			"y": -224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0C552B23424646B3977903B20F825238",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "404DFD1C4FCFD7F280244EBBCBAC20E9",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "368C26C541F466CD7B39E592F9EC186D",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "-15.000000"
+				},
+				{
+					"pinId": "8536E9F44428F5BDAF4709B30E88B1F1",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "20FEC3CF4A7A6C417ED45EA99F2E8453",
+			"class": "K2Node_VariableGet",
+			"title": "Get InitialTrace_Normal",
+			"comment": "",
+			"x": 1280,
+			"y": -192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3E5D26B748B46C4892AE90B172C5D35A",
+					"name": "InitialTrace_Normal",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "DF3833C0469A7850EF21FEB9E6A75FE3",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "vector + vector",
+			"comment": "",
+			"x": 1632,
+			"y": -272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FCEC846146410AECFF581FB3FB8493C6",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "44CACDC143F8CB4C351273BD1668D22C",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "78FFFFBE4DC10C57824985916D7B8B6E",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "5B82B81B44D9DC1772068494EC3026E8",
+					"name": "B_X",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "5379927840F5A963766659BBD0B6AB18",
+					"name": "B_Y",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "F983E020471ABC1C58C937A2FD540F42",
+					"name": "B_Z",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "41F7C7BC4D113B023792EE89406401CC",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "0C437D0C4A7723A182CA4F82552FEF3D",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "float + float",
+			"comment": "",
+			"x": 1488,
+			"y": -144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5FB88CCD4CD05F8343B784A86F7817F0",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "6E500E8048CEE32FFFBA5E99FE56276F",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "82885BFF4A4DE1E599D7D6A1D94CA14C",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "1.000000"
+				},
+				{
+					"pinId": "5DB7D440473D2522CFDF6F8A73798D56",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "414838C749A8963B7644BD9F9B20BCAB",
+					"name": "C",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "1.000000"
+				}
+			]
+		},
+		{
+			"nodeGuid": "09B39E054F3C1A613E72AE8AB647CF84",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1760,
+			"y": -54,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "12CE05C94130C1F251FDBD81B3CD5B2F",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "51DC8DBF4B4EAA6203F8BBA0D44C6DA4",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FEAD7CAC41D22FD3ACCCE6BFF81FD9CA",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "float + float",
+			"comment": "",
+			"x": 1936,
+			"y": -885,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FED2F9E4408AF74995903BB902A17DF5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "F592D47A4EB044AC83D11FA87551DD1F",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "636EF04F4327AEEBD9FDBEB5A44B3BA3",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "1.000000"
+				},
+				{
+					"pinId": "FE70F49A45038DF09E8CA5931C17FE77",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A09741744AD0C43864FB22BF3035D84C",
+			"class": "K2Node_CallFunction",
+			"title": "Get Calpsule Base Location",
+			"comment": "",
+			"x": 1072,
+			"y": -1088,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "133E8FE8431D9593258285AB85D46659",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6668AD48416FC7DC4542F0BECC912E54",
+					"name": "ZOffset",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "2.000000"
+				},
+				{
+					"pinId": "1CC91B064FCA3CDC1A4977A50A09F405",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "0DCEAE30467CBE2937ABA3B1426742AD",
+			"class": "K2Node_CallFunction",
+			"title": "Get Calpsule Base Location",
+			"comment": "",
+			"x": 1168,
+			"y": -304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "133E8FE8431D9593258285AB85D46659",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6668AD48416FC7DC4542F0BECC912E54",
+					"name": "ZOffset",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "2.000000"
+				},
+				{
+					"pinId": "1CC91B064FCA3CDC1A4977A50A09F405",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "3117110D477D77F7E872D8B7DACADB77",
+					"name": "ReturnValue_X",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "9776BF964A433E295499F3AD6693EB27",
+					"name": "ReturnValue_Y",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "7DF6512C4B39F0CC365FAFACBBB468F4",
+					"name": "ReturnValue_Z",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "4944B3914CCA107E487EA19709B68BC8",
+			"class": "K2Node_CallFunction",
+			"title": "Get Capsule Location from Base",
+			"comment": "",
+			"x": 1280,
+			"y": 336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FF0B712C46A2D3C2E9F11DA6BA761701",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "75048773492B0FE223BDFBBECC126A2D",
+					"name": "BaseLocation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "C63B89F147E1EF24CAB0829185012E24",
+					"name": "ZOffset",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "2.000000"
+				},
+				{
+					"pinId": "9B4A0456442EEB6113CD838EB33F240D",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "B8EEA0A840573D571474BE8B3958A64A",
+			"class": "K2Node_CallFunction",
+			"title": "NOT Boolean",
+			"comment": "",
+			"x": 2704,
+			"y": -1008,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B671B65A4435C3A42DCEDFA7BC80CFA3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "9D933D61432EE9D462E3DB8E99199B16",
+					"name": "A",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "DEC96C3E4BDB5E32C6EE8A89C80E2CBC",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "7EF9440C44B8D5D6CC2BA9B37F545EB6",
+			"class": "K2Node_CallFunction",
+			"title": "Get Trace Debug Type",
+			"comment": "",
+			"x": 2128,
+			"y": -704,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "31C2D8C74752B8FCEB103F95EE4029E8",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C207AF2D4540DF7E306838B056919CD7",
+					"name": "ShowTraceType",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "3D1F7BA745CA4E50F68D04B2D0626B6B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "3ED8C61A4E057F99B27D30878328E2AF",
+			"class": "K2Node_CallFunction",
+			"title": "Get Trace Debug Type",
+			"comment": "",
+			"x": 1856,
+			"y": -48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "31C2D8C74752B8FCEB103F95EE4029E8",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C207AF2D4540DF7E306838B056919CD7",
+					"name": "ShowTraceType",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "3D1F7BA745CA4E50F68D04B2D0626B6B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "97B7643F47DBE2A5C7DDFC9D44D2DCBD",
+			"class": "K2Node_CallFunction",
+			"title": "Get Trace Debug Type",
+			"comment": "",
+			"x": 1616,
+			"y": 352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "31C2D8C74752B8FCEB103F95EE4029E8",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C207AF2D4540DF7E306838B056919CD7",
+					"name": "ShowTraceType",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "3D1F7BA745CA4E50F68D04B2D0626B6B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "74342E2D4E5F3AF3776299A06DD0643F",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 1360,
+			"y": 1120,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0C96865143A8338D272F88B17950866A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2DA1C122462A4A2432AF369C73534C3B",
+					"name": "CanClimb/Vault",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				}
+			]
+		},
+		{
+			"nodeGuid": "195AAD204B6962EEE724C4AFFF489423",
+			"class": "K2Node_VariableSet",
+			"title": "Set TargetTransform",
+			"comment": "",
+			"x": 2080,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8CB007DA454A7E2EBC0AB7A7FA339035",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "15EAC9DF4EA4313D2C4688B5BD0E212C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D672FD624CE9F758C1BDB59367BC3129",
+					"name": "TargetTransform",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Transform",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DA25379E4BC2BF2358B35B952B804A3D",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Transform",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "56A99A23425D153211063E8D20767876",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 2080,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "19A59EF246E2CCDF680CE2B79EB80268",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "85476F1248A32C3984726FA3BF628E7A",
+					"name": "CanClimb/Vault",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "EF10D92347F45446D5BDF1A33338AFF3",
+			"class": "K2Node_VariableGet",
+			"title": "Get TargetTransform",
+			"comment": "",
+			"x": 928,
+			"y": 1232,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9497FA5D45E674251BD21F9BA93224FB",
+					"name": "TargetTransform",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Transform",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1FD993644DC97B55610EEFBC54052607",
+			"class": "EdGraphNode_Comment",
+			"title": "Step 1: Trace forward to find a wall / object the character cannot walk on.",
+			"comment": "Step 1: Trace forward to find a wall / object the character cannot walk on.",
+			"x": 896,
+			"y": -1280,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "377662CD430DF5AF2452588AFFF6B29C",
+			"class": "EdGraphNode_Comment",
+			"title": "Step 2: Trace downward from the first trace's Impact Point and determine if the hit location is walkable.",
+			"comment": "Step 2: Trace downward from the first trace's Impact Point and determine if the hit location is walkable.",
+			"x": 896,
+			"y": -576,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "D2AD85CB4364E32018C250A6D31F339A",
+			"class": "EdGraphNode_Comment",
+			"title": "Step 3: Check if the capsule has room to stand at the downward trace's location. If so, set that location as the Target Transform and calculate the mantle height.",
+			"comment": "Step 3: Check if the capsule has room to stand at the downward trace's location. If so, set that location as the Target Transform and calculate the mantle height.",
+			"x": 896,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "EA2DC8194688BBC81C5BDCA7AAB34B48",
+			"class": "K2Node_CallFunction",
+			"title": "Mantle Start\nLa destinazione è ALS Base Character BP",
+			"comment": "",
+			"x": 1088,
+			"y": 1104,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "460D49284F677B8E308E4D9A4E279852",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "27B0222B4E79344E1F7165AA8E54867B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A22C8CEC4C80691F5922798D2B5714EB",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "589866BC4D13869C943B42BB823088A7",
+					"name": "MantleHeight",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "2BE5185B44C5738D88178A83FA4A223C",
+					"name": "MantleLedgeWS",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/ALS_ComponentAndTransform.ALS_ComponentAndTransform",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8C5D0ACF436FC34D93218D8AE3CD6924",
+					"name": "MantleLedgeWS_Transform_8_5A922B8141278287C6E895A0DBC17B89",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Transform",
+					"defaultValue": "0.000000,0.000000,0.000000|0.000000,0.000000,0.000000|1.000000,1.000000,1.000000"
+				},
+				{
+					"pinId": "77C1C6BA483836F386020C8F801249CB",
+					"name": "MantleLedgeWS_Component_11_74DA46FC4578E87978977783DBA2F302",
+					"direction": "Input",
+					"type": "object|/Script/Engine.PrimitiveComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B8D78D544CD1929DD28BCC81E69C5E14",
+					"name": "MantleType",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MantleType.MantleType",
+					"defaultValue": "NewEnumerator1"
+				}
+			]
+		},
+		{
+			"nodeGuid": "71DAD20D47C2B7928A86759EB450C0DE",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "vector + vector",
+			"comment": "",
+			"x": 1344,
+			"y": -1056,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "30B36B4949D751AD5A8FF18B12C0E6C8",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "9132A44F435A830B4C9EEE80EF212FBD",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "582DC51A4892BA1E0B1B70B9506F7D34",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "26F672AE4F892A0B4913599D141C04F2",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "9A2E4B1D43E6FEAEDD372F813464E379",
+			"class": "K2Node_CallFunction",
+			"title": "vector * float",
+			"comment": "",
+			"x": 1408,
+			"y": -736,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "939D4B7445D551B03A5686B42027A58A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "5D65300343FF1FA60CC064B1AE128667",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "39292C0945898E37A984DB846667F387",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "-30.000000"
+				},
+				{
+					"pinId": "0B020ADF43E2E0D672D1718AF9163AEC",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "DA0B731F4C74A56E6FD9F69C79C9A4E1",
+			"class": "K2Node_VariableGet",
+			"title": "Get DebugType",
+			"comment": "",
+			"x": 1856,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E1071655464E376262BD80AFE241A282",
+					"name": "DebugType",
+					"direction": "Output",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "C4A03C55444A410C11039CAAF29A5A0F",
+			"class": "K2Node_VariableGet",
+			"title": "Get DebugType",
+			"comment": "",
+			"x": 2128,
+			"y": -656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E1071655464E376262BD80AFE241A282",
+					"name": "DebugType",
+					"direction": "Output",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A6D27DFE4958F52F5FD25DB8C4D7532C",
+			"class": "K2Node_VariableGet",
+			"title": "Get DebugType",
+			"comment": "",
+			"x": 1616,
+			"y": 400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E1071655464E376262BD80AFE241A282",
+					"name": "DebugType",
+					"direction": "Output",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "068095B247B3970DEE4A33A4152CD356",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 912,
+			"y": 1152,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "188D5A6C46E378463B44B6B94C9811CE",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F47C433B4A395F89F135EF9E7955AB4A",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "50B6E2374535C8370BBD6F87CBE87CD4",
+			"class": "EdGraphNode_Comment",
+			"title": "Step 5: If everything checks out, start the Mantle",
+			"comment": "Step 5: If everything checks out, start the Mantle",
+			"x": 896,
+			"y": 1040,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "0436110A4B6429ED915E4EB849F7BCEF",
+			"class": "K2Node_CallFunction",
+			"title": "Break Transform",
+			"comment": "",
+			"x": 2288,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B5ED88C74BE18FDECDC729B828714675",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "B6A2866F44D7C77EED8F4897CA4CF13F",
+					"name": "InTransform",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Transform|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "649A1C5A4122952FBCA4779CAA14B497",
+					"name": "Location",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "1A573C104F10430E0A2AF988AE79CE54",
+					"name": "Rotation",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "198E560F49EA69096BB503AD1F40B43F",
+					"name": "Scale",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "12E1262E45955D77153C43B5855667AE",
+			"class": "K2Node_CallFunction",
+			"title": "vector - vector",
+			"comment": "",
+			"x": 2512,
+			"y": 272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3A2B7A114BAE0AB93216E18F38D7EE88",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "1ACF5AC242BF7A6FF7ABA0B8018F8160",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "8E8BC4D74012492513A95898C8EDA466",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "72D55925464708CD87AF2E960546BA48",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "196FD53D46077D59253359886604F101",
+					"name": "ReturnValue_X",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "5993201841A1A08936FE1FAF7686A88F",
+					"name": "ReturnValue_Y",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "68098F844FECE07CEA9E2D930C11A7E2",
+					"name": "ReturnValue_Z",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "D3AB0F8F4F04FEC290944A9992988B24",
+			"class": "K2Node_CallFunction",
+			"title": "Get Actor Location\nLa destinazione è Actor",
+			"comment": "",
+			"x": 2272,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B36FE1C94BBBB5D711DD4AB3F587D4AD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A0401436483C8B05C83AA8AE06FDFFAD",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "7F58FA8F4841D71BAF0DD9B181FA2123",
+			"class": "K2Node_VariableSet",
+			"title": "Set MantleHeight",
+			"comment": "",
+			"x": 2640,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ED417AE74B0EF3CE05C7E3BBDB406D84",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "909DF93B4311574052878A8D4910F6B3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "122D6DA64300AB7BDEF0D9BE33AE7588",
+					"name": "MantleHeight",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "F4AB1B744B803D9DBB633BB4339A6C05",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "5608917748EF9E17F8658289A573DD8F",
+			"class": "K2Node_VariableSet",
+			"title": "Set MantleType",
+			"comment": "",
+			"x": 1408,
+			"y": 720,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A1CE25C64D50317BF4603091B7FAB03D",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "915046494EB75716AED904B09ECF4FE5",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B8D8FAF34D0A29C20D5C3D949C76D5D3",
+					"name": "MantleType",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MantleType.MantleType",
+					"defaultValue": "NewEnumerator1"
+				},
+				{
+					"pinId": "8DA12F0E47BAC8ABCF0110BABA63F318",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MantleType.MantleType",
+					"defaultValue": "NewEnumerator1"
+				}
+			]
+		},
+		{
+			"nodeGuid": "654EBECB4D1D3C2CE2924CA27EB7F931",
+			"class": "EdGraphNode_Comment",
+			"title": "Step 4: Determine the Mantle Type by checking the movement mode and Mantle Height.",
+			"comment": "Step 4: Determine the Mantle Type by checking the movement mode and Mantle Height.",
+			"x": 896,
+			"y": 608,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "6BA4D39B4B664C05D9A36087605A521C",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1216,
+			"y": 704,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "653FBA6946389B5D4AF86BBB95A49C96",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3CC1CDD944D7C0473BBB0990D884904C",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "526F4B1E464154B4679B9CA20E2944BE",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BBA16CD7448C250A2AA2FC82882790ED",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5BCCDF124724FDDB5076CDBA85EA26F9",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on ALS_MovementState",
+			"comment": "",
+			"x": 928,
+			"y": 704,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8B3F49C74A7C2D88F8821593D3C7F9AE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5233B1054C6A442883F890BF3DD2EABB",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "0F9E7B0440016582067E3CA5DDBA200C",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "F3F4A8D14BBC048F29DA3588242FCA60",
+					"name": "NewEnumerator0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F229FCA44E1798CD59D513A9BDBA3E44",
+					"name": "NewEnumerator1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6EE26D5B4AFA232E082CB099D778FA48",
+					"name": "NewEnumerator2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9AD359644BFA9614D50B12B37CF7ADCC",
+					"name": "NewEnumerator4",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B4A859A244011413B1442FB895B425CC",
+					"name": "NewEnumerator3",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AB88F4324F4BB20407537E970B84CBF2",
+			"class": "K2Node_VariableGet",
+			"title": "Get MovementState",
+			"comment": "",
+			"x": 928,
+			"y": 896,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0248F89A4B6049453E61E89DEF87CB6D",
+					"name": "MovementState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "5EA7558C4DA410EBA9D99C94A9F1433A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7C9BC3A347256DBDB326D698FF034B43",
+			"class": "K2Node_VariableGet",
+			"title": "Get MantleHeight",
+			"comment": "",
+			"x": 928,
+			"y": 1200,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C7924F63401E6DD31D956085998B5E99",
+					"name": "MantleHeight",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "404EBCBD4487E3CC3AEE1A8114CD8759",
+			"class": "K2Node_CallFunction",
+			"title": "float > float",
+			"comment": "",
+			"x": 1216,
+			"y": 784,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "96CCFDC24D3E6FAC65DD2D9E754108A0",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "83A7A38D40C07D10CC95C08C6AB47041",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "DFEA3F7B4D95C939E4CFE28C5DE29B9D",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "125.000000"
+				},
+				{
+					"pinId": "5D834CE94B79D3892746C9A500E58838",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "6BCB583E4C1A310C583EFFA731452C64",
+			"class": "K2Node_VariableSet",
+			"title": "Set MantleType",
+			"comment": "",
+			"x": 1408,
+			"y": 816,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A1CE25C64D50317BF4603091B7FAB03D",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "915046494EB75716AED904B09ECF4FE5",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B8D8FAF34D0A29C20D5C3D949C76D5D3",
+					"name": "MantleType",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MantleType.MantleType",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "8DA12F0E47BAC8ABCF0110BABA63F318",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MantleType.MantleType",
+					"defaultValue": "NewEnumerator1"
+				}
+			]
+		},
+		{
+			"nodeGuid": "6A646E064F501BE9B5951997AFE2C9D5",
+			"class": "K2Node_VariableSet",
+			"title": "Set MantleType",
+			"comment": "",
+			"x": 1408,
+			"y": 912,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A1CE25C64D50317BF4603091B7FAB03D",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "915046494EB75716AED904B09ECF4FE5",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B8D8FAF34D0A29C20D5C3D949C76D5D3",
+					"name": "MantleType",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MantleType.MantleType",
+					"defaultValue": "NewEnumerator2"
+				},
+				{
+					"pinId": "8DA12F0E47BAC8ABCF0110BABA63F318",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MantleType.MantleType",
+					"defaultValue": "NewEnumerator1"
+				}
+			]
+		},
+		{
+			"nodeGuid": "09A7650845269079A9545CA419177E58",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1216,
+			"y": 928,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "87E6D8D0479C8C466FD6EB8D1ADB03DE",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CEE36A1D42D23B280949B29327FFD4FE",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6BAA78004F480C455F3F6C956C246340",
+			"class": "K2Node_VariableGet",
+			"title": "Get MantleType",
+			"comment": "",
+			"x": 928,
+			"y": 1296,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BED713F6479F8CD880811DB0F8F8D49B",
+					"name": "MantleType",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MantleType.MantleType",
+					"defaultValue": "NewEnumerator1"
+				}
+			]
+		},
+		{
+			"nodeGuid": "78356E594A260B86DFA696A78E5A803D",
+			"class": "K2Node_VariableGet",
+			"title": "Get MantleHeight",
+			"comment": "",
+			"x": 1216,
+			"y": 832,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C7924F63401E6DD31D956085998B5E99",
+					"name": "MantleHeight",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "58A13E514DAFBA06B31D6BAEA7611FE0",
+			"fromPinId": "C7B3C7354834CC019BC1F1849FCFAD6F",
+			"fromPinName": "then",
+			"toNodeGuid": "648D51A24629C57DC2FF54B185725FF7",
+			"toPinId": "129F93B241A6DDCB663842879124F25F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "5CD5BB5E44ED633B49DC6699BA15F0FB",
+			"fromPinId": "ED81FE5C4683C42F9DBF28862AC77827",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "2CE92A4445D6B4EE7DB3729423692108",
+			"toPinId": "46F81D80483E337D9EF2FDB6E0616906",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "2CE92A4445D6B4EE7DB3729423692108",
+			"fromPinId": "D72D9CB44AD769D6004814B16768AA7B",
+			"fromPinName": "then",
+			"toNodeGuid": "43B321AE485BC24CAEED8BB4AE29F5BA",
+			"toPinId": "31615FE743BD5DC53061C19037A77925",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "0819931E41AB4977C63F188AF945556E",
+			"fromPinId": "E310F3074F2439C062869EA808529168",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "2CE92A4445D6B4EE7DB3729423692108",
+			"toPinId": "4CC3E4284A2000F8BBB70DA2F5C9E30C",
+			"toPinName": "Start"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "76F4FE5743ED18ECD9B07AA6440691C1",
+			"fromPinId": "E30F5325427466682F309BB42AB9BC26",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "2CE92A4445D6B4EE7DB3729423692108",
+			"toPinId": "57A667A04DF0FD37E002C088B7D38642",
+			"toPinName": "End"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "F8584CD34F94E41F5D76A28E018053E6",
+			"fromPinId": "58C7D9B347F85B83FC6EFA898556549D",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "2CE92A4445D6B4EE7DB3729423692108",
+			"toPinId": "2C72E71E4EF97FAD186C3AA4649BE1ED",
+			"toPinName": "Radius"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "FEAD7CAC41D22FD3ACCCE6BFF81FD9CA",
+			"fromPinId": "FE70F49A45038DF09E8CA5931C17FE77",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "2CE92A4445D6B4EE7DB3729423692108",
+			"toPinId": "B91D1F7C4CA388661C1A20884987A001",
+			"toPinName": "HalfHeight"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "7EF9440C44B8D5D6CC2BA9B37F545EB6",
+			"fromPinId": "3D1F7BA745CA4E50F68D04B2D0626B6B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "2CE92A4445D6B4EE7DB3729423692108",
+			"toPinId": "571C612E4D04FC1882B7CAAE018A0A60",
+			"toPinName": "DrawDebugType"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "2CE92A4445D6B4EE7DB3729423692108",
+			"fromPinId": "C3CF1BED40C3145636232A8F64F565B9",
+			"fromPinName": "OutHit",
+			"toNodeGuid": "CF59D78B4EE42294DEA40F9E8F44EA33",
+			"toPinId": "BFA453574041F3A82D6F5C901EFC7E6A",
+			"toPinName": "Hit"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "2CE92A4445D6B4EE7DB3729423692108",
+			"fromPinId": "C3CF1BED40C3145636232A8F64F565B9",
+			"fromPinName": "OutHit",
+			"toNodeGuid": "E8230D8F45CAE7E1788B4FAF89B59A50",
+			"toPinId": "1F40151A4A29F60343721ABE335ED4DE",
+			"toPinName": "Hit"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "43B321AE485BC24CAEED8BB4AE29F5BA",
+			"fromPinId": "8D67018141D8B2460339AD9DCF0DC1D3",
+			"fromPinName": "else",
+			"toNodeGuid": "71EC941748AA4DDD81B1A7ACB681BEFA",
+			"toPinId": "650FFFBB48CAAB416ACFDC89C71F9FDA",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "DBAB3DB34A50A6A94FE568A276C70BDD",
+			"fromPinId": "66A573CD4351A6A8FACAD28B180B733C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "43B321AE485BC24CAEED8BB4AE29F5BA",
+			"toPinId": "5296DD9B4A942BBEA1B81A9184940AED",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "43B321AE485BC24CAEED8BB4AE29F5BA",
+			"fromPinId": "795A613941FB0651EE1839A3F0A18C4D",
+			"fromPinName": "then",
+			"toNodeGuid": "17A580E345D37F338672DB970C4718ED",
+			"toPinId": "18FF757042F36D818DD982931C2F7532",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "FB60871644A68AE19C97ADADE17111C7",
+			"fromPinId": "0AE9922542CF45B0BC77528A8DF349CD",
+			"fromPinName": "else",
+			"toNodeGuid": "D92982494A5F66B0BEE5828F5D15D610",
+			"toPinId": "650FFFBB48CAAB416ACFDC89C71F9FDA",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "65BA965344102242B815D5B6A39743DB",
+			"fromPinId": "08217E884FEA447B5AB94585844F72D0",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "7F02B1DE4388AAB5A3F9A1A188DEE379",
+			"toPinId": "430D46B54917F4B0739F1A996BF972E6",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "7F02B1DE4388AAB5A3F9A1A188DEE379",
+			"fromPinId": "6552906B49E70EC03A3DC5B2CA54993B",
+			"fromPinName": "then",
+			"toNodeGuid": "FB60871644A68AE19C97ADADE17111C7",
+			"toPinId": "FE06714242E0BE3E6DEFAB8E5DD1B282",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "DF3833C0469A7850EF21FEB9E6A75FE3",
+			"fromPinId": "41F7C7BC4D113B023792EE89406401CC",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "7F02B1DE4388AAB5A3F9A1A188DEE379",
+			"toPinId": "8048FC00446B58A2E11EAE867C7BB917",
+			"toPinName": "Start"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "943D049E4C5F42D38319C9BC867DA2DF",
+			"fromPinId": "2D8BED574DE74872F98B5B9CF98FEDAD",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "7F02B1DE4388AAB5A3F9A1A188DEE379",
+			"toPinId": "9421D7844BCA0A3C050F8580B4CE52C8",
+			"toPinName": "End"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "09B39E054F3C1A613E72AE8AB647CF84",
+			"fromPinId": "51DC8DBF4B4EAA6203F8BBA0D44C6DA4",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "7F02B1DE4388AAB5A3F9A1A188DEE379",
+			"toPinId": "947499CB495B1E501E70388E9698BB35",
+			"toPinName": "Radius"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "3ED8C61A4E057F99B27D30878328E2AF",
+			"fromPinId": "3D1F7BA745CA4E50F68D04B2D0626B6B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "7F02B1DE4388AAB5A3F9A1A188DEE379",
+			"toPinId": "2338936E4EF6DEFF77274AA007BEEC01",
+			"toPinName": "DrawDebugType"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "7F02B1DE4388AAB5A3F9A1A188DEE379",
+			"fromPinId": "0A5F354147B265C7FD6E10A22CD15FC8",
+			"fromPinName": "OutHit",
+			"toNodeGuid": "896CAFB84842F854B28526AD1A089986",
+			"toPinId": "1F40151A4A29F60343721ABE335ED4DE",
+			"toPinName": "Hit"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "7F02B1DE4388AAB5A3F9A1A188DEE379",
+			"fromPinId": "0A5F354147B265C7FD6E10A22CD15FC8",
+			"fromPinName": "OutHit",
+			"toNodeGuid": "AF165B9443DAD94A7FD5ABB39C223FC5",
+			"toPinId": "BFA453574041F3A82D6F5C901EFC7E6A",
+			"toPinName": "Hit"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "992446A841CA9B9C1DC89EAF48CE70DA",
+			"fromPinId": "66A573CD4351A6A8FACAD28B180B733C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "FB60871644A68AE19C97ADADE17111C7",
+			"toPinId": "033921A4489B6C85C6D2F18BE438BD3A",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "FB60871644A68AE19C97ADADE17111C7",
+			"fromPinId": "A7EC19AF421580476F67428FE73EF57B",
+			"fromPinName": "then",
+			"toNodeGuid": "397013EF46F65571C87331886C3A27A4",
+			"toPinId": "3B5C922244146D800D575F8272ECB71A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "17A580E345D37F338672DB970C4718ED",
+			"fromPinId": "DD9AF83140840449020FE69AAEB2B572",
+			"fromPinName": "then",
+			"toNodeGuid": "1DD1DC844D1DCD67134D9B91C0F9E2BC",
+			"toPinId": "E181C6DD471EF86461AD06B8AFE5DA78",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "CF59D78B4EE42294DEA40F9E8F44EA33",
+			"fromPinId": "BFEB074F4BE76DB609747ABFBD9165E3",
+			"fromPinName": "ImpactPoint",
+			"toNodeGuid": "17A580E345D37F338672DB970C4718ED",
+			"toPinId": "69B2AFCB4665A69CDFFFEDBA2FE62E56",
+			"toPinName": "InitialTrace_ImpactPoint"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "CF59D78B4EE42294DEA40F9E8F44EA33",
+			"fromPinId": "D46B468C466CA997EE18A38200A9B7E3",
+			"fromPinName": "ImpactNormal",
+			"toNodeGuid": "1DD1DC844D1DCD67134D9B91C0F9E2BC",
+			"toPinId": "CA432E99483521BCB6A006B1B4C7A016",
+			"toPinName": "InitialTrace_Normal"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "648D51A24629C57DC2FF54B185725FF7",
+			"fromPinId": "C554E7DB4E6CE4272113FBBCEC8F49EB",
+			"fromPinName": "then_0",
+			"toNodeGuid": "5CD5BB5E44ED633B49DC6699BA15F0FB",
+			"toPinId": "FEF2D9E441617A09B4117FAA863FEC7B",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "648D51A24629C57DC2FF54B185725FF7",
+			"fromPinId": "FE7D83C944BE3997DD8331A26D5E81E6",
+			"fromPinName": "then_1",
+			"toNodeGuid": "65BA965344102242B815D5B6A39743DB",
+			"toPinId": "C784928F4CC36BE24F70D48D8F8EAACF",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "648D51A24629C57DC2FF54B185725FF7",
+			"fromPinId": "F937CB094E1050BA137CA696474B20E1",
+			"fromPinName": "then_2",
+			"toNodeGuid": "2D5F0131447F35D316E8B5B717362FFA",
+			"toPinId": "E26FD1A84E6D512B7B2A45B6EB58345E",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "648D51A24629C57DC2FF54B185725FF7",
+			"fromPinId": "30BA61984EFFB3CF85944395C8EC05ED",
+			"fromPinName": "then_3",
+			"toNodeGuid": "5BCCDF124724FDDB5076CDBA85EA26F9",
+			"toPinId": "8B3F49C74A7C2D88F8821593D3C7F9AE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "648D51A24629C57DC2FF54B185725FF7",
+			"fromPinId": "8443D57B474E02DBECB26790DC5A87CE",
+			"fromPinName": "then_5",
+			"toNodeGuid": "068095B247B3970DEE4A33A4152CD356",
+			"toPinId": "188D5A6C46E378463B44B6B94C9811CE",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "AF165B9443DAD94A7FD5ABB39C223FC5",
+			"fromPinId": "A4AD6C6F468FB407C5B972B2B1645BE7",
+			"fromPinName": "Location_X",
+			"toNodeGuid": "63B9A64B46247A6E9C4AFA9C0B0D0F05",
+			"toPinId": "BCB4725246369E830C8315B81E512932",
+			"toPinName": "X"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "AF165B9443DAD94A7FD5ABB39C223FC5",
+			"fromPinId": "759ADA8D42413B64ADEA2C9024F74882",
+			"fromPinName": "Location_Y",
+			"toNodeGuid": "63B9A64B46247A6E9C4AFA9C0B0D0F05",
+			"toPinId": "AA8F6081421D089E38BA44BB966FF2BA",
+			"toPinName": "Y"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "AF165B9443DAD94A7FD5ABB39C223FC5",
+			"fromPinId": "29A8B98B4853705E394447884C4B8C30",
+			"fromPinName": "ImpactPoint_Z",
+			"toNodeGuid": "63B9A64B46247A6E9C4AFA9C0B0D0F05",
+			"toPinId": "538377BD40EAAA3F1CBE4B808EA6E8DC",
+			"toPinName": "Z"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "63B9A64B46247A6E9C4AFA9C0B0D0F05",
+			"fromPinId": "FD6B5D95448E16E2466DF58266DB8DF7",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "397013EF46F65571C87331886C3A27A4",
+			"toPinId": "684D402A4809D5553725D2ACF0ED6312",
+			"toPinName": "DownTraceLocation"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "397013EF46F65571C87331886C3A27A4",
+			"fromPinId": "A866F8DA468F94AE1E0F4CA2AF808CAD",
+			"fromPinName": "then",
+			"toNodeGuid": "AEAE2127480175E3082FEDA7D06BFC6D",
+			"toPinId": "BF8DA6AE45C8705ECD5E548F7E75AB74",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "AF165B9443DAD94A7FD5ABB39C223FC5",
+			"fromPinId": "CCA0C4AC4DD85F743747278A9AD3AAB2",
+			"fromPinName": "HitComponent",
+			"toNodeGuid": "AEAE2127480175E3082FEDA7D06BFC6D",
+			"toPinId": "E82925674C000D7252106993181E5AA9",
+			"toPinName": "HitComponent"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "92C7B5E74B0077CB0A03B9A8E52F3FD5",
+			"fromPinId": "59E13AAA433A8FEFF6BA2E9B47A5213B",
+			"fromPinName": "CharacterMovement",
+			"toNodeGuid": "896CAFB84842F854B28526AD1A089986",
+			"toPinId": "2CFC7D0F43D643160A8397B7EDBE4EBE",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "896CAFB84842F854B28526AD1A089986",
+			"fromPinId": "B2A343E542C91DE7F7E9BAB14CE92360",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "992446A841CA9B9C1DC89EAF48CE70DA",
+			"toPinId": "B247726E4534E53E0B8959BF9E6428AB",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "AF165B9443DAD94A7FD5ABB39C223FC5",
+			"fromPinId": "165860C842790476A91D7F8028017871",
+			"fromPinName": "bBlockingHit",
+			"toNodeGuid": "992446A841CA9B9C1DC89EAF48CE70DA",
+			"toPinId": "9A12CA5F48708511DF48D58C21952F5C",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "2D5F0131447F35D316E8B5B717362FFA",
+			"fromPinId": "C5378BF9446D4CE9E5FC0BBF721E1C19",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "BB1BFC3849C7347EB5463D8642890384",
+			"toPinId": "953602F144F3E3DD1ED28E9D64F761E1",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "B7FFE95E47BAA1115F36E89B10E6053E",
+			"fromPinId": "800379464AB1B23A13DF90B9E920F3D2",
+			"fromPinName": "CapsuleComponent",
+			"toNodeGuid": "6E5D6ABC48D154400A556AB658119301",
+			"toPinId": "9BC3EB064A4A404DD9B38B899AB94D06",
+			"toPinName": "Capsule"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "4944B3914CCA107E487EA19709B68BC8",
+			"fromPinId": "9B4A0456442EEB6113CD838EB33F240D",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "6E5D6ABC48D154400A556AB658119301",
+			"toPinId": "8C15AA5446841C177CBA24869DF34653",
+			"toPinName": "TargetLocation"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "97B7643F47DBE2A5C7DDFC9D44D2DCBD",
+			"fromPinId": "3D1F7BA745CA4E50F68D04B2D0626B6B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "6E5D6ABC48D154400A556AB658119301",
+			"toPinId": "B895AF104A50BB3AF8C743BA0E430B3F",
+			"toPinName": "DebugType"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "6E5D6ABC48D154400A556AB658119301",
+			"fromPinId": "CB4D7FFE4FCB7A22E2F4EFAB74BF6D33",
+			"fromPinName": "HasRoom",
+			"toNodeGuid": "BB1BFC3849C7347EB5463D8642890384",
+			"toPinId": "494C25D74632BEBFEDF68AB3B9E1E9A4",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "22A067B1446C1C09DBEEF098AE2BF810",
+			"fromPinId": "495BA00C47BC7E19DB2E4DA088D7C040",
+			"fromPinName": "DownTraceLocation",
+			"toNodeGuid": "4944B3914CCA107E487EA19709B68BC8",
+			"toPinId": "75048773492B0FE223BDFBBECC126A2D",
+			"toPinName": "BaseLocation"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "4944B3914CCA107E487EA19709B68BC8",
+			"fromPinId": "9B4A0456442EEB6113CD838EB33F240D",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "C52F8B5A4E55F28F8691C6A9B80A4900",
+			"toPinId": "E79A1A46491CEE5B6A3688B2B171D77A",
+			"toPinName": "Location"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "6FA1DCD64DAF107B331A3E8418757A17",
+			"fromPinId": "578832784E37DAEB52FC55B5678D80AF",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "C52F8B5A4E55F28F8691C6A9B80A4900",
+			"toPinId": "C1029E13426D6A07092802BE5303FCCA",
+			"toPinName": "Rotation"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "C52F8B5A4E55F28F8691C6A9B80A4900",
+			"fromPinId": "F6DA806849622ECF426A8DA1791B798F",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "195AAD204B6962EEE724C4AFFF489423",
+			"toPinId": "D672FD624CE9F758C1BDB59367BC3129",
+			"toPinName": "TargetTransform"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "748EDAF1466BA66C2F4070BC2034D04D",
+			"fromPinId": "3E5D26B748B46C4892AE90B172C5D35A",
+			"fromPinName": "InitialTrace_Normal",
+			"toNodeGuid": "066B788C45DA8E0F4C27A095D069585E",
+			"toPinId": "EEA696EA43B40B7E5BB99980BDAA2BB0",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "066B788C45DA8E0F4C27A095D069585E",
+			"fromPinId": "98BB57C745436F25293AA5A13168DFE8",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "6FA1DCD64DAF107B331A3E8418757A17",
+			"toPinId": "C0601B114F79AE5E7080C8B18C5D4803",
+			"toPinName": "InVec"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "BB1BFC3849C7347EB5463D8642890384",
+			"fromPinId": "034BA70145604101C3629E8C5A326730",
+			"fromPinName": "then",
+			"toNodeGuid": "195AAD204B6962EEE724C4AFFF489423",
+			"toPinId": "8CB007DA454A7E2EBC0AB7A7FA339035",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "BB1BFC3849C7347EB5463D8642890384",
+			"fromPinId": "40DAA2984A18FF2536817CBD5688C933",
+			"fromPinName": "else",
+			"toNodeGuid": "56A99A23425D153211063E8D20767876",
+			"toPinId": "19A59EF246E2CCDF680CE2B79EB80268",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "850EC54D49FDB1828699D5BA50496CD6",
+			"fromPinId": "E42C202D4EBF3545C54434B29B7695D6",
+			"fromPinName": "HitComponent",
+			"toNodeGuid": "EA2DC8194688BBC81C5BDCA7AAB34B48",
+			"toPinId": "77C1C6BA483836F386020C8F801249CB",
+			"toPinName": "MantleLedgeWS_Component_11_74DA46FC4578E87978977783DBA2F302"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "2C1647B84C5433AC193588896BF79B05",
+			"fromPinId": "066851994D4AC72460158F8A19B602B8",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "D220981144E49CACDEB47489A41355AA",
+			"toPinId": "96CD93994F97914C6635D6A58080C602",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "2C1647B84C5433AC193588896BF79B05",
+			"fromPinId": "066851994D4AC72460158F8A19B602B8",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "9A2E4B1D43E6FEAEDD372F813464E379",
+			"toPinId": "5D65300343FF1FA60CC064B1AE128667",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "0819931E41AB4977C63F188AF945556E",
+			"fromPinId": "E310F3074F2439C062869EA808529168",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "76F4FE5743ED18ECD9B07AA6440691C1",
+			"toPinId": "55376036455EA4080B60619BC428025D",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "D220981144E49CACDEB47489A41355AA",
+			"fromPinId": "D4F83CC04F8D2D25ECE459B9501D83E8",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "76F4FE5743ED18ECD9B07AA6440691C1",
+			"toPinId": "985F4C1149CDC354F472DCB4C974979F",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "FA64132C45E725F93536E58EA9E58066",
+			"fromPinId": "DE506255409B9F931D5056B4B73CC503",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "D220981144E49CACDEB47489A41355AA",
+			"toPinId": "F267A95643169F093798AA9D67760C4D",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "238898BA4D1EFFD879E441B652E1741A",
+			"fromPinId": "59E13AAA433A8FEFF6BA2E9B47A5213B",
+			"fromPinName": "CharacterMovement",
+			"toNodeGuid": "E8230D8F45CAE7E1788B4FAF89B59A50",
+			"toPinId": "2CFC7D0F43D643160A8397B7EDBE4EBE",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "E8230D8F45CAE7E1788B4FAF89B59A50",
+			"fromPinId": "B2A343E542C91DE7F7E9BAB14CE92360",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "2BE70C584C7FDDF8D030B499872CEDE8",
+			"toPinId": "66B848244AD5BD92B3C4D299B40120F4",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "CF59D78B4EE42294DEA40F9E8F44EA33",
+			"fromPinId": "165860C842790476A91D7F8028017871",
+			"fromPinName": "bBlockingHit",
+			"toNodeGuid": "DBAB3DB34A50A6A94FE568A276C70BDD",
+			"toPinId": "9A12CA5F48708511DF48D58C21952F5C",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "CF59D78B4EE42294DEA40F9E8F44EA33",
+			"fromPinId": "AB8DFE854038A7333E6BE8AD2D4E0131",
+			"fromPinName": "bInitialOverlap",
+			"toNodeGuid": "B8EEA0A840573D571474BE8B3958A64A",
+			"toPinId": "9D933D61432EE9D462E3DB8E99199B16",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "2BE70C584C7FDDF8D030B499872CEDE8",
+			"fromPinId": "30A2BED34E113B0776FE7A89A98470D7",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "DBAB3DB34A50A6A94FE568A276C70BDD",
+			"toPinId": "B247726E4534E53E0B8959BF9E6428AB",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "B8EEA0A840573D571474BE8B3958A64A",
+			"fromPinId": "DEC96C3E4BDB5E32C6EE8A89C80E2CBC",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "DBAB3DB34A50A6A94FE568A276C70BDD",
+			"toPinId": "8502ADC048F2FDEE12639DAE9F16BA67",
+			"toPinName": "C"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "603E2DEE4EF297DBEAE8CD9A37E4357F",
+			"fromPinId": "5E149FB74A1FAD92DC7CCF9FBC6D7923",
+			"fromPinName": "Trace Settings",
+			"toNodeGuid": "075ACBB4475E964346123CBBFA3F0491",
+			"toPinId": "F38CB3B6485727681DA9158D4161CD1C",
+			"toPinName": "Mantle_TraceSettings"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "075ACBB4475E964346123CBBFA3F0491",
+			"fromPinId": "9EA967B444088EE5CAC73CBEAAC709AE",
+			"fromPinName": "MaxLedgeHeight_15_DC0D8FBF4C01FDE39D0AFDB1B04955A8",
+			"toNodeGuid": "041CAF3F422B4AB0DC7887910C200BF4",
+			"toPinId": "53B8774B4E8E764F847BFABF1D3F79D6",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "075ACBB4475E964346123CBBFA3F0491",
+			"fromPinId": "9EA967B444088EE5CAC73CBEAAC709AE",
+			"fromPinName": "MaxLedgeHeight_15_DC0D8FBF4C01FDE39D0AFDB1B04955A8",
+			"toNodeGuid": "34190DAA44A320AF8931C7BF9445415F",
+			"toPinId": "BCB637194B7DDE59DDC1C3B9B11154D4",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "075ACBB4475E964346123CBBFA3F0491",
+			"fromPinId": "96B6F8944712E560990952BF5FC6BA4D",
+			"fromPinName": "MinLedgeHeight_14_857E2CDE423BEE7929567D8802243370",
+			"toNodeGuid": "041CAF3F422B4AB0DC7887910C200BF4",
+			"toPinId": "574081074A26BA82C99800BE4DEDF967",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "075ACBB4475E964346123CBBFA3F0491",
+			"fromPinId": "96B6F8944712E560990952BF5FC6BA4D",
+			"fromPinName": "MinLedgeHeight_14_857E2CDE423BEE7929567D8802243370",
+			"toNodeGuid": "34190DAA44A320AF8931C7BF9445415F",
+			"toPinId": "8F82A58A449DC446AC1F308CC8F02A6B",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "075ACBB4475E964346123CBBFA3F0491",
+			"fromPinId": "722AA4ED42967AE28316EEB660D78232",
+			"fromPinName": "ReachDistance_2_B3C154AA46EBFD9C1E67EB8DFBB7010E",
+			"toNodeGuid": "FA64132C45E725F93536E58EA9E58066",
+			"toPinId": "724389B94F1F70F84C18F4A9990B5D53",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "075ACBB4475E964346123CBBFA3F0491",
+			"fromPinId": "57CC998140DB2310DBB189B240028E17",
+			"fromPinName": "ForwardTraceRadius_9_C1A792084D8AAADBD22D8F8DE31A3A1C",
+			"toNodeGuid": "0C3F717E4D93B895A4EB418331496B9E",
+			"toPinId": "257EB6D34E7B305E8C5812B53C0B67B2",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "34190DAA44A320AF8931C7BF9445415F",
+			"fromPinId": "CB6D9DEA4E3E5CC5B2067FA8CA7D9F9E",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "B11CDBB74559C1EA7829A99D7BFA40C6",
+			"toPinId": "D8395A884D685A41D3ED0589F658A3E9",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "041CAF3F422B4AB0DC7887910C200BF4",
+			"fromPinId": "086318164ED1F0DAD40D6DAD474FD105",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "1CD40636417EE840874A8F9B5C4447A5",
+			"toPinId": "D8395A884D685A41D3ED0589F658A3E9",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "1CD40636417EE840874A8F9B5C4447A5",
+			"fromPinId": "1AB33324407CBB4E2F9885B3DF9B1977",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "0819931E41AB4977C63F188AF945556E",
+			"toPinId": "448104EA4480E7FE617E7C8A70DB6A29",
+			"toPinName": "B_Z"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "71DAD20D47C2B7928A86759EB450C0DE",
+			"fromPinId": "26F672AE4F892A0B4913599D141C04F2",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "0819931E41AB4977C63F188AF945556E",
+			"toPinId": "6C8E151445315CB7097660A847BBDA1E",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "B11CDBB74559C1EA7829A99D7BFA40C6",
+			"fromPinId": "1AB33324407CBB4E2F9885B3DF9B1977",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "FEAD7CAC41D22FD3ACCCE6BFF81FD9CA",
+			"toPinId": "F592D47A4EB044AC83D11FA87551DD1F",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "0C3F717E4D93B895A4EB418331496B9E",
+			"fromPinId": "0D33C5B14BFFF84AC1DB5F88D068E416",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "F8584CD34F94E41F5D76A28E018053E6",
+			"toPinId": "5660A6964B06F51048350DB2336E5D66",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "BA87471644B80B6DDEB7A88376FB349D",
+			"fromPinId": "5E149FB74A1FAD92DC7CCF9FBC6D7923",
+			"fromPinName": "Trace Settings",
+			"toNodeGuid": "01AA2EE44914F550C1E8B28BF25BF274",
+			"toPinId": "F38CB3B6485727681DA9158D4161CD1C",
+			"toPinName": "Mantle_TraceSettings"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "01AA2EE44914F550C1E8B28BF25BF274",
+			"fromPinId": "9EA967B444088EE5CAC73CBEAAC709AE",
+			"fromPinName": "MaxLedgeHeight_15_DC0D8FBF4C01FDE39D0AFDB1B04955A8",
+			"toNodeGuid": "0C437D0C4A7723A182CA4F82552FEF3D",
+			"toPinId": "6E500E8048CEE32FFFBA5E99FE56276F",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "01AA2EE44914F550C1E8B28BF25BF274",
+			"fromPinId": "8093DCDD4AE2473927895D889C75CCB4",
+			"fromPinName": "DownwardTraceRadius_12_7FE8C297416A916F74A892B85131B1BC",
+			"toNodeGuid": "0C437D0C4A7723A182CA4F82552FEF3D",
+			"toPinId": "82885BFF4A4DE1E599D7D6A1D94CA14C",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "01AA2EE44914F550C1E8B28BF25BF274",
+			"fromPinId": "8093DCDD4AE2473927895D889C75CCB4",
+			"fromPinName": "DownwardTraceRadius_12_7FE8C297416A916F74A892B85131B1BC",
+			"toNodeGuid": "09B39E054F3C1A613E72AE8AB647CF84",
+			"toPinId": "12CE05C94130C1F251FDBD81B3CD5B2F",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "895FDF304239AB8EC9F501AAB15FD9C3",
+			"fromPinId": "161303CD44BBAE0EF74A7284A047B1D3",
+			"fromPinName": "InitialTrace_ImpactPoint_X",
+			"toNodeGuid": "943D049E4C5F42D38319C9BC867DA2DF",
+			"toPinId": "F8231FFB45DE1C99BC61D48307F3B612",
+			"toPinName": "A_X"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "895FDF304239AB8EC9F501AAB15FD9C3",
+			"fromPinId": "1F587FC84EBDAA1712EF72BF738249FD",
+			"fromPinName": "InitialTrace_ImpactPoint_Y",
+			"toNodeGuid": "943D049E4C5F42D38319C9BC867DA2DF",
+			"toPinId": "C642902B4D8EB006FE0DA380BAD91B54",
+			"toPinName": "A_Y"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "0DCEAE30467CBE2937ABA3B1426742AD",
+			"fromPinId": "7DF6512C4B39F0CC365FAFACBBB468F4",
+			"fromPinName": "ReturnValue_Z",
+			"toNodeGuid": "943D049E4C5F42D38319C9BC867DA2DF",
+			"toPinId": "A23296B641BBFDDEF719F39FDDD21570",
+			"toPinName": "A_Z"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "35DFC95340F62CD48D1A178C31143F07",
+			"fromPinId": "8536E9F44428F5BDAF4709B30E88B1F1",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "943D049E4C5F42D38319C9BC867DA2DF",
+			"toPinId": "C1B7435647982351D4799EBB69DEEE56",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "943D049E4C5F42D38319C9BC867DA2DF",
+			"fromPinId": "2D8BED574DE74872F98B5B9CF98FEDAD",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "DF3833C0469A7850EF21FEB9E6A75FE3",
+			"toPinId": "44CACDC143F8CB4C351273BD1668D22C",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "20FEC3CF4A7A6C417ED45EA99F2E8453",
+			"fromPinId": "3E5D26B748B46C4892AE90B172C5D35A",
+			"fromPinName": "InitialTrace_Normal",
+			"toNodeGuid": "35DFC95340F62CD48D1A178C31143F07",
+			"toPinId": "404DFD1C4FCFD7F280244EBBCBAC20E9",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "0C437D0C4A7723A182CA4F82552FEF3D",
+			"fromPinId": "5DB7D440473D2522CFDF6F8A73798D56",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "DF3833C0469A7850EF21FEB9E6A75FE3",
+			"toPinId": "F983E020471ABC1C58C937A2FD540F42",
+			"toPinName": "B_Z"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "A09741744AD0C43864FB22BF3035D84C",
+			"fromPinId": "1CC91B064FCA3CDC1A4977A50A09F405",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "71DAD20D47C2B7928A86759EB450C0DE",
+			"toPinId": "9132A44F435A830B4C9EEE80EF212FBD",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "C4A03C55444A410C11039CAAF29A5A0F",
+			"fromPinId": "E1071655464E376262BD80AFE241A282",
+			"fromPinName": "DebugType",
+			"toNodeGuid": "7EF9440C44B8D5D6CC2BA9B37F545EB6",
+			"toPinId": "C207AF2D4540DF7E306838B056919CD7",
+			"toPinName": "ShowTraceType"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "DA0B731F4C74A56E6FD9F69C79C9A4E1",
+			"fromPinId": "E1071655464E376262BD80AFE241A282",
+			"fromPinName": "DebugType",
+			"toNodeGuid": "3ED8C61A4E057F99B27D30878328E2AF",
+			"toPinId": "C207AF2D4540DF7E306838B056919CD7",
+			"toPinName": "ShowTraceType"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "A6D27DFE4958F52F5FD25DB8C4D7532C",
+			"fromPinId": "E1071655464E376262BD80AFE241A282",
+			"fromPinName": "DebugType",
+			"toNodeGuid": "97B7643F47DBE2A5C7DDFC9D44D2DCBD",
+			"toPinId": "C207AF2D4540DF7E306838B056919CD7",
+			"toPinName": "ShowTraceType"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "EA2DC8194688BBC81C5BDCA7AAB34B48",
+			"fromPinId": "27B0222B4E79344E1F7165AA8E54867B",
+			"fromPinName": "then",
+			"toNodeGuid": "74342E2D4E5F3AF3776299A06DD0643F",
+			"toPinId": "0C96865143A8338D272F88B17950866A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "195AAD204B6962EEE724C4AFFF489423",
+			"fromPinId": "15EAC9DF4EA4313D2C4688B5BD0E212C",
+			"fromPinName": "then",
+			"toNodeGuid": "7F58FA8F4841D71BAF0DD9B181FA2123",
+			"toPinId": "ED417AE74B0EF3CE05C7E3BBDB406D84",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "195AAD204B6962EEE724C4AFFF489423",
+			"fromPinId": "DA25379E4BC2BF2358B35B952B804A3D",
+			"fromPinName": "Output_Get",
+			"toNodeGuid": "0436110A4B6429ED915E4EB849F7BCEF",
+			"toPinId": "B6A2866F44D7C77EED8F4897CA4CF13F",
+			"toPinName": "InTransform"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "EF10D92347F45446D5BDF1A33338AFF3",
+			"fromPinId": "9497FA5D45E674251BD21F9BA93224FB",
+			"fromPinName": "TargetTransform",
+			"toNodeGuid": "EA2DC8194688BBC81C5BDCA7AAB34B48",
+			"toPinId": "8C5D0ACF436FC34D93218D8AE3CD6924",
+			"toPinName": "MantleLedgeWS_Transform_8_5A922B8141278287C6E895A0DBC17B89"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "068095B247B3970DEE4A33A4152CD356",
+			"fromPinId": "F47C433B4A395F89F135EF9E7955AB4A",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "EA2DC8194688BBC81C5BDCA7AAB34B48",
+			"toPinId": "460D49284F677B8E308E4D9A4E279852",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "7C9BC3A347256DBDB326D698FF034B43",
+			"fromPinId": "C7924F63401E6DD31D956085998B5E99",
+			"fromPinName": "MantleHeight",
+			"toNodeGuid": "EA2DC8194688BBC81C5BDCA7AAB34B48",
+			"toPinId": "589866BC4D13869C943B42BB823088A7",
+			"toPinName": "MantleHeight"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "6BAA78004F480C455F3F6C956C246340",
+			"fromPinId": "BED713F6479F8CD880811DB0F8F8D49B",
+			"fromPinName": "MantleType",
+			"toNodeGuid": "EA2DC8194688BBC81C5BDCA7AAB34B48",
+			"toPinId": "B8D78D544CD1929DD28BCC81E69C5E14",
+			"toPinName": "MantleType"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "9A2E4B1D43E6FEAEDD372F813464E379",
+			"fromPinId": "0B020ADF43E2E0D672D1718AF9163AEC",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "71DAD20D47C2B7928A86759EB450C0DE",
+			"toPinId": "582DC51A4892BA1E0B1B70B9506F7D34",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "0436110A4B6429ED915E4EB849F7BCEF",
+			"fromPinId": "649A1C5A4122952FBCA4779CAA14B497",
+			"fromPinName": "Location",
+			"toNodeGuid": "12E1262E45955D77153C43B5855667AE",
+			"toPinId": "1ACF5AC242BF7A6FF7ABA0B8018F8160",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "D3AB0F8F4F04FEC290944A9992988B24",
+			"fromPinId": "A0401436483C8B05C83AA8AE06FDFFAD",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "12E1262E45955D77153C43B5855667AE",
+			"toPinId": "8E8BC4D74012492513A95898C8EDA466",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "12E1262E45955D77153C43B5855667AE",
+			"fromPinId": "68098F844FECE07CEA9E2D930C11A7E2",
+			"fromPinName": "ReturnValue_Z",
+			"toNodeGuid": "7F58FA8F4841D71BAF0DD9B181FA2123",
+			"toPinId": "122D6DA64300AB7BDEF0D9BE33AE7588",
+			"toPinName": "MantleHeight"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "6BA4D39B4B664C05D9A36087605A521C",
+			"fromPinId": "526F4B1E464154B4679B9CA20E2944BE",
+			"fromPinName": "then",
+			"toNodeGuid": "5608917748EF9E17F8658289A573DD8F",
+			"toPinId": "A1CE25C64D50317BF4603091B7FAB03D",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "5BCCDF124724FDDB5076CDBA85EA26F9",
+			"fromPinId": "F3F4A8D14BBC048F29DA3588242FCA60",
+			"fromPinName": "NewEnumerator0",
+			"toNodeGuid": "6BA4D39B4B664C05D9A36087605A521C",
+			"toPinId": "653FBA6946389B5D4AF86BBB95A49C96",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "5BCCDF124724FDDB5076CDBA85EA26F9",
+			"fromPinId": "F229FCA44E1798CD59D513A9BDBA3E44",
+			"fromPinName": "NewEnumerator1",
+			"toNodeGuid": "6BA4D39B4B664C05D9A36087605A521C",
+			"toPinId": "653FBA6946389B5D4AF86BBB95A49C96",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "5BCCDF124724FDDB5076CDBA85EA26F9",
+			"fromPinId": "9AD359644BFA9614D50B12B37CF7ADCC",
+			"fromPinName": "NewEnumerator4",
+			"toNodeGuid": "6BA4D39B4B664C05D9A36087605A521C",
+			"toPinId": "653FBA6946389B5D4AF86BBB95A49C96",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "5BCCDF124724FDDB5076CDBA85EA26F9",
+			"fromPinId": "B4A859A244011413B1442FB895B425CC",
+			"fromPinName": "NewEnumerator3",
+			"toNodeGuid": "6BA4D39B4B664C05D9A36087605A521C",
+			"toPinId": "653FBA6946389B5D4AF86BBB95A49C96",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "404EBCBD4487E3CC3AEE1A8114CD8759",
+			"fromPinId": "5D834CE94B79D3892746C9A500E58838",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "6BA4D39B4B664C05D9A36087605A521C",
+			"toPinId": "3CC1CDD944D7C0473BBB0990D884904C",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "6BA4D39B4B664C05D9A36087605A521C",
+			"fromPinId": "BBA16CD7448C250A2AA2FC82882790ED",
+			"fromPinName": "else",
+			"toNodeGuid": "6BCB583E4C1A310C583EFFA731452C64",
+			"toPinId": "A1CE25C64D50317BF4603091B7FAB03D",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "AB88F4324F4BB20407537E970B84CBF2",
+			"fromPinId": "0248F89A4B6049453E61E89DEF87CB6D",
+			"fromPinName": "MovementState",
+			"toNodeGuid": "5BCCDF124724FDDB5076CDBA85EA26F9",
+			"toPinId": "5233B1054C6A442883F890BF3DD2EABB",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "5BCCDF124724FDDB5076CDBA85EA26F9",
+			"fromPinId": "6EE26D5B4AFA232E082CB099D778FA48",
+			"fromPinName": "NewEnumerator2",
+			"toNodeGuid": "09A7650845269079A9545CA419177E58",
+			"toPinId": "87E6D8D0479C8C466FD6EB8D1ADB03DE",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "78356E594A260B86DFA696A78E5A803D",
+			"fromPinId": "C7924F63401E6DD31D956085998B5E99",
+			"fromPinName": "MantleHeight",
+			"toNodeGuid": "404EBCBD4487E3CC3AEE1A8114CD8759",
+			"toPinId": "83A7A38D40C07D10CC95C08C6AB47041",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "MantleCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "09A7650845269079A9545CA419177E58",
+			"fromPinId": "CEE36A1D42D23B280949B29327FFD4FE",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "6A646E064F501BE9B5951997AFE2C9D5",
+			"toPinId": "A1CE25C64D50317BF4603091B7FAB03D",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [
+		"Get CapsuleComponent",
+		"Get CharacterMovement",
+		"Get DebugType",
+		"Get DownTraceLocation",
+		"Get HitComponent",
+		"Get InitialTrace_Normal",
+		"Get MantleHeight",
+		"Get MantleType",
+		"Get MovementState",
+		"Get TargetTransform",
+		"Get Trace Settings",
+		"Ottieni"
+	],
+	"variablesWritten": [
+		"Set DownTraceLocation",
+		"Set HitComponent",
+		"Set InitialTrace_ImpactPoint",
+		"Set InitialTrace_Normal",
+		"Set MantleHeight",
+		"Set MantleType",
+		"Set TargetTransform"
+	],
+	"functionsCalled": [
+		"Break Hit Result",
+		"Break Transform",
+		"Capsule Has Room Check",
+		"Capsule Trace By Channel",
+		"float - float",
+		"float / float",
+		"float > float",
+		"Get Actor Location\nLa destinazione è Actor",
+		"Get Calpsule Base Location",
+		"Get Capsule Location from Base",
+		"Get Player Movement Input",
+		"Get Trace Debug Type",
+		"Is Walkable\nLa destinazione è Componente movimento personaggio",
+		"Make Transform",
+		"Make Vector",
+		"Mantle Start\nLa destinazione è ALS Base Character BP",
+		"NOT Boolean",
+		"Rotation From X Vector",
+		"Sphere Trace By Channel",
+		"vector * float",
+		"vector - vector"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Break Hit Result",
+		"Break Transform",
+		"Capsule Has Room Check",
+		"Capsule Trace By Channel",
+		"float - float",
+		"float / float",
+		"float > float",
+		"Get Actor Location\nLa destinazione è Actor",
+		"Get Calpsule Base Location",
+		"Get Capsule Location from Base",
+		"Get Player Movement Input",
+		"Get Trace Debug Type",
+		"Is Walkable\nLa destinazione è Componente movimento personaggio",
+		"Make Transform",
+		"Make Vector",
+		"Mantle Start\nLa destinazione è ALS Base Character BP",
+		"NOT Boolean",
+		"Rotation From X Vector",
+		"Sphere Trace By Channel",
+		"vector * float",
+		"vector - vector"
+	],
+	"flowId": "F001",
+	"graphId": "G033",
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP"
+}

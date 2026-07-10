@@ -1,0 +1,25 @@
+{
+	"graphId": "G002",
+	"name": "BPI_Get_EssentialValues",
+	"graphName": "BPI_Get_EssentialValues",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 2,
+	"edgeCount": 1,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G002/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "BPI Get Essential Values",
+			"entryNodeGuid": "7EB6B71849B447D056B8BEAABD8409B3",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G002/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G002/F001.json",
+			"textFile": "Flows/G002/F001.txt",
+			"jsonFile": "Flows/G002/F001.json",
+			"nodeCount": 2
+		}
+	]
+}

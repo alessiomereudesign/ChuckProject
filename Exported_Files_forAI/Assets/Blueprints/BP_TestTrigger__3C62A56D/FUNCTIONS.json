@@ -1,0 +1,17 @@
+{
+	"assetName": "BP_TestTrigger",
+	"assetPath": "/Game/ChuckContent/Blueprints/BP_TestTrigger.BP_TestTrigger",
+	"assetKey": "Game_ChuckContent_Blueprints_BP_TestTrigger",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"functions": [
+		{
+			"name": "UserConstructionScript",
+			"graph": "UserConstructionScript",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 1,
+			"file": "Assets/Blueprints/BP_TestTrigger__3C62A56D/Graphs/G002/INDEX.json"
+		}
+	]
+}

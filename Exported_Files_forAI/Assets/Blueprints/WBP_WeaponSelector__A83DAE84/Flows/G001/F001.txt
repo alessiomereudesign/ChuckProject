@@ -1,0 +1,221 @@
+Asset: WBP_WeaponSelector
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector.WBP_WeaponSelector
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_WeaponSelector
+GraphId: G001
+Graph: EventGraph
+FlowId: F001
+Entry: EquipAndClose
+Custom Event
+NodeGuid: 8290FBBC4190DB81041AA88A32842C53
+
+Exec Flow:
+1. Evento Construct [K2Node_Event] 7E91F3FE473717C406F03DB7A2A505F4
+2. Cast To ALS_ChuckBP [K2Node_DynamicCast] D6D0218040B0A804F85E789992EF7610
+3. Set As ChuckRef [K2Node_VariableSet] D7A9E641478E2DCB029E3EA8C688D3F3
+4. Get Player Character [K2Node_CallFunction] E2B98BE048D4D42BF5095EA53A1BBE95
+5. Ramo [K2Node_IfThenElse] 14B0A96249BEC5AF6A2B29B4F9498913
+6. Get IsWeapon? [K2Node_VariableGet] 5F713AB844EC868B6845E68D3CB68044
+7. Get As ChuckRef [K2Node_VariableGet] 00B8162F408B062FA90FF5AC1223C497
+8. Get OwnedWeapons [K2Node_VariableGet] 1D70386A41EF44A02126C2AD0B7A0C34
+9. Ramo [K2Node_IfThenElse] EBB325DD4F21FD08B06606A7467DA24C
+10. Get ItemsGrid [K2Node_VariableGet] 693D4106485815B4382A599ED6E80DD7
+11. Add Child to Uniform Grid
+La destinazione è Uniform Grid Panel [K2Node_CallFunction] B5D107384BFB36245A7132A098915C22
+12. Get ItemCount [K2Node_VariableGet] E904C9A14619445089B967866141E8E6
+13. int / int [K2Node_PromotableOperator] F2C733634A4341EA56EE2FBBCA1A5CBD
+14. % (Integer) [K2Node_CallFunction] ABD8532F4C0489D904CF9D8E407BD268
+15. Increment Int [K2Node_MacroInstance] 39DCB88047EA8D6C214808B683085513
+16. Break S_WeaponData [K2Node_BreakStruct] D81318A14CFB89BEB5B784A3F2D72CCA
+17. Get TargetWeaponSlot [K2Node_VariableGet] 5D62038942B44B4E3527EF99D8D47C16
+18. Uguale (enum) [K2Node_EnumEquality] C2B5B3F2475592B7EC56068B2FD95BC9
+19. Create WBP Selector Button Widget [K2Node_CreateWidget] 7A8284FC46E10D753533A484FF43B818
+20. For Each Loop [K2Node_MacroInstance] A10FDA844440C0D69F9A0A872B4FE931
+21. Get Data Table Row DT_Armor [K2Node_GetDataTableRow] 034A99C542E0797D20F43293188804D9
+22. Ramo [K2Node_IfThenElse] 0A090550465CACC8EF64C08005301BBD
+23. Get ItemsGrid [K2Node_VariableGet] 69D13C594ACD4157FE866AA276BFE459
+24. Add Child to Uniform Grid
+La destinazione è Uniform Grid Panel [K2Node_CallFunction] E8E5F6434999F1B7E3E9DC937C182776
+25. Get ItemCount [K2Node_VariableGet] DC2080A648D621689B114BAD38F08A05
+26. int / int [K2Node_PromotableOperator] 1A64A4974A76350AF824B38BC9ED3ECC
+27. % (Integer) [K2Node_CallFunction] 6CA657164834EFAE25B5859E264ACC6F
+28. Increment Int [K2Node_MacroInstance] 307D350747AF5574079076AA321DB8C7
+29. Create WBP Selector Button Widget [K2Node_CreateWidget] F07EBBA54B731D5DF0890B923562E28C
+30. Get As ChuckRef [K2Node_VariableGet] AAEDD87D418D28090ED28592A51B0EEC
+31. Get OwnedArmor [K2Node_VariableGet] E76D16DD49A363499386D0938BDE9794
+32. Nodo di reindirizzamento [K2Node_Knot] 8BAF88114BB6A292F75C81BC0C4A3E36
+33. Nodo di reindirizzamento [K2Node_Knot] 73457F18405E13650E24DC91CBDC005C
+34. Break S_ArmorData [K2Node_BreakStruct] 0B2F20A045ADC9B2C1712DB9F85B7F6B
+35. Uguale (enum) [K2Node_EnumEquality] CB67FAAB4D56E10B2855268669BECDA8
+36. Get TargetArmorSlot [K2Node_VariableGet] 95351F05477CA7ABC7BAFC8BE72A59B7
+37. Nodo di reindirizzamento [K2Node_Knot] E54D02F84E8FB6767328AD98537281BE
+38. Nodo di reindirizzamento [K2Node_Knot] DAFA69C94F355FC4DE0ED5A09E535D12
+39. EquipAndClose
+Custom Event [K2Node_CustomEvent] 8290FBBC4190DB81041AA88A32842C53
+40. Ramo [K2Node_IfThenElse] 0E9DC61C4EB31A2E4795D895C9AA9FBC
+41. Get IsWeapon? [K2Node_VariableGet] EEEEB13942D344F6FCAB2E96DEA0BA25
+42. Switch on E_WeaponSlot [K2Node_SwitchEnum] 359DE9F84EBEDC6D360F16BDABF4C726
+43. Get TargetWeaponSlot [K2Node_VariableGet] 8A93ACFB4068F2EFE8CCABB1B823A84F
+44. Get As ChuckRef [K2Node_VariableGet] 1C8EBF4C460EB07CECA0E6ACABD54772
+45. Set Equipped_SmallFirearm [K2Node_VariableSet] BF2AEF4247BF372322698DA08EE06FC2
+46. Set Equipped_Melee [K2Node_VariableSet] 1801B2FD43AA9E83EFBC5DB3477B4711
+47. Nodo di reindirizzamento [K2Node_Knot] 76C84A574DA5B49F53DF55B88519E889
+48. Nodo di reindirizzamento [K2Node_Knot] CCB8B447431166FF70C25486A403E4EA
+49. Set Equipped_BigWeapon [K2Node_VariableSet] 0CB4F82C4D6390780AB290AB3A820476
+50. Set Equipped_Item [K2Node_VariableSet] E289513348983640AA07CD822735FF2E
+51. Switch on E_ArmorSlot [K2Node_SwitchEnum] D3D2A6A246AFFDB8F440368EA1AF7ED4
+52. Get TargetArmorSlot [K2Node_VariableGet] 0079712B472089525A59F18A1620321E
+53. Set EquippedHead [K2Node_VariableSet] 751D6AA7424875EBBD38CE8D00AE3BE9
+54. Nodo di reindirizzamento [K2Node_Knot] 9C376CBC481F16950EC4DBA007A70C26
+55. Nodo di reindirizzamento [K2Node_Knot] A3F0300C4E3C2DBF56B8D0B4B4E11A75
+56. Get As ChuckRef [K2Node_VariableGet] AAC2E2E24CD890BC45FC1F85E86187EA
+57. Set EquippedChest [K2Node_VariableSet] 54F3B4A346D7A6EC336EA682DEA204CF
+58. Set EquippedLegs [K2Node_VariableSet] 07DF32BF4AEC1D468CABA3B1DE8AF89B
+59. Set EquippedFeet [K2Node_VariableSet] EDFF06934561B8AECC20C994067D2D40
+60. Set EquippedAccessory1 [K2Node_VariableSet] D58441DA48D8A34ACF6082A84CCA70D0
+61. Set EquippedAccessory2 [K2Node_VariableSet] B9D787DD4F1115CD02A9BB9CFDA41C2A
+62. Update Weapon Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] C54746AF4D764EAC64E9F986A3E5BE44
+63. Update Equipment Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 2BCC73D84D1C83BED6E07180FAC62876
+64. Remove from Parent
+La destinazione è Widget [K2Node_CallFunction] 265A57944847A882833481B47ECAA1A4
+65. Auto-riferimento [K2Node_Self] 50BE8A304F01A9885FAEF798748B17E8
+66. Get ItemsGrid [K2Node_VariableGet] 1263E29043946F3A7151C1B0CD78EC84
+67. Get Child At
+La destinazione è Panel Widget [K2Node_CallFunction] 485C2B57425092DDAD3137B1DD63908D
+68. Cast To WBP_SelectorButton [K2Node_DynamicCast] 71BA38724BEB12DE599A6C91C6A65EC7
+69. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] 7F5213DE44291892F15F69B5AD22E627
+70. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 70A12C7A4CAEC11E15EB65A4F0B7B4A8
+71. Get ItemsGrid [K2Node_VariableGet] 6625BAC847405B524FC8428FA8866190
+72. Get Child At
+La destinazione è Panel Widget [K2Node_CallFunction] 1509C7FC47E875EBE31488B9C5733E56
+73. Cast To WBP_SelectorButton [K2Node_DynamicCast] F2B2F02842B32D4B8CD6209C4DD889CE
+74. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] 5409E01240025F6DABF68789C165068D
+75. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 7A68350E4D5240D05C492980D50477A4
+76. Ritardo [K2Node_CallFunction] 740770E94C21DFFF29E4F7AF7986AA21
+77. Ritardo [K2Node_CallFunction] B36B9AF04C2BA2E39FAE5A995EEBA776
+78. Ritardo [K2Node_CallFunction] A35378E04D9938941D0D77B13ED80591
+79. Set Keyboard Focus
+La destinazione è Widget [K2Node_CallFunction] 0A9E925747C339EC89B5DC9FE41AE786
+80. Set Keyboard Focus
+La destinazione è Widget [K2Node_CallFunction] 5B32994F4B6874D4F91E2D8F1D992B1D
+81. Auto-riferimento [K2Node_Self] 3C6C9A0E49BC5BAF0EAC108F84C472A7
+82. Auto-riferimento [K2Node_Self] 5D1E63FF4ACACB3996EB9E9EF566315E
+83. Get MenuArchiveRef [K2Node_VariableGet] 5793B4F149B33359B64500AF5DACE5CA
+84. Nodo di reindirizzamento [K2Node_Knot] 3F1699074F5D2576AFD00689C5A624F8
+85. Nodo di reindirizzamento [K2Node_Knot] 47D2C57849E01F39AAB37796FE303AF9
+86. Set Is Enabled
+La destinazione è Widget [K2Node_CallFunction] 449C23ED4013E1EFE5C33F8CFA62321A
+87. Get InventoryTab [K2Node_VariableGet] 49B80C57425E01BDC85B1384A772CAF3
+88. Is Valid [K2Node_MacroInstance] F5B24F714B8A603CD73DFD8CBD4684D0
+89. Nodo di reindirizzamento [K2Node_Knot] EFCF7CF64820A2D87175BB93AE25E9EE
+90. Get LastClickedButton [K2Node_VariableGet] 2DB9EB4D435D23B03E5991A25628FACA
+91. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] D108D3194A77EEC28A41FEB164A93AB7
+92. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 3E237C1141A4FBB54CD9AC9E1A07AED4
+93. Nodo di reindirizzamento [K2Node_Knot] 066774AD4E9B5A706138968EAC83F657
+94. Set ActiveWeaponSelectorRef [K2Node_VariableSet] D7E531164096B06312C502A8E75CE87B
+95. Nodo di reindirizzamento [K2Node_Knot] 49ED0C70411D15843704989D5E444990
+96. Is Valid [K2Node_MacroInstance] 92ACE54241B3BCD83C3D94AC96A6800E
+97. Nodo di reindirizzamento [K2Node_Knot] 21D0CFD94272B93633EFD1AD607AC580
+98. Remove from Parent
+La destinazione è Widget [K2Node_CallFunction] EC009BE244D9469A0F258C9CA691CF0D
+99. Nodo di reindirizzamento [K2Node_Knot] C2764AF443D299AFC6F2BC88FB540D5A
+100. Get Btn_Selector [K2Node_VariableGet] 21B8C99F42416B26266E638F7C4F63EB
+101. Get Btn_Selector [K2Node_VariableGet] B6F3D1BD41727E27F3D2D7BA9B883AEE
+102. Nodo di reindirizzamento [K2Node_Knot] 3518187A48262FE398D98A9120C5C4AE
+103. For Each Loop [K2Node_MacroInstance] AB0D813642B45CD6B64E379579ED4753
+104. Nodo di reindirizzamento [K2Node_Knot] 96B79E0441E6B73EC9426DB94656E491
+105. Nodo di reindirizzamento [K2Node_Knot] 27D6CC434830FEF2365E33933D65D055
+106. Nodo di reindirizzamento [K2Node_Knot] A9D7CFBC40C23CC3AE36C29AC25120DF
+107. Nodo di reindirizzamento [K2Node_Knot] 8C9F0A534CDD96FC0A72458F6E326870
+108. Nodo di reindirizzamento [K2Node_Knot] 11067088476170C7400DF69402DCC5F3
+
+Variables Read:
+- Get As ChuckRef
+- Get Btn_Selector
+- Get InventoryTab
+- Get IsWeapon?
+- Get ItemCount
+- Get ItemsGrid
+- Get LastClickedButton
+- Get MenuArchiveRef
+- Get OwnedArmor
+- Get OwnedWeapons
+- Get TargetArmorSlot
+- Get TargetWeaponSlot
+
+Variables Written:
+- Set ActiveWeaponSelectorRef
+- Set As ChuckRef
+- Set Equipped_BigWeapon
+- Set Equipped_Item
+- Set Equipped_Melee
+- Set Equipped_SmallFirearm
+- Set EquippedAccessory1
+- Set EquippedAccessory2
+- Set EquippedChest
+- Set EquippedFeet
+- Set EquippedHead
+- Set EquippedLegs
+
+External Calls:
+- % (Integer)
+- Add Child to Uniform Grid
+La destinazione è Uniform Grid Panel
+- Get Child At
+La destinazione è Panel Widget
+- Get Owning Player
+La destinazione è Widget
+- Get Player Character
+- Remove from Parent
+La destinazione è Widget
+- Ritardo
+- Set Is Enabled
+La destinazione è Widget
+- Set Keyboard Focus
+La destinazione è Widget
+- Set User Focus
+La destinazione è Widget
+- Update Equipment Slots
+La destinazione è WBP Menu Archive
+- Update Weapon Slots
+La destinazione è WBP Menu Archive
+
+Widgets Touched:
+- Cast To WBP_SelectorButton
+- Create WBP Selector Button Widget
+- Get LastClickedButton
+
+Components Touched:
+- none
+
+External Blueprint References:
+- % (Integer)
+- Add Child to Uniform Grid
+La destinazione è Uniform Grid Panel
+- Cast To ALS_ChuckBP
+- Cast To WBP_SelectorButton
+- Get Child At
+La destinazione è Panel Widget
+- Get Owning Player
+La destinazione è Widget
+- Get Player Character
+- Remove from Parent
+La destinazione è Widget
+- Ritardo
+- Set Is Enabled
+La destinazione è Widget
+- Set Keyboard Focus
+La destinazione è Widget
+- Set User Focus
+La destinazione è Widget
+- Update Equipment Slots
+La destinazione è WBP Menu Archive
+- Update Weapon Slots
+La destinazione è WBP Menu Archive

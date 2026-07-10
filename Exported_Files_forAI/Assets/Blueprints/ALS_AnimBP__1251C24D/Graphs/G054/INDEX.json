@@ -1,0 +1,14 @@
+{
+	"graphId": "G054",
+	"name": "Looking Forwards",
+	"graphName": "Looking Forwards",
+	"type": "AnimationStateGraph",
+	"graphType": "AnimationStateGraph",
+	"graphGuid": "",
+	"nodeCount": 4,
+	"edgeCount": 3,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G054/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G054/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G054/EDGES.jsonl",
+	"flows": []
+}

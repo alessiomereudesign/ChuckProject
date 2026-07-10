@@ -1,0 +1,30 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G017
+Graph: UpdateWeaponData
+FlowId: F001
+Entry: Update Weapon Data
+NodeGuid: AD941C624A1A332477249886558E5D64
+
+Exec Flow:
+1. Update Weapon Data [K2Node_FunctionEntry] AD941C624A1A332477249886558E5D64
+2. Set WeaponData [K2Node_VariableSet] D9120AEB44ED56D5CDE01FA0D7238137
+
+Variables Read:
+- none
+
+Variables Written:
+- Set WeaponData
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

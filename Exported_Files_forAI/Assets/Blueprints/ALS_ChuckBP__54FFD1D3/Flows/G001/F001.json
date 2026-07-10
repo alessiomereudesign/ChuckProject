@@ -1,0 +1,80 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "GetInteractionPrompt",
+	"entryName": "Get Interaction Prompt",
+	"entryNodeGuid": "F4D7BAEE4E9E14085532669939125DC1",
+	"nodes": [
+		{
+			"nodeGuid": "F4D7BAEE4E9E14085532669939125DC1",
+			"class": "K2Node_FunctionEntry",
+			"title": "Get Interaction Prompt",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "70B68131478AC7DE529CB1B63758940C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0B042BE049FAB7ECDB6800AD15DD37A5",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 256,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A3EFAD334FDB00BDEE8205A9CC859EC3",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8046A1074652DFE01C65629694333024",
+					"name": "InteractionPrompt",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Blueprints/S_InteractionPrompt.S_InteractionPrompt",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetInteractionPrompt",
+			"edgeType": "exec",
+			"fromNodeGuid": "F4D7BAEE4E9E14085532669939125DC1",
+			"fromPinId": "70B68131478AC7DE529CB1B63758940C",
+			"fromPinName": "then",
+			"toNodeGuid": "0B042BE049FAB7ECDB6800AD15DD37A5",
+			"toPinId": "A3EFAD334FDB00BDEE8205A9CC859EC3",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G001",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

@@ -1,0 +1,29 @@
+Asset: BP_Sword_Mann
+AssetPath: /Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/Demo/Mannequin/Character/Mesh/BP_Sword_Mann.BP_Sword_Mann
+AssetKey: Game_AdditionalContents_RamsterZ_FreeAnims_Volume1_Demo_Mannequin_Character_Mesh_BP_Sword_Mann
+GraphId: G002
+Graph: UserConstructionScript
+FlowId: F001
+Entry: Construction Script
+NodeGuid: 3D3BC59145546E015859699090C711BA
+
+Exec Flow:
+1. Construction Script [K2Node_FunctionEntry] 3D3BC59145546E015859699090C711BA
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

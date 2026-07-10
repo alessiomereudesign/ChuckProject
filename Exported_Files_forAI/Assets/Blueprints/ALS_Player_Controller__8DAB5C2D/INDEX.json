@@ -1,0 +1,191 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "ALS_Player_Controller",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller.ALS_Player_Controller",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_Player_Controller",
+	"shortAssetFolder": "ALS_Player_Controller__8DAB5C2D",
+	"pathHash": "8DAB5C2D",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/Engine.PlayerController",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 16,
+		"components": 0,
+		"widgets": 14,
+		"graphs": 5,
+		"nodes": 181,
+		"edges": 176,
+		"flows": 8
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/SUMMARY.md",
+		"variables": "Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/VARIABLES.json",
+		"components": "Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/NODES.jsonl",
+		"edges": "Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/EDGES.jsonl",
+		"search": "Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "BPI_Get_DebugInfo",
+			"graphName": "BPI_Get_DebugInfo",
+			"type": "EdGraph",
+			"graphType": "EdGraph",
+			"graphGuid": "",
+			"nodeCount": 13,
+			"edgeCount": 12,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "BPI Get Debug Info",
+					"entryNodeGuid": "40D63F2E4C4DC729709D76975D43110E",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 13
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 151,
+			"edgeCount": 147,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Evento BeginPlay",
+					"entryNodeGuid": "02ACF71547FBD9721918B489F3FA7195",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 151
+				},
+				{
+					"flowId": "F002",
+					"entryName": "Evento On Possess",
+					"entryNodeGuid": "E50824C044B23AC9C4961EA42A0A1C75",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G002/F002.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G002/F002.json",
+					"textFile": "Flows/G002/F002.txt",
+					"jsonFile": "Flows/G002/F002.json",
+					"nodeCount": 151
+				},
+				{
+					"flowId": "F003",
+					"entryName": "HideInteractionPrompt\nCustom Event",
+					"entryNodeGuid": "2B9F6B77432382892B4249A3A0DA3AC4",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G002/F003.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G002/F003.json",
+					"textFile": "Flows/G002/F003.txt",
+					"jsonFile": "Flows/G002/F003.json",
+					"nodeCount": 151
+				},
+				{
+					"flowId": "F004",
+					"entryName": "ShowInteractionPrompt\nCustom Event",
+					"entryNodeGuid": "E7D8CCBB490F669BC24C4C9F7B1D6CAD",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G002/F004.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G002/F004.json",
+					"textFile": "Flows/G002/F004.txt",
+					"jsonFile": "Flows/G002/F004.json",
+					"nodeCount": 151
+				}
+			]
+		},
+		{
+			"graphId": "G003",
+			"name": "GetKeyTextForInputAction",
+			"graphName": "GetKeyTextForInputAction",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 13,
+			"edgeCount": 14,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G003/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G003/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G003/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Key Text for Input Action",
+					"entryNodeGuid": "3907E78740D50B86860F62A53D7F4504",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G003/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G003/F001.json",
+					"textFile": "Flows/G003/F001.txt",
+					"jsonFile": "Flows/G003/F001.json",
+					"nodeCount": 13
+				}
+			]
+		},
+		{
+			"graphId": "G004",
+			"name": "IsActiveInputDevice",
+			"graphName": "IsActiveInputDevice",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 3,
+			"edgeCount": 3,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G004/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G004/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G004/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Is Active Input Device",
+					"entryNodeGuid": "305BAF4B4D826C526E6BAEA7962FC162",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G004/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G004/F001.json",
+					"textFile": "Flows/G004/F001.txt",
+					"jsonFile": "Flows/G004/F001.json",
+					"nodeCount": 3
+				}
+			]
+		},
+		{
+			"graphId": "G005",
+			"name": "UserConstructionScript",
+			"graphName": "UserConstructionScript",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 1,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G005/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G005/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G005/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Construction Script",
+					"entryNodeGuid": "BF086D2E442FC0419677A59C560C006D",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G005/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G005/F001.json",
+					"textFile": "Flows/G005/F001.txt",
+					"jsonFile": "Flows/G005/F001.json",
+					"nodeCount": 1
+				}
+			]
+		}
+	]
+}

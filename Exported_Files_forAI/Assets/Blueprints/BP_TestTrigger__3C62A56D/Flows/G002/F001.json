@@ -1,0 +1,40 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_BP_TestTrigger",
+	"graph": "UserConstructionScript",
+	"entryName": "Construction Script",
+	"entryNodeGuid": "15C647B6420E157EEDC0578EA3752591",
+	"nodes": [
+		{
+			"nodeGuid": "15C647B6420E157EEDC0578EA3752591",
+			"class": "K2Node_FunctionEntry",
+			"title": "Construction Script",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DEAE56C94518214E409BF99149563CD8",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G002",
+	"assetName": "BP_TestTrigger",
+	"assetPath": "/Game/ChuckContent/Blueprints/BP_TestTrigger.BP_TestTrigger"
+}

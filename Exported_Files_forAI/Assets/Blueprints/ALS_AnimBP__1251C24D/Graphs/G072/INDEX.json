@@ -1,0 +1,14 @@
+{
+	"graphId": "G072",
+	"name": "Pistol 1H Aiming",
+	"graphName": "Pistol 1H Aiming",
+	"type": "AnimationStateGraph",
+	"graphType": "AnimationStateGraph",
+	"graphGuid": "",
+	"nodeCount": 21,
+	"edgeCount": 15,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G072/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G072/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G072/EDGES.jsonl",
+	"flows": []
+}

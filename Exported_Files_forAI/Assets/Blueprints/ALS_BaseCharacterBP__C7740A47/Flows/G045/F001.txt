@@ -1,0 +1,54 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G045
+Graph: OnViewModeChanged
+FlowId: F001
+Entry: On View Mode Changed
+NodeGuid: 07DC2D5943571F3FC4D3359C594F7459
+
+Exec Flow:
+1. On View Mode Changed [K2Node_FunctionEntry] 07DC2D5943571F3FC4D3359C594F7459
+2. ML Set Previous and New Value [K2Node_MacroInstance] 4234207C4EBE054AA48069A71CC1E8E4
+3. Get ViewMode [K2Node_VariableGet] 919CD91C41DCF0A339EC73949E29D471
+4. Get PreviousViewMode [K2Node_VariableGet] 0B8641A34FC8A8F5433B358A966D201B
+5. Get RotationMode [K2Node_VariableGet] 392F94D54F6D6F1C16CAF0BE537107CE
+6. Switch on ALS_RotationMode [K2Node_SwitchEnum] 826C797C4A5D76B7350028902086D7B9
+7. Switch on ALS_ViewMode [K2Node_SwitchEnum] D7D61FBC4203F1EB91C0D39F0B6F401D
+8. Get ViewMode [K2Node_VariableGet] DD8A6EB547D035234D03E6A0502D7A4B
+9. BPI Set Rotation Mode
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 0F2FE07E4D1A7F35BDB494865A18674E
+10. BPI Set Rotation Mode
+La destinazione è ALS Character BPI [K2Node_CallFunction] ED0E60044144846F098BE68BC38408D5
+11. Get RotationMode [K2Node_VariableGet] 5938C346401BC3643F9FE7A44BCA7EEA
+12. Switch on ALS_RotationMode [K2Node_SwitchEnum] C2297FF448D5BECB84C666BBE74A102D
+13. Get DesiredRotationMode [K2Node_VariableGet] 17DE86214D806E60CAD619A419ED628F
+14. If Third Person, set the rotation mode back to the desired mode. [EdGraphNode_Comment] 02F1AB054A857E212FBB528B32A0B40C
+15. If First Person, set the rotation mode to looking direction if currently in the velocity direction mode. [EdGraphNode_Comment] 04031C7649F9084563640DB4D0F33758
+
+Variables Read:
+- Get DesiredRotationMode
+- Get PreviousViewMode
+- Get RotationMode
+- Get ViewMode
+
+Variables Written:
+- none
+
+External Calls:
+- BPI Set Rotation Mode
+La destinazione è ALS Base Character BP
+- BPI Set Rotation Mode
+La destinazione è ALS Character BPI
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- BPI Set Rotation Mode
+La destinazione è ALS Base Character BP
+- BPI Set Rotation Mode
+La destinazione è ALS Character BPI

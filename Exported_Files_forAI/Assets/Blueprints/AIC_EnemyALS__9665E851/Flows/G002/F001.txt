@@ -1,0 +1,30 @@
+Asset: AIC_EnemyALS
+AssetPath: /Game/ChuckContent/Blueprints/Enemies/AIC_EnemyALS.AIC_EnemyALS
+AssetKey: Game_ChuckContent_Blueprints_Enemies_AIC_EnemyALS
+GraphId: G002
+Graph: UserConstructionScript
+FlowId: F001
+Entry: Construction Script
+NodeGuid: 3437D82C44665DB6CB98C0AB9D8A9FEA
+
+Exec Flow:
+1. Construction Script [K2Node_FunctionEntry] 3437D82C44665DB6CB98C0AB9D8A9FEA
+2. Genitore: Construction Script [K2Node_CallParentFunction] D9FB652A4A1C50BE4284A3B7B1C435B5
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

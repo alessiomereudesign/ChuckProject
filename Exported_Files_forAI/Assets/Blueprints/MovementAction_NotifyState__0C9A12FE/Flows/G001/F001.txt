@@ -1,0 +1,33 @@
+Asset: MovementAction_NotifyState
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/MovementAction_NotifyState.MovementAction_NotifyState
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_MovementAction_NotifyState
+GraphId: G001
+Graph: GetNotifyName
+FlowId: F001
+Entry: Get Notify Name
+NodeGuid: 67990A994B2437611A4A31BF9ECDD8D1
+
+Exec Flow:
+1. Get Notify Name [K2Node_FunctionEntry] 67990A994B2437611A4A31BF9ECDD8D1
+2. Nodo di restituzione [K2Node_FunctionResult] B521032945E4B1F15579FBAC4538378D
+3. Get MovementAction [K2Node_VariableGet] 8767319B49690B34F816B3B3C341E8DA
+4. Aggiungere [K2Node_CommutativeAssociativeBinaryOperator] 516030E44EB216026D4CAF90C3053D09
+5. Enum a Stringa [K2Node_GetEnumeratorNameAsString] 7FE8E220499551BDE739CC80164DA3B2
+
+Variables Read:
+- Get MovementAction
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

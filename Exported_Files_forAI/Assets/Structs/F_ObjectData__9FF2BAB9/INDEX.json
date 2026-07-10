@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "F_ObjectData",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/F_ObjectData.F_ObjectData",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_Data_F_ObjectData",
+	"shortAssetFolder": "F_ObjectData__9FF2BAB9",
+	"pathHash": "9FF2BAB9",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/F_ObjectData__9FF2BAB9/SUMMARY.md",
+		"variables": "Assets/Structs/F_ObjectData__9FF2BAB9/VARIABLES.json",
+		"components": "Assets/Structs/F_ObjectData__9FF2BAB9/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/F_ObjectData__9FF2BAB9/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/F_ObjectData__9FF2BAB9/NODES.jsonl",
+		"edges": "Assets/Structs/F_ObjectData__9FF2BAB9/EDGES.jsonl",
+		"search": "Assets/Structs/F_ObjectData__9FF2BAB9/SEARCH.jsonl"
+	},
+	"graphs": []
+}

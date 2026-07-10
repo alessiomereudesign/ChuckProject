@@ -1,0 +1,494 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "BPI_Get_3P_TraceParams",
+	"entryName": "BPI Get 3P Trace Params",
+	"entryNodeGuid": "654EC2BE4C69F8E3D4D7DD89A076B0D6",
+	"nodes": [
+		{
+			"nodeGuid": "654EC2BE4C69F8E3D4D7DD89A076B0D6",
+			"class": "K2Node_FunctionEntry",
+			"title": "BPI Get 3P Trace Params",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "649E0EEB4E6F9CF6D18CC0A1B63AE94E",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5845DEF54FBC7EB90BFB37985AD1201B",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 960,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "545C69EE49144AD3FE3AA38DBB304C44",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5722E26C49FA7306AFDC5A9C9ED72EA1",
+					"name": "TraceOrigin",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "B73F9D064EDC7D007B43CDA46C858A8B",
+					"name": "TraceRadius",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "15.000000"
+				},
+				{
+					"pinId": "958DF9D84BAA0523D347EDBC496D4B6E",
+					"name": "TraceChannel",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.ETraceTypeQuery",
+					"defaultValue": "TraceTypeQuery2"
+				}
+			]
+		},
+		{
+			"nodeGuid": "827F65D24CBDB8F2D823A0A843B88AB9",
+			"class": "K2Node_VariableGet",
+			"title": "Get Mesh",
+			"comment": "",
+			"x": 512,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ED33E20745C055EB4C017FAB11934E9D",
+					"name": "Mesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1B82109B4394D48AB43ED3949B7F596E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "97D67E1F4A062C61B17E23892AB517AD",
+			"class": "K2Node_CallFunction",
+			"title": "Get Socket Location\nLa destinazione è Componente di scena",
+			"comment": "",
+			"x": 656,
+			"y": 192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "38CE365B4FA5DAB8FC60A2A1E29CF967",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SceneComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0EB4A47E47730A9C83E8748F4992EA70",
+					"name": "InSocketName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "TP_CameraTrace_L"
+				},
+				{
+					"pinId": "289B21444F5CF67725643082DD843456",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "7E1BF2C7462B3FC13D7A2D9820308F27",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 256,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CBA670FB4643215964F83CA681163915",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F51159F24B1891BA36168BAB8E0453E0",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "241B5CED46F55235BAE4D193CC1AEDC3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1A072F624682476321EA88861131C1C3",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8EFB1D49456ACFECCA74C6AEDB5D939C",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 960,
+			"y": -128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "545C69EE49144AD3FE3AA38DBB304C44",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5722E26C49FA7306AFDC5A9C9ED72EA1",
+					"name": "TraceOrigin",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "B73F9D064EDC7D007B43CDA46C858A8B",
+					"name": "TraceRadius",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "15.000000"
+				},
+				{
+					"pinId": "958DF9D84BAA0523D347EDBC496D4B6E",
+					"name": "TraceChannel",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.ETraceTypeQuery",
+					"defaultValue": "TraceTypeQuery2"
+				}
+			]
+		},
+		{
+			"nodeGuid": "4265576C4E240F51068ABDAC936684DE",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 496,
+			"y": -96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "586A816049983D89CB684FA5171D8249",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "62D5602B436F28B43AD0878C1060936A",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "37AC661E46E81D5BD11152853C71650B",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 496,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "19AA7ACA41AEA582FA79AAA46F6D12E1",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D88E17FB467EAEBB0F9A58955A0F1439",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AA43EA954F3AF519DDD967B26603EF09",
+			"class": "K2Node_VariableGet",
+			"title": "Get Mesh",
+			"comment": "",
+			"x": 512,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ED33E20745C055EB4C017FAB11934E9D",
+					"name": "Mesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1B82109B4394D48AB43ED3949B7F596E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DF7CBEBA4B5C8D03DFABAC8E03A14D23",
+			"class": "K2Node_CallFunction",
+			"title": "Get Socket Location\nLa destinazione è Componente di scena",
+			"comment": "",
+			"x": 656,
+			"y": -64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "38CE365B4FA5DAB8FC60A2A1E29CF967",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SceneComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0EB4A47E47730A9C83E8748F4992EA70",
+					"name": "InSocketName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "TP_CameraTrace_R"
+				},
+				{
+					"pinId": "289B21444F5CF67725643082DD843456",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A51E9F6C40A788EB627EE98CB9CBE90B",
+			"class": "K2Node_VariableGet",
+			"title": "Get RightShoulder",
+			"comment": "",
+			"x": 256,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BCD842F843E7A5B13CA92E838720D573",
+					"name": "RightShoulder",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "7359007F41B904C635AA7DB037FEE0FA",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_TraceParams",
+			"edgeType": "exec",
+			"fromNodeGuid": "654EC2BE4C69F8E3D4D7DD89A076B0D6",
+			"fromPinId": "649E0EEB4E6F9CF6D18CC0A1B63AE94E",
+			"fromPinName": "then",
+			"toNodeGuid": "7E1BF2C7462B3FC13D7A2D9820308F27",
+			"toPinId": "CBA670FB4643215964F83CA681163915",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_TraceParams",
+			"edgeType": "exec",
+			"fromNodeGuid": "37AC661E46E81D5BD11152853C71650B",
+			"fromPinId": "D88E17FB467EAEBB0F9A58955A0F1439",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "5845DEF54FBC7EB90BFB37985AD1201B",
+			"toPinId": "545C69EE49144AD3FE3AA38DBB304C44",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_TraceParams",
+			"edgeType": "data",
+			"fromNodeGuid": "97D67E1F4A062C61B17E23892AB517AD",
+			"fromPinId": "289B21444F5CF67725643082DD843456",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "5845DEF54FBC7EB90BFB37985AD1201B",
+			"toPinId": "5722E26C49FA7306AFDC5A9C9ED72EA1",
+			"toPinName": "TraceOrigin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_TraceParams",
+			"edgeType": "data",
+			"fromNodeGuid": "827F65D24CBDB8F2D823A0A843B88AB9",
+			"fromPinId": "ED33E20745C055EB4C017FAB11934E9D",
+			"fromPinName": "Mesh",
+			"toNodeGuid": "97D67E1F4A062C61B17E23892AB517AD",
+			"toPinId": "38CE365B4FA5DAB8FC60A2A1E29CF967",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_TraceParams",
+			"edgeType": "data",
+			"fromNodeGuid": "A51E9F6C40A788EB627EE98CB9CBE90B",
+			"fromPinId": "BCD842F843E7A5B13CA92E838720D573",
+			"fromPinName": "RightShoulder",
+			"toNodeGuid": "7E1BF2C7462B3FC13D7A2D9820308F27",
+			"toPinId": "F51159F24B1891BA36168BAB8E0453E0",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_TraceParams",
+			"edgeType": "exec",
+			"fromNodeGuid": "7E1BF2C7462B3FC13D7A2D9820308F27",
+			"fromPinId": "241B5CED46F55235BAE4D193CC1AEDC3",
+			"fromPinName": "then",
+			"toNodeGuid": "4265576C4E240F51068ABDAC936684DE",
+			"toPinId": "586A816049983D89CB684FA5171D8249",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_TraceParams",
+			"edgeType": "exec",
+			"fromNodeGuid": "7E1BF2C7462B3FC13D7A2D9820308F27",
+			"fromPinId": "1A072F624682476321EA88861131C1C3",
+			"fromPinName": "else",
+			"toNodeGuid": "37AC661E46E81D5BD11152853C71650B",
+			"toPinId": "19AA7ACA41AEA582FA79AAA46F6D12E1",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_TraceParams",
+			"edgeType": "exec",
+			"fromNodeGuid": "4265576C4E240F51068ABDAC936684DE",
+			"fromPinId": "62D5602B436F28B43AD0878C1060936A",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "8EFB1D49456ACFECCA74C6AEDB5D939C",
+			"toPinId": "545C69EE49144AD3FE3AA38DBB304C44",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_TraceParams",
+			"edgeType": "data",
+			"fromNodeGuid": "DF7CBEBA4B5C8D03DFABAC8E03A14D23",
+			"fromPinId": "289B21444F5CF67725643082DD843456",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "8EFB1D49456ACFECCA74C6AEDB5D939C",
+			"toPinId": "5722E26C49FA7306AFDC5A9C9ED72EA1",
+			"toPinName": "TraceOrigin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_TraceParams",
+			"edgeType": "data",
+			"fromNodeGuid": "AA43EA954F3AF519DDD967B26603EF09",
+			"fromPinId": "ED33E20745C055EB4C017FAB11934E9D",
+			"fromPinName": "Mesh",
+			"toNodeGuid": "DF7CBEBA4B5C8D03DFABAC8E03A14D23",
+			"toPinId": "38CE365B4FA5DAB8FC60A2A1E29CF967",
+			"toPinName": "self"
+		}
+	],
+	"variablesRead": [
+		"Get Mesh",
+		"Get RightShoulder"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Socket Location\nLa destinazione è Componente di scena"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Socket Location\nLa destinazione è Componente di scena"
+	],
+	"flowId": "F001",
+	"graphId": "G007",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

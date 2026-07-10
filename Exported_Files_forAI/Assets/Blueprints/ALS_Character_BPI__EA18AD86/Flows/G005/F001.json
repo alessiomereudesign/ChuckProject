@@ -1,0 +1,47 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Character_BPI",
+	"graph": "BPI_Set_MovementState",
+	"entryName": "BPI Set Movement State",
+	"entryNodeGuid": "9A8B99F8466A98E7FDD15398245916EC",
+	"nodes": [
+		{
+			"nodeGuid": "9A8B99F8466A98E7FDD15398245916EC",
+			"class": "K2Node_FunctionEntry",
+			"title": "BPI Set Movement State",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "629F97F04E3BE00C3165F9B1F93BF576",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "046DA62A40C8459E4C8F7F972EBD3334",
+					"name": "NewMovementState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		}
+	],
+	"edges": [],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G005",
+	"assetName": "ALS_Character_BPI",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Character_BPI.ALS_Character_BPI"
+}

@@ -1,0 +1,18 @@
+{
+	"assetName": "OverlayStateSwitcher",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateSwitcher.OverlayStateSwitcher",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "OverlayStateButtons",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateButtonParams.OverlayStateButtonParams|container=Array",
+			"defaultValue": ""
+		},
+		{
+			"name": "NewOverlayState",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+			"defaultValue": ""
+		}
+	]
+}

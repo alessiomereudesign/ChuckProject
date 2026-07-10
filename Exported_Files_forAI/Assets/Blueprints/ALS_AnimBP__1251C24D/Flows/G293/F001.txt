@@ -1,0 +1,37 @@
+Asset: ALS_AnimBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP
+GraphId: G293
+Graph: CanRotateInPlace
+FlowId: F001
+Entry: Can Rotate in Place
+NodeGuid: F9BDE62F4727CC2B91FD6BA94BF918CE
+
+Exec Flow:
+1. Can Rotate in Place [K2Node_FunctionEntry] F9BDE62F4727CC2B91FD6BA94BF918CE
+2. Nodo di restituzione [K2Node_FunctionResult] BF9B43AB425F2ECED0A447AFFF278853
+3. Get RotationMode [K2Node_VariableGet] 3B0EA0A14FA4983E813ADABAC1F5094C
+4. Uguale (enum) [K2Node_EnumEquality] 35C6A04947A54918AF62B5A221D94FE1
+5. OR Boolean [K2Node_CommutativeAssociativeBinaryOperator] C4BA470C4F5AB0831E4AC0B6C9A5F655
+6. Get ViewMode [K2Node_VariableGet] 8DBC47B64926BF13BA951D82101F6CE8
+7. Uguale (enum) [K2Node_EnumEquality] D1AD42684604D3CC63E13095CA2EA111
+8. Only perform a Rotate In Place Check if the character is Aiming or in First Person. [EdGraphNode_Comment] 12A46A6844DA257576BE81B2A4EED920
+
+Variables Read:
+- Get RotationMode
+- Get ViewMode
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

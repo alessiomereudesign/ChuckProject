@@ -1,0 +1,113 @@
+Asset: ALS_AnimBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP
+GraphId: G305
+Graph: SetFootLockOffsets
+FlowId: F001
+Entry: Set Foot Lock Offsets
+NodeGuid: 2477D3174F3C02F68AE66FB14D4B47D0
+
+Exec Flow:
+1. Set Foot Lock Offsets [K2Node_FunctionEntry] 2477D3174F3C02F68AE66FB14D4B47D0
+2. Sequenza [K2Node_ExecutionSequence] 3FE027D547840C3DE2531F94CDFADA55
+3. Get Character [K2Node_VariableGet] 5BEB90A146DC26EA5965F4B433905313
+4. Is Moving on Ground
+La destinazione è Nav Movement Component [K2Node_CallFunction] 0620CFF9497A765BE5E280BBDAA05920
+5. Get CharacterMovement [K2Node_VariableGet] 427AB5294A4AB7FBA638508207EF02B2
+6. Ramo [K2Node_IfThenElse] 1D4A8E684E54060A36BAE593A03BF6E0
+7. Nodo di reindirizzamento [K2Node_Knot] EBB1EC1C4248657122904CA751C43F6B
+8. Get Last Update Rotation
+La destinazione è Componente movimento personaggio [K2Node_CallFunction] 8419CB824176FD5A38D2FA905C11C7C2
+9. Delta (Rotator) [K2Node_CallFunction] DF0B296E4E2FA48989AF6BA2308C55CD
+10. Get Character [K2Node_VariableGet] 9FA5826D4D2871857B7CCBB6B804EE6A
+11. Get Actor Rotation
+La destinazione è Actor [K2Node_CallFunction] F1BDD0F741404D01A595ADA507713A3E
+12. Get Character [K2Node_VariableGet] 4F7A2D8A400FF7DFBCBE86AD43300D29
+13. Get CharacterMovement [K2Node_VariableGet] E95C211F44038DEF84503AB37E7BBBC9
+14. Set RotationDifference [K2Node_VariableSet] 63CA2E8B40CAB122B20B309186CC120D
+15. Set LocationDifference [K2Node_VariableSet] 43A13E2A4EA254EE9800A4B7C08C3B0E
+16. Nodo di reindirizzamento [K2Node_Knot] AE3AE2ED48AE800E2AD840954BC3CB9D
+17. Get Velocity [K2Node_VariableGet] EBDBCFB4453480F75456D988AFFDE37C
+18. vector * float [K2Node_CallFunction] FEF8D8B74F990F16561E879A0F9A8280
+19. Get World Delta Seconds [K2Node_CallFunction] 69E8DDA94A864569760A1A86F65E3E7C
+20. Unrotate Vector [K2Node_CallFunction] 4772BD654B7ADA11E0F1988B9D99B90A
+21. Get Owning Component
+La destinazione è Istanza animazione [K2Node_CallFunction] B7B660AF4675F55EA840A3B5D0C18668
+22. Get World Rotation
+La destinazione è Componente di scena [K2Node_CallFunction] 1845225C47AD6B8794CF2B96DD722B65
+23. Set Vector (by ref) [K2Node_VariableSetRef] 620BBA234EBD3157037609A0FD95E7AB
+24. Nodo di reindirizzamento [K2Node_Knot] B3BB56534CFD0354BD4567A17F6BF075
+25. Get LocalLocation [K2Node_VariableGet] C450C95A498E1C88E1D0F7BA62AD218C
+26. Get LocationDifference [K2Node_VariableGet] BE7A78854F8CB11B5C3284BCDF30A91A
+27. vector - vector [K2Node_CallFunction] C30FD11C43D8937DB23F63A9D81835C8
+28. Rotate Vector Around Axis [K2Node_CallFunction] 6EBFA19F4935015CED7C848437E9AF88
+29. Ottieni [K2Node_VariableGet] CF569CA447F260CE8F0C198140AA49C7
+30. Get LocalLocation [K2Node_VariableGet] 5B5726114B4F3F5EB1F0FCB5EA9560E0
+31. Set Rotatore (by ref) [K2Node_VariableSetRef] 0ED1F0BC47B3AF389185E0BB91E49AB8
+32. Nodo di reindirizzamento [K2Node_Knot] 42EC69954B7773FE02108B899D07C4D7
+33. Get RotationDifference [K2Node_VariableGet] F6A622D0433B5F844B5200B6498A41D4
+34. Get LocalRotation [K2Node_VariableGet] C40901BB43D923E6376F57B7CEFF3508
+35. Delta (Rotator) [K2Node_CallFunction] 635B9E8A4D7CF0835C3C2B96CA7BF6A8
+36. Get LocalRotation [K2Node_VariableGet] 1149C77842914F9396AFF2A46CC1C993
+37. Use the delta between the current and last updated rotation to find how much the foot should be rotated to remain planted on the ground. [EdGraphNode_Comment] D9D1B53446DC31BAF6C6549C31237D2E
+38. Get the distance traveled between frames relative to the mesh rotation to find how much the foot should be offset to remain planted on the ground. [EdGraphNode_Comment] 3CFE0CDE433F0317DBE36491B6D5928B
+39. Subtract the location difference from the current local location and rotate it by the rotation difference to keep the foot planted in component space. [EdGraphNode_Comment] C6E2734243CAE922DB1E778DD89B4114
+40. Subtract the Rotation Difference from the current Local Rotation to get the new local rotation. [EdGraphNode_Comment] 5D1EBB27493C7A348646F681272B23B6
+
+Variables Read:
+- Get Character
+- Get CharacterMovement
+- Get LocalLocation
+- Get LocalRotation
+- Get LocationDifference
+- Get RotationDifference
+- Get Velocity
+- Ottieni
+
+Variables Written:
+- Set LocationDifference
+- Set RotationDifference
+- Set Rotatore (by ref)
+- Set Vector (by ref)
+
+External Calls:
+- Delta (Rotator)
+- Get Actor Rotation
+La destinazione è Actor
+- Get Last Update Rotation
+La destinazione è Componente movimento personaggio
+- Get Owning Component
+La destinazione è Istanza animazione
+- Get World Delta Seconds
+- Get World Rotation
+La destinazione è Componente di scena
+- Is Moving on Ground
+La destinazione è Nav Movement Component
+- Rotate Vector Around Axis
+- Unrotate Vector
+- vector * float
+- vector - vector
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Delta (Rotator)
+- Get Actor Rotation
+La destinazione è Actor
+- Get Last Update Rotation
+La destinazione è Componente movimento personaggio
+- Get Owning Component
+La destinazione è Istanza animazione
+- Get World Delta Seconds
+- Get World Rotation
+La destinazione è Componente di scena
+- Is Moving on Ground
+La destinazione è Nav Movement Component
+- Rotate Vector Around Axis
+- Unrotate Vector
+- vector * float
+- vector - vector

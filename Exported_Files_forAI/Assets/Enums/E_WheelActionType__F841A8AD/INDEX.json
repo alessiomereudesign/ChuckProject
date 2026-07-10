@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "E_WheelActionType",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/E_WheelActionType.E_WheelActionType",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_2_MENU_RAPIDO_E_WheelActionType",
+	"shortAssetFolder": "E_WheelActionType__F841A8AD",
+	"pathHash": "F841A8AD",
+	"assetType": "Enum",
+	"unrealClass": "UserDefinedEnum",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "NotApplicable",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Enums/E_WheelActionType__F841A8AD/SUMMARY.md",
+		"variables": "Assets/Enums/E_WheelActionType__F841A8AD/VARIABLES.json",
+		"components": "Assets/Enums/E_WheelActionType__F841A8AD/COMPONENTS.json",
+		"widgetTree": "Assets/Enums/E_WheelActionType__F841A8AD/WIDGET_TREE.json",
+		"nodes": "Assets/Enums/E_WheelActionType__F841A8AD/NODES.jsonl",
+		"edges": "Assets/Enums/E_WheelActionType__F841A8AD/EDGES.jsonl",
+		"search": "Assets/Enums/E_WheelActionType__F841A8AD/SEARCH.jsonl"
+	},
+	"graphs": []
+}

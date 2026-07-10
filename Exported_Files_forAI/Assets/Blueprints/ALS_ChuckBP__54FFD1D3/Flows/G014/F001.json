@@ -1,0 +1,1234 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "GetRollAnimation",
+	"entryName": "Get Roll Animation",
+	"entryNodeGuid": "435D6B6443A1D24342849DBBDE2806F0",
+	"nodes": [
+		{
+			"nodeGuid": "435D6B6443A1D24342849DBBDE2806F0",
+			"class": "K2Node_FunctionEntry",
+			"title": "Get Roll Animation",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8B3A4DF245A283BBD48A46A2AF8A5598",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "25DF04434782C7F9A2CBC1929440FEAC",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 768,
+			"y": -208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D72F33424161E535A4375E9CB3C194FD",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on ALS_OverlayState",
+			"comment": "",
+			"x": 192,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0A913EE34402CED437ACC89A39FF0A45",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BBF1BB60446226AD4BA8BB89E24DB335",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "8EE4531F47EA9F9A54EFCC949DC04F26",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "3D905FE44C50DBE8F5B8A5B80E250F5F",
+					"name": "NewEnumerator0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5984608F4308C6CC97A9C4917C32E8AE",
+					"name": "NewEnumerator12",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D8A95E51462DCACBC61BC0906BF74091",
+					"name": "NewEnumerator13",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B676125C4B36F888CEAD67998A24FE9B",
+					"name": "NewEnumerator14",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "125FA3B24ECF005DD444A994C6C2FA25",
+					"name": "NewEnumerator15",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F0A6E91B4C0B7B19A59D188891E3C56D",
+					"name": "NewEnumerator1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "84950C9F48C398EB471A4BBE7B408B68",
+					"name": "NewEnumerator5",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "80D4299946CDAEC713F9A0892D6A76A3",
+					"name": "NewEnumerator10",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0CF0AE31476070E0365D1DA5B33BAEEA",
+					"name": "NewEnumerator6",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8B2B857D4BDDA8ED036D99854D37A97C",
+					"name": "NewEnumerator7",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5A09BCE145A3EEA31DEFEA8009C4D977",
+					"name": "NewEnumerator8",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C576B4844AA1310D66FC7BDD44E4633",
+					"name": "NewEnumerator9",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BD990FDF492EC31DEA74E997DB5A422C",
+					"name": "NewEnumerator11",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A99146BE403CF220CCBE79AB79BE4D10",
+					"name": "NewEnumerator17",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F81749FD45570D3C35543FAABC075958",
+					"name": "NewEnumerator18",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7B372E63453B63427CCB4F81CFE49F7D",
+			"class": "K2Node_VariableGet",
+			"title": "Get OverlayState",
+			"comment": "",
+			"x": 32,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D69DF57E4C6D1F604B1245A6DEDD4044",
+					"name": "OverlayState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "B1B1F62644BB6CECB79AC79BF8B46766",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E422A95C4022BFBD9D2A3BA704D5F757",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 768,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D72F33424161E535A4375E9CB3C194FD",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "CB2E378D474C7B5823CBADBD0A194296",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 768,
+			"y": 272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D72F33424161E535A4375E9CB3C194FD",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5F17DE844B1C849F402EFEB204254740",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 768,
+			"y": 352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D72F33424161E535A4375E9CB3C194FD",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BB02E38A49623091AAD4CFA5B18A1EA3",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 768,
+			"y": 432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D72F33424161E535A4375E9CB3C194FD",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FD447E464BB9183D77D9229ADB1AD30C",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 768,
+			"y": -128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D72F33424161E535A4375E9CB3C194FD",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E58DBE154CD067F82087CF866999B97D",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 768,
+			"y": -48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D72F33424161E535A4375E9CB3C194FD",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "387D6B28488BCB6EFB7F3B832A2BE9DD",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 768,
+			"y": 192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D72F33424161E535A4375E9CB3C194FD",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5BCA543E4CC02773A6FED299BC76013F",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 432,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F40EFA6C4A2B57EFEADE469F2CED21BA",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4DD0EAAA4B2D21011A5DB6B0864F0D12",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "604675EF4787FDA5A44DB2BAFEF33690",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 768,
+			"y": 512,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D72F33424161E535A4375E9CB3C194FD",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DCE5123D4D03687935DE7ABDB798BC38",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 768,
+			"y": 592,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D72F33424161E535A4375E9CB3C194FD",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "47706EAA41CA4C2F0A4ACA919F1FB85A",
+			"class": "K2Node_VariableGet",
+			"title": "Get LandRoll_Default",
+			"comment": "",
+			"x": 592,
+			"y": -160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FDEFB5AB4F7701238E6572B1DE2E3F36",
+					"name": "LandRoll_Default",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0B2B4BA64003ADC37BB7298042B7AD0A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3A69196D4DCCFBAEAF3E48ABA6CC0E66",
+			"class": "K2Node_VariableGet",
+			"title": "Get LandRoll_LH",
+			"comment": "",
+			"x": 592,
+			"y": -80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7BC168504696D0C0C2805B90AA44B335",
+					"name": "LandRoll_LH",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CC2AF88545FFAC9E4BEF099E9EA1D297",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "23BB358E489812BD937E9695407852F1",
+			"class": "K2Node_VariableGet",
+			"title": "Get LandRoll_2H",
+			"comment": "",
+			"x": 592,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4AD38250481A98C6C6499BB956EB2574",
+					"name": "LandRoll_2H",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "85DCBC144A3089F8126B07A24F9D0A53",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FE7827DE4AAE39512A837BBC93F3BEC7",
+			"class": "K2Node_VariableGet",
+			"title": "Get LandRoll_2H",
+			"comment": "",
+			"x": 592,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6B90FD874D3C249333048C9F52746AA3",
+					"name": "LandRoll_2H",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B43B6BEE48566EE206A571879AA97724",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B4145749490FD1C698E41197944DD7AE",
+			"class": "K2Node_VariableGet",
+			"title": "Get LandRoll_RH",
+			"comment": "",
+			"x": 592,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5802550044F884242F8B8D984648B3F5",
+					"name": "LandRoll_RH",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8FA199B44A73302D6A371A9C800CDEB1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "76A769FC4D23AD43CF1A70A21EC70929",
+			"class": "K2Node_VariableGet",
+			"title": "Get LandRoll_LH",
+			"comment": "",
+			"x": 592,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4C99C825405FD0DA7E8723B92C97A473",
+					"name": "LandRoll_LH",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4100A773499025E4378A23AFC865F44F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "9693A74445D2C52010A557B36A5E8E54",
+			"class": "K2Node_VariableGet",
+			"title": "Get LandRoll_LH",
+			"comment": "",
+			"x": 592,
+			"y": 400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CC56682A4A6E4FEAAAE3CB8838518C61",
+					"name": "LandRoll_LH",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "53CD9C0C4D5124B8C8D738BFDC76A927",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5ADF1AC7407DB5F60C5B7ABF9C6DD1E0",
+			"class": "K2Node_VariableGet",
+			"title": "Get LandRoll_2H",
+			"comment": "",
+			"x": 592,
+			"y": 480,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "08AE65B44026E28C510D1794D2E71A6E",
+					"name": "LandRoll_2H",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ADA368F74495D30D0E8245BE5C6F5D3C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0630CDE94C186F294D612A89396135C5",
+			"class": "K2Node_VariableGet",
+			"title": "Get LandRoll_2H",
+			"comment": "",
+			"x": 592,
+			"y": 560,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9D69D2244BD5BEA9EB6968A76365A218",
+					"name": "LandRoll_2H",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1224026443A092A47A4A5F9FD6DB826F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A7106D1842F8505B45045D8AFB688365",
+			"class": "K2Node_VariableGet",
+			"title": "Get LandRoll_LH",
+			"comment": "",
+			"x": 592,
+			"y": 640,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BF0CA5CC4D8FE98F8657A7B2F6A8E213",
+					"name": "LandRoll_LH",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "24AB9B634D6CBFDEF58C48B29FBDF190",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "9227BBA64EC00687C40B5D8099B8ACAC",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 768,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D72F33424161E535A4375E9CB3C194FD",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6C94A92D4D18FC492FFF49A4FB2171A7",
+			"class": "K2Node_VariableGet",
+			"title": "Get LandRoll_RH",
+			"comment": "",
+			"x": 592,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5802550044F884242F8B8D984648B3F5",
+					"name": "LandRoll_RH",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8FA199B44A73302D6A371A9C800CDEB1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F2265F5B46F62B94961144BD3D2BB641",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 768,
+			"y": 688,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D72F33424161E535A4375E9CB3C194FD",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "789C189A4431B68BC5EF84AB5F4AA455",
+			"class": "K2Node_VariableGet",
+			"title": "Get LandRoll_RH",
+			"comment": "",
+			"x": 592,
+			"y": 743,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5802550044F884242F8B8D984648B3F5",
+					"name": "LandRoll_RH",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8FA199B44A73302D6A371A9C800CDEB1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "435D6B6443A1D24342849DBBDE2806F0",
+			"fromPinId": "8B3A4DF245A283BBD48A46A2AF8A5598",
+			"fromPinName": "then",
+			"toNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"toPinId": "0A913EE34402CED437ACC89A39FF0A45",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "5BCA543E4CC02773A6FED299BC76013F",
+			"fromPinId": "4DD0EAAA4B2D21011A5DB6B0864F0D12",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "25DF04434782C7F9A2CBC1929440FEAC",
+			"toPinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "data",
+			"fromNodeGuid": "47706EAA41CA4C2F0A4ACA919F1FB85A",
+			"fromPinId": "FDEFB5AB4F7701238E6572B1DE2E3F36",
+			"fromPinName": "LandRoll_Default",
+			"toNodeGuid": "25DF04434782C7F9A2CBC1929440FEAC",
+			"toPinId": "D72F33424161E535A4375E9CB3C194FD",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "data",
+			"fromNodeGuid": "7B372E63453B63427CCB4F81CFE49F7D",
+			"fromPinId": "D69DF57E4C6D1F604B1245A6DEDD4044",
+			"fromPinName": "OverlayState",
+			"toNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"toPinId": "BBF1BB60446226AD4BA8BB89E24DB335",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"fromPinId": "3D905FE44C50DBE8F5B8A5B80E250F5F",
+			"fromPinName": "NewEnumerator0",
+			"toNodeGuid": "5BCA543E4CC02773A6FED299BC76013F",
+			"toPinId": "F40EFA6C4A2B57EFEADE469F2CED21BA",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"fromPinId": "5984608F4308C6CC97A9C4917C32E8AE",
+			"fromPinName": "NewEnumerator12",
+			"toNodeGuid": "5BCA543E4CC02773A6FED299BC76013F",
+			"toPinId": "F40EFA6C4A2B57EFEADE469F2CED21BA",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"fromPinId": "D8A95E51462DCACBC61BC0906BF74091",
+			"fromPinName": "NewEnumerator13",
+			"toNodeGuid": "5BCA543E4CC02773A6FED299BC76013F",
+			"toPinId": "F40EFA6C4A2B57EFEADE469F2CED21BA",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"fromPinId": "B676125C4B36F888CEAD67998A24FE9B",
+			"fromPinName": "NewEnumerator14",
+			"toNodeGuid": "FD447E464BB9183D77D9229ADB1AD30C",
+			"toPinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"fromPinId": "125FA3B24ECF005DD444A994C6C2FA25",
+			"fromPinName": "NewEnumerator15",
+			"toNodeGuid": "E58DBE154CD067F82087CF866999B97D",
+			"toPinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"fromPinId": "F0A6E91B4C0B7B19A59D188891E3C56D",
+			"fromPinName": "NewEnumerator1",
+			"toNodeGuid": "E422A95C4022BFBD9D2A3BA704D5F757",
+			"toPinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"fromPinId": "84950C9F48C398EB471A4BBE7B408B68",
+			"fromPinName": "NewEnumerator5",
+			"toNodeGuid": "9227BBA64EC00687C40B5D8099B8ACAC",
+			"toPinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"fromPinId": "80D4299946CDAEC713F9A0892D6A76A3",
+			"fromPinName": "NewEnumerator10",
+			"toNodeGuid": "387D6B28488BCB6EFB7F3B832A2BE9DD",
+			"toPinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"fromPinId": "0CF0AE31476070E0365D1DA5B33BAEEA",
+			"fromPinName": "NewEnumerator6",
+			"toNodeGuid": "CB2E378D474C7B5823CBADBD0A194296",
+			"toPinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"fromPinId": "8B2B857D4BDDA8ED036D99854D37A97C",
+			"fromPinName": "NewEnumerator7",
+			"toNodeGuid": "5F17DE844B1C849F402EFEB204254740",
+			"toPinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"fromPinId": "5A09BCE145A3EEA31DEFEA8009C4D977",
+			"fromPinName": "NewEnumerator8",
+			"toNodeGuid": "BB02E38A49623091AAD4CFA5B18A1EA3",
+			"toPinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"fromPinId": "7C576B4844AA1310D66FC7BDD44E4633",
+			"fromPinName": "NewEnumerator9",
+			"toNodeGuid": "604675EF4787FDA5A44DB2BAFEF33690",
+			"toPinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"fromPinId": "BD990FDF492EC31DEA74E997DB5A422C",
+			"fromPinName": "NewEnumerator11",
+			"toNodeGuid": "DCE5123D4D03687935DE7ABDB798BC38",
+			"toPinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "8E034DBA4CF52B17F4FB3BBD95607E19",
+			"fromPinId": "A99146BE403CF220CCBE79AB79BE4D10",
+			"fromPinName": "NewEnumerator17",
+			"toNodeGuid": "F2265F5B46F62B94961144BD3D2BB641",
+			"toPinId": "3748BB7B49F6CFE6386570A885EE9DDE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "data",
+			"fromNodeGuid": "FE7827DE4AAE39512A837BBC93F3BEC7",
+			"fromPinId": "6B90FD874D3C249333048C9F52746AA3",
+			"fromPinName": "LandRoll_2H",
+			"toNodeGuid": "E422A95C4022BFBD9D2A3BA704D5F757",
+			"toPinId": "D72F33424161E535A4375E9CB3C194FD",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "data",
+			"fromNodeGuid": "76A769FC4D23AD43CF1A70A21EC70929",
+			"fromPinId": "4C99C825405FD0DA7E8723B92C97A473",
+			"fromPinName": "LandRoll_LH",
+			"toNodeGuid": "CB2E378D474C7B5823CBADBD0A194296",
+			"toPinId": "D72F33424161E535A4375E9CB3C194FD",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "data",
+			"fromNodeGuid": "9693A74445D2C52010A557B36A5E8E54",
+			"fromPinId": "CC56682A4A6E4FEAAAE3CB8838518C61",
+			"fromPinName": "LandRoll_LH",
+			"toNodeGuid": "5F17DE844B1C849F402EFEB204254740",
+			"toPinId": "D72F33424161E535A4375E9CB3C194FD",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "data",
+			"fromNodeGuid": "5ADF1AC7407DB5F60C5B7ABF9C6DD1E0",
+			"fromPinId": "08AE65B44026E28C510D1794D2E71A6E",
+			"fromPinName": "LandRoll_2H",
+			"toNodeGuid": "BB02E38A49623091AAD4CFA5B18A1EA3",
+			"toPinId": "D72F33424161E535A4375E9CB3C194FD",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "data",
+			"fromNodeGuid": "3A69196D4DCCFBAEAF3E48ABA6CC0E66",
+			"fromPinId": "7BC168504696D0C0C2805B90AA44B335",
+			"fromPinName": "LandRoll_LH",
+			"toNodeGuid": "FD447E464BB9183D77D9229ADB1AD30C",
+			"toPinId": "D72F33424161E535A4375E9CB3C194FD",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "data",
+			"fromNodeGuid": "23BB358E489812BD937E9695407852F1",
+			"fromPinId": "4AD38250481A98C6C6499BB956EB2574",
+			"fromPinName": "LandRoll_2H",
+			"toNodeGuid": "E58DBE154CD067F82087CF866999B97D",
+			"toPinId": "D72F33424161E535A4375E9CB3C194FD",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "data",
+			"fromNodeGuid": "B4145749490FD1C698E41197944DD7AE",
+			"fromPinId": "5802550044F884242F8B8D984648B3F5",
+			"fromPinName": "LandRoll_RH",
+			"toNodeGuid": "387D6B28488BCB6EFB7F3B832A2BE9DD",
+			"toPinId": "D72F33424161E535A4375E9CB3C194FD",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "data",
+			"fromNodeGuid": "0630CDE94C186F294D612A89396135C5",
+			"fromPinId": "9D69D2244BD5BEA9EB6968A76365A218",
+			"fromPinName": "LandRoll_2H",
+			"toNodeGuid": "604675EF4787FDA5A44DB2BAFEF33690",
+			"toPinId": "D72F33424161E535A4375E9CB3C194FD",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "data",
+			"fromNodeGuid": "A7106D1842F8505B45045D8AFB688365",
+			"fromPinId": "BF0CA5CC4D8FE98F8657A7B2F6A8E213",
+			"fromPinName": "LandRoll_LH",
+			"toNodeGuid": "DCE5123D4D03687935DE7ABDB798BC38",
+			"toPinId": "D72F33424161E535A4375E9CB3C194FD",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "data",
+			"fromNodeGuid": "6C94A92D4D18FC492FFF49A4FB2171A7",
+			"fromPinId": "5802550044F884242F8B8D984648B3F5",
+			"fromPinName": "LandRoll_RH",
+			"toNodeGuid": "9227BBA64EC00687C40B5D8099B8ACAC",
+			"toPinId": "D72F33424161E535A4375E9CB3C194FD",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "data",
+			"fromNodeGuid": "789C189A4431B68BC5EF84AB5F4AA455",
+			"fromPinId": "5802550044F884242F8B8D984648B3F5",
+			"fromPinName": "LandRoll_RH",
+			"toNodeGuid": "F2265F5B46F62B94961144BD3D2BB641",
+			"toPinId": "D72F33424161E535A4375E9CB3C194FD",
+			"toPinName": "ReturnValue"
+		}
+	],
+	"variablesRead": [
+		"Get LandRoll_2H",
+		"Get LandRoll_Default",
+		"Get LandRoll_LH",
+		"Get LandRoll_RH",
+		"Get OverlayState"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G014",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

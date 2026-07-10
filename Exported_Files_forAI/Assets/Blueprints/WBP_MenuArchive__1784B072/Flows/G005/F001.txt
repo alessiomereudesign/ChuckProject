@@ -1,0 +1,72 @@
+Asset: WBP_MenuArchive
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive
+GraphId: G005
+Graph: OnArmorSlotClicked
+FlowId: F001
+Entry: On Armor Slot Clicked
+NodeGuid: 27B057DC4BCFABA947AB6C9E4508C152
+
+Exec Flow:
+1. On Armor Slot Clicked [K2Node_FunctionEntry] 27B057DC4BCFABA947AB6C9E4508C152
+2. Create WBP Weapon Selector Widget [K2Node_CreateWidget] 07A1D9854D270AA6973C5A980FFB23CB
+3. Get As ChuckRef [K2Node_VariableGet] D96CD8154204CC5EFE88E190CF49C166
+4. Aggiungi figlio
+La destinazione è Panel Widget [K2Node_CallFunction] 90AE3D0E4B29D8533D4E1FA76FE16186
+5. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] EDBC4E5B43F45CC24B9A7895A0687005
+6. Set Keyboard Focus
+La destinazione è Widget [K2Node_CallFunction] 811117434476C75AA75584ACD28DE542
+7. Nodo di reindirizzamento [K2Node_Knot] 20A782394DC4D47CAD77F48DBBDAD95B
+8. Nodo di reindirizzamento [K2Node_Knot] 31073CB342D0D1EE812AFEAEEA8A09A9
+9. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 0138BA9443940F3AC855689F549B221A
+10. Nodo di reindirizzamento [K2Node_Knot] 5752ACD64E861CCDAC2925B474E3AA8B
+11. Set LastClickedButton [K2Node_VariableSet] B811EBA54DEA5C3005803E8C9E9CF286
+12. Get InventoryTab [K2Node_VariableGet] 5499DA944FA073B40D9C21AC9B83328D
+13. Set Is Enabled
+La destinazione è Widget [K2Node_CallFunction] 2BECB78541089031AB1ECCA1ACECB022
+14. Auto-riferimento [K2Node_Self] D7E7BD064D653E75BD01D198C63C704B
+15. Set ActiveArmorSelectorRef [K2Node_VariableSet] 02873F44424AB0EC2265A5A87AEEE1CE
+16. Nodo di reindirizzamento [K2Node_Knot] AB0A79B8441A15FE509F8F8AF20B39CD
+17. Nodo di reindirizzamento [K2Node_Knot] 8DC9C69A42F90D4ABB9301819A05A5F7
+18. Get Slot_ArmorContainer [K2Node_VariableGet] FF46585F47B3CA20226344B4EC5CEC8B
+
+Variables Read:
+- Get As ChuckRef
+- Get InventoryTab
+- Get Slot_ArmorContainer
+
+Variables Written:
+- Set ActiveArmorSelectorRef
+- Set LastClickedButton
+
+External Calls:
+- Aggiungi figlio
+La destinazione è Panel Widget
+- Get Owning Player
+La destinazione è Widget
+- Set Is Enabled
+La destinazione è Widget
+- Set Keyboard Focus
+La destinazione è Widget
+- Set User Focus
+La destinazione è Widget
+
+Widgets Touched:
+- Set LastClickedButton
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Aggiungi figlio
+La destinazione è Panel Widget
+- Get Owning Player
+La destinazione è Widget
+- Set Is Enabled
+La destinazione è Widget
+- Set Keyboard Focus
+La destinazione è Widget
+- Set User Focus
+La destinazione è Widget

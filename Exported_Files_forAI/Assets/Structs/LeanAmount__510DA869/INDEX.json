@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "LeanAmount",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Structs_LeanAmount",
+	"shortAssetFolder": "LeanAmount__510DA869",
+	"pathHash": "510DA869",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/LeanAmount__510DA869/SUMMARY.md",
+		"variables": "Assets/Structs/LeanAmount__510DA869/VARIABLES.json",
+		"components": "Assets/Structs/LeanAmount__510DA869/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/LeanAmount__510DA869/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/LeanAmount__510DA869/NODES.jsonl",
+		"edges": "Assets/Structs/LeanAmount__510DA869/EDGES.jsonl",
+		"search": "Assets/Structs/LeanAmount__510DA869/SEARCH.jsonl"
+	},
+	"graphs": []
+}

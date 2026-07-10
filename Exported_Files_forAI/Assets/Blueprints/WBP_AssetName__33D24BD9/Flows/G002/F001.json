@@ -1,0 +1,230 @@
+{
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_WBP_AssetName",
+	"graph": "SetAssetName",
+	"entryName": "Set Asset Name",
+	"entryNodeGuid": "1E16B376489075D244E8A084836F11B7",
+	"nodes": [
+		{
+			"nodeGuid": "1E16B376489075D244E8A084836F11B7",
+			"class": "K2Node_FunctionEntry",
+			"title": "Set Asset Name",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0EA4F05D4DC68BA5722B7BBB6BE49259",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B13F336F4025F87A8A31A8B7EDFF0CF2",
+					"name": "Name",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "55838F1E46863D8390F5F19F72ADF88C",
+			"class": "K2Node_VariableGet",
+			"title": "Get TxtVar_AssetName",
+			"comment": "",
+			"x": 208,
+			"y": 55,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "381A234B42DCA9C3ECA623B1B8941713",
+					"name": "TxtVar_AssetName",
+					"direction": "Output",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8DCDDCE5448AF004F9A4F49436977C87",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/WBP_AssetName.WBP_AssetName_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2EE0510745705AC0FAAB67A45C64674B",
+			"class": "K2Node_CallFunction",
+			"title": "SetText (Text)\nLa destinazione è Testo",
+			"comment": "",
+			"x": 384,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8084CF254354B2B619BE97925A6EB4D7",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E109BBD84EBB5780ECB667A1009712EB",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9E2584F34419420DAC1FA286C8F99458",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B8A01DFC44B1414176A19981CF384127",
+					"name": "InText",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "469DB4734E4C2577069E6A93151ED0CF",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 560,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E966E4884D95E7073B75C581F5FA45F5",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "973875664965CA1D88592BAEF3B5E4DB",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 176,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CA7E603448E0B200744A8D80BCA625BD",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AEF3843F4D5DC4C630D6F0AC51E03D05",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_WBP_AssetName",
+			"graph": "SetAssetName",
+			"edgeType": "exec",
+			"fromNodeGuid": "1E16B376489075D244E8A084836F11B7",
+			"fromPinId": "0EA4F05D4DC68BA5722B7BBB6BE49259",
+			"fromPinName": "then",
+			"toNodeGuid": "2EE0510745705AC0FAAB67A45C64674B",
+			"toPinId": "8084CF254354B2B619BE97925A6EB4D7",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_WBP_AssetName",
+			"graph": "SetAssetName",
+			"edgeType": "data",
+			"fromNodeGuid": "1E16B376489075D244E8A084836F11B7",
+			"fromPinId": "B13F336F4025F87A8A31A8B7EDFF0CF2",
+			"fromPinName": "Name",
+			"toNodeGuid": "973875664965CA1D88592BAEF3B5E4DB",
+			"toPinId": "CA7E603448E0B200744A8D80BCA625BD",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_WBP_AssetName",
+			"graph": "SetAssetName",
+			"edgeType": "data",
+			"fromNodeGuid": "55838F1E46863D8390F5F19F72ADF88C",
+			"fromPinId": "381A234B42DCA9C3ECA623B1B8941713",
+			"fromPinName": "TxtVar_AssetName",
+			"toNodeGuid": "2EE0510745705AC0FAAB67A45C64674B",
+			"toPinId": "9E2584F34419420DAC1FA286C8F99458",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_WBP_AssetName",
+			"graph": "SetAssetName",
+			"edgeType": "exec",
+			"fromNodeGuid": "2EE0510745705AC0FAAB67A45C64674B",
+			"fromPinId": "E109BBD84EBB5780ECB667A1009712EB",
+			"fromPinName": "then",
+			"toNodeGuid": "469DB4734E4C2577069E6A93151ED0CF",
+			"toPinId": "E966E4884D95E7073B75C581F5FA45F5",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_WBP_AssetName",
+			"graph": "SetAssetName",
+			"edgeType": "data",
+			"fromNodeGuid": "973875664965CA1D88592BAEF3B5E4DB",
+			"fromPinId": "AEF3843F4D5DC4C630D6F0AC51E03D05",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "2EE0510745705AC0FAAB67A45C64674B",
+			"toPinId": "B8A01DFC44B1414176A19981CF384127",
+			"toPinName": "InText"
+		}
+	],
+	"variablesRead": [
+		"Get TxtVar_AssetName"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"SetText (Text)\nLa destinazione è Testo"
+	],
+	"widgetsTouched": [
+		"SetText (Text)\nLa destinazione è Testo"
+	],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"SetText (Text)\nLa destinazione è Testo"
+	],
+	"flowId": "F001",
+	"graphId": "G002",
+	"assetName": "WBP_AssetName",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/WBP_AssetName.WBP_AssetName"
+}

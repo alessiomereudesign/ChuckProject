@@ -1,0 +1,46 @@
+Asset: ALS_PlayerCameraManager
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CameraSystem/ALS_PlayerCameraManager.ALS_PlayerCameraManager
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraManager
+GraphId: G005
+Graph: Get_CameraBehaviorParam
+FlowId: F001
+Entry: Get Camera Behavior Param
+NodeGuid: 846520F64154008955491BA33D4BEFE9
+
+Exec Flow:
+1. Get Camera Behavior Param [K2Node_FunctionEntry] 846520F64154008955491BA33D4BEFE9
+2. Get CameraBehavior [K2Node_VariableGet] 0ACBB6244D618A57715E0DB9B2CA7F42
+3. Get Anim Instance
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 2AFDA6B44D2F09CB2303E9A277D7C737
+4. Get Curve Value
+La destinazione è Istanza animazione [K2Node_CallFunction] 345DC67B4A81F56BA1C6819F63D1C10C
+5. Nodo di restituzione [K2Node_FunctionResult] FF88D1594AA097BBE0D1A0A578267ED0
+6. Get CurveName [K2Node_VariableGet] 2289B6A54C41E31637CC629F3755CAD8
+7. Is Valid [K2Node_MacroInstance] FDD680994C7A8997917D079B9529DE97
+8. Nodo di restituzione [K2Node_FunctionResult] 3B5813F04B556DE7D31A6AA9CF746340
+9. Get an Anim Curve value from the Player Camera Behavior AnimBP to use as a parameter in the custom camera behavior calculations [EdGraphNode_Comment] 2EC4F0D64A3BEFD81260F0B8A8C341CD
+
+Variables Read:
+- Get CameraBehavior
+- Get CurveName
+
+Variables Written:
+- none
+
+External Calls:
+- Get Anim Instance
+La destinazione è Componente mesh scheletrica
+- Get Curve Value
+La destinazione è Istanza animazione
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Anim Instance
+La destinazione è Componente mesh scheletrica
+- Get Curve Value
+La destinazione è Istanza animazione

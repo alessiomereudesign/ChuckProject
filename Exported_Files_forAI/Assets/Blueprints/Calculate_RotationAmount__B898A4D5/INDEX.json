@@ -1,0 +1,61 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "Calculate_RotationAmount",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimModifiers/Calculate_RotationAmount.Calculate_RotationAmount",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimModifiers_Calculate_RotationAmount",
+	"shortAssetFolder": "Calculate_RotationAmount__B898A4D5",
+	"pathHash": "B898A4D5",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/AnimationModifiers.AnimationModifier",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDateWithWarnings",
+	"counts":
+	{
+		"variables": 3,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 1,
+		"nodes": 38,
+		"edges": 46,
+		"flows": 1
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/Calculate_RotationAmount__B898A4D5/SUMMARY.md",
+		"variables": "Assets/Blueprints/Calculate_RotationAmount__B898A4D5/VARIABLES.json",
+		"components": "Assets/Blueprints/Calculate_RotationAmount__B898A4D5/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/Calculate_RotationAmount__B898A4D5/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/Calculate_RotationAmount__B898A4D5/NODES.jsonl",
+		"edges": "Assets/Blueprints/Calculate_RotationAmount__B898A4D5/EDGES.jsonl",
+		"search": "Assets/Blueprints/Calculate_RotationAmount__B898A4D5/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 38,
+			"edgeCount": 46,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/Calculate_RotationAmount__B898A4D5/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/Calculate_RotationAmount__B898A4D5/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/Calculate_RotationAmount__B898A4D5/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Evento On Apply",
+					"entryNodeGuid": "BDA54F1345A34F92C451989BE6130858",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/Calculate_RotationAmount__B898A4D5/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/Calculate_RotationAmount__B898A4D5/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 38
+				}
+			]
+		}
+	]
+}

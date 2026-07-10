@@ -1,0 +1,64 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G001
+Graph: EventGraph
+FlowId: F001
+Entry: Evento BeginPlay
+NodeGuid: 8EFE03B845734BC1E075CC9028A3917D
+
+Exec Flow:
+1. Evento BeginPlay [K2Node_Event] 8EFE03B845734BC1E075CC9028A3917D
+2. Get WeaponData [K2Node_VariableGet] 2E756D194D02708E43EF1B865A765576
+3. Break S_WeaponData [K2Node_BreakStruct] F60349D045B29E62E0F0C8A324CD2FEA
+4. Set Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] D732493E473FE26D81411795B5CE2007
+5. Get SK_Weapon [K2Node_VariableGet] 4B150BFC45609D84730478BEEC7EFADC
+6. Fire
+Custom Event [K2Node_CustomEvent] 0B7C41DD42421640369875AB6EF793CE
+7. Spawn Muzzle FX
+La destinazione è BP Weapon Base [K2Node_CallFunction] 7FA715E44CA2016742606E9612CA3BD3
+8. Get WeaponData [K2Node_VariableGet] 42DDD0CD4D78AABBE21B03A9B33D0030
+9. Break S_WeaponData [K2Node_BreakStruct] 831F93E64A55438A8F8D28A603F7DE75
+10. Ramo [K2Node_IfThenElse] 0FC739EE46919ACF5F6BB8A773F293BA
+11. Spawn Weapon Projectile
+La destinazione è BP Weapon Base [K2Node_CallFunction] 76DF53F947456461A75541A6AF664070
+12. Do Hit Scan
+La destinazione è BP Weapon Base [K2Node_CallFunction] 8ED1B9F3497014F772FB9F9E5F76C4A1
+13. Nodo di reindirizzamento [K2Node_Knot] 4C229A7A4F8ABBF7AB2DDDBC0F3AC29C
+14. Nodo di reindirizzamento [K2Node_Knot] F35A25B44ABD0BF4987F9594229CD883
+15. Nodo di reindirizzamento [K2Node_Knot] 383A15534C6DFA621A894AB21B3BC56F
+16. Nodo di reindirizzamento [K2Node_Knot] D5896E5A470631866D5BDFAFC64743CA
+
+Variables Read:
+- Get SK_Weapon
+- Get WeaponData
+
+Variables Written:
+- none
+
+External Calls:
+- Do Hit Scan
+La destinazione è BP Weapon Base
+- Set Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica
+- Spawn Muzzle FX
+La destinazione è BP Weapon Base
+- Spawn Weapon Projectile
+La destinazione è BP Weapon Base
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Do Hit Scan
+La destinazione è BP Weapon Base
+- Set Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica
+- Spawn Muzzle FX
+La destinazione è BP Weapon Base
+- Spawn Weapon Projectile
+La destinazione è BP Weapon Base

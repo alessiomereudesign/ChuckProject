@@ -1,0 +1,55 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G040
+Graph: OnMovementActionChanged
+FlowId: F001
+Entry: On Movement Action Changed
+NodeGuid: F2B6B7AF45DEAA6019B07CBAE3953CB0
+
+Exec Flow:
+1. On Movement Action Changed [K2Node_FunctionEntry] F2B6B7AF45DEAA6019B07CBAE3953CB0
+2. ML Set Previous and New Value [K2Node_MacroInstance] 9C7B05CE4B17193320F0EC99B188056D
+3. Get MovementAction [K2Node_VariableGet] EB4C497D42726105AC14D6852B04E5C2
+4. Get PreviousMovementAction [K2Node_VariableGet] 458619CF4BF2B788045AC19B9316B668
+5. Switch on ALS_MovementAction [K2Node_SwitchEnum] A309AF33443575EDB59E568F2CD8EB49
+6. Get MovementAction [K2Node_VariableGet] 1F92ED564673A0779ECE90B0AA260C94
+7. Accovacciato
+La destinazione è Personaggio [K2Node_CallFunction] 1539EEF84BAA2CDF4DB9D49F26943374
+8. Sequenza [K2Node_ExecutionSequence] 98C7E67C45A5176DBDCB0A8299B49B60
+9. Switch on ALS_MovementAction [K2Node_SwitchEnum] 9ECEB27B47251437AFC6E6BB17767562
+10. Get PreviousMovementAction [K2Node_VariableGet] 31BA7C2445646E8A1EB075B3D2DD3B0F
+11. Switch on ALS_Stance [K2Node_SwitchEnum] 42DAD21C4646279F72EB01B67C5B0CB7
+12. Get DesiredStance [K2Node_VariableGet] FBC0894741F958DA255B95A5B5EFB0A4
+13. Accovacciato
+La destinazione è Personaggio [K2Node_CallFunction] 359848FE4342DF341527B59378F59F24
+14. Un Crouch
+La destinazione è Personaggio [K2Node_CallFunction] C4E3DE954D8065E83B90D5ADD7B6A0EE
+15. Make the character crouch if performing a roll. [EdGraphNode_Comment] C5A2926E4B588D648CD58AB3EE68F187
+16. Upon ending a roll, reset the stance back to its desired value. [EdGraphNode_Comment] 7EE48D6442D24AA8D20CA58ABCA822C1
+
+Variables Read:
+- Get DesiredStance
+- Get MovementAction
+- Get PreviousMovementAction
+
+Variables Written:
+- none
+
+External Calls:
+- Accovacciato
+La destinazione è Personaggio
+- Un Crouch
+La destinazione è Personaggio
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Accovacciato
+La destinazione è Personaggio
+- Un Crouch
+La destinazione è Personaggio

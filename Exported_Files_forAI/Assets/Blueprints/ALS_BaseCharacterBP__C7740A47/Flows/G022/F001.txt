@@ -1,0 +1,56 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G022
+Graph: GetCalpsuleBaseLocation
+FlowId: F001
+Entry: Get Calpsule Base Location
+NodeGuid: 3C64767B4D25A8BA5CAE34A4DD66756D
+
+Exec Flow:
+1. Get Calpsule Base Location [K2Node_FunctionEntry] 3C64767B4D25A8BA5CAE34A4DD66756D
+2. Nodo di restituzione [K2Node_FunctionResult] 08938ECC40E2E4FC83D608963357C2D2
+3. Get World Location
+La destinazione è Componente di scena [K2Node_CallFunction] FDA9AFD74FDF88D8E4D7DC8F410CFDF0
+4. Get Scaled Capsule Half Height
+La destinazione è Capsule Collision [K2Node_CallFunction] C7A60953491CA4782E82F48D4B847096
+5. vector - vector [K2Node_CallFunction] 05A0A7C64AA97E80F53457862F3E9463
+6. Get Up Vector
+La destinazione è Componente di scena [K2Node_CallFunction] 3AA629814E05B77BE5F389A016D35A41
+7. vector * float [K2Node_CallFunction] F8C02D3D411A24493FBB7DB72424227B
+8. Get ZOffset [K2Node_VariableGet] E686C91D4E98D2BAC530CB9195E56FED
+9. Get CapsuleComponent [K2Node_VariableGet] 03DFFA0943D68952F89845ADB85B2076
+10. float + float [K2Node_CommutativeAssociativeBinaryOperator] 203168AD4AE1449F4B030197E2464EBA
+
+Variables Read:
+- Get CapsuleComponent
+- Get ZOffset
+
+Variables Written:
+- none
+
+External Calls:
+- Get Scaled Capsule Half Height
+La destinazione è Capsule Collision
+- Get Up Vector
+La destinazione è Componente di scena
+- Get World Location
+La destinazione è Componente di scena
+- vector * float
+- vector - vector
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Scaled Capsule Half Height
+La destinazione è Capsule Collision
+- Get Up Vector
+La destinazione è Componente di scena
+- Get World Location
+La destinazione è Componente di scena
+- vector * float
+- vector - vector

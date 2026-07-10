@@ -1,0 +1,14 @@
+{
+	"graphId": "G003",
+	"name": "ML_DoWhile(TrueFalse)",
+	"graphName": "ML_DoWhile(TrueFalse)",
+	"type": "Macro",
+	"graphType": "Macro",
+	"graphGuid": "",
+	"nodeCount": 13,
+	"edgeCount": 18,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_MacroLibrary__77737EBC/Graphs/G003/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_MacroLibrary__77737EBC/Graphs/G003/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_MacroLibrary__77737EBC/Graphs/G003/EDGES.jsonl",
+	"flows": []
+}

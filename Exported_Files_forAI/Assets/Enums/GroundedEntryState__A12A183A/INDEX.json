@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "GroundedEntryState",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/GroundedEntryState.GroundedEntryState",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Enums_GroundedEntryState",
+	"shortAssetFolder": "GroundedEntryState__A12A183A",
+	"pathHash": "A12A183A",
+	"assetType": "Enum",
+	"unrealClass": "UserDefinedEnum",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "NotApplicable",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Enums/GroundedEntryState__A12A183A/SUMMARY.md",
+		"variables": "Assets/Enums/GroundedEntryState__A12A183A/VARIABLES.json",
+		"components": "Assets/Enums/GroundedEntryState__A12A183A/COMPONENTS.json",
+		"widgetTree": "Assets/Enums/GroundedEntryState__A12A183A/WIDGET_TREE.json",
+		"nodes": "Assets/Enums/GroundedEntryState__A12A183A/NODES.jsonl",
+		"edges": "Assets/Enums/GroundedEntryState__A12A183A/EDGES.jsonl",
+		"search": "Assets/Enums/GroundedEntryState__A12A183A/SEARCH.jsonl"
+	},
+	"graphs": []
+}

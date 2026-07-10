@@ -1,0 +1,141 @@
+{
+	"assetName": "BP_WeaponBase",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Evento BeginPlay",
+			"graph": "EventGraph",
+			"nodeGuid": "8EFE03B845734BC1E075CC9028A3917D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Fire\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "0B7C41DD42421640369875AB6EF793CE",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Can Fire",
+			"graph": "CanFire",
+			"nodeGuid": "2492A371435702A552B6BBA1C87ABD3C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Do Hit Scan",
+			"graph": "DoHitScan",
+			"nodeGuid": "EE96F1CE4DAD86AD3D16C9B20FEF3643",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Equip",
+			"graph": "Equip",
+			"nodeGuid": "56FE998A4728941F403EF78837003D3F",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Fire Montage",
+			"graph": "GetFireMontage",
+			"nodeGuid": "36A4BE5144DB0493D0E7CABCB393E800",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Fire Rate",
+			"graph": "GetFireRate",
+			"nodeGuid": "353F17F344BB5A76D3AC30BD048C0F22",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Hit Range",
+			"graph": "GetHitRange",
+			"nodeGuid": "EDB3920F4FFC36342071FFAD7019509E",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Muzzle Transform",
+			"graph": "GetMuzzleTransform",
+			"nodeGuid": "2F5E8DB94E2A4A9FF2F147AFF10B08D0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Reload Montage",
+			"graph": "GetReloadMontage",
+			"nodeGuid": "777A9FF4468CD4D10CC2768230EB3550",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Initialize Weapon",
+			"graph": "InitializeWeapon",
+			"nodeGuid": "45ACEE1E4348283BDB0A448628A6CBD4",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Is Looping Weapon",
+			"graph": "IsLoopingWeapon",
+			"nodeGuid": "82E63F4741FCAC8480C9929C5A5C2813",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Play Fire Effects",
+			"graph": "PlayFireEffects",
+			"nodeGuid": "E99AA56C41233EC2033D628C3FEEC926",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Reload",
+			"graph": "Reload",
+			"nodeGuid": "AF4781DC43282686DDF733AEE529D1D2",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Spawn Muzzle FX",
+			"graph": "SpawnMuzzleFX",
+			"nodeGuid": "22D576E7422AFF2E6148C39C1D242DB9",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Spawn Weapon Projectile",
+			"graph": "SpawnWeaponProjectile",
+			"nodeGuid": "CF1C0BF84FD47D5A74BB428CFDBFC4CE",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Unequip",
+			"graph": "Unequip",
+			"nodeGuid": "64B2593E466B242D7BCB7B9D9E3C1752",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Weapon Data",
+			"graph": "UpdateWeaponData",
+			"nodeGuid": "AD941C624A1A332477249886558E5D64",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Construction Script",
+			"graph": "UserConstructionScript",
+			"nodeGuid": "E49F0BEE47F1B82E87A5A897CEC0257B",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

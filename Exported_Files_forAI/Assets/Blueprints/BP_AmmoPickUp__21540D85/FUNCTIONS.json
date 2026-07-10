@@ -1,0 +1,215 @@
+{
+	"assetName": "BP_AmmoPickUp",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_AmmoPickUp.BP_AmmoPickUp",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_AmmoPickUp",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"functions": [
+		{
+			"name": "Get Interaction Prompt",
+			"graph": "GetInteractionPrompt",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G001/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectAmmo",
+			"graph": "CollectAmmo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 21,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "UserConstructionScript",
+			"graph": "UserConstructionScript",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 1,
+			"file": "Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G004/INDEX.json"
+		}
+	]
+}

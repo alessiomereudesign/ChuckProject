@@ -1,0 +1,25 @@
+{
+	"graphId": "G002",
+	"name": "CanFire",
+	"graphName": "CanFire",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 5,
+	"edgeCount": 4,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G002/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Can Fire",
+			"entryNodeGuid": "2492A371435702A552B6BBA1C87ABD3C",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G002/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G002/F001.json",
+			"textFile": "Flows/G002/F001.txt",
+			"jsonFile": "Flows/G002/F001.json",
+			"nodeCount": 5
+		}
+	]
+}

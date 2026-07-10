@@ -1,0 +1,25 @@
+{
+	"graphId": "G004",
+	"name": "IsActiveInputDevice",
+	"graphName": "IsActiveInputDevice",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 3,
+	"edgeCount": 3,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G004/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G004/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G004/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Is Active Input Device",
+			"entryNodeGuid": "305BAF4B4D826C526E6BAEA7962FC162",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G004/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G004/F001.json",
+			"textFile": "Flows/G004/F001.txt",
+			"jsonFile": "Flows/G004/F001.json",
+			"nodeCount": 3
+		}
+	]
+}

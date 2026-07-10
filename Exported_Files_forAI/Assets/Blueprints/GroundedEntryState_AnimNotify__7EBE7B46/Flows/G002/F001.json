@@ -1,0 +1,249 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_GroundedEntryState_AnimNotify",
+	"graph": "Received_Notify",
+	"entryName": "Received Notify",
+	"entryNodeGuid": "8D2361E14024898F37CC8AAAF72C3A02",
+	"nodes": [
+		{
+			"nodeGuid": "8D2361E14024898F37CC8AAAF72C3A02",
+			"class": "K2Node_FunctionEntry",
+			"title": "Received Notify",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D2AD95AF464C125E40DA239611C9BCBB",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9405989F44FF3B1819D384AC16EF0285",
+					"name": "MeshComp",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "02CDC747474E447489A5F0A5D15B2441",
+					"name": "Animation",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimSequenceBase",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "48F5293444923C583D6D8E90D7FAA2A2",
+					"name": "EventReference",
+					"direction": "Output",
+					"type": "struct|/Script/Engine.AnimNotifyEventReference|ref|const",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6D35050043EEDFC9E79F4EA1983FC6A8",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 688,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1578D01B44CA2EBF2E8179A6FE5CBD4B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "88EBC49A46590366857A7DA2EDD1DB2D",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "5B05876C4AC167A5F6E4F39920A14DFF",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Instance\nLa destinazione è Componente mesh scheletrica",
+			"comment": "",
+			"x": 160,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "50744E614F7F30180A6C8B88B68D013B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "68BEA2CA4E595DDBE8FADAB685FD1925",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B09691374083487D63D927AC21445B66",
+			"class": "K2Node_Message",
+			"title": "BPI Set Grounded Entry State\nTarget is ALS Animation BPI",
+			"comment": "",
+			"x": 432,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "78F7CBB5464D92EE5A0EFFBE16392EC4",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E93BEAE9406EDD6238B8C9A4427A1444",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DACCC596434DBC849273439638D7BF08",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "76A1E1D6417DA09A727718B5EDF6A987",
+					"name": "GroundedEntryState",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/GroundedEntryState.GroundedEntryState",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E71B25274137F89752FE0F9D0C8ED83B",
+			"class": "K2Node_VariableGet",
+			"title": "Get Grounded Entry State",
+			"comment": "",
+			"x": 240,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9730A2424702C92B2D24ECBE7D97680A",
+					"name": "Grounded Entry State",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/GroundedEntryState.GroundedEntryState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "F88C8C3F4F3164FFF58FFDAF791C75C3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/GroundedEntryState_AnimNotify.GroundedEntryState_AnimNotify_C",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_GroundedEntryState_AnimNotify",
+			"graph": "Received_Notify",
+			"edgeType": "exec",
+			"fromNodeGuid": "8D2361E14024898F37CC8AAAF72C3A02",
+			"fromPinId": "D2AD95AF464C125E40DA239611C9BCBB",
+			"fromPinName": "then",
+			"toNodeGuid": "B09691374083487D63D927AC21445B66",
+			"toPinId": "78F7CBB5464D92EE5A0EFFBE16392EC4",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_GroundedEntryState_AnimNotify",
+			"graph": "Received_Notify",
+			"edgeType": "data",
+			"fromNodeGuid": "8D2361E14024898F37CC8AAAF72C3A02",
+			"fromPinId": "9405989F44FF3B1819D384AC16EF0285",
+			"fromPinName": "MeshComp",
+			"toNodeGuid": "5B05876C4AC167A5F6E4F39920A14DFF",
+			"toPinId": "50744E614F7F30180A6C8B88B68D013B",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_GroundedEntryState_AnimNotify",
+			"graph": "Received_Notify",
+			"edgeType": "exec",
+			"fromNodeGuid": "B09691374083487D63D927AC21445B66",
+			"fromPinId": "E93BEAE9406EDD6238B8C9A4427A1444",
+			"fromPinName": "then",
+			"toNodeGuid": "6D35050043EEDFC9E79F4EA1983FC6A8",
+			"toPinId": "1578D01B44CA2EBF2E8179A6FE5CBD4B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_GroundedEntryState_AnimNotify",
+			"graph": "Received_Notify",
+			"edgeType": "data",
+			"fromNodeGuid": "5B05876C4AC167A5F6E4F39920A14DFF",
+			"fromPinId": "68BEA2CA4E595DDBE8FADAB685FD1925",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "B09691374083487D63D927AC21445B66",
+			"toPinId": "DACCC596434DBC849273439638D7BF08",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_GroundedEntryState_AnimNotify",
+			"graph": "Received_Notify",
+			"edgeType": "data",
+			"fromNodeGuid": "E71B25274137F89752FE0F9D0C8ED83B",
+			"fromPinId": "9730A2424702C92B2D24ECBE7D97680A",
+			"fromPinName": "Grounded Entry State",
+			"toNodeGuid": "B09691374083487D63D927AC21445B66",
+			"toPinId": "76A1E1D6417DA09A727718B5EDF6A987",
+			"toPinName": "GroundedEntryState"
+		}
+	],
+	"variablesRead": [
+		"Get Grounded Entry State"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Anim Instance\nLa destinazione è Componente mesh scheletrica"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Anim Instance\nLa destinazione è Componente mesh scheletrica"
+	],
+	"flowId": "F001",
+	"graphId": "G002",
+	"assetName": "GroundedEntryState_AnimNotify",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/GroundedEntryState_AnimNotify.GroundedEntryState_AnimNotify"
+}

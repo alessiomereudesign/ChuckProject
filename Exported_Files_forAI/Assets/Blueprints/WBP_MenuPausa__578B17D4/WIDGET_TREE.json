@@ -1,0 +1,127 @@
+{
+	"assetName": "WBP_MenuPausa",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/WBP_MenuPausa.WBP_MenuPausa",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"widgets": [
+		{
+			"name": "Remove from Parent\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set User Focus\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Create WBP Menu Archive Widget",
+			"class": "K2Node_CreateWidget",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Add to Viewport\nLa destinazione è User Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set User Focus\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Keyboard Focus\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Visibility\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Visibility\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set User Focus\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Keyboard Focus\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Owning Player\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "BEGIN PLAY > Focus su Button \"Riprendi\"",
+			"class": "EdGraphNode_Comment",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Has Keyboard Focus\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Riproduci animazione\nLa destinazione è User Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Riproduci animazione\nLa destinazione è User Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Riproduci animazione\nLa destinazione è User Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Remove from Parent\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		}
+	]
+}

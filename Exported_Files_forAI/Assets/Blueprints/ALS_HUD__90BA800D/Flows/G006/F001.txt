@@ -1,0 +1,37 @@
+Asset: ALS_HUD
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/ALS_HUD.ALS_HUD
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD
+GraphId: G006
+Graph: Get_DebugCharacterName
+FlowId: F001
+Entry: Get Debug Character Name
+NodeGuid: BBD228AA43A839A4D70AAFAF2458759E
+
+Exec Flow:
+1. Get Debug Character Name [K2Node_FunctionEntry] BBD228AA43A839A4D70AAFAF2458759E
+2. Nodo di restituzione [K2Node_FunctionResult] 92EF191B40A84F34A5D4B592DD948794
+3. To Text (String) [K2Node_CallFunction] 406052EB4642A65A419522ACD2C1CE40
+4. Nodo di restituzione [K2Node_FunctionResult] 19F8561648832891ACD6729F6684B6FC
+5. Get Object Name [K2Node_CallFunction] 0228B7A146A892528EEB3D9176CD0E12
+6. Is Valid [K2Node_MacroInstance] 560498FC4EB7A4B350A81C91C44C7CCA
+7. Get DebugFocusCharacter [K2Node_VariableGet] 80AFD8FF47AF0660AE295B8A079A3BC0
+
+Variables Read:
+- Get DebugFocusCharacter
+
+Variables Written:
+- none
+
+External Calls:
+- Get Object Name
+- To Text (String)
+
+Widgets Touched:
+- To Text (String)
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Object Name
+- To Text (String)

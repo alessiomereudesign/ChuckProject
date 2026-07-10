@@ -1,0 +1,44 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G011
+Graph: GetCurrentWeaponFromInventory
+FlowId: F001
+Entry: Get Current Weapon from Inventory
+NodeGuid: 5092D4F64536424DDAAF3BB310421452
+
+Exec Flow:
+1. Get Current Weapon from Inventory [K2Node_FunctionEntry] 5092D4F64536424DDAAF3BB310421452
+2. Nodo di restituzione [K2Node_FunctionResult] 8B8C64F045967F0956F65194779B4E2D
+3. integer >= integer [K2Node_PromotableOperator] A9CF398444F6CC7CAA27E0A9EC8E6E1E
+4. Get CurrentWeaponIndex [K2Node_VariableGet] BB74FA744058B933809148AD46BF676D
+5. Get OwnedWeapons [K2Node_VariableGet] 4568175D468371969ACF76B0BA577186
+6. Length [K2Node_CallArrayFunction] 3AC00DF54100D156423A0FA85CE66E22
+7. integer < integer [K2Node_PromotableOperator] 4FA6E12C435CE8EF4EA6138927FB27E8
+8. Get CurrentWeaponIndex [K2Node_VariableGet] 770A57AE40CAF4CF0FC024945209450A
+9. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] A02F351B479E3AB6B93764BA61A2872C
+10. Ramo [K2Node_IfThenElse] F292AEF341006EE53AB38AB5E2F00049
+11. Get OwnedWeapons [K2Node_VariableGet] 073598C24C775081A4AB6B81EED65B3F
+12. OTTIENI [K2Node_GetArrayItem] 1C6BD4CC4EC6FD73B92272AA0537ED77
+13. Get CurrentWeaponIndex [K2Node_VariableGet] EF5AD0874A830E170968E796C34FA940
+14. Nodo di reindirizzamento [K2Node_Knot] 12242F5A418AAEF0994380BB36AFD8E2
+15. Nodo di restituzione [K2Node_FunctionResult] F3590BD7430638CEC89F6ABFF1704215
+
+Variables Read:
+- Get CurrentWeaponIndex
+- Get OwnedWeapons
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

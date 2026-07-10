@@ -1,0 +1,505 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "UpdateHeldObjectAnimations",
+	"entryName": "Update Held Object Animations",
+	"entryNodeGuid": "398D809B4C50A96285EDF588F98D3DCA",
+	"nodes": [
+		{
+			"nodeGuid": "398D809B4C50A96285EDF588F98D3DCA",
+			"class": "K2Node_FunctionEntry",
+			"title": "Update Held Object Animations",
+			"comment": "",
+			"x": 208,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "77254A804E3CA2303E41688424DB9101",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "888C26B14DCA46154BD74CA38A3D5F93",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on ALS_OverlayState",
+			"comment": "",
+			"x": 512,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BC8EDD5E4F30F133F78542A2E452DBBA",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F95CFB154A0C8026952205825C8FE91B",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "4F5BAFDB4B1B4C486D16889B2D2BCA80",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "79AE0F0F41218BFD2F384F802D010863",
+					"name": "NewEnumerator0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F4D831F24EF3C8F5AB6C46A97C0978F2",
+					"name": "NewEnumerator12",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6077B51142274F5E0BD08E8FFC3752CE",
+					"name": "NewEnumerator13",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6BA0496E434E326091D884835250BED3",
+					"name": "NewEnumerator14",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B43F14064DA997B52A3FD9A68DC4BE3F",
+					"name": "NewEnumerator15",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EFEB492A45AE8DE57D5836BEA94F625E",
+					"name": "NewEnumerator1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9EBC3A244D87D57C525648A5C5BCE5BA",
+					"name": "NewEnumerator5",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7E73E33E46C29DF899C0D2A831438051",
+					"name": "NewEnumerator10",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A133FAD44C461E0DE16D0A9D4DC33355",
+					"name": "NewEnumerator6",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8178F5DD48C5D32D621C85BEF1F8726B",
+					"name": "NewEnumerator7",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "00B8B77E4DCA9388BCA318A67AE7D231",
+					"name": "NewEnumerator8",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3D83624C4D140B6109FB289F150D26DB",
+					"name": "NewEnumerator9",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "300B6EA1482753AAA427BEBDCA09DFA3",
+					"name": "NewEnumerator11",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "11A031854150DFEA4DB0E2B08FD90214",
+					"name": "NewEnumerator17",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0BE4C0414837C81389AA41B5C7BC5AB7",
+					"name": "NewEnumerator18",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A6D8E2FE46333270F1AE879F2E79AC32",
+			"class": "K2Node_VariableGet",
+			"title": "Get OverlayState",
+			"comment": "",
+			"x": 368,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0C5DEBD14D69F24E377CB9A79C7AC7DD",
+					"name": "OverlayState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "F2F353BA4087AD0F04BD8CA6398B849C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DCA545734A49760C6F215B8312EDFAC1",
+			"class": "K2Node_VariableGet",
+			"title": "Get SkeletalMesh",
+			"comment": "",
+			"x": 752,
+			"y": 496,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5775B0DA4ABE316315C012817837AD57",
+					"name": "SkeletalMesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5101C48D46FA6306AE7D6C86D1F897CB",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "90A7268845D7753F973AD8AD3624057B",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Instance\nLa destinazione è Componente mesh scheletrica",
+			"comment": "",
+			"x": 896,
+			"y": 448,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8815AE2C44C9772E3746FA8FA64585B7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DC12A4CF40621B359A3D1696226A52F7",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2222AE1342AFF40F15CEF9968E79DE61",
+			"class": "K2Node_DynamicCast",
+			"title": "Cast To Bow_AnimBP",
+			"comment": "",
+			"x": 1168,
+			"y": 400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E8C8482046C654D41BC88FB04BC7654A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CB00B5144764A885BC0938BBF56AD8CB",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4BBCCC2045AA89B4D18F1EB94F9A74CB",
+					"name": "CastFailed",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B8CEA934445627DCF4245F8EE2CF67DB",
+					"name": "Object",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "45E07394496AD92CE85312898286D7B6",
+					"name": "AsBow Anim BP",
+					"direction": "Output",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Props/Meshes/Bow_AnimBP.Bow_AnimBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A435740B4D36607C559D7E896A46F671",
+					"name": "bSuccess",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2C98339C41338B3C3550B69906B2A9AF",
+			"class": "K2Node_VariableSet",
+			"title": "Set Draw",
+			"comment": "",
+			"x": 1456,
+			"y": 416,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F1E9E01F4D2FB61D8C6E85857F23C678",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2C73B8764DE80EA9C0EB08BC9733189F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "66746A9A4397BCEE7D80CC89B49190C1",
+					"name": "Draw",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "8FE7E8C34E286C9A9A9FE5826D5A3790",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "FEE3CBB841FAFE024A98E580BF76EC14",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Props/Meshes/Bow_AnimBP.Bow_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C38B1AE2466C4E7CA06F9DAC88A197B0",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 1104,
+			"y": 528,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "733F3CB442AD92A2F022FC9D6C45C4C9",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "322B0588435D8F534C33DBB8B922E1F5",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Enable_SpineRotation"
+				},
+				{
+					"pinId": "7AA5215F480F4A009AD16795846E8882",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObjectAnimations",
+			"edgeType": "exec",
+			"fromNodeGuid": "398D809B4C50A96285EDF588F98D3DCA",
+			"fromPinId": "77254A804E3CA2303E41688424DB9101",
+			"fromPinName": "then",
+			"toNodeGuid": "888C26B14DCA46154BD74CA38A3D5F93",
+			"toPinId": "BC8EDD5E4F30F133F78542A2E452DBBA",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObjectAnimations",
+			"edgeType": "data",
+			"fromNodeGuid": "A6D8E2FE46333270F1AE879F2E79AC32",
+			"fromPinId": "0C5DEBD14D69F24E377CB9A79C7AC7DD",
+			"fromPinName": "OverlayState",
+			"toNodeGuid": "888C26B14DCA46154BD74CA38A3D5F93",
+			"toPinId": "F95CFB154A0C8026952205825C8FE91B",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObjectAnimations",
+			"edgeType": "exec",
+			"fromNodeGuid": "888C26B14DCA46154BD74CA38A3D5F93",
+			"fromPinId": "A133FAD44C461E0DE16D0A9D4DC33355",
+			"fromPinName": "NewEnumerator6",
+			"toNodeGuid": "2222AE1342AFF40F15CEF9968E79DE61",
+			"toPinId": "E8C8482046C654D41BC88FB04BC7654A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObjectAnimations",
+			"edgeType": "data",
+			"fromNodeGuid": "DCA545734A49760C6F215B8312EDFAC1",
+			"fromPinId": "5775B0DA4ABE316315C012817837AD57",
+			"fromPinName": "SkeletalMesh",
+			"toNodeGuid": "90A7268845D7753F973AD8AD3624057B",
+			"toPinId": "8815AE2C44C9772E3746FA8FA64585B7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObjectAnimations",
+			"edgeType": "data",
+			"fromNodeGuid": "90A7268845D7753F973AD8AD3624057B",
+			"fromPinId": "DC12A4CF40621B359A3D1696226A52F7",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "2222AE1342AFF40F15CEF9968E79DE61",
+			"toPinId": "B8CEA934445627DCF4245F8EE2CF67DB",
+			"toPinName": "Object"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObjectAnimations",
+			"edgeType": "exec",
+			"fromNodeGuid": "2222AE1342AFF40F15CEF9968E79DE61",
+			"fromPinId": "CB00B5144764A885BC0938BBF56AD8CB",
+			"fromPinName": "then",
+			"toNodeGuid": "2C98339C41338B3C3550B69906B2A9AF",
+			"toPinId": "F1E9E01F4D2FB61D8C6E85857F23C678",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObjectAnimations",
+			"edgeType": "data",
+			"fromNodeGuid": "2222AE1342AFF40F15CEF9968E79DE61",
+			"fromPinId": "45E07394496AD92CE85312898286D7B6",
+			"fromPinName": "AsBow Anim BP",
+			"toNodeGuid": "2C98339C41338B3C3550B69906B2A9AF",
+			"toPinId": "FEE3CBB841FAFE024A98E580BF76EC14",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObjectAnimations",
+			"edgeType": "data",
+			"fromNodeGuid": "C38B1AE2466C4E7CA06F9DAC88A197B0",
+			"fromPinId": "7AA5215F480F4A009AD16795846E8882",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "2C98339C41338B3C3550B69906B2A9AF",
+			"toPinId": "66746A9A4397BCEE7D80CC89B49190C1",
+			"toPinName": "Draw"
+		}
+	],
+	"variablesRead": [
+		"Get OverlayState",
+		"Get SkeletalMesh"
+	],
+	"variablesWritten": [
+		"Set Draw"
+	],
+	"functionsCalled": [
+		"Get Anim Curve Value",
+		"Get Anim Instance\nLa destinazione è Componente mesh scheletrica"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Cast To Bow_AnimBP",
+		"Get Anim Curve Value",
+		"Get Anim Instance\nLa destinazione è Componente mesh scheletrica"
+	],
+	"flowId": "F001",
+	"graphId": "G027",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

@@ -1,0 +1,85 @@
+{
+	"graphId": "G001",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 73,
+	"edgeCount": 71,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "ChangeColorOnFocus\nCustom Event",
+			"entryNodeGuid": "9985A35D4C9DEDB5356F62AEFA40E124",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 73
+		},
+		{
+			"flowId": "F002",
+			"entryName": "Evento Construct",
+			"entryNodeGuid": "C07957AA4B8C2FD06B6686B650BFA738",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Flows/G001/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Flows/G001/F002.json",
+			"textFile": "Flows/G001/F002.txt",
+			"jsonFile": "Flows/G001/F002.json",
+			"nodeCount": 73
+		},
+		{
+			"flowId": "F003",
+			"entryName": "Evento Tick",
+			"entryNodeGuid": "968C7DD94B17F0267559D5B734B2099F",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Flows/G001/F003.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Flows/G001/F003.json",
+			"textFile": "Flows/G001/F003.txt",
+			"jsonFile": "Flows/G001/F003.json",
+			"nodeCount": 73
+		},
+		{
+			"flowId": "F004",
+			"entryName": "Get OnClicked_Archive",
+			"entryNodeGuid": "119432FC407AA819EAB3E991141E899E",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Flows/G001/F004.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Flows/G001/F004.json",
+			"textFile": "Flows/G001/F004.txt",
+			"jsonFile": "Flows/G001/F004.json",
+			"nodeCount": 73
+		},
+		{
+			"flowId": "F005",
+			"entryName": "Get OnClicked_Quit",
+			"entryNodeGuid": "4D6A669544BC27DC11DEDAA87B450550",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Flows/G001/F005.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Flows/G001/F005.json",
+			"textFile": "Flows/G001/F005.txt",
+			"jsonFile": "Flows/G001/F005.json",
+			"nodeCount": 73
+		},
+		{
+			"flowId": "F006",
+			"entryName": "Get OnClicked_Save",
+			"entryNodeGuid": "4C0F47294BE3FC5BBBE511AD107AACB7",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Flows/G001/F006.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Flows/G001/F006.json",
+			"textFile": "Flows/G001/F006.txt",
+			"jsonFile": "Flows/G001/F006.json",
+			"nodeCount": 73
+		},
+		{
+			"flowId": "F007",
+			"entryName": "OpenAndInizializeMenu\nCustom Event",
+			"entryNodeGuid": "3970CEC84813D757BF4EFB8757945B60",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Flows/G001/F007.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPausa__578B17D4/Flows/G001/F007.json",
+			"textFile": "Flows/G001/F007.txt",
+			"jsonFile": "Flows/G001/F007.json",
+			"nodeCount": 73
+		}
+	]
+}

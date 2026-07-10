@@ -1,0 +1,14 @@
+{
+	"graphId": "G016",
+	"name": "(N) Standing",
+	"graphName": "(N) Standing",
+	"type": "AnimationStateGraph",
+	"graphType": "AnimationStateGraph",
+	"graphGuid": "",
+	"nodeCount": 3,
+	"edgeCount": 2,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G016/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G016/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G016/EDGES.jsonl",
+	"flows": []
+}

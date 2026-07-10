@@ -1,0 +1,912 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"graph": "TickGraph",
+	"entryName": "Evento Tick",
+	"entryNodeGuid": "0A4333614BC884C5B3E02384E2B0B00D",
+	"nodes": [
+		{
+			"nodeGuid": "AC87374641F175BF5D3DBAA0D8D0B9EF",
+			"class": "K2Node_CallParentFunction",
+			"title": "Genitore: Tick",
+			"comment": "",
+			"x": 144,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2F265BE34697949A632BB8A0C5C6B608",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D9FDD9664AB1F902F45FD893E4628BE3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "81398B7D4366985581874ABB23CA5456",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A5FFE9F54881FC4A09E39493A3260E06",
+					"name": "DeltaSeconds",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "0A19A123485B0F6891F7B89FB9F899CF",
+			"class": "K2Node_CallFunction",
+			"title": "Update Character Movement\nLa destinazione è ALS Base Character BP",
+			"comment": "",
+			"x": 1280,
+			"y": -208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C0784B8B40B6B2C65DE355B12995C318",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5926BAB04AA29A254F0A11A8D74C5BCC",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4E69AE7A4CFA0883B5DA44B328677AB5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EB57FAAA4526F258DE264590751E8091",
+			"class": "K2Node_CallFunction",
+			"title": "Ragdoll Update\nLa destinazione è ALS Base Character BP",
+			"comment": "",
+			"x": 1280,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "AD2052A64D0F1F1C6B063CBE07D0CEDB",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4CFC88FA42C1CA671E44E487AD0F4C33",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A92D01CB43F78BFD47D2EBAC4313217B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "810B86B4480DC87C9ADC3E9F95662937",
+			"class": "K2Node_VariableGet",
+			"title": "Get MovementState",
+			"comment": "",
+			"x": 880,
+			"y": 192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "37145B754E72C6DA5170F89EFD3F9CD5",
+					"name": "MovementState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "FFACB1534DF681C039F170A9C871EBC4",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BCD61F334F553EA78E7F6486F96A7E87",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on ALS_MovementState",
+			"comment": "",
+			"x": 880,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D6C142484C46536064FCFEB79A459BD6",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DB35931A44AE0FF9CC5B0BB993509A50",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "99AF4CEA43C440282268BB871BEFE813",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "49FE75304E48CCAA78C9B28AB7F4A67C",
+					"name": "NewEnumerator0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "037843A34498783DC670E697A9998FBD",
+					"name": "NewEnumerator1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "28BB4EF14F77F2B9AB3D1C8911C43489",
+					"name": "NewEnumerator2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4F4620C640F56B2B72BA7EA227343F6E",
+					"name": "NewEnumerator4",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3902FCF341ACA5E866FE889DE4F8D4F0",
+					"name": "NewEnumerator3",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C7F6AD1E40798CB40064C4AC33670200",
+			"class": "K2Node_CallFunction",
+			"title": "Set Essential Values\nLa destinazione è ALS Base Character BP",
+			"comment": "",
+			"x": 560,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8D6CC5C945709269634E4C95A57FB3BA",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "71E612FF4FF3163861B63798451CBD34",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A90103D24A6BB935D61C878AD97C638F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EFA74D0248B53A8688E11493C6F14D31",
+			"class": "K2Node_ExecutionSequence",
+			"title": "Sequenza",
+			"comment": "",
+			"x": 368,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "28F9144E4BB9981C46AFB3AECD6D356E",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5FB72A97400545027FF44A8FA8A7B781",
+					"name": "then_0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "117EE1A441B7BFCBB77FC58701AE69D6",
+					"name": "then_1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1D49D10B4F0810665B68D39D36EE44A9",
+					"name": "then_2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0A4333614BC884C5B3E02384E2B0B00D",
+			"class": "K2Node_Event",
+			"title": "Evento Tick",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E520EA044EA2E7CFC5407D9F8331C098",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "97FF103643EBD2761DBE9A8887AA4265",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BF62981B43A943CEED6C2F84AAE3A8F1",
+					"name": "DeltaSeconds",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "DFCE50C04D1E6D1B0448FAADCFB6167B",
+			"class": "K2Node_CallFunction",
+			"title": "Cache Values\nLa destinazione è ALS Base Character BP",
+			"comment": "",
+			"x": 560,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5622F3AD45EB5D515529E4A44608FF25",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3EDCD7E548A93CAC3D652E8878E0EE0F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6575A31D4A7412893224518A6F46C98B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D060A0B14A25EB30C9491990DCFE8268",
+			"class": "K2Node_CallFunction",
+			"title": "Update in Air Rotation\nLa destinazione è ALS Base Character BP",
+			"comment": "",
+			"x": 1280,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "816605CB429111280D407B97E44581FD",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D246893449325D50FE425C9B24722FFF",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A43B92CF468646394A27FF939D44ADB7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2693A2C043B570825F96C19919AF096A",
+			"class": "K2Node_CallFunction",
+			"title": "Update Grouded Rotation\nLa destinazione è ALS Base Character BP",
+			"comment": "",
+			"x": 1536,
+			"y": -208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E71B38E0434C4475AF77C1BC34ED2EFF",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "507182344350E02AFD32C4BB2EEB5239",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D17FDDF64370E221B617AEA5568A3215",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "99B438FE4A3AB612ABF3918E033DCE4F",
+			"class": "K2Node_CallFunction",
+			"title": "Draw Debug Shapes\nLa destinazione è ALS Base Character BP",
+			"comment": "",
+			"x": 560,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F1BB28A14722617AA6AEBAB01F33E6C9",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6B57E47646656DD729E1419E2C7D03F1",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ED288BF14313BE0947AE36871CDE4E36",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "07C6C81C4FC52DB6D5318E882628DC1A",
+			"class": "K2Node_CallFunction",
+			"title": "Mantle Check\nLa destinazione è ALS Base Character BP",
+			"comment": "",
+			"x": 1792,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F78A82E04DC792FD8FC572A616383641",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C6B5AB3A491737F897822EAD7CB7A9DC",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2D73788A4EDA459E29F9739DC1E5C213",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FFD2AA094CCB49DDAB4967BA88EBB5BA",
+					"name": "Trace Settings",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_TraceSettings.Mantle_TraceSettings",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A836FCA04C803F4AF2BA99B533F0D702",
+					"name": "DebugType",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "ForOneFrame"
+				},
+				{
+					"pinId": "109654C84E7A3BFC6BD48E95BCFB5BCF",
+					"name": "CanClimb/Vault",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A6E388E94944B2EE7302638DD3BD599E",
+			"class": "K2Node_VariableGet",
+			"title": "Get FallingTraceSettings",
+			"comment": "",
+			"x": 1600,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A50424B7475721465C9FE5A93CE7DAB1",
+					"name": "FallingTraceSettings",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_TraceSettings.Mantle_TraceSettings",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "295F14F9498AA4CAF96569B56AC41D41",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E572F1B542B9E2ED4C618787B29F3E06",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1600,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ACD944C04B05BC18F7369F85D70B9280",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "131891304341693AC43264AE16A39FFF",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "511C21AF4A79DD1F76EEE988E5467080",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C4ABEF504F0815D0F5E025B7B34ADFD9",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0C0273DB4D9596C7E07E4492610ED9CE",
+			"class": "K2Node_VariableGet",
+			"title": "Get HasMovementInput",
+			"comment": "",
+			"x": 1600,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4AC6EC80494DCDF39E0E8C9AC9DF7A8B",
+					"name": "HasMovementInput",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "6E094AA74C03F12EEF9E21B28720A9AE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B9ED31FB43C8BB96F1E581B428B6D43D",
+			"class": "EdGraphNode_Comment",
+			"title": "Perform a mantle check if falling while movement input is pressed.",
+			"comment": "Perform a mantle check if falling while movement input is pressed.",
+			"x": 1568,
+			"y": -64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "30DD3CA44EA953422FB63C8374797715",
+			"class": "EdGraphNode_Comment",
+			"title": "Do while in Ragdoll",
+			"comment": "Do while in Ragdoll",
+			"x": 1248,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "A652375F4AA0138BA94B9D9E3CBFC0AA",
+			"class": "EdGraphNode_Comment",
+			"title": "Do while In Air",
+			"comment": "Do while In Air",
+			"x": 1248,
+			"y": -32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "ADC05CD640695A366376C784577153F1",
+			"class": "EdGraphNode_Comment",
+			"title": "Do While On Ground",
+			"comment": "Do While On Ground",
+			"x": 1248,
+			"y": -272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "4C806D334FF2D53B9CE8278D466E2A10",
+			"class": "EdGraphNode_Comment",
+			"title": "Do Every Frame",
+			"comment": "Do Every Frame",
+			"x": 336,
+			"y": -80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "13F056F743DBDB8782B881979D3C2C62",
+			"class": "EdGraphNode_Comment",
+			"title": "Check Movement Mode",
+			"comment": "Check Movement Mode",
+			"x": 848,
+			"y": -64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "0A4333614BC884C5B3E02384E2B0B00D",
+			"fromPinId": "97FF103643EBD2761DBE9A8887AA4265",
+			"fromPinName": "then",
+			"toNodeGuid": "AC87374641F175BF5D3DBAA0D8D0B9EF",
+			"toPinId": "2F265BE34697949A632BB8A0C5C6B608",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "AC87374641F175BF5D3DBAA0D8D0B9EF",
+			"fromPinId": "D9FDD9664AB1F902F45FD893E4628BE3",
+			"fromPinName": "then",
+			"toNodeGuid": "EFA74D0248B53A8688E11493C6F14D31",
+			"toPinId": "28F9144E4BB9981C46AFB3AECD6D356E",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "0A4333614BC884C5B3E02384E2B0B00D",
+			"fromPinId": "BF62981B43A943CEED6C2F84AAE3A8F1",
+			"fromPinName": "DeltaSeconds",
+			"toNodeGuid": "AC87374641F175BF5D3DBAA0D8D0B9EF",
+			"toPinId": "A5FFE9F54881FC4A09E39493A3260E06",
+			"toPinName": "DeltaSeconds"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "BCD61F334F553EA78E7F6486F96A7E87",
+			"fromPinId": "037843A34498783DC670E697A9998FBD",
+			"fromPinName": "NewEnumerator1",
+			"toNodeGuid": "0A19A123485B0F6891F7B89FB9F899CF",
+			"toPinId": "C0784B8B40B6B2C65DE355B12995C318",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "0A19A123485B0F6891F7B89FB9F899CF",
+			"fromPinId": "5926BAB04AA29A254F0A11A8D74C5BCC",
+			"fromPinName": "then",
+			"toNodeGuid": "2693A2C043B570825F96C19919AF096A",
+			"toPinId": "E71B38E0434C4475AF77C1BC34ED2EFF",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "BCD61F334F553EA78E7F6486F96A7E87",
+			"fromPinId": "3902FCF341ACA5E866FE889DE4F8D4F0",
+			"fromPinName": "NewEnumerator3",
+			"toNodeGuid": "EB57FAAA4526F258DE264590751E8091",
+			"toPinId": "AD2052A64D0F1F1C6B063CBE07D0CEDB",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "810B86B4480DC87C9ADC3E9F95662937",
+			"fromPinId": "37145B754E72C6DA5170F89EFD3F9CD5",
+			"fromPinName": "MovementState",
+			"toNodeGuid": "BCD61F334F553EA78E7F6486F96A7E87",
+			"toPinId": "DB35931A44AE0FF9CC5B0BB993509A50",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "C7F6AD1E40798CB40064C4AC33670200",
+			"fromPinId": "71E612FF4FF3163861B63798451CBD34",
+			"fromPinName": "then",
+			"toNodeGuid": "BCD61F334F553EA78E7F6486F96A7E87",
+			"toPinId": "D6C142484C46536064FCFEB79A459BD6",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "BCD61F334F553EA78E7F6486F96A7E87",
+			"fromPinId": "28BB4EF14F77F2B9AB3D1C8911C43489",
+			"fromPinName": "NewEnumerator2",
+			"toNodeGuid": "D060A0B14A25EB30C9491990DCFE8268",
+			"toPinId": "816605CB429111280D407B97E44581FD",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "EFA74D0248B53A8688E11493C6F14D31",
+			"fromPinId": "5FB72A97400545027FF44A8FA8A7B781",
+			"fromPinName": "then_0",
+			"toNodeGuid": "C7F6AD1E40798CB40064C4AC33670200",
+			"toPinId": "8D6CC5C945709269634E4C95A57FB3BA",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "EFA74D0248B53A8688E11493C6F14D31",
+			"fromPinId": "117EE1A441B7BFCBB77FC58701AE69D6",
+			"fromPinName": "then_1",
+			"toNodeGuid": "DFCE50C04D1E6D1B0448FAADCFB6167B",
+			"toPinId": "5622F3AD45EB5D515529E4A44608FF25",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "EFA74D0248B53A8688E11493C6F14D31",
+			"fromPinId": "1D49D10B4F0810665B68D39D36EE44A9",
+			"fromPinName": "then_2",
+			"toNodeGuid": "99B438FE4A3AB612ABF3918E033DCE4F",
+			"toPinId": "F1BB28A14722617AA6AEBAB01F33E6C9",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "D060A0B14A25EB30C9491990DCFE8268",
+			"fromPinId": "D246893449325D50FE425C9B24722FFF",
+			"fromPinName": "then",
+			"toNodeGuid": "E572F1B542B9E2ED4C618787B29F3E06",
+			"toPinId": "ACD944C04B05BC18F7369F85D70B9280",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "E572F1B542B9E2ED4C618787B29F3E06",
+			"fromPinId": "511C21AF4A79DD1F76EEE988E5467080",
+			"fromPinName": "then",
+			"toNodeGuid": "07C6C81C4FC52DB6D5318E882628DC1A",
+			"toPinId": "F78A82E04DC792FD8FC572A616383641",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "A6E388E94944B2EE7302638DD3BD599E",
+			"fromPinId": "A50424B7475721465C9FE5A93CE7DAB1",
+			"fromPinName": "FallingTraceSettings",
+			"toNodeGuid": "07C6C81C4FC52DB6D5318E882628DC1A",
+			"toPinId": "FFD2AA094CCB49DDAB4967BA88EBB5BA",
+			"toPinName": "Trace Settings"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "TickGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "0C0273DB4D9596C7E07E4492610ED9CE",
+			"fromPinId": "4AC6EC80494DCDF39E0E8C9AC9DF7A8B",
+			"fromPinName": "HasMovementInput",
+			"toNodeGuid": "E572F1B542B9E2ED4C618787B29F3E06",
+			"toPinId": "131891304341693AC43264AE16A39FFF",
+			"toPinName": "Condition"
+		}
+	],
+	"variablesRead": [
+		"Get FallingTraceSettings",
+		"Get HasMovementInput",
+		"Get MovementState"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Cache Values\nLa destinazione è ALS Base Character BP",
+		"Draw Debug Shapes\nLa destinazione è ALS Base Character BP",
+		"Mantle Check\nLa destinazione è ALS Base Character BP",
+		"Ragdoll Update\nLa destinazione è ALS Base Character BP",
+		"Set Essential Values\nLa destinazione è ALS Base Character BP",
+		"Update Character Movement\nLa destinazione è ALS Base Character BP",
+		"Update Grouded Rotation\nLa destinazione è ALS Base Character BP",
+		"Update in Air Rotation\nLa destinazione è ALS Base Character BP"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Cache Values\nLa destinazione è ALS Base Character BP",
+		"Draw Debug Shapes\nLa destinazione è ALS Base Character BP",
+		"Mantle Check\nLa destinazione è ALS Base Character BP",
+		"Ragdoll Update\nLa destinazione è ALS Base Character BP",
+		"Set Essential Values\nLa destinazione è ALS Base Character BP",
+		"Update Character Movement\nLa destinazione è ALS Base Character BP",
+		"Update Grouded Rotation\nLa destinazione è ALS Base Character BP",
+		"Update in Air Rotation\nLa destinazione è ALS Base Character BP"
+	],
+	"flowId": "F001",
+	"graphId": "G009",
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP"
+}

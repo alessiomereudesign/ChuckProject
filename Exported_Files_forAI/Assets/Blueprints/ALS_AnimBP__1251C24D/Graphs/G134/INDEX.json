@@ -1,0 +1,14 @@
+{
+	"graphId": "G134",
+	"name": "AnimationTransitionGraph_1",
+	"graphName": "AnimationTransitionGraph_1",
+	"type": "AnimationTransitionGraph",
+	"graphType": "AnimationTransitionGraph",
+	"graphGuid": "",
+	"nodeCount": 5,
+	"edgeCount": 4,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G134/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G134/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G134/EDGES.jsonl",
+	"flows": []
+}

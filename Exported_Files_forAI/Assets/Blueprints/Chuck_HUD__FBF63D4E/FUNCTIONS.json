@@ -1,0 +1,17 @@
+{
+	"assetName": "Chuck_HUD",
+	"assetPath": "/Game/ChuckContent/UI/Interfaces/Chuck_HUD.Chuck_HUD",
+	"assetKey": "Game_ChuckContent_UI_Interfaces_Chuck_HUD",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"functions": [
+		{
+			"name": "UserConstructionScript",
+			"graph": "UserConstructionScript",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 1,
+			"file": "Assets/Blueprints/Chuck_HUD__FBF63D4E/Graphs/G002/INDEX.json"
+		}
+	]
+}

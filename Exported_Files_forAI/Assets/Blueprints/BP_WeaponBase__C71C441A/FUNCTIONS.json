@@ -1,0 +1,863 @@
+{
+	"assetName": "BP_WeaponBase",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"functions": [
+		{
+			"name": "CanFire",
+			"graph": "CanFire",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 5,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "CanFire",
+			"graph": "CanFire",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 5,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "CanFire",
+			"graph": "CanFire",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 5,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "CanFire",
+			"graph": "CanFire",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 5,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "CanFire",
+			"graph": "CanFire",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 5,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "DoHitScan",
+			"graph": "DoHitScan",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 27,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "Equip",
+			"graph": "Equip",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 1,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G004/INDEX.json"
+		},
+		{
+			"name": "GetFireMontage",
+			"graph": "GetFireMontage",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G005/INDEX.json"
+		},
+		{
+			"name": "GetFireMontage",
+			"graph": "GetFireMontage",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G005/INDEX.json"
+		},
+		{
+			"name": "GetFireMontage",
+			"graph": "GetFireMontage",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G005/INDEX.json"
+		},
+		{
+			"name": "GetFireMontage",
+			"graph": "GetFireMontage",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G005/INDEX.json"
+		},
+		{
+			"name": "GetFireRate",
+			"graph": "GetFireRate",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G006/INDEX.json"
+		},
+		{
+			"name": "GetFireRate",
+			"graph": "GetFireRate",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G006/INDEX.json"
+		},
+		{
+			"name": "GetFireRate",
+			"graph": "GetFireRate",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G006/INDEX.json"
+		},
+		{
+			"name": "GetFireRate",
+			"graph": "GetFireRate",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G006/INDEX.json"
+		},
+		{
+			"name": "GetHitRange",
+			"graph": "GetHitRange",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G007/INDEX.json"
+		},
+		{
+			"name": "GetHitRange",
+			"graph": "GetHitRange",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G007/INDEX.json"
+		},
+		{
+			"name": "GetHitRange",
+			"graph": "GetHitRange",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G007/INDEX.json"
+		},
+		{
+			"name": "GetHitRange",
+			"graph": "GetHitRange",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G007/INDEX.json"
+		},
+		{
+			"name": "GetMuzzleTransform",
+			"graph": "GetMuzzleTransform",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G008/INDEX.json"
+		},
+		{
+			"name": "GetMuzzleTransform",
+			"graph": "GetMuzzleTransform",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G008/INDEX.json"
+		},
+		{
+			"name": "GetMuzzleTransform",
+			"graph": "GetMuzzleTransform",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G008/INDEX.json"
+		},
+		{
+			"name": "GetMuzzleTransform",
+			"graph": "GetMuzzleTransform",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G008/INDEX.json"
+		},
+		{
+			"name": "GetReloadMontage",
+			"graph": "GetReloadMontage",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "GetReloadMontage",
+			"graph": "GetReloadMontage",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "GetReloadMontage",
+			"graph": "GetReloadMontage",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "GetReloadMontage",
+			"graph": "GetReloadMontage",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "InitializeWeapon",
+			"graph": "InitializeWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 19,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json"
+		},
+		{
+			"name": "IsLoopingWeapon",
+			"graph": "IsLoopingWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G011/INDEX.json"
+		},
+		{
+			"name": "IsLoopingWeapon",
+			"graph": "IsLoopingWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G011/INDEX.json"
+		},
+		{
+			"name": "IsLoopingWeapon",
+			"graph": "IsLoopingWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G011/INDEX.json"
+		},
+		{
+			"name": "IsLoopingWeapon",
+			"graph": "IsLoopingWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G011/INDEX.json"
+		},
+		{
+			"name": "PlayFireEffects",
+			"graph": "PlayFireEffects",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 1,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G012/INDEX.json"
+		},
+		{
+			"name": "Reload",
+			"graph": "Reload",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G013/INDEX.json"
+		},
+		{
+			"name": "Reload",
+			"graph": "Reload",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G013/INDEX.json"
+		},
+		{
+			"name": "SpawnMuzzleFX",
+			"graph": "SpawnMuzzleFX",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 7,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G014/INDEX.json"
+		},
+		{
+			"name": "SpawnMuzzleFX",
+			"graph": "SpawnMuzzleFX",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 7,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G014/INDEX.json"
+		},
+		{
+			"name": "SpawnMuzzleFX",
+			"graph": "SpawnMuzzleFX",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 7,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G014/INDEX.json"
+		},
+		{
+			"name": "SpawnMuzzleFX",
+			"graph": "SpawnMuzzleFX",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 7,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G014/INDEX.json"
+		},
+		{
+			"name": "SpawnMuzzleFX",
+			"graph": "SpawnMuzzleFX",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 7,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G014/INDEX.json"
+		},
+		{
+			"name": "SpawnMuzzleFX",
+			"graph": "SpawnMuzzleFX",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 7,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G014/INDEX.json"
+		},
+		{
+			"name": "SpawnMuzzleFX",
+			"graph": "SpawnMuzzleFX",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 7,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G014/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 5,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 5,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 5,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 5,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 5,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "Unequip",
+			"graph": "Unequip",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 1,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G016/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponData",
+			"graph": "UpdateWeaponData",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G017/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponData",
+			"graph": "UpdateWeaponData",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G017/INDEX.json"
+		},
+		{
+			"name": "UserConstructionScript",
+			"graph": "UserConstructionScript",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 1,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G018/INDEX.json"
+		}
+	]
+}

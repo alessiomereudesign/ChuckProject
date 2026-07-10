@@ -1,0 +1,25 @@
+{
+	"graphId": "G010",
+	"name": "ConsumeOneAmmoFromCurrentWeapon",
+	"graphName": "ConsumeOneAmmoFromCurrentWeapon",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 28,
+	"edgeCount": 34,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G010/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G010/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G010/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Consume One Ammo from Current Weapon",
+			"entryNodeGuid": "D9EB4EEF4B94D34F5512B5A22F9D0C7C",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G010/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G010/F001.json",
+			"textFile": "Flows/G010/F001.txt",
+			"jsonFile": "Flows/G010/F001.json",
+			"nodeCount": 28
+		}
+	]
+}

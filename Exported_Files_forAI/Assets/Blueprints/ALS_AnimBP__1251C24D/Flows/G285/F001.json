@@ -1,0 +1,1558 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+	"graph": "CalculateQuadrant",
+	"entryName": "Calculate Quadrant",
+	"entryNodeGuid": "C52A0F4B4BA79AF687B9AB90F3D63D88",
+	"nodes": [
+		{
+			"nodeGuid": "C52A0F4B4BA79AF687B9AB90F3D63D88",
+			"class": "K2Node_FunctionEntry",
+			"title": "Calculate Quadrant",
+			"comment": "",
+			"x": 47,
+			"y": 109,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5C0366CA4F2AA507B7A7F7B1B38B1113",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3A50F5D44208A95D35E6349F46DBA83A",
+					"name": "Current",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "311A91264021951D7FA8859914077F63",
+					"name": "FR-Threshold",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C7E7617940EE6938DA26F1B57AD53785",
+					"name": "FL-Threshold",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0FF4422249F9B0078C18C6B380D50603",
+					"name": "BR-Threshold",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2B4832DE4BF88696115456B9BD402EB9",
+					"name": "BL-Threshold",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "471E2C2F4F56616977E0F683A179ECCB",
+					"name": "Buffer",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A11FD6F84B7AE0955E8C9BBD7009A7F7",
+					"name": "Angle",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8BEE2FE34CE87BBF155EB2924358D7EB",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 1199,
+			"y": 109,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D5EF751447512C729E93C8A1418799DE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "70330CC84BADDFC26C3923AA6D7D787A",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "75861E194565489A6E43268B269AFC20",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 1199,
+			"y": 285,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D5EF751447512C729E93C8A1418799DE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "70330CC84BADDFC26C3923AA6D7D787A",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": "NewEnumerator1"
+				}
+			]
+		},
+		{
+			"nodeGuid": "9FC955164C61115E333492B918775E7D",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 1199,
+			"y": 461,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D5EF751447512C729E93C8A1418799DE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "70330CC84BADDFC26C3923AA6D7D787A",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": "NewEnumerator2"
+				}
+			]
+		},
+		{
+			"nodeGuid": "EDEB406F4922518ABA1681A40C37928F",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 1199,
+			"y": 589,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D5EF751447512C729E93C8A1418799DE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "70330CC84BADDFC26C3923AA6D7D787A",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": "NewEnumerator3"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A94F9547497F58B1B6D0509B9300ED09",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 991,
+			"y": 109,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2125726E4716D9AB9BE3D58C0932C184",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "90CC50A54094521FE509F4888C3436E6",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "00C4ADFE41F41A8103AB849E25C4995C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "20FB9D87432DD6F351240FAE6FACD461",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2BD0CBC640D35A625E00D7B81C1248D5",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 991,
+			"y": 285,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2125726E4716D9AB9BE3D58C0932C184",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "90CC50A54094521FE509F4888C3436E6",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "00C4ADFE41F41A8103AB849E25C4995C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "20FB9D87432DD6F351240FAE6FACD461",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "CD3AD70445D2C18A9C2AF5957DA8B96D",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 991,
+			"y": 461,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2125726E4716D9AB9BE3D58C0932C184",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "90CC50A54094521FE509F4888C3436E6",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "00C4ADFE41F41A8103AB849E25C4995C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "20FB9D87432DD6F351240FAE6FACD461",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F9E713CE478C42E3DBE2C7A65D5E975C",
+			"class": "K2Node_CallFunction",
+			"title": "Angle in Range",
+			"comment": "",
+			"x": 703,
+			"y": 173,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "51D39B9A4948C73EE55F82B7CE6C7051",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AABA136B41E5382ADF48BC9644D4164B",
+					"name": "Angle",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "1E54A4464DB23F5076391D97A0BA5E23",
+					"name": "MinAngle",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "EC41CF8F4DEBB214B52C5481CAAC33FC",
+					"name": "MaxAngle",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "DA80CEFF4CCD782DC5AB4FBE498B4254",
+					"name": "Buffer",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "0C3D8EFA4C095D736160EA93333CCF00",
+					"name": "IncreaseBuffer",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "10EF7F494F704966FAE88BA185C2248A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "1DAA34F5472FE4EE88405889E662EAAC",
+			"class": "K2Node_CallFunction",
+			"title": "Angle in Range",
+			"comment": "",
+			"x": 703,
+			"y": 349,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "51D39B9A4948C73EE55F82B7CE6C7051",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AABA136B41E5382ADF48BC9644D4164B",
+					"name": "Angle",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "1E54A4464DB23F5076391D97A0BA5E23",
+					"name": "MinAngle",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "EC41CF8F4DEBB214B52C5481CAAC33FC",
+					"name": "MaxAngle",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "DA80CEFF4CCD782DC5AB4FBE498B4254",
+					"name": "Buffer",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "0C3D8EFA4C095D736160EA93333CCF00",
+					"name": "IncreaseBuffer",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "10EF7F494F704966FAE88BA185C2248A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A3B4F0D74AC14AE528F1BE91FA7E1FC8",
+			"class": "K2Node_CallFunction",
+			"title": "Angle in Range",
+			"comment": "",
+			"x": 703,
+			"y": 525,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "51D39B9A4948C73EE55F82B7CE6C7051",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AABA136B41E5382ADF48BC9644D4164B",
+					"name": "Angle",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "1E54A4464DB23F5076391D97A0BA5E23",
+					"name": "MinAngle",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "EC41CF8F4DEBB214B52C5481CAAC33FC",
+					"name": "MaxAngle",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "DA80CEFF4CCD782DC5AB4FBE498B4254",
+					"name": "Buffer",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "0C3D8EFA4C095D736160EA93333CCF00",
+					"name": "IncreaseBuffer",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "10EF7F494F704966FAE88BA185C2248A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "AB6BF2E44128A6C011E2C4AFCD04BD16",
+			"class": "K2Node_VariableGet",
+			"title": "Get Current",
+			"comment": "",
+			"x": 79,
+			"y": 477,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "140690DB44105DC04DA2808C2BBB0CB0",
+					"name": "Current",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "BDFE1302475297598D67DEBBFAE0C06D",
+			"class": "K2Node_EnumInequality",
+			"title": "Non uguale (enum)",
+			"comment": "",
+			"x": 255,
+			"y": 285,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BFB24C3649774225F45B7BAD8506EF4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "89B9DAA44F6BF8C62314BBAAF91E9AE3",
+					"name": "A",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0EFB9A2E408FE19B2013F4A805CDDFAA",
+					"name": "B",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "C396863E4E5A0C319B29B5915AF73EE3",
+			"class": "K2Node_EnumInequality",
+			"title": "Non uguale (enum)",
+			"comment": "",
+			"x": 255,
+			"y": 349,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BFB24C3649774225F45B7BAD8506EF4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "89B9DAA44F6BF8C62314BBAAF91E9AE3",
+					"name": "A",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0EFB9A2E408FE19B2013F4A805CDDFAA",
+					"name": "B",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": "NewEnumerator3"
+				}
+			]
+		},
+		{
+			"nodeGuid": "6D080A0740E03C59881724960740FD5D",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "OR Boolean",
+			"comment": "",
+			"x": 543,
+			"y": 317,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C23C43D04E005496CC3129B553E4FCF7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "ED3EAE2C4A60B2AF2FD8948A7DC3DA32",
+					"name": "A",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "8AF297DB4160E7184AC49EB65A0EC933",
+					"name": "B",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "6FFB257C4D12589663BB6CA9CECAE3EB",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "075EA75746C1FA1CFE7595ABE645B872",
+			"class": "K2Node_VariableGet",
+			"title": "Get Angle",
+			"comment": "",
+			"x": 543,
+			"y": 189,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A7D36BDC410B6FB62E049DABD2FBDB01",
+					"name": "Angle",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "FB0FE3114B4FEF40EFBC4E90309C77B8",
+			"class": "K2Node_VariableGet",
+			"title": "Get FR-Threshold",
+			"comment": "",
+			"x": 543,
+			"y": 253,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C61336C44D6A1E75A923E99D358BFA64",
+					"name": "FR-Threshold",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "380F9FAD493F91EFA77EF6AC4AE076F8",
+			"class": "K2Node_VariableGet",
+			"title": "Get FL-Threshold",
+			"comment": "",
+			"x": 543,
+			"y": 221,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "806201E7449B72F1CD7A26875FCAD1DE",
+					"name": "FL-Threshold",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "77D488FE4C33A57A1B1D02957EFD627E",
+			"class": "K2Node_VariableGet",
+			"title": "Get Buffer",
+			"comment": "",
+			"x": 543,
+			"y": 285,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "79077947456CF6C26DEC8493D031EA65",
+					"name": "Buffer",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "B873AF7041A3CDBB21C781B62280E28D",
+			"class": "K2Node_EnumInequality",
+			"title": "Non uguale (enum)",
+			"comment": "",
+			"x": 255,
+			"y": 461,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BFB24C3649774225F45B7BAD8506EF4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "89B9DAA44F6BF8C62314BBAAF91E9AE3",
+					"name": "A",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0EFB9A2E408FE19B2013F4A805CDDFAA",
+					"name": "B",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": "NewEnumerator1"
+				}
+			]
+		},
+		{
+			"nodeGuid": "985A848D40F80428BF02DA9A30C15878",
+			"class": "K2Node_EnumInequality",
+			"title": "Non uguale (enum)",
+			"comment": "",
+			"x": 255,
+			"y": 525,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BFB24C3649774225F45B7BAD8506EF4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "89B9DAA44F6BF8C62314BBAAF91E9AE3",
+					"name": "A",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0EFB9A2E408FE19B2013F4A805CDDFAA",
+					"name": "B",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": "NewEnumerator2"
+				}
+			]
+		},
+		{
+			"nodeGuid": "52BA8B9847C3E8DD7BAE79B8B09F2B50",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "OR Boolean",
+			"comment": "",
+			"x": 543,
+			"y": 493,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C23C43D04E005496CC3129B553E4FCF7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "ED3EAE2C4A60B2AF2FD8948A7DC3DA32",
+					"name": "A",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "8AF297DB4160E7184AC49EB65A0EC933",
+					"name": "B",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "6FFB257C4D12589663BB6CA9CECAE3EB",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "F198AE7D4F0807710368E587E89DDED8",
+			"class": "K2Node_VariableGet",
+			"title": "Get Angle",
+			"comment": "",
+			"x": 543,
+			"y": 365,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A7D36BDC410B6FB62E049DABD2FBDB01",
+					"name": "Angle",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "FE8261884C73619BB52CB993F59839DC",
+			"class": "K2Node_VariableGet",
+			"title": "Get Buffer",
+			"comment": "",
+			"x": 543,
+			"y": 461,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "79077947456CF6C26DEC8493D031EA65",
+					"name": "Buffer",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "809FE83648A37A451710FC992D5025E1",
+			"class": "K2Node_EnumInequality",
+			"title": "Non uguale (enum)",
+			"comment": "",
+			"x": 255,
+			"y": 637,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BFB24C3649774225F45B7BAD8506EF4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "89B9DAA44F6BF8C62314BBAAF91E9AE3",
+					"name": "A",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0EFB9A2E408FE19B2013F4A805CDDFAA",
+					"name": "B",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": "NewEnumerator1"
+				}
+			]
+		},
+		{
+			"nodeGuid": "47BE68FE4B2755827DFABFB907F9EBC8",
+			"class": "K2Node_EnumInequality",
+			"title": "Non uguale (enum)",
+			"comment": "",
+			"x": 255,
+			"y": 701,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BFB24C3649774225F45B7BAD8506EF4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "89B9DAA44F6BF8C62314BBAAF91E9AE3",
+					"name": "A",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0EFB9A2E408FE19B2013F4A805CDDFAA",
+					"name": "B",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+					"defaultValue": "NewEnumerator2"
+				}
+			]
+		},
+		{
+			"nodeGuid": "4FA86AAF4AC89F10F3FB36A847237C6E",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "OR Boolean",
+			"comment": "",
+			"x": 543,
+			"y": 669,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C23C43D04E005496CC3129B553E4FCF7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "ED3EAE2C4A60B2AF2FD8948A7DC3DA32",
+					"name": "A",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "8AF297DB4160E7184AC49EB65A0EC933",
+					"name": "B",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "6FFB257C4D12589663BB6CA9CECAE3EB",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "AAE068F64553912B02C17DA616DEE01B",
+			"class": "K2Node_VariableGet",
+			"title": "Get Angle",
+			"comment": "",
+			"x": 543,
+			"y": 541,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A7D36BDC410B6FB62E049DABD2FBDB01",
+					"name": "Angle",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "83BB0BC24D8AD0CE25522AB3064B144D",
+			"class": "K2Node_VariableGet",
+			"title": "Get Buffer",
+			"comment": "",
+			"x": 543,
+			"y": 637,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "79077947456CF6C26DEC8493D031EA65",
+					"name": "Buffer",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "25D3DABA45F8D0AEAAFB6987D7155A8C",
+			"class": "K2Node_VariableGet",
+			"title": "Get FL-Threshold",
+			"comment": "",
+			"x": 543,
+			"y": 605,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "26C8B3A846CCFFE92E3B0D96E7CCB29F",
+					"name": "FL-Threshold",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "9B9E20164086245E57B354A7CC9823CC",
+			"class": "K2Node_VariableGet",
+			"title": "Get BL-Threshold",
+			"comment": "",
+			"x": 543,
+			"y": 573,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "621DE7464F74F1EFF30E32A80447A846",
+					"name": "BL-Threshold",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "938DD1CB4126ACBDB9B009B1D7F0F764",
+			"class": "K2Node_VariableGet",
+			"title": "Get FR-Threshold",
+			"comment": "",
+			"x": 543,
+			"y": 397,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0EF91BAD4F6290FFC090B189FEA52A12",
+					"name": "FR-Threshold",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "28794D754322A5B89C65F5B0F4774E99",
+			"class": "K2Node_VariableGet",
+			"title": "Get BR-Threshold",
+			"comment": "",
+			"x": 543,
+			"y": 429,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "22B7141849AECA9C774689A9ED33B91B",
+					"name": "BR-Threshold",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "38A7C2A5435E82E87C969AB2C4155DAE",
+			"class": "EdGraphNode_Comment",
+			"title": "Take the input angle and determine its quadrant (direction). Use the current Movement Direction to increase or decrease the buffers on the angle ranges for each quadrant.",
+			"comment": "Take the input angle and determine its quadrant (direction). Use the current Movement Direction to increase or decrease the buffers on the angle ranges for each quadrant.",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "exec",
+			"fromNodeGuid": "C52A0F4B4BA79AF687B9AB90F3D63D88",
+			"fromPinId": "5C0366CA4F2AA507B7A7F7B1B38B1113",
+			"fromPinName": "then",
+			"toNodeGuid": "A94F9547497F58B1B6D0509B9300ED09",
+			"toPinId": "2125726E4716D9AB9BE3D58C0932C184",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "exec",
+			"fromNodeGuid": "A94F9547497F58B1B6D0509B9300ED09",
+			"fromPinId": "00C4ADFE41F41A8103AB849E25C4995C",
+			"fromPinName": "then",
+			"toNodeGuid": "8BEE2FE34CE87BBF155EB2924358D7EB",
+			"toPinId": "D5EF751447512C729E93C8A1418799DE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "exec",
+			"fromNodeGuid": "2BD0CBC640D35A625E00D7B81C1248D5",
+			"fromPinId": "00C4ADFE41F41A8103AB849E25C4995C",
+			"fromPinName": "then",
+			"toNodeGuid": "75861E194565489A6E43268B269AFC20",
+			"toPinId": "D5EF751447512C729E93C8A1418799DE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "exec",
+			"fromNodeGuid": "CD3AD70445D2C18A9C2AF5957DA8B96D",
+			"fromPinId": "00C4ADFE41F41A8103AB849E25C4995C",
+			"fromPinName": "then",
+			"toNodeGuid": "9FC955164C61115E333492B918775E7D",
+			"toPinId": "D5EF751447512C729E93C8A1418799DE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "exec",
+			"fromNodeGuid": "CD3AD70445D2C18A9C2AF5957DA8B96D",
+			"fromPinId": "20FB9D87432DD6F351240FAE6FACD461",
+			"fromPinName": "else",
+			"toNodeGuid": "EDEB406F4922518ABA1681A40C37928F",
+			"toPinId": "D5EF751447512C729E93C8A1418799DE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "F9E713CE478C42E3DBE2C7A65D5E975C",
+			"fromPinId": "10EF7F494F704966FAE88BA185C2248A",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "A94F9547497F58B1B6D0509B9300ED09",
+			"toPinId": "90CC50A54094521FE509F4888C3436E6",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "exec",
+			"fromNodeGuid": "A94F9547497F58B1B6D0509B9300ED09",
+			"fromPinId": "20FB9D87432DD6F351240FAE6FACD461",
+			"fromPinName": "else",
+			"toNodeGuid": "2BD0CBC640D35A625E00D7B81C1248D5",
+			"toPinId": "2125726E4716D9AB9BE3D58C0932C184",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "1DAA34F5472FE4EE88405889E662EAAC",
+			"fromPinId": "10EF7F494F704966FAE88BA185C2248A",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "2BD0CBC640D35A625E00D7B81C1248D5",
+			"toPinId": "90CC50A54094521FE509F4888C3436E6",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "exec",
+			"fromNodeGuid": "2BD0CBC640D35A625E00D7B81C1248D5",
+			"fromPinId": "20FB9D87432DD6F351240FAE6FACD461",
+			"fromPinName": "else",
+			"toNodeGuid": "CD3AD70445D2C18A9C2AF5957DA8B96D",
+			"toPinId": "2125726E4716D9AB9BE3D58C0932C184",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "A3B4F0D74AC14AE528F1BE91FA7E1FC8",
+			"fromPinId": "10EF7F494F704966FAE88BA185C2248A",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "CD3AD70445D2C18A9C2AF5957DA8B96D",
+			"toPinId": "90CC50A54094521FE509F4888C3436E6",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "075EA75746C1FA1CFE7595ABE645B872",
+			"fromPinId": "A7D36BDC410B6FB62E049DABD2FBDB01",
+			"fromPinName": "Angle",
+			"toNodeGuid": "F9E713CE478C42E3DBE2C7A65D5E975C",
+			"toPinId": "AABA136B41E5382ADF48BC9644D4164B",
+			"toPinName": "Angle"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "380F9FAD493F91EFA77EF6AC4AE076F8",
+			"fromPinId": "806201E7449B72F1CD7A26875FCAD1DE",
+			"fromPinName": "FL-Threshold",
+			"toNodeGuid": "F9E713CE478C42E3DBE2C7A65D5E975C",
+			"toPinId": "1E54A4464DB23F5076391D97A0BA5E23",
+			"toPinName": "MinAngle"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "FB0FE3114B4FEF40EFBC4E90309C77B8",
+			"fromPinId": "C61336C44D6A1E75A923E99D358BFA64",
+			"fromPinName": "FR-Threshold",
+			"toNodeGuid": "F9E713CE478C42E3DBE2C7A65D5E975C",
+			"toPinId": "EC41CF8F4DEBB214B52C5481CAAC33FC",
+			"toPinName": "MaxAngle"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "77D488FE4C33A57A1B1D02957EFD627E",
+			"fromPinId": "79077947456CF6C26DEC8493D031EA65",
+			"fromPinName": "Buffer",
+			"toNodeGuid": "F9E713CE478C42E3DBE2C7A65D5E975C",
+			"toPinId": "DA80CEFF4CCD782DC5AB4FBE498B4254",
+			"toPinName": "Buffer"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "6D080A0740E03C59881724960740FD5D",
+			"fromPinId": "6FFB257C4D12589663BB6CA9CECAE3EB",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "F9E713CE478C42E3DBE2C7A65D5E975C",
+			"toPinId": "0C3D8EFA4C095D736160EA93333CCF00",
+			"toPinName": "IncreaseBuffer"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "F198AE7D4F0807710368E587E89DDED8",
+			"fromPinId": "A7D36BDC410B6FB62E049DABD2FBDB01",
+			"fromPinName": "Angle",
+			"toNodeGuid": "1DAA34F5472FE4EE88405889E662EAAC",
+			"toPinId": "AABA136B41E5382ADF48BC9644D4164B",
+			"toPinName": "Angle"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "938DD1CB4126ACBDB9B009B1D7F0F764",
+			"fromPinId": "0EF91BAD4F6290FFC090B189FEA52A12",
+			"fromPinName": "FR-Threshold",
+			"toNodeGuid": "1DAA34F5472FE4EE88405889E662EAAC",
+			"toPinId": "1E54A4464DB23F5076391D97A0BA5E23",
+			"toPinName": "MinAngle"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "28794D754322A5B89C65F5B0F4774E99",
+			"fromPinId": "22B7141849AECA9C774689A9ED33B91B",
+			"fromPinName": "BR-Threshold",
+			"toNodeGuid": "1DAA34F5472FE4EE88405889E662EAAC",
+			"toPinId": "EC41CF8F4DEBB214B52C5481CAAC33FC",
+			"toPinName": "MaxAngle"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "FE8261884C73619BB52CB993F59839DC",
+			"fromPinId": "79077947456CF6C26DEC8493D031EA65",
+			"fromPinName": "Buffer",
+			"toNodeGuid": "1DAA34F5472FE4EE88405889E662EAAC",
+			"toPinId": "DA80CEFF4CCD782DC5AB4FBE498B4254",
+			"toPinName": "Buffer"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "52BA8B9847C3E8DD7BAE79B8B09F2B50",
+			"fromPinId": "6FFB257C4D12589663BB6CA9CECAE3EB",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "1DAA34F5472FE4EE88405889E662EAAC",
+			"toPinId": "0C3D8EFA4C095D736160EA93333CCF00",
+			"toPinName": "IncreaseBuffer"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "AAE068F64553912B02C17DA616DEE01B",
+			"fromPinId": "A7D36BDC410B6FB62E049DABD2FBDB01",
+			"fromPinName": "Angle",
+			"toNodeGuid": "A3B4F0D74AC14AE528F1BE91FA7E1FC8",
+			"toPinId": "AABA136B41E5382ADF48BC9644D4164B",
+			"toPinName": "Angle"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "9B9E20164086245E57B354A7CC9823CC",
+			"fromPinId": "621DE7464F74F1EFF30E32A80447A846",
+			"fromPinName": "BL-Threshold",
+			"toNodeGuid": "A3B4F0D74AC14AE528F1BE91FA7E1FC8",
+			"toPinId": "1E54A4464DB23F5076391D97A0BA5E23",
+			"toPinName": "MinAngle"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "25D3DABA45F8D0AEAAFB6987D7155A8C",
+			"fromPinId": "26C8B3A846CCFFE92E3B0D96E7CCB29F",
+			"fromPinName": "FL-Threshold",
+			"toNodeGuid": "A3B4F0D74AC14AE528F1BE91FA7E1FC8",
+			"toPinId": "EC41CF8F4DEBB214B52C5481CAAC33FC",
+			"toPinName": "MaxAngle"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "83BB0BC24D8AD0CE25522AB3064B144D",
+			"fromPinId": "79077947456CF6C26DEC8493D031EA65",
+			"fromPinName": "Buffer",
+			"toNodeGuid": "A3B4F0D74AC14AE528F1BE91FA7E1FC8",
+			"toPinId": "DA80CEFF4CCD782DC5AB4FBE498B4254",
+			"toPinName": "Buffer"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "4FA86AAF4AC89F10F3FB36A847237C6E",
+			"fromPinId": "6FFB257C4D12589663BB6CA9CECAE3EB",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "A3B4F0D74AC14AE528F1BE91FA7E1FC8",
+			"toPinId": "0C3D8EFA4C095D736160EA93333CCF00",
+			"toPinName": "IncreaseBuffer"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "AB6BF2E44128A6C011E2C4AFCD04BD16",
+			"fromPinId": "140690DB44105DC04DA2808C2BBB0CB0",
+			"fromPinName": "Current",
+			"toNodeGuid": "BDFE1302475297598D67DEBBFAE0C06D",
+			"toPinId": "89B9DAA44F6BF8C62314BBAAF91E9AE3",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "AB6BF2E44128A6C011E2C4AFCD04BD16",
+			"fromPinId": "140690DB44105DC04DA2808C2BBB0CB0",
+			"fromPinName": "Current",
+			"toNodeGuid": "C396863E4E5A0C319B29B5915AF73EE3",
+			"toPinId": "89B9DAA44F6BF8C62314BBAAF91E9AE3",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "AB6BF2E44128A6C011E2C4AFCD04BD16",
+			"fromPinId": "140690DB44105DC04DA2808C2BBB0CB0",
+			"fromPinName": "Current",
+			"toNodeGuid": "B873AF7041A3CDBB21C781B62280E28D",
+			"toPinId": "89B9DAA44F6BF8C62314BBAAF91E9AE3",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "AB6BF2E44128A6C011E2C4AFCD04BD16",
+			"fromPinId": "140690DB44105DC04DA2808C2BBB0CB0",
+			"fromPinName": "Current",
+			"toNodeGuid": "985A848D40F80428BF02DA9A30C15878",
+			"toPinId": "89B9DAA44F6BF8C62314BBAAF91E9AE3",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "AB6BF2E44128A6C011E2C4AFCD04BD16",
+			"fromPinId": "140690DB44105DC04DA2808C2BBB0CB0",
+			"fromPinName": "Current",
+			"toNodeGuid": "809FE83648A37A451710FC992D5025E1",
+			"toPinId": "89B9DAA44F6BF8C62314BBAAF91E9AE3",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "AB6BF2E44128A6C011E2C4AFCD04BD16",
+			"fromPinId": "140690DB44105DC04DA2808C2BBB0CB0",
+			"fromPinName": "Current",
+			"toNodeGuid": "47BE68FE4B2755827DFABFB907F9EBC8",
+			"toPinId": "89B9DAA44F6BF8C62314BBAAF91E9AE3",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "BDFE1302475297598D67DEBBFAE0C06D",
+			"fromPinId": "BFB24C3649774225F45B7BAD8506EF4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "6D080A0740E03C59881724960740FD5D",
+			"toPinId": "ED3EAE2C4A60B2AF2FD8948A7DC3DA32",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "C396863E4E5A0C319B29B5915AF73EE3",
+			"fromPinId": "BFB24C3649774225F45B7BAD8506EF4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "6D080A0740E03C59881724960740FD5D",
+			"toPinId": "8AF297DB4160E7184AC49EB65A0EC933",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "B873AF7041A3CDBB21C781B62280E28D",
+			"fromPinId": "BFB24C3649774225F45B7BAD8506EF4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "52BA8B9847C3E8DD7BAE79B8B09F2B50",
+			"toPinId": "ED3EAE2C4A60B2AF2FD8948A7DC3DA32",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "985A848D40F80428BF02DA9A30C15878",
+			"fromPinId": "BFB24C3649774225F45B7BAD8506EF4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "52BA8B9847C3E8DD7BAE79B8B09F2B50",
+			"toPinId": "8AF297DB4160E7184AC49EB65A0EC933",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "809FE83648A37A451710FC992D5025E1",
+			"fromPinId": "BFB24C3649774225F45B7BAD8506EF4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "4FA86AAF4AC89F10F3FB36A847237C6E",
+			"toPinId": "ED3EAE2C4A60B2AF2FD8948A7DC3DA32",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateQuadrant",
+			"edgeType": "data",
+			"fromNodeGuid": "47BE68FE4B2755827DFABFB907F9EBC8",
+			"fromPinId": "BFB24C3649774225F45B7BAD8506EF4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "4FA86AAF4AC89F10F3FB36A847237C6E",
+			"toPinId": "8AF297DB4160E7184AC49EB65A0EC933",
+			"toPinName": "B"
+		}
+	],
+	"variablesRead": [
+		"Get Angle",
+		"Get BL-Threshold",
+		"Get BR-Threshold",
+		"Get Buffer",
+		"Get Current",
+		"Get FL-Threshold",
+		"Get FR-Threshold"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Angle in Range"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Angle in Range"
+	],
+	"flowId": "F001",
+	"graphId": "G285",
+	"assetName": "ALS_AnimBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP"
+}

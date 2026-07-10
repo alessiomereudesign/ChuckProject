@@ -1,0 +1,71 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "WBP_WeaponSelector",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector.WBP_WeaponSelector",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_WeaponSelector",
+	"shortAssetFolder": "WBP_WeaponSelector__A83DAE84",
+	"pathHash": "A83DAE84",
+	"assetType": "Blueprint",
+	"unrealClass": "WidgetBlueprint",
+	"parentClass": "/Script/UMG.UserWidget",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 6,
+		"components": 0,
+		"widgets": 18,
+		"graphs": 1,
+		"nodes": 108,
+		"edges": 161,
+		"flows": 2
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/WBP_WeaponSelector__A83DAE84/SUMMARY.md",
+		"variables": "Assets/Blueprints/WBP_WeaponSelector__A83DAE84/VARIABLES.json",
+		"components": "Assets/Blueprints/WBP_WeaponSelector__A83DAE84/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/WBP_WeaponSelector__A83DAE84/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/WBP_WeaponSelector__A83DAE84/NODES.jsonl",
+		"edges": "Assets/Blueprints/WBP_WeaponSelector__A83DAE84/EDGES.jsonl",
+		"search": "Assets/Blueprints/WBP_WeaponSelector__A83DAE84/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 108,
+			"edgeCount": 161,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "EquipAndClose\nCustom Event",
+					"entryNodeGuid": "8290FBBC4190DB81041AA88A32842C53",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 108
+				},
+				{
+					"flowId": "F002",
+					"entryName": "Evento Construct",
+					"entryNodeGuid": "7E91F3FE473717C406F03DB7A2A505F4",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Flows/G001/F002.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Flows/G001/F002.json",
+					"textFile": "Flows/G001/F002.txt",
+					"jsonFile": "Flows/G001/F002.json",
+					"nodeCount": 108
+				}
+			]
+		}
+	]
+}

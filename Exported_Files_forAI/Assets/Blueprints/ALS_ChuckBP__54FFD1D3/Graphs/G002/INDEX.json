@@ -1,0 +1,75 @@
+{
+	"graphId": "G002",
+	"name": "AttackGraph",
+	"graphName": "AttackGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 448,
+	"edgeCount": 534,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G002/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "EventLoopHit\nCustom Event",
+			"entryNodeGuid": "88F6E8D246FFBBB5F1A27FB299A6901D",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F001.json",
+			"textFile": "Flows/G002/F001.txt",
+			"jsonFile": "Flows/G002/F001.json",
+			"nodeCount": 448
+		},
+		{
+			"flowId": "F002",
+			"entryName": "ExecuteFireSequence\nCustom Event",
+			"entryNodeGuid": "0B09FA824400074A0208C6BFC5250F00",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F002.json",
+			"textFile": "Flows/G002/F002.txt",
+			"jsonFile": "Flows/G002/F002.json",
+			"nodeCount": 448
+		},
+		{
+			"flowId": "F003",
+			"entryName": "RefreshWeaponVisuals\nCustom Event",
+			"entryNodeGuid": "988D92D546556A05C432AAB2E6E32B8B",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F003.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F003.json",
+			"textFile": "Flows/G002/F003.txt",
+			"jsonFile": "Flows/G002/F003.json",
+			"nodeCount": 448
+		},
+		{
+			"flowId": "F004",
+			"entryName": "ReloadCurrentWeapon\nCustom Event",
+			"entryNodeGuid": "C96E461945D9CD20DAD6BB86B6DBD077",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F004.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F004.json",
+			"textFile": "Flows/G002/F004.txt",
+			"jsonFile": "Flows/G002/F004.json",
+			"nodeCount": 448
+		},
+		{
+			"flowId": "F005",
+			"entryName": "ResetCombo\nCustom Event",
+			"entryNodeGuid": "B7CC852242E51A1ED40C2E9261CC6C93",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F005.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F005.json",
+			"textFile": "Flows/G002/F005.txt",
+			"jsonFile": "Flows/G002/F005.json",
+			"nodeCount": 448
+		},
+		{
+			"flowId": "F006",
+			"entryName": "TryAutoReloadCurrentWeapon\nCustom Event",
+			"entryNodeGuid": "BA8E72CF42A50FB6D1B4A8A263D1BB4C",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F006.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F006.json",
+			"textFile": "Flows/G002/F006.txt",
+			"jsonFile": "Flows/G002/F006.json",
+			"nodeCount": 448
+		}
+	]
+}

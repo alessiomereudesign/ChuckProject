@@ -1,0 +1,57 @@
+{
+	"assetName": "ALS_PlayerCameraManager",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CameraSystem/ALS_PlayerCameraManager.ALS_PlayerCameraManager",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraManager",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "OnPossess\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "872327BC4FB2A768F9D39780641002CF",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Blueprint Update Camera",
+			"graph": "BlueprintUpdateCamera",
+			"nodeGuid": "333262A2468F65B8B097A9812E27C9F3",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Calculate Axis Independent Lag",
+			"graph": "CalculateAxisIndependentLag",
+			"nodeGuid": "4BA4D0B54B6B03FD85D4EBBFD711FBBF",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Custom Camera Behavior",
+			"graph": "CustomCameraBehavior",
+			"nodeGuid": "F1C3F89A4B9B95DA2D723CA378EBBF55",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Camera Behavior Param",
+			"graph": "Get_CameraBehaviorParam",
+			"nodeGuid": "846520F64154008955491BA33D4BEFE9",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Debug Trace Type",
+			"graph": "GetDebugTraceType",
+			"nodeGuid": "3019FE7944FF8878CD5F26AF5E0EC1B9",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Construction Script",
+			"graph": "UserConstructionScript",
+			"nodeGuid": "50A6CA7F46F017099098D0B154FA92EC",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

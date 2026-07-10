@@ -1,0 +1,36 @@
+{
+	"assetName": "BP_Knife_Mann",
+	"assetPath": "/Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/Demo/Mannequin/Character/Mesh/BP_Knife_Mann.BP_Knife_Mann",
+	"assetKey": "Game_AdditionalContents_RamsterZ_FreeAnims_Volume1_Demo_Mannequin_Character_Mesh_BP_Knife_Mann",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Evento BeginPlay",
+			"graph": "EventGraph",
+			"nodeGuid": "FEC2B3A449F67CC333E85EBAD623B40C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento ActorBeginOverlap",
+			"graph": "EventGraph",
+			"nodeGuid": "F2DB8B7F4EC9EC3998899CAB5229154D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento Tick",
+			"graph": "EventGraph",
+			"nodeGuid": "EB832974402F12CF4CF52DBF068AFCAB",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Construction Script",
+			"graph": "UserConstructionScript",
+			"nodeGuid": "D5FD242043712C806C13BBB56FB6165C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

@@ -1,0 +1,35 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G003
+Graph: BPI_Get_CameraParameters
+FlowId: F001
+Entry: BPI Get Camera Parameters
+NodeGuid: 1A3AF9224D9A2E00A4A097B3CA640344
+
+Exec Flow:
+1. BPI Get Camera Parameters [K2Node_FunctionEntry] 1A3AF9224D9A2E00A4A097B3CA640344
+2. Nodo di restituzione [K2Node_FunctionResult] 1B73E430464A50C27C6A96BFD44F03FF
+3. Get ThirdPersonFOV [K2Node_VariableGet] A020573B4A3728043CD666AB5EDB1B86
+4. Get FirstPersonFOV [K2Node_VariableGet] 96CB4FDC4E8252D73ED17F98BC71EFD6
+5. Get RightShoulder [K2Node_VariableGet] 451743404CDB501A1264379001B9E3EC
+
+Variables Read:
+- Get FirstPersonFOV
+- Get RightShoulder
+- Get ThirdPersonFOV
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

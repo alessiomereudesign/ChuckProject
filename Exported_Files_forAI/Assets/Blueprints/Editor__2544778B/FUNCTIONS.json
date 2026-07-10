@@ -1,0 +1,80 @@
+{
+	"assetName": "Editor",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/Editor.Editor",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_Editor",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"functions": [
+		{
+			"name": "AnimGraph",
+			"graph": "AnimGraph",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 8,
+			"file": "Assets/Blueprints/Editor__2544778B/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "AnimGraph",
+			"graph": "AnimGraph",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 8,
+			"file": "Assets/Blueprints/Editor__2544778B/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "AnimGraph",
+			"graph": "AnimGraph",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 8,
+			"file": "Assets/Blueprints/Editor__2544778B/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "AnimGraph",
+			"graph": "AnimGraph",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 8,
+			"file": "Assets/Blueprints/Editor__2544778B/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "AnimGraph",
+			"graph": "AnimGraph",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 8,
+			"file": "Assets/Blueprints/Editor__2544778B/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "AnimGraph",
+			"graph": "AnimGraph",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 8,
+			"file": "Assets/Blueprints/Editor__2544778B/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "AnimGraph",
+			"graph": "AnimGraph",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 8,
+			"file": "Assets/Blueprints/Editor__2544778B/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "AnimGraph",
+			"graph": "AnimGraph",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 8,
+			"file": "Assets/Blueprints/Editor__2544778B/Graphs/G002/INDEX.json"
+		}
+	]
+}

@@ -1,0 +1,3786 @@
+{
+	"schemaVersion": "2.2",
+	"unrealEngineVersion": "5.4.4-35576357+++UE5+Release-5.4",
+	"name": "DT_Weapon",
+	"path": "/Game/ChuckContent/Systems/Weapons/Data/DT_Weapon.DT_Weapon",
+	"assetName": "DT_Weapon",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Data/DT_Weapon.DT_Weapon",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Data_DT_Weapon",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetType": "DataTable",
+	"unrealClass": "DataTable",
+	"rowStruct": "/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+	"columns": [
+		{
+			"name": "RowName_80_90C885E245FEA60369938EAC6E1FCB25",
+			"authoredName": "RowName",
+			"type": "FName",
+			"propertyClass": "NameProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "RowName",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+			"authoredName": "Name",
+			"type": "FText",
+			"propertyClass": "TextProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "Name",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+			"authoredName": "Weapon_Icon",
+			"type": "UTexture2D*",
+			"propertyClass": "ObjectProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "Weapon_Icon",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "Weapon_Image_68_E0882141471F7B74AF02C2B8D100E2BB",
+			"authoredName": "Weapon_Image",
+			"type": "UTexture2D*",
+			"propertyClass": "ObjectProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "Weapon_Image",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "Technical_Info_55_96E6AFB44DBF5A6518FAD09002832322",
+			"authoredName": "Technical_Info",
+			"type": "FText",
+			"propertyClass": "TextProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "Technical_Info",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "SlotType_5_6A80ABC24B17EFCD8135D98F80F1052A",
+			"authoredName": "SlotType",
+			"type": "TEnumAsByte<E_WeaponSlot>",
+			"propertyClass": "ByteProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "SlotType",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+			"authoredName": "SkeletalMesh",
+			"type": "USkeletalMesh*",
+			"propertyClass": "ObjectProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "SkeletalMesh",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
+			"authoredName": "ALS_OverlayState",
+			"type": "TEnumAsByte<ALS_OverlayState>",
+			"propertyClass": "ByteProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "ALS_OverlayState",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+			"authoredName": "AttackMontage",
+			"type": "UAnimMontage*",
+			"propertyClass": "ObjectProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "AttackMontage",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+			"authoredName": "ReloadMontage",
+			"type": "UAnimMontage*",
+			"propertyClass": "ObjectProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "ReloadMontage",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "HolsterSocket_22_F328E5D44A0493E4582BAC8E4D2C1D4B",
+			"authoredName": "HolsterSocket",
+			"type": "FName",
+			"propertyClass": "NameProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "HolsterSocket",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
+			"authoredName": "HandSocket",
+			"type": "FName",
+			"propertyClass": "NameProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "HandSocket",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+			"authoredName": "BaseDamage",
+			"type": "double",
+			"propertyClass": "DoubleProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "BaseDamage",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+			"authoredName": "DamageRadius",
+			"type": "double",
+			"propertyClass": "DoubleProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "DamageRadius",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
+			"authoredName": "TraceRadius",
+			"type": "double",
+			"propertyClass": "DoubleProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "TraceRadius",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "HitRange_58_53C8DCE547CE983F554D118DC7343869",
+			"authoredName": "HitRange",
+			"type": "double",
+			"propertyClass": "DoubleProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "HitRange",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
+			"authoredName": "FireRate",
+			"type": "double",
+			"propertyClass": "DoubleProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "FireRate",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
+			"authoredName": "MaxMagazineCapacity",
+			"type": "int32",
+			"propertyClass": "IntProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "MaxMagazineCapacity",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+			"authoredName": "CurrentAmmoInMagazine",
+			"type": "int32",
+			"propertyClass": "IntProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "CurrentAmmoInMagazine",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22",
+			"authoredName": "CurrentReservedAmmo",
+			"type": "int32",
+			"propertyClass": "IntProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "CurrentReservedAmmo",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+			"authoredName": "IsExplosive?",
+			"type": "bool",
+			"propertyClass": "BoolProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "IsExplosive?",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1",
+			"authoredName": "IsLoopHit?",
+			"type": "bool",
+			"propertyClass": "BoolProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "IsLoopHit?",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC",
+			"authoredName": "IsEquipped?",
+			"type": "bool",
+			"propertyClass": "BoolProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "IsEquipped?",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
+			"authoredName": "MuzzleFX",
+			"type": "UParticleSystem*",
+			"propertyClass": "ObjectProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "MuzzleFX",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+			"authoredName": "TrailFX",
+			"type": "UParticleSystem*",
+			"propertyClass": "ObjectProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "TrailFX",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
+			"authoredName": "ImpactFX",
+			"type": "UParticleSystem*",
+			"propertyClass": "ObjectProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "ImpactFX",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+			"authoredName": "ExplosionFX",
+			"type": "UParticleSystem*",
+			"propertyClass": "ObjectProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "ExplosionFX",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
+			"authoredName": "ProjectileClass",
+			"type": "UClass*",
+			"propertyClass": "ClassProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "ProjectileClass",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
+			"authoredName": "bUsesProjectile",
+			"type": "bool",
+			"propertyClass": "BoolProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "bUsesProjectile",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+			"authoredName": "ProjectileMesh",
+			"type": "UStaticMesh*",
+			"propertyClass": "ObjectProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "ProjectileMesh",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+			"authoredName": "ProjectileSpeed",
+			"type": "double",
+			"propertyClass": "DoubleProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "ProjectileSpeed",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
+			"authoredName": "AmmoType",
+			"type": "TEnumAsByte<E_AmmoType>",
+			"propertyClass": "ByteProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "AmmoType",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
+			"authoredName": "AttachLocationOffset",
+			"type": "FVector",
+			"propertyClass": "StructProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "AttachLocationOffset",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
+			"authoredName": "AttachRotationOffset",
+			"type": "FRotator",
+			"propertyClass": "StructProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "AttachRotationOffset",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
+			"authoredName": "AttachScaleOffset",
+			"type": "FVector",
+			"propertyClass": "StructProperty",
+			"arrayDim": 1,
+			"metadata":
+			{
+				"DisplayName": "AttachScaleOffset",
+				"ToolTip": ""
+			}
+		}
+	],
+	"rowCount": 14,
+	"rows": [
+		{
+			"name": "AssaultRifleA",
+			"data":
+			{
+				"rowName": "AssaultRifleA",
+				"name": "Assault Rifle A",
+				"weapon_Icon": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'",
+				"weapon_Image": "None",
+				"technical_Info": "Colpi a raffica, molto veloce, implica Montage caricamento a fine caricatore (200 colpi)",
+				"slotType": "BigWeapon",
+				"skeletalMesh": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Assault_Rifle_A.Assault_Rifle_A'",
+				"aLS_OverlayState": "Rifle",
+				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Fire.AM_MM_Rifle_Fire'",
+				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Reload.AM_MM_Rifle_Reload'",
+				"holsterSocket": "Rifle",
+				"handSocket": "Weapon_R",
+				"baseDamage": 12,
+				"damageRadius": 0,
+				"traceRadius": 15,
+				"hitRange": 2500,
+				"fireRate": 0.12,
+				"maxMagazineCapacity": 270,
+				"currentAmmoInMagazine": 0,
+				"currentReservedAmmo": 0,
+				"isExplosive?": false,
+				"isLoopHit?": true,
+				"isEquipped?": false,
+				"muzzleFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_AssaultRifle_MuzzleFlash.P_AssaultRifle_MuzzleFlash'",
+				"trailFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_AssaultRifle_Tracer_01.P_AssaultRifle_Tracer_01'",
+				"impactFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Small_01.P_Impact_Wood_Small_01'",
+				"explosionFX": "None",
+				"projectileClass": "None",
+				"bUsesProjectile": false,
+				"projectileMesh": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/AssaultRifleA_Ammo.AssaultRifleA_Ammo'",
+				"projectileSpeed": 0,
+				"ammoType": "AssaultRifle",
+				"attachLocationOffset":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"attachRotationOffset":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"attachScaleOffset":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"fields": [
+				{
+					"name": "RowName_80_90C885E245FEA60369938EAC6E1FCB25",
+					"type": "FName",
+					"valueText": "AssaultRifleA"
+				},
+				{
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"AF508743474E6D067EB7509A51DB8BC8\", \"Assault Rifle A\")"
+				},
+				{
+					"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"type": "UTexture2D*",
+					"valueText": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'"
+				},
+				{
+					"name": "Weapon_Image_68_E0882141471F7B74AF02C2B8D100E2BB",
+					"type": "UTexture2D*",
+					"valueText": "None"
+				},
+				{
+					"name": "Technical_Info_55_96E6AFB44DBF5A6518FAD09002832322",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"D65DE86948B03F73BC469D8A0BDD80FA\", \"Colpi a raffica, molto veloce, implica Montage caricamento a fine caricatore (200 colpi)\")"
+				},
+				{
+					"name": "SlotType_5_6A80ABC24B17EFCD8135D98F80F1052A",
+					"type": "TEnumAsByte<E_WeaponSlot>",
+					"valueText": "NewEnumerator3"
+				},
+				{
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"type": "USkeletalMesh*",
+					"valueText": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Assault_Rifle_A.Assault_Rifle_A'"
+				},
+				{
+					"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
+					"type": "TEnumAsByte<ALS_OverlayState>",
+					"valueText": "NewEnumerator1"
+				},
+				{
+					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Fire.AM_MM_Rifle_Fire'"
+				},
+				{
+					"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Reload.AM_MM_Rifle_Reload'"
+				},
+				{
+					"name": "HolsterSocket_22_F328E5D44A0493E4582BAC8E4D2C1D4B",
+					"type": "FName",
+					"valueText": "Rifle"
+				},
+				{
+					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
+					"type": "FName",
+					"valueText": "Weapon_R"
+				},
+				{
+					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+					"type": "double",
+					"valueText": "12.000000"
+				},
+				{
+					"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
+					"type": "double",
+					"valueText": "15.000000"
+				},
+				{
+					"name": "HitRange_58_53C8DCE547CE983F554D118DC7343869",
+					"type": "double",
+					"valueText": "2500.000000"
+				},
+				{
+					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
+					"type": "double",
+					"valueText": "0.120000"
+				},
+				{
+					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
+					"type": "int32",
+					"valueText": "270"
+				},
+				{
+					"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1",
+					"type": "bool",
+					"valueText": "True"
+				},
+				{
+					"name": "IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_AssaultRifle_MuzzleFlash.P_AssaultRifle_MuzzleFlash'"
+				},
+				{
+					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_AssaultRifle_Tracer_01.P_AssaultRifle_Tracer_01'"
+				},
+				{
+					"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Small_01.P_Impact_Wood_Small_01'"
+				},
+				{
+					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
+					"type": "UClass*",
+					"valueText": "None"
+				},
+				{
+					"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+					"type": "UStaticMesh*",
+					"valueText": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/AssaultRifleA_Ammo.AssaultRifleA_Ammo'"
+				},
+				{
+					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
+					"type": "TEnumAsByte<E_AmmoType>",
+					"valueText": "NewEnumerator3"
+				},
+				{
+					"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
+					"type": "FVector",
+					"valueText": "(X=0.000000,Y=0.000000,Z=0.000000)"
+				},
+				{
+					"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
+					"type": "FRotator",
+					"valueText": "(Pitch=0.000000,Yaw=0.000000,Roll=0.000000)"
+				},
+				{
+					"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
+					"type": "FVector",
+					"valueText": "(X=1.000000,Y=1.000000,Z=1.000000)"
+				}
+			]
+		},
+		{
+			"name": "AssaultRifleB",
+			"data":
+			{
+				"rowName": "AssaultRifleB",
+				"name": "Assault Rifle B",
+				"weapon_Icon": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'",
+				"weapon_Image": "None",
+				"technical_Info": "Colpi a raffica, molto veloce, implica Montage caricamento a fine caricatore (200 colpi)",
+				"slotType": "BigWeapon",
+				"skeletalMesh": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Assault_Rifle_B.Assault_Rifle_B'",
+				"aLS_OverlayState": "Rifle",
+				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Fire.AM_MM_Rifle_Fire'",
+				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Reload.AM_MM_Rifle_Reload'",
+				"holsterSocket": "Rifle",
+				"handSocket": "Weapon_R",
+				"baseDamage": 12,
+				"damageRadius": 0,
+				"traceRadius": 15,
+				"hitRange": 2500,
+				"fireRate": 0.12,
+				"maxMagazineCapacity": 270,
+				"currentAmmoInMagazine": 0,
+				"currentReservedAmmo": 0,
+				"isExplosive?": false,
+				"isLoopHit?": true,
+				"isEquipped?": false,
+				"muzzleFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_AssaultRifle_MuzzleFlash.P_AssaultRifle_MuzzleFlash'",
+				"trailFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_AssaultRifle_Tracer_01.P_AssaultRifle_Tracer_01'",
+				"impactFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Small_01.P_Impact_Wood_Small_01'",
+				"explosionFX": "None",
+				"projectileClass": "None",
+				"bUsesProjectile": false,
+				"projectileMesh": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/AssaultRifleB_Ammo.AssaultRifleB_Ammo'",
+				"projectileSpeed": 0,
+				"ammoType": "AssaultRifle",
+				"attachLocationOffset":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"attachRotationOffset":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"attachScaleOffset":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"fields": [
+				{
+					"name": "RowName_80_90C885E245FEA60369938EAC6E1FCB25",
+					"type": "FName",
+					"valueText": "AssaultRifleB"
+				},
+				{
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"4B9553794E719BD92E6153B55EBEDA9D\", \"Assault Rifle B\")"
+				},
+				{
+					"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"type": "UTexture2D*",
+					"valueText": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'"
+				},
+				{
+					"name": "Weapon_Image_68_E0882141471F7B74AF02C2B8D100E2BB",
+					"type": "UTexture2D*",
+					"valueText": "None"
+				},
+				{
+					"name": "Technical_Info_55_96E6AFB44DBF5A6518FAD09002832322",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"3DBC00DF475D7E423487688326E0DDD1\", \"Colpi a raffica, molto veloce, implica Montage caricamento a fine caricatore (200 colpi)\")"
+				},
+				{
+					"name": "SlotType_5_6A80ABC24B17EFCD8135D98F80F1052A",
+					"type": "TEnumAsByte<E_WeaponSlot>",
+					"valueText": "NewEnumerator3"
+				},
+				{
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"type": "USkeletalMesh*",
+					"valueText": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Assault_Rifle_B.Assault_Rifle_B'"
+				},
+				{
+					"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
+					"type": "TEnumAsByte<ALS_OverlayState>",
+					"valueText": "NewEnumerator1"
+				},
+				{
+					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Fire.AM_MM_Rifle_Fire'"
+				},
+				{
+					"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Reload.AM_MM_Rifle_Reload'"
+				},
+				{
+					"name": "HolsterSocket_22_F328E5D44A0493E4582BAC8E4D2C1D4B",
+					"type": "FName",
+					"valueText": "Rifle"
+				},
+				{
+					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
+					"type": "FName",
+					"valueText": "Weapon_R"
+				},
+				{
+					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+					"type": "double",
+					"valueText": "12.000000"
+				},
+				{
+					"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
+					"type": "double",
+					"valueText": "15.000000"
+				},
+				{
+					"name": "HitRange_58_53C8DCE547CE983F554D118DC7343869",
+					"type": "double",
+					"valueText": "2500.000000"
+				},
+				{
+					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
+					"type": "double",
+					"valueText": "0.120000"
+				},
+				{
+					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
+					"type": "int32",
+					"valueText": "270"
+				},
+				{
+					"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1",
+					"type": "bool",
+					"valueText": "True"
+				},
+				{
+					"name": "IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_AssaultRifle_MuzzleFlash.P_AssaultRifle_MuzzleFlash'"
+				},
+				{
+					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_AssaultRifle_Tracer_01.P_AssaultRifle_Tracer_01'"
+				},
+				{
+					"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Small_01.P_Impact_Wood_Small_01'"
+				},
+				{
+					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
+					"type": "UClass*",
+					"valueText": "None"
+				},
+				{
+					"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+					"type": "UStaticMesh*",
+					"valueText": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/AssaultRifleB_Ammo.AssaultRifleB_Ammo'"
+				},
+				{
+					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
+					"type": "TEnumAsByte<E_AmmoType>",
+					"valueText": "NewEnumerator3"
+				},
+				{
+					"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
+					"type": "FVector",
+					"valueText": "(X=0.000000,Y=0.000000,Z=0.000000)"
+				},
+				{
+					"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
+					"type": "FRotator",
+					"valueText": "(Pitch=0.000000,Yaw=0.000000,Roll=0.000000)"
+				},
+				{
+					"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
+					"type": "FVector",
+					"valueText": "(X=1.000000,Y=1.000000,Z=1.000000)"
+				}
+			]
+		},
+		{
+			"name": "GrenadeLauncherA",
+			"data":
+			{
+				"rowName": "GrenadeLauncherA",
+				"name": "Grenade Launcher A",
+				"weapon_Icon": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'",
+				"weapon_Image": "None",
+				"technical_Info": "Arma esplosiva, Colpo singolo, implica montage caricatore ogni colpo. Mediamente lenta ma letale",
+				"slotType": "BigWeapon",
+				"skeletalMesh": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Grenade_Launcher_B.Grenade_Launcher_B'",
+				"aLS_OverlayState": "Rifle",
+				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Anims/AM_MM_Fire_GrenadeLauncher_W.AM_MM_Fire_GrenadeLauncher_W'",
+				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_GrenadeLauncher_Reload.AM_MM_GrenadeLauncher_Reload'",
+				"holsterSocket": "Rifle",
+				"handSocket": "Weapon_R",
+				"baseDamage": 50,
+				"damageRadius": 400,
+				"traceRadius": 0,
+				"hitRange": 1500,
+				"fireRate": 1,
+				"maxMagazineCapacity": 15,
+				"currentAmmoInMagazine": 0,
+				"currentReservedAmmo": 0,
+				"isExplosive?": true,
+				"isLoopHit?": false,
+				"isEquipped?": false,
+				"muzzleFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Grenade_MuzzleFlash_01.P_Grenade_MuzzleFlash_01'",
+				"trailFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Grenade_Trail_01.P_Grenade_Trail_01'",
+				"impactFX": "None",
+				"explosionFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Grenade_Explosion_01.P_Grenade_Explosion_01'",
+				"projectileClass": "None",
+				"bUsesProjectile": false,
+				"projectileMesh": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/GrenadeLauncherA_Ammo.GrenadeLauncherA_Ammo'",
+				"projectileSpeed": 1800,
+				"ammoType": "GrenadeLauncher",
+				"attachLocationOffset":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"attachRotationOffset":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"attachScaleOffset":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"fields": [
+				{
+					"name": "RowName_80_90C885E245FEA60369938EAC6E1FCB25",
+					"type": "FName",
+					"valueText": "GrenadeLauncherA"
+				},
+				{
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"73E32D1540F6AFFD034C458885582B83\", \"Grenade Launcher A\")"
+				},
+				{
+					"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"type": "UTexture2D*",
+					"valueText": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'"
+				},
+				{
+					"name": "Weapon_Image_68_E0882141471F7B74AF02C2B8D100E2BB",
+					"type": "UTexture2D*",
+					"valueText": "None"
+				},
+				{
+					"name": "Technical_Info_55_96E6AFB44DBF5A6518FAD09002832322",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"FDDAC17047E44867038A89A23A50A9DB\", \"Arma esplosiva, Colpo singolo, implica montage caricatore ogni colpo. Mediamente lenta ma letale\")"
+				},
+				{
+					"name": "SlotType_5_6A80ABC24B17EFCD8135D98F80F1052A",
+					"type": "TEnumAsByte<E_WeaponSlot>",
+					"valueText": "NewEnumerator3"
+				},
+				{
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"type": "USkeletalMesh*",
+					"valueText": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Grenade_Launcher_B.Grenade_Launcher_B'"
+				},
+				{
+					"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
+					"type": "TEnumAsByte<ALS_OverlayState>",
+					"valueText": "NewEnumerator1"
+				},
+				{
+					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Anims/AM_MM_Fire_GrenadeLauncher_W.AM_MM_Fire_GrenadeLauncher_W'"
+				},
+				{
+					"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_GrenadeLauncher_Reload.AM_MM_GrenadeLauncher_Reload'"
+				},
+				{
+					"name": "HolsterSocket_22_F328E5D44A0493E4582BAC8E4D2C1D4B",
+					"type": "FName",
+					"valueText": "Rifle"
+				},
+				{
+					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
+					"type": "FName",
+					"valueText": "Weapon_R"
+				},
+				{
+					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+					"type": "double",
+					"valueText": "50.000000"
+				},
+				{
+					"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+					"type": "double",
+					"valueText": "400.000000"
+				},
+				{
+					"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "HitRange_58_53C8DCE547CE983F554D118DC7343869",
+					"type": "double",
+					"valueText": "1500.000000"
+				},
+				{
+					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
+					"type": "double",
+					"valueText": "1.000000"
+				},
+				{
+					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
+					"type": "int32",
+					"valueText": "15"
+				},
+				{
+					"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+					"type": "bool",
+					"valueText": "True"
+				},
+				{
+					"name": "IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Grenade_MuzzleFlash_01.P_Grenade_MuzzleFlash_01'"
+				},
+				{
+					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Grenade_Trail_01.P_Grenade_Trail_01'"
+				},
+				{
+					"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Grenade_Explosion_01.P_Grenade_Explosion_01'"
+				},
+				{
+					"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
+					"type": "UClass*",
+					"valueText": "None"
+				},
+				{
+					"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+					"type": "UStaticMesh*",
+					"valueText": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/GrenadeLauncherA_Ammo.GrenadeLauncherA_Ammo'"
+				},
+				{
+					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+					"type": "double",
+					"valueText": "1800.000000"
+				},
+				{
+					"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
+					"type": "TEnumAsByte<E_AmmoType>",
+					"valueText": "NewEnumerator5"
+				},
+				{
+					"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
+					"type": "FVector",
+					"valueText": "(X=0.000000,Y=0.000000,Z=0.000000)"
+				},
+				{
+					"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
+					"type": "FRotator",
+					"valueText": "(Pitch=0.000000,Yaw=0.000000,Roll=0.000000)"
+				},
+				{
+					"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
+					"type": "FVector",
+					"valueText": "(X=1.000000,Y=1.000000,Z=1.000000)"
+				}
+			]
+		},
+		{
+			"name": "GrenadeLauncherB",
+			"data":
+			{
+				"rowName": "GrenadeLauncherB",
+				"name": "Genade Launcher B",
+				"weapon_Icon": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'",
+				"weapon_Image": "None",
+				"technical_Info": "Arma esplosiva, Colpo singolo, implica montage caricatore ogni colpo. Mediamente lenta ma letale",
+				"slotType": "BigWeapon",
+				"skeletalMesh": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Grenade_Launcher_B.Grenade_Launcher_B'",
+				"aLS_OverlayState": "Rifle",
+				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Anims/AM_MM_Fire_GrenadeLauncher_W.AM_MM_Fire_GrenadeLauncher_W'",
+				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_GrenadeLauncher_Reload.AM_MM_GrenadeLauncher_Reload'",
+				"holsterSocket": "Rifle",
+				"handSocket": "Weapon_R",
+				"baseDamage": 50,
+				"damageRadius": 3000,
+				"traceRadius": 0,
+				"hitRange": 1500,
+				"fireRate": 1,
+				"maxMagazineCapacity": 15,
+				"currentAmmoInMagazine": 0,
+				"currentReservedAmmo": 0,
+				"isExplosive?": true,
+				"isLoopHit?": false,
+				"isEquipped?": false,
+				"muzzleFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Grenade_MuzzleFlash_01.P_Grenade_MuzzleFlash_01'",
+				"trailFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Grenade_Trail_01.P_Grenade_Trail_01'",
+				"impactFX": "None",
+				"explosionFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Grenade_Explosion_01.P_Grenade_Explosion_01'",
+				"projectileClass": "None",
+				"bUsesProjectile": false,
+				"projectileMesh": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/GrenadeLauncherA_Ammo.GrenadeLauncherA_Ammo'",
+				"projectileSpeed": 1800,
+				"ammoType": "GrenadeLauncher",
+				"attachLocationOffset":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"attachRotationOffset":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"attachScaleOffset":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"fields": [
+				{
+					"name": "RowName_80_90C885E245FEA60369938EAC6E1FCB25",
+					"type": "FName",
+					"valueText": "GrenadeLauncherB"
+				},
+				{
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"64D631244F81B09BE382C1A21664EF7D\", \"Genade Launcher B\")"
+				},
+				{
+					"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"type": "UTexture2D*",
+					"valueText": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'"
+				},
+				{
+					"name": "Weapon_Image_68_E0882141471F7B74AF02C2B8D100E2BB",
+					"type": "UTexture2D*",
+					"valueText": "None"
+				},
+				{
+					"name": "Technical_Info_55_96E6AFB44DBF5A6518FAD09002832322",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"C0114728484B40D47E62B197B40C47F8\", \"Arma esplosiva, Colpo singolo, implica montage caricatore ogni colpo. Mediamente lenta ma letale\")"
+				},
+				{
+					"name": "SlotType_5_6A80ABC24B17EFCD8135D98F80F1052A",
+					"type": "TEnumAsByte<E_WeaponSlot>",
+					"valueText": "NewEnumerator3"
+				},
+				{
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"type": "USkeletalMesh*",
+					"valueText": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Grenade_Launcher_B.Grenade_Launcher_B'"
+				},
+				{
+					"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
+					"type": "TEnumAsByte<ALS_OverlayState>",
+					"valueText": "NewEnumerator1"
+				},
+				{
+					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Anims/AM_MM_Fire_GrenadeLauncher_W.AM_MM_Fire_GrenadeLauncher_W'"
+				},
+				{
+					"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_GrenadeLauncher_Reload.AM_MM_GrenadeLauncher_Reload'"
+				},
+				{
+					"name": "HolsterSocket_22_F328E5D44A0493E4582BAC8E4D2C1D4B",
+					"type": "FName",
+					"valueText": "Rifle"
+				},
+				{
+					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
+					"type": "FName",
+					"valueText": "Weapon_R"
+				},
+				{
+					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+					"type": "double",
+					"valueText": "50.000000"
+				},
+				{
+					"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+					"type": "double",
+					"valueText": "3000.000000"
+				},
+				{
+					"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "HitRange_58_53C8DCE547CE983F554D118DC7343869",
+					"type": "double",
+					"valueText": "1500.000000"
+				},
+				{
+					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
+					"type": "double",
+					"valueText": "1.000000"
+				},
+				{
+					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
+					"type": "int32",
+					"valueText": "15"
+				},
+				{
+					"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+					"type": "bool",
+					"valueText": "True"
+				},
+				{
+					"name": "IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Grenade_MuzzleFlash_01.P_Grenade_MuzzleFlash_01'"
+				},
+				{
+					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Grenade_Trail_01.P_Grenade_Trail_01'"
+				},
+				{
+					"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Grenade_Explosion_01.P_Grenade_Explosion_01'"
+				},
+				{
+					"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
+					"type": "UClass*",
+					"valueText": "None"
+				},
+				{
+					"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+					"type": "UStaticMesh*",
+					"valueText": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/GrenadeLauncherA_Ammo.GrenadeLauncherA_Ammo'"
+				},
+				{
+					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+					"type": "double",
+					"valueText": "1800.000000"
+				},
+				{
+					"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
+					"type": "TEnumAsByte<E_AmmoType>",
+					"valueText": "NewEnumerator5"
+				},
+				{
+					"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
+					"type": "FVector",
+					"valueText": "(X=0.000000,Y=0.000000,Z=0.000000)"
+				},
+				{
+					"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
+					"type": "FRotator",
+					"valueText": "(Pitch=0.000000,Yaw=0.000000,Roll=0.000000)"
+				},
+				{
+					"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
+					"type": "FVector",
+					"valueText": "(X=1.000000,Y=1.000000,Z=1.000000)"
+				}
+			]
+		},
+		{
+			"name": "KnifeA",
+			"data":
+			{
+				"rowName": "KnifeA",
+				"name": "Knife A",
+				"weapon_Icon": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/knife.knife'",
+				"weapon_Image": "None",
+				"technical_Info": "Colpo singolo",
+				"slotType": "Melee",
+				"skeletalMesh": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Knife_A.Knife_A'",
+				"aLS_OverlayState": "Pistol 2H",
+				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/Paired/MM_AM_Knife_Attack.MM_AM_Knife_Attack'",
+				"reloadMontage": "None",
+				"holsterSocket": "Knife_R",
+				"handSocket": "Weapon_R",
+				"baseDamage": 20,
+				"damageRadius": 0,
+				"traceRadius": 0,
+				"hitRange": 50,
+				"fireRate": 1,
+				"maxMagazineCapacity": 0,
+				"currentAmmoInMagazine": 0,
+				"currentReservedAmmo": 0,
+				"isExplosive?": false,
+				"isLoopHit?": false,
+				"isEquipped?": false,
+				"muzzleFX": "None",
+				"trailFX": "None",
+				"impactFX": "None",
+				"explosionFX": "None",
+				"projectileClass": "None",
+				"bUsesProjectile": false,
+				"projectileMesh": "None",
+				"projectileSpeed": 0,
+				"ammoType": "None",
+				"attachLocationOffset":
+				{
+					"x": -8,
+					"y": 4,
+					"z": -2
+				},
+				"attachRotationOffset":
+				{
+					"pitch": 0,
+					"yaw": 90,
+					"roll": -15
+				},
+				"attachScaleOffset":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"fields": [
+				{
+					"name": "RowName_80_90C885E245FEA60369938EAC6E1FCB25",
+					"type": "FName",
+					"valueText": "KnifeA"
+				},
+				{
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"25EF26B74CE07F18AE93F791C0684529\", \"Knife A\")"
+				},
+				{
+					"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"type": "UTexture2D*",
+					"valueText": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/knife.knife'"
+				},
+				{
+					"name": "Weapon_Image_68_E0882141471F7B74AF02C2B8D100E2BB",
+					"type": "UTexture2D*",
+					"valueText": "None"
+				},
+				{
+					"name": "Technical_Info_55_96E6AFB44DBF5A6518FAD09002832322",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"C25F72A04CF3FCAA2A5F4198DA094F76\", \"Colpo singolo\")"
+				},
+				{
+					"name": "SlotType_5_6A80ABC24B17EFCD8135D98F80F1052A",
+					"type": "TEnumAsByte<E_WeaponSlot>",
+					"valueText": "NewEnumerator2"
+				},
+				{
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"type": "USkeletalMesh*",
+					"valueText": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Knife_A.Knife_A'"
+				},
+				{
+					"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
+					"type": "TEnumAsByte<ALS_OverlayState>",
+					"valueText": "NewEnumerator10"
+				},
+				{
+					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/Paired/MM_AM_Knife_Attack.MM_AM_Knife_Attack'"
+				},
+				{
+					"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+					"type": "UAnimMontage*",
+					"valueText": "None"
+				},
+				{
+					"name": "HolsterSocket_22_F328E5D44A0493E4582BAC8E4D2C1D4B",
+					"type": "FName",
+					"valueText": "Knife_R"
+				},
+				{
+					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
+					"type": "FName",
+					"valueText": "Weapon_R"
+				},
+				{
+					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+					"type": "double",
+					"valueText": "20.000000"
+				},
+				{
+					"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "HitRange_58_53C8DCE547CE983F554D118DC7343869",
+					"type": "double",
+					"valueText": "50.000000"
+				},
+				{
+					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
+					"type": "double",
+					"valueText": "1.000000"
+				},
+				{
+					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
+					"type": "UClass*",
+					"valueText": "None"
+				},
+				{
+					"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+					"type": "UStaticMesh*",
+					"valueText": "None"
+				},
+				{
+					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
+					"type": "TEnumAsByte<E_AmmoType>",
+					"valueText": "NewEnumerator0"
+				},
+				{
+					"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
+					"type": "FVector",
+					"valueText": "(X=-8.000000,Y=4.000000,Z=-2.000000)"
+				},
+				{
+					"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
+					"type": "FRotator",
+					"valueText": "(Pitch=0.000000,Yaw=90.000000,Roll=-15.000000)"
+				},
+				{
+					"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
+					"type": "FVector",
+					"valueText": "(X=1.000000,Y=1.000000,Z=1.000000)"
+				}
+			]
+		},
+		{
+			"name": "KnifeB",
+			"data":
+			{
+				"rowName": "KnifeB",
+				"name": "Knife B",
+				"weapon_Icon": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/knife.knife'",
+				"weapon_Image": "None",
+				"technical_Info": "Colpo singolo",
+				"slotType": "Melee",
+				"skeletalMesh": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Knife_B.Knife_B'",
+				"aLS_OverlayState": "Knife",
+				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/Paired/MM_AM_Knife_Attack.MM_AM_Knife_Attack'",
+				"reloadMontage": "None",
+				"holsterSocket": "Knife_R",
+				"handSocket": "Weapon_R",
+				"baseDamage": 20,
+				"damageRadius": 0,
+				"traceRadius": 0,
+				"hitRange": 50,
+				"fireRate": 1,
+				"maxMagazineCapacity": 0,
+				"currentAmmoInMagazine": 0,
+				"currentReservedAmmo": 0,
+				"isExplosive?": false,
+				"isLoopHit?": false,
+				"isEquipped?": false,
+				"muzzleFX": "None",
+				"trailFX": "None",
+				"impactFX": "None",
+				"explosionFX": "None",
+				"projectileClass": "None",
+				"bUsesProjectile": false,
+				"projectileMesh": "None",
+				"projectileSpeed": 0,
+				"ammoType": "None",
+				"attachLocationOffset":
+				{
+					"x": -8,
+					"y": 4,
+					"z": -2
+				},
+				"attachRotationOffset":
+				{
+					"pitch": 0,
+					"yaw": 90,
+					"roll": -15
+				},
+				"attachScaleOffset":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"fields": [
+				{
+					"name": "RowName_80_90C885E245FEA60369938EAC6E1FCB25",
+					"type": "FName",
+					"valueText": "KnifeB"
+				},
+				{
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"27E0CBE2470FB04B947A578F8B6C91A8\", \"Knife B\")"
+				},
+				{
+					"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"type": "UTexture2D*",
+					"valueText": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/knife.knife'"
+				},
+				{
+					"name": "Weapon_Image_68_E0882141471F7B74AF02C2B8D100E2BB",
+					"type": "UTexture2D*",
+					"valueText": "None"
+				},
+				{
+					"name": "Technical_Info_55_96E6AFB44DBF5A6518FAD09002832322",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"FEF4E96A4F6C78D6DF2AE0887F361389\", \"Colpo singolo\")"
+				},
+				{
+					"name": "SlotType_5_6A80ABC24B17EFCD8135D98F80F1052A",
+					"type": "TEnumAsByte<E_WeaponSlot>",
+					"valueText": "NewEnumerator2"
+				},
+				{
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"type": "USkeletalMesh*",
+					"valueText": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Knife_B.Knife_B'"
+				},
+				{
+					"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
+					"type": "TEnumAsByte<ALS_OverlayState>",
+					"valueText": "NewEnumerator17"
+				},
+				{
+					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/Paired/MM_AM_Knife_Attack.MM_AM_Knife_Attack'"
+				},
+				{
+					"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+					"type": "UAnimMontage*",
+					"valueText": "None"
+				},
+				{
+					"name": "HolsterSocket_22_F328E5D44A0493E4582BAC8E4D2C1D4B",
+					"type": "FName",
+					"valueText": "Knife_R"
+				},
+				{
+					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
+					"type": "FName",
+					"valueText": "Weapon_R"
+				},
+				{
+					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+					"type": "double",
+					"valueText": "20.000000"
+				},
+				{
+					"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "HitRange_58_53C8DCE547CE983F554D118DC7343869",
+					"type": "double",
+					"valueText": "50.000000"
+				},
+				{
+					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
+					"type": "double",
+					"valueText": "1.000000"
+				},
+				{
+					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
+					"type": "UClass*",
+					"valueText": "None"
+				},
+				{
+					"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+					"type": "UStaticMesh*",
+					"valueText": "None"
+				},
+				{
+					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
+					"type": "TEnumAsByte<E_AmmoType>",
+					"valueText": "NewEnumerator0"
+				},
+				{
+					"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
+					"type": "FVector",
+					"valueText": "(X=-8.000000,Y=4.000000,Z=-2.000000)"
+				},
+				{
+					"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
+					"type": "FRotator",
+					"valueText": "(Pitch=0.000000,Yaw=90.000000,Roll=-15.000000)"
+				},
+				{
+					"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
+					"type": "FVector",
+					"valueText": "(X=1.000000,Y=1.000000,Z=1.000000)"
+				}
+			]
+		},
+		{
+			"name": "PistolA",
+			"data":
+			{
+				"rowName": "PistolA",
+				"name": "Pistol A",
+				"weapon_Icon": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/pistol.pistol'",
+				"weapon_Image": "None",
+				"technical_Info": "Colpo singolo, implica montage caricamento a fine caricatore (50 colpi)",
+				"slotType": "SmallFirearm",
+				"skeletalMesh": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Pistol_A.Pistol_A'",
+				"aLS_OverlayState": "Pistol 2H",
+				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Pistol_Fire.AM_MM_Pistol_Fire'",
+				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Pistol_Reload.AM_MM_Pistol_Reload'",
+				"holsterSocket": "Pistol_R",
+				"handSocket": "Weapon_R",
+				"baseDamage": 25,
+				"damageRadius": 0,
+				"traceRadius": 0,
+				"hitRange": 2100,
+				"fireRate": 1,
+				"maxMagazineCapacity": 12,
+				"currentAmmoInMagazine": 0,
+				"currentReservedAmmo": 0,
+				"isExplosive?": false,
+				"isLoopHit?": false,
+				"isEquipped?": false,
+				"muzzleFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Pistol_MuzzleFlash_01.P_Pistol_MuzzleFlash_01'",
+				"trailFX": "None",
+				"impactFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Small_01.P_Impact_Wood_Small_01'",
+				"explosionFX": "None",
+				"projectileClass": "None",
+				"bUsesProjectile": false,
+				"projectileMesh": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/PistolA_Ammo.PistolA_Ammo'",
+				"projectileSpeed": 0,
+				"ammoType": "Pistol",
+				"attachLocationOffset":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"attachRotationOffset":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"attachScaleOffset":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"fields": [
+				{
+					"name": "RowName_80_90C885E245FEA60369938EAC6E1FCB25",
+					"type": "FName",
+					"valueText": "PistolA"
+				},
+				{
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"1A711D674568B0E9384F079EA26049F7\", \"Pistol A\")"
+				},
+				{
+					"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"type": "UTexture2D*",
+					"valueText": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/pistol.pistol'"
+				},
+				{
+					"name": "Weapon_Image_68_E0882141471F7B74AF02C2B8D100E2BB",
+					"type": "UTexture2D*",
+					"valueText": "None"
+				},
+				{
+					"name": "Technical_Info_55_96E6AFB44DBF5A6518FAD09002832322",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"44E7DAD34BAF0364C88DF0894BACABC5\", \"Colpo singolo, implica montage caricamento a fine caricatore (50 colpi)\")"
+				},
+				{
+					"name": "SlotType_5_6A80ABC24B17EFCD8135D98F80F1052A",
+					"type": "TEnumAsByte<E_WeaponSlot>",
+					"valueText": "NewEnumerator1"
+				},
+				{
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"type": "USkeletalMesh*",
+					"valueText": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Pistol_A.Pistol_A'"
+				},
+				{
+					"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
+					"type": "TEnumAsByte<ALS_OverlayState>",
+					"valueText": "NewEnumerator10"
+				},
+				{
+					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Pistol_Fire.AM_MM_Pistol_Fire'"
+				},
+				{
+					"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Pistol_Reload.AM_MM_Pistol_Reload'"
+				},
+				{
+					"name": "HolsterSocket_22_F328E5D44A0493E4582BAC8E4D2C1D4B",
+					"type": "FName",
+					"valueText": "Pistol_R"
+				},
+				{
+					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
+					"type": "FName",
+					"valueText": "Weapon_R"
+				},
+				{
+					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+					"type": "double",
+					"valueText": "25.000000"
+				},
+				{
+					"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "HitRange_58_53C8DCE547CE983F554D118DC7343869",
+					"type": "double",
+					"valueText": "2100.000000"
+				},
+				{
+					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
+					"type": "double",
+					"valueText": "1.000000"
+				},
+				{
+					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
+					"type": "int32",
+					"valueText": "12"
+				},
+				{
+					"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Pistol_MuzzleFlash_01.P_Pistol_MuzzleFlash_01'"
+				},
+				{
+					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Small_01.P_Impact_Wood_Small_01'"
+				},
+				{
+					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
+					"type": "UClass*",
+					"valueText": "None"
+				},
+				{
+					"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+					"type": "UStaticMesh*",
+					"valueText": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/PistolA_Ammo.PistolA_Ammo'"
+				},
+				{
+					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
+					"type": "TEnumAsByte<E_AmmoType>",
+					"valueText": "NewEnumerator1"
+				},
+				{
+					"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
+					"type": "FVector",
+					"valueText": "(X=0.000000,Y=0.000000,Z=0.000000)"
+				},
+				{
+					"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
+					"type": "FRotator",
+					"valueText": "(Pitch=0.000000,Yaw=0.000000,Roll=0.000000)"
+				},
+				{
+					"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
+					"type": "FVector",
+					"valueText": "(X=1.000000,Y=1.000000,Z=1.000000)"
+				}
+			]
+		},
+		{
+			"name": "PistolB",
+			"data":
+			{
+				"rowName": "PistolB",
+				"name": "Pistol B",
+				"weapon_Icon": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/pistol.pistol'",
+				"weapon_Image": "None",
+				"technical_Info": "Colpo singolo, implica montage caricamento a fine caricatore (50 colpi)",
+				"slotType": "SmallFirearm",
+				"skeletalMesh": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Pistol_B.Pistol_B'",
+				"aLS_OverlayState": "Pistol 2H",
+				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Pistol_Fire.AM_MM_Pistol_Fire'",
+				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Pistol_Reload.AM_MM_Pistol_Reload'",
+				"holsterSocket": "Pistol_R",
+				"handSocket": "Weapon_R",
+				"baseDamage": 25,
+				"damageRadius": 0,
+				"traceRadius": 0,
+				"hitRange": 2100,
+				"fireRate": 1,
+				"maxMagazineCapacity": 12,
+				"currentAmmoInMagazine": 0,
+				"currentReservedAmmo": 0,
+				"isExplosive?": false,
+				"isLoopHit?": false,
+				"isEquipped?": false,
+				"muzzleFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Pistol_MuzzleFlash_01.P_Pistol_MuzzleFlash_01'",
+				"trailFX": "None",
+				"impactFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Small_01.P_Impact_Wood_Small_01'",
+				"explosionFX": "None",
+				"projectileClass": "None",
+				"bUsesProjectile": false,
+				"projectileMesh": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/PistolB_Ammo.PistolB_Ammo'",
+				"projectileSpeed": 0,
+				"ammoType": "Pistol",
+				"attachLocationOffset":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"attachRotationOffset":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"attachScaleOffset":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"fields": [
+				{
+					"name": "RowName_80_90C885E245FEA60369938EAC6E1FCB25",
+					"type": "FName",
+					"valueText": "PistolB"
+				},
+				{
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"A113222C4D3EE49F6C594B95B6AFEB31\", \"Pistol B\")"
+				},
+				{
+					"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"type": "UTexture2D*",
+					"valueText": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/pistol.pistol'"
+				},
+				{
+					"name": "Weapon_Image_68_E0882141471F7B74AF02C2B8D100E2BB",
+					"type": "UTexture2D*",
+					"valueText": "None"
+				},
+				{
+					"name": "Technical_Info_55_96E6AFB44DBF5A6518FAD09002832322",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"E6EDBB984DE8EDC0228F4FA25F0A896F\", \"Colpo singolo, implica montage caricamento a fine caricatore (50 colpi)\")"
+				},
+				{
+					"name": "SlotType_5_6A80ABC24B17EFCD8135D98F80F1052A",
+					"type": "TEnumAsByte<E_WeaponSlot>",
+					"valueText": "NewEnumerator1"
+				},
+				{
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"type": "USkeletalMesh*",
+					"valueText": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Pistol_B.Pistol_B'"
+				},
+				{
+					"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
+					"type": "TEnumAsByte<ALS_OverlayState>",
+					"valueText": "NewEnumerator10"
+				},
+				{
+					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Pistol_Fire.AM_MM_Pistol_Fire'"
+				},
+				{
+					"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Pistol_Reload.AM_MM_Pistol_Reload'"
+				},
+				{
+					"name": "HolsterSocket_22_F328E5D44A0493E4582BAC8E4D2C1D4B",
+					"type": "FName",
+					"valueText": "Pistol_R"
+				},
+				{
+					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
+					"type": "FName",
+					"valueText": "Weapon_R"
+				},
+				{
+					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+					"type": "double",
+					"valueText": "25.000000"
+				},
+				{
+					"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "HitRange_58_53C8DCE547CE983F554D118DC7343869",
+					"type": "double",
+					"valueText": "2100.000000"
+				},
+				{
+					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
+					"type": "double",
+					"valueText": "1.000000"
+				},
+				{
+					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
+					"type": "int32",
+					"valueText": "12"
+				},
+				{
+					"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Pistol_MuzzleFlash_01.P_Pistol_MuzzleFlash_01'"
+				},
+				{
+					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Small_01.P_Impact_Wood_Small_01'"
+				},
+				{
+					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
+					"type": "UClass*",
+					"valueText": "None"
+				},
+				{
+					"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+					"type": "UStaticMesh*",
+					"valueText": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/PistolB_Ammo.PistolB_Ammo'"
+				},
+				{
+					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
+					"type": "TEnumAsByte<E_AmmoType>",
+					"valueText": "NewEnumerator1"
+				},
+				{
+					"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
+					"type": "FVector",
+					"valueText": "(X=0.000000,Y=0.000000,Z=0.000000)"
+				},
+				{
+					"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
+					"type": "FRotator",
+					"valueText": "(Pitch=0.000000,Yaw=0.000000,Roll=0.000000)"
+				},
+				{
+					"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
+					"type": "FVector",
+					"valueText": "(X=1.000000,Y=1.000000,Z=1.000000)"
+				}
+			]
+		},
+		{
+			"name": "RocketLauncherA",
+			"data":
+			{
+				"rowName": "RocketLauncherA",
+				"name": "Rocket Launcher A",
+				"weapon_Icon": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'",
+				"weapon_Image": "None",
+				"technical_Info": "Arma esplosiva, Zoom Lungo(prima persona), Colpo singolo, implica Lento montage caricatore ogni colpo. La più letale",
+				"slotType": "BigWeapon",
+				"skeletalMesh": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Rocket_Launcher_A.Rocket_Launcher_A'",
+				"aLS_OverlayState": "Rifle",
+				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Anims/AM_MM_Fire_RocketLauncher_W.AM_MM_Fire_RocketLauncher_W'",
+				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_RocketLauncher_Reload.AM_MM_RocketLauncher_Reload'",
+				"holsterSocket": "Rifle",
+				"handSocket": "Weapon_R",
+				"baseDamage": 85,
+				"damageRadius": 500,
+				"traceRadius": 0,
+				"hitRange": 8000,
+				"fireRate": 1,
+				"maxMagazineCapacity": 1,
+				"currentAmmoInMagazine": 0,
+				"currentReservedAmmo": 0,
+				"isExplosive?": true,
+				"isLoopHit?": false,
+				"isEquipped?": false,
+				"muzzleFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_RocketLauncher_MuzzleFlash_Front_01.P_RocketLauncher_MuzzleFlash_Front_01'",
+				"trailFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_RocketLauncher_Trail_01.P_RocketLauncher_Trail_01'",
+				"impactFX": "None",
+				"explosionFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_RocketLauncher_Explosion_01.P_RocketLauncher_Explosion_01'",
+				"projectileClass": "None",
+				"bUsesProjectile": false,
+				"projectileMesh": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/RocketLauncherA_Ammo.RocketLauncherA_Ammo'",
+				"projectileSpeed": 2500,
+				"ammoType": "RocketLauncher",
+				"attachLocationOffset":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"attachRotationOffset":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"attachScaleOffset":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"fields": [
+				{
+					"name": "RowName_80_90C885E245FEA60369938EAC6E1FCB25",
+					"type": "FName",
+					"valueText": "RocketLauncherA"
+				},
+				{
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"54002FB645DFA0A7EEE00BA7A18CC664\", \"Rocket Launcher A\")"
+				},
+				{
+					"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"type": "UTexture2D*",
+					"valueText": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'"
+				},
+				{
+					"name": "Weapon_Image_68_E0882141471F7B74AF02C2B8D100E2BB",
+					"type": "UTexture2D*",
+					"valueText": "None"
+				},
+				{
+					"name": "Technical_Info_55_96E6AFB44DBF5A6518FAD09002832322",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"A5D908534053654F440187876ABD9C12\", \"Arma esplosiva, Zoom Lungo(prima persona), Colpo singolo, implica Lento montage caricatore ogni colpo. La più letale\")"
+				},
+				{
+					"name": "SlotType_5_6A80ABC24B17EFCD8135D98F80F1052A",
+					"type": "TEnumAsByte<E_WeaponSlot>",
+					"valueText": "NewEnumerator3"
+				},
+				{
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"type": "USkeletalMesh*",
+					"valueText": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Rocket_Launcher_A.Rocket_Launcher_A'"
+				},
+				{
+					"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
+					"type": "TEnumAsByte<ALS_OverlayState>",
+					"valueText": "NewEnumerator1"
+				},
+				{
+					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Anims/AM_MM_Fire_RocketLauncher_W.AM_MM_Fire_RocketLauncher_W'"
+				},
+				{
+					"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_RocketLauncher_Reload.AM_MM_RocketLauncher_Reload'"
+				},
+				{
+					"name": "HolsterSocket_22_F328E5D44A0493E4582BAC8E4D2C1D4B",
+					"type": "FName",
+					"valueText": "Rifle"
+				},
+				{
+					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
+					"type": "FName",
+					"valueText": "Weapon_R"
+				},
+				{
+					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+					"type": "double",
+					"valueText": "85.000000"
+				},
+				{
+					"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+					"type": "double",
+					"valueText": "500.000000"
+				},
+				{
+					"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "HitRange_58_53C8DCE547CE983F554D118DC7343869",
+					"type": "double",
+					"valueText": "8000.000000"
+				},
+				{
+					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
+					"type": "double",
+					"valueText": "1.000000"
+				},
+				{
+					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
+					"type": "int32",
+					"valueText": "1"
+				},
+				{
+					"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+					"type": "bool",
+					"valueText": "True"
+				},
+				{
+					"name": "IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_RocketLauncher_MuzzleFlash_Front_01.P_RocketLauncher_MuzzleFlash_Front_01'"
+				},
+				{
+					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_RocketLauncher_Trail_01.P_RocketLauncher_Trail_01'"
+				},
+				{
+					"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_RocketLauncher_Explosion_01.P_RocketLauncher_Explosion_01'"
+				},
+				{
+					"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
+					"type": "UClass*",
+					"valueText": "None"
+				},
+				{
+					"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+					"type": "UStaticMesh*",
+					"valueText": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/RocketLauncherA_Ammo.RocketLauncherA_Ammo'"
+				},
+				{
+					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+					"type": "double",
+					"valueText": "2500.000000"
+				},
+				{
+					"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
+					"type": "TEnumAsByte<E_AmmoType>",
+					"valueText": "NewEnumerator6"
+				},
+				{
+					"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
+					"type": "FVector",
+					"valueText": "(X=0.000000,Y=0.000000,Z=0.000000)"
+				},
+				{
+					"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
+					"type": "FRotator",
+					"valueText": "(Pitch=0.000000,Yaw=0.000000,Roll=0.000000)"
+				},
+				{
+					"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
+					"type": "FVector",
+					"valueText": "(X=1.000000,Y=1.000000,Z=1.000000)"
+				}
+			]
+		},
+		{
+			"name": "RocketLauncherB",
+			"data":
+			{
+				"rowName": "RocketLauncherB",
+				"name": "Rocket Launcher B",
+				"weapon_Icon": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'",
+				"weapon_Image": "None",
+				"technical_Info": "Arma esplosiva, Zoom Lungo(prima persona), Colpo singolo, implica Lento montage caricatore ogni colpo. La più letale",
+				"slotType": "BigWeapon",
+				"skeletalMesh": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Rocket_launcher_B.Rocket_launcher_B'",
+				"aLS_OverlayState": "Rifle",
+				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Anims/AM_MM_Fire_RocketLauncher_W.AM_MM_Fire_RocketLauncher_W'",
+				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_RocketLauncher_Reload.AM_MM_RocketLauncher_Reload'",
+				"holsterSocket": "Rifle",
+				"handSocket": "Weapon_R",
+				"baseDamage": 85,
+				"damageRadius": 2000,
+				"traceRadius": 0,
+				"hitRange": 8000,
+				"fireRate": 1,
+				"maxMagazineCapacity": 1,
+				"currentAmmoInMagazine": 0,
+				"currentReservedAmmo": 0,
+				"isExplosive?": true,
+				"isLoopHit?": false,
+				"isEquipped?": false,
+				"muzzleFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_RocketLauncher_MuzzleFlash_Front_01.P_RocketLauncher_MuzzleFlash_Front_01'",
+				"trailFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_RocketLauncher_Trail_01.P_RocketLauncher_Trail_01'",
+				"impactFX": "None",
+				"explosionFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_RocketLauncher_Explosion_01.P_RocketLauncher_Explosion_01'",
+				"projectileClass": "None",
+				"bUsesProjectile": false,
+				"projectileMesh": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/RocketLauncherB_Ammo.RocketLauncherB_Ammo'",
+				"projectileSpeed": 2500,
+				"ammoType": "RocketLauncher",
+				"attachLocationOffset":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"attachRotationOffset":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"attachScaleOffset":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"fields": [
+				{
+					"name": "RowName_80_90C885E245FEA60369938EAC6E1FCB25",
+					"type": "FName",
+					"valueText": "RocketLauncherB"
+				},
+				{
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"0BAB9CFB4EAFD203B7D67F8CA39B865F\", \"Rocket Launcher B\")"
+				},
+				{
+					"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"type": "UTexture2D*",
+					"valueText": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'"
+				},
+				{
+					"name": "Weapon_Image_68_E0882141471F7B74AF02C2B8D100E2BB",
+					"type": "UTexture2D*",
+					"valueText": "None"
+				},
+				{
+					"name": "Technical_Info_55_96E6AFB44DBF5A6518FAD09002832322",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"72F8C870413081962B6C11BDF19D2809\", \"Arma esplosiva, Zoom Lungo(prima persona), Colpo singolo, implica Lento montage caricatore ogni colpo. La più letale\")"
+				},
+				{
+					"name": "SlotType_5_6A80ABC24B17EFCD8135D98F80F1052A",
+					"type": "TEnumAsByte<E_WeaponSlot>",
+					"valueText": "NewEnumerator3"
+				},
+				{
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"type": "USkeletalMesh*",
+					"valueText": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Rocket_launcher_B.Rocket_launcher_B'"
+				},
+				{
+					"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
+					"type": "TEnumAsByte<ALS_OverlayState>",
+					"valueText": "NewEnumerator1"
+				},
+				{
+					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Anims/AM_MM_Fire_RocketLauncher_W.AM_MM_Fire_RocketLauncher_W'"
+				},
+				{
+					"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_RocketLauncher_Reload.AM_MM_RocketLauncher_Reload'"
+				},
+				{
+					"name": "HolsterSocket_22_F328E5D44A0493E4582BAC8E4D2C1D4B",
+					"type": "FName",
+					"valueText": "Rifle"
+				},
+				{
+					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
+					"type": "FName",
+					"valueText": "Weapon_R"
+				},
+				{
+					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+					"type": "double",
+					"valueText": "85.000000"
+				},
+				{
+					"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+					"type": "double",
+					"valueText": "2000.000000"
+				},
+				{
+					"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "HitRange_58_53C8DCE547CE983F554D118DC7343869",
+					"type": "double",
+					"valueText": "8000.000000"
+				},
+				{
+					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
+					"type": "double",
+					"valueText": "1.000000"
+				},
+				{
+					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
+					"type": "int32",
+					"valueText": "1"
+				},
+				{
+					"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+					"type": "bool",
+					"valueText": "True"
+				},
+				{
+					"name": "IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_RocketLauncher_MuzzleFlash_Front_01.P_RocketLauncher_MuzzleFlash_Front_01'"
+				},
+				{
+					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_RocketLauncher_Trail_01.P_RocketLauncher_Trail_01'"
+				},
+				{
+					"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_RocketLauncher_Explosion_01.P_RocketLauncher_Explosion_01'"
+				},
+				{
+					"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
+					"type": "UClass*",
+					"valueText": "None"
+				},
+				{
+					"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+					"type": "UStaticMesh*",
+					"valueText": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/RocketLauncherB_Ammo.RocketLauncherB_Ammo'"
+				},
+				{
+					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+					"type": "double",
+					"valueText": "2500.000000"
+				},
+				{
+					"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
+					"type": "TEnumAsByte<E_AmmoType>",
+					"valueText": "NewEnumerator6"
+				},
+				{
+					"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
+					"type": "FVector",
+					"valueText": "(X=0.000000,Y=0.000000,Z=0.000000)"
+				},
+				{
+					"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
+					"type": "FRotator",
+					"valueText": "(Pitch=0.000000,Yaw=0.000000,Roll=0.000000)"
+				},
+				{
+					"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
+					"type": "FVector",
+					"valueText": "(X=1.000000,Y=1.000000,Z=1.000000)"
+				}
+			]
+		},
+		{
+			"name": "ShotGunA",
+			"data":
+			{
+				"rowName": "ShotGunA",
+				"name": "ShotGun A",
+				"weapon_Icon": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/pistol.pistol'",
+				"weapon_Image": "None",
+				"technical_Info": "Colpo singolo, mediamente lenta ma la più forte tra le armi small",
+				"slotType": "SmallFirearm",
+				"skeletalMesh": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Shotgun_A.Shotgun_A'",
+				"aLS_OverlayState": "Pistol 2H",
+				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Shotgun_Fire.AM_MM_Shotgun_Fire'",
+				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Shotgun_Reload.AM_MM_Shotgun_Reload'",
+				"holsterSocket": "Pistol_R",
+				"handSocket": "Weapon_R",
+				"baseDamage": 35,
+				"damageRadius": 0,
+				"traceRadius": 30,
+				"hitRange": 1500,
+				"fireRate": 1,
+				"maxMagazineCapacity": 20,
+				"currentAmmoInMagazine": 0,
+				"currentReservedAmmo": 0,
+				"isExplosive?": false,
+				"isLoopHit?": false,
+				"isEquipped?": false,
+				"muzzleFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Shotgun_MuzzleFlash_01.P_Shotgun_MuzzleFlash_01'",
+				"trailFX": "None",
+				"impactFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Medium_01.P_Impact_Wood_Medium_01'",
+				"explosionFX": "None",
+				"projectileClass": "None",
+				"bUsesProjectile": false,
+				"projectileMesh": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/ShotgunA_Ammo.ShotgunA_Ammo'",
+				"projectileSpeed": 0,
+				"ammoType": "ShotGun",
+				"attachLocationOffset":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"attachRotationOffset":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"attachScaleOffset":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"fields": [
+				{
+					"name": "RowName_80_90C885E245FEA60369938EAC6E1FCB25",
+					"type": "FName",
+					"valueText": "ShotGunA"
+				},
+				{
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"C34080A34A1C470CCBC3D3A021D3859C\", \"ShotGun A\")"
+				},
+				{
+					"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"type": "UTexture2D*",
+					"valueText": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/pistol.pistol'"
+				},
+				{
+					"name": "Weapon_Image_68_E0882141471F7B74AF02C2B8D100E2BB",
+					"type": "UTexture2D*",
+					"valueText": "None"
+				},
+				{
+					"name": "Technical_Info_55_96E6AFB44DBF5A6518FAD09002832322",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"8ABD6AA24798A63A6FDCE2840165C07E\", \"Colpo singolo, mediamente lenta ma la più forte tra le armi small\")"
+				},
+				{
+					"name": "SlotType_5_6A80ABC24B17EFCD8135D98F80F1052A",
+					"type": "TEnumAsByte<E_WeaponSlot>",
+					"valueText": "NewEnumerator1"
+				},
+				{
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"type": "USkeletalMesh*",
+					"valueText": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Shotgun_A.Shotgun_A'"
+				},
+				{
+					"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
+					"type": "TEnumAsByte<ALS_OverlayState>",
+					"valueText": "NewEnumerator10"
+				},
+				{
+					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Shotgun_Fire.AM_MM_Shotgun_Fire'"
+				},
+				{
+					"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Shotgun_Reload.AM_MM_Shotgun_Reload'"
+				},
+				{
+					"name": "HolsterSocket_22_F328E5D44A0493E4582BAC8E4D2C1D4B",
+					"type": "FName",
+					"valueText": "Pistol_R"
+				},
+				{
+					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
+					"type": "FName",
+					"valueText": "Weapon_R"
+				},
+				{
+					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+					"type": "double",
+					"valueText": "35.000000"
+				},
+				{
+					"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
+					"type": "double",
+					"valueText": "30.000000"
+				},
+				{
+					"name": "HitRange_58_53C8DCE547CE983F554D118DC7343869",
+					"type": "double",
+					"valueText": "1500.000000"
+				},
+				{
+					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
+					"type": "double",
+					"valueText": "1.000000"
+				},
+				{
+					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
+					"type": "int32",
+					"valueText": "20"
+				},
+				{
+					"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Shotgun_MuzzleFlash_01.P_Shotgun_MuzzleFlash_01'"
+				},
+				{
+					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Medium_01.P_Impact_Wood_Medium_01'"
+				},
+				{
+					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
+					"type": "UClass*",
+					"valueText": "None"
+				},
+				{
+					"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+					"type": "UStaticMesh*",
+					"valueText": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/ShotgunA_Ammo.ShotgunA_Ammo'"
+				},
+				{
+					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
+					"type": "TEnumAsByte<E_AmmoType>",
+					"valueText": "NewEnumerator2"
+				},
+				{
+					"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
+					"type": "FVector",
+					"valueText": "(X=0.000000,Y=0.000000,Z=0.000000)"
+				},
+				{
+					"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
+					"type": "FRotator",
+					"valueText": "(Pitch=0.000000,Yaw=0.000000,Roll=0.000000)"
+				},
+				{
+					"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
+					"type": "FVector",
+					"valueText": "(X=1.000000,Y=1.000000,Z=1.000000)"
+				}
+			]
+		},
+		{
+			"name": "ShotGunB",
+			"data":
+			{
+				"rowName": "ShotGunB",
+				"name": "ShotGun B",
+				"weapon_Icon": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/pistol.pistol'",
+				"weapon_Image": "None",
+				"technical_Info": "Colpo singolo, mediamente lenta ma la più forte tra le armi small",
+				"slotType": "SmallFirearm",
+				"skeletalMesh": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Shotgun_B.Shotgun_B'",
+				"aLS_OverlayState": "Pistol 2H",
+				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Shotgun_Fire.AM_MM_Shotgun_Fire'",
+				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Shotgun_Reload.AM_MM_Shotgun_Reload'",
+				"holsterSocket": "Pistol_R",
+				"handSocket": "Weapon_R",
+				"baseDamage": 35,
+				"damageRadius": 0,
+				"traceRadius": 30,
+				"hitRange": 1500,
+				"fireRate": 1,
+				"maxMagazineCapacity": 20,
+				"currentAmmoInMagazine": 0,
+				"currentReservedAmmo": 0,
+				"isExplosive?": false,
+				"isLoopHit?": false,
+				"isEquipped?": false,
+				"muzzleFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Shotgun_MuzzleFlash_01.P_Shotgun_MuzzleFlash_01'",
+				"trailFX": "None",
+				"impactFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Small_01.P_Impact_Wood_Small_01'",
+				"explosionFX": "None",
+				"projectileClass": "None",
+				"bUsesProjectile": false,
+				"projectileMesh": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/ShotgunB_Ammo.ShotgunB_Ammo'",
+				"projectileSpeed": 0,
+				"ammoType": "ShotGun",
+				"attachLocationOffset":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"attachRotationOffset":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"attachScaleOffset":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"fields": [
+				{
+					"name": "RowName_80_90C885E245FEA60369938EAC6E1FCB25",
+					"type": "FName",
+					"valueText": "ShotGunB"
+				},
+				{
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"F51837574397B342FBFF7CA38CF8C4AE\", \"ShotGun B\")"
+				},
+				{
+					"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"type": "UTexture2D*",
+					"valueText": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/pistol.pistol'"
+				},
+				{
+					"name": "Weapon_Image_68_E0882141471F7B74AF02C2B8D100E2BB",
+					"type": "UTexture2D*",
+					"valueText": "None"
+				},
+				{
+					"name": "Technical_Info_55_96E6AFB44DBF5A6518FAD09002832322",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"05D61D554AE353872D76F488EAC4AAB8\", \"Colpo singolo, mediamente lenta ma la più forte tra le armi small\")"
+				},
+				{
+					"name": "SlotType_5_6A80ABC24B17EFCD8135D98F80F1052A",
+					"type": "TEnumAsByte<E_WeaponSlot>",
+					"valueText": "NewEnumerator1"
+				},
+				{
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"type": "USkeletalMesh*",
+					"valueText": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Shotgun_B.Shotgun_B'"
+				},
+				{
+					"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
+					"type": "TEnumAsByte<ALS_OverlayState>",
+					"valueText": "NewEnumerator10"
+				},
+				{
+					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Shotgun_Fire.AM_MM_Shotgun_Fire'"
+				},
+				{
+					"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Shotgun_Reload.AM_MM_Shotgun_Reload'"
+				},
+				{
+					"name": "HolsterSocket_22_F328E5D44A0493E4582BAC8E4D2C1D4B",
+					"type": "FName",
+					"valueText": "Pistol_R"
+				},
+				{
+					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
+					"type": "FName",
+					"valueText": "Weapon_R"
+				},
+				{
+					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+					"type": "double",
+					"valueText": "35.000000"
+				},
+				{
+					"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
+					"type": "double",
+					"valueText": "30.000000"
+				},
+				{
+					"name": "HitRange_58_53C8DCE547CE983F554D118DC7343869",
+					"type": "double",
+					"valueText": "1500.000000"
+				},
+				{
+					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
+					"type": "double",
+					"valueText": "1.000000"
+				},
+				{
+					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
+					"type": "int32",
+					"valueText": "20"
+				},
+				{
+					"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Shotgun_MuzzleFlash_01.P_Shotgun_MuzzleFlash_01'"
+				},
+				{
+					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Small_01.P_Impact_Wood_Small_01'"
+				},
+				{
+					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
+					"type": "UClass*",
+					"valueText": "None"
+				},
+				{
+					"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+					"type": "UStaticMesh*",
+					"valueText": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/ShotgunB_Ammo.ShotgunB_Ammo'"
+				},
+				{
+					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
+					"type": "TEnumAsByte<E_AmmoType>",
+					"valueText": "NewEnumerator2"
+				},
+				{
+					"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
+					"type": "FVector",
+					"valueText": "(X=0.000000,Y=0.000000,Z=0.000000)"
+				},
+				{
+					"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
+					"type": "FRotator",
+					"valueText": "(Pitch=0.000000,Yaw=0.000000,Roll=0.000000)"
+				},
+				{
+					"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
+					"type": "FVector",
+					"valueText": "(X=1.000000,Y=1.000000,Z=1.000000)"
+				}
+			]
+		},
+		{
+			"name": "SniperRifleA",
+			"data":
+			{
+				"rowName": "SniperRifleA",
+				"name": "Sniper Rifle A",
+				"weapon_Icon": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'",
+				"weapon_Image": "None",
+				"technical_Info": "Molto Zoom quando si mira, più preciso, un colpo alla volta, più lenta delle altre, implica caricamento. però letale.",
+				"slotType": "BigWeapon",
+				"skeletalMesh": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Sniper_Rifle_A.Sniper_Rifle_A'",
+				"aLS_OverlayState": "Rifle",
+				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Fire.AM_MM_Rifle_Fire'",
+				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_SniperRifle_Reload.AM_MM_SniperRifle_Reload'",
+				"holsterSocket": "Rifle",
+				"handSocket": "Weapon_R",
+				"baseDamage": 75,
+				"damageRadius": 0,
+				"traceRadius": 0,
+				"hitRange": 8000,
+				"fireRate": 1,
+				"maxMagazineCapacity": 1,
+				"currentAmmoInMagazine": 0,
+				"currentReservedAmmo": 0,
+				"isExplosive?": false,
+				"isLoopHit?": false,
+				"isEquipped?": false,
+				"muzzleFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_SniperRifle_MuzzleFlash_01.P_SniperRifle_MuzzleFlash_01'",
+				"trailFX": "None",
+				"impactFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Small_01.P_Impact_Wood_Small_01'",
+				"explosionFX": "None",
+				"projectileClass": "None",
+				"bUsesProjectile": false,
+				"projectileMesh": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/SniperRifleA_Ammo.SniperRifleA_Ammo'",
+				"projectileSpeed": 0,
+				"ammoType": "SniperRifle",
+				"attachLocationOffset":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"attachRotationOffset":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"attachScaleOffset":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"fields": [
+				{
+					"name": "RowName_80_90C885E245FEA60369938EAC6E1FCB25",
+					"type": "FName",
+					"valueText": "SniperRifleA"
+				},
+				{
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"B1BEB97544394AF22074FB8ACD42AA36\", \"Sniper Rifle A\")"
+				},
+				{
+					"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"type": "UTexture2D*",
+					"valueText": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'"
+				},
+				{
+					"name": "Weapon_Image_68_E0882141471F7B74AF02C2B8D100E2BB",
+					"type": "UTexture2D*",
+					"valueText": "None"
+				},
+				{
+					"name": "Technical_Info_55_96E6AFB44DBF5A6518FAD09002832322",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"61093FE14E36B93925DEDCB3B5AAB3F9\", \"Molto Zoom quando si mira, più preciso, un colpo alla volta, più lenta delle altre, implica caricamento. però letale.\")"
+				},
+				{
+					"name": "SlotType_5_6A80ABC24B17EFCD8135D98F80F1052A",
+					"type": "TEnumAsByte<E_WeaponSlot>",
+					"valueText": "NewEnumerator3"
+				},
+				{
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"type": "USkeletalMesh*",
+					"valueText": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Sniper_Rifle_A.Sniper_Rifle_A'"
+				},
+				{
+					"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
+					"type": "TEnumAsByte<ALS_OverlayState>",
+					"valueText": "NewEnumerator1"
+				},
+				{
+					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Fire.AM_MM_Rifle_Fire'"
+				},
+				{
+					"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_SniperRifle_Reload.AM_MM_SniperRifle_Reload'"
+				},
+				{
+					"name": "HolsterSocket_22_F328E5D44A0493E4582BAC8E4D2C1D4B",
+					"type": "FName",
+					"valueText": "Rifle"
+				},
+				{
+					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
+					"type": "FName",
+					"valueText": "Weapon_R"
+				},
+				{
+					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+					"type": "double",
+					"valueText": "75.000000"
+				},
+				{
+					"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "HitRange_58_53C8DCE547CE983F554D118DC7343869",
+					"type": "double",
+					"valueText": "8000.000000"
+				},
+				{
+					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
+					"type": "double",
+					"valueText": "1.000000"
+				},
+				{
+					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
+					"type": "int32",
+					"valueText": "1"
+				},
+				{
+					"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_SniperRifle_MuzzleFlash_01.P_SniperRifle_MuzzleFlash_01'"
+				},
+				{
+					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Small_01.P_Impact_Wood_Small_01'"
+				},
+				{
+					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
+					"type": "UClass*",
+					"valueText": "None"
+				},
+				{
+					"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+					"type": "UStaticMesh*",
+					"valueText": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/SniperRifleA_Ammo.SniperRifleA_Ammo'"
+				},
+				{
+					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
+					"type": "TEnumAsByte<E_AmmoType>",
+					"valueText": "NewEnumerator4"
+				},
+				{
+					"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
+					"type": "FVector",
+					"valueText": "(X=0.000000,Y=0.000000,Z=0.000000)"
+				},
+				{
+					"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
+					"type": "FRotator",
+					"valueText": "(Pitch=0.000000,Yaw=0.000000,Roll=0.000000)"
+				},
+				{
+					"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
+					"type": "FVector",
+					"valueText": "(X=1.000000,Y=1.000000,Z=1.000000)"
+				}
+			]
+		},
+		{
+			"name": "SniperRifleB",
+			"data":
+			{
+				"rowName": "SniperRifleB",
+				"name": "Sniper Rifle B",
+				"weapon_Icon": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'",
+				"weapon_Image": "None",
+				"technical_Info": "Molto Zoom quando si mira, più preciso, un colpo alla volta, più lenta delle altre, implica caricamento. però letale.",
+				"slotType": "BigWeapon",
+				"skeletalMesh": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Sniper_Rifle_B.Sniper_Rifle_B'",
+				"aLS_OverlayState": "Rifle",
+				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Fire.AM_MM_Rifle_Fire'",
+				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_SniperRifle_Reload.AM_MM_SniperRifle_Reload'",
+				"holsterSocket": "Rifle",
+				"handSocket": "Weapon_R",
+				"baseDamage": 75,
+				"damageRadius": 0,
+				"traceRadius": 0,
+				"hitRange": 8000,
+				"fireRate": 1,
+				"maxMagazineCapacity": 1,
+				"currentAmmoInMagazine": 0,
+				"currentReservedAmmo": 0,
+				"isExplosive?": false,
+				"isLoopHit?": false,
+				"isEquipped?": false,
+				"muzzleFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_SniperRifle_MuzzleFlash_01.P_SniperRifle_MuzzleFlash_01'",
+				"trailFX": "None",
+				"impactFX": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Small_01.P_Impact_Wood_Small_01'",
+				"explosionFX": "None",
+				"projectileClass": "None",
+				"bUsesProjectile": false,
+				"projectileMesh": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/SniperRifleB_Ammo.SniperRifleB_Ammo'",
+				"projectileSpeed": 0,
+				"ammoType": "SniperRifle",
+				"attachLocationOffset":
+				{
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"attachRotationOffset":
+				{
+					"pitch": 0,
+					"yaw": 0,
+					"roll": 0
+				},
+				"attachScaleOffset":
+				{
+					"x": 1,
+					"y": 1,
+					"z": 1
+				}
+			},
+			"fields": [
+				{
+					"name": "RowName_80_90C885E245FEA60369938EAC6E1FCB25",
+					"type": "FName",
+					"valueText": "SniperRifleB"
+				},
+				{
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"D260CA9344716421A8E37FB675C174F1\", \"Sniper Rifle B\")"
+				},
+				{
+					"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"type": "UTexture2D*",
+					"valueText": "/Script/Engine.Texture2D'/Game/ChuckContent/UI/files/ICONS/rifle.rifle'"
+				},
+				{
+					"name": "Weapon_Image_68_E0882141471F7B74AF02C2B8D100E2BB",
+					"type": "UTexture2D*",
+					"valueText": "None"
+				},
+				{
+					"name": "Technical_Info_55_96E6AFB44DBF5A6518FAD09002832322",
+					"type": "FText",
+					"valueText": "NSLOCTEXT(\"[200EDD5E634AC4E4C6A6C05E1555DD82]\", \"BD4136694741A483E616F1BE8CD715E6\", \"Molto Zoom quando si mira, più preciso, un colpo alla volta, più lenta delle altre, implica caricamento. però letale.\")"
+				},
+				{
+					"name": "SlotType_5_6A80ABC24B17EFCD8135D98F80F1052A",
+					"type": "TEnumAsByte<E_WeaponSlot>",
+					"valueText": "NewEnumerator3"
+				},
+				{
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"type": "USkeletalMesh*",
+					"valueText": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Sniper_Rifle_B.Sniper_Rifle_B'"
+				},
+				{
+					"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
+					"type": "TEnumAsByte<ALS_OverlayState>",
+					"valueText": "NewEnumerator1"
+				},
+				{
+					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Fire.AM_MM_Rifle_Fire'"
+				},
+				{
+					"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+					"type": "UAnimMontage*",
+					"valueText": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_SniperRifle_Reload.AM_MM_SniperRifle_Reload'"
+				},
+				{
+					"name": "HolsterSocket_22_F328E5D44A0493E4582BAC8E4D2C1D4B",
+					"type": "FName",
+					"valueText": "Rifle"
+				},
+				{
+					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
+					"type": "FName",
+					"valueText": "Weapon_R"
+				},
+				{
+					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+					"type": "double",
+					"valueText": "75.000000"
+				},
+				{
+					"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "HitRange_58_53C8DCE547CE983F554D118DC7343869",
+					"type": "double",
+					"valueText": "8000.000000"
+				},
+				{
+					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
+					"type": "double",
+					"valueText": "1.000000"
+				},
+				{
+					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
+					"type": "int32",
+					"valueText": "1"
+				},
+				{
+					"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "CurrentReservedAmmo_77_63C0F0BC400C091CCA9E73B44C19DA22",
+					"type": "int32",
+					"valueText": "0"
+				},
+				{
+					"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsLoopHit?_60_4D6D7C754FE89BCD1232E1834B3976D1",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "IsEquipped?_82_B4C251E048F3C287DAC918BA8E28F5BC",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_SniperRifle_MuzzleFlash_01.P_SniperRifle_MuzzleFlash_01'"
+				},
+				{
+					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
+					"type": "UParticleSystem*",
+					"valueText": "/Script/Engine.ParticleSystem'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Small_01.P_Impact_Wood_Small_01'"
+				},
+				{
+					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+					"type": "UParticleSystem*",
+					"valueText": "None"
+				},
+				{
+					"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
+					"type": "UClass*",
+					"valueText": "None"
+				},
+				{
+					"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
+					"type": "bool",
+					"valueText": "False"
+				},
+				{
+					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+					"type": "UStaticMesh*",
+					"valueText": "/Script/Engine.StaticMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/SniperRifleB_Ammo.SniperRifleB_Ammo'"
+				},
+				{
+					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+					"type": "double",
+					"valueText": "0.000000"
+				},
+				{
+					"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
+					"type": "TEnumAsByte<E_AmmoType>",
+					"valueText": "NewEnumerator4"
+				},
+				{
+					"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
+					"type": "FVector",
+					"valueText": "(X=0.000000,Y=0.000000,Z=0.000000)"
+				},
+				{
+					"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
+					"type": "FRotator",
+					"valueText": "(Pitch=0.000000,Yaw=0.000000,Roll=0.000000)"
+				},
+				{
+					"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
+					"type": "FVector",
+					"valueText": "(X=1.000000,Y=1.000000,Z=1.000000)"
+				}
+			]
+		}
+	],
+	"dependencies": [
+		"/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_GrenadeLauncher_Reload",
+		"/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Pistol_Fire",
+		"/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Pistol_Reload",
+		"/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Fire",
+		"/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Reload",
+		"/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_RocketLauncher_Reload",
+		"/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Shotgun_Fire",
+		"/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Shotgun_Reload",
+		"/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_SniperRifle_Reload",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_AssaultRifle_MuzzleFlash",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_AssaultRifle_Tracer_01",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Grenade_Explosion_01",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Grenade_MuzzleFlash_01",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Grenade_Trail_01",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Medium_01",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Impact_Wood_Small_01",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Pistol_MuzzleFlash_01",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_RocketLauncher_Explosion_01",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_RocketLauncher_MuzzleFlash_Front_01",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_RocketLauncher_Trail_01",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_Shotgun_MuzzleFlash_01",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/FX/P_SniperRifle_MuzzleFlash_01",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Anims/AM_MM_Fire_GrenadeLauncher_W",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Anims/AM_MM_Fire_RocketLauncher_W",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Assault_Rifle_B",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/AssaultRifleB_Ammo",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Grenade_Launcher_B",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Knife_B",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Pistol_B",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/PistolB_Ammo",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Rocket_launcher_B",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/RocketLauncherB_Ammo",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Shotgun_B",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/ShotgunB_Ammo",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Sniper_Rifle_B",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/SniperRifleB_Ammo",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Assault_Rifle_A",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/AssaultRifleA_Ammo",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/GrenadeLauncherA_Ammo",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Knife_A",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Pistol_A",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/PistolA_Ammo",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Rocket_Launcher_A",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/RocketLauncherA_Ammo",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Shotgun_A",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/ShotgunA_Ammo",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Sniper_Rifle_A",
+		"/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/SniperRifleA_Ammo",
+		"/Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/Paired/MM_AM_Knife_Attack",
+		"/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData",
+		"/Game/ChuckContent/UI/files/ICONS/knife",
+		"/Game/ChuckContent/UI/files/ICONS/pistol",
+		"/Game/ChuckContent/UI/files/ICONS/rifle"
+	],
+	"relations": [
+		{
+			"name": "S_WeaponData",
+			"path": "/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+			"assetType": "Struct"
+		}
+	],
+	"semanticSummary":
+	{
+		"probableSystem": "Weapons / Combat",
+		"classificationConfidence": "heuristic",
+		"summary": "Data Table descritta tramite Row Struct, campi, righe e relazioni statiche rilevate.",
+		"importantVariables": [],
+		"importantFunctions": [],
+		"importantEvents": [],
+		"relatedAssets": [
+			"S_WeaponData"
+		],
+		"complexity":
+		{
+			"graphCount": 0,
+			"nodeCount": 0,
+			"pinCount": 0,
+			"linkCount": 0
+		},
+		"notes": [
+			"Classificazione euristica dedotta da nome, path e tipo asset (Weapons / Combat)."
+		]
+	},
+	"shortAssetFolder": "DT_Weapon__94E13377",
+	"pathHash": "94E13377"
+}

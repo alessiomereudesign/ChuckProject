@@ -1,0 +1,82 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G012
+Graph: GetGetUpAnimation
+FlowId: F001
+Entry: Get Get Up Animation
+NodeGuid: 30E82AF04092CA2BA2AFEA9F59E0FBDE
+
+Exec Flow:
+1. Get Get Up Animation [K2Node_FunctionEntry] 30E82AF04092CA2BA2AFEA9F59E0FBDE
+2. Ramo [K2Node_IfThenElse] 23C34B5C4587167ABC9F3E8E09C61F7A
+3. Nodo di restituzione [K2Node_FunctionResult] 16D8697F46D76FA86782E5B346D20A96
+4. Get GetUpFront_Default [K2Node_VariableGet] 52BE0BC44AF850C114DDE89669CF3C09
+5. Switch on ALS_OverlayState [K2Node_SwitchEnum] 99A72D6C42299DF7571238A4C8C2CCDC
+6. Get OverlayState [K2Node_VariableGet] A6A9ED19495AF1460F4007B47F548056
+7. Nodo di reindirizzamento [K2Node_Knot] 20B2488941257334CB1B33BBFED7B2A4
+8. Nodo di reindirizzamento [K2Node_Knot] D97392B4420679C832C4B5B1810FBBB5
+9. Nodo di restituzione [K2Node_FunctionResult] 5434F192449CB46A5E228BACF8A7B73A
+10. Get GetUpFront_LH [K2Node_VariableGet] 59598275482E09A6C5AD00B67ADA6EF0
+11. Nodo di restituzione [K2Node_FunctionResult] 5DEB7A86495530E675F457861EE3BFEB
+12. Get GetUpFront_2H [K2Node_VariableGet] 11FDDBCA488B47A04F2F67B7AE23761D
+13. Nodo di restituzione [K2Node_FunctionResult] E792383443CD4865FB6F2FA276F16A4C
+14. Get GetUpFront_RH [K2Node_VariableGet] 61BF867746865DDB33E2069E7AEC5F96
+15. Nodo di reindirizzamento [K2Node_Knot] E583B7314FD5C50DBBFCFCBD588E5239
+16. Nodo di restituzione [K2Node_FunctionResult] F03E592B48A9D6C8F08379B7AD6E6BDF
+17. Get GetUpFront_LH [K2Node_VariableGet] 109843B54D212CBCD5FA5797DB859884
+18. Nodo di reindirizzamento [K2Node_Knot] ABEBFEFF4276749177BAD8925945F35E
+19. Nodo di restituzione [K2Node_FunctionResult] BB37D27742567EF041A570A15303D137
+20. Get GetUpFront_RH [K2Node_VariableGet] 41E8002C4AE7CA700E9EBBBDC6F2DE30
+21. Nodo di restituzione [K2Node_FunctionResult] CC9A468944C40FCF0F8616B0906CF192
+22. Get GetUpFront_2H [K2Node_VariableGet] FAEFF0D44D8B2BCED671ED9560FBAC89
+23. Nodo di restituzione [K2Node_FunctionResult] 62DCB7A74FF1DFD2397314AD86D7F893
+24. Get GetUpFront_LH [K2Node_VariableGet] BE046CDE4E2198868419D3A27BED6EFB
+25. Nodo di restituzione [K2Node_FunctionResult] A8F6FE4E4AD7FAFAA98DB98ABAA0515C
+26. Get GetUpBack_Default [K2Node_VariableGet] 5E01FD964BE4AECF6A41BEA3F8BFB790
+27. Switch on ALS_OverlayState [K2Node_SwitchEnum] 1F205EF14FF6CC26682F949D79780EF3
+28. Get OverlayState [K2Node_VariableGet] B74615E04C0C2091A3ADF584E7F69BC8
+29. Nodo di reindirizzamento [K2Node_Knot] 6583B09F414D665618C68886814A89B0
+30. Nodo di reindirizzamento [K2Node_Knot] 9478AFB3493E0979D9EEBBA2C7745512
+31. Nodo di restituzione [K2Node_FunctionResult] 93FB374C4384023060DCD2A936A21879
+32. Get GetUpBack_LH [K2Node_VariableGet] A9D43BF347471A08EB291D99C6418D96
+33. Nodo di restituzione [K2Node_FunctionResult] 03B495534053DE009B165084BEEDA06B
+34. Get GetUpBack_2H [K2Node_VariableGet] 0BD8CBAE4C58EDD264343A97E744EA81
+35. Nodo di restituzione [K2Node_FunctionResult] AAC4ED9D46F86C2BC4B9C5B054C42D9B
+36. Get GetUpBack_RH [K2Node_VariableGet] 9F03D3A640D980FC470F6DB0FEB8FDF6
+37. Nodo di reindirizzamento [K2Node_Knot] 5CD9F8894BF552F178C448A9544B9972
+38. Nodo di restituzione [K2Node_FunctionResult] 360C2AB0473809F507B554995B1A5EBB
+39. Get GetUpBack_LH [K2Node_VariableGet] 61E03AAE4F942706158466AD5D58FAAD
+40. Nodo di reindirizzamento [K2Node_Knot] C4BCA2204D953812A6A61B9791313BEE
+41. Nodo di restituzione [K2Node_FunctionResult] B34F56D74933A82B696FA6921F266F3D
+42. Get GetUpBack_RH [K2Node_VariableGet] DC460025420BFB51D207E299B6E742A1
+43. Nodo di restituzione [K2Node_FunctionResult] A19FE9CF43659A4394E9F4A4B03DA5A4
+44. Get GetUpBack_2H [K2Node_VariableGet] F19E07194F05BE047613F2A1975DB604
+45. Nodo di restituzione [K2Node_FunctionResult] 2AF17B5343B8B486E692D8B122B7E9DA
+46. Get GetUpBack_LH [K2Node_VariableGet] 22EE4A99447476942FFC0BB987584870
+
+Variables Read:
+- Get GetUpBack_2H
+- Get GetUpBack_Default
+- Get GetUpBack_LH
+- Get GetUpBack_RH
+- Get GetUpFront_2H
+- Get GetUpFront_Default
+- Get GetUpFront_LH
+- Get GetUpFront_RH
+- Get OverlayState
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

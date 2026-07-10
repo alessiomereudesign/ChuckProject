@@ -1,0 +1,46 @@
+Asset: ALS_Player_Controller
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller.ALS_Player_Controller
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_Player_Controller
+GraphId: G003
+Graph: GetKeyTextForInputAction
+FlowId: F001
+Entry: Get Key Text for Input Action
+NodeGuid: 3907E78740D50B86860F62A53D7F4504
+
+Exec Flow:
+1. Get Key Text for Input Action [K2Node_FunctionEntry] 3907E78740D50B86860F62A53D7F4504
+2. Get CurrentInputDevice [K2Node_VariableGet] EDF41BE54DD006E2C8BBA1B9FB475F1E
+3. Aggiungere [K2Node_CommutativeAssociativeBinaryOperator] 73365B6843C2403AD464D78DFCD36F05
+4. To String (Name) [K2Node_CallFunction] C6C360B5442F49AB4EB24BBB796796BC
+5. To String (Name) [K2Node_CallFunction] 7D21898042415CD369F586BF270787D3
+6. Get InputKeyMap [K2Node_VariableGet] CD0A73E044646E65507869AE05D571E9
+7. Trova [K2Node_CallFunction] 1B0A8E2A41126AC7D41C8189C929A64C
+8. String To Name [K2Node_CallFunction] 11E647DA4C6BD42C0563B3A2612CEE38
+9. Ramo [K2Node_IfThenElse] E2259C6A4BEA17ACACBD0D9D451E3782
+10. Nodo di restituzione [K2Node_FunctionResult] F620C4664B93508B9E90D4B483943374
+11. Nodo di restituzione [K2Node_FunctionResult] 326B997F4C0D2FD1254204B201B3D988
+12. Nodo di reindirizzamento [K2Node_Knot] 424121944EC6D0DDF7FC6EB146B9DFBE
+13. Nodo di reindirizzamento [K2Node_Knot] 96EFB0AD4D78D1679F2F25921E912C42
+
+Variables Read:
+- Get CurrentInputDevice
+- Get InputKeyMap
+
+Variables Written:
+- none
+
+External Calls:
+- String To Name
+- To String (Name)
+- Trova
+
+Widgets Touched:
+- Get Key Text for Input Action
+
+Components Touched:
+- none
+
+External Blueprint References:
+- String To Name
+- To String (Name)
+- Trova

@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "DT_Items",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Inventory/DT_Items.DT_Items",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_Inventory_DT_Items",
+	"shortAssetFolder": "DT_Items__DA599925",
+	"pathHash": "DA599925",
+	"assetType": "DataTable",
+	"unrealClass": "DataTable",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "NotApplicable",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/DataTables/DT_Items__DA599925/SUMMARY.md",
+		"variables": "Assets/DataTables/DT_Items__DA599925/VARIABLES.json",
+		"components": "Assets/DataTables/DT_Items__DA599925/COMPONENTS.json",
+		"widgetTree": "Assets/DataTables/DT_Items__DA599925/WIDGET_TREE.json",
+		"nodes": "Assets/DataTables/DT_Items__DA599925/NODES.jsonl",
+		"edges": "Assets/DataTables/DT_Items__DA599925/EDGES.jsonl",
+		"search": "Assets/DataTables/DT_Items__DA599925/SEARCH.jsonl"
+	},
+	"graphs": []
+}

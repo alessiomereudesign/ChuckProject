@@ -1,0 +1,55 @@
+{
+	"graphId": "G002",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 33,
+	"edgeCount": 33,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Graphs/G002/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Evento On Added to Focus Path",
+			"entryNodeGuid": "F7A30D314DC8048F2C654AAD34955749",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F001.json",
+			"textFile": "Flows/G002/F001.txt",
+			"jsonFile": "Flows/G002/F001.json",
+			"nodeCount": 33
+		},
+		{
+			"flowId": "F002",
+			"entryName": "Evento On Removed from Focus Path",
+			"entryNodeGuid": "EE1195DD460CA350183A0ABEF793747E",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F002.json",
+			"textFile": "Flows/G002/F002.txt",
+			"jsonFile": "Flows/G002/F002.json",
+			"nodeCount": 33
+		},
+		{
+			"flowId": "F003",
+			"entryName": "Evento Pre Construct",
+			"entryNodeGuid": "D36E4EC04050F902208F03A7222ADFBF",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F003.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F003.json",
+			"textFile": "Flows/G002/F003.txt",
+			"jsonFile": "Flows/G002/F003.json",
+			"nodeCount": 33
+		},
+		{
+			"flowId": "F004",
+			"entryName": "InizializeCharacterSlot\nCustom Event",
+			"entryNodeGuid": "0AFF8609480CC056029BA6AA1E7363DB",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F004.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F004.json",
+			"textFile": "Flows/G002/F004.txt",
+			"jsonFile": "Flows/G002/F004.json",
+			"nodeCount": 33
+		}
+	]
+}

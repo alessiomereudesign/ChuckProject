@@ -1,0 +1,25 @@
+{
+	"graphId": "G008",
+	"name": "UpdateEquipmentSlots",
+	"graphName": "UpdateEquipmentSlots",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 70,
+	"edgeCount": 80,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G008/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G008/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G008/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Update Equipment Slots",
+			"entryNodeGuid": "170EE6124E58E9CF8C37418C2FCE6553",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G008/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G008/F001.json",
+			"textFile": "Flows/G008/F001.txt",
+			"jsonFile": "Flows/G008/F001.json",
+			"nodeCount": 70
+		}
+	]
+}

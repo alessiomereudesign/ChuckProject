@@ -1,0 +1,35 @@
+{
+	"graphId": "G001",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 35,
+	"edgeCount": 43,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_HUD__1B1F81B1/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_HUD__1B1F81B1/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_HUD__1B1F81B1/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Evento Construct",
+			"entryNodeGuid": "2C71C2344D34726629C69BB2EB41F197",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_HUD__1B1F81B1/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_HUD__1B1F81B1/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 35
+		},
+		{
+			"flowId": "F002",
+			"entryName": "UpdateWeaponDisplay\nCustom Event",
+			"entryNodeGuid": "23CE9C184C529F72487896B7739154F7",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_HUD__1B1F81B1/Flows/G001/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_HUD__1B1F81B1/Flows/G001/F002.json",
+			"textFile": "Flows/G001/F002.txt",
+			"jsonFile": "Flows/G001/F002.json",
+			"nodeCount": 35
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"graphId": "G001",
+	"name": "GetInteractionPrompt",
+	"graphName": "GetInteractionPrompt",
+	"type": "EdGraph",
+	"graphType": "EdGraph",
+	"graphGuid": "",
+	"nodeCount": 4,
+	"edgeCount": 3,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Get Interaction Prompt",
+			"entryNodeGuid": "702CAC334F71E96F90ED92B5188BBF9B",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 4
+		}
+	]
+}

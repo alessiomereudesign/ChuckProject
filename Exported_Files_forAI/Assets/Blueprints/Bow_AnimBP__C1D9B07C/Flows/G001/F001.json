@@ -1,0 +1,86 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Props_Meshes_Bow_AnimBP",
+	"graph": "EventGraph",
+	"entryName": "Evento Blueprint Update Animation",
+	"entryNodeGuid": "FEE930B54B4F43670A6348BBACAA676A",
+	"nodes": [
+		{
+			"nodeGuid": "FEE930B54B4F43670A6348BBACAA676A",
+			"class": "K2Node_Event",
+			"title": "Evento Blueprint Update Animation",
+			"comment": "This node is disabled and will not be called.\nDrag off pins to build functionality.",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9357F13140AD3CE3C7CECDA121BCA3E3",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AEDD37C4410FF7854D06FFB959885A9B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "21BA676A4CF7A2D23E1924BC6B2EDE76",
+					"name": "DeltaTimeX",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "F09E11234C493B73BC9F43BF2599687E",
+			"class": "K2Node_CallFunction",
+			"title": "Try Get Pawn Owner\nLa destinazione è Istanza animazione",
+			"comment": "This node is disabled and will not be called.\nDrag off pins to build functionality.",
+			"x": 0,
+			"y": 100,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A72ECC4E468FFF16FF303FAABE101829",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1A6D2D7346D348B450E5468D60F6EFC1",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Pawn",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Try Get Pawn Owner\nLa destinazione è Istanza animazione"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Try Get Pawn Owner\nLa destinazione è Istanza animazione"
+	],
+	"flowId": "F001",
+	"graphId": "G001",
+	"assetName": "Bow_AnimBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Props/Meshes/Bow_AnimBP.Bow_AnimBP"
+}

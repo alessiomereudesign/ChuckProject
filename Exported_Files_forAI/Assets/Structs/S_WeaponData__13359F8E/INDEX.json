@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "S_WeaponData",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Data_S_WeaponData",
+	"shortAssetFolder": "S_WeaponData__13359F8E",
+	"pathHash": "13359F8E",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/S_WeaponData__13359F8E/SUMMARY.md",
+		"variables": "Assets/Structs/S_WeaponData__13359F8E/VARIABLES.json",
+		"components": "Assets/Structs/S_WeaponData__13359F8E/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/S_WeaponData__13359F8E/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/S_WeaponData__13359F8E/NODES.jsonl",
+		"edges": "Assets/Structs/S_WeaponData__13359F8E/EDGES.jsonl",
+		"search": "Assets/Structs/S_WeaponData__13359F8E/SEARCH.jsonl"
+	},
+	"graphs": []
+}

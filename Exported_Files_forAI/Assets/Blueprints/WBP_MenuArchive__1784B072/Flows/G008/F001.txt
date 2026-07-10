@@ -1,0 +1,149 @@
+Asset: WBP_MenuArchive
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive
+GraphId: G008
+Graph: UpdateEquipmentSlots
+FlowId: F001
+Entry: Update Equipment Slots
+NodeGuid: 170EE6124E58E9CF8C37418C2FCE6553
+
+Exec Flow:
+1. Update Equipment Slots [K2Node_FunctionEntry] 170EE6124E58E9CF8C37418C2FCE6553
+2. Get As ChuckRef [K2Node_VariableGet] 52464DCD46C5EF04B0D86895133A0518
+3. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] FE9C7A2C42A7AD49B313DBB28191DE9E
+4. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 789BF4C048AE68FA310393A250A28028
+5. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 0671F3174D09430BDAFACBA39380AF27
+6. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] CDBBAA23404CACF42BEFE2B1D5CBAAF6
+7. Sequenza [K2Node_ExecutionSequence] 8500725E4E77934E7E5E16A178B62017
+8. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 94590ED340932C9674CCA3B639FBF88D
+9. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 61122DEA40BBD7AA67717AB77105A13E
+10. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 24B4B7FC49908B6C1F285093B5AF4677
+11. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 01F571514B52FAB2FB87E19D0AC0BED1
+12. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] DB0799E84CDA1A414BF0AB937A970731
+13. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] B41D287C4BF03F6FA8E6679458FF1B0E
+14. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 1F2CD3C24817669FBD2FFE9C145AC9EE
+15. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 1E8A9AAD4D312F0C98373F92EE7BB3A6
+16. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] DA77D70948FAFCED452826A03BF3A596
+17. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 314B1AF846CF155209C14EAA36854DB7
+18. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] D9AE91E8412CD36C3201418F066F3B8B
+19. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 5C9F3D424ED11371E5BA0AB8FE81524E
+20. Get EquippedHead [K2Node_VariableGet] D9A12EAF4FA744484BB1CB98C1FCBE66
+21. Get EquippedChest [K2Node_VariableGet] 148D239A4554BFD172F7FAB0A63D732B
+22. Get EquippedLegs [K2Node_VariableGet] E3E18E6242E188636DE50CB1CA49F6BE
+23. Get EquippedFeet [K2Node_VariableGet] 0039248A4B47E8E0CE521BA6E33A4DD5
+24. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 85EC96854DF674E77972B3B76E1F7F35
+25. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] E3738B484D05CCD2A0A645BBE7F66D2A
+26. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 8FBC601247F20170C156CBAE1063D2ED
+27. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 2FC0F9E6440C3D1A747DDEB9C649F29D
+28. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] F0FEF9DF43D2C9AB3FA4DC9CF5D49785
+29. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 7546536D4BF4E080094178A2A373B6C5
+30. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 5A3E83A54A6473B8814038BFBBACEF1D
+31. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 364D02304BFF26D3A165BE85A0C3C8D7
+32. Get Img_HeadEquip [K2Node_VariableGet] EC19B51C434118BBCBF25582D0417CA9
+33. Get Img_HeadEquip [K2Node_VariableGet] 248078B748856A00145B7BAB8E963F79
+34. Get Img_Accessory1Equip [K2Node_VariableGet] AF63D5F9441EA4C2C6305FBA81708D69
+35. Get Img_Accessory1Equip [K2Node_VariableGet] A6A1086547F40B1295E998ACFDA919BE
+36. Get Img_AccessoryEquip [K2Node_VariableGet] 8582B15248D8EE454AC2DFA8E49D822B
+37. Get Img_AccessoryEquip [K2Node_VariableGet] B80B38D64CBEA61D8AE6E1BA90147F2A
+38. Get Img_ChestEquip [K2Node_VariableGet] 62054F4F4D7CF4FC042FE0AAFC71F8FE
+39. Get Img_ChestEquip [K2Node_VariableGet] 3C552F414EAE57EE34835E9041C4F101
+40. Get Img_FeetEquip [K2Node_VariableGet] 0343DCDE4FC87372EF81378206B37BA6
+41. Get Img_FeetEquip [K2Node_VariableGet] CDBDA88E402EF389308A54A0CCBD8F39
+42. Get Img_LegsEquip [K2Node_VariableGet] 379126BC457B718F8F049F9ACE68711C
+43. Get Img_LegsEquip [K2Node_VariableGet] 6A5D4D3E411BCB8A90FB42833FB9CD4A
+44. Get TxtVar_Accessory1Equip [K2Node_VariableGet] 71A026E749FB8FCC85E2B98A5CC77EB2
+45. Get TxtVar_Accessory1Equip [K2Node_VariableGet] 75D2FE5544386573D5EF8483B9D09656
+46. Get TxtVar_AccessoryEquip [K2Node_VariableGet] BE4B0BA1409687500C00FAA9C2C983AE
+47. Get TxtVar_AccessoryEquip [K2Node_VariableGet] BEBD706E4F652E93A704DFAF9E3E6513
+48. Get TxtVar_FeetEquip [K2Node_VariableGet] 2B46ECE04DEB8B061CE3479FF18136F2
+49. Get TxtVar_FeetEquip [K2Node_VariableGet] 97C585CB4838F489E476F2978ED92521
+50. Get TxtVar_LegsEquip [K2Node_VariableGet] AA875D5F4D4D37DC42B74EB845C1AA9E
+51. Get TxtVar_LegsEquip [K2Node_VariableGet] 8D4B76CC466C6A3844FCD49BF7FBD081
+52. Get TxtVar_ChestEquip [K2Node_VariableGet] 6A8E075441A478A109A8249639B51E00
+53. Get TxtVar_ChestEquip [K2Node_VariableGet] 3FFFA43D4B01C05F6DF2AC9EB6E3F139
+54. Get TxtVar_HeadEquip [K2Node_VariableGet] BAAF3D9C497B2A099F4865B63D17C153
+55. Get TxtVar_HeadEquip [K2Node_VariableGet] 0FACBEA741F683E2B4BD118A3EE41E22
+56. Get Data Table Row DT_Armor [K2Node_GetDataTableRow] 8AA956BA4FD475B433DDCFBE806E08CD
+57. Break S_ArmorData [K2Node_BreakStruct] 884EBBBF476B71359B5E9CBCCF3F77B0
+58. Get Data Table Row DT_Armor [K2Node_GetDataTableRow] 08751454424E6380EA616D82CC5D2E7B
+59. Break S_ArmorData [K2Node_BreakStruct] 7C76466245B3F97F20252C8273BC2611
+60. Get Data Table Row DT_Armor [K2Node_GetDataTableRow] 6E968BE84D636AA72E9930A8EC73E270
+61. Break S_ArmorData [K2Node_BreakStruct] 1EC1E65C4669BC02210D54B481A1675C
+62. Get Data Table Row DT_Armor [K2Node_GetDataTableRow] 636DD01B488D0888C8B42B9C37B99EBD
+63. Break S_ArmorData [K2Node_BreakStruct] 26FE7A374C759BE02322AE8661E6BACD
+64. Get Data Table Row DT_Armor [K2Node_GetDataTableRow] 5EF96C6E426AD4D37B958A94CF9F4BD7
+65. Break S_ArmorData [K2Node_BreakStruct] D2B2D75740BC2300CEC11F8C04CD11E7
+66. Get Data Table Row DT_Armor [K2Node_GetDataTableRow] 7F8435D845E689E3B1278AB6BE0BEB08
+67. Break S_ArmorData [K2Node_BreakStruct] 7F6FD1144E71326EC7F371AB3BC04BA3
+68. Get EquippedAccessory1 [K2Node_VariableGet] D455429F43C7736AF0938BBEF3F826B2
+69. Get EquippedAccessory2 [K2Node_VariableGet] ED3C29BA459D6DA3026A7B8FEC9E0F3A
+70. UPDATE SLOT APPEARANCE + EQUIP SLOT OR NOT [EdGraphNode_Comment] 76C6AFF04F551BB3F76DEFA687106965
+
+Variables Read:
+- Get As ChuckRef
+- Get EquippedAccessory1
+- Get EquippedAccessory2
+- Get EquippedChest
+- Get EquippedFeet
+- Get EquippedHead
+- Get EquippedLegs
+- Get Img_Accessory1Equip
+- Get Img_AccessoryEquip
+- Get Img_ChestEquip
+- Get Img_FeetEquip
+- Get Img_HeadEquip
+- Get Img_LegsEquip
+- Get TxtVar_Accessory1Equip
+- Get TxtVar_AccessoryEquip
+- Get TxtVar_ChestEquip
+- Get TxtVar_FeetEquip
+- Get TxtVar_HeadEquip
+- Get TxtVar_LegsEquip
+
+Variables Written:
+- none
+
+External Calls:
+- Set Brush from Texture
+La destinazione è Immagine
+- SetText (Text)
+La destinazione è Testo
+
+Widgets Touched:
+- Set Brush from Texture
+La destinazione è Immagine
+- SetText (Text)
+La destinazione è Testo
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Set Brush from Texture
+La destinazione è Immagine
+- SetText (Text)
+La destinazione è Testo

@@ -1,0 +1,137 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "RagdollStart",
+	"entryName": "Ragdoll Start",
+	"entryNodeGuid": "C022401942C64022C7E478A7ACD71F74",
+	"nodes": [
+		{
+			"nodeGuid": "C022401942C64022C7E478A7ACD71F74",
+			"class": "K2Node_FunctionEntry",
+			"title": "Ragdoll Start",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "649D8BDF48812C79784E4596EB3F5D7B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AD429D9448A15A865247E2BA487406EA",
+			"class": "K2Node_CallParentFunction",
+			"title": "Genitore: Ragdoll Start",
+			"comment": "",
+			"x": 448,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C2812B4A47FCAE2ADEE81AAE3FC88CD5",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F6294A1241827AE7DEF345B5194325AE",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C075437E48C1FCA6AC8590AA60268E58",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "617A686344BEB20B2AA7E09B353FE7E9",
+			"class": "K2Node_CallFunction",
+			"title": "Clear Held Object\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": 160,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3D0626F14A013B416EF0FA857C892A52",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5EE78C27476B0B5B1A3011893CC59C03",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B9E81DD64F305BCB2D74EB8115E55A3E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "RagdollStart",
+			"edgeType": "exec",
+			"fromNodeGuid": "C022401942C64022C7E478A7ACD71F74",
+			"fromPinId": "649D8BDF48812C79784E4596EB3F5D7B",
+			"fromPinName": "then",
+			"toNodeGuid": "617A686344BEB20B2AA7E09B353FE7E9",
+			"toPinId": "3D0626F14A013B416EF0FA857C892A52",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "RagdollStart",
+			"edgeType": "exec",
+			"fromNodeGuid": "617A686344BEB20B2AA7E09B353FE7E9",
+			"fromPinId": "5EE78C27476B0B5B1A3011893CC59C03",
+			"fromPinName": "then",
+			"toNodeGuid": "AD429D9448A15A865247E2BA487406EA",
+			"toPinId": "C2812B4A47FCAE2ADEE81AAE3FC88CD5",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Clear Held Object\nLa destinazione è ALS Chuck BP"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Clear Held Object\nLa destinazione è ALS Chuck BP"
+	],
+	"flowId": "F001",
+	"graphId": "G021",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

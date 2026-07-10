@@ -1,0 +1,25 @@
+{
+	"graphId": "G002",
+	"name": "Received_NotifyBegin",
+	"graphName": "Received_NotifyBegin",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 5,
+	"edgeCount": 5,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Graphs/G002/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Received Notify Begin",
+			"entryNodeGuid": "7167050C4A3494E721E92EB33950C2B3",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Flows/G002/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Flows/G002/F001.json",
+			"textFile": "Flows/G002/F001.txt",
+			"jsonFile": "Flows/G002/F001.json",
+			"nodeCount": 5
+		}
+	]
+}

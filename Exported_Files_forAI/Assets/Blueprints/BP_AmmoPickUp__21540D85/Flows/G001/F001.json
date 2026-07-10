@@ -1,0 +1,181 @@
+{
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_AmmoPickUp",
+	"graph": "GetInteractionPrompt",
+	"entryName": "Get Interaction Prompt",
+	"entryNodeGuid": "88FE528C4F9ABF36BB07D78F7A0F8AB1",
+	"nodes": [
+		{
+			"nodeGuid": "88FE528C4F9ABF36BB07D78F7A0F8AB1",
+			"class": "K2Node_FunctionEntry",
+			"title": "Get Interaction Prompt",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7EC829884DBF14E8A54026BC44EC35F4",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E88E00E44156BA2DCB721380C5DC3B30",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 688,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0ED4988F4F269608433EFD8D629EA05A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8D49314140A6DA2A01E38291EA4A1662",
+					"name": "InteractionPrompt",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Blueprints/S_InteractionPrompt.S_InteractionPrompt",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "88A526EF4F4CA3130252B29DE158F908",
+			"class": "K2Node_MakeStruct",
+			"title": "Make S_InteractionPrompt",
+			"comment": "",
+			"x": 304,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F8369EBE4583A4856749FCAE274F12E9",
+					"name": "S_InteractionPrompt",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Blueprints/S_InteractionPrompt.S_InteractionPrompt",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E2ECD12B45AD071E8F04DF9A641ECFA8",
+					"name": "ActionText_2_3AC59B3E46A172564FA79D99159C6C36",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": "Collect "
+				},
+				{
+					"pinId": "1D840A69407B996E5E6D83BF7FD22D30",
+					"name": "ObjectName_4_D1DBE99F499FC8276645848688617E8A",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5E8E4BEE48796C6012BF948AF44AEE80",
+					"name": "InputActionName_8_6279F1D24A27BA475D50FFA2303C8A12",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "InteractAction"
+				},
+				{
+					"pinId": "2672EC5F407BF4B6EEE0ECB29551DD8B",
+					"name": "bShowObjectName_10_4E8E194D4B4AF2E0FF2560900EBEF0F0",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "False"
+				}
+			]
+		},
+		{
+			"nodeGuid": "ADD8EF694E7821B2E6FDC6835852D63D",
+			"class": "K2Node_VariableGet",
+			"title": "Get DisplayName",
+			"comment": "",
+			"x": 160,
+			"y": 125,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "33C8245C4DDD424213A93795255E0E85",
+					"name": "DisplayName",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1A81F5024F7226E75C3E879F0F4B42A7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_AmmoPickUp.BP_AmmoPickUp_C",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_AmmoPickUp",
+			"graph": "GetInteractionPrompt",
+			"edgeType": "exec",
+			"fromNodeGuid": "88FE528C4F9ABF36BB07D78F7A0F8AB1",
+			"fromPinId": "7EC829884DBF14E8A54026BC44EC35F4",
+			"fromPinName": "then",
+			"toNodeGuid": "E88E00E44156BA2DCB721380C5DC3B30",
+			"toPinId": "0ED4988F4F269608433EFD8D629EA05A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_AmmoPickUp",
+			"graph": "GetInteractionPrompt",
+			"edgeType": "data",
+			"fromNodeGuid": "88A526EF4F4CA3130252B29DE158F908",
+			"fromPinId": "F8369EBE4583A4856749FCAE274F12E9",
+			"fromPinName": "S_InteractionPrompt",
+			"toNodeGuid": "E88E00E44156BA2DCB721380C5DC3B30",
+			"toPinId": "8D49314140A6DA2A01E38291EA4A1662",
+			"toPinName": "InteractionPrompt"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_AmmoPickUp",
+			"graph": "GetInteractionPrompt",
+			"edgeType": "data",
+			"fromNodeGuid": "ADD8EF694E7821B2E6FDC6835852D63D",
+			"fromPinId": "33C8245C4DDD424213A93795255E0E85",
+			"fromPinName": "DisplayName",
+			"toNodeGuid": "88A526EF4F4CA3130252B29DE158F908",
+			"toPinId": "1D840A69407B996E5E6D83BF7FD22D30",
+			"toPinName": "ObjectName_4_D1DBE99F499FC8276645848688617E8A"
+		}
+	],
+	"variablesRead": [
+		"Get DisplayName"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G001",
+	"assetName": "BP_AmmoPickUp",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_AmmoPickUp.BP_AmmoPickUp"
+}

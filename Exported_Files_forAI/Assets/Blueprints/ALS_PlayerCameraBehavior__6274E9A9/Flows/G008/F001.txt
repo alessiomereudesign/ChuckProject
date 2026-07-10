@@ -1,0 +1,34 @@
+Asset: ALS_PlayerCameraBehavior
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CameraSystem/ALS_PlayerCameraBehavior.ALS_PlayerCameraBehavior
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraBehavior
+GraphId: G008
+Graph: EventGraph
+FlowId: F001
+Entry: Evento Blueprint Update Animation
+NodeGuid: A22BFC3A4F27F5FE4B9193AC000CF6AE
+
+Exec Flow:
+1. Evento Blueprint Update Animation [K2Node_Event] A22BFC3A4F27F5FE4B9193AC000CF6AE
+2. Update Character Info
+La destinazione è ALS Player Camera Behavior [K2Node_CallFunction] 292BE8444DC7666E3F7441B2C541AF48
+3. Get info from the character each frame to use in the camera graph. [EdGraphNode_Comment] 1A22332E40225387016BFC90F93DC9EB
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- Update Character Info
+La destinazione è ALS Player Camera Behavior
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Update Character Info
+La destinazione è ALS Player Camera Behavior

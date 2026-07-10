@@ -1,0 +1,29 @@
+Asset: ALS_GameMode_SP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/GameModes/ALS_GameMode_SP.ALS_GameMode_SP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_GameModes_ALS_GameMode_SP
+GraphId: G001
+Graph: EventGraph
+FlowId: F001
+Entry: Evento BeginPlay
+NodeGuid: 46BDA92B4EDD941DDAD8F2BF8948AC11
+
+Exec Flow:
+1. Evento BeginPlay [K2Node_Event] 46BDA92B4EDD941DDAD8F2BF8948AC11
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

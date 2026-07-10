@@ -1,0 +1,33 @@
+Asset: OverlayOverride_NotifyState
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/OverlayOverride_NotifyState.OverlayOverride_NotifyState
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_OverlayOverride_NotifyState
+GraphId: G001
+Graph: GetNotifyName
+FlowId: F001
+Entry: Get Notify Name
+NodeGuid: D28F50DF4EE6981AC6C4359137483E66
+
+Exec Flow:
+1. Get Notify Name [K2Node_FunctionEntry] D28F50DF4EE6981AC6C4359137483E66
+2. Nodo di restituzione [K2Node_FunctionResult] 4A3D9CF14C61F474755D1797AAF18D12
+3. Get OverlayOverrideState [K2Node_VariableGet] 8D0CA6BF460BEBC07D7DEE8131083ABF
+4. Aggiungere [K2Node_CommutativeAssociativeBinaryOperator] E434C23E40F4BC256F419EA05A9BDAE1
+5. To String (Integer) [K2Node_CallFunction] 0E3737BD4751F3561056F3B44195EF4C
+
+Variables Read:
+- Get OverlayOverrideState
+
+Variables Written:
+- none
+
+External Calls:
+- To String (Integer)
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- To String (Integer)

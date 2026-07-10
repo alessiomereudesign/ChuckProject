@@ -1,0 +1,399 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_BP_TestTrigger",
+	"graph": "EventGraph",
+	"entryName": "Evento Tick",
+	"entryNodeGuid": "C24BC56A4BDB3DDEB725508122CE763B",
+	"nodes": [
+		{
+			"nodeGuid": "0B5DD33242F7470C0A0E7F8ED9B60913",
+			"class": "K2Node_Event",
+			"title": "Evento BeginPlay",
+			"comment": "Questo nodo è disabilitato e non verrà chiamato.\nTrascina i pin per creare funzionalità.",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C278E92A4969FAD10DBD55B710AB3CDB",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EEA955CB40DFDE71F85DE3B4E8A4736B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "31622EAE4DB720FE87C0D38756F1CC3B",
+			"class": "K2Node_Event",
+			"title": "Evento ActorBeginOverlap",
+			"comment": "Questo nodo è disabilitato e non verrà chiamato.\nTrascina i pin per creare funzionalità.",
+			"x": 0,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "30D704B74ACAB14AA505EEB550A48850",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C71959AA448DDAAF9B05889660979B09",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "83D751904483A0DFCAAA1AA2133EE1B7",
+					"name": "OtherActor",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C24BC56A4BDB3DDEB725508122CE763B",
+			"class": "K2Node_Event",
+			"title": "Evento Tick",
+			"comment": "Questo nodo è disabilitato e non verrà chiamato.\nTrascina i pin per creare funzionalità.",
+			"x": 0,
+			"y": 416,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A1E0456541B43DBD5F39459CAEE57CFC",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "690AFF08437119179A4AA1B349E266B3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "42542FFE4FA993F09E4190B32CD9D967",
+					"name": "DeltaSeconds",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "85CEF48043C0FD34EE86E198A0503A10",
+			"class": "K2Node_ComponentBoundEvent",
+			"title": "On Component Begin Overlap (Box)",
+			"comment": "",
+			"x": 0,
+			"y": 670,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A2DD371D4CF6812E4003079B68ACB929",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A5A789AF4A19ED790597439F3ECDA061",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D669083D41F725C7F52E2CB071123A48",
+					"name": "OverlappedComponent",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PrimitiveComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CB03B67C42FE94048805BCA88693016D",
+					"name": "OtherActor",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2C16614A48C07BAA3EFE84905D710852",
+					"name": "OtherComp",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PrimitiveComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7F9268AC446232C6CCCE6C90413E4B9F",
+					"name": "OtherBodyIndex",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "953C5847407D90B200617CBD79569EE0",
+					"name": "bFromSweep",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "619A7AEE46521ACD83D4558E564A0EEB",
+					"name": "SweepResult",
+					"direction": "Output",
+					"type": "struct|/Script/Engine.HitResult|ref|const",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "74DFA4784F9FD505D038DFBE2D7925FB",
+			"class": "K2Node_DynamicCast",
+			"title": "Cast To ALS_ChuckBP",
+			"comment": "",
+			"x": 320,
+			"y": 673,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "31BE19004E45A200976D70B50C1C7E05",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BD3E3F69416207CFFF5E0A9819DEF014",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1A1E68584C5E8114F4A86AB71875D516",
+					"name": "CastFailed",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BEAE820E448ECE66E429908D519D7560",
+					"name": "Object",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0BB0C03D4CD2F237DAE04C837FF47B1C",
+					"name": "AsALS Chuck BP",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "345B6B2D49941EB533EEC8BC9D8C8CD8",
+					"name": "bSuccess",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0E152FCA4ECCD3381082EEA6E59F3968",
+			"class": "K2Node_CallFunction",
+			"title": "Add Item to Inventory\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": 608,
+			"y": 656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "371D6A7A4AD9184097CF429A49F5F0EF",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D8ACC101404E9A00D338379A289DE071",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D20547754B3D8BC7779FE2BAABDB6E2C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2EBEE20143C4864C67AAB3B375FC3DF6",
+					"name": "WeaponData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "19E47B1F4541F527E09992B1F6C9886C",
+					"name": "ItemType",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "1"
+				},
+				{
+					"pinId": "295F187144E9B8A5BC5B1B832D76AD5E",
+					"name": "ItemNane",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Pistol1"
+				}
+			]
+		},
+		{
+			"nodeGuid": "478CBA22420EEEACA8A184BB1C0C5576",
+			"class": "K2Node_CallFunction",
+			"title": "Destroy Actor\nLa destinazione è Actor",
+			"comment": "",
+			"x": 848,
+			"y": 656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F4AEEB25436AD9F0D06C6E9A7880937E",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7677C9F54A42E7B1FFB3BA92A5BF0A1D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B104AA4249A8629824303EB8A621E8F8",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_BP_TestTrigger",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "85CEF48043C0FD34EE86E198A0503A10",
+			"fromPinId": "A5A789AF4A19ED790597439F3ECDA061",
+			"fromPinName": "then",
+			"toNodeGuid": "74DFA4784F9FD505D038DFBE2D7925FB",
+			"toPinId": "31BE19004E45A200976D70B50C1C7E05",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_BP_TestTrigger",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "85CEF48043C0FD34EE86E198A0503A10",
+			"fromPinId": "CB03B67C42FE94048805BCA88693016D",
+			"fromPinName": "OtherActor",
+			"toNodeGuid": "74DFA4784F9FD505D038DFBE2D7925FB",
+			"toPinId": "BEAE820E448ECE66E429908D519D7560",
+			"toPinName": "Object"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_BP_TestTrigger",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "74DFA4784F9FD505D038DFBE2D7925FB",
+			"fromPinId": "BD3E3F69416207CFFF5E0A9819DEF014",
+			"fromPinName": "then",
+			"toNodeGuid": "0E152FCA4ECCD3381082EEA6E59F3968",
+			"toPinId": "371D6A7A4AD9184097CF429A49F5F0EF",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_BP_TestTrigger",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "74DFA4784F9FD505D038DFBE2D7925FB",
+			"fromPinId": "0BB0C03D4CD2F237DAE04C837FF47B1C",
+			"fromPinName": "AsALS Chuck BP",
+			"toNodeGuid": "0E152FCA4ECCD3381082EEA6E59F3968",
+			"toPinId": "D20547754B3D8BC7779FE2BAABDB6E2C",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_BP_TestTrigger",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "0E152FCA4ECCD3381082EEA6E59F3968",
+			"fromPinId": "D8ACC101404E9A00D338379A289DE071",
+			"fromPinName": "then",
+			"toNodeGuid": "478CBA22420EEEACA8A184BB1C0C5576",
+			"toPinId": "F4AEEB25436AD9F0D06C6E9A7880937E",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Add Item to Inventory\nLa destinazione è ALS Chuck BP",
+		"Destroy Actor\nLa destinazione è Actor"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [
+		"On Component Begin Overlap (Box)"
+	],
+	"externalBlueprintReferences": [
+		"Add Item to Inventory\nLa destinazione è ALS Chuck BP",
+		"Cast To ALS_ChuckBP",
+		"Destroy Actor\nLa destinazione è Actor"
+	],
+	"flowId": "F003",
+	"graphId": "G001",
+	"assetName": "BP_TestTrigger",
+	"assetPath": "/Game/ChuckContent/Blueprints/BP_TestTrigger.BP_TestTrigger"
+}

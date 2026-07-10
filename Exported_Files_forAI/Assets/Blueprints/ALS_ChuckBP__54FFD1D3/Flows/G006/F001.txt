@@ -1,0 +1,50 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G006
+Graph: BPI_Get_3P_PivotTarget
+FlowId: F001
+Entry: BPI Get 3P Pivot Target
+NodeGuid: DA12BC3047D046DCEF5E03BFCECDE500
+
+Exec Flow:
+1. BPI Get 3P Pivot Target [K2Node_FunctionEntry] DA12BC3047D046DCEF5E03BFCECDE500
+2. Nodo di restituzione [K2Node_FunctionResult] C442A46B4540E572A9D8F5888D26AFD8
+3. Get Mesh [K2Node_VariableGet] 7C578057450F1D8C6C99BCAA8310765F
+4. Make Transform [K2Node_CallFunction] E8D4C67D41EAB2FE6A787B9F9DB69904
+5. Get Vector Array Average [K2Node_CallFunction] 12CCF34747BD22D6A61264B8E17B99AB
+6. Crea array [K2Node_MakeArray] 4C1BC4544FCBEA4A4D5696B1345A3D3C
+7. Get Socket Location
+La destinazione è Componente di scena [K2Node_CallFunction] 7FABDEDB4F16C2ED2BA93CB94A159C42
+8. Get Socket Location
+La destinazione è Componente di scena [K2Node_CallFunction] 8267D06A4AECFBA7ECD60F90FED735AA
+9. Get Actor Rotation
+La destinazione è Actor [K2Node_CallFunction] AD5C58914D6570FD404C07A8AFC1ADF8
+
+Variables Read:
+- Get Mesh
+
+Variables Written:
+- none
+
+External Calls:
+- Get Actor Rotation
+La destinazione è Actor
+- Get Socket Location
+La destinazione è Componente di scena
+- Get Vector Array Average
+- Make Transform
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Actor Rotation
+La destinazione è Actor
+- Get Socket Location
+La destinazione è Componente di scena
+- Get Vector Array Average
+- Make Transform

@@ -1,0 +1,29 @@
+{
+	"assetName": "SimpleMovingObject",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Environment_SimpleMovingObject",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Evento Tick",
+			"graph": "EventGraph",
+			"nodeGuid": "F2C171CC4C5FD1B0C743CE8C07CD2CA0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Object Location",
+			"graph": "UpdateObjectLocation",
+			"nodeGuid": "24A934B54F2D4D91CA0BF18CDB80F43A",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Construction Script",
+			"graph": "UserConstructionScript",
+			"nodeGuid": "FA0987964A3C5B980EC4409B40F94215",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

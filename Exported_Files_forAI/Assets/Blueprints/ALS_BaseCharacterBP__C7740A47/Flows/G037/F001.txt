@@ -1,0 +1,118 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G037
+Graph: On Begin Play
+FlowId: F001
+Entry: On Begin Play
+NodeGuid: 870241CF465034DAB6874496E68CE016
+
+Exec Flow:
+1. On Begin Play [K2Node_FunctionEntry] 870241CF465034DAB6874496E68CE016
+2. Auto-riferimento [K2Node_Self] F85390454F9D8A5BEB14BB841433002A
+3. Add Tick Prerequisite Actor
+La destinazione è Actor Component [K2Node_CallFunction] E6653AA04EAB8458D9A6E48B891BD88B
+4. Get Mesh [K2Node_VariableGet] 8ECCF53F427952F6D8D0449EA61C289D
+5. Get ViewMode [K2Node_VariableGet] B81834034F654C9CD88B5BBB57767ED9
+6. Get Mesh [K2Node_VariableGet] D2C154FB4D952C8D67098BADE68BDFAA
+7. Get Anim Instance
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 860F88F34D77B952E98B3199635FB1C3
+8. Is Valid [K2Node_MacroInstance] 45070E314A647A8EF433F4B893D02DFA
+9. Set MainAnimInstance [K2Node_VariableSet] D8CDDF854AC44315C741B2A0B59EBACD
+10. Set TargetRotation [K2Node_VariableSet] 21CE691C4BAF9A571C69A98C16E10FA6
+11. Get Actor Rotation
+La destinazione è Actor [K2Node_CallFunction] 7BB01B9A4A4CDC0E1733BA8CD432C7B9
+12. Get DesiredRotationMode [K2Node_VariableGet] 6B6BE60C405DEC21FEDAD694DF2E05B5
+13. On Rotation Mode Changed
+La destinazione è ALS Base Character BP [K2Node_CallFunction] A7931EA04DD7D392D4FB1BBF3C8D7E50
+14. On View Mode Changed
+La destinazione è ALS Base Character BP [K2Node_CallFunction] FA7BE8E54287BBEBBB67A88143981A59
+15. Set Movement Model
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 4B22F8644F9EC76090A81A8B36D6CE26
+16. Sequenza [K2Node_ExecutionSequence] 5DE9D9F24461AF050E6C579C2A2357FB
+17. Nodo di reindirizzamento [K2Node_Knot] 35B20C62495E6741266BA38AD59D5F65
+18. Set LastVelocityRotation [K2Node_VariableSet] 5E0600B745676F471841F687533754EF
+19. Set LastMovementInputRotation [K2Node_VariableSet] 345D20F948E13C1963A15CA2DEE2858D
+20. Nodo di reindirizzamento [K2Node_Knot] 778AC41F475B3D80D0F0C1BB0A27A856
+21. Switch on ALS_Stance [K2Node_SwitchEnum] 9481AA924CE0363E213EE8A649E72DF2
+22. Get DesiredStance [K2Node_VariableGet] 89D81A024CC15A4210BB1B9EDB6EA8D8
+23. On Gait Changed
+La destinazione è ALS Base Character BP [K2Node_CallFunction] A424961F4E207B1B2534959C74788602
+24. Get DesiredGait [K2Node_VariableGet] E208C1B64546B441A45CE5A9E6D4FC82
+25. Accovacciato
+La destinazione è Personaggio [K2Node_CallFunction] 47215C644FD779FE1F7720A0F273BE9D
+26. Un Crouch
+La destinazione è Personaggio [K2Node_CallFunction] 657AD3304C4D565262F7C9ADADC07F78
+27. Nodo di reindirizzamento [K2Node_Knot] CAE7E81F4C463E8801B7AA97A208D50E
+28. Make sure the mesh and animbp update after the CharacterBP to ensure it gets the most recent values. [EdGraphNode_Comment] F80E16FD48043FDAD542E791E87D6E63
+29. Set Reference to the Main Anim Instance. [EdGraphNode_Comment] AE1A7C374067B61E2FFD1BA9DB6022E4
+30. Update states to use the initial desired values. [EdGraphNode_Comment] C49A33324CBF9CFBBA9763A88C4B92EA
+31. Set default rotation values. [EdGraphNode_Comment] 69BE20D948C3EBCC055419AB20F317E0
+32. On Overlay State Changed
+La destinazione è ALS Base Character BP [K2Node_CallFunction] FBF325C64890A65752953D9D6AF3ED7D
+33. Get OverlayState [K2Node_VariableGet] 30E102F4401BCF6E50B410B6E439C7B7
+34. Set the Movement Model [EdGraphNode_Comment] AA7EDE00425DC8829DB21E9B95BAF406
+
+Variables Read:
+- Get DesiredGait
+- Get DesiredRotationMode
+- Get DesiredStance
+- Get Mesh
+- Get OverlayState
+- Get ViewMode
+
+Variables Written:
+- Set LastMovementInputRotation
+- Set LastVelocityRotation
+- Set MainAnimInstance
+- Set TargetRotation
+
+External Calls:
+- Accovacciato
+La destinazione è Personaggio
+- Add Tick Prerequisite Actor
+La destinazione è Actor Component
+- Get Actor Rotation
+La destinazione è Actor
+- Get Anim Instance
+La destinazione è Componente mesh scheletrica
+- On Gait Changed
+La destinazione è ALS Base Character BP
+- On Overlay State Changed
+La destinazione è ALS Base Character BP
+- On Rotation Mode Changed
+La destinazione è ALS Base Character BP
+- On View Mode Changed
+La destinazione è ALS Base Character BP
+- Set Movement Model
+La destinazione è ALS Base Character BP
+- Un Crouch
+La destinazione è Personaggio
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Accovacciato
+La destinazione è Personaggio
+- Add Tick Prerequisite Actor
+La destinazione è Actor Component
+- Get Actor Rotation
+La destinazione è Actor
+- Get Anim Instance
+La destinazione è Componente mesh scheletrica
+- On Gait Changed
+La destinazione è ALS Base Character BP
+- On Overlay State Changed
+La destinazione è ALS Base Character BP
+- On Rotation Mode Changed
+La destinazione è ALS Base Character BP
+- On View Mode Changed
+La destinazione è ALS Base Character BP
+- Set Movement Model
+La destinazione è ALS Base Character BP
+- Un Crouch
+La destinazione è Personaggio

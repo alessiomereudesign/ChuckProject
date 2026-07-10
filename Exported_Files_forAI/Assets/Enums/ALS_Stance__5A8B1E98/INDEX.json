@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "ALS_Stance",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Enums_ALS_Stance",
+	"shortAssetFolder": "ALS_Stance__5A8B1E98",
+	"pathHash": "5A8B1E98",
+	"assetType": "Enum",
+	"unrealClass": "UserDefinedEnum",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "NotApplicable",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Enums/ALS_Stance__5A8B1E98/SUMMARY.md",
+		"variables": "Assets/Enums/ALS_Stance__5A8B1E98/VARIABLES.json",
+		"components": "Assets/Enums/ALS_Stance__5A8B1E98/COMPONENTS.json",
+		"widgetTree": "Assets/Enums/ALS_Stance__5A8B1E98/WIDGET_TREE.json",
+		"nodes": "Assets/Enums/ALS_Stance__5A8B1E98/NODES.jsonl",
+		"edges": "Assets/Enums/ALS_Stance__5A8B1E98/EDGES.jsonl",
+		"search": "Assets/Enums/ALS_Stance__5A8B1E98/SEARCH.jsonl"
+	},
+	"graphs": []
+}

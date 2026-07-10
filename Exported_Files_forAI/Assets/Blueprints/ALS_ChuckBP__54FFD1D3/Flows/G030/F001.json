@@ -1,0 +1,335 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "UserConstructionScript",
+	"entryName": "Construction Script",
+	"entryNodeGuid": "D53DD5EC48F93B5B257AD0BC6D7B4E86",
+	"nodes": [
+		{
+			"nodeGuid": "D53DD5EC48F93B5B257AD0BC6D7B4E86",
+			"class": "K2Node_FunctionEntry",
+			"title": "Construction Script",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1644F1B74BBC04644F719AA829133AA6",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C5218A4148CA3ECAADC6CC863A937DD1",
+			"class": "K2Node_CallParentFunction",
+			"title": "Genitore: Construction Script",
+			"comment": "",
+			"x": 192,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F5F71C1C4A7649EB47E414ACC000C57D",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C27033E4B26DC433F5E8DA907E53A90",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D1C332244CF290AB7E4C45935142A6B9",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A7E496F04C6D42FC8D258AB6106E7934",
+			"class": "K2Node_CallFunction",
+			"title": "Set Leader Pose Component\nLa destinazione è Componente della mesh con pelle",
+			"comment": "",
+			"x": 432,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B01612EE4306FCA42CEA4CB1F2B6BAD4",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AE6435F94A2C32C6D566B9A07D84D147",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9D02178D44E60299107D84859CD6CAB5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkinnedMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A0D5B9BD408595503F07CF9AC711E166",
+					"name": "NewLeaderBoneComponent",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkinnedMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "46434D6440F7018B81AA62ABDED691BE",
+					"name": "bForceUpdate",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "FE4860F848F387B31C6FCEA5E251F0A6",
+					"name": "bInFollowerShouldTickPose",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "D457F49C4AC56B584F987B9BE696E6E4",
+			"class": "K2Node_VariableGet",
+			"title": "Get Mesh",
+			"comment": "",
+			"x": 288,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8669077D461D2D61ED905BA3E03A5668",
+					"name": "Mesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D291C2D2451351222DB3AAA1B177E3D3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "041D8A404D350A630EB352B65E468F83",
+			"class": "K2Node_VariableGet",
+			"title": "Get BodyMesh",
+			"comment": "",
+			"x": 288,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A731C1534B1398A45E927FB921FC4AD0",
+					"name": "BodyMesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EB54A2E042AD1B06512BAB92236668C7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "26491A2A40E7A571D471D2B21CC06704",
+			"class": "K2Node_CallFunction",
+			"title": "Set Dynamic Materials\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": 704,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "01F84D424BCB8AD0D7321A9D932096D0",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "498B914249D62F9A1BF5CBACCE32DFEB",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F0140D084083EC50512299B7E5F6B637",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "41BCCCA14142B05578E8D289BC26A404",
+			"class": "K2Node_CallFunction",
+			"title": "Set/ Reset Colors\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": 992,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A46FA20745F661C1218421A0B3D228E9",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EC4677114A4138074F621292E21A3F9F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FBD7E93948799A0492237F931DF57B37",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UserConstructionScript",
+			"edgeType": "exec",
+			"fromNodeGuid": "D53DD5EC48F93B5B257AD0BC6D7B4E86",
+			"fromPinId": "1644F1B74BBC04644F719AA829133AA6",
+			"fromPinName": "then",
+			"toNodeGuid": "C5218A4148CA3ECAADC6CC863A937DD1",
+			"toPinId": "F5F71C1C4A7649EB47E414ACC000C57D",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UserConstructionScript",
+			"edgeType": "exec",
+			"fromNodeGuid": "C5218A4148CA3ECAADC6CC863A937DD1",
+			"fromPinId": "7C27033E4B26DC433F5E8DA907E53A90",
+			"fromPinName": "then",
+			"toNodeGuid": "A7E496F04C6D42FC8D258AB6106E7934",
+			"toPinId": "B01612EE4306FCA42CEA4CB1F2B6BAD4",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UserConstructionScript",
+			"edgeType": "exec",
+			"fromNodeGuid": "A7E496F04C6D42FC8D258AB6106E7934",
+			"fromPinId": "AE6435F94A2C32C6D566B9A07D84D147",
+			"fromPinName": "then",
+			"toNodeGuid": "26491A2A40E7A571D471D2B21CC06704",
+			"toPinId": "01F84D424BCB8AD0D7321A9D932096D0",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UserConstructionScript",
+			"edgeType": "data",
+			"fromNodeGuid": "041D8A404D350A630EB352B65E468F83",
+			"fromPinId": "A731C1534B1398A45E927FB921FC4AD0",
+			"fromPinName": "BodyMesh",
+			"toNodeGuid": "A7E496F04C6D42FC8D258AB6106E7934",
+			"toPinId": "9D02178D44E60299107D84859CD6CAB5",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UserConstructionScript",
+			"edgeType": "data",
+			"fromNodeGuid": "D457F49C4AC56B584F987B9BE696E6E4",
+			"fromPinId": "8669077D461D2D61ED905BA3E03A5668",
+			"fromPinName": "Mesh",
+			"toNodeGuid": "A7E496F04C6D42FC8D258AB6106E7934",
+			"toPinId": "A0D5B9BD408595503F07CF9AC711E166",
+			"toPinName": "NewLeaderBoneComponent"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UserConstructionScript",
+			"edgeType": "exec",
+			"fromNodeGuid": "26491A2A40E7A571D471D2B21CC06704",
+			"fromPinId": "498B914249D62F9A1BF5CBACCE32DFEB",
+			"fromPinName": "then",
+			"toNodeGuid": "41BCCCA14142B05578E8D289BC26A404",
+			"toPinId": "A46FA20745F661C1218421A0B3D228E9",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [
+		"Get BodyMesh",
+		"Get Mesh"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Set Dynamic Materials\nLa destinazione è ALS Chuck BP",
+		"Set Leader Pose Component\nLa destinazione è Componente della mesh con pelle",
+		"Set/ Reset Colors\nLa destinazione è ALS Chuck BP"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Set Dynamic Materials\nLa destinazione è ALS Chuck BP",
+		"Set Leader Pose Component\nLa destinazione è Componente della mesh con pelle",
+		"Set/ Reset Colors\nLa destinazione è ALS Chuck BP"
+	],
+	"flowId": "F001",
+	"graphId": "G030",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

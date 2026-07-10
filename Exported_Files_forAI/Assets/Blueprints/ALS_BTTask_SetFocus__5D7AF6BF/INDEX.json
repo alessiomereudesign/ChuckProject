@@ -1,0 +1,61 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "ALS_BTTask_SetFocus",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_BTTask_SetFocus.ALS_BTTask_SetFocus",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_AI_ALS_BTTask_SetFocus",
+	"shortAssetFolder": "ALS_BTTask_SetFocus__5D7AF6BF",
+	"pathHash": "5D7AF6BF",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/AIModule.BTTask_BlueprintBase",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 1,
+		"nodes": 5,
+		"edges": 5,
+		"flows": 1
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/ALS_BTTask_SetFocus__5D7AF6BF/SUMMARY.md",
+		"variables": "Assets/Blueprints/ALS_BTTask_SetFocus__5D7AF6BF/VARIABLES.json",
+		"components": "Assets/Blueprints/ALS_BTTask_SetFocus__5D7AF6BF/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/ALS_BTTask_SetFocus__5D7AF6BF/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/ALS_BTTask_SetFocus__5D7AF6BF/NODES.jsonl",
+		"edges": "Assets/Blueprints/ALS_BTTask_SetFocus__5D7AF6BF/EDGES.jsonl",
+		"search": "Assets/Blueprints/ALS_BTTask_SetFocus__5D7AF6BF/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 5,
+			"edgeCount": 5,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_BTTask_SetFocus__5D7AF6BF/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_BTTask_SetFocus__5D7AF6BF/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_BTTask_SetFocus__5D7AF6BF/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Evento Receive Execute AI",
+					"entryNodeGuid": "6C5F8D0641E3CF69F8682CACD62F4D57",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BTTask_SetFocus__5D7AF6BF/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BTTask_SetFocus__5D7AF6BF/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 5
+				}
+			]
+		}
+	]
+}

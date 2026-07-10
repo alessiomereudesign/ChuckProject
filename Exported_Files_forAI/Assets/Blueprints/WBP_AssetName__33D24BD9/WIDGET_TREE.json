@@ -1,0 +1,15 @@
+{
+	"assetName": "WBP_AssetName",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/WBP_AssetName.WBP_AssetName",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_WBP_AssetName",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"widgets": [
+		{
+			"name": "SetText (Text)\nLa destinazione è Testo",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		}
+	]
+}

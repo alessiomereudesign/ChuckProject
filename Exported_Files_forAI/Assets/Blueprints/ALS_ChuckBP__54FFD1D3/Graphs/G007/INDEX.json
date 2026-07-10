@@ -1,0 +1,25 @@
+{
+	"graphId": "G007",
+	"name": "BPI_Get_3P_TraceParams",
+	"graphName": "BPI_Get_3P_TraceParams",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 11,
+	"edgeCount": 10,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G007/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G007/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G007/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "BPI Get 3P Trace Params",
+			"entryNodeGuid": "654EC2BE4C69F8E3D4D7DD89A076B0D6",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G007/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G007/F001.json",
+			"textFile": "Flows/G007/F001.txt",
+			"jsonFile": "Flows/G007/F001.json",
+			"nodeCount": 11
+		}
+	]
+}

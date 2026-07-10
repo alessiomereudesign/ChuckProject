@@ -1,0 +1,117 @@
+Asset: WBP_TabIntersect_CharacterCard
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterCard.WBP_TabIntersect_CharacterCard
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterCard
+GraphId: G001
+Graph: EventGraph
+FlowId: F003
+Entry: Evento Tick
+NodeGuid: 1CF598084919779FE6F586A53BBF0FFA
+
+Exec Flow:
+1. Evento Pre Construct [K2Node_Event] B79B62C045EC31C9D11656BFC34F52E9
+2. Evento Construct [K2Node_Event] 96F3438B4823B47F8459079DAC315CBE
+3. Evento Tick [K2Node_Event] 1CF598084919779FE6F586A53BBF0FFA
+4. InizializeCharacterCard
+Custom Event [K2Node_CustomEvent] 2F1D688941DF1A67130288B4FA47E2FE
+5. Get CharacterData [K2Node_VariableGet] 214207E24D9283B6AFEA5EB8EE3BE4D3
+6. Break F_CharacterData [K2Node_BreakStruct] 0FE21A2E43D9CD5B326581A8C797C721
+7. Seleziona [K2Node_Select] 4CF553F245D9DEBC721854BDC114DD92
+8. Seleziona [K2Node_Select] 4108454247BCEF1700DB5192C141FDF6
+9. Seleziona [K2Node_Select] 7A2F884F4C946F7163935CA03D453A8E
+10. Seleziona [K2Node_Select] B468AA45477FEB0FE64BDD863022D6A2
+11. Seleziona [K2Node_Select] B3B70FBE41035B915731B8A4B23CE1B1
+12. Get TxtVar_NameSubject [K2Node_VariableGet] 84D41AB94406E43911CE60B4E7233661
+13. Get TxtVar_AkaName [K2Node_VariableGet] 2D0C9EC349C2D8A8973F7D93E201F6A4
+14. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 5664F1FE4AE4077EF19A6FB085CBA01D
+15. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 460F6E5647DD8C8F55812F9E37FECFD3
+16. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 14BDB0EE4C2DD5F8C5EFFF88DE8FC134
+17. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 9A9386D74E254262C3184AB0BA6079FB
+18. Riproduci animazione
+La destinazione è User Widget [K2Node_CallFunction] 221954D2499FCB17A647959386CE40BC
+19. Get FadeIn [K2Node_VariableGet] D33F231646B1935A5C8CF0A671B22532
+20. FadeInEvent
+Custom Event [K2Node_CustomEvent] 53D60D6049911D475061A7A1D47D27DF
+21. Riproduci animazione
+La destinazione è User Widget [K2Node_CallFunction] 34F461684DC78B1565740E84600F17BD
+22. FadeOutEvent
+Custom Event [K2Node_CustomEvent] BB67EFE74938F26B96F2ABB4FCC49894
+23. Fade in Event
+La destinazione è WBP Tab Intersect Character Card [K2Node_CallFunction] 04303A2C46999D9110DC888728305FE2
+24. Get FadeOut [K2Node_VariableGet] 12EF1A8C4239CD7B9B54C482AD5BE6D3
+25. Get Var_Icon [K2Node_VariableGet] ECD8792346FB4607E004318C9FA58B58
+26. Seleziona [K2Node_Select] DA1CF42248C25962C5EE83BBFE482951
+27. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] BDD980EC43DFD18050028C8DD5447EE8
+28. Get TxtVar_Nationality [K2Node_VariableGet] 09100F7745F423370AB2BF9BA3AD1F8C
+29. Seleziona [K2Node_Select] AB4A66924E7909EF7EDABFAD2822279D
+30. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 649BAC7545A4812022D1E0BFEDFE64AE
+31. Get TxtVar_PlaceOfBirth [K2Node_VariableGet] AE8388364F12895ADC69B983901EB6D5
+32. Get TxtVar_HistoryString1 [K2Node_VariableGet] DB2C87124F4AB962FA10D6945C87B0E9
+33. Seleziona [K2Node_Select] 9D6A5396467B7550994A6699898C98BD
+34. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 4D1E26AB4512135438E40C868186829A
+35. Get TxtVar_Description [K2Node_VariableGet] 2A7205D94B4A018EA3655FA6D47C9620
+36. Seleziona [K2Node_Select] 745F25324D48FA40AE9DD7A3C417C3F4
+37. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 639F3C564AB2D2862198A7A5EC01FC7F
+38. Seleziona [K2Node_Select] 36D611F24445D9A9D31F18922FD3FBE6
+39. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 9BE76AE84B845C3C8ADF3D9EE042B45C
+40. Get TxtVar_HistoryString2 [K2Node_VariableGet] 2CBBC7E44D1C7930BBA2168B1945A027
+41. Get TxtVar_HistoryString3 [K2Node_VariableGet] 8E86837D4E6A63A275C625BE06AE7A65
+42. Seleziona [K2Node_Select] 3F719B634469E92FC1D0328B401436DB
+43. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] E3EACC9A4F354986F3063EBCF17A53CF
+44. Get TxtVar_HistoryString4 [K2Node_VariableGet] 122D61134F695AB897C21182BAE48FD5
+
+Variables Read:
+- Get CharacterData
+- Get FadeIn
+- Get FadeOut
+- Get TxtVar_AkaName
+- Get TxtVar_Description
+- Get TxtVar_HistoryString1
+- Get TxtVar_HistoryString2
+- Get TxtVar_HistoryString3
+- Get TxtVar_HistoryString4
+- Get TxtVar_NameSubject
+- Get TxtVar_Nationality
+- Get TxtVar_PlaceOfBirth
+- Get Var_Icon
+
+Variables Written:
+- none
+
+External Calls:
+- Fade in Event
+La destinazione è WBP Tab Intersect Character Card
+- Riproduci animazione
+La destinazione è User Widget
+- Set Brush from Texture
+La destinazione è Immagine
+- SetText (Text)
+La destinazione è Testo
+
+Widgets Touched:
+- Set Brush from Texture
+La destinazione è Immagine
+- SetText (Text)
+La destinazione è Testo
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Fade in Event
+La destinazione è WBP Tab Intersect Character Card
+- Riproduci animazione
+La destinazione è User Widget
+- Set Brush from Texture
+La destinazione è Immagine
+- SetText (Text)
+La destinazione è Testo

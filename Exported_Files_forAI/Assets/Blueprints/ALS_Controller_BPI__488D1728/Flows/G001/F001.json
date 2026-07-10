@@ -1,0 +1,129 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Controller_BPI",
+	"graph": "BPI_Get_DebugInfo",
+	"entryName": "BPI Get Debug Info",
+	"entryNodeGuid": "38B0E87A4AC834E3830AFE879FD07E13",
+	"nodes": [
+		{
+			"nodeGuid": "38B0E87A4AC834E3830AFE879FD07E13",
+			"class": "K2Node_FunctionEntry",
+			"title": "BPI Get Debug Info",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "68839D5840521A857BE89BAD3BC1FA6F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6E02E47D4E3D213B4EA5BAB924E0F4AF",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 256,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EDFBC043420A9F5BB5D87F880AC11A17",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F53096C54DEA367B661D968AD4E40DE4",
+					"name": "DebugFocusCharacter",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9F9D673D4D485BC068B0849AD5712E74",
+					"name": "DebugView",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "7EA84BDC4590BC5BF4321B85265D1A39",
+					"name": "ShowHUD",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "AF52355847FFFD4AA329BBA7BB3209B4",
+					"name": "ShowTraces",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "1BD71E2A406DB7E75DB71FBE6D184366",
+					"name": "ShowDebugShapes",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "B9BA4A6E46A1F3928C8AAFB5CA2E0064",
+					"name": "ShowLayerColors",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "9C674892403A73D31DB4C28F3EED17A3",
+					"name": "Slomo",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "0D4A7A9F4F0ED1EBB93EC68154BD1176",
+					"name": "ShowCharacterInfo",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Controller_BPI",
+			"graph": "BPI_Get_DebugInfo",
+			"edgeType": "exec",
+			"fromNodeGuid": "38B0E87A4AC834E3830AFE879FD07E13",
+			"fromPinId": "68839D5840521A857BE89BAD3BC1FA6F",
+			"fromPinName": "then",
+			"toNodeGuid": "6E02E47D4E3D213B4EA5BAB924E0F4AF",
+			"toPinId": "EDFBC043420A9F5BB5D87F880AC11A17",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G001",
+	"assetName": "ALS_Controller_BPI",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Controller_BPI.ALS_Controller_BPI"
+}

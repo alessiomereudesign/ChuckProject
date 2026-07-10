@@ -1,0 +1,25 @@
+{
+	"graphId": "G016",
+	"name": "Unequip",
+	"graphName": "Unequip",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 1,
+	"edgeCount": 0,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G016/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G016/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G016/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Unequip",
+			"entryNodeGuid": "64B2593E466B242D7BCB7B9D9E3C1752",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G016/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G016/F001.json",
+			"textFile": "Flows/G016/F001.txt",
+			"jsonFile": "Flows/G016/F001.json",
+			"nodeCount": 1
+		}
+	]
+}

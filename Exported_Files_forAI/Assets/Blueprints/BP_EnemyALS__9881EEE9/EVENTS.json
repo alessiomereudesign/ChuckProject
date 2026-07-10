@@ -1,0 +1,22 @@
+{
+	"assetName": "BP_EnemyALS",
+	"assetPath": "/Game/ChuckContent/Blueprints/Enemies/BP_EnemyALS.BP_EnemyALS",
+	"assetKey": "Game_ChuckContent_Blueprints_Enemies_BP_EnemyALS",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Evento AnyDamage",
+			"graph": "EventGraph",
+			"nodeGuid": "32E29B0E41D3AA9FD47208871EC02175",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Construction Script",
+			"graph": "UserConstructionScript",
+			"nodeGuid": "1C16CF6046628789CD4B7ABFE50FFF41",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

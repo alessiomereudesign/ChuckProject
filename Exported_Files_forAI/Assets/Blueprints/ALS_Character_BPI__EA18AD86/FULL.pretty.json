@@ -1,0 +1,556 @@
+{
+	"schemaVersion": "2.2",
+	"unrealEngineVersion": "5.4.4-35576357+++UE5+Release-5.4",
+	"name": "ALS_Character_BPI",
+	"path": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Character_BPI.ALS_Character_BPI",
+	"assetName": "ALS_Character_BPI",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Character_BPI.ALS_Character_BPI",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Character_BPI",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"mainClass": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Character_BPI.ALS_Character_BPI_C",
+	"parentClass": "/Script/CoreUObject.Interface",
+	"compileStatus": "UpToDate",
+	"implementedInterfaces": [],
+	"variables": [],
+	"graphs": [
+		{
+			"name": "BPI_Get_CurrentStates",
+			"type": "Function",
+			"nodes": [
+				{
+					"nodeGuid": "ABB93A414D9CC5828308489321B69E92",
+					"class": "K2Node_FunctionEntry",
+					"title": "BPI Get Current States",
+					"comment": "",
+					"x": 0,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "24D811614DA3F33E3B111084456D469D",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "5AD1286A4B2CA313B168ED90374F62AB",
+					"class": "K2Node_FunctionResult",
+					"title": "Nodo di restituzione",
+					"comment": "",
+					"x": 256,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "A622EDB94485E7282FC75997A11716F3",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "42FB32AC43754DDBC293CD9BB66006FE",
+							"name": "PawnMovementMode",
+							"direction": "Input",
+							"type": "byte|/Script/Engine.EMovementMode",
+							"defaultValue": "MOVE_None"
+						},
+						{
+							"pinId": "FC351FBD4D526D0668AD7BA93D0E017B",
+							"name": "MovementState",
+							"direction": "Input",
+							"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+							"defaultValue": "NewEnumerator0"
+						},
+						{
+							"pinId": "0EC3AB2D49AC2E0604D334AAA6022F63",
+							"name": "PrevMovementState",
+							"direction": "Input",
+							"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+							"defaultValue": "NewEnumerator0"
+						},
+						{
+							"pinId": "FE66A72D40DBA3C1D74A9EB22FAB0480",
+							"name": "MovementAction",
+							"direction": "Input",
+							"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementAction.ALS_MovementAction",
+							"defaultValue": "NewEnumerator4"
+						},
+						{
+							"pinId": "5FE35336421A670C6B5E0D9AECE000CE",
+							"name": "RotationMode",
+							"direction": "Input",
+							"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+							"defaultValue": "NewEnumerator0"
+						},
+						{
+							"pinId": "36008A944E26759A29E31CAB5E0F9988",
+							"name": "ActualGait",
+							"direction": "Input",
+							"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+							"defaultValue": "NewEnumerator0"
+						},
+						{
+							"pinId": "F065B6194AF893833E66F4A7A4A0525C",
+							"name": "ActualStance",
+							"direction": "Input",
+							"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+							"defaultValue": "NewEnumerator0"
+						},
+						{
+							"pinId": "5546D6D44068093FBFCDFDA40D9B46CC",
+							"name": "ViewMode",
+							"direction": "Input",
+							"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode.ALS_ViewMode",
+							"defaultValue": "NewEnumerator0"
+						},
+						{
+							"pinId": "088B0B4E4BE4EC6B57F2A2AB5E1CCF74",
+							"name": "OverlayState",
+							"direction": "Input",
+							"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+							"defaultValue": "NewEnumerator0"
+						}
+					]
+				}
+			],
+			"links": [
+				{
+					"fromNodeGuid": "ABB93A414D9CC5828308489321B69E92",
+					"fromPinId": "24D811614DA3F33E3B111084456D469D",
+					"fromPinName": "then",
+					"toNodeGuid": "5AD1286A4B2CA313B168ED90374F62AB",
+					"toPinId": "A622EDB94485E7282FC75997A11716F3",
+					"toPinName": "execute"
+				}
+			]
+		},
+		{
+			"name": "BPI_Get_EssentialValues",
+			"type": "Function",
+			"nodes": [
+				{
+					"nodeGuid": "7EB6B71849B447D056B8BEAABD8409B3",
+					"class": "K2Node_FunctionEntry",
+					"title": "BPI Get Essential Values",
+					"comment": "",
+					"x": 0,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "CD9D5CE34C9C7235BCC4CBAA34E6C239",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "C64D042741E845EF5CF331BE1E0A2D92",
+					"class": "K2Node_FunctionResult",
+					"title": "Nodo di restituzione",
+					"comment": "",
+					"x": 256,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "831749E24D3AD118EAC5A9BA707DA6B5",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "AF85CA894ADFC2E34ED4CB8D588685D3",
+							"name": "Velocity",
+							"direction": "Input",
+							"type": "struct|/Script/CoreUObject.Vector",
+							"defaultValue": "0, 0, 0"
+						},
+						{
+							"pinId": "44E4F1CD45061C20D4B0E988848967DE",
+							"name": "Acceleration",
+							"direction": "Input",
+							"type": "struct|/Script/CoreUObject.Vector",
+							"defaultValue": "0, 0, 0"
+						},
+						{
+							"pinId": "617E3228403FE0E3E3DB0CB7A307FE10",
+							"name": "MovementInput",
+							"direction": "Input",
+							"type": "struct|/Script/CoreUObject.Vector",
+							"defaultValue": "0, 0, 0"
+						},
+						{
+							"pinId": "E19BCC8245D7B16AC56E23A757B36867",
+							"name": "IsMoving",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "2113821E4361CD538B4267B9FDB6E7AA",
+							"name": "HasMovementInput",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "DDCA697D43D29F89771CCD9952579B60",
+							"name": "Speed",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "CA09318D407CEAFA4645089BF16B9DAC",
+							"name": "MovementInputAmount",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "5D0F154D4015D95B4ACB32AE4ED868CD",
+							"name": "AimingRotation",
+							"direction": "Input",
+							"type": "struct|/Script/CoreUObject.Rotator",
+							"defaultValue": "0, 0, 0"
+						},
+						{
+							"pinId": "72542F94400322C3DFCC8D9EA8B2EA78",
+							"name": "AimYawRate",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						}
+					]
+				}
+			],
+			"links": [
+				{
+					"fromNodeGuid": "7EB6B71849B447D056B8BEAABD8409B3",
+					"fromPinId": "CD9D5CE34C9C7235BCC4CBAA34E6C239",
+					"fromPinName": "then",
+					"toNodeGuid": "C64D042741E845EF5CF331BE1E0A2D92",
+					"toPinId": "831749E24D3AD118EAC5A9BA707DA6B5",
+					"toPinName": "execute"
+				}
+			]
+		},
+		{
+			"name": "BPI_Set_MovementState",
+			"type": "Function",
+			"nodes": [
+				{
+					"nodeGuid": "9A8B99F8466A98E7FDD15398245916EC",
+					"class": "K2Node_FunctionEntry",
+					"title": "BPI Set Movement State",
+					"comment": "",
+					"x": 0,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "629F97F04E3BE00C3165F9B1F93BF576",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "046DA62A40C8459E4C8F7F972EBD3334",
+							"name": "NewMovementState",
+							"direction": "Output",
+							"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+							"defaultValue": "NewEnumerator0"
+						}
+					]
+				}
+			],
+			"links": []
+		},
+		{
+			"name": "BPI_Set_MovementAction",
+			"type": "Function",
+			"nodes": [
+				{
+					"nodeGuid": "7A44009143825ECE63B4A8986845E542",
+					"class": "K2Node_FunctionEntry",
+					"title": "BPI Set Movement Action",
+					"comment": "",
+					"x": 0,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "80C613F043CA419EAE227298F69DA403",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "55E88B1E4EDB201C55D66D858527D58C",
+							"name": "NewMovementAction",
+							"direction": "Output",
+							"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementAction.ALS_MovementAction",
+							"defaultValue": "NewEnumerator4"
+						}
+					]
+				}
+			],
+			"links": []
+		},
+		{
+			"name": "BPI_Set_RotationMode",
+			"type": "Function",
+			"nodes": [
+				{
+					"nodeGuid": "68A9504041993A172AB5B0971B31397E",
+					"class": "K2Node_FunctionEntry",
+					"title": "BPI Set Rotation Mode",
+					"comment": "",
+					"x": 0,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "ACEBFBFD4B91741788B8D6AC802A32F5",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "06BEF085400DCC620C610185796AE077",
+							"name": "NewRotationMode",
+							"direction": "Output",
+							"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+							"defaultValue": "NewEnumerator0"
+						}
+					]
+				}
+			],
+			"links": []
+		},
+		{
+			"name": "BPI_Set_Gait",
+			"type": "Function",
+			"nodes": [
+				{
+					"nodeGuid": "4E54B081419C6BF99ED3C28D62EF90B5",
+					"class": "K2Node_FunctionEntry",
+					"title": "BPI Set Gait",
+					"comment": "",
+					"x": 0,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "0EC8610F46368A756303BFADEF452F1B",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "358B435A4B3FDD50BF3A1A8795175821",
+							"name": "NewGait",
+							"direction": "Output",
+							"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+							"defaultValue": "NewEnumerator0"
+						}
+					]
+				}
+			],
+			"links": []
+		},
+		{
+			"name": "BPI_Set_ViewMode",
+			"type": "Function",
+			"nodes": [
+				{
+					"nodeGuid": "B9722A7D499EB49E1EE2A99E2DB8718C",
+					"class": "K2Node_FunctionEntry",
+					"title": "BPI Set View Mode",
+					"comment": "",
+					"x": 0,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "BC6A77C944DDA6AF9EC8D2A292D5D4F9",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "A8067D054252700EAA6EBFB7C89219B3",
+							"name": "NewViewMode",
+							"direction": "Output",
+							"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode.ALS_ViewMode",
+							"defaultValue": "NewEnumerator0"
+						}
+					]
+				}
+			],
+			"links": []
+		},
+		{
+			"name": "BPI_Set_OverlayState",
+			"type": "Function",
+			"nodes": [
+				{
+					"nodeGuid": "975CBFF0431677475FA76E995B7644BA",
+					"class": "K2Node_FunctionEntry",
+					"title": "BPI Set Overlay State",
+					"comment": "",
+					"x": 0,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "2E385560481261373D404999BF6B8490",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "C0FB70884F45756FBB58188F5EBF87B5",
+							"name": "NewOverlayState",
+							"direction": "Output",
+							"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+							"defaultValue": "NewEnumerator0"
+						}
+					]
+				}
+			],
+			"links": []
+		}
+	],
+	"dependencies": [
+		"/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait",
+		"/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementAction",
+		"/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState",
+		"/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState",
+		"/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode",
+		"/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance",
+		"/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode"
+	],
+	"relations": [
+		{
+			"name": "ALS_ViewMode",
+			"path": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode.ALS_ViewMode",
+			"assetType": "Enum"
+		},
+		{
+			"name": "ALS_Stance",
+			"path": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+			"assetType": "Enum"
+		},
+		{
+			"name": "ALS_Gait",
+			"path": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+			"assetType": "Enum"
+		},
+		{
+			"name": "ALS_MovementState",
+			"path": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+			"assetType": "Enum"
+		},
+		{
+			"name": "ALS_OverlayState",
+			"path": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+			"assetType": "Enum"
+		},
+		{
+			"name": "ALS_MovementAction",
+			"path": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementAction.ALS_MovementAction",
+			"assetType": "Enum"
+		},
+		{
+			"name": "ALS_RotationMode",
+			"path": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+			"assetType": "Enum"
+		}
+	],
+	"semanticSummary":
+	{
+		"probableSystem": "ALS / Locomotion",
+		"classificationConfidence": "heuristic",
+		"summary": "Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.",
+		"importantVariables": [],
+		"importantFunctions": [
+			"BPI_Get_CurrentStates",
+			"BPI_Get_EssentialValues",
+			"BPI_Set_Gait",
+			"BPI_Set_MovementAction",
+			"BPI_Set_MovementState",
+			"BPI_Set_OverlayState",
+			"BPI_Set_RotationMode",
+			"BPI_Set_ViewMode"
+		],
+		"importantEvents": [],
+		"relatedAssets": [
+			"ALS_Gait",
+			"ALS_MovementAction",
+			"ALS_MovementState",
+			"ALS_OverlayState",
+			"ALS_RotationMode",
+			"ALS_Stance",
+			"ALS_ViewMode"
+		],
+		"complexity":
+		{
+			"graphCount": 8,
+			"nodeCount": 10,
+			"pinCount": 34,
+			"linkCount": 2
+		},
+		"notes": [
+			"Classificazione euristica dedotta da nome, path e tipo asset (ALS / Locomotion)."
+		]
+	},
+	"shortAssetFolder": "ALS_Character_BPI__EA18AD86",
+	"pathHash": "EA18AD86"
+}

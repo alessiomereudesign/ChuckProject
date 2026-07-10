@@ -1,0 +1,417 @@
+Asset: WBP_MenuArchive
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive
+GraphId: G006
+Graph: OnKeyDown
+FlowId: F001
+Entry: On Key Down
+NodeGuid: D914DB934D5240A3BE9F6CA949B80798
+
+Exec Flow:
+1. On Key Down [K2Node_FunctionEntry] D914DB934D5240A3BE9F6CA949B80798
+2. Nodo di restituzione [K2Node_FunctionResult] DEE6C9BB4C616F560506C9BC87A911DA
+3. Get Key [K2Node_CallFunction] EA725DA24CA3ED84B5783BB967BEDDF9
+4. Equal (Key) [K2Node_PromotableOperator] 02CE86894E6B7C7A799BB8AF2A87E177
+5. Gestito [K2Node_CallFunction] 6695011E45D01F631C43D392EE15CDA7
+6. Equal (Key) [K2Node_PromotableOperator] 8B8ECFA24FF8F3F73935CB93443152F3
+7. Equal (Key) [K2Node_PromotableOperator] 544A0D024266F8F41BA34AA423ADF4B0
+8. Nodo di restituzione [K2Node_FunctionResult] 390922C74701DDDBED39459EF454141C
+9. Gestito [K2Node_CallFunction] 759432C64B5F4ECBE133E28F34D34BE0
+10. Return Back Manage
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 65A954F74D0D1DD8E4E7B5B4AA14F55E
+11. Get TabsSelect [K2Node_VariableGet] 05D5D3EB42DF0CEEE502789EB801071B
+12. Get Active Widget Index
+La destinazione è Widget Switcher [K2Node_CallFunction] F5BEB5A7429AB89B8269BB87F475168E
+13. Set ActiveWidgetIndex [K2Node_VariableSet] 6EE2D50A4482287C8739F5B74395397E
+14. Set ActiveWidgetIndex [K2Node_VariableSet] CEE44E624548A7D82BFDB48C2B1BA27F
+15. Nodo di restituzione [K2Node_FunctionResult] A14C79064334A328028D54B83CEDEFD7
+16. Gestito [K2Node_CallFunction] A166816F4346EEC9EB188D90B1674D7B
+17. Attiva Int [K2Node_SwitchInteger] 367C0345495B27DA6AC34F8298B2F334
+18. Ramo [K2Node_IfThenElse] A47DDF2B4C2B9B1679C4D98C4EADAEBA
+19. Ramo [K2Node_IfThenElse] B8725C5D4F6C13221E26009EAFDFEAA0
+20. Set ActiveWidgetIndex [K2Node_VariableSet] 66E7DA8043C15141B687B081B6255CE9
+21. Set ActiveWidgetIndex [K2Node_VariableSet] AC348E4C442DD113C9F0289ACD3E4AA3
+22. Nodo di restituzione [K2Node_FunctionResult] CDEFBE254F2D7E08512C069EC3BC5C9B
+23. Gestito [K2Node_CallFunction] CA8F13CD4D8F67D6A340A7959B41BC99
+24. Nodo di restituzione [K2Node_FunctionResult] 9ADD95A446223B56531B9BBFD84CE11B
+25. Gestito [K2Node_CallFunction] 821610674C9E9620BEDFF882512548AF
+26. Nodo di reindirizzamento [K2Node_Knot] 4A1BEFB44D08FF3DF17F0B9BB89940DC
+27. Nodo di reindirizzamento [K2Node_Knot] 312772E0495F72934A0D3F87B9B802B3
+28. Nodo di reindirizzamento [K2Node_Knot] B0BA0B924A8F30A09B8DB5B14EB2CFE1
+29. Nodo di reindirizzamento [K2Node_Knot] 33A6ACEE4E64213660BD69A22DD44CAE
+30. Ramo [K2Node_IfThenElse] 49DC909D4173CC3535D712908E52DCA4
+31. Nodo di restituzione [K2Node_FunctionResult] 1409256B4A7727CAA8DF948114872530
+32. Gestito [K2Node_CallFunction] 920FF3B146704649B904F3A763C9CC01
+33. Get TabsSelect [K2Node_VariableGet] 58156CAF4B2E4D0223DC5FA6EC11C2E1
+34. Get Active Widget Index
+La destinazione è Widget Switcher [K2Node_CallFunction] 6C77E9844BD3C8F515B57AAF931B87D4
+35. Set ActiveWidgetIndex [K2Node_VariableSet] 4C84477048CE014563E3E4BDF21DAC16
+36. Set ActiveWidgetIndex [K2Node_VariableSet] 5240A4BF4BC90A9BE0244A95989DBC61
+37. Nodo di restituzione [K2Node_FunctionResult] 7A02B6BE4EF4F7347794FEA9159A8973
+38. Gestito [K2Node_CallFunction] AC05944A477ED9EFB8C1EAA4F8D5B91E
+39. Attiva Int [K2Node_SwitchInteger] 07398ED3474C92E2FC873FA22FB3F442
+40. Set ActiveWidgetIndex [K2Node_VariableSet] D147B4D340472CCCD551659E6FCFD89B
+41. Set ActiveWidgetIndex [K2Node_VariableSet] 27234E2C4961D2072420299F75523575
+42. Nodo di restituzione [K2Node_FunctionResult] C6A0479549967C04F560A0A720ABB434
+43. Gestito [K2Node_CallFunction] B3E0C48C477FEDEAE949219DCEE39536
+44. Nodo di restituzione [K2Node_FunctionResult] 5A4C1E674BE893F5C091AEACCBA15FC9
+45. Gestito [K2Node_CallFunction] 8A9529C04A955F9170022CA7B3D22785
+46. Nodo di reindirizzamento [K2Node_Knot] 7CB74AAE465CE1054E63EAAD9020BFED
+47. Nodo di reindirizzamento [K2Node_Knot] 078FAAA1489CD4BFD87D5BBB15EB0E89
+48. Nodo di reindirizzamento [K2Node_Knot] 9435BCDC422B19841B8153A4361A40B5
+49. Nodo di reindirizzamento [K2Node_Knot] AAB2F6E149BC74E6B8B29AB0D4721F79
+50. Get BtnTab_Quests [K2Node_VariableGet] 6A9B30F848C49AC6E367E2A35B344F0C
+51. Get BtnTab_Intersect [K2Node_VariableGet] 4DDA4B1547DDC91291AF198B3E14EA41
+52. Get BtnTab_Inventory [K2Node_VariableGet] FAB2A8C64F788DCC9AEAFCADF926AA29
+53. Get BtnTab_Settings [K2Node_VariableGet] 9ADAC4FB40F1A2B7E42AE8B81FF7D96E
+54. Get BtnTab_Intersect [K2Node_VariableGet] 4422A7CD4598C81134DC8CB3029A5619
+55. Get BtnTab_Settings [K2Node_VariableGet] 87C24A174088BE576D0FAE888D837514
+56. Get BtnTab_Inventory [K2Node_VariableGet] 676417E74794AF1365C21C81001E8724
+57. Get BtnTab_Settings [K2Node_VariableGet] 169C070045158B8C333AED8102998DCB
+58. Get BtnTab_Inventory [K2Node_VariableGet] 291CB38C4BCC8019F7708382CF9AF700
+59. Get BtnTab_Quests [K2Node_VariableGet] DD4040A14947F1E6A761C2A48EA14451
+60. Get BtnTab_Inventory [K2Node_VariableGet] DEF1F11E47B62BB791B6A79817E7CEDA
+61. Get BtnTab_Quests [K2Node_VariableGet] 0E7B6AFA4A78FD9507B5DD98EEF5AAE8
+62. Get BtnTab_Intersect [K2Node_VariableGet] 13E341A246F66A84C6AF8EB7560328E7
+63. Get BtnTab_Quests [K2Node_VariableGet] 980CD1894C828F5F19E3F5BFA4D7A929
+64. Get BtnTab_Intersect [K2Node_VariableGet] F1EC74E3419FFE74E82381BA32327D73
+65. Get BtnTab_Settings [K2Node_VariableGet] A153D2F44A8D692AEE777E94CB989C67
+66. Get BtnTab_Intersect [K2Node_VariableGet] 106A78984990F842DBE00CBCDFB6897D
+67. Get BtnTab_Settings [K2Node_VariableGet] 98C42CE34C8A1D2AB0A25790B19F22BA
+68. Get BtnTab_Inventory [K2Node_VariableGet] E49C732D4171937AE6D41ABDEF0239A4
+69. Get BtnTab_Quests [K2Node_VariableGet] 4BFCEEE246F90A9515253E8273D3828B
+70. Get BtnTab_Settings [K2Node_VariableGet] BF6A303E40DB50BECDB36C909BB63A8F
+71. Get BtnTab_Inventory [K2Node_VariableGet] 52CC5FBE45D0925C705284A70B37EE22
+72. Get BtnTab_Inventory [K2Node_VariableGet] 0E68BD5441630A0301D65BB6DB1AA8BE
+73. Get BtnTab_Quests [K2Node_VariableGet] 9412EE154F0648C0AB1AAD92A8BB2800
+74. Get BtnTab_Intersect [K2Node_VariableGet] F64DC1E244259D3A959BBB8D241E1CD0
+75. Get BtnTab_Quests [K2Node_VariableGet] C3D5D960467AB48446E7B3A65CEE75AB
+76. Get BtnTab_Intersect [K2Node_VariableGet] CA20A8924EA288B208B6859969300E08
+77. Get BtnTab_Settings [K2Node_VariableGet] 55C7F4724B4FB201E2C153955180AA49
+78. Get BtnTab_Quests [K2Node_VariableGet] 0219CB864A1B61BD4D1F8EBE346015F0
+79. Get BtnTab_Intersect [K2Node_VariableGet] ED5DFDD84B77A4E4ECF9F3BF2B6F4326
+80. Get BtnTab_Inventory [K2Node_VariableGet] 04ABDF714A5B19E4FB2C6BAA060DEBF5
+81. Get BtnTab_Settings [K2Node_VariableGet] 83749F79414F89241B7E55A0AE56A063
+82. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] A1310E644E13CE9DDFFAE38E23AECB4F
+83. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 8614175749EDC8223D2CFA927053A658
+84. Set Keyboard Focus
+La destinazione è Widget [K2Node_CallFunction] 04330BF248C39F0A5EAF2AB895288770
+85. Get Btn_Personaggi [K2Node_VariableGet] 298DE4CC40346C91DBEB0CBFF913E340
+86. Nodo di reindirizzamento [K2Node_Knot] 1C486A6740F0611A7E8BABA97A2A22BC
+87. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] 123B1E2247F32193B82BA6BD30D3DF21
+88. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] BA2B3623497BA0FB5A625BA0AB17EF23
+89. Set Keyboard Focus
+La destinazione è Widget [K2Node_CallFunction] 867A57254BACD06427C18093AB36C5A1
+90. Nodo di reindirizzamento [K2Node_Knot] 63E165A34BF836E941BF4EA2550769E1
+91. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] B99DB28F429B5B4F550961A003C60B69
+92. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 5BE4543B4FD3F7F835908083497BF6AB
+93. Set Keyboard Focus
+La destinazione è Widget [K2Node_CallFunction] 04166B6745443B80E9651B9AF2955ED0
+94. Get Btn_Personaggi [K2Node_VariableGet] 549CB0114A030619537F558C75DDA69D
+95. Nodo di reindirizzamento [K2Node_Knot] 70F45E494EDEE1E8EC5D13BEBDB64BA1
+96. Get BtnSlot_BigWeapon [K2Node_VariableGet] 732AA38F44DFD09C7BA57B8DA449CF1C
+97. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] 257488C04A5557E9CAC46896B140F862
+98. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] E4D528EE4BB9236655307BBBAA31C10B
+99. Set Keyboard Focus
+La destinazione è Widget [K2Node_CallFunction] DC1B479C441355A5E788AAB4A62558C7
+100. Nodo di reindirizzamento [K2Node_Knot] 7DA927394C24BB5C131CACB41D768CD4
+101. Get BtnSlot_BigWeapon [K2Node_VariableGet] 755594A14BB4C334FE90C790B4C608EC
+102. Update Weapon Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 00057A754EE5B465E28886B534626433
+103. Update Weapon Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 6EF406214C0AA74F35C3939C38A7BA74
+104. Focused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] E0E729B44CFAA59569E381A8BFB3003B
+105. Unfocused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 6A52F29A4C93E06007AEAFB665BDE3B7
+106. Crea array [K2Node_MakeArray] FF4CE98C423BF5DF00B4C99267DE2001
+107. Focused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 17C2258E488CEC965B290489B03F3E7A
+108. Unfocused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] F3162D40491C3E518B043CA2ED407278
+109. Crea array [K2Node_MakeArray] C9CAC6B842D70363516D0D8205EECE0F
+110. Crea array [K2Node_MakeArray] 13CE0CAD448BDCF11D0BE49F1D397C52
+111. Focused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 53D9C3C6495EA34A2699E6888080658F
+112. Unfocused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 7843AA35489E88DF183DB883DAD349EE
+113. Focused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 0D549F404DC7317B477C2F9A4930DA36
+114. Unfocused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 0438A195406074F48D50A1B492163BCB
+115. Crea array [K2Node_MakeArray] 95B774634249E5B8721DD3A1D56DBFFA
+116. Focused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 9B1009B8407247F7A9DDBB86AEB1AC6A
+117. Unfocused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 053F0F9B48D05CBF1A9EF5ACDF584C87
+118. Crea array [K2Node_MakeArray] 99092A514563C246B77EB28864D8973F
+119. Unfocused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 56486D1B4F6F656EEFBDF6828610AF4E
+120. Crea array [K2Node_MakeArray] 8A84E6FB4EC1604F0357DA882C5F9DAD
+121. Focused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] C61726A44850D4009EAF1485B76645AE
+122. Focused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] A1550FDF43B47E51264BAAB1BA48CDC0
+123. Crea array [K2Node_MakeArray] 0F11CAC94890611FAF624AA5EBA3FCB8
+124. Unfocused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 74B10B564080132E7CB0D8A57D0FC02A
+125. Focused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] B6BD56EF48B061D11186E6856CDADDC6
+126. Crea array [K2Node_MakeArray] 9F2EE46445D261A18009D0BC2804B39C
+127. Unfocused Tab Color
+La destinazione è WBP Menu Archive [K2Node_CallFunction] F4C4121445643B949A911D9320B2954F
+128. Nodo di reindirizzamento [K2Node_Knot] 955E45F24127B46DC4A27EBBC1EC89A3
+129. Nodo di reindirizzamento [K2Node_Knot] 8BAD693949EAFFF85BAFD2A8E08AC1E1
+130. Nodo di reindirizzamento [K2Node_Knot] 9C1C12E14B7EC0B68C05E4A39338A856
+131. Nodo di reindirizzamento [K2Node_Knot] D610264B45C2170331DEBEBEC1FFD441
+132. Equal (Key) [K2Node_PromotableOperator] 3D65CB35407333A442A9E0BD54AC7D31
+133. Ramo [K2Node_IfThenElse] 8827647243BD487F6B29EF8ACB294986
+134. Nodo di restituzione [K2Node_FunctionResult] 9EA6D4DC4AB76FA36C9E7AAC730210EB
+135. Unhandled [K2Node_CallFunction] EF9C762F403E2C86D216E6B746E05949
+136. Has User Focus
+La destinazione è Widget [K2Node_CallFunction] 99D2CBBA42E2900309E0A6A8530A503A
+137. Ramo [K2Node_IfThenElse] F37DDF1C4A8D9A5B77ABD39ECFA57BC5
+138. Set CurrentSlot [K2Node_VariableSet] D991A77F44A6A1248A25B2A70891B727
+139. Get BtnSlot_SmallFirearm [K2Node_VariableGet] 1D6474B0433EBD1916262180A7C6856E
+140. Has User Focus
+La destinazione è Widget [K2Node_CallFunction] E61007D443AA4DC933E4E8897F0EDA5B
+141. Ramo [K2Node_IfThenElse] 3AE8B65A41B43B0C20B81D9469EFB9FB
+142. Set CurrentSlot [K2Node_VariableSet] D48C308C464CC442DE82C6893B46FF38
+143. Get BtnSlot_BigWeapon [K2Node_VariableGet] F04212304947A07C10C8B88F96C38912
+144. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 60F0B9E44217197BA21A12B432FFBC9C
+145. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 62BB757D463D99269D145781F6E6F183
+146. Has User Focus
+La destinazione è Widget [K2Node_CallFunction] 01D323584F679EAA5BF87D8CFCABBC03
+147. Ramo [K2Node_IfThenElse] C211619C4B9574EB16D5C99B84238870
+148. Set CurrentSlot [K2Node_VariableSet] 54F938484B0951524CAE99BAAC470C53
+149. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 94FA01444009B318A895FCA4C735414D
+150. Has User Focus
+La destinazione è Widget [K2Node_CallFunction] 315411C14B1831E25B7E5F80690A38B3
+151. Ramo [K2Node_IfThenElse] DC0686EF45CE337AC8857F86FD7A0C2C
+152. Set CurrentSlot [K2Node_VariableSet] 84B3658E45BCD60185C679A7A7EC9C7C
+153. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] DD3BD2B240AC14587AA9438A7BC660AC
+154. Get As ChuckRef [K2Node_VariableGet] 0649CC7847BF0C49C06B128FEB679E05
+155. Clear Weapon Slot
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 1D7B7BBB43AADD1A76488587B95A5F50
+156. Get As ChuckRef [K2Node_VariableGet] F9D1A16E444AC8ABF8EC6488727294D7
+157. Clear Weapon Slot
+La destinazione è ALS Chuck BP [K2Node_CallFunction] A59028E042172BE1A79712A53160EB8F
+158. Get As ChuckRef [K2Node_VariableGet] A6FBD9DF48A4FA2CD1C97EB1C3172BAB
+159. Clear Weapon Slot
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 04C7BE0A404721154D0326B89ECE75DF
+160. Get As ChuckRef [K2Node_VariableGet] AEDD8BE14753E4F1E5873ABC06869A1C
+161. Clear Weapon Slot
+La destinazione è ALS Chuck BP [K2Node_CallFunction] BFC3CD5F4BAC80F5802A5193392389B3
+162. Update Weapon Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 78DFF2BC421B7787DC30B081A1B0C2FA
+163. Update Weapon Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] FEF2ACA243264708916FD8BF56AF8B0B
+164. Update Weapon Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 2FF5818B4FF3604CD06C128A490DFE08
+165. Update Weapon Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 5275F079496E0AA0170B96BCA93489CC
+166. Nodo di reindirizzamento [K2Node_Knot] F39248D74259B1729385BA9A6FC3DBD1
+167. Nodo di reindirizzamento [K2Node_Knot] 3055B51E4F465DFCF97F5DBF6E01885A
+168. Nodo di restituzione [K2Node_FunctionResult] 201865824F9C94FC057596958C2ED62C
+169. Gestito [K2Node_CallFunction] 194F98A741FC86003C0F598074E6ECFD
+170. Nodo di restituzione [K2Node_FunctionResult] C85A10594983F5E5E9E1D195019E6670
+171. Gestito [K2Node_CallFunction] C033F9E943975983DC40128242C8042E
+172. Nodo di restituzione [K2Node_FunctionResult] AE9ED5724EFAF241FF0EC08964350D6F
+173. Gestito [K2Node_CallFunction] 90F6023F478AFB383B88D5A50B43AD6F
+174. Nodo di restituzione [K2Node_FunctionResult] 2DBA48CE4BF0BEC9753D5C9A6FB5FBE5
+175. Gestito [K2Node_CallFunction] 71ECD63E495A643DAEAAE6BB9970ECCB
+176. Get PressRB [K2Node_VariableGet] C9E2006B42FFA984033E93A07AF1B71A
+177. Riproduci animazione
+La destinazione è User Widget [K2Node_CallFunction] BC8EECEA415235E037438BAA90F435CD
+178. Riproduci animazione
+La destinazione è User Widget [K2Node_CallFunction] CD4EC9684918DC2986E903B5D93102C0
+179. Get PressLB [K2Node_VariableGet] C270D9F1462D55D9012AAC81D9B29444
+180. Get BtnSlot_Item [K2Node_VariableGet] 30F41AE841F306B17831F78C09117BFD
+181. Get BtnSlot_Melee [K2Node_VariableGet] 4EF370F24B0D6BFA230BD685C05AE698
+182. CLICK RIGHT SHOULDER [EdGraphNode_Comment] 2D0886FB446B1EA28B0501985B4C8D57
+183. CLICK LEFT SHOULDER [EdGraphNode_Comment] C85D671347B4B567779731AC91BA15B5
+184. CLICK BACK [EdGraphNode_Comment] C08BFD424E152ED9AD9AB6A0B55B0568
+185. CLICK CLEAR WEAPON SLOT [EdGraphNode_Comment] 580EA554434F82583A5C83953307BA3B
+186. CLICK CLEAR ARMOR SLOT [EdGraphNode_Comment] 3AF7BAEA4E42E08331B533984F502D58
+187. Has User Focus
+La destinazione è Widget [K2Node_CallFunction] 326084FC4D9E74C8683CA3B2D99344B5
+188. Ramo [K2Node_IfThenElse] 22B3A0184AB5FCF844621896E0C51DF6
+189. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] E25E81214D2FE31734CF82AB65B13F5A
+190. Get As ChuckRef [K2Node_VariableGet] CF7D1E5542D32F52E7E1A09152340AF7
+191. Nodo di restituzione [K2Node_FunctionResult] 072DC9EA4CBE3291E2851FB3EEA84074
+192. Gestito [K2Node_CallFunction] F8644D2F426B7F8B0349AEBDE3A37268
+193. Unhandled [K2Node_CallFunction] 25A0E00B4645983BA11E22B64B7CB11A
+194. Nodo di restituzione [K2Node_FunctionResult] 34A1F7424616EDFADBD159B353A5E30B
+195. Get BtnSlot_HeadEquip [K2Node_VariableGet] 5FAF10834206A4C1240B6291B2321484
+196. Clear Armor Slot [K2Node_CallFunction] F0B3F2814B47044F84B2979D381D1DD9
+197. Update Equipment Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 1684FF6C4589F7C31A94E4ACD00C7877
+198. Has User Focus
+La destinazione è Widget [K2Node_CallFunction] D8F81B774DFD14DACFE00C8E6D48CBE0
+199. Ramo [K2Node_IfThenElse] 1E004BA345145073004AFE9A4D58B4CD
+200. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 385B3A4E4B8FD95A9B3A9094F397F9F2
+201. Get As ChuckRef [K2Node_VariableGet] B47642544B5129E9E057F797D1FA4FAF
+202. Nodo di restituzione [K2Node_FunctionResult] 3DC2260C4A3D8B2454DF6AA43F1B3F27
+203. Gestito [K2Node_CallFunction] D37A8CAB4BE0CE42A6766796626D3824
+204. Clear Armor Slot [K2Node_CallFunction] 90ECF2AA4AA124EF1612E3AE8E307B9C
+205. Update Equipment Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 4C5FEA6747B596D24325D4A06FDFE538
+206. Get BtnSlot_ChestEquip [K2Node_VariableGet] 33583C9D4C702F0850EE72AC7E6C0395
+207. Has User Focus
+La destinazione è Widget [K2Node_CallFunction] CF59E6344A33677CA74151B0C225AA9F
+208. Ramo [K2Node_IfThenElse] F568503E47E21953B7A0DAAF9579D87D
+209. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 2037050F4960F27FEDB4CC986F77AFDD
+210. Get As ChuckRef [K2Node_VariableGet] 11AC73E24FF85420D7A1ED8ED2C36FFF
+211. Nodo di restituzione [K2Node_FunctionResult] 98FB49C64122ED10BE9C4FA6689A7032
+212. Gestito [K2Node_CallFunction] DEC7A13E4B1FB0C47668F7A5F762E07A
+213. Clear Armor Slot [K2Node_CallFunction] 872855704ED36DCEEDBC47AF58CA50D3
+214. Update Equipment Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 6A4B0CE54FACB774B450E89724F26993
+215. Get BtnSlot_LegsEquip [K2Node_VariableGet] 039AFA014CE145C61FB008B338CF2887
+216. Has User Focus
+La destinazione è Widget [K2Node_CallFunction] 5859BE2D4F40C9D122F865A1DE7359CD
+217. Ramo [K2Node_IfThenElse] 26CD736B41D88DCE2F0041B8B925C467
+218. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 7F686BAF4A5140AC757245B2037873B5
+219. Get As ChuckRef [K2Node_VariableGet] AA9C1C4448507ABDED558D9F7371C5C3
+220. Nodo di restituzione [K2Node_FunctionResult] D7F41E2147041EF2293953B669E3E856
+221. Gestito [K2Node_CallFunction] 3F933CFF4F5650F4937D58B9ADAC2143
+222. Clear Armor Slot [K2Node_CallFunction] 1E0E3F7B498B8DBE307F5B84BC807C8B
+223. Update Equipment Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 33743E8044F181AE46438498EA4637BE
+224. Get BtnSlot_FeetEquip [K2Node_VariableGet] B1A9B6CE49188AA02EB9FCA2FA9E9365
+225. Has User Focus
+La destinazione è Widget [K2Node_CallFunction] CEC7B02940E88C2A8EBDB5BCD14EC585
+226. Ramo [K2Node_IfThenElse] 89E3F11548D3632F910482B14FA3C9C7
+227. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 7A720D1A4B5D405EB745E9B0738BC269
+228. Get As ChuckRef [K2Node_VariableGet] 6871087C4C1811308308AB83B75E84F8
+229. Nodo di restituzione [K2Node_FunctionResult] FD68D8DC446F68F09F124999D3F57BE0
+230. Gestito [K2Node_CallFunction] 992FB6F94835ABD054B31893534CD1E7
+231. Clear Armor Slot [K2Node_CallFunction] 922CDBB648630C91F52FB9874615E585
+232. Update Equipment Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 7972E95B42E8CA8EE65EFF8FB3083004
+233. Has User Focus
+La destinazione è Widget [K2Node_CallFunction] C0E09EAA4BCFAF43D11A55BCE46AAF1B
+234. Ramo [K2Node_IfThenElse] 8926597D41672A5566E3D1AB7E49B2E4
+235. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 663256DD4695F441B59FB3B69265814B
+236. Get As ChuckRef [K2Node_VariableGet] 5E7DA9EA489CAAF1F54AD884F1C9F2D1
+237. Nodo di restituzione [K2Node_FunctionResult] BCF25D914200FFEDB7D272AD2A5DA59F
+238. Gestito [K2Node_CallFunction] AB34027848F2876003060B9656D98CF7
+239. Clear Armor Slot [K2Node_CallFunction] 57023680475D7A0D4E3D9E9CEB00D5D0
+240. Update Equipment Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 3D74D03B42F4AE463DD8FEB08C8BB8D3
+241. Get BtnSlot_Accessory1Equip [K2Node_VariableGet] A62E03C14C254FC47C2F7292359214CF
+242. Get BtnSlot_AccessoryEquip [K2Node_VariableGet] FAE700E34B4798E57A0469AC28939556
+243. Play Sound 2D [K2Node_CallFunction] 5A864741400975EC7065EE9030727389
+244. Play Sound 2D [K2Node_CallFunction] 0E13FE0048C061003DF787B057BC36D7
+245. Play Sound 2D [K2Node_CallFunction] E194277140D6C239E9B061A4BD0AB25B
+
+Variables Read:
+- Get As ChuckRef
+- Get Btn_Personaggi
+- Get BtnSlot_Accessory1Equip
+- Get BtnSlot_AccessoryEquip
+- Get BtnSlot_BigWeapon
+- Get BtnSlot_ChestEquip
+- Get BtnSlot_FeetEquip
+- Get BtnSlot_HeadEquip
+- Get BtnSlot_Item
+- Get BtnSlot_LegsEquip
+- Get BtnSlot_Melee
+- Get BtnSlot_SmallFirearm
+- Get BtnTab_Intersect
+- Get BtnTab_Inventory
+- Get BtnTab_Quests
+- Get BtnTab_Settings
+- Get PressLB
+- Get PressRB
+- Get TabsSelect
+
+Variables Written:
+- Set ActiveWidgetIndex
+- Set CurrentSlot
+
+External Calls:
+- Clear Armor Slot
+- Clear Weapon Slot
+La destinazione è ALS Chuck BP
+- Focused Tab Color
+La destinazione è WBP Menu Archive
+- Gestito
+- Get Active Widget Index
+La destinazione è Widget Switcher
+- Get Key
+- Get Owning Player
+La destinazione è Widget
+- Has User Focus
+La destinazione è Widget
+- Play Sound 2D
+- Return Back Manage
+La destinazione è WBP Menu Archive
+- Riproduci animazione
+La destinazione è User Widget
+- Set Keyboard Focus
+La destinazione è Widget
+- Set User Focus
+La destinazione è Widget
+- Unfocused Tab Color
+La destinazione è WBP Menu Archive
+- Unhandled
+- Update Equipment Slots
+La destinazione è WBP Menu Archive
+- Update Weapon Slots
+La destinazione è WBP Menu Archive
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Clear Armor Slot
+- Clear Weapon Slot
+La destinazione è ALS Chuck BP
+- Focused Tab Color
+La destinazione è WBP Menu Archive
+- Gestito
+- Get Active Widget Index
+La destinazione è Widget Switcher
+- Get Key
+- Get Owning Player
+La destinazione è Widget
+- Has User Focus
+La destinazione è Widget
+- Play Sound 2D
+- Return Back Manage
+La destinazione è WBP Menu Archive
+- Riproduci animazione
+La destinazione è User Widget
+- Set Keyboard Focus
+La destinazione è Widget
+- Set User Focus
+La destinazione è Widget
+- Unfocused Tab Color
+La destinazione è WBP Menu Archive
+- Unhandled
+- Update Equipment Slots
+La destinazione è WBP Menu Archive
+- Update Weapon Slots
+La destinazione è WBP Menu Archive

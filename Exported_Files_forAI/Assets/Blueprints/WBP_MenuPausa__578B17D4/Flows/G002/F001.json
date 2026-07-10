@@ -1,0 +1,767 @@
+{
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+	"graph": "OnKeyDown",
+	"entryName": "On Key Down",
+	"entryNodeGuid": "4FF243934C70A3363DD52CB55895855F",
+	"nodes": [
+		{
+			"nodeGuid": "4FF243934C70A3363DD52CB55895855F",
+			"class": "K2Node_FunctionEntry",
+			"title": "On Key Down",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "274EFAF643F646B2DDFEBBAAF96BF775",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "712BAF7F46577BF79F0FEAB9CBDCADF3",
+					"name": "MyGeometry",
+					"direction": "Output",
+					"type": "struct|/Script/SlateCore.Geometry",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A2CAB3184B84E7AD927523AEC72DE2C5",
+					"name": "InKeyEvent",
+					"direction": "Output",
+					"type": "struct|/Script/SlateCore.KeyEvent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "123E8A5543460B110F3506B8B7800420",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 2320,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B148D34C422CF14AE33499A21DE776E6",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CCAA0A2C4DBB3CAB10A3A2AAF60BBA75",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "struct|/Script/UMG.EventReply",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "676AF02D4975DECE170CCCBAF8797680",
+			"class": "K2Node_CallFunction",
+			"title": "Get Key",
+			"comment": "",
+			"x": 176,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D79DE7BF4085CC70BA5327A4FBD42B06",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetInputLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetInputLibrary"
+				},
+				{
+					"pinId": "136FD4444E693CFAC52B42AE5C78986E",
+					"name": "Input",
+					"direction": "Input",
+					"type": "struct|/Script/SlateCore.KeyEvent|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EA65226A45598294CFEB268D2133521D",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/InputCore.Key",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F63F1C194459045F014479A522B8F378",
+			"class": "K2Node_PromotableOperator",
+			"title": "Equal (Key)",
+			"comment": "",
+			"x": 416,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "63808E2A40AA4DA23449A6BA3EE6D183",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/InputCore.Key",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "22E9108F42E2116374016B9B6D384DAD",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/InputCore.Key",
+					"defaultValue": "Gamepad_FaceButton_Right"
+				},
+				{
+					"pinId": "ACAE77504A2575CCE5E9D1A1238FFADE",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3CE59242408C5FCD4C68FE9982AF38D2",
+					"name": "ErrorTolerance",
+					"direction": "Input",
+					"type": "None",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "72E2292F45B9653C0B1503AC7269B353",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 944,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D0DF2BB84C3E2492367CC3990F2FF24D",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "62B4708C4AEA3769A6578E922F9585AB",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "EE643103465EA917DF28E8AD1FCD76DC",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2BF6288F4D334FD1C289619398CA3D26",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E0881E8C4A3FDA87B7A661B3FC178349",
+			"class": "K2Node_CallFunction",
+			"title": "Set Game Paused",
+			"comment": "",
+			"x": 1200,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "19399C454147482ADBC54B99D878F2B5",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AB299B474CA3B4E23E5592B30DF6F4FE",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CC039AE94C77CA6D310E87964C525897",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "0E8B35B7432B524D3E5A3E8DF115EEA9",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2DA29FDD4457F2B1A6F49D8B6728FA3B",
+					"name": "bPaused",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "587A84B246A54FA6CDEDA991D379F15A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "C1EEF10B409C185353E422BE92E5CBF2",
+			"class": "K2Node_CallFunction",
+			"title": "Get Player Controller",
+			"comment": "",
+			"x": 1184,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E428DA294A92567F7A576981D76384DC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "F9361F9B4806A6FA27BBF0AF1208AEE5",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "964228E94F08A3FA2917189039A3B543",
+					"name": "PlayerIndex",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "205AD68F4DC3DC8AA287E9B29EE5D3A2",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "18D2598945EC719E5E929A9AABA7E49D",
+			"class": "K2Node_CallFunction",
+			"title": "Set Input Mode Game Only",
+			"comment": "",
+			"x": 1488,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B89FF773496E557E8057D39A8C0707E8",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8EED22F5429AFE43210793BAA0E0FBEA",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "57AC1F78446EF4995F444E98B0EDB741",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.WidgetBlueprintLibrary",
+					"defaultValue": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"pinId": "5EBF033446D8A75C95C5D9B1840CB928",
+					"name": "PlayerController",
+					"direction": "Input",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "52A7734441A5BCC245841CBF78A5A315",
+					"name": "bFlushInput",
+					"direction": "Input",
+					"type": "bool|const",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "18CBD50A4F544675C60230B23A1B9B5A",
+			"class": "K2Node_VariableSet",
+			"title": "Set bShowMouseCursor",
+			"comment": "",
+			"x": 1776,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6F5987234F50FC3F11CA1BA51699521E",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EB27995945D3FC45E13BABB179A6FACF",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "31ADD765414772E7119964987A0FA1EE",
+					"name": "bShowMouseCursor",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "C6762B144C298E537E590C875DA16BBF",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "C692B218432126A108F387BD55C68B55",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3647858D46C145D0236CF6AEBFD74EB5",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1712,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "262B6F984E3F06C95D3689B3E8B608E6",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5920934E46DE6BDEF22E82A63B6691DB",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5643BC8A49724F820A61B0B9005788A1",
+			"class": "K2Node_CallFunction",
+			"title": "Remove from Parent\nLa destinazione è Widget",
+			"comment": "",
+			"x": 2064,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "AD1070BB4D825761550EB2817E3DCAD7",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9568CA54420E8F2CA4F5699199F04BE4",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0B9FD0AE4A92D9979B0902B3BDF233FB",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E2E0E15B46C31255645511B939C37D0C",
+			"class": "K2Node_CallFunction",
+			"title": "Gestito",
+			"comment": "",
+			"x": 2272,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0F3F44FA449884FFF69B4C85D37867D3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.WidgetBlueprintLibrary",
+					"defaultValue": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"pinId": "374F74D24D3FEEEE84649B93EF34BC99",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/UMG.EventReply",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "93C8E0344AA571CA1EF8E689BE9E096C",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 2320,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B148D34C422CF14AE33499A21DE776E6",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CCAA0A2C4DBB3CAB10A3A2AAF60BBA75",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "struct|/Script/UMG.EventReply",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "63429AEE413C89CB11B538A6332C6CC4",
+			"class": "K2Node_CallFunction",
+			"title": "Unhandled",
+			"comment": "",
+			"x": 2272,
+			"y": 352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B99EB60E47AE3FCB2D7DE9A104DB57B1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.WidgetBlueprintLibrary",
+					"defaultValue": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"pinId": "26C2405C4A63533E6AFE6D928589FD95",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/UMG.EventReply",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3230DF60429D2ECEFB588AB19D57C481",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1216,
+			"y": 272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DAA1F7A34B75C5944D3B35B51CD79F19",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EA491626420B787E7002E484D4884A02",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "exec",
+			"fromNodeGuid": "4FF243934C70A3363DD52CB55895855F",
+			"fromPinId": "274EFAF643F646B2DDFEBBAAF96BF775",
+			"fromPinName": "then",
+			"toNodeGuid": "72E2292F45B9653C0B1503AC7269B353",
+			"toPinId": "D0DF2BB84C3E2492367CC3990F2FF24D",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "data",
+			"fromNodeGuid": "4FF243934C70A3363DD52CB55895855F",
+			"fromPinId": "A2CAB3184B84E7AD927523AEC72DE2C5",
+			"fromPinName": "InKeyEvent",
+			"toNodeGuid": "676AF02D4975DECE170CCCBAF8797680",
+			"toPinId": "136FD4444E693CFAC52B42AE5C78986E",
+			"toPinName": "Input"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "exec",
+			"fromNodeGuid": "5643BC8A49724F820A61B0B9005788A1",
+			"fromPinId": "9568CA54420E8F2CA4F5699199F04BE4",
+			"fromPinName": "then",
+			"toNodeGuid": "123E8A5543460B110F3506B8B7800420",
+			"toPinId": "B148D34C422CF14AE33499A21DE776E6",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "data",
+			"fromNodeGuid": "E2E0E15B46C31255645511B939C37D0C",
+			"fromPinId": "374F74D24D3FEEEE84649B93EF34BC99",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "123E8A5543460B110F3506B8B7800420",
+			"toPinId": "CCAA0A2C4DBB3CAB10A3A2AAF60BBA75",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "data",
+			"fromNodeGuid": "676AF02D4975DECE170CCCBAF8797680",
+			"fromPinId": "EA65226A45598294CFEB268D2133521D",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "F63F1C194459045F014479A522B8F378",
+			"toPinId": "63808E2A40AA4DA23449A6BA3EE6D183",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "data",
+			"fromNodeGuid": "F63F1C194459045F014479A522B8F378",
+			"fromPinId": "ACAE77504A2575CCE5E9D1A1238FFADE",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "72E2292F45B9653C0B1503AC7269B353",
+			"toPinId": "62B4708C4AEA3769A6578E922F9585AB",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "exec",
+			"fromNodeGuid": "72E2292F45B9653C0B1503AC7269B353",
+			"fromPinId": "EE643103465EA917DF28E8AD1FCD76DC",
+			"fromPinName": "then",
+			"toNodeGuid": "E0881E8C4A3FDA87B7A661B3FC178349",
+			"toPinId": "19399C454147482ADBC54B99D878F2B5",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "exec",
+			"fromNodeGuid": "72E2292F45B9653C0B1503AC7269B353",
+			"fromPinId": "2BF6288F4D334FD1C289619398CA3D26",
+			"fromPinName": "else",
+			"toNodeGuid": "3230DF60429D2ECEFB588AB19D57C481",
+			"toPinId": "DAA1F7A34B75C5944D3B35B51CD79F19",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "exec",
+			"fromNodeGuid": "E0881E8C4A3FDA87B7A661B3FC178349",
+			"fromPinId": "AB299B474CA3B4E23E5592B30DF6F4FE",
+			"fromPinName": "then",
+			"toNodeGuid": "18D2598945EC719E5E929A9AABA7E49D",
+			"toPinId": "B89FF773496E557E8057D39A8C0707E8",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "data",
+			"fromNodeGuid": "C1EEF10B409C185353E422BE92E5CBF2",
+			"fromPinId": "205AD68F4DC3DC8AA287E9B29EE5D3A2",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "18D2598945EC719E5E929A9AABA7E49D",
+			"toPinId": "5EBF033446D8A75C95C5D9B1840CB928",
+			"toPinName": "PlayerController"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "data",
+			"fromNodeGuid": "C1EEF10B409C185353E422BE92E5CBF2",
+			"fromPinId": "205AD68F4DC3DC8AA287E9B29EE5D3A2",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "3647858D46C145D0236CF6AEBFD74EB5",
+			"toPinId": "262B6F984E3F06C95D3689B3E8B608E6",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "exec",
+			"fromNodeGuid": "18D2598945EC719E5E929A9AABA7E49D",
+			"fromPinId": "8EED22F5429AFE43210793BAA0E0FBEA",
+			"fromPinName": "then",
+			"toNodeGuid": "18CBD50A4F544675C60230B23A1B9B5A",
+			"toPinId": "6F5987234F50FC3F11CA1BA51699521E",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "exec",
+			"fromNodeGuid": "18CBD50A4F544675C60230B23A1B9B5A",
+			"fromPinId": "EB27995945D3FC45E13BABB179A6FACF",
+			"fromPinName": "then",
+			"toNodeGuid": "5643BC8A49724F820A61B0B9005788A1",
+			"toPinId": "AD1070BB4D825761550EB2817E3DCAD7",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "data",
+			"fromNodeGuid": "3647858D46C145D0236CF6AEBFD74EB5",
+			"fromPinId": "5920934E46DE6BDEF22E82A63B6691DB",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "18CBD50A4F544675C60230B23A1B9B5A",
+			"toPinId": "C692B218432126A108F387BD55C68B55",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "exec",
+			"fromNodeGuid": "3230DF60429D2ECEFB588AB19D57C481",
+			"fromPinId": "EA491626420B787E7002E484D4884A02",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "93C8E0344AA571CA1EF8E689BE9E096C",
+			"toPinId": "B148D34C422CF14AE33499A21DE776E6",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+			"graph": "OnKeyDown",
+			"edgeType": "data",
+			"fromNodeGuid": "63429AEE413C89CB11B538A6332C6CC4",
+			"fromPinId": "26C2405C4A63533E6AFE6D928589FD95",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "93C8E0344AA571CA1EF8E689BE9E096C",
+			"toPinId": "CCAA0A2C4DBB3CAB10A3A2AAF60BBA75",
+			"toPinName": "ReturnValue"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [
+		"Set bShowMouseCursor"
+	],
+	"functionsCalled": [
+		"Gestito",
+		"Get Key",
+		"Get Player Controller",
+		"Remove from Parent\nLa destinazione è Widget",
+		"Set Game Paused",
+		"Set Input Mode Game Only",
+		"Unhandled"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Gestito",
+		"Get Key",
+		"Get Player Controller",
+		"Remove from Parent\nLa destinazione è Widget",
+		"Set Game Paused",
+		"Set Input Mode Game Only",
+		"Unhandled"
+	],
+	"flowId": "F001",
+	"graphId": "G002",
+	"assetName": "WBP_MenuPausa",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/WBP_MenuPausa.WBP_MenuPausa"
+}

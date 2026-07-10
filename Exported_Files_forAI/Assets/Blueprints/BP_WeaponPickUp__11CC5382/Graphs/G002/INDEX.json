@@ -1,0 +1,35 @@
+{
+	"graphId": "G002",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 38,
+	"edgeCount": 44,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G002/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Evento BeginPlay",
+			"entryNodeGuid": "A7661D0849DB1DAEBC02CFBA389B401F",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G002/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G002/F001.json",
+			"textFile": "Flows/G002/F001.txt",
+			"jsonFile": "Flows/G002/F001.json",
+			"nodeCount": 38
+		},
+		{
+			"flowId": "F002",
+			"entryName": "Evento Interact\nDa BPI Interaction",
+			"entryNodeGuid": "4DB0F13F4C4BD2C1118FA2A0F9F9F74E",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G002/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G002/F002.json",
+			"textFile": "Flows/G002/F002.txt",
+			"jsonFile": "Flows/G002/F002.json",
+			"nodeCount": 38
+		}
+	]
+}

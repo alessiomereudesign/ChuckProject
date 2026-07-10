@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "AnimFeatureExample",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/AnimFeatureExample.AnimFeatureExample",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Enums_AnimFeatureExample",
+	"shortAssetFolder": "AnimFeatureExample__7DABF3EB",
+	"pathHash": "7DABF3EB",
+	"assetType": "Enum",
+	"unrealClass": "UserDefinedEnum",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "NotApplicable",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Enums/AnimFeatureExample__7DABF3EB/SUMMARY.md",
+		"variables": "Assets/Enums/AnimFeatureExample__7DABF3EB/VARIABLES.json",
+		"components": "Assets/Enums/AnimFeatureExample__7DABF3EB/COMPONENTS.json",
+		"widgetTree": "Assets/Enums/AnimFeatureExample__7DABF3EB/WIDGET_TREE.json",
+		"nodes": "Assets/Enums/AnimFeatureExample__7DABF3EB/NODES.jsonl",
+		"edges": "Assets/Enums/AnimFeatureExample__7DABF3EB/EDGES.jsonl",
+		"search": "Assets/Enums/AnimFeatureExample__7DABF3EB/SEARCH.jsonl"
+	},
+	"graphs": []
+}

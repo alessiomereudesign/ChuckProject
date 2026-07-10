@@ -1,0 +1,30 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G001
+Graph: GetInteractionPrompt
+FlowId: F001
+Entry: Get Interaction Prompt
+NodeGuid: F4D7BAEE4E9E14085532669939125DC1
+
+Exec Flow:
+1. Get Interaction Prompt [K2Node_FunctionEntry] F4D7BAEE4E9E14085532669939125DC1
+2. Nodo di restituzione [K2Node_FunctionResult] 0B042BE049FAB7ECDB6800AD15DD37A5
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

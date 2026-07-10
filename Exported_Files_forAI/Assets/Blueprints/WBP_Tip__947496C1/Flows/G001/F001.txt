@@ -1,0 +1,48 @@
+Asset: WBP_Tip
+AssetPath: /Game/ChuckContent/UI/Interfaces/WBP_Tip.WBP_Tip
+AssetKey: Game_ChuckContent_UI_Interfaces_WBP_Tip
+GraphId: G001
+Graph: EventGraph
+FlowId: F001
+Entry: Evento Construct
+NodeGuid: 395426D9417824F6EE1D3B9559F9E96F
+
+Exec Flow:
+1. Evento Construct [K2Node_Event] 395426D9417824F6EE1D3B9559F9E96F
+2. Get Input Keys
+La destinazione è WBP Tip [K2Node_CallFunction] 35CBCE2E48FE0D50B43D0A9949CE8AA4
+3. ShowTip
+Custom Event [K2Node_CustomEvent] 349184484140FEF3963284BA07252C97
+4. Get RichTextBlock_123 [K2Node_VariableGet] 21D5022C486BB996F025FF8928F7E70A
+5. Set Text
+La destinazione è Rich Text Block [K2Node_CallFunction] E8F3306A438C5496B66284BEECECDB60
+6. To Text (String) [K2Node_CallFunction] E946EF86478DC9EB09209681AAFFFFCE
+
+Variables Read:
+- Get RichTextBlock_123
+
+Variables Written:
+- none
+
+External Calls:
+- Get Input Keys
+La destinazione è WBP Tip
+- Set Text
+La destinazione è Rich Text Block
+- To Text (String)
+
+Widgets Touched:
+- Get RichTextBlock_123
+- Set Text
+La destinazione è Rich Text Block
+- To Text (String)
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Input Keys
+La destinazione è WBP Tip
+- Set Text
+La destinazione è Rich Text Block
+- To Text (String)

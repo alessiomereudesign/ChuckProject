@@ -1,0 +1,25 @@
+{
+	"graphId": "G001",
+	"name": "GetInteractionPrompt",
+	"graphName": "GetInteractionPrompt",
+	"type": "EdGraph",
+	"graphType": "EdGraph",
+	"graphGuid": "",
+	"nodeCount": 2,
+	"edgeCount": 1,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Get Interaction Prompt",
+			"entryNodeGuid": "F4D7BAEE4E9E14085532669939125DC1",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 2
+		}
+	]
+}

@@ -1,0 +1,61 @@
+Asset: SimpleMovingObject
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Environment_SimpleMovingObject
+GraphId: G002
+Graph: UpdateObjectLocation
+FlowId: F001
+Entry: Update Object Location
+NodeGuid: 24A934B54F2D4D91CA0BF18CDB80F43A
+
+Exec Flow:
+1. Update Object Location [K2Node_FunctionEntry] 24A934B54F2D4D91CA0BF18CDB80F43A
+2. Get Track [K2Node_VariableGet] 71DD1B304D232DF80313CDBF9FE36EF1
+3. Get MovementCurve [K2Node_VariableGet] B0EFD5AE4EE047660EE6E8AB9EB9783B
+4. Get Float Value
+La destinazione è Curve Float [K2Node_CallFunction] 48D07D4F4864EA2123E0E399EF7B3221
+5. Get MovementTime [K2Node_VariableGet] CE05D19F48C7CC773E266DA80C97F2AA
+6. Normalize to Range [K2Node_CallFunction] 3329CA9F4609AC980C3D2D9D1F4DF88F
+7. Map Range Clamped [K2Node_CallFunction] 55F7DEB74234F86F0A4C8C985F323E48
+8. Get Location at Time
+La destinazione è Componente della spline [K2Node_CallFunction] B6432A4D4ADB30D0D8F3C9B2FC04B357
+9. Get StaticMesh [K2Node_VariableGet] 2656AC504E07A497E102458B22E6E053
+10. Set World Location
+La destinazione è Componente di scena [K2Node_CallFunction] 010E3EB64B961E3BFD6754AB5F7B62BF
+11. Get Track [K2Node_VariableGet] 9C874DCF4ADEF6AC853271A8D8FEF657
+12. Get Duration [K2Node_VariableGet] 835B81294460DF141FE0528E4A2E7B13
+
+Variables Read:
+- Get Duration
+- Get MovementCurve
+- Get MovementTime
+- Get StaticMesh
+- Get Track
+
+Variables Written:
+- none
+
+External Calls:
+- Get Float Value
+La destinazione è Curve Float
+- Get Location at Time
+La destinazione è Componente della spline
+- Map Range Clamped
+- Normalize to Range
+- Set World Location
+La destinazione è Componente di scena
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Float Value
+La destinazione è Curve Float
+- Get Location at Time
+La destinazione è Componente della spline
+- Map Range Clamped
+- Normalize to Range
+- Set World Location
+La destinazione è Componente di scena

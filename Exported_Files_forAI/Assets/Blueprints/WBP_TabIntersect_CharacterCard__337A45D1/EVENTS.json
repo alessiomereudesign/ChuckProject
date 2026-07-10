@@ -1,0 +1,50 @@
+{
+	"assetName": "WBP_TabIntersect_CharacterCard",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterCard.WBP_TabIntersect_CharacterCard",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterCard",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Evento Pre Construct",
+			"graph": "EventGraph",
+			"nodeGuid": "B79B62C045EC31C9D11656BFC34F52E9",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento Construct",
+			"graph": "EventGraph",
+			"nodeGuid": "96F3438B4823B47F8459079DAC315CBE",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento Tick",
+			"graph": "EventGraph",
+			"nodeGuid": "1CF598084919779FE6F586A53BBF0FFA",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "InizializeCharacterCard\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "2F1D688941DF1A67130288B4FA47E2FE",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "FadeInEvent\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "53D60D6049911D475061A7A1D47D27DF",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "FadeOutEvent\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "BB67EFE74938F26B96F2ABB4FCC49894",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

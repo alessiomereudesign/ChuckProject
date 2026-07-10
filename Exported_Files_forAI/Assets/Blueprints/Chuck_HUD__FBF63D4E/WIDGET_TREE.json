@@ -1,0 +1,36 @@
+{
+	"assetName": "Chuck_HUD",
+	"assetPath": "/Game/ChuckContent/UI/Interfaces/Chuck_HUD.Chuck_HUD",
+	"assetKey": "Game_ChuckContent_UI_Interfaces_Chuck_HUD",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"widgets": [
+		{
+			"name": "Create WBP Tip Widget",
+			"class": "K2Node_CreateWidget",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Add to Viewport\nLa destinazione è User Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Is in Viewport\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Remove from Parent\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		}
+	]
+}

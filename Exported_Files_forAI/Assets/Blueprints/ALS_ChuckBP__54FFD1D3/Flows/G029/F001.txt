@@ -1,0 +1,146 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G029
+Graph: UpdateLayeringColors
+FlowId: F001
+Entry: Update Layering Colors
+NodeGuid: 84A58B2F41F746577763FFA5F82DF9F3
+
+Exec Flow:
+1. Update Layering Colors [K2Node_FunctionEntry] 84A58B2F41F746577763FFA5F82DF9F3
+2. Sequenza [K2Node_ExecutionSequence] 848A6A6D48702989E3EA2D828F4A62B1
+3. Get Head [K2Node_VariableGet] 0E367CB343C74BFD936C6395D53FE0AD
+4. Nodo di reindirizzamento [K2Node_Knot] 4A9F04954D2789DB629B07B149FA4D0B
+5. Get Anim Curve Value [K2Node_CallFunction] D2BB8D0C4E52C6CF7D52F9878AD29B3F
+6. Get AdditiveAmount_Color [K2Node_VariableGet] 22749CC943244BAED584EE80CECB2A5B
+7. Lerp (LinearColor) [K2Node_CallFunction] 94D6376141F9C6BD71FDCC92245C84C5
+8. Get OverlayLayerColor [K2Node_VariableGet] 5C9B662145A6E64CF93EFA96AAD215AA
+9. Get BaseLayerColor [K2Node_VariableGet] 403BB36B43E4BFC8708305974FE0CA55
+10. Lerp (LinearColor) [K2Node_CallFunction] 9136EDF845A46EA02AA95C933C24AC89
+11. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] E2A111054AA8678D5483E989912835DD
+12. Get Anim Curve Value [K2Node_CallFunction] CF99951C4A2EEDCF61E2378ECE7EA24E
+13. Get Torso [K2Node_VariableGet] D87105CB4133B5822E7E8B8445AC48FC
+14. Get Anim Curve Value [K2Node_CallFunction] 6A6E1DBA40DBBA9A7FF0139AB754FA7C
+15. Get AdditiveAmount_Color [K2Node_VariableGet] 8BE071C945DB8DC9DB164C9761CF60B8
+16. Lerp (LinearColor) [K2Node_CallFunction] 769848294B363B018DD57F90721829ED
+17. Get OverlayLayerColor [K2Node_VariableGet] 986D289044EB60C65FDC7190DBAFED11
+18. Get BaseLayerColor [K2Node_VariableGet] 00F0109D40D8D6CABB39958526F40A49
+19. Lerp (LinearColor) [K2Node_CallFunction] 1D5E70BD4135E95EABBCFAA8F380798B
+20. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] F736C20D4BDE050C451E5C966CCB6001
+21. Get Anim Curve Value [K2Node_CallFunction] 1AE216EF45ABC1046B09F687CF193815
+22. Get AdditiveAmount_Color [K2Node_VariableGet] 9BE28451456F4FE2B3402DA559D7F070
+23. Get BaseLayerColor [K2Node_VariableGet] E7ED6928405E79C2E300E1B85B3142A1
+24. Lerp (LinearColor) [K2Node_CallFunction] 35C0E6F54CE2CED1AB868188D2701A19
+25. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 7EECD7F54C8A7AE0C5DCE6B7A1CF3136
+26. Get Anim Curve Value [K2Node_CallFunction] A4830B2342B70782005BF3B6A6E6DE2D
+27. Nodo di reindirizzamento [K2Node_Knot] E43345064402E1D6DEADECA9A09BF563
+28. Get AdditiveAmount_Color [K2Node_VariableGet] CF24F1254001ABC9D761F499955C9F33
+29. Get BaseLayerColor [K2Node_VariableGet] C8AF6F2C40C1B97A76A814AD6078AA24
+30. Lerp (LinearColor) [K2Node_CallFunction] BE1CCAAF4B74AC314782318630B5AE7E
+31. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] A9B355D7404EC8EA93EB529CCDDC421E
+32. Get Anim Curve Value [K2Node_CallFunction] 8A863B4F49AB933E49060ABE12A6FFD5
+33. Nodo di reindirizzamento [K2Node_Knot] 84C45C18465A5A67A67E5BA2AAD834EE
+34. Get Anim Curve Value [K2Node_CallFunction] 3AFC75234EEDFDE017F3C78549F04E3C
+35. Get AdditiveAmount_Color [K2Node_VariableGet] 2D03978F4390CFB3E6B112AE031D37DB
+36. Lerp (LinearColor) [K2Node_CallFunction] CDB87B4844A34D131E8715ADAE8F770A
+37. Get OverlayLayerColor [K2Node_VariableGet] 5E78FC1C4F36B7AAEBBF6F9DAC63F7B6
+38. Get BaseLayerColor [K2Node_VariableGet] EB630AD14AAD00309AF542B3D9B18761
+39. Lerp (LinearColor) [K2Node_CallFunction] 185C16E24C7D6A6F6A3012A3B44E3F4D
+40. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 95C5BFCA42FD9ABF84BDB9B5F06BF5DD
+41. Get Anim Curve Value [K2Node_CallFunction] 0D729B044A3449BE492250B841CB219F
+42. Get Hand_L [K2Node_VariableGet] CB3E8A494487FC5542069EBB1971E1D4
+43. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 173E45A94D997E929C7C6A8AC31985EB
+44. Lerp (LinearColor) [K2Node_CallFunction] 92A4057D499D2A2F131D82BB82EB10EF
+45. Get Hand_Color [K2Node_VariableGet] A0FF306543E3A402C2213C86B51C09B7
+46. Get Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] DF88040C417050A0239C9C890CC6BA37
+47. Nodo di reindirizzamento [K2Node_Knot] 28BF3B464E44ED0646DF3694D2A53F20
+48. Get Anim Curve Value [K2Node_CallFunction] A45B0CA54824E22EA175DEBF7006ED09
+49. Get AdditiveAmount_Color [K2Node_VariableGet] 39EE120B409F6D5B9940218ABE10636C
+50. Lerp (LinearColor) [K2Node_CallFunction] 0E8DB08D48DC39D1FC6F23B91B1086CA
+51. Get OverlayLayerColor [K2Node_VariableGet] A2E0461C4EAAD399FA6FF980292685CB
+52. Get BaseLayerColor [K2Node_VariableGet] 94DF8ABC492AD1B51A74988AC5111DAB
+53. Lerp (LinearColor) [K2Node_CallFunction] F2C1616641F830FD580DDFAFC9656540
+54. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 6CA5B2DB4C1438A78A30E7A936E6DB9F
+55. Get Anim Curve Value [K2Node_CallFunction] 75CF256E4D2707B5041C28B49B9E6E4F
+56. Get Anim Curve Value [K2Node_CallFunction] 2E823A2346D164B155B05FA1AF853B2E
+57. Get Anim Curve Value [K2Node_CallFunction] 169DD553434157FF0C26B49C6DDD4EF4
+58. Lerp (LinearColor) [K2Node_CallFunction] 714000C04DE32D81895FD7A2E30AD569
+59. Get HandIK_Color [K2Node_VariableGet] EF95877A46B4DDD29AA3469E2CA3EF87
+60. Get Hand_R [K2Node_VariableGet] 17CB0F544628390921EFE99C108BA29A
+61. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 46149E7F49AFEE16A75B87B75832A631
+62. Lerp (LinearColor) [K2Node_CallFunction] C074F1144A0A97E5B81565ABC788BDD4
+63. Get Hand_Color [K2Node_VariableGet] 954D130345758701A3B3D6A43924D0F6
+64. Get Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 800C861240F49939346CD1B75DCBE524
+65. Get Anim Curve Value [K2Node_CallFunction] 4E68030D4C96BACAA99E8CBB59BA5D74
+66. Get Anim Curve Value [K2Node_CallFunction] ECDF30FF4FAF6728079D8481C8137F3E
+67. Lerp (LinearColor) [K2Node_CallFunction] DEF010F34FDFB4C7F6369388736E1153
+68. Get HandIK_Color [K2Node_VariableGet] B4BBE33648A6EA97612619B389B673D4
+69. Get UpperLegs [K2Node_VariableGet] 206BE86340E43C5ECF24F4A62EB8E03C
+70. Get LowerLegs [K2Node_VariableGet] 0154D9DD460B0D323242F1A43097C407
+71. Get Feet [K2Node_VariableGet] 695CBFD94BB111D7453BDFA3223FEE83
+72. Get Shoulder_L [K2Node_VariableGet] BD1781C640C3E4DEF5EA0FAF1FBE9E2B
+73. Get UpperArm_L [K2Node_VariableGet] 4FC4C1B345CA150DB250759DC1FAB48E
+74. Get LowerArm_L [K2Node_VariableGet] F0A2DE3E465E0F985D3E108546274220
+75. Get LowerArm_L [K2Node_VariableGet] 20A974404E3DC32927BE95979E7E9B79
+76. Get Shoulder_R [K2Node_VariableGet] 70DFAC4F455ECCB4674A988A10CAB01D
+77. Get UpperArm_R [K2Node_VariableGet] 426660B34833C43F3BFFCB9D229AF119
+78. Get LowerArm_R [K2Node_VariableGet] 0207F8574F78559E40CB6683EA33A4B0
+79. Get LowerArm_R [K2Node_VariableGet] 583E714448C31BF8C30BB7BFFB440E6C
+80. Get Pelvis [K2Node_VariableGet] 46B3510744A60D221F400FB9614263B0
+
+Variables Read:
+- Get AdditiveAmount_Color
+- Get BaseLayerColor
+- Get Feet
+- Get Hand_Color
+- Get Hand_L
+- Get Hand_R
+- Get HandIK_Color
+- Get Head
+- Get LowerArm_L
+- Get LowerArm_R
+- Get LowerLegs
+- Get OverlayLayerColor
+- Get Pelvis
+- Get Shoulder_L
+- Get Shoulder_R
+- Get Torso
+- Get UpperArm_L
+- Get UpperArm_R
+- Get UpperLegs
+
+Variables Written:
+- none
+
+External Calls:
+- Get Anim Curve Value
+- Get Vector Parameter Value
+La destinazione è Dinamica istanza materiali
+- Lerp (LinearColor)
+- Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Anim Curve Value
+- Get Vector Parameter Value
+La destinazione è Dinamica istanza materiali
+- Lerp (LinearColor)
+- Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali

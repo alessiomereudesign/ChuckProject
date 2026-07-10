@@ -1,0 +1,43 @@
+{
+	"assetName": "BP_WeaponPickUp",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponPickUp.BP_WeaponPickUp",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponPickUp",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"components": [
+		{
+			"name": "On Component Begin Overlap (Sphere)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Component End Overlap (Sphere)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Set Overlay Material\nLa destinazione è Componente mesh",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get SkeletalMesh",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Set Overlay Material\nLa destinazione è Componente mesh",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		}
+	]
+}

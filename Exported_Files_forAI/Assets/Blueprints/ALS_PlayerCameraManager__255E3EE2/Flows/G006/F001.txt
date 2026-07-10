@@ -1,0 +1,35 @@
+Asset: ALS_PlayerCameraManager
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CameraSystem/ALS_PlayerCameraManager.ALS_PlayerCameraManager
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraManager
+GraphId: G006
+Graph: GetDebugTraceType
+FlowId: F001
+Entry: Get Debug Trace Type
+NodeGuid: 3019FE7944FF8878CD5F26AF5E0EC1B9
+
+Exec Flow:
+1. Get Debug Trace Type [K2Node_FunctionEntry] 3019FE7944FF8878CD5F26AF5E0EC1B9
+2. Ramo [K2Node_IfThenElse] 2595ACAD48D8618C6E4AD6B2FDFDD5FC
+3. Get Player Controller [K2Node_CallFunction] AC247A884020BF056A3A989C15F4DFB5
+4. BPI Get Debug Info
+Target is ALS Controller BPI [K2Node_Message] C8C945334C79167230BECF8091B9C4D4
+5. Nodo di restituzione [K2Node_FunctionResult] 2D50AB86436906E4F71FD7876AF3CA9A
+6. Nodo di restituzione [K2Node_FunctionResult] B94F3519471A9E01137B598741CA3268
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- Get Player Controller
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Player Controller

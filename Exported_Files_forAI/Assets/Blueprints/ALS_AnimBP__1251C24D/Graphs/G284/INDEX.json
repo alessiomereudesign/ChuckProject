@@ -1,0 +1,25 @@
+{
+	"graphId": "G284",
+	"name": "CalculateMovementDirection",
+	"graphName": "CalculateMovementDirection",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 16,
+	"edgeCount": 16,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G284/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G284/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G284/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Calculate Movement Direction",
+			"entryNodeGuid": "42DF2B5A49B70BFDDF7A0983BC45BC38",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G284/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G284/F001.json",
+			"textFile": "Flows/G284/F001.txt",
+			"jsonFile": "Flows/G284/F001.json",
+			"nodeCount": 16
+		}
+	]
+}

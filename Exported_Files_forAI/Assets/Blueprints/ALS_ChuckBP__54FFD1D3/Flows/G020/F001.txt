@@ -1,0 +1,34 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G020
+Graph: RagdollEnd
+FlowId: F001
+Entry: Ragdoll End
+NodeGuid: 8F0CF407428A4ED3BCC915A31C48F26E
+
+Exec Flow:
+1. Ragdoll End [K2Node_FunctionEntry] 8F0CF407428A4ED3BCC915A31C48F26E
+2. Genitore: Ragdoll End [K2Node_CallParentFunction] F4F3FE33424BD02FEA028F8086766EA8
+3. Update Held Object
+La destinazione è ALS Chuck BP [K2Node_CallFunction] CA9A0F414678F1908E615087C30BBAED
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- Update Held Object
+La destinazione è ALS Chuck BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Update Held Object
+La destinazione è ALS Chuck BP

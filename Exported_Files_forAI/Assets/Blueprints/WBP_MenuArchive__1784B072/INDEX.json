@@ -1,0 +1,401 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "WBP_MenuArchive",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+	"shortAssetFolder": "WBP_MenuArchive__1784B072",
+	"pathHash": "1784B072",
+	"assetType": "Blueprint",
+	"unrealClass": "WidgetBlueprint",
+	"parentClass": "/Script/UMG.UserWidget",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 12,
+		"components": 24,
+		"widgets": 199,
+		"graphs": 9,
+		"nodes": 976,
+		"edges": 1090,
+		"flows": 23
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/WBP_MenuArchive__1784B072/SUMMARY.md",
+		"variables": "Assets/Blueprints/WBP_MenuArchive__1784B072/VARIABLES.json",
+		"components": "Assets/Blueprints/WBP_MenuArchive__1784B072/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/WBP_MenuArchive__1784B072/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/WBP_MenuArchive__1784B072/NODES.jsonl",
+		"edges": "Assets/Blueprints/WBP_MenuArchive__1784B072/EDGES.jsonl",
+		"search": "Assets/Blueprints/WBP_MenuArchive__1784B072/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 260,
+			"edgeCount": 300,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Background Grey Dark/Light\nCustom Event",
+					"entryNodeGuid": "F06A33814BBCFF8FE8BE3081A19E9023",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 260
+				},
+				{
+					"flowId": "F002",
+					"entryName": "CharacterCard > CharacterSlotPage\nCustom Event",
+					"entryNodeGuid": "370FAB414B8A48B8EF3C0F99179FFB42",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F002.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F002.json",
+					"textFile": "Flows/G001/F002.txt",
+					"jsonFile": "Flows/G001/F002.json",
+					"nodeCount": 260
+				},
+				{
+					"flowId": "F003",
+					"entryName": "CharacterSlotPage > IntersectPage\nCustom Event",
+					"entryNodeGuid": "CDDFDE6048085ED7F92F5D8597F19A06",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F003.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F003.json",
+					"textFile": "Flows/G001/F003.txt",
+					"jsonFile": "Flows/G001/F003.json",
+					"nodeCount": 260
+				},
+				{
+					"flowId": "F004",
+					"entryName": "Content Whitee Dark/Light\nCustom Event",
+					"entryNodeGuid": "01EA2CDA4A8C69E6A06DC98C04F0223A",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F004.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F004.json",
+					"textFile": "Flows/G001/F004.txt",
+					"jsonFile": "Flows/G001/F004.json",
+					"nodeCount": 260
+				},
+				{
+					"flowId": "F005",
+					"entryName": "Evento Tick",
+					"entryNodeGuid": "80161E244A06E77AB9560CBCAAA6CE68",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F005.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F005.json",
+					"textFile": "Flows/G001/F005.txt",
+					"jsonFile": "Flows/G001/F005.json",
+					"nodeCount": 260
+				},
+				{
+					"flowId": "F006",
+					"entryName": "FocusedTabColor\nCustom Event",
+					"entryNodeGuid": "1F682B8E4C3EF9334EF9C8AF9A31C68E",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F006.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F006.json",
+					"textFile": "Flows/G001/F006.txt",
+					"jsonFile": "Flows/G001/F006.json",
+					"nodeCount": 260
+				},
+				{
+					"flowId": "F007",
+					"entryName": "RefreshMenuFocus\nCustom Event",
+					"entryNodeGuid": "8EFCC6564CE05F5E079AD3A4D53BBFC0",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F007.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F007.json",
+					"textFile": "Flows/G001/F007.txt",
+					"jsonFile": "Flows/G001/F007.json",
+					"nodeCount": 260
+				},
+				{
+					"flowId": "F008",
+					"entryName": "ReturnBackManage\nCustom Event",
+					"entryNodeGuid": "A48A603E40735027B86F9E940EFAA910",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F008.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F008.json",
+					"textFile": "Flows/G001/F008.txt",
+					"jsonFile": "Flows/G001/F008.json",
+					"nodeCount": 260
+				},
+				{
+					"flowId": "F009",
+					"entryName": "UnfocusedTabColor\nCustom Event",
+					"entryNodeGuid": "7EA5F3BF463AE6C1431186A027A02E3B",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F009.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F009.json",
+					"textFile": "Flows/G001/F009.txt",
+					"jsonFile": "Flows/G001/F009.json",
+					"nodeCount": 260
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "IntersectGraph",
+			"graphName": "IntersectGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 95,
+			"edgeCount": 103,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Evento Construct",
+					"entryNodeGuid": "70790197477F04B012D5A68D59F1C60D",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 95
+				},
+				{
+					"flowId": "F002",
+					"entryName": "Evento Destruct",
+					"entryNodeGuid": "51728D6341E0AEA800333DBECC5225BD",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G002/F002.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G002/F002.json",
+					"textFile": "Flows/G002/F002.txt",
+					"jsonFile": "Flows/G002/F002.json",
+					"nodeCount": 95
+				},
+				{
+					"flowId": "F003",
+					"entryName": "OpenCharacterSlot\nCustom Event",
+					"entryNodeGuid": "0F015DC949B88A9861D156BE6B97F60F",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G002/F003.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G002/F003.json",
+					"textFile": "Flows/G002/F003.txt",
+					"jsonFile": "Flows/G002/F003.json",
+					"nodeCount": 95
+				}
+			]
+		},
+		{
+			"graphId": "G003",
+			"name": "InventoryGraph",
+			"graphName": "InventoryGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 183,
+			"edgeCount": 198,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G003/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G003/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G003/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "OnClickedInventoryButtons",
+					"entryNodeGuid": "1BF19B89429DC3FE262DEABFA1C01D31",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F001.json",
+					"textFile": "Flows/G003/F001.txt",
+					"jsonFile": "Flows/G003/F001.json",
+					"nodeCount": 183
+				},
+				{
+					"flowId": "F002",
+					"entryName": "PopulateItemGrid\nCustom Event",
+					"entryNodeGuid": "A8316402431249613FC1E48A42F17EB5",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F002.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F002.json",
+					"textFile": "Flows/G003/F002.txt",
+					"jsonFile": "Flows/G003/F002.json",
+					"nodeCount": 183
+				},
+				{
+					"flowId": "F003",
+					"entryName": "ShowAllItems\nCustom Event",
+					"entryNodeGuid": "CD152E5643DCD6F348E0BCAAB8879E90",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F003.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F003.json",
+					"textFile": "Flows/G003/F003.txt",
+					"jsonFile": "Flows/G003/F003.json",
+					"nodeCount": 183
+				},
+				{
+					"flowId": "F004",
+					"entryName": "ShowArmorItems\nCustom Event",
+					"entryNodeGuid": "995AFA6B4668BFC03D4E5C952BC14A70",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F004.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F004.json",
+					"textFile": "Flows/G003/F004.txt",
+					"jsonFile": "Flows/G003/F004.json",
+					"nodeCount": 183
+				},
+				{
+					"flowId": "F005",
+					"entryName": "ShowWeapons Items\nCustom Event",
+					"entryNodeGuid": "6FBBFFF64FA3B6E2F643839E1EC2A4C7",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F005.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F005.json",
+					"textFile": "Flows/G003/F005.txt",
+					"jsonFile": "Flows/G003/F005.json",
+					"nodeCount": 183
+				}
+			]
+		},
+		{
+			"graphId": "G004",
+			"name": "OnAnalogValueChanged",
+			"graphName": "OnAnalogValueChanged",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 26,
+			"edgeCount": 28,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G004/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G004/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G004/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "On Analog Value Changed",
+					"entryNodeGuid": "00220CD04DC4E663234E8F93BCC940A0",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G004/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G004/F001.json",
+					"textFile": "Flows/G004/F001.txt",
+					"jsonFile": "Flows/G004/F001.json",
+					"nodeCount": 26
+				}
+			]
+		},
+		{
+			"graphId": "G005",
+			"name": "OnArmorSlotClicked",
+			"graphName": "OnArmorSlotClicked",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 18,
+			"edgeCount": 23,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G005/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G005/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G005/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "On Armor Slot Clicked",
+					"entryNodeGuid": "27B057DC4BCFABA947AB6C9E4508C152",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G005/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G005/F001.json",
+					"textFile": "Flows/G005/F001.txt",
+					"jsonFile": "Flows/G005/F001.json",
+					"nodeCount": 18
+				}
+			]
+		},
+		{
+			"graphId": "G006",
+			"name": "OnKeyDown",
+			"graphName": "OnKeyDown",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 245,
+			"edgeCount": 258,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G006/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G006/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G006/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "On Key Down",
+					"entryNodeGuid": "D914DB934D5240A3BE9F6CA949B80798",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G006/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G006/F001.json",
+					"textFile": "Flows/G006/F001.txt",
+					"jsonFile": "Flows/G006/F001.json",
+					"nodeCount": 245
+				}
+			]
+		},
+		{
+			"graphId": "G007",
+			"name": "OnWeaponSlotClicked",
+			"graphName": "OnWeaponSlotClicked",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 17,
+			"edgeCount": 22,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G007/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G007/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G007/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "On Weapon Slot Clicked",
+					"entryNodeGuid": "35F2003C4980D91857B1889C8B8381C9",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G007/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G007/F001.json",
+					"textFile": "Flows/G007/F001.txt",
+					"jsonFile": "Flows/G007/F001.json",
+					"nodeCount": 17
+				}
+			]
+		},
+		{
+			"graphId": "G008",
+			"name": "UpdateEquipmentSlots",
+			"graphName": "UpdateEquipmentSlots",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 70,
+			"edgeCount": 80,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G008/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G008/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G008/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Update Equipment Slots",
+					"entryNodeGuid": "170EE6124E58E9CF8C37418C2FCE6553",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G008/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G008/F001.json",
+					"textFile": "Flows/G008/F001.txt",
+					"jsonFile": "Flows/G008/F001.json",
+					"nodeCount": 70
+				}
+			]
+		},
+		{
+			"graphId": "G009",
+			"name": "UpdateWeaponSlots",
+			"graphName": "UpdateWeaponSlots",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 62,
+			"edgeCount": 78,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Update Weapon Slots",
+					"entryNodeGuid": "AD3B4C5B4FF0C715A5664C80BDB81767",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G009/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G009/F001.json",
+					"textFile": "Flows/G009/F001.txt",
+					"jsonFile": "Flows/G009/F001.json",
+					"nodeCount": 62
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1685 @@
+{
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+	"graph": "EventGraph",
+	"entryName": "Evento Pre Construct",
+	"entryNodeGuid": "D36E4EC04050F902208F03A7222ADFBF",
+	"nodes": [
+		{
+			"nodeGuid": "D36E4EC04050F902208F03A7222ADFBF",
+			"class": "K2Node_Event",
+			"title": "Evento Pre Construct",
+			"comment": "Questo nodo è disabilitato e non verrà chiamato.\r\nTrascina i pin per creare funzionalità.",
+			"x": 48,
+			"y": -2176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "77E5E1224D879BFE3BC655A6ADD023E8",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3F35048141F017EE634A4F88225768AE",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7A17B9F14375C548336928947E48BF80",
+					"name": "IsDesignTime",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "0AFF8609480CC056029BA6AA1E7363DB",
+			"class": "K2Node_CustomEvent",
+			"title": "InizializeCharacterSlot\nCustom Event",
+			"comment": "",
+			"x": 80,
+			"y": -928,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DB5E2AAD4506B0191E1548A2399CC787",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3A7222064AA2B768DA67589D6E561B68",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6AC88AAA4162E2D85C800690A951C913",
+			"class": "K2Node_VariableGet",
+			"title": "Get CharacterData",
+			"comment": "",
+			"x": 96,
+			"y": -789,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1F03BF4B4D5B84A30243E6AC9BCBA991",
+					"name": "CharacterData",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/F_CharacterData.F_CharacterData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D6AE712C43A9D22DA5886CA05F7ED43B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0B0B81474B6A2658093AF68A0CBCDF31",
+			"class": "K2Node_BreakStruct",
+			"title": "Break F_CharacterData",
+			"comment": "",
+			"x": 256,
+			"y": -812,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0696EBCC42F31C444546F5A30DA43FCD",
+					"name": "F_CharacterData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/F_CharacterData.F_CharacterData|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E84CF34F4A9EC809398BE782F4A3E473",
+					"name": "Subject_57_F26DCFA444362EC15F334C85DAEA606B",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8B4B7BB446F3F31E662A339697FF9658",
+					"name": "IsSubjectNameDiscovered?_72_371D046546FB4F151B82D68168F2F5D5",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6F5A02474E17513A88BC89825696B5D8",
+					"name": "Icon_29_865610B04845107E08744FBEB7FC7FD1",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2721386B4F597C07654D1A9349A56976",
+					"name": "IsIconDiscovered?_32_209FFF6B4CD855BA7C6A10894DEA7A21",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0D7530EB444E58870C9A75B821DDBFED",
+					"name": "Aka_58_11C4F9654352996678422B9E4D637A62",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C6DD8FB04B88430FFB08BA8DAC81A48B",
+					"name": "IsAkaDiscovered?_73_4E6DBC3649A1AD2E07DEB6AE588F77AE",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "54F471804540A45DF8B1DBA3630534B5",
+					"name": "Nationality_59_D0C389D540DE4A29510B19AD186CEF6C",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "28EB178B4F3F84339C0D7CB419986199",
+					"name": "IsNationalityDiscovered?_80_61BF9CCF4A21C5B9CC328F8EE970DC62",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0D5A619147CE1A784231FC89F90AB345",
+					"name": "PlaceOfBirth_60_C9F21F254055CCC9FC647190AFFBE29D",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "97A724424C8151E8597DD38988FDF49B",
+					"name": "IsPlaceOfBirthDiscovered?_81_DE78335044A487316282FE9904C3B960",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7737AD0B4D0684ED5DEFC889FB2DBC9A",
+					"name": "History_1_91_C9E22C80474D28C95371D7B98582444E",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BCEDEAC44B20F03A7FBDD5AE20480D7D",
+					"name": "IsHistory_1Discovered?_82_063176C54D16E294CA28CBB3040D074B",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0C524CD448781D2DF284A2AF49B4E637",
+					"name": "History_2_93_66FAE1144ABD799E7AA9DE98739A621F",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1AB9FED24BC5336831A6A8A2897398B6",
+					"name": "IsHistory_2Discovered?_96_CD7D83144FE95F9637C81793FCE6FB1A",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9C95C06F48A253B32D798C9452702C18",
+					"name": "History_3_101_C99699D14AA79209FB7902A2A7E96B70",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0FE7EBAA4FC48F9710BF7194869599D5",
+					"name": "IsHistory_3Discovered?_105_27A292884C51681A228FBFB161E3A2E7",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1C466202461A403F94A897A523F0A1C1",
+					"name": "History_4_102_6060F5E6460A81258273B4953E920724",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D571CFD74F873D566049428AFF69D3FF",
+					"name": "IsHistory_4Discovered?_107_E4D8ABF749358EE19D24C18440F6B981",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0D34F44A4E24FDD29C88EB8B64110AC1",
+					"name": "Affiliation_87_BFA5AACE4B04B0E4E281B39CAF247058",
+					"direction": "Output",
+					"type": "byte|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/E_CharactersAffiliates.E_CharactersAffiliates|container=Array",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3111F9D84635D154E10EA5BF7D7F5725",
+					"name": "IsAffiliationDiscovered?_39_F8777F234098BF43FB42ADB9667E704C",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3F7526474691FBBFDC6413A7DA073480",
+					"name": "Summary_71_F6C2334047FBE1B20E67D1B73C9FC9E8",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BF79AABF451F204CFB846191AE4290C7",
+					"name": "IsSummaryDiscovered?_88_390CEFB9434AB82E648006BC83172F19",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A587532740CAE30136CBD0AA0F9F9742",
+			"class": "K2Node_Select",
+			"title": "Seleziona",
+			"comment": "",
+			"x": 688,
+			"y": -848,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "99CFD1184ED5D3BD16D51583F374ABDB",
+					"name": "Option 0",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": "???"
+				},
+				{
+					"pinId": "27F9FC5241E2A5BA81F206873E20E0CC",
+					"name": "Option 1",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "84560B0342E006A6EC930A8E62FA61D3",
+					"name": "Index",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "3E77710A4630FAAB348764BD700F2D5C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E71242D04ADA102A5FC142AB31A09AA2",
+			"class": "K2Node_Select",
+			"title": "Seleziona",
+			"comment": "",
+			"x": 688,
+			"y": -513,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0C69012442663F7CC02D77A3A0F33BE7",
+					"name": "Option 0",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/Img/21-213224_unknown-person-icon-png-download.21-213224_unknown-person-icon-png-download"
+				},
+				{
+					"pinId": "07D495F343E521E0AAA274B6402CC8D9",
+					"name": "Option 1",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "31E60DF2413BD1B56A6B2C85C66AFAED",
+					"name": "Index",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "DF25445F47848049BDD865B09D5A8269",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8CD11FEE4635B973F4A493B950BA88F5",
+			"class": "K2Node_VariableGet",
+			"title": "Get Txt_CharacterName",
+			"comment": "",
+			"x": 976,
+			"y": -856,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0C3BAE7547016726293319AB232DBDCE",
+					"name": "Txt_CharacterName",
+					"direction": "Output",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7938A00A4F9C96817616E8A44303D737",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "736D50944AF7A106C5F16CAD1CAEBDD0",
+			"class": "K2Node_VariableGet",
+			"title": "Get Icon_Character",
+			"comment": "",
+			"x": 1008,
+			"y": -520,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "682BEA464148F1D42B91E0AD2CAE382C",
+					"name": "Icon_Character",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7F626D2A4C2D1FD78C7A1A892D77A16E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "85329711422E718AE7F5ED808F9E3CC4",
+			"class": "K2Node_CallFunction",
+			"title": "Set Brush from Texture\nLa destinazione è Immagine",
+			"comment": "",
+			"x": 1168,
+			"y": -592,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3C075F5F44E404795D87A48E7C607CBF",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F3A8413C49C10C27EBE626A18DC9B61C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1C2FE5524FECCE46773E8681B7A86BBF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "969DDA0F49692A2C04051787C8B4B5D8",
+					"name": "Texture",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B47EFE4B4DA07612AAB396B0A4D69644",
+					"name": "bMatchSize",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				}
+			]
+		},
+		{
+			"nodeGuid": "9ACF0BB84474A9A5BB832584E43D2837",
+			"class": "K2Node_CallFunction",
+			"title": "SetText (Text)\nLa destinazione è Testo",
+			"comment": "",
+			"x": 1168,
+			"y": -928,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "57B84823462AD578EA1E6C9454B1754B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "17A0C71947715C90BFAFF19F252F2A08",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "46289EBE435E69B6B0A8619336132C72",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "01E7851E475DBDEA741E2EB1471B5D64",
+					"name": "InText",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "47587BC344237686E507CB951F1B05F0",
+			"class": "K2Node_ComponentBoundEvent",
+			"title": "On Clicked (Btn_Slot)",
+			"comment": "",
+			"x": 80,
+			"y": -35,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8C055430486B76E6FE84AF95585EB728",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "57EDE7644FF015C384F022882469D897",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "55AA0B254542931B7D8FEEBB2F33D984",
+			"class": "K2Node_CallDelegate",
+			"title": "Call On Slot Selected",
+			"comment": "",
+			"x": 400,
+			"y": -32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "252779BD47E214575B320CA11B6C4E66",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FC1034B340F86DE304860F87B1065402",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "82C259DF4B3B4084997BB89AD38A8B00",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5DACDFE5415C6C7FEEF80BAC9A0C63F0",
+					"name": "SelectedCharacterData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/F_CharacterData.F_CharacterData",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E1A92DB844B729CE63CDD18875A56AD7",
+			"class": "K2Node_VariableGet",
+			"title": "Get CharacterData",
+			"comment": "",
+			"x": 208,
+			"y": 58,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B22253C747071E4A5EA00CAB5C736053",
+					"name": "CharacterData",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/F_CharacterData.F_CharacterData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6B6A1A5E48EB82114F03E2AF6705CC5B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "44555F4541EB68CEC209E4B26253649E",
+			"class": "EdGraphNode_Comment",
+			"title": "Set Data Cover's Character Slot",
+			"comment": "Set Data Cover's Character Slot",
+			"x": 16,
+			"y": -992,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "114333DE4F8E71102BF927BB432948F5",
+			"class": "EdGraphNode_Comment",
+			"title": "Set Slot Appeareance when Focused",
+			"comment": "Set Slot Appeareance when Focused",
+			"x": 16,
+			"y": -1872,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "14B904BE45A33AA6D5DFFA99BD0A9FC2",
+			"class": "EdGraphNode_Comment",
+			"title": "Open Character's Slot",
+			"comment": "Open Character's Slot",
+			"x": 16,
+			"y": -96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "F7A30D314DC8048F2C654AAD34955749",
+			"class": "K2Node_Event",
+			"title": "Evento On Added to Focus Path",
+			"comment": "",
+			"x": 80,
+			"y": -1776,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "AC26F18C403E8D6EAEB394874543B431",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A75D66A24FB315BA511939BA1E4386EC",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D70F50AC43635041A265519B12590947",
+					"name": "InFocusEvent",
+					"direction": "Output",
+					"type": "struct|/Script/SlateCore.FocusEvent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EE1195DD460CA350183A0ABEF793747E",
+			"class": "K2Node_Event",
+			"title": "Evento On Removed from Focus Path",
+			"comment": "",
+			"x": 80,
+			"y": -1472,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CE8833744D6124F7A843E28146F6178F",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F3BDCD944E0CD4F702EE139FB8D761B5",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0171F9E74D99D81E9D9742BDBAF40850",
+					"name": "InFocusEvent",
+					"direction": "Output",
+					"type": "struct|/Script/SlateCore.FocusEvent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "17E4BC9C4F53A2565CEF7984067BD9B6",
+			"class": "K2Node_VariableGet",
+			"title": "Get Btn_Slot",
+			"comment": "",
+			"x": 336,
+			"y": -1632,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3A65CF04450D38E603D77D8BE9C70D29",
+					"name": "Btn_Slot",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3750BCBE4D678B6C3176FCAD49285833",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6CD99A4D4DDD18B89C92FA8BE29892F2",
+			"class": "K2Node_VariableGet",
+			"title": "Get Btn_Slot",
+			"comment": "",
+			"x": 352,
+			"y": -1319,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3A65CF04450D38E603D77D8BE9C70D29",
+					"name": "Btn_Slot",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3750BCBE4D678B6C3176FCAD49285833",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "49B30E00415108632C724BB57301A64F",
+			"class": "K2Node_CallFunction",
+			"title": "Get Parent\nLa destinazione è Widget",
+			"comment": "",
+			"x": 1072,
+			"y": -1664,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B11DE6AF430660E4F5D4C49B21AB907C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "173C5AA145E3B60E99DD5A8EDC7CF323",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/UMG.PanelWidget",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AC6B5BC44CAC1ADBA7FECC980AD0A644",
+			"class": "K2Node_CallFunction",
+			"title": "Get Parent\nLa destinazione è Widget",
+			"comment": "",
+			"x": 1328,
+			"y": -1664,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5210D3F74230D89AE8F7CBAD16D129A5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FAE4617C41922BFC57C0B385B5DAB4A4",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/UMG.PanelWidget",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "74A00CA743109ECC99EE2298299D3422",
+			"class": "K2Node_DynamicCast",
+			"title": "Cast To ScrollBox",
+			"comment": "",
+			"x": 1616,
+			"y": -1776,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "53AC32C2440167721A714AB578F7EDAE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "21E65A6843FF7A9D4855478967336B1C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5B80D8E147BCBE1909C395AAC86AFFC2",
+					"name": "CastFailed",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EB3C03EF4B8A4CB56E054FB461FDF425",
+					"name": "Object",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "64605A064EFF6DFB030C49A9FC05FA36",
+					"name": "AsScroll Box",
+					"direction": "Output",
+					"type": "object|/Script/UMG.ScrollBox",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4018FFA549FAE9C9587E4EA83DC7EC3E",
+					"name": "bSuccess",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B37B1ABE4A5E6964A1979EB27465369F",
+			"class": "K2Node_CallFunction",
+			"title": "Scroll Widget Into View\nLa destinazione è Scroll Box",
+			"comment": "",
+			"x": 1920,
+			"y": -1760,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "171816204B20E18D1E41D68CAC891477",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2AE05CD34A127B3C718366AC7F346274",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D9739E2D43CD1A75AD8B6395C07BDE2D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.ScrollBox",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "297D551D4D2D7EBBEDBAFD93B8761A27",
+					"name": "WidgetToFind",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CFBEF1C34C886BAADEB742B9DCF85596",
+					"name": "AnimateScroll",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "CF0E07CA4AC63CAD170DBD832B1AC2D3",
+					"name": "ScrollDestination",
+					"direction": "Input",
+					"type": "byte|/Script/Slate.EDescendantScrollDestination",
+					"defaultValue": "IntoView"
+				},
+				{
+					"pinId": "BE50CE3340C15699BF600B80360863E3",
+					"name": "Padding",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.000000"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A3695D564C3F9C6DCFE98B8B84511DC5",
+			"class": "K2Node_Self",
+			"title": "Auto-riferimento",
+			"comment": "",
+			"x": 1568,
+			"y": -1536,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4FC2E7A04C8FA1219422808ED957D781",
+					"name": "self",
+					"direction": "Output",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "16554657498AC1BA9A97659A6472D338",
+			"class": "K2Node_CallFunction",
+			"title": "Get Parent\nLa destinazione è Widget",
+			"comment": "",
+			"x": 1104,
+			"y": -1360,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B11DE6AF430660E4F5D4C49B21AB907C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "173C5AA145E3B60E99DD5A8EDC7CF323",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/UMG.PanelWidget",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "951FE48B44B882C5A4FB0CAF043F4016",
+			"class": "K2Node_CallFunction",
+			"title": "Get Parent\nLa destinazione è Widget",
+			"comment": "",
+			"x": 1360,
+			"y": -1360,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5210D3F74230D89AE8F7CBAD16D129A5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FAE4617C41922BFC57C0B385B5DAB4A4",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/UMG.PanelWidget",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1DDCA87F42736640E7EBDC9BB9FE8C0D",
+			"class": "K2Node_DynamicCast",
+			"title": "Cast To ScrollBox",
+			"comment": "",
+			"x": 1616,
+			"y": -1472,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "53AC32C2440167721A714AB578F7EDAE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "21E65A6843FF7A9D4855478967336B1C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5B80D8E147BCBE1909C395AAC86AFFC2",
+					"name": "CastFailed",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EB3C03EF4B8A4CB56E054FB461FDF425",
+					"name": "Object",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "64605A064EFF6DFB030C49A9FC05FA36",
+					"name": "AsScroll Box",
+					"direction": "Output",
+					"type": "object|/Script/UMG.ScrollBox",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4018FFA549FAE9C9587E4EA83DC7EC3E",
+					"name": "bSuccess",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2B6E983644B1B989E5B674B4583B0200",
+			"class": "K2Node_CallFunction",
+			"title": "Scroll Widget Into View\nLa destinazione è Scroll Box",
+			"comment": "",
+			"x": 1920,
+			"y": -1456,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "171816204B20E18D1E41D68CAC891477",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2AE05CD34A127B3C718366AC7F346274",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D9739E2D43CD1A75AD8B6395C07BDE2D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.ScrollBox",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "297D551D4D2D7EBBEDBAFD93B8761A27",
+					"name": "WidgetToFind",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CFBEF1C34C886BAADEB742B9DCF85596",
+					"name": "AnimateScroll",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "CF0E07CA4AC63CAD170DBD832B1AC2D3",
+					"name": "ScrollDestination",
+					"direction": "Input",
+					"type": "byte|/Script/Slate.EDescendantScrollDestination",
+					"defaultValue": "IntoView"
+				},
+				{
+					"pinId": "BE50CE3340C15699BF600B80360863E3",
+					"name": "Padding",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.000000"
+				}
+			]
+		},
+		{
+			"nodeGuid": "0FE562184E50D6020C98B5B68E9C1A00",
+			"class": "K2Node_Self",
+			"title": "Auto-riferimento",
+			"comment": "",
+			"x": 1568,
+			"y": -1232,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4FC2E7A04C8FA1219422808ED957D781",
+					"name": "self",
+					"direction": "Output",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "13DE326948B996EC2734F19DCCF23136",
+			"class": "K2Node_VariableGet",
+			"title": "Get ParentIntersectRef",
+			"comment": "",
+			"x": 304,
+			"y": -1552,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "08A3EB8C4A0AB49505BD60B01516FB62",
+					"name": "ParentIntersectRef",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E0878C464E119E1759FF0CBF48583E8A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C3C3C9F3496B57AE7876B583AEE31682",
+			"class": "K2Node_CallFunction",
+			"title": "Background Grey Dark/ Light\nLa destinazione è WBP Menu Archive",
+			"comment": "",
+			"x": 672,
+			"y": -1488,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F792E6D749B265EE41024F8E7D38E345",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6B902E3B4B6A47223DAAC2AF9407C0D9",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B22CAEA8486835FAAF7BAFA6C2CC11D0",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "85A967E9452D70776F6292A58E295DC9",
+					"name": "TargetButton",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4589B63A40CB1C3945C504A92A81F397",
+					"name": "IsFocused?",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "072FE23C49950D36663B4696E7B7B713",
+			"class": "K2Node_CallFunction",
+			"title": "Background Grey Dark/ Light\nLa destinazione è WBP Menu Archive",
+			"comment": "",
+			"x": 672,
+			"y": -1792,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F792E6D749B265EE41024F8E7D38E345",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6B902E3B4B6A47223DAAC2AF9407C0D9",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B22CAEA8486835FAAF7BAFA6C2CC11D0",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "85A967E9452D70776F6292A58E295DC9",
+					"name": "TargetButton",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4589B63A40CB1C3945C504A92A81F397",
+					"name": "IsFocused?",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "0AFF8609480CC056029BA6AA1E7363DB",
+			"fromPinId": "3A7222064AA2B768DA67589D6E561B68",
+			"fromPinName": "then",
+			"toNodeGuid": "9ACF0BB84474A9A5BB832584E43D2837",
+			"toPinId": "57B84823462AD578EA1E6C9454B1754B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "6AC88AAA4162E2D85C800690A951C913",
+			"fromPinId": "1F03BF4B4D5B84A30243E6AC9BCBA991",
+			"fromPinName": "CharacterData",
+			"toNodeGuid": "0B0B81474B6A2658093AF68A0CBCDF31",
+			"toPinId": "0696EBCC42F31C444546F5A30DA43FCD",
+			"toPinName": "F_CharacterData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "0B0B81474B6A2658093AF68A0CBCDF31",
+			"fromPinId": "E84CF34F4A9EC809398BE782F4A3E473",
+			"fromPinName": "Subject_57_F26DCFA444362EC15F334C85DAEA606B",
+			"toNodeGuid": "A587532740CAE30136CBD0AA0F9F9742",
+			"toPinId": "27F9FC5241E2A5BA81F206873E20E0CC",
+			"toPinName": "Option 1"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "0B0B81474B6A2658093AF68A0CBCDF31",
+			"fromPinId": "8B4B7BB446F3F31E662A339697FF9658",
+			"fromPinName": "IsSubjectNameDiscovered?_72_371D046546FB4F151B82D68168F2F5D5",
+			"toNodeGuid": "A587532740CAE30136CBD0AA0F9F9742",
+			"toPinId": "84560B0342E006A6EC930A8E62FA61D3",
+			"toPinName": "Index"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "0B0B81474B6A2658093AF68A0CBCDF31",
+			"fromPinId": "6F5A02474E17513A88BC89825696B5D8",
+			"fromPinName": "Icon_29_865610B04845107E08744FBEB7FC7FD1",
+			"toNodeGuid": "E71242D04ADA102A5FC142AB31A09AA2",
+			"toPinId": "07D495F343E521E0AAA274B6402CC8D9",
+			"toPinName": "Option 1"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "0B0B81474B6A2658093AF68A0CBCDF31",
+			"fromPinId": "2721386B4F597C07654D1A9349A56976",
+			"fromPinName": "IsIconDiscovered?_32_209FFF6B4CD855BA7C6A10894DEA7A21",
+			"toNodeGuid": "E71242D04ADA102A5FC142AB31A09AA2",
+			"toPinId": "31E60DF2413BD1B56A6B2C85C66AFAED",
+			"toPinName": "Index"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "A587532740CAE30136CBD0AA0F9F9742",
+			"fromPinId": "3E77710A4630FAAB348764BD700F2D5C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "9ACF0BB84474A9A5BB832584E43D2837",
+			"toPinId": "01E7851E475DBDEA741E2EB1471B5D64",
+			"toPinName": "InText"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "E71242D04ADA102A5FC142AB31A09AA2",
+			"fromPinId": "DF25445F47848049BDD865B09D5A8269",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "85329711422E718AE7F5ED808F9E3CC4",
+			"toPinId": "969DDA0F49692A2C04051787C8B4B5D8",
+			"toPinName": "Texture"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "8CD11FEE4635B973F4A493B950BA88F5",
+			"fromPinId": "0C3BAE7547016726293319AB232DBDCE",
+			"fromPinName": "Txt_CharacterName",
+			"toNodeGuid": "9ACF0BB84474A9A5BB832584E43D2837",
+			"toPinId": "46289EBE435E69B6B0A8619336132C72",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "736D50944AF7A106C5F16CAD1CAEBDD0",
+			"fromPinId": "682BEA464148F1D42B91E0AD2CAE382C",
+			"fromPinName": "Icon_Character",
+			"toNodeGuid": "85329711422E718AE7F5ED808F9E3CC4",
+			"toPinId": "1C2FE5524FECCE46773E8681B7A86BBF",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "9ACF0BB84474A9A5BB832584E43D2837",
+			"fromPinId": "17A0C71947715C90BFAFF19F252F2A08",
+			"fromPinName": "then",
+			"toNodeGuid": "85329711422E718AE7F5ED808F9E3CC4",
+			"toPinId": "3C075F5F44E404795D87A48E7C607CBF",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "47587BC344237686E507CB951F1B05F0",
+			"fromPinId": "57EDE7644FF015C384F022882469D897",
+			"fromPinName": "then",
+			"toNodeGuid": "55AA0B254542931B7D8FEEBB2F33D984",
+			"toPinId": "252779BD47E214575B320CA11B6C4E66",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "E1A92DB844B729CE63CDD18875A56AD7",
+			"fromPinId": "B22253C747071E4A5EA00CAB5C736053",
+			"fromPinName": "CharacterData",
+			"toNodeGuid": "55AA0B254542931B7D8FEEBB2F33D984",
+			"toPinId": "5DACDFE5415C6C7FEEF80BAC9A0C63F0",
+			"toPinName": "SelectedCharacterData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "F7A30D314DC8048F2C654AAD34955749",
+			"fromPinId": "A75D66A24FB315BA511939BA1E4386EC",
+			"fromPinName": "then",
+			"toNodeGuid": "072FE23C49950D36663B4696E7B7B713",
+			"toPinId": "F792E6D749B265EE41024F8E7D38E345",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "EE1195DD460CA350183A0ABEF793747E",
+			"fromPinId": "F3BDCD944E0CD4F702EE139FB8D761B5",
+			"fromPinName": "then",
+			"toNodeGuid": "C3C3C9F3496B57AE7876B583AEE31682",
+			"toPinId": "F792E6D749B265EE41024F8E7D38E345",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "17E4BC9C4F53A2565CEF7984067BD9B6",
+			"fromPinId": "3A65CF04450D38E603D77D8BE9C70D29",
+			"fromPinName": "Btn_Slot",
+			"toNodeGuid": "49B30E00415108632C724BB57301A64F",
+			"toPinId": "B11DE6AF430660E4F5D4C49B21AB907C",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "17E4BC9C4F53A2565CEF7984067BD9B6",
+			"fromPinId": "3A65CF04450D38E603D77D8BE9C70D29",
+			"fromPinName": "Btn_Slot",
+			"toNodeGuid": "072FE23C49950D36663B4696E7B7B713",
+			"toPinId": "85A967E9452D70776F6292A58E295DC9",
+			"toPinName": "TargetButton"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "6CD99A4D4DDD18B89C92FA8BE29892F2",
+			"fromPinId": "3A65CF04450D38E603D77D8BE9C70D29",
+			"fromPinName": "Btn_Slot",
+			"toNodeGuid": "16554657498AC1BA9A97659A6472D338",
+			"toPinId": "B11DE6AF430660E4F5D4C49B21AB907C",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "6CD99A4D4DDD18B89C92FA8BE29892F2",
+			"fromPinId": "3A65CF04450D38E603D77D8BE9C70D29",
+			"fromPinName": "Btn_Slot",
+			"toNodeGuid": "C3C3C9F3496B57AE7876B583AEE31682",
+			"toPinId": "85A967E9452D70776F6292A58E295DC9",
+			"toPinName": "TargetButton"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "49B30E00415108632C724BB57301A64F",
+			"fromPinId": "173C5AA145E3B60E99DD5A8EDC7CF323",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "AC6B5BC44CAC1ADBA7FECC980AD0A644",
+			"toPinId": "5210D3F74230D89AE8F7CBAD16D129A5",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "AC6B5BC44CAC1ADBA7FECC980AD0A644",
+			"fromPinId": "FAE4617C41922BFC57C0B385B5DAB4A4",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "74A00CA743109ECC99EE2298299D3422",
+			"toPinId": "EB3C03EF4B8A4CB56E054FB461FDF425",
+			"toPinName": "Object"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "072FE23C49950D36663B4696E7B7B713",
+			"fromPinId": "6B902E3B4B6A47223DAAC2AF9407C0D9",
+			"fromPinName": "then",
+			"toNodeGuid": "74A00CA743109ECC99EE2298299D3422",
+			"toPinId": "53AC32C2440167721A714AB578F7EDAE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "74A00CA743109ECC99EE2298299D3422",
+			"fromPinId": "21E65A6843FF7A9D4855478967336B1C",
+			"fromPinName": "then",
+			"toNodeGuid": "B37B1ABE4A5E6964A1979EB27465369F",
+			"toPinId": "171816204B20E18D1E41D68CAC891477",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "74A00CA743109ECC99EE2298299D3422",
+			"fromPinId": "64605A064EFF6DFB030C49A9FC05FA36",
+			"fromPinName": "AsScroll Box",
+			"toNodeGuid": "B37B1ABE4A5E6964A1979EB27465369F",
+			"toPinId": "D9739E2D43CD1A75AD8B6395C07BDE2D",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "A3695D564C3F9C6DCFE98B8B84511DC5",
+			"fromPinId": "4FC2E7A04C8FA1219422808ED957D781",
+			"fromPinName": "self",
+			"toNodeGuid": "B37B1ABE4A5E6964A1979EB27465369F",
+			"toPinId": "297D551D4D2D7EBBEDBAFD93B8761A27",
+			"toPinName": "WidgetToFind"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "16554657498AC1BA9A97659A6472D338",
+			"fromPinId": "173C5AA145E3B60E99DD5A8EDC7CF323",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "951FE48B44B882C5A4FB0CAF043F4016",
+			"toPinId": "5210D3F74230D89AE8F7CBAD16D129A5",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "951FE48B44B882C5A4FB0CAF043F4016",
+			"fromPinId": "FAE4617C41922BFC57C0B385B5DAB4A4",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "1DDCA87F42736640E7EBDC9BB9FE8C0D",
+			"toPinId": "EB3C03EF4B8A4CB56E054FB461FDF425",
+			"toPinName": "Object"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "C3C3C9F3496B57AE7876B583AEE31682",
+			"fromPinId": "6B902E3B4B6A47223DAAC2AF9407C0D9",
+			"fromPinName": "then",
+			"toNodeGuid": "1DDCA87F42736640E7EBDC9BB9FE8C0D",
+			"toPinId": "53AC32C2440167721A714AB578F7EDAE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "1DDCA87F42736640E7EBDC9BB9FE8C0D",
+			"fromPinId": "21E65A6843FF7A9D4855478967336B1C",
+			"fromPinName": "then",
+			"toNodeGuid": "2B6E983644B1B989E5B674B4583B0200",
+			"toPinId": "171816204B20E18D1E41D68CAC891477",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "1DDCA87F42736640E7EBDC9BB9FE8C0D",
+			"fromPinId": "64605A064EFF6DFB030C49A9FC05FA36",
+			"fromPinName": "AsScroll Box",
+			"toNodeGuid": "2B6E983644B1B989E5B674B4583B0200",
+			"toPinId": "D9739E2D43CD1A75AD8B6395C07BDE2D",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "0FE562184E50D6020C98B5B68E9C1A00",
+			"fromPinId": "4FC2E7A04C8FA1219422808ED957D781",
+			"fromPinName": "self",
+			"toNodeGuid": "2B6E983644B1B989E5B674B4583B0200",
+			"toPinId": "297D551D4D2D7EBBEDBAFD93B8761A27",
+			"toPinName": "WidgetToFind"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "13DE326948B996EC2734F19DCCF23136",
+			"fromPinId": "08A3EB8C4A0AB49505BD60B01516FB62",
+			"fromPinName": "ParentIntersectRef",
+			"toNodeGuid": "C3C3C9F3496B57AE7876B583AEE31682",
+			"toPinId": "B22CAEA8486835FAAF7BAFA6C2CC11D0",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "13DE326948B996EC2734F19DCCF23136",
+			"fromPinId": "08A3EB8C4A0AB49505BD60B01516FB62",
+			"fromPinName": "ParentIntersectRef",
+			"toNodeGuid": "072FE23C49950D36663B4696E7B7B713",
+			"toPinId": "B22CAEA8486835FAAF7BAFA6C2CC11D0",
+			"toPinName": "self"
+		}
+	],
+	"variablesRead": [
+		"Get Btn_Slot",
+		"Get CharacterData",
+		"Get Icon_Character",
+		"Get ParentIntersectRef",
+		"Get Txt_CharacterName"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Background Grey Dark/ Light\nLa destinazione è WBP Menu Archive",
+		"Get Parent\nLa destinazione è Widget",
+		"Scroll Widget Into View\nLa destinazione è Scroll Box",
+		"Set Brush from Texture\nLa destinazione è Immagine",
+		"SetText (Text)\nLa destinazione è Testo"
+	],
+	"widgetsTouched": [
+		"Set Brush from Texture\nLa destinazione è Immagine",
+		"SetText (Text)\nLa destinazione è Testo"
+	],
+	"componentsTouched": [
+		"On Clicked (Btn_Slot)"
+	],
+	"externalBlueprintReferences": [
+		"Background Grey Dark/ Light\nLa destinazione è WBP Menu Archive",
+		"Cast To ScrollBox",
+		"Get Parent\nLa destinazione è Widget",
+		"Scroll Widget Into View\nLa destinazione è Scroll Box",
+		"Set Brush from Texture\nLa destinazione è Immagine",
+		"SetText (Text)\nLa destinazione è Testo"
+	],
+	"flowId": "F003",
+	"graphId": "G002",
+	"assetName": "WBP_TabIntersect_CharacterSlot",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot"
+}

@@ -1,0 +1,25 @@
+{
+	"graphId": "G009",
+	"name": "Get_ShowCharacterInfo_Color",
+	"graphName": "Get_ShowCharacterInfo_Color",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 10,
+	"edgeCount": 9,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G009/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G009/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G009/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Get Show Character Info Color",
+			"entryNodeGuid": "21C557E541ADE3BA382BA5BB4F213A72",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G009/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G009/F001.json",
+			"textFile": "Flows/G009/F001.txt",
+			"jsonFile": "Flows/G009/F001.json",
+			"nodeCount": 10
+		}
+	]
+}

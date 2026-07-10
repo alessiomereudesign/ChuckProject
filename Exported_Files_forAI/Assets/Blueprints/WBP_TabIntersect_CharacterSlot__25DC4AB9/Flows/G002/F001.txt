@@ -1,0 +1,98 @@
+Asset: WBP_TabIntersect_CharacterSlot
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot
+GraphId: G002
+Graph: EventGraph
+FlowId: F001
+Entry: Evento On Added to Focus Path
+NodeGuid: F7A30D314DC8048F2C654AAD34955749
+
+Exec Flow:
+1. Evento Pre Construct [K2Node_Event] D36E4EC04050F902208F03A7222ADFBF
+2. InizializeCharacterSlot
+Custom Event [K2Node_CustomEvent] 0AFF8609480CC056029BA6AA1E7363DB
+3. Get CharacterData [K2Node_VariableGet] 6AC88AAA4162E2D85C800690A951C913
+4. Break F_CharacterData [K2Node_BreakStruct] 0B0B81474B6A2658093AF68A0CBCDF31
+5. Seleziona [K2Node_Select] A587532740CAE30136CBD0AA0F9F9742
+6. Seleziona [K2Node_Select] E71242D04ADA102A5FC142AB31A09AA2
+7. Get Txt_CharacterName [K2Node_VariableGet] 8CD11FEE4635B973F4A493B950BA88F5
+8. Get Icon_Character [K2Node_VariableGet] 736D50944AF7A106C5F16CAD1CAEBDD0
+9. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 85329711422E718AE7F5ED808F9E3CC4
+10. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 9ACF0BB84474A9A5BB832584E43D2837
+11. On Clicked (Btn_Slot) [K2Node_ComponentBoundEvent] 47587BC344237686E507CB951F1B05F0
+12. Call On Slot Selected [K2Node_CallDelegate] 55AA0B254542931B7D8FEEBB2F33D984
+13. Get CharacterData [K2Node_VariableGet] E1A92DB844B729CE63CDD18875A56AD7
+14. Set Data Cover's Character Slot [EdGraphNode_Comment] 44555F4541EB68CEC209E4B26253649E
+15. Set Slot Appeareance when Focused [EdGraphNode_Comment] 114333DE4F8E71102BF927BB432948F5
+16. Open Character's Slot [EdGraphNode_Comment] 14B904BE45A33AA6D5DFFA99BD0A9FC2
+17. Evento On Added to Focus Path [K2Node_Event] F7A30D314DC8048F2C654AAD34955749
+18. Evento On Removed from Focus Path [K2Node_Event] EE1195DD460CA350183A0ABEF793747E
+19. Get Btn_Slot [K2Node_VariableGet] 17E4BC9C4F53A2565CEF7984067BD9B6
+20. Get Btn_Slot [K2Node_VariableGet] 6CD99A4D4DDD18B89C92FA8BE29892F2
+21. Get Parent
+La destinazione è Widget [K2Node_CallFunction] 49B30E00415108632C724BB57301A64F
+22. Get Parent
+La destinazione è Widget [K2Node_CallFunction] AC6B5BC44CAC1ADBA7FECC980AD0A644
+23. Cast To ScrollBox [K2Node_DynamicCast] 74A00CA743109ECC99EE2298299D3422
+24. Scroll Widget Into View
+La destinazione è Scroll Box [K2Node_CallFunction] B37B1ABE4A5E6964A1979EB27465369F
+25. Auto-riferimento [K2Node_Self] A3695D564C3F9C6DCFE98B8B84511DC5
+26. Get Parent
+La destinazione è Widget [K2Node_CallFunction] 16554657498AC1BA9A97659A6472D338
+27. Get Parent
+La destinazione è Widget [K2Node_CallFunction] 951FE48B44B882C5A4FB0CAF043F4016
+28. Cast To ScrollBox [K2Node_DynamicCast] 1DDCA87F42736640E7EBDC9BB9FE8C0D
+29. Scroll Widget Into View
+La destinazione è Scroll Box [K2Node_CallFunction] 2B6E983644B1B989E5B674B4583B0200
+30. Auto-riferimento [K2Node_Self] 0FE562184E50D6020C98B5B68E9C1A00
+31. Get ParentIntersectRef [K2Node_VariableGet] 13DE326948B996EC2734F19DCCF23136
+32. Background Grey Dark/ Light
+La destinazione è WBP Menu Archive [K2Node_CallFunction] C3C3C9F3496B57AE7876B583AEE31682
+33. Background Grey Dark/ Light
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 072FE23C49950D36663B4696E7B7B713
+
+Variables Read:
+- Get Btn_Slot
+- Get CharacterData
+- Get Icon_Character
+- Get ParentIntersectRef
+- Get Txt_CharacterName
+
+Variables Written:
+- none
+
+External Calls:
+- Background Grey Dark/ Light
+La destinazione è WBP Menu Archive
+- Get Parent
+La destinazione è Widget
+- Scroll Widget Into View
+La destinazione è Scroll Box
+- Set Brush from Texture
+La destinazione è Immagine
+- SetText (Text)
+La destinazione è Testo
+
+Widgets Touched:
+- Set Brush from Texture
+La destinazione è Immagine
+- SetText (Text)
+La destinazione è Testo
+
+Components Touched:
+- On Clicked (Btn_Slot)
+
+External Blueprint References:
+- Background Grey Dark/ Light
+La destinazione è WBP Menu Archive
+- Cast To ScrollBox
+- Get Parent
+La destinazione è Widget
+- Scroll Widget Into View
+La destinazione è Scroll Box
+- Set Brush from Texture
+La destinazione è Immagine
+- SetText (Text)
+La destinazione è Testo

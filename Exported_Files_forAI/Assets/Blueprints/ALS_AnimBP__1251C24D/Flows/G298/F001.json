@@ -1,0 +1,496 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+	"graph": "InterpLeanAmount",
+	"entryName": "Interp Lean Amount",
+	"entryNodeGuid": "7E25B786407BFB6EA0B78F8ED6B60A3D",
+	"nodes": [
+		{
+			"nodeGuid": "7E25B786407BFB6EA0B78F8ED6B60A3D",
+			"class": "K2Node_FunctionEntry",
+			"title": "Interp Lean Amount",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3F71B9D244B7F9AF858913B6BFC8D06B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CC6397F844D47DF42241608FA3F0A7C2",
+					"name": "Current",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "480410A24552A9E6C21B67AF93E472AF",
+					"name": "Target",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7EDA77B14BF9B058D15EEE8CAC27A00E",
+					"name": "InterpSpeed",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "448C66674CB3FFC2CDCAAEA8072F31AE",
+					"name": "DeltaTime",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C8CFDB1248E2E327EE695281D54B911A",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 912,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B28512CB41109388F332E6A5FC9432FF",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "52E8E3804BF40A73BFF05AA403491D74",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A7DC13C842CF6CE3A4DFFBBB28265004",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 192,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BECC9B904834DD0AE783408A5E02A9E4",
+					"name": "Current",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2F6AD31B480AE4A0A339A58DCE11BD8E",
+					"name": "Current_LR_17_ADF99333493B27F5B49BA89100DC4C05",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BD212FB64C8750B05E263988F9B28CA3",
+					"name": "Current_FB_15_297866804FB14F4B81FB4A976A7F57D1",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "20A549B146CCE2A3124C47A04F74C6C4",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 192,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "329D03B242A010EF9797AC9BC78D16E9",
+					"name": "Target",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "130A493B4B1D8B9C4C111D9616BBE5A5",
+					"name": "Target_LR_17_ADF99333493B27F5B49BA89100DC4C05",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "54BB579F418917E9AE74BDB1D614AB94",
+					"name": "Target_FB_15_297866804FB14F4B81FB4A976A7F57D1",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D85136284521279F6F9C8A9740018BE8",
+			"class": "K2Node_CallFunction",
+			"title": "FInterp To",
+			"comment": "",
+			"x": 384,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "265D800E480572A50449D6A4F83E63A2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "59932BA946DA969F8C5F26982D0B8CB3",
+					"name": "Current",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "BC263A84465C15ABBAC79CB223660BC8",
+					"name": "Target",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "640AEFE14DD809DE99EF918EE0284AEE",
+					"name": "DeltaTime",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "05E5738A452CC3DF5E4AD4A6E749DDB5",
+					"name": "InterpSpeed",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "3073E8D5413BCBDD022738B4DAC7923C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E94B79964870BEDF1053F898F6C19DAC",
+			"class": "K2Node_CallFunction",
+			"title": "FInterp To",
+			"comment": "",
+			"x": 384,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "265D800E480572A50449D6A4F83E63A2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "59932BA946DA969F8C5F26982D0B8CB3",
+					"name": "Current",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "BC263A84465C15ABBAC79CB223660BC8",
+					"name": "Target",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "640AEFE14DD809DE99EF918EE0284AEE",
+					"name": "DeltaTime",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "05E5738A452CC3DF5E4AD4A6E749DDB5",
+					"name": "InterpSpeed",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "3073E8D5413BCBDD022738B4DAC7923C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "71DA3FE948CAF5E18466199B9A61C820",
+			"class": "K2Node_MakeStruct",
+			"title": "Make LeanAmount",
+			"comment": "",
+			"x": 640,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9E968A1341A744451F456CB829D3B298",
+					"name": "LeanAmount",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BCDA09624673F2E28BE803A28C719391",
+					"name": "LR_17_ADF99333493B27F5B49BA89100DC4C05",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.000000"
+				},
+				{
+					"pinId": "5CDDE8184A972BD0EC1B6090BBBBF21A",
+					"name": "FB_15_297866804FB14F4B81FB4A976A7F57D1",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.000000"
+				}
+			]
+		},
+		{
+			"nodeGuid": "8C5D5B6B4730ED2040671ABBFC62B9AC",
+			"class": "K2Node_VariableGet",
+			"title": "Get DeltaTime",
+			"comment": "",
+			"x": 192,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9399786E4BD6407BD051F19BAEA8DCB5",
+					"name": "DeltaTime",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "3AEEB99B43CF9C03998518A16DD1D0E3",
+			"class": "K2Node_VariableGet",
+			"title": "Get InterpSpeed",
+			"comment": "",
+			"x": 192,
+			"y": 256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B91348ED438C53958C2372AF6BB6F983",
+					"name": "InterpSpeed",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "InterpLeanAmount",
+			"edgeType": "exec",
+			"fromNodeGuid": "7E25B786407BFB6EA0B78F8ED6B60A3D",
+			"fromPinId": "3F71B9D244B7F9AF858913B6BFC8D06B",
+			"fromPinName": "then",
+			"toNodeGuid": "C8CFDB1248E2E327EE695281D54B911A",
+			"toPinId": "B28512CB41109388F332E6A5FC9432FF",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "InterpLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "71DA3FE948CAF5E18466199B9A61C820",
+			"fromPinId": "9E968A1341A744451F456CB829D3B298",
+			"fromPinName": "LeanAmount",
+			"toNodeGuid": "C8CFDB1248E2E327EE695281D54B911A",
+			"toPinId": "52E8E3804BF40A73BFF05AA403491D74",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "InterpLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "A7DC13C842CF6CE3A4DFFBBB28265004",
+			"fromPinId": "2F6AD31B480AE4A0A339A58DCE11BD8E",
+			"fromPinName": "Current_LR_17_ADF99333493B27F5B49BA89100DC4C05",
+			"toNodeGuid": "D85136284521279F6F9C8A9740018BE8",
+			"toPinId": "59932BA946DA969F8C5F26982D0B8CB3",
+			"toPinName": "Current"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "InterpLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "A7DC13C842CF6CE3A4DFFBBB28265004",
+			"fromPinId": "BD212FB64C8750B05E263988F9B28CA3",
+			"fromPinName": "Current_FB_15_297866804FB14F4B81FB4A976A7F57D1",
+			"toNodeGuid": "E94B79964870BEDF1053F898F6C19DAC",
+			"toPinId": "59932BA946DA969F8C5F26982D0B8CB3",
+			"toPinName": "Current"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "InterpLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "20A549B146CCE2A3124C47A04F74C6C4",
+			"fromPinId": "130A493B4B1D8B9C4C111D9616BBE5A5",
+			"fromPinName": "Target_LR_17_ADF99333493B27F5B49BA89100DC4C05",
+			"toNodeGuid": "D85136284521279F6F9C8A9740018BE8",
+			"toPinId": "BC263A84465C15ABBAC79CB223660BC8",
+			"toPinName": "Target"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "InterpLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "20A549B146CCE2A3124C47A04F74C6C4",
+			"fromPinId": "54BB579F418917E9AE74BDB1D614AB94",
+			"fromPinName": "Target_FB_15_297866804FB14F4B81FB4A976A7F57D1",
+			"toNodeGuid": "E94B79964870BEDF1053F898F6C19DAC",
+			"toPinId": "BC263A84465C15ABBAC79CB223660BC8",
+			"toPinName": "Target"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "InterpLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "8C5D5B6B4730ED2040671ABBFC62B9AC",
+			"fromPinId": "9399786E4BD6407BD051F19BAEA8DCB5",
+			"fromPinName": "DeltaTime",
+			"toNodeGuid": "D85136284521279F6F9C8A9740018BE8",
+			"toPinId": "640AEFE14DD809DE99EF918EE0284AEE",
+			"toPinName": "DeltaTime"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "InterpLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "3AEEB99B43CF9C03998518A16DD1D0E3",
+			"fromPinId": "B91348ED438C53958C2372AF6BB6F983",
+			"fromPinName": "InterpSpeed",
+			"toNodeGuid": "D85136284521279F6F9C8A9740018BE8",
+			"toPinId": "05E5738A452CC3DF5E4AD4A6E749DDB5",
+			"toPinName": "InterpSpeed"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "InterpLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "D85136284521279F6F9C8A9740018BE8",
+			"fromPinId": "3073E8D5413BCBDD022738B4DAC7923C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "71DA3FE948CAF5E18466199B9A61C820",
+			"toPinId": "BCDA09624673F2E28BE803A28C719391",
+			"toPinName": "LR_17_ADF99333493B27F5B49BA89100DC4C05"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "InterpLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "8C5D5B6B4730ED2040671ABBFC62B9AC",
+			"fromPinId": "9399786E4BD6407BD051F19BAEA8DCB5",
+			"fromPinName": "DeltaTime",
+			"toNodeGuid": "E94B79964870BEDF1053F898F6C19DAC",
+			"toPinId": "640AEFE14DD809DE99EF918EE0284AEE",
+			"toPinName": "DeltaTime"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "InterpLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "3AEEB99B43CF9C03998518A16DD1D0E3",
+			"fromPinId": "B91348ED438C53958C2372AF6BB6F983",
+			"fromPinName": "InterpSpeed",
+			"toNodeGuid": "E94B79964870BEDF1053F898F6C19DAC",
+			"toPinId": "05E5738A452CC3DF5E4AD4A6E749DDB5",
+			"toPinName": "InterpSpeed"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "InterpLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "E94B79964870BEDF1053F898F6C19DAC",
+			"fromPinId": "3073E8D5413BCBDD022738B4DAC7923C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "71DA3FE948CAF5E18466199B9A61C820",
+			"toPinId": "5CDDE8184A972BD0EC1B6090BBBBF21A",
+			"toPinName": "FB_15_297866804FB14F4B81FB4A976A7F57D1"
+		}
+	],
+	"variablesRead": [
+		"Get DeltaTime",
+		"Get InterpSpeed",
+		"Ottieni"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"FInterp To"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"FInterp To"
+	],
+	"flowId": "F001",
+	"graphId": "G298",
+	"assetName": "ALS_AnimBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP"
+}

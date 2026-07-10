@@ -1,0 +1,25 @@
+{
+	"graphId": "G003",
+	"name": "CalculateAxisIndependentLag",
+	"graphName": "CalculateAxisIndependentLag",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 17,
+	"edgeCount": 25,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Graphs/G003/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Graphs/G003/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Graphs/G003/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Calculate Axis Independent Lag",
+			"entryNodeGuid": "4BA4D0B54B6B03FD85D4EBBFD711FBBF",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Flows/G003/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Flows/G003/F001.json",
+			"textFile": "Flows/G003/F001.txt",
+			"jsonFile": "Flows/G003/F001.json",
+			"nodeCount": 17
+		}
+	]
+}

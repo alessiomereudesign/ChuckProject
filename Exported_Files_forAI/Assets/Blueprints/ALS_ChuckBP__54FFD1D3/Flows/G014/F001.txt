@@ -1,0 +1,60 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G014
+Graph: GetRollAnimation
+FlowId: F001
+Entry: Get Roll Animation
+NodeGuid: 435D6B6443A1D24342849DBBDE2806F0
+
+Exec Flow:
+1. Get Roll Animation [K2Node_FunctionEntry] 435D6B6443A1D24342849DBBDE2806F0
+2. Nodo di restituzione [K2Node_FunctionResult] 25DF04434782C7F9A2CBC1929440FEAC
+3. Switch on ALS_OverlayState [K2Node_SwitchEnum] 8E034DBA4CF52B17F4FB3BBD95607E19
+4. Get OverlayState [K2Node_VariableGet] 7B372E63453B63427CCB4F81CFE49F7D
+5. Nodo di restituzione [K2Node_FunctionResult] E422A95C4022BFBD9D2A3BA704D5F757
+6. Nodo di restituzione [K2Node_FunctionResult] CB2E378D474C7B5823CBADBD0A194296
+7. Nodo di restituzione [K2Node_FunctionResult] 5F17DE844B1C849F402EFEB204254740
+8. Nodo di restituzione [K2Node_FunctionResult] BB02E38A49623091AAD4CFA5B18A1EA3
+9. Nodo di restituzione [K2Node_FunctionResult] FD447E464BB9183D77D9229ADB1AD30C
+10. Nodo di restituzione [K2Node_FunctionResult] E58DBE154CD067F82087CF866999B97D
+11. Nodo di restituzione [K2Node_FunctionResult] 387D6B28488BCB6EFB7F3B832A2BE9DD
+12. Nodo di reindirizzamento [K2Node_Knot] 5BCA543E4CC02773A6FED299BC76013F
+13. Nodo di restituzione [K2Node_FunctionResult] 604675EF4787FDA5A44DB2BAFEF33690
+14. Nodo di restituzione [K2Node_FunctionResult] DCE5123D4D03687935DE7ABDB798BC38
+15. Get LandRoll_Default [K2Node_VariableGet] 47706EAA41CA4C2F0A4ACA919F1FB85A
+16. Get LandRoll_LH [K2Node_VariableGet] 3A69196D4DCCFBAEAF3E48ABA6CC0E66
+17. Get LandRoll_2H [K2Node_VariableGet] 23BB358E489812BD937E9695407852F1
+18. Get LandRoll_2H [K2Node_VariableGet] FE7827DE4AAE39512A837BBC93F3BEC7
+19. Get LandRoll_RH [K2Node_VariableGet] B4145749490FD1C698E41197944DD7AE
+20. Get LandRoll_LH [K2Node_VariableGet] 76A769FC4D23AD43CF1A70A21EC70929
+21. Get LandRoll_LH [K2Node_VariableGet] 9693A74445D2C52010A557B36A5E8E54
+22. Get LandRoll_2H [K2Node_VariableGet] 5ADF1AC7407DB5F60C5B7ABF9C6DD1E0
+23. Get LandRoll_2H [K2Node_VariableGet] 0630CDE94C186F294D612A89396135C5
+24. Get LandRoll_LH [K2Node_VariableGet] A7106D1842F8505B45045D8AFB688365
+25. Nodo di restituzione [K2Node_FunctionResult] 9227BBA64EC00687C40B5D8099B8ACAC
+26. Get LandRoll_RH [K2Node_VariableGet] 6C94A92D4D18FC492FFF49A4FB2171A7
+27. Nodo di restituzione [K2Node_FunctionResult] F2265F5B46F62B94961144BD3D2BB641
+28. Get LandRoll_RH [K2Node_VariableGet] 789C189A4431B68BC5EF84AB5F4AA455
+
+Variables Read:
+- Get LandRoll_2H
+- Get LandRoll_Default
+- Get LandRoll_LH
+- Get LandRoll_RH
+- Get OverlayState
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

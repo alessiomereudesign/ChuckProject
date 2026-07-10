@@ -1,0 +1,86 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "GroundedEntryState_AnimNotify",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/GroundedEntryState_AnimNotify.GroundedEntryState_AnimNotify",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_GroundedEntryState_AnimNotify",
+	"shortAssetFolder": "GroundedEntryState_AnimNotify__7EBE7B46",
+	"pathHash": "7EBE7B46",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/Engine.AnimNotify",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 1,
+		"components": 1,
+		"widgets": 0,
+		"graphs": 2,
+		"nodes": 10,
+		"edges": 9,
+		"flows": 2
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/SUMMARY.md",
+		"variables": "Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/VARIABLES.json",
+		"components": "Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/NODES.jsonl",
+		"edges": "Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/EDGES.jsonl",
+		"search": "Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "GetNotifyName",
+			"graphName": "GetNotifyName",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 5,
+			"edgeCount": 4,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Notify Name",
+					"entryNodeGuid": "4B3482134899F9476F4CC783A31B2366",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 5
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "Received_Notify",
+			"graphName": "Received_Notify",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 5,
+			"edgeCount": 5,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Received Notify",
+					"entryNodeGuid": "8D2361E14024898F37CC8AAAF72C3A02",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/GroundedEntryState_AnimNotify__7EBE7B46/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 5
+				}
+			]
+		}
+	]
+}

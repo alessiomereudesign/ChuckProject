@@ -1,0 +1,453 @@
+{
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP",
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "DefaultColor",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		},
+		{
+			"name": "SkinColor",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		},
+		{
+			"name": "ShirtColor",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		},
+		{
+			"name": "PantsColor",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		},
+		{
+			"name": "ShoesColor",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		},
+		{
+			"name": "GlovesColor",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		},
+		{
+			"name": "ShirtType",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "PantsType",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "Shoes",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "Gloves",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "SolidColor",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "BaseLayerColor",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		},
+		{
+			"name": "OverlayLayerColor",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		},
+		{
+			"name": "AdditiveAmount_Color",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		},
+		{
+			"name": "Hand_Color",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		},
+		{
+			"name": "HandIK_Color",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		},
+		{
+			"name": "Head",
+			"type": "object|/Script/Engine.MaterialInstanceDynamic",
+			"defaultValue": ""
+		},
+		{
+			"name": "Torso",
+			"type": "object|/Script/Engine.MaterialInstanceDynamic",
+			"defaultValue": ""
+		},
+		{
+			"name": "Pelvis",
+			"type": "object|/Script/Engine.MaterialInstanceDynamic",
+			"defaultValue": ""
+		},
+		{
+			"name": "Feet",
+			"type": "object|/Script/Engine.MaterialInstanceDynamic",
+			"defaultValue": ""
+		},
+		{
+			"name": "Shoulder_L",
+			"type": "object|/Script/Engine.MaterialInstanceDynamic",
+			"defaultValue": ""
+		},
+		{
+			"name": "UpperArm_L",
+			"type": "object|/Script/Engine.MaterialInstanceDynamic",
+			"defaultValue": ""
+		},
+		{
+			"name": "LowerArm_L",
+			"type": "object|/Script/Engine.MaterialInstanceDynamic",
+			"defaultValue": ""
+		},
+		{
+			"name": "Hand_L",
+			"type": "object|/Script/Engine.MaterialInstanceDynamic",
+			"defaultValue": ""
+		},
+		{
+			"name": "Shoulder_R",
+			"type": "object|/Script/Engine.MaterialInstanceDynamic",
+			"defaultValue": ""
+		},
+		{
+			"name": "UpperArm_R",
+			"type": "object|/Script/Engine.MaterialInstanceDynamic",
+			"defaultValue": ""
+		},
+		{
+			"name": "LowerArm_R",
+			"type": "object|/Script/Engine.MaterialInstanceDynamic",
+			"defaultValue": ""
+		},
+		{
+			"name": "Hand_R",
+			"type": "object|/Script/Engine.MaterialInstanceDynamic",
+			"defaultValue": ""
+		},
+		{
+			"name": "UpperLegs",
+			"type": "object|/Script/Engine.MaterialInstanceDynamic",
+			"defaultValue": ""
+		},
+		{
+			"name": "LowerLegs",
+			"type": "object|/Script/Engine.MaterialInstanceDynamic",
+			"defaultValue": ""
+		},
+		{
+			"name": "Mantle_2m_Default",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Asset.Mantle_Asset",
+			"defaultValue": ""
+		},
+		{
+			"name": "Mantle_1m_Default",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Asset.Mantle_Asset",
+			"defaultValue": ""
+		},
+		{
+			"name": "Mantle_1m_RH",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Asset.Mantle_Asset",
+			"defaultValue": ""
+		},
+		{
+			"name": "Mantle_1m_LH",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Asset.Mantle_Asset",
+			"defaultValue": ""
+		},
+		{
+			"name": "Mantle_1m_2H",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Asset.Mantle_Asset",
+			"defaultValue": ""
+		},
+		{
+			"name": "Mantle_1m_Box",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Asset.Mantle_Asset",
+			"defaultValue": ""
+		},
+		{
+			"name": "LandRoll_Default",
+			"type": "object|/Script/Engine.AnimMontage",
+			"defaultValue": ""
+		},
+		{
+			"name": "GetUpFront_Default",
+			"type": "object|/Script/Engine.AnimMontage",
+			"defaultValue": ""
+		},
+		{
+			"name": "LandRoll_RH",
+			"type": "object|/Script/Engine.AnimMontage",
+			"defaultValue": ""
+		},
+		{
+			"name": "LandRoll_LH",
+			"type": "object|/Script/Engine.AnimMontage",
+			"defaultValue": ""
+		},
+		{
+			"name": "LandRoll_2H",
+			"type": "object|/Script/Engine.AnimMontage",
+			"defaultValue": ""
+		},
+		{
+			"name": "GetUpFront_RH",
+			"type": "object|/Script/Engine.AnimMontage",
+			"defaultValue": ""
+		},
+		{
+			"name": "GetUpFront_LH",
+			"type": "object|/Script/Engine.AnimMontage",
+			"defaultValue": ""
+		},
+		{
+			"name": "GetUpFront_2H",
+			"type": "object|/Script/Engine.AnimMontage",
+			"defaultValue": ""
+		},
+		{
+			"name": "GetUpBack_Default",
+			"type": "object|/Script/Engine.AnimMontage",
+			"defaultValue": ""
+		},
+		{
+			"name": "GetUpBack_RH",
+			"type": "object|/Script/Engine.AnimMontage",
+			"defaultValue": ""
+		},
+		{
+			"name": "GetUpBack_LH",
+			"type": "object|/Script/Engine.AnimMontage",
+			"defaultValue": ""
+		},
+		{
+			"name": "GetUpBack_2H",
+			"type": "object|/Script/Engine.AnimMontage",
+			"defaultValue": ""
+		},
+		{
+			"name": "InteractObjects",
+			"type": "object|/Script/Engine.Actor",
+			"defaultValue": ""
+		},
+		{
+			"name": "WidgetInteract",
+			"type": "object|/Game/ChuckContent/UI/Interfaces/WBP_Tip.WBP_Tip_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "Inventory",
+			"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+			"defaultValue": ""
+		},
+		{
+			"name": "OwnedWeapons",
+			"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+			"defaultValue": ""
+		},
+		{
+			"name": "CurrentWeaponData",
+			"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+			"defaultValue": ""
+		},
+		{
+			"name": "CurrentWeaponActor",
+			"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "CurrentWeaponSlot",
+			"type": "byte|/Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot.E_WeaponSlot",
+			"defaultValue": ""
+		},
+		{
+			"name": "CurrentWeaponIndex",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "CurrentMeleeBaseDamage",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "bCanAttack?",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "bAreWeaponsVisible",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "bIsReloading?",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "IsAttackingWithKnife",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "bCanNextCombo",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "EquippedSmallFirearmIndex",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "EquippedBigWeaponIndex",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "EquippedMeleeIndex",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "InventoryAmmo",
+			"type": "byte|/Game/ChuckContent/Systems/Weapons/Data/E_AmmoType.E_AmmoType|container=Map|value=int",
+			"defaultValue": ""
+		},
+		{
+			"name": "AvailableAmmo",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "NeededAmmo",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "AmmoToLoad",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "NewAmmoAfterShot",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "PunchComboInteger",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "LoopedWeaponTimeHandle",
+			"type": "struct|/Script/Engine.TimerHandle",
+			"defaultValue": ""
+		},
+		{
+			"name": "ComboTimerHandle",
+			"type": "struct|/Script/Engine.TimerHandle",
+			"defaultValue": ""
+		},
+		{
+			"name": "Equipped_SmallFirearm",
+			"type": "name",
+			"defaultValue": ""
+		},
+		{
+			"name": "Equipped_BigWeapon",
+			"type": "name",
+			"defaultValue": ""
+		},
+		{
+			"name": "Equipped_Melee",
+			"type": "name",
+			"defaultValue": ""
+		},
+		{
+			"name": "Equipped_Item",
+			"type": "name",
+			"defaultValue": ""
+		},
+		{
+			"name": "EquippedHead",
+			"type": "name",
+			"defaultValue": ""
+		},
+		{
+			"name": "EquippedChest",
+			"type": "name",
+			"defaultValue": ""
+		},
+		{
+			"name": "EquippedLegs",
+			"type": "name",
+			"defaultValue": ""
+		},
+		{
+			"name": "EquippedFeet",
+			"type": "name",
+			"defaultValue": ""
+		},
+		{
+			"name": "EquippedAccessory1",
+			"type": "name",
+			"defaultValue": ""
+		},
+		{
+			"name": "EquippedAccessory2",
+			"type": "name",
+			"defaultValue": ""
+		},
+		{
+			"name": "OwnedArmor",
+			"type": "name|container=Array",
+			"defaultValue": ""
+		},
+		{
+			"name": "OwnedItems",
+			"type": "name|container=Array",
+			"defaultValue": ""
+		},
+		{
+			"name": "OwnedConsumables",
+			"type": "name|container=Array",
+			"defaultValue": ""
+		},
+		{
+			"name": "bIsArmorVisible",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "As ALS Player Controller",
+			"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller.ALS_Player_Controller_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "As WBP HUD",
+			"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD.WBP_HUD_C",
+			"defaultValue": ""
+		}
+	]
+}

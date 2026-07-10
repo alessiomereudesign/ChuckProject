@@ -1,0 +1,1829 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+	"graph": "SetPelvisIKOffset",
+	"entryName": "Set Pelvis IKOffset",
+	"entryNodeGuid": "05391B2D45C81C7AA059C69ED7F6917D",
+	"nodes": [
+		{
+			"nodeGuid": "05391B2D45C81C7AA059C69ED7F6917D",
+			"class": "K2Node_FunctionEntry",
+			"title": "Set Pelvis IKOffset",
+			"comment": "",
+			"x": 32,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "01BCFADF42808633BE156494CC1BB5BF",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1956B1CD45B742C118A8EAB5C7AE3811",
+					"name": "FootOffset_L_Target",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C2663214851B5316379F59FD24C02CD",
+					"name": "FootOffset_R_Target",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FFA8F98C454E5DA94DD4FD8C2194A224",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1856,
+			"y": -144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "AB91FAF44A20BBF301A7E98C6C6D8764",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "849150F94E3DA12141DE879AA70D8834",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "1717F6534084349C2E629385902ED8F6",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8EF5F83D448551B739403480259C9840",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "993275E04061A823FE757DBE616A6981",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 1568,
+			"y": -96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "52F642AA49D469081BFB278CFA76A38D",
+					"name": "FootOffset_L_Target",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "39865FAB4C67C2CDDF8D9BB0D4149E20",
+					"name": "FootOffset_L_Target_X",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "3780A469427613DECD23A6A0051075B4",
+					"name": "FootOffset_L_Target_Y",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "BD82F7404A9925B54861CEA9ACFA87AB",
+					"name": "FootOffset_L_Target_Z",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "5931272A4F8051C39D2FAD842140EA05",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 1568,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FA2D03A740B2AA11119972B49AA72B49",
+					"name": "FootOffset_R_Target",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "AF0F44DE4C5DB3D5329D97A2001E8DD6",
+					"name": "FootOffset_R_Target_X",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "C1238DED4B156AB746F6CEA71A6B9EC6",
+					"name": "FootOffset_R_Target_Y",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "9334D8444FC4EE42502C2BB1A4090FB2",
+					"name": "FootOffset_R_Target_Z",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "55D370F64ECDC3AB6D6933BC83580234",
+			"class": "K2Node_ExecutionSequence",
+			"title": "Sequenza",
+			"comment": "",
+			"x": 1328,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CF551DB646DA90228BFDE4AE01695BD4",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DDF3629747C01BE4A93E458F8E2EFA6C",
+					"name": "then_0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2768053249F0D822F68B5FB99B2043B3",
+					"name": "then_1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C4164818424A38A5C4649C921252C069",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1552,
+			"y": -112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ACE1CE0D432C1FC637E4E3981449ADA3",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "775CD776421BE9C99D8173876D683467",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8C9A0ECF49CBFB57BC11B6A238DA538A",
+			"class": "K2Node_CallFunction",
+			"title": "float < float",
+			"comment": "",
+			"x": 1760,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "320E42CB4752DA2B9E8AD6BDB2B7D9C6",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "E141CD294768F23B3822FD8D00C80239",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "704453D54AD6668FEC8CB989F8F32AD1",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "54BE772A4D5B17AF9F7F669886C86712",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "81682C8843E05D9F764912AEF8AEE19C",
+			"class": "K2Node_VariableSet",
+			"title": "Set PelvisTarget",
+			"comment": "",
+			"x": 2064,
+			"y": -176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A313704415AA9920256379F2A737807",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A6CFCEBD48345DA82A71CABD39C1CB18",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "01C9ED1B482AEF6D67DC2A953A0F6133",
+					"name": "PelvisTarget",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "9D2603654BEF5B5E9AEF0296E24A7B99",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A798CEE2456369951F692B8018116E6D",
+			"class": "K2Node_VariableSet",
+			"title": "Set PelvisTarget",
+			"comment": "",
+			"x": 2064,
+			"y": -64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A313704415AA9920256379F2A737807",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A6CFCEBD48345DA82A71CABD39C1CB18",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "01C9ED1B482AEF6D67DC2A953A0F6133",
+					"name": "PelvisTarget",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "9D2603654BEF5B5E9AEF0296E24A7B99",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "39AA44CD4A7A27E3D8D3748C2CA1A795",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootOffset_L_Target",
+			"comment": "",
+			"x": 2064,
+			"y": -112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "52F642AA49D469081BFB278CFA76A38D",
+					"name": "FootOffset_L_Target",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "0154580C40B084AB1CC16C87F3C2DED7",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootOffset_R_Target",
+			"comment": "",
+			"x": 2064,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FA2D03A740B2AA11119972B49AA72B49",
+					"name": "FootOffset_R_Target",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E09FFF5A4D569CDE148F5198AB05A2D3",
+			"class": "K2Node_CallFunction",
+			"title": "Get Curve Value\nLa destinazione è Istanza animazione",
+			"comment": "",
+			"x": 224,
+			"y": 256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "412666D54204142CF4F2F5BB18EBF0F5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "97773D574C69AE6BA557C1A6E358847C",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Enable_FootIK_R"
+				},
+				{
+					"pinId": "2532088A43A61484DC1DC8962506EA0A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "036B487745BA959DFD907EADE8182408",
+			"class": "K2Node_CallFunction",
+			"title": "Get Curve Value\nLa destinazione è Istanza animazione",
+			"comment": "",
+			"x": 224,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "412666D54204142CF4F2F5BB18EBF0F5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "97773D574C69AE6BA557C1A6E358847C",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Enable_FootIK_L"
+				},
+				{
+					"pinId": "2532088A43A61484DC1DC8962506EA0A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A5C04B3C40CE624508BC84BDEDB954C3",
+			"class": "K2Node_VariableSet",
+			"title": "Set PelvisAlpha",
+			"comment": "",
+			"x": 512,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "858D2B2B4B33D4DAA766DFA35832AC19",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D03B885741EE07BD898178BA971790AD",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "76EF5255424D697802C583BF23D181E2",
+					"name": "PelvisAlpha",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "69259BFE45F83C4B6B3241A733A16649",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "EBF30D354F2768F0434F96B70891ABAD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E4A973664E38FA4FDA5E5A93E960698D",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "float + float",
+			"comment": "",
+			"x": 512,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9C1C2F88438317E77A0C19A5D3A6FDA2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "C2C4C4E4419FE6C7954361A23D81D7A0",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "8E22D6F24C9467702F824B803D0BB473",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "1.000000"
+				},
+				{
+					"pinId": "96306C0B4F42E9BAA0CA9C921EF92AAD",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "158B71B4447E81019F7A00A235F2B1ED",
+			"class": "K2Node_CallFunction",
+			"title": "float / float",
+			"comment": "",
+			"x": 512,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "716AF539478F6E2A70AAE8976DDFDCB9",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "05F6C8194DCD512ED24128B988D2FAF8",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "11FDAE8149AF9A6CC21E8C90489C519C",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "2.000000"
+				},
+				{
+					"pinId": "8E00D0C34DC0005EE97A1398A3AC92FF",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "10CC345A43C9827EE5CA72BE7141F975",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 832,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B5EB97934E527E3A87243CBD072B08E0",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "40515EF44DFCA87DA40AB48FA15B2016",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "7DF88EF740E9F510524122A5A157DD78",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A7806ABE4CF59715E03D8B9771A7BDE6",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AF7AE2374A9F952DFEE126BD22DA9FF8",
+			"class": "K2Node_CallFunction",
+			"title": "float > float",
+			"comment": "",
+			"x": 688,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "73517702459AB89F36672A96DC9FCEDF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "56E8DA20437DB012AAC9D0A35586A55E",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "93A2C8BE4BC01F9450C0FAB4FE3A7415",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "42A9272642C12F5A5A6703AB43E5F7A3",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "FE6D40694291C77A605136BAA3C26CAA",
+			"class": "K2Node_VariableSet",
+			"title": "Set PelvisOffset",
+			"comment": "",
+			"x": 1024,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "915F486D4FDF637EDD589DB413ABCB35",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A26462AE4D4F0312377EFDA95CEE459E",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "491C30F44A8DC3B4E46EA3A981406340",
+					"name": "PelvisOffset",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "95F1D3834000B1FB228BB38066AC5BB8",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "F5398B9D46D98E05CFF689BD22DB8C85",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "125FFB244264993D05D7CF972E2E4B9F",
+			"class": "K2Node_VariableSet",
+			"title": "Set PelvisOffset",
+			"comment": "",
+			"x": 2480,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "915F486D4FDF637EDD589DB413ABCB35",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A26462AE4D4F0312377EFDA95CEE459E",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "491C30F44A8DC3B4E46EA3A981406340",
+					"name": "PelvisOffset",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "95F1D3834000B1FB228BB38066AC5BB8",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "F5398B9D46D98E05CFF689BD22DB8C85",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "98F097944ECB56369E9EB6B3B2593DC6",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1824,
+			"y": 256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9889273945839579AEAD799B58D71BC7",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "08798C9940D3958D074102B8ED7879E9",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "8E5867244C8DCDA6242749BAC4990BA3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "71F5D0A34D3C10B0D56F43ADECD10A96",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7937C43A4E431D8FCB5804A222591772",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 1568,
+			"y": 400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "67B720F24E362C3FF81297ADA788897F",
+					"name": "PelvisOffset",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "765BFD1D4A59A0045C865A84B6CD6D0B",
+					"name": "PelvisOffset_X",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "FEC41AB046A7528E0FBFD4A333959C79",
+					"name": "PelvisOffset_Y",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "9F5580184E930C3712F01188E7E14AA0",
+					"name": "PelvisOffset_Z",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "4463486D43356B1F063A978470E9EEE9",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "825E7D85459007BCB054B69CDCF36607",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 1568,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "237EB96443604B3E82ABE2ACFE3DEC7E",
+					"name": "PelvisTarget",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "32D7164B4B70913A7D04CEA2ABECAE27",
+					"name": "PelvisTarget_X",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "DEA03E5B49A05BA83A10B7A09B4B167C",
+					"name": "PelvisTarget_Y",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "9A8EE2194BFA8A47A2EFE38E50002DE7",
+					"name": "PelvisTarget_Z",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "064B256646D96F5B7D34D48D9EDD8322",
+			"class": "K2Node_CallFunction",
+			"title": "float > float",
+			"comment": "",
+			"x": 1712,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3F3F7C9E4D3FBCDBE55702A2AFC1104A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "774A4F10460B624CF3CE78960532A102",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "B42372D24595707EDF3D80A3F490CB38",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "36B946A64BCBAEFC398663AF5B3077B4",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "47E2E9114F63B0B464DFF8898186540D",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1552,
+			"y": 288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FBED2B234AA871D192014AA41181E2B2",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "62EEDF8447B8827CD559A493F09EA01B",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "92C593824997A4838FF04080F1004C9B",
+			"class": "K2Node_CallFunction",
+			"title": "VInterp To",
+			"comment": "",
+			"x": 2208,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "21EDC04F4E92B1D8BDBA8EAD4DFDA791",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "D09DE5394CF1F4B67CA41298C7D1EF2B",
+					"name": "Current",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "E2C26E374BFC3841B46C54B88682912F",
+					"name": "Target",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "6B62CFFD4D62CBB3F3D4D4A98362A2D8",
+					"name": "DeltaTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "713F182C4685D751A1AF599D303CE5C8",
+					"name": "InterpSpeed",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "10.000000"
+				},
+				{
+					"pinId": "B9C4774B4B6479A048D61EBDFD775344",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "C1B656AA48CEFACE7B4AE39F1120FFAE",
+			"class": "K2Node_VariableGet",
+			"title": "Get PelvisOffset",
+			"comment": "",
+			"x": 2064,
+			"y": 256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A4AA16DC4A71526FE0742984780596EC",
+					"name": "PelvisOffset",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "BEE8E2A64E7A0EF99131DAA5A1E0B5CA",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "63AD375B4E024573F41D7AAF0BDBEB82",
+			"class": "K2Node_VariableGet",
+			"title": "Get PelvisTarget",
+			"comment": "",
+			"x": 2064,
+			"y": 288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "AEEBEAAF4B1078D77ED78A995ABAB57F",
+					"name": "PelvisTarget",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "9DC4BB2B46D48F01DA8A1FAF46F543D6",
+			"class": "K2Node_VariableGet",
+			"title": "Get DeltaTimeX",
+			"comment": "",
+			"x": 2064,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "805529AD44B067A1E04083ABE9412B71",
+					"name": "DeltaTimeX",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "9332AA9B443E1B639533CE827773746E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E7FF812242FEC9B0A661BD9CEC71DB1E",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 2048,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "45563D3C4157B469C6C5D7BC72F21611",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B27925F54D8AFAF2727385B0DCCD2EED",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7CF717034B02FF7B63138182EFFEB3B0",
+			"class": "K2Node_VariableSet",
+			"title": "Set PelvisOffset",
+			"comment": "",
+			"x": 2480,
+			"y": 368,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "915F486D4FDF637EDD589DB413ABCB35",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A26462AE4D4F0312377EFDA95CEE459E",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "491C30F44A8DC3B4E46EA3A981406340",
+					"name": "PelvisOffset",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "95F1D3834000B1FB228BB38066AC5BB8",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "F5398B9D46D98E05CFF689BD22DB8C85",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5A54E6AC449240F6EF03EEBD504D4B49",
+			"class": "K2Node_CallFunction",
+			"title": "VInterp To",
+			"comment": "",
+			"x": 2208,
+			"y": 400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "21EDC04F4E92B1D8BDBA8EAD4DFDA791",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "D09DE5394CF1F4B67CA41298C7D1EF2B",
+					"name": "Current",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "E2C26E374BFC3841B46C54B88682912F",
+					"name": "Target",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "6B62CFFD4D62CBB3F3D4D4A98362A2D8",
+					"name": "DeltaTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "713F182C4685D751A1AF599D303CE5C8",
+					"name": "InterpSpeed",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "15.000000"
+				},
+				{
+					"pinId": "B9C4774B4B6479A048D61EBDFD775344",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "AE1DB5434F451D71CFA3DE80EA2BB13B",
+			"class": "K2Node_VariableGet",
+			"title": "Get PelvisOffset",
+			"comment": "",
+			"x": 2064,
+			"y": 416,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A4AA16DC4A71526FE0742984780596EC",
+					"name": "PelvisOffset",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "BEE8E2A64E7A0EF99131DAA5A1E0B5CA",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "9A6424D24CC44DF497099F9F76B40204",
+			"class": "K2Node_VariableGet",
+			"title": "Get PelvisTarget",
+			"comment": "",
+			"x": 2064,
+			"y": 448,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "AEEBEAAF4B1078D77ED78A995ABAB57F",
+					"name": "PelvisTarget",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "84EEEB9A405D2C974297809691162736",
+			"class": "K2Node_VariableGet",
+			"title": "Get DeltaTimeX",
+			"comment": "",
+			"x": 2064,
+			"y": 480,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "805529AD44B067A1E04083ABE9412B71",
+					"name": "DeltaTimeX",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "9332AA9B443E1B639533CE827773746E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4084F1BE49DB3EA7BFDD8BA4DCE158B5",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 2048,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "45563D3C4157B469C6C5D7BC72F21611",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B27925F54D8AFAF2727385B0DCCD2EED",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "33C4B0A54B699F475CCBAD9D44BF8D3E",
+			"class": "EdGraphNode_Comment",
+			"title": "Calculate the Pelvis Alpha by finding the average Foot IK weight. If the alpha is 0, clear the offset.",
+			"comment": "Calculate the Pelvis Alpha by finding the average Foot IK weight. If the alpha is 0, clear the offset.",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "B76B76CA460D2B53C0AB0DBFA92D341A",
+			"class": "EdGraphNode_Comment",
+			"title": "Step 1: Set the new Pelvis Target to be the lowest Foot Offset",
+			"comment": "Step 1: Set the new Pelvis Target to be the lowest Foot Offset",
+			"x": 1536,
+			"y": -240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "389074E0476620FD3FA20AA013237096",
+			"class": "EdGraphNode_Comment",
+			"title": "Step 2: Interp the Current Pelvis Offset to the new target value. Interpolate at different speeds based on whether the new target is above or below the current one.",
+			"comment": "Step 2: Interp the Current Pelvis Offset to the new target value. Interpolate at different speeds based on whether the new target is above or below the current one.",
+			"x": 1536,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "exec",
+			"fromNodeGuid": "05391B2D45C81C7AA059C69ED7F6917D",
+			"fromPinId": "01BCFADF42808633BE156494CC1BB5BF",
+			"fromPinName": "then",
+			"toNodeGuid": "A5C04B3C40CE624508BC84BDEDB954C3",
+			"toPinId": "858D2B2B4B33D4DAA766DFA35832AC19",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "exec",
+			"fromNodeGuid": "C4164818424A38A5C4649C921252C069",
+			"fromPinId": "775CD776421BE9C99D8173876D683467",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "FFA8F98C454E5DA94DD4FD8C2194A224",
+			"toPinId": "AB91FAF44A20BBF301A7E98C6C6D8764",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "8C9A0ECF49CBFB57BC11B6A238DA538A",
+			"fromPinId": "54BE772A4D5B17AF9F7F669886C86712",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "FFA8F98C454E5DA94DD4FD8C2194A224",
+			"toPinId": "849150F94E3DA12141DE879AA70D8834",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "exec",
+			"fromNodeGuid": "FFA8F98C454E5DA94DD4FD8C2194A224",
+			"fromPinId": "1717F6534084349C2E629385902ED8F6",
+			"fromPinName": "then",
+			"toNodeGuid": "81682C8843E05D9F764912AEF8AEE19C",
+			"toPinId": "4A313704415AA9920256379F2A737807",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "exec",
+			"fromNodeGuid": "FFA8F98C454E5DA94DD4FD8C2194A224",
+			"fromPinId": "8EF5F83D448551B739403480259C9840",
+			"fromPinName": "else",
+			"toNodeGuid": "A798CEE2456369951F692B8018116E6D",
+			"toPinId": "4A313704415AA9920256379F2A737807",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "993275E04061A823FE757DBE616A6981",
+			"fromPinId": "BD82F7404A9925B54861CEA9ACFA87AB",
+			"fromPinName": "FootOffset_L_Target_Z",
+			"toNodeGuid": "8C9A0ECF49CBFB57BC11B6A238DA538A",
+			"toPinId": "E141CD294768F23B3822FD8D00C80239",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "5931272A4F8051C39D2FAD842140EA05",
+			"fromPinId": "9334D8444FC4EE42502C2BB1A4090FB2",
+			"fromPinName": "FootOffset_R_Target_Z",
+			"toNodeGuid": "8C9A0ECF49CBFB57BC11B6A238DA538A",
+			"toPinId": "704453D54AD6668FEC8CB989F8F32AD1",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "exec",
+			"fromNodeGuid": "10CC345A43C9827EE5CA72BE7141F975",
+			"fromPinId": "7DF88EF740E9F510524122A5A157DD78",
+			"fromPinName": "then",
+			"toNodeGuid": "55D370F64ECDC3AB6D6933BC83580234",
+			"toPinId": "CF551DB646DA90228BFDE4AE01695BD4",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "exec",
+			"fromNodeGuid": "55D370F64ECDC3AB6D6933BC83580234",
+			"fromPinId": "DDF3629747C01BE4A93E458F8E2EFA6C",
+			"fromPinName": "then_0",
+			"toNodeGuid": "C4164818424A38A5C4649C921252C069",
+			"toPinId": "ACE1CE0D432C1FC637E4E3981449ADA3",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "exec",
+			"fromNodeGuid": "55D370F64ECDC3AB6D6933BC83580234",
+			"fromPinId": "2768053249F0D822F68B5FB99B2043B3",
+			"fromPinName": "then_1",
+			"toNodeGuid": "47E2E9114F63B0B464DFF8898186540D",
+			"toPinId": "FBED2B234AA871D192014AA41181E2B2",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "39AA44CD4A7A27E3D8D3748C2CA1A795",
+			"fromPinId": "52F642AA49D469081BFB278CFA76A38D",
+			"fromPinName": "FootOffset_L_Target",
+			"toNodeGuid": "81682C8843E05D9F764912AEF8AEE19C",
+			"toPinId": "01C9ED1B482AEF6D67DC2A953A0F6133",
+			"toPinName": "PelvisTarget"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "0154580C40B084AB1CC16C87F3C2DED7",
+			"fromPinId": "FA2D03A740B2AA11119972B49AA72B49",
+			"fromPinName": "FootOffset_R_Target",
+			"toNodeGuid": "A798CEE2456369951F692B8018116E6D",
+			"toPinId": "01C9ED1B482AEF6D67DC2A953A0F6133",
+			"toPinName": "PelvisTarget"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "E09FFF5A4D569CDE148F5198AB05A2D3",
+			"fromPinId": "2532088A43A61484DC1DC8962506EA0A",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "E4A973664E38FA4FDA5E5A93E960698D",
+			"toPinId": "8E22D6F24C9467702F824B803D0BB473",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "036B487745BA959DFD907EADE8182408",
+			"fromPinId": "2532088A43A61484DC1DC8962506EA0A",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "E4A973664E38FA4FDA5E5A93E960698D",
+			"toPinId": "C2C4C4E4419FE6C7954361A23D81D7A0",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "exec",
+			"fromNodeGuid": "A5C04B3C40CE624508BC84BDEDB954C3",
+			"fromPinId": "D03B885741EE07BD898178BA971790AD",
+			"fromPinName": "then",
+			"toNodeGuid": "10CC345A43C9827EE5CA72BE7141F975",
+			"toPinId": "B5EB97934E527E3A87243CBD072B08E0",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "158B71B4447E81019F7A00A235F2B1ED",
+			"fromPinId": "8E00D0C34DC0005EE97A1398A3AC92FF",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "A5C04B3C40CE624508BC84BDEDB954C3",
+			"toPinId": "76EF5255424D697802C583BF23D181E2",
+			"toPinName": "PelvisAlpha"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "A5C04B3C40CE624508BC84BDEDB954C3",
+			"fromPinId": "69259BFE45F83C4B6B3241A733A16649",
+			"fromPinName": "Output_Get",
+			"toNodeGuid": "AF7AE2374A9F952DFEE126BD22DA9FF8",
+			"toPinId": "56E8DA20437DB012AAC9D0A35586A55E",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "E4A973664E38FA4FDA5E5A93E960698D",
+			"fromPinId": "96306C0B4F42E9BAA0CA9C921EF92AAD",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "158B71B4447E81019F7A00A235F2B1ED",
+			"toPinId": "05F6C8194DCD512ED24128B988D2FAF8",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "AF7AE2374A9F952DFEE126BD22DA9FF8",
+			"fromPinId": "42A9272642C12F5A5A6703AB43E5F7A3",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "10CC345A43C9827EE5CA72BE7141F975",
+			"toPinId": "40515EF44DFCA87DA40AB48FA15B2016",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "exec",
+			"fromNodeGuid": "10CC345A43C9827EE5CA72BE7141F975",
+			"fromPinId": "A7806ABE4CF59715E03D8B9771A7BDE6",
+			"fromPinName": "else",
+			"toNodeGuid": "FE6D40694291C77A605136BAA3C26CAA",
+			"toPinId": "915F486D4FDF637EDD589DB413ABCB35",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "exec",
+			"fromNodeGuid": "E7FF812242FEC9B0A661BD9CEC71DB1E",
+			"fromPinId": "B27925F54D8AFAF2727385B0DCCD2EED",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "125FFB244264993D05D7CF972E2E4B9F",
+			"toPinId": "915F486D4FDF637EDD589DB413ABCB35",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "92C593824997A4838FF04080F1004C9B",
+			"fromPinId": "B9C4774B4B6479A048D61EBDFD775344",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "125FFB244264993D05D7CF972E2E4B9F",
+			"toPinId": "491C30F44A8DC3B4E46EA3A981406340",
+			"toPinName": "PelvisOffset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "exec",
+			"fromNodeGuid": "47E2E9114F63B0B464DFF8898186540D",
+			"fromPinId": "62EEDF8447B8827CD559A493F09EA01B",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "98F097944ECB56369E9EB6B3B2593DC6",
+			"toPinId": "9889273945839579AEAD799B58D71BC7",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "064B256646D96F5B7D34D48D9EDD8322",
+			"fromPinId": "36B946A64BCBAEFC398663AF5B3077B4",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "98F097944ECB56369E9EB6B3B2593DC6",
+			"toPinId": "08798C9940D3958D074102B8ED7879E9",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "exec",
+			"fromNodeGuid": "98F097944ECB56369E9EB6B3B2593DC6",
+			"fromPinId": "8E5867244C8DCDA6242749BAC4990BA3",
+			"fromPinName": "then",
+			"toNodeGuid": "E7FF812242FEC9B0A661BD9CEC71DB1E",
+			"toPinId": "45563D3C4157B469C6C5D7BC72F21611",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "exec",
+			"fromNodeGuid": "98F097944ECB56369E9EB6B3B2593DC6",
+			"fromPinId": "71F5D0A34D3C10B0D56F43ADECD10A96",
+			"fromPinName": "else",
+			"toNodeGuid": "4084F1BE49DB3EA7BFDD8BA4DCE158B5",
+			"toPinId": "45563D3C4157B469C6C5D7BC72F21611",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "7937C43A4E431D8FCB5804A222591772",
+			"fromPinId": "9F5580184E930C3712F01188E7E14AA0",
+			"fromPinName": "PelvisOffset_Z",
+			"toNodeGuid": "064B256646D96F5B7D34D48D9EDD8322",
+			"toPinId": "B42372D24595707EDF3D80A3F490CB38",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "825E7D85459007BCB054B69CDCF36607",
+			"fromPinId": "9A8EE2194BFA8A47A2EFE38E50002DE7",
+			"fromPinName": "PelvisTarget_Z",
+			"toNodeGuid": "064B256646D96F5B7D34D48D9EDD8322",
+			"toPinId": "774A4F10460B624CF3CE78960532A102",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "C1B656AA48CEFACE7B4AE39F1120FFAE",
+			"fromPinId": "A4AA16DC4A71526FE0742984780596EC",
+			"fromPinName": "PelvisOffset",
+			"toNodeGuid": "92C593824997A4838FF04080F1004C9B",
+			"toPinId": "D09DE5394CF1F4B67CA41298C7D1EF2B",
+			"toPinName": "Current"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "63AD375B4E024573F41D7AAF0BDBEB82",
+			"fromPinId": "AEEBEAAF4B1078D77ED78A995ABAB57F",
+			"fromPinName": "PelvisTarget",
+			"toNodeGuid": "92C593824997A4838FF04080F1004C9B",
+			"toPinId": "E2C26E374BFC3841B46C54B88682912F",
+			"toPinName": "Target"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "9DC4BB2B46D48F01DA8A1FAF46F543D6",
+			"fromPinId": "805529AD44B067A1E04083ABE9412B71",
+			"fromPinName": "DeltaTimeX",
+			"toNodeGuid": "92C593824997A4838FF04080F1004C9B",
+			"toPinId": "6B62CFFD4D62CBB3F3D4D4A98362A2D8",
+			"toPinName": "DeltaTime"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "exec",
+			"fromNodeGuid": "4084F1BE49DB3EA7BFDD8BA4DCE158B5",
+			"fromPinId": "B27925F54D8AFAF2727385B0DCCD2EED",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "7CF717034B02FF7B63138182EFFEB3B0",
+			"toPinId": "915F486D4FDF637EDD589DB413ABCB35",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "5A54E6AC449240F6EF03EEBD504D4B49",
+			"fromPinId": "B9C4774B4B6479A048D61EBDFD775344",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "7CF717034B02FF7B63138182EFFEB3B0",
+			"toPinId": "491C30F44A8DC3B4E46EA3A981406340",
+			"toPinName": "PelvisOffset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "AE1DB5434F451D71CFA3DE80EA2BB13B",
+			"fromPinId": "A4AA16DC4A71526FE0742984780596EC",
+			"fromPinName": "PelvisOffset",
+			"toNodeGuid": "5A54E6AC449240F6EF03EEBD504D4B49",
+			"toPinId": "D09DE5394CF1F4B67CA41298C7D1EF2B",
+			"toPinName": "Current"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "9A6424D24CC44DF497099F9F76B40204",
+			"fromPinId": "AEEBEAAF4B1078D77ED78A995ABAB57F",
+			"fromPinName": "PelvisTarget",
+			"toNodeGuid": "5A54E6AC449240F6EF03EEBD504D4B49",
+			"toPinId": "E2C26E374BFC3841B46C54B88682912F",
+			"toPinName": "Target"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "SetPelvisIKOffset",
+			"edgeType": "data",
+			"fromNodeGuid": "84EEEB9A405D2C974297809691162736",
+			"fromPinId": "805529AD44B067A1E04083ABE9412B71",
+			"fromPinName": "DeltaTimeX",
+			"toNodeGuid": "5A54E6AC449240F6EF03EEBD504D4B49",
+			"toPinId": "6B62CFFD4D62CBB3F3D4D4A98362A2D8",
+			"toPinName": "DeltaTime"
+		}
+	],
+	"variablesRead": [
+		"Get DeltaTimeX",
+		"Get FootOffset_L_Target",
+		"Get FootOffset_R_Target",
+		"Get PelvisOffset",
+		"Get PelvisTarget",
+		"Ottieni"
+	],
+	"variablesWritten": [
+		"Set PelvisAlpha",
+		"Set PelvisOffset",
+		"Set PelvisTarget"
+	],
+	"functionsCalled": [
+		"float / float",
+		"float < float",
+		"float > float",
+		"Get Curve Value\nLa destinazione è Istanza animazione",
+		"VInterp To"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"float / float",
+		"float < float",
+		"float > float",
+		"Get Curve Value\nLa destinazione è Istanza animazione",
+		"VInterp To"
+	],
+	"flowId": "F001",
+	"graphId": "G307",
+	"assetName": "ALS_AnimBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP"
+}

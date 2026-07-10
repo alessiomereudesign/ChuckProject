@@ -1,0 +1,32 @@
+Asset: BP_WeaponPickUp
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponPickUp.BP_WeaponPickUp
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponPickUp
+GraphId: G004
+Graph: UserConstructionScript
+FlowId: F001
+Entry: Construction Script
+NodeGuid: 1A14284242C33EC16594D0B1576B58B8
+
+Exec Flow:
+1. Construction Script [K2Node_FunctionEntry] 1A14284242C33EC16594D0B1576B58B8
+2. Get Pickup_RowName [K2Node_VariableGet] F428F8DB4058933309629D865C4F812A
+3. Get Data Table Row DT_Weapon [K2Node_GetDataTableRow] CD395FB84630428C17E935A8F35D9CE5
+4. Set InstanceWeaponData [K2Node_VariableSet] 1A4FF44846827D149D7F5B83C755FC49
+
+Variables Read:
+- Get Pickup_RowName
+
+Variables Written:
+- Set InstanceWeaponData
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

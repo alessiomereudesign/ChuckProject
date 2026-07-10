@@ -1,0 +1,14 @@
+{
+	"graphId": "G176",
+	"name": "Transition",
+	"graphName": "Transition",
+	"type": "AnimationTransitionGraph",
+	"graphType": "AnimationTransitionGraph",
+	"graphGuid": "",
+	"nodeCount": 2,
+	"edgeCount": 1,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G176/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G176/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G176/EDGES.jsonl",
+	"flows": []
+}

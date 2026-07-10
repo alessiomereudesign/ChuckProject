@@ -1,0 +1,37 @@
+Asset: WBP_AssetName
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/WBP_AssetName.WBP_AssetName
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_WBP_AssetName
+GraphId: G002
+Graph: SetAssetName
+FlowId: F001
+Entry: Set Asset Name
+NodeGuid: 1E16B376489075D244E8A084836F11B7
+
+Exec Flow:
+1. Set Asset Name [K2Node_FunctionEntry] 1E16B376489075D244E8A084836F11B7
+2. Get TxtVar_AssetName [K2Node_VariableGet] 55838F1E46863D8390F5F19F72ADF88C
+3. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 2EE0510745705AC0FAAB67A45C64674B
+4. Nodo di restituzione [K2Node_FunctionResult] 469DB4734E4C2577069E6A93151ED0CF
+5. Nodo di reindirizzamento [K2Node_Knot] 973875664965CA1D88592BAEF3B5E4DB
+
+Variables Read:
+- Get TxtVar_AssetName
+
+Variables Written:
+- none
+
+External Calls:
+- SetText (Text)
+La destinazione è Testo
+
+Widgets Touched:
+- SetText (Text)
+La destinazione è Testo
+
+Components Touched:
+- none
+
+External Blueprint References:
+- SetText (Text)
+La destinazione è Testo

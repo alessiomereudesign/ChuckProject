@@ -1,0 +1,14 @@
+{
+	"graphId": "G080",
+	"name": "Plant Left Foot",
+	"graphName": "Plant Left Foot",
+	"type": "AnimationStateGraph",
+	"graphType": "AnimationStateGraph",
+	"graphGuid": "",
+	"nodeCount": 28,
+	"edgeCount": 18,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G080/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G080/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G080/EDGES.jsonl",
+	"flows": []
+}

@@ -1,0 +1,25 @@
+{
+	"graphId": "G001",
+	"name": "OnSlotSelected",
+	"graphName": "OnSlotSelected",
+	"type": "DelegateSignature",
+	"graphType": "DelegateSignature",
+	"graphGuid": "",
+	"nodeCount": 1,
+	"edgeCount": 0,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "On Slot Selected",
+			"entryNodeGuid": "AD09FBE3413794487DEE01A2F419472B",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 1
+		}
+	]
+}

@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "ALS_MovementState",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Enums_ALS_MovementState",
+	"shortAssetFolder": "ALS_MovementState__E0B96570",
+	"pathHash": "E0B96570",
+	"assetType": "Enum",
+	"unrealClass": "UserDefinedEnum",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "NotApplicable",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Enums/ALS_MovementState__E0B96570/SUMMARY.md",
+		"variables": "Assets/Enums/ALS_MovementState__E0B96570/VARIABLES.json",
+		"components": "Assets/Enums/ALS_MovementState__E0B96570/COMPONENTS.json",
+		"widgetTree": "Assets/Enums/ALS_MovementState__E0B96570/WIDGET_TREE.json",
+		"nodes": "Assets/Enums/ALS_MovementState__E0B96570/NODES.jsonl",
+		"edges": "Assets/Enums/ALS_MovementState__E0B96570/EDGES.jsonl",
+		"search": "Assets/Enums/ALS_MovementState__E0B96570/SEARCH.jsonl"
+	},
+	"graphs": []
+}

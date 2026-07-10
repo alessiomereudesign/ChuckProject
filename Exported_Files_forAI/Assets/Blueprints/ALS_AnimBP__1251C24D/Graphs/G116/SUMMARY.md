@@ -1,0 +1,7 @@
+# <-MovementState->
+
+Type: AnimationTransitionGraph
+Nodes: 1
+Edges: 0
+
+## Entry Nodes

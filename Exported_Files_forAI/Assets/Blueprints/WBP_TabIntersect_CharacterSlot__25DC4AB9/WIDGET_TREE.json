@@ -1,0 +1,64 @@
+{
+	"assetName": "WBP_TabIntersect_CharacterSlot",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"widgets": [
+		{
+			"name": "Set Brush from Texture\nLa destinazione è Immagine",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "SetText (Text)\nLa destinazione è Testo",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Parent\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Parent\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Scroll Widget Into View\nLa destinazione è Scroll Box",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Parent\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Parent\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Scroll Widget Into View\nLa destinazione è Scroll Box",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		}
+	]
+}

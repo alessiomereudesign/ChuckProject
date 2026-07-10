@@ -1,0 +1,15 @@
+{
+	"assetName": "WBP_SelectorButton",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_SelectorButton.WBP_SelectorButton",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_SelectorButton",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"components": [
+		{
+			"name": "On Clicked (Btn_Selector)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		}
+	]
+}

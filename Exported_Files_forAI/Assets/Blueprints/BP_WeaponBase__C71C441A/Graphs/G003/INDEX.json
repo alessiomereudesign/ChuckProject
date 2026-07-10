@@ -1,0 +1,25 @@
+{
+	"graphId": "G003",
+	"name": "DoHitScan",
+	"graphName": "DoHitScan",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 27,
+	"edgeCount": 42,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G003/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Do Hit Scan",
+			"entryNodeGuid": "EE96F1CE4DAD86AD3D16C9B20FEF3643",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G003/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G003/F001.json",
+			"textFile": "Flows/G003/F001.txt",
+			"jsonFile": "Flows/G003/F001.json",
+			"nodeCount": 27
+		}
+	]
+}

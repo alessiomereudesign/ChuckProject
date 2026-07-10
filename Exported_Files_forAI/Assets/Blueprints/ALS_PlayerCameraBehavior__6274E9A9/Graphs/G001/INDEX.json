@@ -1,0 +1,14 @@
+{
+	"graphId": "G001",
+	"name": "Aiming",
+	"graphName": "Aiming",
+	"type": "AnimationStateGraph",
+	"graphType": "AnimationStateGraph",
+	"graphGuid": "",
+	"nodeCount": 16,
+	"edgeCount": 15,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G001/EDGES.jsonl",
+	"flows": []
+}

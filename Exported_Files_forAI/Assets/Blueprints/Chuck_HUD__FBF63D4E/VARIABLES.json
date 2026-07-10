@@ -1,0 +1,13 @@
+{
+	"assetName": "Chuck_HUD",
+	"assetPath": "/Game/ChuckContent/UI/Interfaces/Chuck_HUD.Chuck_HUD",
+	"assetKey": "Game_ChuckContent_UI_Interfaces_Chuck_HUD",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "Wdg Tip",
+			"type": "object|/Game/ChuckContent/UI/Interfaces/WBP_Tip.WBP_Tip_C",
+			"defaultValue": ""
+		}
+	]
+}

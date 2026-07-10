@@ -1,0 +1,40 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G026
+Graph: GetMantleAsset
+FlowId: F001
+Entry: Get Mantle Asset
+NodeGuid: 2662E3B84865C7144BBFAB85A5B177C0
+
+Exec Flow:
+1. Get Mantle Asset [K2Node_FunctionEntry] 2662E3B84865C7144BBFAB85A5B177C0
+2. Switch on MantleType [K2Node_SwitchEnum] AEF6DDBC44CBB281D2BCB89A4D211401
+3. Make Mantle_Asset [K2Node_MakeStruct] 522F73FD4C62AA41BD0EC69C6D97E503
+4. Nodo di reindirizzamento [K2Node_Knot] DE8274F94EBF6CFA3CA9DE91DC823571
+5. Nodo di restituzione [K2Node_FunctionResult] 437FD3F24755C012A9678AB123F203AC
+6. Make Mantle_Asset [K2Node_MakeStruct] DBF071F44FFA952C951481B1106559BD
+7. Nodo di reindirizzamento [K2Node_Knot] 29223E0F443C3CE76F56C5B593C92CB2
+8. Nodo di restituzione [K2Node_FunctionResult] 502195164F21BCF7C48048836EED197A
+9. Make Mantle_Asset [K2Node_MakeStruct] 0F20046E49A1624E77726BBE6FAC21A9
+10. Nodo di reindirizzamento [K2Node_Knot] B6B478B6499CCA66A1EBA7B523D6FC23
+11. Nodo di restituzione [K2Node_FunctionResult] 4E237EF04F5CBE3993AD2E853377DA26
+12. Get the Default Mantle Asset values. These will be overriden in the AnimMan Child Character [EdGraphNode_Comment] 41EB134B4EB2641510444BBD32E8918B
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

@@ -1,0 +1,309 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"graph": "OnCharacterMovementModeChanged",
+	"entryName": "On Character Movement Mode Changed",
+	"entryNodeGuid": "239EA719434F33A0702393B9A8F28A8A",
+	"nodes": [
+		{
+			"nodeGuid": "239EA719434F33A0702393B9A8F28A8A",
+			"class": "K2Node_FunctionEntry",
+			"title": "On Character Movement Mode Changed",
+			"comment": "",
+			"x": 32,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "65DB6E03481AE7E18B7052AFF30B6E4A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "806E07E94AE0B808E11F1084AD1F01F1",
+					"name": "PrevMovementMode",
+					"direction": "Output",
+					"type": "byte|/Script/Engine.EMovementMode",
+					"defaultValue": "MOVE_None"
+				},
+				{
+					"pinId": "F0ADBC2D4390A33DA9177ABCD56D1AC8",
+					"name": "NewMovementMode",
+					"direction": "Output",
+					"type": "byte|/Script/Engine.EMovementMode",
+					"defaultValue": "MOVE_None"
+				},
+				{
+					"pinId": "0278CCED496F40ED57331CA8F01DB035",
+					"name": "PrevCustomMode",
+					"direction": "Output",
+					"type": "byte",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "970478064D0761C8AA7AC0A45904F590",
+					"name": "NewCustomMode",
+					"direction": "Output",
+					"type": "byte",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D811EB5849AA3F4AFBDEB49B51A92AF9",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on EMovementMode",
+			"comment": "",
+			"x": 352,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7218F4E34686377AC3A926BAA37D5CB6",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "89A094414C3D32877E609AB231A53168",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EMovementMode",
+					"defaultValue": "MOVE_None"
+				},
+				{
+					"pinId": "F60AFCEB477CDBC795ED948083179778",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "AF5035B0401CB6672A59049F5627026B",
+					"name": "MOVE_None",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7F7FBC4041E2ECD21C9043BB4B326454",
+					"name": "MOVE_Walking",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C8117A64C402A5504AFA591CB43C7CC",
+					"name": "MOVE_NavWalking",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DDC76D4C49539F900510C0A820E1237F",
+					"name": "MOVE_Falling",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4381B875494AF612B4AA00BC7F90C531",
+					"name": "MOVE_Swimming",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "682A91FA45885FA8B42529B18F851EE5",
+					"name": "MOVE_Flying",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A5A8E2D3468A85CD16E0C68CD1CC82DF",
+					"name": "MOVE_Custom",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "21F1B0A5421CEE331969F7BA88DB2303",
+			"class": "K2Node_CallFunction",
+			"title": "BPI Set Movement State\nLa destinazione è ALS Character BPI",
+			"comment": "",
+			"x": 624,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C546D2484660B8D9B6B477B79EDE0BCA",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DF71CF914B1F7ADD930AFFBE1DC4ED70",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1D058E294778C2AA1A4BE18656413AF2",
+					"name": "self",
+					"direction": "Input",
+					"type": "interface|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Character_BPI.ALS_Character_BPI_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F36C92794B3B5E70D01011A569BB4DD2",
+					"name": "NewMovementState",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator1"
+				}
+			]
+		},
+		{
+			"nodeGuid": "D135A55E4525321E4D458481A76EFB77",
+			"class": "K2Node_CallFunction",
+			"title": "BPI Set Movement State\nLa destinazione è ALS Character BPI",
+			"comment": "",
+			"x": 624,
+			"y": 288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C546D2484660B8D9B6B477B79EDE0BCA",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DF71CF914B1F7ADD930AFFBE1DC4ED70",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1D058E294778C2AA1A4BE18656413AF2",
+					"name": "self",
+					"direction": "Input",
+					"type": "interface|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Character_BPI.ALS_Character_BPI_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F36C92794B3B5E70D01011A569BB4DD2",
+					"name": "NewMovementState",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator2"
+				}
+			]
+		},
+		{
+			"nodeGuid": "94573CDF4A0FBA94013353BD92D60EDC",
+			"class": "EdGraphNode_Comment",
+			"title": "Use the Character Movement Mode changes to set the Movement States to the right values. This allows you to have a custom set of movement states but still use the functionality of the default character movement component.",
+			"comment": "Use the Character Movement Mode changes to set the Movement States to the right values. This allows you to have a custom set of movement states but still use the functionality of the default character movement component.",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "OnCharacterMovementModeChanged",
+			"edgeType": "exec",
+			"fromNodeGuid": "239EA719434F33A0702393B9A8F28A8A",
+			"fromPinId": "65DB6E03481AE7E18B7052AFF30B6E4A",
+			"fromPinName": "then",
+			"toNodeGuid": "D811EB5849AA3F4AFBDEB49B51A92AF9",
+			"toPinId": "7218F4E34686377AC3A926BAA37D5CB6",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "OnCharacterMovementModeChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "239EA719434F33A0702393B9A8F28A8A",
+			"fromPinId": "F0ADBC2D4390A33DA9177ABCD56D1AC8",
+			"fromPinName": "NewMovementMode",
+			"toNodeGuid": "D811EB5849AA3F4AFBDEB49B51A92AF9",
+			"toPinId": "89A094414C3D32877E609AB231A53168",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "OnCharacterMovementModeChanged",
+			"edgeType": "exec",
+			"fromNodeGuid": "D811EB5849AA3F4AFBDEB49B51A92AF9",
+			"fromPinId": "7F7FBC4041E2ECD21C9043BB4B326454",
+			"fromPinName": "MOVE_Walking",
+			"toNodeGuid": "21F1B0A5421CEE331969F7BA88DB2303",
+			"toPinId": "C546D2484660B8D9B6B477B79EDE0BCA",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "OnCharacterMovementModeChanged",
+			"edgeType": "exec",
+			"fromNodeGuid": "D811EB5849AA3F4AFBDEB49B51A92AF9",
+			"fromPinId": "7C8117A64C402A5504AFA591CB43C7CC",
+			"fromPinName": "MOVE_NavWalking",
+			"toNodeGuid": "21F1B0A5421CEE331969F7BA88DB2303",
+			"toPinId": "C546D2484660B8D9B6B477B79EDE0BCA",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "OnCharacterMovementModeChanged",
+			"edgeType": "exec",
+			"fromNodeGuid": "D811EB5849AA3F4AFBDEB49B51A92AF9",
+			"fromPinId": "DDC76D4C49539F900510C0A820E1237F",
+			"fromPinName": "MOVE_Falling",
+			"toNodeGuid": "D135A55E4525321E4D458481A76EFB77",
+			"toPinId": "C546D2484660B8D9B6B477B79EDE0BCA",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"BPI Set Movement State\nLa destinazione è ALS Character BPI"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"BPI Set Movement State\nLa destinazione è ALS Character BPI"
+	],
+	"flowId": "F001",
+	"graphId": "G038",
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP"
+}

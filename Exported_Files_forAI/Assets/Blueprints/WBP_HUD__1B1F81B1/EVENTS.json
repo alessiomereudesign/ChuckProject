@@ -1,0 +1,22 @@
+{
+	"assetName": "WBP_HUD",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD.WBP_HUD",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_01_HUD_WBP_HUD",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "UpdateWeaponDisplay\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "23CE9C184C529F72487896B7739154F7",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento Construct",
+			"graph": "EventGraph",
+			"nodeGuid": "2C71C2344D34726629C69BB2EB41F197",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

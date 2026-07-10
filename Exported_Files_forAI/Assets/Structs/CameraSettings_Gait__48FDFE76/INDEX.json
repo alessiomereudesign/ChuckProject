@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "CameraSettings_Gait",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/CameraSettings_Gait.CameraSettings_Gait",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Structs_CameraSettings_Gait",
+	"shortAssetFolder": "CameraSettings_Gait__48FDFE76",
+	"pathHash": "48FDFE76",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/CameraSettings_Gait__48FDFE76/SUMMARY.md",
+		"variables": "Assets/Structs/CameraSettings_Gait__48FDFE76/VARIABLES.json",
+		"components": "Assets/Structs/CameraSettings_Gait__48FDFE76/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/CameraSettings_Gait__48FDFE76/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/CameraSettings_Gait__48FDFE76/NODES.jsonl",
+		"edges": "Assets/Structs/CameraSettings_Gait__48FDFE76/EDGES.jsonl",
+		"search": "Assets/Structs/CameraSettings_Gait__48FDFE76/SEARCH.jsonl"
+	},
+	"graphs": []
+}

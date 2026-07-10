@@ -1,0 +1,29 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G012
+Graph: PlayFireEffects
+FlowId: F001
+Entry: Play Fire Effects
+NodeGuid: E99AA56C41233EC2033D628C3FEEC926
+
+Exec Flow:
+1. Play Fire Effects [K2Node_FunctionEntry] E99AA56C41233EC2033D628C3FEEC926
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

@@ -1,0 +1,25 @@
+{
+	"graphId": "G001",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 27,
+	"edgeCount": 30,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Evento BeginPlay",
+			"entryNodeGuid": "FB27CCAB494299D0E0AB9AB0D718071B",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 27
+		}
+	]
+}

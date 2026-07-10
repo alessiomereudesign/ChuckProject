@@ -1,0 +1,1133 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "UpdateHeldObject",
+	"entryName": "Update Held Object",
+	"entryNodeGuid": "9EDC2C424F6E5F3B9811BFA1F05D01E5",
+	"nodes": [
+		{
+			"nodeGuid": "9EDC2C424F6E5F3B9811BFA1F05D01E5",
+			"class": "K2Node_FunctionEntry",
+			"title": "Update Held Object",
+			"comment": "",
+			"x": -288,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5CD09D9A442E56B2031C7BAFBED79C74",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4B51B958445836A56B236C97A682A9B1",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on ALS_OverlayState",
+			"comment": "",
+			"x": 256,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "706848C94D02A842E1C2A0B2DB5B7B8A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CEFB4324E6B59DDD705739621C5DD31",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "C6DED8A149FB00DF668E778B4CF25390",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "254FF0EA43628EC18FE19AACA9FE5E0B",
+					"name": "NewEnumerator0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "349656EC496E20D855AD87A04ED139A9",
+					"name": "NewEnumerator12",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "47F908B54B4A103C883C9EBF4583F34E",
+					"name": "NewEnumerator13",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8E0BA4E44868300D8577599C79701588",
+					"name": "NewEnumerator14",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "09598D434BEFF2EB74966EA4EFC834B0",
+					"name": "NewEnumerator15",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0E3E2CD6409E7B9223AD5E98245E13CD",
+					"name": "NewEnumerator1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5E4AA2FE4C2C0828B174A5886BCFEA27",
+					"name": "NewEnumerator5",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3FA3B7F24AB76DAFC2F4B396988392F6",
+					"name": "NewEnumerator10",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3CA2CF7842925C00FAAD84AAF38AB2BD",
+					"name": "NewEnumerator6",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0138BF1F4C7296CB825A98A971733E14",
+					"name": "NewEnumerator7",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "90F0AB404B232617D19276BE01978729",
+					"name": "NewEnumerator8",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7D614F904E43E203B7E478A3FFAFFD8E",
+					"name": "NewEnumerator9",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9757811148CAECAB5E2B4591BCC71D99",
+					"name": "NewEnumerator11",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AAE37A9D4A343F40A3A4B7BBED0E95F0",
+					"name": "NewEnumerator17",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "12429112437B565EEDF2B5B7A015ED75",
+					"name": "NewEnumerator18",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2D0EBBD747301E0283C3F9A5EB933CC1",
+			"class": "K2Node_VariableGet",
+			"title": "Get OverlayState",
+			"comment": "",
+			"x": 80,
+			"y": 496,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8936C96E46E3F0A683144084A9B8CB50",
+					"name": "OverlayState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "429523D84E8C9C6C6EC92982569E0513",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "45D035D947D9FE814A90AA8086FABAC0",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 512,
+			"y": 416,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "092293FE4CBE652A0FE203B036341F20",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FBE0A1F344EF8A4DE7782D9EEED9FE77",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3DA2A3C54C200FAFAC1328B80918ED9C",
+			"class": "K2Node_CallFunction",
+			"title": "Attach to Hand\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": 1136,
+			"y": 592,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8F55652B41E5BE2BE5EF559885D962A0",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3878D76F486F1B7C31D401B31CAC9F39",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4913E75E4A16C51597B09B9623690153",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B6391FED45C0E755920DC38FCBD68CFD",
+					"name": "NewStaticMesh",
+					"direction": "Input",
+					"type": "object|/Script/Engine.StaticMesh",
+					"defaultValue": "/Game/AdditionalContents/AdvancedLocomotionV4/Props/Meshes/Torch.Torch"
+				},
+				{
+					"pinId": "640978924EE761986D708DB7ABDC71C4",
+					"name": "NewSkeletalMesh",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C1F8E22E4F3CE9D08FD3A9B49C76BA85",
+					"name": "NewAnimClass",
+					"direction": "Input",
+					"type": "class|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7F9A6EC447783E962A88A09933AEFB65",
+					"name": "LeftHand",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "E0A54F6844DD6ECD5B4C63821319C1FF",
+					"name": "Offset",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "FE43213043EB335614022AAB198A0592",
+			"class": "K2Node_CallFunction",
+			"title": "Attach to Hand\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": 1136,
+			"y": 992,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BF40F5C74518E4FDB5BADABD455EEFB2",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B8039E334C3A4A6CD675E89ABD2961CE",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1B59554641067D8C0B2F9BB4C04C757E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8C2603DD4F22649134AC4E9207BEF0C4",
+					"name": "NewStaticMesh",
+					"direction": "Input",
+					"type": "object|/Script/Engine.StaticMesh",
+					"defaultValue": "/Game/AdditionalContents/AdvancedLocomotionV4/Props/Meshes/Binoculars.Binoculars"
+				},
+				{
+					"pinId": "88D5E9904F0502B883D2FF8970F7F348",
+					"name": "NewSkeletalMesh",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "41F16AAD4F747AC210E454A1FA9BFDF4",
+					"name": "NewAnimClass",
+					"direction": "Input",
+					"type": "class|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D00812554ACB1C15EBC050935EDB09D0",
+					"name": "LeftHand",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "093A6CEF4E0807B0FD86A39AD8CE61CE",
+					"name": "Offset",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "8CE9017E4CD61DD61F8E3B984586EE33",
+			"class": "K2Node_CallFunction",
+			"title": "Clear Held Object\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": -48,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B523EE82408B26C87F6DCF92604B91A6",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "40E92A1043373A362ACCBD9831DA55CD",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1A0E84444620F3FC294391985F1BAD79",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8AFBAE0A4FC89C7047DC4AB9B56CD297",
+			"class": "K2Node_CallFunction",
+			"title": "Equip Big Weapon\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": 1120,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "545B0DD24529CD3F379A8AA04DD5E83C",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B6CDAF664ADADE277D36179050319E36",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8F7EB4C4421126D001F1A9BB050405CC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B4C9BA9B468277AB200E52817697453D",
+					"name": "SkeletalMesh",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DB248B7F4A74EB8CCFD9F8B3A908926B",
+			"class": "K2Node_CallFunction",
+			"title": "Equip Small Weapon\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": 1120,
+			"y": 368,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "00E0D07941F8FDF27F5E00B462BBD0E3",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EA36117748EB67A614D58F8FF18B7454",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CF6D3DD42AAB2F007D228B6DCFCA122",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B8817B6D4F31882811D75286391AC204",
+					"name": "SkeletalMesh",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B9DCB9FE4A9B6A38A25E8B80B5ED7336",
+			"class": "K2Node_VariableGet",
+			"title": "Get Mesh_SmallWeapon",
+			"comment": "",
+			"x": 608,
+			"y": 476,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7A8BC9D445FA3D9665AD3DB6B02CF474",
+					"name": "Mesh_SmallWeapon",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4B50384946E1637C70C375B00E616DE3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "93DC43FE4F6A734D8DB9A7968EE6C142",
+			"class": "K2Node_CallFunction",
+			"title": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+			"comment": "",
+			"x": 832,
+			"y": 436,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "11C159844DBDEA3CA79B38B50BC50B1F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F06EC4C34DE416FA99A03480E7B2F179",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "29D2C56F481902642EC109B119EF3A9A",
+			"class": "K2Node_VariableGet",
+			"title": "Get Mesh_BigWeapon",
+			"comment": "",
+			"x": 624,
+			"y": 252,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C4E3ACBD4D162298CD9DACA25C29EBD5",
+					"name": "Mesh_BigWeapon",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "41228BE048E550F4A01729B11C9AA21D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BB401994400330290C1466ABB2446887",
+			"class": "K2Node_CallFunction",
+			"title": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+			"comment": "",
+			"x": 832,
+			"y": 212,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6F584CDD481B3FB5C7015A84DF0ED0B2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C521BDB4B29C1126F25CCA39722D172",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FF645FAA459AA0C16C3E38AD4B54089E",
+			"class": "K2Node_CallFunction",
+			"title": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+			"comment": "",
+			"x": 832,
+			"y": 1444,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "11C159844DBDEA3CA79B38B50BC50B1F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F06EC4C34DE416FA99A03480E7B2F179",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5157C91A4780C603EAC7E794BAB66733",
+			"class": "K2Node_CallFunction",
+			"title": "Equip Melee\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": 1136,
+			"y": 1376,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C407D14A4808D56F545508ABE46F342D",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D448B8B54CCD638156D2EFAF5B6AF43F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "78B4FA184199131D6A5FF68DD3D76D97",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6B5E60EF4DF147D3FD078FA879F770E5",
+					"name": "SkeletalMesh",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BD2A9798413EDAA60FD6D59912385745",
+			"class": "K2Node_VariableGet",
+			"title": "Get Mesh_Melee",
+			"comment": "",
+			"x": 640,
+			"y": 1484,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ED3AFD4842A7F66D552D0695E2A26547",
+					"name": "Mesh_Melee",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A37245E4432BC2AE0308DE8E16248F0E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "30DC9651473F3466FF259FBCFB638172",
+			"class": "K2Node_CallFunction",
+			"title": "Unarmed State\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": 1408,
+			"y": 592,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C018BBD54001C5B71E65CA94EDC8040F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "622867E047A54E9C0583B0B4B896936F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "66F0BC1042B006F80691A3947354F1FD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1A0A0E0B412CD703CCE7AE95F7FCCEC8",
+			"class": "K2Node_CallFunction",
+			"title": "Unarmed State\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": 1408,
+			"y": 992,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C018BBD54001C5B71E65CA94EDC8040F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "622867E047A54E9C0583B0B4B896936F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "66F0BC1042B006F80691A3947354F1FD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BCCCC7F74C8E23190A8A1187732895EF",
+			"class": "K2Node_CallFunction",
+			"title": "Unarmed State\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": 1120,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C018BBD54001C5B71E65CA94EDC8040F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "622867E047A54E9C0583B0B4B896936F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "66F0BC1042B006F80691A3947354F1FD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "272856624D05F97D0F1D91964364B40D",
+			"class": "K2Node_CallFunction",
+			"title": "Fists State\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": 1152,
+			"y": 1552,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EEFC0E184D255A11E65AEA9A861F7363",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "883CD4EE44B66A16B4903BBE95E6FE75",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7741E6374AED5562B4DDF090C27D02C7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "9EDC2C424F6E5F3B9811BFA1F05D01E5",
+			"fromPinId": "5CD09D9A442E56B2031C7BAFBED79C74",
+			"fromPinName": "then",
+			"toNodeGuid": "8CE9017E4CD61DD61F8E3B984586EE33",
+			"toPinId": "B523EE82408B26C87F6DCF92604B91A6",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "8CE9017E4CD61DD61F8E3B984586EE33",
+			"fromPinId": "40E92A1043373A362ACCBD9831DA55CD",
+			"fromPinName": "then",
+			"toNodeGuid": "4B51B958445836A56B236C97A682A9B1",
+			"toPinId": "706848C94D02A842E1C2A0B2DB5B7B8A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "data",
+			"fromNodeGuid": "2D0EBBD747301E0283C3F9A5EB933CC1",
+			"fromPinId": "8936C96E46E3F0A683144084A9B8CB50",
+			"fromPinName": "OverlayState",
+			"toNodeGuid": "4B51B958445836A56B236C97A682A9B1",
+			"toPinId": "1CEFB4324E6B59DDD705739621C5DD31",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "4B51B958445836A56B236C97A682A9B1",
+			"fromPinId": "254FF0EA43628EC18FE19AACA9FE5E0B",
+			"fromPinName": "NewEnumerator0",
+			"toNodeGuid": "45D035D947D9FE814A90AA8086FABAC0",
+			"toPinId": "092293FE4CBE652A0FE203B036341F20",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "4B51B958445836A56B236C97A682A9B1",
+			"fromPinId": "349656EC496E20D855AD87A04ED139A9",
+			"fromPinName": "NewEnumerator12",
+			"toNodeGuid": "45D035D947D9FE814A90AA8086FABAC0",
+			"toPinId": "092293FE4CBE652A0FE203B036341F20",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "4B51B958445836A56B236C97A682A9B1",
+			"fromPinId": "47F908B54B4A103C883C9EBF4583F34E",
+			"fromPinName": "NewEnumerator13",
+			"toNodeGuid": "45D035D947D9FE814A90AA8086FABAC0",
+			"toPinId": "092293FE4CBE652A0FE203B036341F20",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "4B51B958445836A56B236C97A682A9B1",
+			"fromPinId": "8E0BA4E44868300D8577599C79701588",
+			"fromPinName": "NewEnumerator14",
+			"toNodeGuid": "45D035D947D9FE814A90AA8086FABAC0",
+			"toPinId": "092293FE4CBE652A0FE203B036341F20",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "4B51B958445836A56B236C97A682A9B1",
+			"fromPinId": "09598D434BEFF2EB74966EA4EFC834B0",
+			"fromPinName": "NewEnumerator15",
+			"toNodeGuid": "45D035D947D9FE814A90AA8086FABAC0",
+			"toPinId": "092293FE4CBE652A0FE203B036341F20",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "4B51B958445836A56B236C97A682A9B1",
+			"fromPinId": "0E3E2CD6409E7B9223AD5E98245E13CD",
+			"fromPinName": "NewEnumerator1",
+			"toNodeGuid": "8AFBAE0A4FC89C7047DC4AB9B56CD297",
+			"toPinId": "545B0DD24529CD3F379A8AA04DD5E83C",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "4B51B958445836A56B236C97A682A9B1",
+			"fromPinId": "5E4AA2FE4C2C0828B174A5886BCFEA27",
+			"fromPinName": "NewEnumerator5",
+			"toNodeGuid": "DB248B7F4A74EB8CCFD9F8B3A908926B",
+			"toPinId": "00E0D07941F8FDF27F5E00B462BBD0E3",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "4B51B958445836A56B236C97A682A9B1",
+			"fromPinId": "3FA3B7F24AB76DAFC2F4B396988392F6",
+			"fromPinName": "NewEnumerator10",
+			"toNodeGuid": "DB248B7F4A74EB8CCFD9F8B3A908926B",
+			"toPinId": "00E0D07941F8FDF27F5E00B462BBD0E3",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "4B51B958445836A56B236C97A682A9B1",
+			"fromPinId": "0138BF1F4C7296CB825A98A971733E14",
+			"fromPinName": "NewEnumerator7",
+			"toNodeGuid": "3DA2A3C54C200FAFAC1328B80918ED9C",
+			"toPinId": "8F55652B41E5BE2BE5EF559885D962A0",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "4B51B958445836A56B236C97A682A9B1",
+			"fromPinId": "90F0AB404B232617D19276BE01978729",
+			"fromPinName": "NewEnumerator8",
+			"toNodeGuid": "FE43213043EB335614022AAB198A0592",
+			"toPinId": "BF40F5C74518E4FDB5BADABD455EEFB2",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "4B51B958445836A56B236C97A682A9B1",
+			"fromPinId": "AAE37A9D4A343F40A3A4B7BBED0E95F0",
+			"fromPinName": "NewEnumerator17",
+			"toNodeGuid": "5157C91A4780C603EAC7E794BAB66733",
+			"toPinId": "C407D14A4808D56F545508ABE46F342D",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "4B51B958445836A56B236C97A682A9B1",
+			"fromPinId": "12429112437B565EEDF2B5B7A015ED75",
+			"fromPinName": "NewEnumerator18",
+			"toNodeGuid": "272856624D05F97D0F1D91964364B40D",
+			"toPinId": "EEFC0E184D255A11E65AEA9A861F7363",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "45D035D947D9FE814A90AA8086FABAC0",
+			"fromPinId": "FBE0A1F344EF8A4DE7782D9EEED9FE77",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "BCCCC7F74C8E23190A8A1187732895EF",
+			"toPinId": "C018BBD54001C5B71E65CA94EDC8040F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "3DA2A3C54C200FAFAC1328B80918ED9C",
+			"fromPinId": "3878D76F486F1B7C31D401B31CAC9F39",
+			"fromPinName": "then",
+			"toNodeGuid": "30DC9651473F3466FF259FBCFB638172",
+			"toPinId": "C018BBD54001C5B71E65CA94EDC8040F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "exec",
+			"fromNodeGuid": "FE43213043EB335614022AAB198A0592",
+			"fromPinId": "B8039E334C3A4A6CD675E89ABD2961CE",
+			"fromPinName": "then",
+			"toNodeGuid": "1A0A0E0B412CD703CCE7AE95F7FCCEC8",
+			"toPinId": "C018BBD54001C5B71E65CA94EDC8040F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "data",
+			"fromNodeGuid": "BB401994400330290C1466ABB2446887",
+			"fromPinId": "7C521BDB4B29C1126F25CCA39722D172",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "8AFBAE0A4FC89C7047DC4AB9B56CD297",
+			"toPinId": "B4C9BA9B468277AB200E52817697453D",
+			"toPinName": "SkeletalMesh"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "data",
+			"fromNodeGuid": "93DC43FE4F6A734D8DB9A7968EE6C142",
+			"fromPinId": "F06EC4C34DE416FA99A03480E7B2F179",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "DB248B7F4A74EB8CCFD9F8B3A908926B",
+			"toPinId": "B8817B6D4F31882811D75286391AC204",
+			"toPinName": "SkeletalMesh"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "data",
+			"fromNodeGuid": "B9DCB9FE4A9B6A38A25E8B80B5ED7336",
+			"fromPinId": "7A8BC9D445FA3D9665AD3DB6B02CF474",
+			"fromPinName": "Mesh_SmallWeapon",
+			"toNodeGuid": "93DC43FE4F6A734D8DB9A7968EE6C142",
+			"toPinId": "11C159844DBDEA3CA79B38B50BC50B1F",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "data",
+			"fromNodeGuid": "29D2C56F481902642EC109B119EF3A9A",
+			"fromPinId": "C4E3ACBD4D162298CD9DACA25C29EBD5",
+			"fromPinName": "Mesh_BigWeapon",
+			"toNodeGuid": "BB401994400330290C1466ABB2446887",
+			"toPinId": "6F584CDD481B3FB5C7015A84DF0ED0B2",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "data",
+			"fromNodeGuid": "BD2A9798413EDAA60FD6D59912385745",
+			"fromPinId": "ED3AFD4842A7F66D552D0695E2A26547",
+			"fromPinName": "Mesh_Melee",
+			"toNodeGuid": "FF645FAA459AA0C16C3E38AD4B54089E",
+			"toPinId": "11C159844DBDEA3CA79B38B50BC50B1F",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateHeldObject",
+			"edgeType": "data",
+			"fromNodeGuid": "FF645FAA459AA0C16C3E38AD4B54089E",
+			"fromPinId": "F06EC4C34DE416FA99A03480E7B2F179",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "5157C91A4780C603EAC7E794BAB66733",
+			"toPinId": "6B5E60EF4DF147D3FD078FA879F770E5",
+			"toPinName": "SkeletalMesh"
+		}
+	],
+	"variablesRead": [
+		"Get Mesh_BigWeapon",
+		"Get Mesh_Melee",
+		"Get Mesh_SmallWeapon",
+		"Get OverlayState"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Attach to Hand\nLa destinazione è ALS Chuck BP",
+		"Clear Held Object\nLa destinazione è ALS Chuck BP",
+		"Equip Big Weapon\nLa destinazione è ALS Chuck BP",
+		"Equip Melee\nLa destinazione è ALS Chuck BP",
+		"Equip Small Weapon\nLa destinazione è ALS Chuck BP",
+		"Fists State\nLa destinazione è ALS Chuck BP",
+		"Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+		"Unarmed State\nLa destinazione è ALS Chuck BP"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Attach to Hand\nLa destinazione è ALS Chuck BP",
+		"Clear Held Object\nLa destinazione è ALS Chuck BP",
+		"Equip Big Weapon\nLa destinazione è ALS Chuck BP",
+		"Equip Melee\nLa destinazione è ALS Chuck BP",
+		"Equip Small Weapon\nLa destinazione è ALS Chuck BP",
+		"Fists State\nLa destinazione è ALS Chuck BP",
+		"Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+		"Unarmed State\nLa destinazione è ALS Chuck BP"
+	],
+	"flowId": "F001",
+	"graphId": "G028",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

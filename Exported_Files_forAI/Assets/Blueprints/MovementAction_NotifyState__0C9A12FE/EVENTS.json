@@ -1,0 +1,29 @@
+{
+	"assetName": "MovementAction_NotifyState",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/MovementAction_NotifyState.MovementAction_NotifyState",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_MovementAction_NotifyState",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Get Notify Name",
+			"graph": "GetNotifyName",
+			"nodeGuid": "67990A994B2437611A4A31BF9ECDD8D1",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Received Notify Begin",
+			"graph": "Received_NotifyBegin",
+			"nodeGuid": "7167050C4A3494E721E92EB33950C2B3",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Received Notify End",
+			"graph": "Received_NotifyEnd",
+			"nodeGuid": "20F6F3834AB5E8D383C2F5AA3D4C52CD",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

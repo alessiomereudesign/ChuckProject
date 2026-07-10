@@ -1,0 +1,29 @@
+{
+	"assetName": "WBP_SelectorButton",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_SelectorButton.WBP_SelectorButton",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_SelectorButton",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Evento Construct",
+			"graph": "EventGraph",
+			"nodeGuid": "9A1F535A4C046FC809050A87C2BB6C4D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento On Added to Focus Path",
+			"graph": "EventGraph",
+			"nodeGuid": "90B76D0F42145C6895293B81477E00B9",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento On Removed from Focus Path",
+			"graph": "EventGraph",
+			"nodeGuid": "3D457EE5452141D1D92B729E025FB00F",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

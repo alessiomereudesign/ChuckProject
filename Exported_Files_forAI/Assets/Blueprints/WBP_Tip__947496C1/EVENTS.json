@@ -1,0 +1,29 @@
+{
+	"assetName": "WBP_Tip",
+	"assetPath": "/Game/ChuckContent/UI/Interfaces/WBP_Tip.WBP_Tip",
+	"assetKey": "Game_ChuckContent_UI_Interfaces_WBP_Tip",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Evento Construct",
+			"graph": "EventGraph",
+			"nodeGuid": "395426D9417824F6EE1D3B9559F9E96F",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "ShowTip\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "349184484140FEF3963284BA07252C97",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Input Keys",
+			"graph": "GetInputKeys",
+			"nodeGuid": "047C47D7477B5AC5C8C7158788D1A412",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

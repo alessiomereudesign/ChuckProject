@@ -1,0 +1,176 @@
+{
+	"assetName": "WBP_MenuArchive",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"components": [
+		{
+			"name": "On Clicked (Btn_Back)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (BtnSlot_Inventory)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (Btn_Personaggi)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (Btn_AllInventory)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (Btn_ArmorInventory)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (Btn_WeaponsInventory)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (BtnSlot_BigWeapon)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (BtnSlot_Item)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (BtnSlot_SmallFirearm)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (BtnSlot_Melee)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (BtnSlot_HeadEquip)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (BtnSlot_ChestEquip)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (BtnSlot_LegsEquip)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (BtnSlot_FeetEquip)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (BtnSlot_AccessoryEquip)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (BtnSlot_Accessory1Equip)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (ToggleVisibWeapons)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "On Clicked (ToggleVisibArmor)",
+			"class": "K2Node_ComponentBoundEvent",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Mesh_BigWeapon",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Mesh_SmallWeapon",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Mesh_Melee",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		}
+	]
+}

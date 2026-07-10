@@ -1,0 +1,25 @@
+{
+	"graphId": "G005",
+	"name": "OnArmorSlotClicked",
+	"graphName": "OnArmorSlotClicked",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 18,
+	"edgeCount": 23,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G005/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G005/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G005/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "On Armor Slot Clicked",
+			"entryNodeGuid": "27B057DC4BCFABA947AB6C9E4508C152",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G005/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G005/F001.json",
+			"textFile": "Flows/G005/F001.txt",
+			"jsonFile": "Flows/G005/F001.json",
+			"nodeCount": 18
+		}
+	]
+}

@@ -1,0 +1,213 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+	"graph": "Get_HUD_Visibility",
+	"entryName": "Get HUD Visibility",
+	"entryNodeGuid": "DA0A540E4D5E8BB2D1252493A61B4FD8",
+	"nodes": [
+		{
+			"nodeGuid": "DA0A540E4D5E8BB2D1252493A61B4FD8",
+			"class": "K2Node_FunctionEntry",
+			"title": "Get HUD Visibility",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A7F58E7E4BF6EAB26295A89E261EFB67",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "859A32054EC1FFD1126C5C9DA31BAF30",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 416,
+			"y": -48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3121B96C41D6612020808FAA344F6349",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5190FEBF4836D155A7ADF79D37808D4C",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "byte|/Script/UMG.ESlateVisibility",
+					"defaultValue": "Visible"
+				}
+			]
+		},
+		{
+			"nodeGuid": "FFC44DDE493E17CBDC9FC584D6B175B9",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 192,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3D3516734279A9EBB826C9A416E5AEFF",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9937976E45E5DEC8872493B9D473A77C",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "1F4A26BB449E6962A06849B7E294B8CC",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3F6770A6489A4D18A638D39A088AF390",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AF25E9EC4D67A13DEB5DCDB8D0284334",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 416,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3121B96C41D6612020808FAA344F6349",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5190FEBF4836D155A7ADF79D37808D4C",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "byte|/Script/UMG.ESlateVisibility",
+					"defaultValue": "Collapsed"
+				}
+			]
+		},
+		{
+			"nodeGuid": "2E1B58724F94C0DA7318B5B81D5CE029",
+			"class": "K2Node_VariableGet",
+			"title": "Get ShowHUD",
+			"comment": "",
+			"x": 192,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "877CD8584DA9E9AE740DFBAD4D1E874C",
+					"name": "ShowHUD",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "2BDF85EB425A0E5D4FD609BABE68C448",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/ALS_HUD.ALS_HUD_C",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+			"graph": "Get_HUD_Visibility",
+			"edgeType": "exec",
+			"fromNodeGuid": "DA0A540E4D5E8BB2D1252493A61B4FD8",
+			"fromPinId": "A7F58E7E4BF6EAB26295A89E261EFB67",
+			"fromPinName": "then",
+			"toNodeGuid": "FFC44DDE493E17CBDC9FC584D6B175B9",
+			"toPinId": "3D3516734279A9EBB826C9A416E5AEFF",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+			"graph": "Get_HUD_Visibility",
+			"edgeType": "exec",
+			"fromNodeGuid": "FFC44DDE493E17CBDC9FC584D6B175B9",
+			"fromPinId": "1F4A26BB449E6962A06849B7E294B8CC",
+			"fromPinName": "then",
+			"toNodeGuid": "859A32054EC1FFD1126C5C9DA31BAF30",
+			"toPinId": "3121B96C41D6612020808FAA344F6349",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+			"graph": "Get_HUD_Visibility",
+			"edgeType": "data",
+			"fromNodeGuid": "2E1B58724F94C0DA7318B5B81D5CE029",
+			"fromPinId": "877CD8584DA9E9AE740DFBAD4D1E874C",
+			"fromPinName": "ShowHUD",
+			"toNodeGuid": "FFC44DDE493E17CBDC9FC584D6B175B9",
+			"toPinId": "9937976E45E5DEC8872493B9D473A77C",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+			"graph": "Get_HUD_Visibility",
+			"edgeType": "exec",
+			"fromNodeGuid": "FFC44DDE493E17CBDC9FC584D6B175B9",
+			"fromPinId": "3F6770A6489A4D18A638D39A088AF390",
+			"fromPinName": "else",
+			"toNodeGuid": "AF25E9EC4D67A13DEB5DCDB8D0284334",
+			"toPinId": "3121B96C41D6612020808FAA344F6349",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [
+		"Get ShowHUD"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G008",
+	"assetName": "ALS_HUD",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/ALS_HUD.ALS_HUD"
+}

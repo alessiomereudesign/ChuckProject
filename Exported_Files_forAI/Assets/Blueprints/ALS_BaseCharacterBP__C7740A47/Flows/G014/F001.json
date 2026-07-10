@@ -1,0 +1,1080 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"graph": "CanSprint",
+	"entryName": "Can Sprint",
+	"entryNodeGuid": "144A8B3649AC177B3AFFA3B02BCD8C5C",
+	"nodes": [
+		{
+			"nodeGuid": "144A8B3649AC177B3AFFA3B02BCD8C5C",
+			"class": "K2Node_FunctionEntry",
+			"title": "Can Sprint",
+			"comment": "",
+			"x": 34,
+			"y": 210,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E1EF8B46412C515D57120786212476EB",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D0E25B634C541F3B49CFB48FE85D06B9",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 2130,
+			"y": 98,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "92BBB9A9410DABD35391468D7DE2EC1B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8A7915914E9C844C179D6DBABFCDD6A7",
+					"name": "CanSprint",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				}
+			]
+		},
+		{
+			"nodeGuid": "729AE29243A1F9441F48B8A78F1A41AF",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 2130,
+			"y": 210,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "92BBB9A9410DABD35391468D7DE2EC1B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8A7915914E9C844C179D6DBABFCDD6A7",
+					"name": "CanSprint",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				}
+			]
+		},
+		{
+			"nodeGuid": "5E04B51F4B7074A90FB918B3AA0E6B7A",
+			"class": "K2Node_CallFunction",
+			"title": "float < float",
+			"comment": "",
+			"x": 1794,
+			"y": 338,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E3A0AE9647F96104F9049AAD876C7CB2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "F8AAC3D647F9C24516BF1B9FFDABAEBA",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "AD4F79554438EF4F0D11229CF1595BFD",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "50.000000"
+				},
+				{
+					"pinId": "1F272125466E60AA8E02AAB48B75B19C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "B964B0B547800A8C5F0A83A0DA9AA4F1",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 370,
+			"y": 274,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "92BBB9A9410DABD35391468D7DE2EC1B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8A7915914E9C844C179D6DBABFCDD6A7",
+					"name": "CanSprint",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "CBDF154E47B8DA87AC9C6F88DFE454AC",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "AND Boolean",
+			"comment": "",
+			"x": 1954,
+			"y": 306,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7CAD09F54DB850F6512660830A753870",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "8473578B45C3CD0BAA8F1CA216B3C9FF",
+					"name": "A",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "ED1D12D14FD843443780B9B19DB33F56",
+					"name": "B",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "3D1D563C4AF6C28CD91187A487EC8EF9",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "C22C49734FEF692B532550B1E7826D73",
+			"class": "K2Node_VariableGet",
+			"title": "Get MovementInputAmount",
+			"comment": "",
+			"x": 1762,
+			"y": 162,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "57CE32894C0F0B408B6DD7B4751B0C64",
+					"name": "MovementInputAmount",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "F7AB7E9C46683B8BF1D76285F7FA7BEF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "36AC0EE94BED30FC2CBD92B71D72361F",
+			"class": "K2Node_CallFunction",
+			"title": "float > float",
+			"comment": "",
+			"x": 1970,
+			"y": 162,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2D0802EC4A49D25C4A4D67B22F7DC59F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "1F09DB0E4B8078800F1779929615797B",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "B43BF0584EBFED6FD028A582D20D1BE7",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.900000"
+				},
+				{
+					"pinId": "0B4D27B94FA4A50692CA208C4398D2EA",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "93188F9F493EDAE7D45576A0CD7C5B4A",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 864,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "92BBB9A9410DABD35391468D7DE2EC1B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8A7915914E9C844C179D6DBABFCDD6A7",
+					"name": "CanSprint",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "9EE39A0B42342FEA5DA5388872CAB241",
+			"class": "K2Node_VariableGet",
+			"title": "Get HasMovementInput",
+			"comment": "",
+			"x": 178,
+			"y": 290,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E82C3661456214805E9ACC99B152348B",
+					"name": "HasMovementInput",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "EEBFEF9A477A9584EA63C5962FEB2394",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "94F0CF814BBC0FD56E52E797D980AC4E",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 178,
+			"y": 210,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0DB9CD3049EC3EA542E80386944AB674",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "26DD8E734AC7580851185BA8699CA28D",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "70D307274F4FF4DB4F286685F482E4C0",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "694D7CB14FA1B38D5150659BA2634E84",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "9C72E2C946379090131F31B62A0FCEC4",
+			"class": "K2Node_VariableGet",
+			"title": "Get RotationMode",
+			"comment": "",
+			"x": 546,
+			"y": 322,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8F475D824F88E5864071A1A40BC3F19B",
+					"name": "RotationMode",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "C6D235964E96F2762A71E4BDA439D1FA",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "775AB8364CC64383626D428A99AB3F94",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on ALS_RotationMode",
+			"comment": "",
+			"x": 546,
+			"y": 210,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2FAFD45F462E6C83BC8432B0F57E315C",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A260596A4E29F0B9547EFCBE66A89B2F",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "034FA1424623C5895866BCB0DB81BFDC",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "8EBC04FA4AE9DC74084E799793D35472",
+					"name": "NewEnumerator0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D9B60D7D48864E9FBA0B54AB580CEE5C",
+					"name": "NewEnumerator1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1D7AE29642A0A4FFC57AFB918CA063D0",
+					"name": "NewEnumerator3",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "738835A3449FAB40461516A2B4255379",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 850,
+			"y": 130,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ED05619A48675146F09FC5AC63C57D34",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0FBB0C954498721E0CCF3BA49EC12EE3",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "21191742463C944605F49688031E5FD6",
+			"class": "K2Node_VariableGet",
+			"title": "Get MovementInputAmount",
+			"comment": "",
+			"x": 1586,
+			"y": 274,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "57CE32894C0F0B408B6DD7B4751B0C64",
+					"name": "MovementInputAmount",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "F7AB7E9C46683B8BF1D76285F7FA7BEF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D25C519D4D80E3156ABD76A2E8EDD614",
+			"class": "K2Node_CallFunction",
+			"title": "float > float",
+			"comment": "",
+			"x": 1794,
+			"y": 274,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2D0802EC4A49D25C4A4D67B22F7DC59F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "1F09DB0E4B8078800F1779929615797B",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "B43BF0584EBFED6FD028A582D20D1BE7",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.900000"
+				},
+				{
+					"pinId": "0B4D27B94FA4A50692CA208C4398D2EA",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "79DE3BBB41FE217C32ECF69E1F340B3C",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 850,
+			"y": 242,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0A49951043E711D9B655929F57230FCC",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5DDC4AB34FCDFCAE6D7380ADEA72A720",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "32A701184A93C3C7B7DC84B017E0E16A",
+			"class": "K2Node_CallFunction",
+			"title": "Get Current Acceleration\nLa destinazione è Componente movimento personaggio",
+			"comment": "",
+			"x": 1042,
+			"y": 290,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "73628D5C4C2E60704734B89AE9E9BB7B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.CharacterMovementComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2C5E60B240074C626D4C178E70548372",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "EF6BB11C4B33DDAA0C0F7CA7154A7A32",
+			"class": "K2Node_VariableGet",
+			"title": "Get CharacterMovement",
+			"comment": "",
+			"x": 866,
+			"y": 322,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "93F5EC6F4133453D248C47B0203B4133",
+					"name": "CharacterMovement",
+					"direction": "Output",
+					"type": "object|/Script/Engine.CharacterMovementComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C746F5B747374E64B23843A7E0F748AF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "787634D4499AEBD66CADDF9FA72E1903",
+			"class": "K2Node_CallFunction",
+			"title": "Rotation From X Vector",
+			"comment": "",
+			"x": 1346,
+			"y": 306,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E2188F6649A8E526D3B0EB8D4A2F16F5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "3F10EC6948EBE505E93FC181BCFB6586",
+					"name": "InVec",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "7A7689464A13036D9221BB8A63C1164E",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "78F4F97D4AAF70CCDD1E86BA12466F5D",
+			"class": "K2Node_CallFunction",
+			"title": "Delta (Rotator)",
+			"comment": "",
+			"x": 1554,
+			"y": 322,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2C83D5884FC395755FA3F38A55B722FE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "8EE6007741413CEA11DEE1BD86A4FFB8",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "37E0B0E543F804F5CE381F8211CE7B75",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "BA3A8177464BFB4372C5548E4B84A703",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "B4794F0E41E11D81637A87958B68CE5C",
+					"name": "ReturnValue_Roll",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "CA5039D248FDF78413C5D7A4E4DA5729",
+					"name": "ReturnValue_Pitch",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "09F4FEA3499B41FA3FA24799D075FD71",
+					"name": "ReturnValue_Yaw",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "19A63E4846C202D33A928DB4D703F8F5",
+			"class": "K2Node_CallFunction",
+			"title": "Get Control Rotation\nLa destinazione è Pedina",
+			"comment": "",
+			"x": 1314,
+			"y": 370,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FDB4BAEC482DDB128BC048AAF3A9D868",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Pawn",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E8212E2E45D9F130D37280852FE6222C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "C62CF559446A624FEE70B9ACD7468364",
+			"class": "K2Node_CallFunction",
+			"title": "Absolute (Float)",
+			"comment": "",
+			"x": 1794,
+			"y": 402,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F55147F545E75686F615FAA9D457CE91",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "80B00A974748F2D359E89E92CF083035",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "5F831D264F720E919C74BA9E655AF128",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "0E3A377545EC2214FA3DC9A945701AFE",
+			"class": "EdGraphNode_Comment",
+			"title": "Determine if the character is currently able to sprint based on the Rotation mode and current acceleration (input) rotation. If the character is in the Looking Rotation mode, only allow sprinting if there is full movement input and it is faced forward relative to the camera + or - 50 degrees.",
+			"comment": "Determine if the character is currently able to sprint based on the Rotation mode and current acceleration (input) rotation. If the character is in the Looking Rotation mode, only allow sprinting if there is full movement input and it is faced forward relative to the camera + or - 50 degrees.",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "exec",
+			"fromNodeGuid": "144A8B3649AC177B3AFFA3B02BCD8C5C",
+			"fromPinId": "E1EF8B46412C515D57120786212476EB",
+			"fromPinName": "then",
+			"toNodeGuid": "94F0CF814BBC0FD56E52E797D980AC4E",
+			"toPinId": "0DB9CD3049EC3EA542E80386944AB674",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "exec",
+			"fromNodeGuid": "738835A3449FAB40461516A2B4255379",
+			"fromPinId": "0FBB0C954498721E0CCF3BA49EC12EE3",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "D0E25B634C541F3B49CFB48FE85D06B9",
+			"toPinId": "92BBB9A9410DABD35391468D7DE2EC1B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "data",
+			"fromNodeGuid": "36AC0EE94BED30FC2CBD92B71D72361F",
+			"fromPinId": "0B4D27B94FA4A50692CA208C4398D2EA",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "D0E25B634C541F3B49CFB48FE85D06B9",
+			"toPinId": "8A7915914E9C844C179D6DBABFCDD6A7",
+			"toPinName": "CanSprint"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "exec",
+			"fromNodeGuid": "79DE3BBB41FE217C32ECF69E1F340B3C",
+			"fromPinId": "5DDC4AB34FCDFCAE6D7380ADEA72A720",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "729AE29243A1F9441F48B8A78F1A41AF",
+			"toPinId": "92BBB9A9410DABD35391468D7DE2EC1B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "data",
+			"fromNodeGuid": "CBDF154E47B8DA87AC9C6F88DFE454AC",
+			"fromPinId": "3D1D563C4AF6C28CD91187A487EC8EF9",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "729AE29243A1F9441F48B8A78F1A41AF",
+			"toPinId": "8A7915914E9C844C179D6DBABFCDD6A7",
+			"toPinName": "CanSprint"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "data",
+			"fromNodeGuid": "C62CF559446A624FEE70B9ACD7468364",
+			"fromPinId": "5F831D264F720E919C74BA9E655AF128",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "5E04B51F4B7074A90FB918B3AA0E6B7A",
+			"toPinId": "F8AAC3D647F9C24516BF1B9FFDABAEBA",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "data",
+			"fromNodeGuid": "5E04B51F4B7074A90FB918B3AA0E6B7A",
+			"fromPinId": "1F272125466E60AA8E02AAB48B75B19C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "CBDF154E47B8DA87AC9C6F88DFE454AC",
+			"toPinId": "ED1D12D14FD843443780B9B19DB33F56",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "exec",
+			"fromNodeGuid": "94F0CF814BBC0FD56E52E797D980AC4E",
+			"fromPinId": "694D7CB14FA1B38D5150659BA2634E84",
+			"fromPinName": "else",
+			"toNodeGuid": "B964B0B547800A8C5F0A83A0DA9AA4F1",
+			"toPinId": "92BBB9A9410DABD35391468D7DE2EC1B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "data",
+			"fromNodeGuid": "D25C519D4D80E3156ABD76A2E8EDD614",
+			"fromPinId": "0B4D27B94FA4A50692CA208C4398D2EA",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "CBDF154E47B8DA87AC9C6F88DFE454AC",
+			"toPinId": "8473578B45C3CD0BAA8F1CA216B3C9FF",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "data",
+			"fromNodeGuid": "C22C49734FEF692B532550B1E7826D73",
+			"fromPinId": "57CE32894C0F0B408B6DD7B4751B0C64",
+			"fromPinName": "MovementInputAmount",
+			"toNodeGuid": "36AC0EE94BED30FC2CBD92B71D72361F",
+			"toPinId": "1F09DB0E4B8078800F1779929615797B",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "exec",
+			"fromNodeGuid": "775AB8364CC64383626D428A99AB3F94",
+			"fromPinId": "1D7AE29642A0A4FFC57AFB918CA063D0",
+			"fromPinName": "NewEnumerator3",
+			"toNodeGuid": "93188F9F493EDAE7D45576A0CD7C5B4A",
+			"toPinId": "92BBB9A9410DABD35391468D7DE2EC1B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "data",
+			"fromNodeGuid": "9EE39A0B42342FEA5DA5388872CAB241",
+			"fromPinId": "E82C3661456214805E9ACC99B152348B",
+			"fromPinName": "HasMovementInput",
+			"toNodeGuid": "94F0CF814BBC0FD56E52E797D980AC4E",
+			"toPinId": "26DD8E734AC7580851185BA8699CA28D",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "exec",
+			"fromNodeGuid": "94F0CF814BBC0FD56E52E797D980AC4E",
+			"fromPinId": "70D307274F4FF4DB4F286685F482E4C0",
+			"fromPinName": "then",
+			"toNodeGuid": "775AB8364CC64383626D428A99AB3F94",
+			"toPinId": "2FAFD45F462E6C83BC8432B0F57E315C",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "data",
+			"fromNodeGuid": "9C72E2C946379090131F31B62A0FCEC4",
+			"fromPinId": "8F475D824F88E5864071A1A40BC3F19B",
+			"fromPinName": "RotationMode",
+			"toNodeGuid": "775AB8364CC64383626D428A99AB3F94",
+			"toPinId": "A260596A4E29F0B9547EFCBE66A89B2F",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "exec",
+			"fromNodeGuid": "775AB8364CC64383626D428A99AB3F94",
+			"fromPinId": "8EBC04FA4AE9DC74084E799793D35472",
+			"fromPinName": "NewEnumerator0",
+			"toNodeGuid": "738835A3449FAB40461516A2B4255379",
+			"toPinId": "ED05619A48675146F09FC5AC63C57D34",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "exec",
+			"fromNodeGuid": "775AB8364CC64383626D428A99AB3F94",
+			"fromPinId": "D9B60D7D48864E9FBA0B54AB580CEE5C",
+			"fromPinName": "NewEnumerator1",
+			"toNodeGuid": "79DE3BBB41FE217C32ECF69E1F340B3C",
+			"toPinId": "0A49951043E711D9B655929F57230FCC",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "data",
+			"fromNodeGuid": "21191742463C944605F49688031E5FD6",
+			"fromPinId": "57CE32894C0F0B408B6DD7B4751B0C64",
+			"fromPinName": "MovementInputAmount",
+			"toNodeGuid": "D25C519D4D80E3156ABD76A2E8EDD614",
+			"toPinId": "1F09DB0E4B8078800F1779929615797B",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "data",
+			"fromNodeGuid": "EF6BB11C4B33DDAA0C0F7CA7154A7A32",
+			"fromPinId": "93F5EC6F4133453D248C47B0203B4133",
+			"fromPinName": "CharacterMovement",
+			"toNodeGuid": "32A701184A93C3C7B7DC84B017E0E16A",
+			"toPinId": "73628D5C4C2E60704734B89AE9E9BB7B",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "data",
+			"fromNodeGuid": "32A701184A93C3C7B7DC84B017E0E16A",
+			"fromPinId": "2C5E60B240074C626D4C178E70548372",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "787634D4499AEBD66CADDF9FA72E1903",
+			"toPinId": "3F10EC6948EBE505E93FC181BCFB6586",
+			"toPinName": "InVec"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "data",
+			"fromNodeGuid": "787634D4499AEBD66CADDF9FA72E1903",
+			"fromPinId": "7A7689464A13036D9221BB8A63C1164E",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "78F4F97D4AAF70CCDD1E86BA12466F5D",
+			"toPinId": "8EE6007741413CEA11DEE1BD86A4FFB8",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "data",
+			"fromNodeGuid": "19A63E4846C202D33A928DB4D703F8F5",
+			"fromPinId": "E8212E2E45D9F130D37280852FE6222C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "78F4F97D4AAF70CCDD1E86BA12466F5D",
+			"toPinId": "37E0B0E543F804F5CE381F8211CE7B75",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "CanSprint",
+			"edgeType": "data",
+			"fromNodeGuid": "78F4F97D4AAF70CCDD1E86BA12466F5D",
+			"fromPinId": "09F4FEA3499B41FA3FA24799D075FD71",
+			"fromPinName": "ReturnValue_Yaw",
+			"toNodeGuid": "C62CF559446A624FEE70B9ACD7468364",
+			"toPinId": "80B00A974748F2D359E89E92CF083035",
+			"toPinName": "A"
+		}
+	],
+	"variablesRead": [
+		"Get CharacterMovement",
+		"Get HasMovementInput",
+		"Get MovementInputAmount",
+		"Get RotationMode"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Absolute (Float)",
+		"Delta (Rotator)",
+		"float < float",
+		"float > float",
+		"Get Control Rotation\nLa destinazione è Pedina",
+		"Get Current Acceleration\nLa destinazione è Componente movimento personaggio",
+		"Rotation From X Vector"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Absolute (Float)",
+		"Delta (Rotator)",
+		"float < float",
+		"float > float",
+		"Get Control Rotation\nLa destinazione è Pedina",
+		"Get Current Acceleration\nLa destinazione è Componente movimento personaggio",
+		"Rotation From X Vector"
+	],
+	"flowId": "F001",
+	"graphId": "G014",
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP"
+}

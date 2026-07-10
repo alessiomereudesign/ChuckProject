@@ -1,0 +1,709 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"graph": "UpdateInAirRotation",
+	"entryName": "Update in Air Rotation",
+	"entryNodeGuid": "D423D922408643A4A506EF9E9899EFED",
+	"nodes": [
+		{
+			"nodeGuid": "D423D922408643A4A506EF9E9899EFED",
+			"class": "K2Node_FunctionEntry",
+			"title": "Update in Air Rotation",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "904498D1478D14D0FADFBAACE5BC44E0",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E3DF6DCC487E586693C4EAA99BBDC8F0",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on ALS_RotationMode",
+			"comment": "",
+			"x": 208,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2FAFD45F462E6C83BC8432B0F57E315C",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A260596A4E29F0B9547EFCBE66A89B2F",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "034FA1424623C5895866BCB0DB81BFDC",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "8EBC04FA4AE9DC74084E799793D35472",
+					"name": "NewEnumerator0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D9B60D7D48864E9FBA0B54AB580CEE5C",
+					"name": "NewEnumerator1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1D7AE29642A0A4FFC57AFB918CA063D0",
+					"name": "NewEnumerator3",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "CBEB11814AEC1C57144A829AE3C2DDC3",
+			"class": "K2Node_VariableGet",
+			"title": "Get RotationMode",
+			"comment": "",
+			"x": 208,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8F475D824F88E5864071A1A40BC3F19B",
+					"name": "RotationMode",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "C6D235964E96F2762A71E4BDA439D1FA",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "838D0ACE4E54943FB1AD48AA92A2EAE4",
+			"class": "K2Node_CallFunction",
+			"title": "Get Actor Rotation\nLa destinazione è Actor",
+			"comment": "",
+			"x": 1136,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6D2B09E9436FEC8C77211C9DDC467E49",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A7B280E44E3F04D455DF4AB622B199B3",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "61C340CB4953EA4D479EFEBF36E45942",
+			"class": "K2Node_VariableSet",
+			"title": "Set InAirRotation",
+			"comment": "",
+			"x": 1392,
+			"y": 272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CF34CC654535D81772AE86902551F011",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0ED7287C4632C5027E5514A966F31904",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E9E19B914569D30F3EB1F08E775CC4E2",
+					"name": "InAirRotation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "8337EC994C0E6C8E6B6E86BE49353F25",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "371F2FF14C2E59D5AEF8E8931B11E28C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "08C80659490735914D8DF0BD9701E7AE",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 576,
+			"y": -32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F6F087EC4FBD52D202ED78A4D90A569C",
+					"name": "InAirRotation",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "DE313AB944DA700DE67451B8E0DCEDCB",
+					"name": "InAirRotation_Roll",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "DC99740C4B8FEB3C693C7E8EB27D709B",
+					"name": "InAirRotation_Pitch",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "D645933347A341C0974122801D1E4A58",
+					"name": "InAirRotation_Yaw",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "1CDCF28F446564EDF7EEDC9F4B562680",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F804013C41C63A63D048909253EEB696",
+			"class": "K2Node_CallFunction",
+			"title": "Smooth Character Rotation\nLa destinazione è ALS Base Character BP",
+			"comment": "",
+			"x": 880,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C18EBFC149EF92ACD8F3AD80A281B4D9",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "75DDDB0C4F9C3C375C6BC4B82F0E3C2D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7188929344477A3EF7954AAE5527B0C2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C896E6E4E3AFF00742978884C4754B7",
+					"name": "Target",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "ED1E45E9409B56938D9D7482BC6345BC",
+					"name": "Target_Roll",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "E9C43C094EFAB5A35CB985AF39153BAD",
+					"name": "Target_Pitch",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "B2EB6B1E45A0FCB449F4C3978F08E13C",
+					"name": "Target_Yaw",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "6EF12F564FDBF9B181B6FBA67F625E32",
+					"name": "TargetInterpSpeed(Const)",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "A5214185451ADD101E4937B58A3B14AC",
+					"name": "ActorInterpSpeed(Smooth)",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "15.000000"
+				}
+			]
+		},
+		{
+			"nodeGuid": "DA4D7A384F6F815FE50DF4B67154CDD3",
+			"class": "K2Node_CallFunction",
+			"title": "Smooth Character Rotation\nLa destinazione è ALS Base Character BP",
+			"comment": "",
+			"x": 784,
+			"y": -144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C18EBFC149EF92ACD8F3AD80A281B4D9",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "75DDDB0C4F9C3C375C6BC4B82F0E3C2D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7188929344477A3EF7954AAE5527B0C2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C896E6E4E3AFF00742978884C4754B7",
+					"name": "Target",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "D7EDB7F44F2BB863ED7FEF8A7FDB1009",
+					"name": "Target_Roll",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "37C191CB4534ADF486DE3683F59A482B",
+					"name": "Target_Pitch",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "E6063D014DF7494F2C64A9A4CB6DACC7",
+					"name": "Target_Yaw",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "FADB60CE45872085099FB3B05791B151",
+					"name": "TargetInterpSpeed(Const)",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "A5214185451ADD101E4937B58A3B14AC",
+					"name": "ActorInterpSpeed(Smooth)",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "5.000000"
+				}
+			]
+		},
+		{
+			"nodeGuid": "0C7D28E644FE0676227B06B99B3B5873",
+			"class": "K2Node_CallFunction",
+			"title": "Get Control Rotation\nLa destinazione è Pedina",
+			"comment": "",
+			"x": 576,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EF1408B6423C5B12B6C6BE8567810249",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Pawn",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B55566C04CF0BD988D0A0BA0EC8FDB67",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "CA1C992440B5AC9EDFDBDAAA962AC98D",
+					"name": "ReturnValue_Roll",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "9EF507FA46477B376DC7978AB60D5EBB",
+					"name": "ReturnValue_Pitch",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "194FF01B4832DC53E265B486CF7E6793",
+					"name": "ReturnValue_Yaw",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "29D38FBC46DD20A991BB349E114A98FF",
+			"class": "EdGraphNode_Comment",
+			"title": "Velocity / Looking Direction Rotation",
+			"comment": "Velocity / Looking Direction Rotation",
+			"x": 544,
+			"y": -208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "9A768ACA46364CE1C37DC285D798AA91",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 448,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CE945D8D4A9B2E782E00F0BFA1235178",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E570C7074520AF477FD12EA5AF6081E6",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "708FEFE34A50B3CFD4A65486F226417B",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 560,
+			"y": -96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7A4FA51E4A700BDFB370F8ACF5F664BF",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AE07B0C6407D952BFAC5D9940863584D",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A8E66EB046E8B93051138AA052B50E03",
+			"class": "EdGraphNode_Comment",
+			"title": "Aiming Rotation",
+			"comment": "Aiming Rotation",
+			"x": 544,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "70A677AB47CC96ADE4C884810AF3E1FB",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 560,
+			"y": 288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C0058FDB47A36421732542BE36B7055F",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6DDAA2A94CB54AA436BF949B462464D8",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateInAirRotation",
+			"edgeType": "exec",
+			"fromNodeGuid": "D423D922408643A4A506EF9E9899EFED",
+			"fromPinId": "904498D1478D14D0FADFBAACE5BC44E0",
+			"fromPinName": "then",
+			"toNodeGuid": "E3DF6DCC487E586693C4EAA99BBDC8F0",
+			"toPinId": "2FAFD45F462E6C83BC8432B0F57E315C",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateInAirRotation",
+			"edgeType": "data",
+			"fromNodeGuid": "CBEB11814AEC1C57144A829AE3C2DDC3",
+			"fromPinId": "8F475D824F88E5864071A1A40BC3F19B",
+			"fromPinName": "RotationMode",
+			"toNodeGuid": "E3DF6DCC487E586693C4EAA99BBDC8F0",
+			"toPinId": "A260596A4E29F0B9547EFCBE66A89B2F",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateInAirRotation",
+			"edgeType": "exec",
+			"fromNodeGuid": "E3DF6DCC487E586693C4EAA99BBDC8F0",
+			"fromPinId": "8EBC04FA4AE9DC74084E799793D35472",
+			"fromPinName": "NewEnumerator0",
+			"toNodeGuid": "9A768ACA46364CE1C37DC285D798AA91",
+			"toPinId": "CE945D8D4A9B2E782E00F0BFA1235178",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateInAirRotation",
+			"edgeType": "exec",
+			"fromNodeGuid": "E3DF6DCC487E586693C4EAA99BBDC8F0",
+			"fromPinId": "D9B60D7D48864E9FBA0B54AB580CEE5C",
+			"fromPinName": "NewEnumerator1",
+			"toNodeGuid": "9A768ACA46364CE1C37DC285D798AA91",
+			"toPinId": "CE945D8D4A9B2E782E00F0BFA1235178",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateInAirRotation",
+			"edgeType": "exec",
+			"fromNodeGuid": "E3DF6DCC487E586693C4EAA99BBDC8F0",
+			"fromPinId": "1D7AE29642A0A4FFC57AFB918CA063D0",
+			"fromPinName": "NewEnumerator3",
+			"toNodeGuid": "70A677AB47CC96ADE4C884810AF3E1FB",
+			"toPinId": "C0058FDB47A36421732542BE36B7055F",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateInAirRotation",
+			"edgeType": "data",
+			"fromNodeGuid": "838D0ACE4E54943FB1AD48AA92A2EAE4",
+			"fromPinId": "A7B280E44E3F04D455DF4AB622B199B3",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "61C340CB4953EA4D479EFEBF36E45942",
+			"toPinId": "E9E19B914569D30F3EB1F08E775CC4E2",
+			"toPinName": "InAirRotation"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateInAirRotation",
+			"edgeType": "exec",
+			"fromNodeGuid": "F804013C41C63A63D048909253EEB696",
+			"fromPinId": "75DDDB0C4F9C3C375C6BC4B82F0E3C2D",
+			"fromPinName": "then",
+			"toNodeGuid": "61C340CB4953EA4D479EFEBF36E45942",
+			"toPinId": "CF34CC654535D81772AE86902551F011",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateInAirRotation",
+			"edgeType": "data",
+			"fromNodeGuid": "08C80659490735914D8DF0BD9701E7AE",
+			"fromPinId": "D645933347A341C0974122801D1E4A58",
+			"fromPinName": "InAirRotation_Yaw",
+			"toNodeGuid": "DA4D7A384F6F815FE50DF4B67154CDD3",
+			"toPinId": "E6063D014DF7494F2C64A9A4CB6DACC7",
+			"toPinName": "Target_Yaw"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateInAirRotation",
+			"edgeType": "exec",
+			"fromNodeGuid": "70A677AB47CC96ADE4C884810AF3E1FB",
+			"fromPinId": "6DDAA2A94CB54AA436BF949B462464D8",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "F804013C41C63A63D048909253EEB696",
+			"toPinId": "C18EBFC149EF92ACD8F3AD80A281B4D9",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateInAirRotation",
+			"edgeType": "data",
+			"fromNodeGuid": "0C7D28E644FE0676227B06B99B3B5873",
+			"fromPinId": "194FF01B4832DC53E265B486CF7E6793",
+			"fromPinName": "ReturnValue_Yaw",
+			"toNodeGuid": "F804013C41C63A63D048909253EEB696",
+			"toPinId": "B2EB6B1E45A0FCB449F4C3978F08E13C",
+			"toPinName": "Target_Yaw"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateInAirRotation",
+			"edgeType": "exec",
+			"fromNodeGuid": "708FEFE34A50B3CFD4A65486F226417B",
+			"fromPinId": "AE07B0C6407D952BFAC5D9940863584D",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "DA4D7A384F6F815FE50DF4B67154CDD3",
+			"toPinId": "C18EBFC149EF92ACD8F3AD80A281B4D9",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateInAirRotation",
+			"edgeType": "exec",
+			"fromNodeGuid": "9A768ACA46364CE1C37DC285D798AA91",
+			"fromPinId": "E570C7074520AF477FD12EA5AF6081E6",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "708FEFE34A50B3CFD4A65486F226417B",
+			"toPinId": "7A4FA51E4A700BDFB370F8ACF5F664BF",
+			"toPinName": "InputPin"
+		}
+	],
+	"variablesRead": [
+		"Get RotationMode",
+		"Ottieni"
+	],
+	"variablesWritten": [
+		"Set InAirRotation"
+	],
+	"functionsCalled": [
+		"Get Actor Rotation\nLa destinazione è Actor",
+		"Get Control Rotation\nLa destinazione è Pedina",
+		"Smooth Character Rotation\nLa destinazione è ALS Base Character BP"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Actor Rotation\nLa destinazione è Actor",
+		"Get Control Rotation\nLa destinazione è Pedina",
+		"Smooth Character Rotation\nLa destinazione è ALS Base Character BP"
+	],
+	"flowId": "F001",
+	"graphId": "G058",
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP"
+}

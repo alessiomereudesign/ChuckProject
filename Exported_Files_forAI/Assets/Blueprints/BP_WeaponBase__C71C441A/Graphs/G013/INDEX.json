@@ -1,0 +1,25 @@
+{
+	"graphId": "G013",
+	"name": "Reload",
+	"graphName": "Reload",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 2,
+	"edgeCount": 1,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G013/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G013/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G013/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Reload",
+			"entryNodeGuid": "AF4781DC43282686DDF733AEE529D1D2",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G013/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G013/F001.json",
+			"textFile": "Flows/G013/F001.txt",
+			"jsonFile": "Flows/G013/F001.json",
+			"nodeCount": 2
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"assetName": "ALS_AI_Controller",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_AI_Controller.ALS_AI_Controller",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_AI_ALS_AI_Controller",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Evento On Possess",
+			"graph": "EventGraph",
+			"nodeGuid": "ADD95A664F29837533A83F819DCECE5A",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Construction Script",
+			"graph": "UserConstructionScript",
+			"nodeGuid": "E599C7444188E549FF538D95A8039894",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

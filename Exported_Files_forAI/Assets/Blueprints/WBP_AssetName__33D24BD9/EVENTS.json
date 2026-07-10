@@ -1,0 +1,36 @@
+{
+	"assetName": "WBP_AssetName",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/WBP_AssetName.WBP_AssetName",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_WBP_AssetName",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Evento Pre Construct",
+			"graph": "EventGraph",
+			"nodeGuid": "3A8BF9B04268B3C929F8D4A4AA6655F6",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento Construct",
+			"graph": "EventGraph",
+			"nodeGuid": "7A6AD75F44D18447AE080A9DF5829F93",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento Tick",
+			"graph": "EventGraph",
+			"nodeGuid": "A49B794D47778F0CEE9C9482D55A528D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Set Asset Name",
+			"graph": "SetAssetName",
+			"nodeGuid": "1E16B376489075D244E8A084836F11B7",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

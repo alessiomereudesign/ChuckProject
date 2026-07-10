@@ -1,0 +1,84 @@
+Asset: ALS_AnimBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP
+GraphId: G286
+Graph: CalculateRelativeAccelerationAmount
+FlowId: F001
+Entry: Calculate Relative Acceleration Amount
+NodeGuid: 02EF61164C9901BE72FB7B8DA66F359C
+
+Exec Flow:
+1. Calculate Relative Acceleration Amount [K2Node_FunctionEntry] 02EF61164C9901BE72FB7B8DA66F359C
+2. Get Acceleration [K2Node_VariableGet] 25A1C13A47794DDF9365B5B008BF50C3
+3. Dot Product [K2Node_CallFunction] E703333646F18D70446780AD82EDCFF4
+4. Get Velocity [K2Node_VariableGet] 926825014836A9609CEFBB868FEE9886
+5. float > float [K2Node_CallFunction] 92152C2F44A241044DCAC78E9D92B73C
+6. Ramo [K2Node_IfThenElse] 0ADB23D54756598E7B9DC0B8CB6AFE8F
+7. Get Character [K2Node_VariableGet] D3F66CEB490F024ADB6304983822FADE
+8. Get Max Acceleration
+La destinazione è Componente movimento personaggio [K2Node_CallFunction] BDF0F84F4F91886E8BA598A71487CEA0
+9. Get CharacterMovement [K2Node_VariableGet] EE60C21740CFE3880337FE98A9CC2314
+10. Get Acceleration [K2Node_VariableGet] E67948AA4FDA57A09F45CDB29AD72D1D
+11. Vector Clamp Size Max [K2Node_CallFunction] B2A9615043EC125D24E533A411ACEA1D
+12. vector / float [K2Node_CallFunction] 7FFD52DC4D653D85611E458D6E73E98D
+13. Nodo di restituzione [K2Node_FunctionResult] A0A779ED48CFFD24591BAAA862395BFC
+14. Nodo di reindirizzamento [K2Node_Knot] AF10D7D346DA99A51234DBA30E2A3644
+15. Unrotate Vector [K2Node_CallFunction] 8421085344EA719767928F94465867DD
+16. Get Character [K2Node_VariableGet] 6E3C0D0F45A1F0733EAA62B1A22D3A93
+17. Get Actor Rotation
+La destinazione è Actor [K2Node_CallFunction] 124C849F4E0AD038AE2CB997861F4182
+18. Get Character [K2Node_VariableGet] 630275D242E4F5EF9D7E75B44814CB3D
+19. Get CharacterMovement [K2Node_VariableGet] 64E6C89D47133C976C687C96CAA2E562
+20. Get Acceleration [K2Node_VariableGet] 7C0C380444E66FFB62177A9D8B25E585
+21. Vector Clamp Size Max [K2Node_CallFunction] 70D181A440F93A0C4A392983FA57871E
+22. vector / float [K2Node_CallFunction] 9307A7BA407065A1F29E8C99B39ED5D2
+23. Nodo di restituzione [K2Node_FunctionResult] 7268270642470FFC57F7968AE1371150
+24. Nodo di reindirizzamento [K2Node_Knot] 57BDAFCE47960FCCDCBD8ABDA4EA85C7
+25. Unrotate Vector [K2Node_CallFunction] 95114E7E4D7B39B3CE408AB4F486F01A
+26. Get Character [K2Node_VariableGet] 53DFDF5B465C45F9ABF048904B5CB0F2
+27. Get Actor Rotation
+La destinazione è Actor [K2Node_CallFunction] E80B3BA64266D9AF61D86094F3D1E459
+28. Get Max Braking Deceleration
+La destinazione è Componente movimento personaggio [K2Node_CallFunction] 7B456A3E4766B19D615EADB9DBCFACBA
+29. Calculate the Relative Acceleration Amount. This value represents the current amount of acceleration / deceleration relative to the actor rotation. It is normalized to a range of -1 to 1 so that -1 equals the Max Braking Deceleration, and 1 equals the Max Acceleration of the Character Movement Component. [EdGraphNode_Comment] D0536D81439CA8C3FB1BF590A19EBBD9
+
+Variables Read:
+- Get Acceleration
+- Get Character
+- Get CharacterMovement
+- Get Velocity
+
+Variables Written:
+- none
+
+External Calls:
+- Dot Product
+- float > float
+- Get Actor Rotation
+La destinazione è Actor
+- Get Max Acceleration
+La destinazione è Componente movimento personaggio
+- Get Max Braking Deceleration
+La destinazione è Componente movimento personaggio
+- Unrotate Vector
+- vector / float
+- Vector Clamp Size Max
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Dot Product
+- float > float
+- Get Actor Rotation
+La destinazione è Actor
+- Get Max Acceleration
+La destinazione è Componente movimento personaggio
+- Get Max Braking Deceleration
+La destinazione è Componente movimento personaggio
+- Unrotate Vector
+- vector / float
+- Vector Clamp Size Max

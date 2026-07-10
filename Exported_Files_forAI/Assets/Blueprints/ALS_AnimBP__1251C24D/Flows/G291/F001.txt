@@ -1,0 +1,38 @@
+Asset: ALS_AnimBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP
+GraphId: G291
+Graph: CanDynamicTransition
+FlowId: F001
+Entry: Can Dynamic Transition
+NodeGuid: 92DBF0B94CC2A4E0DD4BF785DB6DD218
+
+Exec Flow:
+1. Can Dynamic Transition [K2Node_FunctionEntry] 92DBF0B94CC2A4E0DD4BF785DB6DD218
+2. Nodo di restituzione [K2Node_FunctionResult] 2F2B63D741C0E2F51619CC91161EF7FC
+3. Get Curve Value
+La destinazione è Istanza animazione [K2Node_CallFunction] 954A69A64CAF4CBEE8C908ACCAEF6E06
+4. Equal (Float) [K2Node_CallFunction] F2D07D484C016F1FE93DDDB023C84BEC
+5. Only perform a Dynamic Transition check if the "Enable Transition" curve is fully weighted. The Enable_Transition curve is modified within certain states of the AnimBP so that the character can only transition while in those states. [EdGraphNode_Comment] 45F1BC12455941DFA26991A5429666F9
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- Equal (Float)
+- Get Curve Value
+La destinazione è Istanza animazione
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Equal (Float)
+- Get Curve Value
+La destinazione è Istanza animazione

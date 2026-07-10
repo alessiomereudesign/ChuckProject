@@ -1,0 +1,29 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G018
+Graph: UserConstructionScript
+FlowId: F001
+Entry: Construction Script
+NodeGuid: E49F0BEE47F1B82E87A5A897CEC0257B
+
+Exec Flow:
+1. Construction Script [K2Node_FunctionEntry] E49F0BEE47F1B82E87A5A897CEC0257B
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

@@ -1,0 +1,35 @@
+{
+	"graphId": "G001",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 2,
+	"edgeCount": 0,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Evento BeginPlay",
+			"entryNodeGuid": "0C721D224DEAE1F1951FD99E3A10FB60",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 2
+		},
+		{
+			"flowId": "F002",
+			"entryName": "Evento Tick",
+			"entryNodeGuid": "E647113B45AEE9F71517D3BC048C39D7",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Flows/G001/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Flows/G001/F002.json",
+			"textFile": "Flows/G001/F002.txt",
+			"jsonFile": "Flows/G001/F002.json",
+			"nodeCount": 2
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"graphId": "G029",
+	"name": "UpdateLayeringColors",
+	"graphName": "UpdateLayeringColors",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 80,
+	"edgeCount": 81,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G029/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G029/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G029/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Update Layering Colors",
+			"entryNodeGuid": "84A58B2F41F746577763FFA5F82DF9F3",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G029/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G029/F001.json",
+			"textFile": "Flows/G029/F001.txt",
+			"jsonFile": "Flows/G029/F001.json",
+			"nodeCount": 80
+		}
+	]
+}

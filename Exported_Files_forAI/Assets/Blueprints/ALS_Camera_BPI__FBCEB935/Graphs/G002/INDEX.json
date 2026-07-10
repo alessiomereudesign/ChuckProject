@@ -1,0 +1,25 @@
+{
+	"graphId": "G002",
+	"name": "BPI_Get_3P_TraceParams",
+	"graphName": "BPI_Get_3P_TraceParams",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 2,
+	"edgeCount": 1,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Graphs/G002/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "BPI Get 3P Trace Params",
+			"entryNodeGuid": "E2355BB94C232D669E4743938ED08119",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Flows/G002/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Flows/G002/F001.json",
+			"textFile": "Flows/G002/F001.txt",
+			"jsonFile": "Flows/G002/F001.json",
+			"nodeCount": 2
+		}
+	]
+}

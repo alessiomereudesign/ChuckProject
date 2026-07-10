@@ -1,0 +1,25 @@
+{
+	"graphId": "G014",
+	"name": "SpawnMuzzleFX",
+	"graphName": "SpawnMuzzleFX",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 7,
+	"edgeCount": 7,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G014/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G014/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G014/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Spawn Muzzle FX",
+			"entryNodeGuid": "22D576E7422AFF2E6148C39C1D242DB9",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G014/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G014/F001.json",
+			"textFile": "Flows/G014/F001.txt",
+			"jsonFile": "Flows/G014/F001.json",
+			"nodeCount": 7
+		}
+	]
+}

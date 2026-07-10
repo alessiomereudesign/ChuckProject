@@ -1,0 +1,297 @@
+Asset: ALS_Player_Controller
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller.ALS_Player_Controller
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_Player_Controller
+GraphId: G002
+Graph: EventGraph
+FlowId: F003
+Entry: HideInteractionPrompt
+Custom Event
+NodeGuid: 2B9F6B77432382892B4249A3A0DA3AC4
+
+Exec Flow:
+1. Evento On Possess [K2Node_Event] E50824C044B23AC9C4961EA42A0A1C75
+2. Get PlayerCameraManager [K2Node_VariableGet] 9B4DF1D3440A6865A15906A8D8741026
+3. Cast To ALS_PlayerCameraManager [K2Node_DynamicCast] 55F2BD28479F02D96C801CA45891059A
+4. Scheda [K2Node_InputKey] 71BC421841E601E4EAE925A1FE25A25E
+5. Evento BeginPlay [K2Node_Event] 02ACF71547FBD9721918B489F3FA7195
+6. Create WBP HUD Widget [K2Node_CreateWidget] 2AC026674A6FC6F86D01388BEF6CAD24
+7. Auto-riferimento [K2Node_Self] 4F8C511642DFC594E299B5851FBC7E78
+8. Add to Viewport
+La destinazione è User Widget [K2Node_CallFunction] C832922B4D5E7583D27BA5AB1445D606
+9. Set ShowHUD [K2Node_VariableSet] 57F2DDE04DFC642B2A5345B44431D0D8
+10. Get ShowHUD [K2Node_VariableGet] 430488E849328D93B7AF9FB748666630
+11. NOT Boolean [K2Node_CallFunction] C5D7DDB04D04B956D5C09480B4327011
+12. Get ShowTraces [K2Node_VariableGet] 3AD9443D4880FF01310CF4BCBDCB1ED1
+13. T [K2Node_InputKey] C83A6C8A4BCB2E97D5204BBA5C51D406
+14. Set ShowTraces [K2Node_VariableSet] 0DEFEFBA4B7B216C82596CBB4CE27085
+15. NOT Boolean [K2Node_CallFunction] C0F44C7D46B947B8474D609DD8C6E2F5
+16. Y [K2Node_InputKey] 29B9F5A7445A0E53A84DF09BB11B4E7E
+17. Set ShowCharacterInfo [K2Node_VariableSet] 3A4DAE384A7A14614FE826B3EFE2FCB8
+18. Get ShowCharacterInfo [K2Node_VariableGet] E34AA4C84E3E6CB323A9C0BFBDD1E919
+19. NOT Boolean [K2Node_CallFunction] 2218A3FC4998D797AC37ECB5F09AB211
+20. I [K2Node_InputKey] E04507834F1C88B348B451ADE7047332
+21. Set ShowDebugShapes [K2Node_VariableSet] 48AD8BB9495E799E852811A4F4047C27
+22. Get ShowDebugShapes [K2Node_VariableGet] 0480BCBE41C2CAA6C5EEE1BA396E044F
+23. NOT Boolean [K2Node_CallFunction] B7AA9A3F4DAB82CF5B0E7285E1AB8F72
+24. Set DebugFocusCharacter [K2Node_VariableSet] 4EB42657416BFAF3F25024B2D5C28336
+25. Virgola [K2Node_InputKey] 2CAE3BED4B15B948182E85890003DE12
+26. Periodo [K2Node_InputKey] B6F1F5234BA37B01CB8530A914855615
+27. Get All Actors Of Class [K2Node_CallFunction] FCF7866940149E44E04A2B8F885E8D32
+28. Get AvailableDebugCharacters [K2Node_VariableGet] E52488AE479F5A34889E53A8AB3C2451
+29. Set DebugFocusCharacter [K2Node_VariableSet] A4AA068448C103A5B3BE3FAA2849B548
+30. Debug [EdGraphNode_Comment] 4BAE4FBB4AD8E1C9777D8AB9086BBC52
+31. On Possess
+La destinazione è ALS Player Camera Manager [K2Node_CallFunction] A32CDC534A89A4D095A7958D0F84218F
+32. Nodo di reindirizzamento [K2Node_Knot] 1177F8DA424A9484344F85AF0A58C07C
+33. Nodo di reindirizzamento [K2Node_Knot] 1E2F459147644A56596EB0B1F1CD820D
+34. Set DebugFocusCharacter [K2Node_VariableSet] D2056C114407425F31F323A05DDC9D26
+35. Set AvailableDebugCharacters [K2Node_VariableSet] 95B41BDC4AD5BE80EE361D8F146464F5
+36. Get Player Character [K2Node_CallFunction] 2E3F7E8D47436139BB6062B6B287A341
+37. Get AvailableDebugCharacters [K2Node_VariableGet] 83FF663240E0D7D1614C918161185568
+38. U [K2Node_InputKey] D46E48834A54BB7DF694B6A36AD8F221
+39. Set ShowLayerColors [K2Node_VariableSet] 198F071C41E014E71919EB885D8EA5A1
+40. Get ShowLayerColors [K2Node_VariableGet] 831D45AE412AAC99D961139DE413DCF5
+41. NOT Boolean [K2Node_CallFunction] 8EBFE0874E7833708FD8D2A5DA9DE333
+42. Set DebugView [K2Node_VariableSet] A1F4A36C4E228285B95B55A09FD33A73
+43. Get DebugView [K2Node_VariableGet] EDA8B3F2490846418795BE962E28E631
+44. NOT Boolean [K2Node_CallFunction] 590DF4AB40387A6921AD1AB76C8386DB
+45. V [K2Node_InputKey] D18B0C3D41A3F678FD9A8AA21F41C8DF
+46. Call "OnPossess" in ALS Player Camera Manager when possessing a pawn [EdGraphNode_Comment] B53409964783FC69A6D750BA642E2E86
+47. Create and add HUD to Viewport [EdGraphNode_Comment] 1E53A6B24A7CB837E109D284F2CBE64B
+48. Search for all ALS Characters and populate array. Used to switch target character when viewing character info in the HUD [EdGraphNode_Comment] EFDB6D924E63905185B2C3A5501B26D0
+49. InputAction OpenOverlayMenu [K2Node_InputAction] 6E0A074C483E1B79CFCF5FA35765401B
+50. Create WBP Custom Radial Menu Widget [K2Node_CreateWidget] 5048A46746D3C02CD7B6C6B38FAD2252
+51. Auto-riferimento [K2Node_Self] 7B0A60B74D98BF8595814D91C2D3AAB0
+52. Set OverlaySwitcher [K2Node_VariableSet] 92AA27D1435848FF89BE16BC0FB27907
+53. Add to Viewport
+La destinazione è User Widget [K2Node_CallFunction] 253AD7544B4F2F83D59A1B8D54DF9B77
+54. Get OverlaySwitcher [K2Node_VariableGet] F604EC2D4AC18EE839A70886530934B1
+55. Remove from Parent
+La destinazione è Widget [K2Node_CallFunction] 4BD74FC043177CF916BA82A7B889C927
+56. Get OverlaySwitcher [K2Node_VariableGet] FC4B64C74930EADADC9ABEA5BF763D85
+57. Select Overlay State
+La destinazione è Overlay State Switcher [K2Node_CallFunction] 33EAD816432C6F0AFCCF20B30F6927CE
+58. Set Global Time Dilation [K2Node_CallFunction] 69C7F51847083AD86E2ADA90BD523E5D
+59. InputAction CycleOverlayUp [K2Node_InputAction] E3C9C1AD486989A8BB6B2C82252318B3
+60. InputAction CycleOverlayDown [K2Node_InputAction] FDD487364787EC569B7F84BE4DDD635A
+61. Ottieni [K2Node_VariableGet] 8B2B98984E626CCA3AD2E28485E2D106
+62. Cycle State
+La destinazione è Overlay State Switcher [K2Node_CallFunction] 0E50404343B3A4DD52C5428BBC3241B6
+63. Ottieni [K2Node_VariableGet] 5C0CED2B4BFA5E72366499AA98B6D99E
+64. Cycle State
+La destinazione è Overlay State Switcher [K2Node_CallFunction] 9731897D4A81B57E6A397E87BB9C6C62
+65. Get DebugFocusCharacter [K2Node_VariableGet] 7F3497DE48ECE61339DFD1B55C06D0DF
+66. Get DebugFocusCharacter [K2Node_VariableGet] D98D2EE94B3B48085DA925AAB4333EDC
+67. ML Get Previous Array Item [K2Node_MacroInstance] 9789EF374F3B27E2188BD6A0A40841ED
+68. ML Get Next Array Item [K2Node_MacroInstance] 93FB371C4F92CA174CAC51B92047292C
+69. Switch Overlay States [EdGraphNode_Comment] 72864DB04987BDE234EBAFAAB00031FB
+70. Set OverlayMenuOpen [K2Node_VariableSet] DD110C5C41E1A111677118BC64ECD74C
+71. Set OverlayMenuOpen [K2Node_VariableSet] 52061F71419F706CEE632ABF9D7A2250
+72. Play Sound 2D [K2Node_CallFunction] FC75D5F9476F074AE468C6BD9E927AA2
+73. Play Sound 2D [K2Node_CallFunction] 78E110C34735B0A4DE32A38CA107137C
+74. Play Sound 2D [K2Node_CallFunction] 353D2B854EDB40C587CE6EB05C24758B
+75. Play Sound 2D [K2Node_CallFunction] 76A4F82342C8F6EF7448A99E98B2C68A
+76. Ramo [K2Node_IfThenElse] CB5A762B4FD517F4C30FDC9BB553603F
+77. Get OverlayMenuOpen [K2Node_VariableGet] B8DBE63241A48B9FF3EE38B0FDAFE37E
+78. Ramo [K2Node_IfThenElse] 0B2B5BE94F6F69679132B6AA9483B324
+79. Get OverlayMenuOpen [K2Node_VariableGet] A42ADC614FFCD928524C80A58A2DCA78
+80. This controller is responsible for managing the debug settings, displaying the Debug HUD, and managing the Overlay State menu. All other character relevant input can be found within the ALS_Base_CharacterBP. [EdGraphNode_Comment] 0E6F66124E939D752D331FAFECFD0B7C
+81. Set Global Time Dilation [K2Node_CallFunction] 670E3B0B4DE7409D76C93EA011FBC4E8
+82. Set Global Time Dilation [K2Node_CallFunction] E887312349C84520F23949B33C0AAB64
+83. Z [K2Node_InputKey] C7F277214CF0BF0107D54094B5685742
+84. Set Slomo [K2Node_VariableSet] B96C68EC42F406C9C7CBE59CCE5A8A3E
+85. Ramo [K2Node_IfThenElse] FAA8BFB042336D0F9F7479A3A5ACCFC5
+86. Get Slomo [K2Node_VariableGet] 3369A4974DD141A4C79A08A80CCAF41C
+87. Set Global Time Dilation [K2Node_CallFunction] 1F959111446AB322C572FB89B964A051
+88. Ramo [K2Node_IfThenElse] 51706C0C47DDA74199D12FA26146E9B7
+89. Get Slomo [K2Node_VariableGet] ACD56A1749DA9DAD6603989088763CF5
+90. Ramo [K2Node_IfThenElse] 21E080EE42B4B1E41CA881AAC3FF5DFC
+91. Get Slomo [K2Node_VariableGet] 43E71F7044665EBC27628A8055DBC69F
+92. NOT Boolean [K2Node_CallFunction] FD14DDB54D75A13D7734E8ACD1AD310F
+93. Nodo di reindirizzamento [K2Node_Knot] C8A28C8446E42E0085EEAA92671C7A16
+94. Nodo di reindirizzamento [K2Node_Knot] 7CE75A6C419BC4EEB34827961FB079DE
+95. OLD-Original [EdGraphNode_Comment] CE52C87D4AC81834CDD1328C2E8A37C4
+96. Create Overlay State Switcher Widget [K2Node_CreateWidget] 648462BB463574BE938824A1C91DF85F
+97. Auto-riferimento [K2Node_Self] FC6853714197D0756A4325A0EB9177DD
+98. Set CustomRadialMenuRef [K2Node_VariableSet] 1DC2E18F4C4F075993CF97AECBF799C1
+99. Get CustomRadialMenuRef [K2Node_VariableGet] D3660E01466F12813EF58DBFA5514DBF
+100. Close Radial Menu
+La destinazione è WBP Custom Radial Menu [K2Node_CallFunction] 383B0CE146C99222A746B0A4938D8FFF
+101. new [EdGraphNode_Comment] C6D25DAD4785CFC3BE96689902895131
+102. Nodo di reindirizzamento [K2Node_Knot] 03D6ED5345AB9686CCEB54951E8BAB5E
+103. Nodo di reindirizzamento [K2Node_Knot] 3A6441DB43DDDD9D0297E58C53EC6C6C
+104. Auto-riferimento [K2Node_Self] 39D98D77483EEEE70E5CED8B8A89239A
+105. Nodo di reindirizzamento [K2Node_Knot] E1F6E7364BDEB729ECF6A4995BCE7B08
+106. Set Input Mode Game And UI [K2Node_CallFunction] BFD5BBBC4994B52FA8C3088D8AD52582
+107. Set Ignore Move Input
+La destinazione è Controller [K2Node_CallFunction] 36386B1045357A286277EF9E7173D36D
+108. Set Ignore Look Input
+La destinazione è Controller [K2Node_CallFunction] 0A20087147E41545D4BA24AD1F6AFC61
+109. Set Ignore Move Input
+La destinazione è Controller [K2Node_CallFunction] FD90E0304230EFB1B56476AD2F469781
+110. Set Ignore Look Input
+La destinazione è Controller [K2Node_CallFunction] AB28E681480496417DF61FA0F94A59E7
+111. Nodo di reindirizzamento [K2Node_Knot] 767FC381487431BA5427E49291B14F55
+112. Set Input Mode Game Only [K2Node_CallFunction] 0EBF922C4BC04E27DE65D7BC5B160CE9
+113. Auto-riferimento [K2Node_Self] 089FEE80474D7A24CFD40BACCCFDC35D
+114. Set Chuck_HUD [K2Node_VariableSet] 82651833446C23D696D5B79DB704722C
+115. Sequenza [K2Node_ExecutionSequence] 07A064CD45B7BFFFFA8A1AB3844A814A
+116. Get Owning Player Pawn
+La destinazione è User Widget [K2Node_CallFunction] 4E7B7FD7432A72F5F0BEE0ACEB4C746A
+117. Nodo di reindirizzamento [K2Node_Knot] E7C097644AD6A10FA8862A85E3F5D260
+118. Nodo di reindirizzamento [K2Node_Knot] A3F4D7274CBF749E2096C5B5420DB0EF
+119. Cast To ALS_ChuckBP [K2Node_DynamicCast] 5204A69541709BC57AC97AA47AAAB443
+120. Nodo di reindirizzamento [K2Node_Knot] 8F730BFA41CFA018899A958B3EB4C95F
+121. Create WBP Generic Prompt Widget [K2Node_CreateWidget] 72366E24499E987D796F7B88110384AF
+122. Set GenericPromptRef [K2Node_VariableSet] 05DD7F7B42CD72A3BF2053A85E867C75
+123. Add to Viewport
+La destinazione è User Widget [K2Node_CallFunction] 2B8ED8AA418E30FCE0A8E5A31623CAB0
+124. Set Visibility
+La destinazione è Widget [K2Node_CallFunction] 8424BB6C46ADCA4BCD177DB14AE0992D
+125. Nodo di reindirizzamento [K2Node_Knot] F4FE24124798F46C7767A3B276E22C82
+126. Nodo di reindirizzamento [K2Node_Knot] CA66F13A4E81FACA3AB64A9975C9E482
+127. ShowInteractionPrompt
+Custom Event [K2Node_CustomEvent] E7D8CCBB490F669BC24C4C9F7B1D6CAD
+128. Get GenericPromptRef [K2Node_VariableGet] ECF10D9B4D603658A4A2D0A4D2DE98FE
+129. Is Valid [K2Node_MacroInstance] 73E012004B2EFB08D3D45DA352B77946
+130. Update Prompt
+La destinazione è WBP Generic Prompt [K2Node_CallFunction] 2ABA79CD4000B665F690C69E9FF944A9
+131. Nodo di reindirizzamento [K2Node_Knot] D6C8ACD147E6B4DC1E0C0B9DE89BFA2F
+132. Nodo di reindirizzamento [K2Node_Knot] FFAF1FD7444C4F8C68D5BBBF3AA252D5
+133. Set Visibility
+La destinazione è Widget [K2Node_CallFunction] 1EA2C5784333FC3436CB8383F35AF22A
+134. Nodo di reindirizzamento [K2Node_Knot] 17538C0F40BD5A57757DCE85DCD9C830
+135. HideInteractionPrompt
+Custom Event [K2Node_CustomEvent] 2B9F6B77432382892B4249A3A0DA3AC4
+136. Get GenericPromptRef [K2Node_VariableGet] 216FC8204F81B26060273697C6E39D3B
+137. Is Valid [K2Node_MacroInstance] 31DB771842567BFA49275895E4D1EF07
+138. Set Visibility
+La destinazione è Widget [K2Node_CallFunction] E6BECE8A4C8B556E2B82C4843F062796
+139. GET INPUT KEY AND SHOW TIP [EdGraphNode_Comment] 6116FDD4497376ACC2203789BEF4275D
+140. Nodo di reindirizzamento [K2Node_Knot] E9A1CBCF4E1262E4253FA39424BE5E6C
+141. Get Key Text for Input Action
+La destinazione è ALS Player Controller [K2Node_CallFunction] C76FEB2A4AB50B3DB5A88984F1316FC8
+142. Break S_InteractionPrompt [K2Node_BreakStruct] 6E0036D246627EC76E48B29B0A7B1890
+143. Qualsiasi tasto [K2Node_InputKey] E5A7E9BE4574CEBB1CA3FE88E62A6CCD
+144. Is Gamepad Key [K2Node_CallFunction] 253D320A4B0F5351D94B928EB43FF3F7
+145. Ramo [K2Node_IfThenElse] CC0025FD47E0EA5FE351F5953910C703
+146. Get InputKeyMap [K2Node_VariableGet] 95CDEBAA4BF80539534EDAAAE04EFABB
+147. Aggiungi [K2Node_CallFunction] DCE77E184318E52C69ECE1BCED7E6CA9
+148. Get InputKeyMap [K2Node_VariableGet] 4AFB33674D5108CCCCD0EA8DDFFCFCF6
+149. Aggiungi [K2Node_CallFunction] 0408A9C14AF9A68BDEF001BE653B9285
+150. Set CurrentInputDevice [K2Node_VariableSet] DFFD91074FD59AA029743B821E401229
+151. Set CurrentInputDevice [K2Node_VariableSet] 2CD7A09F49CC0E1890C4CC9A55D26907
+
+Variables Read:
+- Get AvailableDebugCharacters
+- Get CustomRadialMenuRef
+- Get DebugFocusCharacter
+- Get DebugView
+- Get GenericPromptRef
+- Get InputKeyMap
+- Get OverlayMenuOpen
+- Get OverlaySwitcher
+- Get PlayerCameraManager
+- Get ShowCharacterInfo
+- Get ShowDebugShapes
+- Get ShowHUD
+- Get ShowLayerColors
+- Get ShowTraces
+- Get Slomo
+- Ottieni
+
+Variables Written:
+- Set AvailableDebugCharacters
+- Set Chuck_HUD
+- Set CurrentInputDevice
+- Set CustomRadialMenuRef
+- Set DebugFocusCharacter
+- Set DebugView
+- Set GenericPromptRef
+- Set OverlayMenuOpen
+- Set OverlaySwitcher
+- Set ShowCharacterInfo
+- Set ShowDebugShapes
+- Set ShowHUD
+- Set ShowLayerColors
+- Set ShowTraces
+- Set Slomo
+
+External Calls:
+- Add to Viewport
+La destinazione è User Widget
+- Aggiungi
+- Close Radial Menu
+La destinazione è WBP Custom Radial Menu
+- Cycle State
+La destinazione è Overlay State Switcher
+- Get All Actors Of Class
+- Get Key Text for Input Action
+La destinazione è ALS Player Controller
+- Get Owning Player Pawn
+La destinazione è User Widget
+- Get Player Character
+- Is Gamepad Key
+- NOT Boolean
+- On Possess
+La destinazione è ALS Player Camera Manager
+- Play Sound 2D
+- Remove from Parent
+La destinazione è Widget
+- Select Overlay State
+La destinazione è Overlay State Switcher
+- Set Global Time Dilation
+- Set Ignore Look Input
+La destinazione è Controller
+- Set Ignore Move Input
+La destinazione è Controller
+- Set Input Mode Game And UI
+- Set Input Mode Game Only
+- Set Visibility
+La destinazione è Widget
+- Update Prompt
+La destinazione è WBP Generic Prompt
+
+Widgets Touched:
+- Get Key Text for Input Action
+La destinazione è ALS Player Controller
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Add to Viewport
+La destinazione è User Widget
+- Aggiungi
+- Cast To ALS_ChuckBP
+- Cast To ALS_PlayerCameraManager
+- Close Radial Menu
+La destinazione è WBP Custom Radial Menu
+- Cycle State
+La destinazione è Overlay State Switcher
+- Get All Actors Of Class
+- Get Key Text for Input Action
+La destinazione è ALS Player Controller
+- Get Owning Player Pawn
+La destinazione è User Widget
+- Get Player Character
+- Is Gamepad Key
+- NOT Boolean
+- On Possess
+La destinazione è ALS Player Camera Manager
+- Play Sound 2D
+- Remove from Parent
+La destinazione è Widget
+- Select Overlay State
+La destinazione è Overlay State Switcher
+- Set Global Time Dilation
+- Set Ignore Look Input
+La destinazione è Controller
+- Set Ignore Move Input
+La destinazione è Controller
+- Set Input Mode Game And UI
+- Set Input Mode Game Only
+- Set Visibility
+La destinazione è Widget
+- Update Prompt
+La destinazione è WBP Generic Prompt

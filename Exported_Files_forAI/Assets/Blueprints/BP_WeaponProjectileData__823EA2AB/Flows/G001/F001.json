@@ -1,0 +1,1625 @@
+{
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+	"graph": "EventGraph",
+	"entryName": "Evento BeginPlay",
+	"entryNodeGuid": "FB27CCAB494299D0E0AB9AB0D718071B",
+	"nodes": [
+		{
+			"nodeGuid": "5E6B4B804DB62E310195FA829240915A",
+			"class": "K2Node_VariableGet",
+			"title": "Get ProjectileMesh",
+			"comment": "",
+			"x": -608,
+			"y": -202,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D4B61CA84F583B57E8095682BBACAADC",
+					"name": "ProjectileMesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.StaticMesh",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B3223CD4480AF9674EE14D8F9F8102FF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5895340E4264F76264586496A4CEBDF7",
+			"class": "K2Node_CallFunction",
+			"title": "Set Static Mesh\nLa destinazione è Componente con mesh statica",
+			"comment": "",
+			"x": -448,
+			"y": -304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7AE48CDA4ECEC011096FF89588E3789E",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "85B8076E4583ED9EB0DB37842AA13C37",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "40C9611145A23E76674773B31A5D2742",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.StaticMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CEC2A783431FC4D083E532865BB6407A",
+					"name": "NewMesh",
+					"direction": "Input",
+					"type": "object|/Script/Engine.StaticMesh",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "03C4FD764AD8BDD8370970A5EBA151AF",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "B99C14DF43B2C69B93B4CBB973E9C32A",
+			"class": "K2Node_VariableGet",
+			"title": "Get StaticMesh",
+			"comment": "",
+			"x": -608,
+			"y": -232,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1134C3064088C091571A1DBE303ACDC2",
+					"name": "StaticMesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.StaticMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3069091A4855475330B7A3BD3308C4F7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FB27CCAB494299D0E0AB9AB0D718071B",
+			"class": "K2Node_Event",
+			"title": "Evento BeginPlay",
+			"comment": "",
+			"x": -768,
+			"y": -291,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "72F900C444E59DFE53BD59BDCDE29165",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E47E6B26455554BC0C242FBC857FF6DE",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2B3A348947EF068F00353893C46E6789",
+			"class": "K2Node_CallFunction",
+			"title": "Spawn Emitter Attached",
+			"comment": "",
+			"x": 1056,
+			"y": -288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "82927388409DE09472F3608DAF46BB7C",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CEAC7EF14C8B69E8748D6FA94566A9EF",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0CC7B0FF4C9F4B0A38E8588FA4C71EA2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "8C59174B4AF8CE8BC7FFACAA52B65640",
+					"name": "EmitterTemplate",
+					"direction": "Input",
+					"type": "object|/Script/Engine.ParticleSystem",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7DACFE8941DD918411F0FBA85181A22F",
+					"name": "AttachToComponent",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SceneComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "26DD11284769D0BBA61AC1A5C1204EBB",
+					"name": "AttachPointName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "4004948E42537D423D1C7E9252F0E4C7",
+					"name": "Location",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "3034E3274088A4F075376C87FBC8D95C",
+					"name": "Rotation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "3FCECCB64970CE066C3A4C8117102F77",
+					"name": "Scale",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "1.000000,1.000000,1.000000"
+				},
+				{
+					"pinId": "52B5E57F4B38764F6326EC952EB11054",
+					"name": "LocationType",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EAttachLocation",
+					"defaultValue": "SnapToTarget"
+				},
+				{
+					"pinId": "6BF04B9245518D02EBE22BB09648F347",
+					"name": "bAutoDestroy",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "553B800449565F134C2779B8DF879A36",
+					"name": "PoolingMethod",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EPSCPoolMethod",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "35C6D9F74186B02218E7258BD3DCCB44",
+					"name": "bAutoActivate",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "6EAA2A43406471B36A44A794A3892BAB",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.ParticleSystemComponent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "20E6282649B835951CF67F8511AEDB35",
+			"class": "K2Node_VariableGet",
+			"title": "Get StaticMesh",
+			"comment": "",
+			"x": 912,
+			"y": -203,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5B5327764CB23B61A92069B0FFC11B06",
+					"name": "StaticMesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.StaticMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D61A0FC54EAC143DE8812BB59D8FFE59",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "726273794ED294542B80A9882C3B4771",
+			"class": "K2Node_VariableGet",
+			"title": "Get TrailFX",
+			"comment": "",
+			"x": 912,
+			"y": -232,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "798A084C49651CE557AABABA8BE3BBFE",
+					"name": "TrailFX",
+					"direction": "Output",
+					"type": "object|/Script/Engine.ParticleSystem",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C76D31D54EA5F09865CAA68C3C4614FE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F8AD9782424CFEE0F2AA0A89BECD5840",
+			"class": "K2Node_VariableGet",
+			"title": "Get ProjectileMovement",
+			"comment": "",
+			"x": 128,
+			"y": -154,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1272BB8A485D498AC7984684777245DD",
+					"name": "ProjectileMovement",
+					"direction": "Output",
+					"type": "object|/Script/Engine.ProjectileMovementComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5A7A5EA2420F23A606A9C5BF3B93189C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "38FD8DB947CCC651E91622BB99E5CB23",
+			"class": "K2Node_VariableSet",
+			"title": "Set InitialSpeed",
+			"comment": "",
+			"x": 320,
+			"y": -272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8FD88B5D457A2D7E09F36F8F61AEF1C4",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C3C35D5943510CCEFD5489BB1C7BA883",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4A414CB54EBA8D96F7A6A9ACCBFBF852",
+					"name": "InitialSpeed",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "D42792C341B527BDD644BEA0539E2BEB",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "36DD611D465BC7F2CA2022B4D001EFB7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.ProjectileMovementComponent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F2E90FC5406407CF58AFE78B0C2D316D",
+			"class": "K2Node_VariableSet",
+			"title": "Set MaxSpeed",
+			"comment": "",
+			"x": 704,
+			"y": -272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4C9FC97A4FC211007E7F4487739E2124",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FFA5F5FB4113A984F61383B2D4B7181A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "28A1B2264B2826964B9192BE5F8336A2",
+					"name": "MaxSpeed",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "6114597447AF3A8F4F77A98AA6EB36B7",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "5D34A5DC443773BB1FC129A83C07EB38",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.ProjectileMovementComponent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "775681C6408F1E978AC4519C2F445D7B",
+			"class": "K2Node_VariableGet",
+			"title": "Get ProjectileSpeed",
+			"comment": "",
+			"x": 144,
+			"y": -233,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "95A4BDBD4E8595E8C693D4B83F345F3D",
+					"name": "ProjectileSpeed",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "B4F0160B4AAA5133BC51F6BF06AE3C2A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5EE55128483C6411C7E5A78F2BFE15D7",
+			"class": "K2Node_VariableGet",
+			"title": "Get ProjectileSpeed",
+			"comment": "",
+			"x": 544,
+			"y": -233,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A7AD4F754BDDFFAE6D39EC91BCCEDC1C",
+					"name": "ProjectileSpeed",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "3BBF644F4DCD369379E170B0E2CAF838",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DA9784E941C4712D264B6299D138C675",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 640,
+			"y": -144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E7A048AF443DB4320B36AAA605721CAA",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Script/Engine.ProjectileMovementComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "184BE884447A94F64D4A36B9996846EE",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Script/Engine.ProjectileMovementComponent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C289E2A748A92B3B3B4200BA16135A4A",
+			"class": "K2Node_CallFunction",
+			"title": "Spawn Emitter at Location",
+			"comment": "",
+			"x": 144,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C7A6A4A1450DE09029BB2EB79949A1CC",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "810AC80C4ACB79B3C6BB73B0FCBFD937",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "856390C042AC9DD36110BBAEE0EFC6A0",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "4B92B0F74B3AC14EC527B1ACF401294A",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "45C49BE14B45784B098CFB99523A573C",
+					"name": "EmitterTemplate",
+					"direction": "Input",
+					"type": "object|/Script/Engine.ParticleSystem",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3474DB6B4F55477F6945F3B963A2A55C",
+					"name": "Location",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "F715DE5C4C0CF3CE72352EB81F1AB2CA",
+					"name": "Rotation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "ABF6F0144A748072FB9FCA89D9E6999A",
+					"name": "Scale",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "1.000000,1.000000,1.000000"
+				},
+				{
+					"pinId": "7C20C7764CFB5AD0A99A08801171120C",
+					"name": "bAutoDestroy",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "2F1F8F774F059BE48BFC6DBA56BDA9B1",
+					"name": "PoolingMethod",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EPSCPoolMethod",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "174AAF4141FC4A00C4ADB69CE58E3032",
+					"name": "bAutoActivateSystem",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "DCDA1D39470D788309BFF3BAA491E849",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.ParticleSystemComponent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FC462BAA482C23176648BF839E1A5E57",
+			"class": "K2Node_CallFunction",
+			"title": "Destroy Actor\nLa destinazione è Actor",
+			"comment": "",
+			"x": 1120,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "322841EB4C529B2E53885FBF555B7471",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "58893D294E14B862ADD5CA8C0DADD112",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "78A77A5E4B79712B571651BD16586DC9",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0E1E210B41DA2E42580C56B0341A18C3",
+			"class": "K2Node_VariableGet",
+			"title": "Get ExplosionFX",
+			"comment": "",
+			"x": 0,
+			"y": 375,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "AD2B91224005904CC193718BDAD8CD68",
+					"name": "ExplosionFX",
+					"direction": "Output",
+					"type": "object|/Script/Engine.ParticleSystem",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6687F3994F9BF6FA576C4F8C679F76CE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "07D6F0A648736C8F6A500BBEB9F7D404",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 48,
+			"y": 688,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BF68EC3E4E2D1CF90C6AA39A51504249",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27ECFFB43A813240E1FD5AB5AE054B1",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7725112A4FB2B2FCF5BE04A36D376642",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 496,
+			"y": 688,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7955E567430C33199C9BC9837C5F780B",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4497CBBD4E62642A71A6CB8192F7E7B8",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "61BB570649B88990E5F2A7AB66567BF2",
+			"class": "K2Node_ComponentBoundEvent",
+			"title": "On Component Hit (Sphere)",
+			"comment": "",
+			"x": -256,
+			"y": 317,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D7B1EDEB49917EA22A70D5905EC6681D",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "902808ED420FF656056EF6A4591FF00E",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9916A6F44233731A48554385BD344E34",
+					"name": "HitComponent",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PrimitiveComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "41319DFB4A868F8F02B0C2A1B8D2B7DD",
+					"name": "OtherActor",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4B9104BA414FD9EC860B50893AAAE4AC",
+					"name": "OtherComp",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PrimitiveComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BB9A53AB438B8D4098BFD4B2548E7DCD",
+					"name": "NormalImpulse",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "E83EA0714FADCFB19D6D7E849596A19E",
+					"name": "Hit",
+					"direction": "Output",
+					"type": "struct|/Script/Engine.HitResult|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2F56B3EB400129CEFDA80EB487DD632A",
+					"name": "Hit_bBlockingHit",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "F73858ED4E19A045DF5A30BCED4B7D0D",
+					"name": "Hit_bInitialOverlap",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "BDE6A28041C3C109360B2CB271FDC831",
+					"name": "Hit_Time",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "933EB174479D3B288FE181B02413CCDD",
+					"name": "Hit_Distance",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "4E72CE5D4042515E28E1EBA47979677B",
+					"name": "Hit_Location",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "95E15B644938348E86128DA7BCC6C518",
+					"name": "Hit_ImpactPoint",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "6FB84BA04D2D1A8F929900B33247048C",
+					"name": "Hit_Normal",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "F1700C654EDB4E1331ECFA8A00DE632E",
+					"name": "Hit_ImpactNormal",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "36648E3A4DBFFEA8C2002F99CA2C82A3",
+					"name": "Hit_PhysMat",
+					"direction": "Output",
+					"type": "object|/Script/PhysicsCore.PhysicalMaterial",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8A6D9F8A47C1C213AED712BC8AF8BC32",
+					"name": "Hit_HitActor",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ED516C0A4D6080666B81DBA16236AFF4",
+					"name": "Hit_HitComponent",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PrimitiveComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1D2C15004AAE8B351F8B7EBDF3A86ED2",
+					"name": "Hit_HitBoneName",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "9C22A6C1496C5F5874CADEAEAA4D91E2",
+					"name": "Hit_BoneName",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "F4D7113A46BF1A900BB23FB3CF483A3B",
+					"name": "Hit_HitItem",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "0A5BCA044500CB5D78E8348D34702EC9",
+					"name": "Hit_ElementIndex",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "2CE931C74EED3F6F96ECEEA041CE5A4A",
+					"name": "Hit_FaceIndex",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "8755D6A448C496CBA66C67A9D3010764",
+					"name": "Hit_TraceStart",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "2D8389914EC9F8B0AB613098F0221B94",
+					"name": "Hit_TraceEnd",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "F0AF23BC43D9833DFFC0B58EDCAECE7E",
+			"class": "K2Node_CallFunction",
+			"title": "Set Updated Component\nLa destinazione è Componente movimento",
+			"comment": "",
+			"x": -128,
+			"y": -304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8742A8D241864AEACA90948D88127CDE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "44FDC7114AEAE7DCC42EBD93DBE7596B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E3CFC37144B390F1C4B803AEF7A5CC59",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MovementComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8F5A4FB441CC219E0585E5A5E56B7278",
+					"name": "NewUpdatedComponent",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SceneComponent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4ED137D942AC7F09772E27A15BB73DF4",
+			"class": "K2Node_VariableGet",
+			"title": "Get ProjectileMovement",
+			"comment": "",
+			"x": -368,
+			"y": -144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4D62556D41FCDEFEAA10D6B8E2B65D9A",
+					"name": "ProjectileMovement",
+					"direction": "Output",
+					"type": "object|/Script/Engine.ProjectileMovementComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EBEAACA84355AB2838F4C0A29A7121F4",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5097F15148F1F346C397A386E6ABCAA6",
+			"class": "K2Node_VariableGet",
+			"title": "Get Sphere",
+			"comment": "",
+			"x": -336,
+			"y": -96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "815D3A9B4DFF2F7BB54CDABD1B14E6F6",
+					"name": "Sphere",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SphereComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "932C1ACE464258A89835139A257BC213",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "370BCF1947EF6FE00B989096046FA4D2",
+			"class": "K2Node_CallFunction",
+			"title": "Apply Radial Damage with Falloff",
+			"comment": "",
+			"x": 704,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6792E3C5474EE2B71007AA903C1BA9E8",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0F0FF52A4A14488CA5951A814C92E38C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "61792F8140B850530E2C068016DBFFEE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "1ED57BFD4FDBDDFFAA3F2AA23248F702",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B10DD90F41E01D6352C792A27D2D2692",
+					"name": "BaseDamage",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "62DCCC994668372F55D96CB3252408B3",
+					"name": "MinimumDamage",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "85B910CA4157037731F3D59914F01BA4",
+					"name": "Origin",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector|ref|const",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "5640659C40CC5BAAA2A423A8B5163E32",
+					"name": "DamageInnerRadius",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "84DB50184A058D1549C188BE6B0EC979",
+					"name": "DamageOuterRadius",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "C4E7B834403B3C251B758BBD7EE695A8",
+					"name": "DamageFalloff",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "08698A404213E4F906CA33B6B91E800E",
+					"name": "DamageTypeClass",
+					"direction": "Input",
+					"type": "class|/Script/Engine.DamageType",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "838FB457489D74733F84A3B3EFC4C176",
+					"name": "IgnoreActors",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor|container=Array|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1BA42DC94154F1C1D604BF821B578B09",
+					"name": "DamageCauser",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1ED1B5924665E336B24150849DDA8BB0",
+					"name": "InstigatedByController",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Controller",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B21FE0C14D1CBCB8D6A483A5393C5018",
+					"name": "DamagePreventionChannel",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.ECollisionChannel",
+					"defaultValue": "ECC_Camera"
+				},
+				{
+					"pinId": "728779D74AE73536665D00BA4DA145D9",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "14B8CA00434DE2B465F8648763572C87",
+			"class": "K2Node_MakeArray",
+			"title": "Crea array",
+			"comment": "",
+			"x": 480,
+			"y": 768,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BBD07BD84562039F83058FBD6BBB7CAC",
+					"name": "Array",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Actor|container=Array|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1F9E5EE047D229221783839F9A6B8E4F",
+					"name": "[0]",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "18D423AC4BDB5AF1A24850B7CA7AC291",
+			"class": "K2Node_Self",
+			"title": "Auto-riferimento",
+			"comment": "",
+			"x": 512,
+			"y": 864,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7A449759413BDCE0C870C8AF2B64DFD9",
+					"name": "self",
+					"direction": "Output",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "402BB002490F014760DE678CD3CCC907",
+			"class": "K2Node_VariableGet",
+			"title": "Get DamageRadius",
+			"comment": "",
+			"x": 544,
+			"y": 480,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BDD9F81A4DD2AD7EF93F629834CBDE7C",
+					"name": "DamageRadius",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "3F07CB4D460A9A6EA7DB06A99ACE28CF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "57C964D74C0A704DCC6F76A79A53F30B",
+			"class": "K2Node_VariableGet",
+			"title": "Get Damage",
+			"comment": "",
+			"x": 544,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B7EA4BAF4309535E105837A6F8C58153",
+					"name": "Damage",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "9C85BBD04C032D40658AA4AF4B3D53F6",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "5E6B4B804DB62E310195FA829240915A",
+			"fromPinId": "D4B61CA84F583B57E8095682BBACAADC",
+			"fromPinName": "ProjectileMesh",
+			"toNodeGuid": "5895340E4264F76264586496A4CEBDF7",
+			"toPinId": "CEC2A783431FC4D083E532865BB6407A",
+			"toPinName": "NewMesh"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "FB27CCAB494299D0E0AB9AB0D718071B",
+			"fromPinId": "E47E6B26455554BC0C242FBC857FF6DE",
+			"fromPinName": "then",
+			"toNodeGuid": "5895340E4264F76264586496A4CEBDF7",
+			"toPinId": "7AE48CDA4ECEC011096FF89588E3789E",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "5895340E4264F76264586496A4CEBDF7",
+			"fromPinId": "85B8076E4583ED9EB0DB37842AA13C37",
+			"fromPinName": "then",
+			"toNodeGuid": "F0AF23BC43D9833DFFC0B58EDCAECE7E",
+			"toPinId": "8742A8D241864AEACA90948D88127CDE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "B99C14DF43B2C69B93B4CBB973E9C32A",
+			"fromPinId": "1134C3064088C091571A1DBE303ACDC2",
+			"fromPinName": "StaticMesh",
+			"toNodeGuid": "5895340E4264F76264586496A4CEBDF7",
+			"toPinId": "40C9611145A23E76674773B31A5D2742",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "F2E90FC5406407CF58AFE78B0C2D316D",
+			"fromPinId": "FFA5F5FB4113A984F61383B2D4B7181A",
+			"fromPinName": "then",
+			"toNodeGuid": "2B3A348947EF068F00353893C46E6789",
+			"toPinId": "82927388409DE09472F3608DAF46BB7C",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "726273794ED294542B80A9882C3B4771",
+			"fromPinId": "798A084C49651CE557AABABA8BE3BBFE",
+			"fromPinName": "TrailFX",
+			"toNodeGuid": "2B3A348947EF068F00353893C46E6789",
+			"toPinId": "8C59174B4AF8CE8BC7FFACAA52B65640",
+			"toPinName": "EmitterTemplate"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "20E6282649B835951CF67F8511AEDB35",
+			"fromPinId": "5B5327764CB23B61A92069B0FFC11B06",
+			"fromPinName": "StaticMesh",
+			"toNodeGuid": "2B3A348947EF068F00353893C46E6789",
+			"toPinId": "7DACFE8941DD918411F0FBA85181A22F",
+			"toPinName": "AttachToComponent"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "F8AD9782424CFEE0F2AA0A89BECD5840",
+			"fromPinId": "1272BB8A485D498AC7984684777245DD",
+			"fromPinName": "ProjectileMovement",
+			"toNodeGuid": "38FD8DB947CCC651E91622BB99E5CB23",
+			"toPinId": "36DD611D465BC7F2CA2022B4D001EFB7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "F8AD9782424CFEE0F2AA0A89BECD5840",
+			"fromPinId": "1272BB8A485D498AC7984684777245DD",
+			"fromPinName": "ProjectileMovement",
+			"toNodeGuid": "DA9784E941C4712D264B6299D138C675",
+			"toPinId": "E7A048AF443DB4320B36AAA605721CAA",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "F0AF23BC43D9833DFFC0B58EDCAECE7E",
+			"fromPinId": "44FDC7114AEAE7DCC42EBD93DBE7596B",
+			"fromPinName": "then",
+			"toNodeGuid": "38FD8DB947CCC651E91622BB99E5CB23",
+			"toPinId": "8FD88B5D457A2D7E09F36F8F61AEF1C4",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "38FD8DB947CCC651E91622BB99E5CB23",
+			"fromPinId": "C3C35D5943510CCEFD5489BB1C7BA883",
+			"fromPinName": "then",
+			"toNodeGuid": "F2E90FC5406407CF58AFE78B0C2D316D",
+			"toPinId": "4C9FC97A4FC211007E7F4487739E2124",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "775681C6408F1E978AC4519C2F445D7B",
+			"fromPinId": "95A4BDBD4E8595E8C693D4B83F345F3D",
+			"fromPinName": "ProjectileSpeed",
+			"toNodeGuid": "38FD8DB947CCC651E91622BB99E5CB23",
+			"toPinId": "4A414CB54EBA8D96F7A6A9ACCBFBF852",
+			"toPinName": "InitialSpeed"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "5EE55128483C6411C7E5A78F2BFE15D7",
+			"fromPinId": "A7AD4F754BDDFFAE6D39EC91BCCEDC1C",
+			"fromPinName": "ProjectileSpeed",
+			"toNodeGuid": "F2E90FC5406407CF58AFE78B0C2D316D",
+			"toPinId": "28A1B2264B2826964B9192BE5F8336A2",
+			"toPinName": "MaxSpeed"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "DA9784E941C4712D264B6299D138C675",
+			"fromPinId": "184BE884447A94F64D4A36B9996846EE",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "F2E90FC5406407CF58AFE78B0C2D316D",
+			"toPinId": "5D34A5DC443773BB1FC129A83C07EB38",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "61BB570649B88990E5F2A7AB66567BF2",
+			"fromPinId": "902808ED420FF656056EF6A4591FF00E",
+			"fromPinName": "then",
+			"toNodeGuid": "C289E2A748A92B3B3B4200BA16135A4A",
+			"toPinId": "C7A6A4A1450DE09029BB2EB79949A1CC",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "C289E2A748A92B3B3B4200BA16135A4A",
+			"fromPinId": "810AC80C4ACB79B3C6BB73B0FCBFD937",
+			"fromPinName": "then",
+			"toNodeGuid": "370BCF1947EF6FE00B989096046FA4D2",
+			"toPinId": "6792E3C5474EE2B71007AA903C1BA9E8",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "0E1E210B41DA2E42580C56B0341A18C3",
+			"fromPinId": "AD2B91224005904CC193718BDAD8CD68",
+			"fromPinName": "ExplosionFX",
+			"toNodeGuid": "C289E2A748A92B3B3B4200BA16135A4A",
+			"toPinId": "45C49BE14B45784B098CFB99523A573C",
+			"toPinName": "EmitterTemplate"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "07D6F0A648736C8F6A500BBEB9F7D404",
+			"fromPinId": "C27ECFFB43A813240E1FD5AB5AE054B1",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "C289E2A748A92B3B3B4200BA16135A4A",
+			"toPinId": "3474DB6B4F55477F6945F3B963A2A55C",
+			"toPinName": "Location"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "370BCF1947EF6FE00B989096046FA4D2",
+			"fromPinId": "0F0FF52A4A14488CA5951A814C92E38C",
+			"fromPinName": "then",
+			"toNodeGuid": "FC462BAA482C23176648BF839E1A5E57",
+			"toPinId": "322841EB4C529B2E53885FBF555B7471",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "61BB570649B88990E5F2A7AB66567BF2",
+			"fromPinId": "95E15B644938348E86128DA7BCC6C518",
+			"fromPinName": "Hit_ImpactPoint",
+			"toNodeGuid": "07D6F0A648736C8F6A500BBEB9F7D404",
+			"toPinId": "BF68EC3E4E2D1CF90C6AA39A51504249",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "07D6F0A648736C8F6A500BBEB9F7D404",
+			"fromPinId": "C27ECFFB43A813240E1FD5AB5AE054B1",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "7725112A4FB2B2FCF5BE04A36D376642",
+			"toPinId": "7955E567430C33199C9BC9837C5F780B",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "7725112A4FB2B2FCF5BE04A36D376642",
+			"fromPinId": "4497CBBD4E62642A71A6CB8192F7E7B8",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "370BCF1947EF6FE00B989096046FA4D2",
+			"toPinId": "85B910CA4157037731F3D59914F01BA4",
+			"toPinName": "Origin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "4ED137D942AC7F09772E27A15BB73DF4",
+			"fromPinId": "4D62556D41FCDEFEAA10D6B8E2B65D9A",
+			"fromPinName": "ProjectileMovement",
+			"toNodeGuid": "F0AF23BC43D9833DFFC0B58EDCAECE7E",
+			"toPinId": "E3CFC37144B390F1C4B803AEF7A5CC59",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "5097F15148F1F346C397A386E6ABCAA6",
+			"fromPinId": "815D3A9B4DFF2F7BB54CDABD1B14E6F6",
+			"fromPinName": "Sphere",
+			"toNodeGuid": "F0AF23BC43D9833DFFC0B58EDCAECE7E",
+			"toPinId": "8F5A4FB441CC219E0585E5A5E56B7278",
+			"toPinName": "NewUpdatedComponent"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "57C964D74C0A704DCC6F76A79A53F30B",
+			"fromPinId": "B7EA4BAF4309535E105837A6F8C58153",
+			"fromPinName": "Damage",
+			"toNodeGuid": "370BCF1947EF6FE00B989096046FA4D2",
+			"toPinId": "B10DD90F41E01D6352C792A27D2D2692",
+			"toPinName": "BaseDamage"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "57C964D74C0A704DCC6F76A79A53F30B",
+			"fromPinId": "B7EA4BAF4309535E105837A6F8C58153",
+			"fromPinName": "Damage",
+			"toNodeGuid": "370BCF1947EF6FE00B989096046FA4D2",
+			"toPinId": "62DCCC994668372F55D96CB3252408B3",
+			"toPinName": "MinimumDamage"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "402BB002490F014760DE678CD3CCC907",
+			"fromPinId": "BDD9F81A4DD2AD7EF93F629834CBDE7C",
+			"fromPinName": "DamageRadius",
+			"toNodeGuid": "370BCF1947EF6FE00B989096046FA4D2",
+			"toPinId": "5640659C40CC5BAAA2A423A8B5163E32",
+			"toPinName": "DamageInnerRadius"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "402BB002490F014760DE678CD3CCC907",
+			"fromPinId": "BDD9F81A4DD2AD7EF93F629834CBDE7C",
+			"fromPinName": "DamageRadius",
+			"toNodeGuid": "370BCF1947EF6FE00B989096046FA4D2",
+			"toPinId": "84DB50184A058D1549C188BE6B0EC979",
+			"toPinName": "DamageOuterRadius"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "14B8CA00434DE2B465F8648763572C87",
+			"fromPinId": "BBD07BD84562039F83058FBD6BBB7CAC",
+			"fromPinName": "Array",
+			"toNodeGuid": "370BCF1947EF6FE00B989096046FA4D2",
+			"toPinId": "838FB457489D74733F84A3B3EFC4C176",
+			"toPinName": "IgnoreActors"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "18D423AC4BDB5AF1A24850B7CA7AC291",
+			"fromPinId": "7A449759413BDCE0C870C8AF2B64DFD9",
+			"fromPinName": "self",
+			"toNodeGuid": "14B8CA00434DE2B465F8648763572C87",
+			"toPinId": "1F9E5EE047D229221783839F9A6B8E4F",
+			"toPinName": "[0]"
+		}
+	],
+	"variablesRead": [
+		"Get Damage",
+		"Get DamageRadius",
+		"Get ExplosionFX",
+		"Get ProjectileMesh",
+		"Get ProjectileMovement",
+		"Get ProjectileSpeed",
+		"Get Sphere",
+		"Get StaticMesh",
+		"Get TrailFX"
+	],
+	"variablesWritten": [
+		"Set InitialSpeed",
+		"Set MaxSpeed"
+	],
+	"functionsCalled": [
+		"Apply Radial Damage with Falloff",
+		"Destroy Actor\nLa destinazione è Actor",
+		"Set Static Mesh\nLa destinazione è Componente con mesh statica",
+		"Set Updated Component\nLa destinazione è Componente movimento",
+		"Spawn Emitter at Location",
+		"Spawn Emitter Attached"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [
+		"On Component Hit (Sphere)"
+	],
+	"externalBlueprintReferences": [
+		"Apply Radial Damage with Falloff",
+		"Destroy Actor\nLa destinazione è Actor",
+		"Set Static Mesh\nLa destinazione è Componente con mesh statica",
+		"Set Updated Component\nLa destinazione è Componente movimento",
+		"Spawn Emitter at Location",
+		"Spawn Emitter Attached"
+	],
+	"flowId": "F001",
+	"graphId": "G001",
+	"assetName": "BP_WeaponProjectileData",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData"
+}

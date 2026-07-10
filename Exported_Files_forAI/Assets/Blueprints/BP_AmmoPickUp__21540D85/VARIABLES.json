@@ -1,0 +1,33 @@
+{
+	"assetName": "BP_AmmoPickUp",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_AmmoPickUp.BP_AmmoPickUp",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_AmmoPickUp",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "As ALS Chuck BP",
+			"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "AmmoAmount",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "AmmoType",
+			"type": "byte|/Game/ChuckContent/Systems/Weapons/Data/E_AmmoType.E_AmmoType",
+			"defaultValue": ""
+		},
+		{
+			"name": "As ALS Player Controller",
+			"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller.ALS_Player_Controller_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "DisplayName",
+			"type": "text",
+			"defaultValue": ""
+		}
+	]
+}

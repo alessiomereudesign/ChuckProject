@@ -1,0 +1,32 @@
+Asset: WBP_AssetName
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/WBP_AssetName.WBP_AssetName
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_WBP_AssetName
+GraphId: G001
+Graph: EventGraph
+FlowId: F003
+Entry: Evento Tick
+NodeGuid: A49B794D47778F0CEE9C9482D55A528D
+
+Exec Flow:
+1. Evento Pre Construct [K2Node_Event] 3A8BF9B04268B3C929F8D4A4AA6655F6
+2. Evento Construct [K2Node_Event] 7A6AD75F44D18447AE080A9DF5829F93
+3. Evento Tick [K2Node_Event] A49B794D47778F0CEE9C9482D55A528D
+4. Get TxtVar_AssetName [K2Node_VariableGet] 9C980BF24FFACE009B3E37A5EE690C05
+
+Variables Read:
+- Get TxtVar_AssetName
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

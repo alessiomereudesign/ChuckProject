@@ -1,0 +1,29 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G004
+Graph: Equip
+FlowId: F001
+Entry: Equip
+NodeGuid: 56FE998A4728941F403EF78837003D3F
+
+Exec Flow:
+1. Equip [K2Node_FunctionEntry] 56FE998A4728941F403EF78837003D3F
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

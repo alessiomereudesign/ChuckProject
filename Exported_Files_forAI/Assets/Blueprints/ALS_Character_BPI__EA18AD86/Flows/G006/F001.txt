@@ -1,0 +1,29 @@
+Asset: ALS_Character_BPI
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Character_BPI.ALS_Character_BPI
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Character_BPI
+GraphId: G006
+Graph: BPI_Set_OverlayState
+FlowId: F001
+Entry: BPI Set Overlay State
+NodeGuid: 975CBFF0431677475FA76E995B7644BA
+
+Exec Flow:
+1. BPI Set Overlay State [K2Node_FunctionEntry] 975CBFF0431677475FA76E995B7644BA
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

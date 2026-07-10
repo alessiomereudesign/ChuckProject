@@ -1,0 +1,78 @@
+Asset: BP_EnemyALS
+AssetPath: /Game/ChuckContent/Blueprints/Enemies/BP_EnemyALS.BP_EnemyALS
+AssetKey: Game_ChuckContent_Blueprints_Enemies_BP_EnemyALS
+GraphId: G001
+Graph: EventGraph
+FlowId: F001
+Entry: Evento AnyDamage
+NodeGuid: 32E29B0E41D3AA9FD47208871EC02175
+
+Exec Flow:
+1. Evento AnyDamage [K2Node_Event] 32E29B0E41D3AA9FD47208871EC02175
+2. Get Health [K2Node_VariableGet] D69C64B547248CC4A3BB56B2D08354CA
+3. float - float [K2Node_PromotableOperator] 344BCEC84E943E53E24E5FA1FBCE5AEC
+4. Set Health [K2Node_VariableSet] DD06A05F4BC46815B23C16AC6B1BFD55
+5. Ramo [K2Node_IfThenElse] D6681BC04185DA8833ED16AE4A308C38
+6. float <= float [K2Node_PromotableOperator] 18D29FD047C8DC76254A97A9FDE44474
+7. Ragdoll Start
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 3BB7C524425F4C2D256C9A900F7A839E
+8. Get Anim Instance
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 354F3B57445E4293BFD5128B31836836
+9. Get Mesh [K2Node_VariableGet] 6FAC243C4D63C7B3E523538782B212E9
+10. Montage Play
+La destinazione è Istanza animazione [K2Node_CallFunction] 9680B32146B9139C120086B2BAA14F50
+11. Get Actor Location
+La destinazione è Actor [K2Node_CallFunction] F8180A934C0FE51DE0EB96B042F2D09D
+12. Get Actor Location
+La destinazione è Actor [K2Node_CallFunction] 7C811F7B4D86CBA19B1549B46B9B00AD
+13. Auto-riferimento [K2Node_Self] E900F07D42D8A2DE9033B3ACAB8546D1
+14. Find Look at Rotation [K2Node_CallFunction] 35B3D30342508C4870C0748DFF658AD9
+15. Delta (Rotator) [K2Node_CallFunction] 0FCD7A8A4A71932DDB3A32B4A46BE98E
+16. Get Actor Rotation
+La destinazione è Actor [K2Node_CallFunction] 402D5F254A03DB2175BE98A22F7811E0
+17. Seleziona [K2Node_Select] 09184FD7470AD5BAF4231D90E27B2624
+18. Select Float [K2Node_CallFunction] DF22788D4BC6722779C93DB4E735DF99
+19. Nodo di reindirizzamento [K2Node_Knot] EEC2CC6A4E2C801EE062F9B79C8B699E
+
+Variables Read:
+- Get Health
+- Get Mesh
+
+Variables Written:
+- Set Health
+
+External Calls:
+- Delta (Rotator)
+- Find Look at Rotation
+- Get Actor Location
+La destinazione è Actor
+- Get Actor Rotation
+La destinazione è Actor
+- Get Anim Instance
+La destinazione è Componente mesh scheletrica
+- Montage Play
+La destinazione è Istanza animazione
+- Ragdoll Start
+La destinazione è ALS Base Character BP
+- Select Float
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Delta (Rotator)
+- Find Look at Rotation
+- Get Actor Location
+La destinazione è Actor
+- Get Actor Rotation
+La destinazione è Actor
+- Get Anim Instance
+La destinazione è Componente mesh scheletrica
+- Montage Play
+La destinazione è Istanza animazione
+- Ragdoll Start
+La destinazione è ALS Base Character BP
+- Select Float

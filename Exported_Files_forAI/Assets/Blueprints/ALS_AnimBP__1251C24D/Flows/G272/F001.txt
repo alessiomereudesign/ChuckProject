@@ -1,0 +1,144 @@
+Asset: ALS_AnimBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP
+GraphId: G272
+Graph: UpdateGraph
+FlowId: F001
+Entry: Evento Blueprint Update Animation
+NodeGuid: 0DF7962045511DD855EBEAAF9F14C3CC
+
+Exec Flow:
+1. Update Aiming Values
+La destinazione è ALS Anim BP [K2Node_CallFunction] E1FA99E04EE707A2F75AE8AC0DF3E5DB
+2. Switch on ALS_MovementState [K2Node_SwitchEnum] CC0493354C91188C34F485AB1B4D7D76
+3. Get MovementState [K2Node_VariableGet] 29B0E9184293737AE581CE81BE717BD1
+4. Update Movement Values
+La destinazione è ALS Anim BP [K2Node_CallFunction] 4EF90A0D4BB986F238A68A9E072F4DC4
+5. Update in Air Values
+La destinazione è ALS Anim BP [K2Node_CallFunction] 2E8C3CFD409DB5005427CDBBEEC86571
+6. Dynamic Transition Check
+La destinazione è ALS Anim BP [K2Node_CallFunction] 86944F92443FEFD946FDD2B7F38F479F
+7. Ramo [K2Node_IfThenElse] B88F9CBA415B8996F299CE9067BCA7EE
+8. Turn in Place Check
+La destinazione è ALS Anim BP [K2Node_CallFunction] CA8A85D742639232CEDA029C79F1DBE1
+9. Ramo [K2Node_IfThenElse] 10C738324CB4F4B9B516A59AD5C713C9
+10. Can Dynamic Transition [K2Node_CallFunction] 98F8F7BC48D9D8B69C4742878A9A920C
+11. Can Turn in Place [K2Node_CallFunction] DDC17B544615027BFDA7659B33F56119
+12. Set ElapsedDelayTime [K2Node_VariableSet] 101831C54B053413B804FAA1C9E63648
+13. Set ElapsedDelayTime [K2Node_VariableSet] 25844A2841AB00D77A99F4B38EDA3355
+14. Check Movement Mode [EdGraphNode_Comment] 89FFE48B48CB1C997267DE9C827B0459
+15. Do While On Ground [EdGraphNode_Comment] B59C4C04420D2B977CA085B8E4F9C00C
+16. Do While Moving [EdGraphNode_Comment] 90C172F84A8B341417C3F48660468449
+17. Do While Not Moving [EdGraphNode_Comment] 8E4BC92D4A0586C15268CEBD81967F90
+18. Do When Starting To Move [EdGraphNode_Comment] 3F64291B4E1BB2155B751790D190627D
+19. Do While InAir [EdGraphNode_Comment] 2781803D44CDE9335C9AC6A46E3F7107
+20. Check If Moving Or Not [EdGraphNode_Comment] 3B3DA8CC4D7CDF2C29C7A79079E9A05B
+21. Sequenza [K2Node_ExecutionSequence] 3CCABC104EA8848EC1B8D785434DFE6A
+22. Nodo di reindirizzamento [K2Node_Knot] 5F9A9D3E43A5CDEDB84CED9A5E754451
+23. Nodo di reindirizzamento [K2Node_Knot] B73694094DD2BA2A92C41C9DE5D2764D
+24. Ramo [K2Node_IfThenElse] AB453F7C4A160F85607A89A7DB249953
+25. Nodo di reindirizzamento [K2Node_Knot] 1A35012945D70BE1D27A43AD23E3A8E3
+26. Can Rotate in Place [K2Node_CallFunction] C28F3AB846406BF2802E62AB49759D68
+27. Rotate in Place Check
+La destinazione è ALS Anim BP [K2Node_CallFunction] F5DCE4164610D1A875BC6E98EB0F320E
+28. ML Do While(True False) [K2Node_MacroInstance] 57E0B3BD4BF8CED982F757AAF0D6D65D
+29. Update Layer Values
+La destinazione è ALS Anim BP [K2Node_CallFunction] 0C98D2B14EDF75C160A1FB89F3A4BF40
+30. Set ShouldMove [K2Node_VariableSet] F79C614A4673A2A60981D791A192479E
+31. Update Character Info
+La destinazione è ALS Anim BP [K2Node_CallFunction] 59B00C374C81E8C26E3CD18509538250
+32. Evento Blueprint Update Animation [K2Node_Event] 0DF7962045511DD855EBEAAF9F14C3CC
+33. Ottieni [K2Node_VariableGet] E24213A64FEE28A2F879CEBB2E55F7F9
+34. Set DeltaTimeX [K2Node_VariableSet] 8CF02F3D4226C5B52CBB7F82A60F26AF
+35. Not Equal (Float) [K2Node_CallFunction] B27728D2473874CF72B3CFA54EA216D3
+36. Ramo [K2Node_IfThenElse] 49FA0A4945D592F8D19405A8022A05BA
+37. Only update if character is valid [EdGraphNode_Comment] 6520A4054D00F8456EBDB8B65F6D9115
+38. Should Move Check [K2Node_CallFunction] 9899D7C3422277002ED8DCAB5F3058CD
+39. Set Rotate_L [K2Node_VariableSet] 8C8F960D46E8AFD029B68E8088F2912A
+40. Set Rotate_R [K2Node_VariableSet] AF1C28E74BBD991445BE609B000D4A2F
+41. Set Rotate_L [K2Node_VariableSet] F0B6F2CC482F01C4192412B2C675C97E
+42. Set Rotate_R [K2Node_VariableSet] 30EE09D4450706C76F74318CE8D4A1FD
+43. Nodo di reindirizzamento [K2Node_Knot] A86F8AAF4E78C239CE12EAA1725E9572
+44. Do Every Frame [EdGraphNode_Comment] B35E441A44EF1C01E34F6DA7921CB5DD
+45. Update Ragdoll Values
+La destinazione è ALS Anim BP [K2Node_CallFunction] FE0F7E6A405A210E4C45A2BF267907FE
+46. Do While Ragdolling [EdGraphNode_Comment] C5B46B144BFA9681484C7D98DC4EEA11
+47. Update Rotation Values
+La destinazione è ALS Anim BP [K2Node_CallFunction] 1380F8CC4DBE9D950979DD9DE2FC92DB
+48. Update Foot IK
+La destinazione è ALS Anim BP [K2Node_CallFunction] 55442B344BD83918376E4583BBC06921
+
+Variables Read:
+- Get MovementState
+- Ottieni
+
+Variables Written:
+- Set DeltaTimeX
+- Set ElapsedDelayTime
+- Set Rotate_L
+- Set Rotate_R
+- Set ShouldMove
+
+External Calls:
+- Can Dynamic Transition
+- Can Rotate in Place
+- Can Turn in Place
+- Dynamic Transition Check
+La destinazione è ALS Anim BP
+- Not Equal (Float)
+- Rotate in Place Check
+La destinazione è ALS Anim BP
+- Should Move Check
+- Turn in Place Check
+La destinazione è ALS Anim BP
+- Update Aiming Values
+La destinazione è ALS Anim BP
+- Update Character Info
+La destinazione è ALS Anim BP
+- Update Foot IK
+La destinazione è ALS Anim BP
+- Update in Air Values
+La destinazione è ALS Anim BP
+- Update Layer Values
+La destinazione è ALS Anim BP
+- Update Movement Values
+La destinazione è ALS Anim BP
+- Update Ragdoll Values
+La destinazione è ALS Anim BP
+- Update Rotation Values
+La destinazione è ALS Anim BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Can Dynamic Transition
+- Can Rotate in Place
+- Can Turn in Place
+- Dynamic Transition Check
+La destinazione è ALS Anim BP
+- Not Equal (Float)
+- Rotate in Place Check
+La destinazione è ALS Anim BP
+- Should Move Check
+- Turn in Place Check
+La destinazione è ALS Anim BP
+- Update Aiming Values
+La destinazione è ALS Anim BP
+- Update Character Info
+La destinazione è ALS Anim BP
+- Update Foot IK
+La destinazione è ALS Anim BP
+- Update in Air Values
+La destinazione è ALS Anim BP
+- Update Layer Values
+La destinazione è ALS Anim BP
+- Update Movement Values
+La destinazione è ALS Anim BP
+- Update Ragdoll Values
+La destinazione è ALS Anim BP
+- Update Rotation Values
+La destinazione è ALS Anim BP

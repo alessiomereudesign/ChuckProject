@@ -1,0 +1,40 @@
+{
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+	"graph": "Unequip",
+	"entryName": "Unequip",
+	"entryNodeGuid": "64B2593E466B242D7BCB7B9D9E3C1752",
+	"nodes": [
+		{
+			"nodeGuid": "64B2593E466B242D7BCB7B9D9E3C1752",
+			"class": "K2Node_FunctionEntry",
+			"title": "Unequip",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "09EC97954B644467A52E65A9A416D459",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G016",
+	"assetName": "BP_WeaponBase",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase"
+}

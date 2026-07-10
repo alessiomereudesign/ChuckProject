@@ -1,0 +1,40 @@
+{
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_AmmoPickUp",
+	"graph": "UserConstructionScript",
+	"entryName": "Construction Script",
+	"entryNodeGuid": "BB3A143044CCD24BF774FCB7C45DA5BD",
+	"nodes": [
+		{
+			"nodeGuid": "BB3A143044CCD24BF774FCB7C45DA5BD",
+			"class": "K2Node_FunctionEntry",
+			"title": "Construction Script",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DEAE56C94518214E409BF99149563CD8",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G004",
+	"assetName": "BP_AmmoPickUp",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_AmmoPickUp.BP_AmmoPickUp"
+}

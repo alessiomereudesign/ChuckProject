@@ -1,0 +1,190 @@
+{
+	"assetName": "OverlayStateSwitcher",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateSwitcher.OverlayStateSwitcher",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"widgets": [
+		{
+			"name": "Get Owning Player\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Owning Player\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Update Button Focus\nLa destinazione è Overlay State Switcher",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Create Buttons\nLa destinazione è Overlay State Switcher",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Project World Location to Widget Position",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Owning Player\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Owning Player\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Create Buttons",
+			"class": "K2Node_FunctionEntry",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Create Overlay State Button Widget",
+			"class": "K2Node_CreateWidget",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Owning Player\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Button",
+			"class": "K2Node_VariableSet",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Button",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get OverlayStateButtons",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Make OverlayStateButtonParams",
+			"class": "K2Node_MakeStruct",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Button",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "SetText (Text)\nLa destinazione è Testo",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "To Text (String)",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Text",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Is Enabled\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Is Enabled\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Is Enabled\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Update Button Focus\nLa destinazione è Overlay State Switcher",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Update Button Focus",
+			"class": "K2Node_FunctionEntry",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get OverlayStateButtons",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Break OverlayStateButtonParams",
+			"class": "K2Node_BreakStruct",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Visual Parameters\nLa destinazione è Overlay State Button",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		}
+	]
+}

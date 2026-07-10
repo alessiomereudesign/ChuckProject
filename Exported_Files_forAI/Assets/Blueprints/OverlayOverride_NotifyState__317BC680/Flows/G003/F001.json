@@ -1,0 +1,208 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_OverlayOverride_NotifyState",
+	"graph": "Received_NotifyEnd",
+	"entryName": "Received Notify End",
+	"entryNodeGuid": "3947A60948A6FB01EC9181AAE3AE6F70",
+	"nodes": [
+		{
+			"nodeGuid": "3947A60948A6FB01EC9181AAE3AE6F70",
+			"class": "K2Node_FunctionEntry",
+			"title": "Received Notify End",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E98152CE44F3F71F754F818D94D1C237",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D1A96F96435D949FA3B444BDF3F59799",
+					"name": "MeshComp",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "26ED8990458B3CD153A155BEBE535917",
+					"name": "Animation",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimSequenceBase",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3C637CAC4A3B2F83AF2E8785F99A5077",
+					"name": "EventReference",
+					"direction": "Output",
+					"type": "struct|/Script/Engine.AnimNotifyEventReference|ref|const",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "32662DD44B6DFA56068220A06C8FCB8A",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 736,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "904C981A4CD2BF8B427A4A837DF8FD36",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B5482AC8417429B8A23849AF55F32A38",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "89B5EE554ABB012A38616FA66F87DCF4",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Instance\nLa destinazione è Componente mesh scheletrica",
+			"comment": "",
+			"x": 192,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E96B6440467E5ADFEB79A6906712E81E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "69D88F6440BE947954A3599669AC9FDD",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C783299E4AB94F7F57CA9CBAC0192416",
+			"class": "K2Node_Message",
+			"title": "BPI Set Overlay Override State\nTarget is ALS Animation BPI",
+			"comment": "",
+			"x": 480,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FB0710E74A2E959BF32E4AAF3D24BBCF",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9FA0F94B43F24B919F6C3D8F26978CBB",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BF3A6B3A4084F1645DB8EAB16E456624",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3BF33E704D100DEBDD0ADCB74C0D17F3",
+					"name": "OverlayOverrideState",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_OverlayOverride_NotifyState",
+			"graph": "Received_NotifyEnd",
+			"edgeType": "exec",
+			"fromNodeGuid": "3947A60948A6FB01EC9181AAE3AE6F70",
+			"fromPinId": "E98152CE44F3F71F754F818D94D1C237",
+			"fromPinName": "then",
+			"toNodeGuid": "C783299E4AB94F7F57CA9CBAC0192416",
+			"toPinId": "FB0710E74A2E959BF32E4AAF3D24BBCF",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_OverlayOverride_NotifyState",
+			"graph": "Received_NotifyEnd",
+			"edgeType": "data",
+			"fromNodeGuid": "3947A60948A6FB01EC9181AAE3AE6F70",
+			"fromPinId": "D1A96F96435D949FA3B444BDF3F59799",
+			"fromPinName": "MeshComp",
+			"toNodeGuid": "89B5EE554ABB012A38616FA66F87DCF4",
+			"toPinId": "E96B6440467E5ADFEB79A6906712E81E",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_OverlayOverride_NotifyState",
+			"graph": "Received_NotifyEnd",
+			"edgeType": "exec",
+			"fromNodeGuid": "C783299E4AB94F7F57CA9CBAC0192416",
+			"fromPinId": "9FA0F94B43F24B919F6C3D8F26978CBB",
+			"fromPinName": "then",
+			"toNodeGuid": "32662DD44B6DFA56068220A06C8FCB8A",
+			"toPinId": "904C981A4CD2BF8B427A4A837DF8FD36",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_OverlayOverride_NotifyState",
+			"graph": "Received_NotifyEnd",
+			"edgeType": "data",
+			"fromNodeGuid": "89B5EE554ABB012A38616FA66F87DCF4",
+			"fromPinId": "69D88F6440BE947954A3599669AC9FDD",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "C783299E4AB94F7F57CA9CBAC0192416",
+			"toPinId": "BF3A6B3A4084F1645DB8EAB16E456624",
+			"toPinName": "self"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Anim Instance\nLa destinazione è Componente mesh scheletrica"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Anim Instance\nLa destinazione è Componente mesh scheletrica"
+	],
+	"flowId": "F001",
+	"graphId": "G003",
+	"assetName": "OverlayOverride_NotifyState",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/OverlayOverride_NotifyState.OverlayOverride_NotifyState"
+}

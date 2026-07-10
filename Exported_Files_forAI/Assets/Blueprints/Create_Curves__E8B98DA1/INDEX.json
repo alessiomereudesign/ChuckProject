@@ -1,0 +1,61 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "Create_Curves",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimModifiers/Create_Curves.Create_Curves",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimModifiers_Create_Curves",
+	"shortAssetFolder": "Create_Curves__E8B98DA1",
+	"pathHash": "E8B98DA1",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/AnimationModifiers.AnimationModifier",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 3,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 1,
+		"nodes": 36,
+		"edges": 42,
+		"flows": 1
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/Create_Curves__E8B98DA1/SUMMARY.md",
+		"variables": "Assets/Blueprints/Create_Curves__E8B98DA1/VARIABLES.json",
+		"components": "Assets/Blueprints/Create_Curves__E8B98DA1/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/Create_Curves__E8B98DA1/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/Create_Curves__E8B98DA1/NODES.jsonl",
+		"edges": "Assets/Blueprints/Create_Curves__E8B98DA1/EDGES.jsonl",
+		"search": "Assets/Blueprints/Create_Curves__E8B98DA1/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 36,
+			"edgeCount": 42,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/Create_Curves__E8B98DA1/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/Create_Curves__E8B98DA1/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/Create_Curves__E8B98DA1/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Evento On Apply",
+					"entryNodeGuid": "D27A6CBA493E451F1E25879E3E70B46C",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/Create_Curves__E8B98DA1/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/Create_Curves__E8B98DA1/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 36
+				}
+			]
+		}
+	]
+}

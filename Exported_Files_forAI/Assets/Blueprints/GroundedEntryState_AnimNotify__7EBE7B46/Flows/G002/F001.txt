@@ -1,0 +1,37 @@
+Asset: GroundedEntryState_AnimNotify
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/GroundedEntryState_AnimNotify.GroundedEntryState_AnimNotify
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_GroundedEntryState_AnimNotify
+GraphId: G002
+Graph: Received_Notify
+FlowId: F001
+Entry: Received Notify
+NodeGuid: 8D2361E14024898F37CC8AAAF72C3A02
+
+Exec Flow:
+1. Received Notify [K2Node_FunctionEntry] 8D2361E14024898F37CC8AAAF72C3A02
+2. Nodo di restituzione [K2Node_FunctionResult] 6D35050043EEDFC9E79F4EA1983FC6A8
+3. Get Anim Instance
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 5B05876C4AC167A5F6E4F39920A14DFF
+4. BPI Set Grounded Entry State
+Target is ALS Animation BPI [K2Node_Message] B09691374083487D63D927AC21445B66
+5. Get Grounded Entry State [K2Node_VariableGet] E71B25274137F89752FE0F9D0C8ED83B
+
+Variables Read:
+- Get Grounded Entry State
+
+Variables Written:
+- none
+
+External Calls:
+- Get Anim Instance
+La destinazione è Componente mesh scheletrica
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Anim Instance
+La destinazione è Componente mesh scheletrica

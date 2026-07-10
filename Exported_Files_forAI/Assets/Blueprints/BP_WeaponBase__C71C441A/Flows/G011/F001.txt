@@ -1,0 +1,32 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G011
+Graph: IsLoopingWeapon
+FlowId: F001
+Entry: Is Looping Weapon
+NodeGuid: 82E63F4741FCAC8480C9929C5A5C2813
+
+Exec Flow:
+1. Is Looping Weapon [K2Node_FunctionEntry] 82E63F4741FCAC8480C9929C5A5C2813
+2. Nodo di restituzione [K2Node_FunctionResult] 3A3AA13E4C981510BE3916ABF81D164E
+3. Get WeaponData [K2Node_VariableGet] 13287C7248920390944DB08A17751E6A
+4. Break S_WeaponData [K2Node_BreakStruct] BBFA4CBB4D0C29A0C96161B0FDF73FC8
+
+Variables Read:
+- Get WeaponData
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

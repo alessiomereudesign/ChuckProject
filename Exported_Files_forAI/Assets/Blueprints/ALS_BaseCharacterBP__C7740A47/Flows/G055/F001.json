@@ -1,0 +1,830 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"graph": "UpdateCharacterMovement",
+	"entryName": "Update Character Movement",
+	"entryNodeGuid": "091831864F716506C03AB5B01B8F0A58",
+	"nodes": [
+		{
+			"nodeGuid": "091831864F716506C03AB5B01B8F0A58",
+			"class": "K2Node_FunctionEntry",
+			"title": "Update Character Movement",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C770EA884AE8F9A22110928B735F99E1",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A38CC852489BEA776C2D80ABC5A7757E",
+			"class": "K2Node_CallFunction",
+			"title": "Get Allowed Gait",
+			"comment": "",
+			"x": 528,
+			"y": -176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1393850242D2533F0BEE77BDD43891EB",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5A956514479C786155D4899F1C0CBB1B",
+					"name": "AllowedGait",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "F77A03AE4C8AD91FCAC79C98F75A1F90",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 512,
+			"y": -192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "687577154C364787DB3711BC671D269C",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "85A33CB5433DF7795E5318A0667BFF2C",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A23D2F984C2B78434A56749047DE4832",
+			"class": "K2Node_ExecutionSequence",
+			"title": "Sequenza",
+			"comment": "",
+			"x": 256,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "187ABC8649C1A707610C278284B66ED8",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A485047C4508861F26B615A9DBAB3762",
+					"name": "then_0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "40751C6F440C236374283C9B57433233",
+					"name": "then_1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B4A8B23C4F7C31954DD67FB5F3B6C7CA",
+					"name": "then_2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2EA842D14E690C5DAFFAD7B446B519BB",
+			"class": "K2Node_CallFunction",
+			"title": "Get Actual Gait",
+			"comment": "",
+			"x": 672,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B9FFAC0D4361E0739715F6AF37274538",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7BA39B284A31513022817B85234ED711",
+					"name": "AllowedGait",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "0A794BA142FB6B5996299A9A99EDDE1E",
+					"name": "ActualGait",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "6593FDA242C16A37290A5685172711DC",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 512,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "012EF7DD4F47B223DD23A3BE977BFF7E",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ED85A6BA4A6C4D71CCD84CAB9FFE7393",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4152E36B466A7D1507F4CA86593B6B51",
+			"class": "K2Node_EnumInequality",
+			"title": "Non uguale (enum)",
+			"comment": "",
+			"x": 1088,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "71C093EF4AD4B7136AE03DB54EFDC8AC",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9F8FD49D434F8827A71EFCA20BF626A4",
+					"name": "A",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "97461CA5425789B7E0398AB7CAC7276C",
+					"name": "B",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "C53733584584FA3185D733B4BC948EA4",
+			"class": "K2Node_VariableGet",
+			"title": "Get Gait",
+			"comment": "",
+			"x": 928,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6732C7E74F34295C49809E8470926D5F",
+					"name": "Gait",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "EE960FE649CC8267643EA88E3C745BFA",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A9EC1B4A4953FD4F2E2970A7EE72B331",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1088,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C8CA6F8F45896FF8E8E20DA0245DDE61",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F9F667B249F484A54CB30893703182D4",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "C48645CD43EBA9F7975762A7C83633D4",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B16E5FF54112507FC57D42AEEAE883F5",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DA873B884BDA61C607D7E785D00EC1A2",
+			"class": "K2Node_CallFunction",
+			"title": "Update Dynamic Movement Settings\nLa destinazione è ALS Base Character BP",
+			"comment": "",
+			"x": 688,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "897576924DCBC8F35705EC98EBA61B8D",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D1E09DC7426A1CB588E666A1D711931F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "928357094627C42B86685ABE969BE21D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FB2E12EB47C6A1F97F0E8181BAADF977",
+					"name": "AllowedGait",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "57345C494352CB51378E30B3FB8DF294",
+			"class": "K2Node_CallFunction",
+			"title": "BPI Set Gait\nLa destinazione è ALS Base Character BP",
+			"comment": "",
+			"x": 1280,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A4E4C27F4932CF07B81EF28B0DFE971C",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "69F6C56E4347B93EADB23B961B2C35D6",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "88F83CE94CCCDC4AE8244AAEEDDD4B8F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B63754E84589ECF8B0D34B8CCCA31067",
+					"name": "NewGait",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "5330160542B0A84F923ABC8E06BC63E5",
+			"class": "K2Node_VariableSet",
+			"title": "Set AllowedGait",
+			"comment": "",
+			"x": 704,
+			"y": -208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "71CD399B4AC21F1F1F9D609EEE070AC4",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C9CDD3574DF3F16E13A86B97FE3966FD",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3289CF3E410D31A1FFA18E8B7E22DB76",
+					"name": "AllowedGait",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "3D872AB4444AD3BE11E754A626F9A756",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "4A7CBF22468D3C190C70BA8A6F2B8775",
+			"class": "K2Node_VariableSet",
+			"title": "Set ActualGait",
+			"comment": "",
+			"x": 912,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2DA7E2F241BA058EE79D939D798357AB",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E229EF74258D96EAE2ACE898DE4825C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0D8169D5458F7D2471EB6D8F79C51B55",
+					"name": "ActualGait",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "F2DD91894BD99E6A52DC87B18FDAEEA0",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "C3CF745648AD05B2837FC3A9112EA3E3",
+			"class": "K2Node_VariableGet",
+			"title": "Get ActualGait",
+			"comment": "",
+			"x": 928,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7C80510548B73B7ED9F359A7BAFD66B5",
+					"name": "ActualGait",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E5D3619345325C4A0DC80D8AF7C6DCC4",
+			"class": "K2Node_VariableGet",
+			"title": "Get ActualGait",
+			"comment": "",
+			"x": 1280,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7C80510548B73B7ED9F359A7BAFD66B5",
+					"name": "ActualGait",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "17C9DC1A422F6AE8AD47C7BD80B60491",
+			"class": "K2Node_VariableGet",
+			"title": "Get AllowedGait",
+			"comment": "",
+			"x": 528,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "452A2A4A44DF20BDB7D2A1B8288D6673",
+					"name": "AllowedGait",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "97C92F5D459FFCB2AD0BD38E6CA3A425",
+			"class": "K2Node_VariableGet",
+			"title": "Get AllowedGait",
+			"comment": "",
+			"x": 544,
+			"y": 400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "921709EA4F79A5DDC1C4C88459FAF643",
+					"name": "AllowedGait",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "8518C5B242445D0BFF7D07B58EAA4E36",
+			"class": "EdGraphNode_Comment",
+			"title": "Set the Allowed Gait",
+			"comment": "Set the Allowed Gait",
+			"x": 512,
+			"y": -256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "2078F40A43BF5A5AA199C09B911742DF",
+			"class": "EdGraphNode_Comment",
+			"title": "Determine the Actual Gait. If it is different from the current Gait, Set the new Gait Event.",
+			"comment": "Determine the Actual Gait. If it is different from the current Gait, Set the new Gait Event.",
+			"x": 512,
+			"y": -80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "EC82EA11403F12AADF628ABB7AD969A1",
+			"class": "EdGraphNode_Comment",
+			"title": "Use the allowed gait to update the movement settings.",
+			"comment": "Use the allowed gait to update the movement settings.",
+			"x": 512,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "702FA0D146548C129AB7CBA9C516AE51",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 528,
+			"y": 352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BB3F1C4F4E3CAB333B11308A5A706ECC",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A681ADF7495EE238FDB12687B28FD864",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "exec",
+			"fromNodeGuid": "091831864F716506C03AB5B01B8F0A58",
+			"fromPinId": "C770EA884AE8F9A22110928B735F99E1",
+			"fromPinName": "then",
+			"toNodeGuid": "A23D2F984C2B78434A56749047DE4832",
+			"toPinId": "187ABC8649C1A707610C278284B66ED8",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "data",
+			"fromNodeGuid": "A38CC852489BEA776C2D80ABC5A7757E",
+			"fromPinId": "5A956514479C786155D4899F1C0CBB1B",
+			"fromPinName": "AllowedGait",
+			"toNodeGuid": "5330160542B0A84F923ABC8E06BC63E5",
+			"toPinId": "3289CF3E410D31A1FFA18E8B7E22DB76",
+			"toPinName": "AllowedGait"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "exec",
+			"fromNodeGuid": "A23D2F984C2B78434A56749047DE4832",
+			"fromPinId": "A485047C4508861F26B615A9DBAB3762",
+			"fromPinName": "then_0",
+			"toNodeGuid": "F77A03AE4C8AD91FCAC79C98F75A1F90",
+			"toPinId": "687577154C364787DB3711BC671D269C",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "exec",
+			"fromNodeGuid": "F77A03AE4C8AD91FCAC79C98F75A1F90",
+			"fromPinId": "85A33CB5433DF7795E5318A0667BFF2C",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "5330160542B0A84F923ABC8E06BC63E5",
+			"toPinId": "71CD399B4AC21F1F1F9D609EEE070AC4",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "exec",
+			"fromNodeGuid": "A23D2F984C2B78434A56749047DE4832",
+			"fromPinId": "40751C6F440C236374283C9B57433233",
+			"fromPinName": "then_1",
+			"toNodeGuid": "6593FDA242C16A37290A5685172711DC",
+			"toPinId": "012EF7DD4F47B223DD23A3BE977BFF7E",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "exec",
+			"fromNodeGuid": "A23D2F984C2B78434A56749047DE4832",
+			"fromPinId": "B4A8B23C4F7C31954DD67FB5F3B6C7CA",
+			"fromPinName": "then_2",
+			"toNodeGuid": "702FA0D146548C129AB7CBA9C516AE51",
+			"toPinId": "BB3F1C4F4E3CAB333B11308A5A706ECC",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "data",
+			"fromNodeGuid": "17C9DC1A422F6AE8AD47C7BD80B60491",
+			"fromPinId": "452A2A4A44DF20BDB7D2A1B8288D6673",
+			"fromPinName": "AllowedGait",
+			"toNodeGuid": "2EA842D14E690C5DAFFAD7B446B519BB",
+			"toPinId": "7BA39B284A31513022817B85234ED711",
+			"toPinName": "AllowedGait"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "data",
+			"fromNodeGuid": "2EA842D14E690C5DAFFAD7B446B519BB",
+			"fromPinId": "0A794BA142FB6B5996299A9A99EDDE1E",
+			"fromPinName": "ActualGait",
+			"toNodeGuid": "4A7CBF22468D3C190C70BA8A6F2B8775",
+			"toPinId": "0D8169D5458F7D2471EB6D8F79C51B55",
+			"toPinName": "ActualGait"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "exec",
+			"fromNodeGuid": "6593FDA242C16A37290A5685172711DC",
+			"fromPinId": "ED85A6BA4A6C4D71CCD84CAB9FFE7393",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "4A7CBF22468D3C190C70BA8A6F2B8775",
+			"toPinId": "2DA7E2F241BA058EE79D939D798357AB",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "data",
+			"fromNodeGuid": "4152E36B466A7D1507F4CA86593B6B51",
+			"fromPinId": "71C093EF4AD4B7136AE03DB54EFDC8AC",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "A9EC1B4A4953FD4F2E2970A7EE72B331",
+			"toPinId": "F9F667B249F484A54CB30893703182D4",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "data",
+			"fromNodeGuid": "C3CF745648AD05B2837FC3A9112EA3E3",
+			"fromPinId": "7C80510548B73B7ED9F359A7BAFD66B5",
+			"fromPinName": "ActualGait",
+			"toNodeGuid": "4152E36B466A7D1507F4CA86593B6B51",
+			"toPinId": "9F8FD49D434F8827A71EFCA20BF626A4",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "data",
+			"fromNodeGuid": "C53733584584FA3185D733B4BC948EA4",
+			"fromPinId": "6732C7E74F34295C49809E8470926D5F",
+			"fromPinName": "Gait",
+			"toNodeGuid": "4152E36B466A7D1507F4CA86593B6B51",
+			"toPinId": "97461CA5425789B7E0398AB7CAC7276C",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "exec",
+			"fromNodeGuid": "4A7CBF22468D3C190C70BA8A6F2B8775",
+			"fromPinId": "3E229EF74258D96EAE2ACE898DE4825C",
+			"fromPinName": "then",
+			"toNodeGuid": "A9EC1B4A4953FD4F2E2970A7EE72B331",
+			"toPinId": "C8CA6F8F45896FF8E8E20DA0245DDE61",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "exec",
+			"fromNodeGuid": "A9EC1B4A4953FD4F2E2970A7EE72B331",
+			"fromPinId": "C48645CD43EBA9F7975762A7C83633D4",
+			"fromPinName": "then",
+			"toNodeGuid": "57345C494352CB51378E30B3FB8DF294",
+			"toPinId": "A4E4C27F4932CF07B81EF28B0DFE971C",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "exec",
+			"fromNodeGuid": "702FA0D146548C129AB7CBA9C516AE51",
+			"fromPinId": "A681ADF7495EE238FDB12687B28FD864",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "DA873B884BDA61C607D7E785D00EC1A2",
+			"toPinId": "897576924DCBC8F35705EC98EBA61B8D",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "data",
+			"fromNodeGuid": "97C92F5D459FFCB2AD0BD38E6CA3A425",
+			"fromPinId": "921709EA4F79A5DDC1C4C88459FAF643",
+			"fromPinName": "AllowedGait",
+			"toNodeGuid": "DA873B884BDA61C607D7E785D00EC1A2",
+			"toPinId": "FB2E12EB47C6A1F97F0E8181BAADF977",
+			"toPinName": "AllowedGait"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "UpdateCharacterMovement",
+			"edgeType": "data",
+			"fromNodeGuid": "E5D3619345325C4A0DC80D8AF7C6DCC4",
+			"fromPinId": "7C80510548B73B7ED9F359A7BAFD66B5",
+			"fromPinName": "ActualGait",
+			"toNodeGuid": "57345C494352CB51378E30B3FB8DF294",
+			"toPinId": "B63754E84589ECF8B0D34B8CCCA31067",
+			"toPinName": "NewGait"
+		}
+	],
+	"variablesRead": [
+		"Get ActualGait",
+		"Get AllowedGait",
+		"Get Gait"
+	],
+	"variablesWritten": [
+		"Set ActualGait",
+		"Set AllowedGait"
+	],
+	"functionsCalled": [
+		"BPI Set Gait\nLa destinazione è ALS Base Character BP",
+		"Get Actual Gait",
+		"Get Allowed Gait",
+		"Update Dynamic Movement Settings\nLa destinazione è ALS Base Character BP"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"BPI Set Gait\nLa destinazione è ALS Base Character BP",
+		"Get Actual Gait",
+		"Get Allowed Gait",
+		"Update Dynamic Movement Settings\nLa destinazione è ALS Base Character BP"
+	],
+	"flowId": "F001",
+	"graphId": "G055",
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP"
+}

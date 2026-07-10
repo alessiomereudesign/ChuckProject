@@ -1,0 +1,25 @@
+{
+	"graphId": "G010",
+	"name": "InitializeWeapon",
+	"graphName": "InitializeWeapon",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 19,
+	"edgeCount": 26,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G010/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Initialize Weapon",
+			"entryNodeGuid": "45ACEE1E4348283BDB0A448628A6CBD4",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G010/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G010/F001.json",
+			"textFile": "Flows/G010/F001.txt",
+			"jsonFile": "Flows/G010/F001.json",
+			"nodeCount": 19
+		}
+	]
+}

@@ -1,0 +1,29 @@
+Asset: Chuck_HUD
+AssetPath: /Game/ChuckContent/UI/Interfaces/Chuck_HUD.Chuck_HUD
+AssetKey: Game_ChuckContent_UI_Interfaces_Chuck_HUD
+GraphId: G002
+Graph: UserConstructionScript
+FlowId: F001
+Entry: Construction Script
+NodeGuid: 5A6615234564CECC2B3E77BE78AE46AD
+
+Exec Flow:
+1. Construction Script [K2Node_FunctionEntry] 5A6615234564CECC2B3E77BE78AE46AD
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

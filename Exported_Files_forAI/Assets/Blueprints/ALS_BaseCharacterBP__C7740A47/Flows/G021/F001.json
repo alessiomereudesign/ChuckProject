@@ -1,0 +1,282 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"graph": "GetAnimCurveValue",
+	"entryName": "Get Anim Curve Value",
+	"entryNodeGuid": "C77ED19740F176F511831C86EF601C37",
+	"nodes": [
+		{
+			"nodeGuid": "C77ED19740F176F511831C86EF601C37",
+			"class": "K2Node_FunctionEntry",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D4F605C04D6477F4CEF4E38A0647AB16",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8682CB36414B4274EF1D98B641546A4C",
+					"name": "CurveName",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B41CE6854B113841C9904BB02E430543",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 448,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "55015C8B4606CB298216A1BEA92D59F5",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2266F03D4AB3B0B6DE7758846E7F3770",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "2E21002D4DB69C7BFE24CFAD9506A28F",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 688,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F1B2195840EDAEAD9019CB834866FBE3",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FE8BC5F64B40BFEE50F6D1A22B30E0E7",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "3BC05CFD4148C89F0A66AEB7476379D3",
+			"class": "K2Node_VariableGet",
+			"title": "Get CurveName",
+			"comment": "",
+			"x": 272,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EA84CBF64F4DCA9BEBAF30837DF49C38",
+					"name": "CurveName",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E2B1F196440DBA35E54449AE1DF07373",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 208,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "199C3BC040D67C5BF129FC92B8380AB3",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2BC5D8DE40DE3FC7D3515398F27D1928",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D0CEC78D4A2B2F3CB6F904B3ABB208F4",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0D96C4514BC9100CDB6135825D32A066",
+					"name": "MainAnimInstance",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2CFD787C461D098FDAF9A59A6E97961E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4986F9CE41DB4CE4648074A9FCD1C399",
+			"class": "K2Node_CallFunction",
+			"title": "Get Curve Value\nLa destinazione è Istanza animazione",
+			"comment": "",
+			"x": 448,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E97D347F4216B178F75FB893ECE72A76",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0E1A0ED543208F13E42CE8B2BF0C390F",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "A40DF56F4BA97117AF98C7ACBA926D05",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "GetAnimCurveValue",
+			"edgeType": "exec",
+			"fromNodeGuid": "C77ED19740F176F511831C86EF601C37",
+			"fromPinId": "D4F605C04D6477F4CEF4E38A0647AB16",
+			"fromPinName": "then",
+			"toNodeGuid": "E2B1F196440DBA35E54449AE1DF07373",
+			"toPinId": "199C3BC040D67C5BF129FC92B8380AB3",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "GetAnimCurveValue",
+			"edgeType": "exec",
+			"fromNodeGuid": "E2B1F196440DBA35E54449AE1DF07373",
+			"fromPinId": "D0CEC78D4A2B2F3CB6F904B3ABB208F4",
+			"fromPinName": "else",
+			"toNodeGuid": "B41CE6854B113841C9904BB02E430543",
+			"toPinId": "55015C8B4606CB298216A1BEA92D59F5",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "GetAnimCurveValue",
+			"edgeType": "exec",
+			"fromNodeGuid": "E2B1F196440DBA35E54449AE1DF07373",
+			"fromPinId": "2BC5D8DE40DE3FC7D3515398F27D1928",
+			"fromPinName": "then",
+			"toNodeGuid": "2E21002D4DB69C7BFE24CFAD9506A28F",
+			"toPinId": "F1B2195840EDAEAD9019CB834866FBE3",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "GetAnimCurveValue",
+			"edgeType": "data",
+			"fromNodeGuid": "4986F9CE41DB4CE4648074A9FCD1C399",
+			"fromPinId": "A40DF56F4BA97117AF98C7ACBA926D05",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "2E21002D4DB69C7BFE24CFAD9506A28F",
+			"toPinId": "FE8BC5F64B40BFEE50F6D1A22B30E0E7",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "GetAnimCurveValue",
+			"edgeType": "data",
+			"fromNodeGuid": "3BC05CFD4148C89F0A66AEB7476379D3",
+			"fromPinId": "EA84CBF64F4DCA9BEBAF30837DF49C38",
+			"fromPinName": "CurveName",
+			"toNodeGuid": "4986F9CE41DB4CE4648074A9FCD1C399",
+			"toPinId": "0E1A0ED543208F13E42CE8B2BF0C390F",
+			"toPinName": "CurveName"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "GetAnimCurveValue",
+			"edgeType": "data",
+			"fromNodeGuid": "E2B1F196440DBA35E54449AE1DF07373",
+			"fromPinId": "0D96C4514BC9100CDB6135825D32A066",
+			"fromPinName": "MainAnimInstance",
+			"toNodeGuid": "4986F9CE41DB4CE4648074A9FCD1C399",
+			"toPinId": "E97D347F4216B178F75FB893ECE72A76",
+			"toPinName": "self"
+		}
+	],
+	"variablesRead": [
+		"Get CurveName",
+		"Ottieni"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Curve Value\nLa destinazione è Istanza animazione"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Curve Value\nLa destinazione è Istanza animazione"
+	],
+	"flowId": "F001",
+	"graphId": "G021",
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP"
+}

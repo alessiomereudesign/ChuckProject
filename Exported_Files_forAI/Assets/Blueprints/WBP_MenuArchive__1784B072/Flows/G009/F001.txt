@@ -1,0 +1,137 @@
+Asset: WBP_MenuArchive
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive
+GraphId: G009
+Graph: UpdateWeaponSlots
+FlowId: F001
+Entry: Update Weapon Slots
+NodeGuid: AD3B4C5B4FF0C715A5664C80BDB81767
+
+Exec Flow:
+1. Update Weapon Slots [K2Node_FunctionEntry] AD3B4C5B4FF0C715A5664C80BDB81767
+2. Get As ChuckRef [K2Node_VariableGet] 1B9F2EBD48F647DA540DB6A39C12AA5B
+3. Get Equipped_BigWeapon [K2Node_VariableGet] 2149E6C348EB8E83C255A29E8704F2BD
+4. Get Data Table Row DT_Weapon [K2Node_GetDataTableRow] C685ED45462F35C7B7B85C8AA08C982B
+5. Break S_WeaponData [K2Node_BreakStruct] 73ECB2C242867A2D871F36BAB2F606D1
+6. Get Img_BigWeapon [K2Node_VariableGet] F4674AB1442BA85AFC89DB8F1CBB3A7F
+7. Get TxtVar_BigWeapon [K2Node_VariableGet] 1CE64EC44178A5B0099BE49BDA3A2A3D
+8. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 50B3481249475D18557EA7A8B9AB9C09
+9. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 1FC14A194CBF1742C44D16A848613B4F
+10. Get Data Table Row DT_Weapon [K2Node_GetDataTableRow] 9A57535E4022734C147BA3B6D73DC5DC
+11. Break S_WeaponData [K2Node_BreakStruct] C135765345827F08905169963434F811
+12. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 4FAE955F4B9F0D8BB24E098296F8DD18
+13. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 73EC71534D5485681174FFB676B0B39D
+14. Get Equipped_SmallFirearm [K2Node_VariableGet] 0C20CCCE43AF6DDADA7FB9864318A6B5
+15. Get Equipped_Melee [K2Node_VariableGet] 47C388A24723C735D250E9AC0440E035
+16. Get Equipped_Item [K2Node_VariableGet] 4D964C49439525D8FBBA499F12A69091
+17. Sequenza [K2Node_ExecutionSequence] A365040F44EE2276EB62C09A966A27FE
+18. Get Img_SmallFirearm [K2Node_VariableGet] 40EC137144AA8024E8E847B968AB43C7
+19. Get TxtVar_SmallFirearm [K2Node_VariableGet] 367302D345DC818E172285B6A85A734A
+20. Get Data Table Row DT_Weapon [K2Node_GetDataTableRow] 071590574D5C2D888042AFAADB48EDDD
+21. Break S_WeaponData [K2Node_BreakStruct] C0D560BB4FB69938AAB240A4112D0D63
+22. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] C796E85D44DF35FCA3DE0FA8B16DCA9A
+23. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] AB39757D44D5D8B57156E8A5B789506C
+24. Get Data Table Row DT_Weapon [K2Node_GetDataTableRow] 3B116260495044664FAA77B03132855F
+25. Break S_WeaponData [K2Node_BreakStruct] 75DAA77A4E053EA593B7BF9E32D6F3B5
+26. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] FBEB78A047A4B6A9DDF281A267F2BA2C
+27. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] ADDB418742632136899CFDB2EF7BE8F6
+28. Get Img_Melee [K2Node_VariableGet] 85655EF14152D587E6BAA19800D0118C
+29. Get TxtVar_Melee [K2Node_VariableGet] 3AB4EA664F4D2910DA2544B097A8E6DA
+30. Get Img_Item [K2Node_VariableGet] CDC4E9064141BEBB9C6013A98AA14373
+31. Get TxtVar_Item [K2Node_VariableGet] AF835350414DF16AD1556EB765A51750
+32. Get Img_BigWeapon [K2Node_VariableGet] 16D0FD7E4648A6552100419E404EBE3E
+33. Get TxtVar_BigWeapon [K2Node_VariableGet] 2A2521C84696C391F5FC2D9B4BB3D8F3
+34. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 94051C104AA8636CA30E11854F143240
+35. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 33805A3142849174B101C7AABF3D8FD2
+36. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 96EA736441C52DDCCCC5F190B4EA9164
+37. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 518237AD48FBF4CD28041C873A51D658
+38. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 4E3B5B6E42894F9A4DF80AB3F035C29D
+39. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 579D8DB44F7DDAF78E3FDCB68C1C8D91
+40. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 278AE2DC48DFBB523EC4D79A9B2A882D
+41. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] D49A172A474F0F736E2B22B3EE7EDF8A
+42. Get Img_SmallFirearm [K2Node_VariableGet] 3B3F0B7F4766AF1A47597CAB9529F7CC
+43. Get TxtVar_SmallFirearm [K2Node_VariableGet] F69DC32743906C68622D229333D43D66
+44. Get TxtVar_Melee [K2Node_VariableGet] 6DFA4AF04081A62E5BD3F795CA202762
+45. Get Img_Melee [K2Node_VariableGet] 15BD04994445B87FD3DC7AAC8C9746E1
+46. Get Img_Item [K2Node_VariableGet] 39A7B09141CA2E35FD62FE9BCA925AE0
+47. Get TxtVar_Item [K2Node_VariableGet] A9926DC14D6D2A897B9D79A21422FBC6
+48. Get Mesh_BigWeapon [K2Node_VariableGet] 65642BFB41DD091C3574A685D8401EDD
+49. Is Valid [K2Node_MacroInstance] B3934C89404BCCE834FA989BAB6AA650
+50. Nodo di reindirizzamento [K2Node_Knot] C9ACEE1D4218B9E75F614D8E052FB991
+51. Nodo di reindirizzamento [K2Node_Knot] 7D698EEB4C18ADB0249DD484FCB9ED13
+52. Get Mesh_SmallWeapon [K2Node_VariableGet] BB04F00A4D830B1161BF439352BD3288
+53. Is Valid [K2Node_MacroInstance] A7A72808452DA4D5C7D70FAD48A0F6E2
+54. Nodo di reindirizzamento [K2Node_Knot] 60B0F83A48F4C444230B21A727C62734
+55. Nodo di reindirizzamento [K2Node_Knot] 91E144514C3ECAA97A6700A8670ECF43
+56. Get Mesh_Melee [K2Node_VariableGet] EB057E474AAF5B83E9D2B09B895378DA
+57. Is Valid [K2Node_MacroInstance] B10F85EB43B47DB347A786A612979C87
+58. Nodo di reindirizzamento [K2Node_Knot] 6BA009914AC1B7EAD025CAB4701A4E6D
+59. Nodo di reindirizzamento [K2Node_Knot] 649FDD36417785B65C72AB85E88E74E4
+60. Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 1257D3084EA5426317867BA00A1A846C
+61. Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] DD364FBE4A0C872691C80DB1BB277331
+62. Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 2F67C30C4053BCE615C836AA44A4B787
+
+Variables Read:
+- Get As ChuckRef
+- Get Equipped_BigWeapon
+- Get Equipped_Item
+- Get Equipped_Melee
+- Get Equipped_SmallFirearm
+- Get Img_BigWeapon
+- Get Img_Item
+- Get Img_Melee
+- Get Img_SmallFirearm
+- Get Mesh_BigWeapon
+- Get Mesh_Melee
+- Get Mesh_SmallWeapon
+- Get TxtVar_BigWeapon
+- Get TxtVar_Item
+- Get TxtVar_Melee
+- Get TxtVar_SmallFirearm
+
+Variables Written:
+- none
+
+External Calls:
+- Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica
+- Set Brush from Texture
+La destinazione è Immagine
+- SetText (Text)
+La destinazione è Testo
+
+Widgets Touched:
+- Set Brush from Texture
+La destinazione è Immagine
+- SetText (Text)
+La destinazione è Testo
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica
+- Set Brush from Texture
+La destinazione è Immagine
+- SetText (Text)
+La destinazione è Testo

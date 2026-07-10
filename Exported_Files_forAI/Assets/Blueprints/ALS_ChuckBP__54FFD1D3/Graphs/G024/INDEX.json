@@ -1,0 +1,25 @@
+{
+	"graphId": "G024",
+	"name": "SpawnCurrentWeaponActor",
+	"graphName": "SpawnCurrentWeaponActor",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 18,
+	"edgeCount": 22,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G024/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G024/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G024/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Spawn Current Weapon Actor",
+			"entryNodeGuid": "2959A24F4A294EFB5AAF63ABCA6AF98D",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G024/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G024/F001.json",
+			"textFile": "Flows/G024/F001.txt",
+			"jsonFile": "Flows/G024/F001.json",
+			"nodeCount": 18
+		}
+	]
+}

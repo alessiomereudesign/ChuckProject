@@ -1,0 +1,169 @@
+{
+	"assetName": "WBP_MenuArchive",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "ReturnBackManage\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "A48A603E40735027B86F9E940EFAA910",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "CharacterCard > CharacterSlotPage\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "370FAB414B8A48B8EF3C0F99179FFB42",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "CharacterSlotPage > IntersectPage\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "CDDFDE6048085ED7F92F5D8597F19A06",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Content Whitee Dark/Light\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "01EA2CDA4A8C69E6A06DC98C04F0223A",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento Tick",
+			"graph": "EventGraph",
+			"nodeGuid": "80161E244A06E77AB9560CBCAAA6CE68",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "RefreshMenuFocus\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "8EFCC6564CE05F5E079AD3A4D53BBFC0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Background Grey Dark/Light\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "F06A33814BBCFF8FE8BE3081A19E9023",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "FocusedTabColor\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "1F682B8E4C3EF9334EF9C8AF9A31C68E",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "UnfocusedTabColor\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "7EA5F3BF463AE6C1431186A027A02E3B",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento Construct",
+			"graph": "IntersectGraph",
+			"nodeGuid": "70790197477F04B012D5A68D59F1C60D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "OpenCharacterSlot\nCustom Event",
+			"graph": "IntersectGraph",
+			"nodeGuid": "0F015DC949B88A9861D156BE6B97F60F",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento Destruct",
+			"graph": "IntersectGraph",
+			"nodeGuid": "51728D6341E0AEA800333DBECC5225BD",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "OnClickedInventoryButtons",
+			"graph": "InventoryGraph",
+			"nodeGuid": "1BF19B89429DC3FE262DEABFA1C01D31",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "PopulateItemGrid\nCustom Event",
+			"graph": "InventoryGraph",
+			"nodeGuid": "A8316402431249613FC1E48A42F17EB5",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "ShowAllItems\nCustom Event",
+			"graph": "InventoryGraph",
+			"nodeGuid": "CD152E5643DCD6F348E0BCAAB8879E90",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "ShowWeapons Items\nCustom Event",
+			"graph": "InventoryGraph",
+			"nodeGuid": "6FBBFFF64FA3B6E2F643839E1EC2A4C7",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "ShowArmorItems\nCustom Event",
+			"graph": "InventoryGraph",
+			"nodeGuid": "995AFA6B4668BFC03D4E5C952BC14A70",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "On Analog Value Changed",
+			"graph": "OnAnalogValueChanged",
+			"nodeGuid": "00220CD04DC4E663234E8F93BCC940A0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "On Armor Slot Clicked",
+			"graph": "OnArmorSlotClicked",
+			"nodeGuid": "27B057DC4BCFABA947AB6C9E4508C152",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "On Key Down",
+			"graph": "OnKeyDown",
+			"nodeGuid": "D914DB934D5240A3BE9F6CA949B80798",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "On Weapon Slot Clicked",
+			"graph": "OnWeaponSlotClicked",
+			"nodeGuid": "35F2003C4980D91857B1889C8B8381C9",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Equipment Slots",
+			"graph": "UpdateEquipmentSlots",
+			"nodeGuid": "170EE6124E58E9CF8C37418C2FCE6553",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Weapon Slots",
+			"graph": "UpdateWeaponSlots",
+			"nodeGuid": "AD3B4C5B4FF0C715A5664C80BDB81767",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

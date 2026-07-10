@@ -1,0 +1,80 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_BPI_Interaction",
+	"graph": "GetInteractionPrompt",
+	"entryName": "Get Interaction Prompt",
+	"entryNodeGuid": "1011AAB24A7F1C3339C3179074BC1CC2",
+	"nodes": [
+		{
+			"nodeGuid": "1011AAB24A7F1C3339C3179074BC1CC2",
+			"class": "K2Node_FunctionEntry",
+			"title": "Get Interaction Prompt",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8A3DDC13427F535C874DA4B717BBC9F3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "67890453469647CD07C2DABD1C46E318",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 256,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E3235D914494FF5A50FBD184E051D85E",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A73B55084FCF6A276FBD2E907BB14124",
+					"name": "InteractionPrompt",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Blueprints/S_InteractionPrompt.S_InteractionPrompt",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_BPI_Interaction",
+			"graph": "GetInteractionPrompt",
+			"edgeType": "exec",
+			"fromNodeGuid": "1011AAB24A7F1C3339C3179074BC1CC2",
+			"fromPinId": "8A3DDC13427F535C874DA4B717BBC9F3",
+			"fromPinName": "then",
+			"toNodeGuid": "67890453469647CD07C2DABD1C46E318",
+			"toPinId": "E3235D914494FF5A50FBD184E051D85E",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G001",
+	"assetName": "BPI_Interaction",
+	"assetPath": "/Game/ChuckContent/Blueprints/BPI_Interaction.BPI_Interaction"
+}

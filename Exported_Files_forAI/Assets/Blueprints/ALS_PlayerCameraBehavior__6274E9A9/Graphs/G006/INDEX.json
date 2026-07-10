@@ -1,0 +1,14 @@
+{
+	"graphId": "G006",
+	"name": "Transition",
+	"graphName": "Transition",
+	"type": "AnimationTransitionGraph",
+	"graphType": "AnimationTransitionGraph",
+	"graphGuid": "",
+	"nodeCount": 3,
+	"edgeCount": 2,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G006/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G006/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G006/EDGES.jsonl",
+	"flows": []
+}

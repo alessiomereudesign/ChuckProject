@@ -1,0 +1,80 @@
+{
+	"assetName": "ALS_Camera_BPI",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Camera_BPI.ALS_Camera_BPI",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Camera_BPI",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"functions": [
+		{
+			"name": "BPI_Get_3P_PivotTarget",
+			"graph": "BPI_Get_3P_PivotTarget",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Graphs/G001/INDEX.json"
+		},
+		{
+			"name": "BPI_Get_3P_PivotTarget",
+			"graph": "BPI_Get_3P_PivotTarget",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Graphs/G001/INDEX.json"
+		},
+		{
+			"name": "BPI_Get_3P_TraceParams",
+			"graph": "BPI_Get_3P_TraceParams",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "BPI_Get_3P_TraceParams",
+			"graph": "BPI_Get_3P_TraceParams",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "BPI_Get_CameraParameters",
+			"graph": "BPI_Get_CameraParameters",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "BPI_Get_CameraParameters",
+			"graph": "BPI_Get_CameraParameters",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "BPI_Get_FP_CameraTarget",
+			"graph": "BPI_Get_FP_CameraTarget",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Graphs/G004/INDEX.json"
+		},
+		{
+			"name": "BPI_Get_FP_CameraTarget",
+			"graph": "BPI_Get_FP_CameraTarget",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Graphs/G004/INDEX.json"
+		}
+	]
+}

@@ -1,0 +1,30 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G013
+Graph: Reload
+FlowId: F001
+Entry: Reload
+NodeGuid: AF4781DC43282686DDF733AEE529D1D2
+
+Exec Flow:
+1. Reload [K2Node_FunctionEntry] AF4781DC43282686DDF733AEE529D1D2
+2. Print String [K2Node_CallFunction] 18A4CFFB4F55FAF3581FD5AF760AD144
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- Print String
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Print String

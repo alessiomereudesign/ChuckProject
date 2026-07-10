@@ -1,0 +1,45 @@
+{
+	"graphId": "G001",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 25,
+	"edgeCount": 22,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_SelectorButton__1A61F3CD/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_SelectorButton__1A61F3CD/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_SelectorButton__1A61F3CD/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Evento Construct",
+			"entryNodeGuid": "9A1F535A4C046FC809050A87C2BB6C4D",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_SelectorButton__1A61F3CD/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_SelectorButton__1A61F3CD/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 25
+		},
+		{
+			"flowId": "F002",
+			"entryName": "Evento On Added to Focus Path",
+			"entryNodeGuid": "90B76D0F42145C6895293B81477E00B9",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_SelectorButton__1A61F3CD/Flows/G001/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_SelectorButton__1A61F3CD/Flows/G001/F002.json",
+			"textFile": "Flows/G001/F002.txt",
+			"jsonFile": "Flows/G001/F002.json",
+			"nodeCount": 25
+		},
+		{
+			"flowId": "F003",
+			"entryName": "Evento On Removed from Focus Path",
+			"entryNodeGuid": "3D457EE5452141D1D92B729E025FB00F",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_SelectorButton__1A61F3CD/Flows/G001/F003.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_SelectorButton__1A61F3CD/Flows/G001/F003.json",
+			"textFile": "Flows/G001/F003.txt",
+			"jsonFile": "Flows/G001/F003.json",
+			"nodeCount": 25
+		}
+	]
+}

@@ -1,0 +1,668 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+	"graph": "CalculateInAirLeanAmount",
+	"entryName": "Calculate in Air Lean Amount",
+	"entryNodeGuid": "59C873A643F2B365F13457B08F3A411B",
+	"nodes": [
+		{
+			"nodeGuid": "59C873A643F2B365F13457B08F3A411B",
+			"class": "K2Node_FunctionEntry",
+			"title": "Calculate in Air Lean Amount",
+			"comment": "",
+			"x": 32,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B5F62D5B473641D86D4C0FB77C043B81",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1E43A7CC48DD9C92417326BB43AF88C2",
+			"class": "K2Node_VariableGet",
+			"title": "Get Velocity",
+			"comment": "",
+			"x": 240,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C910578F4DD91870B4F3578E05E8B0DC",
+					"name": "Velocity",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "4B820AD44EDF8ABD502DD3A411A136F6",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6183EA2B4D6FDA2D903A2999A21FAE0D",
+			"class": "K2Node_CallFunction",
+			"title": "vector2d * float",
+			"comment": "",
+			"x": 960,
+			"y": 272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CBEF011E47A63A4D7BF4F49BC05B11E4",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "AED5EC43436F18B7C97F4BAB2DD0FB47",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "908D6FA34CE3D5D04D75A7B6712AA4FD",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "C1C4F3A640EC77C5B2AEAAB58C8658F7",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AC926E654075190458B4189159F9FE4D",
+					"name": "ReturnValue_X",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "DF5017E14611F1852B5C7EBBB8EEEAD9",
+					"name": "ReturnValue_Y",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "4DF21887418B6C00D4757A9CBC9E2CBC",
+			"class": "K2Node_VariableGet",
+			"title": "Get LeanInAirCurve",
+			"comment": "",
+			"x": 560,
+			"y": 352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "25D4E48C4B0E228503A3998AAD65FA3B",
+					"name": "LeanInAirCurve",
+					"direction": "Output",
+					"type": "object|/Script/Engine.CurveFloat",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9211E52B480CAF5D1D15A49173ECEA7A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "07D5A2304BCCA836AFA1388EDCE5D429",
+			"class": "K2Node_CallFunction",
+			"title": "Get Float Value\nLa destinazione è Curve Float",
+			"comment": "",
+			"x": 720,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "AD2B3E4947D932D08776EEA14F3D01E9",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.CurveFloat",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "38907CEC434FEAD9BBCCE4ABB377E66F",
+					"name": "InTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "97DC3EFD49E213743B6B0CB92C0485E4",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "BA0BC87347B614904A66BD94830714E3",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 1280,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "722ACF2148072454A732ED8DBDCE46EA",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0806535E42D8444E922E70AB9E581454",
+					"name": "LeanAmount",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FBB07CA547175EB9C572D3B032F8B9C1",
+			"class": "K2Node_CallFunction",
+			"title": "Unrotate Vector",
+			"comment": "",
+			"x": 400,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6F8C12FE4D255179245B73B2E0D25ECE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "713EA83E4EBC447D936074987C9AE9B2",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "4643E2FB44BED3F08CE4EBB66198EFB7",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "08F3B61F48034F8ACF7A78B561392C0E",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "5E7E58D0412C2DCA342992811D6C8A03",
+			"class": "K2Node_VariableGet",
+			"title": "Get Character",
+			"comment": "",
+			"x": 32,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EAEEE15D4DB6B2919241D39A4AD49AC1",
+					"name": "Character",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DFB871AF4D447938028260B2920D0420",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7FE3DF504E9E6280EA41738BED634909",
+			"class": "K2Node_CallFunction",
+			"title": "Get Actor Rotation\nLa destinazione è Actor",
+			"comment": "",
+			"x": 176,
+			"y": 256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CFCFDC4442C7479423FA6FB439D6C8A3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BAB63DA34D36D1AB10AC4497B585762B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "3D6B9C134F972B0A41D928A3C3BE3DEB",
+			"class": "K2Node_CallFunction",
+			"title": "vector / float",
+			"comment": "",
+			"x": 592,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "76FDDB184590CCC0454D3B8C00F3D053",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "87D3A2C6475E58A950D1FE887D56759E",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "A1D2ECDD4B346B61D0D7ABAC6964112F",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "350.000000"
+				},
+				{
+					"pinId": "3097E2514B21E9A0AF283D8CE79E1A7F",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "5A8EA3B84874C7665A4103BA644974F3",
+					"name": "ReturnValue_X",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "9A44F5474DE4C85B426EB899F7396AB9",
+					"name": "ReturnValue_Y",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "8B62BFA14A4BBA3BAB217897105C593B",
+					"name": "ReturnValue_Z",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "85C642A24B288E76A6E0C0B2D036B525",
+			"class": "K2Node_CallFunction",
+			"title": "Make Vector 2D",
+			"comment": "",
+			"x": 752,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EE94131C4FCA131DBC69CDA24B7D3579",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "8A7D3A4E45A0917FB35723837F6F68C0",
+					"name": "X",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "DF1A0CA54BF2F881E63B03AFFBA7882A",
+					"name": "Y",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "5E26815E4ADE93C404578994BAEFDECA",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector2D",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5D26B086415F1A7B1861D69492F39F7E",
+			"class": "K2Node_VariableGet",
+			"title": "Get FallSpeed",
+			"comment": "",
+			"x": 576,
+			"y": 400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9F333D1F436514EB68874FADD2BFD7B8",
+					"name": "FallSpeed",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "90C1FF984DC8321B2090619D4AB3D410",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "38B4E9F14F6CA2E6000D75BE15AE1AEE",
+			"class": "K2Node_MakeStruct",
+			"title": "Make LeanAmount",
+			"comment": "",
+			"x": 1088,
+			"y": 248,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9903162C474D1953B610BE8D0A9E0F9D",
+					"name": "LeanAmount",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9DA673D442C92D4C9063A38CC5DEEE1B",
+					"name": "LR_17_ADF99333493B27F5B49BA89100DC4C05",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.000000"
+				},
+				{
+					"pinId": "3B8E0F1A4C0B4EB75F046AAFFDEB972E",
+					"name": "FB_15_297866804FB14F4B81FB4A976A7F57D1",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.000000"
+				}
+			]
+		},
+		{
+			"nodeGuid": "00668E474D881A0324F94190164EE5C2",
+			"class": "EdGraphNode_Comment",
+			"title": "Use the relative Velocity direction and amount to determine how much the character should lean while in air. The Lean In Air curve gets the Fall Speed and is used as a multiplier to smoothly reverse the leaning direction when transitioning from moving upwards to moving downwards.",
+			"comment": "Use the relative Velocity direction and amount to determine how much the character should lean while in air. The Lean In Air curve gets the Fall Speed and is used as a multiplier to smoothly reverse the leaning direction when transitioning from moving upwards to moving downwards.",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateInAirLeanAmount",
+			"edgeType": "exec",
+			"fromNodeGuid": "59C873A643F2B365F13457B08F3A411B",
+			"fromPinId": "B5F62D5B473641D86D4C0FB77C043B81",
+			"fromPinName": "then",
+			"toNodeGuid": "BA0BC87347B614904A66BD94830714E3",
+			"toPinId": "722ACF2148072454A732ED8DBDCE46EA",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateInAirLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "1E43A7CC48DD9C92417326BB43AF88C2",
+			"fromPinId": "C910578F4DD91870B4F3578E05E8B0DC",
+			"fromPinName": "Velocity",
+			"toNodeGuid": "FBB07CA547175EB9C572D3B032F8B9C1",
+			"toPinId": "713EA83E4EBC447D936074987C9AE9B2",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateInAirLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "85C642A24B288E76A6E0C0B2D036B525",
+			"fromPinId": "5E26815E4ADE93C404578994BAEFDECA",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "6183EA2B4D6FDA2D903A2999A21FAE0D",
+			"toPinId": "AED5EC43436F18B7C97F4BAB2DD0FB47",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateInAirLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "07D5A2304BCCA836AFA1388EDCE5D429",
+			"fromPinId": "97DC3EFD49E213743B6B0CB92C0485E4",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "6183EA2B4D6FDA2D903A2999A21FAE0D",
+			"toPinId": "908D6FA34CE3D5D04D75A7B6712AA4FD",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateInAirLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "6183EA2B4D6FDA2D903A2999A21FAE0D",
+			"fromPinId": "AC926E654075190458B4189159F9FE4D",
+			"fromPinName": "ReturnValue_X",
+			"toNodeGuid": "38B4E9F14F6CA2E6000D75BE15AE1AEE",
+			"toPinId": "9DA673D442C92D4C9063A38CC5DEEE1B",
+			"toPinName": "LR_17_ADF99333493B27F5B49BA89100DC4C05"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateInAirLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "6183EA2B4D6FDA2D903A2999A21FAE0D",
+			"fromPinId": "DF5017E14611F1852B5C7EBBB8EEEAD9",
+			"fromPinName": "ReturnValue_Y",
+			"toNodeGuid": "38B4E9F14F6CA2E6000D75BE15AE1AEE",
+			"toPinId": "3B8E0F1A4C0B4EB75F046AAFFDEB972E",
+			"toPinName": "FB_15_297866804FB14F4B81FB4A976A7F57D1"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateInAirLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "4DF21887418B6C00D4757A9CBC9E2CBC",
+			"fromPinId": "25D4E48C4B0E228503A3998AAD65FA3B",
+			"fromPinName": "LeanInAirCurve",
+			"toNodeGuid": "07D5A2304BCCA836AFA1388EDCE5D429",
+			"toPinId": "AD2B3E4947D932D08776EEA14F3D01E9",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateInAirLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "5D26B086415F1A7B1861D69492F39F7E",
+			"fromPinId": "9F333D1F436514EB68874FADD2BFD7B8",
+			"fromPinName": "FallSpeed",
+			"toNodeGuid": "07D5A2304BCCA836AFA1388EDCE5D429",
+			"toPinId": "38907CEC434FEAD9BBCCE4ABB377E66F",
+			"toPinName": "InTime"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateInAirLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "38B4E9F14F6CA2E6000D75BE15AE1AEE",
+			"fromPinId": "9903162C474D1953B610BE8D0A9E0F9D",
+			"fromPinName": "LeanAmount",
+			"toNodeGuid": "BA0BC87347B614904A66BD94830714E3",
+			"toPinId": "0806535E42D8444E922E70AB9E581454",
+			"toPinName": "LeanAmount"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateInAirLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "7FE3DF504E9E6280EA41738BED634909",
+			"fromPinId": "BAB63DA34D36D1AB10AC4497B585762B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "FBB07CA547175EB9C572D3B032F8B9C1",
+			"toPinId": "4643E2FB44BED3F08CE4EBB66198EFB7",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateInAirLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "FBB07CA547175EB9C572D3B032F8B9C1",
+			"fromPinId": "08F3B61F48034F8ACF7A78B561392C0E",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "3D6B9C134F972B0A41D928A3C3BE3DEB",
+			"toPinId": "87D3A2C6475E58A950D1FE887D56759E",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateInAirLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "5E7E58D0412C2DCA342992811D6C8A03",
+			"fromPinId": "EAEEE15D4DB6B2919241D39A4AD49AC1",
+			"fromPinName": "Character",
+			"toNodeGuid": "7FE3DF504E9E6280EA41738BED634909",
+			"toPinId": "CFCFDC4442C7479423FA6FB439D6C8A3",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateInAirLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "3D6B9C134F972B0A41D928A3C3BE3DEB",
+			"fromPinId": "5A8EA3B84874C7665A4103BA644974F3",
+			"fromPinName": "ReturnValue_X",
+			"toNodeGuid": "85C642A24B288E76A6E0C0B2D036B525",
+			"toPinId": "DF1A0CA54BF2F881E63B03AFFBA7882A",
+			"toPinName": "Y"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateInAirLeanAmount",
+			"edgeType": "data",
+			"fromNodeGuid": "3D6B9C134F972B0A41D928A3C3BE3DEB",
+			"fromPinId": "9A44F5474DE4C85B426EB899F7396AB9",
+			"fromPinName": "ReturnValue_Y",
+			"toNodeGuid": "85C642A24B288E76A6E0C0B2D036B525",
+			"toPinId": "8A7D3A4E45A0917FB35723837F6F68C0",
+			"toPinName": "X"
+		}
+	],
+	"variablesRead": [
+		"Get Character",
+		"Get FallSpeed",
+		"Get LeanInAirCurve",
+		"Get Velocity"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Actor Rotation\nLa destinazione è Actor",
+		"Get Float Value\nLa destinazione è Curve Float",
+		"Make Vector 2D",
+		"Unrotate Vector",
+		"vector / float",
+		"vector2d * float"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Actor Rotation\nLa destinazione è Actor",
+		"Get Float Value\nLa destinazione è Curve Float",
+		"Make Vector 2D",
+		"Unrotate Vector",
+		"vector / float",
+		"vector2d * float"
+	],
+	"flowId": "F001",
+	"graphId": "G282",
+	"assetName": "ALS_AnimBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP"
+}

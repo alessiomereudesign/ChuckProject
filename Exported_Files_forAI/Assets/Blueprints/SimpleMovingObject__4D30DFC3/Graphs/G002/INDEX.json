@@ -1,0 +1,25 @@
+{
+	"graphId": "G002",
+	"name": "UpdateObjectLocation",
+	"graphName": "UpdateObjectLocation",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 12,
+	"edgeCount": 12,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/SimpleMovingObject__4D30DFC3/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/SimpleMovingObject__4D30DFC3/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/SimpleMovingObject__4D30DFC3/Graphs/G002/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Update Object Location",
+			"entryNodeGuid": "24A934B54F2D4D91CA0BF18CDB80F43A",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/SimpleMovingObject__4D30DFC3/Flows/G002/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/SimpleMovingObject__4D30DFC3/Flows/G002/F001.json",
+			"textFile": "Flows/G002/F001.txt",
+			"jsonFile": "Flows/G002/F001.json",
+			"nodeCount": 12
+		}
+	]
+}

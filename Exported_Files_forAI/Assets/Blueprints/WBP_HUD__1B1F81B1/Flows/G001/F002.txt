@@ -1,0 +1,101 @@
+Asset: WBP_HUD
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD.WBP_HUD
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_01_HUD_WBP_HUD
+GraphId: G001
+Graph: EventGraph
+FlowId: F002
+Entry: UpdateWeaponDisplay
+Custom Event
+NodeGuid: 23CE9C184C529F72487896B7739154F7
+
+Exec Flow:
+1. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 2D4CB555488C909A4AC884903BDADCAF
+2. Get Txt_CurrentMaxAmmoValue [K2Node_VariableGet] 97EF0DD14DAFF93DA8F06C9DB3F4E26C
+3. Set Text
+La destinazione è Rich Text Block [K2Node_CallFunction] E36FC0E9450E589ECA535F9E9099540E
+4. UpdateWeaponDisplay
+Custom Event [K2Node_CustomEvent] 23CE9C184C529F72487896B7739154F7
+5. Break S_WeaponData [K2Node_BreakStruct] BEC8E8C549075419F79818899ED20740
+6. Get WeaponImage [K2Node_VariableGet] 664303904EEBCDD99564E786916D9FCA
+7. Get Txt_CurrentMaxAmmoValue [K2Node_VariableGet] 21E3F88D40982A691A6BDF9AECFEE42F
+8. Get Txt_AmmoText [K2Node_VariableGet] 3C8EF9E249FE9C901A51B1ABD0752C94
+9. Set Visibility
+La destinazione è Widget [K2Node_CallFunction] A99E49694F1B89166DA212802374C5F4
+10. Evento Construct [K2Node_Event] 2C71C2344D34726629C69BB2EB41F197
+11. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] C23502074D05C18265240390CD9DCEDB
+12. Get WeaponImage [K2Node_VariableGet] 7E33135C4C531993CD4F129924757BEC
+13. Get Txt_CurrentMaxAmmoValue [K2Node_VariableGet] 2D665FCA476D86E4BB6D1AB17A4C6911
+14. Get Txt_AmmoText [K2Node_VariableGet] 7FDE96764F185BA2118A88A9BF0208D2
+15. Set Visibility
+La destinazione è Widget [K2Node_CallFunction] A976305645BFE0D5CC0E92998F43F0B6
+16. Switch on E_WeaponSlot [K2Node_SwitchEnum] EC2E292E4AF190ED460447903B4BCF8A
+17. Nodo di reindirizzamento [K2Node_Knot] E320E31649BB5843D64D70AD3648EB2D
+18. Set Visibility
+La destinazione è Widget [K2Node_CallFunction] 539B66574FB58270D49C83BE221E2715
+19. Get Txt_CurrentMaxAmmoValue [K2Node_VariableGet] E3DABDDD472BB6D913A9A4BAE0FCE4C4
+20. Get Txt_AmmoText [K2Node_VariableGet] D08385CA4CD278CEE50CC887B2E6E950
+21. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] 0D65AA3B442F67BDA99C91B98445C703
+22. Get WeaponImage [K2Node_VariableGet] F37C01384DCF0ED05B70EBACEF71588F
+23. Cast To ALS_ChuckBP [K2Node_DynamicCast] 586EDD4542852B43DFB528B3217F4F74
+24. Set As ALS Chuck BP [K2Node_VariableSet] D4D1926249BB981967C12D867C314248
+25. Get As ALS Chuck BP [K2Node_VariableGet] 174D2D804CBBED9D49ED5C827EBFE914
+26. Get Owning Player Pawn
+La destinazione è User Widget [K2Node_CallFunction] 9784C9C24D917ED3BEBC38942D1E4432
+27. Is Valid [K2Node_MacroInstance] 706E457D4A06F14E427AC69C13660790
+28. Nodo di reindirizzamento [K2Node_Knot] 5EC82D754397BD8D33371EB0AF2EAE3C
+29. Nodo di reindirizzamento [K2Node_Knot] E33E9120417499F83E14EA90E80BFC40
+30. Formatta testo [K2Node_FormatText] 058E86C1464084585BFF4EA794108861
+31. Get Current Weapon from Inventory
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 148C908B410A77ED16BE568227B7786C
+32. Ramo [K2Node_IfThenElse] BC8A6DC24FEF99B2551CA68B68CBACBE
+33. Nodo di reindirizzamento [K2Node_Knot] 17F796CA4E12B35FD5BD67A392B96AF2
+34. Nodo di reindirizzamento [K2Node_Knot] E173D25D448C99A8140B8CB1489FC359
+35. Nodo di reindirizzamento [K2Node_Knot] 1B333C934D02E60EE8B12B971C75101E
+
+Variables Read:
+- Get As ALS Chuck BP
+- Get Txt_AmmoText
+- Get Txt_CurrentMaxAmmoValue
+- Get WeaponImage
+
+Variables Written:
+- Set As ALS Chuck BP
+
+External Calls:
+- Get Current Weapon from Inventory
+La destinazione è ALS Chuck BP
+- Get Owning Player Pawn
+La destinazione è User Widget
+- Set Brush from Texture
+La destinazione è Immagine
+- Set Text
+La destinazione è Rich Text Block
+- Set Visibility
+La destinazione è Widget
+
+Widgets Touched:
+- Get Txt_AmmoText
+- Get WeaponImage
+- Set Brush from Texture
+La destinazione è Immagine
+- Set Text
+La destinazione è Rich Text Block
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Cast To ALS_ChuckBP
+- Get Current Weapon from Inventory
+La destinazione è ALS Chuck BP
+- Get Owning Player Pawn
+La destinazione è User Widget
+- Set Brush from Texture
+La destinazione è Immagine
+- Set Text
+La destinazione è Rich Text Block
+- Set Visibility
+La destinazione è Widget

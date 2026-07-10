@@ -1,0 +1,14 @@
+{
+	"graphId": "G002",
+	"name": "AnimGraph",
+	"graphName": "AnimGraph",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 8,
+	"edgeCount": 6,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/Editor__2544778B/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/Editor__2544778B/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/Editor__2544778B/Graphs/G002/EDGES.jsonl",
+	"flows": []
+}

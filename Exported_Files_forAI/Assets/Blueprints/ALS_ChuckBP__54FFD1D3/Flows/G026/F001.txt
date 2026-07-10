@@ -1,0 +1,55 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G026
+Graph: UpdateColoringSystem
+FlowId: F001
+Entry: Update Coloring System
+NodeGuid: 6358DCEA485FCB79C6E733BB2C9EC117
+
+Exec Flow:
+1. Update Coloring System [K2Node_FunctionEntry] 6358DCEA485FCB79C6E733BB2C9EC117
+2. Ramo [K2Node_IfThenElse] 5511564846E6CDA6B5C36B990233C672
+3. Update Layering Colors
+La destinazione è ALS Chuck BP [K2Node_CallFunction] E62226D1409019B6526613AB6F08B2EC
+4. BPI Get Debug Info
+Target is ALS Controller BPI [K2Node_Message] C68A54824D88C9735D7F4E92C1B2834A
+5. Do Once [K2Node_MacroInstance] ECB5C1234C3C8BD26ABE529CC85A470A
+6. Nodo di reindirizzamento [K2Node_Knot] C0547426435190E6472955B01414C9A5
+7. Set/ Reset Colors
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 450400CE4B5C1FC7F6DEC2A28822FD75
+8. Get Player Controller [K2Node_CallFunction] 810CD9904A0B9BC4B4B2DE996CC8556D
+9. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 6C96F32F44AC5A1A67D689A584CD23C3
+10. Get Mesh [K2Node_VariableGet] FF38689548E5678332C1D994E5C362B8
+11. Is Visible
+La destinazione è Componente di scena [K2Node_CallFunction] 3394B1AA406B1A6B7BFF01AE840745EF
+
+Variables Read:
+- Get Mesh
+
+Variables Written:
+- none
+
+External Calls:
+- Get Player Controller
+- Is Visible
+La destinazione è Componente di scena
+- Set/ Reset Colors
+La destinazione è ALS Chuck BP
+- Update Layering Colors
+La destinazione è ALS Chuck BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Player Controller
+- Is Visible
+La destinazione è Componente di scena
+- Set/ Reset Colors
+La destinazione è ALS Chuck BP
+- Update Layering Colors
+La destinazione è ALS Chuck BP

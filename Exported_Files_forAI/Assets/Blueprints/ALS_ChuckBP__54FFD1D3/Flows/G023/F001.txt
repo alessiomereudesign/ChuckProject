@@ -1,0 +1,105 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G023
+Graph: SetDynamicMaterials
+FlowId: F001
+Entry: Set Dynamic Materials
+NodeGuid: DA210B3D4B3BCDA8402173A30FA6D47B
+
+Exec Flow:
+1. Set Dynamic Materials [K2Node_FunctionEntry] DA210B3D4B3BCDA8402173A30FA6D47B
+2. Sequenza [K2Node_ExecutionSequence] 5A5267AD41BD17D52618FA8441B12A90
+3. Create Dynamic Material Instance
+La destinazione è Componente primitivo [K2Node_CallFunction] 14A9C5C04585C3761FCD9894D969A0BC
+4. Set Head [K2Node_VariableSet] D4C83EA246B2C08E5AEE53B3C799CC8F
+5. Get Mesh [K2Node_VariableGet] E259AA1B42FF05DDC081768E5495F453
+6. Nodo di reindirizzamento [K2Node_Knot] 526F68E1402C2990C692A2AAC32FFCCF
+7. Create Dynamic Material Instance
+La destinazione è Componente primitivo [K2Node_CallFunction] 039A119C49790C440C600082AB617BB9
+8. Set Torso [K2Node_VariableSet] C17CCF0F4A2ADDF4224F578151015582
+9. Get Mesh [K2Node_VariableGet] 29A7A07741FA3C59ED9A5F9C84C86198
+10. Create Dynamic Material Instance
+La destinazione è Componente primitivo [K2Node_CallFunction] 4F09EEC7481D6BA12E58CC9AE7D59A60
+11. Set Pelvis [K2Node_VariableSet] 3B5FE0C94248886947FA70AB014B0104
+12. Get Mesh [K2Node_VariableGet] DE8C992B444C778B9AD9FDB6C9D57693
+13. Create Dynamic Material Instance
+La destinazione è Componente primitivo [K2Node_CallFunction] 31613A664CE8939979E12595E382B790
+14. Get Mesh [K2Node_VariableGet] 30C3BA05460769AD2077659BF6AC139D
+15. Nodo di reindirizzamento [K2Node_Knot] 0A2253574E31C1596BCC81AD1FFAD64B
+16. Set UpperLegs [K2Node_VariableSet] 0F4D5F284A05426261AB93913122DBC9
+17. Create Dynamic Material Instance
+La destinazione è Componente primitivo [K2Node_CallFunction] 393F98504601806E71EA5EA2FE00FE6A
+18. Get Mesh [K2Node_VariableGet] 80C78B0D4623AB2A34BED0A370803F1D
+19. Set LowerLegs [K2Node_VariableSet] FC2B25634E945EA996417E9434B08DF3
+20. Create Dynamic Material Instance
+La destinazione è Componente primitivo [K2Node_CallFunction] 47E6319F4CA4D5BE5BAF8E953E9728D1
+21. Get Mesh [K2Node_VariableGet] E0DEB69F416F32A4F987DA8BFBF6AD44
+22. Set Feet [K2Node_VariableSet] 7CCF0EA94E3E126DE18C55A5932BA5BF
+23. Create Dynamic Material Instance
+La destinazione è Componente primitivo [K2Node_CallFunction] 768F85974D762FAC9A09E39F0C0BAA7E
+24. Get Mesh [K2Node_VariableGet] 7C14F5A34352875E4AAEDDBB8D6CD9E3
+25. Nodo di reindirizzamento [K2Node_Knot] 97C37E6A46A7171881ABF5BCA486213B
+26. Set Shoulder_L [K2Node_VariableSet] B1D3ACB34756742DC36DB981DC0E4B2D
+27. Create Dynamic Material Instance
+La destinazione è Componente primitivo [K2Node_CallFunction] 96AB164240AF2CC243B776A26E1A3484
+28. Get Mesh [K2Node_VariableGet] 84597DE14321F869AE9F49BF4B54F980
+29. Set UpperArm_L [K2Node_VariableSet] 28FE9E7241F271A5E1B04FBDF254A9D8
+30. Create Dynamic Material Instance
+La destinazione è Componente primitivo [K2Node_CallFunction] E6861257491AC3BEBF8E3788FF9E0B65
+31. Get Mesh [K2Node_VariableGet] FF8E37754515E3AC126A02B741C143EA
+32. Set LowerArm_L [K2Node_VariableSet] 92FAAB7345E49126434ABD949F5F4F63
+33. Create Dynamic Material Instance
+La destinazione è Componente primitivo [K2Node_CallFunction] A28800DC412D731BE4D18A8C09C455A2
+34. Get Mesh [K2Node_VariableGet] 1D2CBF63466A18DDA17FB2B508E5FDCC
+35. Set Hand_L [K2Node_VariableSet] C0F9A5AB40EB5677C6017D92B993AA15
+36. Create Dynamic Material Instance
+La destinazione è Componente primitivo [K2Node_CallFunction] 698E3D5C442998D9C3BD58BBE28EF498
+37. Get Mesh [K2Node_VariableGet] AC0727974B59E62A637351AF365D500F
+38. Nodo di reindirizzamento [K2Node_Knot] 22E0283C41752EA9B98E71B026E58366
+39. Create Dynamic Material Instance
+La destinazione è Componente primitivo [K2Node_CallFunction] CBF18A6E49A8F100B36CB3AA9C6A4DD9
+40. Get Mesh [K2Node_VariableGet] 23A5BF1343A2F14C4220249F0419DBA6
+41. Create Dynamic Material Instance
+La destinazione è Componente primitivo [K2Node_CallFunction] E94C7F2F43B68CD8A4C962A68D06D771
+42. Get Mesh [K2Node_VariableGet] 6DD6FF4C44D5381468BDFC9DC88C02FF
+43. Create Dynamic Material Instance
+La destinazione è Componente primitivo [K2Node_CallFunction] E6DCC7914621A08A9B76D5A5C0E59D34
+44. Get Mesh [K2Node_VariableGet] AD1C50D14768E1B45A74CEB94F036B8B
+45. Set Shoulder_R [K2Node_VariableSet] 8D012DAE495303C85E7226B9E02CCAF0
+46. Set UpperArm_R [K2Node_VariableSet] 79099D364CFE68AB4C7018A0817B8400
+47. Set LowerArm_R [K2Node_VariableSet] 782F6572457EF955AFAED69E4D55C345
+48. Set Hand_R [K2Node_VariableSet] 646F83B84B4C4B5C4EA08AAFF99F0152
+
+Variables Read:
+- Get Mesh
+
+Variables Written:
+- Set Feet
+- Set Hand_L
+- Set Hand_R
+- Set Head
+- Set LowerArm_L
+- Set LowerArm_R
+- Set LowerLegs
+- Set Pelvis
+- Set Shoulder_L
+- Set Shoulder_R
+- Set Torso
+- Set UpperArm_L
+- Set UpperArm_R
+- Set UpperLegs
+
+External Calls:
+- Create Dynamic Material Instance
+La destinazione è Componente primitivo
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Create Dynamic Material Instance
+La destinazione è Componente primitivo

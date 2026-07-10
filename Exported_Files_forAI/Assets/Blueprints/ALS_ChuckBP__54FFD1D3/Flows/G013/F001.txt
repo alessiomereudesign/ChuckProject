@@ -1,0 +1,61 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G013
+Graph: GetMantleAsset
+FlowId: F001
+Entry: Get Mantle Asset
+NodeGuid: DF4CC8C6413154CD6790ADB8C3F2F6D5
+
+Exec Flow:
+1. Get Mantle Asset [K2Node_FunctionEntry] DF4CC8C6413154CD6790ADB8C3F2F6D5
+2. Nodo di restituzione [K2Node_FunctionResult] AA72AAE24F4F6832BFDB7A82B57C5608
+3. Switch on MantleType [K2Node_SwitchEnum] B785C00B41257F1267AA93B0C438ED05
+4. Switch on ALS_OverlayState [K2Node_SwitchEnum] 156F4D234C89223E81BB2D8A438511B4
+5. Get OverlayState [K2Node_VariableGet] 49AF5F2345A6CB46499C63B7B2130A6C
+6. Nodo di restituzione [K2Node_FunctionResult] 884D955E4BF8FB9FB8924F90106133A1
+7. Get Mantle_1m_Default [K2Node_VariableGet] 9AB6DB0640D10CB886B3A194DF621E55
+8. Get Mantle_2m_Default [K2Node_VariableGet] 26331C70403087B86B964DB0B9580C96
+9. Nodo di restituzione [K2Node_FunctionResult] 7D0FBAD845BE38199FB139A118F41C79
+10. Nodo di restituzione [K2Node_FunctionResult] B40B182E40D1436BE1A5249751993DFF
+11. Nodo di restituzione [K2Node_FunctionResult] 8803F3BA435235980AF1A0878B10A4C2
+12. Nodo di restituzione [K2Node_FunctionResult] 67111D9E406F581E75D7E6A34D819BAB
+13. Nodo di restituzione [K2Node_FunctionResult] 42C4EDC6415CCAC31555B9BF170B1D72
+14. Nodo di restituzione [K2Node_FunctionResult] 25AADC83482EF94A4D2AD5A8BDFCE87E
+15. Nodo di restituzione [K2Node_FunctionResult] 6DC47B5A455575DCC9B280A37437D763
+16. Nodo di restituzione [K2Node_FunctionResult] B48F0D0040D32592E2B1E2A7EC026BE2
+17. Nodo di reindirizzamento [K2Node_Knot] 3247527743A079ACAC1DFB8AD24B7FE0
+18. Nodo di reindirizzamento [K2Node_Knot] B3BC174C42E21C9795A0388DD9F83A88
+19. Nodo di reindirizzamento [K2Node_Knot] 4F2513324A208E9F02E69DBFCC6CE302
+20. Get Mantle_1m_LH [K2Node_VariableGet] 612DBA6947D4855411829792FC1EF52C
+21. Get Mantle_1m_2H [K2Node_VariableGet] 4F619FA84C45AFB30C6698843F937C20
+22. Get Mantle_1m_RH [K2Node_VariableGet] 60C11C9149ACBD35BE8F7DB0C0F750E0
+23. Get Mantle_1m_LH [K2Node_VariableGet] 615A8BE2439EAFAA497F1C96AA7B7911
+24. Get Mantle_1m_LH [K2Node_VariableGet] BDA5021F46D29203C75285885CEC06BE
+25. Get Mantle_1m_LH [K2Node_VariableGet] 07C210754131E540B460DBB34C51FE19
+26. Get Mantle_1m_RH [K2Node_VariableGet] F882586F4D62C795B7C5D4805FCC4C7C
+27. Get Mantle_1m_Box [K2Node_VariableGet] 85FF05D4413470295B46EBA8C2939B29
+
+Variables Read:
+- Get Mantle_1m_2H
+- Get Mantle_1m_Box
+- Get Mantle_1m_Default
+- Get Mantle_1m_LH
+- Get Mantle_1m_RH
+- Get Mantle_2m_Default
+- Get OverlayState
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

@@ -1,0 +1,25 @@
+{
+	"graphId": "G027",
+	"name": "UpdateHeldObjectAnimations",
+	"graphName": "UpdateHeldObjectAnimations",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 8,
+	"edgeCount": 8,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G027/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G027/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G027/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Update Held Object Animations",
+			"entryNodeGuid": "398D809B4C50A96285EDF588F98D3DCA",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G027/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G027/F001.json",
+			"textFile": "Flows/G027/F001.txt",
+			"jsonFile": "Flows/G027/F001.json",
+			"nodeCount": 8
+		}
+	]
+}

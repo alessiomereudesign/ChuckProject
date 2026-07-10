@@ -1,0 +1,38 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G021
+Graph: GetAnimCurveValue
+FlowId: F001
+Entry: Get Anim Curve Value
+NodeGuid: C77ED19740F176F511831C86EF601C37
+
+Exec Flow:
+1. Get Anim Curve Value [K2Node_FunctionEntry] C77ED19740F176F511831C86EF601C37
+2. Nodo di restituzione [K2Node_FunctionResult] B41CE6854B113841C9904BB02E430543
+3. Nodo di restituzione [K2Node_FunctionResult] 2E21002D4DB69C7BFE24CFAD9506A28F
+4. Get CurveName [K2Node_VariableGet] 3BC05CFD4148C89F0A66AEB7476379D3
+5. Ottieni [K2Node_VariableGet] E2B1F196440DBA35E54449AE1DF07373
+6. Get Curve Value
+La destinazione è Istanza animazione [K2Node_CallFunction] 4986F9CE41DB4CE4648074A9FCD1C399
+
+Variables Read:
+- Get CurveName
+- Ottieni
+
+Variables Written:
+- none
+
+External Calls:
+- Get Curve Value
+La destinazione è Istanza animazione
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Curve Value
+La destinazione è Istanza animazione

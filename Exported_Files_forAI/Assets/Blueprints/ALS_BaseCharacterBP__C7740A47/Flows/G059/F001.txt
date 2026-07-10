@@ -1,0 +1,29 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G059
+Graph: UserConstructionScript
+FlowId: F001
+Entry: Construction Script
+NodeGuid: FFB0BE5D409745DF1FC74996858188D8
+
+Exec Flow:
+1. Construction Script [K2Node_FunctionEntry] FFB0BE5D409745DF1FC74996858188D8
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

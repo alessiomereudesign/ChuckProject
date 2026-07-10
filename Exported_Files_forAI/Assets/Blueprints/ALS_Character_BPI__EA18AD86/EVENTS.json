@@ -1,0 +1,64 @@
+{
+	"assetName": "ALS_Character_BPI",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Character_BPI.ALS_Character_BPI",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Character_BPI",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "BPI Get Current States",
+			"graph": "BPI_Get_CurrentStates",
+			"nodeGuid": "ABB93A414D9CC5828308489321B69E92",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Get Essential Values",
+			"graph": "BPI_Get_EssentialValues",
+			"nodeGuid": "7EB6B71849B447D056B8BEAABD8409B3",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Set Gait",
+			"graph": "BPI_Set_Gait",
+			"nodeGuid": "4E54B081419C6BF99ED3C28D62EF90B5",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Set Movement Action",
+			"graph": "BPI_Set_MovementAction",
+			"nodeGuid": "7A44009143825ECE63B4A8986845E542",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Set Movement State",
+			"graph": "BPI_Set_MovementState",
+			"nodeGuid": "9A8B99F8466A98E7FDD15398245916EC",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Set Overlay State",
+			"graph": "BPI_Set_OverlayState",
+			"nodeGuid": "975CBFF0431677475FA76E995B7644BA",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Set Rotation Mode",
+			"graph": "BPI_Set_RotationMode",
+			"nodeGuid": "68A9504041993A172AB5B0971B31397E",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Set View Mode",
+			"graph": "BPI_Set_ViewMode",
+			"nodeGuid": "B9722A7D499EB49E1EE2A99E2DB8718C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

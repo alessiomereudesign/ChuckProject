@@ -1,0 +1,14 @@
+{
+	"graphId": "G296",
+	"name": "Foot IK",
+	"graphName": "Foot IK",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 29,
+	"edgeCount": 24,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G296/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G296/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G296/EDGES.jsonl",
+	"flows": []
+}

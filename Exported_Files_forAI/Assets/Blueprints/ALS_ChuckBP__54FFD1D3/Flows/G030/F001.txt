@@ -1,0 +1,49 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G030
+Graph: UserConstructionScript
+FlowId: F001
+Entry: Construction Script
+NodeGuid: D53DD5EC48F93B5B257AD0BC6D7B4E86
+
+Exec Flow:
+1. Construction Script [K2Node_FunctionEntry] D53DD5EC48F93B5B257AD0BC6D7B4E86
+2. Genitore: Construction Script [K2Node_CallParentFunction] C5218A4148CA3ECAADC6CC863A937DD1
+3. Set Leader Pose Component
+La destinazione è Componente della mesh con pelle [K2Node_CallFunction] A7E496F04C6D42FC8D258AB6106E7934
+4. Get Mesh [K2Node_VariableGet] D457F49C4AC56B584F987B9BE696E6E4
+5. Get BodyMesh [K2Node_VariableGet] 041D8A404D350A630EB352B65E468F83
+6. Set Dynamic Materials
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 26491A2A40E7A571D471D2B21CC06704
+7. Set/ Reset Colors
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 41BCCCA14142B05578E8D289BC26A404
+
+Variables Read:
+- Get BodyMesh
+- Get Mesh
+
+Variables Written:
+- none
+
+External Calls:
+- Set Dynamic Materials
+La destinazione è ALS Chuck BP
+- Set Leader Pose Component
+La destinazione è Componente della mesh con pelle
+- Set/ Reset Colors
+La destinazione è ALS Chuck BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Set Dynamic Materials
+La destinazione è ALS Chuck BP
+- Set Leader Pose Component
+La destinazione è Componente della mesh con pelle
+- Set/ Reset Colors
+La destinazione è ALS Chuck BP

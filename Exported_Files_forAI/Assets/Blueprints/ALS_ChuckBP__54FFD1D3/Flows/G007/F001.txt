@@ -1,0 +1,44 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G007
+Graph: BPI_Get_3P_TraceParams
+FlowId: F001
+Entry: BPI Get 3P Trace Params
+NodeGuid: 654EC2BE4C69F8E3D4D7DD89A076B0D6
+
+Exec Flow:
+1. BPI Get 3P Trace Params [K2Node_FunctionEntry] 654EC2BE4C69F8E3D4D7DD89A076B0D6
+2. Nodo di restituzione [K2Node_FunctionResult] 5845DEF54FBC7EB90BFB37985AD1201B
+3. Get Mesh [K2Node_VariableGet] 827F65D24CBDB8F2D823A0A843B88AB9
+4. Get Socket Location
+La destinazione è Componente di scena [K2Node_CallFunction] 97D67E1F4A062C61B17E23892AB517AD
+5. Ramo [K2Node_IfThenElse] 7E1BF2C7462B3FC13D7A2D9820308F27
+6. Nodo di restituzione [K2Node_FunctionResult] 8EFB1D49456ACFECCA74C6AEDB5D939C
+7. Nodo di reindirizzamento [K2Node_Knot] 4265576C4E240F51068ABDAC936684DE
+8. Nodo di reindirizzamento [K2Node_Knot] 37AC661E46E81D5BD11152853C71650B
+9. Get Mesh [K2Node_VariableGet] AA43EA954F3AF519DDD967B26603EF09
+10. Get Socket Location
+La destinazione è Componente di scena [K2Node_CallFunction] DF7CBEBA4B5C8D03DFABAC8E03A14D23
+11. Get RightShoulder [K2Node_VariableGet] A51E9F6C40A788EB627EE98CB9CBE90B
+
+Variables Read:
+- Get Mesh
+- Get RightShoulder
+
+Variables Written:
+- none
+
+External Calls:
+- Get Socket Location
+La destinazione è Componente di scena
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Socket Location
+La destinazione è Componente di scena

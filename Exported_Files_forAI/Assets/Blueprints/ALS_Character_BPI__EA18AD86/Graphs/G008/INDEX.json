@@ -1,0 +1,25 @@
+{
+	"graphId": "G008",
+	"name": "BPI_Set_ViewMode",
+	"graphName": "BPI_Set_ViewMode",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 1,
+	"edgeCount": 0,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G008/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G008/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G008/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "BPI Set View Mode",
+			"entryNodeGuid": "B9722A7D499EB49E1EE2A99E2DB8718C",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G008/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G008/F001.json",
+			"textFile": "Flows/G008/F001.txt",
+			"jsonFile": "Flows/G008/F001.json",
+			"nodeCount": 1
+		}
+	]
+}

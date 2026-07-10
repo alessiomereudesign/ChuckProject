@@ -1,0 +1,25 @@
+{
+	"graphId": "G287",
+	"name": "CalculateStandingPlayRate",
+	"graphName": "CalculateStandingPlayRate",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 21,
+	"edgeCount": 20,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G287/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G287/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G287/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Calculate Standing Play Rate",
+			"entryNodeGuid": "C1F708DD4C323FC702A07080DFF46EB5",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G287/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G287/F001.json",
+			"textFile": "Flows/G287/F001.txt",
+			"jsonFile": "Flows/G287/F001.json",
+			"nodeCount": 21
+		}
+	]
+}

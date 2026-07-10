@@ -1,0 +1,25 @@
+{
+	"graphId": "G303",
+	"name": "RotateInPlaceCheck",
+	"graphName": "RotateInPlaceCheck",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 25,
+	"edgeCount": 22,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G303/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G303/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G303/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Rotate in Place Check",
+			"entryNodeGuid": "DE6EF2F54DF25FB512078ABD0DFA77D6",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G303/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G303/F001.json",
+			"textFile": "Flows/G303/F001.txt",
+			"jsonFile": "Flows/G303/F001.json",
+			"nodeCount": 25
+		}
+	]
+}

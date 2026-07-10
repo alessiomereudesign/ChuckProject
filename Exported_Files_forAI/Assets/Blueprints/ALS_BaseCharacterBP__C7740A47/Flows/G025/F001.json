@@ -1,0 +1,100 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"graph": "GetGetUpAnimation",
+	"entryName": "Get Get Up Animation",
+	"entryNodeGuid": "AF197DBB45B2B7EA4CEE3B82DAA4C4AE",
+	"nodes": [
+		{
+			"nodeGuid": "AF197DBB45B2B7EA4CEE3B82DAA4C4AE",
+			"class": "K2Node_FunctionEntry",
+			"title": "Get Get Up Animation",
+			"comment": "",
+			"x": 48,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "69D401DF43D60E6499BDF2831E83DAF5",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "37F2245B404AF62BB5DD67B5D5204B3E",
+					"name": "RagdollFaceUp",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "78ECB09C4345E949DC8DA59720216131",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 304,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B2E295EC433BAB9A44D66EAEBCB0590A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DCA665AB4A9912905C24AB8F600A6177",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "36817D2141BD4DAA088682B01CF04DFF",
+			"class": "EdGraphNode_Comment",
+			"title": "This gets overriden in the AnimMan Child character to select the appropriate animation based on the overlay state.",
+			"comment": "This gets overriden in the AnimMan Child character to select the appropriate animation based on the overlay state.",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "GetGetUpAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "AF197DBB45B2B7EA4CEE3B82DAA4C4AE",
+			"fromPinId": "69D401DF43D60E6499BDF2831E83DAF5",
+			"fromPinName": "then",
+			"toNodeGuid": "78ECB09C4345E949DC8DA59720216131",
+			"toPinId": "B2E295EC433BAB9A44D66EAEBCB0590A",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G025",
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP"
+}

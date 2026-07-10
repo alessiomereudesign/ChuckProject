@@ -1,0 +1,184 @@
+Asset: WBP_MenuPausa
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/WBP_MenuPausa.WBP_MenuPausa
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa
+GraphId: G001
+Graph: EventGraph
+FlowId: F001
+Entry: ChangeColorOnFocus
+Custom Event
+NodeGuid: 9985A35D4C9DEDB5356F62AEFA40E124
+
+Exec Flow:
+1. Evento Construct [K2Node_Event] C07957AA4B8C2FD06B6686B650BFA738
+2. Evento Tick [K2Node_Event] 968C7DD94B17F0267559D5B734B2099F
+3. On Clicked (Btn_Resume) [K2Node_ComponentBoundEvent] 36FF06B24DE768C46F7A7694EFEEA10C
+4. Remove from Parent
+La destinazione è Widget [K2Node_CallFunction] 8D03AA194BAB118A6D5D98BD794BBBBD
+5. Set Game Paused [K2Node_CallFunction] 7BB0BF1745D733A563F77380BD72F2FB
+6. Set Input Mode Game Only [K2Node_CallFunction] 95D4496A4A843B6408BCB3A46382F41B
+7. Get Player Controller [K2Node_CallFunction] 86FE1F6C46D16492B21EED856F88F08F
+8. Set bShowMouseCursor [K2Node_VariableSet] 702CFB654E18436AE9C29D9A8D4CB243
+9. Nodo di reindirizzamento [K2Node_Knot] C74D99F840A42F19FA6AC6BAAB79E373
+10. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] 4C4E80A3488BC28DBC067AB32749362A
+11. Get Player Controller [K2Node_CallFunction] AC616B464DCC3314F6387D87FF5A5885
+12. Get Btn_Resume [K2Node_VariableGet] CC3FC40A49BBD1FD50E68381D4402CCC
+13. On Clicked (Btn_Quit) [K2Node_ComponentBoundEvent] 3D39CB8549E0BC914584408B6FD343B7
+14. Open Level (by Name) [K2Node_CallFunction] 0B9864DE46A91DBB8AD8898CCEA12D3D
+15. Set Game Paused [K2Node_CallFunction] F1F77A274547E7489052C0BF146D3BB9
+16. On Clicked (Btn_Archive) [K2Node_ComponentBoundEvent] 6FFC99A449995F78718F8F8705F379FF
+17. Create WBP Menu Archive Widget [K2Node_CreateWidget] E74A1EE045B3B3B4415B7899F702C673
+18. Add to Viewport
+La destinazione è User Widget [K2Node_CallFunction] 561346A743C8E84E3B3105BDADF1F4FF
+19. Set Input Mode UI Only [K2Node_CallFunction] A82AF31D475E943DB14F228C4203A25F
+20. Nodo di reindirizzamento [K2Node_Knot] 3F54154840F2ED19CB136596E6B10104
+21. Nodo di reindirizzamento [K2Node_Knot] F882DB42441C0767E5427C9FCECE0E21
+22. Nodo di reindirizzamento [K2Node_Knot] 6D3E6CDC45EB97FF639E438FB96B8056
+23. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] B1F167AE4B25CD763B9C1AB746E487C9
+24. Set Keyboard Focus
+La destinazione è Widget [K2Node_CallFunction] 7490034949A761B577AD949AB65B73B8
+25. Set Visibility
+La destinazione è Widget [K2Node_CallFunction] A4E6514D4DE92463EB03DCA364E64464
+26. Auto-riferimento [K2Node_Self] 9DD819F64ACB181AC1E23D87C5580779
+27. Get Player Controller [K2Node_CallFunction] 7D00E34C4C83C53D099A7687480B44A1
+28. OpenAndInizializeMenu
+Custom Event [K2Node_CustomEvent] 3970CEC84813D757BF4EFB8757945B60
+29. REINIZIALIZZAZIONE MENU [EdGraphNode_Comment] 2BAAFB0448A1E719EE25A9BD20A8379A
+30. Set Visibility
+La destinazione è Widget [K2Node_CallFunction] 339E46DF41BBA6543A94FDB3DACD94D1
+31. Get Player Controller [K2Node_CallFunction] 4033BC3847F7090212F55E8CDB2B105B
+32. Get Btn_Resume [K2Node_VariableGet] 942358AB44BEE55352B2A8BC9BA39945
+33. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] FD5EE8ED49D35BA96B30218DA29E8D0F
+34. Set Keyboard Focus
+La destinazione è Widget [K2Node_CallFunction] 97D2C2C8406321947E53B894D092BA8C
+35. Nodo di reindirizzamento [K2Node_Knot] 3FD3BEF0411FAF756288ABBAB2B146FC
+36. Nodo di reindirizzamento [K2Node_Knot] 56FB53854D6FADCFFA314C906647D17C
+37. Set Input Mode Game And UI [K2Node_CallFunction] 0CC998B742FFF8F39D5BE2B7CA8FBE70
+38. Nodo di reindirizzamento [K2Node_Knot] 17F57F634947C4F1AEC0AA9E924A29CD
+39. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 997B19964C607E48F60E389D14316962
+40. Btn_Quit > are You Sure? > Menu Principale [EdGraphNode_Comment] 9790287943321B094AC9ABBA973C707E
+41. Btn_Archive > Schermata Inventario/Intersect [EdGraphNode_Comment] 229C18974BA6E3BDBBD49D99D1C5D81D
+42. Pulsante Riprendi > Torna in Game [EdGraphNode_Comment] CF2FE90A491A681A522AF1A828D7CB34
+43. BEGIN PLAY > Focus su Button "Riprendi" [EdGraphNode_Comment] 3069504C46925B5E1924B0BE44F1186D
+44. Has Keyboard Focus
+La destinazione è Widget [K2Node_CallFunction] B7090DFF4E39E060E753E5969DDF7B5D
+45. For Each Loop [K2Node_MacroInstance] 1B1C12FA42041B1F759C40BA641C1069
+46. Crea array [K2Node_MakeArray] DB20EB64403B7376888FA884D3C42780
+47. Get Btn_Quit [K2Node_VariableGet] 41C2932F4D1D82EE64A41F87BAB84A03
+48. Get Btn_Archive [K2Node_VariableGet] 88AFB4C647ED0519AD1EDD9622036E99
+49. Get Btn_Resume [K2Node_VariableGet] B813250F45C3B953B3898DAC4B26BD8B
+50. Riproduci animazione
+La destinazione è User Widget [K2Node_CallFunction] 5212596B49DFF8E7B316ADB8EDBB3EAA
+51. Ritardo [K2Node_CallFunction] 6EE6A2894CFAE7B420EC36A77B670C80
+52. Get OnClicked_Archive [K2Node_VariableGet] 119432FC407AA819EAB3E991141E899E
+53. Riproduci animazione
+La destinazione è User Widget [K2Node_CallFunction] 8EA39EED48354815E9DE3EAFA69E8854
+54. Ritardo [K2Node_CallFunction] 0514C70F4A3C7428C4CACD9D7074D1DA
+55. Get OnClicked_Quit [K2Node_VariableGet] 4D6A669544BC27DC11DEDAA87B450550
+56. On Clicked (Btn_SaveGame) [K2Node_ComponentBoundEvent] 8011D35C46C014AFC0568695F13CB363
+57. Riproduci animazione
+La destinazione è User Widget [K2Node_CallFunction] C1B714EB4AD201CC0F3ADEB16F319F41
+58. Ritardo [K2Node_CallFunction] E2594B714C908A75A998899257B70460
+59. Get OnClicked_Save [K2Node_VariableGet] 4C0F47294BE3FC5BBBE511AD107AACB7
+60. Btn_SaveGame > Pagina Slot Save [EdGraphNode_Comment] BD986E784E3BC1B5F470D3A36D08DAE6
+61. Get Btn_SaveGame [K2Node_VariableGet] A985B34D4BB6004E877E30BF61E18390
+62. Ritardo [K2Node_CallFunction] D5218FE84DD96662C074A1B27D505BCA
+63. Ramo [K2Node_IfThenElse] C4435F9D4DFC0ADA19D344A8690C6B57
+64. Set Color and Opacity
+La destinazione è Pulsante [K2Node_CallFunction] 5B61191040E3AFE1C4552EB7A83B327D
+65. Set Color and Opacity
+La destinazione è Pulsante [K2Node_CallFunction] C7DEFD4D4ACDBC8A4169F48617A331F2
+66. ChangeColorOnFocus
+Custom Event [K2Node_CustomEvent] 9985A35D4C9DEDB5356F62AEFA40E124
+67. Nodo di reindirizzamento [K2Node_Knot] 8F9F10F242993A86056D4292FD566221
+68. Nodo di reindirizzamento [K2Node_Knot] 156A340E49A2252F94CE45A19FAD09CF
+69. Nodo di reindirizzamento [K2Node_Knot] 78C87A954BEF5DFC0D44CAB81FA45400
+70. Get FocusedColor [K2Node_VariableGet] 269B43134B4C22B404C123BC0D74748A
+71. Get UnfocusedColor [K2Node_VariableGet] 9430ECB04A5E3B2B5E27819403850B6C
+72. Change Color on Focus
+La destinazione è WBP Menu Pausa [K2Node_CallFunction] 4C3781634B7BAD439673CA9ECFC902CB
+73. FocusManager [EdGraphNode_Comment] 287551E04784DA41F7F8D9A8DF13AF49
+
+Variables Read:
+- Get Btn_Archive
+- Get Btn_Quit
+- Get Btn_Resume
+- Get Btn_SaveGame
+- Get FocusedColor
+- Get OnClicked_Archive
+- Get OnClicked_Quit
+- Get OnClicked_Save
+- Get UnfocusedColor
+
+Variables Written:
+- Set bShowMouseCursor
+
+External Calls:
+- Add to Viewport
+La destinazione è User Widget
+- Change Color on Focus
+La destinazione è WBP Menu Pausa
+- Get Owning Player
+La destinazione è Widget
+- Get Player Controller
+- Has Keyboard Focus
+La destinazione è Widget
+- Open Level (by Name)
+- Remove from Parent
+La destinazione è Widget
+- Riproduci animazione
+La destinazione è User Widget
+- Ritardo
+- Set Color and Opacity
+La destinazione è Pulsante
+- Set Game Paused
+- Set Input Mode Game And UI
+- Set Input Mode Game Only
+- Set Input Mode UI Only
+- Set Keyboard Focus
+La destinazione è Widget
+- Set User Focus
+La destinazione è Widget
+- Set Visibility
+La destinazione è Widget
+
+Widgets Touched:
+- BEGIN PLAY > Focus su Button "Riprendi"
+
+Components Touched:
+- On Clicked (Btn_Archive)
+- On Clicked (Btn_Quit)
+- On Clicked (Btn_Resume)
+- On Clicked (Btn_SaveGame)
+
+External Blueprint References:
+- Add to Viewport
+La destinazione è User Widget
+- Change Color on Focus
+La destinazione è WBP Menu Pausa
+- Get Owning Player
+La destinazione è Widget
+- Get Player Controller
+- Has Keyboard Focus
+La destinazione è Widget
+- Open Level (by Name)
+- Remove from Parent
+La destinazione è Widget
+- Riproduci animazione
+La destinazione è User Widget
+- Ritardo
+- Set Color and Opacity
+La destinazione è Pulsante
+- Set Game Paused
+- Set Input Mode Game And UI
+- Set Input Mode Game Only
+- Set Input Mode UI Only
+- Set Keyboard Focus
+La destinazione è Widget
+- Set User Focus
+La destinazione è Widget
+- Set Visibility
+La destinazione è Widget

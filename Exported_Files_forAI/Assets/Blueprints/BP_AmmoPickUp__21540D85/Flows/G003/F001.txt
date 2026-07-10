@@ -1,0 +1,73 @@
+Asset: BP_AmmoPickUp
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_AmmoPickUp.BP_AmmoPickUp
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_AmmoPickUp
+GraphId: G003
+Graph: CollectAmmo
+FlowId: F001
+Entry: Collect Ammo
+NodeGuid: 422E961D47B35F1564825289EF45BC71
+
+Exec Flow:
+1. Collect Ammo [K2Node_FunctionEntry] 422E961D47B35F1564825289EF45BC71
+2. Get AmmoType [K2Node_VariableGet] 015F58C442D072925A29F5877F84E387
+3. Trova [K2Node_CallFunction] 888BBFCB4C3D1B9A00F85686C2E7B3EB
+4. Get AmmoAmount [K2Node_VariableGet] 60549AD740FC670133B797B13B8D746F
+5. int + int [K2Node_PromotableOperator] D06793B6418DB17DCD2B5AA4626BA07A
+6. Cast To ALS_ChuckBP [K2Node_DynamicCast] F2219E0843AD59D1BD5952B5258DCA6E
+7. Get InventoryAmmo [K2Node_VariableGet] 47938A484C6A1A6F5D19878B10295E5A
+8. Get Player Character [K2Node_CallFunction] DEE5F5614B20B8CE35D3B7BEEFF5EDE4
+9. Aggiungi [K2Node_CallFunction] 892D55894F73070DAA11B58DB007381F
+10. Nodo di reindirizzamento [K2Node_Knot] 09A32DE84DFA807CA606BDB37DF7E489
+11. Get AmmoType [K2Node_VariableGet] 5A97B8654E30170F38E5BDA14C734EF4
+12. Destroy Actor
+La destinazione è Actor [K2Node_CallFunction] D91FACDE408F36D0CB68828464E25593
+13. Get As ALS Player Controller [K2Node_VariableGet] BA4532BC41782BE8136A15BFCDBD9ED6
+14. Get Chuck_HUD [K2Node_VariableGet] 7939D09A497122E6AFFDD9A521FB4EBF
+15. Update Weapon Display
+La destinazione è WBP HUD [K2Node_CallFunction] 21B3A8BB47D290552DDE869FBA1AA9E0
+16. Set bCanAttack? [K2Node_VariableSet] 48D61D3F4F444CDD4DB89488F66D04AA
+17. Cast To ALS_ChuckBP [K2Node_DynamicCast] 0D464C154CBEAAB5F166E7B7A2E2F809
+18. Get Player Character [K2Node_CallFunction] 3C6A0929467B9921160A7F9E61562FA2
+19. Reload Current Weapon
+La destinazione è ALS Chuck BP [K2Node_CallFunction] EF6596E34566BB9070068281DCB0BA65
+20. Nodo di reindirizzamento [K2Node_Knot] 4456BC954D094962C984B8A040433F27
+21. Nodo di reindirizzamento [K2Node_Knot] D9163DDA4324262B2485828178106764
+
+Variables Read:
+- Get AmmoAmount
+- Get AmmoType
+- Get As ALS Player Controller
+- Get Chuck_HUD
+- Get InventoryAmmo
+
+Variables Written:
+- Set bCanAttack?
+
+External Calls:
+- Aggiungi
+- Destroy Actor
+La destinazione è Actor
+- Get Player Character
+- Reload Current Weapon
+La destinazione è ALS Chuck BP
+- Trova
+- Update Weapon Display
+La destinazione è WBP HUD
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Aggiungi
+- Cast To ALS_ChuckBP
+- Destroy Actor
+La destinazione è Actor
+- Get Player Character
+- Reload Current Weapon
+La destinazione è ALS Chuck BP
+- Trova
+- Update Weapon Display
+La destinazione è WBP HUD

@@ -1,0 +1,86 @@
+Asset: ALS_AnimBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP
+GraphId: G307
+Graph: SetPelvisIKOffset
+FlowId: F001
+Entry: Set Pelvis IKOffset
+NodeGuid: 05391B2D45C81C7AA059C69ED7F6917D
+
+Exec Flow:
+1. Set Pelvis IKOffset [K2Node_FunctionEntry] 05391B2D45C81C7AA059C69ED7F6917D
+2. Ramo [K2Node_IfThenElse] FFA8F98C454E5DA94DD4FD8C2194A224
+3. Ottieni [K2Node_VariableGet] 993275E04061A823FE757DBE616A6981
+4. Ottieni [K2Node_VariableGet] 5931272A4F8051C39D2FAD842140EA05
+5. Sequenza [K2Node_ExecutionSequence] 55D370F64ECDC3AB6D6933BC83580234
+6. Nodo di reindirizzamento [K2Node_Knot] C4164818424A38A5C4649C921252C069
+7. float < float [K2Node_CallFunction] 8C9A0ECF49CBFB57BC11B6A238DA538A
+8. Set PelvisTarget [K2Node_VariableSet] 81682C8843E05D9F764912AEF8AEE19C
+9. Set PelvisTarget [K2Node_VariableSet] A798CEE2456369951F692B8018116E6D
+10. Get FootOffset_L_Target [K2Node_VariableGet] 39AA44CD4A7A27E3D8D3748C2CA1A795
+11. Get FootOffset_R_Target [K2Node_VariableGet] 0154580C40B084AB1CC16C87F3C2DED7
+12. Get Curve Value
+La destinazione è Istanza animazione [K2Node_CallFunction] E09FFF5A4D569CDE148F5198AB05A2D3
+13. Get Curve Value
+La destinazione è Istanza animazione [K2Node_CallFunction] 036B487745BA959DFD907EADE8182408
+14. Set PelvisAlpha [K2Node_VariableSet] A5C04B3C40CE624508BC84BDEDB954C3
+15. float + float [K2Node_CommutativeAssociativeBinaryOperator] E4A973664E38FA4FDA5E5A93E960698D
+16. float / float [K2Node_CallFunction] 158B71B4447E81019F7A00A235F2B1ED
+17. Ramo [K2Node_IfThenElse] 10CC345A43C9827EE5CA72BE7141F975
+18. float > float [K2Node_CallFunction] AF7AE2374A9F952DFEE126BD22DA9FF8
+19. Set PelvisOffset [K2Node_VariableSet] FE6D40694291C77A605136BAA3C26CAA
+20. Set PelvisOffset [K2Node_VariableSet] 125FFB244264993D05D7CF972E2E4B9F
+21. Ramo [K2Node_IfThenElse] 98F097944ECB56369E9EB6B3B2593DC6
+22. Ottieni [K2Node_VariableGet] 7937C43A4E431D8FCB5804A222591772
+23. Ottieni [K2Node_VariableGet] 825E7D85459007BCB054B69CDCF36607
+24. float > float [K2Node_CallFunction] 064B256646D96F5B7D34D48D9EDD8322
+25. Nodo di reindirizzamento [K2Node_Knot] 47E2E9114F63B0B464DFF8898186540D
+26. VInterp To [K2Node_CallFunction] 92C593824997A4838FF04080F1004C9B
+27. Get PelvisOffset [K2Node_VariableGet] C1B656AA48CEFACE7B4AE39F1120FFAE
+28. Get PelvisTarget [K2Node_VariableGet] 63AD375B4E024573F41D7AAF0BDBEB82
+29. Get DeltaTimeX [K2Node_VariableGet] 9DC4BB2B46D48F01DA8A1FAF46F543D6
+30. Nodo di reindirizzamento [K2Node_Knot] E7FF812242FEC9B0A661BD9CEC71DB1E
+31. Set PelvisOffset [K2Node_VariableSet] 7CF717034B02FF7B63138182EFFEB3B0
+32. VInterp To [K2Node_CallFunction] 5A54E6AC449240F6EF03EEBD504D4B49
+33. Get PelvisOffset [K2Node_VariableGet] AE1DB5434F451D71CFA3DE80EA2BB13B
+34. Get PelvisTarget [K2Node_VariableGet] 9A6424D24CC44DF497099F9F76B40204
+35. Get DeltaTimeX [K2Node_VariableGet] 84EEEB9A405D2C974297809691162736
+36. Nodo di reindirizzamento [K2Node_Knot] 4084F1BE49DB3EA7BFDD8BA4DCE158B5
+37. Calculate the Pelvis Alpha by finding the average Foot IK weight. If the alpha is 0, clear the offset. [EdGraphNode_Comment] 33C4B0A54B699F475CCBAD9D44BF8D3E
+38. Step 1: Set the new Pelvis Target to be the lowest Foot Offset [EdGraphNode_Comment] B76B76CA460D2B53C0AB0DBFA92D341A
+39. Step 2: Interp the Current Pelvis Offset to the new target value. Interpolate at different speeds based on whether the new target is above or below the current one. [EdGraphNode_Comment] 389074E0476620FD3FA20AA013237096
+
+Variables Read:
+- Get DeltaTimeX
+- Get FootOffset_L_Target
+- Get FootOffset_R_Target
+- Get PelvisOffset
+- Get PelvisTarget
+- Ottieni
+
+Variables Written:
+- Set PelvisAlpha
+- Set PelvisOffset
+- Set PelvisTarget
+
+External Calls:
+- float / float
+- float < float
+- float > float
+- Get Curve Value
+La destinazione è Istanza animazione
+- VInterp To
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- float / float
+- float < float
+- float > float
+- Get Curve Value
+La destinazione è Istanza animazione
+- VInterp To

@@ -1,0 +1,64 @@
+{
+	"assetName": "BP_CharacterPreview",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/BP_CharacterPreview.BP_CharacterPreview",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_CharacterPreview_BP_CharacterPreview",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"components": [
+		{
+			"name": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Mesh",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Set Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get CharacterSkeletalMesh",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Anim Instance\nLa destinazione è Componente mesh scheletrica",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Set Anim Instance Class\nLa destinazione è Componente mesh scheletrica",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get SceneCaptureComponent2D",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Show Only Actor Components\nLa destinazione è Scene Capture Component",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		}
+	]
+}

@@ -1,0 +1,37 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G038
+Graph: OnCharacterMovementModeChanged
+FlowId: F001
+Entry: On Character Movement Mode Changed
+NodeGuid: 239EA719434F33A0702393B9A8F28A8A
+
+Exec Flow:
+1. On Character Movement Mode Changed [K2Node_FunctionEntry] 239EA719434F33A0702393B9A8F28A8A
+2. Switch on EMovementMode [K2Node_SwitchEnum] D811EB5849AA3F4AFBDEB49B51A92AF9
+3. BPI Set Movement State
+La destinazione è ALS Character BPI [K2Node_CallFunction] 21F1B0A5421CEE331969F7BA88DB2303
+4. BPI Set Movement State
+La destinazione è ALS Character BPI [K2Node_CallFunction] D135A55E4525321E4D458481A76EFB77
+5. Use the Character Movement Mode changes to set the Movement States to the right values. This allows you to have a custom set of movement states but still use the functionality of the default character movement component. [EdGraphNode_Comment] 94573CDF4A0FBA94013353BD92D60EDC
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- BPI Set Movement State
+La destinazione è ALS Character BPI
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- BPI Set Movement State
+La destinazione è ALS Character BPI

@@ -1,0 +1,61 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "BPI_ChuckHUD",
+	"assetPath": "/Game/ChuckContent/UI/Interfaces/BPI_ChuckHUD.BPI_ChuckHUD",
+	"assetKey": "Game_ChuckContent_UI_Interfaces_BPI_ChuckHUD",
+	"shortAssetFolder": "BPI_ChuckHUD__A39742B6",
+	"pathHash": "A39742B6",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/CoreUObject.Interface",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 1,
+		"nodes": 1,
+		"edges": 0,
+		"flows": 1
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/BPI_ChuckHUD__A39742B6/SUMMARY.md",
+		"variables": "Assets/Blueprints/BPI_ChuckHUD__A39742B6/VARIABLES.json",
+		"components": "Assets/Blueprints/BPI_ChuckHUD__A39742B6/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/BPI_ChuckHUD__A39742B6/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/BPI_ChuckHUD__A39742B6/NODES.jsonl",
+		"edges": "Assets/Blueprints/BPI_ChuckHUD__A39742B6/EDGES.jsonl",
+		"search": "Assets/Blueprints/BPI_ChuckHUD__A39742B6/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "ShowTip",
+			"graphName": "ShowTip",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 1,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BPI_ChuckHUD__A39742B6/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BPI_ChuckHUD__A39742B6/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BPI_ChuckHUD__A39742B6/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Show Tip",
+					"entryNodeGuid": "DFA3B9AA45FC0D1F34A109A23E951445",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BPI_ChuckHUD__A39742B6/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BPI_ChuckHUD__A39742B6/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 1
+				}
+			]
+		}
+	]
+}

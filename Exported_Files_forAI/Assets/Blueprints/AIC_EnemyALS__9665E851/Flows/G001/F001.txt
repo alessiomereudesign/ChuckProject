@@ -1,0 +1,30 @@
+Asset: AIC_EnemyALS
+AssetPath: /Game/ChuckContent/Blueprints/Enemies/AIC_EnemyALS.AIC_EnemyALS
+AssetKey: Game_ChuckContent_Blueprints_Enemies_AIC_EnemyALS
+GraphId: G001
+Graph: EventGraph
+FlowId: F001
+Entry: Evento BeginPlay
+NodeGuid: 0C721D224DEAE1F1951FD99E3A10FB60
+
+Exec Flow:
+1. Evento BeginPlay [K2Node_Event] 0C721D224DEAE1F1951FD99E3A10FB60
+2. Evento Tick [K2Node_Event] E647113B45AEE9F71517D3BC048C39D7
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

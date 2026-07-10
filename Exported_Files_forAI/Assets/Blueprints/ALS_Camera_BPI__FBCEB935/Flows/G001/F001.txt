@@ -1,0 +1,30 @@
+Asset: ALS_Camera_BPI
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Camera_BPI.ALS_Camera_BPI
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Camera_BPI
+GraphId: G001
+Graph: BPI_Get_3P_PivotTarget
+FlowId: F001
+Entry: BPI Get 3P Pivot Target
+NodeGuid: 657CA0394B8C0200402E71A6C6A83248
+
+Exec Flow:
+1. BPI Get 3P Pivot Target [K2Node_FunctionEntry] 657CA0394B8C0200402E71A6C6A83248
+2. Nodo di restituzione [K2Node_FunctionResult] E7D9CA194F4580A82BEDC393B162DDA7
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

@@ -1,0 +1,2610 @@
+{
+	"schemaVersion": "2.2",
+	"unrealEngineVersion": "5.4.4-35576357+++UE5+Release-5.4",
+	"name": "SimpleMovingObject",
+	"path": "/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject",
+	"assetName": "SimpleMovingObject",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Environment_SimpleMovingObject",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"mainClass": "/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+	"parentClass": "/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleObjectBuilder.SimpleObjectBuilder_C",
+	"compileStatus": "UpToDate",
+	"implementedInterfaces": [],
+	"variables": [
+		{
+			"name": "DeltaSeconds",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "MovementCurve",
+			"type": "object|/Script/Engine.CurveFloat",
+			"defaultValue": ""
+		},
+		{
+			"name": "StartPosition",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "MovementDuration",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "MovementDirection",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "WaitTime",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "MovementTime",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "CanMove",
+			"type": "bool",
+			"defaultValue": ""
+		}
+	],
+	"graphs": [
+		{
+			"name": "UserConstructionScript",
+			"type": "Function",
+			"nodes": [
+				{
+					"nodeGuid": "FA0987964A3C5B980EC4409B40F94215",
+					"class": "K2Node_FunctionEntry",
+					"title": "Construction Script",
+					"comment": "",
+					"x": 0,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "F953E5AA45CFB7A7DC0218810CAE6A5D",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "56510D7E4019049D863985826F6DFD0F",
+					"class": "K2Node_CallParentFunction",
+					"title": "Genitore: Construction Script",
+					"comment": "",
+					"x": 200,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "9744445B4CE0A3CB5A4E70921D1FBFD4",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "E5EE64E4456060166E766A8150C501AE",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "6CDD9C0F4183F20DA614C78635C6182C",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.Actor",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "FD668A754192FCD3AF752B981D0E0D72",
+					"class": "K2Node_VariableGet",
+					"title": "Get Track",
+					"comment": "",
+					"x": 464,
+					"y": 96,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "812A732F41C4C931C4213991E7434B1F",
+							"name": "Track",
+							"direction": "Output",
+							"type": "object|/Script/Engine.SplineComponent",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "FD759BA243959A0AA5780DBCD5DF5B50",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "62A325FC42DC96E67DD60D881FC06A40",
+					"class": "K2Node_VariableSet",
+					"title": "Set Duration",
+					"comment": "",
+					"x": 608,
+					"y": 16,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "CF8A4D484AE0E0266A7AD381AB8A47EF",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "D20A502C4D00AD45F80FDEB196D342A6",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "D769348741151F558AE7B28C7C7C956E",
+							"name": "Duration",
+							"direction": "Input",
+							"type": "real|float",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "E84117D54F07E9BE4A76F7BE80940D3E",
+							"name": "Output_Get",
+							"direction": "Output",
+							"type": "real|float",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "F9827DBC4A622EC7D9FE1E84A338377C",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.SplineComponent",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "776FC0D6493CE13CE97B12BBED15816B",
+					"class": "K2Node_VariableGet",
+					"title": "Get MovementDuration",
+					"comment": "",
+					"x": 432,
+					"y": 48,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "D89B2E6E4415ED2F524F1E9DF8E40E34",
+							"name": "MovementDuration",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "BD11188F4783C2A70BBBFAB8E5D00C94",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "D0866E7145D67EF99724FB8EF718C52C",
+					"class": "K2Node_VariableSet",
+					"title": "Set MovementTime",
+					"comment": "",
+					"x": 944,
+					"y": 16,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "8DFBA4CA4C1807946391A893FEA3055A",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "4587B84E40AF71560756CEBE057C60A2",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "29D7B65D49E517198D39D08C11B92BB3",
+							"name": "MovementTime",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "A79855054132CB8BEB13B589A1851435",
+							"name": "Output_Get",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "44AF821B4D202360A0C9D4B388600D78",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "D1D19B9144069A0AC093B8BFD0CECB75",
+					"class": "K2Node_VariableGet",
+					"title": "Get StartPosition",
+					"comment": "",
+					"x": 800,
+					"y": 128,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "8518D0DA453D6B06007241B165128416",
+							"name": "StartPosition",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "DF144B244A5E6E5E4AE57FB03A1252C2",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "11AE3C5A4CDE7340C56FBD80EF215267",
+					"class": "K2Node_VariableGet",
+					"title": "Get MovementDuration",
+					"comment": "",
+					"x": 768,
+					"y": 96,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "D89B2E6E4415ED2F524F1E9DF8E40E34",
+							"name": "MovementDuration",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "BD11188F4783C2A70BBBFAB8E5D00C94",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "07F8532A48AA963C2DD70996B676ADF6",
+					"class": "K2Node_CommutativeAssociativeBinaryOperator",
+					"title": "float * float",
+					"comment": "",
+					"x": 944,
+					"y": 96,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "5AE2F587478DC0925912248469DC6459",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetMathLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+						},
+						{
+							"pinId": "F9047FA242AFEEFA5E4CFC83EF3C1CBA",
+							"name": "A",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "04F1A9E04EE40FE15FEB44970C4882DF",
+							"name": "B",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "B3450E3A4250C321A519889D4D6A963E",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						}
+					]
+				},
+				{
+					"nodeGuid": "269A46614531C4A9935880AF62884A03",
+					"class": "K2Node_CallFunction",
+					"title": "Update Object Location\nLa destinazione è Simple Moving Object",
+					"comment": "",
+					"x": 1152,
+					"y": -16,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "D6DF8504494433885E2844A84DE73A45",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "046E87A545844E5054FBF281388152B1",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "923EE741458F2A8CE94780BF2C33A99A",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|self",
+							"defaultValue": ""
+						}
+					]
+				}
+			],
+			"links": [
+				{
+					"fromNodeGuid": "FA0987964A3C5B980EC4409B40F94215",
+					"fromPinId": "F953E5AA45CFB7A7DC0218810CAE6A5D",
+					"fromPinName": "then",
+					"toNodeGuid": "56510D7E4019049D863985826F6DFD0F",
+					"toPinId": "9744445B4CE0A3CB5A4E70921D1FBFD4",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "56510D7E4019049D863985826F6DFD0F",
+					"fromPinId": "E5EE64E4456060166E766A8150C501AE",
+					"fromPinName": "then",
+					"toNodeGuid": "62A325FC42DC96E67DD60D881FC06A40",
+					"toPinId": "CF8A4D484AE0E0266A7AD381AB8A47EF",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "FD668A754192FCD3AF752B981D0E0D72",
+					"fromPinId": "812A732F41C4C931C4213991E7434B1F",
+					"fromPinName": "Track",
+					"toNodeGuid": "62A325FC42DC96E67DD60D881FC06A40",
+					"toPinId": "F9827DBC4A622EC7D9FE1E84A338377C",
+					"toPinName": "self"
+				},
+				{
+					"fromNodeGuid": "62A325FC42DC96E67DD60D881FC06A40",
+					"fromPinId": "D20A502C4D00AD45F80FDEB196D342A6",
+					"fromPinName": "then",
+					"toNodeGuid": "D0866E7145D67EF99724FB8EF718C52C",
+					"toPinId": "8DFBA4CA4C1807946391A893FEA3055A",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "776FC0D6493CE13CE97B12BBED15816B",
+					"fromPinId": "D89B2E6E4415ED2F524F1E9DF8E40E34",
+					"fromPinName": "MovementDuration",
+					"toNodeGuid": "62A325FC42DC96E67DD60D881FC06A40",
+					"toPinId": "D769348741151F558AE7B28C7C7C956E",
+					"toPinName": "Duration"
+				},
+				{
+					"fromNodeGuid": "D0866E7145D67EF99724FB8EF718C52C",
+					"fromPinId": "4587B84E40AF71560756CEBE057C60A2",
+					"fromPinName": "then",
+					"toNodeGuid": "269A46614531C4A9935880AF62884A03",
+					"toPinId": "D6DF8504494433885E2844A84DE73A45",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "07F8532A48AA963C2DD70996B676ADF6",
+					"fromPinId": "B3450E3A4250C321A519889D4D6A963E",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "D0866E7145D67EF99724FB8EF718C52C",
+					"toPinId": "29D7B65D49E517198D39D08C11B92BB3",
+					"toPinName": "MovementTime"
+				},
+				{
+					"fromNodeGuid": "D1D19B9144069A0AC093B8BFD0CECB75",
+					"fromPinId": "8518D0DA453D6B06007241B165128416",
+					"fromPinName": "StartPosition",
+					"toNodeGuid": "07F8532A48AA963C2DD70996B676ADF6",
+					"toPinId": "04F1A9E04EE40FE15FEB44970C4882DF",
+					"toPinName": "B"
+				},
+				{
+					"fromNodeGuid": "11AE3C5A4CDE7340C56FBD80EF215267",
+					"fromPinId": "D89B2E6E4415ED2F524F1E9DF8E40E34",
+					"fromPinName": "MovementDuration",
+					"toNodeGuid": "07F8532A48AA963C2DD70996B676ADF6",
+					"toPinId": "F9047FA242AFEEFA5E4CFC83EF3C1CBA",
+					"toPinName": "A"
+				}
+			]
+		},
+		{
+			"name": "UpdateObjectLocation",
+			"type": "Function",
+			"nodes": [
+				{
+					"nodeGuid": "24A934B54F2D4D91CA0BF18CDB80F43A",
+					"class": "K2Node_FunctionEntry",
+					"title": "Update Object Location",
+					"comment": "",
+					"x": 1408,
+					"y": 144,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "6631A38B440D66659D2D938DE7283239",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "71DD1B304D232DF80313CDBF9FE36EF1",
+					"class": "K2Node_VariableGet",
+					"title": "Get Track",
+					"comment": "",
+					"x": 2176,
+					"y": 256,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "1D40D37241B6C481BE6A26A1F9D53E21",
+							"name": "Track",
+							"direction": "Output",
+							"type": "object|/Script/Engine.SplineComponent",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "3501AA9E4C9401FC8ED8388160920A1C",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "B0EFD5AE4EE047660EE6E8AB9EB9783B",
+					"class": "K2Node_VariableGet",
+					"title": "Get MovementCurve",
+					"comment": "",
+					"x": 1664,
+					"y": 304,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "46B3301E4EFB018782400FA29812E454",
+							"name": "MovementCurve",
+							"direction": "Output",
+							"type": "object|/Script/Engine.CurveFloat",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "5973025B48EC846D23DB9DAC1AC877A1",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "48D07D4F4864EA2123E0E399EF7B3221",
+					"class": "K2Node_CallFunction",
+					"title": "Get Float Value\nLa destinazione è Curve Float",
+					"comment": "",
+					"x": 1824,
+					"y": 288,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "C1D2AE4142446DF23CCF6984D51D138E",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.CurveFloat",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "040812E647339513174584AC68BF1824",
+							"name": "InTime",
+							"direction": "Input",
+							"type": "real|float",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "DFBCE767460C9CCE199882B0CE8A0DC2",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "real|float",
+							"defaultValue": "0.0"
+						}
+					]
+				},
+				{
+					"nodeGuid": "CE05D19F48C7CC773E266DA80C97F2AA",
+					"class": "K2Node_VariableGet",
+					"title": "Get MovementTime",
+					"comment": "",
+					"x": 1392,
+					"y": 368,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "A3CA30064D9D912AA2223BBBE75CCD2E",
+							"name": "MovementTime",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "DBE631DD469A059C443227ACF127B10E",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "3329CA9F4609AC980C3D2D9D1F4DF88F",
+					"class": "K2Node_CallFunction",
+					"title": "Normalize to Range",
+					"comment": "",
+					"x": 1552,
+					"y": 352,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "BC013357478B17597BB93F915097B2EB",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetMathLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+						},
+						{
+							"pinId": "39E0E2704B3625F2388F8FAF7F14B801",
+							"name": "Value",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "781B6FA44505530E536DB984474183BC",
+							"name": "RangeMin",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "319C37264EA95E4A15D04AB8CDB8B761",
+							"name": "RangeMax",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "F78AE7F34C5C07A0149AAC8568D24249",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						}
+					]
+				},
+				{
+					"nodeGuid": "55F7DEB74234F86F0A4C8C985F323E48",
+					"class": "K2Node_CallFunction",
+					"title": "Map Range Clamped",
+					"comment": "",
+					"x": 2048,
+					"y": 304,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "831C3E8B47A83E7323F7578D4FC98764",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetMathLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+						},
+						{
+							"pinId": "154478464534B5E9BAD8FFA978D715E6",
+							"name": "Value",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "55E622DF45727E274FBF4ABB41A8E837",
+							"name": "InRangeA",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "15F7416549518B3400F7B3A7FF7222D5",
+							"name": "InRangeB",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "1.000000"
+						},
+						{
+							"pinId": "4AE33A3D41FA1FF137F7009582C2A0D3",
+							"name": "OutRangeA",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "EDC9298E49DAAB349533AAAEEB93BF57",
+							"name": "OutRangeB",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "B03A6CCA4C39F873E94A99B12F8B31C7",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						}
+					]
+				},
+				{
+					"nodeGuid": "B6432A4D4ADB30D0D8F3C9B2FC04B357",
+					"class": "K2Node_CallFunction",
+					"title": "Get Location at Time\nLa destinazione è Componente della spline",
+					"comment": "",
+					"x": 2336,
+					"y": 240,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "B143AEFA4BE7BF5A0351938617094017",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.SplineComponent",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "35FE0B174FFB4DE28AFE6D89DBFB1010",
+							"name": "Time",
+							"direction": "Input",
+							"type": "real|float",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "090584A0487966AF742E71BCD2FC0749",
+							"name": "CoordinateSpace",
+							"direction": "Input",
+							"type": "byte|/Script/Engine.ESplineCoordinateSpace",
+							"defaultValue": "World"
+						},
+						{
+							"pinId": "42661B4649E5531F323B748272F7C583",
+							"name": "bUseConstantVelocity",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "2E7EE8B547D8E19B98FE999B806C6036",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "struct|/Script/CoreUObject.Vector",
+							"defaultValue": "0, 0, 0"
+						}
+					]
+				},
+				{
+					"nodeGuid": "2656AC504E07A497E102458B22E6E053",
+					"class": "K2Node_VariableGet",
+					"title": "Get StaticMesh",
+					"comment": "",
+					"x": 2544,
+					"y": 192,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "EA0D4FE64E9586B6345EBBB8534149CB",
+							"name": "StaticMesh",
+							"direction": "Output",
+							"type": "object|/Script/Engine.StaticMeshComponent",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "0728D881473F091B913FC2B313592979",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleObjectBuilder.SimpleObjectBuilder_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "010E3EB64B961E3BFD6754AB5F7B62BF",
+					"class": "K2Node_CallFunction",
+					"title": "Set World Location\nLa destinazione è Componente di scena",
+					"comment": "",
+					"x": 2688,
+					"y": 128,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "CAEB9C5F449B48AF02FE7B89CE5FB57C",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "DB1E481049FB8C52E700C993C7C05BF9",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "957B2A3D4A2EC222A0CB308D29B37529",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.SceneComponent",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "12A5FAE241487F70075F56A55E1B974A",
+							"name": "NewLocation",
+							"direction": "Input",
+							"type": "struct|/Script/CoreUObject.Vector",
+							"defaultValue": "0, 0, 0"
+						},
+						{
+							"pinId": "BB5DDD6F4D41118CD620DC9648C6C1EC",
+							"name": "bSweep",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "6BAD12804E27A3EF0FE94EAFCF97CD14",
+							"name": "SweepHitResult",
+							"direction": "Output",
+							"type": "struct|/Script/Engine.HitResult",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "BD81AF724830D4C273E30588E7D68398",
+							"name": "bTeleport",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "false"
+						}
+					]
+				},
+				{
+					"nodeGuid": "9C874DCF4ADEF6AC853271A8D8FEF657",
+					"class": "K2Node_VariableGet",
+					"title": "Get Track",
+					"comment": "",
+					"x": 1200,
+					"y": 464,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "A93A51024DAD38B4EE35CDBEF3FFA504",
+							"name": "Track",
+							"direction": "Output",
+							"type": "object|/Script/Engine.SplineComponent",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "265058C74BEB527AF41C148350DF9E18",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "835B81294460DF141FE0528E4A2E7B13",
+					"class": "K2Node_VariableGet",
+					"title": "Get Duration",
+					"comment": "",
+					"x": 1344,
+					"y": 464,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "B4E42EF1430528C66F28E1B283906D43",
+							"name": "Duration",
+							"direction": "Output",
+							"type": "real|float",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "0BA5997A4464A4E11E09DA82C12C31A5",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.SplineComponent",
+							"defaultValue": ""
+						}
+					]
+				}
+			],
+			"links": [
+				{
+					"fromNodeGuid": "24A934B54F2D4D91CA0BF18CDB80F43A",
+					"fromPinId": "6631A38B440D66659D2D938DE7283239",
+					"fromPinName": "then",
+					"toNodeGuid": "010E3EB64B961E3BFD6754AB5F7B62BF",
+					"toPinId": "CAEB9C5F449B48AF02FE7B89CE5FB57C",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "71DD1B304D232DF80313CDBF9FE36EF1",
+					"fromPinId": "1D40D37241B6C481BE6A26A1F9D53E21",
+					"fromPinName": "Track",
+					"toNodeGuid": "B6432A4D4ADB30D0D8F3C9B2FC04B357",
+					"toPinId": "B143AEFA4BE7BF5A0351938617094017",
+					"toPinName": "self"
+				},
+				{
+					"fromNodeGuid": "B0EFD5AE4EE047660EE6E8AB9EB9783B",
+					"fromPinId": "46B3301E4EFB018782400FA29812E454",
+					"fromPinName": "MovementCurve",
+					"toNodeGuid": "48D07D4F4864EA2123E0E399EF7B3221",
+					"toPinId": "C1D2AE4142446DF23CCF6984D51D138E",
+					"toPinName": "self"
+				},
+				{
+					"fromNodeGuid": "3329CA9F4609AC980C3D2D9D1F4DF88F",
+					"fromPinId": "F78AE7F34C5C07A0149AAC8568D24249",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "48D07D4F4864EA2123E0E399EF7B3221",
+					"toPinId": "040812E647339513174584AC68BF1824",
+					"toPinName": "InTime"
+				},
+				{
+					"fromNodeGuid": "48D07D4F4864EA2123E0E399EF7B3221",
+					"fromPinId": "DFBCE767460C9CCE199882B0CE8A0DC2",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "55F7DEB74234F86F0A4C8C985F323E48",
+					"toPinId": "154478464534B5E9BAD8FFA978D715E6",
+					"toPinName": "Value"
+				},
+				{
+					"fromNodeGuid": "CE05D19F48C7CC773E266DA80C97F2AA",
+					"fromPinId": "A3CA30064D9D912AA2223BBBE75CCD2E",
+					"fromPinName": "MovementTime",
+					"toNodeGuid": "3329CA9F4609AC980C3D2D9D1F4DF88F",
+					"toPinId": "39E0E2704B3625F2388F8FAF7F14B801",
+					"toPinName": "Value"
+				},
+				{
+					"fromNodeGuid": "835B81294460DF141FE0528E4A2E7B13",
+					"fromPinId": "B4E42EF1430528C66F28E1B283906D43",
+					"fromPinName": "Duration",
+					"toNodeGuid": "3329CA9F4609AC980C3D2D9D1F4DF88F",
+					"toPinId": "319C37264EA95E4A15D04AB8CDB8B761",
+					"toPinName": "RangeMax"
+				},
+				{
+					"fromNodeGuid": "835B81294460DF141FE0528E4A2E7B13",
+					"fromPinId": "B4E42EF1430528C66F28E1B283906D43",
+					"fromPinName": "Duration",
+					"toNodeGuid": "55F7DEB74234F86F0A4C8C985F323E48",
+					"toPinId": "EDC9298E49DAAB349533AAAEEB93BF57",
+					"toPinName": "OutRangeB"
+				},
+				{
+					"fromNodeGuid": "55F7DEB74234F86F0A4C8C985F323E48",
+					"fromPinId": "B03A6CCA4C39F873E94A99B12F8B31C7",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "B6432A4D4ADB30D0D8F3C9B2FC04B357",
+					"toPinId": "35FE0B174FFB4DE28AFE6D89DBFB1010",
+					"toPinName": "Time"
+				},
+				{
+					"fromNodeGuid": "B6432A4D4ADB30D0D8F3C9B2FC04B357",
+					"fromPinId": "2E7EE8B547D8E19B98FE999B806C6036",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "010E3EB64B961E3BFD6754AB5F7B62BF",
+					"toPinId": "12A5FAE241487F70075F56A55E1B974A",
+					"toPinName": "NewLocation"
+				},
+				{
+					"fromNodeGuid": "2656AC504E07A497E102458B22E6E053",
+					"fromPinId": "EA0D4FE64E9586B6345EBBB8534149CB",
+					"fromPinName": "StaticMesh",
+					"toNodeGuid": "010E3EB64B961E3BFD6754AB5F7B62BF",
+					"toPinId": "957B2A3D4A2EC222A0CB308D29B37529",
+					"toPinName": "self"
+				},
+				{
+					"fromNodeGuid": "9C874DCF4ADEF6AC853271A8D8FEF657",
+					"fromPinId": "A93A51024DAD38B4EE35CDBEF3FFA504",
+					"fromPinName": "Track",
+					"toNodeGuid": "835B81294460DF141FE0528E4A2E7B13",
+					"toPinId": "0BA5997A4464A4E11E09DA82C12C31A5",
+					"toPinName": "self"
+				}
+			]
+		},
+		{
+			"name": "EventGraph",
+			"type": "EventGraph",
+			"nodes": [
+				{
+					"nodeGuid": "F2C171CC4C5FD1B0C743CE8C07CD2CA0",
+					"class": "K2Node_Event",
+					"title": "Evento Tick",
+					"comment": "",
+					"x": 0,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "556CB95149D04AB9AC60D3B373B05763",
+							"name": "OutputDelegate",
+							"direction": "Output",
+							"type": "delegate",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "D9ED582C4ACFEFDB815209BEE8068FB2",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "AE96822646C78B3E2A1E08BFEC27C460",
+							"name": "DeltaSeconds",
+							"direction": "Output",
+							"type": "real|float",
+							"defaultValue": "0.0"
+						}
+					]
+				},
+				{
+					"nodeGuid": "C29EA75E469D21D89397C49F160B7FFF",
+					"class": "K2Node_VariableSet",
+					"title": "Set DeltaSeconds",
+					"comment": "",
+					"x": 144,
+					"y": 16,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "EEC367B6443E79D2D9B27C82C7E126B9",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "A8248DD44D886F39269EA78CB72016CC",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "4EC4CD7A417276121CD1FFA1A248F2EC",
+							"name": "DeltaSeconds",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "7220007B41CAB64E2E5CFC82984641C0",
+							"name": "Output_Get",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "12504AD84164196844268BA0F30403A3",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "F4C7B7254BFE48A523A376AB89E48465",
+					"class": "K2Node_VariableSet",
+					"title": "Set MovementTime",
+					"comment": "",
+					"x": 592,
+					"y": 16,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "1DEBAB1746EE6CB9AE644285636414D2",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "1F4DD57D4FAB7B1D0E7A6DB3852B60B9",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "9E2F45F24214F8C486AFC196B76FDF0B",
+							"name": "MovementTime",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "8138E50B4242A1B234D08A8828804392",
+							"name": "Output_Get",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "B776907E487C8AFBD6686285B7AA63F4",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "CC3407DB47222A7E8768CEB0D9139D04",
+					"class": "K2Node_VariableGet",
+					"title": "Get MovementDirection",
+					"comment": "",
+					"x": 0,
+					"y": 256,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "5D36BE7C47AFE89970F471B600BEE329",
+							"name": "MovementDirection",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": "0"
+						},
+						{
+							"pinId": "F703D0B148999575D151BD8C562DCD12",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "5DCBCCE84E0DA91D0201F3B8AAA4BD3D",
+					"class": "K2Node_CallFunction",
+					"title": "int * float",
+					"comment": "",
+					"x": 176,
+					"y": 272,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "5AD3359A453A8F35D45FEF863661E2F7",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetMathLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+						},
+						{
+							"pinId": "95ECEDD04F74A6A40FC660B695B7E737",
+							"name": "A",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": "0"
+						},
+						{
+							"pinId": "0A9885284BDF49147A7E7199AE184896",
+							"name": "B",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "453ABEE7409D712072E11EB36BFE8D12",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						}
+					]
+				},
+				{
+					"nodeGuid": "7AE238184F62B0B0E7A0C8ACBC46A64C",
+					"class": "K2Node_VariableGet",
+					"title": "Get DeltaSeconds",
+					"comment": "",
+					"x": 32,
+					"y": 304,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "E753F027428E77912BCCB8A933EFEB07",
+							"name": "DeltaSeconds",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "89B5C66742AD301F94ABC395402F502A",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "4AE2E72843A8548B62A39AA507CA824E",
+					"class": "K2Node_CommutativeAssociativeBinaryOperator",
+					"title": "float + float",
+					"comment": "",
+					"x": 304,
+					"y": 240,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "8A28D9A04EE98D3B926C4186FB6CF99F",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetMathLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+						},
+						{
+							"pinId": "43A4332F42300867624627B8099508DB",
+							"name": "A",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "A70A6B5A49C750CA390401ACD8509AAA",
+							"name": "B",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "1.000000"
+						},
+						{
+							"pinId": "854C75BA48078E9F0D8E809C33A8CC05",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						}
+					]
+				},
+				{
+					"nodeGuid": "190F45A443935D067EC07E96119F36D0",
+					"class": "K2Node_VariableGet",
+					"title": "Get MovementTime",
+					"comment": "",
+					"x": 144,
+					"y": 208,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "C80E68FB4689B304AF8882B056737C4F",
+							"name": "MovementTime",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "1CC32FF04EF0841FE3707980ABE8829B",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "4FDF05694D6F14ACFA5B65A2F68C47AD",
+					"class": "K2Node_IfThenElse",
+					"title": "Ramo",
+					"comment": "",
+					"x": 352,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "154C27BD4837DAAFE292A6B3EA136C94",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "9FE3A8734B6A9E25F57B66A44293BBC6",
+							"name": "Condition",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "true"
+						},
+						{
+							"pinId": "A5CDC52C4A0D974476CA55BF2A3916F9",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "B47798114788536DCC129899E0544779",
+							"name": "else",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "98118B1349A5FC8E255F8B8DD8FF4E2A",
+					"class": "K2Node_VariableGet",
+					"title": "Get CanMove",
+					"comment": "",
+					"x": 192,
+					"y": 96,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "B0A57494484235DC8A33109DCD1D4502",
+							"name": "CanMove",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "B1C00B4742DB46FC04AA0BB7F6287EF2",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "04C7CEB946A93B7DD23BA4B50DEE6816",
+					"class": "K2Node_VariableGet",
+					"title": "Get MovementTime",
+					"comment": "",
+					"x": 896,
+					"y": 224,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "A28B063042E5914A6ACF36A06AD22B4C",
+							"name": "MovementTime",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "278BFF464202EC8856F0B3AA7D0B6CE6",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "E4154A604A0CCE6FA1EEC28A5845B24B",
+					"class": "K2Node_VariableGet",
+					"title": "Get Track",
+					"comment": "",
+					"x": 720,
+					"y": 144,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "A93A51024DAD38B4EE35CDBEF3FFA504",
+							"name": "Track",
+							"direction": "Output",
+							"type": "object|/Script/Engine.SplineComponent",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "265058C74BEB527AF41C148350DF9E18",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "BD0451DE411DBB55FEB02CBD6329DB87",
+					"class": "K2Node_VariableGet",
+					"title": "Get Duration",
+					"comment": "",
+					"x": 864,
+					"y": 144,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "B4E42EF1430528C66F28E1B283906D43",
+							"name": "Duration",
+							"direction": "Output",
+							"type": "real|float",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "0BA5997A4464A4E11E09DA82C12C31A5",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.SplineComponent",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "04FD581B49BBBADED13E90B45E9BEAB5",
+					"class": "K2Node_CallFunction",
+					"title": "Nearly Equal (Float)",
+					"comment": "",
+					"x": 1072,
+					"y": 128,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "FB3DDC78499F3109F77AE281500AB509",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetMathLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+						},
+						{
+							"pinId": "B0BC69A849F2608B39D1EDA27BDD0677",
+							"name": "A",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "C85F3044453ED54FC61662A327054892",
+							"name": "B",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "D560B65E4BF58ED67B0B33898BE91AD4",
+							"name": "ErrorTolerance",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.000001"
+						},
+						{
+							"pinId": "D620DD6142D461F8BE4C6BAFF578C892",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": "false"
+						}
+					]
+				},
+				{
+					"nodeGuid": "D3A1F0B746E69BA6EF740B88EAB10692",
+					"class": "K2Node_MacroInstance",
+					"title": "Compare Int",
+					"comment": "",
+					"x": 1184,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "21372D5045DA86F3F05E679737B8EEB1",
+							"name": "Exec",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "E960528D400A82602FD1CBA3C0C46D86",
+							"name": "Input",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "9F2DC121445230CDC33DA392EA53A9CD",
+							"name": "CompareWith",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "F9DE07354F7B7380C43B54803B2829FE",
+							"name": ">",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "C78903D94CE4B6EEDE95329A9DAE9C4C",
+							"name": "==",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "6F964E8C472F5EFB20064DAC86262FB3",
+							"name": "<",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "45D8F6954522C1C86A15C69F20910180",
+					"class": "K2Node_VariableGet",
+					"title": "Get MovementDirection",
+					"comment": "",
+					"x": 1008,
+					"y": 64,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "4A3DDBB548E05F8EB07CBF8B44CDDC6F",
+							"name": "MovementDirection",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": "0"
+						},
+						{
+							"pinId": "1203B8C94AD9377C53B95BA1E99407AB",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "6FE68BD7498749B911E1D7AF021B36E0",
+					"class": "K2Node_IfThenElse",
+					"title": "Ramo",
+					"comment": "",
+					"x": 1536,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "FC3B1C6941E4349DC18DDA84FA95EA96",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "FFDBFF0D4B7E9B6C5B4E4E85C615D0C0",
+							"name": "Condition",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "true"
+						},
+						{
+							"pinId": "2A828FD5430CF9B78211E4B860A7198D",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "AC1A609C4691A441F149EDA344FBCCF7",
+							"name": "else",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "366F4AEB4B7E0F16169CCEB72B2A5958",
+					"class": "K2Node_CallFunction",
+					"title": "Nearly Equal (Float)",
+					"comment": "",
+					"x": 1072,
+					"y": 240,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "FB3DDC78499F3109F77AE281500AB509",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetMathLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+						},
+						{
+							"pinId": "B0BC69A849F2608B39D1EDA27BDD0677",
+							"name": "A",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "C85F3044453ED54FC61662A327054892",
+							"name": "B",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "D560B65E4BF58ED67B0B33898BE91AD4",
+							"name": "ErrorTolerance",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.000001"
+						},
+						{
+							"pinId": "D620DD6142D461F8BE4C6BAFF578C892",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": "false"
+						}
+					]
+				},
+				{
+					"nodeGuid": "40F517154211066562C52EA063B54641",
+					"class": "K2Node_IfThenElse",
+					"title": "Ramo",
+					"comment": "",
+					"x": 1536,
+					"y": 96,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "FC3B1C6941E4349DC18DDA84FA95EA96",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "FFDBFF0D4B7E9B6C5B4E4E85C615D0C0",
+							"name": "Condition",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "true"
+						},
+						{
+							"pinId": "2A828FD5430CF9B78211E4B860A7198D",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "AC1A609C4691A441F149EDA344FBCCF7",
+							"name": "else",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "C26F19734144C606AB02C88ADC1ACF70",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 1728,
+					"y": 112,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "31C38F5C4057E167CB4FAE83A129144C",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "E28DDD7C41AA11064FCBE49F68C9CB9D",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "CC2E575D4498632356F5A48D0800A6F5",
+					"class": "K2Node_CallFunction",
+					"title": "Ritardo",
+					"comment": "",
+					"x": 2736,
+					"y": -16,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "862E937048070B59B720E2B8124031B2",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "0051EEE94F02346B178C51867A9D16EB",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "BA3616CD4227B8889F59E79F9218C6C5",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetSystemLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetSystemLibrary"
+						},
+						{
+							"pinId": "3104144C40ED32780F2F85AB8A38C75A",
+							"name": "WorldContextObject",
+							"direction": "Input",
+							"type": "object|/Script/CoreUObject.Object|const",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "F1C644314C35FF070E345D9564E05E70",
+							"name": "Duration",
+							"direction": "Input",
+							"type": "real|float",
+							"defaultValue": "0.2"
+						},
+						{
+							"pinId": "AFC6C0924BD57342AA97B88920F6473B",
+							"name": "LatentInfo",
+							"direction": "Input",
+							"type": "struct|/Script/Engine.LatentActionInfo",
+							"defaultValue": "(Linkage=-1,UUID=-1,ExecutionFunction=\"\",CallbackTarget=None)"
+						}
+					]
+				},
+				{
+					"nodeGuid": "63F173634EC74C9E11B899893497CE6D",
+					"class": "K2Node_VariableGet",
+					"title": "Get WaitTime",
+					"comment": "",
+					"x": 2592,
+					"y": 48,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "024396804EDDDD5491B05EA15A5E4BF5",
+							"name": "WaitTime",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "186595F84295106F7A795A8EED35BAF6",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "26ABF6D74773FA5D5E360BB85C291C65",
+					"class": "K2Node_VariableSet",
+					"title": "Set CanMove",
+					"comment": "",
+					"x": 1856,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "72FAC51545AAF5C532270CAD5AE08B33",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "FC7A410E4EA8542287A4F98C9C08224F",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "5AB3E6494E95412C836D839CE808E3F9",
+							"name": "CanMove",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "7B0C84CF4A917F4AABC5B49955C9AF14",
+							"name": "Output_Get",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "9C00055D41C72DDC1FF9C4B9FC5D4E99",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "507A7AB142206FFAB5D1BA94BE7A7642",
+					"class": "K2Node_VariableSet",
+					"title": "Set CanMove",
+					"comment": "",
+					"x": 2960,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "F2EC14C0434A996D81C079BCAE54F64D",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "620A74E644BCAE66F0C47D8B17BB0766",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "124F08E84DCEF6572C994A8CD880BCC0",
+							"name": "CanMove",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "true"
+						},
+						{
+							"pinId": "D0D7CE0E43E572E8DDBC5EB02431C2B2",
+							"name": "Output_Get",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "D5FB9F3340B7C12A26B6DF9FA6A65294",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "D02592124A636AFD769DDE8EF897319C",
+					"class": "K2Node_VariableGet",
+					"title": "Get MovementDirection",
+					"comment": "",
+					"x": 2048,
+					"y": 48,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "6D2FD6BF48200F9720AA9AAD5E063729",
+							"name": "MovementDirection",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": "0"
+						},
+						{
+							"pinId": "DAC6BFDC4A012837596188AD0AA1CEB2",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "DD6EAC764466268A97642D99A52B8F83",
+					"class": "K2Node_VariableSet",
+					"title": "Set MovementDirection",
+					"comment": "",
+					"x": 2368,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "A9FDCCF043F17B2B787CE18D02456E37",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "638A890740D362A23FB9E795E43FCCE2",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "83FB41A548CFC20DCA679A85E3E54D8A",
+							"name": "MovementDirection",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": "0"
+						},
+						{
+							"pinId": "0890432F42BC5144DB742CBB5C0155D7",
+							"name": "Output_Get",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": "0"
+						},
+						{
+							"pinId": "6D9AFCF1403972EE7AF0DE8DABF8ADEE",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "2A6DFE254EC1D78F61E866996581AF79",
+					"class": "K2Node_CommutativeAssociativeBinaryOperator",
+					"title": "int * int",
+					"comment": "",
+					"x": 2224,
+					"y": 48,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "25C80D274041E0FA7C76F4B0454CF76B",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetMathLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+						},
+						{
+							"pinId": "3720CEDC4C89ACACFB3C328E474D51CA",
+							"name": "A",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": "0"
+						},
+						{
+							"pinId": "2BD1C6BC4F282E6498BFC095C1877388",
+							"name": "B",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": "-1"
+						},
+						{
+							"pinId": "119E4E3A410E01424350F5AAFA867759",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": "0"
+						}
+					]
+				},
+				{
+					"nodeGuid": "99E3EF2E448DA37263DE9D935D630A6F",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 1728,
+					"y": 80,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "CBB12E7A496D7F775F6610BFFA6B94F1",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "9110709A4759D81ECFAB95B2E70192A2",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "94EB64FF4955599827BD5688F08BA0E8",
+					"class": "K2Node_CallFunction",
+					"title": "Clamp (Float)",
+					"comment": "",
+					"x": 480,
+					"y": 256,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "7C3680404D88E1FC945CF9B8353E4557",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetMathLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+						},
+						{
+							"pinId": "A7174F75456892D26765DAA706E73850",
+							"name": "Value",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "99BB92084958DBC965250D900DF05626",
+							"name": "Min",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "9C11184A46CE2210988E8D935F6A7F61",
+							"name": "Max",
+							"direction": "Input",
+							"type": "real|double",
+							"defaultValue": "1.0"
+						},
+						{
+							"pinId": "33CECE3642CD0DE1C9AE429A237A7A85",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "real|double",
+							"defaultValue": "0.0"
+						}
+					]
+				},
+				{
+					"nodeGuid": "57D80D4943904CB2F0DC12B3F0A2FB0A",
+					"class": "K2Node_VariableGet",
+					"title": "Get Track",
+					"comment": "",
+					"x": 128,
+					"y": 368,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "A93A51024DAD38B4EE35CDBEF3FFA504",
+							"name": "Track",
+							"direction": "Output",
+							"type": "object|/Script/Engine.SplineComponent",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "265058C74BEB527AF41C148350DF9E18",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "24EEAB534ADE5D2FA2837897019B9EA3",
+					"class": "K2Node_VariableGet",
+					"title": "Get Duration",
+					"comment": "",
+					"x": 272,
+					"y": 368,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "B4E42EF1430528C66F28E1B283906D43",
+							"name": "Duration",
+							"direction": "Output",
+							"type": "real|float",
+							"defaultValue": "0.0"
+						},
+						{
+							"pinId": "0BA5997A4464A4E11E09DA82C12C31A5",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.SplineComponent",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "FB245A1F469561F476C4FFB883145244",
+					"class": "K2Node_CallFunction",
+					"title": "Update Object Location\nLa destinazione è Simple Moving Object",
+					"comment": "",
+					"x": 1856,
+					"y": 112,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "002791FA4542B69D20AEA7B65A0AC72B",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "22B4BD3B47DA8BC6BA035991353C4E92",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "C3D6C44F42C044678484F5BD17FC80E6",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|self",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "82E0567644D5CA2F9B7BFBB15DEBDC7F",
+					"class": "EdGraphNode_Comment",
+					"title": "This blueprint was built off of the Movable Platform Blueprint created by drb1992, and adapted to use a curve asset for smooth movement.\r\n\r\nThe original BP can be found here - drbforums.unrealengine.com/community/community-content-tools-and-tutorials/65463-free-moving-platform-blueprint",
+					"comment": "This blueprint was built off of the Movable Platform Blueprint created by drb1992, and adapted to use a curve asset for smooth movement.\r\n\r\nThe original BP can be found here - drbforums.unrealengine.com/community/community-content-tools-and-tutorials/65463-free-moving-platform-blueprint",
+					"x": 0,
+					"y": -256,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": []
+				}
+			],
+			"links": [
+				{
+					"fromNodeGuid": "F2C171CC4C5FD1B0C743CE8C07CD2CA0",
+					"fromPinId": "D9ED582C4ACFEFDB815209BEE8068FB2",
+					"fromPinName": "then",
+					"toNodeGuid": "C29EA75E469D21D89397C49F160B7FFF",
+					"toPinId": "EEC367B6443E79D2D9B27C82C7E126B9",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "F2C171CC4C5FD1B0C743CE8C07CD2CA0",
+					"fromPinId": "AE96822646C78B3E2A1E08BFEC27C460",
+					"fromPinName": "DeltaSeconds",
+					"toNodeGuid": "C29EA75E469D21D89397C49F160B7FFF",
+					"toPinId": "4EC4CD7A417276121CD1FFA1A248F2EC",
+					"toPinName": "DeltaSeconds"
+				},
+				{
+					"fromNodeGuid": "C29EA75E469D21D89397C49F160B7FFF",
+					"fromPinId": "A8248DD44D886F39269EA78CB72016CC",
+					"fromPinName": "then",
+					"toNodeGuid": "4FDF05694D6F14ACFA5B65A2F68C47AD",
+					"toPinId": "154C27BD4837DAAFE292A6B3EA136C94",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "4FDF05694D6F14ACFA5B65A2F68C47AD",
+					"fromPinId": "A5CDC52C4A0D974476CA55BF2A3916F9",
+					"fromPinName": "then",
+					"toNodeGuid": "F4C7B7254BFE48A523A376AB89E48465",
+					"toPinId": "1DEBAB1746EE6CB9AE644285636414D2",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "F4C7B7254BFE48A523A376AB89E48465",
+					"fromPinId": "1F4DD57D4FAB7B1D0E7A6DB3852B60B9",
+					"fromPinName": "then",
+					"toNodeGuid": "D3A1F0B746E69BA6EF740B88EAB10692",
+					"toPinId": "21372D5045DA86F3F05E679737B8EEB1",
+					"toPinName": "Exec"
+				},
+				{
+					"fromNodeGuid": "94EB64FF4955599827BD5688F08BA0E8",
+					"fromPinId": "33CECE3642CD0DE1C9AE429A237A7A85",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "F4C7B7254BFE48A523A376AB89E48465",
+					"toPinId": "9E2F45F24214F8C486AFC196B76FDF0B",
+					"toPinName": "MovementTime"
+				},
+				{
+					"fromNodeGuid": "CC3407DB47222A7E8768CEB0D9139D04",
+					"fromPinId": "5D36BE7C47AFE89970F471B600BEE329",
+					"fromPinName": "MovementDirection",
+					"toNodeGuid": "5DCBCCE84E0DA91D0201F3B8AAA4BD3D",
+					"toPinId": "95ECEDD04F74A6A40FC660B695B7E737",
+					"toPinName": "A"
+				},
+				{
+					"fromNodeGuid": "7AE238184F62B0B0E7A0C8ACBC46A64C",
+					"fromPinId": "E753F027428E77912BCCB8A933EFEB07",
+					"fromPinName": "DeltaSeconds",
+					"toNodeGuid": "5DCBCCE84E0DA91D0201F3B8AAA4BD3D",
+					"toPinId": "0A9885284BDF49147A7E7199AE184896",
+					"toPinName": "B"
+				},
+				{
+					"fromNodeGuid": "5DCBCCE84E0DA91D0201F3B8AAA4BD3D",
+					"fromPinId": "453ABEE7409D712072E11EB36BFE8D12",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "4AE2E72843A8548B62A39AA507CA824E",
+					"toPinId": "A70A6B5A49C750CA390401ACD8509AAA",
+					"toPinName": "B"
+				},
+				{
+					"fromNodeGuid": "190F45A443935D067EC07E96119F36D0",
+					"fromPinId": "C80E68FB4689B304AF8882B056737C4F",
+					"fromPinName": "MovementTime",
+					"toNodeGuid": "4AE2E72843A8548B62A39AA507CA824E",
+					"toPinId": "43A4332F42300867624627B8099508DB",
+					"toPinName": "A"
+				},
+				{
+					"fromNodeGuid": "4AE2E72843A8548B62A39AA507CA824E",
+					"fromPinId": "854C75BA48078E9F0D8E809C33A8CC05",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "94EB64FF4955599827BD5688F08BA0E8",
+					"toPinId": "A7174F75456892D26765DAA706E73850",
+					"toPinName": "Value"
+				},
+				{
+					"fromNodeGuid": "98118B1349A5FC8E255F8B8DD8FF4E2A",
+					"fromPinId": "B0A57494484235DC8A33109DCD1D4502",
+					"fromPinName": "CanMove",
+					"toNodeGuid": "4FDF05694D6F14ACFA5B65A2F68C47AD",
+					"toPinId": "9FE3A8734B6A9E25F57B66A44293BBC6",
+					"toPinName": "Condition"
+				},
+				{
+					"fromNodeGuid": "04C7CEB946A93B7DD23BA4B50DEE6816",
+					"fromPinId": "A28B063042E5914A6ACF36A06AD22B4C",
+					"fromPinName": "MovementTime",
+					"toNodeGuid": "04FD581B49BBBADED13E90B45E9BEAB5",
+					"toPinId": "C85F3044453ED54FC61662A327054892",
+					"toPinName": "B"
+				},
+				{
+					"fromNodeGuid": "04C7CEB946A93B7DD23BA4B50DEE6816",
+					"fromPinId": "A28B063042E5914A6ACF36A06AD22B4C",
+					"fromPinName": "MovementTime",
+					"toNodeGuid": "366F4AEB4B7E0F16169CCEB72B2A5958",
+					"toPinId": "C85F3044453ED54FC61662A327054892",
+					"toPinName": "B"
+				},
+				{
+					"fromNodeGuid": "E4154A604A0CCE6FA1EEC28A5845B24B",
+					"fromPinId": "A93A51024DAD38B4EE35CDBEF3FFA504",
+					"fromPinName": "Track",
+					"toNodeGuid": "BD0451DE411DBB55FEB02CBD6329DB87",
+					"toPinId": "0BA5997A4464A4E11E09DA82C12C31A5",
+					"toPinName": "self"
+				},
+				{
+					"fromNodeGuid": "BD0451DE411DBB55FEB02CBD6329DB87",
+					"fromPinId": "B4E42EF1430528C66F28E1B283906D43",
+					"fromPinName": "Duration",
+					"toNodeGuid": "04FD581B49BBBADED13E90B45E9BEAB5",
+					"toPinId": "B0BC69A849F2608B39D1EDA27BDD0677",
+					"toPinName": "A"
+				},
+				{
+					"fromNodeGuid": "04FD581B49BBBADED13E90B45E9BEAB5",
+					"fromPinId": "D620DD6142D461F8BE4C6BAFF578C892",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "6FE68BD7498749B911E1D7AF021B36E0",
+					"toPinId": "FFDBFF0D4B7E9B6C5B4E4E85C615D0C0",
+					"toPinName": "Condition"
+				},
+				{
+					"fromNodeGuid": "45D8F6954522C1C86A15C69F20910180",
+					"fromPinId": "4A3DDBB548E05F8EB07CBF8B44CDDC6F",
+					"fromPinName": "MovementDirection",
+					"toNodeGuid": "D3A1F0B746E69BA6EF740B88EAB10692",
+					"toPinId": "E960528D400A82602FD1CBA3C0C46D86",
+					"toPinName": "Input"
+				},
+				{
+					"fromNodeGuid": "D3A1F0B746E69BA6EF740B88EAB10692",
+					"fromPinId": "F9DE07354F7B7380C43B54803B2829FE",
+					"fromPinName": ">",
+					"toNodeGuid": "6FE68BD7498749B911E1D7AF021B36E0",
+					"toPinId": "FC3B1C6941E4349DC18DDA84FA95EA96",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "D3A1F0B746E69BA6EF740B88EAB10692",
+					"fromPinId": "6F964E8C472F5EFB20064DAC86262FB3",
+					"fromPinName": "<",
+					"toNodeGuid": "40F517154211066562C52EA063B54641",
+					"toPinId": "FC3B1C6941E4349DC18DDA84FA95EA96",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "6FE68BD7498749B911E1D7AF021B36E0",
+					"fromPinId": "2A828FD5430CF9B78211E4B860A7198D",
+					"fromPinName": "then",
+					"toNodeGuid": "99E3EF2E448DA37263DE9D935D630A6F",
+					"toPinId": "CBB12E7A496D7F775F6610BFFA6B94F1",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "6FE68BD7498749B911E1D7AF021B36E0",
+					"fromPinId": "AC1A609C4691A441F149EDA344FBCCF7",
+					"fromPinName": "else",
+					"toNodeGuid": "C26F19734144C606AB02C88ADC1ACF70",
+					"toPinId": "31C38F5C4057E167CB4FAE83A129144C",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "366F4AEB4B7E0F16169CCEB72B2A5958",
+					"fromPinId": "D620DD6142D461F8BE4C6BAFF578C892",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "40F517154211066562C52EA063B54641",
+					"toPinId": "FFDBFF0D4B7E9B6C5B4E4E85C615D0C0",
+					"toPinName": "Condition"
+				},
+				{
+					"fromNodeGuid": "40F517154211066562C52EA063B54641",
+					"fromPinId": "2A828FD5430CF9B78211E4B860A7198D",
+					"fromPinName": "then",
+					"toNodeGuid": "99E3EF2E448DA37263DE9D935D630A6F",
+					"toPinId": "CBB12E7A496D7F775F6610BFFA6B94F1",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "40F517154211066562C52EA063B54641",
+					"fromPinId": "AC1A609C4691A441F149EDA344FBCCF7",
+					"fromPinName": "else",
+					"toNodeGuid": "C26F19734144C606AB02C88ADC1ACF70",
+					"toPinId": "31C38F5C4057E167CB4FAE83A129144C",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "C26F19734144C606AB02C88ADC1ACF70",
+					"fromPinId": "E28DDD7C41AA11064FCBE49F68C9CB9D",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "FB245A1F469561F476C4FFB883145244",
+					"toPinId": "002791FA4542B69D20AEA7B65A0AC72B",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "DD6EAC764466268A97642D99A52B8F83",
+					"fromPinId": "638A890740D362A23FB9E795E43FCCE2",
+					"fromPinName": "then",
+					"toNodeGuid": "CC2E575D4498632356F5A48D0800A6F5",
+					"toPinId": "862E937048070B59B720E2B8124031B2",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "CC2E575D4498632356F5A48D0800A6F5",
+					"fromPinId": "0051EEE94F02346B178C51867A9D16EB",
+					"fromPinName": "then",
+					"toNodeGuid": "507A7AB142206FFAB5D1BA94BE7A7642",
+					"toPinId": "F2EC14C0434A996D81C079BCAE54F64D",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "63F173634EC74C9E11B899893497CE6D",
+					"fromPinId": "024396804EDDDD5491B05EA15A5E4BF5",
+					"fromPinName": "WaitTime",
+					"toNodeGuid": "CC2E575D4498632356F5A48D0800A6F5",
+					"toPinId": "F1C644314C35FF070E345D9564E05E70",
+					"toPinName": "Duration"
+				},
+				{
+					"fromNodeGuid": "99E3EF2E448DA37263DE9D935D630A6F",
+					"fromPinId": "9110709A4759D81ECFAB95B2E70192A2",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "26ABF6D74773FA5D5E360BB85C291C65",
+					"toPinId": "72FAC51545AAF5C532270CAD5AE08B33",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "26ABF6D74773FA5D5E360BB85C291C65",
+					"fromPinId": "FC7A410E4EA8542287A4F98C9C08224F",
+					"fromPinName": "then",
+					"toNodeGuid": "DD6EAC764466268A97642D99A52B8F83",
+					"toPinId": "A9FDCCF043F17B2B787CE18D02456E37",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "D02592124A636AFD769DDE8EF897319C",
+					"fromPinId": "6D2FD6BF48200F9720AA9AAD5E063729",
+					"fromPinName": "MovementDirection",
+					"toNodeGuid": "2A6DFE254EC1D78F61E866996581AF79",
+					"toPinId": "3720CEDC4C89ACACFB3C328E474D51CA",
+					"toPinName": "A"
+				},
+				{
+					"fromNodeGuid": "2A6DFE254EC1D78F61E866996581AF79",
+					"fromPinId": "119E4E3A410E01424350F5AAFA867759",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "DD6EAC764466268A97642D99A52B8F83",
+					"toPinId": "83FB41A548CFC20DCA679A85E3E54D8A",
+					"toPinName": "MovementDirection"
+				},
+				{
+					"fromNodeGuid": "24EEAB534ADE5D2FA2837897019B9EA3",
+					"fromPinId": "B4E42EF1430528C66F28E1B283906D43",
+					"fromPinName": "Duration",
+					"toNodeGuid": "94EB64FF4955599827BD5688F08BA0E8",
+					"toPinId": "9C11184A46CE2210988E8D935F6A7F61",
+					"toPinName": "Max"
+				},
+				{
+					"fromNodeGuid": "57D80D4943904CB2F0DC12B3F0A2FB0A",
+					"fromPinId": "A93A51024DAD38B4EE35CDBEF3FFA504",
+					"fromPinName": "Track",
+					"toNodeGuid": "24EEAB534ADE5D2FA2837897019B9EA3",
+					"toPinId": "0BA5997A4464A4E11E09DA82C12C31A5",
+					"toPinName": "self"
+				}
+			]
+		}
+	],
+	"dependencies": [
+		"/Engine/EditorBlueprintResources/StandardMacros",
+		"/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleObjectBuilder",
+		"/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SmoothObjectMovement"
+	],
+	"relations": [
+		{
+			"name": "SimpleObjectBuilder",
+			"path": "/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleObjectBuilder.SimpleObjectBuilder",
+			"assetType": "Blueprint"
+		},
+		{
+			"name": "StandardMacros",
+			"path": "/Engine/EditorBlueprintResources/StandardMacros.StandardMacros",
+			"assetType": "Blueprint"
+		}
+	],
+	"semanticSummary":
+	{
+		"probableSystem": "ALS / Locomotion",
+		"classificationConfidence": "heuristic",
+		"summary": "Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.",
+		"importantVariables": [
+			"DeltaSeconds",
+			"MovementCurve",
+			"StartPosition",
+			"MovementDuration",
+			"MovementDirection",
+			"WaitTime",
+			"MovementTime",
+			"CanMove"
+		],
+		"importantFunctions": [
+			"UpdateObjectLocation",
+			"UserConstructionScript"
+		],
+		"importantEvents": [
+			"Evento Tick"
+		],
+		"relatedAssets": [
+			"SimpleObjectBuilder",
+			"StandardMacros"
+		],
+		"complexity":
+		{
+			"graphCount": 3,
+			"nodeCount": 55,
+			"pinCount": 179,
+			"linkCount": 56
+		},
+		"notes": [
+			"Classificazione euristica dedotta da nome, path e tipo asset (ALS / Locomotion)."
+		]
+	},
+	"shortAssetFolder": "SimpleMovingObject__4D30DFC3",
+	"pathHash": "4D30DFC3"
+}

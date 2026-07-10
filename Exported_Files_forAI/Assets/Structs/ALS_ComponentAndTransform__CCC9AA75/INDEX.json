@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "ALS_ComponentAndTransform",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/ALS_ComponentAndTransform.ALS_ComponentAndTransform",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Structs_ALS_ComponentAndTransform",
+	"shortAssetFolder": "ALS_ComponentAndTransform__CCC9AA75",
+	"pathHash": "CCC9AA75",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/ALS_ComponentAndTransform__CCC9AA75/SUMMARY.md",
+		"variables": "Assets/Structs/ALS_ComponentAndTransform__CCC9AA75/VARIABLES.json",
+		"components": "Assets/Structs/ALS_ComponentAndTransform__CCC9AA75/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/ALS_ComponentAndTransform__CCC9AA75/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/ALS_ComponentAndTransform__CCC9AA75/NODES.jsonl",
+		"edges": "Assets/Structs/ALS_ComponentAndTransform__CCC9AA75/EDGES.jsonl",
+		"search": "Assets/Structs/ALS_ComponentAndTransform__CCC9AA75/SEARCH.jsonl"
+	},
+	"graphs": []
+}

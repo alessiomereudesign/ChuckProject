@@ -1,0 +1,14 @@
+{
+	"graphId": "G001",
+	"name": "(CLF) Crouching LF",
+	"graphName": "(CLF) Crouching LF",
+	"type": "AnimationStateGraph",
+	"graphType": "AnimationStateGraph",
+	"graphGuid": "",
+	"nodeCount": 3,
+	"edgeCount": 2,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G001/EDGES.jsonl",
+	"flows": []
+}

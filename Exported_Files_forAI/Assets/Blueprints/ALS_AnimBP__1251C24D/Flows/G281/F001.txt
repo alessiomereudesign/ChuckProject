@@ -1,0 +1,42 @@
+Asset: ALS_AnimBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP
+GraphId: G281
+Graph: CalculateDiagonalScaleAmount
+FlowId: F001
+Entry: Calculate Diagonal Scale Amount
+NodeGuid: FAC8996D4B1949CC08D7F0961C82265D
+
+Exec Flow:
+1. Calculate Diagonal Scale Amount [K2Node_FunctionEntry] FAC8996D4B1949CC08D7F0961C82265D
+2. Nodo di restituzione [K2Node_FunctionResult] EE2864464A0E8FB5B112F29803CA7646
+3. Get DiagonalScaleAmountCurve [K2Node_VariableGet] F428FFD1424AE49690818EBFFD434A7A
+4. Get Float Value
+La destinazione è Curve Float [K2Node_CallFunction] 513DB97A4B7AD1C4C246C396102A40F5
+5. float + float [K2Node_CommutativeAssociativeBinaryOperator] 63CE862D409A822BD0289A8DA73DBF89
+6. Absolute (Float) [K2Node_CallFunction] CCE9493D45CAD940D6CB45957D510724
+7. Ottieni [K2Node_VariableGet] 9F66CFBC49183BF01D909593408E6AB5
+8. Calculate the Diagnal Scale Amount. This value is used to scale the Foot IK Root bone to make the Foot IK bones cover more distance on the diagonal blends. Without scaling, the feet would not move far enough on the diagonal direction due to the linear translational blending of the IK bones. The curve is used to easily map the value. [EdGraphNode_Comment] A5050DAF4709B012404A5784682A6714
+
+Variables Read:
+- Get DiagonalScaleAmountCurve
+- Ottieni
+
+Variables Written:
+- none
+
+External Calls:
+- Absolute (Float)
+- Get Float Value
+La destinazione è Curve Float
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Absolute (Float)
+- Get Float Value
+La destinazione è Curve Float

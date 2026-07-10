@@ -1,0 +1,31 @@
+Asset: BP_Knife_Mann
+AssetPath: /Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/Demo/Mannequin/Character/Mesh/BP_Knife_Mann.BP_Knife_Mann
+AssetKey: Game_AdditionalContents_RamsterZ_FreeAnims_Volume1_Demo_Mannequin_Character_Mesh_BP_Knife_Mann
+GraphId: G001
+Graph: EventGraph
+FlowId: F002
+Entry: Evento BeginPlay
+NodeGuid: FEC2B3A449F67CC333E85EBAD623B40C
+
+Exec Flow:
+1. Evento BeginPlay [K2Node_Event] FEC2B3A449F67CC333E85EBAD623B40C
+2. Evento ActorBeginOverlap [K2Node_Event] F2DB8B7F4EC9EC3998899CAB5229154D
+3. Evento Tick [K2Node_Event] EB832974402F12CF4CF52DBF068AFCAB
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

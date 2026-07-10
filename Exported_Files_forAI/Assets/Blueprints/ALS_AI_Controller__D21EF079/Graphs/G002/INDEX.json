@@ -1,0 +1,25 @@
+{
+	"graphId": "G002",
+	"name": "UserConstructionScript",
+	"graphName": "UserConstructionScript",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 1,
+	"edgeCount": 0,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AI_Controller__D21EF079/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AI_Controller__D21EF079/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AI_Controller__D21EF079/Graphs/G002/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Construction Script",
+			"entryNodeGuid": "E599C7444188E549FF538D95A8039894",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AI_Controller__D21EF079/Flows/G002/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AI_Controller__D21EF079/Flows/G002/F001.json",
+			"textFile": "Flows/G002/F001.txt",
+			"jsonFile": "Flows/G002/F001.json",
+			"nodeCount": 1
+		}
+	]
+}

@@ -1,0 +1,424 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+	"graph": "Get_ShowLayerColors_Color",
+	"entryName": "Get Show Layer Colors Color",
+	"entryNodeGuid": "9C1AC217453829ED5792648559DE2CC8",
+	"nodes": [
+		{
+			"nodeGuid": "9C1AC217453829ED5792648559DE2CC8",
+			"class": "K2Node_FunctionEntry",
+			"title": "Get Show Layer Colors Color",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E53DBB4D4E3E61797472799DBB75A4F7",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DB5AA4054B99C4608B85E3B58A45D1D1",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 800,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "82B9EC5241E44F81AE8300BA61B162F9",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FBE2D6EF43E186BA675B27B947F1848B",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "struct|/Script/SlateCore.SlateColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AF9750654785ECBA16F5EA886905993A",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 240,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3D3516734279A9EBB826C9A416E5AEFF",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9937976E45E5DEC8872493B9D473A77C",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "1F4A26BB449E6962A06849B7E294B8CC",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3F6770A6489A4D18A638D39A088AF390",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EB5E189B498FD953181271AB4553101C",
+			"class": "K2Node_MakeStruct",
+			"title": "Make SlateColor",
+			"comment": "",
+			"x": 464,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "644ED3494FF0CE1CB6ADC5AD3BAFC010",
+					"name": "SlateColor",
+					"direction": "Output",
+					"type": "struct|/Script/SlateCore.SlateColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "084B4AF4462DE415A2E0EF858E46B798",
+					"name": "SpecifiedColor",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": "(R=1.000000,G=0.000000,B=1.000000,A=1.000000)"
+				},
+				{
+					"pinId": "A97F12DE495872491C04B49647C65621",
+					"name": "ColorUseRule",
+					"direction": "Input",
+					"type": "byte|/Script/SlateCore.ESlateColorStylingMode",
+					"defaultValue": "UseColor_Specified"
+				}
+			]
+		},
+		{
+			"nodeGuid": "3F84D36340A2CCAED950B3B4EE07354C",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 800,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "82B9EC5241E44F81AE8300BA61B162F9",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FBE2D6EF43E186BA675B27B947F1848B",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "struct|/Script/SlateCore.SlateColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4AE694DB43FD6F1A5E4FACB8D803C074",
+			"class": "K2Node_MakeStruct",
+			"title": "Make SlateColor",
+			"comment": "",
+			"x": 464,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "644ED3494FF0CE1CB6ADC5AD3BAFC010",
+					"name": "SlateColor",
+					"direction": "Output",
+					"type": "struct|/Script/SlateCore.SlateColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "084B4AF4462DE415A2E0EF858E46B798",
+					"name": "SpecifiedColor",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": "(R=1.000000,G=0.000000,B=1.000000,A=1.000000)"
+				},
+				{
+					"pinId": "A97F12DE495872491C04B49647C65621",
+					"name": "ColorUseRule",
+					"direction": "Input",
+					"type": "byte|/Script/SlateCore.ESlateColorStylingMode",
+					"defaultValue": "UseColor_Specified"
+				}
+			]
+		},
+		{
+			"nodeGuid": "0D056BC34553AD6C10DB6893FDC49B3A",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 448,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "24DC403C4438FAB50DABBCA0E17043D0",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F58D5AE049B8848C0220AA9247B86FD7",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "68DCE57B417C24994BD9EEA933B1C1F4",
+			"class": "K2Node_VariableGet",
+			"title": "Get EnabledColor",
+			"comment": "",
+			"x": 272,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6A044D764900E04D0598D4AE09EF5E7C",
+					"name": "EnabledColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F7C8A9D7432861724FA48FA5B9703306",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/ALS_HUD.ALS_HUD_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F568FC6E4FFDE1AC18E765B29B25743C",
+			"class": "K2Node_VariableGet",
+			"title": "Get DisabledColor",
+			"comment": "",
+			"x": 272,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4C6628924DDDF6D550B96EA67A4CF18E",
+					"name": "DisabledColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E549331E4582793F0361FC9A31D398FF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/ALS_HUD.ALS_HUD_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0A77A5C84C632F41297F2988E2EA90CA",
+			"class": "K2Node_VariableGet",
+			"title": "Get ShowLayerColors",
+			"comment": "",
+			"x": 64,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C921F2EB456FC8AFE89FC09EF03DF368",
+					"name": "ShowLayerColors",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "DE1E16414568263CF5543497F10F3C3C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/ALS_HUD.ALS_HUD_C",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+			"graph": "Get_ShowLayerColors_Color",
+			"edgeType": "exec",
+			"fromNodeGuid": "9C1AC217453829ED5792648559DE2CC8",
+			"fromPinId": "E53DBB4D4E3E61797472799DBB75A4F7",
+			"fromPinName": "then",
+			"toNodeGuid": "AF9750654785ECBA16F5EA886905993A",
+			"toPinId": "3D3516734279A9EBB826C9A416E5AEFF",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+			"graph": "Get_ShowLayerColors_Color",
+			"edgeType": "exec",
+			"fromNodeGuid": "AF9750654785ECBA16F5EA886905993A",
+			"fromPinId": "1F4A26BB449E6962A06849B7E294B8CC",
+			"fromPinName": "then",
+			"toNodeGuid": "DB5AA4054B99C4608B85E3B58A45D1D1",
+			"toPinId": "82B9EC5241E44F81AE8300BA61B162F9",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+			"graph": "Get_ShowLayerColors_Color",
+			"edgeType": "data",
+			"fromNodeGuid": "EB5E189B498FD953181271AB4553101C",
+			"fromPinId": "644ED3494FF0CE1CB6ADC5AD3BAFC010",
+			"fromPinName": "SlateColor",
+			"toNodeGuid": "DB5AA4054B99C4608B85E3B58A45D1D1",
+			"toPinId": "FBE2D6EF43E186BA675B27B947F1848B",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+			"graph": "Get_ShowLayerColors_Color",
+			"edgeType": "data",
+			"fromNodeGuid": "0A77A5C84C632F41297F2988E2EA90CA",
+			"fromPinId": "C921F2EB456FC8AFE89FC09EF03DF368",
+			"fromPinName": "ShowLayerColors",
+			"toNodeGuid": "AF9750654785ECBA16F5EA886905993A",
+			"toPinId": "9937976E45E5DEC8872493B9D473A77C",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+			"graph": "Get_ShowLayerColors_Color",
+			"edgeType": "exec",
+			"fromNodeGuid": "AF9750654785ECBA16F5EA886905993A",
+			"fromPinId": "3F6770A6489A4D18A638D39A088AF390",
+			"fromPinName": "else",
+			"toNodeGuid": "0D056BC34553AD6C10DB6893FDC49B3A",
+			"toPinId": "24DC403C4438FAB50DABBCA0E17043D0",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+			"graph": "Get_ShowLayerColors_Color",
+			"edgeType": "data",
+			"fromNodeGuid": "68DCE57B417C24994BD9EEA933B1C1F4",
+			"fromPinId": "6A044D764900E04D0598D4AE09EF5E7C",
+			"fromPinName": "EnabledColor",
+			"toNodeGuid": "EB5E189B498FD953181271AB4553101C",
+			"toPinId": "084B4AF4462DE415A2E0EF858E46B798",
+			"toPinName": "SpecifiedColor"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+			"graph": "Get_ShowLayerColors_Color",
+			"edgeType": "exec",
+			"fromNodeGuid": "0D056BC34553AD6C10DB6893FDC49B3A",
+			"fromPinId": "F58D5AE049B8848C0220AA9247B86FD7",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "3F84D36340A2CCAED950B3B4EE07354C",
+			"toPinId": "82B9EC5241E44F81AE8300BA61B162F9",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+			"graph": "Get_ShowLayerColors_Color",
+			"edgeType": "data",
+			"fromNodeGuid": "4AE694DB43FD6F1A5E4FACB8D803C074",
+			"fromPinId": "644ED3494FF0CE1CB6ADC5AD3BAFC010",
+			"fromPinName": "SlateColor",
+			"toNodeGuid": "3F84D36340A2CCAED950B3B4EE07354C",
+			"toPinId": "FBE2D6EF43E186BA675B27B947F1848B",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+			"graph": "Get_ShowLayerColors_Color",
+			"edgeType": "data",
+			"fromNodeGuid": "F568FC6E4FFDE1AC18E765B29B25743C",
+			"fromPinId": "4C6628924DDDF6D550B96EA67A4CF18E",
+			"fromPinName": "DisabledColor",
+			"toNodeGuid": "4AE694DB43FD6F1A5E4FACB8D803C074",
+			"toPinId": "084B4AF4462DE415A2E0EF858E46B798",
+			"toPinName": "SpecifiedColor"
+		}
+	],
+	"variablesRead": [
+		"Get DisabledColor",
+		"Get EnabledColor",
+		"Get ShowLayerColors"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G012",
+	"assetName": "ALS_HUD",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/ALS_HUD.ALS_HUD"
+}

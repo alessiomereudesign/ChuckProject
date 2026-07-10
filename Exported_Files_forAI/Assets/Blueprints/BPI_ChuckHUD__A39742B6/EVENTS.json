@@ -1,0 +1,15 @@
+{
+	"assetName": "BPI_ChuckHUD",
+	"assetPath": "/Game/ChuckContent/UI/Interfaces/BPI_ChuckHUD.BPI_ChuckHUD",
+	"assetKey": "Game_ChuckContent_UI_Interfaces_BPI_ChuckHUD",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Show Tip",
+			"graph": "ShowTip",
+			"nodeGuid": "DFA3B9AA45FC0D1F34A109A23E951445",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

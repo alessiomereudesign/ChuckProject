@@ -1,0 +1,25 @@
+{
+	"graphId": "G001",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 1,
+	"edgeCount": 0,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_GameMode_SP__9888ACCE/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_GameMode_SP__9888ACCE/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_GameMode_SP__9888ACCE/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Evento BeginPlay",
+			"entryNodeGuid": "46BDA92B4EDD941DDAD8F2BF8948AC11",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_GameMode_SP__9888ACCE/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_GameMode_SP__9888ACCE/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 1
+		}
+	]
+}

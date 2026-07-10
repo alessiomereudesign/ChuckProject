@@ -1,0 +1,411 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "ALS_HUD",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/ALS_HUD.ALS_HUD",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+	"shortAssetFolder": "ALS_HUD__90BA800D",
+	"pathHash": "90BA800D",
+	"assetType": "Blueprint",
+	"unrealClass": "WidgetBlueprint",
+	"parentClass": "/Script/UMG.UserWidget",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDateWithWarnings",
+	"counts":
+	{
+		"variables": 10,
+		"components": 4,
+		"widgets": 8,
+		"graphs": 15,
+		"nodes": 175,
+		"edges": 187,
+		"flows": 15
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/ALS_HUD__90BA800D/SUMMARY.md",
+		"variables": "Assets/Blueprints/ALS_HUD__90BA800D/VARIABLES.json",
+		"components": "Assets/Blueprints/ALS_HUD__90BA800D/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/ALS_HUD__90BA800D/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/ALS_HUD__90BA800D/NODES.jsonl",
+		"edges": "Assets/Blueprints/ALS_HUD__90BA800D/EDGES.jsonl",
+		"search": "Assets/Blueprints/ALS_HUD__90BA800D/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 25,
+			"edgeCount": 34,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Evento Tick",
+					"entryNodeGuid": "B61CD0FA493A626EE6B5F7A167DF1A08",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 25
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "Get_AnimCurveNames",
+			"graphName": "Get_AnimCurveNames",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 19,
+			"edgeCount": 22,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Anim Curve Names",
+					"entryNodeGuid": "A4F42DBD4E23FB8650761893A6120A0A",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 19
+				}
+			]
+		},
+		{
+			"graphId": "G003",
+			"name": "Get_AnimCurveValues",
+			"graphName": "Get_AnimCurveValues",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 20,
+			"edgeCount": 23,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G003/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G003/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G003/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Anim Curve Values",
+					"entryNodeGuid": "21E5EBB94961748BD51CC3AB2F9349E0",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G003/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G003/F001.json",
+					"textFile": "Flows/G003/F001.txt",
+					"jsonFile": "Flows/G003/F001.json",
+					"nodeCount": 20
+				}
+			]
+		},
+		{
+			"graphId": "G004",
+			"name": "Get_CharacterInfo_Visibility",
+			"graphName": "Get_CharacterInfo_Visibility",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 8,
+			"edgeCount": 7,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G004/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G004/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G004/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Character Info Visibility",
+					"entryNodeGuid": "2A15FCDF47CB9E7CC6B96BB67AF59C1E",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G004/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G004/F001.json",
+					"textFile": "Flows/G004/F001.txt",
+					"jsonFile": "Flows/G004/F001.json",
+					"nodeCount": 8
+				}
+			]
+		},
+		{
+			"graphId": "G005",
+			"name": "Get_CharacterStates",
+			"graphName": "Get_CharacterStates",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 17,
+			"edgeCount": 25,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G005/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G005/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G005/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Character States",
+					"entryNodeGuid": "A328357944E8BB975ED09CB43D8EA82C",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G005/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G005/F001.json",
+					"textFile": "Flows/G005/F001.txt",
+					"jsonFile": "Flows/G005/F001.json",
+					"nodeCount": 17
+				}
+			]
+		},
+		{
+			"graphId": "G006",
+			"name": "Get_DebugCharacterName",
+			"graphName": "Get_DebugCharacterName",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 7,
+			"edgeCount": 7,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G006/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G006/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G006/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Debug Character Name",
+					"entryNodeGuid": "BBD228AA43A839A4D70AAFAF2458759E",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G006/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G006/F001.json",
+					"textFile": "Flows/G006/F001.txt",
+					"jsonFile": "Flows/G006/F001.json",
+					"nodeCount": 7
+				}
+			]
+		},
+		{
+			"graphId": "G007",
+			"name": "Get_DebugView_Color",
+			"graphName": "Get_DebugView_Color",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 10,
+			"edgeCount": 9,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G007/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G007/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G007/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Debug View Color",
+					"entryNodeGuid": "236631EC4FB1C628DDAF0AA4B429F673",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G007/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G007/F001.json",
+					"textFile": "Flows/G007/F001.txt",
+					"jsonFile": "Flows/G007/F001.json",
+					"nodeCount": 10
+				}
+			]
+		},
+		{
+			"graphId": "G008",
+			"name": "Get_HUD_Visibility",
+			"graphName": "Get_HUD_Visibility",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 5,
+			"edgeCount": 4,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G008/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G008/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G008/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get HUD Visibility",
+					"entryNodeGuid": "DA0A540E4D5E8BB2D1252493A61B4FD8",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G008/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G008/F001.json",
+					"textFile": "Flows/G008/F001.txt",
+					"jsonFile": "Flows/G008/F001.json",
+					"nodeCount": 5
+				}
+			]
+		},
+		{
+			"graphId": "G009",
+			"name": "Get_ShowCharacterInfo_Color",
+			"graphName": "Get_ShowCharacterInfo_Color",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 10,
+			"edgeCount": 9,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G009/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G009/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G009/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Show Character Info Color",
+					"entryNodeGuid": "21C557E541ADE3BA382BA5BB4F213A72",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G009/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G009/F001.json",
+					"textFile": "Flows/G009/F001.txt",
+					"jsonFile": "Flows/G009/F001.json",
+					"nodeCount": 10
+				}
+			]
+		},
+		{
+			"graphId": "G010",
+			"name": "Get_ShowDebugShapes_Color",
+			"graphName": "Get_ShowDebugShapes_Color",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 10,
+			"edgeCount": 9,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G010/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G010/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G010/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Show Debug Shapes Color",
+					"entryNodeGuid": "FF6F6129400A96C7EAB652AA9EED7686",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G010/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G010/F001.json",
+					"textFile": "Flows/G010/F001.txt",
+					"jsonFile": "Flows/G010/F001.json",
+					"nodeCount": 10
+				}
+			]
+		},
+		{
+			"graphId": "G011",
+			"name": "Get_ShowHUD_Color",
+			"graphName": "Get_ShowHUD_Color",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 10,
+			"edgeCount": 9,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G011/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G011/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G011/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Show HUD Color",
+					"entryNodeGuid": "530F5EE94ADAD9152E708EB48DD36B14",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G011/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G011/F001.json",
+					"textFile": "Flows/G011/F001.txt",
+					"jsonFile": "Flows/G011/F001.json",
+					"nodeCount": 10
+				}
+			]
+		},
+		{
+			"graphId": "G012",
+			"name": "Get_ShowLayerColors_Color",
+			"graphName": "Get_ShowLayerColors_Color",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 10,
+			"edgeCount": 9,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G012/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G012/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G012/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Show Layer Colors Color",
+					"entryNodeGuid": "9C1AC217453829ED5792648559DE2CC8",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G012/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G012/F001.json",
+					"textFile": "Flows/G012/F001.txt",
+					"jsonFile": "Flows/G012/F001.json",
+					"nodeCount": 10
+				}
+			]
+		},
+		{
+			"graphId": "G013",
+			"name": "Get_ShowTraces_Color",
+			"graphName": "Get_ShowTraces_Color",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 10,
+			"edgeCount": 9,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G013/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G013/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G013/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Show Traces Color",
+					"entryNodeGuid": "1CD1860549E9E0030428309995A2BDA6",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G013/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G013/F001.json",
+					"textFile": "Flows/G013/F001.txt",
+					"jsonFile": "Flows/G013/F001.json",
+					"nodeCount": 10
+				}
+			]
+		},
+		{
+			"graphId": "G014",
+			"name": "Get_Slomo_Color",
+			"graphName": "Get_Slomo_Color",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 10,
+			"edgeCount": 9,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G014/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G014/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G014/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Slomo Color",
+					"entryNodeGuid": "E143A71140A18A200240B4A9A83C4438",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G014/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G014/F001.json",
+					"textFile": "Flows/G014/F001.txt",
+					"jsonFile": "Flows/G014/F001.json",
+					"nodeCount": 10
+				}
+			]
+		},
+		{
+			"graphId": "G015",
+			"name": "GetVisibility_0",
+			"graphName": "GetVisibility_0",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 4,
+			"edgeCount": 2,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G015/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G015/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G015/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Visibility 0",
+					"entryNodeGuid": "AAF43A6B40C2B8E5237A39A8C15072C4",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G015/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G015/F001.json",
+					"textFile": "Flows/G015/F001.txt",
+					"jsonFile": "Flows/G015/F001.json",
+					"nodeCount": 4
+				}
+			]
+		}
+	]
+}

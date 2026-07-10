@@ -1,0 +1,30 @@
+Asset: ALS_Character_BPI
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Character_BPI.ALS_Character_BPI
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Character_BPI
+GraphId: G001
+Graph: BPI_Get_CurrentStates
+FlowId: F001
+Entry: BPI Get Current States
+NodeGuid: ABB93A414D9CC5828308489321B69E92
+
+Exec Flow:
+1. BPI Get Current States [K2Node_FunctionEntry] ABB93A414D9CC5828308489321B69E92
+2. Nodo di restituzione [K2Node_FunctionResult] 5AD1286A4B2CA313B168ED90374F62AB
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

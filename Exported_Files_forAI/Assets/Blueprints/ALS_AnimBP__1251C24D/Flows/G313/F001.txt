@@ -1,0 +1,89 @@
+Asset: ALS_AnimBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP
+GraphId: G313
+Graph: UpdateFootIK
+FlowId: F001
+Entry: Update Foot IK
+NodeGuid: 8FE823724E0758EAA75F47BAE61E2FED
+
+Exec Flow:
+1. Update Foot IK [K2Node_FunctionEntry] 8FE823724E0758EAA75F47BAE61E2FED
+2. Set Foot Locking
+La destinazione è ALS Anim BP [K2Node_CallFunction] 6663E76347152606C9A701BB298A9528
+3. Get FootLock_L_Alpha [K2Node_VariableGet] 8058CFB2458CF4C34E92AABEFD040777
+4. Get FootLock_L_Location [K2Node_VariableGet] F84C098A4C3D4349232A0BBA541E2AA8
+5. Get FootLock_L_Rotation [K2Node_VariableGet] B29B850D4234F4B62F7AA1AAEAF6F77B
+6. Set Foot Locking
+La destinazione è ALS Anim BP [K2Node_CallFunction] 18344C0C45A1B7543F45E4BEBC4D604C
+7. Get FootLock_R_Alpha [K2Node_VariableGet] E39491614A352D1850DBE69DA02AEE95
+8. Get FootLock_R_Location [K2Node_VariableGet] 1067527246811F12D97320B0D13FDB5F
+9. Get FootLock_R_Rotation [K2Node_VariableGet] 547AFCBE4B205E99C9E3148F2B77B5CF
+10. Set Foot Offsets
+La destinazione è ALS Anim BP [K2Node_CallFunction] 31A26BE34DC94F9D142E9DB53303F58D
+11. Get FootOffset_L_Location [K2Node_VariableGet] 9AB88D5F498C43875154B38A6F93274A
+12. Get FootOffset_L_Rotation [K2Node_VariableGet] E302C9E94AE5A7CAFC26F689C5FFF228
+13. Set Foot Offsets
+La destinazione è ALS Anim BP [K2Node_CallFunction] C096077E4BBBF89AE8096E974BBD4C4C
+14. Get FootOffset_R_Location [K2Node_VariableGet] 02B2A8814D7242177250C380851AA004
+15. Get FootOffset_R_Rotation [K2Node_VariableGet] 468A002944BF54BC689FF0BEB0AEEED3
+16. Switch on ALS_MovementState [K2Node_SwitchEnum] 22432AE04881208BA46AEF9702F77854
+17. Get MovementState [K2Node_VariableGet] 9C31F8DB43F4A7377015D197793DA81A
+18. Get FootOffset_L_Target [K2Node_VariableGet] 3D82926643854930A3616F8EB3B947F2
+19. Get FootOffset_R_Target [K2Node_VariableGet] 272767844259E35B29AC5CADA7214200
+20. Nodo di reindirizzamento [K2Node_Knot] 4C09557C497C4647C4715B8903E1A6E0
+21. Set Pelvis IKOffset
+La destinazione è ALS Anim BP [K2Node_CallFunction] 978AEF0E4DEB8A8EC58B10A51866C2BC
+22. Get FootOffset_L_Target [K2Node_VariableGet] BF94FB7745E448696277298795F564BC
+23. Get FootOffset_R_Target [K2Node_VariableGet] 4141E4484F1952A90496FE8AEDA8F594
+24. Update all Foot Lock and Foot Offset values when not In Air [EdGraphNode_Comment] 4D8BF79E4DDB66C77CC9E5B100538D6E
+25. Reset IK Offsets if In Air [EdGraphNode_Comment] D74831A34CE81241DB95288E1B8C98B2
+26. Update Foot Locking values. [EdGraphNode_Comment] 984A08944F4A7E3A810358993F978CB7
+27. Set Pelvis IKOffset
+La destinazione è ALS Anim BP [K2Node_CallFunction] 9BE11D6C460398E034F29E8E79C9D338
+28. Reset IKOffsets
+La destinazione è ALS Anim BP [K2Node_CallFunction] EA4568BB4902F0F9C2684EA0A9C21BD9
+
+Variables Read:
+- Get FootLock_L_Alpha
+- Get FootLock_L_Location
+- Get FootLock_L_Rotation
+- Get FootLock_R_Alpha
+- Get FootLock_R_Location
+- Get FootLock_R_Rotation
+- Get FootOffset_L_Location
+- Get FootOffset_L_Rotation
+- Get FootOffset_L_Target
+- Get FootOffset_R_Location
+- Get FootOffset_R_Rotation
+- Get FootOffset_R_Target
+- Get MovementState
+
+Variables Written:
+- none
+
+External Calls:
+- Reset IKOffsets
+La destinazione è ALS Anim BP
+- Set Foot Locking
+La destinazione è ALS Anim BP
+- Set Foot Offsets
+La destinazione è ALS Anim BP
+- Set Pelvis IKOffset
+La destinazione è ALS Anim BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Reset IKOffsets
+La destinazione è ALS Anim BP
+- Set Foot Locking
+La destinazione è ALS Anim BP
+- Set Foot Offsets
+La destinazione è ALS Anim BP
+- Set Pelvis IKOffset
+La destinazione è ALS Anim BP

@@ -1,0 +1,147 @@
+{
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+	"graph": "Reload",
+	"entryName": "Reload",
+	"entryNodeGuid": "AF4781DC43282686DDF733AEE529D1D2",
+	"nodes": [
+		{
+			"nodeGuid": "AF4781DC43282686DDF733AEE529D1D2",
+			"class": "K2Node_FunctionEntry",
+			"title": "Reload",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5A5DB0C64CCDE4EDE17FFA8714AC39F7",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D7E36C6442336DA448722681D2D3CEC6",
+					"name": "AmmoToLoad",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "18A4CFFB4F55FAF3581FD5AF760AD144",
+			"class": "K2Node_CallFunction",
+			"title": "Print String",
+			"comment": "",
+			"x": 208,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CF2EA25E45268ADD6B9D849B81C3672C",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3C623A3346E494765DDBB3BAD76CA3AB",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CAC533B840B080F72263E88423415A74",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetSystemLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"pinId": "3FDC113D4B301E094B977BA65C53CA3A",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CBAA02704134B0870AA64891319227FB",
+					"name": "InString",
+					"direction": "Input",
+					"type": "string",
+					"defaultValue": "reload"
+				},
+				{
+					"pinId": "B1447C8F4732A8CDF4320CA49D6B8DC9",
+					"name": "bPrintToScreen",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "9E9B582F4B9040BA000526A2034058C5",
+					"name": "bPrintToLog",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "E00D57064B7E25A7FF8661A865AAB423",
+					"name": "TextColor",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": "(R=0.000000,G=0.660000,B=1.000000,A=1.000000)"
+				},
+				{
+					"pinId": "EF0886A6413ACF86C2A5CDAADC665BA2",
+					"name": "Duration",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "2.000000"
+				},
+				{
+					"pinId": "FD65A32E4E42BC1662B388A067B5CD47",
+					"name": "Key",
+					"direction": "Input",
+					"type": "name|const",
+					"defaultValue": "None"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "Reload",
+			"edgeType": "exec",
+			"fromNodeGuid": "AF4781DC43282686DDF733AEE529D1D2",
+			"fromPinId": "5A5DB0C64CCDE4EDE17FFA8714AC39F7",
+			"fromPinName": "then",
+			"toNodeGuid": "18A4CFFB4F55FAF3581FD5AF760AD144",
+			"toPinId": "CF2EA25E45268ADD6B9D849B81C3672C",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Print String"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Print String"
+	],
+	"flowId": "F001",
+	"graphId": "G013",
+	"assetName": "BP_WeaponBase",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase"
+}

@@ -1,0 +1,118 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraBehavior",
+	"graph": "EventGraph",
+	"entryName": "Evento Blueprint Update Animation",
+	"entryNodeGuid": "A22BFC3A4F27F5FE4B9193AC000CF6AE",
+	"nodes": [
+		{
+			"nodeGuid": "A22BFC3A4F27F5FE4B9193AC000CF6AE",
+			"class": "K2Node_Event",
+			"title": "Evento Blueprint Update Animation",
+			"comment": "",
+			"x": 32,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "197167FD4BD40EC50CBAC18B1A356130",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2FAD1E1C429F3A1347D34DA72FA10366",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CDC43C143553FC7B98949B6C86A16EA",
+					"name": "DeltaTimeX",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "292BE8444DC7666E3F7441B2C541AF48",
+			"class": "K2Node_CallFunction",
+			"title": "Update Character Info\nLa destinazione è ALS Player Camera Behavior",
+			"comment": "",
+			"x": 320,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0697AE104A263AEF84C03BAAD0216952",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DAC5883B439C2355DCE04EA46B5B6FCF",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "45F18E9C4F2AC14070A1D197A27D9354",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1A22332E40225387016BFC90F93DC9EB",
+			"class": "EdGraphNode_Comment",
+			"title": "Get info from the character each frame to use in the camera graph.",
+			"comment": "Get info from the character each frame to use in the camera graph.",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraBehavior",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "A22BFC3A4F27F5FE4B9193AC000CF6AE",
+			"fromPinId": "2FAD1E1C429F3A1347D34DA72FA10366",
+			"fromPinName": "then",
+			"toNodeGuid": "292BE8444DC7666E3F7441B2C541AF48",
+			"toPinId": "0697AE104A263AEF84C03BAAD0216952",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Update Character Info\nLa destinazione è ALS Player Camera Behavior"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Update Character Info\nLa destinazione è ALS Player Camera Behavior"
+	],
+	"flowId": "F001",
+	"graphId": "G008",
+	"assetName": "ALS_PlayerCameraBehavior",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CameraSystem/ALS_PlayerCameraBehavior.ALS_PlayerCameraBehavior"
+}

@@ -1,0 +1,70 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G041
+Graph: OnMovementStateChanged
+FlowId: F001
+Entry: On Movement State Changed
+NodeGuid: 8DAA87614BEB843ECE7B61805A0992AF
+
+Exec Flow:
+1. On Movement State Changed [K2Node_FunctionEntry] 8DAA87614BEB843ECE7B61805A0992AF
+2. ML Set Previous and New Value [K2Node_MacroInstance] 0A25FB184ECCDA223CA894BC625CA099
+3. Switch on ALS_MovementState [K2Node_SwitchEnum] BCA5C42D4BA39D2AB4F4DAA5D77012A3
+4. Get PreviousMovementState [K2Node_VariableGet] A7F6E21C44BDB58341F7329676B7828D
+5. Get MovementState [K2Node_VariableGet] B1B0128B414A0CB17EAC129D51BF166A
+6. Get MovementState [K2Node_VariableGet] 1A1627714791F8954338458AE5EFE816
+7. Set InAirRotation [K2Node_VariableSet] 155DB5AF453CEAACCE008E9BED6CE43A
+8. Get Actor Rotation
+La destinazione è Actor [K2Node_CallFunction] B1E93B1F42081C8A1F24968BBD342616
+9. Switch on ALS_Stance [K2Node_SwitchEnum] 7EA2D52F428DCE738A425FB5FFEDC2EF
+10. Get Stance [K2Node_VariableGet] 23529DD54F9224869A91199ECA0432F8
+11. Un Crouch
+La destinazione è Personaggio [K2Node_CallFunction] BC94275540563B90DB6FE6ABE5FE3626
+12. Get MovementAction [K2Node_VariableGet] F83DB3014E96B947F0C682807FD46544
+13. Switch on ALS_MovementAction [K2Node_SwitchEnum] 2CA7E6DC4F4A8D1D9B20628A2BFB5B0E
+14. Ragdoll Start
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 13F0B8FC48851ED729FEE8A01335B22A
+15. Switch on ALS_MovementState [K2Node_SwitchEnum] 53A46D0C4A8AFE70899357914E02A0C0
+16. Get PreviousMovementState [K2Node_VariableGet] 7B34D24349569CCD10F1328FEF78045C
+17. Arresta
+La destinazione è Timeline Component [K2Node_CallFunction] DE8EB58D405ACFDEE69C578056AA2583
+18. Get MantleTimeline [K2Node_VariableGet] 5BA2CC11452DDB493C67039A3F4ADF25
+19. Stop the Mantle Timeline if transitioning to the ragdoll state while mantling. [EdGraphNode_Comment] 927A3AF443D304F3A00A77A3A9AD2CF1
+20. If the character enters the air, set the In Air Rotation and uncrouch if crouched. If the character is currently rolling, enable the ragdoll. [EdGraphNode_Comment] 9C466C6A4E4CA037763C5DB08769D971
+
+Variables Read:
+- Get MantleTimeline
+- Get MovementAction
+- Get MovementState
+- Get PreviousMovementState
+- Get Stance
+
+Variables Written:
+- Set InAirRotation
+
+External Calls:
+- Arresta
+La destinazione è Timeline Component
+- Get Actor Rotation
+La destinazione è Actor
+- Ragdoll Start
+La destinazione è ALS Base Character BP
+- Un Crouch
+La destinazione è Personaggio
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Arresta
+La destinazione è Timeline Component
+- Get Actor Rotation
+La destinazione è Actor
+- Ragdoll Start
+La destinazione è ALS Base Character BP
+- Un Crouch
+La destinazione è Personaggio

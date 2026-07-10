@@ -1,0 +1,81 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "WBP_CustomRadialMenu",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/WBP_CustomRadialMenu.WBP_CustomRadialMenu",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_2_MENU_RAPIDO_WBP_CustomRadialMenu",
+	"shortAssetFolder": "WBP_CustomRadialMenu__4C5CE8A5",
+	"pathHash": "4C5CE8A5",
+	"assetType": "Blueprint",
+	"unrealClass": "WidgetBlueprint",
+	"parentClass": "/Script/UMG.UserWidget",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDateWithWarnings",
+	"counts":
+	{
+		"variables": 5,
+		"components": 0,
+		"widgets": 10,
+		"graphs": 1,
+		"nodes": 144,
+		"edges": 180,
+		"flows": 3
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/SUMMARY.md",
+		"variables": "Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/VARIABLES.json",
+		"components": "Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/NODES.jsonl",
+		"edges": "Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/EDGES.jsonl",
+		"search": "Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 144,
+			"edgeCount": 180,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "CloseRadialMenu\nCustom Event",
+					"entryNodeGuid": "CBADCDE349E5CD262B777ABF98D6BB8C",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 144
+				},
+				{
+					"flowId": "F002",
+					"entryName": "Evento Construct",
+					"entryNodeGuid": "11413D2C43D55225923FEDA8DA3B65F2",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Flows/G001/F002.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Flows/G001/F002.json",
+					"textFile": "Flows/G001/F002.txt",
+					"jsonFile": "Flows/G001/F002.json",
+					"nodeCount": 144
+				},
+				{
+					"flowId": "F003",
+					"entryName": "Evento Tick",
+					"entryNodeGuid": "E4B02A5D40386A87F7757E8A2C031648",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Flows/G001/F003.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Flows/G001/F003.json",
+					"textFile": "Flows/G001/F003.txt",
+					"jsonFile": "Flows/G001/F003.json",
+					"nodeCount": 144
+				}
+			]
+		}
+	]
+}

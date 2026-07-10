@@ -1,0 +1,61 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G027
+Graph: GetMappedSpeed
+FlowId: F001
+Entry: Get Mapped Speed
+NodeGuid: 339DAA464765D06260D06DAA65D82E6B
+
+Exec Flow:
+1. Get Mapped Speed [K2Node_FunctionEntry] 339DAA464765D06260D06DAA65D82E6B
+2. Nodo di restituzione [K2Node_FunctionResult] BEBEBFE34D2BA0E1E759DA87D52144F4
+3. Get Speed [K2Node_VariableGet] 362478234245454719414F8876F90684
+4. Break MovementSettings [K2Node_BreakStruct] 927CF2B040473199F3A012A0C9BCB0DD
+5. float > float [K2Node_CallFunction] 313352814D00DB8532CA42A1C82E21DD
+6. float > float [K2Node_CallFunction] 847ECB5741AA62014F780CBB68C9304E
+7. Seleziona [K2Node_Select] FC0C9740402EFC4D737AD7A58598BB43
+8. Seleziona [K2Node_Select] 266026C346C811360F488B875A8356CF
+9. Map Range Clamped [K2Node_CallFunction] BF7D3CB14203D9F338ABB39180D9F548
+10. Map Range Clamped [K2Node_CallFunction] 44474671413F4A2FF3D2DEB39691C3DF
+11. Map Range Clamped [K2Node_CallFunction] 3B373B34453DFC84846F5DA8A0BA5273
+12. Set LocWalkSpeed [K2Node_VariableSet] DEAD1812449845702FB9209AD5852356
+13. Set LocRunSpeed [K2Node_VariableSet] C9F4ECFD4EC9612FAE88D2AD50F211D3
+14. Set LocSprintSpeed [K2Node_VariableSet] A2A220A542BBD7B536F1BC8F28A0087B
+15. Get Speed [K2Node_VariableGet] 93E1143A45B082605C1EC080E131FC30
+16. Get Speed [K2Node_VariableGet] F74AFFC341FFCEFEAB14B6928D2902EE
+17. Get LocWalkSpeed [K2Node_VariableGet] B85A84FE4B8C4B60A03B58810CC9436E
+18. Get LocRunSpeed [K2Node_VariableGet] CE0121D841E8F1A76BF2978F19CCA20C
+19. Get LocWalkSpeed [K2Node_VariableGet] 2ECC1E8E420BF949B4BF7BB7B987A0ED
+20. Get LocRunSpeed [K2Node_VariableGet] 80AA7762447D4D01185000BB980CC681
+21. Get LocSprintSpeed [K2Node_VariableGet] FC644C144AD9F90BF60B258B391BD96C
+22. Get LocWalkSpeed [K2Node_VariableGet] A1CB131C4D2A2BF90404A28D94C6E4CD
+23. Get LocRunSpeed [K2Node_VariableGet] E679509D44BDC31023DE298689BB450F
+24. Map the character's current speed to the configured movement speeds with a range of 0-3, with 0 = stopped, 1 = the Walk Speed, 2 = the Run Speed, and 3 = the Sprint Speed. This allows you to vary the movement speeds but still use the mapped range in calculations for consistent results. [EdGraphNode_Comment] 126716B74CE0E059B9561F8248BB2F28
+25. Get Movement Settings [K2Node_VariableGet] BD7CCFA3492C8CD8BA8DECBD9F2FC045
+
+Variables Read:
+- Get LocRunSpeed
+- Get LocSprintSpeed
+- Get LocWalkSpeed
+- Get Movement Settings
+- Get Speed
+
+Variables Written:
+- Set LocRunSpeed
+- Set LocSprintSpeed
+- Set LocWalkSpeed
+
+External Calls:
+- float > float
+- Map Range Clamped
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- float > float
+- Map Range Clamped

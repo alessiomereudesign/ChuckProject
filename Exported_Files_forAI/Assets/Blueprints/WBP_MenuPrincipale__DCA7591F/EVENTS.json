@@ -1,0 +1,29 @@
+{
+	"assetName": "WBP_MenuPrincipale",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/0_MAIN_MENU/WBP_MenuPrincipale.WBP_MenuPrincipale",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_0_MAIN_MENU_WBP_MenuPrincipale",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Evento Construct",
+			"graph": "EventGraph",
+			"nodeGuid": "2E0279ED4837B6B5E7F6DD95B7B779E5",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "VerifyFocusGamepad\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "0365EE6149B3AC16512895923D845A16",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "ChangeColorOnFocus\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "E72F21A749E48CA33FC5868EFC4110ED",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

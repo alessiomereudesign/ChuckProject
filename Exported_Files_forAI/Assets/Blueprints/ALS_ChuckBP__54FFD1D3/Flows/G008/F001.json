@@ -1,0 +1,171 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "BPI_Get_FP_CameraTarget",
+	"entryName": "BPI Get FP Camera Target",
+	"entryNodeGuid": "81C577E04B78A7E05DA98D81BF7A32F4",
+	"nodes": [
+		{
+			"nodeGuid": "81C577E04B78A7E05DA98D81BF7A32F4",
+			"class": "K2Node_FunctionEntry",
+			"title": "BPI Get FP Camera Target",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CF11E1CD480B968CA4FCE48DAFAA0C74",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EC41CE65407678C7356770B2A8E6509B",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 400,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4BE89AB14F52E4D1C4B84F8B6B11895D",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A5ABE10E4E58D15B55CD2B8413A91F54",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "28138C1C4D1EFF4293F868B9F4BB643F",
+			"class": "K2Node_VariableGet",
+			"title": "Get Mesh",
+			"comment": "",
+			"x": 0,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "80DAB90545EDB7B8BA3D368864F89DF0",
+					"name": "Mesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BFA96004491F2F816EDA63B63524EDF3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F7D277F8474210F34EF597868F2F0733",
+			"class": "K2Node_CallFunction",
+			"title": "Get Socket Location\nLa destinazione è Componente di scena",
+			"comment": "",
+			"x": 144,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "470BF76247F3590C8A3922BF27B5D0BA",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SceneComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "390AC9E94D3AE2DB9CEC44A50C760E51",
+					"name": "InSocketName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "FP_Camera"
+				},
+				{
+					"pinId": "D96EDF334800CFBBB8275D923A9721D0",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_FP_CameraTarget",
+			"edgeType": "exec",
+			"fromNodeGuid": "81C577E04B78A7E05DA98D81BF7A32F4",
+			"fromPinId": "CF11E1CD480B968CA4FCE48DAFAA0C74",
+			"fromPinName": "then",
+			"toNodeGuid": "EC41CE65407678C7356770B2A8E6509B",
+			"toPinId": "4BE89AB14F52E4D1C4B84F8B6B11895D",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_FP_CameraTarget",
+			"edgeType": "data",
+			"fromNodeGuid": "F7D277F8474210F34EF597868F2F0733",
+			"fromPinId": "D96EDF334800CFBBB8275D923A9721D0",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "EC41CE65407678C7356770B2A8E6509B",
+			"toPinId": "A5ABE10E4E58D15B55CD2B8413A91F54",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_FP_CameraTarget",
+			"edgeType": "data",
+			"fromNodeGuid": "28138C1C4D1EFF4293F868B9F4BB643F",
+			"fromPinId": "80DAB90545EDB7B8BA3D368864F89DF0",
+			"fromPinName": "Mesh",
+			"toNodeGuid": "F7D277F8474210F34EF597868F2F0733",
+			"toPinId": "470BF76247F3590C8A3922BF27B5D0BA",
+			"toPinName": "self"
+		}
+	],
+	"variablesRead": [
+		"Get Mesh"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Socket Location\nLa destinazione è Componente di scena"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Socket Location\nLa destinazione è Componente di scena"
+	],
+	"flowId": "F001",
+	"graphId": "G008",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

@@ -1,0 +1,359 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"graph": "SetActorLocationAndRotation(UpdateTarget)",
+	"entryName": "Set Actor Location and Rotation(Update Target)",
+	"entryNodeGuid": "83177BE041CB5719101150AB5FEF5810",
+	"nodes": [
+		{
+			"nodeGuid": "83177BE041CB5719101150AB5FEF5810",
+			"class": "K2Node_FunctionEntry",
+			"title": "Set Actor Location and Rotation(Update Target)",
+			"comment": "",
+			"x": 32,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F99A603845147B6003F33FA888FE18E6",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4766219347E0BAF651340FB8F21E2427",
+					"name": "NewLocation",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "90A2590A4F3B9CB233B05EBDEA478189",
+					"name": "NewRotation",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0BF4BC3A4A7F450E57E90BA57AA93763",
+					"name": "bSweep",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E1AC7FC64DEAF58DE7430B9D421A70A9",
+					"name": "bTeleport",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "88945A2647977B51513070B5F0D9DE54",
+			"class": "K2Node_CallFunction",
+			"title": "Set Actor Location And Rotation\nLa destinazione è Actor",
+			"comment": "",
+			"x": 608,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ED6FE67C4BC9D9F3B4FDE781D16AE639",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4902059045751822B22A8E855EE6782D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A6821E9F467C10337B803A80DC91675D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D2B74DA2477B05A916C5938025C51310",
+					"name": "NewLocation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "EF478DB944B6D77502F0B2A294B0BA62",
+					"name": "NewRotation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "D7FFF39A4BB332A23D063D9240C0CEC8",
+					"name": "bSweep",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "7E0EED724FA85C2890A2A4B76BF04F07",
+					"name": "SweepHitResult",
+					"direction": "Output",
+					"type": "struct|/Script/Engine.HitResult",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D89561094E8935F19C44E0BE61E87657",
+					"name": "bTeleport",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "575EA712450EC509FB341E9AD7D42E0D",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "3A83E3CB416DBE7B651A8E844FB50046",
+			"class": "K2Node_VariableSet",
+			"title": "Set TargetRotation",
+			"comment": "",
+			"x": 384,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FB31AED64D4A86713A944C816DCBD42C",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2D7A76C34FF49372C11C2E98B004E4E0",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6BCBD5C4456E79743E4445B0E7A2D7E2",
+					"name": "TargetRotation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "94518F364F6546CAF1AD408C696F42BF",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "594D268A49C33C0DDA83A1936C2C711B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "06A3CAE24AAF8E7F6F53F198A1373F3A",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 896,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3BEC12284359AF3ED9CBC5AC938448A9",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "781380B6461904493DDC348260B3E1B1",
+					"name": "SweepHitResult",
+					"direction": "Input",
+					"type": "struct|/Script/Engine.HitResult",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6297A3D54FEBAEFE86A3AB943136AEC8",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "94B9170E4C75251BC48E31BDDEE2A3C8",
+			"class": "EdGraphNode_Comment",
+			"title": "Update the Actors Location and Rotation as well as the Target Rotation variable to keep everything in sync.",
+			"comment": "Update the Actors Location and Rotation as well as the Target Rotation variable to keep everything in sync.",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "SetActorLocationAndRotation(UpdateTarget)",
+			"edgeType": "exec",
+			"fromNodeGuid": "83177BE041CB5719101150AB5FEF5810",
+			"fromPinId": "F99A603845147B6003F33FA888FE18E6",
+			"fromPinName": "then",
+			"toNodeGuid": "3A83E3CB416DBE7B651A8E844FB50046",
+			"toPinId": "FB31AED64D4A86713A944C816DCBD42C",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "SetActorLocationAndRotation(UpdateTarget)",
+			"edgeType": "data",
+			"fromNodeGuid": "83177BE041CB5719101150AB5FEF5810",
+			"fromPinId": "4766219347E0BAF651340FB8F21E2427",
+			"fromPinName": "NewLocation",
+			"toNodeGuid": "88945A2647977B51513070B5F0D9DE54",
+			"toPinId": "D2B74DA2477B05A916C5938025C51310",
+			"toPinName": "NewLocation"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "SetActorLocationAndRotation(UpdateTarget)",
+			"edgeType": "data",
+			"fromNodeGuid": "83177BE041CB5719101150AB5FEF5810",
+			"fromPinId": "90A2590A4F3B9CB233B05EBDEA478189",
+			"fromPinName": "NewRotation",
+			"toNodeGuid": "3A83E3CB416DBE7B651A8E844FB50046",
+			"toPinId": "6BCBD5C4456E79743E4445B0E7A2D7E2",
+			"toPinName": "TargetRotation"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "SetActorLocationAndRotation(UpdateTarget)",
+			"edgeType": "data",
+			"fromNodeGuid": "83177BE041CB5719101150AB5FEF5810",
+			"fromPinId": "0BF4BC3A4A7F450E57E90BA57AA93763",
+			"fromPinName": "bSweep",
+			"toNodeGuid": "88945A2647977B51513070B5F0D9DE54",
+			"toPinId": "D7FFF39A4BB332A23D063D9240C0CEC8",
+			"toPinName": "bSweep"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "SetActorLocationAndRotation(UpdateTarget)",
+			"edgeType": "data",
+			"fromNodeGuid": "83177BE041CB5719101150AB5FEF5810",
+			"fromPinId": "E1AC7FC64DEAF58DE7430B9D421A70A9",
+			"fromPinName": "bTeleport",
+			"toNodeGuid": "88945A2647977B51513070B5F0D9DE54",
+			"toPinId": "D89561094E8935F19C44E0BE61E87657",
+			"toPinName": "bTeleport"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "SetActorLocationAndRotation(UpdateTarget)",
+			"edgeType": "exec",
+			"fromNodeGuid": "3A83E3CB416DBE7B651A8E844FB50046",
+			"fromPinId": "2D7A76C34FF49372C11C2E98B004E4E0",
+			"fromPinName": "then",
+			"toNodeGuid": "88945A2647977B51513070B5F0D9DE54",
+			"toPinId": "ED6FE67C4BC9D9F3B4FDE781D16AE639",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "SetActorLocationAndRotation(UpdateTarget)",
+			"edgeType": "exec",
+			"fromNodeGuid": "88945A2647977B51513070B5F0D9DE54",
+			"fromPinId": "4902059045751822B22A8E855EE6782D",
+			"fromPinName": "then",
+			"toNodeGuid": "06A3CAE24AAF8E7F6F53F198A1373F3A",
+			"toPinId": "3BEC12284359AF3ED9CBC5AC938448A9",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "SetActorLocationAndRotation(UpdateTarget)",
+			"edgeType": "data",
+			"fromNodeGuid": "3A83E3CB416DBE7B651A8E844FB50046",
+			"fromPinId": "94518F364F6546CAF1AD408C696F42BF",
+			"fromPinName": "Output_Get",
+			"toNodeGuid": "88945A2647977B51513070B5F0D9DE54",
+			"toPinId": "EF478DB944B6D77502F0B2A294B0BA62",
+			"toPinName": "NewRotation"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "SetActorLocationAndRotation(UpdateTarget)",
+			"edgeType": "data",
+			"fromNodeGuid": "88945A2647977B51513070B5F0D9DE54",
+			"fromPinId": "7E0EED724FA85C2890A2A4B76BF04F07",
+			"fromPinName": "SweepHitResult",
+			"toNodeGuid": "06A3CAE24AAF8E7F6F53F198A1373F3A",
+			"toPinId": "781380B6461904493DDC348260B3E1B1",
+			"toPinName": "SweepHitResult"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "SetActorLocationAndRotation(UpdateTarget)",
+			"edgeType": "data",
+			"fromNodeGuid": "88945A2647977B51513070B5F0D9DE54",
+			"fromPinId": "575EA712450EC509FB341E9AD7D42E0D",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "06A3CAE24AAF8E7F6F53F198A1373F3A",
+			"toPinId": "6297A3D54FEBAEFE86A3AB943136AEC8",
+			"toPinName": "ReturnValue"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [
+		"Set TargetRotation"
+	],
+	"functionsCalled": [
+		"Set Actor Location And Rotation\nLa destinazione è Actor"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Set Actor Location And Rotation\nLa destinazione è Actor"
+	],
+	"flowId": "F001",
+	"graphId": "G050",
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP"
+}

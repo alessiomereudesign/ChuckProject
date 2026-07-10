@@ -1,0 +1,29 @@
+{
+	"assetName": "SimpleMovingObject",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleMovingObject.SimpleMovingObject",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Environment_SimpleMovingObject",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"components": [
+		{
+			"name": "Get Location at Time\nLa destinazione è Componente della spline",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get StaticMesh",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Set World Location\nLa destinazione è Componente di scena",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"assetName": "BPI_ChuckHUD",
+	"assetPath": "/Game/ChuckContent/UI/Interfaces/BPI_ChuckHUD.BPI_ChuckHUD",
+	"assetKey": "Game_ChuckContent_UI_Interfaces_BPI_ChuckHUD",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"functions": [
+		{
+			"name": "ShowTip",
+			"graph": "ShowTip",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 1,
+			"file": "Assets/Blueprints/BPI_ChuckHUD__A39742B6/Graphs/G001/INDEX.json"
+		}
+	]
+}

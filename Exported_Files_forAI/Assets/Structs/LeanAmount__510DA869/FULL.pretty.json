@@ -1,0 +1,67 @@
+{
+	"schemaVersion": "2.2",
+	"unrealEngineVersion": "5.4.4-35576357+++UE5+Release-5.4",
+	"name": "LeanAmount",
+	"path": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount",
+	"assetName": "LeanAmount",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Structs_LeanAmount",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"status": "UpToDate",
+	"guid": "31256522436C87350688BC99A376F5A2",
+	"sizeBytes": 8,
+	"fields": [
+		{
+			"name": "LR_17_ADF99333493B27F5B49BA89100DC4C05",
+			"authoredName": "LR",
+			"type": "float",
+			"propertyClass": "FloatProperty",
+			"arrayDim": 1,
+			"defaultValue": "0.000000",
+			"metadata":
+			{
+				"DisplayName": "LR",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "FB_15_297866804FB14F4B81FB4A976A7F57D1",
+			"authoredName": "FB",
+			"type": "float",
+			"propertyClass": "FloatProperty",
+			"arrayDim": 1,
+			"defaultValue": "0.000000",
+			"metadata":
+			{
+				"DisplayName": "FB",
+				"ToolTip": ""
+			}
+		}
+	],
+	"dependencies": [],
+	"relations": [],
+	"semanticSummary":
+	{
+		"probableSystem": "ALS / Locomotion",
+		"classificationConfidence": "heuristic",
+		"summary": "Struct dati descritta tramite campi, default e relazioni statiche rilevate.",
+		"importantVariables": [],
+		"importantFunctions": [],
+		"importantEvents": [],
+		"relatedAssets": [],
+		"complexity":
+		{
+			"graphCount": 0,
+			"nodeCount": 0,
+			"pinCount": 0,
+			"linkCount": 0
+		},
+		"notes": [
+			"Classificazione euristica dedotta da nome, path e tipo asset (ALS / Locomotion)."
+		]
+	},
+	"shortAssetFolder": "LeanAmount__510DA869",
+	"pathHash": "510DA869"
+}

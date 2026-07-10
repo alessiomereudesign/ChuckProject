@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "MovementSettings_State",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/MovementSettings_State.MovementSettings_State",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Structs_MovementSettings_State",
+	"shortAssetFolder": "MovementSettings_State__99C2E45B",
+	"pathHash": "99C2E45B",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/MovementSettings_State__99C2E45B/SUMMARY.md",
+		"variables": "Assets/Structs/MovementSettings_State__99C2E45B/VARIABLES.json",
+		"components": "Assets/Structs/MovementSettings_State__99C2E45B/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/MovementSettings_State__99C2E45B/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/MovementSettings_State__99C2E45B/NODES.jsonl",
+		"edges": "Assets/Structs/MovementSettings_State__99C2E45B/EDGES.jsonl",
+		"search": "Assets/Structs/MovementSettings_State__99C2E45B/SEARCH.jsonl"
+	},
+	"graphs": []
+}

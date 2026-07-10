@@ -1,0 +1,86 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "BP_WeaponProjectileData",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+	"shortAssetFolder": "BP_WeaponProjectileData__823EA2AB",
+	"pathHash": "823EA2AB",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/Engine.Actor",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 6,
+		"components": 6,
+		"widgets": 0,
+		"graphs": 2,
+		"nodes": 28,
+		"edges": 30,
+		"flows": 2
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/SUMMARY.md",
+		"variables": "Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/VARIABLES.json",
+		"components": "Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/NODES.jsonl",
+		"edges": "Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/EDGES.jsonl",
+		"search": "Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 27,
+			"edgeCount": 30,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Evento BeginPlay",
+					"entryNodeGuid": "FB27CCAB494299D0E0AB9AB0D718071B",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 27
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "UserConstructionScript",
+			"graphName": "UserConstructionScript",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 1,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Construction Script",
+					"entryNodeGuid": "0ABB51C949970C70E13AC2A25369B25D",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 1
+				}
+			]
+		}
+	]
+}

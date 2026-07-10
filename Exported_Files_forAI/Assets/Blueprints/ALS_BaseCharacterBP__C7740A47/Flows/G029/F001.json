@@ -1,0 +1,93 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"graph": "GetRollAnimation",
+	"entryName": "Get Roll Animation",
+	"entryNodeGuid": "29482DCA4DC50CEC07CA5CB5911E1199",
+	"nodes": [
+		{
+			"nodeGuid": "29482DCA4DC50CEC07CA5CB5911E1199",
+			"class": "K2Node_FunctionEntry",
+			"title": "Get Roll Animation",
+			"comment": "",
+			"x": 32,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "69D401DF43D60E6499BDF2831E83DAF5",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B9A454B44A132672A823BF97A9BAEAE4",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 320,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B2E295EC433BAB9A44D66EAEBCB0590A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DCA665AB4A9912905C24AB8F600A6177",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F61F49644E1E9E4A04C182A37A772D2C",
+			"class": "EdGraphNode_Comment",
+			"title": "This gets overriden in the AnimMan Child character to select the appropriate animation based on the overlay state.",
+			"comment": "This gets overriden in the AnimMan Child character to select the appropriate animation based on the overlay state.",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "GetRollAnimation",
+			"edgeType": "exec",
+			"fromNodeGuid": "29482DCA4DC50CEC07CA5CB5911E1199",
+			"fromPinId": "69D401DF43D60E6499BDF2831E83DAF5",
+			"fromPinName": "then",
+			"toNodeGuid": "B9A454B44A132672A823BF97A9BAEAE4",
+			"toPinId": "B2E295EC433BAB9A44D66EAEBCB0590A",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G029",
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP"
+}

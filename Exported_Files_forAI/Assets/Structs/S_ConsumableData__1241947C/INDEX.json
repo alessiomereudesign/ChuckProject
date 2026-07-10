@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "S_ConsumableData",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Inventory/S_ConsumableData.S_ConsumableData",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_Inventory_S_ConsumableData",
+	"shortAssetFolder": "S_ConsumableData__1241947C",
+	"pathHash": "1241947C",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/S_ConsumableData__1241947C/SUMMARY.md",
+		"variables": "Assets/Structs/S_ConsumableData__1241947C/VARIABLES.json",
+		"components": "Assets/Structs/S_ConsumableData__1241947C/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/S_ConsumableData__1241947C/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/S_ConsumableData__1241947C/NODES.jsonl",
+		"edges": "Assets/Structs/S_ConsumableData__1241947C/EDGES.jsonl",
+		"search": "Assets/Structs/S_ConsumableData__1241947C/SEARCH.jsonl"
+	},
+	"graphs": []
+}

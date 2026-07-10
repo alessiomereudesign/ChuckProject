@@ -1,0 +1,80 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Camera_BPI",
+	"graph": "BPI_Get_FP_CameraTarget",
+	"entryName": "BPI Get FP Camera Target",
+	"entryNodeGuid": "676C6DAC404307962115A2A876F90EE9",
+	"nodes": [
+		{
+			"nodeGuid": "676C6DAC404307962115A2A876F90EE9",
+			"class": "K2Node_FunctionEntry",
+			"title": "BPI Get FP Camera Target",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ADB9DB0F4205E83993345D8CC3816854",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A7092FE74E74A4C61E9F0D8B8784B2F5",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 256,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2E9D978C42DB7DF9BF41EBA7BD16B2DF",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DD9387DE4A19FC27754C66A7380E0B6E",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Camera_BPI",
+			"graph": "BPI_Get_FP_CameraTarget",
+			"edgeType": "exec",
+			"fromNodeGuid": "676C6DAC404307962115A2A876F90EE9",
+			"fromPinId": "ADB9DB0F4205E83993345D8CC3816854",
+			"fromPinName": "then",
+			"toNodeGuid": "A7092FE74E74A4C61E9F0D8B8784B2F5",
+			"toPinId": "2E9D978C42DB7DF9BF41EBA7BD16B2DF",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G004",
+	"assetName": "ALS_Camera_BPI",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Camera_BPI.ALS_Camera_BPI"
+}

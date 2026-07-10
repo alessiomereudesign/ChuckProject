@@ -1,0 +1,14 @@
+{
+	"graphId": "G002",
+	"name": "(CLF) Locomotion Cycles",
+	"graphName": "(CLF) Locomotion Cycles",
+	"type": "AnimationStateGraph",
+	"graphType": "AnimationStateGraph",
+	"graphGuid": "",
+	"nodeCount": 24,
+	"edgeCount": 24,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G002/EDGES.jsonl",
+	"flows": []
+}

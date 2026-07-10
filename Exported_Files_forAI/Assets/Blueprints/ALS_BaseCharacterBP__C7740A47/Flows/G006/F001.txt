@@ -1,0 +1,35 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G006
+Graph: BPI_Get_FP_CameraTarget
+FlowId: F001
+Entry: BPI Get FP Camera Target
+NodeGuid: C3719B304047267775F7F5981B08058F
+
+Exec Flow:
+1. BPI Get FP Camera Target [K2Node_FunctionEntry] C3719B304047267775F7F5981B08058F
+2. Nodo di restituzione [K2Node_FunctionResult] 4136C3E24341E0559272DF94D23C5D12
+3. Get Mesh [K2Node_VariableGet] A564F8B3473C3760A96D5B95A75C905A
+4. Get Socket Location
+La destinazione è Componente di scena [K2Node_CallFunction] 23B7115E4F1E87DE0818DC855D335FEE
+
+Variables Read:
+- Get Mesh
+
+Variables Written:
+- none
+
+External Calls:
+- Get Socket Location
+La destinazione è Componente di scena
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Socket Location
+La destinazione è Componente di scena

@@ -1,0 +1,93 @@
+Asset: OverlayStateSwitcher
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateSwitcher.OverlayStateSwitcher
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher
+GraphId: G001
+Graph: EventGraph
+FlowId: F002
+Entry: Evento Tick
+NodeGuid: 1EA377B74016CFEB412CC196A2F921AF
+
+Exec Flow:
+1. Evento Construct [K2Node_Event] 69508C0146655DA47EA099A2442E57A0
+2. Set NewOverlayState [K2Node_VariableSet] D4A7547540CC271C8933FD8AF80A9C09
+3. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 5B9F379D493A283E315C0680116DCC96
+4. Get Controlled Pawn
+La destinazione è Controller [K2Node_CallFunction] 71C2A2934898915A9B846CA9E6B39A7C
+5. BPI Get Current States
+Target is ALS Character BPI [K2Node_Message] F2D2EDE74FE6EEBC4571EA8F928B0294
+6. SelectOverlayState
+Custom Event [K2Node_CustomEvent] 412460F24C5F2EA688246D85421CC584
+7. Get NewOverlayState [K2Node_VariableGet] D62EBC3D4DED2F8093E859971292ABD6
+8. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] D062AD5E4C2239A8D16BC18E988156E1
+9. Get Controlled Pawn
+La destinazione è Controller [K2Node_CallFunction] FF429E864EA4C54094E4E68D86B09C77
+10. BPI Set Overlay State
+Target is ALS Character BPI [K2Node_Message] 5A30A3A247C3AED50C67B2A46300471D
+11. Update Button Focus
+La destinazione è Overlay State Switcher [K2Node_CallFunction] A0D1021D400DF2558B689A9DFA341B8B
+12. Create Buttons
+La destinazione è Overlay State Switcher [K2Node_CallFunction] 1A9758EB42DB110DE7FC42AD8366D45A
+13. Evento Tick [K2Node_Event] 1EA377B74016CFEB412CC196A2F921AF
+14. Slot as Canvas Slot [K2Node_CallFunction] 9CED183D406749819AFB26B18711161B
+15. Set Position
+La destinazione è Canvas Panel Slot [K2Node_CallFunction] E3F75E8C4270B69EF17E11886386406E
+16. Project World Location to Widget Position [K2Node_CallFunction] C085CAFB48374C901C50069E6F75DD60
+17. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] CF5206FD452DC21C04441795806BB1E8
+18. BPI Get 3P Pivot Target
+Target is ALS Camera BPI [K2Node_Message] 4416ACFB40C5E70C57349EAE44225515
+19. Break Transform [K2Node_CallFunction] 87DDBB2F45C026FC249A34B87095F010
+20. vector + vector [K2Node_CommutativeAssociativeBinaryOperator] 8E146D494FAF882A977D6390FA5D02F5
+21. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 5AA767E24B741BFD5D223C9AEC80FD0B
+22. Get Controlled Pawn
+La destinazione è Controller [K2Node_CallFunction] 22849EA247C8C66012FE79AB011F8AD8
+23. Get MovablePanel [K2Node_VariableGet] 60201FEC4260C3E5CA18EB8B1EC25526
+
+Variables Read:
+- Get MovablePanel
+- Get NewOverlayState
+
+Variables Written:
+- Set NewOverlayState
+
+External Calls:
+- Break Transform
+- Create Buttons
+La destinazione è Overlay State Switcher
+- Get Controlled Pawn
+La destinazione è Controller
+- Get Owning Player
+La destinazione è Widget
+- Project World Location to Widget Position
+- Set Position
+La destinazione è Canvas Panel Slot
+- Slot as Canvas Slot
+- Update Button Focus
+La destinazione è Overlay State Switcher
+
+Widgets Touched:
+- Create Buttons
+La destinazione è Overlay State Switcher
+- Update Button Focus
+La destinazione è Overlay State Switcher
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Break Transform
+- Create Buttons
+La destinazione è Overlay State Switcher
+- Get Controlled Pawn
+La destinazione è Controller
+- Get Owning Player
+La destinazione è Widget
+- Project World Location to Widget Position
+- Set Position
+La destinazione è Canvas Panel Slot
+- Slot as Canvas Slot
+- Update Button Focus
+La destinazione è Overlay State Switcher

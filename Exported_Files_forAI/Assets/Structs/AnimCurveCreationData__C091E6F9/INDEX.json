@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "AnimCurveCreationData",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimModifiers/AnimCurveCreationData.AnimCurveCreationData",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimModifiers_AnimCurveCreationData",
+	"shortAssetFolder": "AnimCurveCreationData__C091E6F9",
+	"pathHash": "C091E6F9",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/AnimCurveCreationData__C091E6F9/SUMMARY.md",
+		"variables": "Assets/Structs/AnimCurveCreationData__C091E6F9/VARIABLES.json",
+		"components": "Assets/Structs/AnimCurveCreationData__C091E6F9/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/AnimCurveCreationData__C091E6F9/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/AnimCurveCreationData__C091E6F9/NODES.jsonl",
+		"edges": "Assets/Structs/AnimCurveCreationData__C091E6F9/EDGES.jsonl",
+		"search": "Assets/Structs/AnimCurveCreationData__C091E6F9/SEARCH.jsonl"
+	},
+	"graphs": []
+}

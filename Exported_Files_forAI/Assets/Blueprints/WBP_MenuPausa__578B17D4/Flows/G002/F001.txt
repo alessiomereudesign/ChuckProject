@@ -1,0 +1,58 @@
+Asset: WBP_MenuPausa
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/WBP_MenuPausa.WBP_MenuPausa
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa
+GraphId: G002
+Graph: OnKeyDown
+FlowId: F001
+Entry: On Key Down
+NodeGuid: 4FF243934C70A3363DD52CB55895855F
+
+Exec Flow:
+1. On Key Down [K2Node_FunctionEntry] 4FF243934C70A3363DD52CB55895855F
+2. Nodo di restituzione [K2Node_FunctionResult] 123E8A5543460B110F3506B8B7800420
+3. Get Key [K2Node_CallFunction] 676AF02D4975DECE170CCCBAF8797680
+4. Equal (Key) [K2Node_PromotableOperator] F63F1C194459045F014479A522B8F378
+5. Ramo [K2Node_IfThenElse] 72E2292F45B9653C0B1503AC7269B353
+6. Set Game Paused [K2Node_CallFunction] E0881E8C4A3FDA87B7A661B3FC178349
+7. Get Player Controller [K2Node_CallFunction] C1EEF10B409C185353E422BE92E5CBF2
+8. Set Input Mode Game Only [K2Node_CallFunction] 18D2598945EC719E5E929A9AABA7E49D
+9. Set bShowMouseCursor [K2Node_VariableSet] 18CBD50A4F544675C60230B23A1B9B5A
+10. Nodo di reindirizzamento [K2Node_Knot] 3647858D46C145D0236CF6AEBFD74EB5
+11. Remove from Parent
+La destinazione è Widget [K2Node_CallFunction] 5643BC8A49724F820A61B0B9005788A1
+12. Gestito [K2Node_CallFunction] E2E0E15B46C31255645511B939C37D0C
+13. Nodo di restituzione [K2Node_FunctionResult] 93C8E0344AA571CA1EF8E689BE9E096C
+14. Unhandled [K2Node_CallFunction] 63429AEE413C89CB11B538A6332C6CC4
+15. Nodo di reindirizzamento [K2Node_Knot] 3230DF60429D2ECEFB588AB19D57C481
+
+Variables Read:
+- none
+
+Variables Written:
+- Set bShowMouseCursor
+
+External Calls:
+- Gestito
+- Get Key
+- Get Player Controller
+- Remove from Parent
+La destinazione è Widget
+- Set Game Paused
+- Set Input Mode Game Only
+- Unhandled
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Gestito
+- Get Key
+- Get Player Controller
+- Remove from Parent
+La destinazione è Widget
+- Set Game Paused
+- Set Input Mode Game Only
+- Unhandled

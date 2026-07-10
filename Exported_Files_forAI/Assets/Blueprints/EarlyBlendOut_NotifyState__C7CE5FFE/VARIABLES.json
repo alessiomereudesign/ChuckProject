@@ -1,0 +1,43 @@
+{
+	"assetName": "EarlyBlendOut_NotifyState",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/EarlyBlendOut_NotifyState.EarlyBlendOut_NotifyState",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "ThisMontage",
+			"type": "object|/Script/Engine.AnimMontage",
+			"defaultValue": ""
+		},
+		{
+			"name": "BlendOutTime",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "CheckMovementState",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "MovementStateEquals",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+			"defaultValue": ""
+		},
+		{
+			"name": "CheckStance",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "StanceEquals",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+			"defaultValue": ""
+		},
+		{
+			"name": "CheckMovementInput",
+			"type": "bool",
+			"defaultValue": ""
+		}
+	]
+}

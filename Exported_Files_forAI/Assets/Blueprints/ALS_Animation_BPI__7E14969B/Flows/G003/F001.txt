@@ -1,0 +1,29 @@
+Asset: ALS_Animation_BPI
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Animation_BPI.ALS_Animation_BPI
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Animation_BPI
+GraphId: G003
+Graph: BPI_SetOverlayOverrideState
+FlowId: F001
+Entry: BPI Set Overlay Override State
+NodeGuid: 500577B94D3CBBBE0E2D26B9CBB32B21
+
+Exec Flow:
+1. BPI Set Overlay Override State [K2Node_FunctionEntry] 500577B94D3CBBBE0E2D26B9CBB32B21
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

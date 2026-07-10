@@ -1,0 +1,25 @@
+{
+	"graphId": "G004",
+	"name": "Get_CharacterInfo_Visibility",
+	"graphName": "Get_CharacterInfo_Visibility",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 8,
+	"edgeCount": 7,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G004/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G004/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G004/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Get Character Info Visibility",
+			"entryNodeGuid": "2A15FCDF47CB9E7CC6B96BB67AF59C1E",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G004/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G004/F001.json",
+			"textFile": "Flows/G004/F001.txt",
+			"jsonFile": "Flows/G004/F001.json",
+			"nodeCount": 8
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"graphId": "G298",
+	"name": "InterpLeanAmount",
+	"graphName": "InterpLeanAmount",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 9,
+	"edgeCount": 12,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G298/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G298/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G298/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Interp Lean Amount",
+			"entryNodeGuid": "7E25B786407BFB6EA0B78F8ED6B60A3D",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G298/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G298/F001.json",
+			"textFile": "Flows/G298/F001.txt",
+			"jsonFile": "Flows/G298/F001.json",
+			"nodeCount": 9
+		}
+	]
+}

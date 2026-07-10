@@ -1,0 +1,673 @@
+{
+	"assetName": "ALS_AnimBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "AimingRotation",
+			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		},
+		{
+			"name": "Velocity",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "RelativeVelocityDirection",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "Acceleration",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "MovementInput",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "IsMoving",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "HasMovementInput",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "Speed",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "MovementInputAmount",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "GroundedEntryState",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/GroundedEntryState.GroundedEntryState",
+			"defaultValue": ""
+		},
+		{
+			"name": "MovementDirection",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MovementDirection.MovementDirection",
+			"defaultValue": ""
+		},
+		{
+			"name": "TrackedHipsDirection",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/HipsDirection.HipsDirection",
+			"defaultValue": ""
+		},
+		{
+			"name": "RelativeAccelerationAmount",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "ShouldMove",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "Rotate_L",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "Rotate_R",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "Pivot",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "RotateRate",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "RotationScale",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "DiagonalScaleAmount",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "WalkRunBlend",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "StandingPlayRate",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "CrouchingPlayRate",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "StrideBlend",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "VelocityBlend",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/VelocityBlend.VelocityBlend",
+			"defaultValue": ""
+		},
+		{
+			"name": "LeanAmount",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount",
+			"defaultValue": ""
+		},
+		{
+			"name": "DiagonalScaleAmountCurve",
+			"type": "object|/Script/Engine.CurveFloat",
+			"defaultValue": ""
+		},
+		{
+			"name": "StrideBlend_N_Walk",
+			"type": "object|/Script/Engine.CurveFloat",
+			"defaultValue": ""
+		},
+		{
+			"name": "StrideBlend_N_Run",
+			"type": "object|/Script/Engine.CurveFloat",
+			"defaultValue": ""
+		},
+		{
+			"name": "StrideBlend_C_Walk",
+			"type": "object|/Script/Engine.CurveFloat",
+			"defaultValue": ""
+		},
+		{
+			"name": "SmoothedAimingRotation",
+			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		},
+		{
+			"name": "SpineRotation",
+			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		},
+		{
+			"name": "AimingAngle",
+			"type": "struct|/Script/CoreUObject.Vector2D",
+			"defaultValue": ""
+		},
+		{
+			"name": "SmoothedAimingAngle",
+			"type": "struct|/Script/CoreUObject.Vector2D",
+			"defaultValue": ""
+		},
+		{
+			"name": "AimSweepTime",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "AimYawRate",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "ZoomAmount",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Jumped",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "JumpPlayRate",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "FallSpeed",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "LandPrediction",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "LandPredictionCurve",
+			"type": "object|/Script/Engine.CurveFloat",
+			"defaultValue": ""
+		},
+		{
+			"name": "LeanInAirCurve",
+			"type": "object|/Script/Engine.CurveFloat",
+			"defaultValue": ""
+		},
+		{
+			"name": "OverlayOverrideState",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "Enable_AimOffset",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "FootLock_L_Alpha",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "FootLock_R_Alpha",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "FootLock_L_Location",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "FootLock_R_Location",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "FootLock_L_Rotation",
+			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		},
+		{
+			"name": "FootLock_R_Rotation",
+			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		},
+		{
+			"name": "FootOffset_L_Location",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "FootOffset_R_Location",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "FootOffset_L_Rotation",
+			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		},
+		{
+			"name": "FootOffset_R_Rotation",
+			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		},
+		{
+			"name": "PelvisOffset",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "PelvisAlpha",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Character",
+			"type": "object|/Script/Engine.Character",
+			"defaultValue": ""
+		},
+		{
+			"name": "DeltaTimeX",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "TurnCheckMinAngle",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Turn180Threshold",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "AimYawRateLimit",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "ElapsedDelayTime",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "MovementState",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+			"defaultValue": ""
+		},
+		{
+			"name": "PrevMovementState",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+			"defaultValue": ""
+		},
+		{
+			"name": "MovementAction",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementAction.ALS_MovementAction",
+			"defaultValue": ""
+		},
+		{
+			"name": "RotationMode",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+			"defaultValue": ""
+		},
+		{
+			"name": "Gait",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+			"defaultValue": ""
+		},
+		{
+			"name": "Stance",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+			"defaultValue": ""
+		},
+		{
+			"name": "ViewMode",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode.ALS_ViewMode",
+			"defaultValue": ""
+		},
+		{
+			"name": "OverlayState",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+			"defaultValue": ""
+		},
+		{
+			"name": "BasePose_N",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "BasePose_CLF",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Arm_L",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Arm_L_Add",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Arm_L_LS",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Arm_L_MS",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Arm_R",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Arm_R_Add",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Arm_R_LS",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Arm_R_MS",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Hand_L",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Hand_R",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Legs",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Legs_Add",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Pelvis",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Pelvis_Add",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Spine",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Spine_Add",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Head",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Head_Add",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "YawOffset_FB",
+			"type": "object|/Script/Engine.CurveVector",
+			"defaultValue": ""
+		},
+		{
+			"name": "YawOffset_LR",
+			"type": "object|/Script/Engine.CurveVector",
+			"defaultValue": ""
+		},
+		{
+			"name": "FYaw",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "BYaw",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "LYaw",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "RYaw",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "InputYawOffsetTime",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "ForwardYawTime",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "LeftYawTime",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "RightYawTime",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "MinAngleDelay",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "MaxAngleDelay",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "RotateMinThreshold",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "RotateMaxThreshold",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "N_TurnIP_L90",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+			"defaultValue": ""
+		},
+		{
+			"name": "N_TurnIP_R90",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+			"defaultValue": ""
+		},
+		{
+			"name": "N_TurnIP_L180",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+			"defaultValue": ""
+		},
+		{
+			"name": "N_TurnIP_R180",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+			"defaultValue": ""
+		},
+		{
+			"name": "AimYawRateMinRange",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "AimYawRateMaxRange",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "MinPlayRate",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "MaxPlayRate",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "CLF_TurnIP_L90",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+			"defaultValue": ""
+		},
+		{
+			"name": "CLF_TurnIP_R90",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+			"defaultValue": ""
+		},
+		{
+			"name": "CLF_TurnIP_L180",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+			"defaultValue": ""
+		},
+		{
+			"name": "CLF_TurnIP_R180",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+			"defaultValue": ""
+		},
+		{
+			"name": "FlailRate",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Enable_HandIK_L",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "Enable_HandIK_R",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "AnimatedWalkSpeed",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "AnimatedRunSpeed",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "AnimatedSprintSpeed",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "AnimatedCrouchSpeed",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "VelocityBlendInterpSpeed",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "GroundedLeanInterpSpeed",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "InAirLeanInterpSpeed",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "SmoothedAimingRotationInterpSpeed",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "InputYawOffsetInterpSpeed",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "TriggerPivotSpeedLimit",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "FootHeight",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "IK_TraceDistanceAboveFoot",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "IK_TraceDistanceBelowFoot",
+			"type": "real|double",
+			"defaultValue": ""
+		}
+	]
+}

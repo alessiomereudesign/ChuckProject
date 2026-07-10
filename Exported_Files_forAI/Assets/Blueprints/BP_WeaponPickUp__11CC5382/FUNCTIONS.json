@@ -1,0 +1,215 @@
+{
+	"assetName": "BP_WeaponPickUp",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponPickUp.BP_WeaponPickUp",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponPickUp",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"functions": [
+		{
+			"name": "Get Interaction Prompt",
+			"graph": "GetInteractionPrompt",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G001/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "CollectWeapon",
+			"graph": "CollectWeapon",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 18,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "UserConstructionScript",
+			"graph": "UserConstructionScript",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G004/INDEX.json"
+		},
+		{
+			"name": "UserConstructionScript",
+			"graph": "UserConstructionScript",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G004/INDEX.json"
+		},
+		{
+			"name": "UserConstructionScript",
+			"graph": "UserConstructionScript",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G004/INDEX.json"
+		},
+		{
+			"name": "UserConstructionScript",
+			"graph": "UserConstructionScript",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 4,
+			"file": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G004/INDEX.json"
+		}
+	]
+}

@@ -1,0 +1,68 @@
+{
+	"assetName": "WBP_MenuArchive",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "MenuPausaRef",
+			"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/WBP_MenuPausa.WBP_MenuPausa_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "As ChuckRef",
+			"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "SpawnedStudioRef",
+			"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/BP_CharacterPreview.BP_CharacterPreview_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "LastClickedButton",
+			"type": "object|/Script/UMG.Button",
+			"defaultValue": ""
+		},
+		{
+			"name": "ActiveWeaponSelectorRef",
+			"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector.WBP_WeaponSelector_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "ActiveArmorSelectorRef",
+			"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector.WBP_WeaponSelector_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "ColorFocused",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		},
+		{
+			"name": "ColorUnfocused",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		},
+		{
+			"name": "ZainoCompleto",
+			"type": "name|container=Array",
+			"defaultValue": ""
+		},
+		{
+			"name": "LocalItemName",
+			"type": "text",
+			"defaultValue": ""
+		},
+		{
+			"name": "LocalItemIcon",
+			"type": "object|/Script/Engine.Texture2D",
+			"defaultValue": ""
+		},
+		{
+			"name": "CurrentSlot",
+			"type": "byte|/Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot.E_WeaponSlot",
+			"defaultValue": ""
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"graphId": "G010",
+	"name": "ML_Transform-Transform",
+	"graphName": "ML_Transform-Transform",
+	"type": "Macro",
+	"graphType": "Macro",
+	"graphGuid": "",
+	"nodeCount": 7,
+	"edgeCount": 15,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_MacroLibrary__77737EBC/Graphs/G010/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_MacroLibrary__77737EBC/Graphs/G010/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_MacroLibrary__77737EBC/Graphs/G010/EDGES.jsonl",
+	"flows": []
+}

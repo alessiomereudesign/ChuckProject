@@ -1,0 +1,111 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "ALS_Animation_BPI",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Animation_BPI.ALS_Animation_BPI",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Animation_BPI",
+	"shortAssetFolder": "ALS_Animation_BPI__7E14969B",
+	"pathHash": "7E14969B",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/CoreUObject.Interface",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 3,
+		"nodes": 3,
+		"edges": 0,
+		"flows": 3
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/ALS_Animation_BPI__7E14969B/SUMMARY.md",
+		"variables": "Assets/Blueprints/ALS_Animation_BPI__7E14969B/VARIABLES.json",
+		"components": "Assets/Blueprints/ALS_Animation_BPI__7E14969B/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/ALS_Animation_BPI__7E14969B/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/ALS_Animation_BPI__7E14969B/NODES.jsonl",
+		"edges": "Assets/Blueprints/ALS_Animation_BPI__7E14969B/EDGES.jsonl",
+		"search": "Assets/Blueprints/ALS_Animation_BPI__7E14969B/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "BPI_Jumped",
+			"graphName": "BPI_Jumped",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 1,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "BPI Jumped",
+					"entryNodeGuid": "6C7078554EF026062C4B4395ED956315",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 1
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "BPI_SetGroundedEntryState",
+			"graphName": "BPI_SetGroundedEntryState",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 1,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "BPI Set Grounded Entry State",
+					"entryNodeGuid": "40164376441BCCB609A478A7EECC488C",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 1
+				}
+			]
+		},
+		{
+			"graphId": "G003",
+			"name": "BPI_SetOverlayOverrideState",
+			"graphName": "BPI_SetOverlayOverrideState",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 1,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Graphs/G003/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Graphs/G003/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Graphs/G003/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "BPI Set Overlay Override State",
+					"entryNodeGuid": "500577B94D3CBBBE0E2D26B9CBB32B21",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Flows/G003/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Flows/G003/F001.json",
+					"textFile": "Flows/G003/F001.txt",
+					"jsonFile": "Flows/G003/F001.json",
+					"nodeCount": 1
+				}
+			]
+		}
+	]
+}

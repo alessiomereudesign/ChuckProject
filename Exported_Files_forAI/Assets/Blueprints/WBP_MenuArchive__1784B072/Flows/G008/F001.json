@@ -1,0 +1,3616 @@
+{
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+	"graph": "UpdateEquipmentSlots",
+	"entryName": "Update Equipment Slots",
+	"entryNodeGuid": "170EE6124E58E9CF8C37418C2FCE6553",
+	"nodes": [
+		{
+			"nodeGuid": "170EE6124E58E9CF8C37418C2FCE6553",
+			"class": "K2Node_FunctionEntry",
+			"title": "Update Equipment Slots",
+			"comment": "",
+			"x": 16,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BCF8ABC2408DEDAC7013C89638F096DD",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "52464DCD46C5EF04B0D86895133A0518",
+			"class": "K2Node_VariableGet",
+			"title": "Get As ChuckRef",
+			"comment": "",
+			"x": 256,
+			"y": 1280,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E3525FDB435E69EFFBBBF484DB79061F",
+					"name": "As ChuckRef",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B86CC85B4E63245662165D8BC07A956D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FE9C7A2C42A7AD49B313DBB28191DE9E",
+			"class": "K2Node_CallFunction",
+			"title": "Set Brush from Texture\nLa destinazione è Immagine",
+			"comment": "",
+			"x": 2016,
+			"y": 192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D02042514439D7B6BC8E52B4BB863D3F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AD459F9C41DF2DA63660A387C6BE5F4A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5256140C494107E70C9F9B8E72E22E99",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "60B791884F5FF3B09006DCB2893E4229",
+					"name": "Texture",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CA2DBD8A46845B8F38CDFA98806C8249",
+					"name": "bMatchSize",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "789BF4C048AE68FA310393A250A28028",
+			"class": "K2Node_CallFunction",
+			"title": "SetText (Text)\nLa destinazione è Testo",
+			"comment": "",
+			"x": 2016,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5C2E269040967B3AD11FA3898529CB8B",
+					"name": "InText",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0671F3174D09430BDAFACBA39380AF27",
+			"class": "K2Node_CallFunction",
+			"title": "Set Brush from Texture\nLa destinazione è Immagine",
+			"comment": "",
+			"x": 2016,
+			"y": 672,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D02042514439D7B6BC8E52B4BB863D3F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AD459F9C41DF2DA63660A387C6BE5F4A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5256140C494107E70C9F9B8E72E22E99",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "60B791884F5FF3B09006DCB2893E4229",
+					"name": "Texture",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CA2DBD8A46845B8F38CDFA98806C8249",
+					"name": "bMatchSize",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "CDBBAA23404CACF42BEFE2B1D5CBAAF6",
+			"class": "K2Node_CallFunction",
+			"title": "SetText (Text)\nLa destinazione è Testo",
+			"comment": "",
+			"x": 2016,
+			"y": 464,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5C2E269040967B3AD11FA3898529CB8B",
+					"name": "InText",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8500725E4E77934E7E5E16A178B62017",
+			"class": "K2Node_ExecutionSequence",
+			"title": "Sequenza",
+			"comment": "",
+			"x": 272,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D7BCD6E949AFE272A96662886BCBB406",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "580FF18A430469B87F6872AA457883AD",
+					"name": "then_0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D983F88E4E1ABCCAA789CC883B7D31ED",
+					"name": "then_1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3092DB5F40306A769E9BA4BA28F4A28E",
+					"name": "then_2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F2D26207494470C4742087BBB563A317",
+					"name": "then_3",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2BEA0B514D09AB56E4AEE98CD721D8C1",
+					"name": "then_4",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "26C4EACF4C6A734A22429A9B0C6DC02F",
+					"name": "then_5",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "94590ED340932C9674CCA3B639FBF88D",
+			"class": "K2Node_CallFunction",
+			"title": "Set Brush from Texture\nLa destinazione è Immagine",
+			"comment": "",
+			"x": 2016,
+			"y": 1184,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D02042514439D7B6BC8E52B4BB863D3F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AD459F9C41DF2DA63660A387C6BE5F4A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5256140C494107E70C9F9B8E72E22E99",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "60B791884F5FF3B09006DCB2893E4229",
+					"name": "Texture",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CA2DBD8A46845B8F38CDFA98806C8249",
+					"name": "bMatchSize",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "61122DEA40BBD7AA67717AB77105A13E",
+			"class": "K2Node_CallFunction",
+			"title": "SetText (Text)\nLa destinazione è Testo",
+			"comment": "",
+			"x": 2016,
+			"y": 976,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5C2E269040967B3AD11FA3898529CB8B",
+					"name": "InText",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "24B4B7FC49908B6C1F285093B5AF4677",
+			"class": "K2Node_CallFunction",
+			"title": "Set Brush from Texture\nLa destinazione è Immagine",
+			"comment": "",
+			"x": 2016,
+			"y": 1664,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D02042514439D7B6BC8E52B4BB863D3F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AD459F9C41DF2DA63660A387C6BE5F4A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5256140C494107E70C9F9B8E72E22E99",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "60B791884F5FF3B09006DCB2893E4229",
+					"name": "Texture",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CA2DBD8A46845B8F38CDFA98806C8249",
+					"name": "bMatchSize",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "01F571514B52FAB2FB87E19D0AC0BED1",
+			"class": "K2Node_CallFunction",
+			"title": "SetText (Text)\nLa destinazione è Testo",
+			"comment": "",
+			"x": 2016,
+			"y": 1456,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5C2E269040967B3AD11FA3898529CB8B",
+					"name": "InText",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DB0799E84CDA1A414BF0AB937A970731",
+			"class": "K2Node_CallFunction",
+			"title": "Set Brush from Texture\nLa destinazione è Immagine",
+			"comment": "",
+			"x": 2496,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D02042514439D7B6BC8E52B4BB863D3F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AD459F9C41DF2DA63660A387C6BE5F4A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5256140C494107E70C9F9B8E72E22E99",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "60B791884F5FF3B09006DCB2893E4229",
+					"name": "Texture",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/ICONS/ICONS_EMPTY/Hat.Hat"
+				},
+				{
+					"pinId": "CA2DBD8A46845B8F38CDFA98806C8249",
+					"name": "bMatchSize",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "B41D287C4BF03F6FA8E6679458FF1B0E",
+			"class": "K2Node_CallFunction",
+			"title": "SetText (Text)\nLa destinazione è Testo",
+			"comment": "",
+			"x": 2496,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5C2E269040967B3AD11FA3898529CB8B",
+					"name": "InText",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "1F2CD3C24817669FBD2FFE9C145AC9EE",
+			"class": "K2Node_CallFunction",
+			"title": "Set Brush from Texture\nLa destinazione è Immagine",
+			"comment": "",
+			"x": 2496,
+			"y": 704,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D02042514439D7B6BC8E52B4BB863D3F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AD459F9C41DF2DA63660A387C6BE5F4A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5256140C494107E70C9F9B8E72E22E99",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "60B791884F5FF3B09006DCB2893E4229",
+					"name": "Texture",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/ICONS/ICONS_EMPTY/T-Shirt.T-Shirt"
+				},
+				{
+					"pinId": "CA2DBD8A46845B8F38CDFA98806C8249",
+					"name": "bMatchSize",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "1E8A9AAD4D312F0C98373F92EE7BB3A6",
+			"class": "K2Node_CallFunction",
+			"title": "SetText (Text)\nLa destinazione è Testo",
+			"comment": "",
+			"x": 2496,
+			"y": 496,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5C2E269040967B3AD11FA3898529CB8B",
+					"name": "InText",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "DA77D70948FAFCED452826A03BF3A596",
+			"class": "K2Node_CallFunction",
+			"title": "Set Brush from Texture\nLa destinazione è Immagine",
+			"comment": "",
+			"x": 2496,
+			"y": 1216,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D02042514439D7B6BC8E52B4BB863D3F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AD459F9C41DF2DA63660A387C6BE5F4A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5256140C494107E70C9F9B8E72E22E99",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "60B791884F5FF3B09006DCB2893E4229",
+					"name": "Texture",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/ICONS/ICONS_EMPTY/pants.pants"
+				},
+				{
+					"pinId": "CA2DBD8A46845B8F38CDFA98806C8249",
+					"name": "bMatchSize",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "314B1AF846CF155209C14EAA36854DB7",
+			"class": "K2Node_CallFunction",
+			"title": "SetText (Text)\nLa destinazione è Testo",
+			"comment": "",
+			"x": 2496,
+			"y": 1008,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5C2E269040967B3AD11FA3898529CB8B",
+					"name": "InText",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "D9AE91E8412CD36C3201418F066F3B8B",
+			"class": "K2Node_CallFunction",
+			"title": "Set Brush from Texture\nLa destinazione è Immagine",
+			"comment": "",
+			"x": 2496,
+			"y": 1696,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D02042514439D7B6BC8E52B4BB863D3F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AD459F9C41DF2DA63660A387C6BE5F4A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5256140C494107E70C9F9B8E72E22E99",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "60B791884F5FF3B09006DCB2893E4229",
+					"name": "Texture",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/ICONS/ICONS_EMPTY/feet.feet"
+				},
+				{
+					"pinId": "CA2DBD8A46845B8F38CDFA98806C8249",
+					"name": "bMatchSize",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "5C9F3D424ED11371E5BA0AB8FE81524E",
+			"class": "K2Node_CallFunction",
+			"title": "SetText (Text)\nLa destinazione è Testo",
+			"comment": "",
+			"x": 2496,
+			"y": 1488,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5C2E269040967B3AD11FA3898529CB8B",
+					"name": "InText",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "D9A12EAF4FA744484BB1CB98C1FCBE66",
+			"class": "K2Node_VariableGet",
+			"title": "Get EquippedHead",
+			"comment": "",
+			"x": 720,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D501D24545764D515D15068B87BAFB75",
+					"name": "EquippedHead",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "3F55956C4DC0B16DA779AF9FB9A9EC2F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "148D239A4554BFD172F7FAB0A63D732B",
+			"class": "K2Node_VariableGet",
+			"title": "Get EquippedChest",
+			"comment": "",
+			"x": 718,
+			"y": 589,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3927FC2048D4932A3F27A5B2CAFEC413",
+					"name": "EquippedChest",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "7AF4F99441D1F4FE41E9DC926DAAD7C1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E3E18E6242E188636DE50CB1CA49F6BE",
+			"class": "K2Node_VariableGet",
+			"title": "Get EquippedLegs",
+			"comment": "",
+			"x": 721,
+			"y": 1101,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BAE79F0249B727261AE5DBB9EB6C06DD",
+					"name": "EquippedLegs",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "B39F07A345007B418CFFD1A48090AF50",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0039248A4B47E8E0CE521BA6E33A4DD5",
+			"class": "K2Node_VariableGet",
+			"title": "Get EquippedFeet",
+			"comment": "",
+			"x": 725,
+			"y": 1581,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "38BA7D8E4423DD49A29D14A1FA14F8E7",
+					"name": "EquippedFeet",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "D88E0CCC44712AA21CD02EB65E182775",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "85EC96854DF674E77972B3B76E1F7F35",
+			"class": "K2Node_CallFunction",
+			"title": "Set Brush from Texture\nLa destinazione è Immagine",
+			"comment": "",
+			"x": 2016,
+			"y": 2160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D02042514439D7B6BC8E52B4BB863D3F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AD459F9C41DF2DA63660A387C6BE5F4A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5256140C494107E70C9F9B8E72E22E99",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "60B791884F5FF3B09006DCB2893E4229",
+					"name": "Texture",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CA2DBD8A46845B8F38CDFA98806C8249",
+					"name": "bMatchSize",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E3738B484D05CCD2A0A645BBE7F66D2A",
+			"class": "K2Node_CallFunction",
+			"title": "SetText (Text)\nLa destinazione è Testo",
+			"comment": "",
+			"x": 2016,
+			"y": 1952,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5C2E269040967B3AD11FA3898529CB8B",
+					"name": "InText",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8FBC601247F20170C156CBAE1063D2ED",
+			"class": "K2Node_CallFunction",
+			"title": "Set Brush from Texture\nLa destinazione è Immagine",
+			"comment": "",
+			"x": 2496,
+			"y": 2192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D02042514439D7B6BC8E52B4BB863D3F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AD459F9C41DF2DA63660A387C6BE5F4A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5256140C494107E70C9F9B8E72E22E99",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "60B791884F5FF3B09006DCB2893E4229",
+					"name": "Texture",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/ICONS/ICONS_EMPTY/glasses.glasses"
+				},
+				{
+					"pinId": "CA2DBD8A46845B8F38CDFA98806C8249",
+					"name": "bMatchSize",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "2FC0F9E6440C3D1A747DDEB9C649F29D",
+			"class": "K2Node_CallFunction",
+			"title": "SetText (Text)\nLa destinazione è Testo",
+			"comment": "",
+			"x": 2496,
+			"y": 1984,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5C2E269040967B3AD11FA3898529CB8B",
+					"name": "InText",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "F0FEF9DF43D2C9AB3FA4DC9CF5D49785",
+			"class": "K2Node_CallFunction",
+			"title": "Set Brush from Texture\nLa destinazione è Immagine",
+			"comment": "",
+			"x": 2016,
+			"y": 2640,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D02042514439D7B6BC8E52B4BB863D3F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AD459F9C41DF2DA63660A387C6BE5F4A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5256140C494107E70C9F9B8E72E22E99",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "60B791884F5FF3B09006DCB2893E4229",
+					"name": "Texture",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CA2DBD8A46845B8F38CDFA98806C8249",
+					"name": "bMatchSize",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "7546536D4BF4E080094178A2A373B6C5",
+			"class": "K2Node_CallFunction",
+			"title": "SetText (Text)\nLa destinazione è Testo",
+			"comment": "",
+			"x": 2016,
+			"y": 2432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5C2E269040967B3AD11FA3898529CB8B",
+					"name": "InText",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5A3E83A54A6473B8814038BFBBACEF1D",
+			"class": "K2Node_CallFunction",
+			"title": "Set Brush from Texture\nLa destinazione è Immagine",
+			"comment": "",
+			"x": 2496,
+			"y": 2672,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D02042514439D7B6BC8E52B4BB863D3F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AD459F9C41DF2DA63660A387C6BE5F4A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5256140C494107E70C9F9B8E72E22E99",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "60B791884F5FF3B09006DCB2893E4229",
+					"name": "Texture",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/ICONS/ICONS_EMPTY/consum.consum"
+				},
+				{
+					"pinId": "CA2DBD8A46845B8F38CDFA98806C8249",
+					"name": "bMatchSize",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "364D02304BFF26D3A165BE85A0C3C8D7",
+			"class": "K2Node_CallFunction",
+			"title": "SetText (Text)\nLa destinazione è Testo",
+			"comment": "",
+			"x": 2496,
+			"y": 2464,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5C2E269040967B3AD11FA3898529CB8B",
+					"name": "InText",
+					"direction": "Input",
+					"type": "text",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "EC19B51C434118BBCBF25582D0417CA9",
+			"class": "K2Node_VariableGet",
+			"title": "Get Img_HeadEquip",
+			"comment": "",
+			"x": 1841,
+			"y": 263,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ECC6D191408F0D1A98E87C8E2088C0CC",
+					"name": "Img_HeadEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CCC0F0E24285CE9E93A38E97600B85C2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "248078B748856A00145B7BAB8E963F79",
+			"class": "K2Node_VariableGet",
+			"title": "Get Img_HeadEquip",
+			"comment": "",
+			"x": 2318,
+			"y": 296,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E617127E4C2C35559E26DB97A532A513",
+					"name": "Img_HeadEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2A15EDA64D9346F8A941B2AD973C91DE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AF63D5F9441EA4C2C6305FBA81708D69",
+			"class": "K2Node_VariableGet",
+			"title": "Get Img_Accessory1Equip",
+			"comment": "",
+			"x": 2280,
+			"y": 2744,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F918B26E4D3FECF4018CB99F1DE025F2",
+					"name": "Img_Accessory1Equip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BFC3A1A84B4FD1613C2445A80B60B242",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A6A1086547F40B1295E998ACFDA919BE",
+			"class": "K2Node_VariableGet",
+			"title": "Get Img_Accessory1Equip",
+			"comment": "",
+			"x": 1849,
+			"y": 2711,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1EE93DC4447ED5CE1C75BD886B965D9E",
+					"name": "Img_Accessory1Equip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AC3B84E343BA4F31BCC917AAE8606A8D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8582B15248D8EE454AC2DFA8E49D822B",
+			"class": "K2Node_VariableGet",
+			"title": "Get Img_AccessoryEquip",
+			"comment": "",
+			"x": 1849,
+			"y": 2232,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BF7AB2BA47A23F1BE36271BF5735395E",
+					"name": "Img_AccessoryEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A50EBFC74948F1BCD19EF58BB6A69806",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B80B38D64CBEA61D8AE6E1BA90147F2A",
+			"class": "K2Node_VariableGet",
+			"title": "Get Img_AccessoryEquip",
+			"comment": "",
+			"x": 2287,
+			"y": 2264,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "042B3EB443BBFBE4F63D42A2A8F32074",
+					"name": "Img_AccessoryEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "19FBC1E740D2FDC437ED04843372985F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "62054F4F4D7CF4FC042FE0AAFC71F8FE",
+			"class": "K2Node_VariableGet",
+			"title": "Get Img_ChestEquip",
+			"comment": "",
+			"x": 1839,
+			"y": 744,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "AA6D1EFA49944A3302362C90D677261D",
+					"name": "Img_ChestEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EA381E06479F7909EB45B2B7B0A07667",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3C552F414EAE57EE34835E9041C4F101",
+			"class": "K2Node_VariableGet",
+			"title": "Get Img_ChestEquip",
+			"comment": "",
+			"x": 2314,
+			"y": 776,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A1A586234D9B19C475E745ADBBFF4EB9",
+					"name": "Img_ChestEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C12ABC243A8D19E243E499866C6B559",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0343DCDE4FC87372EF81378206B37BA6",
+			"class": "K2Node_VariableGet",
+			"title": "Get Img_FeetEquip",
+			"comment": "",
+			"x": 1849,
+			"y": 1736,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1956788B45786B60A3D52987FBA05808",
+					"name": "Img_FeetEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B681658B43D6DB65DCB2D9B2DD636678",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "CDBDA88E402EF389308A54A0CCBD8F39",
+			"class": "K2Node_VariableGet",
+			"title": "Get Img_FeetEquip",
+			"comment": "",
+			"x": 2322,
+			"y": 1768,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F7F2A17244713A5A40EF18B5A96884CE",
+					"name": "Img_FeetEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C417F954482BC77B12EB1B062981D5A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "379126BC457B718F8F049F9ACE68711C",
+			"class": "K2Node_VariableGet",
+			"title": "Get Img_LegsEquip",
+			"comment": "",
+			"x": 1844,
+			"y": 1256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "483FDEFC4978514AAE44EC884B4470FA",
+					"name": "Img_LegsEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FABFF69A424581E442099FA9AB5BEFF9",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6A5D4D3E411BCB8A90FB42833FB9CD4A",
+			"class": "K2Node_VariableGet",
+			"title": "Get Img_LegsEquip",
+			"comment": "",
+			"x": 2319,
+			"y": 1288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6E3CA3BA407313F124BFEA947C0C875D",
+					"name": "Img_LegsEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Image",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2D00AC1F45D98AD951DA6A842E5BED9E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "71A026E749FB8FCC85E2B98A5CC77EB2",
+			"class": "K2Node_VariableGet",
+			"title": "Get TxtVar_Accessory1Equip",
+			"comment": "",
+			"x": 1849,
+			"y": 2504,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "71A0F0E747036053E41C5E96FCDAE78F",
+					"name": "TxtVar_Accessory1Equip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9E8B580849E2D8F0549E429CC924C0BA",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "75D2FE5544386573D5EF8483B9D09656",
+			"class": "K2Node_VariableGet",
+			"title": "Get TxtVar_Accessory1Equip",
+			"comment": "",
+			"x": 2263,
+			"y": 2536,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E62B3DDD4DAC92A317EB94B4E92ED0B8",
+					"name": "TxtVar_Accessory1Equip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E1454F3D48807BF6AF860FAD1461AF8E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BE4B0BA1409687500C00FAA9C2C983AE",
+			"class": "K2Node_VariableGet",
+			"title": "Get TxtVar_AccessoryEquip",
+			"comment": "",
+			"x": 1849,
+			"y": 2024,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8FDBDD0D4070E4F8F3D8EE96F0360207",
+					"name": "TxtVar_AccessoryEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8E08362C46D25F4058A092A039907EAD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BEBD706E4F652E93A704DFAF9E3E6513",
+			"class": "K2Node_VariableGet",
+			"title": "Get TxtVar_AccessoryEquip",
+			"comment": "",
+			"x": 2270,
+			"y": 2056,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A1D6CCCF48CF93A7303D3ABE46C11215",
+					"name": "TxtVar_AccessoryEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F24D1555417CC6BE4B042C8A82A1EDCB",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2B46ECE04DEB8B061CE3479FF18136F2",
+			"class": "K2Node_VariableGet",
+			"title": "Get TxtVar_FeetEquip",
+			"comment": "",
+			"x": 1829,
+			"y": 1528,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "450AA31043ED87C57CFA6CA0381EB0A9",
+					"name": "TxtVar_FeetEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "597344DA4A4E9B84D92062975E9923DA",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "97C585CB4838F489E476F2978ED92521",
+			"class": "K2Node_VariableGet",
+			"title": "Get TxtVar_FeetEquip",
+			"comment": "",
+			"x": 2304,
+			"y": 1560,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8BC08FBE4619A60C171375B670B84348",
+					"name": "TxtVar_FeetEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0E4FD28B4C6F3BF733AE02A05E7E0068",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AA875D5F4D4D37DC42B74EB845C1AA9E",
+			"class": "K2Node_VariableGet",
+			"title": "Get TxtVar_LegsEquip",
+			"comment": "",
+			"x": 1826,
+			"y": 1048,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B0105D35470CB793E77657B93113308B",
+					"name": "TxtVar_LegsEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CB6CEBD242CCFCB0BACE8B8764C76A82",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8D4B76CC466C6A3844FCD49BF7FBD081",
+			"class": "K2Node_VariableGet",
+			"title": "Get TxtVar_LegsEquip",
+			"comment": "",
+			"x": 2302,
+			"y": 1080,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F3D0BEED4954A81802BB2EA37BF14E91",
+					"name": "TxtVar_LegsEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9D3709D8482FE103920FAEB88C2C9253",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6A8E075441A478A109A8249639B51E00",
+			"class": "K2Node_VariableGet",
+			"title": "Get TxtVar_ChestEquip",
+			"comment": "",
+			"x": 1822,
+			"y": 536,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "449E099447228268E4DE2485ABBF939C",
+					"name": "TxtVar_ChestEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BE7374BE45650515CB9F5B84575E6619",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3FFFA43D4B01C05F6DF2AC9EB6E3F139",
+			"class": "K2Node_VariableGet",
+			"title": "Get TxtVar_ChestEquip",
+			"comment": "",
+			"x": 2296,
+			"y": 568,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "04A2BD6C4D6D687EC2C1C09D5F0011C7",
+					"name": "TxtVar_ChestEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "39006D8F49CC7527515758A1A6A8BF30",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BAAF3D9C497B2A099F4865B63D17C153",
+			"class": "K2Node_VariableGet",
+			"title": "Get TxtVar_HeadEquip",
+			"comment": "",
+			"x": 1824,
+			"y": 55,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B5F37D8F49EAA1F800CD36A38C10A3AD",
+					"name": "TxtVar_HeadEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1C3D67C649664F6BC4A6B28947946A4A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0FACBEA741F683E2B4BD118A3EE41E22",
+			"class": "K2Node_VariableGet",
+			"title": "Get TxtVar_HeadEquip",
+			"comment": "",
+			"x": 2300,
+			"y": 88,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DD99C17448895E65D12DFE93687A52C9",
+					"name": "TxtVar_HeadEquip",
+					"direction": "Output",
+					"type": "object|/Script/UMG.TextBlock",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B203365943B829910C74189011F794F1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8AA956BA4FD475B433DDCFBE806E08CD",
+			"class": "K2Node_GetDataTableRow",
+			"title": "Get Data Table Row DT_Armor",
+			"comment": "",
+			"x": 1072,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CE067256487D4BF8B2D495BAD9F5ACCB",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "02DF15A8464149C2FFDBB58BC9EA8633",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B67D8C3944DDB00EC979E293DF1733F1",
+					"name": "RowNotFound",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B426B030465A058A9C6249B358ECDE6A",
+					"name": "DataTable",
+					"direction": "Input",
+					"type": "object|/Script/Engine.DataTable",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/DT_Armor.DT_Armor"
+				},
+				{
+					"pinId": "4CD829B64385587006A900A253ADE3A1",
+					"name": "RowName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "H_Hat_Simple"
+				},
+				{
+					"pinId": "4E51E49949D2A2C0CDA35BA4917D026C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData.S_ArmorData",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "884EBBBF476B71359B5E9CBCCF3F77B0",
+			"class": "K2Node_BreakStruct",
+			"title": "Break S_ArmorData",
+			"comment": "",
+			"x": 1456,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EC20A95B4DB9E87037E7F58989AFB498",
+					"name": "S_ArmorData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData.S_ArmorData|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "02CA7CF4483C28C1C236169AAD8F192B",
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2120350C430C137B66CAE081A8F4CC48",
+					"name": "Icon_36_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AAB985314A2D6C4543C10790CE2C0064",
+					"name": "SlotType_37_6A80ABC24B17EFCD8135D98F80F1052A",
+					"direction": "Output",
+					"type": "byte|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot.E_ArmorSlot",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "227BF3ED4C4D9E1DCE4D1F8B40A8D9F1",
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "08751454424E6380EA616D82CC5D2E7B",
+			"class": "K2Node_GetDataTableRow",
+			"title": "Get Data Table Row DT_Armor",
+			"comment": "",
+			"x": 1072,
+			"y": 480,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CE067256487D4BF8B2D495BAD9F5ACCB",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "02DF15A8464149C2FFDBB58BC9EA8633",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B67D8C3944DDB00EC979E293DF1733F1",
+					"name": "RowNotFound",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B426B030465A058A9C6249B358ECDE6A",
+					"name": "DataTable",
+					"direction": "Input",
+					"type": "object|/Script/Engine.DataTable",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/DT_Armor.DT_Armor"
+				},
+				{
+					"pinId": "4CD829B64385587006A900A253ADE3A1",
+					"name": "RowName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4E51E49949D2A2C0CDA35BA4917D026C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData.S_ArmorData",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7C76466245B3F97F20252C8273BC2611",
+			"class": "K2Node_BreakStruct",
+			"title": "Break S_ArmorData",
+			"comment": "",
+			"x": 1456,
+			"y": 544,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EC20A95B4DB9E87037E7F58989AFB498",
+					"name": "S_ArmorData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData.S_ArmorData|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "02CA7CF4483C28C1C236169AAD8F192B",
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2120350C430C137B66CAE081A8F4CC48",
+					"name": "Icon_36_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AAB985314A2D6C4543C10790CE2C0064",
+					"name": "SlotType_37_6A80ABC24B17EFCD8135D98F80F1052A",
+					"direction": "Output",
+					"type": "byte|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot.E_ArmorSlot",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "227BF3ED4C4D9E1DCE4D1F8B40A8D9F1",
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6E968BE84D636AA72E9930A8EC73E270",
+			"class": "K2Node_GetDataTableRow",
+			"title": "Get Data Table Row DT_Armor",
+			"comment": "",
+			"x": 1072,
+			"y": 992,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CE067256487D4BF8B2D495BAD9F5ACCB",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "02DF15A8464149C2FFDBB58BC9EA8633",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B67D8C3944DDB00EC979E293DF1733F1",
+					"name": "RowNotFound",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B426B030465A058A9C6249B358ECDE6A",
+					"name": "DataTable",
+					"direction": "Input",
+					"type": "object|/Script/Engine.DataTable",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/DT_Armor.DT_Armor"
+				},
+				{
+					"pinId": "4CD829B64385587006A900A253ADE3A1",
+					"name": "RowName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4E51E49949D2A2C0CDA35BA4917D026C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData.S_ArmorData",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1EC1E65C4669BC02210D54B481A1675C",
+			"class": "K2Node_BreakStruct",
+			"title": "Break S_ArmorData",
+			"comment": "",
+			"x": 1456,
+			"y": 1056,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EC20A95B4DB9E87037E7F58989AFB498",
+					"name": "S_ArmorData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData.S_ArmorData|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "02CA7CF4483C28C1C236169AAD8F192B",
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2120350C430C137B66CAE081A8F4CC48",
+					"name": "Icon_36_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AAB985314A2D6C4543C10790CE2C0064",
+					"name": "SlotType_37_6A80ABC24B17EFCD8135D98F80F1052A",
+					"direction": "Output",
+					"type": "byte|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot.E_ArmorSlot",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "227BF3ED4C4D9E1DCE4D1F8B40A8D9F1",
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "636DD01B488D0888C8B42B9C37B99EBD",
+			"class": "K2Node_GetDataTableRow",
+			"title": "Get Data Table Row DT_Armor",
+			"comment": "",
+			"x": 1072,
+			"y": 1472,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CE067256487D4BF8B2D495BAD9F5ACCB",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "02DF15A8464149C2FFDBB58BC9EA8633",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B67D8C3944DDB00EC979E293DF1733F1",
+					"name": "RowNotFound",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B426B030465A058A9C6249B358ECDE6A",
+					"name": "DataTable",
+					"direction": "Input",
+					"type": "object|/Script/Engine.DataTable",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/DT_Armor.DT_Armor"
+				},
+				{
+					"pinId": "4CD829B64385587006A900A253ADE3A1",
+					"name": "RowName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4E51E49949D2A2C0CDA35BA4917D026C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData.S_ArmorData",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "26FE7A374C759BE02322AE8661E6BACD",
+			"class": "K2Node_BreakStruct",
+			"title": "Break S_ArmorData",
+			"comment": "",
+			"x": 1456,
+			"y": 1536,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EC20A95B4DB9E87037E7F58989AFB498",
+					"name": "S_ArmorData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData.S_ArmorData|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "02CA7CF4483C28C1C236169AAD8F192B",
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2120350C430C137B66CAE081A8F4CC48",
+					"name": "Icon_36_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AAB985314A2D6C4543C10790CE2C0064",
+					"name": "SlotType_37_6A80ABC24B17EFCD8135D98F80F1052A",
+					"direction": "Output",
+					"type": "byte|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot.E_ArmorSlot",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "227BF3ED4C4D9E1DCE4D1F8B40A8D9F1",
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5EF96C6E426AD4D37B958A94CF9F4BD7",
+			"class": "K2Node_GetDataTableRow",
+			"title": "Get Data Table Row DT_Armor",
+			"comment": "",
+			"x": 1072,
+			"y": 1968,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CE067256487D4BF8B2D495BAD9F5ACCB",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "02DF15A8464149C2FFDBB58BC9EA8633",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B67D8C3944DDB00EC979E293DF1733F1",
+					"name": "RowNotFound",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B426B030465A058A9C6249B358ECDE6A",
+					"name": "DataTable",
+					"direction": "Input",
+					"type": "object|/Script/Engine.DataTable",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/DT_Armor.DT_Armor"
+				},
+				{
+					"pinId": "4CD829B64385587006A900A253ADE3A1",
+					"name": "RowName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4E51E49949D2A2C0CDA35BA4917D026C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData.S_ArmorData",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D2B2D75740BC2300CEC11F8C04CD11E7",
+			"class": "K2Node_BreakStruct",
+			"title": "Break S_ArmorData",
+			"comment": "",
+			"x": 1456,
+			"y": 2032,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EC20A95B4DB9E87037E7F58989AFB498",
+					"name": "S_ArmorData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData.S_ArmorData|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "02CA7CF4483C28C1C236169AAD8F192B",
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2120350C430C137B66CAE081A8F4CC48",
+					"name": "Icon_36_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AAB985314A2D6C4543C10790CE2C0064",
+					"name": "SlotType_37_6A80ABC24B17EFCD8135D98F80F1052A",
+					"direction": "Output",
+					"type": "byte|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot.E_ArmorSlot",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "227BF3ED4C4D9E1DCE4D1F8B40A8D9F1",
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7F8435D845E689E3B1278AB6BE0BEB08",
+			"class": "K2Node_GetDataTableRow",
+			"title": "Get Data Table Row DT_Armor",
+			"comment": "",
+			"x": 1072,
+			"y": 2448,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CE067256487D4BF8B2D495BAD9F5ACCB",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "02DF15A8464149C2FFDBB58BC9EA8633",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B67D8C3944DDB00EC979E293DF1733F1",
+					"name": "RowNotFound",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B426B030465A058A9C6249B358ECDE6A",
+					"name": "DataTable",
+					"direction": "Input",
+					"type": "object|/Script/Engine.DataTable",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/DT_Armor.DT_Armor"
+				},
+				{
+					"pinId": "4CD829B64385587006A900A253ADE3A1",
+					"name": "RowName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4E51E49949D2A2C0CDA35BA4917D026C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData.S_ArmorData",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7F6FD1144E71326EC7F371AB3BC04BA3",
+			"class": "K2Node_BreakStruct",
+			"title": "Break S_ArmorData",
+			"comment": "",
+			"x": 1456,
+			"y": 2512,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EC20A95B4DB9E87037E7F58989AFB498",
+					"name": "S_ArmorData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData.S_ArmorData|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "02CA7CF4483C28C1C236169AAD8F192B",
+					"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"direction": "Output",
+					"type": "text",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2120350C430C137B66CAE081A8F4CC48",
+					"name": "Icon_36_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Texture2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AAB985314A2D6C4543C10790CE2C0064",
+					"name": "SlotType_37_6A80ABC24B17EFCD8135D98F80F1052A",
+					"direction": "Output",
+					"type": "byte|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot.E_ArmorSlot",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "227BF3ED4C4D9E1DCE4D1F8B40A8D9F1",
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D455429F43C7736AF0938BBEF3F826B2",
+			"class": "K2Node_VariableGet",
+			"title": "Get EquippedAccessory1",
+			"comment": "",
+			"x": 689,
+			"y": 2080,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "970F028E45544D6DF893DCBCE4DC6F0D",
+					"name": "EquippedAccessory1",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "947E178C442BE97F2B4D5E9A87E3C638",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "ED3C29BA459D6DA3026A7B8FEC9E0F3A",
+			"class": "K2Node_VariableGet",
+			"title": "Get EquippedAccessory2",
+			"comment": "",
+			"x": 679,
+			"y": 2557,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A4014CA942A89B5A940BB3A2D7714526",
+					"name": "EquippedAccessory2",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "D4D7E2424135EF7B4FD8AAB1C8D38206",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "76C6AFF04F551BB3F76DEFA687106965",
+			"class": "EdGraphNode_Comment",
+			"title": "UPDATE SLOT APPEARANCE + EQUIP SLOT OR NOT",
+			"comment": "UPDATE SLOT APPEARANCE + EQUIP SLOT OR NOT",
+			"x": -48,
+			"y": -80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "170EE6124E58E9CF8C37418C2FCE6553",
+			"fromPinId": "BCF8ABC2408DEDAC7013C89638F096DD",
+			"fromPinName": "then",
+			"toNodeGuid": "8500725E4E77934E7E5E16A178B62017",
+			"toPinId": "D7BCD6E949AFE272A96662886BCBB406",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "52464DCD46C5EF04B0D86895133A0518",
+			"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
+			"fromPinName": "As ChuckRef",
+			"toNodeGuid": "D9A12EAF4FA744484BB1CB98C1FCBE66",
+			"toPinId": "3F55956C4DC0B16DA779AF9FB9A9EC2F",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "52464DCD46C5EF04B0D86895133A0518",
+			"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
+			"fromPinName": "As ChuckRef",
+			"toNodeGuid": "148D239A4554BFD172F7FAB0A63D732B",
+			"toPinId": "7AF4F99441D1F4FE41E9DC926DAAD7C1",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "52464DCD46C5EF04B0D86895133A0518",
+			"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
+			"fromPinName": "As ChuckRef",
+			"toNodeGuid": "E3E18E6242E188636DE50CB1CA49F6BE",
+			"toPinId": "B39F07A345007B418CFFD1A48090AF50",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "52464DCD46C5EF04B0D86895133A0518",
+			"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
+			"fromPinName": "As ChuckRef",
+			"toNodeGuid": "0039248A4B47E8E0CE521BA6E33A4DD5",
+			"toPinId": "D88E0CCC44712AA21CD02EB65E182775",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "52464DCD46C5EF04B0D86895133A0518",
+			"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
+			"fromPinName": "As ChuckRef",
+			"toNodeGuid": "D455429F43C7736AF0938BBEF3F826B2",
+			"toPinId": "947E178C442BE97F2B4D5E9A87E3C638",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "52464DCD46C5EF04B0D86895133A0518",
+			"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
+			"fromPinName": "As ChuckRef",
+			"toNodeGuid": "ED3C29BA459D6DA3026A7B8FEC9E0F3A",
+			"toPinId": "D4D7E2424135EF7B4FD8AAB1C8D38206",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "789BF4C048AE68FA310393A250A28028",
+			"fromPinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+			"fromPinName": "then",
+			"toNodeGuid": "FE9C7A2C42A7AD49B313DBB28191DE9E",
+			"toPinId": "D02042514439D7B6BC8E52B4BB863D3F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "EC19B51C434118BBCBF25582D0417CA9",
+			"fromPinId": "ECC6D191408F0D1A98E87C8E2088C0CC",
+			"fromPinName": "Img_HeadEquip",
+			"toNodeGuid": "FE9C7A2C42A7AD49B313DBB28191DE9E",
+			"toPinId": "5256140C494107E70C9F9B8E72E22E99",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "884EBBBF476B71359B5E9CBCCF3F77B0",
+			"fromPinId": "2120350C430C137B66CAE081A8F4CC48",
+			"fromPinName": "Icon_36_A8272ED24A449CC6084C88B1C8FF3C5A",
+			"toNodeGuid": "FE9C7A2C42A7AD49B313DBB28191DE9E",
+			"toPinId": "60B791884F5FF3B09006DCB2893E4229",
+			"toPinName": "Texture"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "8AA956BA4FD475B433DDCFBE806E08CD",
+			"fromPinId": "02DF15A8464149C2FFDBB58BC9EA8633",
+			"fromPinName": "then",
+			"toNodeGuid": "789BF4C048AE68FA310393A250A28028",
+			"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "BAAF3D9C497B2A099F4865B63D17C153",
+			"fromPinId": "B5F37D8F49EAA1F800CD36A38C10A3AD",
+			"fromPinName": "TxtVar_HeadEquip",
+			"toNodeGuid": "789BF4C048AE68FA310393A250A28028",
+			"toPinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "884EBBBF476B71359B5E9CBCCF3F77B0",
+			"fromPinId": "02CA7CF4483C28C1C236169AAD8F192B",
+			"fromPinName": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+			"toNodeGuid": "789BF4C048AE68FA310393A250A28028",
+			"toPinId": "5C2E269040967B3AD11FA3898529CB8B",
+			"toPinName": "InText"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "CDBBAA23404CACF42BEFE2B1D5CBAAF6",
+			"fromPinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+			"fromPinName": "then",
+			"toNodeGuid": "0671F3174D09430BDAFACBA39380AF27",
+			"toPinId": "D02042514439D7B6BC8E52B4BB863D3F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "62054F4F4D7CF4FC042FE0AAFC71F8FE",
+			"fromPinId": "AA6D1EFA49944A3302362C90D677261D",
+			"fromPinName": "Img_ChestEquip",
+			"toNodeGuid": "0671F3174D09430BDAFACBA39380AF27",
+			"toPinId": "5256140C494107E70C9F9B8E72E22E99",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "08751454424E6380EA616D82CC5D2E7B",
+			"fromPinId": "02DF15A8464149C2FFDBB58BC9EA8633",
+			"fromPinName": "then",
+			"toNodeGuid": "CDBBAA23404CACF42BEFE2B1D5CBAAF6",
+			"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "6A8E075441A478A109A8249639B51E00",
+			"fromPinId": "449E099447228268E4DE2485ABBF939C",
+			"fromPinName": "TxtVar_ChestEquip",
+			"toNodeGuid": "CDBBAA23404CACF42BEFE2B1D5CBAAF6",
+			"toPinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "7C76466245B3F97F20252C8273BC2611",
+			"fromPinId": "02CA7CF4483C28C1C236169AAD8F192B",
+			"fromPinName": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+			"toNodeGuid": "CDBBAA23404CACF42BEFE2B1D5CBAAF6",
+			"toPinId": "5C2E269040967B3AD11FA3898529CB8B",
+			"toPinName": "InText"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "8500725E4E77934E7E5E16A178B62017",
+			"fromPinId": "580FF18A430469B87F6872AA457883AD",
+			"fromPinName": "then_0",
+			"toNodeGuid": "8AA956BA4FD475B433DDCFBE806E08CD",
+			"toPinId": "CE067256487D4BF8B2D495BAD9F5ACCB",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "8500725E4E77934E7E5E16A178B62017",
+			"fromPinId": "D983F88E4E1ABCCAA789CC883B7D31ED",
+			"fromPinName": "then_1",
+			"toNodeGuid": "08751454424E6380EA616D82CC5D2E7B",
+			"toPinId": "CE067256487D4BF8B2D495BAD9F5ACCB",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "8500725E4E77934E7E5E16A178B62017",
+			"fromPinId": "3092DB5F40306A769E9BA4BA28F4A28E",
+			"fromPinName": "then_2",
+			"toNodeGuid": "6E968BE84D636AA72E9930A8EC73E270",
+			"toPinId": "CE067256487D4BF8B2D495BAD9F5ACCB",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "8500725E4E77934E7E5E16A178B62017",
+			"fromPinId": "F2D26207494470C4742087BBB563A317",
+			"fromPinName": "then_3",
+			"toNodeGuid": "636DD01B488D0888C8B42B9C37B99EBD",
+			"toPinId": "CE067256487D4BF8B2D495BAD9F5ACCB",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "8500725E4E77934E7E5E16A178B62017",
+			"fromPinId": "2BEA0B514D09AB56E4AEE98CD721D8C1",
+			"fromPinName": "then_4",
+			"toNodeGuid": "5EF96C6E426AD4D37B958A94CF9F4BD7",
+			"toPinId": "CE067256487D4BF8B2D495BAD9F5ACCB",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "8500725E4E77934E7E5E16A178B62017",
+			"fromPinId": "26C4EACF4C6A734A22429A9B0C6DC02F",
+			"fromPinName": "then_5",
+			"toNodeGuid": "7F8435D845E689E3B1278AB6BE0BEB08",
+			"toPinId": "CE067256487D4BF8B2D495BAD9F5ACCB",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "61122DEA40BBD7AA67717AB77105A13E",
+			"fromPinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+			"fromPinName": "then",
+			"toNodeGuid": "94590ED340932C9674CCA3B639FBF88D",
+			"toPinId": "D02042514439D7B6BC8E52B4BB863D3F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "379126BC457B718F8F049F9ACE68711C",
+			"fromPinId": "483FDEFC4978514AAE44EC884B4470FA",
+			"fromPinName": "Img_LegsEquip",
+			"toNodeGuid": "94590ED340932C9674CCA3B639FBF88D",
+			"toPinId": "5256140C494107E70C9F9B8E72E22E99",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "6E968BE84D636AA72E9930A8EC73E270",
+			"fromPinId": "02DF15A8464149C2FFDBB58BC9EA8633",
+			"fromPinName": "then",
+			"toNodeGuid": "61122DEA40BBD7AA67717AB77105A13E",
+			"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "AA875D5F4D4D37DC42B74EB845C1AA9E",
+			"fromPinId": "B0105D35470CB793E77657B93113308B",
+			"fromPinName": "TxtVar_LegsEquip",
+			"toNodeGuid": "61122DEA40BBD7AA67717AB77105A13E",
+			"toPinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "1EC1E65C4669BC02210D54B481A1675C",
+			"fromPinId": "02CA7CF4483C28C1C236169AAD8F192B",
+			"fromPinName": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+			"toNodeGuid": "61122DEA40BBD7AA67717AB77105A13E",
+			"toPinId": "5C2E269040967B3AD11FA3898529CB8B",
+			"toPinName": "InText"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "01F571514B52FAB2FB87E19D0AC0BED1",
+			"fromPinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+			"fromPinName": "then",
+			"toNodeGuid": "24B4B7FC49908B6C1F285093B5AF4677",
+			"toPinId": "D02042514439D7B6BC8E52B4BB863D3F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "0343DCDE4FC87372EF81378206B37BA6",
+			"fromPinId": "1956788B45786B60A3D52987FBA05808",
+			"fromPinName": "Img_FeetEquip",
+			"toNodeGuid": "24B4B7FC49908B6C1F285093B5AF4677",
+			"toPinId": "5256140C494107E70C9F9B8E72E22E99",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "636DD01B488D0888C8B42B9C37B99EBD",
+			"fromPinId": "02DF15A8464149C2FFDBB58BC9EA8633",
+			"fromPinName": "then",
+			"toNodeGuid": "01F571514B52FAB2FB87E19D0AC0BED1",
+			"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "2B46ECE04DEB8B061CE3479FF18136F2",
+			"fromPinId": "450AA31043ED87C57CFA6CA0381EB0A9",
+			"fromPinName": "TxtVar_FeetEquip",
+			"toNodeGuid": "01F571514B52FAB2FB87E19D0AC0BED1",
+			"toPinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "26FE7A374C759BE02322AE8661E6BACD",
+			"fromPinId": "02CA7CF4483C28C1C236169AAD8F192B",
+			"fromPinName": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+			"toNodeGuid": "01F571514B52FAB2FB87E19D0AC0BED1",
+			"toPinId": "5C2E269040967B3AD11FA3898529CB8B",
+			"toPinName": "InText"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "B41D287C4BF03F6FA8E6679458FF1B0E",
+			"fromPinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+			"fromPinName": "then",
+			"toNodeGuid": "DB0799E84CDA1A414BF0AB937A970731",
+			"toPinId": "D02042514439D7B6BC8E52B4BB863D3F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "248078B748856A00145B7BAB8E963F79",
+			"fromPinId": "E617127E4C2C35559E26DB97A532A513",
+			"fromPinName": "Img_HeadEquip",
+			"toNodeGuid": "DB0799E84CDA1A414BF0AB937A970731",
+			"toPinId": "5256140C494107E70C9F9B8E72E22E99",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "8AA956BA4FD475B433DDCFBE806E08CD",
+			"fromPinId": "B67D8C3944DDB00EC979E293DF1733F1",
+			"fromPinName": "RowNotFound",
+			"toNodeGuid": "B41D287C4BF03F6FA8E6679458FF1B0E",
+			"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "0FACBEA741F683E2B4BD118A3EE41E22",
+			"fromPinId": "DD99C17448895E65D12DFE93687A52C9",
+			"fromPinName": "TxtVar_HeadEquip",
+			"toNodeGuid": "B41D287C4BF03F6FA8E6679458FF1B0E",
+			"toPinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "1E8A9AAD4D312F0C98373F92EE7BB3A6",
+			"fromPinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+			"fromPinName": "then",
+			"toNodeGuid": "1F2CD3C24817669FBD2FFE9C145AC9EE",
+			"toPinId": "D02042514439D7B6BC8E52B4BB863D3F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "3C552F414EAE57EE34835E9041C4F101",
+			"fromPinId": "A1A586234D9B19C475E745ADBBFF4EB9",
+			"fromPinName": "Img_ChestEquip",
+			"toNodeGuid": "1F2CD3C24817669FBD2FFE9C145AC9EE",
+			"toPinId": "5256140C494107E70C9F9B8E72E22E99",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "08751454424E6380EA616D82CC5D2E7B",
+			"fromPinId": "B67D8C3944DDB00EC979E293DF1733F1",
+			"fromPinName": "RowNotFound",
+			"toNodeGuid": "1E8A9AAD4D312F0C98373F92EE7BB3A6",
+			"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "3FFFA43D4B01C05F6DF2AC9EB6E3F139",
+			"fromPinId": "04A2BD6C4D6D687EC2C1C09D5F0011C7",
+			"fromPinName": "TxtVar_ChestEquip",
+			"toNodeGuid": "1E8A9AAD4D312F0C98373F92EE7BB3A6",
+			"toPinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "314B1AF846CF155209C14EAA36854DB7",
+			"fromPinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+			"fromPinName": "then",
+			"toNodeGuid": "DA77D70948FAFCED452826A03BF3A596",
+			"toPinId": "D02042514439D7B6BC8E52B4BB863D3F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "6A5D4D3E411BCB8A90FB42833FB9CD4A",
+			"fromPinId": "6E3CA3BA407313F124BFEA947C0C875D",
+			"fromPinName": "Img_LegsEquip",
+			"toNodeGuid": "DA77D70948FAFCED452826A03BF3A596",
+			"toPinId": "5256140C494107E70C9F9B8E72E22E99",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "6E968BE84D636AA72E9930A8EC73E270",
+			"fromPinId": "B67D8C3944DDB00EC979E293DF1733F1",
+			"fromPinName": "RowNotFound",
+			"toNodeGuid": "314B1AF846CF155209C14EAA36854DB7",
+			"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "8D4B76CC466C6A3844FCD49BF7FBD081",
+			"fromPinId": "F3D0BEED4954A81802BB2EA37BF14E91",
+			"fromPinName": "TxtVar_LegsEquip",
+			"toNodeGuid": "314B1AF846CF155209C14EAA36854DB7",
+			"toPinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "5C9F3D424ED11371E5BA0AB8FE81524E",
+			"fromPinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+			"fromPinName": "then",
+			"toNodeGuid": "D9AE91E8412CD36C3201418F066F3B8B",
+			"toPinId": "D02042514439D7B6BC8E52B4BB863D3F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "CDBDA88E402EF389308A54A0CCBD8F39",
+			"fromPinId": "F7F2A17244713A5A40EF18B5A96884CE",
+			"fromPinName": "Img_FeetEquip",
+			"toNodeGuid": "D9AE91E8412CD36C3201418F066F3B8B",
+			"toPinId": "5256140C494107E70C9F9B8E72E22E99",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "636DD01B488D0888C8B42B9C37B99EBD",
+			"fromPinId": "B67D8C3944DDB00EC979E293DF1733F1",
+			"fromPinName": "RowNotFound",
+			"toNodeGuid": "5C9F3D424ED11371E5BA0AB8FE81524E",
+			"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "97C585CB4838F489E476F2978ED92521",
+			"fromPinId": "8BC08FBE4619A60C171375B670B84348",
+			"fromPinName": "TxtVar_FeetEquip",
+			"toNodeGuid": "5C9F3D424ED11371E5BA0AB8FE81524E",
+			"toPinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "D9A12EAF4FA744484BB1CB98C1FCBE66",
+			"fromPinId": "D501D24545764D515D15068B87BAFB75",
+			"fromPinName": "EquippedHead",
+			"toNodeGuid": "8AA956BA4FD475B433DDCFBE806E08CD",
+			"toPinId": "4CD829B64385587006A900A253ADE3A1",
+			"toPinName": "RowName"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "148D239A4554BFD172F7FAB0A63D732B",
+			"fromPinId": "3927FC2048D4932A3F27A5B2CAFEC413",
+			"fromPinName": "EquippedChest",
+			"toNodeGuid": "08751454424E6380EA616D82CC5D2E7B",
+			"toPinId": "4CD829B64385587006A900A253ADE3A1",
+			"toPinName": "RowName"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "E3E18E6242E188636DE50CB1CA49F6BE",
+			"fromPinId": "BAE79F0249B727261AE5DBB9EB6C06DD",
+			"fromPinName": "EquippedLegs",
+			"toNodeGuid": "6E968BE84D636AA72E9930A8EC73E270",
+			"toPinId": "4CD829B64385587006A900A253ADE3A1",
+			"toPinName": "RowName"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "0039248A4B47E8E0CE521BA6E33A4DD5",
+			"fromPinId": "38BA7D8E4423DD49A29D14A1FA14F8E7",
+			"fromPinName": "EquippedFeet",
+			"toNodeGuid": "636DD01B488D0888C8B42B9C37B99EBD",
+			"toPinId": "4CD829B64385587006A900A253ADE3A1",
+			"toPinName": "RowName"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "E3738B484D05CCD2A0A645BBE7F66D2A",
+			"fromPinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+			"fromPinName": "then",
+			"toNodeGuid": "85EC96854DF674E77972B3B76E1F7F35",
+			"toPinId": "D02042514439D7B6BC8E52B4BB863D3F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "8582B15248D8EE454AC2DFA8E49D822B",
+			"fromPinId": "BF7AB2BA47A23F1BE36271BF5735395E",
+			"fromPinName": "Img_AccessoryEquip",
+			"toNodeGuid": "85EC96854DF674E77972B3B76E1F7F35",
+			"toPinId": "5256140C494107E70C9F9B8E72E22E99",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "5EF96C6E426AD4D37B958A94CF9F4BD7",
+			"fromPinId": "02DF15A8464149C2FFDBB58BC9EA8633",
+			"fromPinName": "then",
+			"toNodeGuid": "E3738B484D05CCD2A0A645BBE7F66D2A",
+			"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "BE4B0BA1409687500C00FAA9C2C983AE",
+			"fromPinId": "8FDBDD0D4070E4F8F3D8EE96F0360207",
+			"fromPinName": "TxtVar_AccessoryEquip",
+			"toNodeGuid": "E3738B484D05CCD2A0A645BBE7F66D2A",
+			"toPinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "D2B2D75740BC2300CEC11F8C04CD11E7",
+			"fromPinId": "02CA7CF4483C28C1C236169AAD8F192B",
+			"fromPinName": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+			"toNodeGuid": "E3738B484D05CCD2A0A645BBE7F66D2A",
+			"toPinId": "5C2E269040967B3AD11FA3898529CB8B",
+			"toPinName": "InText"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "2FC0F9E6440C3D1A747DDEB9C649F29D",
+			"fromPinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+			"fromPinName": "then",
+			"toNodeGuid": "8FBC601247F20170C156CBAE1063D2ED",
+			"toPinId": "D02042514439D7B6BC8E52B4BB863D3F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "B80B38D64CBEA61D8AE6E1BA90147F2A",
+			"fromPinId": "042B3EB443BBFBE4F63D42A2A8F32074",
+			"fromPinName": "Img_AccessoryEquip",
+			"toNodeGuid": "8FBC601247F20170C156CBAE1063D2ED",
+			"toPinId": "5256140C494107E70C9F9B8E72E22E99",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "5EF96C6E426AD4D37B958A94CF9F4BD7",
+			"fromPinId": "B67D8C3944DDB00EC979E293DF1733F1",
+			"fromPinName": "RowNotFound",
+			"toNodeGuid": "2FC0F9E6440C3D1A747DDEB9C649F29D",
+			"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "BEBD706E4F652E93A704DFAF9E3E6513",
+			"fromPinId": "A1D6CCCF48CF93A7303D3ABE46C11215",
+			"fromPinName": "TxtVar_AccessoryEquip",
+			"toNodeGuid": "2FC0F9E6440C3D1A747DDEB9C649F29D",
+			"toPinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "7546536D4BF4E080094178A2A373B6C5",
+			"fromPinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+			"fromPinName": "then",
+			"toNodeGuid": "F0FEF9DF43D2C9AB3FA4DC9CF5D49785",
+			"toPinId": "D02042514439D7B6BC8E52B4BB863D3F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "A6A1086547F40B1295E998ACFDA919BE",
+			"fromPinId": "1EE93DC4447ED5CE1C75BD886B965D9E",
+			"fromPinName": "Img_Accessory1Equip",
+			"toNodeGuid": "F0FEF9DF43D2C9AB3FA4DC9CF5D49785",
+			"toPinId": "5256140C494107E70C9F9B8E72E22E99",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "7F8435D845E689E3B1278AB6BE0BEB08",
+			"fromPinId": "02DF15A8464149C2FFDBB58BC9EA8633",
+			"fromPinName": "then",
+			"toNodeGuid": "7546536D4BF4E080094178A2A373B6C5",
+			"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "71A026E749FB8FCC85E2B98A5CC77EB2",
+			"fromPinId": "71A0F0E747036053E41C5E96FCDAE78F",
+			"fromPinName": "TxtVar_Accessory1Equip",
+			"toNodeGuid": "7546536D4BF4E080094178A2A373B6C5",
+			"toPinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "7F6FD1144E71326EC7F371AB3BC04BA3",
+			"fromPinId": "02CA7CF4483C28C1C236169AAD8F192B",
+			"fromPinName": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+			"toNodeGuid": "7546536D4BF4E080094178A2A373B6C5",
+			"toPinId": "5C2E269040967B3AD11FA3898529CB8B",
+			"toPinName": "InText"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "364D02304BFF26D3A165BE85A0C3C8D7",
+			"fromPinId": "D5626CC8492139DAFDAB6FA3DD94C719",
+			"fromPinName": "then",
+			"toNodeGuid": "5A3E83A54A6473B8814038BFBBACEF1D",
+			"toPinId": "D02042514439D7B6BC8E52B4BB863D3F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "AF63D5F9441EA4C2C6305FBA81708D69",
+			"fromPinId": "F918B26E4D3FECF4018CB99F1DE025F2",
+			"fromPinName": "Img_Accessory1Equip",
+			"toNodeGuid": "5A3E83A54A6473B8814038BFBBACEF1D",
+			"toPinId": "5256140C494107E70C9F9B8E72E22E99",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "exec",
+			"fromNodeGuid": "7F8435D845E689E3B1278AB6BE0BEB08",
+			"fromPinId": "B67D8C3944DDB00EC979E293DF1733F1",
+			"fromPinName": "RowNotFound",
+			"toNodeGuid": "364D02304BFF26D3A165BE85A0C3C8D7",
+			"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "75D2FE5544386573D5EF8483B9D09656",
+			"fromPinId": "E62B3DDD4DAC92A317EB94B4E92ED0B8",
+			"fromPinName": "TxtVar_Accessory1Equip",
+			"toNodeGuid": "364D02304BFF26D3A165BE85A0C3C8D7",
+			"toPinId": "1CEFB5864DF94F0F46BE708DE2181B75",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "8AA956BA4FD475B433DDCFBE806E08CD",
+			"fromPinId": "4E51E49949D2A2C0CDA35BA4917D026C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "884EBBBF476B71359B5E9CBCCF3F77B0",
+			"toPinId": "EC20A95B4DB9E87037E7F58989AFB498",
+			"toPinName": "S_ArmorData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "08751454424E6380EA616D82CC5D2E7B",
+			"fromPinId": "4E51E49949D2A2C0CDA35BA4917D026C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "7C76466245B3F97F20252C8273BC2611",
+			"toPinId": "EC20A95B4DB9E87037E7F58989AFB498",
+			"toPinName": "S_ArmorData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "6E968BE84D636AA72E9930A8EC73E270",
+			"fromPinId": "4E51E49949D2A2C0CDA35BA4917D026C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "1EC1E65C4669BC02210D54B481A1675C",
+			"toPinId": "EC20A95B4DB9E87037E7F58989AFB498",
+			"toPinName": "S_ArmorData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "636DD01B488D0888C8B42B9C37B99EBD",
+			"fromPinId": "4E51E49949D2A2C0CDA35BA4917D026C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "26FE7A374C759BE02322AE8661E6BACD",
+			"toPinId": "EC20A95B4DB9E87037E7F58989AFB498",
+			"toPinName": "S_ArmorData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "D455429F43C7736AF0938BBEF3F826B2",
+			"fromPinId": "970F028E45544D6DF893DCBCE4DC6F0D",
+			"fromPinName": "EquippedAccessory1",
+			"toNodeGuid": "5EF96C6E426AD4D37B958A94CF9F4BD7",
+			"toPinId": "4CD829B64385587006A900A253ADE3A1",
+			"toPinName": "RowName"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "5EF96C6E426AD4D37B958A94CF9F4BD7",
+			"fromPinId": "4E51E49949D2A2C0CDA35BA4917D026C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "D2B2D75740BC2300CEC11F8C04CD11E7",
+			"toPinId": "EC20A95B4DB9E87037E7F58989AFB498",
+			"toPinName": "S_ArmorData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "ED3C29BA459D6DA3026A7B8FEC9E0F3A",
+			"fromPinId": "A4014CA942A89B5A940BB3A2D7714526",
+			"fromPinName": "EquippedAccessory2",
+			"toNodeGuid": "7F8435D845E689E3B1278AB6BE0BEB08",
+			"toPinId": "4CD829B64385587006A900A253ADE3A1",
+			"toPinName": "RowName"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "UpdateEquipmentSlots",
+			"edgeType": "data",
+			"fromNodeGuid": "7F8435D845E689E3B1278AB6BE0BEB08",
+			"fromPinId": "4E51E49949D2A2C0CDA35BA4917D026C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "7F6FD1144E71326EC7F371AB3BC04BA3",
+			"toPinId": "EC20A95B4DB9E87037E7F58989AFB498",
+			"toPinName": "S_ArmorData"
+		}
+	],
+	"variablesRead": [
+		"Get As ChuckRef",
+		"Get EquippedAccessory1",
+		"Get EquippedAccessory2",
+		"Get EquippedChest",
+		"Get EquippedFeet",
+		"Get EquippedHead",
+		"Get EquippedLegs",
+		"Get Img_Accessory1Equip",
+		"Get Img_AccessoryEquip",
+		"Get Img_ChestEquip",
+		"Get Img_FeetEquip",
+		"Get Img_HeadEquip",
+		"Get Img_LegsEquip",
+		"Get TxtVar_Accessory1Equip",
+		"Get TxtVar_AccessoryEquip",
+		"Get TxtVar_ChestEquip",
+		"Get TxtVar_FeetEquip",
+		"Get TxtVar_HeadEquip",
+		"Get TxtVar_LegsEquip"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Set Brush from Texture\nLa destinazione è Immagine",
+		"SetText (Text)\nLa destinazione è Testo"
+	],
+	"widgetsTouched": [
+		"Set Brush from Texture\nLa destinazione è Immagine",
+		"SetText (Text)\nLa destinazione è Testo"
+	],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Set Brush from Texture\nLa destinazione è Immagine",
+		"SetText (Text)\nLa destinazione è Testo"
+	],
+	"flowId": "F001",
+	"graphId": "G008",
+	"assetName": "WBP_MenuArchive",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive"
+}

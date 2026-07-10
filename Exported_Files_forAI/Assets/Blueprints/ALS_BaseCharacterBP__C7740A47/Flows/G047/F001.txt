@@ -1,0 +1,99 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G047
+Graph: RagdollEnd
+FlowId: F001
+Entry: Ragdoll End
+NodeGuid: 8545CFE44C3B3A8E954A149512333D15
+
+Exec Flow:
+1. Ragdoll End [K2Node_FunctionEntry] 8545CFE44C3B3A8E954A149512333D15
+2. Set Movement Mode
+La destinazione è Componente movimento personaggio [K2Node_CallFunction] EFD3E15444D13E7332781B954EADDE17
+3. Get CharacterMovement [K2Node_VariableGet] 26A097B3449F425F675B4DBB55AB7F28
+4. Get CapsuleComponent [K2Node_VariableGet] 4852FB0E49D228A7C042399A639E5E17
+5. Set Collision Enabled
+La destinazione è Componente primitivo [K2Node_CallFunction] DDC295B34D09B58BC4BE3DB9D1FB91BE
+6. Get Mesh [K2Node_VariableGet] 3D28D5D24A39C052AEAC9B9D48617A36
+7. Set Collision Object Type
+La destinazione è Componente primitivo [K2Node_CallFunction] 493D730E4E6B2BF4CAD4D1A2CD7B051C
+8. Set Collision Enabled
+La destinazione è Componente primitivo [K2Node_CallFunction] B1AB3A244FA488F5D307499D8E0EFA48
+9. Set All Bodies Simulate Physics
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 5090C62341266BA566D07C8F975DA63C
+10. Get RagdollOnGround [K2Node_VariableGet] 084AB0C34266A2395EFE79B6A0CF505E
+11. Sequenza [K2Node_ExecutionSequence] 4F8287D3469EC9E57ADFCEA9C9A6D20C
+12. Ramo [K2Node_IfThenElse] F8A2FCE14A5C3F49582FCA817E6E2A9B
+13. Set Movement Mode
+La destinazione è Componente movimento personaggio [K2Node_CallFunction] 93657E6E407866739503AB8767C395B5
+14. Get CharacterMovement [K2Node_VariableGet] A7233515482B0FCCD60F198D1419C952
+15. Nodo di reindirizzamento [K2Node_Knot] 4F7EFE67468C7D2C946CC9AA35D67079
+16. Nodo di reindirizzamento [K2Node_Knot] 7E8EC9EB49A7C8522BEA26BFCCF56713
+17. Get CharacterMovement [K2Node_VariableGet] 75D33421418BF576730B14943772FCC9
+18. Set Velocity [K2Node_VariableSet] 246FFC37433F101D6A3660BAB0B12761
+19. Get LastRagdollVelocity [K2Node_VariableGet] B498CD5244E29E99C8FDE696C6FFC19C
+20. Nodo di reindirizzamento [K2Node_Knot] 1179024C4C45A7456AD8669C8675AF80
+21. Nodo di reindirizzamento [K2Node_Knot] 5855368543FCD857FEDBB4A13D387896
+22. Nodo di reindirizzamento [K2Node_Knot] 5445D7FF4BB4D450C5F79B94BB3A1993
+23. Nodo di reindirizzamento [K2Node_Knot] 93213E034D72886B458858B6D536B346
+24. Save Pose Snapshot
+La destinazione è Istanza animazione [K2Node_CallFunction] 2DF1FBFA40B2DDA07B5BFF86ADD8E8B7
+25. Ottieni [K2Node_VariableGet] FA3535444D7AADD3307E2DBABA5636F2
+26. Montage Play
+La destinazione è Istanza animazione [K2Node_CallFunction] 9CA022B04D50DAFB72CAFD8DD2A18273
+27. Get MainAnimInstance [K2Node_VariableGet] FA05E6E841E60994EED94F967D9D5168
+28. Get RagdollFaceUp [K2Node_VariableGet] 3F96A55B4F1A4C2A593595A7F2482F6D
+29. Get Get Up Animation [K2Node_CallFunction] 322BD10F407362FA42FA79A3F17E17CE
+30. Step 1: Save a snapshot of the current Ragdoll Pose for use in AnimGraph to blend out of the ragdoll [EdGraphNode_Comment] C0A7DDEC4F4FDB18349FFFB0F4569CA4
+31. Step 2: If the ragdoll is on the ground, set the movement mode to walking and play a Get Up animation. If not, set the movement mode to falling and update teh character movement velocity to match the last ragdoll velocity. [EdGraphNode_Comment] D740A75140968499B99B9FAC615A4150
+32. Step 3: Re-Enable capsule collision, and disable physics simulation on the mesh. [EdGraphNode_Comment] 2B0FEE4543C1EF1471309198D6C2CA6A
+
+Variables Read:
+- Get CapsuleComponent
+- Get CharacterMovement
+- Get LastRagdollVelocity
+- Get MainAnimInstance
+- Get Mesh
+- Get RagdollFaceUp
+- Get RagdollOnGround
+- Ottieni
+
+Variables Written:
+- Set Velocity
+
+External Calls:
+- Get Get Up Animation
+- Montage Play
+La destinazione è Istanza animazione
+- Save Pose Snapshot
+La destinazione è Istanza animazione
+- Set All Bodies Simulate Physics
+La destinazione è Componente mesh scheletrica
+- Set Collision Enabled
+La destinazione è Componente primitivo
+- Set Collision Object Type
+La destinazione è Componente primitivo
+- Set Movement Mode
+La destinazione è Componente movimento personaggio
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Get Up Animation
+- Montage Play
+La destinazione è Istanza animazione
+- Save Pose Snapshot
+La destinazione è Istanza animazione
+- Set All Bodies Simulate Physics
+La destinazione è Componente mesh scheletrica
+- Set Collision Enabled
+La destinazione è Componente primitivo
+- Set Collision Object Type
+La destinazione è Componente primitivo
+- Set Movement Mode
+La destinazione è Componente movimento personaggio

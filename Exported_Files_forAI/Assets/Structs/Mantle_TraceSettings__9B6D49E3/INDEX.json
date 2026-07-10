@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "Mantle_TraceSettings",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_TraceSettings.Mantle_TraceSettings",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Structs_Mantle_TraceSettings",
+	"shortAssetFolder": "Mantle_TraceSettings__9B6D49E3",
+	"pathHash": "9B6D49E3",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/Mantle_TraceSettings__9B6D49E3/SUMMARY.md",
+		"variables": "Assets/Structs/Mantle_TraceSettings__9B6D49E3/VARIABLES.json",
+		"components": "Assets/Structs/Mantle_TraceSettings__9B6D49E3/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/Mantle_TraceSettings__9B6D49E3/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/Mantle_TraceSettings__9B6D49E3/NODES.jsonl",
+		"edges": "Assets/Structs/Mantle_TraceSettings__9B6D49E3/EDGES.jsonl",
+		"search": "Assets/Structs/Mantle_TraceSettings__9B6D49E3/SEARCH.jsonl"
+	},
+	"graphs": []
+}

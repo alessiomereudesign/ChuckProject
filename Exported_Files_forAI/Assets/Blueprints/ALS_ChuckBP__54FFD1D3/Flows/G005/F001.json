@@ -1,0 +1,1056 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "AttachToHand",
+	"entryName": "Attach to Hand",
+	"entryNodeGuid": "89095DF244DD1E2B436179B5DBFF7A13",
+	"nodes": [
+		{
+			"nodeGuid": "89095DF244DD1E2B436179B5DBFF7A13",
+			"class": "K2Node_FunctionEntry",
+			"title": "Attach to Hand",
+			"comment": "",
+			"x": -928,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3292338049F00318A05A63A03B45C5C5",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8C970D1145239CB805AC898030830A33",
+					"name": "NewStaticMesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.StaticMesh",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "10E899B5443EB1AAE7C0EC8E6AD0BA7F",
+					"name": "NewSkeletalMesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "661330C54060E2C0F3E1FD9D407B0CDA",
+					"name": "NewAnimClass",
+					"direction": "Output",
+					"type": "class|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E93D1DBA492546DFC8AA79B53483A34A",
+					"name": "LeftHand",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "022049674704AAB82547A38E6CD5DF93",
+					"name": "Offset",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "801B4C8E439789747597299553271AB3",
+			"class": "K2Node_CallFunction",
+			"title": "Attach Component To Component\nLa destinazione è Componente di scena",
+			"comment": "",
+			"x": -368,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "81CB708C4C6C26BCB74B299E07B912F4",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "267530B642401B50C5B5BCA800F33538",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "39A5F2B34ADBCD23C82F958AC25084B0",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SceneComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E248E8B04B38C8A2539E52AD5996602B",
+					"name": "Parent",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SceneComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F3DDD22C46D9242E92677FB8334CB752",
+					"name": "SocketName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "726287324E5B121E921DC0836E2A7550",
+					"name": "LocationRule",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EAttachmentRule",
+					"defaultValue": "SnapToTarget"
+				},
+				{
+					"pinId": "799AECB14A60FE864D7E2AB7C0DDC066",
+					"name": "RotationRule",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EAttachmentRule",
+					"defaultValue": "SnapToTarget"
+				},
+				{
+					"pinId": "AEB3F0B9443E5D93C32F00B5025E0109",
+					"name": "ScaleRule",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EAttachmentRule",
+					"defaultValue": "SnapToTarget"
+				},
+				{
+					"pinId": "83BB6F524C915390A3D4838D0113EEDB",
+					"name": "bWeldSimulatedBodies",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "TRUE"
+				},
+				{
+					"pinId": "19E73A1B4F0E24EE51679C8D8AB1BEA1",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "4B388BD94BA2B2C6964900BAD5C2FCDD",
+			"class": "K2Node_VariableGet",
+			"title": "Get Mesh",
+			"comment": "",
+			"x": -592,
+			"y": 480,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A5F5CB5F475A0E5A93E371940F354777",
+					"name": "Mesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F978CEFC43814FD3A52E4E9A1E19FB82",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "CD6DF5D74EAAF3B01EBB8098FC356986",
+			"class": "K2Node_Select",
+			"title": "Seleziona",
+			"comment": "",
+			"x": -736,
+			"y": 528,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3017669843821B9D98D0C4AD1E4B3EFA",
+					"name": "Option 0",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "VB RHS_ik_hand_gun"
+				},
+				{
+					"pinId": "93884CE74EF2843365B8A89F5A0A91AE",
+					"name": "Option 1",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "VB LHS_ik_hand_gun"
+				},
+				{
+					"pinId": "B81C7DF84BD9C8F6CE8DC29C1D414874",
+					"name": "Index",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "99CCF2144A266CFBA8252FB3B7C865FB",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DD83B8D44E40109B73A283B5756881D2",
+			"class": "K2Node_CallFunction",
+			"title": "Set Relative Location\nLa destinazione è Componente di scena",
+			"comment": "",
+			"x": 224,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A9CCDC884D8E47F5459E09BA474D4E72",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DE8164E74ACD0DAD4120C6BD25C9F802",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "75ACDAC4465C984C4AECEFB1EFF4668F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SceneComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0F917B454365EEB3051B48A1DB95B64F",
+					"name": "NewLocation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "F68F80BF47A57A7B9E86AEADA38A5888",
+					"name": "bSweep",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "DF65363C43EC0E5D764F8E9B8E2446FF",
+					"name": "SweepHitResult",
+					"direction": "Output",
+					"type": "struct|/Script/Engine.HitResult",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7B188BCF4572F3870AECBE8E9D35727B",
+					"name": "bTeleport",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "2676146E4413D2D4E52C73B2053020E9",
+			"class": "K2Node_VariableGet",
+			"title": "Get LeftHand",
+			"comment": "",
+			"x": -896,
+			"y": 640,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7652DA404AB3871EF0E0A9835EE39A9A",
+					"name": "LeftHand",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "EACDCE1643AC2A9C2A6EC0942959989C",
+			"class": "K2Node_VariableGet",
+			"title": "Get HeldObjectRoot",
+			"comment": "",
+			"x": -592,
+			"y": 432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F3917C7B49E684632CDB34B7C4AE4D28",
+					"name": "HeldObjectRoot",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SceneComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7045182A4A85FC2D2AFCDEA38C2DA3E5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DEBDFA50492C73F007E4238DD5F1C973",
+			"class": "K2Node_VariableGet",
+			"title": "Get HeldObjectRoot",
+			"comment": "",
+			"x": 64,
+			"y": 448,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BEEE1F2D448E341DCE328A9B531692B3",
+					"name": "HeldObjectRoot",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SceneComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C17484E4915CB1E662AC7877E53245D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "732C77ED476B8D9F4F2E41B415CE6B4D",
+			"class": "K2Node_CallFunction",
+			"title": "Clear Held Object\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": -384,
+			"y": -176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B54F19F14FFB19F8262149A8FECFFFE6",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DAAB16214433EF41A8B1D3943352DA7F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0836420E4FD121A0623CEE886062F64A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "CB5C05C142B73F332AA00CA5233E360A",
+			"class": "K2Node_VariableGet",
+			"title": "Get SkeletalMesh",
+			"comment": "",
+			"x": -176,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ABE7E02543832A10D4DEFE82C2BCC3E5",
+					"name": "SkeletalMesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "15DE866C41B952A4B7A18BA6E7E5D54C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7B85C34D4462F062F9AA2B94897A75FC",
+			"class": "K2Node_CallFunction",
+			"title": "Set Skinned Asset and Update\nLa destinazione è Componente della mesh con pelle",
+			"comment": "",
+			"x": -32,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B2D57D84471B57F1E4C9589FE3B1F81E",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AD1DE2904E370F15567B8B846424FE45",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FC0891D24137BD7B58669FB5C0A7D1AE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkinnedMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C88EB0F649B77248AA82048F4783AAC5",
+					"name": "NewMesh",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkinnedAsset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D868A3774895927036B48BBC6FB24ABC",
+					"name": "bReinitPose",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				}
+			]
+		},
+		{
+			"nodeGuid": "9703801B4594A1EA28B311B9EFFD237E",
+			"class": "K2Node_VariableGet",
+			"title": "Get StaticMesh",
+			"comment": "",
+			"x": -176,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "790E2A9F452A4644C5475CB606199554",
+					"name": "StaticMesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.StaticMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2E1796B84601367CCDC2F4865B635305",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D3EFA22742403B1F85C78A82B80CBC8A",
+			"class": "K2Node_CallFunction",
+			"title": "Set Static Mesh\nLa destinazione è Componente con mesh statica",
+			"comment": "",
+			"x": -32,
+			"y": -48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "353DA3B6449A51F0FCE8098D0AB6ECA7",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1499AC454E3D594376568487748734ED",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "12982BB541BAA68797FD42A9E0C2068A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.StaticMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D9716F09439CADBC2FE8C6A09AF84D8D",
+					"name": "NewMesh",
+					"direction": "Input",
+					"type": "object|/Script/Engine.StaticMesh",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2BBBF81244BC8FFCCAE7ABAFB4D1278A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "EF3D0BC7476B26A8694D0DAC2369FA39",
+			"class": "K2Node_CallFunction",
+			"title": "Set Anim Instance Class\nLa destinazione è Componente mesh scheletrica",
+			"comment": "",
+			"x": 672,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C54A5ABB427990B5D935ABAB104D258C",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "35A7E49E427D8157E5D7B4BA24D41C56",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "47A6985141549243CDBE399C3977F35A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5B9BB5FF432A436A818E4BB8D23AB144",
+					"name": "NewClass",
+					"direction": "Input",
+					"type": "class|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AEE7746A4E9B9DB50AA2F3BC85DD5265",
+			"class": "K2Node_VariableGet",
+			"title": "Get SkeletalMesh",
+			"comment": "",
+			"x": 496,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5EBCB0454C0BE4970A7B03A02CA25C33",
+					"name": "SkeletalMesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2BAEDB5843F1AC4A3093C3BAA9B70BA7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6BF39DFE42E13122273E519418325CEF",
+			"class": "K2Node_ExecutionSequence",
+			"title": "Sequenza",
+			"comment": "",
+			"x": -688,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "196DBA094B9599587549E7AB6CD8D2D6",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9CC5EA2D4A7B6444538768B8BE757787",
+					"name": "then_0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B78A478A44C7009E867DBE9870762DD7",
+					"name": "then_1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1481BEE442E9C2C38313798B6F0BDAD9",
+					"name": "then_2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6A1B76E649B869F548A180836A7E2E47",
+					"name": "then_3",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E07F41C9410D91A4A1237BAA519F4E5E",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": -384,
+			"y": -32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "22E0C1C2468AEED2E5B5349EA73C6EFD",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3724BB774BF15CE9FB2ECEAD653FABEB",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "557762C54F6BAD27821209B84CDF08CA",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "613D7BA2473C3C63CE98DCA8AD7C6769",
+					"name": "NewStaticMesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.StaticMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B2F417AA47175881A47B74822C2378F7",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": -384,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F10652E449CFABF9D45982B12C09CC6F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "775DB3C44268B5DB7B4A9BAEA6676A78",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8D1C311F4B9F383398D4388E4D4EC2E8",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C40E00974537493BE74B31B114411B02",
+					"name": "NewSkeletalMesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "541A911D493434053E75029355D366BA",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 256,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4F7CE46D4667108C4BFA1EAE950348AD",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3AA001794273EC19689F4DBC239DF352",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3FFEC9C44DC9C602026E86875D0A1624",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C3CC1C5E41B402AD7812E5810C6E879A",
+					"name": "NewAnimClass",
+					"direction": "Output",
+					"type": "class|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "exec",
+			"fromNodeGuid": "89095DF244DD1E2B436179B5DBFF7A13",
+			"fromPinId": "3292338049F00318A05A63A03B45C5C5",
+			"fromPinName": "then",
+			"toNodeGuid": "6BF39DFE42E13122273E519418325CEF",
+			"toPinId": "196DBA094B9599587549E7AB6CD8D2D6",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "exec",
+			"fromNodeGuid": "6BF39DFE42E13122273E519418325CEF",
+			"fromPinId": "6A1B76E649B869F548A180836A7E2E47",
+			"fromPinName": "then_3",
+			"toNodeGuid": "801B4C8E439789747597299553271AB3",
+			"toPinId": "81CB708C4C6C26BCB74B299E07B912F4",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "exec",
+			"fromNodeGuid": "801B4C8E439789747597299553271AB3",
+			"fromPinId": "267530B642401B50C5B5BCA800F33538",
+			"fromPinName": "then",
+			"toNodeGuid": "DD83B8D44E40109B73A283B5756881D2",
+			"toPinId": "A9CCDC884D8E47F5459E09BA474D4E72",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "data",
+			"fromNodeGuid": "EACDCE1643AC2A9C2A6EC0942959989C",
+			"fromPinId": "F3917C7B49E684632CDB34B7C4AE4D28",
+			"fromPinName": "HeldObjectRoot",
+			"toNodeGuid": "801B4C8E439789747597299553271AB3",
+			"toPinId": "39A5F2B34ADBCD23C82F958AC25084B0",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "data",
+			"fromNodeGuid": "4B388BD94BA2B2C6964900BAD5C2FCDD",
+			"fromPinId": "A5F5CB5F475A0E5A93E371940F354777",
+			"fromPinName": "Mesh",
+			"toNodeGuid": "801B4C8E439789747597299553271AB3",
+			"toPinId": "E248E8B04B38C8A2539E52AD5996602B",
+			"toPinName": "Parent"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "data",
+			"fromNodeGuid": "CD6DF5D74EAAF3B01EBB8098FC356986",
+			"fromPinId": "99CCF2144A266CFBA8252FB3B7C865FB",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "801B4C8E439789747597299553271AB3",
+			"toPinId": "F3DDD22C46D9242E92677FB8334CB752",
+			"toPinName": "SocketName"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "data",
+			"fromNodeGuid": "2676146E4413D2D4E52C73B2053020E9",
+			"fromPinId": "7652DA404AB3871EF0E0A9835EE39A9A",
+			"fromPinName": "LeftHand",
+			"toNodeGuid": "CD6DF5D74EAAF3B01EBB8098FC356986",
+			"toPinId": "B81C7DF84BD9C8F6CE8DC29C1D414874",
+			"toPinName": "Index"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "data",
+			"fromNodeGuid": "DEBDFA50492C73F007E4238DD5F1C973",
+			"fromPinId": "BEEE1F2D448E341DCE328A9B531692B3",
+			"fromPinName": "HeldObjectRoot",
+			"toNodeGuid": "DD83B8D44E40109B73A283B5756881D2",
+			"toPinId": "75ACDAC4465C984C4AECEFB1EFF4668F",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "exec",
+			"fromNodeGuid": "6BF39DFE42E13122273E519418325CEF",
+			"fromPinId": "9CC5EA2D4A7B6444538768B8BE757787",
+			"fromPinName": "then_0",
+			"toNodeGuid": "732C77ED476B8D9F4F2E41B415CE6B4D",
+			"toPinId": "B54F19F14FFB19F8262149A8FECFFFE6",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "data",
+			"fromNodeGuid": "CB5C05C142B73F332AA00CA5233E360A",
+			"fromPinId": "ABE7E02543832A10D4DEFE82C2BCC3E5",
+			"fromPinName": "SkeletalMesh",
+			"toNodeGuid": "7B85C34D4462F062F9AA2B94897A75FC",
+			"toPinId": "FC0891D24137BD7B58669FB5C0A7D1AE",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "exec",
+			"fromNodeGuid": "B2F417AA47175881A47B74822C2378F7",
+			"fromPinId": "775DB3C44268B5DB7B4A9BAEA6676A78",
+			"fromPinName": "then",
+			"toNodeGuid": "7B85C34D4462F062F9AA2B94897A75FC",
+			"toPinId": "B2D57D84471B57F1E4C9589FE3B1F81E",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "exec",
+			"fromNodeGuid": "7B85C34D4462F062F9AA2B94897A75FC",
+			"fromPinId": "AD1DE2904E370F15567B8B846424FE45",
+			"fromPinName": "then",
+			"toNodeGuid": "541A911D493434053E75029355D366BA",
+			"toPinId": "4F7CE46D4667108C4BFA1EAE950348AD",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "data",
+			"fromNodeGuid": "B2F417AA47175881A47B74822C2378F7",
+			"fromPinId": "C40E00974537493BE74B31B114411B02",
+			"fromPinName": "NewSkeletalMesh",
+			"toNodeGuid": "7B85C34D4462F062F9AA2B94897A75FC",
+			"toPinId": "C88EB0F649B77248AA82048F4783AAC5",
+			"toPinName": "NewMesh"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "data",
+			"fromNodeGuid": "9703801B4594A1EA28B311B9EFFD237E",
+			"fromPinId": "790E2A9F452A4644C5475CB606199554",
+			"fromPinName": "StaticMesh",
+			"toNodeGuid": "D3EFA22742403B1F85C78A82B80CBC8A",
+			"toPinId": "12982BB541BAA68797FD42A9E0C2068A",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "exec",
+			"fromNodeGuid": "E07F41C9410D91A4A1237BAA519F4E5E",
+			"fromPinId": "3724BB774BF15CE9FB2ECEAD653FABEB",
+			"fromPinName": "then",
+			"toNodeGuid": "D3EFA22742403B1F85C78A82B80CBC8A",
+			"toPinId": "353DA3B6449A51F0FCE8098D0AB6ECA7",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "data",
+			"fromNodeGuid": "E07F41C9410D91A4A1237BAA519F4E5E",
+			"fromPinId": "613D7BA2473C3C63CE98DCA8AD7C6769",
+			"fromPinName": "NewStaticMesh",
+			"toNodeGuid": "D3EFA22742403B1F85C78A82B80CBC8A",
+			"toPinId": "D9716F09439CADBC2FE8C6A09AF84D8D",
+			"toPinName": "NewMesh"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "exec",
+			"fromNodeGuid": "541A911D493434053E75029355D366BA",
+			"fromPinId": "3AA001794273EC19689F4DBC239DF352",
+			"fromPinName": "then",
+			"toNodeGuid": "EF3D0BC7476B26A8694D0DAC2369FA39",
+			"toPinId": "C54A5ABB427990B5D935ABAB104D258C",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "data",
+			"fromNodeGuid": "AEE7746A4E9B9DB50AA2F3BC85DD5265",
+			"fromPinId": "5EBCB0454C0BE4970A7B03A02CA25C33",
+			"fromPinName": "SkeletalMesh",
+			"toNodeGuid": "EF3D0BC7476B26A8694D0DAC2369FA39",
+			"toPinId": "47A6985141549243CDBE399C3977F35A",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "data",
+			"fromNodeGuid": "541A911D493434053E75029355D366BA",
+			"fromPinId": "C3CC1C5E41B402AD7812E5810C6E879A",
+			"fromPinName": "NewAnimClass",
+			"toNodeGuid": "EF3D0BC7476B26A8694D0DAC2369FA39",
+			"toPinId": "5B9BB5FF432A436A818E4BB8D23AB144",
+			"toPinName": "NewClass"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "exec",
+			"fromNodeGuid": "6BF39DFE42E13122273E519418325CEF",
+			"fromPinId": "B78A478A44C7009E867DBE9870762DD7",
+			"fromPinName": "then_1",
+			"toNodeGuid": "E07F41C9410D91A4A1237BAA519F4E5E",
+			"toPinId": "22E0C1C2468AEED2E5B5349EA73C6EFD",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AttachToHand",
+			"edgeType": "exec",
+			"fromNodeGuid": "6BF39DFE42E13122273E519418325CEF",
+			"fromPinId": "1481BEE442E9C2C38313798B6F0BDAD9",
+			"fromPinName": "then_2",
+			"toNodeGuid": "B2F417AA47175881A47B74822C2378F7",
+			"toPinId": "F10652E449CFABF9D45982B12C09CC6F",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [
+		"Get HeldObjectRoot",
+		"Get LeftHand",
+		"Get Mesh",
+		"Get SkeletalMesh",
+		"Get StaticMesh",
+		"Ottieni"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Attach Component To Component\nLa destinazione è Componente di scena",
+		"Clear Held Object\nLa destinazione è ALS Chuck BP",
+		"Set Anim Instance Class\nLa destinazione è Componente mesh scheletrica",
+		"Set Relative Location\nLa destinazione è Componente di scena",
+		"Set Skinned Asset and Update\nLa destinazione è Componente della mesh con pelle",
+		"Set Static Mesh\nLa destinazione è Componente con mesh statica"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Attach Component To Component\nLa destinazione è Componente di scena",
+		"Clear Held Object\nLa destinazione è ALS Chuck BP",
+		"Set Anim Instance Class\nLa destinazione è Componente mesh scheletrica",
+		"Set Relative Location\nLa destinazione è Componente di scena",
+		"Set Skinned Asset and Update\nLa destinazione è Componente della mesh con pelle",
+		"Set Static Mesh\nLa destinazione è Componente con mesh statica"
+	],
+	"flowId": "F001",
+	"graphId": "G005",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

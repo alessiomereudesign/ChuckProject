@@ -1,0 +1,75 @@
+Asset: ALS_AnimBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP
+GraphId: G309
+Graph: TurnInPlaceCheck
+FlowId: F001
+Entry: Turn in Place Check
+NodeGuid: 1B81C4C9400176C84565D596179BCA26
+
+Exec Flow:
+1. Turn in Place Check [K2Node_FunctionEntry] 1B81C4C9400176C84565D596179BCA26
+2. Ramo [K2Node_IfThenElse] 7BE3ED394E9C27C96FA1CB81B6BE7BB7
+3. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 073F8E46461CE7CB304C3E8A7442FC43
+4. Absolute (Float) [K2Node_CallFunction] 6F5F763648DB9B9C9B57EB90E885FBAB
+5. float > float [K2Node_CallFunction] 65FEB5204184A7E00CB557AE139BFFC0
+6. Get AimYawRate [K2Node_VariableGet] 20E4E39B4CC4D883CA8C01A20B54D608
+7. float < float [K2Node_CallFunction] 0E0B2FD445B72283B0B8E19E2E060D72
+8. Set ElapsedDelayTime [K2Node_VariableSet] 7159A00246027EF1AEEC048C8898BE02
+9. Get DeltaTimeX [K2Node_VariableGet] 3230E62946C8040DA82D13AAC905395D
+10. float + float [K2Node_CommutativeAssociativeBinaryOperator] C9EB1F174EA574CA4F6D8F9B150AB842
+11. Get ElapsedDelayTime [K2Node_VariableGet] 267B9DAC45D5C1B455635EB29D7AAEEB
+12. Set ElapsedDelayTime [K2Node_VariableSet] 4B0C85AE405927B3C598B19DE4D0D393
+13. Ottieni [K2Node_VariableGet] E4FBF91F4B232A0985039BAA799C3522
+14. Nodo di restituzione [K2Node_FunctionResult] 8680EAC0442C505E0D3D3AB79F9168D2
+15. Get TurnCheckMinAngle [K2Node_VariableGet] 0DC984F841BA22737E74EDBE81B41C99
+16. Get AimYawRateLimit [K2Node_VariableGet] A3512A514C195CFB9CC11A9A01D1ABC4
+17. Get ElapsedDelayTime [K2Node_VariableGet] 32C4733F497F7465CEAA519A41DE5C82
+18. Get MinAngleDelay [K2Node_VariableGet] EE60BAEB4079D56DDBA1659A628B2D34
+19. Get MaxAngleDelay [K2Node_VariableGet] 3923A78A4C977D6FFEC89FBE4E9C7CBE
+20. Map Range Clamped [K2Node_CallFunction] F6CE323A4645812C78CE31939B537D17
+21. Absolute (Float) [K2Node_CallFunction] D6AC5E284CE759821DA8CF9A81C6DD65
+22. Ottieni [K2Node_VariableGet] 9D97F168460D0787DECD1EA680C6DDA3
+23. Get TurnCheckMinAngle [K2Node_VariableGet] BB03F0A9432671622ACE4DBEC7E5F950
+24. float > float [K2Node_CallFunction] CAD3B316492F53B1C72C12B73D2AD7AC
+25. Ramo [K2Node_IfThenElse] 32BECCEA402CA1BB863B4BB200BF2113
+26. Turn in Place
+La destinazione è ALS Anim BP [K2Node_CallFunction] 07D8A97E4519590AD922DB958AE74F6F
+27. Ottieni [K2Node_VariableGet] B1F2FA9F4D6A5764008FD98B91C96F3E
+28. Step 1: Check if Aiming angle is outside of the Turn Check Min Angle, and if the Aim Yaw Rate is below the Aim Yaw Rate Limit. If so, begin counting the Elapsed Delay Time. If not, reset the Elapsed Delay Time. This ensures the conditions remain true for a sustained peroid of time before turning in place. [EdGraphNode_Comment] 36DEF6CB418CF42C35656C805F46FE62
+29. Step 2: Check if the Elapsed Delay time exceeds the set delay (mapped to the turn angle range). If so, trigger a Turn In Place. [EdGraphNode_Comment] 02F61638497B1F15FE548AA73CC54A1D
+
+Variables Read:
+- Get AimYawRate
+- Get AimYawRateLimit
+- Get DeltaTimeX
+- Get ElapsedDelayTime
+- Get MaxAngleDelay
+- Get MinAngleDelay
+- Get TurnCheckMinAngle
+- Ottieni
+
+Variables Written:
+- Set ElapsedDelayTime
+
+External Calls:
+- Absolute (Float)
+- float < float
+- float > float
+- Map Range Clamped
+- Turn in Place
+La destinazione è ALS Anim BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Absolute (Float)
+- float < float
+- float > float
+- Map Range Clamped
+- Turn in Place
+La destinazione è ALS Anim BP

@@ -1,0 +1,29 @@
+Asset: BP_WeaponProjectileData
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData
+GraphId: G002
+Graph: UserConstructionScript
+FlowId: F001
+Entry: Construction Script
+NodeGuid: 0ABB51C949970C70E13AC2A25369B25D
+
+Exec Flow:
+1. Construction Script [K2Node_FunctionEntry] 0ABB51C949970C70E13AC2A25369B25D
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

@@ -1,0 +1,14 @@
+{
+	"graphId": "G056",
+	"name": "Looking Right and Back",
+	"graphName": "Looking Right and Back",
+	"type": "AnimationStateGraph",
+	"graphType": "AnimationStateGraph",
+	"graphGuid": "",
+	"nodeCount": 4,
+	"edgeCount": 3,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G056/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G056/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G056/EDGES.jsonl",
+	"flows": []
+}

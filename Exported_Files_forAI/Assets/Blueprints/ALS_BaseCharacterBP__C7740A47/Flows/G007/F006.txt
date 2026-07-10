@@ -1,0 +1,228 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G007
+Graph: EventGraph
+FlowId: F006
+Entry: Evento BPI Set Overlay State
+Da ALS Character BPI
+NodeGuid: DCC51F0449BE3B6CCF639EB384AB43A4
+
+Exec Flow:
+1. Evento BeginPlay [K2Node_Event] CA27EDEA42A6BF35DFF63A861EE70ABC
+2. Event BeginPlay [EdGraphNode_Comment] 71A666DF4B91F729DF5CFC8D639E85B6
+3. Ramo [K2Node_IfThenElse] E4EAD3584BDDA137483E95B19067E018
+4. Get HasMovementInput [K2Node_VariableGet] AFE9A56E4D08D0F841FFC2864955AA22
+5. Ramo [K2Node_IfThenElse] 4ACEFBD14401B83401EA5AA99A9D8859
+6. Evento OnStartCrouch [K2Node_Event] 72382A374C559514843EABABE94F5D3C
+7. Evento OnEndCrouch [K2Node_Event] BE69C236464C7F3BEFDF89B1F99F27F3
+8. Set BrakingFrictionFactor [K2Node_VariableSet] E94B0D0843A43D95DC83AE9153FE1861
+9. Set BrakingFrictionFactor [K2Node_VariableSet] F2515F37498A2434B89C27B46CCD181E
+10. Get CharacterMovement [K2Node_VariableGet] 9A5B0A5440F171500985A484C1D3731F
+11. Retriggerable Delay [K2Node_CallFunction] C1B414004A27934AD5770FA658672FB0
+12. Set BrakingFrictionFactor [K2Node_VariableSet] 4E84A416444A8FB5BA63098BB6226863
+13. Get CharacterMovement [K2Node_VariableGet] BA40F10B42AB98D19D37F1B7FF547171
+14. Evento OnMovementModeChanged [K2Node_Event] 36F36BF5473F8B9D2FA09B9A62CDF445
+15. On Pawn Movement Mode Changed [EdGraphNode_Comment] F14E69844209A37CC6213C90B3E733E6
+16. Get MovementState [K2Node_VariableGet] BC09792A4C636A8FAB74E992EFC89DA8
+17. Get RotationMode [K2Node_VariableGet] 6E9C717642A5E1D30055FAB4AEB714AA
+18. Get ViewMode [K2Node_VariableGet] F519AF9141224A5E44144E8444708A61
+19. Evento On Jumped [K2Node_Event] 41F4E35848155D1E0B55A798E4C05F69
+20. Set InAirRotation [K2Node_VariableSet] 59ECC85F4B7FF7A788196E92952D7B42
+21. Get LastVelocityRotation [K2Node_VariableGet] C52B45A444DF60237CD6BE83D48A7E63
+22. Seleziona [K2Node_Select] 3240FA164C4B1DD0406EB28D286203FE
+23. Get Speed [K2Node_VariableGet] 423326A4427004347C6D4E80F7685418
+24. float > float [K2Node_CallFunction] AAE6609D4DDC124D893D8CB603B04037
+25. Get Actor Rotation
+La destinazione è Actor [K2Node_CallFunction] 47F0F04343569505ECFA039716EAC966
+26. Evento On Landed [K2Node_Event] 0C27AF8746030A35DFAEF388B3074B1D
+27. Get BreakFall [K2Node_VariableGet] 0F6CFD674D66547DE127348BADE6A14D
+28. Breakfall Event
+Custom Event [K2Node_CustomEvent] 6941C8F74737101DCDF602ABEBAFF439
+29. Breakfall Event
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 036DF2AE46E7C80831DBD39F489581D2
+30. Roll Event
+Custom Event [K2Node_CustomEvent] D96293A24E8B665B4BBA3D924F957530
+31. Movement Events [EdGraphNode_Comment] DA5B32284052A31DA52BE9B0B35F38EB
+32. ML Is Different(Byte) [K2Node_MacroInstance] 8B94C6484314984DFEAA28AF397F16F0
+33. ML Is Different(Byte) [K2Node_MacroInstance] A6FA2B5F44F4436FAB7884A7C8012F88
+34. ML Is Different(Byte) [K2Node_MacroInstance] 5387E8AB42DFEB9CD5BA9D9EA8B0A7ED
+35. Genitore: OnStartCrouch [K2Node_CallParentFunction] BE376CDB4921241F174CEFA09F89DE6F
+36. Genitore: OnMovementModeChanged [K2Node_CallParentFunction] 44A403B04B2B564CB6A2E0B9B66F9059
+37. Genitore: OnEndCrouch [K2Node_CallParentFunction] E1A55B9E48B6880751F489A6CDBD36C1
+38. Genitore: On Landed [K2Node_CallParentFunction] B7E2D9F741FC44C537CBE5825235D24D
+39. Genitore: On Jumped [K2Node_CallParentFunction] 50E8926346426B3D36D530B2A07DD328
+40. State Events [EdGraphNode_Comment] AA4B0C2446832715196AB9A34FDD1565
+41. Crouch / UnCrouch [EdGraphNode_Comment] 869983074FB17D66397D24A19C238C20
+42. State Changes [EdGraphNode_Comment] 764B6D3B4C951622AD7E0396E974D82F
+43. On Landed: Temporarily increase the braking friction on lands to make landings more accurate, or trigger a breakfall roll. [EdGraphNode_Comment] 13C3C8CC4358ABF919F83AB2DBCEFAB5
+44. On Jumped: Set the new In Air Rotation to the velocity rotation if speed is greater than 100. [EdGraphNode_Comment] 4AEB908F4932C6BAA0DDBAB8647E958A
+45. Breakfall / Roll: Simply play a Root Motion Montage. [EdGraphNode_Comment] 3121B24F4622B5B2273EBB9E13482653
+46. ML Is Different(Byte) [K2Node_MacroInstance] AA49BF734A2D8971D93FF2A097C9ACF9
+47. Get Gait [K2Node_VariableGet] 2B5E312F4DFA5B1FEE73CEBCA909C2E7
+48. Mantle Timeline: This timeline is triggered from the MantleStart function and updates the function that lerps the character to the new location. [EdGraphNode_Comment] 9CD54E8E4C14C7F9E9CF7FB8137A77BA
+49. MantleTimeline [K2Node_Timeline] D1FDCE1A4A24F592118BA48DF73A2BC6
+50. Mantle End
+La destinazione è ALS Base Character BP [K2Node_CallFunction] B25710C247041B2C3F7B3FB165576174
+51. Ottieni [K2Node_VariableGet] 992159CE40716F30444607A9F18FA28F
+52. Ottieni [K2Node_VariableGet] F73FF7E04A0CC02B1F9DEAA111B57688
+53. Montage Play
+La destinazione è Istanza animazione [K2Node_CallFunction] FF0696534F9008E252BBC395A0B2F9F9
+54. Montage Play
+La destinazione è Istanza animazione [K2Node_CallFunction] C808330E4CB4FFFF8D1E9AA3EF7F91D7
+55. Ottieni [K2Node_VariableGet] 7BFC914F420B88D811C14B9C2E626577
+56. BPI Jumped
+Target is ALS Animation BPI [K2Node_Message] 1FDDA99840544139B9274CA7A5A3D9F9
+57. ML Is Different(Byte) [K2Node_MacroInstance] 0FD17C0440A19D1B8ED34CBDA4B80E5B
+58. Get OverlayState [K2Node_VariableGet] 812B71E0416E259FDC5FA494356B6756
+59. On Movement State Changed
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 0B7907CF42BF4657F394688BC5CA4FA3
+60. On Rotation Mode Changed
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 0AEFFAD24C13B559074032936B4A60B9
+61. On Gait Changed
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 3D5F48824C4C940783C5F2B42593FBC0
+62. On View Mode Changed
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 9151E5C34C28755EC28DE1AA5C0D0884
+63. On Overlay State Changed
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 2DC94774463EA860E7DF759579E9262E
+64. On Character Movement Mode Changed
+La destinazione è ALS Base Character BP [K2Node_CallFunction] CC71F0C4432CAB57BB5E41BE839D5A90
+65. On Stance Changed
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 47510D06408273D3CF08878C69AFB959
+66. On Stance Changed
+La destinazione è ALS Base Character BP [K2Node_CallFunction] C9FD19BE48AB6B30E79DCB8ACD6E2A6B
+67. Evento BPI Set Movement State
+Da ALS Character BPI [K2Node_Event] 2CF8071D4FA7C17927CF44B78B86EBDE
+68. ML Is Different(Byte) [K2Node_MacroInstance] BB7B7A9D44D50D71B1E6C5807807711C
+69. Get MovementAction [K2Node_VariableGet] 9BF2E1744BB663F4D0026EABFDC5109C
+70. Evento BPI Set Movement Action
+Da ALS Character BPI [K2Node_Event] C836D52141BDAEEAF96FB8B3DA6CD673
+71. Evento BPI Set Rotation Mode
+Da ALS Character BPI [K2Node_Event] 9516E95146A87D771B0B318DBF54C2D0
+72. Evento BPI Set Gait
+Da ALS Character BPI [K2Node_Event] C18F5F404422560B8F65F7AEB5308DF9
+73. Evento BPI Set View Mode
+Da ALS Character BPI [K2Node_Event] EBB5D3CD476853EB0829E08D5BFFB9C0
+74. Evento BPI Set Overlay State
+Da ALS Character BPI [K2Node_Event] DCC51F0449BE3B6CCF639EB384AB43A4
+75. On Movement Action Changed
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 23CD7F994CC77F64CE02DB99D128C549
+76. IMPORTANT!!!
+
+This blueprint contains a lot of simple logic meant to be built on or replaced by more sophisticated systems on a Per Project basis. How you manage Movement, Movement actions, Gameplay Events, and Character States should all be determined by the specific needs of your project. 
+
+The most important thing is to make sure you are updating the correct Character Information in the interface to allow the AnimBP to function correctly. [EdGraphNode_Comment] B43C74E5492DDB67FB509BA087D5C238
+77. Genitore: BeginPlay [K2Node_CallParentFunction] B58B422E4D576A325D8EEDAE4E3D6858
+78. On Begin Play
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 570D96254A473E95DF527D9495FB9E41
+79. Get Roll Animation [K2Node_CallFunction] 0FA93F724FC6576879A0F6A8A6747C1F
+80. Get Roll Animation [K2Node_CallFunction] D5B210374D15FF7262CF1F90FF176BA3
+81. Mantle Update
+La destinazione è ALS Base Character BP [K2Node_CallFunction] C81E75604192928B59220DAB123A2D19
+82. These functions are a great place to perform logic based on the previous and new state, as they should be called whenever a state changes (as long as you use the Interface Event to change the state). [EdGraphNode_Comment] 7CCB343C4FA2FD59422001B6CA4B087B
+83.  [EdGraphNode_Comment] 9F1B9A0240B336976151498375869D02
+84. 
+
+
+
+
+
+
+
+
+
+ [EdGraphNode_Comment] EF6B819E4AF1F8E3664AB5BF6CC621DB
+85.  [EdGraphNode_Comment] 10E8C2DB44074E2722028CB91CC5A5A5
+86.  [EdGraphNode_Comment] 918C3EA34832CEAF98DCE7A2FB32CE6A
+87.  [EdGraphNode_Comment] EE7EA38B4B221DA3EADDD5BD3495A7E3
+88.  [EdGraphNode_Comment] 6A8F6E3443E432A3CF85ED938F59E7B7
+
+Variables Read:
+- Get BreakFall
+- Get CharacterMovement
+- Get Gait
+- Get HasMovementInput
+- Get LastVelocityRotation
+- Get MovementAction
+- Get MovementState
+- Get OverlayState
+- Get RotationMode
+- Get Speed
+- Get ViewMode
+- Ottieni
+
+Variables Written:
+- Set BrakingFrictionFactor
+- Set InAirRotation
+
+External Calls:
+- Breakfall Event
+La destinazione è ALS Base Character BP
+- float > float
+- Get Actor Rotation
+La destinazione è Actor
+- Get Roll Animation
+- Mantle End
+La destinazione è ALS Base Character BP
+- Mantle Update
+La destinazione è ALS Base Character BP
+- Montage Play
+La destinazione è Istanza animazione
+- On Begin Play
+La destinazione è ALS Base Character BP
+- On Character Movement Mode Changed
+La destinazione è ALS Base Character BP
+- On Gait Changed
+La destinazione è ALS Base Character BP
+- On Movement Action Changed
+La destinazione è ALS Base Character BP
+- On Movement State Changed
+La destinazione è ALS Base Character BP
+- On Overlay State Changed
+La destinazione è ALS Base Character BP
+- On Rotation Mode Changed
+La destinazione è ALS Base Character BP
+- On Stance Changed
+La destinazione è ALS Base Character BP
+- On View Mode Changed
+La destinazione è ALS Base Character BP
+- Retriggerable Delay
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Breakfall Event
+La destinazione è ALS Base Character BP
+- float > float
+- Get Actor Rotation
+La destinazione è Actor
+- Get Roll Animation
+- Mantle End
+La destinazione è ALS Base Character BP
+- Mantle Update
+La destinazione è ALS Base Character BP
+- Montage Play
+La destinazione è Istanza animazione
+- On Begin Play
+La destinazione è ALS Base Character BP
+- On Character Movement Mode Changed
+La destinazione è ALS Base Character BP
+- On Gait Changed
+La destinazione è ALS Base Character BP
+- On Movement Action Changed
+La destinazione è ALS Base Character BP
+- On Movement State Changed
+La destinazione è ALS Base Character BP
+- On Overlay State Changed
+La destinazione è ALS Base Character BP
+- On Rotation Mode Changed
+La destinazione è ALS Base Character BP
+- On Stance Changed
+La destinazione è ALS Base Character BP
+- On View Mode Changed
+La destinazione è ALS Base Character BP
+- Retriggerable Delay

@@ -1,0 +1,25 @@
+{
+	"graphId": "G007",
+	"name": "UserConstructionScript",
+	"graphName": "UserConstructionScript",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 1,
+	"edgeCount": 0,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Graphs/G007/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Graphs/G007/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Graphs/G007/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Construction Script",
+			"entryNodeGuid": "50A6CA7F46F017099098D0B154FA92EC",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Flows/G007/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Flows/G007/F001.json",
+			"textFile": "Flows/G007/F001.txt",
+			"jsonFile": "Flows/G007/F001.json",
+			"nodeCount": 1
+		}
+	]
+}

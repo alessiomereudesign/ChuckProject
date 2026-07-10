@@ -1,0 +1,4578 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "Set/ResetColors",
+	"entryName": "Set/ Reset Colors",
+	"entryNodeGuid": "29107F49475C1958B4BC4F889FAC9664",
+	"nodes": [
+		{
+			"nodeGuid": "29107F49475C1958B4BC4F889FAC9664",
+			"class": "K2Node_FunctionEntry",
+			"title": "Set/ Reset Colors",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A86D7A6C4A9F14D3358C019A5B47A5D9",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DD0D3671413763A7CA0237931FC94FC6",
+			"class": "K2Node_VariableGet",
+			"title": "Get SolidColor",
+			"comment": "",
+			"x": 176,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "82199167411F334455125BBBE282200F",
+					"name": "SolidColor",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "986253194E732F1D64859E9FFD25B362",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6F0150B144BCF6F09A995E8CA3B75B02",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 176,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F14B109B400F7E075F53F68995F3AACC",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "658173E645E67A840E18C583D28393EB",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "B5EEB28B4BD78468D0A22AB4F2FED1E0",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2B0D48C94BB0E4BDCCBCE4B7EEF96E38",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1FB7A47B4BDB9DD863AC10BDD0DAC3E6",
+			"class": "K2Node_VariableGet",
+			"title": "Get Head",
+			"comment": "",
+			"x": 512,
+			"y": -320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B9DE2DB84ADAB09713BA498BF99BD434",
+					"name": "Head",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "89B7016A46CB304E0309B794019A3EBA",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 512,
+			"y": -512,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B3FDCC634A62D3F0FA735C9B253ABB67",
+			"class": "K2Node_VariableGet",
+			"title": "Get Torso",
+			"comment": "",
+			"x": 512,
+			"y": -288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "42BAE309482100E15B638387EC154CB2",
+					"name": "Torso",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E82ACE024BD7DEBA3960D397D1F44E9A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7E553B30431F962DC67894BD52EC36E7",
+			"class": "K2Node_VariableGet",
+			"title": "Get Pelvis",
+			"comment": "",
+			"x": 512,
+			"y": -256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "AF084601409BEE0DD570B7BD03B15CAD",
+					"name": "Pelvis",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "22A1071949A114CA68FEA58197FBF002",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "428CD17C4984319D17539AA07CF7A7E1",
+			"class": "K2Node_VariableGet",
+			"title": "Get Shoulder_L",
+			"comment": "",
+			"x": 512,
+			"y": -224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9C2E5592426450800566D283E3B41F78",
+					"name": "Shoulder_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BEC1A2B543D69652AFBDC981B9345688",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "791BD1C74A5193279F07BFAA0EA3E3BB",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperArm_L",
+			"comment": "",
+			"x": 512,
+			"y": -192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A7AB7DF9431C418F78171DA76D3DCAD4",
+					"name": "UpperArm_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E8A186AF49BE058EE519989EAAD7B0C3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "327EC9FF48DA0E380AFA33B413C5E34E",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerArm_L",
+			"comment": "",
+			"x": 512,
+			"y": -160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "621E8D174CEB285D2BE2A1A3C89D446C",
+					"name": "LowerArm_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "78C7EAF9441128117AEA9190CC6B8D04",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FB24623745C7C1C04347E8993D0D570F",
+			"class": "K2Node_VariableGet",
+			"title": "Get Hand_L",
+			"comment": "",
+			"x": 512,
+			"y": -128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F1686E624C401D6C89404AB464DBDF51",
+					"name": "Hand_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6138EB01441FB5D4AFA39D8709CEFB61",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5919BDD1434156E17E1BDAAC932EB8AC",
+			"class": "K2Node_VariableGet",
+			"title": "Get Shoulder_R",
+			"comment": "",
+			"x": 512,
+			"y": -96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6B2F374A45C39B6B8C26069885923B90",
+					"name": "Shoulder_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "627EA5934D3A7B628D29878A239B2B86",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "82FDE84044FB8BC485C4B7B9D1D3D451",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperArm_R",
+			"comment": "",
+			"x": 512,
+			"y": -64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "53444F0C4753EEE119D998948288FD30",
+					"name": "UpperArm_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "282C6985469548046078ADB4EC4DCDD2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0323E89E4C7AB95536D3D296E96F77B7",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerArm_R",
+			"comment": "",
+			"x": 512,
+			"y": -32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0B6B1146480BF4C2EDCE3F955C85A144",
+					"name": "LowerArm_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6FE8A9A74C4275BEA2B6E197DDDDD6CB",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C44D815B4DBADBB8DB3DAF94EAB5D18D",
+			"class": "K2Node_VariableGet",
+			"title": "Get Hand_R",
+			"comment": "",
+			"x": 512,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7BEB7E9043732B4DC2C8E18174384D88",
+					"name": "Hand_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CB4245C1461A57143E40818F429E3DFC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4A80EBDF4EBD7E25809DC2A24F39DF0C",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperLegs",
+			"comment": "",
+			"x": 512,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4ACAF3D14F275F94356B269ACFDC886E",
+					"name": "UpperLegs",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C6F5F3CD4F6313BF423513A8E151D8CD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D53697B04632A93E4FD84D81857AD3B6",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerLegs",
+			"comment": "",
+			"x": 512,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D2E4DCC14724B4FA7F1EBDB970089912",
+					"name": "LowerLegs",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9D2123D04C359B86948D3FBE2C0FEFF1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D04386254E9F390D8F65F2BA50699A49",
+			"class": "K2Node_VariableGet",
+			"title": "Get Feet",
+			"comment": "",
+			"x": 512,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CB8242904D44A7C8101886A794C20540",
+					"name": "Feet",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "16C0A8834A287726A35D08921AB7BFE9",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A3D8D824492946B9CB1A0D9E81DFEEDD",
+			"class": "K2Node_ExecutionSequence",
+			"title": "Sequenza",
+			"comment": "",
+			"x": 512,
+			"y": 256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "733D97C74C220379B75B2285A4B0200B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B06AF65F4F219F914F5320817476303A",
+					"name": "then_0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DB8EDAFE40934E4F1FD9A19D49208076",
+					"name": "then_1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "39BB6A874E78F413672DFC9510573BD9",
+					"name": "then_2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AB2C0354413C11B16811FB9ADC973188",
+					"name": "then_3",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D32CF5034C2C7C572753C09DD6936995",
+					"name": "then_4",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "9324F2B545B270F3D5C20E95A470E1FC",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 896,
+			"y": -288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C8D637A845B2130ABF0A2C84CC974FC8",
+			"class": "K2Node_VariableGet",
+			"title": "Get Head",
+			"comment": "",
+			"x": 896,
+			"y": -96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EE35BE274AADDEA32A98CAAEAC97C481",
+					"name": "Head",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F1646C6A43CB21ECB92F459174A919BB",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A7945C694E8DBB2E1D9753820D015047",
+			"class": "K2Node_VariableGet",
+			"title": "Get SkinColor",
+			"comment": "",
+			"x": 896,
+			"y": -128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "83405E9A440DB67A3ED0A68321ACE4BE",
+					"name": "SkinColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "04FEFE2B471CD85814D6128EEE9A3DFF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2123BEAD4851C21B7FFA7EA690566FA0",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2304,
+			"y": -512,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B6832446418A43B8EF6EDAB668281CBB",
+			"class": "K2Node_SwitchInteger",
+			"title": "Attiva Int",
+			"comment": "",
+			"x": 1920,
+			"y": -384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "22C63CB94D5B9A098594A4A2AF7348BE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4C99791B4FBDBB4077B5E3B7B44409E4",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "B5A9624E4E937D2024F4E3928C5E6E0A",
+					"name": "NotEqual_IntInt",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "3C9F82C14878545D2606D6859A052213",
+					"name": "0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1E6844D24BEA2CACF85F96861D01AFF1",
+					"name": "1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "35C2512E40032A831A05D895DE4A816D",
+					"name": "2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "903EE724448665A00BDF54BFCF666219",
+					"name": "3",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2B2BAE774DA1126D5B65A7A5A94AB12D",
+			"class": "K2Node_VariableGet",
+			"title": "Get ShirtType",
+			"comment": "",
+			"x": 1920,
+			"y": -208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "979BE7114FE642087203279CB7D20680",
+					"name": "ShirtType",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "3A9915E143D98D1E49C377B4E7354E9B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EF252517466243FD5AA6589DF5272B5A",
+			"class": "K2Node_VariableGet",
+			"title": "Get Hand_L",
+			"comment": "",
+			"x": 2304,
+			"y": 2144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C021CE5B49A4F12E4560409370FE82D0",
+					"name": "Hand_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "10E1942F4520EB5D668C8DAD18233DD1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B0B48E82468B87E4FE950FA71AA7AEA2",
+			"class": "K2Node_VariableGet",
+			"title": "Get Hand_R",
+			"comment": "",
+			"x": 2304,
+			"y": 2176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5C1F8F344D97D6DD7686E087C44A6480",
+					"name": "Hand_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BF84F75447E307089916729F06345979",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "03129C534D05913D1A12B89656537496",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2576,
+			"y": -512,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EA8421F544D26F12417FE3842A76F488",
+			"class": "K2Node_VariableGet",
+			"title": "Get SkinColor",
+			"comment": "",
+			"x": 2576,
+			"y": -352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "24544DAB44D75AF8DE805592FB3C729F",
+					"name": "SkinColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3C30D32F411E154CD992E2BB6FA0056A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D73602654EA0385ACF90D0BDC61EBEDD",
+			"class": "K2Node_VariableGet",
+			"title": "Get ShirtColor",
+			"comment": "",
+			"x": 2304,
+			"y": -352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1FBFA8264297507D289623A8FFB6589B",
+					"name": "ShirtColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8694D2B94BDCEFB114A8359F15EF5ADD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5FF2A2E84AE861108986F9971B4E2D24",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2304,
+			"y": -176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8015CBA64805CBF5874987BEE9767D96",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2576,
+			"y": -176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "01F5BF7044205D52A638F38DF9515823",
+			"class": "K2Node_VariableGet",
+			"title": "Get SkinColor",
+			"comment": "",
+			"x": 2576,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "24544DAB44D75AF8DE805592FB3C729F",
+					"name": "SkinColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3C30D32F411E154CD992E2BB6FA0056A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2FF4A65D4C31651503B933A67D2636EC",
+			"class": "K2Node_VariableGet",
+			"title": "Get ShirtColor",
+			"comment": "",
+			"x": 2304,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1FBFA8264297507D289623A8FFB6589B",
+					"name": "ShirtColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8694D2B94BDCEFB114A8359F15EF5ADD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4BD70EE4469C4F29AEDC3F95D6859F9F",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2304,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "058B4C6C409C63791796B582DE0F77DB",
+			"class": "K2Node_VariableGet",
+			"title": "Get ShirtColor",
+			"comment": "",
+			"x": 2304,
+			"y": 336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1FBFA8264297507D289623A8FFB6589B",
+					"name": "ShirtColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8694D2B94BDCEFB114A8359F15EF5ADD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "49BC3F584635CBEFDEEA4CAA81B8C0DD",
+			"class": "K2Node_VariableGet",
+			"title": "Get Shoulder_L",
+			"comment": "",
+			"x": 2304,
+			"y": 400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ADD59F054C3B9EA86D57DF83113E150B",
+					"name": "Shoulder_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "112CE0064D4E7AAE9B48A1B91657EB4E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2B99A19C4E7CDAADFE3923B294E617EE",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperArm_L",
+			"comment": "",
+			"x": 2304,
+			"y": 464,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "00DD81C84406133864746995ECFFF4A8",
+					"name": "UpperArm_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1B894BEB4803BE171B251BBB3DDF413C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3546292D438CE43234655CBA8DD44DBD",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerArm_L",
+			"comment": "",
+			"x": 2304,
+			"y": 528,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A6916AF946D6EF47B0EED5B0B95F9750",
+					"name": "LowerArm_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AA92E29142D96DFCAD9A459724A743B1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B6379EB14B723D33304F3B955AEC8641",
+			"class": "K2Node_VariableGet",
+			"title": "Get Shoulder_R",
+			"comment": "",
+			"x": 2304,
+			"y": 432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7F61A91545DE4A88C7D811B8D68132A5",
+					"name": "Shoulder_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "91811ABF4172311B86916DA6FD287306",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "03A1AC9D4F205541D35DC78A079EDD2C",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerArm_R",
+			"comment": "",
+			"x": 2304,
+			"y": 560,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B0FB222542BBEA0158BAD5AC3414C2F1",
+					"name": "LowerArm_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "68D51DE8404242BA479F83AACD3E498A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5C3F97A34FEC4B26DD728184EB864C9E",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperArm_R",
+			"comment": "",
+			"x": 2304,
+			"y": 496,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "82F3BD4E4332C6C6D4ACDCBFA4D3F30C",
+					"name": "UpperArm_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "111879F84C493A1D2C4753AA86FE3C81",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "70C624B244BFE2BD723BF5B98494DFAA",
+			"class": "K2Node_VariableGet",
+			"title": "Get Shoulder_L",
+			"comment": "",
+			"x": 2304,
+			"y": -288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ADD59F054C3B9EA86D57DF83113E150B",
+					"name": "Shoulder_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "112CE0064D4E7AAE9B48A1B91657EB4E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F540B1704D8408C325BFF5B6F7EFB109",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperArm_L",
+			"comment": "",
+			"x": 2576,
+			"y": -320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "00DD81C84406133864746995ECFFF4A8",
+					"name": "UpperArm_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1B894BEB4803BE171B251BBB3DDF413C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B92E10AF401C79512D76CD8EF242B7E0",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerArm_L",
+			"comment": "",
+			"x": 2576,
+			"y": -256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A6916AF946D6EF47B0EED5B0B95F9750",
+					"name": "LowerArm_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AA92E29142D96DFCAD9A459724A743B1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "9250035F475CAAC9CFB309A9E1B17878",
+			"class": "K2Node_VariableGet",
+			"title": "Get Shoulder_R",
+			"comment": "",
+			"x": 2304,
+			"y": -256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7F61A91545DE4A88C7D811B8D68132A5",
+					"name": "Shoulder_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "91811ABF4172311B86916DA6FD287306",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E1E3219F4F4E810C36317EA714CE790D",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerArm_R",
+			"comment": "",
+			"x": 2576,
+			"y": -224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B0FB222542BBEA0158BAD5AC3414C2F1",
+					"name": "LowerArm_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "68D51DE8404242BA479F83AACD3E498A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D0934E2B46363051CA1C29B09F8117B0",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperArm_R",
+			"comment": "",
+			"x": 2576,
+			"y": -288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "82F3BD4E4332C6C6D4ACDCBFA4D3F30C",
+					"name": "UpperArm_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "111879F84C493A1D2C4753AA86FE3C81",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7B8739F34EB41638717B6D9A51BE1375",
+			"class": "K2Node_VariableGet",
+			"title": "Get Shoulder_L",
+			"comment": "",
+			"x": 2304,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ADD59F054C3B9EA86D57DF83113E150B",
+					"name": "Shoulder_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "112CE0064D4E7AAE9B48A1B91657EB4E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "49C0D35C41FAA7A8294206AB494DC980",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperArm_L",
+			"comment": "",
+			"x": 2304,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "00DD81C84406133864746995ECFFF4A8",
+					"name": "UpperArm_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1B894BEB4803BE171B251BBB3DDF413C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C96D92E5481B4B3CF8FE0B89163D5F84",
+			"class": "K2Node_VariableGet",
+			"title": "Get Shoulder_R",
+			"comment": "",
+			"x": 2304,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7F61A91545DE4A88C7D811B8D68132A5",
+					"name": "Shoulder_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "91811ABF4172311B86916DA6FD287306",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "85AE2EBB4F5B7506882573B7331A0054",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperArm_R",
+			"comment": "",
+			"x": 2304,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "82F3BD4E4332C6C6D4ACDCBFA4D3F30C",
+					"name": "UpperArm_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "111879F84C493A1D2C4753AA86FE3C81",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A65236CD4EE3F0D3F69E8FBA86B04200",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerArm_L",
+			"comment": "",
+			"x": 2576,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A6916AF946D6EF47B0EED5B0B95F9750",
+					"name": "LowerArm_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AA92E29142D96DFCAD9A459724A743B1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8BBDE6C44F929DD95C81F3AB584E39C3",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerArm_R",
+			"comment": "",
+			"x": 2576,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B0FB222542BBEA0158BAD5AC3414C2F1",
+					"name": "LowerArm_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "68D51DE8404242BA479F83AACD3E498A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F2155B9C490F030DAFAEAFB163DEC814",
+			"class": "K2Node_SwitchInteger",
+			"title": "Attiva Int",
+			"comment": "",
+			"x": 1920,
+			"y": 880,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "22C63CB94D5B9A098594A4A2AF7348BE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4C99791B4FBDBB4077B5E3B7B44409E4",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "B5A9624E4E937D2024F4E3928C5E6E0A",
+					"name": "NotEqual_IntInt",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "3C9F82C14878545D2606D6859A052213",
+					"name": "0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1E6844D24BEA2CACF85F96861D01AFF1",
+					"name": "1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "35C2512E40032A831A05D895DE4A816D",
+					"name": "2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "92B48D924CA5E9ADD5F0D2A6E019C106",
+			"class": "K2Node_VariableGet",
+			"title": "Get PantsType",
+			"comment": "",
+			"x": 1920,
+			"y": 1024,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "979BE7114FE642087203279CB7D20680",
+					"name": "PantsType",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "3A9915E143D98D1E49C377B4E7354E9B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B50EEF114DBD3D3AA087AD8E38721BA8",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2304,
+			"y": 640,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "659C693542439088DA5916983F05653D",
+			"class": "K2Node_VariableGet",
+			"title": "Get PantsColor",
+			"comment": "",
+			"x": 2304,
+			"y": 800,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E25D5D424CAEC2AAE543C6A44960D5A8",
+					"name": "PantsColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F68B513A47722ADD6BC4F4B0CBE44756",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2C65B2C349C17B2EB57B6591F85062ED",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2592,
+			"y": 640,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0CD6DACC40777C5FFED40385C40E5F62",
+			"class": "K2Node_VariableGet",
+			"title": "Get SkinColor",
+			"comment": "",
+			"x": 2592,
+			"y": 800,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "08D4EE8142B53A1E6F6701A48500E55A",
+					"name": "SkinColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D2904E2B45C484AD26EF2C984558D6A6",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "21FFD7C64A885BC0F45EE8B26130D07B",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2304,
+			"y": 896,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "CACBE26143604FA4E06BE28C4D24AB52",
+			"class": "K2Node_VariableGet",
+			"title": "Get PantsColor",
+			"comment": "",
+			"x": 2304,
+			"y": 1056,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E25D5D424CAEC2AAE543C6A44960D5A8",
+					"name": "PantsColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F68B513A47722ADD6BC4F4B0CBE44756",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DB326384438CE0896CA5A49CF21E01DA",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2592,
+			"y": 896,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0A7682FA4A8AEC0EE7F5E1ACBE2CBAE5",
+			"class": "K2Node_VariableGet",
+			"title": "Get SkinColor",
+			"comment": "",
+			"x": 2592,
+			"y": 1056,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "08D4EE8142B53A1E6F6701A48500E55A",
+					"name": "SkinColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D2904E2B45C484AD26EF2C984558D6A6",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "9D522FC94674297A35FA77854BF273B8",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2304,
+			"y": 1152,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8A830A1D444B4165E84BA3914007DB0F",
+			"class": "K2Node_VariableGet",
+			"title": "Get PantsColor",
+			"comment": "",
+			"x": 2304,
+			"y": 1312,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E25D5D424CAEC2AAE543C6A44960D5A8",
+					"name": "PantsColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F68B513A47722ADD6BC4F4B0CBE44756",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0A5326FC4E4936655DC377AA23252B39",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperLegs",
+			"comment": "",
+			"x": 2592,
+			"y": 832,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9C11DD8243B59191A1EA0799932669EF",
+					"name": "UpperLegs",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C244027435093DE2188A9BAF6718657",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "CE6EB1E9481EEED412E37F83C53B02FE",
+			"class": "K2Node_VariableGet",
+			"title": "Get Pelvis",
+			"comment": "",
+			"x": 2304,
+			"y": 832,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B6D19E9949C3135A80DA06ADAB29AB00",
+					"name": "Pelvis",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C1D6233E4A01CBFF7847B683E2BAEADC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "96FAAED4430BC5DB217089A433FEE8ED",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerLegs",
+			"comment": "",
+			"x": 2592,
+			"y": 864,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "405A2AC848930DF2090333A16F1149A9",
+					"name": "LowerLegs",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C5D0E61A4C136A70360951B0CAF92B61",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5D001BE44D464F9C1D11A8B00D0E7C1F",
+			"class": "K2Node_VariableGet",
+			"title": "Get Pelvis",
+			"comment": "",
+			"x": 2304,
+			"y": 1088,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B6D19E9949C3135A80DA06ADAB29AB00",
+					"name": "Pelvis",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C1D6233E4A01CBFF7847B683E2BAEADC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F6D771044A41F3A76A4D01A4C4D111E6",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperLegs",
+			"comment": "",
+			"x": 2304,
+			"y": 1120,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9C11DD8243B59191A1EA0799932669EF",
+					"name": "UpperLegs",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C244027435093DE2188A9BAF6718657",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EC4DBD484304FD23580693B0DBF40A23",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerLegs",
+			"comment": "",
+			"x": 2592,
+			"y": 1088,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "405A2AC848930DF2090333A16F1149A9",
+					"name": "LowerLegs",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C5D0E61A4C136A70360951B0CAF92B61",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0FA04DD740E09033AD0357B0984FCFF4",
+			"class": "K2Node_VariableGet",
+			"title": "Get Pelvis",
+			"comment": "",
+			"x": 2304,
+			"y": 1344,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B6D19E9949C3135A80DA06ADAB29AB00",
+					"name": "Pelvis",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C1D6233E4A01CBFF7847B683E2BAEADC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "653830594EF9F731B9C54EAD58F89DF3",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperLegs",
+			"comment": "",
+			"x": 2304,
+			"y": 1376,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9C11DD8243B59191A1EA0799932669EF",
+					"name": "UpperLegs",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C244027435093DE2188A9BAF6718657",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "91EE665A4130303E469515BA6F372CB2",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerLegs",
+			"comment": "",
+			"x": 2304,
+			"y": 1408,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "405A2AC848930DF2090333A16F1149A9",
+					"name": "LowerLegs",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C5D0E61A4C136A70360951B0CAF92B61",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "881F0B2647AB073CB7E9FEA9A773CCE4",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1920,
+			"y": 1616,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "75B713F64C4FC490B4326585335223C2",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "848B983D4AB2C2D924A8C081AB97F36E",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "28215FA74CDB5211C34C768CBEA0224C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FEF4FAC54407AC143D53C198CA0D1C00",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "344C75C54C8136C7DCECD4A08FC592F2",
+			"class": "K2Node_VariableGet",
+			"title": "Get Shoes",
+			"comment": "",
+			"x": 1920,
+			"y": 1696,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "13351CAC42A04BC0762F0ABB0A6CA28A",
+					"name": "Shoes",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "10D47BB84F243052617FA9A948A2274D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "205F2E164BEEDD00E1B894915287494E",
+			"class": "K2Node_VariableGet",
+			"title": "Get Torso",
+			"comment": "",
+			"x": 2304,
+			"y": 368,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0F8C0094445A426C3A9C6381F61154CF",
+					"name": "Torso",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4C48DCD94C739D37F88A1C8C497D4884",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "97C0B59641BEB75C35F02089AB4B4B32",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2304,
+			"y": -944,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "49DF2CBC483DA578D735F698C8DAB1B9",
+			"class": "K2Node_VariableGet",
+			"title": "Get SkinColor",
+			"comment": "",
+			"x": 2304,
+			"y": -784,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1FBFA8264297507D289623A8FFB6589B",
+					"name": "SkinColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8694D2B94BDCEFB114A8359F15EF5ADD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6807B7834AA252577F74E68F0F75B0D0",
+			"class": "K2Node_VariableGet",
+			"title": "Get Shoulder_L",
+			"comment": "",
+			"x": 2304,
+			"y": -720,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ADD59F054C3B9EA86D57DF83113E150B",
+					"name": "Shoulder_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "112CE0064D4E7AAE9B48A1B91657EB4E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BD6DC5F8432DE049B14041B8983A90FD",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperArm_L",
+			"comment": "",
+			"x": 2304,
+			"y": -656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "00DD81C84406133864746995ECFFF4A8",
+					"name": "UpperArm_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1B894BEB4803BE171B251BBB3DDF413C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7193CFA542D4F00C7320DCBA3A2F781A",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerArm_L",
+			"comment": "",
+			"x": 2304,
+			"y": -592,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A6916AF946D6EF47B0EED5B0B95F9750",
+					"name": "LowerArm_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AA92E29142D96DFCAD9A459724A743B1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "428DFA2F4AA19903D23316ABB14103E4",
+			"class": "K2Node_VariableGet",
+			"title": "Get Shoulder_R",
+			"comment": "",
+			"x": 2304,
+			"y": -688,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7F61A91545DE4A88C7D811B8D68132A5",
+					"name": "Shoulder_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "91811ABF4172311B86916DA6FD287306",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "00FA47B84CE1D7C1D76E268BD88320F6",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerArm_R",
+			"comment": "",
+			"x": 2304,
+			"y": -560,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B0FB222542BBEA0158BAD5AC3414C2F1",
+					"name": "LowerArm_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "68D51DE8404242BA479F83AACD3E498A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "41523DCE440CF37625302D8508F387F1",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperArm_R",
+			"comment": "",
+			"x": 2304,
+			"y": -624,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "82F3BD4E4332C6C6D4ACDCBFA4D3F30C",
+					"name": "UpperArm_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "111879F84C493A1D2C4753AA86FE3C81",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B0577A8043E937C9C0673D93DDC6246F",
+			"class": "K2Node_VariableGet",
+			"title": "Get Torso",
+			"comment": "",
+			"x": 2304,
+			"y": -752,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0F8C0094445A426C3A9C6381F61154CF",
+					"name": "Torso",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4C48DCD94C739D37F88A1C8C497D4884",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6DBCCB39476AF87D1B543681625B92A1",
+			"class": "K2Node_VariableGet",
+			"title": "Get Torso",
+			"comment": "",
+			"x": 2304,
+			"y": -320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0F8C0094445A426C3A9C6381F61154CF",
+					"name": "Torso",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4C48DCD94C739D37F88A1C8C497D4884",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "ED3444A24D3744FF19CCBD8A8FBB2B78",
+			"class": "K2Node_VariableGet",
+			"title": "Get Torso",
+			"comment": "",
+			"x": 2304,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0F8C0094445A426C3A9C6381F61154CF",
+					"name": "Torso",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4C48DCD94C739D37F88A1C8C497D4884",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DE47615841C67C150A3D939A8BBC77D7",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2304,
+			"y": 1488,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "66984E1348B73D446070ABB15F864382",
+			"class": "K2Node_VariableGet",
+			"title": "Get Feet",
+			"comment": "",
+			"x": 2304,
+			"y": 1680,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C9C9AF41425C7AB26D6CAB8E02BA108D",
+					"name": "Feet",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "76E4E9E24620A7B0B93A609BF4D0E86A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "373AA2E4464BDFC30F5EBB8F084A276A",
+			"class": "K2Node_VariableGet",
+			"title": "Get ShoesColor",
+			"comment": "",
+			"x": 2304,
+			"y": 1648,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6A6253AC492041CB3C75C4B7E2BE355F",
+					"name": "ShoesColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5239C4BA495045977E46FFB0118386F4",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3AE6E7A3489072D6F54DDC90F8F4BA3E",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2304,
+			"y": 1712,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0D55D6D149AE507344AC19BD80E68315",
+			"class": "K2Node_VariableGet",
+			"title": "Get Feet",
+			"comment": "",
+			"x": 2304,
+			"y": 1904,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C9C9AF41425C7AB26D6CAB8E02BA108D",
+					"name": "Feet",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "76E4E9E24620A7B0B93A609BF4D0E86A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A056FF9A4385B3FBD3856182BF93F40A",
+			"class": "K2Node_VariableGet",
+			"title": "Get SkinColor",
+			"comment": "",
+			"x": 2304,
+			"y": 1872,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6A6253AC492041CB3C75C4B7E2BE355F",
+					"name": "SkinColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5239C4BA495045977E46FFB0118386F4",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "87CDB5774B422B5CF30E55BD3C31C6D6",
+			"class": "K2Node_VariableGet",
+			"title": "Get DefaultColor",
+			"comment": "",
+			"x": 512,
+			"y": -352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "326F7F004F7B7EE220477BA598DC57C4",
+					"name": "DefaultColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "313EB94547802A7F30FF47A114B1AD6B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D9F8189F4889B2F41BD1D39C2FF8E742",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1920,
+			"y": 2080,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "75B713F64C4FC490B4326585335223C2",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "848B983D4AB2C2D924A8C081AB97F36E",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "28215FA74CDB5211C34C768CBEA0224C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FEF4FAC54407AC143D53C198CA0D1C00",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8FF8D4904F22A08D8441F59A5DCE4269",
+			"class": "K2Node_VariableGet",
+			"title": "Get Gloves",
+			"comment": "",
+			"x": 1920,
+			"y": 2160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "13351CAC42A04BC0762F0ABB0A6CA28A",
+					"name": "Gloves",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "10D47BB84F243052617FA9A948A2274D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6595EBBF431C83CD80C97C9B3301E321",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2304,
+			"y": 1952,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "536F1FA74E6188CE2FD9A9BF92C4729B",
+			"class": "K2Node_VariableGet",
+			"title": "Get GlovesColor",
+			"comment": "",
+			"x": 2304,
+			"y": 2112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6A6253AC492041CB3C75C4B7E2BE355F",
+					"name": "GlovesColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5239C4BA495045977E46FFB0118386F4",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8B7ABAB541A30E1FB2C7D3BE9470FBE8",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2304,
+			"y": 2208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C27820244FD8746477B190818D623771",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "388522E1404AAB2C0B1B6DBA90EA8679",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "5F094CE54561694B4AC579908D70CC2E",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2D710147402F9C296C0BA4BED74A2D6F",
+			"class": "K2Node_VariableGet",
+			"title": "Get SkinColor",
+			"comment": "",
+			"x": 2304,
+			"y": 2368,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6A6253AC492041CB3C75C4B7E2BE355F",
+					"name": "SkinColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5239C4BA495045977E46FFB0118386F4",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "45A4837F4F7B1DC550A4949DE806F7E4",
+			"class": "K2Node_VariableGet",
+			"title": "Get Hand_L",
+			"comment": "",
+			"x": 2304,
+			"y": 2400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C021CE5B49A4F12E4560409370FE82D0",
+					"name": "Hand_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "10E1942F4520EB5D668C8DAD18233DD1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6CF0DE8E4EBE78D3AE4E2E86CCE3006C",
+			"class": "K2Node_VariableGet",
+			"title": "Get Hand_R",
+			"comment": "",
+			"x": 2304,
+			"y": 2432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5C1F8F344D97D6DD7686E087C44A6480",
+					"name": "Hand_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BF84F75447E307089916729F06345979",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "29107F49475C1958B4BC4F889FAC9664",
+			"fromPinId": "A86D7A6C4A9F14D3358C019A5B47A5D9",
+			"fromPinName": "then",
+			"toNodeGuid": "6F0150B144BCF6F09A995E8CA3B75B02",
+			"toPinId": "F14B109B400F7E075F53F68995F3AACC",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "DD0D3671413763A7CA0237931FC94FC6",
+			"fromPinId": "82199167411F334455125BBBE282200F",
+			"fromPinName": "SolidColor",
+			"toNodeGuid": "6F0150B144BCF6F09A995E8CA3B75B02",
+			"toPinId": "658173E645E67A840E18C583D28393EB",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "6F0150B144BCF6F09A995E8CA3B75B02",
+			"fromPinId": "B5EEB28B4BD78468D0A22AB4F2FED1E0",
+			"fromPinName": "then",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "6F0150B144BCF6F09A995E8CA3B75B02",
+			"fromPinId": "2B0D48C94BB0E4BDCCBCE4B7EEF96E38",
+			"fromPinName": "else",
+			"toNodeGuid": "A3D8D824492946B9CB1A0D9E81DFEEDD",
+			"toPinId": "733D97C74C220379B75B2285A4B0200B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "1FB7A47B4BDB9DD863AC10BDD0DAC3E6",
+			"fromPinId": "B9DE2DB84ADAB09713BA498BF99BD434",
+			"fromPinName": "Head",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "B3FDCC634A62D3F0FA735C9B253ABB67",
+			"fromPinId": "42BAE309482100E15B638387EC154CB2",
+			"fromPinName": "Torso",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "7E553B30431F962DC67894BD52EC36E7",
+			"fromPinId": "AF084601409BEE0DD570B7BD03B15CAD",
+			"fromPinName": "Pelvis",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "428CD17C4984319D17539AA07CF7A7E1",
+			"fromPinId": "9C2E5592426450800566D283E3B41F78",
+			"fromPinName": "Shoulder_L",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "791BD1C74A5193279F07BFAA0EA3E3BB",
+			"fromPinId": "A7AB7DF9431C418F78171DA76D3DCAD4",
+			"fromPinName": "UpperArm_L",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "327EC9FF48DA0E380AFA33B413C5E34E",
+			"fromPinId": "621E8D174CEB285D2BE2A1A3C89D446C",
+			"fromPinName": "LowerArm_L",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "FB24623745C7C1C04347E8993D0D570F",
+			"fromPinId": "F1686E624C401D6C89404AB464DBDF51",
+			"fromPinName": "Hand_L",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "5919BDD1434156E17E1BDAAC932EB8AC",
+			"fromPinId": "6B2F374A45C39B6B8C26069885923B90",
+			"fromPinName": "Shoulder_R",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "82FDE84044FB8BC485C4B7B9D1D3D451",
+			"fromPinId": "53444F0C4753EEE119D998948288FD30",
+			"fromPinName": "UpperArm_R",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "0323E89E4C7AB95536D3D296E96F77B7",
+			"fromPinId": "0B6B1146480BF4C2EDCE3F955C85A144",
+			"fromPinName": "LowerArm_R",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "C44D815B4DBADBB8DB3DAF94EAB5D18D",
+			"fromPinId": "7BEB7E9043732B4DC2C8E18174384D88",
+			"fromPinName": "Hand_R",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "4A80EBDF4EBD7E25809DC2A24F39DF0C",
+			"fromPinId": "4ACAF3D14F275F94356B269ACFDC886E",
+			"fromPinName": "UpperLegs",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "D53697B04632A93E4FD84D81857AD3B6",
+			"fromPinId": "D2E4DCC14724B4FA7F1EBDB970089912",
+			"fromPinName": "LowerLegs",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "D04386254E9F390D8F65F2BA50699A49",
+			"fromPinId": "CB8242904D44A7C8101886A794C20540",
+			"fromPinName": "Feet",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "87CDB5774B422B5CF30E55BD3C31C6D6",
+			"fromPinId": "326F7F004F7B7EE220477BA598DC57C4",
+			"fromPinName": "DefaultColor",
+			"toNodeGuid": "5AD5E2144F231CC4CEA472AF8B8528CE",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "A3D8D824492946B9CB1A0D9E81DFEEDD",
+			"fromPinId": "B06AF65F4F219F914F5320817476303A",
+			"fromPinName": "then_0",
+			"toNodeGuid": "9324F2B545B270F3D5C20E95A470E1FC",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "A3D8D824492946B9CB1A0D9E81DFEEDD",
+			"fromPinId": "DB8EDAFE40934E4F1FD9A19D49208076",
+			"fromPinName": "then_1",
+			"toNodeGuid": "B6832446418A43B8EF6EDAB668281CBB",
+			"toPinId": "22C63CB94D5B9A098594A4A2AF7348BE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "A3D8D824492946B9CB1A0D9E81DFEEDD",
+			"fromPinId": "39BB6A874E78F413672DFC9510573BD9",
+			"fromPinName": "then_2",
+			"toNodeGuid": "F2155B9C490F030DAFAEAFB163DEC814",
+			"toPinId": "22C63CB94D5B9A098594A4A2AF7348BE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "A3D8D824492946B9CB1A0D9E81DFEEDD",
+			"fromPinId": "AB2C0354413C11B16811FB9ADC973188",
+			"fromPinName": "then_3",
+			"toNodeGuid": "881F0B2647AB073CB7E9FEA9A773CCE4",
+			"toPinId": "75B713F64C4FC490B4326585335223C2",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "A3D8D824492946B9CB1A0D9E81DFEEDD",
+			"fromPinId": "D32CF5034C2C7C572753C09DD6936995",
+			"fromPinName": "then_4",
+			"toNodeGuid": "D9F8189F4889B2F41BD1D39C2FF8E742",
+			"toPinId": "75B713F64C4FC490B4326585335223C2",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "C8D637A845B2130ABF0A2C84CC974FC8",
+			"fromPinId": "EE35BE274AADDEA32A98CAAEAC97C481",
+			"fromPinName": "Head",
+			"toNodeGuid": "9324F2B545B270F3D5C20E95A470E1FC",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "A7945C694E8DBB2E1D9753820D015047",
+			"fromPinId": "83405E9A440DB67A3ED0A68321ACE4BE",
+			"fromPinName": "SkinColor",
+			"toNodeGuid": "9324F2B545B270F3D5C20E95A470E1FC",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "B6832446418A43B8EF6EDAB668281CBB",
+			"fromPinId": "1E6844D24BEA2CACF85F96861D01AFF1",
+			"fromPinName": "1",
+			"toNodeGuid": "2123BEAD4851C21B7FFA7EA690566FA0",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "2123BEAD4851C21B7FFA7EA690566FA0",
+			"fromPinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+			"fromPinName": "then",
+			"toNodeGuid": "03129C534D05913D1A12B89656537496",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "70C624B244BFE2BD723BF5B98494DFAA",
+			"fromPinId": "ADD59F054C3B9EA86D57DF83113E150B",
+			"fromPinName": "Shoulder_L",
+			"toNodeGuid": "2123BEAD4851C21B7FFA7EA690566FA0",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "9250035F475CAAC9CFB309A9E1B17878",
+			"fromPinId": "7F61A91545DE4A88C7D811B8D68132A5",
+			"fromPinName": "Shoulder_R",
+			"toNodeGuid": "2123BEAD4851C21B7FFA7EA690566FA0",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "6DBCCB39476AF87D1B543681625B92A1",
+			"fromPinId": "0F8C0094445A426C3A9C6381F61154CF",
+			"fromPinName": "Torso",
+			"toNodeGuid": "2123BEAD4851C21B7FFA7EA690566FA0",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "D73602654EA0385ACF90D0BDC61EBEDD",
+			"fromPinId": "1FBFA8264297507D289623A8FFB6589B",
+			"fromPinName": "ShirtColor",
+			"toNodeGuid": "2123BEAD4851C21B7FFA7EA690566FA0",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "2B2BAE774DA1126D5B65A7A5A94AB12D",
+			"fromPinId": "979BE7114FE642087203279CB7D20680",
+			"fromPinName": "ShirtType",
+			"toNodeGuid": "B6832446418A43B8EF6EDAB668281CBB",
+			"toPinId": "4C99791B4FBDBB4077B5E3B7B44409E4",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "B6832446418A43B8EF6EDAB668281CBB",
+			"fromPinId": "3C9F82C14878545D2606D6859A052213",
+			"fromPinName": "0",
+			"toNodeGuid": "97C0B59641BEB75C35F02089AB4B4B32",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "B6832446418A43B8EF6EDAB668281CBB",
+			"fromPinId": "35C2512E40032A831A05D895DE4A816D",
+			"fromPinName": "2",
+			"toNodeGuid": "5FF2A2E84AE861108986F9971B4E2D24",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "B6832446418A43B8EF6EDAB668281CBB",
+			"fromPinId": "903EE724448665A00BDF54BFCF666219",
+			"fromPinName": "3",
+			"toNodeGuid": "4BD70EE4469C4F29AEDC3F95D6859F9F",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "EF252517466243FD5AA6589DF5272B5A",
+			"fromPinId": "C021CE5B49A4F12E4560409370FE82D0",
+			"fromPinName": "Hand_L",
+			"toNodeGuid": "6595EBBF431C83CD80C97C9B3301E321",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "B0B48E82468B87E4FE950FA71AA7AEA2",
+			"fromPinId": "5C1F8F344D97D6DD7686E087C44A6480",
+			"fromPinName": "Hand_R",
+			"toNodeGuid": "6595EBBF431C83CD80C97C9B3301E321",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "F540B1704D8408C325BFF5B6F7EFB109",
+			"fromPinId": "00DD81C84406133864746995ECFFF4A8",
+			"fromPinName": "UpperArm_L",
+			"toNodeGuid": "03129C534D05913D1A12B89656537496",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "D0934E2B46363051CA1C29B09F8117B0",
+			"fromPinId": "82F3BD4E4332C6C6D4ACDCBFA4D3F30C",
+			"fromPinName": "UpperArm_R",
+			"toNodeGuid": "03129C534D05913D1A12B89656537496",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "B92E10AF401C79512D76CD8EF242B7E0",
+			"fromPinId": "A6916AF946D6EF47B0EED5B0B95F9750",
+			"fromPinName": "LowerArm_L",
+			"toNodeGuid": "03129C534D05913D1A12B89656537496",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "E1E3219F4F4E810C36317EA714CE790D",
+			"fromPinId": "B0FB222542BBEA0158BAD5AC3414C2F1",
+			"fromPinName": "LowerArm_R",
+			"toNodeGuid": "03129C534D05913D1A12B89656537496",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "EA8421F544D26F12417FE3842A76F488",
+			"fromPinId": "24544DAB44D75AF8DE805592FB3C729F",
+			"fromPinName": "SkinColor",
+			"toNodeGuid": "03129C534D05913D1A12B89656537496",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "5FF2A2E84AE861108986F9971B4E2D24",
+			"fromPinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+			"fromPinName": "then",
+			"toNodeGuid": "8015CBA64805CBF5874987BEE9767D96",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "7B8739F34EB41638717B6D9A51BE1375",
+			"fromPinId": "ADD59F054C3B9EA86D57DF83113E150B",
+			"fromPinName": "Shoulder_L",
+			"toNodeGuid": "5FF2A2E84AE861108986F9971B4E2D24",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "C96D92E5481B4B3CF8FE0B89163D5F84",
+			"fromPinId": "7F61A91545DE4A88C7D811B8D68132A5",
+			"fromPinName": "Shoulder_R",
+			"toNodeGuid": "5FF2A2E84AE861108986F9971B4E2D24",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "49C0D35C41FAA7A8294206AB494DC980",
+			"fromPinId": "00DD81C84406133864746995ECFFF4A8",
+			"fromPinName": "UpperArm_L",
+			"toNodeGuid": "5FF2A2E84AE861108986F9971B4E2D24",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "85AE2EBB4F5B7506882573B7331A0054",
+			"fromPinId": "82F3BD4E4332C6C6D4ACDCBFA4D3F30C",
+			"fromPinName": "UpperArm_R",
+			"toNodeGuid": "5FF2A2E84AE861108986F9971B4E2D24",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "ED3444A24D3744FF19CCBD8A8FBB2B78",
+			"fromPinId": "0F8C0094445A426C3A9C6381F61154CF",
+			"fromPinName": "Torso",
+			"toNodeGuid": "5FF2A2E84AE861108986F9971B4E2D24",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "2FF4A65D4C31651503B933A67D2636EC",
+			"fromPinId": "1FBFA8264297507D289623A8FFB6589B",
+			"fromPinName": "ShirtColor",
+			"toNodeGuid": "5FF2A2E84AE861108986F9971B4E2D24",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "A65236CD4EE3F0D3F69E8FBA86B04200",
+			"fromPinId": "A6916AF946D6EF47B0EED5B0B95F9750",
+			"fromPinName": "LowerArm_L",
+			"toNodeGuid": "8015CBA64805CBF5874987BEE9767D96",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "8BBDE6C44F929DD95C81F3AB584E39C3",
+			"fromPinId": "B0FB222542BBEA0158BAD5AC3414C2F1",
+			"fromPinName": "LowerArm_R",
+			"toNodeGuid": "8015CBA64805CBF5874987BEE9767D96",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "01F5BF7044205D52A638F38DF9515823",
+			"fromPinId": "24544DAB44D75AF8DE805592FB3C729F",
+			"fromPinName": "SkinColor",
+			"toNodeGuid": "8015CBA64805CBF5874987BEE9767D96",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "49BC3F584635CBEFDEEA4CAA81B8C0DD",
+			"fromPinId": "ADD59F054C3B9EA86D57DF83113E150B",
+			"fromPinName": "Shoulder_L",
+			"toNodeGuid": "4BD70EE4469C4F29AEDC3F95D6859F9F",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "B6379EB14B723D33304F3B955AEC8641",
+			"fromPinId": "7F61A91545DE4A88C7D811B8D68132A5",
+			"fromPinName": "Shoulder_R",
+			"toNodeGuid": "4BD70EE4469C4F29AEDC3F95D6859F9F",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "2B99A19C4E7CDAADFE3923B294E617EE",
+			"fromPinId": "00DD81C84406133864746995ECFFF4A8",
+			"fromPinName": "UpperArm_L",
+			"toNodeGuid": "4BD70EE4469C4F29AEDC3F95D6859F9F",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "5C3F97A34FEC4B26DD728184EB864C9E",
+			"fromPinId": "82F3BD4E4332C6C6D4ACDCBFA4D3F30C",
+			"fromPinName": "UpperArm_R",
+			"toNodeGuid": "4BD70EE4469C4F29AEDC3F95D6859F9F",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "3546292D438CE43234655CBA8DD44DBD",
+			"fromPinId": "A6916AF946D6EF47B0EED5B0B95F9750",
+			"fromPinName": "LowerArm_L",
+			"toNodeGuid": "4BD70EE4469C4F29AEDC3F95D6859F9F",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "03A1AC9D4F205541D35DC78A079EDD2C",
+			"fromPinId": "B0FB222542BBEA0158BAD5AC3414C2F1",
+			"fromPinName": "LowerArm_R",
+			"toNodeGuid": "4BD70EE4469C4F29AEDC3F95D6859F9F",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "205F2E164BEEDD00E1B894915287494E",
+			"fromPinId": "0F8C0094445A426C3A9C6381F61154CF",
+			"fromPinName": "Torso",
+			"toNodeGuid": "4BD70EE4469C4F29AEDC3F95D6859F9F",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "058B4C6C409C63791796B582DE0F77DB",
+			"fromPinId": "1FBFA8264297507D289623A8FFB6589B",
+			"fromPinName": "ShirtColor",
+			"toNodeGuid": "4BD70EE4469C4F29AEDC3F95D6859F9F",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "92B48D924CA5E9ADD5F0D2A6E019C106",
+			"fromPinId": "979BE7114FE642087203279CB7D20680",
+			"fromPinName": "PantsType",
+			"toNodeGuid": "F2155B9C490F030DAFAEAFB163DEC814",
+			"toPinId": "4C99791B4FBDBB4077B5E3B7B44409E4",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "F2155B9C490F030DAFAEAFB163DEC814",
+			"fromPinId": "3C9F82C14878545D2606D6859A052213",
+			"fromPinName": "0",
+			"toNodeGuid": "B50EEF114DBD3D3AA087AD8E38721BA8",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "F2155B9C490F030DAFAEAFB163DEC814",
+			"fromPinId": "1E6844D24BEA2CACF85F96861D01AFF1",
+			"fromPinName": "1",
+			"toNodeGuid": "21FFD7C64A885BC0F45EE8B26130D07B",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "F2155B9C490F030DAFAEAFB163DEC814",
+			"fromPinId": "35C2512E40032A831A05D895DE4A816D",
+			"fromPinName": "2",
+			"toNodeGuid": "9D522FC94674297A35FA77854BF273B8",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "B50EEF114DBD3D3AA087AD8E38721BA8",
+			"fromPinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+			"fromPinName": "then",
+			"toNodeGuid": "2C65B2C349C17B2EB57B6591F85062ED",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "CE6EB1E9481EEED412E37F83C53B02FE",
+			"fromPinId": "B6D19E9949C3135A80DA06ADAB29AB00",
+			"fromPinName": "Pelvis",
+			"toNodeGuid": "B50EEF114DBD3D3AA087AD8E38721BA8",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "659C693542439088DA5916983F05653D",
+			"fromPinId": "E25D5D424CAEC2AAE543C6A44960D5A8",
+			"fromPinName": "PantsColor",
+			"toNodeGuid": "B50EEF114DBD3D3AA087AD8E38721BA8",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "0A5326FC4E4936655DC377AA23252B39",
+			"fromPinId": "9C11DD8243B59191A1EA0799932669EF",
+			"fromPinName": "UpperLegs",
+			"toNodeGuid": "2C65B2C349C17B2EB57B6591F85062ED",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "96FAAED4430BC5DB217089A433FEE8ED",
+			"fromPinId": "405A2AC848930DF2090333A16F1149A9",
+			"fromPinName": "LowerLegs",
+			"toNodeGuid": "2C65B2C349C17B2EB57B6591F85062ED",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "0CD6DACC40777C5FFED40385C40E5F62",
+			"fromPinId": "08D4EE8142B53A1E6F6701A48500E55A",
+			"fromPinName": "SkinColor",
+			"toNodeGuid": "2C65B2C349C17B2EB57B6591F85062ED",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "21FFD7C64A885BC0F45EE8B26130D07B",
+			"fromPinId": "3E3198BF4E9CBADC2B2AD49A30FE0466",
+			"fromPinName": "then",
+			"toNodeGuid": "DB326384438CE0896CA5A49CF21E01DA",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "5D001BE44D464F9C1D11A8B00D0E7C1F",
+			"fromPinId": "B6D19E9949C3135A80DA06ADAB29AB00",
+			"fromPinName": "Pelvis",
+			"toNodeGuid": "21FFD7C64A885BC0F45EE8B26130D07B",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "F6D771044A41F3A76A4D01A4C4D111E6",
+			"fromPinId": "9C11DD8243B59191A1EA0799932669EF",
+			"fromPinName": "UpperLegs",
+			"toNodeGuid": "21FFD7C64A885BC0F45EE8B26130D07B",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "CACBE26143604FA4E06BE28C4D24AB52",
+			"fromPinId": "E25D5D424CAEC2AAE543C6A44960D5A8",
+			"fromPinName": "PantsColor",
+			"toNodeGuid": "21FFD7C64A885BC0F45EE8B26130D07B",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "EC4DBD484304FD23580693B0DBF40A23",
+			"fromPinId": "405A2AC848930DF2090333A16F1149A9",
+			"fromPinName": "LowerLegs",
+			"toNodeGuid": "DB326384438CE0896CA5A49CF21E01DA",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "0A7682FA4A8AEC0EE7F5E1ACBE2CBAE5",
+			"fromPinId": "08D4EE8142B53A1E6F6701A48500E55A",
+			"fromPinName": "SkinColor",
+			"toNodeGuid": "DB326384438CE0896CA5A49CF21E01DA",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "0FA04DD740E09033AD0357B0984FCFF4",
+			"fromPinId": "B6D19E9949C3135A80DA06ADAB29AB00",
+			"fromPinName": "Pelvis",
+			"toNodeGuid": "9D522FC94674297A35FA77854BF273B8",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "653830594EF9F731B9C54EAD58F89DF3",
+			"fromPinId": "9C11DD8243B59191A1EA0799932669EF",
+			"fromPinName": "UpperLegs",
+			"toNodeGuid": "9D522FC94674297A35FA77854BF273B8",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "91EE665A4130303E469515BA6F372CB2",
+			"fromPinId": "405A2AC848930DF2090333A16F1149A9",
+			"fromPinName": "LowerLegs",
+			"toNodeGuid": "9D522FC94674297A35FA77854BF273B8",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "8A830A1D444B4165E84BA3914007DB0F",
+			"fromPinId": "E25D5D424CAEC2AAE543C6A44960D5A8",
+			"fromPinName": "PantsColor",
+			"toNodeGuid": "9D522FC94674297A35FA77854BF273B8",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "344C75C54C8136C7DCECD4A08FC592F2",
+			"fromPinId": "13351CAC42A04BC0762F0ABB0A6CA28A",
+			"fromPinName": "Shoes",
+			"toNodeGuid": "881F0B2647AB073CB7E9FEA9A773CCE4",
+			"toPinId": "848B983D4AB2C2D924A8C081AB97F36E",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "881F0B2647AB073CB7E9FEA9A773CCE4",
+			"fromPinId": "28215FA74CDB5211C34C768CBEA0224C",
+			"fromPinName": "then",
+			"toNodeGuid": "DE47615841C67C150A3D939A8BBC77D7",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "881F0B2647AB073CB7E9FEA9A773CCE4",
+			"fromPinId": "FEF4FAC54407AC143D53C198CA0D1C00",
+			"fromPinName": "else",
+			"toNodeGuid": "3AE6E7A3489072D6F54DDC90F8F4BA3E",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "6807B7834AA252577F74E68F0F75B0D0",
+			"fromPinId": "ADD59F054C3B9EA86D57DF83113E150B",
+			"fromPinName": "Shoulder_L",
+			"toNodeGuid": "97C0B59641BEB75C35F02089AB4B4B32",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "428DFA2F4AA19903D23316ABB14103E4",
+			"fromPinId": "7F61A91545DE4A88C7D811B8D68132A5",
+			"fromPinName": "Shoulder_R",
+			"toNodeGuid": "97C0B59641BEB75C35F02089AB4B4B32",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "BD6DC5F8432DE049B14041B8983A90FD",
+			"fromPinId": "00DD81C84406133864746995ECFFF4A8",
+			"fromPinName": "UpperArm_L",
+			"toNodeGuid": "97C0B59641BEB75C35F02089AB4B4B32",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "41523DCE440CF37625302D8508F387F1",
+			"fromPinId": "82F3BD4E4332C6C6D4ACDCBFA4D3F30C",
+			"fromPinName": "UpperArm_R",
+			"toNodeGuid": "97C0B59641BEB75C35F02089AB4B4B32",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "7193CFA542D4F00C7320DCBA3A2F781A",
+			"fromPinId": "A6916AF946D6EF47B0EED5B0B95F9750",
+			"fromPinName": "LowerArm_L",
+			"toNodeGuid": "97C0B59641BEB75C35F02089AB4B4B32",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "00FA47B84CE1D7C1D76E268BD88320F6",
+			"fromPinId": "B0FB222542BBEA0158BAD5AC3414C2F1",
+			"fromPinName": "LowerArm_R",
+			"toNodeGuid": "97C0B59641BEB75C35F02089AB4B4B32",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "B0577A8043E937C9C0673D93DDC6246F",
+			"fromPinId": "0F8C0094445A426C3A9C6381F61154CF",
+			"fromPinName": "Torso",
+			"toNodeGuid": "97C0B59641BEB75C35F02089AB4B4B32",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "49DF2CBC483DA578D735F698C8DAB1B9",
+			"fromPinId": "1FBFA8264297507D289623A8FFB6589B",
+			"fromPinName": "SkinColor",
+			"toNodeGuid": "97C0B59641BEB75C35F02089AB4B4B32",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "66984E1348B73D446070ABB15F864382",
+			"fromPinId": "C9C9AF41425C7AB26D6CAB8E02BA108D",
+			"fromPinName": "Feet",
+			"toNodeGuid": "DE47615841C67C150A3D939A8BBC77D7",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "373AA2E4464BDFC30F5EBB8F084A276A",
+			"fromPinId": "6A6253AC492041CB3C75C4B7E2BE355F",
+			"fromPinName": "ShoesColor",
+			"toNodeGuid": "DE47615841C67C150A3D939A8BBC77D7",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "0D55D6D149AE507344AC19BD80E68315",
+			"fromPinId": "C9C9AF41425C7AB26D6CAB8E02BA108D",
+			"fromPinName": "Feet",
+			"toNodeGuid": "3AE6E7A3489072D6F54DDC90F8F4BA3E",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "A056FF9A4385B3FBD3856182BF93F40A",
+			"fromPinId": "6A6253AC492041CB3C75C4B7E2BE355F",
+			"fromPinName": "SkinColor",
+			"toNodeGuid": "3AE6E7A3489072D6F54DDC90F8F4BA3E",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "8FF8D4904F22A08D8441F59A5DCE4269",
+			"fromPinId": "13351CAC42A04BC0762F0ABB0A6CA28A",
+			"fromPinName": "Gloves",
+			"toNodeGuid": "D9F8189F4889B2F41BD1D39C2FF8E742",
+			"toPinId": "848B983D4AB2C2D924A8C081AB97F36E",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "D9F8189F4889B2F41BD1D39C2FF8E742",
+			"fromPinId": "28215FA74CDB5211C34C768CBEA0224C",
+			"fromPinName": "then",
+			"toNodeGuid": "6595EBBF431C83CD80C97C9B3301E321",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "D9F8189F4889B2F41BD1D39C2FF8E742",
+			"fromPinId": "FEF4FAC54407AC143D53C198CA0D1C00",
+			"fromPinName": "else",
+			"toNodeGuid": "8B7ABAB541A30E1FB2C7D3BE9470FBE8",
+			"toPinId": "4A8B5B58403DE5AE8AE2ACA375EDBA2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "536F1FA74E6188CE2FD9A9BF92C4729B",
+			"fromPinId": "6A6253AC492041CB3C75C4B7E2BE355F",
+			"fromPinName": "GlovesColor",
+			"toNodeGuid": "6595EBBF431C83CD80C97C9B3301E321",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "45A4837F4F7B1DC550A4949DE806F7E4",
+			"fromPinId": "C021CE5B49A4F12E4560409370FE82D0",
+			"fromPinName": "Hand_L",
+			"toNodeGuid": "8B7ABAB541A30E1FB2C7D3BE9470FBE8",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "6CF0DE8E4EBE78D3AE4E2E86CCE3006C",
+			"fromPinId": "5C1F8F344D97D6DD7686E087C44A6480",
+			"fromPinName": "Hand_R",
+			"toNodeGuid": "8B7ABAB541A30E1FB2C7D3BE9470FBE8",
+			"toPinId": "C27820244FD8746477B190818D623771",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Set/ResetColors",
+			"edgeType": "data",
+			"fromNodeGuid": "2D710147402F9C296C0BA4BED74A2D6F",
+			"fromPinId": "6A6253AC492041CB3C75C4B7E2BE355F",
+			"fromPinName": "SkinColor",
+			"toNodeGuid": "8B7ABAB541A30E1FB2C7D3BE9470FBE8",
+			"toPinId": "5F094CE54561694B4AC579908D70CC2E",
+			"toPinName": "Value"
+		}
+	],
+	"variablesRead": [
+		"Get DefaultColor",
+		"Get Feet",
+		"Get Gloves",
+		"Get GlovesColor",
+		"Get Hand_L",
+		"Get Hand_R",
+		"Get Head",
+		"Get LowerArm_L",
+		"Get LowerArm_R",
+		"Get LowerLegs",
+		"Get PantsColor",
+		"Get PantsType",
+		"Get Pelvis",
+		"Get ShirtColor",
+		"Get ShirtType",
+		"Get Shoes",
+		"Get ShoesColor",
+		"Get Shoulder_L",
+		"Get Shoulder_R",
+		"Get SkinColor",
+		"Get SolidColor",
+		"Get Torso",
+		"Get UpperArm_L",
+		"Get UpperArm_R",
+		"Get UpperLegs"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali"
+	],
+	"flowId": "F001",
+	"graphId": "G022",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

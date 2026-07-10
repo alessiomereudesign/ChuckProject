@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "ALS_ViewMode",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode.ALS_ViewMode",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Enums_ALS_ViewMode",
+	"shortAssetFolder": "ALS_ViewMode__0547CE3E",
+	"pathHash": "0547CE3E",
+	"assetType": "Enum",
+	"unrealClass": "UserDefinedEnum",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "NotApplicable",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Enums/ALS_ViewMode__0547CE3E/SUMMARY.md",
+		"variables": "Assets/Enums/ALS_ViewMode__0547CE3E/VARIABLES.json",
+		"components": "Assets/Enums/ALS_ViewMode__0547CE3E/COMPONENTS.json",
+		"widgetTree": "Assets/Enums/ALS_ViewMode__0547CE3E/WIDGET_TREE.json",
+		"nodes": "Assets/Enums/ALS_ViewMode__0547CE3E/NODES.jsonl",
+		"edges": "Assets/Enums/ALS_ViewMode__0547CE3E/EDGES.jsonl",
+		"search": "Assets/Enums/ALS_ViewMode__0547CE3E/SEARCH.jsonl"
+	},
+	"graphs": []
+}

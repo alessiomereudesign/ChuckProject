@@ -1,0 +1,25 @@
+{
+	"graphId": "G313",
+	"name": "UpdateFootIK",
+	"graphName": "UpdateFootIK",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 28,
+	"edgeCount": 26,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G313/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G313/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G313/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Update Foot IK",
+			"entryNodeGuid": "8FE823724E0758EAA75F47BAE61E2FED",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G313/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G313/F001.json",
+			"textFile": "Flows/G313/F001.txt",
+			"jsonFile": "Flows/G313/F001.json",
+			"nodeCount": 28
+		}
+	]
+}

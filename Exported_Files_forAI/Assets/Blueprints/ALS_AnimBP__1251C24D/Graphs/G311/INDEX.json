@@ -1,0 +1,25 @@
+{
+	"graphId": "G311",
+	"name": "UpdateAimingValues",
+	"graphName": "UpdateAimingValues",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 60,
+	"edgeCount": 59,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G311/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G311/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G311/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Update Aiming Values",
+			"entryNodeGuid": "609239CB4180BAAC6272819AF2493581",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G311/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G311/F001.json",
+			"textFile": "Flows/G311/F001.txt",
+			"jsonFile": "Flows/G311/F001.json",
+			"nodeCount": 60
+		}
+	]
+}

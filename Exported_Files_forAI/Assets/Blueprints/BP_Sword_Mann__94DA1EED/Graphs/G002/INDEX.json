@@ -1,0 +1,25 @@
+{
+	"graphId": "G002",
+	"name": "UserConstructionScript",
+	"graphName": "UserConstructionScript",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 1,
+	"edgeCount": 0,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_Sword_Mann__94DA1EED/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_Sword_Mann__94DA1EED/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_Sword_Mann__94DA1EED/Graphs/G002/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Construction Script",
+			"entryNodeGuid": "3D3BC59145546E015859699090C711BA",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_Sword_Mann__94DA1EED/Flows/G002/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_Sword_Mann__94DA1EED/Flows/G002/F001.json",
+			"textFile": "Flows/G002/F001.txt",
+			"jsonFile": "Flows/G002/F001.json",
+			"nodeCount": 1
+		}
+	]
+}

@@ -1,0 +1,23 @@
+{
+	"assetName": "WBP_MenuPrincipale",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/0_MAIN_MENU/WBP_MenuPrincipale.WBP_MenuPrincipale",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_0_MAIN_MENU_WBP_MenuPrincipale",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "MenuArchiveRef",
+			"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "FocusedColor",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		},
+		{
+			"name": "UnfocusedColor",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		}
+	]
+}

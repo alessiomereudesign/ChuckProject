@@ -1,0 +1,409 @@
+{
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+	"graph": "SpawnWeaponProjectile",
+	"entryName": "Spawn Weapon Projectile",
+	"entryNodeGuid": "CF1C0BF84FD47D5A74BB428CFDBFC4CE",
+	"nodes": [
+		{
+			"nodeGuid": "CF1C0BF84FD47D5A74BB428CFDBFC4CE",
+			"class": "K2Node_FunctionEntry",
+			"title": "Spawn Weapon Projectile",
+			"comment": "",
+			"x": 16,
+			"y": -48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "40337B694A89D37F693D81B7DFF1A4EE",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AF6B4C214BB1BAC4563FEA9DA2DED484",
+			"class": "K2Node_VariableGet",
+			"title": "Get WeaponData",
+			"comment": "",
+			"x": 128,
+			"y": 151,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D7FE129648D5F735E76E97B8D298A01E",
+					"name": "WeaponData",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D89C44BD4BD731B730EE36B8FB17E14C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E4D833A44E8DAFDAE5E5539BC5FBD124",
+			"class": "K2Node_BreakStruct",
+			"title": "Break S_WeaponData",
+			"comment": "",
+			"x": 288,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "24D42B0D4144F8897A1F5F92287E8D98",
+					"name": "S_WeaponData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DAD62AA3436DC2F3E8CA18885AAAD76F",
+					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CB32A2544720229F0A37C39A155AE116",
+					"name": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D6693C3C4F54D04D16200BB97AB859D8",
+					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
+					"direction": "Output",
+					"type": "object|/Script/Engine.ParticleSystem",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CCBF2E724D44F7737CA7A0ACE86046A8",
+					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+					"direction": "Output",
+					"type": "object|/Script/Engine.ParticleSystem",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E4D707974AE1803D4141769846A0D540",
+					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+					"direction": "Output",
+					"type": "object|/Script/Engine.StaticMesh",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E6595517451918E4C58A77BF4A18C593",
+					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FFA1C8634B19BD81C64F8E8D3FAACCE6",
+			"class": "K2Node_CallFunction",
+			"title": "Get Muzzle Transform\nLa destinazione è BP Weapon Base",
+			"comment": "",
+			"x": 288,
+			"y": -64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7C181C8B465B1F4EB6CB4FA6DE242601",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ACE1B2ED498D2098C0ED238C29304F22",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "038816D84A0360524D54B890DAA1D380",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C91EF6B046263AB9819C44BD873551F7",
+					"name": "MuzzleTransfrom",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Transform",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E0144FDD4CB4E1DAED54B193E717FF6B",
+			"class": "K2Node_SpawnActorFromClass",
+			"title": "SpawnActor BP Weapon Projectile Data",
+			"comment": "",
+			"x": 640,
+			"y": -48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FD45EDB643849C61D5C7C88F1AFB9A32",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "032614664B4F1F3B4D79A08A940471BE",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F90A2AC348F576EF5DAFDFA092C62096",
+					"name": "Class",
+					"direction": "Input",
+					"type": "class|/Script/Engine.Actor",
+					"defaultValue": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C"
+				},
+				{
+					"pinId": "55F558604826DFBA616B96BD50225097",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2D2DDC5841FCDA2CFC0975A62009BD3F",
+					"name": "SpawnTransform",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Transform",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "93EDAEB24C1ADDC9986CD18BBE955D31",
+					"name": "CollisionHandlingOverride",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.ESpawnActorCollisionHandlingMethod",
+					"defaultValue": "Undefined"
+				},
+				{
+					"pinId": "8595D5484D363769159EA18AE68EB452",
+					"name": "TransformScaleMethod",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.ESpawnActorScaleMethod",
+					"defaultValue": "MultiplyWithRoot"
+				},
+				{
+					"pinId": "24F7B5634974FEBC1151C584F49F1DB0",
+					"name": "Owner",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A6182A114035760E87CCD3AD6C949877",
+					"name": "Damage",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.000000"
+				},
+				{
+					"pinId": "84D2243B492CBBF20186F48FA349FA7D",
+					"name": "DamageRadius",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.000000"
+				},
+				{
+					"pinId": "6161028B419435E13D6960A9CBC9EC6C",
+					"name": "TrailFX",
+					"direction": "Input",
+					"type": "object|/Script/Engine.ParticleSystem",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B2F34C9B474CC8441C723EAB45344765",
+					"name": "ExplosionFX",
+					"direction": "Input",
+					"type": "object|/Script/Engine.ParticleSystem",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BDB3145F46FBE9F6992EDC9888B79BE5",
+					"name": "ProjectileMesh",
+					"direction": "Input",
+					"type": "object|/Script/Engine.StaticMesh",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5312DCFA4CFBFEAF17453E8733EAC5B4",
+					"name": "ProjectileSpeed",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.000000"
+				},
+				{
+					"pinId": "EB1CC0D2454AE7D340B34E836252A2F4",
+					"name": "Instigator",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Pawn",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "SpawnWeaponProjectile",
+			"edgeType": "exec",
+			"fromNodeGuid": "CF1C0BF84FD47D5A74BB428CFDBFC4CE",
+			"fromPinId": "40337B694A89D37F693D81B7DFF1A4EE",
+			"fromPinName": "then",
+			"toNodeGuid": "FFA1C8634B19BD81C64F8E8D3FAACCE6",
+			"toPinId": "7C181C8B465B1F4EB6CB4FA6DE242601",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "SpawnWeaponProjectile",
+			"edgeType": "data",
+			"fromNodeGuid": "AF6B4C214BB1BAC4563FEA9DA2DED484",
+			"fromPinId": "D7FE129648D5F735E76E97B8D298A01E",
+			"fromPinName": "WeaponData",
+			"toNodeGuid": "E4D833A44E8DAFDAE5E5539BC5FBD124",
+			"toPinId": "24D42B0D4144F8897A1F5F92287E8D98",
+			"toPinName": "S_WeaponData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "SpawnWeaponProjectile",
+			"edgeType": "data",
+			"fromNodeGuid": "E4D833A44E8DAFDAE5E5539BC5FBD124",
+			"fromPinId": "DAD62AA3436DC2F3E8CA18885AAAD76F",
+			"fromPinName": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
+			"toNodeGuid": "E0144FDD4CB4E1DAED54B193E717FF6B",
+			"toPinId": "A6182A114035760E87CCD3AD6C949877",
+			"toPinName": "Damage"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "SpawnWeaponProjectile",
+			"edgeType": "data",
+			"fromNodeGuid": "E4D833A44E8DAFDAE5E5539BC5FBD124",
+			"fromPinId": "CB32A2544720229F0A37C39A155AE116",
+			"fromPinName": "DamageRadius_50_C83F28B2469DEBCA28C054A5B7E9388F",
+			"toNodeGuid": "E0144FDD4CB4E1DAED54B193E717FF6B",
+			"toPinId": "84D2243B492CBBF20186F48FA349FA7D",
+			"toPinName": "DamageRadius"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "SpawnWeaponProjectile",
+			"edgeType": "data",
+			"fromNodeGuid": "E4D833A44E8DAFDAE5E5539BC5FBD124",
+			"fromPinId": "D6693C3C4F54D04D16200BB97AB859D8",
+			"fromPinName": "TrailFX_94_7630F88044032394DFE85B8471864128",
+			"toNodeGuid": "E0144FDD4CB4E1DAED54B193E717FF6B",
+			"toPinId": "6161028B419435E13D6960A9CBC9EC6C",
+			"toPinName": "TrailFX"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "SpawnWeaponProjectile",
+			"edgeType": "data",
+			"fromNodeGuid": "E4D833A44E8DAFDAE5E5539BC5FBD124",
+			"fromPinId": "CCBF2E724D44F7737CA7A0ACE86046A8",
+			"fromPinName": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
+			"toNodeGuid": "E0144FDD4CB4E1DAED54B193E717FF6B",
+			"toPinId": "B2F34C9B474CC8441C723EAB45344765",
+			"toPinName": "ExplosionFX"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "SpawnWeaponProjectile",
+			"edgeType": "data",
+			"fromNodeGuid": "E4D833A44E8DAFDAE5E5539BC5FBD124",
+			"fromPinId": "E4D707974AE1803D4141769846A0D540",
+			"fromPinName": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
+			"toNodeGuid": "E0144FDD4CB4E1DAED54B193E717FF6B",
+			"toPinId": "BDB3145F46FBE9F6992EDC9888B79BE5",
+			"toPinName": "ProjectileMesh"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "SpawnWeaponProjectile",
+			"edgeType": "data",
+			"fromNodeGuid": "E4D833A44E8DAFDAE5E5539BC5FBD124",
+			"fromPinId": "E6595517451918E4C58A77BF4A18C593",
+			"fromPinName": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
+			"toNodeGuid": "E0144FDD4CB4E1DAED54B193E717FF6B",
+			"toPinId": "5312DCFA4CFBFEAF17453E8733EAC5B4",
+			"toPinName": "ProjectileSpeed"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "SpawnWeaponProjectile",
+			"edgeType": "exec",
+			"fromNodeGuid": "FFA1C8634B19BD81C64F8E8D3FAACCE6",
+			"fromPinId": "ACE1B2ED498D2098C0ED238C29304F22",
+			"fromPinName": "then",
+			"toNodeGuid": "E0144FDD4CB4E1DAED54B193E717FF6B",
+			"toPinId": "FD45EDB643849C61D5C7C88F1AFB9A32",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "SpawnWeaponProjectile",
+			"edgeType": "data",
+			"fromNodeGuid": "FFA1C8634B19BD81C64F8E8D3FAACCE6",
+			"fromPinId": "C91EF6B046263AB9819C44BD873551F7",
+			"fromPinName": "MuzzleTransfrom",
+			"toNodeGuid": "E0144FDD4CB4E1DAED54B193E717FF6B",
+			"toPinId": "2D2DDC5841FCDA2CFC0975A62009BD3F",
+			"toPinName": "SpawnTransform"
+		}
+	],
+	"variablesRead": [
+		"Get WeaponData"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Muzzle Transform\nLa destinazione è BP Weapon Base"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Muzzle Transform\nLa destinazione è BP Weapon Base"
+	],
+	"flowId": "F001",
+	"graphId": "G015",
+	"assetName": "BP_WeaponBase",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase"
+}

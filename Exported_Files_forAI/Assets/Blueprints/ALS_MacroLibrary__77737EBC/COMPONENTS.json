@@ -1,0 +1,50 @@
+{
+	"assetName": "ALS_MacroLibrary",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Libraries/ALS_MacroLibrary.ALS_MacroLibrary",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Libraries_ALS_MacroLibrary",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"components": [
+		{
+			"name": "Get World Transform\nLa destinazione è Componente di scena",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Break ALS_ComponentAndTransform",
+			"class": "K2Node_BreakStruct",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Make ALS_ComponentAndTransform",
+			"class": "K2Node_MakeStruct",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get World Transform\nLa destinazione è Componente di scena",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Break ALS_ComponentAndTransform",
+			"class": "K2Node_BreakStruct",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Make ALS_ComponentAndTransform",
+			"class": "K2Node_MakeStruct",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		}
+	]
+}

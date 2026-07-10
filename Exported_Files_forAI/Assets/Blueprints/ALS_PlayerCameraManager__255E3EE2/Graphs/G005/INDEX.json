@@ -1,0 +1,25 @@
+{
+	"graphId": "G005",
+	"name": "Get_CameraBehaviorParam",
+	"graphName": "Get_CameraBehaviorParam",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 9,
+	"edgeCount": 8,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Graphs/G005/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Graphs/G005/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Graphs/G005/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Get Camera Behavior Param",
+			"entryNodeGuid": "846520F64154008955491BA33D4BEFE9",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Flows/G005/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Flows/G005/F001.json",
+			"textFile": "Flows/G005/F001.txt",
+			"jsonFile": "Flows/G005/F001.json",
+			"nodeCount": 9
+		}
+	]
+}

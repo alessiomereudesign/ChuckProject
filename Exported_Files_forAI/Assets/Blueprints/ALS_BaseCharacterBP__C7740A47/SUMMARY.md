@@ -1,0 +1,150 @@
+# ALS_BaseCharacterBP
+
+Path: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+Class: Blueprint
+Parent: /Script/Engine.Character
+Generated: 2026-07-10T21:13:02.714Z
+
+## Variables
+- MovementState: byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState
+- PrevMovementState: byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState
+- DesiredRotationMode: byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode
+- MovementAction: byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementAction.ALS_MovementAction
+- RotationMode: byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode
+- DesiredGait: byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait
+- Gait: byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait
+- Stance: byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance
+- ViewMode: byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode.ALS_ViewMode
+- PreviousVelocity: struct|/Script/CoreUObject.Vector
+- Acceleration: struct|/Script/CoreUObject.Vector
+- IsMoving: bool
+- HasMovementInput: bool
+- LastVelocityRotation: struct|/Script/CoreUObject.Rotator
+- LastMovementInputRotation: struct|/Script/CoreUObject.Rotator
+- Speed: real|double
+- MovementInputAmount: real|double
+- PreviousAimYaw: real|double
+- TargetRotation: struct|/Script/CoreUObject.Rotator
+- InAirRotation: struct|/Script/CoreUObject.Rotator
+- YawOffset: real|double
+- MovementModel: struct|/Script/Engine.DataTableRowHandle
+- MovementData: struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/MovementSettings_State.MovementSettings_State
+- MantleParams: struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Params.Mantle_Params
+- MantleLedgeLS: struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/ALS_ComponentAndTransform.ALS_ComponentAndTransform
+- MantleTarget: struct|/Script/CoreUObject.Transform
+- MantleActualStartOffset: struct|/Script/CoreUObject.Transform
+- MantleAnimatedStartOffset: struct|/Script/CoreUObject.Transform
+- GroundedTraceSettings: struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_TraceSettings.Mantle_TraceSettings
+- AutomaticTraceSettings: struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_TraceSettings.Mantle_TraceSettings
+- FallingTraceSettings: struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_TraceSettings.Mantle_TraceSettings
+- DesiredStance: byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance
+- LookUp/DownRate: real|double
+- LookLeftRightRate: real|double
+- AimYawRate: real|double
+- OverlayState: byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState
+- TimesPressedStance: int
+- BreakFall: bool
+- SprintHeld: bool
+- MainAnimInstance: object|/Script/Engine.AnimInstance
+- RagdollOnGround: bool
+- RagdollFaceUp: bool
+- LastRagdollVelocity: struct|/Script/CoreUObject.Vector
+- ThirdPersonFOV: real|double
+- FirstPersonFOV: real|double
+- RightShoulder: bool
+- Movement Settings: struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/MovementSettings.MovementSettings
+
+## Graphs
+- BPI_Get_3P_PivotTarget (EdGraph): 3 nodes, 2 edges
+- BPI_Get_3P_TraceParams (EdGraph): 3 nodes, 2 edges
+- BPI_Get_CameraParameters (EdGraph): 5 nodes, 4 edges
+- BPI_Get_CurrentStates (EdGraph): 12 nodes, 11 edges
+- BPI_Get_EssentialValues (EdGraph): 12 nodes, 11 edges
+- BPI_Get_FP_CameraTarget (EdGraph): 4 nodes, 3 edges
+- EventGraph (EventGraph): 88 nodes, 86 edges
+- PlayerInputGraph (EventGraph): 109 nodes, 95 edges
+- TickGraph (EventGraph): 22 nodes, 16 edges
+- AddToCharacterRotation (Function): 7 nodes, 6 edges
+- CacheValues (Function): 9 nodes, 7 edges
+- CalculateAcceleration (Function): 8 nodes, 6 edges
+- CalculateGroundedRotationRate (Function): 10 nodes, 8 edges
+- CanSprint (Function): 24 nodes, 22 edges
+- CanUpdateMovingRotation (Function): 11 nodes, 10 edges
+- CapsuleHasRoomCheck (Function): 20 nodes, 22 edges
+- DrawDebugShapes (Function): 71 nodes, 76 edges
+- FixDiagonalGamepadValues (Function): 12 nodes, 15 edges
+- GetActualGait (Function): 23 nodes, 24 edges
+- GetAllowedGait (Function): 19 nodes, 20 edges
+- GetAnimCurveValue (Function): 6 nodes, 6 edges
+- GetCalpsuleBaseLocation (Function): 10 nodes, 11 edges
+- GetCapsuleLocationFromBase (Function): 7 nodes, 7 edges
+- GetControlForward/RightVector (Function): 5 nodes, 5 edges
+- GetGetUpAnimation (Function): 3 nodes, 1 edges
+- GetMantleAsset (Function): 12 nodes, 11 edges
+- GetMappedSpeed (Function): 25 nodes, 27 edges
+- GetPlayerMovementInput (Function): 9 nodes, 9 edges
+- GetRollAnimation (Function): 3 nodes, 1 edges
+- GetTargetMovementSettings (Function): 16 nodes, 20 edges
+- GetTraceDebugType (Function): 6 nodes, 7 edges
+- LimitRotation (Function): 14 nodes, 18 edges
+- MantleCheck (Function): 95 nodes, 116 edges
+- MantleEnd (Function): 4 nodes, 2 edges
+- MantleStart (Function): 70 nodes, 81 edges
+- MantleUpdate (Function): 55 nodes, 56 edges
+- On Begin Play (Function): 34 nodes, 31 edges
+- OnCharacterMovementModeChanged (Function): 5 nodes, 5 edges
+- OnGaitChanged (Function): 4 nodes, 4 edges
+- OnMovementActionChanged (Function): 16 nodes, 14 edges
+- OnMovementStateChanged (Function): 20 nodes, 18 edges
+- OnOverlayStateChanged (Function): 4 nodes, 4 edges
+- OnRotationModeChanged (Function): 10 nodes, 9 edges
+- OnStanceChanged (Function): 4 nodes, 4 edges
+- OnViewModeChanged (Function): 15 nodes, 14 edges
+- PlayerMovementInput (Function): 15 nodes, 16 edges
+- RagdollEnd (Function): 32 nodes, 31 edges
+- RagdollStart (Function): 23 nodes, 21 edges
+- RagdollUpdate (Function): 22 nodes, 18 edges
+- SetActorLocationAndRotation(UpdateTarget) (Function): 5 nodes, 10 edges
+- SetActorLocationDuringRagdoll (Function): 43 nodes, 50 edges
+- SetEssentialValues (Function): 42 nodes, 42 edges
+- SetMovementModel (Function): 5 nodes, 5 edges
+- SmoothCharacterRotation (Function): 14 nodes, 12 edges
+- UpdateCharacterMovement (Function): 21 nodes, 17 edges
+- UpdateDynamicMovementSettings (Function): 25 nodes, 28 edges
+- UpdateGroudedRotation (Function): 54 nodes, 51 edges
+- UpdateInAirRotation (Function): 14 nodes, 12 edges
+- UserConstructionScript (Function): 1 nodes, 0 edges
+- HoldInput (Macro): 8 nodes, 13 edges
+- MultiTapInput (Macro): 10 nodes, 15 edges
+
+## Important References
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_AI_Controller
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Curves/CharacterMovementCurves/NormalRotation
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/Meshes/Proxy
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Curves/CharacterMovementCurves/ResponsiveRotation
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/MovementSettings
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/MovementSettings_State
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Controller_BPI
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Libraries/ALS_MacroLibrary
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Curves/CharacterMovementCurves/ResponsiveMovement
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Curves/MantleCurves/Mantle_2m
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/MovementSettings_Stance
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/DataTables/MovementModelTable
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Curves/CharacterMovementCurves/NormalMovement
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MantleType
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Params
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Character_BPI
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/ALS_ComponentAndTransform
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementAction
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Curves/MantleCurves/Mantle_1m
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_TraceSettings
+- /Engine/EditorBlueprintResources/StandardMacros
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Animation_BPI
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Asset
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Camera_BPI
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode

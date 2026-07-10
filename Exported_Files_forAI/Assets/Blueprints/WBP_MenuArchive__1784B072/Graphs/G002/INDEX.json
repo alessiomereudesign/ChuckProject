@@ -1,0 +1,45 @@
+{
+	"graphId": "G002",
+	"name": "IntersectGraph",
+	"graphName": "IntersectGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 95,
+	"edgeCount": 103,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G002/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Evento Construct",
+			"entryNodeGuid": "70790197477F04B012D5A68D59F1C60D",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G002/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G002/F001.json",
+			"textFile": "Flows/G002/F001.txt",
+			"jsonFile": "Flows/G002/F001.json",
+			"nodeCount": 95
+		},
+		{
+			"flowId": "F002",
+			"entryName": "Evento Destruct",
+			"entryNodeGuid": "51728D6341E0AEA800333DBECC5225BD",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G002/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G002/F002.json",
+			"textFile": "Flows/G002/F002.txt",
+			"jsonFile": "Flows/G002/F002.json",
+			"nodeCount": 95
+		},
+		{
+			"flowId": "F003",
+			"entryName": "OpenCharacterSlot\nCustom Event",
+			"entryNodeGuid": "0F015DC949B88A9861D156BE6B97F60F",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G002/F003.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G002/F003.json",
+			"textFile": "Flows/G002/F003.txt",
+			"jsonFile": "Flows/G002/F003.json",
+			"nodeCount": 95
+		}
+	]
+}

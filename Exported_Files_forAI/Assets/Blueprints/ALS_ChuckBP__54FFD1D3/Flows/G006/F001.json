@@ -1,0 +1,425 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "BPI_Get_3P_PivotTarget",
+	"entryName": "BPI Get 3P Pivot Target",
+	"entryNodeGuid": "DA12BC3047D046DCEF5E03BFCECDE500",
+	"nodes": [
+		{
+			"nodeGuid": "DA12BC3047D046DCEF5E03BFCECDE500",
+			"class": "K2Node_FunctionEntry",
+			"title": "BPI Get 3P Pivot Target",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CC6885F54963EE184AC7BD9B728687C6",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C442A46B4540E572A9D8F5888D26AFD8",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 1024,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D608664A45A8499243DC9C97E4695C52",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DD35F4D64794CCA5E9CD7C90D1023630",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Transform",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7C578057450F1D8C6C99BCAA8310765F",
+			"class": "K2Node_VariableGet",
+			"title": "Get Mesh",
+			"comment": "",
+			"x": -144,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A9B419A44EA105B9F2BE1BFCEBD38AE",
+					"name": "Mesh",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "73B583D541C95B8274EA67AB8B96FB62",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E8D4C67D41EAB2FE6A787B9F9DB69904",
+			"class": "K2Node_CallFunction",
+			"title": "Make Transform",
+			"comment": "",
+			"x": 704,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "83E6410B416F4D30F17DD5B5112B638E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "69F97FDE4402557EFA9F88ADAAE7C978",
+					"name": "Location",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "E56B92364DDA7CF062F692A144E7417D",
+					"name": "Rotation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "ABFA07834B99BC4054266D90D90B9E87",
+					"name": "Scale",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "1.000000,1.000000,1.000000"
+				},
+				{
+					"pinId": "C98A3DED4A8A455CEFF93CB35CED7D45",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Transform",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "12CCF34747BD22D6A61264B8E17B99AB",
+			"class": "K2Node_CallFunction",
+			"title": "Get Vector Array Average",
+			"comment": "",
+			"x": 464,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "55FA84334F113E7F3EF13DAA6B9A9B58",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "AB610C914C1F8259D0D6C2A0FF3018A9",
+					"name": "Vectors",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector|container=Array|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5BB7FCCD4D483AA24447ED8047B1B8E8",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "4C1BC4544FCBEA4A4D5696B1345A3D3C",
+			"class": "K2Node_MakeArray",
+			"title": "Crea array",
+			"comment": "",
+			"x": 304,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "505049E1488F678EE649A790B8D0C46D",
+					"name": "Array",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector|container=Array|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1F8AF2184D3DE616E11357825DF68F71",
+					"name": "[0]",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "DED189694B4FFF311AAB89BD19D30A54",
+					"name": "[1]",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "7FABDEDB4F16C2ED2BA93CB94A159C42",
+			"class": "K2Node_CallFunction",
+			"title": "Get Socket Location\nLa destinazione è Componente di scena",
+			"comment": "",
+			"x": 0,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6BBF0CF34B83F429D67D20B8BC751F53",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SceneComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7A08778F4879325F57AF98A462513746",
+					"name": "InSocketName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "head"
+				},
+				{
+					"pinId": "3C268A1748004ED1D7EEFD9433AB79B6",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "8267D06A4AECFBA7ECD60F90FED735AA",
+			"class": "K2Node_CallFunction",
+			"title": "Get Socket Location\nLa destinazione è Componente di scena",
+			"comment": "",
+			"x": 0,
+			"y": 192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6BBF0CF34B83F429D67D20B8BC751F53",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SceneComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7A08778F4879325F57AF98A462513746",
+					"name": "InSocketName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "root"
+				},
+				{
+					"pinId": "3C268A1748004ED1D7EEFD9433AB79B6",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "AD5C58914D6570FD404C07A8AFC1ADF8",
+			"class": "K2Node_CallFunction",
+			"title": "Get Actor Rotation\nLa destinazione è Actor",
+			"comment": "",
+			"x": 464,
+			"y": 192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C3A51CC74F185CF22DD98DAD3047E5C2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3F32B388491E4DA894507B9E4C96CDC0",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_PivotTarget",
+			"edgeType": "exec",
+			"fromNodeGuid": "DA12BC3047D046DCEF5E03BFCECDE500",
+			"fromPinId": "CC6885F54963EE184AC7BD9B728687C6",
+			"fromPinName": "then",
+			"toNodeGuid": "C442A46B4540E572A9D8F5888D26AFD8",
+			"toPinId": "D608664A45A8499243DC9C97E4695C52",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_PivotTarget",
+			"edgeType": "data",
+			"fromNodeGuid": "E8D4C67D41EAB2FE6A787B9F9DB69904",
+			"fromPinId": "C98A3DED4A8A455CEFF93CB35CED7D45",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "C442A46B4540E572A9D8F5888D26AFD8",
+			"toPinId": "DD35F4D64794CCA5E9CD7C90D1023630",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_PivotTarget",
+			"edgeType": "data",
+			"fromNodeGuid": "7C578057450F1D8C6C99BCAA8310765F",
+			"fromPinId": "4A9B419A44EA105B9F2BE1BFCEBD38AE",
+			"fromPinName": "Mesh",
+			"toNodeGuid": "7FABDEDB4F16C2ED2BA93CB94A159C42",
+			"toPinId": "6BBF0CF34B83F429D67D20B8BC751F53",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_PivotTarget",
+			"edgeType": "data",
+			"fromNodeGuid": "7C578057450F1D8C6C99BCAA8310765F",
+			"fromPinId": "4A9B419A44EA105B9F2BE1BFCEBD38AE",
+			"fromPinName": "Mesh",
+			"toNodeGuid": "8267D06A4AECFBA7ECD60F90FED735AA",
+			"toPinId": "6BBF0CF34B83F429D67D20B8BC751F53",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_PivotTarget",
+			"edgeType": "data",
+			"fromNodeGuid": "12CCF34747BD22D6A61264B8E17B99AB",
+			"fromPinId": "5BB7FCCD4D483AA24447ED8047B1B8E8",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "E8D4C67D41EAB2FE6A787B9F9DB69904",
+			"toPinId": "69F97FDE4402557EFA9F88ADAAE7C978",
+			"toPinName": "Location"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_PivotTarget",
+			"edgeType": "data",
+			"fromNodeGuid": "AD5C58914D6570FD404C07A8AFC1ADF8",
+			"fromPinId": "3F32B388491E4DA894507B9E4C96CDC0",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "E8D4C67D41EAB2FE6A787B9F9DB69904",
+			"toPinId": "E56B92364DDA7CF062F692A144E7417D",
+			"toPinName": "Rotation"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_PivotTarget",
+			"edgeType": "data",
+			"fromNodeGuid": "4C1BC4544FCBEA4A4D5696B1345A3D3C",
+			"fromPinId": "505049E1488F678EE649A790B8D0C46D",
+			"fromPinName": "Array",
+			"toNodeGuid": "12CCF34747BD22D6A61264B8E17B99AB",
+			"toPinId": "AB610C914C1F8259D0D6C2A0FF3018A9",
+			"toPinName": "Vectors"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_PivotTarget",
+			"edgeType": "data",
+			"fromNodeGuid": "7FABDEDB4F16C2ED2BA93CB94A159C42",
+			"fromPinId": "3C268A1748004ED1D7EEFD9433AB79B6",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "4C1BC4544FCBEA4A4D5696B1345A3D3C",
+			"toPinId": "1F8AF2184D3DE616E11357825DF68F71",
+			"toPinName": "[0]"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "BPI_Get_3P_PivotTarget",
+			"edgeType": "data",
+			"fromNodeGuid": "8267D06A4AECFBA7ECD60F90FED735AA",
+			"fromPinId": "3C268A1748004ED1D7EEFD9433AB79B6",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "4C1BC4544FCBEA4A4D5696B1345A3D3C",
+			"toPinId": "DED189694B4FFF311AAB89BD19D30A54",
+			"toPinName": "[1]"
+		}
+	],
+	"variablesRead": [
+		"Get Mesh"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Actor Rotation\nLa destinazione è Actor",
+		"Get Socket Location\nLa destinazione è Componente di scena",
+		"Get Vector Array Average",
+		"Make Transform"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Actor Rotation\nLa destinazione è Actor",
+		"Get Socket Location\nLa destinazione è Componente di scena",
+		"Get Vector Array Average",
+		"Make Transform"
+	],
+	"flowId": "F001",
+	"graphId": "G006",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "CameraSettings",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/CameraSettings.CameraSettings",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Structs_CameraSettings",
+	"shortAssetFolder": "CameraSettings__FB781601",
+	"pathHash": "FB781601",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/CameraSettings__FB781601/SUMMARY.md",
+		"variables": "Assets/Structs/CameraSettings__FB781601/VARIABLES.json",
+		"components": "Assets/Structs/CameraSettings__FB781601/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/CameraSettings__FB781601/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/CameraSettings__FB781601/NODES.jsonl",
+		"edges": "Assets/Structs/CameraSettings__FB781601/EDGES.jsonl",
+		"search": "Assets/Structs/CameraSettings__FB781601/SEARCH.jsonl"
+	},
+	"graphs": []
+}

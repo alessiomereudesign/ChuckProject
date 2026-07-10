@@ -1,0 +1,25 @@
+{
+	"graphId": "G001",
+	"name": "BPI_Jumped",
+	"graphName": "BPI_Jumped",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 1,
+	"edgeCount": 0,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "BPI Jumped",
+			"entryNodeGuid": "6C7078554EF026062C4B4395ED956315",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Animation_BPI__7E14969B/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 1
+		}
+	]
+}

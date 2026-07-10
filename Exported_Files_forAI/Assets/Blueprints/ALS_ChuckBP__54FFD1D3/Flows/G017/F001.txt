@@ -1,0 +1,36 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G017
+Graph: MantleStart
+FlowId: F001
+Entry: Mantle Start
+NodeGuid: 0ACCEBC34966C3F75F4521AE25B31DA3
+
+Exec Flow:
+1. Mantle Start [K2Node_FunctionEntry] 0ACCEBC34966C3F75F4521AE25B31DA3
+2. Genitore: Mantle Start [K2Node_CallParentFunction] 77030E7E4BACB83E26A73C998D756AEC
+3. Switch on MantleType [K2Node_SwitchEnum] B85AB221444686AE278A989EB731A03B
+4. Get MantleType [K2Node_VariableGet] 23973FD94F2B7A1BE21A4ABC359F3B3C
+5. Clear Held Object
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 7FE461CE4B0E6473B67142AB7A211863
+
+Variables Read:
+- Get MantleType
+
+Variables Written:
+- none
+
+External Calls:
+- Clear Held Object
+La destinazione è ALS Chuck BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Clear Held Object
+La destinazione è ALS Chuck BP

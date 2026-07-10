@@ -1,0 +1,25 @@
+{
+	"graphId": "G004",
+	"name": "UserConstructionScript",
+	"graphName": "UserConstructionScript",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 1,
+	"edgeCount": 0,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G004/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G004/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G004/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Construction Script",
+			"entryNodeGuid": "BB3A143044CCD24BF774FCB7C45DA5BD",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Flows/G004/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Flows/G004/F001.json",
+			"textFile": "Flows/G004/F001.txt",
+			"jsonFile": "Flows/G004/F001.json",
+			"nodeCount": 1
+		}
+	]
+}

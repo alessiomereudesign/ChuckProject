@@ -1,0 +1,25 @@
+{
+	"graphId": "G008",
+	"name": "GetMuzzleTransform",
+	"graphName": "GetMuzzleTransform",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 4,
+	"edgeCount": 3,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G008/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G008/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G008/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Get Muzzle Transform",
+			"entryNodeGuid": "2F5E8DB94E2A4A9FF2F147AFF10B08D0",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G008/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G008/F001.json",
+			"textFile": "Flows/G008/F001.txt",
+			"jsonFile": "Flows/G008/F001.json",
+			"nodeCount": 4
+		}
+	]
+}

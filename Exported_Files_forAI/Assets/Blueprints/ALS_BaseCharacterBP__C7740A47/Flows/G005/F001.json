@@ -1,0 +1,542 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"graph": "BPI_Get_EssentialValues",
+	"entryName": "BPI Get Essential Values",
+	"entryNodeGuid": "2C1975924F24C0A682D349AD77D61B4E",
+	"nodes": [
+		{
+			"nodeGuid": "2C1975924F24C0A682D349AD77D61B4E",
+			"class": "K2Node_FunctionEntry",
+			"title": "BPI Get Essential Values",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EDBA9BF14E3D315142BD0FAB63CA5C6B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F4E1ABFD49CBA850CFA12E9AED243372",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 384,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FBEE106C49F997C6E721DDB54DA04BE4",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EF9663D84EAF67148EC86DA5D2D383FA",
+					"name": "Velocity",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "F0ED53B54882207CA2B3BEA1D957376A",
+					"name": "Acceleration",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "B82A47404F07B25AD713A3A0E6E11135",
+					"name": "MovementInput",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "19899F6B4C19CB2850FD15BEC8BFEA3C",
+					"name": "IsMoving",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "C3ADD2CB41FF0283C8F3AF978DA95BF2",
+					"name": "HasMovementInput",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "E208EA5D47FB5396FD87F1AB1BF74633",
+					"name": "Speed",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "591D666F4A59C87B9E6F2B86C5326D77",
+					"name": "MovementInputAmount",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "5D82DC2C4DE095170CCCD58AE6D72B07",
+					"name": "AimingRotation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "1B442A9244397B30ADCD51B014EB2551",
+					"name": "AimYawRate",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "3B2D10E74DA9824A756C71AB1D2A92F5",
+			"class": "K2Node_VariableGet",
+			"title": "Get IsMoving",
+			"comment": "",
+			"x": 80,
+			"y": 256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "008AD9AF4733B355AA4CFDBAB155188B",
+					"name": "IsMoving",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "17310B0346C9194B8752A9ACAEB2A747",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "68B4A8524831D4C337E387993C8BDD9E",
+			"class": "K2Node_VariableGet",
+			"title": "Get HasMovementInput",
+			"comment": "",
+			"x": 48,
+			"y": 288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A959650840369B5C2E44A19F9EA73EF1",
+					"name": "HasMovementInput",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "7C9AF46E4F20C755CC3999933757609E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8370EC62437651EFF20F03B0E1143F7B",
+			"class": "K2Node_VariableGet",
+			"title": "Get Speed",
+			"comment": "",
+			"x": 80,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6910E7DD436C029B5C0C4987DC0849F5",
+					"name": "Speed",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "DECEF4C541EEBC77A7D76AB0B2EE04E2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C184DA2644F26B22F12EF098BBAF95EB",
+			"class": "K2Node_VariableGet",
+			"title": "Get MovementInputAmount",
+			"comment": "",
+			"x": 32,
+			"y": 352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "48E4A9044024C85DE529BCA50E28074F",
+					"name": "MovementInputAmount",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "503D2D344A12A19223658D854CD7C0B7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "10F5D2FF4A8264276EC1CAB8500BFF97",
+			"class": "K2Node_VariableGet",
+			"title": "Get AimYawRate",
+			"comment": "",
+			"x": 80,
+			"y": 464,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "76785AFC4A90BED1F6EE19907491259A",
+					"name": "AimYawRate",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "63FFCB07486C34EF0AF9D68DC9E2ED1C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "06F76BD84227FCC8311B34B876882DBB",
+			"class": "K2Node_CallFunction",
+			"title": "Get Control Rotation\nLa destinazione è Pedina",
+			"comment": "",
+			"x": -16,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C4D020A74F402286664D9EB6F4A33305",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Pawn",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DF8B055E4BE1AA8A78406DB9B860F313",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "86F727EE4FE4A300CC9690B723E12999",
+			"class": "K2Node_VariableGet",
+			"title": "Get Acceleration",
+			"comment": "",
+			"x": 80,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6E75151D487A90EA251DB3B0C2AAAC87",
+					"name": "Acceleration",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "6E5F920E408D2069D7A6558AC248387E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "68EFB56744881BF273F719A560F27044",
+			"class": "K2Node_CallFunction",
+			"title": "Get Current Acceleration\nLa destinazione è Componente movimento personaggio",
+			"comment": "",
+			"x": -80,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D0EA7D874389AE8E34A0ABAFE12998AC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.CharacterMovementComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7B46AA4F4DBDB2687B50EA9B5CDB2BC8",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A9FCEC1D4C0D0B0FCAEC9EBF053519C9",
+			"class": "K2Node_VariableGet",
+			"title": "Get CharacterMovement",
+			"comment": "",
+			"x": -256,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "91D5EE6F42CAB1C9899F06AA64C68C9A",
+					"name": "CharacterMovement",
+					"direction": "Output",
+					"type": "object|/Script/Engine.CharacterMovementComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "15F3DADC485FF80B63C76B8DD1E70E47",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "669C6D08435A4326909C6DA7C7D9BC22",
+			"class": "K2Node_CallFunction",
+			"title": "Get Velocity\nLa destinazione è Actor",
+			"comment": "",
+			"x": -16,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DE868B22411F6726984899997B4BA06B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7B44E08A465163C46ACBA48C4878B1D9",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_EssentialValues",
+			"edgeType": "exec",
+			"fromNodeGuid": "2C1975924F24C0A682D349AD77D61B4E",
+			"fromPinId": "EDBA9BF14E3D315142BD0FAB63CA5C6B",
+			"fromPinName": "then",
+			"toNodeGuid": "F4E1ABFD49CBA850CFA12E9AED243372",
+			"toPinId": "FBEE106C49F997C6E721DDB54DA04BE4",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_EssentialValues",
+			"edgeType": "data",
+			"fromNodeGuid": "669C6D08435A4326909C6DA7C7D9BC22",
+			"fromPinId": "7B44E08A465163C46ACBA48C4878B1D9",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "F4E1ABFD49CBA850CFA12E9AED243372",
+			"toPinId": "EF9663D84EAF67148EC86DA5D2D383FA",
+			"toPinName": "Velocity"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_EssentialValues",
+			"edgeType": "data",
+			"fromNodeGuid": "86F727EE4FE4A300CC9690B723E12999",
+			"fromPinId": "6E75151D487A90EA251DB3B0C2AAAC87",
+			"fromPinName": "Acceleration",
+			"toNodeGuid": "F4E1ABFD49CBA850CFA12E9AED243372",
+			"toPinId": "F0ED53B54882207CA2B3BEA1D957376A",
+			"toPinName": "Acceleration"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_EssentialValues",
+			"edgeType": "data",
+			"fromNodeGuid": "68EFB56744881BF273F719A560F27044",
+			"fromPinId": "7B46AA4F4DBDB2687B50EA9B5CDB2BC8",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "F4E1ABFD49CBA850CFA12E9AED243372",
+			"toPinId": "B82A47404F07B25AD713A3A0E6E11135",
+			"toPinName": "MovementInput"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_EssentialValues",
+			"edgeType": "data",
+			"fromNodeGuid": "3B2D10E74DA9824A756C71AB1D2A92F5",
+			"fromPinId": "008AD9AF4733B355AA4CFDBAB155188B",
+			"fromPinName": "IsMoving",
+			"toNodeGuid": "F4E1ABFD49CBA850CFA12E9AED243372",
+			"toPinId": "19899F6B4C19CB2850FD15BEC8BFEA3C",
+			"toPinName": "IsMoving"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_EssentialValues",
+			"edgeType": "data",
+			"fromNodeGuid": "68B4A8524831D4C337E387993C8BDD9E",
+			"fromPinId": "A959650840369B5C2E44A19F9EA73EF1",
+			"fromPinName": "HasMovementInput",
+			"toNodeGuid": "F4E1ABFD49CBA850CFA12E9AED243372",
+			"toPinId": "C3ADD2CB41FF0283C8F3AF978DA95BF2",
+			"toPinName": "HasMovementInput"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_EssentialValues",
+			"edgeType": "data",
+			"fromNodeGuid": "8370EC62437651EFF20F03B0E1143F7B",
+			"fromPinId": "6910E7DD436C029B5C0C4987DC0849F5",
+			"fromPinName": "Speed",
+			"toNodeGuid": "F4E1ABFD49CBA850CFA12E9AED243372",
+			"toPinId": "E208EA5D47FB5396FD87F1AB1BF74633",
+			"toPinName": "Speed"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_EssentialValues",
+			"edgeType": "data",
+			"fromNodeGuid": "C184DA2644F26B22F12EF098BBAF95EB",
+			"fromPinId": "48E4A9044024C85DE529BCA50E28074F",
+			"fromPinName": "MovementInputAmount",
+			"toNodeGuid": "F4E1ABFD49CBA850CFA12E9AED243372",
+			"toPinId": "591D666F4A59C87B9E6F2B86C5326D77",
+			"toPinName": "MovementInputAmount"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_EssentialValues",
+			"edgeType": "data",
+			"fromNodeGuid": "06F76BD84227FCC8311B34B876882DBB",
+			"fromPinId": "DF8B055E4BE1AA8A78406DB9B860F313",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "F4E1ABFD49CBA850CFA12E9AED243372",
+			"toPinId": "5D82DC2C4DE095170CCCD58AE6D72B07",
+			"toPinName": "AimingRotation"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_EssentialValues",
+			"edgeType": "data",
+			"fromNodeGuid": "10F5D2FF4A8264276EC1CAB8500BFF97",
+			"fromPinId": "76785AFC4A90BED1F6EE19907491259A",
+			"fromPinName": "AimYawRate",
+			"toNodeGuid": "F4E1ABFD49CBA850CFA12E9AED243372",
+			"toPinId": "1B442A9244397B30ADCD51B014EB2551",
+			"toPinName": "AimYawRate"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_EssentialValues",
+			"edgeType": "data",
+			"fromNodeGuid": "A9FCEC1D4C0D0B0FCAEC9EBF053519C9",
+			"fromPinId": "91D5EE6F42CAB1C9899F06AA64C68C9A",
+			"fromPinName": "CharacterMovement",
+			"toNodeGuid": "68EFB56744881BF273F719A560F27044",
+			"toPinId": "D0EA7D874389AE8E34A0ABAFE12998AC",
+			"toPinName": "self"
+		}
+	],
+	"variablesRead": [
+		"Get Acceleration",
+		"Get AimYawRate",
+		"Get CharacterMovement",
+		"Get HasMovementInput",
+		"Get IsMoving",
+		"Get MovementInputAmount",
+		"Get Speed"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Control Rotation\nLa destinazione è Pedina",
+		"Get Current Acceleration\nLa destinazione è Componente movimento personaggio",
+		"Get Velocity\nLa destinazione è Actor"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Control Rotation\nLa destinazione è Pedina",
+		"Get Current Acceleration\nLa destinazione è Componente movimento personaggio",
+		"Get Velocity\nLa destinazione è Actor"
+	],
+	"flowId": "F001",
+	"graphId": "G005",
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP"
+}

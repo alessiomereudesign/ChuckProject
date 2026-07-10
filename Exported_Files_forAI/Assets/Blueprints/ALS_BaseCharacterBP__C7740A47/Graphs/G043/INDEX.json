@@ -1,0 +1,25 @@
+{
+	"graphId": "G043",
+	"name": "OnRotationModeChanged",
+	"graphName": "OnRotationModeChanged",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 10,
+	"edgeCount": 9,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Graphs/G043/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Graphs/G043/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Graphs/G043/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "On Rotation Mode Changed",
+			"entryNodeGuid": "EA8D88184B62CDFD81BA27800F61AEC1",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G043/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G043/F001.json",
+			"textFile": "Flows/G043/F001.txt",
+			"jsonFile": "Flows/G043/F001.json",
+			"nodeCount": 10
+		}
+	]
+}

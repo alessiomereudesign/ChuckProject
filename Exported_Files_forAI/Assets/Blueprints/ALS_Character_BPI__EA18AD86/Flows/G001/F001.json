@@ -1,0 +1,136 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Character_BPI",
+	"graph": "BPI_Get_CurrentStates",
+	"entryName": "BPI Get Current States",
+	"entryNodeGuid": "ABB93A414D9CC5828308489321B69E92",
+	"nodes": [
+		{
+			"nodeGuid": "ABB93A414D9CC5828308489321B69E92",
+			"class": "K2Node_FunctionEntry",
+			"title": "BPI Get Current States",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "24D811614DA3F33E3B111084456D469D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5AD1286A4B2CA313B168ED90374F62AB",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 256,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A622EDB94485E7282FC75997A11716F3",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "42FB32AC43754DDBC293CD9BB66006FE",
+					"name": "PawnMovementMode",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EMovementMode",
+					"defaultValue": "MOVE_None"
+				},
+				{
+					"pinId": "FC351FBD4D526D0668AD7BA93D0E017B",
+					"name": "MovementState",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "0EC3AB2D49AC2E0604D334AAA6022F63",
+					"name": "PrevMovementState",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "FE66A72D40DBA3C1D74A9EB22FAB0480",
+					"name": "MovementAction",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementAction.ALS_MovementAction",
+					"defaultValue": "NewEnumerator4"
+				},
+				{
+					"pinId": "5FE35336421A670C6B5E0D9AECE000CE",
+					"name": "RotationMode",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "36008A944E26759A29E31CAB5E0F9988",
+					"name": "ActualGait",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "F065B6194AF893833E66F4A7A4A0525C",
+					"name": "ActualStance",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "5546D6D44068093FBFCDFDA40D9B46CC",
+					"name": "ViewMode",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode.ALS_ViewMode",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "088B0B4E4BE4EC6B57F2A2AB5E1CCF74",
+					"name": "OverlayState",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Character_BPI",
+			"graph": "BPI_Get_CurrentStates",
+			"edgeType": "exec",
+			"fromNodeGuid": "ABB93A414D9CC5828308489321B69E92",
+			"fromPinId": "24D811614DA3F33E3B111084456D469D",
+			"fromPinName": "then",
+			"toNodeGuid": "5AD1286A4B2CA313B168ED90374F62AB",
+			"toPinId": "A622EDB94485E7282FC75997A11716F3",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G001",
+	"assetName": "ALS_Character_BPI",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Character_BPI.ALS_Character_BPI"
+}

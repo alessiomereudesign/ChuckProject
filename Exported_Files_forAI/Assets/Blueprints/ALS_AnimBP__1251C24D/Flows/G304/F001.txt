@@ -1,0 +1,103 @@
+Asset: ALS_AnimBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP
+GraphId: G304
+Graph: SetFootLocking
+FlowId: F001
+Entry: Set Foot Locking
+NodeGuid: 94D155E945082DD14723D29EEE9E5A82
+
+Exec Flow:
+1. Set Foot Locking [K2Node_FunctionEntry] 94D155E945082DD14723D29EEE9E5A82
+2. Sequenza [K2Node_ExecutionSequence] 884E596D487853B9BB6EA6B7BBA7C30D
+3. Set FootLockCurveValue [K2Node_VariableSet] DE475F4049954497D4B44CAE617B49A3
+4. Get Curve Value
+La destinazione è Istanza animazione [K2Node_CallFunction] 6224F9A34E9368CE70C7538B34A803A7
+5. Nodo di reindirizzamento [K2Node_Knot] 1562F7CB463F112AD040BC8FDFDD67F8
+6. Get FootLockCurve [K2Node_VariableGet] AFDD1F1D45CE3C78637AA49C2865E0D4
+7. Ramo [K2Node_IfThenElse] 13F3742046D9BE87D276CDBFF9999B02
+8. Nodo di reindirizzamento [K2Node_Knot] 926E5F334B51F365114719A92AABDF9A
+9. Get FootLockCurveValue [K2Node_VariableGet] 99277DAB443CA94A1E1DBA924BA9E7D9
+10. Get CurrentFootLockAlpha [K2Node_VariableGet] A7B191DA4FC8ABDD723ED3850231B01D
+11. float >= float [K2Node_CallFunction] FD03533C4C944FE90B028E9F27F755AD
+12. OR Boolean [K2Node_CommutativeAssociativeBinaryOperator] 3691B53D48304D3B54112490BA3A2621
+13. float < float [K2Node_CallFunction] A1EEA956459E5E284CFF0E8A361A14D7
+14. Get CurrentFootLockAlpha [K2Node_VariableGet] 0E29AFFE4355F3E0C387D687FA8A3324
+15. Set Float (double-precision) (by ref) [K2Node_VariableSetRef] F5382E4F4A758613BAAB4E8381ADE0C9
+16. Get FootLockCurveValue [K2Node_VariableGet] B40029F240A82B2D25DC11A2E3A5AE4D
+17. Ramo [K2Node_IfThenElse] 022C29244BC2A47038F4318F2DDBF77E
+18. Nodo di reindirizzamento [K2Node_Knot] 055818384F71B22EE7E1ADA77446248C
+19. Get CurrentFootLockAlpha [K2Node_VariableGet] E490BD0A420489AFF88714836217819B
+20. float >= float [K2Node_CallFunction] A72900DB41CB6EC260A0CEB076EBBAF5
+21. Set Vector (by ref) [K2Node_VariableSetRef] 433092A2471756BF86372CB49E2A1DB7
+22. Set Rotatore (by ref) [K2Node_VariableSetRef] 98EBD66C4AF2B908C37380A7A81DD21D
+23. Get CurrentFootLockLocation [K2Node_VariableGet] 0CCE3DA6411C77CD8254CE8F684C6A8B
+24. Get CurrentFootLockRotation [K2Node_VariableGet] B067EBAE4DD6570E6D79F7907F4F8D1B
+25. Get IKFootBone [K2Node_VariableGet] 4C5259BC4236A238255163AF707083D1
+26. Get Owning Component
+La destinazione è Istanza animazione [K2Node_CallFunction] 1AF4E8DA4584364038959991E2D89A05
+27. Get Socket Transform
+La destinazione è Componente di scena [K2Node_CallFunction] 351C05C64F455173558364A32F90D4DD
+28. Set Foot Lock Offsets
+La destinazione è ALS Anim BP [K2Node_CallFunction] 6724BE334756D54531C247AF0CC78C39
+29. Ramo [K2Node_IfThenElse] D0F878DF45A8F9F4EA14D191475060D9
+30. Get CurrentFootLockAlpha [K2Node_VariableGet] EB4FF2564E392883B160C2836DA10A2E
+31. float > float [K2Node_CallFunction] 62A22FC548F267F41AA83F91B14D193F
+32. Nodo di reindirizzamento [K2Node_Knot] F9E2168E4FD157B189F3E19834F1DD88
+33. Get CurrentFootLockLocation [K2Node_VariableGet] B3B7E1544AF21298B418E088602F38F9
+34. Get CurrentFootLockRotation [K2Node_VariableGet] 8E2510CB42037E427C84A0BE0045E272
+35. Get Curve Value
+La destinazione è Istanza animazione [K2Node_CallFunction] BC8FAD3043334DE40687F59C6EA9CBEC
+36. float > float [K2Node_CallFunction] 0DD9C7C34F2D378A54755D98AC5685D9
+37. Ramo [K2Node_IfThenElse] 8A4FFD5549593D243942C4928705B3D9
+38. Only update values if FootIK curve has a weight. [EdGraphNode_Comment] 4B29B80A4942FF6C723A0889FE934FE0
+39. Step 1: Set Local FootLock Curve value [EdGraphNode_Comment] 96A12F0A45E5C43494AE7A93FBE05680
+40. Step 2: Only update the FootLock Alpha if the new value is less than the current, or it equals 1. This makes it so that the foot can only blend out of the locked position or lock to a new position, and never blend in. [EdGraphNode_Comment] 4466064B49D947EE46F4E5B2A0CC7FB2
+41. Step 3: If the Foot Lock curve equals 1, save the new lock location and rotation in component space. [EdGraphNode_Comment] 94DE2E6D47B29C816D2CDD865361C6C3
+42. Step 4: If the Foot Lock Alpha has a weight, update the Foot Lock offsets to keep the foot planted in place while the capsule moves. [EdGraphNode_Comment] 21848E7449A5AC41506E17A67836A0C7
+
+Variables Read:
+- Get CurrentFootLockAlpha
+- Get CurrentFootLockLocation
+- Get CurrentFootLockRotation
+- Get FootLockCurve
+- Get FootLockCurveValue
+- Get IKFootBone
+
+Variables Written:
+- Set Float (double-precision) (by ref)
+- Set FootLockCurveValue
+- Set Rotatore (by ref)
+- Set Vector (by ref)
+
+External Calls:
+- float < float
+- float > float
+- float >= float
+- Get Curve Value
+La destinazione è Istanza animazione
+- Get Owning Component
+La destinazione è Istanza animazione
+- Get Socket Transform
+La destinazione è Componente di scena
+- Set Foot Lock Offsets
+La destinazione è ALS Anim BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- float < float
+- float > float
+- float >= float
+- Get Curve Value
+La destinazione è Istanza animazione
+- Get Owning Component
+La destinazione è Istanza animazione
+- Get Socket Transform
+La destinazione è Componente di scena
+- Set Foot Lock Offsets
+La destinazione è ALS Anim BP

@@ -1,0 +1,22 @@
+{
+	"assetName": "ALS_GameMode_SP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/GameModes/ALS_GameMode_SP.ALS_GameMode_SP",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_GameModes_ALS_GameMode_SP",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Evento BeginPlay",
+			"graph": "EventGraph",
+			"nodeGuid": "46BDA92B4EDD941DDAD8F2BF8948AC11",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Construction Script",
+			"graph": "UserConstructionScript",
+			"nodeGuid": "4886C62844386452A09DDAB2912CB307",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

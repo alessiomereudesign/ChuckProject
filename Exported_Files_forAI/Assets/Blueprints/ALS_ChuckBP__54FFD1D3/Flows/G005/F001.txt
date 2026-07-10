@@ -1,0 +1,80 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G005
+Graph: AttachToHand
+FlowId: F001
+Entry: Attach to Hand
+NodeGuid: 89095DF244DD1E2B436179B5DBFF7A13
+
+Exec Flow:
+1. Attach to Hand [K2Node_FunctionEntry] 89095DF244DD1E2B436179B5DBFF7A13
+2. Attach Component To Component
+La destinazione è Componente di scena [K2Node_CallFunction] 801B4C8E439789747597299553271AB3
+3. Get Mesh [K2Node_VariableGet] 4B388BD94BA2B2C6964900BAD5C2FCDD
+4. Seleziona [K2Node_Select] CD6DF5D74EAAF3B01EBB8098FC356986
+5. Set Relative Location
+La destinazione è Componente di scena [K2Node_CallFunction] DD83B8D44E40109B73A283B5756881D2
+6. Get LeftHand [K2Node_VariableGet] 2676146E4413D2D4E52C73B2053020E9
+7. Get HeldObjectRoot [K2Node_VariableGet] EACDCE1643AC2A9C2A6EC0942959989C
+8. Get HeldObjectRoot [K2Node_VariableGet] DEBDFA50492C73F007E4238DD5F1C973
+9. Clear Held Object
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 732C77ED476B8D9F4F2E41B415CE6B4D
+10. Get SkeletalMesh [K2Node_VariableGet] CB5C05C142B73F332AA00CA5233E360A
+11. Set Skinned Asset and Update
+La destinazione è Componente della mesh con pelle [K2Node_CallFunction] 7B85C34D4462F062F9AA2B94897A75FC
+12. Get StaticMesh [K2Node_VariableGet] 9703801B4594A1EA28B311B9EFFD237E
+13. Set Static Mesh
+La destinazione è Componente con mesh statica [K2Node_CallFunction] D3EFA22742403B1F85C78A82B80CBC8A
+14. Set Anim Instance Class
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] EF3D0BC7476B26A8694D0DAC2369FA39
+15. Get SkeletalMesh [K2Node_VariableGet] AEE7746A4E9B9DB50AA2F3BC85DD5265
+16. Sequenza [K2Node_ExecutionSequence] 6BF39DFE42E13122273E519418325CEF
+17. Ottieni [K2Node_VariableGet] E07F41C9410D91A4A1237BAA519F4E5E
+18. Ottieni [K2Node_VariableGet] B2F417AA47175881A47B74822C2378F7
+19. Ottieni [K2Node_VariableGet] 541A911D493434053E75029355D366BA
+
+Variables Read:
+- Get HeldObjectRoot
+- Get LeftHand
+- Get Mesh
+- Get SkeletalMesh
+- Get StaticMesh
+- Ottieni
+
+Variables Written:
+- none
+
+External Calls:
+- Attach Component To Component
+La destinazione è Componente di scena
+- Clear Held Object
+La destinazione è ALS Chuck BP
+- Set Anim Instance Class
+La destinazione è Componente mesh scheletrica
+- Set Relative Location
+La destinazione è Componente di scena
+- Set Skinned Asset and Update
+La destinazione è Componente della mesh con pelle
+- Set Static Mesh
+La destinazione è Componente con mesh statica
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Attach Component To Component
+La destinazione è Componente di scena
+- Clear Held Object
+La destinazione è ALS Chuck BP
+- Set Anim Instance Class
+La destinazione è Componente mesh scheletrica
+- Set Relative Location
+La destinazione è Componente di scena
+- Set Skinned Asset and Update
+La destinazione è Componente della mesh con pelle
+- Set Static Mesh
+La destinazione è Componente con mesh statica

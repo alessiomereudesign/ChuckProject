@@ -1,0 +1,134 @@
+{
+	"assetName": "WBP_ArmorSelector",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_ArmorSelector.WBP_ArmorSelector",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_ArmorSelector",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"widgets": [
+		{
+			"name": "Create WBP Selector Button Widget",
+			"class": "K2Node_CreateWidget",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Remove from Parent\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Child At\nLa destinazione è Panel Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Cast To WBP_SelectorButton",
+			"class": "K2Node_DynamicCast",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set User Focus\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Owning Player\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Keyboard Focus\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Is Enabled\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get LastClickedButton",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set User Focus\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Owning Player\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Remove from Parent\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Create WBP Selector Button Widget",
+			"class": "K2Node_CreateWidget",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Child At\nLa destinazione è Panel Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Cast To WBP_SelectorButton",
+			"class": "K2Node_DynamicCast",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set User Focus\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Owning Player\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Keyboard Focus\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		}
+	]
+}

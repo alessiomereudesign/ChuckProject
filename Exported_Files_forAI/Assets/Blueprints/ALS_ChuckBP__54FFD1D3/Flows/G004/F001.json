@@ -1,0 +1,969 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "AddWeaponToInventory",
+	"entryName": "Add Weapon to Inventory",
+	"entryNodeGuid": "F4AD71194D771F2A6505C086A8A65A21",
+	"nodes": [
+		{
+			"nodeGuid": "F4AD71194D771F2A6505C086A8A65A21",
+			"class": "K2Node_FunctionEntry",
+			"title": "Add Weapon to Inventory",
+			"comment": "",
+			"x": 16,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "40F06CCE4A96246A167E258CD38077C9",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "706A90F44F7C8ADBB4DD268C3AB0B81A",
+					"name": "NewWeaponData",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4EC9BB88409F2DFD3E1A16A9FAD47F49",
+			"class": "K2Node_VariableGet",
+			"title": "Get Inventory",
+			"comment": "",
+			"x": 256,
+			"y": 53,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3B2FB990416BB6C091FCE6B9A4DB4031",
+					"name": "Inventory",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "049D9261469A314DC0519191FD2F2FC4",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6555E79B4654923719C726A8F1B24180",
+			"class": "K2Node_CallArrayFunction",
+			"title": "Aggiungi",
+			"comment": "",
+			"x": 416,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8BF909CE4105ABC50F1888B18F2FF7F2",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2D73AD9D42383D97352A6D9AB8FAB5EB",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8870746F4668392D2BD875AD7F0B4D31",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetArrayLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetArrayLibrary"
+				},
+				{
+					"pinId": "8282E7F146A015AA1C4FCDACB470DDD1",
+					"name": "TargetArray",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EBA75578471C9915FDE967BF4BECC27A",
+					"name": "NewItem",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4AE6035C43743F6ACB0960B7E633E793",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "0081266041C7A1DB053218A196223F90",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 256,
+			"y": 90,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F54891194D768CD85B1684B1CED84008",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "10EA29464C4D9466CD7F4283FAD6EBAB",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5331C9AF4A064F79F79380A3674AD784",
+			"class": "K2Node_VariableGet",
+			"title": "Get Inventory",
+			"comment": "",
+			"x": 576,
+			"y": 99,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B71A254D4BD36673BDD0F9930A5D5EF3",
+					"name": "Inventory",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "923D86604FC596FD4F2D8B9520036FB6",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B678505749AD495E8D703EBBC48D3C6C",
+			"class": "K2Node_CallArrayFunction",
+			"title": "Length",
+			"comment": "",
+			"x": 720,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0048F5E645E922CEA349DDA2E81D3604",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetArrayLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetArrayLibrary"
+				},
+				{
+					"pinId": "2EF48630442C2F23D5BC5EA9F695F60B",
+					"name": "TargetArray",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "425B1AFE4C381C7B1A52FDA558043625",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "C3BDB6F440288C53E4747480C8E77B34",
+			"class": "K2Node_PromotableOperator",
+			"title": "Equal (Integer)",
+			"comment": "",
+			"x": 960,
+			"y": 100,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E6159112408B92E669A5DABAEF5D751C",
+					"name": "A",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2068A253425E6AD934489CBB53AC0315",
+					"name": "B",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "1"
+				},
+				{
+					"pinId": "5B87864740369A866E3B1C836EB1D799",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1E19650946417DE6A132A4858379C3DE",
+					"name": "ErrorTolerance",
+					"direction": "Input",
+					"type": "None",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BE7DB3AB4E95218A121C92B57318AA7B",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1136,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DE32AAC54A89D3545154068A36101FFE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5A8C7A534240171F4C25FFA8BE4E680B",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "126A529444A672F8C4FE96A5BFC96D09",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FC52A6B244FDBE8108C168874F9C8F48",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "461D3A964577DF76D5E6C79E08A32ACC",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 720,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D840F2264A889F4BB9C916AB8B5C5D49",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "52F6FD664F5F00E8721AB78B9212C820",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "770F3FE742C5A2C6F4C1749CE6BF85E8",
+			"class": "K2Node_CallFunction",
+			"title": "Add Item to Inventory\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": 1360,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A2B56D0442ED28748347A490AF85B660",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E82B14C5454933B94EA626842F49AC03",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D4CB3C70450354722B53579A7F0E5A7D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3B7849484113D448CE8FEA8071346A10",
+					"name": "WeaponData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9BB670A1401AE3C9D19E00BE1596F148",
+					"name": "ItemType",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A615DE3D48E4054BBF8EC58353096A65",
+			"class": "K2Node_CallFunction",
+			"title": "Update Weapon Display\nLa destinazione è WBP HUD",
+			"comment": "",
+			"x": 1872,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A3DA178A418071FDF79F84AFDE483EFE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7483327D4113EE0BA0CB369A58921462",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "11B8A6F14B8F3BE9461980B6E487AE66",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD.WBP_HUD_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "488F13E7469211C375809D8B06CE31A4",
+			"class": "K2Node_CallFunction",
+			"title": "Update Weapon Display\nLa destinazione è WBP HUD",
+			"comment": "",
+			"x": 1600,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A3DA178A418071FDF79F84AFDE483EFE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7483327D4113EE0BA0CB369A58921462",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "11B8A6F14B8F3BE9461980B6E487AE66",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD.WBP_HUD_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B715643E424D1D7573E825A3683F9295",
+			"class": "K2Node_MacroInstance",
+			"title": "Is Valid",
+			"comment": "",
+			"x": 1600,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B303B77146552BD9AD77BB90FDC42098",
+					"name": "exec",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7256F948451FFF32F49EADB742D2D666",
+					"name": "InputObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "966D07CB4B1567FDCD1CEDB5312CAAC0",
+					"name": "Is Valid",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DE6720484F1709B958F8C690D89A6060",
+					"name": "Is Not Valid",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1CC9E96340835B38558B4DAD585986AA",
+			"class": "K2Node_MacroInstance",
+			"title": "Is Valid",
+			"comment": "",
+			"x": 1344,
+			"y": 256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1ED669B14B83B68068811594438DE8DE",
+					"name": "exec",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4D08164149E9681EAEAD3CB07BF007E6",
+					"name": "InputObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A39B233D49F69651BCA584B9D2AB045B",
+					"name": "Is Valid",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6A92347D4AE907E59724D285F18A6BC7",
+					"name": "Is Not Valid",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "ADAB40804085E94A4B98ADA340B37F79",
+			"class": "K2Node_VariableGet",
+			"title": "Get As ALS Player Controller",
+			"comment": "",
+			"x": 1616,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B253486A4BEABD133CF9A9BA55C4FAF7",
+					"name": "As ALS Player Controller",
+					"direction": "Output",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller.ALS_Player_Controller_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DB838BD6425CB0E1A4F62DB84A19089A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "19272851443B1645CA6CFF8C984A07C4",
+			"class": "K2Node_VariableGet",
+			"title": "Get Chuck_HUD",
+			"comment": "",
+			"x": 1600,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9D13D5114F1A2A9387D0E99B7B90FEC9",
+					"name": "Chuck_HUD",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD.WBP_HUD_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9CDD45894E7565B0DFE614BADC539465",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller.ALS_Player_Controller_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "264CD45C424DA397F0DA87BA844C2B4B",
+			"class": "K2Node_VariableGet",
+			"title": "Get As ALS Player Controller",
+			"comment": "",
+			"x": 1088,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B253486A4BEABD133CF9A9BA55C4FAF7",
+					"name": "As ALS Player Controller",
+					"direction": "Output",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller.ALS_Player_Controller_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DB838BD6425CB0E1A4F62DB84A19089A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EB61C0F64783CCDCCF5C949DBAC9A6E4",
+			"class": "K2Node_VariableGet",
+			"title": "Get Chuck_HUD",
+			"comment": "",
+			"x": 1088,
+			"y": 358,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9D13D5114F1A2A9387D0E99B7B90FEC9",
+					"name": "Chuck_HUD",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD.WBP_HUD_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9CDD45894E7565B0DFE614BADC539465",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller.ALS_Player_Controller_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "37D871374A41324D4C4D5BA619900F78",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1536,
+			"y": 368,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0EB7EFA74E6E833AAF7930B8B07D5043",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD.WBP_HUD_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D417815F4800316C0459DD9C87369B4C",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD.WBP_HUD_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F17BDBB44A1B96E0031323BCF45DBD2B",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1088,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4D6F34B04B8BF95E088678935C5B3B64",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "44CF120448464D0AB3B31E8B6A735B13",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "exec",
+			"fromNodeGuid": "F4AD71194D771F2A6505C086A8A65A21",
+			"fromPinId": "40F06CCE4A96246A167E258CD38077C9",
+			"fromPinName": "then",
+			"toNodeGuid": "6555E79B4654923719C726A8F1B24180",
+			"toPinId": "8BF909CE4105ABC50F1888B18F2FF7F2",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "F4AD71194D771F2A6505C086A8A65A21",
+			"fromPinId": "706A90F44F7C8ADBB4DD268C3AB0B81A",
+			"fromPinName": "NewWeaponData",
+			"toNodeGuid": "0081266041C7A1DB053218A196223F90",
+			"toPinId": "F54891194D768CD85B1684B1CED84008",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "4EC9BB88409F2DFD3E1A16A9FAD47F49",
+			"fromPinId": "3B2FB990416BB6C091FCE6B9A4DB4031",
+			"fromPinName": "Inventory",
+			"toNodeGuid": "6555E79B4654923719C726A8F1B24180",
+			"toPinId": "8282E7F146A015AA1C4FCDACB470DDD1",
+			"toPinName": "TargetArray"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "exec",
+			"fromNodeGuid": "6555E79B4654923719C726A8F1B24180",
+			"fromPinId": "2D73AD9D42383D97352A6D9AB8FAB5EB",
+			"fromPinName": "then",
+			"toNodeGuid": "BE7DB3AB4E95218A121C92B57318AA7B",
+			"toPinId": "DE32AAC54A89D3545154068A36101FFE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "0081266041C7A1DB053218A196223F90",
+			"fromPinId": "10EA29464C4D9466CD7F4283FAD6EBAB",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "6555E79B4654923719C726A8F1B24180",
+			"toPinId": "EBA75578471C9915FDE967BF4BECC27A",
+			"toPinName": "NewItem"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "0081266041C7A1DB053218A196223F90",
+			"fromPinId": "10EA29464C4D9466CD7F4283FAD6EBAB",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "461D3A964577DF76D5E6C79E08A32ACC",
+			"toPinId": "D840F2264A889F4BB9C916AB8B5C5D49",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "5331C9AF4A064F79F79380A3674AD784",
+			"fromPinId": "B71A254D4BD36673BDD0F9930A5D5EF3",
+			"fromPinName": "Inventory",
+			"toNodeGuid": "B678505749AD495E8D703EBBC48D3C6C",
+			"toPinId": "2EF48630442C2F23D5BC5EA9F695F60B",
+			"toPinName": "TargetArray"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "B678505749AD495E8D703EBBC48D3C6C",
+			"fromPinId": "425B1AFE4C381C7B1A52FDA558043625",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "C3BDB6F440288C53E4747480C8E77B34",
+			"toPinId": "E6159112408B92E669A5DABAEF5D751C",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "C3BDB6F440288C53E4747480C8E77B34",
+			"fromPinId": "5B87864740369A866E3B1C836EB1D799",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "BE7DB3AB4E95218A121C92B57318AA7B",
+			"toPinId": "5A8C7A534240171F4C25FFA8BE4E680B",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "exec",
+			"fromNodeGuid": "BE7DB3AB4E95218A121C92B57318AA7B",
+			"fromPinId": "126A529444A672F8C4FE96A5BFC96D09",
+			"fromPinName": "then",
+			"toNodeGuid": "770F3FE742C5A2C6F4C1749CE6BF85E8",
+			"toPinId": "A2B56D0442ED28748347A490AF85B660",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "exec",
+			"fromNodeGuid": "BE7DB3AB4E95218A121C92B57318AA7B",
+			"fromPinId": "FC52A6B244FDBE8108C168874F9C8F48",
+			"fromPinName": "else",
+			"toNodeGuid": "1CC9E96340835B38558B4DAD585986AA",
+			"toPinId": "1ED669B14B83B68068811594438DE8DE",
+			"toPinName": "exec"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "461D3A964577DF76D5E6C79E08A32ACC",
+			"fromPinId": "52F6FD664F5F00E8721AB78B9212C820",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "F17BDBB44A1B96E0031323BCF45DBD2B",
+			"toPinId": "4D6F34B04B8BF95E088678935C5B3B64",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "exec",
+			"fromNodeGuid": "770F3FE742C5A2C6F4C1749CE6BF85E8",
+			"fromPinId": "E82B14C5454933B94EA626842F49AC03",
+			"fromPinName": "then",
+			"toNodeGuid": "B715643E424D1D7573E825A3683F9295",
+			"toPinId": "B303B77146552BD9AD77BB90FDC42098",
+			"toPinName": "exec"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "F17BDBB44A1B96E0031323BCF45DBD2B",
+			"fromPinId": "44CF120448464D0AB3B31E8B6A735B13",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "770F3FE742C5A2C6F4C1749CE6BF85E8",
+			"toPinId": "3B7849484113D448CE8FEA8071346A10",
+			"toPinName": "WeaponData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "exec",
+			"fromNodeGuid": "B715643E424D1D7573E825A3683F9295",
+			"fromPinId": "966D07CB4B1567FDCD1CEDB5312CAAC0",
+			"fromPinName": "Is Valid",
+			"toNodeGuid": "A615DE3D48E4054BBF8EC58353096A65",
+			"toPinId": "A3DA178A418071FDF79F84AFDE483EFE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "19272851443B1645CA6CFF8C984A07C4",
+			"fromPinId": "9D13D5114F1A2A9387D0E99B7B90FEC9",
+			"fromPinName": "Chuck_HUD",
+			"toNodeGuid": "A615DE3D48E4054BBF8EC58353096A65",
+			"toPinId": "11B8A6F14B8F3BE9461980B6E487AE66",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "exec",
+			"fromNodeGuid": "1CC9E96340835B38558B4DAD585986AA",
+			"fromPinId": "A39B233D49F69651BCA584B9D2AB045B",
+			"fromPinName": "Is Valid",
+			"toNodeGuid": "488F13E7469211C375809D8B06CE31A4",
+			"toPinId": "A3DA178A418071FDF79F84AFDE483EFE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "37D871374A41324D4C4D5BA619900F78",
+			"fromPinId": "D417815F4800316C0459DD9C87369B4C",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "488F13E7469211C375809D8B06CE31A4",
+			"toPinId": "11B8A6F14B8F3BE9461980B6E487AE66",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "19272851443B1645CA6CFF8C984A07C4",
+			"fromPinId": "9D13D5114F1A2A9387D0E99B7B90FEC9",
+			"fromPinName": "Chuck_HUD",
+			"toNodeGuid": "B715643E424D1D7573E825A3683F9295",
+			"toPinId": "7256F948451FFF32F49EADB742D2D666",
+			"toPinName": "InputObject"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "EB61C0F64783CCDCCF5C949DBAC9A6E4",
+			"fromPinId": "9D13D5114F1A2A9387D0E99B7B90FEC9",
+			"fromPinName": "Chuck_HUD",
+			"toNodeGuid": "1CC9E96340835B38558B4DAD585986AA",
+			"toPinId": "4D08164149E9681EAEAD3CB07BF007E6",
+			"toPinName": "InputObject"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "ADAB40804085E94A4B98ADA340B37F79",
+			"fromPinId": "B253486A4BEABD133CF9A9BA55C4FAF7",
+			"fromPinName": "As ALS Player Controller",
+			"toNodeGuid": "19272851443B1645CA6CFF8C984A07C4",
+			"toPinId": "9CDD45894E7565B0DFE614BADC539465",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "264CD45C424DA397F0DA87BA844C2B4B",
+			"fromPinId": "B253486A4BEABD133CF9A9BA55C4FAF7",
+			"fromPinName": "As ALS Player Controller",
+			"toNodeGuid": "EB61C0F64783CCDCCF5C949DBAC9A6E4",
+			"toPinId": "9CDD45894E7565B0DFE614BADC539465",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "AddWeaponToInventory",
+			"edgeType": "data",
+			"fromNodeGuid": "EB61C0F64783CCDCCF5C949DBAC9A6E4",
+			"fromPinId": "9D13D5114F1A2A9387D0E99B7B90FEC9",
+			"fromPinName": "Chuck_HUD",
+			"toNodeGuid": "37D871374A41324D4C4D5BA619900F78",
+			"toPinId": "0EB7EFA74E6E833AAF7930B8B07D5043",
+			"toPinName": "InputPin"
+		}
+	],
+	"variablesRead": [
+		"Get As ALS Player Controller",
+		"Get Chuck_HUD",
+		"Get Inventory"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Add Item to Inventory\nLa destinazione è ALS Chuck BP",
+		"Update Weapon Display\nLa destinazione è WBP HUD"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Add Item to Inventory\nLa destinazione è ALS Chuck BP",
+		"Update Weapon Display\nLa destinazione è WBP HUD"
+	],
+	"flowId": "F001",
+	"graphId": "G004",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

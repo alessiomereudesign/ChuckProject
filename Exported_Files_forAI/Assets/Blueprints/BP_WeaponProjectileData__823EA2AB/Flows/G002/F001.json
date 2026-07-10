@@ -1,0 +1,40 @@
+{
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+	"graph": "UserConstructionScript",
+	"entryName": "Construction Script",
+	"entryNodeGuid": "0ABB51C949970C70E13AC2A25369B25D",
+	"nodes": [
+		{
+			"nodeGuid": "0ABB51C949970C70E13AC2A25369B25D",
+			"class": "K2Node_FunctionEntry",
+			"title": "Construction Script",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F3C69776470B7DBB6C9C38914AB28661",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G002",
+	"assetName": "BP_WeaponProjectileData",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData"
+}

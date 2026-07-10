@@ -1,0 +1,35 @@
+{
+	"assetName": "BPI_Interaction",
+	"assetPath": "/Game/ChuckContent/Blueprints/BPI_Interaction.BPI_Interaction",
+	"assetKey": "Game_ChuckContent_Blueprints_BPI_Interaction",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"functions": [
+		{
+			"name": "GetInteractionPrompt",
+			"graph": "GetInteractionPrompt",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/BPI_Interaction__2C5AD677/Graphs/G001/INDEX.json"
+		},
+		{
+			"name": "GetInteractionPrompt",
+			"graph": "GetInteractionPrompt",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/BPI_Interaction__2C5AD677/Graphs/G001/INDEX.json"
+		},
+		{
+			"name": "Interact",
+			"graph": "Interact",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 1,
+			"file": "Assets/Blueprints/BPI_Interaction__2C5AD677/Graphs/G002/INDEX.json"
+		}
+	]
+}

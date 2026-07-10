@@ -1,0 +1,428 @@
+{
+	"assetName": "ALS_AnimBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"components": [
+		{
+			"name": "Da locale a componente",
+			"class": "AnimGraphNode_LocalToComponentSpace",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Da componente a locale",
+			"class": "AnimGraphNode_ComponentToLocalSpace",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Da locale a componente",
+			"class": "AnimGraphNode_LocalToComponentSpace",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Da componente a locale",
+			"class": "AnimGraphNode_ComponentToLocalSpace",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Da componente a locale",
+			"class": "AnimGraphNode_ComponentToLocalSpace",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Da locale a componente",
+			"class": "AnimGraphNode_LocalToComponentSpace",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Da locale a componente",
+			"class": "AnimGraphNode_LocalToComponentSpace",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Da componente a locale",
+			"class": "AnimGraphNode_ComponentToLocalSpace",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Owning Component\nLa destinazione è Istanza animazione",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get World Scale\nLa destinazione è Componente di scena",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get CapsuleComponent",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get World Location\nLa destinazione è Componente di scena",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Is Walkable\nLa destinazione è Componente movimento personaggio",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Max Acceleration\nLa destinazione è Componente movimento personaggio",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Max Braking Deceleration\nLa destinazione è Componente movimento personaggio",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Calculate the Relative Acceleration Amount. This value represents the current amount of acceleration / deceleration relative to the actor rotation. It is normalized to a range of -1 to 1 so that -1 equals the Max Braking Deceleration, and 1 equals the Max Acceleration of the Character Movement Component.",
+			"class": "EdGraphNode_Comment",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Owning Component\nLa destinazione è Istanza animazione",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get World Scale\nLa destinazione è Componente di scena",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Calculate the Play Rate by dividing the Character's speed by the Animated Speed for each gait. The lerps are determined by the \"Weight_Gait\" anim curve that exists on every locomotion cycle so that the play rate is always in sync with the currently blended animation. The value is also divided by the Stride Blend and the mesh scale so that the play rate increases as the stride or scale gets smaller.",
+			"class": "EdGraphNode_Comment",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Owning Component\nLa destinazione è Istanza animazione",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Owning Component\nLa destinazione è Istanza animazione",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Da locale a componente",
+			"class": "AnimGraphNode_LocalToComponentSpace",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Da componente a locale",
+			"class": "AnimGraphNode_ComponentToLocalSpace",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Applica additivo spazio mesh",
+			"class": "AnimGraphNode_ApplyMeshSpaceAdditive",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Arm L (Mesh / Local Space)",
+			"class": "EdGraphNode_Comment",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Arm R (Mesh / Local Space)",
+			"class": "EdGraphNode_Comment",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Both a mesh space and local space version of the Base Additive is created so that different body parts can recieve different additive types. Local space works best on the arms so that the motion respects the rotation induced by the spine.",
+			"class": "EdGraphNode_Comment",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Owning Component\nLa destinazione è Istanza animazione",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Socket Transform\nLa destinazione è Componente di scena",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Step 3: If the Foot Lock curve equals 1, save the new lock location and rotation in component space.",
+			"class": "EdGraphNode_Comment",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Is Moving on Ground\nLa destinazione è Nav Movement Component",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Last Update Rotation\nLa destinazione è Componente movimento personaggio",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Owning Component\nLa destinazione è Istanza animazione",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get World Rotation\nLa destinazione è Componente di scena",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get the distance traveled between frames relative to the mesh rotation to find how much the foot should be offset to remain planted on the ground.",
+			"class": "EdGraphNode_Comment",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Subtract the location difference from the current local location and rotate it by the rotation difference to keep the foot planted in component space.",
+			"class": "EdGraphNode_Comment",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Owning Component\nLa destinazione è Istanza animazione",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Socket Location\nLa destinazione è Componente di scena",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Socket Location\nLa destinazione è Componente di scena",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Is Walkable\nLa destinazione è Componente movimento personaggio",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Set whether the arms should blend in mesh space or local space. The Mesh space weight will always be 1 unless the Local Space (LS) curve is fully weighted.",
+			"class": "EdGraphNode_Comment",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Physics Linear Velocity\nLa destinazione è Componente primitivo",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Owning Component\nLa destinazione è Istanza animazione",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		}
+	]
+}

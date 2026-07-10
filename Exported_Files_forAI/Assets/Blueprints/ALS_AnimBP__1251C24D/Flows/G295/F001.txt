@@ -1,0 +1,57 @@
+Asset: ALS_AnimBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP
+GraphId: G295
+Graph: DynamicTransitionCheck
+FlowId: F001
+Entry: Dynamic Transition Check
+NodeGuid: 812BD08F452593DED2397DB8E7186874
+
+Exec Flow:
+1. Dynamic Transition Check [K2Node_FunctionEntry] 812BD08F452593DED2397DB8E7186874
+2. Sequenza [K2Node_ExecutionSequence] C5DBF2994A3B65A3E35F7D9DD3278049
+3. Get Owning Component
+La destinazione è Istanza animazione [K2Node_CallFunction] 1E3926AC463920B19055748FFB9E3678
+4. Get Distance Between Two Sockets [K2Node_CallFunction] 423B6FA94BFAAFBE2D28A98B982F8E89
+5. float > float [K2Node_CallFunction] 4A93A96D4EE229D731B9699E00F29068
+6. Nodo di reindirizzamento [K2Node_Knot] 0D749A754EAEB907E5FCA5A2F94748BE
+7. Ramo [K2Node_IfThenElse] C1D378B54D2E02A566D423B9C44FAB84
+8. Get Owning Component
+La destinazione è Istanza animazione [K2Node_CallFunction] 2E76EDA347F7BB28174778BFAFC52C9F
+9. Get Distance Between Two Sockets [K2Node_CallFunction] D0E06378464F4FBFD363A9B747CA7FBD
+10. float > float [K2Node_CallFunction] BC45AD1D44DE35B45965D9988A8CC3BF
+11. Nodo di reindirizzamento [K2Node_Knot] FCAAD8F24125D999D3EC49AFA41291C2
+12. Ramo [K2Node_IfThenElse] EB5FA51E4710CB25FFE6CFAA4F1838D2
+13. Play Dynamic Transition
+La destinazione è ALS Anim BP [K2Node_CallFunction] 9EFECBFF400619C1C94228B47F9F3F66
+14. Play Dynamic Transition
+La destinazione è ALS Anim BP [K2Node_CallFunction] 6A34A0D7424B35739475D2B173350B19
+15. Check each foot to see if the location difference between the IK_Foot bone and its desired / target location (determined via a virtual bone) exceeds a threshold. If it does, play an additive transition animation on that foot. The currently set transition plays the second half of a 2 foot transition animation, so that only a single foot moves. Because only the IK_Foot bone can be locked, the separate virtual bone allows the system to know its desired location when locked. [EdGraphNode_Comment] 2D4E4B74453DD3D24C886F9288C271FA
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- float > float
+- Get Distance Between Two Sockets
+- Get Owning Component
+La destinazione è Istanza animazione
+- Play Dynamic Transition
+La destinazione è ALS Anim BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- float > float
+- Get Distance Between Two Sockets
+- Get Owning Component
+La destinazione è Istanza animazione
+- Play Dynamic Transition
+La destinazione è ALS Anim BP

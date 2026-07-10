@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "S_WheelSlotData",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/S_WheelSlotData.S_WheelSlotData",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_2_MENU_RAPIDO_S_WheelSlotData",
+	"shortAssetFolder": "S_WheelSlotData__80B23B93",
+	"pathHash": "80B23B93",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/S_WheelSlotData__80B23B93/SUMMARY.md",
+		"variables": "Assets/Structs/S_WheelSlotData__80B23B93/VARIABLES.json",
+		"components": "Assets/Structs/S_WheelSlotData__80B23B93/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/S_WheelSlotData__80B23B93/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/S_WheelSlotData__80B23B93/NODES.jsonl",
+		"edges": "Assets/Structs/S_WheelSlotData__80B23B93/EDGES.jsonl",
+		"search": "Assets/Structs/S_WheelSlotData__80B23B93/SEARCH.jsonl"
+	},
+	"graphs": []
+}

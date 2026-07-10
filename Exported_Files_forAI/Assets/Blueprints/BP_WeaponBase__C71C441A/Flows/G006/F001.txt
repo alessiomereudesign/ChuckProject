@@ -1,0 +1,32 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G006
+Graph: GetFireRate
+FlowId: F001
+Entry: Get Fire Rate
+NodeGuid: 353F17F344BB5A76D3AC30BD048C0F22
+
+Exec Flow:
+1. Get Fire Rate [K2Node_FunctionEntry] 353F17F344BB5A76D3AC30BD048C0F22
+2. Nodo di restituzione [K2Node_FunctionResult] 1D3408D245BBA494DA2D2CB1A0C052FF
+3. Get WeaponData [K2Node_VariableGet] 0F9982A74CB4422B0D996A8EBD3F9EC1
+4. Break S_WeaponData [K2Node_BreakStruct] FFED7D774CECD2B030013E84F6E88532
+
+Variables Read:
+- Get WeaponData
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

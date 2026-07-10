@@ -1,0 +1,67 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G010
+Graph: InitializeWeapon
+FlowId: F001
+Entry: Initialize Weapon
+NodeGuid: 45ACEE1E4348283BDB0A448628A6CBD4
+
+Exec Flow:
+1. Initialize Weapon [K2Node_FunctionEntry] 45ACEE1E4348283BDB0A448628A6CBD4
+2. Set WeaponData [K2Node_VariableSet] A0A9D0C14214D10D3E08918F10741A90
+3. Set OwnerChuck [K2Node_VariableSet] 8C3D3C45496D8C520002689A558B5014
+4. Nodo di reindirizzamento [K2Node_Knot] C50F79344AFC5C71EA27BF961D531249
+5. Set bIsEquipped [K2Node_VariableSet] C028FCED4215E7E8468FFBAF5CBAAB55
+6. Break S_WeaponData [K2Node_BreakStruct] 0A3608AA4AF3520180D659A9C3756D8F
+7. Set Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 5C7F5CDC46AEA7ECD90888B76781F3B5
+8. Get SK_Weapon [K2Node_VariableGet] 4167C0C942365F0AC8F3E98F2DE2B7CC
+9. Nodo di reindirizzamento [K2Node_Knot] C3D219C045D26BD4C7CAEE80CDA61485
+10. Nodo di restituzione [K2Node_FunctionResult] D6F65D584EB7BFDCA7A9949F673DFA29
+11. Get SK_Weapon [K2Node_VariableGet] 1D71EBD24D90A5674B204FB516C7C2E1
+12. Set Relative Scale 3D
+La destinazione è Componente di scena [K2Node_CallFunction] 19DAEBCC4F2E726ECC5168A16CC94CE7
+13. Set Relative Location
+La destinazione è Componente di scena [K2Node_CallFunction] 81BF44D74FA5D7D245F8E2B2569A1A07
+14. Nodo di reindirizzamento [K2Node_Knot] E5DBE842476115F87D9F7CAF6BF0463A
+15. Nodo di reindirizzamento [K2Node_Knot] A8BED56B40F9B0F8036B27A434CCAD93
+16. Set Relative Rotation
+La destinazione è Componente di scena [K2Node_CallFunction] 87F9FE7F448038B327E9D7BCC2F11634
+17. Nodo di reindirizzamento [K2Node_Knot] 8EE9B42749495FDC9A40C4A5BC5D5043
+18. Nodo di reindirizzamento [K2Node_Knot] 2960FF5944B8B9E759D36AB20BF58B3D
+19. Nodo di reindirizzamento [K2Node_Knot] A638D05940E7E2D4DDA2AFBE7ACBA904
+
+Variables Read:
+- Get SK_Weapon
+
+Variables Written:
+- Set bIsEquipped
+- Set OwnerChuck
+- Set WeaponData
+
+External Calls:
+- Set Relative Location
+La destinazione è Componente di scena
+- Set Relative Rotation
+La destinazione è Componente di scena
+- Set Relative Scale 3D
+La destinazione è Componente di scena
+- Set Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Set Relative Location
+La destinazione è Componente di scena
+- Set Relative Rotation
+La destinazione è Componente di scena
+- Set Relative Scale 3D
+La destinazione è Componente di scena
+- Set Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica

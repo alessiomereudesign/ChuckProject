@@ -1,0 +1,29 @@
+Asset: BP_CharacterPreview
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/BP_CharacterPreview.BP_CharacterPreview
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_CharacterPreview_BP_CharacterPreview
+GraphId: G002
+Graph: UserConstructionScript
+FlowId: F001
+Entry: Construction Script
+NodeGuid: 9C6F2D9741F070F21C35E2960E749D1A
+
+Exec Flow:
+1. Construction Script [K2Node_FunctionEntry] 9C6F2D9741F070F21C35E2960E749D1A
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

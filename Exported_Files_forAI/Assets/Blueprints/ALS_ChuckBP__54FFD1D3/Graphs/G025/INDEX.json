@@ -1,0 +1,25 @@
+{
+	"graphId": "G025",
+	"name": "SpawnMuzzleFX",
+	"graphName": "SpawnMuzzleFX",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 15,
+	"edgeCount": 22,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G025/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G025/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G025/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Spawn Muzzle FX",
+			"entryNodeGuid": "522DF8F24DBF9E37151CBD98668C5E06",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G025/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G025/F001.json",
+			"textFile": "Flows/G025/F001.txt",
+			"jsonFile": "Flows/G025/F001.json",
+			"nodeCount": 15
+		}
+	]
+}

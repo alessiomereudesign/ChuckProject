@@ -1,0 +1,25 @@
+{
+	"graphId": "G011",
+	"name": "IsLoopingWeapon",
+	"graphName": "IsLoopingWeapon",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 4,
+	"edgeCount": 3,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G011/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G011/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G011/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Is Looping Weapon",
+			"entryNodeGuid": "82E63F4741FCAC8480C9929C5A5C2813",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G011/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G011/F001.json",
+			"textFile": "Flows/G011/F001.txt",
+			"jsonFile": "Flows/G011/F001.json",
+			"nodeCount": 4
+		}
+	]
+}

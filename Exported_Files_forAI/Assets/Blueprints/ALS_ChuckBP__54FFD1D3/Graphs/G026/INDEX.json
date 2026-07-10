@@ -1,0 +1,25 @@
+{
+	"graphId": "G026",
+	"name": "UpdateColoringSystem",
+	"graphName": "UpdateColoringSystem",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 11,
+	"edgeCount": 12,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G026/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G026/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G026/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Update Coloring System",
+			"entryNodeGuid": "6358DCEA485FCB79C6E733BB2C9EC117",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G026/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G026/F001.json",
+			"textFile": "Flows/G026/F001.txt",
+			"jsonFile": "Flows/G026/F001.json",
+			"nodeCount": 11
+		}
+	]
+}

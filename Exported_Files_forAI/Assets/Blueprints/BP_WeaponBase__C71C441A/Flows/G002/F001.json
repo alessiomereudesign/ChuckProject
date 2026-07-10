@@ -1,0 +1,213 @@
+{
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+	"graph": "CanFire",
+	"entryName": "Can Fire",
+	"entryNodeGuid": "2492A371435702A552B6BBA1C87ABD3C",
+	"nodes": [
+		{
+			"nodeGuid": "2492A371435702A552B6BBA1C87ABD3C",
+			"class": "K2Node_FunctionEntry",
+			"title": "Can Fire",
+			"comment": "",
+			"x": -640,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8CB19F2E4C441E87EC040C9DD0B9EBE9",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AB4B7FE8485AE03E2F1FECA7226522E5",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 208,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ECF13519462C271FB0A655B5B84756DF",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "185AC2FF47A769F786F08885E6025730",
+					"name": "CanFire",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "58F04E50489AF2290D4786B3DCD54CE5",
+			"class": "K2Node_VariableGet",
+			"title": "Get WeaponData",
+			"comment": "",
+			"x": -496,
+			"y": 84,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7F21B1CC49D34A4E70D12791D7B26461",
+					"name": "WeaponData",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "91EF911943893B7529318A8CD36922C7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2160649645E174E63813DFB7715F9975",
+			"class": "K2Node_BreakStruct",
+			"title": "Break S_WeaponData",
+			"comment": "",
+			"x": -336,
+			"y": 61,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F3C498564FE2E5B33A112FA4CBB911F8",
+					"name": "S_WeaponData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1C4E665249F959A4D85F17869234EF12",
+					"name": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8E841D124235DB09ED5B0AA21F90854D",
+			"class": "K2Node_PromotableOperator",
+			"title": "integer > integer",
+			"comment": "",
+			"x": 32,
+			"y": 86,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "17DA7C1941C5A660FAC763866F754D92",
+					"name": "A",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9A06496846FF14AE2C7F90B6C8B8E717",
+					"name": "B",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B5596551405A53BFCDDCA8A4F2D7EFF4",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FCDF9C1447890F97FC636DB59D5BD3AA",
+					"name": "ErrorTolerance",
+					"direction": "Input",
+					"type": "None",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "CanFire",
+			"edgeType": "exec",
+			"fromNodeGuid": "2492A371435702A552B6BBA1C87ABD3C",
+			"fromPinId": "8CB19F2E4C441E87EC040C9DD0B9EBE9",
+			"fromPinName": "then",
+			"toNodeGuid": "AB4B7FE8485AE03E2F1FECA7226522E5",
+			"toPinId": "ECF13519462C271FB0A655B5B84756DF",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "CanFire",
+			"edgeType": "data",
+			"fromNodeGuid": "8E841D124235DB09ED5B0AA21F90854D",
+			"fromPinId": "B5596551405A53BFCDDCA8A4F2D7EFF4",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "AB4B7FE8485AE03E2F1FECA7226522E5",
+			"toPinId": "185AC2FF47A769F786F08885E6025730",
+			"toPinName": "CanFire"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "CanFire",
+			"edgeType": "data",
+			"fromNodeGuid": "58F04E50489AF2290D4786B3DCD54CE5",
+			"fromPinId": "7F21B1CC49D34A4E70D12791D7B26461",
+			"fromPinName": "WeaponData",
+			"toNodeGuid": "2160649645E174E63813DFB7715F9975",
+			"toPinId": "F3C498564FE2E5B33A112FA4CBB911F8",
+			"toPinName": "S_WeaponData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "CanFire",
+			"edgeType": "data",
+			"fromNodeGuid": "2160649645E174E63813DFB7715F9975",
+			"fromPinId": "1C4E665249F959A4D85F17869234EF12",
+			"fromPinName": "CurrentAmmoInMagazine_75_6C0D0FC744AA581F3583A7AD569F10A8",
+			"toNodeGuid": "8E841D124235DB09ED5B0AA21F90854D",
+			"toPinId": "17DA7C1941C5A660FAC763866F754D92",
+			"toPinName": "A"
+		}
+	],
+	"variablesRead": [
+		"Get WeaponData"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G002",
+	"assetName": "BP_WeaponBase",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase"
+}

@@ -1,0 +1,73 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G014
+Graph: CanSprint
+FlowId: F001
+Entry: Can Sprint
+NodeGuid: 144A8B3649AC177B3AFFA3B02BCD8C5C
+
+Exec Flow:
+1. Can Sprint [K2Node_FunctionEntry] 144A8B3649AC177B3AFFA3B02BCD8C5C
+2. Nodo di restituzione [K2Node_FunctionResult] D0E25B634C541F3B49CFB48FE85D06B9
+3. Nodo di restituzione [K2Node_FunctionResult] 729AE29243A1F9441F48B8A78F1A41AF
+4. float < float [K2Node_CallFunction] 5E04B51F4B7074A90FB918B3AA0E6B7A
+5. Nodo di restituzione [K2Node_FunctionResult] B964B0B547800A8C5F0A83A0DA9AA4F1
+6. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] CBDF154E47B8DA87AC9C6F88DFE454AC
+7. Get MovementInputAmount [K2Node_VariableGet] C22C49734FEF692B532550B1E7826D73
+8. float > float [K2Node_CallFunction] 36AC0EE94BED30FC2CBD92B71D72361F
+9. Nodo di restituzione [K2Node_FunctionResult] 93188F9F493EDAE7D45576A0CD7C5B4A
+10. Get HasMovementInput [K2Node_VariableGet] 9EE39A0B42342FEA5DA5388872CAB241
+11. Ramo [K2Node_IfThenElse] 94F0CF814BBC0FD56E52E797D980AC4E
+12. Get RotationMode [K2Node_VariableGet] 9C72E2C946379090131F31B62A0FCEC4
+13. Switch on ALS_RotationMode [K2Node_SwitchEnum] 775AB8364CC64383626D428A99AB3F94
+14. Nodo di reindirizzamento [K2Node_Knot] 738835A3449FAB40461516A2B4255379
+15. Get MovementInputAmount [K2Node_VariableGet] 21191742463C944605F49688031E5FD6
+16. float > float [K2Node_CallFunction] D25C519D4D80E3156ABD76A2E8EDD614
+17. Nodo di reindirizzamento [K2Node_Knot] 79DE3BBB41FE217C32ECF69E1F340B3C
+18. Get Current Acceleration
+La destinazione è Componente movimento personaggio [K2Node_CallFunction] 32A701184A93C3C7B7DC84B017E0E16A
+19. Get CharacterMovement [K2Node_VariableGet] EF6BB11C4B33DDAA0C0F7CA7154A7A32
+20. Rotation From X Vector [K2Node_CallFunction] 787634D4499AEBD66CADDF9FA72E1903
+21. Delta (Rotator) [K2Node_CallFunction] 78F4F97D4AAF70CCDD1E86BA12466F5D
+22. Get Control Rotation
+La destinazione è Pedina [K2Node_CallFunction] 19A63E4846C202D33A928DB4D703F8F5
+23. Absolute (Float) [K2Node_CallFunction] C62CF559446A624FEE70B9ACD7468364
+24. Determine if the character is currently able to sprint based on the Rotation mode and current acceleration (input) rotation. If the character is in the Looking Rotation mode, only allow sprinting if there is full movement input and it is faced forward relative to the camera + or - 50 degrees. [EdGraphNode_Comment] 0E3A377545EC2214FA3DC9A945701AFE
+
+Variables Read:
+- Get CharacterMovement
+- Get HasMovementInput
+- Get MovementInputAmount
+- Get RotationMode
+
+Variables Written:
+- none
+
+External Calls:
+- Absolute (Float)
+- Delta (Rotator)
+- float < float
+- float > float
+- Get Control Rotation
+La destinazione è Pedina
+- Get Current Acceleration
+La destinazione è Componente movimento personaggio
+- Rotation From X Vector
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Absolute (Float)
+- Delta (Rotator)
+- float < float
+- float > float
+- Get Control Rotation
+La destinazione è Pedina
+- Get Current Acceleration
+La destinazione è Componente movimento personaggio
+- Rotation From X Vector

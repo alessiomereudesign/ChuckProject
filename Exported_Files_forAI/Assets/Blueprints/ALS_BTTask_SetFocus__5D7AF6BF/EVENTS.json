@@ -1,0 +1,15 @@
+{
+	"assetName": "ALS_BTTask_SetFocus",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_BTTask_SetFocus.ALS_BTTask_SetFocus",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_AI_ALS_BTTask_SetFocus",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Evento Receive Execute AI",
+			"graph": "EventGraph",
+			"nodeGuid": "6C5F8D0641E3CF69F8682CACD62F4D57",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"assetName": "ALS_Controller_BPI",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Controller_BPI.ALS_Controller_BPI",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Controller_BPI",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"functions": [
+		{
+			"name": "BPI_Get_DebugInfo",
+			"graph": "BPI_Get_DebugInfo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/ALS_Controller_BPI__488D1728/Graphs/G001/INDEX.json"
+		},
+		{
+			"name": "BPI_Get_DebugInfo",
+			"graph": "BPI_Get_DebugInfo",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/ALS_Controller_BPI__488D1728/Graphs/G001/INDEX.json"
+		}
+	]
+}

@@ -1,0 +1,116 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "WBP_TabIntersect_CharacterSlot",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+	"shortAssetFolder": "WBP_TabIntersect_CharacterSlot__25DC4AB9",
+	"pathHash": "25DC4AB9",
+	"assetType": "Blueprint",
+	"unrealClass": "WidgetBlueprint",
+	"parentClass": "/Script/UMG.UserWidget",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 4,
+		"components": 1,
+		"widgets": 8,
+		"graphs": 2,
+		"nodes": 34,
+		"edges": 33,
+		"flows": 5
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/SUMMARY.md",
+		"variables": "Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/VARIABLES.json",
+		"components": "Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/NODES.jsonl",
+		"edges": "Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/EDGES.jsonl",
+		"search": "Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "OnSlotSelected",
+			"graphName": "OnSlotSelected",
+			"type": "DelegateSignature",
+			"graphType": "DelegateSignature",
+			"graphGuid": "",
+			"nodeCount": 1,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "On Slot Selected",
+					"entryNodeGuid": "AD09FBE3413794487DEE01A2F419472B",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 1
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 33,
+			"edgeCount": 33,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Evento On Added to Focus Path",
+					"entryNodeGuid": "F7A30D314DC8048F2C654AAD34955749",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 33
+				},
+				{
+					"flowId": "F002",
+					"entryName": "Evento On Removed from Focus Path",
+					"entryNodeGuid": "EE1195DD460CA350183A0ABEF793747E",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F002.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F002.json",
+					"textFile": "Flows/G002/F002.txt",
+					"jsonFile": "Flows/G002/F002.json",
+					"nodeCount": 33
+				},
+				{
+					"flowId": "F003",
+					"entryName": "Evento Pre Construct",
+					"entryNodeGuid": "D36E4EC04050F902208F03A7222ADFBF",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F003.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F003.json",
+					"textFile": "Flows/G002/F003.txt",
+					"jsonFile": "Flows/G002/F003.json",
+					"nodeCount": 33
+				},
+				{
+					"flowId": "F004",
+					"entryName": "InizializeCharacterSlot\nCustom Event",
+					"entryNodeGuid": "0AFF8609480CC056029BA6AA1E7363DB",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F004.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterSlot__25DC4AB9/Flows/G002/F004.json",
+					"textFile": "Flows/G002/F004.txt",
+					"jsonFile": "Flows/G002/F004.json",
+					"nodeCount": 33
+				}
+			]
+		}
+	]
+}

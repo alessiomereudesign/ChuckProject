@@ -1,0 +1,93 @@
+{
+	"schemaVersion": "2.2",
+	"unrealEngineVersion": "5.4.4-35576357+++UE5+Release-5.4",
+	"name": "S_InteractionPrompt",
+	"path": "/Game/ChuckContent/Blueprints/S_InteractionPrompt.S_InteractionPrompt",
+	"assetName": "S_InteractionPrompt",
+	"assetPath": "/Game/ChuckContent/Blueprints/S_InteractionPrompt.S_InteractionPrompt",
+	"assetKey": "Game_ChuckContent_Blueprints_S_InteractionPrompt",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"status": "UpToDate",
+	"guid": "CF84D9514A4DBFEA9EC88CBCEACC6D0D",
+	"sizeBytes": 48,
+	"fields": [
+		{
+			"name": "ActionText_2_3AC59B3E46A172564FA79D99159C6C36",
+			"authoredName": "ActionText",
+			"type": "FText",
+			"propertyClass": "TextProperty",
+			"arrayDim": 1,
+			"defaultValue": "",
+			"metadata":
+			{
+				"DisplayName": "ActionText",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "ObjectName_4_D1DBE99F499FC8276645848688617E8A",
+			"authoredName": "ObjectName",
+			"type": "FText",
+			"propertyClass": "TextProperty",
+			"arrayDim": 1,
+			"defaultValue": "",
+			"metadata":
+			{
+				"DisplayName": "ObjectName",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "InputActionName_8_6279F1D24A27BA475D50FFA2303C8A12",
+			"authoredName": "InputActionName",
+			"type": "FName",
+			"propertyClass": "NameProperty",
+			"arrayDim": 1,
+			"defaultValue": "None",
+			"metadata":
+			{
+				"DisplayName": "InputActionName",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "bShowObjectName_10_4E8E194D4B4AF2E0FF2560900EBEF0F0",
+			"authoredName": "bShowObjectName",
+			"type": "bool",
+			"propertyClass": "BoolProperty",
+			"arrayDim": 1,
+			"defaultValue": "False",
+			"metadata":
+			{
+				"DisplayName": "bShowObjectName",
+				"ToolTip": ""
+			}
+		}
+	],
+	"dependencies": [],
+	"relations": [],
+	"semanticSummary":
+	{
+		"probableSystem": "Interaction",
+		"classificationConfidence": "heuristic",
+		"summary": "Struct dati descritta tramite campi, default e relazioni statiche rilevate.",
+		"importantVariables": [],
+		"importantFunctions": [],
+		"importantEvents": [],
+		"relatedAssets": [],
+		"complexity":
+		{
+			"graphCount": 0,
+			"nodeCount": 0,
+			"pinCount": 0,
+			"linkCount": 0
+		},
+		"notes": [
+			"Classificazione euristica dedotta da nome, path e tipo asset (Interaction)."
+		]
+	},
+	"shortAssetFolder": "S_InteractionPrompt__AE823A3A",
+	"pathHash": "AE823A3A"
+}

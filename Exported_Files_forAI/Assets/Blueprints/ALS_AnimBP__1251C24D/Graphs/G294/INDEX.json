@@ -1,0 +1,25 @@
+{
+	"graphId": "G294",
+	"name": "CanTurnInPlace",
+	"graphName": "CanTurnInPlace",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 10,
+	"edgeCount": 8,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G294/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G294/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G294/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Can Turn in Place",
+			"entryNodeGuid": "470A00DB4F22AEF8EEB80DBB8F1ABFA0",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G294/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G294/F001.json",
+			"textFile": "Flows/G294/F001.txt",
+			"jsonFile": "Flows/G294/F001.json",
+			"nodeCount": 10
+		}
+	]
+}

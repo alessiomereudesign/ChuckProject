@@ -1,0 +1,75 @@
+{
+	"graphId": "G001",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 44,
+	"edgeCount": 56,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterCard__337A45D1/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterCard__337A45D1/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterCard__337A45D1/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Evento Construct",
+			"entryNodeGuid": "96F3438B4823B47F8459079DAC315CBE",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterCard__337A45D1/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterCard__337A45D1/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 44
+		},
+		{
+			"flowId": "F002",
+			"entryName": "Evento Pre Construct",
+			"entryNodeGuid": "B79B62C045EC31C9D11656BFC34F52E9",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterCard__337A45D1/Flows/G001/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterCard__337A45D1/Flows/G001/F002.json",
+			"textFile": "Flows/G001/F002.txt",
+			"jsonFile": "Flows/G001/F002.json",
+			"nodeCount": 44
+		},
+		{
+			"flowId": "F003",
+			"entryName": "Evento Tick",
+			"entryNodeGuid": "1CF598084919779FE6F586A53BBF0FFA",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterCard__337A45D1/Flows/G001/F003.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterCard__337A45D1/Flows/G001/F003.json",
+			"textFile": "Flows/G001/F003.txt",
+			"jsonFile": "Flows/G001/F003.json",
+			"nodeCount": 44
+		},
+		{
+			"flowId": "F004",
+			"entryName": "FadeInEvent\nCustom Event",
+			"entryNodeGuid": "53D60D6049911D475061A7A1D47D27DF",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterCard__337A45D1/Flows/G001/F004.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterCard__337A45D1/Flows/G001/F004.json",
+			"textFile": "Flows/G001/F004.txt",
+			"jsonFile": "Flows/G001/F004.json",
+			"nodeCount": 44
+		},
+		{
+			"flowId": "F005",
+			"entryName": "FadeOutEvent\nCustom Event",
+			"entryNodeGuid": "BB67EFE74938F26B96F2ABB4FCC49894",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterCard__337A45D1/Flows/G001/F005.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterCard__337A45D1/Flows/G001/F005.json",
+			"textFile": "Flows/G001/F005.txt",
+			"jsonFile": "Flows/G001/F005.json",
+			"nodeCount": 44
+		},
+		{
+			"flowId": "F006",
+			"entryName": "InizializeCharacterCard\nCustom Event",
+			"entryNodeGuid": "2F1D688941DF1A67130288B4FA47E2FE",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterCard__337A45D1/Flows/G001/F006.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_TabIntersect_CharacterCard__337A45D1/Flows/G001/F006.json",
+			"textFile": "Flows/G001/F006.txt",
+			"jsonFile": "Flows/G001/F006.json",
+			"nodeCount": 44
+		}
+	]
+}

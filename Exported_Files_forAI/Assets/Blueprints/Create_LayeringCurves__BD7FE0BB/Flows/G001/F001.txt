@@ -1,0 +1,82 @@
+Asset: Create_LayeringCurves
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimModifiers/Create_LayeringCurves.Create_LayeringCurves
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimModifiers_Create_LayeringCurves
+GraphId: G001
+Graph: EventGraph
+FlowId: F001
+Entry: Evento On Apply
+NodeGuid: 0A282E7C41B7E2C59552D783E82D5004
+
+Exec Flow:
+1. Evento On Apply [K2Node_Event] 0A282E7C41B7E2C59552D783E82D5004
+2. Set AnimSequence [K2Node_VariableSet] CE5F64CD4C4606EB9B851B9F35E188AF
+3. Does Curve Exist [K2Node_CallFunction] E12B6DCD4630A9BC3011369347B977A0
+4. Get AnimSequence [K2Node_VariableGet] 782A0BA04A4834E86520B18627EA1386
+5. Ramo [K2Node_IfThenElse] 3404E81840BD9F8EE6B7A18BFCB9C8B9
+6. Rimuovi curva [K2Node_CallFunction] 2BC7365B4503D2A0091140A426AE519B
+7. Get AnimSequence [K2Node_VariableGet] 2E480A404E152131947DD8B887DF363D
+8. Nodo di reindirizzamento [K2Node_Knot] 1562F1AF48F1EE760156BC90DA1D2243
+9. Nodo di reindirizzamento [K2Node_Knot] 9FD8ED4A41F43FE3F909B19935A4ACA6
+10. Add Float Curve Key [K2Node_CallFunction] 178A73CF4C63FD9993B8609AF072EF1B
+11. Get AnimSequence [K2Node_VariableGet] 518A2696431B8D1B8BFF4EBCA29DFC4B
+12. Get AnimSequence [K2Node_VariableGet] 97187FDA4070C705FDC4488178666058
+13. Aggiungi curva [K2Node_CallFunction] 6B24DDF44BED2E20126FE985CAC39DD6
+14. Get AnimSequence [K2Node_VariableGet] 07E648A544A9E0FB44A050831177FCB1
+15. Nodo di reindirizzamento [K2Node_Knot] 8A6538644AE316E59B95A688FED145E0
+16. Get Time at Frame [K2Node_CallFunction] F01102F14D6B836EA644C6B471DAF76B
+17. Get AnimSequence [K2Node_VariableGet] 09AD1ECC4B06AE9445468097A5DA38CB
+18. Get Num Frames [K2Node_CallFunction] 4D6AE2054426A6614F882C96167E5554
+19. For Loop [K2Node_MacroInstance] 1A8BF7424BAF31691DB24FA214257019
+20. Get CurvesToCreate [K2Node_VariableGet] 4DD0F8FF4A2BFA716CAA66B0152EFB33
+21. For Each Loop [K2Node_MacroInstance] F42379FF45F539E0F9E1439EED2AED37
+22. Set Curve [K2Node_VariableSet] 15694DE74006935B5648CF9EAC29E3AA
+23. Get Curve [K2Node_VariableGet] E890152341C58BCE97B40EB9BD721263
+24. Get Curve [K2Node_VariableGet] 79A4E42E484E29EBD0A95091F1CDB363
+25. Get Curve [K2Node_VariableGet] 66C66466496D0585C3B12082E1C3E884
+26. int - int [K2Node_CallFunction] F65D1CDA4BF2AC7AE732AF98D4E290D8
+27. Get KeyEachFrame [K2Node_VariableGet] 1E20A5F146CB12BDB4CF659BF05D8CB0
+28. Ramo [K2Node_IfThenElse] 936138734062E5EB1802999C0BE9257E
+29. Add Float Curve Key [K2Node_CallFunction] C7FE7E864E467B804763FFAF6154F9A3
+30. Get AnimSequence [K2Node_VariableGet] 258995D14CF1871CC5B1208C53DDEE95
+31. Get AnimSequence [K2Node_VariableGet] EAAEC92D41ACC504C05E11A1357B9983
+32. Get Time at Frame [K2Node_CallFunction] E6739D554945E6962CF3CD9730E183F9
+33. Get Curve [K2Node_VariableGet] 8B63A67345447688EDFDD298C994814C
+34. Nodo di reindirizzamento [K2Node_Knot] F8A046E545D636D99D2830A45C9310D7
+35. Get DefaultValue [K2Node_VariableGet] 07EFDE014C950CA987DA19B4DBD17C9F
+36. Get DefaultValue [K2Node_VariableGet] BFAFBA4240F87D96B450419587DD8365
+37. This Anim Modifier automatically creates all Layering Curves and is a great way to quickly add the necessary curves to the overlay animations. [EdGraphNode_Comment] 76A106B44EC24DA3184C91B08C2A6CC3
+
+Variables Read:
+- Get AnimSequence
+- Get Curve
+- Get CurvesToCreate
+- Get DefaultValue
+- Get KeyEachFrame
+
+Variables Written:
+- Set AnimSequence
+- Set Curve
+
+External Calls:
+- Add Float Curve Key
+- Aggiungi curva
+- Does Curve Exist
+- Get Num Frames
+- Get Time at Frame
+- int - int
+- Rimuovi curva
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Add Float Curve Key
+- Aggiungi curva
+- Does Curve Exist
+- Get Num Frames
+- Get Time at Frame
+- int - int
+- Rimuovi curva

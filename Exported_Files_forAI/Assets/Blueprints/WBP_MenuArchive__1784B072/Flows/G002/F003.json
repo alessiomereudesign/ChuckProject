@@ -1,0 +1,4721 @@
+{
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+	"graph": "IntersectGraph",
+	"entryName": "OpenCharacterSlot\nCustom Event",
+	"entryNodeGuid": "0F015DC949B88A9861D156BE6B97F60F",
+	"nodes": [
+		{
+			"nodeGuid": "70790197477F04B012D5A68D59F1C60D",
+			"class": "K2Node_Event",
+			"title": "Evento Construct",
+			"comment": "",
+			"x": -2224,
+			"y": 288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "211CF4C849532C8A00090BB1C48FD41C",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6266186640581578AB2A4A8A380BD71E",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "9E32D5F042239EDDD94E2F8D6CF8356E",
+			"class": "K2Node_CallFunction",
+			"title": "Get Data Table Row Names",
+			"comment": "",
+			"x": -1440,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6803FEC046F35749D2D547865A9B9B0A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "39F20E904D79AB40211363983D5268A0",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "75351CFF46D53112C7D09EA0DB9473D9",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.DataTableFunctionLibrary",
+					"defaultValue": "/Script/Engine.Default__DataTableFunctionLibrary"
+				},
+				{
+					"pinId": "5A30F2EF47C74DE828D9AC904CA286EA",
+					"name": "Table",
+					"direction": "Input",
+					"type": "object|/Script/Engine.DataTable|const",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/DT_CharacterData.DT_CharacterData"
+				},
+				{
+					"pinId": "04865F0040DDA2394AD8519DA553E359",
+					"name": "OutRowNames",
+					"direction": "Output",
+					"type": "name|container=Array",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BE2E92094388DBCE3C7D869C4D236EFB",
+			"class": "K2Node_MacroInstance",
+			"title": "For Each Loop",
+			"comment": "",
+			"x": -768,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5AACFBCE4877374D3CC16688CAF01BEA",
+					"name": "Exec",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BE7B55934F554AF6B8DC42BBFFFADD88",
+					"name": "Array",
+					"direction": "Input",
+					"type": "name|container=Array",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E3F08245417C15A72E1B7BAC9F4624D6",
+					"name": "LoopBody",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8893BE2840D0EC7149CD0687798C4AC9",
+					"name": "Array Element",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "30C129CB4FB51DE6ED8C429399E41CA4",
+					"name": "Array Index",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A405F6A34B4D60FB3F5D0DA345B52827",
+					"name": "Completed",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B7FA6BEE4FF792629F2435A268922FF3",
+			"class": "K2Node_GetDataTableRow",
+			"title": "Get Data Table Row DT_CharacterData",
+			"comment": "",
+			"x": -528,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CB36D6EE41733556F93DCE8BBCD6EDBC",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EADEA999453607469910229AA0FD1A12",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C3F6DC7B49FF86ED21313E954427A4EA",
+					"name": "RowNotFound",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9B278D1549BA128CE0FE34BD474C93E7",
+					"name": "DataTable",
+					"direction": "Input",
+					"type": "object|/Script/Engine.DataTable",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/DT_CharacterData.DT_CharacterData"
+				},
+				{
+					"pinId": "C85D3718405057D13482F18DAAF679C4",
+					"name": "RowName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E4F38BC6447822C2AB9F2A9F62659CF9",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/F_CharacterData.F_CharacterData",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DE6DCCAE4E4AEE47616614897AA7433C",
+			"class": "K2Node_CreateWidget",
+			"title": "Create WBP Tab Intersect Character Slot Widget",
+			"comment": "",
+			"x": -176,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2C3AC74F49A5D14EA6C6AE9777F975A8",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "184E892D42D3225AAF6845814548AC0A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "152CA8A84F30DE2D6D70CAA0DF13531C",
+					"name": "Class",
+					"direction": "Input",
+					"type": "class|/Script/UMG.UserWidget",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C"
+				},
+				{
+					"pinId": "59ADEC904415F5D5EFEB049C6BD7C8DA",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "36AA6C334C44C351374260826D434842",
+					"name": "OwningPlayer",
+					"direction": "Input",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3781CA7746A56D942BC403B83C076A65",
+					"name": "CharacterData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/F_CharacterData.F_CharacterData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C7F2C1BD478CBD31FD455686D7148F3C",
+					"name": "ParentIntersectRef",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "19C2D0F741857B0D3717F5910CE79F77",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 208,
+			"y": 464,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A42E673D43D5B2F949A905AF7DB19F46",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6504CDF744268619C42A0D95752A15C0",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BF8C32CA4F74F125AECF2C9F0C678ECD",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 736,
+			"y": 464,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3BE47F5442859171A2D930B5DAB0727F",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E7E1ABFC4CEF83433AE946930963F954",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6EF1743B4DD11EFF79C3B8857F08438A",
+			"class": "K2Node_CallFunction",
+			"title": "Inizialize Character Slot\nLa destinazione è WBP Tab Intersect Character Slot",
+			"comment": "",
+			"x": 224,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C7A681C0460B543A3317ABA675D4CA3A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D857377A40E745F3BF5897921DBA00EA",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "89A8C33641BA806A1C2D62A715575CA3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8B08A3DE4F2567A0E396CC90FDF26BEA",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 464,
+			"y": 464,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FFF0319744FD8CA91A04F589813CCA58",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2D47FC3C4CAB6AAE3B132D8968B3676E",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "50F637B4454718FAD50452A29055A98E",
+			"class": "K2Node_AddDelegate",
+			"title": "Bind Event to On Slot Selected",
+			"comment": "",
+			"x": 544,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9F1F6E9C43493EB56C6CF5A248D38731",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "879D409E496F267B3370AFB128EDA09F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5AD9167F49091F2687134080D4EFEAD0",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C158A09F45B6F27F00C750AC865372E8",
+					"name": "Delegate",
+					"direction": "Input",
+					"type": "delegate|ref|const",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0F015DC949B88A9861D156BE6B97F60F",
+			"class": "K2Node_CustomEvent",
+			"title": "OpenCharacterSlot\nCustom Event",
+			"comment": "",
+			"x": 400,
+			"y": 656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "544C5F6949313CA63A1E8A936B667E5E",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "303813F94F118017983C5BA93389D738",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "31D9335345D5E638F81975BB48532805",
+					"name": "SelectedCharacterData",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/F_CharacterData.F_CharacterData",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F727DF7D447FE5B56B6161860A1931C6",
+			"class": "K2Node_CreateWidget",
+			"title": "Create WBP Tab Intersect Character Card Widget",
+			"comment": "",
+			"x": 608,
+			"y": 672,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "35CD9CC64328710466A3949CBD4BA425",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3F1502914911D50F221DEB9DD5ADCE8A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4A0993A44527210687F90CA4A2992372",
+					"name": "Class",
+					"direction": "Input",
+					"type": "class|/Script/UMG.UserWidget",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterCard.WBP_TabIntersect_CharacterCard_C"
+				},
+				{
+					"pinId": "38C0B00A4592893EA7CFDA89710E3D3C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterCard.WBP_TabIntersect_CharacterCard_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "271FF6EC446BE818477EF69C3AD891F8",
+					"name": "OwningPlayer",
+					"direction": "Input",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3EB1C6AB4AF9B16CF8632AAABEB13A31",
+					"name": "CharacterData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/F_CharacterData.F_CharacterData",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C7A480634DB772B976D98BB144341FF5",
+			"class": "K2Node_CallFunction",
+			"title": "Inizialize Character Card\nLa destinazione è WBP Tab Intersect Character Card",
+			"comment": "",
+			"x": 992,
+			"y": 656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BB00A0B5494EEADF5AAACC89895647B4",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C186E78946745F0DC5DB399B65A83A09",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "258D2809458F6C1203A0F6A024028809",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterCard.WBP_TabIntersect_CharacterCard_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "830D126648CFD70A911409BBD780FEF7",
+			"class": "K2Node_VariableGet",
+			"title": "Get Brd_ContainerCharacterSlot",
+			"comment": "",
+			"x": 1008,
+			"y": 816,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0866217C40F4573ACA171B9538AAE259",
+					"name": "Brd_ContainerCharacterSlot",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Border",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "871E945D44609999E074E18656DE8EA9",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A0548BE4493DB11CBA7F7D86B637F927",
+			"class": "K2Node_CallFunction",
+			"title": "Set Content\nLa destinazione è Content Widget",
+			"comment": "",
+			"x": 1312,
+			"y": 656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "55FA38B747796D8830839D80135D4CFA",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BC79961F4941AEC0ECB57AA3297A516C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6755235144F01F5DBBF3E590ED4EC592",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.ContentWidget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7E125E9E4475BA545EA98A91481F8FFC",
+					"name": "Content",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A3820B644CF0C65930EEF69E6DEB7AEF",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/UMG.PanelSlot",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "576DBB494EF668536B17969F4F2AFA41",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 992,
+			"y": 784,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "365D1BD64B1E28A67ACD0695A627D07C",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterCard.WBP_TabIntersect_CharacterCard_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A10FC00F4544FC79081C9DA5DB782D5A",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterCard.WBP_TabIntersect_CharacterCard_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B44F547E4465726373652EB8A12B3B3E",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1232,
+			"y": 784,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1E8F655D4E7AFBC399967DAC6F3914D8",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterCard.WBP_TabIntersect_CharacterCard_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "84AED0784A56430D68827A903E833279",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterCard.WBP_TabIntersect_CharacterCard_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EDA17FB5425FF5E347656F8DA49F8D6E",
+			"class": "K2Node_VariableGet",
+			"title": "Get MenuIntersect",
+			"comment": "",
+			"x": 1376,
+			"y": 816,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F48A348641285E37C1AF48B14C5B7D2E",
+					"name": "MenuIntersect",
+					"direction": "Output",
+					"type": "object|/Script/UMG.WidgetSwitcher",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "386CF375457A0F9BA813D3B868EF3C7D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "78AC8B4C4286E1A56F71938A970860E9",
+			"class": "K2Node_CallFunction",
+			"title": "Set Active Widget Index\nLa destinazione è Widget Switcher",
+			"comment": "",
+			"x": 1552,
+			"y": 656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9BF6A6834CF08B26BD243F83EE713B7A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1638987B4040E6E2F5C693AD06E5F945",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F9AB37474D61AFE4921AAEB73E6D9AC6",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.WidgetSwitcher",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CC5D704C4A82A2B1A232F98602E0B838",
+					"name": "Index",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "2"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E9B49457407844669DA13EB4F54C2E0A",
+			"class": "K2Node_CallFunction",
+			"title": "Ritardo",
+			"comment": "",
+			"x": -1056,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A4FE65954180E4D826D7189BBD3F1197",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "75A5901C4242F1E8C671E8AECA62FABD",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2B7C85804F3F39E5A598D2BB0DE51BD6",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetSystemLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"pinId": "840D82C44BAC4A2A0E2A08A77A029FA3",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "167B3B584557CC5964B224A2E8A7341C",
+					"name": "Duration",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.2"
+				},
+				{
+					"pinId": "10F386C547020A9A75BD408327303F70",
+					"name": "LatentInfo",
+					"direction": "Input",
+					"type": "struct|/Script/Engine.LatentActionInfo",
+					"defaultValue": "(Linkage=-1,UUID=-1,ExecutionFunction=\"\",CallbackTarget=None)"
+				}
+			]
+		},
+		{
+			"nodeGuid": "F79D091B4CCB490E43880A86A6DC8164",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": -1104,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CEE97DBB47EBEE141AF5DFB6AFE455D4",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "name|container=Array",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3738ED6740774A068275C9BE8B18D601",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "name|container=Array",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "363BFF7043FE426A1928E49274B41DE2",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": -1072,
+			"y": 432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D4FFEC7F43EBF2B9F89317A032FB3D65",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "name|container=Array",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "31E08CAB4B1EA565F0F14E9574569613",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "name|container=Array",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E7BE3A41486E6ADAB384A0A58D806154",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": -848,
+			"y": 432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CAF99425499E6660E6D06E81A2A11D22",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "name|container=Array",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "066F65AF47A22F9C8F9778961DBE40EF",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "name|container=Array",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2D0B87B448EA22FFB523648D9EBEAE08",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": -816,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EDF6749C485AEDBB48951D90BD69A86B",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "name|container=Array",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D044E5144B1FADFD9CA80A8460CBEDF1",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "name|container=Array",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "89980C514A10EACAE1981C916A8849DF",
+			"class": "EdGraphNode_Comment",
+			"title": "Intersect > Characters > Data Table Loading + Initialize Slot and Card",
+			"comment": "Intersect > Characters > Data Table Loading + Initialize Slot and Card",
+			"x": -2272,
+			"y": -240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "7B92856F400A1217C29F69BEDBAF1B13",
+			"class": "K2Node_ComponentBoundEvent",
+			"title": "On Clicked (Btn_Personaggi)",
+			"comment": "",
+			"x": -2240,
+			"y": 1616,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2F359B954DF0D2573F4CCDA5F5617B71",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "13C58E3A47FD9962D2ACF78DBAA27C9F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "37B6437D449CCA6EDFBC8FAD6112A81E",
+			"class": "K2Node_CallFunction",
+			"title": "Get Child At\nLa destinazione è Panel Widget",
+			"comment": "",
+			"x": -1312,
+			"y": 1760,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "57FF79274B9A96EBEF69D1A247FCED41",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.PanelWidget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C600A3594BF6DD7C3D23C8B3148E4944",
+					"name": "Index",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "019A814E451F87B282B1ACA36B8F2375",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "158BEB1545E7B55438AB03BE6946A5E5",
+			"class": "K2Node_DynamicCast",
+			"title": "Cast To WBP_TabIntersect_CharacterSlot",
+			"comment": "",
+			"x": -1072,
+			"y": 1616,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4AD80630473D9C39BE2449A2A5095750",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3114564D434275F22B1A05AF3D46EC86",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "31E47B0042050A5108648F8AAE9C9C78",
+					"name": "CastFailed",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "63E2E1914DA9F356C34F96AEFEE8F8E9",
+					"name": "Object",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F850A7A5495B8EFA1065529DF71D99A0",
+					"name": "AsWBP Tab Intersect Character Slot",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6F9B81F64D6BAE9464D32EAD73068C16",
+					"name": "bSuccess",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1CD96B104B75AB5BFCAB4E916A86BE26",
+			"class": "K2Node_VariableGet",
+			"title": "Get Btn_Slot",
+			"comment": "",
+			"x": -704,
+			"y": 1760,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FC2000AA431F41313E041187BA632904",
+					"name": "Btn_Slot",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "25F5EE4F47A6704DCEED7B90D0C738B3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0ED58CDB49FDD68D8C2C0DAD51D722DF",
+			"class": "K2Node_CallFunction",
+			"title": "Set User Focus\nLa destinazione è Widget",
+			"comment": "",
+			"x": -48,
+			"y": 1600,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "718E7E194C1B7B77C43E989CAB8FB8FE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "664EDBA2459C77F9F866138E7A149B23",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "469F14A2430AB688F65DD4A5562BD072",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6ACABAEC4AFFFD11E63760962BF4368E",
+					"name": "PlayerController",
+					"direction": "Input",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8469F2EB480AC7FB111E3EBE8C63FDDC",
+			"class": "K2Node_VariableGet",
+			"title": "Get MenuIntersect",
+			"comment": "",
+			"x": -1776,
+			"y": 1792,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5588CE4D4AC2B53A6B621E8E17065442",
+					"name": "MenuIntersect",
+					"direction": "Output",
+					"type": "object|/Script/UMG.WidgetSwitcher",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FD48D85143D0DEFD91C869839FA428C0",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "31F63312467CB8270ACA1C9FF0DC5E89",
+			"class": "K2Node_CallFunction",
+			"title": "Set Active Widget Index\nLa destinazione è Widget Switcher",
+			"comment": "",
+			"x": -1552,
+			"y": 1600,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D7DAEB5644934021D7BE558EB9230FB8",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "96A607F140C926E97A20C68EB9A44F79",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BD76801046A38D7B1CE67DB4644FF328",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.WidgetSwitcher",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F06DBD9B4AB5AE01124D90847753BD22",
+					"name": "Index",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "1"
+				}
+			]
+		},
+		{
+			"nodeGuid": "5FF18659403D91CBC141E99F0EE84A3F",
+			"class": "EdGraphNode_Comment",
+			"title": "Button_Personaggi > Pagina Slot",
+			"comment": "Button_Personaggi > Pagina Slot",
+			"x": -2272,
+			"y": 1504,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "70B0FE70404202A4B883E1A493715803",
+			"class": "K2Node_CallFunction",
+			"title": "Ritardo",
+			"comment": "",
+			"x": -1328,
+			"y": 1616,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F3D176F643E7D379AC7CD6823B66636C",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "68EC23C548758FD5DA692A86BFDE88D0",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2198FE1047A2E62BFF9A71B62A67162B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetSystemLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"pinId": "0E0E93D747BD4F4649F2C9BC34D9EA0B",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1A5F11DE4B8D2D65E20F28B3E8E6F8F9",
+					"name": "Duration",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.050000"
+				},
+				{
+					"pinId": "2477A57847AADF01CDD1169121A1C701",
+					"name": "LatentInfo",
+					"direction": "Input",
+					"type": "struct|/Script/Engine.LatentActionInfo",
+					"defaultValue": "(Linkage=-1,UUID=-1,ExecutionFunction=\"\",CallbackTarget=None)"
+				}
+			]
+		},
+		{
+			"nodeGuid": "2F8347774D1EEC03B423B5A9425749C4",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": -160,
+			"y": 1856,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9C9CCC6643B22998C7E104A01F46FFC7",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "wildcard",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "773672364AECA4149877928036357E2F",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "wildcard",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "32F1F11F48DE709107FFFFBF728878A8",
+			"class": "K2Node_CallFunction",
+			"title": "Set Input Mode Game And UI",
+			"comment": "",
+			"x": -400,
+			"y": 1616,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "95F03E1A4947627ED1BF76B9A41D94DA",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "494886B244464AF16F653DA2AEA9450F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "24ACC0E34BF586600F3243A58F943D48",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.WidgetBlueprintLibrary",
+					"defaultValue": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"pinId": "67C9BF3F4A66CA436BC11FAE2623B0B5",
+					"name": "PlayerController",
+					"direction": "Input",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "881CB0F34E0B20287E4742B63F91CA5E",
+					"name": "InWidgetToFocus",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C8FBCFA8432A330785CAE086B44F1FA2",
+					"name": "InMouseLockMode",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EMouseLockMode",
+					"defaultValue": "DoNotLock"
+				},
+				{
+					"pinId": "A645FD3148FF2857495965B75869DF42",
+					"name": "bHideCursorDuringCapture",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "E0F959074F01E36F97D346924FBE060D",
+					"name": "bFlushInput",
+					"direction": "Input",
+					"type": "bool|const",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "CB670A424803D6AC2E3AB1AD53C38A4D",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": -528,
+			"y": 1888,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "755C7CC1436852E834FBA684872A435C",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0646ADA747863E47ADBE658D591866DB",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5A8E195C4CFCCCB07DABEFAF9AB35C0E",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": -784,
+			"y": 1888,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B7C1E33442DFBB697CAECD9129DD08B4",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F8A4AB7946DB8EA53582E5ACC07C9B70",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "66F6DCD4462BD776F0EECEBE5CC0E668",
+			"class": "K2Node_CallFunction",
+			"title": "Get Player Controller",
+			"comment": "",
+			"x": -928,
+			"y": 1888,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7976E78B476B363BBBDD11A29E8FA848",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "B1CD0B3342766A4B8F3017AACA4A1B40",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5E885DC547DAB9BD8B61C3BC0BD29777",
+					"name": "PlayerIndex",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "7F2EEF444EBA002A91CB8C88CD395FB4",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FF49AADC45B34D1ED9171C88FA81BB0B",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": -480,
+			"y": 1920,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "03234F5D4700D6586F78BE9ADDC93E42",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "68D20CCF4D0E5955A5C18897D3B17EBB",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B66736D84A8AC856577A5FB68F0B16D2",
+			"class": "K2Node_Self",
+			"title": "Auto-riferimento",
+			"comment": "",
+			"x": -336,
+			"y": 480,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E4A606384C9274886B0B81BAE21134E2",
+					"name": "self",
+					"direction": "Output",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "026095B7405834F929B9339E20039440",
+			"class": "K2Node_CallFunction",
+			"title": "Ritardo",
+			"comment": "",
+			"x": 1792,
+			"y": 672,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B85BAFA84B0A9C641714BB8B7E6A56AB",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "63FD052B48B5075422C749BA0B46982D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3984627A4E70F34F5ABB748207CE3C83",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetSystemLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"pinId": "4049C7734B5F44C3B30E25827CC08B7B",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9A6552A74D9E5B91028F2AB8A56B1435",
+					"name": "Duration",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.100000"
+				},
+				{
+					"pinId": "CBDD8A684CAAC47563A5D6BF4156ECD5",
+					"name": "LatentInfo",
+					"direction": "Input",
+					"type": "struct|/Script/Engine.LatentActionInfo",
+					"defaultValue": "(Linkage=-1,UUID=-1,ExecutionFunction=\"\",CallbackTarget=None)"
+				}
+			]
+		},
+		{
+			"nodeGuid": "026F12204F61FE69F16548B1C9F4745A",
+			"class": "K2Node_CallFunction",
+			"title": "Set User Focus\nLa destinazione è Widget",
+			"comment": "",
+			"x": 2064,
+			"y": 656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "55534F8044D4DE1F0D7CDC923EBA5AD1",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "48DCD8114EA9B0B9FECF2394812E4AF9",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D8781C3F46E4CBA8BF57F3932B6B72DD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7349E02945E98342E2BCD3BE218CFBE5",
+					"name": "PlayerController",
+					"direction": "Input",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E8636E7A4D4639E0728D80A43226602E",
+			"class": "K2Node_CallFunction",
+			"title": "Set Keyboard Focus\nLa destinazione è Widget",
+			"comment": "",
+			"x": 2272,
+			"y": 656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E740D0874415C1C1318CC1AC2D759993",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "17DE1F2B4BB8DBB66202EF9D43A370D9",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7AE1E408481ACF78B5534AA1E46F3D20",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5BC7C26A4778F5EA9C97B48047A9F2A2",
+			"class": "K2Node_CallFunction",
+			"title": "Get Player Controller",
+			"comment": "",
+			"x": 1760,
+			"y": 864,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B68F636642C5FD18E02C39BEAB102055",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "1AED272F417273C8934046843C9E0DF6",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "357371714CAC0CD1EC6AA3BABE2AEEF0",
+					"name": "PlayerIndex",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "48C9882B49AE66F778E439B8AF4CDCCD",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E47F391942ABC450F2EDE49326EC156F",
+			"class": "K2Node_VariableGet",
+			"title": "Get Btn_Back",
+			"comment": "",
+			"x": 1856,
+			"y": 800,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E291530E40ED316C741555B619937919",
+					"name": "Btn_Back",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A5BDF8F24D04B314778DE1AC30C569D0",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FD6DE9054B7C6BB186849489E4F000F2",
+			"class": "K2Node_VariableGet",
+			"title": "Get Btn_Back",
+			"comment": "",
+			"x": 2128,
+			"y": 816,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E291530E40ED316C741555B619937919",
+					"name": "Btn_Back",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A5BDF8F24D04B314778DE1AC30C569D0",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "01FABE5F4A3D62F318957A9240C823FF",
+			"class": "EdGraphNode_Comment",
+			"title": "WhenOpeningCharacterSlot",
+			"comment": "WhenOpeningCharacterSlot",
+			"x": 352,
+			"y": 592,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "CC455F3F4EACF06758870981924BD9BE",
+			"class": "EdGraphNode_Comment",
+			"title": "Get CharacterData and Inizialize Slots on Menu",
+			"comment": "Get CharacterData and Inizialize Slots on Menu",
+			"x": -2256,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "DB8C09B04E5768BCC23733B263FB6F9A",
+			"class": "K2Node_CallFunction",
+			"title": "Set Color and Opacity\nLa destinazione è Pulsante",
+			"comment": "",
+			"x": -1104,
+			"y": -112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C8577DD24A81951CB1A889801093B8FC",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2B1750B247CCE5B104C5BC9F12832ED9",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1BEE208A44348B40726FEA8B453A54AF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D0E5704D41DE49BEF5F12B999F40A4FF",
+					"name": "InColorAndOpacity",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FFF5D03844F87C8D1069BBABF2F1F793",
+			"class": "K2Node_VariableGet",
+			"title": "Get BtnTab_Intersect",
+			"comment": "",
+			"x": -1088,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D63F68BC40DA00A4F9DEFFB01B824E71",
+					"name": "BtnTab_Intersect",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "18A8911840A82C96B88F1C86133FF2E5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "72ADAB224E89A2E21F41D0974FFE2CBF",
+			"class": "K2Node_VariableGet",
+			"title": "Get BtnTab_Inventory",
+			"comment": "",
+			"x": -816,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7FA46D4C47A8AC033C8E8DB03403EDAA",
+					"name": "BtnTab_Inventory",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "375A2F414CBD62C5186A93811970A937",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "59F37815480DF7764BF93EB470D6A34A",
+			"class": "K2Node_VariableGet",
+			"title": "Get BtnTab_Settings",
+			"comment": "",
+			"x": -1088,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "13B5E0F34E42B378F0AD6CA987297468",
+					"name": "BtnTab_Settings",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BF91A819431746EC447781967781AE1D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "665B25CB40EC775E40DB48A2FE05B555",
+			"class": "K2Node_ExecutionSequence",
+			"title": "Sequenza",
+			"comment": "",
+			"x": -1760,
+			"y": 288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "24CD3ACC49B43AE6E3554391C783CF27",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4E538A9F421C439940477E9CE29A6511",
+					"name": "then_0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "216323DD4E2136360D44C5A29EE82909",
+					"name": "then_1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3FEC067A459807647AC752A8EC8F4EB9",
+					"name": "then_2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "51C500744D9D51239B0C73A14887FD24",
+					"name": "then_3",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EAA5DFF5470E294E315395AA9A99018E",
+			"class": "K2Node_VariableGet",
+			"title": "Get BtnTab_Quests",
+			"comment": "",
+			"x": -1088,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "657973E643ED4C908E60D381A5E92089",
+					"name": "BtnTab_Quests",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7EEBE35242C5A6A0FD6FEDA3B7F16F02",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C0417E864981D7C54B92AA8C68E632C2",
+			"class": "K2Node_CallFunction",
+			"title": "Set Color and Opacity\nLa destinazione è Pulsante",
+			"comment": "",
+			"x": -848,
+			"y": -112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F03C6011472E1AB017AC7B92B2C077F8",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "58C722E14006BE43DA2585AB1BCE515E",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1407CF314BF07F1D22E716B5439FF3A6",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EC313FB9478714C857A862A5A9D1355E",
+					"name": "InColorAndOpacity",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6788F5A946A345AAE8337B842C8DE819",
+			"class": "EdGraphNode_Comment",
+			"title": "Tab Colors on Start Menu",
+			"comment": "Tab Colors on Start Menu",
+			"x": -1568,
+			"y": -192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "CD8E14F64FE71FC48935B8AA7DAAAE4A",
+			"class": "K2Node_VariableGet",
+			"title": "Get TabsSelect",
+			"comment": "",
+			"x": -1520,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "30CE4E8547B6777CCB3908BFD2BF7DCB",
+					"name": "TabsSelect",
+					"direction": "Output",
+					"type": "object|/Script/UMG.WidgetSwitcher",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8898D21E4310674EE65081BF931A20D3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "70FD4DCE4FF40F4A52FBCB9D52EFB011",
+			"class": "K2Node_CallFunction",
+			"title": "Set Active Widget Index\nLa destinazione è Widget Switcher",
+			"comment": "",
+			"x": -1344,
+			"y": -112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B15A7A6549E8D93862BCC8ABD4B5F2BC",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2216B5DD4C6618FD9E2A43BFA420B1EF",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4442939641336148F0C17696BF5B825C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.WidgetSwitcher",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "06DD5EE34C22CC050014869EAD9B4213",
+					"name": "Index",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "19F76869410EEA24A87DB0BB3CEB5533",
+			"class": "K2Node_CallFunction",
+			"title": "Set User Focus\nLa destinazione è Widget",
+			"comment": "",
+			"x": -352,
+			"y": -112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "09357C6045C2BDE03B2D438A72C2A134",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CB38ED494828B3F2079283BDC83448E7",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3760CB0445BBA2B21851AD8703FFC085",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "886737B54F4C6DE88218DA9C17938316",
+					"name": "PlayerController",
+					"direction": "Input",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "58E5ADFF4279FC6D4624F8AC57C2D389",
+			"class": "K2Node_CallFunction",
+			"title": "Get Owning Player\nLa destinazione è Widget",
+			"comment": "",
+			"x": -656,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "67AE532143D99F09644151B95275B6E5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B9FD0FD646FF74BC937D6DA40D981DAA",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "99C9DEAD4F6117EEF365F7ACFB863E36",
+			"class": "K2Node_CallFunction",
+			"title": "Set Keyboard Focus\nLa destinazione è Widget",
+			"comment": "",
+			"x": 112,
+			"y": -112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9312268D406246ACDF491DAB52CCC4A1",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "193893834B57BA5B719570AE2AD4FC88",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "39053B724D0EDED6DD845D9C5241313D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4D6735EA48B50534E902D6A248B01D49",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 48,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "721E2DDE440693464053F384F31D3315",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D122DF4441261B6A74012FBFC217345C",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F0ADF27B418B0A013D443F913191FEE6",
+			"class": "K2Node_VariableGet",
+			"title": "Get BtnSlot_BigWeapon",
+			"comment": "",
+			"x": -576,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A18ED0574DC7B75A2F0DE59CC649052C",
+					"name": "BtnSlot_BigWeapon",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E949334C4371FE9C7CF5188032320423",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A1370B8E4C56B4C8214C5DADAE4A3A32",
+			"class": "K2Node_CallFunction",
+			"title": "Ritardo",
+			"comment": "",
+			"x": -608,
+			"y": -96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "83FC6718484945855DF440B50C76711D",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FB5ABACE47E46AF3269F5AA63E723050",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AD7F02F7487D0B56D3A230B52C8EFC6B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetSystemLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"pinId": "691A4B2443491D218F3ADB89E4B15D13",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7AFDD94645E96C92CC80B3A757F2E871",
+					"name": "Duration",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.2"
+				},
+				{
+					"pinId": "BB15D8B6457EF7A671EB8384165F4B34",
+					"name": "LatentInfo",
+					"direction": "Input",
+					"type": "struct|/Script/Engine.LatentActionInfo",
+					"defaultValue": "(Linkage=-1,UUID=-1,ExecutionFunction=\"\",CallbackTarget=None)"
+				}
+			]
+		},
+		{
+			"nodeGuid": "0D4882A34FD04AD99AF97F8B52701559",
+			"class": "K2Node_CallFunction",
+			"title": "Ritardo",
+			"comment": "",
+			"x": -144,
+			"y": -96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "AEA49B5B4BD50805DF95A8AD3E887798",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8CCF5662483A573C6B522786CAD40FFA",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F4AF58BE4DF80E2CB32E7C81F95FCE12",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetSystemLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"pinId": "8BFD71334314501F3EB45397B4F7E4F5",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C9F4A3C24D42D15BE896AA9DA23E7DE9",
+					"name": "Duration",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.2"
+				},
+				{
+					"pinId": "0DEC22DD4A6FBC5A14CBE0B34FB214CF",
+					"name": "LatentInfo",
+					"direction": "Input",
+					"type": "struct|/Script/Engine.LatentActionInfo",
+					"defaultValue": "(Linkage=-1,UUID=-1,ExecutionFunction=\"\",CallbackTarget=None)"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A34A630D49BB38152B4B7CBCC9D92EC2",
+			"class": "K2Node_CallFunction",
+			"title": "Get Player Character",
+			"comment": "",
+			"x": -1504,
+			"y": 816,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E6254B724BA63BF2406AB5A78CECE6BC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "A906B1F04F1558F58E05F787722C2F21",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "060B8D2941BD0AFBB6FA9983126D18EB",
+					"name": "PlayerIndex",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "CF0C88574A5F20251101C998F5D0478E",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A26362E14CF2BC75D55B21878A2DD86F",
+			"class": "K2Node_DynamicCast",
+			"title": "Cast To ALS_ChuckBP",
+			"comment": "",
+			"x": -1488,
+			"y": 672,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2A5D9F8A472BC4AD2241FBBCB773C642",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D4A076EB4318EEA899FBE8958EEF85DA",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8F1104044022807DB9AD0FA5ED7964C8",
+					"name": "CastFailed",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3ACCEF914EFE8F39376A209BDA691781",
+					"name": "Object",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C2AD9E88495B07F090B8408B0028DF4A",
+					"name": "AsALS Chuck BP",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DD78B276418AB7165204B5A43BE298B3",
+					"name": "bSuccess",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "419F20BD43EF8F70344014AE2ABB1598",
+			"class": "K2Node_VariableSet",
+			"title": "Set As ChuckRef",
+			"comment": "",
+			"x": -1232,
+			"y": 688,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3E6E397E4E944EE6E45D99955A2A6C26",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "350729C148BC1B423CBB65BA4FA7B540",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "331F4B4C4940D5B976995DA170BA2036",
+					"name": "As ChuckRef",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "00BB93D640E78270C16074B1C0869F93",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4C888BF142BB92C88229E8AC999A1C21",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "ADD10D0E4C9FA408D952E883D792BF94",
+			"class": "K2Node_CallFunction",
+			"title": "Update Weapon Slots\nLa destinazione è WBP Menu Archive",
+			"comment": "",
+			"x": -1024,
+			"y": 656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FF59BE8E4B7F7D1B531FBA9C4EB46CFA",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "99087F1C42D9F050B2DF2CBA037D9093",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D9EB233A4C2F8BCE023B1DBC8D45434F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DBEDC654437CD2D75E58339EA864ACAD",
+			"class": "K2Node_CallFunction",
+			"title": "Update Equipment Slots\nLa destinazione è WBP Menu Archive",
+			"comment": "",
+			"x": -784,
+			"y": 656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E2828173456A453E869DE5BB6D1E00A3",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "802421EB42A1A8C0578523968DFF217B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C710B27B4FB432D745A20EAD11FDE126",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8D8FE3634A3587665FC92D843C3BF0A7",
+			"class": "K2Node_CallFunction",
+			"title": "Get Actor Location\nLa destinazione è Actor",
+			"comment": "",
+			"x": -1472,
+			"y": 912,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C91BEC004338776085364DB2E0B44EC8",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C8EBF8DC4DFEDE11292AC3962DA3E2D0",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "CDF573EB4AF4FC29A9411F8F1257C167",
+			"class": "K2Node_PromotableOperator",
+			"title": "vector - vector",
+			"comment": "",
+			"x": -1216,
+			"y": 944,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "04A1FE8345A37D3CD327CFB954B3BEC6",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4CBB7AAD4D00A11515C6938B8EE0B943",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0.000000,0.000000,5000.000000"
+				},
+				{
+					"pinId": "4BE3634A4128E2122294938B7A042643",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D301184547E8120886A3828FB0760FC4",
+			"class": "K2Node_CallFunction",
+			"title": "Make Transform",
+			"comment": "",
+			"x": -896,
+			"y": 928,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C0E1BED24110921AC4A998BA8A27C704",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "9EBF57D942136BCA5F9F9EB071572D70",
+					"name": "Location",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "6C83E4044D326FCD869012A8FBF65CAF",
+					"name": "Rotation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "10B100CC4A9A4D8816C986A91AA23FC9",
+					"name": "Scale",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "1.000000,1.000000,1.000000"
+				},
+				{
+					"pinId": "1606514F4D83C771E2FFEB93D01B639A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Transform",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A5963C1E4E02CE70E0180B9B85AFBACF",
+			"class": "K2Node_SpawnActorFromClass",
+			"title": "SpawnActor BP Character Preview",
+			"comment": "",
+			"x": -544,
+			"y": 672,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "146176C845E9DA0F453FE79CF8B2F275",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "63621D9E4593BCABC3440B9115A0D2C1",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8BCE925F41C079A525173D8957139762",
+					"name": "Class",
+					"direction": "Input",
+					"type": "class|/Script/Engine.Actor",
+					"defaultValue": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/BP_CharacterPreview.BP_CharacterPreview_C"
+				},
+				{
+					"pinId": "EFA3766C4BCDE6CE900A1F9051D5F91F",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/BP_CharacterPreview.BP_CharacterPreview_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C6AD0067434D1DB8A1988689578AD2A8",
+					"name": "SpawnTransform",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Transform",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AFFDE395436CA2568BC2F8968589BCCC",
+					"name": "CollisionHandlingOverride",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.ESpawnActorCollisionHandlingMethod",
+					"defaultValue": "Undefined"
+				},
+				{
+					"pinId": "23F01B1440C430E5370915B91C1F27C3",
+					"name": "TransformScaleMethod",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.ESpawnActorScaleMethod",
+					"defaultValue": "MultiplyWithRoot"
+				},
+				{
+					"pinId": "FCA9F07A472A918D38D993907B5D8EE6",
+					"name": "Owner",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "35705BCC484C31E82F1AC4A8B3A84629",
+					"name": "Instigator",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Pawn",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "82EBDB5F4A759882D22962864ED0BD18",
+			"class": "K2Node_VariableSet",
+			"title": "Set SpawnedStudioRef",
+			"comment": "",
+			"x": -160,
+			"y": 688,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6BD206F445FBACAF4F4D5696EF1B71B7",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "13BD0F0D4E2594CBD40ACB8BA816988B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F8AAE461484E69F8A12AB39C1DCB37F6",
+					"name": "SpawnedStudioRef",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/BP_CharacterPreview.BP_CharacterPreview_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3F5000EB496CF168E172F99B11589A54",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/BP_CharacterPreview.BP_CharacterPreview_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FC6728014E9C4032A85DAFA1C91711F5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "450832A8462948AA8141C0BCCEE80B41",
+			"class": "K2Node_VariableGet",
+			"title": "Get SpawnedStudioRef",
+			"comment": "",
+			"x": 112,
+			"y": 784,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B9EFE7794FD3DB060D400BA128D3A98C",
+					"name": "SpawnedStudioRef",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/BP_CharacterPreview.BP_CharacterPreview_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "18FE99A84FD4F3E48C464EABE37B5659",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4A0EB97542A09FB021CA8DBD2248AEF0",
+			"class": "K2Node_CallFunction",
+			"title": "Initialize Studio\nLa destinazione è BP Character Preview",
+			"comment": "",
+			"x": 80,
+			"y": 656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5E36F8CD40F5C3E32AC5EDA6785C6910",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9AB86BFD45F8A5FB2F0631A9E7D36108",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1835D3364B75A223DFFB53AD1C5E65C0",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/BP_CharacterPreview.BP_CharacterPreview_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BC8E85374F04A8C0832CE8BD71DE6549",
+			"class": "EdGraphNode_Comment",
+			"title": "Initialize InventoryMenu (Weapon, PreviewCharacter, Equipment)",
+			"comment": "Initialize InventoryMenu (Weapon, PreviewCharacter, Equipment)",
+			"x": -1552,
+			"y": 592,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "51728D6341E0AEA800333DBECC5225BD",
+			"class": "K2Node_Event",
+			"title": "Evento Destruct",
+			"comment": "",
+			"x": -1488,
+			"y": 1184,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1DCB163A4A4C69EB004C8CA6FDDB3690",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "342B123442968768EB11978AB15FF59C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C4BBDFAE430A6C5AA6B65CA62B0857F4",
+			"class": "K2Node_VariableGet",
+			"title": "Get SpawnedStudioRef",
+			"comment": "",
+			"x": -1488,
+			"y": 1280,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "70252E9F4919B077E3DA1FAB9B7DFD6A",
+					"name": "SpawnedStudioRef",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/BP_CharacterPreview.BP_CharacterPreview_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A594BDD749D4708F6B59BAA3E68E6E83",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "CA46261A404DAF3EEA2387B6F97AC399",
+			"class": "K2Node_MacroInstance",
+			"title": "Is Valid",
+			"comment": "",
+			"x": -1312,
+			"y": 1184,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "41F756874741F5009DD260BEE2F8F12F",
+					"name": "exec",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B2D81AF8433137242F65C6882F128991",
+					"name": "InputObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "119320464BEF22A1C7E484BAC4E5F092",
+					"name": "Is Valid",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BFB3C2C046390E6710F4A982656F3E2A",
+					"name": "Is Not Valid",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0EA025E24BF398C7D1D6B19AA1249F88",
+			"class": "K2Node_CallFunction",
+			"title": "Destroy Actor\nLa destinazione è Actor",
+			"comment": "",
+			"x": -1072,
+			"y": 1168,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "49D5112A418419F358FDC8B801214729",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4FD1A2E04C02E441EE558C874D7E2B52",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A26BF5BA4D036D6FF20923A0EE87B2B0",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "59BF3E7B43025676C7973785718F43A4",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": -1120,
+			"y": 1280,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ED2FFB434E6B06C72F4E55B38AF197C0",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/BP_CharacterPreview.BP_CharacterPreview_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4AA950AB44968FFF9BF012AF348CC606",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/BP_CharacterPreview.BP_CharacterPreview_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EFAEDE5C4631EB571EB7CB84FC9B4CFB",
+			"class": "K2Node_CallFunction",
+			"title": "Get Player Character",
+			"comment": "",
+			"x": -1488,
+			"y": 1008,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "405FFB2D4B1C6BC2519AE0A1C93D0904",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "0A8608CD4552FEA0B1E23EA3C5324894",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9AB3C327426D30D22A73FE900F0B14DC",
+					"name": "PlayerIndex",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "3328AD9B4CC937F1586918AA10F5C1E4",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5715A35E4A5378675276FEB0413DC530",
+			"class": "K2Node_CallFunction",
+			"title": "Refresh Menu Focus\nLa destinazione è WBP Menu Archive",
+			"comment": "",
+			"x": -2016,
+			"y": 272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1E31480B434879C152B26FBEE28E4FDB",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7D24E88A4D6F6DDAFAE2768C60F8B36B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8A58C8574CE9F6E048D3E2A79269E154",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E6F9305F4A772FBF33481E8C6A1629D8",
+			"class": "K2Node_VariableGet",
+			"title": "Get ColorUnfocused",
+			"comment": "",
+			"x": -1296,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B8269F764CA16A29A773A79686D43024",
+					"name": "ColorUnfocused",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A25AE97340F958B52519C089B366FFE9",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A8D818284DCB2053105EE78611EA9706",
+			"class": "K2Node_VariableGet",
+			"title": "Get ColorFocused",
+			"comment": "",
+			"x": -912,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B07D237C43EE3DCD13158E9B96CDE449",
+					"name": "ColorFocused",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "88B159C04D5C5F0CE188789FDD89C915",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6B06AE7747C0EFCD674BB59DB72C33AC",
+			"class": "K2Node_VariableGet",
+			"title": "Get CharacterGrid",
+			"comment": "",
+			"x": -1504,
+			"y": 1808,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4B991E0D431784481EA0D6AA8F5C2A5F",
+					"name": "CharacterGrid",
+					"direction": "Output",
+					"type": "object|/Script/UMG.UniformGridPanel",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "489BC92D482CABD00CE4B484EB522DFD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7FB2CACE4E010A81F076D9A45F29F734",
+			"class": "K2Node_VariableGet",
+			"title": "Get CharacterGrid",
+			"comment": "",
+			"x": 688,
+			"y": 512,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CBADB508490643AFDD8EA8838F595345",
+					"name": "CharacterGrid",
+					"direction": "Output",
+					"type": "object|/Script/UMG.UniformGridPanel",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "51F58272402C103B40FF13AD850DC8B6",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "434075384887F2F5F5C20F8798B55B30",
+			"class": "K2Node_CallFunction",
+			"title": "Add Child to Uniform Grid\nLa destinazione è Uniform Grid Panel",
+			"comment": "",
+			"x": 848,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "75C2F90E4BA7936EE974EC99E2D9B7E0",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EA2ECA0040CAB7BF4334848EA1CA4468",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1FA793154BE5C0CBA2DAC987D2677AFE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.UniformGridPanel",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "71E14F4A42971D5B65E8B89AA7503814",
+					"name": "Content",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "959DAA784147CA001758B6BF1189A2CE",
+					"name": "InRow",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "082277E24445D0F6FBC351894CC50F7D",
+					"name": "InColumn",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "911A48E146236762E74789803345761F",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/UMG.UniformGridSlot",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F9ABB5FE4A0E68257389F7A9BADA2BE0",
+			"class": "K2Node_CallFunction",
+			"title": "% (Integer)",
+			"comment": "",
+			"x": 512,
+			"y": 528,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0017DAF14B190A21CDA7C19AC528223E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "5A03E19D46D517B12280A285C761CE71",
+					"name": "A",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "FDA9C4E4479A9DA5D14B988F033F8462",
+					"name": "B",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "4"
+				},
+				{
+					"pinId": "1333ECDA430B149A9FB19A83C1306AAF",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "3E42D7A44E81F8A4FD6857B945E940AA",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": -384,
+			"y": 528,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "89900E3E4BA8B8741F09B6ACBBEA446C",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4518EC8D4A18B10D70EB3A98EC50DBA0",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D38FB96E479121C9388CAABD9D6A3389",
+			"class": "K2Node_PromotableOperator",
+			"title": "int / int",
+			"comment": "",
+			"x": 304,
+			"y": 480,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0FE0B9AB4EFB79E512B81AA5883A79F2",
+					"name": "A",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1A5F89104E0140F6BB7FABA685EF6306",
+					"name": "B",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "4"
+				},
+				{
+					"pinId": "4E1F33CC47AD0E013E21D7B0D566A15B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B87421F541E75E24373D6583FB5AD40E",
+			"class": "K2Node_CallFunction",
+			"title": "Play Sound 2D",
+			"comment": "",
+			"x": -1936,
+			"y": 1619,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5808C673443444BB042B90B820C684F5",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1CEFCC554FBBB84561D406A7814C9577",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "304809B64CC1F8DDBB9496BDC9BB6F75",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "2E0C0C084E0CED4E4220BA8483FE40B0",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DAB8F9EB409CF17ED4CE7D9E18300D5A",
+					"name": "Sound",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SoundBase",
+					"defaultValue": "/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Sound/Pistol/Wavs/Pistol_Whip02.Pistol_Whip02"
+				},
+				{
+					"pinId": "314F89F44276BB2AF3B41F94466A0CCA",
+					"name": "VolumeMultiplier",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "1.000000"
+				},
+				{
+					"pinId": "CB2C3B37464293723D1699BDF3EB2C32",
+					"name": "PitchMultiplier",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "1.000000"
+				},
+				{
+					"pinId": "4F66A6B9490592FBFBCC51A2DA4187E6",
+					"name": "StartTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.000000"
+				},
+				{
+					"pinId": "C5CA037F47BAD711C2C33A9C9053B6F9",
+					"name": "ConcurrencySettings",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SoundConcurrency",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6F95C38F417BE1536002E2A94CF1F21E",
+					"name": "OwningActor",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "789754BC424DD4539704A9A0DE689565",
+					"name": "bIsUISound",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "70790197477F04B012D5A68D59F1C60D",
+			"fromPinId": "6266186640581578AB2A4A8A380BD71E",
+			"fromPinName": "then",
+			"toNodeGuid": "5715A35E4A5378675276FEB0413DC530",
+			"toPinId": "1E31480B434879C152B26FBEE28E4FDB",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "665B25CB40EC775E40DB48A2FE05B555",
+			"fromPinId": "216323DD4E2136360D44C5A29EE82909",
+			"fromPinName": "then_1",
+			"toNodeGuid": "9E32D5F042239EDDD94E2F8D6CF8356E",
+			"toPinId": "6803FEC046F35749D2D547865A9B9B0A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "9E32D5F042239EDDD94E2F8D6CF8356E",
+			"fromPinId": "39F20E904D79AB40211363983D5268A0",
+			"fromPinName": "then",
+			"toNodeGuid": "E9B49457407844669DA13EB4F54C2E0A",
+			"toPinId": "A4FE65954180E4D826D7189BBD3F1197",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "9E32D5F042239EDDD94E2F8D6CF8356E",
+			"fromPinId": "04865F0040DDA2394AD8519DA553E359",
+			"fromPinName": "OutRowNames",
+			"toNodeGuid": "F79D091B4CCB490E43880A86A6DC8164",
+			"toPinId": "CEE97DBB47EBEE141AF5DFB6AFE455D4",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "E9B49457407844669DA13EB4F54C2E0A",
+			"fromPinId": "75A5901C4242F1E8C671E8AECA62FABD",
+			"fromPinName": "then",
+			"toNodeGuid": "BE2E92094388DBCE3C7D869C4D236EFB",
+			"toPinId": "5AACFBCE4877374D3CC16688CAF01BEA",
+			"toPinName": "Exec"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "2D0B87B448EA22FFB523648D9EBEAE08",
+			"fromPinId": "D044E5144B1FADFD9CA80A8460CBEDF1",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "BE2E92094388DBCE3C7D869C4D236EFB",
+			"toPinId": "BE7B55934F554AF6B8DC42BBFFFADD88",
+			"toPinName": "Array"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "BE2E92094388DBCE3C7D869C4D236EFB",
+			"fromPinId": "E3F08245417C15A72E1B7BAC9F4624D6",
+			"fromPinName": "LoopBody",
+			"toNodeGuid": "B7FA6BEE4FF792629F2435A268922FF3",
+			"toPinId": "CB36D6EE41733556F93DCE8BBCD6EDBC",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "BE2E92094388DBCE3C7D869C4D236EFB",
+			"fromPinId": "8893BE2840D0EC7149CD0687798C4AC9",
+			"fromPinName": "Array Element",
+			"toNodeGuid": "B7FA6BEE4FF792629F2435A268922FF3",
+			"toPinId": "C85D3718405057D13482F18DAAF679C4",
+			"toPinName": "RowName"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "BE2E92094388DBCE3C7D869C4D236EFB",
+			"fromPinId": "30C129CB4FB51DE6ED8C429399E41CA4",
+			"fromPinName": "Array Index",
+			"toNodeGuid": "3E42D7A44E81F8A4FD6857B945E940AA",
+			"toPinId": "89900E3E4BA8B8741F09B6ACBBEA446C",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "B7FA6BEE4FF792629F2435A268922FF3",
+			"fromPinId": "EADEA999453607469910229AA0FD1A12",
+			"fromPinName": "then",
+			"toNodeGuid": "DE6DCCAE4E4AEE47616614897AA7433C",
+			"toPinId": "2C3AC74F49A5D14EA6C6AE9777F975A8",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "B7FA6BEE4FF792629F2435A268922FF3",
+			"fromPinId": "E4F38BC6447822C2AB9F2A9F62659CF9",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "DE6DCCAE4E4AEE47616614897AA7433C",
+			"toPinId": "3781CA7746A56D942BC403B83C076A65",
+			"toPinName": "CharacterData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "DE6DCCAE4E4AEE47616614897AA7433C",
+			"fromPinId": "184E892D42D3225AAF6845814548AC0A",
+			"fromPinName": "then",
+			"toNodeGuid": "6EF1743B4DD11EFF79C3B8857F08438A",
+			"toPinId": "C7A681C0460B543A3317ABA675D4CA3A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "DE6DCCAE4E4AEE47616614897AA7433C",
+			"fromPinId": "59ADEC904415F5D5EFEB049C6BD7C8DA",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "19C2D0F741857B0D3717F5910CE79F77",
+			"toPinId": "A42E673D43D5B2F949A905AF7DB19F46",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "DE6DCCAE4E4AEE47616614897AA7433C",
+			"fromPinId": "59ADEC904415F5D5EFEB049C6BD7C8DA",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "6EF1743B4DD11EFF79C3B8857F08438A",
+			"toPinId": "89A8C33641BA806A1C2D62A715575CA3",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "B66736D84A8AC856577A5FB68F0B16D2",
+			"fromPinId": "E4A606384C9274886B0B81BAE21134E2",
+			"fromPinName": "self",
+			"toNodeGuid": "DE6DCCAE4E4AEE47616614897AA7433C",
+			"toPinId": "C7F2C1BD478CBD31FD455686D7148F3C",
+			"toPinName": "ParentIntersectRef"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "19C2D0F741857B0D3717F5910CE79F77",
+			"fromPinId": "6504CDF744268619C42A0D95752A15C0",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "8B08A3DE4F2567A0E396CC90FDF26BEA",
+			"toPinId": "FFF0319744FD8CA91A04F589813CCA58",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "8B08A3DE4F2567A0E396CC90FDF26BEA",
+			"fromPinId": "2D47FC3C4CAB6AAE3B132D8968B3676E",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "BF8C32CA4F74F125AECF2C9F0C678ECD",
+			"toPinId": "3BE47F5442859171A2D930B5DAB0727F",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "BF8C32CA4F74F125AECF2C9F0C678ECD",
+			"fromPinId": "E7E1ABFC4CEF83433AE946930963F954",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "434075384887F2F5F5C20F8798B55B30",
+			"toPinId": "71E14F4A42971D5B65E8B89AA7503814",
+			"toPinName": "Content"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "6EF1743B4DD11EFF79C3B8857F08438A",
+			"fromPinId": "D857377A40E745F3BF5897921DBA00EA",
+			"fromPinName": "then",
+			"toNodeGuid": "50F637B4454718FAD50452A29055A98E",
+			"toPinId": "9F1F6E9C43493EB56C6CF5A248D38731",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "8B08A3DE4F2567A0E396CC90FDF26BEA",
+			"fromPinId": "2D47FC3C4CAB6AAE3B132D8968B3676E",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "50F637B4454718FAD50452A29055A98E",
+			"toPinId": "5AD9167F49091F2687134080D4EFEAD0",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "50F637B4454718FAD50452A29055A98E",
+			"fromPinId": "879D409E496F267B3370AFB128EDA09F",
+			"fromPinName": "then",
+			"toNodeGuid": "434075384887F2F5F5C20F8798B55B30",
+			"toPinId": "75C2F90E4BA7936EE974EC99E2D9B7E0",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "0F015DC949B88A9861D156BE6B97F60F",
+			"fromPinId": "544C5F6949313CA63A1E8A936B667E5E",
+			"fromPinName": "OutputDelegate",
+			"toNodeGuid": "50F637B4454718FAD50452A29055A98E",
+			"toPinId": "C158A09F45B6F27F00C750AC865372E8",
+			"toPinName": "Delegate"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "0F015DC949B88A9861D156BE6B97F60F",
+			"fromPinId": "303813F94F118017983C5BA93389D738",
+			"fromPinName": "then",
+			"toNodeGuid": "F727DF7D447FE5B56B6161860A1931C6",
+			"toPinId": "35CD9CC64328710466A3949CBD4BA425",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "0F015DC949B88A9861D156BE6B97F60F",
+			"fromPinId": "31D9335345D5E638F81975BB48532805",
+			"fromPinName": "SelectedCharacterData",
+			"toNodeGuid": "F727DF7D447FE5B56B6161860A1931C6",
+			"toPinId": "3EB1C6AB4AF9B16CF8632AAABEB13A31",
+			"toPinName": "CharacterData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "F727DF7D447FE5B56B6161860A1931C6",
+			"fromPinId": "3F1502914911D50F221DEB9DD5ADCE8A",
+			"fromPinName": "then",
+			"toNodeGuid": "C7A480634DB772B976D98BB144341FF5",
+			"toPinId": "BB00A0B5494EEADF5AAACC89895647B4",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "F727DF7D447FE5B56B6161860A1931C6",
+			"fromPinId": "38C0B00A4592893EA7CFDA89710E3D3C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "C7A480634DB772B976D98BB144341FF5",
+			"toPinId": "258D2809458F6C1203A0F6A024028809",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "F727DF7D447FE5B56B6161860A1931C6",
+			"fromPinId": "38C0B00A4592893EA7CFDA89710E3D3C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "576DBB494EF668536B17969F4F2AFA41",
+			"toPinId": "365D1BD64B1E28A67ACD0695A627D07C",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "C7A480634DB772B976D98BB144341FF5",
+			"fromPinId": "C186E78946745F0DC5DB399B65A83A09",
+			"fromPinName": "then",
+			"toNodeGuid": "A0548BE4493DB11CBA7F7D86B637F927",
+			"toPinId": "55FA38B747796D8830839D80135D4CFA",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "830D126648CFD70A911409BBD780FEF7",
+			"fromPinId": "0866217C40F4573ACA171B9538AAE259",
+			"fromPinName": "Brd_ContainerCharacterSlot",
+			"toNodeGuid": "A0548BE4493DB11CBA7F7D86B637F927",
+			"toPinId": "6755235144F01F5DBBF3E590ED4EC592",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "A0548BE4493DB11CBA7F7D86B637F927",
+			"fromPinId": "BC79961F4941AEC0ECB57AA3297A516C",
+			"fromPinName": "then",
+			"toNodeGuid": "78AC8B4C4286E1A56F71938A970860E9",
+			"toPinId": "9BF6A6834CF08B26BD243F83EE713B7A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "B44F547E4465726373652EB8A12B3B3E",
+			"fromPinId": "84AED0784A56430D68827A903E833279",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "A0548BE4493DB11CBA7F7D86B637F927",
+			"toPinId": "7E125E9E4475BA545EA98A91481F8FFC",
+			"toPinName": "Content"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "576DBB494EF668536B17969F4F2AFA41",
+			"fromPinId": "A10FC00F4544FC79081C9DA5DB782D5A",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "B44F547E4465726373652EB8A12B3B3E",
+			"toPinId": "1E8F655D4E7AFBC399967DAC6F3914D8",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "EDA17FB5425FF5E347656F8DA49F8D6E",
+			"fromPinId": "F48A348641285E37C1AF48B14C5B7D2E",
+			"fromPinName": "MenuIntersect",
+			"toNodeGuid": "78AC8B4C4286E1A56F71938A970860E9",
+			"toPinId": "F9AB37474D61AFE4921AAEB73E6D9AC6",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "78AC8B4C4286E1A56F71938A970860E9",
+			"fromPinId": "1638987B4040E6E2F5C693AD06E5F945",
+			"fromPinName": "then",
+			"toNodeGuid": "026095B7405834F929B9339E20039440",
+			"toPinId": "B85BAFA84B0A9C641714BB8B7E6A56AB",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "F79D091B4CCB490E43880A86A6DC8164",
+			"fromPinId": "3738ED6740774A068275C9BE8B18D601",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "363BFF7043FE426A1928E49274B41DE2",
+			"toPinId": "D4FFEC7F43EBF2B9F89317A032FB3D65",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "363BFF7043FE426A1928E49274B41DE2",
+			"fromPinId": "31E08CAB4B1EA565F0F14E9574569613",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "E7BE3A41486E6ADAB384A0A58D806154",
+			"toPinId": "CAF99425499E6660E6D06E81A2A11D22",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "E7BE3A41486E6ADAB384A0A58D806154",
+			"fromPinId": "066F65AF47A22F9C8F9778961DBE40EF",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "2D0B87B448EA22FFB523648D9EBEAE08",
+			"toPinId": "EDF6749C485AEDBB48951D90BD69A86B",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "7B92856F400A1217C29F69BEDBAF1B13",
+			"fromPinId": "13C58E3A47FD9962D2ACF78DBAA27C9F",
+			"fromPinName": "then",
+			"toNodeGuid": "B87421F541E75E24373D6583FB5AD40E",
+			"toPinId": "5808C673443444BB042B90B820C684F5",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "6B06AE7747C0EFCD674BB59DB72C33AC",
+			"fromPinId": "4B991E0D431784481EA0D6AA8F5C2A5F",
+			"fromPinName": "CharacterGrid",
+			"toNodeGuid": "37B6437D449CCA6EDFBC8FAD6112A81E",
+			"toPinId": "57FF79274B9A96EBEF69D1A247FCED41",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "37B6437D449CCA6EDFBC8FAD6112A81E",
+			"fromPinId": "019A814E451F87B282B1ACA36B8F2375",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "158BEB1545E7B55438AB03BE6946A5E5",
+			"toPinId": "63E2E1914DA9F356C34F96AEFEE8F8E9",
+			"toPinName": "Object"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "70B0FE70404202A4B883E1A493715803",
+			"fromPinId": "68EC23C548758FD5DA692A86BFDE88D0",
+			"fromPinName": "then",
+			"toNodeGuid": "158BEB1545E7B55438AB03BE6946A5E5",
+			"toPinId": "4AD80630473D9C39BE2449A2A5095750",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "158BEB1545E7B55438AB03BE6946A5E5",
+			"fromPinId": "3114564D434275F22B1A05AF3D46EC86",
+			"fromPinName": "then",
+			"toNodeGuid": "32F1F11F48DE709107FFFFBF728878A8",
+			"toPinId": "95F03E1A4947627ED1BF76B9A41D94DA",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "158BEB1545E7B55438AB03BE6946A5E5",
+			"fromPinId": "F850A7A5495B8EFA1065529DF71D99A0",
+			"fromPinName": "AsWBP Tab Intersect Character Slot",
+			"toNodeGuid": "1CD96B104B75AB5BFCAB4E916A86BE26",
+			"toPinId": "25F5EE4F47A6704DCEED7B90D0C738B3",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "1CD96B104B75AB5BFCAB4E916A86BE26",
+			"fromPinId": "FC2000AA431F41313E041187BA632904",
+			"fromPinName": "Btn_Slot",
+			"toNodeGuid": "32F1F11F48DE709107FFFFBF728878A8",
+			"toPinId": "881CB0F34E0B20287E4742B63F91CA5E",
+			"toPinName": "InWidgetToFocus"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "1CD96B104B75AB5BFCAB4E916A86BE26",
+			"fromPinId": "FC2000AA431F41313E041187BA632904",
+			"fromPinName": "Btn_Slot",
+			"toNodeGuid": "5A8E195C4CFCCCB07DABEFAF9AB35C0E",
+			"toPinId": "B7C1E33442DFBB697CAECD9129DD08B4",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "32F1F11F48DE709107FFFFBF728878A8",
+			"fromPinId": "494886B244464AF16F653DA2AEA9450F",
+			"fromPinName": "then",
+			"toNodeGuid": "0ED58CDB49FDD68D8C2C0DAD51D722DF",
+			"toPinId": "718E7E194C1B7B77C43E989CAB8FB8FE",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "CB670A424803D6AC2E3AB1AD53C38A4D",
+			"fromPinId": "0646ADA747863E47ADBE658D591866DB",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "0ED58CDB49FDD68D8C2C0DAD51D722DF",
+			"toPinId": "469F14A2430AB688F65DD4A5562BD072",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "FF49AADC45B34D1ED9171C88FA81BB0B",
+			"fromPinId": "68D20CCF4D0E5955A5C18897D3B17EBB",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "0ED58CDB49FDD68D8C2C0DAD51D722DF",
+			"toPinId": "6ACABAEC4AFFFD11E63760962BF4368E",
+			"toPinName": "PlayerController"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "8469F2EB480AC7FB111E3EBE8C63FDDC",
+			"fromPinId": "5588CE4D4AC2B53A6B621E8E17065442",
+			"fromPinName": "MenuIntersect",
+			"toNodeGuid": "31F63312467CB8270ACA1C9FF0DC5E89",
+			"toPinId": "BD76801046A38D7B1CE67DB4644FF328",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "B87421F541E75E24373D6583FB5AD40E",
+			"fromPinId": "1CEFCC554FBBB84561D406A7814C9577",
+			"fromPinName": "then",
+			"toNodeGuid": "31F63312467CB8270ACA1C9FF0DC5E89",
+			"toPinId": "D7DAEB5644934021D7BE558EB9230FB8",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "31F63312467CB8270ACA1C9FF0DC5E89",
+			"fromPinId": "96A607F140C926E97A20C68EB9A44F79",
+			"fromPinName": "then",
+			"toNodeGuid": "70B0FE70404202A4B883E1A493715803",
+			"toPinId": "F3D176F643E7D379AC7CD6823B66636C",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "66F6DCD4462BD776F0EECEBE5CC0E668",
+			"fromPinId": "7F2EEF444EBA002A91CB8C88CD395FB4",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "32F1F11F48DE709107FFFFBF728878A8",
+			"toPinId": "67C9BF3F4A66CA436BC11FAE2623B0B5",
+			"toPinName": "PlayerController"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "5A8E195C4CFCCCB07DABEFAF9AB35C0E",
+			"fromPinId": "F8A4AB7946DB8EA53582E5ACC07C9B70",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "CB670A424803D6AC2E3AB1AD53C38A4D",
+			"toPinId": "755C7CC1436852E834FBA684872A435C",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "66F6DCD4462BD776F0EECEBE5CC0E668",
+			"fromPinId": "7F2EEF444EBA002A91CB8C88CD395FB4",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "FF49AADC45B34D1ED9171C88FA81BB0B",
+			"toPinId": "03234F5D4700D6586F78BE9ADDC93E42",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "026095B7405834F929B9339E20039440",
+			"fromPinId": "63FD052B48B5075422C749BA0B46982D",
+			"fromPinName": "then",
+			"toNodeGuid": "026F12204F61FE69F16548B1C9F4745A",
+			"toPinId": "55534F8044D4DE1F0D7CDC923EBA5AD1",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "026F12204F61FE69F16548B1C9F4745A",
+			"fromPinId": "48DCD8114EA9B0B9FECF2394812E4AF9",
+			"fromPinName": "then",
+			"toNodeGuid": "E8636E7A4D4639E0728D80A43226602E",
+			"toPinId": "E740D0874415C1C1318CC1AC2D759993",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "E47F391942ABC450F2EDE49326EC156F",
+			"fromPinId": "E291530E40ED316C741555B619937919",
+			"fromPinName": "Btn_Back",
+			"toNodeGuid": "026F12204F61FE69F16548B1C9F4745A",
+			"toPinId": "D8781C3F46E4CBA8BF57F3932B6B72DD",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "5BC7C26A4778F5EA9C97B48047A9F2A2",
+			"fromPinId": "48C9882B49AE66F778E439B8AF4CDCCD",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "026F12204F61FE69F16548B1C9F4745A",
+			"toPinId": "7349E02945E98342E2BCD3BE218CFBE5",
+			"toPinName": "PlayerController"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "FD6DE9054B7C6BB186849489E4F000F2",
+			"fromPinId": "E291530E40ED316C741555B619937919",
+			"fromPinName": "Btn_Back",
+			"toNodeGuid": "E8636E7A4D4639E0728D80A43226602E",
+			"toPinId": "7AE1E408481ACF78B5534AA1E46F3D20",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "70FD4DCE4FF40F4A52FBCB9D52EFB011",
+			"fromPinId": "2216B5DD4C6618FD9E2A43BFA420B1EF",
+			"fromPinName": "then",
+			"toNodeGuid": "DB8C09B04E5768BCC23733B263FB6F9A",
+			"toPinId": "C8577DD24A81951CB1A889801093B8FC",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "DB8C09B04E5768BCC23733B263FB6F9A",
+			"fromPinId": "2B1750B247CCE5B104C5BC9F12832ED9",
+			"fromPinName": "then",
+			"toNodeGuid": "C0417E864981D7C54B92AA8C68E632C2",
+			"toPinId": "F03C6011472E1AB017AC7B92B2C077F8",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "FFF5D03844F87C8D1069BBABF2F1F793",
+			"fromPinId": "D63F68BC40DA00A4F9DEFFB01B824E71",
+			"fromPinName": "BtnTab_Intersect",
+			"toNodeGuid": "DB8C09B04E5768BCC23733B263FB6F9A",
+			"toPinId": "1BEE208A44348B40726FEA8B453A54AF",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "59F37815480DF7764BF93EB470D6A34A",
+			"fromPinId": "13B5E0F34E42B378F0AD6CA987297468",
+			"fromPinName": "BtnTab_Settings",
+			"toNodeGuid": "DB8C09B04E5768BCC23733B263FB6F9A",
+			"toPinId": "1BEE208A44348B40726FEA8B453A54AF",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "EAA5DFF5470E294E315395AA9A99018E",
+			"fromPinId": "657973E643ED4C908E60D381A5E92089",
+			"fromPinName": "BtnTab_Quests",
+			"toNodeGuid": "DB8C09B04E5768BCC23733B263FB6F9A",
+			"toPinId": "1BEE208A44348B40726FEA8B453A54AF",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "E6F9305F4A772FBF33481E8C6A1629D8",
+			"fromPinId": "B8269F764CA16A29A773A79686D43024",
+			"fromPinName": "ColorUnfocused",
+			"toNodeGuid": "DB8C09B04E5768BCC23733B263FB6F9A",
+			"toPinId": "D0E5704D41DE49BEF5F12B999F40A4FF",
+			"toPinName": "InColorAndOpacity"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "72ADAB224E89A2E21F41D0974FFE2CBF",
+			"fromPinId": "7FA46D4C47A8AC033C8E8DB03403EDAA",
+			"fromPinName": "BtnTab_Inventory",
+			"toNodeGuid": "C0417E864981D7C54B92AA8C68E632C2",
+			"toPinId": "1407CF314BF07F1D22E716B5439FF3A6",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "5715A35E4A5378675276FEB0413DC530",
+			"fromPinId": "7D24E88A4D6F6DDAFAE2768C60F8B36B",
+			"fromPinName": "then",
+			"toNodeGuid": "665B25CB40EC775E40DB48A2FE05B555",
+			"toPinId": "24CD3ACC49B43AE6E3554391C783CF27",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "665B25CB40EC775E40DB48A2FE05B555",
+			"fromPinId": "4E538A9F421C439940477E9CE29A6511",
+			"fromPinName": "then_0",
+			"toNodeGuid": "70FD4DCE4FF40F4A52FBCB9D52EFB011",
+			"toPinId": "B15A7A6549E8D93862BCC8ABD4B5F2BC",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "665B25CB40EC775E40DB48A2FE05B555",
+			"fromPinId": "3FEC067A459807647AC752A8EC8F4EB9",
+			"fromPinName": "then_2",
+			"toNodeGuid": "A26362E14CF2BC75D55B21878A2DD86F",
+			"toPinId": "2A5D9F8A472BC4AD2241FBBCB773C642",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "C0417E864981D7C54B92AA8C68E632C2",
+			"fromPinId": "58C722E14006BE43DA2585AB1BCE515E",
+			"fromPinName": "then",
+			"toNodeGuid": "A1370B8E4C56B4C8214C5DADAE4A3A32",
+			"toPinId": "83FC6718484945855DF440B50C76711D",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "A8D818284DCB2053105EE78611EA9706",
+			"fromPinId": "B07D237C43EE3DCD13158E9B96CDE449",
+			"fromPinName": "ColorFocused",
+			"toNodeGuid": "C0417E864981D7C54B92AA8C68E632C2",
+			"toPinId": "EC313FB9478714C857A862A5A9D1355E",
+			"toPinName": "InColorAndOpacity"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "CD8E14F64FE71FC48935B8AA7DAAAE4A",
+			"fromPinId": "30CE4E8547B6777CCB3908BFD2BF7DCB",
+			"fromPinName": "TabsSelect",
+			"toNodeGuid": "70FD4DCE4FF40F4A52FBCB9D52EFB011",
+			"toPinId": "4442939641336148F0C17696BF5B825C",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "A1370B8E4C56B4C8214C5DADAE4A3A32",
+			"fromPinId": "FB5ABACE47E46AF3269F5AA63E723050",
+			"fromPinName": "then",
+			"toNodeGuid": "19F76869410EEA24A87DB0BB3CEB5533",
+			"toPinId": "09357C6045C2BDE03B2D438A72C2A134",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "19F76869410EEA24A87DB0BB3CEB5533",
+			"fromPinId": "CB38ED494828B3F2079283BDC83448E7",
+			"fromPinName": "then",
+			"toNodeGuid": "0D4882A34FD04AD99AF97F8B52701559",
+			"toPinId": "AEA49B5B4BD50805DF95A8AD3E887798",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "F0ADF27B418B0A013D443F913191FEE6",
+			"fromPinId": "A18ED0574DC7B75A2F0DE59CC649052C",
+			"fromPinName": "BtnSlot_BigWeapon",
+			"toNodeGuid": "19F76869410EEA24A87DB0BB3CEB5533",
+			"toPinId": "3760CB0445BBA2B21851AD8703FFC085",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "58E5ADFF4279FC6D4624F8AC57C2D389",
+			"fromPinId": "B9FD0FD646FF74BC937D6DA40D981DAA",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "19F76869410EEA24A87DB0BB3CEB5533",
+			"toPinId": "886737B54F4C6DE88218DA9C17938316",
+			"toPinName": "PlayerController"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "0D4882A34FD04AD99AF97F8B52701559",
+			"fromPinId": "8CCF5662483A573C6B522786CAD40FFA",
+			"fromPinName": "then",
+			"toNodeGuid": "99C9DEAD4F6117EEF365F7ACFB863E36",
+			"toPinId": "9312268D406246ACDF491DAB52CCC4A1",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "4D6735EA48B50534E902D6A248B01D49",
+			"fromPinId": "D122DF4441261B6A74012FBFC217345C",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "99C9DEAD4F6117EEF365F7ACFB863E36",
+			"toPinId": "39053B724D0EDED6DD845D9C5241313D",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "F0ADF27B418B0A013D443F913191FEE6",
+			"fromPinId": "A18ED0574DC7B75A2F0DE59CC649052C",
+			"fromPinName": "BtnSlot_BigWeapon",
+			"toNodeGuid": "4D6735EA48B50534E902D6A248B01D49",
+			"toPinId": "721E2DDE440693464053F384F31D3315",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "A34A630D49BB38152B4B7CBCC9D92EC2",
+			"fromPinId": "CF0C88574A5F20251101C998F5D0478E",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "A26362E14CF2BC75D55B21878A2DD86F",
+			"toPinId": "3ACCEF914EFE8F39376A209BDA691781",
+			"toPinName": "Object"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "A26362E14CF2BC75D55B21878A2DD86F",
+			"fromPinId": "D4A076EB4318EEA899FBE8958EEF85DA",
+			"fromPinName": "then",
+			"toNodeGuid": "419F20BD43EF8F70344014AE2ABB1598",
+			"toPinId": "3E6E397E4E944EE6E45D99955A2A6C26",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "A26362E14CF2BC75D55B21878A2DD86F",
+			"fromPinId": "C2AD9E88495B07F090B8408B0028DF4A",
+			"fromPinName": "AsALS Chuck BP",
+			"toNodeGuid": "419F20BD43EF8F70344014AE2ABB1598",
+			"toPinId": "331F4B4C4940D5B976995DA170BA2036",
+			"toPinName": "As ChuckRef"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "419F20BD43EF8F70344014AE2ABB1598",
+			"fromPinId": "350729C148BC1B423CBB65BA4FA7B540",
+			"fromPinName": "then",
+			"toNodeGuid": "ADD10D0E4C9FA408D952E883D792BF94",
+			"toPinId": "FF59BE8E4B7F7D1B531FBA9C4EB46CFA",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "ADD10D0E4C9FA408D952E883D792BF94",
+			"fromPinId": "99087F1C42D9F050B2DF2CBA037D9093",
+			"fromPinName": "then",
+			"toNodeGuid": "DBEDC654437CD2D75E58339EA864ACAD",
+			"toPinId": "E2828173456A453E869DE5BB6D1E00A3",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "DBEDC654437CD2D75E58339EA864ACAD",
+			"fromPinId": "802421EB42A1A8C0578523968DFF217B",
+			"fromPinName": "then",
+			"toNodeGuid": "A5963C1E4E02CE70E0180B9B85AFBACF",
+			"toPinId": "146176C845E9DA0F453FE79CF8B2F275",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "EFAEDE5C4631EB571EB7CB84FC9B4CFB",
+			"fromPinId": "3328AD9B4CC937F1586918AA10F5C1E4",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "8D8FE3634A3587665FC92D843C3BF0A7",
+			"toPinId": "C91BEC004338776085364DB2E0B44EC8",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "8D8FE3634A3587665FC92D843C3BF0A7",
+			"fromPinId": "C8EBF8DC4DFEDE11292AC3962DA3E2D0",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "CDF573EB4AF4FC29A9411F8F1257C167",
+			"toPinId": "04A1FE8345A37D3CD327CFB954B3BEC6",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "CDF573EB4AF4FC29A9411F8F1257C167",
+			"fromPinId": "4BE3634A4128E2122294938B7A042643",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "D301184547E8120886A3828FB0760FC4",
+			"toPinId": "9EBF57D942136BCA5F9F9EB071572D70",
+			"toPinName": "Location"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "D301184547E8120886A3828FB0760FC4",
+			"fromPinId": "1606514F4D83C771E2FFEB93D01B639A",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "A5963C1E4E02CE70E0180B9B85AFBACF",
+			"toPinId": "C6AD0067434D1DB8A1988689578AD2A8",
+			"toPinName": "SpawnTransform"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "A5963C1E4E02CE70E0180B9B85AFBACF",
+			"fromPinId": "63621D9E4593BCABC3440B9115A0D2C1",
+			"fromPinName": "then",
+			"toNodeGuid": "82EBDB5F4A759882D22962864ED0BD18",
+			"toPinId": "6BD206F445FBACAF4F4D5696EF1B71B7",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "A5963C1E4E02CE70E0180B9B85AFBACF",
+			"fromPinId": "EFA3766C4BCDE6CE900A1F9051D5F91F",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "82EBDB5F4A759882D22962864ED0BD18",
+			"toPinId": "F8AAE461484E69F8A12AB39C1DCB37F6",
+			"toPinName": "SpawnedStudioRef"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "82EBDB5F4A759882D22962864ED0BD18",
+			"fromPinId": "13BD0F0D4E2594CBD40ACB8BA816988B",
+			"fromPinName": "then",
+			"toNodeGuid": "4A0EB97542A09FB021CA8DBD2248AEF0",
+			"toPinId": "5E36F8CD40F5C3E32AC5EDA6785C6910",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "450832A8462948AA8141C0BCCEE80B41",
+			"fromPinId": "B9EFE7794FD3DB060D400BA128D3A98C",
+			"fromPinName": "SpawnedStudioRef",
+			"toNodeGuid": "4A0EB97542A09FB021CA8DBD2248AEF0",
+			"toPinId": "1835D3364B75A223DFFB53AD1C5E65C0",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "51728D6341E0AEA800333DBECC5225BD",
+			"fromPinId": "342B123442968768EB11978AB15FF59C",
+			"fromPinName": "then",
+			"toNodeGuid": "CA46261A404DAF3EEA2387B6F97AC399",
+			"toPinId": "41F756874741F5009DD260BEE2F8F12F",
+			"toPinName": "exec"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "C4BBDFAE430A6C5AA6B65CA62B0857F4",
+			"fromPinId": "70252E9F4919B077E3DA1FAB9B7DFD6A",
+			"fromPinName": "SpawnedStudioRef",
+			"toNodeGuid": "CA46261A404DAF3EEA2387B6F97AC399",
+			"toPinId": "B2D81AF8433137242F65C6882F128991",
+			"toPinName": "InputObject"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "C4BBDFAE430A6C5AA6B65CA62B0857F4",
+			"fromPinId": "70252E9F4919B077E3DA1FAB9B7DFD6A",
+			"fromPinName": "SpawnedStudioRef",
+			"toNodeGuid": "59BF3E7B43025676C7973785718F43A4",
+			"toPinId": "ED2FFB434E6B06C72F4E55B38AF197C0",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "CA46261A404DAF3EEA2387B6F97AC399",
+			"fromPinId": "119320464BEF22A1C7E484BAC4E5F092",
+			"fromPinName": "Is Valid",
+			"toNodeGuid": "0EA025E24BF398C7D1D6B19AA1249F88",
+			"toPinId": "49D5112A418419F358FDC8B801214729",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "59BF3E7B43025676C7973785718F43A4",
+			"fromPinId": "4AA950AB44968FFF9BF012AF348CC606",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "0EA025E24BF398C7D1D6B19AA1249F88",
+			"toPinId": "A26BF5BA4D036D6FF20923A0EE87B2B0",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "7FB2CACE4E010A81F076D9A45F29F734",
+			"fromPinId": "CBADB508490643AFDD8EA8838F595345",
+			"fromPinName": "CharacterGrid",
+			"toNodeGuid": "434075384887F2F5F5C20F8798B55B30",
+			"toPinId": "1FA793154BE5C0CBA2DAC987D2677AFE",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "F9ABB5FE4A0E68257389F7A9BADA2BE0",
+			"fromPinId": "1333ECDA430B149A9FB19A83C1306AAF",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "434075384887F2F5F5C20F8798B55B30",
+			"toPinId": "959DAA784147CA001758B6BF1189A2CE",
+			"toPinName": "InRow"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "D38FB96E479121C9388CAABD9D6A3389",
+			"fromPinId": "4E1F33CC47AD0E013E21D7B0D566A15B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "434075384887F2F5F5C20F8798B55B30",
+			"toPinId": "082277E24445D0F6FBC351894CC50F7D",
+			"toPinName": "InColumn"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "3E42D7A44E81F8A4FD6857B945E940AA",
+			"fromPinId": "4518EC8D4A18B10D70EB3A98EC50DBA0",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "F9ABB5FE4A0E68257389F7A9BADA2BE0",
+			"toPinId": "5A03E19D46D517B12280A285C761CE71",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "IntersectGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "3E42D7A44E81F8A4FD6857B945E940AA",
+			"fromPinId": "4518EC8D4A18B10D70EB3A98EC50DBA0",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "D38FB96E479121C9388CAABD9D6A3389",
+			"toPinId": "0FE0B9AB4EFB79E512B81AA5883A79F2",
+			"toPinName": "A"
+		}
+	],
+	"variablesRead": [
+		"Get Brd_ContainerCharacterSlot",
+		"Get Btn_Back",
+		"Get Btn_Slot",
+		"Get BtnSlot_BigWeapon",
+		"Get BtnTab_Intersect",
+		"Get BtnTab_Inventory",
+		"Get BtnTab_Quests",
+		"Get BtnTab_Settings",
+		"Get CharacterGrid",
+		"Get ColorFocused",
+		"Get ColorUnfocused",
+		"Get MenuIntersect",
+		"Get SpawnedStudioRef",
+		"Get TabsSelect"
+	],
+	"variablesWritten": [
+		"Set As ChuckRef",
+		"Set SpawnedStudioRef"
+	],
+	"functionsCalled": [
+		"% (Integer)",
+		"Add Child to Uniform Grid\nLa destinazione è Uniform Grid Panel",
+		"Destroy Actor\nLa destinazione è Actor",
+		"Get Actor Location\nLa destinazione è Actor",
+		"Get Child At\nLa destinazione è Panel Widget",
+		"Get Data Table Row Names",
+		"Get Owning Player\nLa destinazione è Widget",
+		"Get Player Character",
+		"Get Player Controller",
+		"Initialize Studio\nLa destinazione è BP Character Preview",
+		"Inizialize Character Card\nLa destinazione è WBP Tab Intersect Character Card",
+		"Inizialize Character Slot\nLa destinazione è WBP Tab Intersect Character Slot",
+		"Make Transform",
+		"Play Sound 2D",
+		"Refresh Menu Focus\nLa destinazione è WBP Menu Archive",
+		"Ritardo",
+		"Set Active Widget Index\nLa destinazione è Widget Switcher",
+		"Set Color and Opacity\nLa destinazione è Pulsante",
+		"Set Content\nLa destinazione è Content Widget",
+		"Set Input Mode Game And UI",
+		"Set Keyboard Focus\nLa destinazione è Widget",
+		"Set User Focus\nLa destinazione è Widget",
+		"Update Equipment Slots\nLa destinazione è WBP Menu Archive",
+		"Update Weapon Slots\nLa destinazione è WBP Menu Archive"
+	],
+	"widgetsTouched": [
+		"Button_Personaggi > Pagina Slot"
+	],
+	"componentsTouched": [
+		"On Clicked (Btn_Personaggi)"
+	],
+	"externalBlueprintReferences": [
+		"% (Integer)",
+		"Add Child to Uniform Grid\nLa destinazione è Uniform Grid Panel",
+		"Cast To ALS_ChuckBP",
+		"Cast To WBP_TabIntersect_CharacterSlot",
+		"Destroy Actor\nLa destinazione è Actor",
+		"Get Actor Location\nLa destinazione è Actor",
+		"Get Child At\nLa destinazione è Panel Widget",
+		"Get Data Table Row Names",
+		"Get Owning Player\nLa destinazione è Widget",
+		"Get Player Character",
+		"Get Player Controller",
+		"Initialize Studio\nLa destinazione è BP Character Preview",
+		"Inizialize Character Card\nLa destinazione è WBP Tab Intersect Character Card",
+		"Inizialize Character Slot\nLa destinazione è WBP Tab Intersect Character Slot",
+		"Make Transform",
+		"Play Sound 2D",
+		"Refresh Menu Focus\nLa destinazione è WBP Menu Archive",
+		"Ritardo",
+		"Set Active Widget Index\nLa destinazione è Widget Switcher",
+		"Set Color and Opacity\nLa destinazione è Pulsante",
+		"Set Content\nLa destinazione è Content Widget",
+		"Set Input Mode Game And UI",
+		"Set Keyboard Focus\nLa destinazione è Widget",
+		"Set User Focus\nLa destinazione è Widget",
+		"Update Equipment Slots\nLa destinazione è WBP Menu Archive",
+		"Update Weapon Slots\nLa destinazione è WBP Menu Archive"
+	],
+	"flowId": "F003",
+	"graphId": "G002",
+	"assetName": "WBP_MenuArchive",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive"
+}

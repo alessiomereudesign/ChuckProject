@@ -1,0 +1,368 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraManager",
+	"graph": "Get_CameraBehaviorParam",
+	"entryName": "Get Camera Behavior Param",
+	"entryNodeGuid": "846520F64154008955491BA33D4BEFE9",
+	"nodes": [
+		{
+			"nodeGuid": "846520F64154008955491BA33D4BEFE9",
+			"class": "K2Node_FunctionEntry",
+			"title": "Get Camera Behavior Param",
+			"comment": "",
+			"x": 32,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "88B776224B028DF76B39E38DEB1DA9B8",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "751C9A174BEF3A2300273A8F458EDEC3",
+					"name": "CurveName",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0ACBB6244D618A57715E0DB9B2CA7F42",
+			"class": "K2Node_VariableGet",
+			"title": "Get CameraBehavior",
+			"comment": "",
+			"x": 112,
+			"y": 192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3931638F4D648B187CC964BA9A0B7F94",
+					"name": "CameraBehavior",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6782D1D8485517C55DE820985C0143BD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CameraSystem/ALS_PlayerCameraManager.ALS_PlayerCameraManager_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2AFDA6B44D2F09CB2303E9A277D7C737",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Instance\nLa destinazione è Componente mesh scheletrica",
+			"comment": "",
+			"x": 272,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "567EDFD343FFEF2466CDABB586522F2D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4094D0D140740F1101CBFFB2734732C0",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "345DC67B4A81F56BA1C6819F63D1C10C",
+			"class": "K2Node_CallFunction",
+			"title": "Get Curve Value\nLa destinazione è Istanza animazione",
+			"comment": "",
+			"x": 784,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "610B00FD41BF31AEF3D64E90C0529AF8",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "17FCAAA148470A1BE09B9E89ACDC461E",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "E175E48848E9027700541E98C2C5ECA9",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "FF88D1594AA097BBE0D1A0A578267ED0",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 1024,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FD9033D540AE9643A4C9649288FF78F5",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D0F42554464131C2CD6810B58ECDD6AF",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "2289B6A54C41E31637CC629F3755CAD8",
+			"class": "K2Node_VariableGet",
+			"title": "Get CurveName",
+			"comment": "",
+			"x": 624,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FD2761884FBA62AB5760E2A83C1FB057",
+					"name": "CurveName",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "FDD680994C7A8997917D079B9529DE97",
+			"class": "K2Node_MacroInstance",
+			"title": "Is Valid",
+			"comment": "",
+			"x": 544,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "278B28A046C2A664CAE0E1BD13FA0212",
+					"name": "exec",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "803478864B3EFBC2FCFE989FC092D408",
+					"name": "InputObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "229F3F7547BA146B5F59FBB617B06F3E",
+					"name": "Is Valid",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "664AC2764D8939FFC3955AB1F25339BE",
+					"name": "Is Not Valid",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3B5813F04B556DE7D31A6AA9CF746340",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 784,
+			"y": 256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FD9033D540AE9643A4C9649288FF78F5",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D0F42554464131C2CD6810B58ECDD6AF",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "2EC4F0D64A3BEFD81260F0B8A8C341CD",
+			"class": "EdGraphNode_Comment",
+			"title": "Get an Anim Curve value from the Player Camera Behavior AnimBP to use as a parameter in the custom camera behavior calculations",
+			"comment": "Get an Anim Curve value from the Player Camera Behavior AnimBP to use as a parameter in the custom camera behavior calculations",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraManager",
+			"graph": "Get_CameraBehaviorParam",
+			"edgeType": "exec",
+			"fromNodeGuid": "846520F64154008955491BA33D4BEFE9",
+			"fromPinId": "88B776224B028DF76B39E38DEB1DA9B8",
+			"fromPinName": "then",
+			"toNodeGuid": "FDD680994C7A8997917D079B9529DE97",
+			"toPinId": "278B28A046C2A664CAE0E1BD13FA0212",
+			"toPinName": "exec"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraManager",
+			"graph": "Get_CameraBehaviorParam",
+			"edgeType": "data",
+			"fromNodeGuid": "0ACBB6244D618A57715E0DB9B2CA7F42",
+			"fromPinId": "3931638F4D648B187CC964BA9A0B7F94",
+			"fromPinName": "CameraBehavior",
+			"toNodeGuid": "2AFDA6B44D2F09CB2303E9A277D7C737",
+			"toPinId": "567EDFD343FFEF2466CDABB586522F2D",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraManager",
+			"graph": "Get_CameraBehaviorParam",
+			"edgeType": "data",
+			"fromNodeGuid": "2AFDA6B44D2F09CB2303E9A277D7C737",
+			"fromPinId": "4094D0D140740F1101CBFFB2734732C0",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "345DC67B4A81F56BA1C6819F63D1C10C",
+			"toPinId": "610B00FD41BF31AEF3D64E90C0529AF8",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraManager",
+			"graph": "Get_CameraBehaviorParam",
+			"edgeType": "data",
+			"fromNodeGuid": "2AFDA6B44D2F09CB2303E9A277D7C737",
+			"fromPinId": "4094D0D140740F1101CBFFB2734732C0",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "FDD680994C7A8997917D079B9529DE97",
+			"toPinId": "803478864B3EFBC2FCFE989FC092D408",
+			"toPinName": "InputObject"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraManager",
+			"graph": "Get_CameraBehaviorParam",
+			"edgeType": "data",
+			"fromNodeGuid": "2289B6A54C41E31637CC629F3755CAD8",
+			"fromPinId": "FD2761884FBA62AB5760E2A83C1FB057",
+			"fromPinName": "CurveName",
+			"toNodeGuid": "345DC67B4A81F56BA1C6819F63D1C10C",
+			"toPinId": "17FCAAA148470A1BE09B9E89ACDC461E",
+			"toPinName": "CurveName"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraManager",
+			"graph": "Get_CameraBehaviorParam",
+			"edgeType": "data",
+			"fromNodeGuid": "345DC67B4A81F56BA1C6819F63D1C10C",
+			"fromPinId": "E175E48848E9027700541E98C2C5ECA9",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "FF88D1594AA097BBE0D1A0A578267ED0",
+			"toPinId": "D0F42554464131C2CD6810B58ECDD6AF",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraManager",
+			"graph": "Get_CameraBehaviorParam",
+			"edgeType": "exec",
+			"fromNodeGuid": "FDD680994C7A8997917D079B9529DE97",
+			"fromPinId": "229F3F7547BA146B5F59FBB617B06F3E",
+			"fromPinName": "Is Valid",
+			"toNodeGuid": "FF88D1594AA097BBE0D1A0A578267ED0",
+			"toPinId": "FD9033D540AE9643A4C9649288FF78F5",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraManager",
+			"graph": "Get_CameraBehaviorParam",
+			"edgeType": "exec",
+			"fromNodeGuid": "FDD680994C7A8997917D079B9529DE97",
+			"fromPinId": "664AC2764D8939FFC3955AB1F25339BE",
+			"fromPinName": "Is Not Valid",
+			"toNodeGuid": "3B5813F04B556DE7D31A6AA9CF746340",
+			"toPinId": "FD9033D540AE9643A4C9649288FF78F5",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [
+		"Get CameraBehavior",
+		"Get CurveName"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Anim Instance\nLa destinazione è Componente mesh scheletrica",
+		"Get Curve Value\nLa destinazione è Istanza animazione"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Anim Instance\nLa destinazione è Componente mesh scheletrica",
+		"Get Curve Value\nLa destinazione è Istanza animazione"
+	],
+	"flowId": "F001",
+	"graphId": "G005",
+	"assetName": "ALS_PlayerCameraManager",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CameraSystem/ALS_PlayerCameraManager.ALS_PlayerCameraManager"
+}

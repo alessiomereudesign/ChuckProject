@@ -1,0 +1,25 @@
+{
+	"graphId": "G314",
+	"name": "UpdateInAirValues",
+	"graphName": "UpdateInAirValues",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 18,
+	"edgeCount": 14,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G314/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G314/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G314/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Update in Air Values",
+			"entryNodeGuid": "E9AFD68C46352A04981D68B2AC193999",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G314/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G314/F001.json",
+			"textFile": "Flows/G314/F001.txt",
+			"jsonFile": "Flows/G314/F001.json",
+			"nodeCount": 18
+		}
+	]
+}

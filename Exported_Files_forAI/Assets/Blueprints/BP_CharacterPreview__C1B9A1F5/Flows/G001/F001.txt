@@ -1,0 +1,75 @@
+Asset: BP_CharacterPreview
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/BP_CharacterPreview.BP_CharacterPreview
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_CharacterPreview_BP_CharacterPreview
+GraphId: G001
+Graph: EventGraph
+FlowId: F001
+Entry: InitializeStudio
+Custom Event
+NodeGuid: 95B0A7CB47B9AD6D1837D097AE05BEAA
+
+Exec Flow:
+1. Get Player Character [K2Node_CallFunction] BA7294C84335536CDCE9AAB3C2D94246
+2. Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] F6CCB2BF426399216829A6814F934E45
+3. Get Mesh [K2Node_VariableGet] F773B1E24A5A5D50B6325E8A9A247160
+4. Set Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 0F6CE8A74EB24FF76A3E2690843F68BB
+5. Get CharacterSkeletalMesh [K2Node_VariableGet] 12539620438806BCA22E7E81EB7E8A5A
+6. Get Anim Instance
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 2FB5EA2D4F805C1CB4B430A6AAA43CE8
+7. Get Class [K2Node_CallFunction] E4410FD14CAD933969F4E3BD01207841
+8. Set Anim Instance Class
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] A33D8010484BCEFACBBA598A7696D277
+9. Nodo di reindirizzamento [K2Node_Knot] 590F8B1349737B9D0099848B4D8FEBBA
+10. Nodo di reindirizzamento [K2Node_Knot] 76CC34D94B8B1DA3407A1F9DBB6BBFD6
+11. Nodo di reindirizzamento [K2Node_Knot] 1D178AEE47BF5EBB26FD4E8CEC16080E
+12. Set MainPlayerAsPreviewCharacter [EdGraphNode_Comment] B5D3CB3E4522024B0FAA29A2E4FF429C
+13. InitializeStudio
+Custom Event [K2Node_CustomEvent] 95B0A7CB47B9AD6D1837D097AE05BEAA
+14. Get SceneCaptureComponent2D [K2Node_VariableGet] 627F3C884B241997E0E81CBA42B27FB2
+15. Show Only Actor Components
+La destinazione è Scene Capture Component [K2Node_CallFunction] 227557F3468F95FAC58D738A8E27FAAA
+16. Auto-riferimento [K2Node_Self] C538E51347915C33C5CD33BF17D71879
+
+Variables Read:
+- Get CharacterSkeletalMesh
+- Get Mesh
+- Get SceneCaptureComponent2D
+
+Variables Written:
+- none
+
+External Calls:
+- Get Anim Instance
+La destinazione è Componente mesh scheletrica
+- Get Class
+- Get Player Character
+- Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica
+- Set Anim Instance Class
+La destinazione è Componente mesh scheletrica
+- Set Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica
+- Show Only Actor Components
+La destinazione è Scene Capture Component
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Anim Instance
+La destinazione è Componente mesh scheletrica
+- Get Class
+- Get Player Character
+- Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica
+- Set Anim Instance Class
+La destinazione è Componente mesh scheletrica
+- Set Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica
+- Show Only Actor Components
+La destinazione è Scene Capture Component

@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "DT_Weapon",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Data/DT_Weapon.DT_Weapon",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Data_DT_Weapon",
+	"shortAssetFolder": "DT_Weapon__94E13377",
+	"pathHash": "94E13377",
+	"assetType": "DataTable",
+	"unrealClass": "DataTable",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "NotApplicable",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/DataTables/DT_Weapon__94E13377/SUMMARY.md",
+		"variables": "Assets/DataTables/DT_Weapon__94E13377/VARIABLES.json",
+		"components": "Assets/DataTables/DT_Weapon__94E13377/COMPONENTS.json",
+		"widgetTree": "Assets/DataTables/DT_Weapon__94E13377/WIDGET_TREE.json",
+		"nodes": "Assets/DataTables/DT_Weapon__94E13377/NODES.jsonl",
+		"edges": "Assets/DataTables/DT_Weapon__94E13377/EDGES.jsonl",
+		"search": "Assets/DataTables/DT_Weapon__94E13377/SEARCH.jsonl"
+	},
+	"graphs": []
+}

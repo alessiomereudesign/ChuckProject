@@ -1,0 +1,177 @@
+{
+	"schemaVersion": "2.2",
+	"unrealEngineVersion": "5.4.4-35576357+++UE5+Release-5.4",
+	"name": "ALS_AI_Controller",
+	"path": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_AI_Controller.ALS_AI_Controller",
+	"assetName": "ALS_AI_Controller",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_AI_Controller.ALS_AI_Controller",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_AI_ALS_AI_Controller",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"mainClass": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_AI_Controller.ALS_AI_Controller_C",
+	"parentClass": "/Script/AIModule.AIController",
+	"compileStatus": "UpToDate",
+	"implementedInterfaces": [],
+	"variables": [],
+	"graphs": [
+		{
+			"name": "UserConstructionScript",
+			"type": "Function",
+			"nodes": [
+				{
+					"nodeGuid": "E599C7444188E549FF538D95A8039894",
+					"class": "K2Node_FunctionEntry",
+					"title": "Construction Script",
+					"comment": "",
+					"x": 0,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "96960D7D4D9C5F6046870F97BF7541FE",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				}
+			],
+			"links": []
+		},
+		{
+			"name": "EventGraph",
+			"type": "EventGraph",
+			"nodes": [
+				{
+					"nodeGuid": "ADD95A664F29837533A83F819DCECE5A",
+					"class": "K2Node_Event",
+					"title": "Evento On Possess",
+					"comment": "",
+					"x": 0,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "C0AE44E94B7872C651B20EA1C44A616F",
+							"name": "OutputDelegate",
+							"direction": "Output",
+							"type": "delegate",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "42B603DC40A0B2A5106E52AE8B265095",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "7715F3364B9E0FCE9DC13A8D5BC03FA3",
+							"name": "PossessedPawn",
+							"direction": "Output",
+							"type": "object|/Script/Engine.Pawn",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "38DAE1FC476AD60CB14E7A857F5A45EE",
+					"class": "K2Node_CallFunction",
+					"title": "Run Behavior Tree\nLa destinazione è AIController",
+					"comment": "",
+					"x": 256,
+					"y": -16,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "5E23A546401283B83DE38BA38A94C7CF",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "646D3B2043954E7ACA19D89BBCC529E7",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "5F38DB394E585763FDD29AAEB9636D11",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/AIModule.AIController",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "B3EACA2D4EB8C559669EC3A5137450EC",
+							"name": "BTAsset",
+							"direction": "Input",
+							"type": "object|/Script/AIModule.BehaviorTree",
+							"defaultValue": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_BT_AICharacter.ALS_BT_AICharacter"
+						},
+						{
+							"pinId": "97AB6512448709472F46B0BB987ADB21",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": "false"
+						}
+					]
+				}
+			],
+			"links": [
+				{
+					"fromNodeGuid": "ADD95A664F29837533A83F819DCECE5A",
+					"fromPinId": "42B603DC40A0B2A5106E52AE8B265095",
+					"fromPinName": "then",
+					"toNodeGuid": "38DAE1FC476AD60CB14E7A857F5A45EE",
+					"toPinId": "5E23A546401283B83DE38BA38A94C7CF",
+					"toPinName": "execute"
+				}
+			]
+		}
+	],
+	"dependencies": [
+		"/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_BT_AICharacter"
+	],
+	"relations": [],
+	"semanticSummary":
+	{
+		"probableSystem": "ALS / Locomotion",
+		"classificationConfidence": "heuristic",
+		"summary": "Blueprint probabilmente collegato a 'ALS / Locomotion' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.",
+		"importantVariables": [],
+		"importantFunctions": [
+			"UserConstructionScript"
+		],
+		"importantEvents": [
+			"Evento On Possess"
+		],
+		"relatedAssets": [],
+		"complexity":
+		{
+			"graphCount": 2,
+			"nodeCount": 3,
+			"pinCount": 9,
+			"linkCount": 1
+		},
+		"notes": [
+			"Classificazione euristica dedotta da nome, path e tipo asset (ALS / Locomotion)."
+		]
+	},
+	"shortAssetFolder": "ALS_AI_Controller__D21EF079",
+	"pathHash": "D21EF079"
+}

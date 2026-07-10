@@ -1,0 +1,25 @@
+{
+	"graphId": "G005",
+	"name": "GetFireMontage",
+	"graphName": "GetFireMontage",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 4,
+	"edgeCount": 3,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G005/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G005/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G005/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Get Fire Montage",
+			"entryNodeGuid": "36A4BE5144DB0493D0E7CABCB393E800",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G005/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G005/F001.json",
+			"textFile": "Flows/G005/F001.txt",
+			"jsonFile": "Flows/G005/F001.json",
+			"nodeCount": 4
+		}
+	]
+}

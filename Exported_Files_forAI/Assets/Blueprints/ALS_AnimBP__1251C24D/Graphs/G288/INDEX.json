@@ -1,0 +1,25 @@
+{
+	"graphId": "G288",
+	"name": "CalculateStrideBlend",
+	"graphName": "CalculateStrideBlend",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 15,
+	"edgeCount": 14,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G288/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G288/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G288/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Calculate Stride Blend",
+			"entryNodeGuid": "F40540A540D02EA5DD5FB2BF95B1CB7F",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G288/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G288/F001.json",
+			"textFile": "Flows/G288/F001.txt",
+			"jsonFile": "Flows/G288/F001.json",
+			"nodeCount": 15
+		}
+	]
+}

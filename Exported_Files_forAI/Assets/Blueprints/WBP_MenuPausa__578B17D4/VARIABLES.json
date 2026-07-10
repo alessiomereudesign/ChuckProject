@@ -1,0 +1,23 @@
+{
+	"assetName": "WBP_MenuPausa",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/WBP_MenuPausa.WBP_MenuPausa",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "MenuArchiveRef",
+			"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "FocusedColor",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		},
+		{
+			"name": "UnfocusedColor",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		}
+	]
+}

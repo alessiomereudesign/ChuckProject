@@ -1,0 +1,14 @@
+{
+	"graphId": "G120",
+	"name": "AnimationTransitionGraph_0",
+	"graphName": "AnimationTransitionGraph_0",
+	"type": "AnimationTransitionGraph",
+	"graphType": "AnimationTransitionGraph",
+	"graphGuid": "",
+	"nodeCount": 5,
+	"edgeCount": 4,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G120/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G120/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G120/EDGES.jsonl",
+	"flows": []
+}

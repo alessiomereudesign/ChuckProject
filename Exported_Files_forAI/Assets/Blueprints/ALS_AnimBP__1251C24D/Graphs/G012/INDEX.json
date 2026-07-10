@@ -1,0 +1,14 @@
+{
+	"graphId": "G012",
+	"name": "(N) Rotate Left 90",
+	"graphName": "(N) Rotate Left 90",
+	"type": "AnimationStateGraph",
+	"graphType": "AnimationStateGraph",
+	"graphGuid": "",
+	"nodeCount": 6,
+	"edgeCount": 5,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G012/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G012/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G012/EDGES.jsonl",
+	"flows": []
+}

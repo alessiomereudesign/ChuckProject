@@ -1,0 +1,33 @@
+{
+	"assetName": "WBP_CustomRadialMenu",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/WBP_CustomRadialMenu.WBP_CustomRadialMenu",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_2_MENU_RAPIDO_WBP_CustomRadialMenu",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "TargetIndex",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "CurrentSelectedSlot",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "AsChuckRef",
+			"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "WheelsSlotArray",
+			"type": "object|/Script/UMG.Button|container=Array",
+			"defaultValue": ""
+		},
+		{
+			"name": "As ALS Player Controller",
+			"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller.ALS_Player_Controller_C",
+			"defaultValue": ""
+		}
+	]
+}

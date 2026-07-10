@@ -1,0 +1,56 @@
+Asset: ALS_PlayerCameraManager
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CameraSystem/ALS_PlayerCameraManager.ALS_PlayerCameraManager
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraManager
+GraphId: G003
+Graph: CalculateAxisIndependentLag
+FlowId: F001
+Entry: Calculate Axis Independent Lag
+NodeGuid: 4BA4D0B54B6B03FD85D4EBBFD711FBBF
+
+Exec Flow:
+1. Calculate Axis Independent Lag [K2Node_FunctionEntry] 4BA4D0B54B6B03FD85D4EBBFD711FBBF
+2. Nodo di restituzione [K2Node_FunctionResult] AD980F6C44FFE95A953B1BB289CCFD92
+3. Imposta [K2Node_VariableSet] E7CCB5B244231D756D878E9B187D3BD9
+4. Ottieni [K2Node_VariableGet] C7C978FB4361013B5D81B2BFC107B141
+5. Get World Delta Seconds [K2Node_CallFunction] D145DD384892D2775F776997D845622D
+6. Rotate Vector [K2Node_CallFunction] 680E123D4B402D55D43B938434A48A4B
+7. Get CurrentLocation [K2Node_VariableGet] 36F52A6A43F5F64FC09BF594D08462E6
+8. Get TargetLocation [K2Node_VariableGet] E728E8044B73BADEC6B9F3A01C260969
+9. Get CameraRotationYaw [K2Node_VariableGet] DBBFC3184EB8C2A26CCBE59A7931F952
+10. Ottieni [K2Node_VariableGet] 7E1DD5A64BF38985BE4DD29385537F39
+11. Get CameraRotationYaw [K2Node_VariableGet] 740F8A2E459329A4851C84BB9D229FA4
+12. Unrotate Vector [K2Node_CallFunction] 81E156BA45ED159ACDCD67A9EE071307
+13. Unrotate Vector [K2Node_CallFunction] FB873C624086E78FD8B855AAB5D76B51
+14. Make Vector [K2Node_CallFunction] E3317F6B44C14AF88AAC6BA56FEE0A77
+15. FInterp To [K2Node_CallFunction] 1832879846712CF7D441DFA6136AF52F
+16. FInterp To [K2Node_CallFunction] C54E11824712394E27F37B9FB6C6BF45
+17. FInterp To [K2Node_CallFunction] 994542294ADA46CD76AD1B8EE068A650
+
+Variables Read:
+- Get CameraRotationYaw
+- Get CurrentLocation
+- Get TargetLocation
+- Ottieni
+
+Variables Written:
+- Imposta
+
+External Calls:
+- FInterp To
+- Get World Delta Seconds
+- Make Vector
+- Rotate Vector
+- Unrotate Vector
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- FInterp To
+- Get World Delta Seconds
+- Make Vector
+- Rotate Vector
+- Unrotate Vector

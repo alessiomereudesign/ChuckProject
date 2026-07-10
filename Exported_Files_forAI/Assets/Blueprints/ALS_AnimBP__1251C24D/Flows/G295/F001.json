@@ -1,0 +1,886 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+	"graph": "DynamicTransitionCheck",
+	"entryName": "Dynamic Transition Check",
+	"entryNodeGuid": "812BD08F452593DED2397DB8E7186874",
+	"nodes": [
+		{
+			"nodeGuid": "812BD08F452593DED2397DB8E7186874",
+			"class": "K2Node_FunctionEntry",
+			"title": "Dynamic Transition Check",
+			"comment": "",
+			"x": 32,
+			"y": 336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "325A95D64455AB9E90B101AEC8965457",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C5DBF2994A3B65A3E35F7D9DD3278049",
+			"class": "K2Node_ExecutionSequence",
+			"title": "Sequenza",
+			"comment": "",
+			"x": 256,
+			"y": 336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "50B4141B4A23F6837F2349B6C9EFAF17",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "795E2B8B439836259086B6B525CA747A",
+					"name": "then_0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E21F617C4F847B203874D98EDD424441",
+					"name": "then_1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1E3926AC463920B19055748FFB9E3678",
+			"class": "K2Node_CallFunction",
+			"title": "Get Owning Component\nLa destinazione è Istanza animazione",
+			"comment": "",
+			"x": 528,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "17E63F2E4EDFC12359D740ACF9B86381",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A4E5BF98439DDBDF0A21C3AD8325D435",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "423B6FA94BFAAFBE2D28A98B982F8E89",
+			"class": "K2Node_CallFunction",
+			"title": "Get Distance Between Two Sockets",
+			"comment": "",
+			"x": 768,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "31C060A0423DCB5CC3047DB0662E0EAF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/AnimGraphRuntime.KismetAnimationLibrary",
+					"defaultValue": "/Script/AnimGraphRuntime.Default__KismetAnimationLibrary"
+				},
+				{
+					"pinId": "D73FB32D4E6AA3D2F8F687BAEB02EBD4",
+					"name": "Component",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F8EEAE46496127BCB36F14B2B59EF018",
+					"name": "SocketOrBoneNameA",
+					"direction": "Input",
+					"type": "name|const",
+					"defaultValue": "ik_foot_l"
+				},
+				{
+					"pinId": "CA31D8FD4EF5711360FB47A6F967EFC9",
+					"name": "SocketSpaceA",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.ERelativeTransformSpace",
+					"defaultValue": "RTS_Component"
+				},
+				{
+					"pinId": "33FA05B44A666E85BFB93696C5B94322",
+					"name": "SocketOrBoneNameB",
+					"direction": "Input",
+					"type": "name|const",
+					"defaultValue": "VB foot_target_l"
+				},
+				{
+					"pinId": "26218DE7452D48E5E4EA7D94536D4C59",
+					"name": "SocketSpaceB",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.ERelativeTransformSpace",
+					"defaultValue": "RTS_Component"
+				},
+				{
+					"pinId": "E993C99F42405CE353549FBAF1A4597B",
+					"name": "bRemapRange",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "9501FB114079F2372BCD5CB74059EC73",
+					"name": "InRangeMin",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "C29D9AEE4E4BCDCF2E0D889B0EA4A6EC",
+					"name": "InRangeMax",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "AA89DD724478F3ADBCB25BB824331DE4",
+					"name": "OutRangeMin",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "C50752E04A61DDA609AE7EB761BD516A",
+					"name": "OutRangeMax",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "4B8484F947886DF8E6F0B3AFABD457FE",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "4A93A96D4EE229D731B9699E00F29068",
+			"class": "K2Node_CallFunction",
+			"title": "float > float",
+			"comment": "",
+			"x": 1120,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "423D7AAE485B0914F77DA0B2019BFA82",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "A0EF8DD54CCAD6B215B177B56AB78EDC",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "9F504F0D422F85EBC1112FBCD21FE9A6",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "8.000000"
+				},
+				{
+					"pinId": "D64EACBA4D9F63CDE95F8AADAA9E1104",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "0D749A754EAEB907E5FCA5A2F94748BE",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 512,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A8F3488A452CD2E08B1089AF7CF0546C",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DD69324B4A03F760D869AC9E73F1E73A",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C1D378B54D2E02A566D423B9C44FAB84",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1264,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2DEA705744920E9DC73591B9407DF695",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "696A63624079AB1D64A37891456C2A10",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "862E88BA47094AF7E1F302AE5913FE3C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E33232F447378D7468F4FF936F37D6AB",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2E76EDA347F7BB28174778BFAFC52C9F",
+			"class": "K2Node_CallFunction",
+			"title": "Get Owning Component\nLa destinazione è Istanza animazione",
+			"comment": "",
+			"x": 528,
+			"y": 672,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "17E63F2E4EDFC12359D740ACF9B86381",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A4E5BF98439DDBDF0A21C3AD8325D435",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D0E06378464F4FBFD363A9B747CA7FBD",
+			"class": "K2Node_CallFunction",
+			"title": "Get Distance Between Two Sockets",
+			"comment": "",
+			"x": 768,
+			"y": 672,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "31C060A0423DCB5CC3047DB0662E0EAF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/AnimGraphRuntime.KismetAnimationLibrary",
+					"defaultValue": "/Script/AnimGraphRuntime.Default__KismetAnimationLibrary"
+				},
+				{
+					"pinId": "D73FB32D4E6AA3D2F8F687BAEB02EBD4",
+					"name": "Component",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F8EEAE46496127BCB36F14B2B59EF018",
+					"name": "SocketOrBoneNameA",
+					"direction": "Input",
+					"type": "name|const",
+					"defaultValue": "ik_foot_r"
+				},
+				{
+					"pinId": "CA31D8FD4EF5711360FB47A6F967EFC9",
+					"name": "SocketSpaceA",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.ERelativeTransformSpace",
+					"defaultValue": "RTS_Component"
+				},
+				{
+					"pinId": "33FA05B44A666E85BFB93696C5B94322",
+					"name": "SocketOrBoneNameB",
+					"direction": "Input",
+					"type": "name|const",
+					"defaultValue": "VB foot_target_r"
+				},
+				{
+					"pinId": "26218DE7452D48E5E4EA7D94536D4C59",
+					"name": "SocketSpaceB",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.ERelativeTransformSpace",
+					"defaultValue": "RTS_Component"
+				},
+				{
+					"pinId": "E993C99F42405CE353549FBAF1A4597B",
+					"name": "bRemapRange",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "9501FB114079F2372BCD5CB74059EC73",
+					"name": "InRangeMin",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "C29D9AEE4E4BCDCF2E0D889B0EA4A6EC",
+					"name": "InRangeMax",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "AA89DD724478F3ADBCB25BB824331DE4",
+					"name": "OutRangeMin",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "C50752E04A61DDA609AE7EB761BD516A",
+					"name": "OutRangeMax",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "4B8484F947886DF8E6F0B3AFABD457FE",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "BC45AD1D44DE35B45965D9988A8CC3BF",
+			"class": "K2Node_CallFunction",
+			"title": "float > float",
+			"comment": "",
+			"x": 1120,
+			"y": 688,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "423D7AAE485B0914F77DA0B2019BFA82",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "A0EF8DD54CCAD6B215B177B56AB78EDC",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "9F504F0D422F85EBC1112FBCD21FE9A6",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "8.000000"
+				},
+				{
+					"pinId": "D64EACBA4D9F63CDE95F8AADAA9E1104",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "FCAAD8F24125D999D3EC49AFA41291C2",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 512,
+			"y": 624,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A8F3488A452CD2E08B1089AF7CF0546C",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DD69324B4A03F760D869AC9E73F1E73A",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EB5FA51E4710CB25FFE6CFAA4F1838D2",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1264,
+			"y": 592,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2DEA705744920E9DC73591B9407DF695",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "696A63624079AB1D64A37891456C2A10",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "862E88BA47094AF7E1F302AE5913FE3C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E33232F447378D7468F4FF936F37D6AB",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "9EFECBFF400619C1C94228B47F9F3F66",
+			"class": "K2Node_CallFunction",
+			"title": "Play Dynamic Transition\nLa destinazione è ALS Anim BP",
+			"comment": "",
+			"x": 1472,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5C456ACE4F1C8942141219A7D974B07F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C0A913349779479C7669790508327EA",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DB9695C241EAB4D144EA9CB6EFAF8DB1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F0F57EAB4E5B195903676C8D01F87DF4",
+					"name": "ReTriggerDelay",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.100000"
+				},
+				{
+					"pinId": "3167A69E498CA89D5B7C02B77ABAC53D",
+					"name": "Parameters",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/DynamicMontageParams.DynamicMontageParams",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C43C595345B1EA7636B4FA9BFD17BBEC",
+					"name": "Parameters_Animation_2_5E5C122A46BA0311400556A423FC05D0",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimSequenceBase",
+					"defaultValue": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Base/Transitions/ALS_N_Transition_R.ALS_N_Transition_R"
+				},
+				{
+					"pinId": "5E84D2694CBDCA9A2E49558C1FE310D5",
+					"name": "Parameters_BlendInTime_10_1C5E8446412E51FFA0B03AB8BD32E6E8",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.200000"
+				},
+				{
+					"pinId": "59353C9B472895EA6BB8C0BBED9BE11A",
+					"name": "Parameters_BlendOutTime_12_79DFD9804491A7DF0813EFA923002F9C",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.200000"
+				},
+				{
+					"pinId": "9293E6764F9EE996EC894FB1880B8BD8",
+					"name": "Parameters_PlayRate_5_4724216C43D83EADF735F0AFEE9947EB",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "1.500000"
+				},
+				{
+					"pinId": "5577FF1643B9945DA54B5FB31AD7193F",
+					"name": "Parameters_StartTime_7_3C5D7A3849D194E10AB51CA0344EBC8D",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.800000"
+				}
+			]
+		},
+		{
+			"nodeGuid": "6A34A0D7424B35739475D2B173350B19",
+			"class": "K2Node_CallFunction",
+			"title": "Play Dynamic Transition\nLa destinazione è ALS Anim BP",
+			"comment": "",
+			"x": 1472,
+			"y": 576,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5C456ACE4F1C8942141219A7D974B07F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C0A913349779479C7669790508327EA",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DB9695C241EAB4D144EA9CB6EFAF8DB1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F0F57EAB4E5B195903676C8D01F87DF4",
+					"name": "ReTriggerDelay",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.100000"
+				},
+				{
+					"pinId": "3167A69E498CA89D5B7C02B77ABAC53D",
+					"name": "Parameters",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/DynamicMontageParams.DynamicMontageParams",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C43C595345B1EA7636B4FA9BFD17BBEC",
+					"name": "Parameters_Animation_2_5E5C122A46BA0311400556A423FC05D0",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimSequenceBase",
+					"defaultValue": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Base/Transitions/ALS_N_Transition_L.ALS_N_Transition_L"
+				},
+				{
+					"pinId": "5E84D2694CBDCA9A2E49558C1FE310D5",
+					"name": "Parameters_BlendInTime_10_1C5E8446412E51FFA0B03AB8BD32E6E8",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.200000"
+				},
+				{
+					"pinId": "59353C9B472895EA6BB8C0BBED9BE11A",
+					"name": "Parameters_BlendOutTime_12_79DFD9804491A7DF0813EFA923002F9C",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.200000"
+				},
+				{
+					"pinId": "9293E6764F9EE996EC894FB1880B8BD8",
+					"name": "Parameters_PlayRate_5_4724216C43D83EADF735F0AFEE9947EB",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "1.500000"
+				},
+				{
+					"pinId": "5577FF1643B9945DA54B5FB31AD7193F",
+					"name": "Parameters_StartTime_7_3C5D7A3849D194E10AB51CA0344EBC8D",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.800000"
+				}
+			]
+		},
+		{
+			"nodeGuid": "2D4E4B74453DD3D24C886F9288C271FA",
+			"class": "EdGraphNode_Comment",
+			"title": "Check each foot to see if the location difference between the IK_Foot bone and its desired / target location (determined via a virtual bone) exceeds a threshold. If it does, play an additive transition animation on that foot. The currently set transition plays the second half of a 2 foot transition animation, so that only a single foot moves. Because only the IK_Foot bone can be locked, the separate virtual bone allows the system to know its desired location when locked.",
+			"comment": "Check each foot to see if the location difference between the IK_Foot bone and its desired / target location (determined via a virtual bone) exceeds a threshold. If it does, play an additive transition animation on that foot. The currently set transition plays the second half of a 2 foot transition animation, so that only a single foot moves. Because only the IK_Foot bone can be locked, the separate virtual bone allows the system to know its desired location when locked.",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "DynamicTransitionCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "812BD08F452593DED2397DB8E7186874",
+			"fromPinId": "325A95D64455AB9E90B101AEC8965457",
+			"fromPinName": "then",
+			"toNodeGuid": "C5DBF2994A3B65A3E35F7D9DD3278049",
+			"toPinId": "50B4141B4A23F6837F2349B6C9EFAF17",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "DynamicTransitionCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "C5DBF2994A3B65A3E35F7D9DD3278049",
+			"fromPinId": "795E2B8B439836259086B6B525CA747A",
+			"fromPinName": "then_0",
+			"toNodeGuid": "0D749A754EAEB907E5FCA5A2F94748BE",
+			"toPinId": "A8F3488A452CD2E08B1089AF7CF0546C",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "DynamicTransitionCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "C5DBF2994A3B65A3E35F7D9DD3278049",
+			"fromPinId": "E21F617C4F847B203874D98EDD424441",
+			"fromPinName": "then_1",
+			"toNodeGuid": "FCAAD8F24125D999D3EC49AFA41291C2",
+			"toPinId": "A8F3488A452CD2E08B1089AF7CF0546C",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "DynamicTransitionCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "1E3926AC463920B19055748FFB9E3678",
+			"fromPinId": "A4E5BF98439DDBDF0A21C3AD8325D435",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "423B6FA94BFAAFBE2D28A98B982F8E89",
+			"toPinId": "D73FB32D4E6AA3D2F8F687BAEB02EBD4",
+			"toPinName": "Component"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "DynamicTransitionCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "423B6FA94BFAAFBE2D28A98B982F8E89",
+			"fromPinId": "4B8484F947886DF8E6F0B3AFABD457FE",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "4A93A96D4EE229D731B9699E00F29068",
+			"toPinId": "A0EF8DD54CCAD6B215B177B56AB78EDC",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "DynamicTransitionCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "4A93A96D4EE229D731B9699E00F29068",
+			"fromPinId": "D64EACBA4D9F63CDE95F8AADAA9E1104",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "C1D378B54D2E02A566D423B9C44FAB84",
+			"toPinId": "696A63624079AB1D64A37891456C2A10",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "DynamicTransitionCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "0D749A754EAEB907E5FCA5A2F94748BE",
+			"fromPinId": "DD69324B4A03F760D869AC9E73F1E73A",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "C1D378B54D2E02A566D423B9C44FAB84",
+			"toPinId": "2DEA705744920E9DC73591B9407DF695",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "DynamicTransitionCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "C1D378B54D2E02A566D423B9C44FAB84",
+			"fromPinId": "862E88BA47094AF7E1F302AE5913FE3C",
+			"fromPinName": "then",
+			"toNodeGuid": "9EFECBFF400619C1C94228B47F9F3F66",
+			"toPinId": "5C456ACE4F1C8942141219A7D974B07F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "DynamicTransitionCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "2E76EDA347F7BB28174778BFAFC52C9F",
+			"fromPinId": "A4E5BF98439DDBDF0A21C3AD8325D435",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "D0E06378464F4FBFD363A9B747CA7FBD",
+			"toPinId": "D73FB32D4E6AA3D2F8F687BAEB02EBD4",
+			"toPinName": "Component"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "DynamicTransitionCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "D0E06378464F4FBFD363A9B747CA7FBD",
+			"fromPinId": "4B8484F947886DF8E6F0B3AFABD457FE",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "BC45AD1D44DE35B45965D9988A8CC3BF",
+			"toPinId": "A0EF8DD54CCAD6B215B177B56AB78EDC",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "DynamicTransitionCheck",
+			"edgeType": "data",
+			"fromNodeGuid": "BC45AD1D44DE35B45965D9988A8CC3BF",
+			"fromPinId": "D64EACBA4D9F63CDE95F8AADAA9E1104",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "EB5FA51E4710CB25FFE6CFAA4F1838D2",
+			"toPinId": "696A63624079AB1D64A37891456C2A10",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "DynamicTransitionCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "FCAAD8F24125D999D3EC49AFA41291C2",
+			"fromPinId": "DD69324B4A03F760D869AC9E73F1E73A",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "EB5FA51E4710CB25FFE6CFAA4F1838D2",
+			"toPinId": "2DEA705744920E9DC73591B9407DF695",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "DynamicTransitionCheck",
+			"edgeType": "exec",
+			"fromNodeGuid": "EB5FA51E4710CB25FFE6CFAA4F1838D2",
+			"fromPinId": "862E88BA47094AF7E1F302AE5913FE3C",
+			"fromPinName": "then",
+			"toNodeGuid": "6A34A0D7424B35739475D2B173350B19",
+			"toPinId": "5C456ACE4F1C8942141219A7D974B07F",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"float > float",
+		"Get Distance Between Two Sockets",
+		"Get Owning Component\nLa destinazione è Istanza animazione",
+		"Play Dynamic Transition\nLa destinazione è ALS Anim BP"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"float > float",
+		"Get Distance Between Two Sockets",
+		"Get Owning Component\nLa destinazione è Istanza animazione",
+		"Play Dynamic Transition\nLa destinazione è ALS Anim BP"
+	],
+	"flowId": "F001",
+	"graphId": "G295",
+	"assetName": "ALS_AnimBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP"
+}

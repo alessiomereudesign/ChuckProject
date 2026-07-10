@@ -1,0 +1,25 @@
+{
+	"graphId": "G306",
+	"name": "SetFootOffsets",
+	"graphName": "SetFootOffsets",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 80,
+	"edgeCount": 84,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G306/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G306/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G306/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Set Foot Offsets",
+			"entryNodeGuid": "4560DEA34FFB5521BD3008899CB53BCD",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G306/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G306/F001.json",
+			"textFile": "Flows/G306/F001.txt",
+			"jsonFile": "Flows/G306/F001.json",
+			"nodeCount": 80
+		}
+	]
+}

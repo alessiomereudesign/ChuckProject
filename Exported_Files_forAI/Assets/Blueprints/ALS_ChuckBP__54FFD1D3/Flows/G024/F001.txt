@@ -1,0 +1,66 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G024
+Graph: SpawnCurrentWeaponActor
+FlowId: F001
+Entry: Spawn Current Weapon Actor
+NodeGuid: 2959A24F4A294EFB5AAF63ABCA6AF98D
+
+Exec Flow:
+1. Spawn Current Weapon Actor [K2Node_FunctionEntry] 2959A24F4A294EFB5AAF63ABCA6AF98D
+2. SpawnActor BP Weapon Base [K2Node_SpawnActorFromClass] D8661D384A65F174B488C2B4675ABBCB
+3. Initialize Weapon
+La destinazione è BP Weapon Base [K2Node_CallFunction] 9D354A51468BEDAC5A923DBBE5ABFDBA
+4. Get Actor Transform
+La destinazione è Actor [K2Node_CallFunction] EDB55B7148D3293C74F96488D469405D
+5. Set CurrentWeaponActor [K2Node_VariableSet] 51E77B204AE3EA2571A11E811EAF8CA6
+6. Auto-riferimento [K2Node_Self] 18D88088499090BB530DAD8EB9006E38
+7. Nodo di reindirizzamento [K2Node_Knot] CFF93DA14643694D110FCC91A2DF5E55
+8. Nodo di reindirizzamento [K2Node_Knot] A39E06484C8E133886C848A542EC699B
+9. Get CurrentWeaponActor [K2Node_VariableGet] 7CAD888D4388E7477547EDA6491600FB
+10. Is Valid [K2Node_MacroInstance] 38EB754542C216BCD93012878CF22337
+11. Destroy Actor
+La destinazione è Actor [K2Node_CallFunction] 48CBC5EC42A3A27356909695C25C8FC8
+12. Nodo di reindirizzamento [K2Node_Knot] C8EFD4D948C281CC1588D1965EBD8167
+13. Get CurrentWeaponData [K2Node_VariableGet] E7F2214B4C11F68C6832B18D81777356
+14. Auto-riferimento [K2Node_Self] 25AC839646195D575E97A4BE7B9DC247
+15. Attach Actor To Component
+La destinazione è Actor [K2Node_CallFunction] 0AE4FE7D4E37AA7EE02C3A806E245254
+16. Get Mesh [K2Node_VariableGet] FC38D9DF435B236ED45A80A81583AECB
+17. Nodo di reindirizzamento [K2Node_Knot] CC3B4BE34C776D6FC6D8FF87C2BCA80A
+18. Nodo di reindirizzamento [K2Node_Knot] AA2CC9274C97A481A09007A93F434DF1
+
+Variables Read:
+- Get CurrentWeaponActor
+- Get CurrentWeaponData
+- Get Mesh
+
+Variables Written:
+- Set CurrentWeaponActor
+
+External Calls:
+- Attach Actor To Component
+La destinazione è Actor
+- Destroy Actor
+La destinazione è Actor
+- Get Actor Transform
+La destinazione è Actor
+- Initialize Weapon
+La destinazione è BP Weapon Base
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Attach Actor To Component
+La destinazione è Actor
+- Destroy Actor
+La destinazione è Actor
+- Get Actor Transform
+La destinazione è Actor
+- Initialize Weapon
+La destinazione è BP Weapon Base

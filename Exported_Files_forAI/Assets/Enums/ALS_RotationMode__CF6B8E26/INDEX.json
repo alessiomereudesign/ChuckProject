@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "ALS_RotationMode",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Enums_ALS_RotationMode",
+	"shortAssetFolder": "ALS_RotationMode__CF6B8E26",
+	"pathHash": "CF6B8E26",
+	"assetType": "Enum",
+	"unrealClass": "UserDefinedEnum",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "NotApplicable",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Enums/ALS_RotationMode__CF6B8E26/SUMMARY.md",
+		"variables": "Assets/Enums/ALS_RotationMode__CF6B8E26/VARIABLES.json",
+		"components": "Assets/Enums/ALS_RotationMode__CF6B8E26/COMPONENTS.json",
+		"widgetTree": "Assets/Enums/ALS_RotationMode__CF6B8E26/WIDGET_TREE.json",
+		"nodes": "Assets/Enums/ALS_RotationMode__CF6B8E26/NODES.jsonl",
+		"edges": "Assets/Enums/ALS_RotationMode__CF6B8E26/EDGES.jsonl",
+		"search": "Assets/Enums/ALS_RotationMode__CF6B8E26/SEARCH.jsonl"
+	},
+	"graphs": []
+}

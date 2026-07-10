@@ -1,0 +1,48 @@
+{
+	"assetName": "ALS_PlayerCameraManager",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CameraSystem/ALS_PlayerCameraManager.ALS_PlayerCameraManager",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraManager",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "ControlledPawn",
+			"type": "object|/Script/Engine.Pawn",
+			"defaultValue": ""
+		},
+		{
+			"name": "DebugViewOffset",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "DebugViewRotation",
+			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		},
+		{
+			"name": "RootLocation",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "SmoothedPivotTarget",
+			"type": "struct|/Script/CoreUObject.Transform",
+			"defaultValue": ""
+		},
+		{
+			"name": "PivotLocation",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "TargetCameraLocation",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "TargetCameraRotation",
+			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		}
+	]
+}

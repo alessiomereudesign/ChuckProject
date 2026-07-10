@@ -1,0 +1,32 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G005
+Graph: GetFireMontage
+FlowId: F001
+Entry: Get Fire Montage
+NodeGuid: 36A4BE5144DB0493D0E7CABCB393E800
+
+Exec Flow:
+1. Get Fire Montage [K2Node_FunctionEntry] 36A4BE5144DB0493D0E7CABCB393E800
+2. Nodo di restituzione [K2Node_FunctionResult] F2D3A72B43061B2B3348F19A93CAF16D
+3. Get WeaponData [K2Node_VariableGet] 5959EE4B496033AE47D3B3A1C0D3D911
+4. Break S_WeaponData [K2Node_BreakStruct] E516E02C4C0A9B1CF539FAB758848DA3
+
+Variables Read:
+- Get WeaponData
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

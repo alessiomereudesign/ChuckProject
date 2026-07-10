@@ -1,0 +1,175 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G022
+Graph: Set/ResetColors
+FlowId: F001
+Entry: Set/ Reset Colors
+NodeGuid: 29107F49475C1958B4BC4F889FAC9664
+
+Exec Flow:
+1. Set/ Reset Colors [K2Node_FunctionEntry] 29107F49475C1958B4BC4F889FAC9664
+2. Get SolidColor [K2Node_VariableGet] DD0D3671413763A7CA0237931FC94FC6
+3. Ramo [K2Node_IfThenElse] 6F0150B144BCF6F09A995E8CA3B75B02
+4. Get Head [K2Node_VariableGet] 1FB7A47B4BDB9DD863AC10BDD0DAC3E6
+5. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 5AD5E2144F231CC4CEA472AF8B8528CE
+6. Get Torso [K2Node_VariableGet] B3FDCC634A62D3F0FA735C9B253ABB67
+7. Get Pelvis [K2Node_VariableGet] 7E553B30431F962DC67894BD52EC36E7
+8. Get Shoulder_L [K2Node_VariableGet] 428CD17C4984319D17539AA07CF7A7E1
+9. Get UpperArm_L [K2Node_VariableGet] 791BD1C74A5193279F07BFAA0EA3E3BB
+10. Get LowerArm_L [K2Node_VariableGet] 327EC9FF48DA0E380AFA33B413C5E34E
+11. Get Hand_L [K2Node_VariableGet] FB24623745C7C1C04347E8993D0D570F
+12. Get Shoulder_R [K2Node_VariableGet] 5919BDD1434156E17E1BDAAC932EB8AC
+13. Get UpperArm_R [K2Node_VariableGet] 82FDE84044FB8BC485C4B7B9D1D3D451
+14. Get LowerArm_R [K2Node_VariableGet] 0323E89E4C7AB95536D3D296E96F77B7
+15. Get Hand_R [K2Node_VariableGet] C44D815B4DBADBB8DB3DAF94EAB5D18D
+16. Get UpperLegs [K2Node_VariableGet] 4A80EBDF4EBD7E25809DC2A24F39DF0C
+17. Get LowerLegs [K2Node_VariableGet] D53697B04632A93E4FD84D81857AD3B6
+18. Get Feet [K2Node_VariableGet] D04386254E9F390D8F65F2BA50699A49
+19. Sequenza [K2Node_ExecutionSequence] A3D8D824492946B9CB1A0D9E81DFEEDD
+20. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 9324F2B545B270F3D5C20E95A470E1FC
+21. Get Head [K2Node_VariableGet] C8D637A845B2130ABF0A2C84CC974FC8
+22. Get SkinColor [K2Node_VariableGet] A7945C694E8DBB2E1D9753820D015047
+23. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 2123BEAD4851C21B7FFA7EA690566FA0
+24. Attiva Int [K2Node_SwitchInteger] B6832446418A43B8EF6EDAB668281CBB
+25. Get ShirtType [K2Node_VariableGet] 2B2BAE774DA1126D5B65A7A5A94AB12D
+26. Get Hand_L [K2Node_VariableGet] EF252517466243FD5AA6589DF5272B5A
+27. Get Hand_R [K2Node_VariableGet] B0B48E82468B87E4FE950FA71AA7AEA2
+28. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 03129C534D05913D1A12B89656537496
+29. Get SkinColor [K2Node_VariableGet] EA8421F544D26F12417FE3842A76F488
+30. Get ShirtColor [K2Node_VariableGet] D73602654EA0385ACF90D0BDC61EBEDD
+31. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 5FF2A2E84AE861108986F9971B4E2D24
+32. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 8015CBA64805CBF5874987BEE9767D96
+33. Get SkinColor [K2Node_VariableGet] 01F5BF7044205D52A638F38DF9515823
+34. Get ShirtColor [K2Node_VariableGet] 2FF4A65D4C31651503B933A67D2636EC
+35. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 4BD70EE4469C4F29AEDC3F95D6859F9F
+36. Get ShirtColor [K2Node_VariableGet] 058B4C6C409C63791796B582DE0F77DB
+37. Get Shoulder_L [K2Node_VariableGet] 49BC3F584635CBEFDEEA4CAA81B8C0DD
+38. Get UpperArm_L [K2Node_VariableGet] 2B99A19C4E7CDAADFE3923B294E617EE
+39. Get LowerArm_L [K2Node_VariableGet] 3546292D438CE43234655CBA8DD44DBD
+40. Get Shoulder_R [K2Node_VariableGet] B6379EB14B723D33304F3B955AEC8641
+41. Get LowerArm_R [K2Node_VariableGet] 03A1AC9D4F205541D35DC78A079EDD2C
+42. Get UpperArm_R [K2Node_VariableGet] 5C3F97A34FEC4B26DD728184EB864C9E
+43. Get Shoulder_L [K2Node_VariableGet] 70C624B244BFE2BD723BF5B98494DFAA
+44. Get UpperArm_L [K2Node_VariableGet] F540B1704D8408C325BFF5B6F7EFB109
+45. Get LowerArm_L [K2Node_VariableGet] B92E10AF401C79512D76CD8EF242B7E0
+46. Get Shoulder_R [K2Node_VariableGet] 9250035F475CAAC9CFB309A9E1B17878
+47. Get LowerArm_R [K2Node_VariableGet] E1E3219F4F4E810C36317EA714CE790D
+48. Get UpperArm_R [K2Node_VariableGet] D0934E2B46363051CA1C29B09F8117B0
+49. Get Shoulder_L [K2Node_VariableGet] 7B8739F34EB41638717B6D9A51BE1375
+50. Get UpperArm_L [K2Node_VariableGet] 49C0D35C41FAA7A8294206AB494DC980
+51. Get Shoulder_R [K2Node_VariableGet] C96D92E5481B4B3CF8FE0B89163D5F84
+52. Get UpperArm_R [K2Node_VariableGet] 85AE2EBB4F5B7506882573B7331A0054
+53. Get LowerArm_L [K2Node_VariableGet] A65236CD4EE3F0D3F69E8FBA86B04200
+54. Get LowerArm_R [K2Node_VariableGet] 8BBDE6C44F929DD95C81F3AB584E39C3
+55. Attiva Int [K2Node_SwitchInteger] F2155B9C490F030DAFAEAFB163DEC814
+56. Get PantsType [K2Node_VariableGet] 92B48D924CA5E9ADD5F0D2A6E019C106
+57. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] B50EEF114DBD3D3AA087AD8E38721BA8
+58. Get PantsColor [K2Node_VariableGet] 659C693542439088DA5916983F05653D
+59. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 2C65B2C349C17B2EB57B6591F85062ED
+60. Get SkinColor [K2Node_VariableGet] 0CD6DACC40777C5FFED40385C40E5F62
+61. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 21FFD7C64A885BC0F45EE8B26130D07B
+62. Get PantsColor [K2Node_VariableGet] CACBE26143604FA4E06BE28C4D24AB52
+63. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] DB326384438CE0896CA5A49CF21E01DA
+64. Get SkinColor [K2Node_VariableGet] 0A7682FA4A8AEC0EE7F5E1ACBE2CBAE5
+65. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 9D522FC94674297A35FA77854BF273B8
+66. Get PantsColor [K2Node_VariableGet] 8A830A1D444B4165E84BA3914007DB0F
+67. Get UpperLegs [K2Node_VariableGet] 0A5326FC4E4936655DC377AA23252B39
+68. Get Pelvis [K2Node_VariableGet] CE6EB1E9481EEED412E37F83C53B02FE
+69. Get LowerLegs [K2Node_VariableGet] 96FAAED4430BC5DB217089A433FEE8ED
+70. Get Pelvis [K2Node_VariableGet] 5D001BE44D464F9C1D11A8B00D0E7C1F
+71. Get UpperLegs [K2Node_VariableGet] F6D771044A41F3A76A4D01A4C4D111E6
+72. Get LowerLegs [K2Node_VariableGet] EC4DBD484304FD23580693B0DBF40A23
+73. Get Pelvis [K2Node_VariableGet] 0FA04DD740E09033AD0357B0984FCFF4
+74. Get UpperLegs [K2Node_VariableGet] 653830594EF9F731B9C54EAD58F89DF3
+75. Get LowerLegs [K2Node_VariableGet] 91EE665A4130303E469515BA6F372CB2
+76. Ramo [K2Node_IfThenElse] 881F0B2647AB073CB7E9FEA9A773CCE4
+77. Get Shoes [K2Node_VariableGet] 344C75C54C8136C7DCECD4A08FC592F2
+78. Get Torso [K2Node_VariableGet] 205F2E164BEEDD00E1B894915287494E
+79. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 97C0B59641BEB75C35F02089AB4B4B32
+80. Get SkinColor [K2Node_VariableGet] 49DF2CBC483DA578D735F698C8DAB1B9
+81. Get Shoulder_L [K2Node_VariableGet] 6807B7834AA252577F74E68F0F75B0D0
+82. Get UpperArm_L [K2Node_VariableGet] BD6DC5F8432DE049B14041B8983A90FD
+83. Get LowerArm_L [K2Node_VariableGet] 7193CFA542D4F00C7320DCBA3A2F781A
+84. Get Shoulder_R [K2Node_VariableGet] 428DFA2F4AA19903D23316ABB14103E4
+85. Get LowerArm_R [K2Node_VariableGet] 00FA47B84CE1D7C1D76E268BD88320F6
+86. Get UpperArm_R [K2Node_VariableGet] 41523DCE440CF37625302D8508F387F1
+87. Get Torso [K2Node_VariableGet] B0577A8043E937C9C0673D93DDC6246F
+88. Get Torso [K2Node_VariableGet] 6DBCCB39476AF87D1B543681625B92A1
+89. Get Torso [K2Node_VariableGet] ED3444A24D3744FF19CCBD8A8FBB2B78
+90. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] DE47615841C67C150A3D939A8BBC77D7
+91. Get Feet [K2Node_VariableGet] 66984E1348B73D446070ABB15F864382
+92. Get ShoesColor [K2Node_VariableGet] 373AA2E4464BDFC30F5EBB8F084A276A
+93. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 3AE6E7A3489072D6F54DDC90F8F4BA3E
+94. Get Feet [K2Node_VariableGet] 0D55D6D149AE507344AC19BD80E68315
+95. Get SkinColor [K2Node_VariableGet] A056FF9A4385B3FBD3856182BF93F40A
+96. Get DefaultColor [K2Node_VariableGet] 87CDB5774B422B5CF30E55BD3C31C6D6
+97. Ramo [K2Node_IfThenElse] D9F8189F4889B2F41BD1D39C2FF8E742
+98. Get Gloves [K2Node_VariableGet] 8FF8D4904F22A08D8441F59A5DCE4269
+99. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 6595EBBF431C83CD80C97C9B3301E321
+100. Get GlovesColor [K2Node_VariableGet] 536F1FA74E6188CE2FD9A9BF92C4729B
+101. Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali [K2Node_CallFunction] 8B7ABAB541A30E1FB2C7D3BE9470FBE8
+102. Get SkinColor [K2Node_VariableGet] 2D710147402F9C296C0BA4BED74A2D6F
+103. Get Hand_L [K2Node_VariableGet] 45A4837F4F7B1DC550A4949DE806F7E4
+104. Get Hand_R [K2Node_VariableGet] 6CF0DE8E4EBE78D3AE4E2E86CCE3006C
+
+Variables Read:
+- Get DefaultColor
+- Get Feet
+- Get Gloves
+- Get GlovesColor
+- Get Hand_L
+- Get Hand_R
+- Get Head
+- Get LowerArm_L
+- Get LowerArm_R
+- Get LowerLegs
+- Get PantsColor
+- Get PantsType
+- Get Pelvis
+- Get ShirtColor
+- Get ShirtType
+- Get Shoes
+- Get ShoesColor
+- Get Shoulder_L
+- Get Shoulder_R
+- Get SkinColor
+- Get SolidColor
+- Get Torso
+- Get UpperArm_L
+- Get UpperArm_R
+- Get UpperLegs
+
+Variables Written:
+- none
+
+External Calls:
+- Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Set Vector Parameter Value
+La destinazione è Dinamica istanza materiali

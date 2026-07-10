@@ -1,0 +1,53 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G015
+Graph: Has Weapon?
+FlowId: F001
+Entry: Has Weapon?
+NodeGuid: F28A932F47722406A0E400BB78377122
+
+Exec Flow:
+1. Has Weapon? [K2Node_FunctionEntry] F28A932F47722406A0E400BB78377122
+2. Switch on E_WeaponSlot [K2Node_SwitchEnum] D71A2C7D4BA2951956064E9D09750E4F
+3. Get Mesh_SmallWeapon [K2Node_VariableGet] BC1F35EC4741AC5D90FD3590ED131DBD
+4. Get Mesh_BigWeapon [K2Node_VariableGet] 6C9C37A04B21EA7E415506AC37A05722
+5. Get Mesh_Melee [K2Node_VariableGet] 13D0DEFA409511F7216EAE9807705E1C
+6. Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 2E8E7C9D4331E2C1D4750EA11141DD69
+7. Is Valid [K2Node_CallFunction] 1CEA639D4B6194F401F1668E524359EC
+8. Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] EF7135A34EDA452633BDFF8FB8636647
+9. Is Valid [K2Node_CallFunction] 351D285A4C162D460C19848D8B6BFF96
+10. Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 3C61807643993D6C44A32AB3BB7878F1
+11. Is Valid [K2Node_CallFunction] 2BB4DE8B49502D1D739A94BC55039220
+12. Nodo di reindirizzamento [K2Node_Knot] EE1E5CEB4A5B57950B77FA96F23E69D5
+13. Nodo di reindirizzamento [K2Node_Knot] AC6C4EB14D52DBED1D74ACBA77C6A85A
+14. Nodo di restituzione [K2Node_FunctionResult] A2DCE8974972D4E0A8BC349E733F688D
+15. Nodo di restituzione [K2Node_FunctionResult] 85900ACC4476B998E5CC93B83476F840
+16. Nodo di restituzione [K2Node_FunctionResult] 2C6D27F145090DA97ECC3EA9BE3EFDEC
+
+Variables Read:
+- Get Mesh_BigWeapon
+- Get Mesh_Melee
+- Get Mesh_SmallWeapon
+
+Variables Written:
+- none
+
+External Calls:
+- Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica
+- Is Valid
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica
+- Is Valid

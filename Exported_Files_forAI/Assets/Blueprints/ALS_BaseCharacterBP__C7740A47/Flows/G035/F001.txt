@@ -1,0 +1,163 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G035
+Graph: MantleStart
+FlowId: F001
+Entry: Mantle Start
+NodeGuid: D979905C4921809158F0A58993BA6ECE
+
+Exec Flow:
+1. Mantle Start [K2Node_FunctionEntry] D979905C4921809158F0A58993BA6ECE
+2. Step 7: Play the Anim Montaget if valid. [EdGraphNode_Comment] 4D28E1A34685195171BF0697663C6C2B
+3. Get MantleTimeline [K2Node_VariableGet] 3B916C7143B42E5DA3861F96450D592B
+4. Get MantleTimeline [K2Node_VariableGet] 341258004068EB7E0EAA0CA5BFB03020
+5. Gioca dall'inizio
+La destinazione è Timeline Component [K2Node_CallFunction] 20B11D9743F7E845E77ACDA635F9BDBA
+6. Step 6: Configure the Mantle Timeline so that it is the same length as the Lerp/Correction curve minus the starting position, and plays at the same speed as the animation. Then start the timeline. [EdGraphNode_Comment] 65034DFD477A4D1552B66494D1FA4153
+7. Get MantleParams [K2Node_VariableGet] A1BF5E4D46AEE8B78EE7699F9F50A2F5
+8. Set Play Rate
+La destinazione è Timeline Component [K2Node_CallFunction] 14AA42E7429E19CCECCF8D8CCC09D53C
+9. Break Mantle_Params [K2Node_BreakStruct] 367AA31241D3C80CACEA2FB16BD699C0
+10. Set Timeline Length
+La destinazione è Timeline Component [K2Node_CallFunction] 218D1C8A40469C033288D58827E47C2F
+11. Get MantleTimeline [K2Node_VariableGet] 6B0A99C3425869B1BB97B992C676F41A
+12. Step 5: Clear the Character Movement Mode and set the Movement State to Mantling [EdGraphNode_Comment] 0E1A46E649E7643B8E1ED8842400BA21
+13. Set Movement Mode
+La destinazione è Componente movimento personaggio [K2Node_CallFunction] CB23940047FA234B7B92F1931E2839D2
+14. Get CharacterMovement [K2Node_VariableGet] 911A702240F47F10A9FAF8AC15A46CE3
+15. Step 4: Calculate the Animated Start Offset from the Target Location. This would be the location the actual animation starts at relative to the Target Transform.  [EdGraphNode_Comment] 64F40DB647369F225E8B5F8DF5653AD9
+16. Ottieni [K2Node_VariableGet] D02188FF4EEA9076B48C7CA76501CA04
+17. Set MantleAnimatedStartOffset [K2Node_VariableSet] E31AAF86402C1E1D6DF216838B9373E2
+18. ML Transform- Transform [K2Node_MacroInstance] 4280240D4D9C1739228FB5ADEBBD21B4
+19. Break Mantle_Params [K2Node_BreakStruct] 28A2E87A45DB3A60141A3AB1EBFED289
+20. Get MantleParams [K2Node_VariableGet] 158B9B6643FA4F299315D29457001681
+21. Make Vector [K2Node_CallFunction] 48677FCC4E4A025A66421B87FB515EE2
+22. vector * float [K2Node_CallFunction] CF75BA264A1DB794935FE98D5754643A
+23. Get Rotation X Vector [K2Node_CallFunction] 007EFFA24D768E9FD8331DA48AB1BB5F
+24. vector - vector [K2Node_CallFunction] 83357B024F759C95CCE89FAC680F2E61
+25. Ottieni [K2Node_VariableGet] 151B61B848FE30DBF63015BB776867F1
+26. Step 3: Set the Mantle Target and calculate the Starting Offset (offset amount between the actor and target transform). [EdGraphNode_Comment] 983A580F48614AAD60AD40A264AD0349
+27. Get MantleTarget [K2Node_VariableGet] 3A20029449EF01F216E9EB9B1A86BF80
+28. ML Transform- Transform [K2Node_MacroInstance] FFCD79B84C4A4CAA51043F8EDF9ED10A
+29. Set MantleActualStartOffset [K2Node_VariableSet] A59349E1472C9C8F3FB44ABDBFEFC06D
+30. Get Actor Transform
+La destinazione è Actor [K2Node_CallFunction] 19D1D2744791B2F4D6A554A2E1E4FA2F
+31. Set MantleTarget [K2Node_VariableSet] 6E3395724DE841CDFB6733A2F346ED7D
+32. Step 2: Convert the world space target to the mantle component's local space for use in moving objects. [EdGraphNode_Comment] 922A4CED4C72C4CD88EDB49BC74638DF
+33. ML Component World to Local [K2Node_MacroInstance] 45DBDEE54E1ED36B71D0559E052549E3
+34. Set MantleLedgeLS [K2Node_VariableSet] 0919E9314EDC69202DAD86BC2938CB5E
+35. Set MantleParams [K2Node_VariableSet] 72BA8D054CEFE0F6007CDB851F48E4D5
+36. Get MantleTarget [K2Node_VariableGet] 1D45C3724F3522B030FA17A0CB0CF3EE
+37. Sequenza [K2Node_ExecutionSequence] 2556EF244AB140B3119C27BCC43DD55A
+38. Nodo di reindirizzamento [K2Node_Knot] 4E9759C24ECD6BD750830EB8A0B910B6
+39. Nodo di reindirizzamento [K2Node_Knot] D50476A94E42AD9EBF3A54AA7C83A2A4
+40. Step 1: Get the Mantle Asset and use it to set the new Mantle Params. [EdGraphNode_Comment] AE9F04B7441E855A495800971123096C
+41. Nodo di reindirizzamento [K2Node_Knot] A8D5F8B14FDDE36A7201C1A8CB2CAFC5
+42. Nodo di reindirizzamento [K2Node_Knot] 21BF9537478781BF11A3F391198E7A4B
+43. Nodo di reindirizzamento [K2Node_Knot] C63476504FBCC7095EE9FDBD1A5F4398
+44. Nodo di reindirizzamento [K2Node_Knot] 34AA23E64E3873C78A1F2291A91FA8BC
+45. Get Time Range
+La destinazione è Curve Base [K2Node_CallFunction] FC30A30B4D6753C8FB2B4A82566EA29C
+46. Nodo di reindirizzamento [K2Node_Knot] 2D2D86DF46D646864C1A99B45CA1045B
+47. Nodo di reindirizzamento [K2Node_Knot] 3367445147A8A592A83A86A2E6168854
+48. float - float [K2Node_CallFunction] 7FA824764CA1B5071A310AA63728ED07
+49. Nodo di reindirizzamento [K2Node_Knot] 7A056C574E433BA99952E79144E1A0A2
+50. Get MantleLedgeWS [K2Node_VariableGet] D02464744B7683354FA633AA7CC49D6D
+51. Montage Play
+La destinazione è Istanza animazione [K2Node_CallFunction] F97CA8BD4892BD71922799A1EDE2F9C2
+52. Ottieni [K2Node_VariableGet] 687F358F45E2E869001339A2EC466A7C
+53. Get MantleParams [K2Node_VariableGet] C79F8A754677F1EF41F93F837F30D7C5
+54. Break Mantle_Params [K2Node_BreakStruct] 7FA06E4D4BD62D6E070EF4ACB92BCFD5
+55. Is Valid [K2Node_MacroInstance] 8D46379D4FD0346D200CF1A68F5E13B6
+56. Nodo di reindirizzamento [K2Node_Knot] BB9016A742E4DB93F67733A2BB76329C
+57. Get MantleParams [K2Node_VariableGet] 4BC8FD1D4E5E9B20EA2AA1848186B763
+58. Break Mantle_Params [K2Node_BreakStruct] 2F4DF1BC482354A073333AAC1EFBDF6C
+59. Map Range Clamped [K2Node_CallFunction] A896A217462DC97406EEA4B44E8724C8
+60. Break Mantle_Asset [K2Node_BreakStruct] BCF17F37401B84E7F2E5B68536F60420
+61. Map Range Clamped [K2Node_CallFunction] DDF0C08E491C56CA9AE37BB90A283758
+62. Break Mantle_Asset [K2Node_BreakStruct] 90611BBC42F3D29C295CE581F7B0F805
+63. Make Mantle_Params [K2Node_MakeStruct] FED273244AFA32BA46EE848D2F7EFF84
+64. Get Mantle Asset [K2Node_CallFunction] 788D941B4BFFCF54FE557D96B10051C1
+65. Set MantleAsset [K2Node_VariableSet] 7F52322944B84D39B0965E99E3C5E6B3
+66. Get MantleType [K2Node_VariableGet] 26C2EA854240B4E657465398159501E8
+67. Get MantleAsset [K2Node_VariableGet] B4D716F9449DEBD5F4BD9195A211588E
+68. Get MantleHeight [K2Node_VariableGet] A416B23F4715D062FAB556BBA212F087
+69. BPI Set Movement State
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 06519339482E66A490EC8BBEAA0B787E
+70. Ottieni [K2Node_VariableGet] DC0519454782647D1CE340977BBDC8D2
+
+Variables Read:
+- Get CharacterMovement
+- Get MantleAsset
+- Get MantleHeight
+- Get MantleLedgeWS
+- Get MantleParams
+- Get MantleTarget
+- Get MantleTimeline
+- Get MantleType
+- Ottieni
+
+Variables Written:
+- Set MantleActualStartOffset
+- Set MantleAnimatedStartOffset
+- Set MantleAsset
+- Set MantleLedgeLS
+- Set MantleParams
+- Set MantleTarget
+
+External Calls:
+- BPI Set Movement State
+La destinazione è ALS Base Character BP
+- float - float
+- Get Actor Transform
+La destinazione è Actor
+- Get Mantle Asset
+- Get Rotation X Vector
+- Get Time Range
+La destinazione è Curve Base
+- Gioca dall'inizio
+La destinazione è Timeline Component
+- Make Vector
+- Map Range Clamped
+- Montage Play
+La destinazione è Istanza animazione
+- Set Movement Mode
+La destinazione è Componente movimento personaggio
+- Set Play Rate
+La destinazione è Timeline Component
+- Set Timeline Length
+La destinazione è Timeline Component
+- vector * float
+- vector - vector
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- BPI Set Movement State
+La destinazione è ALS Base Character BP
+- float - float
+- Get Actor Transform
+La destinazione è Actor
+- Get Mantle Asset
+- Get Rotation X Vector
+- Get Time Range
+La destinazione è Curve Base
+- Gioca dall'inizio
+La destinazione è Timeline Component
+- Make Vector
+- Map Range Clamped
+- Montage Play
+La destinazione è Istanza animazione
+- Set Movement Mode
+La destinazione è Componente movimento personaggio
+- Set Play Rate
+La destinazione è Timeline Component
+- Set Timeline Length
+La destinazione è Timeline Component
+- vector * float
+- vector - vector

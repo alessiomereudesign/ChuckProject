@@ -1,0 +1,28 @@
+{
+	"assetName": "WBP_TabIntersect_CharacterSlot",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "CharacterData",
+			"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/F_CharacterData.F_CharacterData",
+			"defaultValue": ""
+		},
+		{
+			"name": "OnSlotSelected",
+			"type": "mcdelegate",
+			"defaultValue": ""
+		},
+		{
+			"name": "ParentIntersectRef",
+			"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "Hovered Color",
+			"type": "struct|/Script/CoreUObject.LinearColor",
+			"defaultValue": ""
+		}
+	]
+}

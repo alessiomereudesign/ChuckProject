@@ -1,0 +1,75 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "SimpleObjectBuilder",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Environment/SimpleObjectBuilder.SimpleObjectBuilder",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Environment_SimpleObjectBuilder",
+	"shortAssetFolder": "SimpleObjectBuilder__8655CA6D",
+	"pathHash": "8655CA6D",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/Engine.Actor",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 8,
+		"components": 17,
+		"widgets": 0,
+		"graphs": 2,
+		"nodes": 29,
+		"edges": 28,
+		"flows": 1
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/SimpleObjectBuilder__8655CA6D/SUMMARY.md",
+		"variables": "Assets/Blueprints/SimpleObjectBuilder__8655CA6D/VARIABLES.json",
+		"components": "Assets/Blueprints/SimpleObjectBuilder__8655CA6D/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/SimpleObjectBuilder__8655CA6D/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/SimpleObjectBuilder__8655CA6D/NODES.jsonl",
+		"edges": "Assets/Blueprints/SimpleObjectBuilder__8655CA6D/EDGES.jsonl",
+		"search": "Assets/Blueprints/SimpleObjectBuilder__8655CA6D/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 0,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/SimpleObjectBuilder__8655CA6D/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/SimpleObjectBuilder__8655CA6D/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/SimpleObjectBuilder__8655CA6D/Graphs/G001/EDGES.jsonl",
+			"flows": []
+		},
+		{
+			"graphId": "G002",
+			"name": "UserConstructionScript",
+			"graphName": "UserConstructionScript",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 29,
+			"edgeCount": 28,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/SimpleObjectBuilder__8655CA6D/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/SimpleObjectBuilder__8655CA6D/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/SimpleObjectBuilder__8655CA6D/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Construction Script",
+					"entryNodeGuid": "DB08D3C143BB4481D24A04AAC8F1F819",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/SimpleObjectBuilder__8655CA6D/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/SimpleObjectBuilder__8655CA6D/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 29
+				}
+			]
+		}
+	]
+}

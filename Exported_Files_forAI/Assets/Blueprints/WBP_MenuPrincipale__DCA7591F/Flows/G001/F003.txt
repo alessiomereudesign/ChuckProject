@@ -1,0 +1,161 @@
+Asset: WBP_MenuPrincipale
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/0_MAIN_MENU/WBP_MenuPrincipale.WBP_MenuPrincipale
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_0_MAIN_MENU_WBP_MenuPrincipale
+GraphId: G001
+Graph: EventGraph
+FlowId: F003
+Entry: VerifyFocusGamepad
+Custom Event
+NodeGuid: 0365EE6149B3AC16512895923D845A16
+
+Exec Flow:
+1. Evento Construct [K2Node_Event] 2E0279ED4837B6B5E7F6DD95B7B779E5
+2. On Clicked (Btn_Inizia) [K2Node_ComponentBoundEvent] FD01E7B04D615C54542A9BAB5BF651D0
+3. Open Level (by Name) [K2Node_CallFunction] 471D04A2466CD061134388BFD02D590B
+4. Set Input Mode Game Only [K2Node_CallFunction] A567704C455CF3029BEAF69A25AE3D27
+5. Get Player Controller [K2Node_CallFunction] D6173B064074AF2D62D8ED81E1D0245C
+6. On Clicked (Btn_EsciDalGioco) [K2Node_ComponentBoundEvent] 8214490244976771627AC9B650C092D6
+7. Esci dal gioco [K2Node_CallFunction] 8F24C104495186A0155B3EB7DA9753AC
+8. Set bShowMouseCursor [K2Node_VariableSet] 7E4E6662467474853C8A08AE5DB9AEA8
+9. Nodo di reindirizzamento [K2Node_Knot] 6F89AC694BBB8AFBEBFF449C6C417146
+10. Set Input Mode Game And UI [K2Node_CallFunction] B0CB68F948C505B8EE6032AC01EEB5DA
+11. Get Player Controller [K2Node_CallFunction] 93AA59C44603B18DAA0FD0BD6827358C
+12. Auto-riferimento [K2Node_Self] 71F832F4495303D10E7A9CA62FC02884
+13. Ritardo [K2Node_CallFunction] D1D162304F9BBC19F3AF4AACF089D50F
+14. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] DACF9D5B44365ADB5EE1BE95538CEB1F
+15. Nodo di reindirizzamento [K2Node_Knot] 696ED41D485DB226372E6BB1C44BACB2
+16. Get Btn_Inizia [K2Node_VariableGet] E5DB2D244AD3DABB2AAADA988E7821F8
+17. Sequenza [K2Node_ExecutionSequence] 8AAD329F48DBFCD1ED29279C241BE13F
+18. Set Timer by Event [K2Node_CallFunction] 7F531DC548BB5116520A2EB2D7CBB79B
+19. VerifyFocusGamepad
+Custom Event [K2Node_CustomEvent] 0365EE6149B3AC16512895923D845A16
+20. Has Keyboard Focus
+La destinazione è Widget [K2Node_CallFunction] 5E378E314D8EBBCA4109F69C999452CD
+21. Ramo [K2Node_IfThenElse] 6F7BBAA143DDD9BC2BD41E9EBB910417
+22. For Each Loop [K2Node_MacroInstance] 0309B29C48A005379D420D88B3D91C62
+23. Crea array [K2Node_MakeArray] 1DA2F69F4F515EDCADDBF99EE34B4161
+24. Get Btn_Inizia [K2Node_VariableGet] 73BFDF334CA354A898409BA241589389
+25. Get Btn_EsciDalGioco [K2Node_VariableGet] F75EDA5141B99DEEFBE76EB2516B6B38
+26. Set Color and Opacity
+La destinazione è Pulsante [K2Node_CallFunction] 37711CCD4AB19F78D370C3A5759F8209
+27. Set Color and Opacity
+La destinazione è Pulsante [K2Node_CallFunction] F2EC0B3445EF6B28E8648DA67329AA71
+28. Get Anim_ClickedButtonStart [K2Node_VariableGet] EA09265E43B1AD2E0CB62ABEFB557277
+29. Riproduci animazione
+La destinazione è User Widget [K2Node_CallFunction] 6085E0394D9F0456B015E291046FE127
+30. Ritardo [K2Node_CallFunction] 2371092C488512EE21792D822EE42667
+31. Get Anim_DissolvenzaIniziale [K2Node_VariableGet] F740CCF2424003C524CFFFA45D87D4B3
+32. Riproduci animazione
+La destinazione è User Widget [K2Node_CallFunction] 37EBC950465F66AD17ED1EAD7DE38C24
+33. Ritardo [K2Node_CallFunction] FBEDBA8E44EC7F3DD8D497804AA9C1F5
+34. Riproduci animazione
+La destinazione è User Widget [K2Node_CallFunction] E1F0CEC6440C426F06A40EAA0C4A2285
+35. Get Anim_DissolvenzaIniziale [K2Node_VariableGet] 12B7941C4445503BA5286084BB630D3B
+36. Riproduci animazione
+La destinazione è User Widget [K2Node_CallFunction] B4F5567D450DB27B91A42BA5CEB53AD1
+37. Get Anim_DissolvenzaIniziale [K2Node_VariableGet] 58C96563466E15E44E4AF5953631237D
+38. Ritardo [K2Node_CallFunction] 1DC2E1F949A300E7E15B679A52A8C0AD
+39. Get Btn_Load [K2Node_VariableGet] 3A567A574FDAAC4D91596291B8C8972F
+40. Riproduci animazione
+La destinazione è User Widget [K2Node_CallFunction] 7E4726D44453D3B7DFE11AA82AA55F1F
+41. Ritardo [K2Node_CallFunction] 9AEFCC1445B14AEFBE38B7A7743D3C16
+42. On Clicked (Btn_Load) [K2Node_ComponentBoundEvent] 62D09E7246C658BC942106B13B42F8F1
+43. Riproduci animazione
+La destinazione è User Widget [K2Node_CallFunction] 6C655A5C4D8957218BE517AF57A3287B
+44. Ritardo [K2Node_CallFunction] B4F70AA349D39DF620EC69B335BCD907
+45. Ritardo [K2Node_CallFunction] 18ABB92F40EB22DDAF5BCEAB3CC320EC
+46. Riproduci animazione
+La destinazione è User Widget [K2Node_CallFunction] 2D8E6D154A7F1FD8E5AE2A94EB69E8A1
+47. Get Anim_DissolvenzaIniziale [K2Node_VariableGet] 1B20B1724A3E1C7296676794840EFD7E
+48. Get Anim_ClickedButtonQuit [K2Node_VariableGet] 47E5F4244C1617986993868F37A6DCE7
+49. Get Anim_ClickedButtonLoad [K2Node_VariableGet] 5F9217184910D7A9349795AC219C0939
+50. Open Level (by Name) [K2Node_CallFunction] BD32DF7C4823DC6BD8A7669DCCC488CA
+51. Set Input Mode Game Only [K2Node_CallFunction] E1F894CA4492E06D6E45419EA01F47D6
+52. Get Player Controller [K2Node_CallFunction] 2E64A07347252B7DA19CDB9B12BCBEEA
+53. Set bShowMouseCursor [K2Node_VariableSet] 2F3DF3914BB8123D3411DA821863B166
+54. Nodo di reindirizzamento [K2Node_Knot] D441594F40A80F0B9FA595BD374AA6B4
+55. ChangeColorOnFocus
+Custom Event [K2Node_CustomEvent] E72F21A749E48CA33FC5868EFC4110ED
+56. Nodo di reindirizzamento [K2Node_Knot] C68D73E3417719D899A5E1BF6981F529
+57. Nodo di reindirizzamento [K2Node_Knot] AEF2C92E471E193653C0B99F5FC630FD
+58. Nodo di reindirizzamento [K2Node_Knot] 2C75201D4C4DB6B5F71C8CB578679985
+59. Get FocusedColor [K2Node_VariableGet] 08837EA947E143BCE857FFA2FD244262
+60. Get UnfocusedColor [K2Node_VariableGet] BD36B1294D8F21176414B3B0CC0B7938
+61. Change Color on Focus
+La destinazione è WBP Menu Principale [K2Node_CallFunction] 995210FF4ADF8C14098C83BD770DCB40
+62. Set Focus
+La destinazione è Widget [K2Node_CallFunction] 488607EC40E690FC820CEAB99CD529C1
+63. Set Focus
+La destinazione è Widget [K2Node_CallFunction] 700DB0F241E7EEA5291B9DA9631D2860
+64. Play Sound 2D [K2Node_CallFunction] EDAFB31C46F6C8316AAE3F91F30CB62E
+65. Play Sound 2D [K2Node_CallFunction] 3E09F8E54FA5B2C21778B6A8517AEB28
+66. Play Sound 2D [K2Node_CallFunction] 492B4F7047DD022C1ADD32B6D8219E52
+
+Variables Read:
+- Get Anim_ClickedButtonLoad
+- Get Anim_ClickedButtonQuit
+- Get Anim_ClickedButtonStart
+- Get Anim_DissolvenzaIniziale
+- Get Btn_EsciDalGioco
+- Get Btn_Inizia
+- Get Btn_Load
+- Get FocusedColor
+- Get UnfocusedColor
+
+Variables Written:
+- Set bShowMouseCursor
+
+External Calls:
+- Change Color on Focus
+La destinazione è WBP Menu Principale
+- Esci dal gioco
+- Get Player Controller
+- Has Keyboard Focus
+La destinazione è Widget
+- Open Level (by Name)
+- Play Sound 2D
+- Riproduci animazione
+La destinazione è User Widget
+- Ritardo
+- Set Color and Opacity
+La destinazione è Pulsante
+- Set Focus
+La destinazione è Widget
+- Set Input Mode Game And UI
+- Set Input Mode Game Only
+- Set Timer by Event
+- Set User Focus
+La destinazione è Widget
+
+Widgets Touched:
+- Get Anim_ClickedButtonLoad
+- Get Anim_ClickedButtonQuit
+- Get Anim_ClickedButtonStart
+
+Components Touched:
+- On Clicked (Btn_EsciDalGioco)
+- On Clicked (Btn_Inizia)
+- On Clicked (Btn_Load)
+
+External Blueprint References:
+- Change Color on Focus
+La destinazione è WBP Menu Principale
+- Esci dal gioco
+- Get Player Controller
+- Has Keyboard Focus
+La destinazione è Widget
+- Open Level (by Name)
+- Play Sound 2D
+- Riproduci animazione
+La destinazione è User Widget
+- Ritardo
+- Set Color and Opacity
+La destinazione è Pulsante
+- Set Focus
+La destinazione è Widget
+- Set Input Mode Game And UI
+- Set Input Mode Game Only
+- Set Timer by Event
+- Set User Focus
+La destinazione è Widget

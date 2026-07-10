@@ -1,0 +1,26 @@
+{
+	"assetName": "BP_EnemyALS",
+	"assetPath": "/Game/ChuckContent/Blueprints/Enemies/BP_EnemyALS.BP_EnemyALS",
+	"assetKey": "Game_ChuckContent_Blueprints_Enemies_BP_EnemyALS",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"functions": [
+		{
+			"name": "UserConstructionScript",
+			"graph": "UserConstructionScript",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/BP_EnemyALS__9881EEE9/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "UserConstructionScript",
+			"graph": "UserConstructionScript",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/BP_EnemyALS__9881EEE9/Graphs/G002/INDEX.json"
+		}
+	]
+}

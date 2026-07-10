@@ -1,0 +1,25 @@
+{
+	"graphId": "G001",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 8,
+	"edgeCount": 10,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_GenericPrompt__DC88BD77/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_GenericPrompt__DC88BD77/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_GenericPrompt__DC88BD77/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "UpdatePrompt\nCustom Event",
+			"entryNodeGuid": "F8E3B2BE46C44DA7ACBABEA213813E42",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_GenericPrompt__DC88BD77/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_GenericPrompt__DC88BD77/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 8
+		}
+	]
+}

@@ -1,0 +1,94 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Camera_BPI",
+	"graph": "BPI_Get_3P_TraceParams",
+	"entryName": "BPI Get 3P Trace Params",
+	"entryNodeGuid": "E2355BB94C232D669E4743938ED08119",
+	"nodes": [
+		{
+			"nodeGuid": "E2355BB94C232D669E4743938ED08119",
+			"class": "K2Node_FunctionEntry",
+			"title": "BPI Get 3P Trace Params",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F0A7D0F24639866A64644682CE52B8C6",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C7D2B7A34D4C7833FCF69BAEB6321E16",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 256,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A27F5DDE475D4B5E254769888FD7BDBD",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E84D3A434713A9FC5E5E7F9907310440",
+					"name": "TraceOrigin",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "E08C0D664CC8DD127BD10BA7A15A0C03",
+					"name": "TraceRadius",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "5E1D32834033D247219E1DB749B214C2",
+					"name": "TraceChannel",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.ETraceTypeQuery",
+					"defaultValue": "TraceTypeQuery1"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Camera_BPI",
+			"graph": "BPI_Get_3P_TraceParams",
+			"edgeType": "exec",
+			"fromNodeGuid": "E2355BB94C232D669E4743938ED08119",
+			"fromPinId": "F0A7D0F24639866A64644682CE52B8C6",
+			"fromPinName": "then",
+			"toNodeGuid": "C7D2B7A34D4C7833FCF69BAEB6321E16",
+			"toPinId": "A27F5DDE475D4B5E254769888FD7BDBD",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G002",
+	"assetName": "ALS_Camera_BPI",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Camera_BPI.ALS_Camera_BPI"
+}

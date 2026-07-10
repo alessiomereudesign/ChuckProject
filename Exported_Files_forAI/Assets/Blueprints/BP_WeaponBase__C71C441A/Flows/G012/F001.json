@@ -1,0 +1,40 @@
+{
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+	"graph": "PlayFireEffects",
+	"entryName": "Play Fire Effects",
+	"entryNodeGuid": "E99AA56C41233EC2033D628C3FEEC926",
+	"nodes": [
+		{
+			"nodeGuid": "E99AA56C41233EC2033D628C3FEEC926",
+			"class": "K2Node_FunctionEntry",
+			"title": "Play Fire Effects",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "34F889324494425F91C9C5B2431EF5E2",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G012",
+	"assetName": "BP_WeaponBase",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase"
+}

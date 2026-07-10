@@ -1,0 +1,29 @@
+{
+	"assetName": "ALS_Animation_BPI",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Animation_BPI.ALS_Animation_BPI",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Animation_BPI",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "BPI Jumped",
+			"graph": "BPI_Jumped",
+			"nodeGuid": "6C7078554EF026062C4B4395ED956315",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Set Grounded Entry State",
+			"graph": "BPI_SetGroundedEntryState",
+			"nodeGuid": "40164376441BCCB609A478A7EECC488C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Set Overlay Override State",
+			"graph": "BPI_SetOverlayOverrideState",
+			"nodeGuid": "500577B94D3CBBBE0E2D26B9CBB32B21",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

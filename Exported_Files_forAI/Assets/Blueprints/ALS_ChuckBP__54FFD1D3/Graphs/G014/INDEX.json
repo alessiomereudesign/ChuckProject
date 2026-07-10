@@ -1,0 +1,25 @@
+{
+	"graphId": "G014",
+	"name": "GetRollAnimation",
+	"graphName": "GetRollAnimation",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 28,
+	"edgeCount": 29,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G014/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G014/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G014/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Get Roll Animation",
+			"entryNodeGuid": "435D6B6443A1D24342849DBBDE2806F0",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G014/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G014/F001.json",
+			"textFile": "Flows/G014/F001.txt",
+			"jsonFile": "Flows/G014/F001.json",
+			"nodeCount": 28
+		}
+	]
+}

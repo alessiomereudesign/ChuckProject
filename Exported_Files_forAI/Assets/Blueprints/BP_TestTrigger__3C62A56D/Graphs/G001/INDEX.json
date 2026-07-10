@@ -1,0 +1,45 @@
+{
+	"graphId": "G001",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 7,
+	"edgeCount": 5,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_TestTrigger__3C62A56D/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_TestTrigger__3C62A56D/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_TestTrigger__3C62A56D/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Evento ActorBeginOverlap",
+			"entryNodeGuid": "31622EAE4DB720FE87C0D38756F1CC3B",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_TestTrigger__3C62A56D/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_TestTrigger__3C62A56D/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 7
+		},
+		{
+			"flowId": "F002",
+			"entryName": "Evento BeginPlay",
+			"entryNodeGuid": "0B5DD33242F7470C0A0E7F8ED9B60913",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_TestTrigger__3C62A56D/Flows/G001/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_TestTrigger__3C62A56D/Flows/G001/F002.json",
+			"textFile": "Flows/G001/F002.txt",
+			"jsonFile": "Flows/G001/F002.json",
+			"nodeCount": 7
+		},
+		{
+			"flowId": "F003",
+			"entryName": "Evento Tick",
+			"entryNodeGuid": "C24BC56A4BDB3DDEB725508122CE763B",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_TestTrigger__3C62A56D/Flows/G001/F003.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_TestTrigger__3C62A56D/Flows/G001/F003.json",
+			"textFile": "Flows/G001/F003.txt",
+			"jsonFile": "Flows/G001/F003.json",
+			"nodeCount": 7
+		}
+	]
+}

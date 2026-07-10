@@ -1,0 +1,18 @@
+{
+	"assetName": "CameraShake_Notify",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/CameraShake_Notify.CameraShake_Notify",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_CameraShake_Notify",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "ShakeClass",
+			"type": "class|/Script/GameplayCameras.LegacyCameraShake",
+			"defaultValue": ""
+		},
+		{
+			"name": "Scale",
+			"type": "real|double",
+			"defaultValue": ""
+		}
+	]
+}

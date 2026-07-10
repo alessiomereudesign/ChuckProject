@@ -1,0 +1,1006 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP",
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"shortAssetFolder": "ALS_ChuckBP__54FFD1D3",
+	"pathHash": "54FFD1D3",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 89,
+		"components": 170,
+		"widgets": 5,
+		"graphs": 30,
+		"nodes": 1388,
+		"edges": 1553,
+		"flows": 52
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/ALS_ChuckBP__54FFD1D3/SUMMARY.md",
+		"variables": "Assets/Blueprints/ALS_ChuckBP__54FFD1D3/VARIABLES.json",
+		"components": "Assets/Blueprints/ALS_ChuckBP__54FFD1D3/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/ALS_ChuckBP__54FFD1D3/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/ALS_ChuckBP__54FFD1D3/NODES.jsonl",
+		"edges": "Assets/Blueprints/ALS_ChuckBP__54FFD1D3/EDGES.jsonl",
+		"search": "Assets/Blueprints/ALS_ChuckBP__54FFD1D3/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "GetInteractionPrompt",
+			"graphName": "GetInteractionPrompt",
+			"type": "EdGraph",
+			"graphType": "EdGraph",
+			"graphGuid": "",
+			"nodeCount": 2,
+			"edgeCount": 1,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Interaction Prompt",
+					"entryNodeGuid": "F4D7BAEE4E9E14085532669939125DC1",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 2
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "AttackGraph",
+			"graphName": "AttackGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 448,
+			"edgeCount": 534,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "EventLoopHit\nCustom Event",
+					"entryNodeGuid": "88F6E8D246FFBBB5F1A27FB299A6901D",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 448
+				},
+				{
+					"flowId": "F002",
+					"entryName": "ExecuteFireSequence\nCustom Event",
+					"entryNodeGuid": "0B09FA824400074A0208C6BFC5250F00",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F002.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F002.json",
+					"textFile": "Flows/G002/F002.txt",
+					"jsonFile": "Flows/G002/F002.json",
+					"nodeCount": 448
+				},
+				{
+					"flowId": "F003",
+					"entryName": "RefreshWeaponVisuals\nCustom Event",
+					"entryNodeGuid": "988D92D546556A05C432AAB2E6E32B8B",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F003.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F003.json",
+					"textFile": "Flows/G002/F003.txt",
+					"jsonFile": "Flows/G002/F003.json",
+					"nodeCount": 448
+				},
+				{
+					"flowId": "F004",
+					"entryName": "ReloadCurrentWeapon\nCustom Event",
+					"entryNodeGuid": "C96E461945D9CD20DAD6BB86B6DBD077",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F004.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F004.json",
+					"textFile": "Flows/G002/F004.txt",
+					"jsonFile": "Flows/G002/F004.json",
+					"nodeCount": 448
+				},
+				{
+					"flowId": "F005",
+					"entryName": "ResetCombo\nCustom Event",
+					"entryNodeGuid": "B7CC852242E51A1ED40C2E9261CC6C93",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F005.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F005.json",
+					"textFile": "Flows/G002/F005.txt",
+					"jsonFile": "Flows/G002/F005.json",
+					"nodeCount": 448
+				},
+				{
+					"flowId": "F006",
+					"entryName": "TryAutoReloadCurrentWeapon\nCustom Event",
+					"entryNodeGuid": "BA8E72CF42A50FB6D1B4A8A263D1BB4C",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F006.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F006.json",
+					"textFile": "Flows/G002/F006.txt",
+					"jsonFile": "Flows/G002/F006.json",
+					"nodeCount": 448
+				}
+			]
+		},
+		{
+			"graphId": "G003",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 370,
+			"edgeCount": 397,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G003/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G003/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G003/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "AddItemToInventory\nCustom Event",
+					"entryNodeGuid": "60E948EE482A679DE849BF8F64BA7CC9",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F001.json",
+					"textFile": "Flows/G003/F001.txt",
+					"jsonFile": "Flows/G003/F001.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F002",
+					"entryName": "ApplyOverlayForCurrentSlot\nCustom Event",
+					"entryNodeGuid": "1CA2B036423B5C5C163B758016D99738",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F002.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F002.json",
+					"textFile": "Flows/G003/F002.txt",
+					"jsonFile": "Flows/G003/F002.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F003",
+					"entryName": "ClearWeaponSlot\nCustom Event",
+					"entryNodeGuid": "C69095974B76A0EB3E7FDDA3B83FEBB7",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F003.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F003.json",
+					"textFile": "Flows/G003/F003.txt",
+					"jsonFile": "Flows/G003/F003.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F004",
+					"entryName": "CommitEquipItem\nCustom Event",
+					"entryNodeGuid": "1DC9DF9D47261C94F70CD684ED23C863",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F004.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F004.json",
+					"textFile": "Flows/G003/F004.txt",
+					"jsonFile": "Flows/G003/F004.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F005",
+					"entryName": "EquipBigWeapon\nCustom Event",
+					"entryNodeGuid": "406F671D476AD6D861B6C28057C80DC1",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F005.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F005.json",
+					"textFile": "Flows/G003/F005.txt",
+					"jsonFile": "Flows/G003/F005.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F006",
+					"entryName": "EquipMelee\nCustom Event",
+					"entryNodeGuid": "C98206444F45FE6E51FD6494F40A559C",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F006.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F006.json",
+					"textFile": "Flows/G003/F006.txt",
+					"jsonFile": "Flows/G003/F006.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F007",
+					"entryName": "EquipSmallWeapon\nCustom Event",
+					"entryNodeGuid": "BC9985E84173E4C421F9B4997CD02A18",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F007.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F007.json",
+					"textFile": "Flows/G003/F007.txt",
+					"jsonFile": "Flows/G003/F007.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F008",
+					"entryName": "Evento ActorBeginOverlap",
+					"entryNodeGuid": "1DBBD7204A4D576C4122A48D0857071A",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F008.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F008.json",
+					"textFile": "Flows/G003/F008.txt",
+					"jsonFile": "Flows/G003/F008.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F009",
+					"entryName": "Evento ActorEndOverlap",
+					"entryNodeGuid": "5E7A61F94FF97BF0043290A0FC87A42F",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F009.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F009.json",
+					"textFile": "Flows/G003/F009.txt",
+					"jsonFile": "Flows/G003/F009.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F010",
+					"entryName": "Evento Tick",
+					"entryNodeGuid": "029222144A27D3E93A445B9E4F3A1C8E",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F010.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F010.json",
+					"textFile": "Flows/G003/F010.txt",
+					"jsonFile": "Flows/G003/F010.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F011",
+					"entryName": "FinalizeEquipWeapon\nCustom Event",
+					"entryNodeGuid": "5719D4094C7930180F1B63B91DE9ABF3",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F011.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F011.json",
+					"textFile": "Flows/G003/F011.txt",
+					"jsonFile": "Flows/G003/F011.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F012",
+					"entryName": "FistsState\nCustom Event",
+					"entryNodeGuid": "15FB40C84EF2C9F58A14CAAE9FF06A43",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F012.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F012.json",
+					"textFile": "Flows/G003/F012.txt",
+					"jsonFile": "Flows/G003/F012.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F013",
+					"entryName": "Flash\nCustom Event",
+					"entryNodeGuid": "FCEAFD8B4E16E4731A8CBEA2ED77AFDD",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F013.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F013.json",
+					"textFile": "Flows/G003/F013.txt",
+					"jsonFile": "Flows/G003/F013.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F014",
+					"entryName": "SyncHolsterMeshes\nCustom Event",
+					"entryNodeGuid": "5EFD4D984788296E8404C1ADCEB06B80",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F014.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F014.json",
+					"textFile": "Flows/G003/F014.txt",
+					"jsonFile": "Flows/G003/F014.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F015",
+					"entryName": "ToggleArmorVisibility\nCustom Event",
+					"entryNodeGuid": "1ADCACBF4E512569C940C3A4548C83B0",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F015.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F015.json",
+					"textFile": "Flows/G003/F015.txt",
+					"jsonFile": "Flows/G003/F015.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F016",
+					"entryName": "ToggleWeaponsVisibility\nCustom Event",
+					"entryNodeGuid": "11F6F32144F9FBC92FC4FE9F59534E3F",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F016.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F016.json",
+					"textFile": "Flows/G003/F016.txt",
+					"jsonFile": "Flows/G003/F016.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F017",
+					"entryName": "UnarmedState\nCustom Event",
+					"entryNodeGuid": "57298E964ADC31232837B092864F1F48",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F017.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F017.json",
+					"textFile": "Flows/G003/F017.txt",
+					"jsonFile": "Flows/G003/F017.json",
+					"nodeCount": 370
+				},
+				{
+					"flowId": "F018",
+					"entryName": "UseConsumable\nCustom Event",
+					"entryNodeGuid": "88CB67AF46F986D2B201B79780C07DD1",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F018.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F018.json",
+					"textFile": "Flows/G003/F018.txt",
+					"jsonFile": "Flows/G003/F018.json",
+					"nodeCount": 370
+				}
+			]
+		},
+		{
+			"graphId": "G004",
+			"name": "AddWeaponToInventory",
+			"graphName": "AddWeaponToInventory",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 20,
+			"edgeCount": 23,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G004/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G004/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G004/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Add Weapon to Inventory",
+					"entryNodeGuid": "F4AD71194D771F2A6505C086A8A65A21",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G004/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G004/F001.json",
+					"textFile": "Flows/G004/F001.txt",
+					"jsonFile": "Flows/G004/F001.json",
+					"nodeCount": 20
+				}
+			]
+		},
+		{
+			"graphId": "G005",
+			"name": "AttachToHand",
+			"graphName": "AttachToHand",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 19,
+			"edgeCount": 21,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G005/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G005/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G005/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Attach to Hand",
+					"entryNodeGuid": "89095DF244DD1E2B436179B5DBFF7A13",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G005/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G005/F001.json",
+					"textFile": "Flows/G005/F001.txt",
+					"jsonFile": "Flows/G005/F001.json",
+					"nodeCount": 19
+				}
+			]
+		},
+		{
+			"graphId": "G006",
+			"name": "BPI_Get_3P_PivotTarget",
+			"graphName": "BPI_Get_3P_PivotTarget",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 9,
+			"edgeCount": 9,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G006/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G006/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G006/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "BPI Get 3P Pivot Target",
+					"entryNodeGuid": "DA12BC3047D046DCEF5E03BFCECDE500",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G006/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G006/F001.json",
+					"textFile": "Flows/G006/F001.txt",
+					"jsonFile": "Flows/G006/F001.json",
+					"nodeCount": 9
+				}
+			]
+		},
+		{
+			"graphId": "G007",
+			"name": "BPI_Get_3P_TraceParams",
+			"graphName": "BPI_Get_3P_TraceParams",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 11,
+			"edgeCount": 10,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G007/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G007/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G007/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "BPI Get 3P Trace Params",
+					"entryNodeGuid": "654EC2BE4C69F8E3D4D7DD89A076B0D6",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G007/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G007/F001.json",
+					"textFile": "Flows/G007/F001.txt",
+					"jsonFile": "Flows/G007/F001.json",
+					"nodeCount": 11
+				}
+			]
+		},
+		{
+			"graphId": "G008",
+			"name": "BPI_Get_FP_CameraTarget",
+			"graphName": "BPI_Get_FP_CameraTarget",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 4,
+			"edgeCount": 3,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G008/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G008/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G008/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "BPI Get FP Camera Target",
+					"entryNodeGuid": "81C577E04B78A7E05DA98D81BF7A32F4",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G008/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G008/F001.json",
+					"textFile": "Flows/G008/F001.txt",
+					"jsonFile": "Flows/G008/F001.json",
+					"nodeCount": 4
+				}
+			]
+		},
+		{
+			"graphId": "G009",
+			"name": "ClearHeldObject",
+			"graphName": "ClearHeldObject",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 6,
+			"edgeCount": 6,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G009/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G009/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G009/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Clear Held Object",
+					"entryNodeGuid": "B858521146CE783F90EE968BFBF767DB",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G009/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G009/F001.json",
+					"textFile": "Flows/G009/F001.txt",
+					"jsonFile": "Flows/G009/F001.json",
+					"nodeCount": 6
+				}
+			]
+		},
+		{
+			"graphId": "G010",
+			"name": "ConsumeOneAmmoFromCurrentWeapon",
+			"graphName": "ConsumeOneAmmoFromCurrentWeapon",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 28,
+			"edgeCount": 34,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G010/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G010/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G010/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Consume One Ammo from Current Weapon",
+					"entryNodeGuid": "D9EB4EEF4B94D34F5512B5A22F9D0C7C",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G010/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G010/F001.json",
+					"textFile": "Flows/G010/F001.txt",
+					"jsonFile": "Flows/G010/F001.json",
+					"nodeCount": 28
+				}
+			]
+		},
+		{
+			"graphId": "G011",
+			"name": "GetCurrentWeaponFromInventory",
+			"graphName": "GetCurrentWeaponFromInventory",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 15,
+			"edgeCount": 14,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G011/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G011/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G011/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Current Weapon from Inventory",
+					"entryNodeGuid": "5092D4F64536424DDAAF3BB310421452",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G011/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G011/F001.json",
+					"textFile": "Flows/G011/F001.txt",
+					"jsonFile": "Flows/G011/F001.json",
+					"nodeCount": 15
+				}
+			]
+		},
+		{
+			"graphId": "G012",
+			"name": "GetGetUpAnimation",
+			"graphName": "GetGetUpAnimation",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 46,
+			"edgeCount": 56,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G012/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G012/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G012/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Get Up Animation",
+					"entryNodeGuid": "30E82AF04092CA2BA2AFEA9F59E0FBDE",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G012/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G012/F001.json",
+					"textFile": "Flows/G012/F001.txt",
+					"jsonFile": "Flows/G012/F001.json",
+					"nodeCount": 46
+				}
+			]
+		},
+		{
+			"graphId": "G013",
+			"name": "GetMantleAsset",
+			"graphName": "GetMantleAsset",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 27,
+			"edgeCount": 32,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G013/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G013/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G013/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Mantle Asset",
+					"entryNodeGuid": "DF4CC8C6413154CD6790ADB8C3F2F6D5",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G013/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G013/F001.json",
+					"textFile": "Flows/G013/F001.txt",
+					"jsonFile": "Flows/G013/F001.json",
+					"nodeCount": 27
+				}
+			]
+		},
+		{
+			"graphId": "G014",
+			"name": "GetRollAnimation",
+			"graphName": "GetRollAnimation",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 28,
+			"edgeCount": 29,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G014/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G014/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G014/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Roll Animation",
+					"entryNodeGuid": "435D6B6443A1D24342849DBBDE2806F0",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G014/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G014/F001.json",
+					"textFile": "Flows/G014/F001.txt",
+					"jsonFile": "Flows/G014/F001.json",
+					"nodeCount": 28
+				}
+			]
+		},
+		{
+			"graphId": "G015",
+			"name": "Has Weapon?",
+			"graphName": "Has Weapon?",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 16,
+			"edgeCount": 16,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G015/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G015/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G015/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Has Weapon?",
+					"entryNodeGuid": "F28A932F47722406A0E400BB78377122",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G015/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G015/F001.json",
+					"textFile": "Flows/G015/F001.txt",
+					"jsonFile": "Flows/G015/F001.json",
+					"nodeCount": 16
+				}
+			]
+		},
+		{
+			"graphId": "G016",
+			"name": "MantleEnd",
+			"graphName": "MantleEnd",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 3,
+			"edgeCount": 2,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G016/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G016/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G016/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Mantle End",
+					"entryNodeGuid": "2E4C18D04A0193A0FAC94B84632A043F",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G016/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G016/F001.json",
+					"textFile": "Flows/G016/F001.txt",
+					"jsonFile": "Flows/G016/F001.json",
+					"nodeCount": 3
+				}
+			]
+		},
+		{
+			"graphId": "G017",
+			"name": "MantleStart",
+			"graphName": "MantleStart",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 5,
+			"edgeCount": 8,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G017/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G017/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G017/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Mantle Start",
+					"entryNodeGuid": "0ACCEBC34966C3F75F4521AE25B31DA3",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G017/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G017/F001.json",
+					"textFile": "Flows/G017/F001.txt",
+					"jsonFile": "Flows/G017/F001.json",
+					"nodeCount": 5
+				}
+			]
+		},
+		{
+			"graphId": "G018",
+			"name": "On Begin Play",
+			"graphName": "On Begin Play",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 11,
+			"edgeCount": 12,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G018/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G018/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G018/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "On Begin Play",
+					"entryNodeGuid": "7F51293E493911A7524B628A1E786F9E",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G018/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G018/F001.json",
+					"textFile": "Flows/G018/F001.txt",
+					"jsonFile": "Flows/G018/F001.json",
+					"nodeCount": 11
+				}
+			]
+		},
+		{
+			"graphId": "G019",
+			"name": "OnOverlayStateChanged",
+			"graphName": "OnOverlayStateChanged",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 3,
+			"edgeCount": 3,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G019/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G019/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G019/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "On Overlay State Changed",
+					"entryNodeGuid": "ACF857AB4FD102E94F353296BE1D5F97",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G019/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G019/F001.json",
+					"textFile": "Flows/G019/F001.txt",
+					"jsonFile": "Flows/G019/F001.json",
+					"nodeCount": 3
+				}
+			]
+		},
+		{
+			"graphId": "G020",
+			"name": "RagdollEnd",
+			"graphName": "RagdollEnd",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 3,
+			"edgeCount": 2,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G020/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G020/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G020/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Ragdoll End",
+					"entryNodeGuid": "8F0CF407428A4ED3BCC915A31C48F26E",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G020/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G020/F001.json",
+					"textFile": "Flows/G020/F001.txt",
+					"jsonFile": "Flows/G020/F001.json",
+					"nodeCount": 3
+				}
+			]
+		},
+		{
+			"graphId": "G021",
+			"name": "RagdollStart",
+			"graphName": "RagdollStart",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 3,
+			"edgeCount": 2,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G021/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G021/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G021/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Ragdoll Start",
+					"entryNodeGuid": "C022401942C64022C7E478A7ACD71F74",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G021/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G021/F001.json",
+					"textFile": "Flows/G021/F001.txt",
+					"jsonFile": "Flows/G021/F001.json",
+					"nodeCount": 3
+				}
+			]
+		},
+		{
+			"graphId": "G022",
+			"name": "Set/ResetColors",
+			"graphName": "Set/ResetColors",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 104,
+			"edgeCount": 103,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G022/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G022/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G022/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Set/ Reset Colors",
+					"entryNodeGuid": "29107F49475C1958B4BC4F889FAC9664",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G022/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G022/F001.json",
+					"textFile": "Flows/G022/F001.txt",
+					"jsonFile": "Flows/G022/F001.json",
+					"nodeCount": 104
+				}
+			]
+		},
+		{
+			"graphId": "G023",
+			"name": "SetDynamicMaterials",
+			"graphName": "SetDynamicMaterials",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 48,
+			"edgeCount": 61,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G023/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G023/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G023/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Set Dynamic Materials",
+					"entryNodeGuid": "DA210B3D4B3BCDA8402173A30FA6D47B",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G023/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G023/F001.json",
+					"textFile": "Flows/G023/F001.txt",
+					"jsonFile": "Flows/G023/F001.json",
+					"nodeCount": 48
+				}
+			]
+		},
+		{
+			"graphId": "G024",
+			"name": "SpawnCurrentWeaponActor",
+			"graphName": "SpawnCurrentWeaponActor",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 18,
+			"edgeCount": 22,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G024/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G024/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G024/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Spawn Current Weapon Actor",
+					"entryNodeGuid": "2959A24F4A294EFB5AAF63ABCA6AF98D",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G024/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G024/F001.json",
+					"textFile": "Flows/G024/F001.txt",
+					"jsonFile": "Flows/G024/F001.json",
+					"nodeCount": 18
+				}
+			]
+		},
+		{
+			"graphId": "G025",
+			"name": "SpawnMuzzleFX",
+			"graphName": "SpawnMuzzleFX",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 15,
+			"edgeCount": 22,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G025/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G025/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G025/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Spawn Muzzle FX",
+					"entryNodeGuid": "522DF8F24DBF9E37151CBD98668C5E06",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G025/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G025/F001.json",
+					"textFile": "Flows/G025/F001.txt",
+					"jsonFile": "Flows/G025/F001.json",
+					"nodeCount": 15
+				}
+			]
+		},
+		{
+			"graphId": "G026",
+			"name": "UpdateColoringSystem",
+			"graphName": "UpdateColoringSystem",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 11,
+			"edgeCount": 12,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G026/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G026/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G026/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Update Coloring System",
+					"entryNodeGuid": "6358DCEA485FCB79C6E733BB2C9EC117",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G026/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G026/F001.json",
+					"textFile": "Flows/G026/F001.txt",
+					"jsonFile": "Flows/G026/F001.json",
+					"nodeCount": 11
+				}
+			]
+		},
+		{
+			"graphId": "G027",
+			"name": "UpdateHeldObjectAnimations",
+			"graphName": "UpdateHeldObjectAnimations",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 8,
+			"edgeCount": 8,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G027/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G027/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G027/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Update Held Object Animations",
+					"entryNodeGuid": "398D809B4C50A96285EDF588F98D3DCA",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G027/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G027/F001.json",
+					"textFile": "Flows/G027/F001.txt",
+					"jsonFile": "Flows/G027/F001.json",
+					"nodeCount": 8
+				}
+			]
+		},
+		{
+			"graphId": "G028",
+			"name": "UpdateHeldObject",
+			"graphName": "UpdateHeldObject",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 20,
+			"edgeCount": 24,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G028/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G028/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G028/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Update Held Object",
+					"entryNodeGuid": "9EDC2C424F6E5F3B9811BFA1F05D01E5",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G028/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G028/F001.json",
+					"textFile": "Flows/G028/F001.txt",
+					"jsonFile": "Flows/G028/F001.json",
+					"nodeCount": 20
+				}
+			]
+		},
+		{
+			"graphId": "G029",
+			"name": "UpdateLayeringColors",
+			"graphName": "UpdateLayeringColors",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 80,
+			"edgeCount": 81,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G029/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G029/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G029/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Update Layering Colors",
+					"entryNodeGuid": "84A58B2F41F746577763FFA5F82DF9F3",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G029/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G029/F001.json",
+					"textFile": "Flows/G029/F001.txt",
+					"jsonFile": "Flows/G029/F001.json",
+					"nodeCount": 80
+				}
+			]
+		},
+		{
+			"graphId": "G030",
+			"name": "UserConstructionScript",
+			"graphName": "UserConstructionScript",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 7,
+			"edgeCount": 6,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G030/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G030/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G030/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Construction Script",
+					"entryNodeGuid": "D53DD5EC48F93B5B257AD0BC6D7B4E86",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G030/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G030/F001.json",
+					"textFile": "Flows/G030/F001.txt",
+					"jsonFile": "Flows/G030/F001.json",
+					"nodeCount": 7
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1797 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+	"graph": "CalculateLandPrediction",
+	"entryName": "Calculate Land Prediction",
+	"entryNodeGuid": "E457E0904E80206FE4B9DDBC4F035200",
+	"nodes": [
+		{
+			"nodeGuid": "E457E0904E80206FE4B9DDBC4F035200",
+			"class": "K2Node_FunctionEntry",
+			"title": "Calculate Land Prediction",
+			"comment": "",
+			"x": 32,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B369046F42723125D65614A5E4AECD26",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A4BCA8954EECA753D84D65B12C401A8B",
+			"class": "K2Node_VariableGet",
+			"title": "Get CapsuleComponent",
+			"comment": "",
+			"x": 592,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D8CD6959413A8966F1367C92A0EC8F84",
+					"name": "CapsuleComponent",
+					"direction": "Output",
+					"type": "object|/Script/Engine.CapsuleComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3A59E8F24CFF0B05CA828D9FC2020815",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DEB12FC4415813D0764DE695CF3F9B27",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 288,
+			"y": 407,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "471AB9C54947034EBBD6888313036758",
+					"name": "Velocity",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "EEE6BB2B4BB3B280DA8D84BDD2502E37",
+					"name": "Velocity_X",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "81183BC84576572ABF6ECC92D76E2185",
+					"name": "Velocity_Y",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "4E6EBC3B4C3AAD2059971E9A4FEAB4BD",
+					"name": "Velocity_Z",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "259E2C594535675D1A0C67BCF3D641D4",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "ED382DAC4D7BA2C0E75ACC8FCC2CB0AE",
+			"class": "K2Node_CallFunction",
+			"title": "Capsule Trace By Profile",
+			"comment": "",
+			"x": 1296,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7542C6CE443CB198B669AF862E5B193D",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2E3E09F84EC4572B970219BFB21F3CD5",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "791FD3514CD30FA7CCFB0FB9B53ACD20",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetSystemLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"pinId": "05887CEE4BC8FDA3F2DAFBA66FBA56EB",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C592471A49077B5C80F573835CBAF0BE",
+					"name": "Start",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector|const",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "E4AF16C349A379D6181CFAA9AB8EDFC5",
+					"name": "End",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector|const",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "12F9BE7A46378DD2202DCD9A9A8ED045",
+					"name": "Radius",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "682D2CF1428620CD2A7F858CBCA85CCB",
+					"name": "HalfHeight",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "36A188324FA6865158010492C4ED2DB7",
+					"name": "ProfileName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "ALS_Character"
+				},
+				{
+					"pinId": "E8B763FC4856815333F37A95A1BB47C7",
+					"name": "bTraceComplex",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "211900CB4DD7038B6CAD1592A20E80BF",
+					"name": "ActorsToIgnore",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor|container=Array|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9F4D75B547D5393340D16486B82E1A98",
+					"name": "DrawDebugType",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "15F380F44F86E75B941393A8A8F5FF80",
+					"name": "OutHit",
+					"direction": "Output",
+					"type": "struct|/Script/Engine.HitResult",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "02AAB74A489FE20017FD47ACFDDACF39",
+					"name": "bIgnoreSelf",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "CA94A4D045661FD953207299B2A89968",
+					"name": "TraceColor",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": "(R=1.000000,G=0.000000,B=0.000000,A=1.000000)"
+				},
+				{
+					"pinId": "D9546DBB42C16347A2A2068BB6B8240A",
+					"name": "TraceHitColor",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": "(R=0.000000,G=1.000000,B=0.000000,A=1.000000)"
+				},
+				{
+					"pinId": "0ACB969B4B8A231F132E63B87B4332C6",
+					"name": "DrawTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "5.000000"
+				},
+				{
+					"pinId": "3B648F7141C30525AC5D47BB185135F2",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "BAEC68DF465981A2888549B7B9C98649",
+			"class": "K2Node_CallFunction",
+			"title": "Get World Location\nLa destinazione è Componente di scena",
+			"comment": "",
+			"x": 880,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A4AF745947A5AFA15A5FF28BF7DB257B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SceneComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C66CFD6D4A49A5511D49D0A1C2C263D7",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E86C051740D239D28E42F8B6064CE666",
+			"class": "K2Node_VariableGet",
+			"title": "Get CapsuleRadius",
+			"comment": "",
+			"x": 880,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "53BC41E3414CB40C4A9E51B8D3CC7A1A",
+					"name": "CapsuleRadius",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "637391B9452F56EC1A79C88567BEE30E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.CapsuleComponent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A51D60684BC47F753AC7CB9600309533",
+			"class": "K2Node_VariableGet",
+			"title": "Get CapsuleHalfHeight",
+			"comment": "",
+			"x": 864,
+			"y": 336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1F313FCA45F0D5DB125E3881D85EE01F",
+					"name": "CapsuleHalfHeight",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "B5FD53104C0B7E055E5DBC9325EDED40",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.CapsuleComponent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "64A047444925FC6C00544EBA16B5745C",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "vector + vector",
+			"comment": "",
+			"x": 1136,
+			"y": 352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5AA347B34432DBEC11BAD0831406F83B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "52088A00404EF5C6A1912D9F179D0764",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "3A93BC074F64328A18A0A78033BC4AA0",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "35EBF8AF4FCD87EA71E841810FCC497C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "66592F99494FCCA7FCC43FB94397E76D",
+			"class": "K2Node_CallFunction",
+			"title": "Normal Unsafe (Vector)",
+			"comment": "",
+			"x": 736,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B5EA0425409DE629AE8FE0A74E9F23E4",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "30626B8C428063D87D5264822A6A44CB",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector|ref|const",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "B190635E4F3F958CCD92FA97EDEC5C2B",
+					"name": "A_X",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "ED45AC234030F72110170EABE4B39AD1",
+					"name": "A_Y",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "69467F724BD11B51449A0B85148A8ABD",
+					"name": "A_Z",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "1B30D9ED4A13283DF9CC02AB80ED09F4",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "FFDB01D748544FA273DBC8BEE925C392",
+			"class": "K2Node_CallFunction",
+			"title": "Clamp (Float)",
+			"comment": "",
+			"x": 464,
+			"y": 464,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "85D36BA842C79617C0B4E4908D091DCE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "4553BDE94D666252FB126FBC320E4011",
+					"name": "Value",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "61C370BA4E099FAE9B28068625D7F32E",
+					"name": "Min",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "-4000.000000"
+				},
+				{
+					"pinId": "440E77DA4B7A9E80C135B1B3969D79BD",
+					"name": "Max",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "-200.000000"
+				},
+				{
+					"pinId": "5D40C35944D070D0ED6AE49C696B0F7B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "D6A34F9244ED9BBB022FFA88E4FD7028",
+			"class": "K2Node_CallFunction",
+			"title": "Map Range Clamped",
+			"comment": "",
+			"x": 464,
+			"y": 576,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4332CD804FA6D16A4B192CB4D5499025",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "F3F376E443A9719AB65936B3D76B4482",
+					"name": "Value",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "791102CA497BF59FF27636AD27360185",
+					"name": "InRangeA",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "AED174A8499ACF5545AA9EBD043B4DDA",
+					"name": "InRangeB",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "-4000.000000"
+				},
+				{
+					"pinId": "8370DDBE41C94E2818B0CA908BE10C46",
+					"name": "OutRangeA",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "50.000000"
+				},
+				{
+					"pinId": "BAEAAB9D4B01E6A24F03F2A4E1FD9F8D",
+					"name": "OutRangeB",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "2000.000000"
+				},
+				{
+					"pinId": "C203E7504074D6A480874F82F876AC74",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "B73C426B4F515494B6321B97EA6566F2",
+			"class": "K2Node_CallFunction",
+			"title": "vector * float",
+			"comment": "",
+			"x": 960,
+			"y": 480,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B138FFCD42597121B354DA85169FE19C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "4C0EB3AC43D312C2349544AA2BA1F0CF",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "5481C45948F5622490C231BD347A3892",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "4ED35B62463D9DE4B60DE6ABC840CB5A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "87CDFA474500E9DEFF9799A6FDC5902F",
+			"class": "K2Node_VariableGet",
+			"title": "Get CharacterMovement",
+			"comment": "",
+			"x": 1328,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "74DDF8E440AEDD2BD7E3D6902B104AC6",
+					"name": "CharacterMovement",
+					"direction": "Output",
+					"type": "object|/Script/Engine.CharacterMovementComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9F0B18BE4A649A59A2B4FD814AFFCD62",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EB6BF2D04399AA6A8C118F81AF618DAA",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 2080,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "423C784B468DA1ECD0572C800CD52A46",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "381359E34A8B27CA48EA2B95C3F0B307",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "8760D7094CE13A263C1B1FABAC663EF8",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CD620A624ABBEFF2FD0577AFC80AFBDD",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "CCD894AD4F1ABB23FE167697198CB7F0",
+			"class": "K2Node_VariableGet",
+			"title": "Get LandPredictionCurve",
+			"comment": "",
+			"x": 1616,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9DC92E4649E04BCFB07CD5AF63312DD2",
+					"name": "LandPredictionCurve",
+					"direction": "Output",
+					"type": "object|/Script/Engine.CurveFloat",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "11F3F9A14618CF62989A2EA9FDEAFAEC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1B8247EC4BF1B321AAB0C0B3F7CC0841",
+			"class": "K2Node_CallFunction",
+			"title": "Get Float Value\nLa destinazione è Curve Float",
+			"comment": "",
+			"x": 1808,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A6D2866F4E57280A0F50319346CB5122",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.CurveFloat",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CDA009E1410D9821463E9E8176916EAF",
+					"name": "InTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "5495DBB54A53558CB633DDB81202D5C7",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "B49EEEAB4161D3761667D4AF29E1EDA2",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 256,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6E828F7647C02C0D17C4F5A182DC5FCC",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3A96ED6E423DB7FDC1B8E69476E87EA9",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "2A2139FB434F732B7F78548D7EC92A25",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "969D186149B908C1F8B7359FAF8CD5DF",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A9BA6119476BEAC877A37DBC059B5E53",
+			"class": "K2Node_CallFunction",
+			"title": "float < float",
+			"comment": "",
+			"x": 256,
+			"y": 272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C01BF35A4913A37315F3438FA4530B26",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "D44ACD184DC78B499890D7A1E6D5E093",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "076F1CDF4E58BD7F5DC5A59567DC7C37",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "-200.000000"
+				},
+				{
+					"pinId": "5BC51EDA4F3D894A38386AB793BA68B2",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "85647A154529E906BD15E78001B3D5FA",
+			"class": "K2Node_CallFunction",
+			"title": "Get Curve Value\nLa destinazione è Istanza animazione",
+			"comment": "",
+			"x": 1712,
+			"y": 432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "444A8EB54158C7C6B4FD77BF262D0201",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EEB31CA344F80E339525CFA882601EDC",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Mask_LandPrediction"
+				},
+				{
+					"pinId": "E88AEA8B49B69B113351FF85EBADA8E6",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "1B9AEF084D8BA570D387A28986119555",
+			"class": "K2Node_VariableGet",
+			"title": "Get Character",
+			"comment": "",
+			"x": 448,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DD442E354A4FB7903E50939A55FE8F02",
+					"name": "Character",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B161F389414E535B102B73A52FED3D35",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "624791994D40DA4035DA179CDEEB1C2F",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 2464,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3F976E754DC035FB4C156DB633FF9AC3",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5CEAA19D4E749792E1604C9B54FB93CB",
+					"name": "LandPrediction",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "58DD089E4B695AD0C5EBE1AF1DE9D230",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 2272,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3F976E754DC035FB4C156DB633FF9AC3",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5CEAA19D4E749792E1604C9B54FB93CB",
+					"name": "LandPrediction",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "0B3BCA924B6525B913CC96AB8024FA9A",
+			"class": "K2Node_VariableGet",
+			"title": "Get Character",
+			"comment": "",
+			"x": 1184,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "422833D347D673A1A6F5E8BB30248BF6",
+					"name": "Character",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "763400CA41E45C8EE898948B6E00CD41",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "83D3B7744E702CB9E7A04FBB2B305F9C",
+			"class": "K2Node_CallFunction",
+			"title": "Is Walkable\nLa destinazione è Componente movimento personaggio",
+			"comment": "",
+			"x": 1600,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "913517B8411AA5F17DDB75B5EA38A38A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.CharacterMovementComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "70C6545D4F4D216A0BDF0D9ECC533763",
+					"name": "Hit",
+					"direction": "Input",
+					"type": "struct|/Script/Engine.HitResult|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5A22BD7E48502A48B0EFCA9A95AE4D5F",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "8161DC6C47B5F4FE192B8089B0C3EA29",
+			"class": "K2Node_CallFunction",
+			"title": "Break Hit Result",
+			"comment": "",
+			"x": 1600,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "531C5688448ED29297D6908D2FE5CDB7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "1169268943B05F1AC6586197DA623FB4",
+					"name": "Hit",
+					"direction": "Input",
+					"type": "struct|/Script/Engine.HitResult|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "937461924469635F7B4ED2A33FB5A091",
+					"name": "bBlockingHit",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "5B4B3E744515A448FB66318141000BA4",
+					"name": "bInitialOverlap",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "92A56B764F09C7CBE194B890D9B64B68",
+					"name": "Time",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "2C3B27264223A6803A31FFBF3120B769",
+					"name": "Distance",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "6612BC8A47BEB77CBF9D509D5DE9C09D",
+					"name": "Location",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "00F6EDF849BCDEE1A8A24B894ED5046D",
+					"name": "ImpactPoint",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "20C0D9184C990AE1CA6291B6C7B44BC1",
+					"name": "Normal",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "2115388E4BB59726D37F1D8E2A9CB6CE",
+					"name": "ImpactNormal",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "D695889B49342CDCCAF2AD8503AE95B7",
+					"name": "PhysMat",
+					"direction": "Output",
+					"type": "object|/Script/PhysicsCore.PhysicalMaterial",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EFDC7F0445347846890E6DBAF9CCB329",
+					"name": "HitActor",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "471EE44C466E8721CD2A20966FE0DEDE",
+					"name": "HitComponent",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PrimitiveComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "07B4C76344AB3EB0E4D1E4BA6C8DBAFD",
+					"name": "HitBoneName",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "FA3673184A091D5C350D6F905FE61B3B",
+					"name": "BoneName",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "A294E39846FD5679375437BB51A46411",
+					"name": "HitItem",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "BA53FE834FCF10F9FCF54ABF6F46134E",
+					"name": "ElementIndex",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "487886174482CD6C87F7AB96860BE3D5",
+					"name": "FaceIndex",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "B8EBC64741583B7DED0E5E9AAB75FF83",
+					"name": "TraceStart",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "9EE872FD47AFAD042DCB0EA20A1D283C",
+					"name": "TraceEnd",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E4715C2F4410B782A43C82839AB427FE",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "AND Boolean",
+			"comment": "",
+			"x": 1920,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9782891B4FE137A0104786B094D09E5B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "2D8C26E24B7035C466CDD9AE501CE5E3",
+					"name": "A",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "2839BDD544D058A1CAEAD188D555438B",
+					"name": "B",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "AF6A3B1843E7117FD4499A9C9F870909",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "30FB5B974DEDC84DF500DBB8ACC4F224",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 448,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EFBBCCBA48246EFD8FA165AC8C2D5AF4",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0F6508B84E79EB7CF34CA28B6A7ED5D3",
+					"name": "LandPrediction",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "5417FCD54D756F0B5FFFAFB3DABD2DC7",
+			"class": "K2Node_CallFunction",
+			"title": "Get Debug Trace Type",
+			"comment": "",
+			"x": 1232,
+			"y": 624,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "048D5F594221875F8696F7A598E97A77",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "530EBA6D4B36E76A6F7AADBFC02F0E6E",
+					"name": "ShowTraceType",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "ForOneFrame"
+				},
+				{
+					"pinId": "8A08AD5C4A0CFEC0A9C4959D8AA66B25",
+					"name": "DebugType",
+					"direction": "Output",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "2CDD37CA44368A9261C5C2934C69FC82",
+			"class": "EdGraphNode_Comment",
+			"title": "Calculate the land prediction weight by tracing in the velocity direction to find a walkable surface the character is falling toward, and getting the 'Time' (range of 0-1, 1 being maximum, 0 being about to land) till impact. The Land Prediction Curve is used to control how the time affects the final weight for a smooth blend. ",
+			"comment": "Calculate the land prediction weight by tracing in the velocity direction to find a walkable surface the character is falling toward, and getting the 'Time' (range of 0-1, 1 being maximum, 0 being about to land) till impact. The Land Prediction Curve is used to control how the time affects the final weight for a smooth blend. ",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "9421C4044D45ACE8B61FDEBB9EC5A856",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp",
+			"comment": "",
+			"x": 2032,
+			"y": 352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2E14372246394C46C5D11B8C298A713F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "3ABD11DC4ED7072B60E5FD938F0BBC04",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "0CC0B8C3435A8CA5F93C12A9F1089714",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "43E3B5694B6FA3874E71DE9FEF4FF8C0",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "7211E9C942B96089045DA7B7C8F274C9",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "36BD4868460204D98A4A3788A779B25E",
+			"class": "K2Node_VariableGet",
+			"title": "Get FallSpeed",
+			"comment": "",
+			"x": 112,
+			"y": 272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9F333D1F436514EB68874FADD2BFD7B8",
+					"name": "FallSpeed",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "90C1FF984DC8321B2090619D4AB3D410",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "exec",
+			"fromNodeGuid": "E457E0904E80206FE4B9DDBC4F035200",
+			"fromPinId": "B369046F42723125D65614A5E4AECD26",
+			"fromPinName": "then",
+			"toNodeGuid": "B49EEEAB4161D3761667D4AF29E1EDA2",
+			"toPinId": "6E828F7647C02C0D17C4F5A182DC5FCC",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "A4BCA8954EECA753D84D65B12C401A8B",
+			"fromPinId": "D8CD6959413A8966F1367C92A0EC8F84",
+			"fromPinName": "CapsuleComponent",
+			"toNodeGuid": "BAEC68DF465981A2888549B7B9C98649",
+			"toPinId": "A4AF745947A5AFA15A5FF28BF7DB257B",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "A4BCA8954EECA753D84D65B12C401A8B",
+			"fromPinId": "D8CD6959413A8966F1367C92A0EC8F84",
+			"fromPinName": "CapsuleComponent",
+			"toNodeGuid": "E86C051740D239D28E42F8B6064CE666",
+			"toPinId": "637391B9452F56EC1A79C88567BEE30E",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "A4BCA8954EECA753D84D65B12C401A8B",
+			"fromPinId": "D8CD6959413A8966F1367C92A0EC8F84",
+			"fromPinName": "CapsuleComponent",
+			"toNodeGuid": "A51D60684BC47F753AC7CB9600309533",
+			"toPinId": "B5FD53104C0B7E055E5DBC9325EDED40",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "1B9AEF084D8BA570D387A28986119555",
+			"fromPinId": "DD442E354A4FB7903E50939A55FE8F02",
+			"fromPinName": "Character",
+			"toNodeGuid": "A4BCA8954EECA753D84D65B12C401A8B",
+			"toPinId": "3A59E8F24CFF0B05CA828D9FC2020815",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "DEB12FC4415813D0764DE695CF3F9B27",
+			"fromPinId": "EEE6BB2B4BB3B280DA8D84BDD2502E37",
+			"fromPinName": "Velocity_X",
+			"toNodeGuid": "66592F99494FCCA7FCC43FB94397E76D",
+			"toPinId": "B190635E4F3F958CCD92FA97EDEC5C2B",
+			"toPinName": "A_X"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "DEB12FC4415813D0764DE695CF3F9B27",
+			"fromPinId": "81183BC84576572ABF6ECC92D76E2185",
+			"fromPinName": "Velocity_Y",
+			"toNodeGuid": "66592F99494FCCA7FCC43FB94397E76D",
+			"toPinId": "ED45AC234030F72110170EABE4B39AD1",
+			"toPinName": "A_Y"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "DEB12FC4415813D0764DE695CF3F9B27",
+			"fromPinId": "4E6EBC3B4C3AAD2059971E9A4FEAB4BD",
+			"fromPinName": "Velocity_Z",
+			"toNodeGuid": "FFDB01D748544FA273DBC8BEE925C392",
+			"toPinId": "4553BDE94D666252FB126FBC320E4011",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "DEB12FC4415813D0764DE695CF3F9B27",
+			"fromPinId": "4E6EBC3B4C3AAD2059971E9A4FEAB4BD",
+			"fromPinName": "Velocity_Z",
+			"toNodeGuid": "D6A34F9244ED9BBB022FFA88E4FD7028",
+			"toPinId": "F3F376E443A9719AB65936B3D76B4482",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "exec",
+			"fromNodeGuid": "B49EEEAB4161D3761667D4AF29E1EDA2",
+			"fromPinId": "2A2139FB434F732B7F78548D7EC92A25",
+			"fromPinName": "then",
+			"toNodeGuid": "ED382DAC4D7BA2C0E75ACC8FCC2CB0AE",
+			"toPinId": "7542C6CE443CB198B669AF862E5B193D",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "exec",
+			"fromNodeGuid": "ED382DAC4D7BA2C0E75ACC8FCC2CB0AE",
+			"fromPinId": "2E3E09F84EC4572B970219BFB21F3CD5",
+			"fromPinName": "then",
+			"toNodeGuid": "EB6BF2D04399AA6A8C118F81AF618DAA",
+			"toPinId": "423C784B468DA1ECD0572C800CD52A46",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "BAEC68DF465981A2888549B7B9C98649",
+			"fromPinId": "C66CFD6D4A49A5511D49D0A1C2C263D7",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "ED382DAC4D7BA2C0E75ACC8FCC2CB0AE",
+			"toPinId": "C592471A49077B5C80F573835CBAF0BE",
+			"toPinName": "Start"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "64A047444925FC6C00544EBA16B5745C",
+			"fromPinId": "35EBF8AF4FCD87EA71E841810FCC497C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "ED382DAC4D7BA2C0E75ACC8FCC2CB0AE",
+			"toPinId": "E4AF16C349A379D6181CFAA9AB8EDFC5",
+			"toPinName": "End"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "E86C051740D239D28E42F8B6064CE666",
+			"fromPinId": "53BC41E3414CB40C4A9E51B8D3CC7A1A",
+			"fromPinName": "CapsuleRadius",
+			"toNodeGuid": "ED382DAC4D7BA2C0E75ACC8FCC2CB0AE",
+			"toPinId": "12F9BE7A46378DD2202DCD9A9A8ED045",
+			"toPinName": "Radius"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "A51D60684BC47F753AC7CB9600309533",
+			"fromPinId": "1F313FCA45F0D5DB125E3881D85EE01F",
+			"fromPinName": "CapsuleHalfHeight",
+			"toNodeGuid": "ED382DAC4D7BA2C0E75ACC8FCC2CB0AE",
+			"toPinId": "682D2CF1428620CD2A7F858CBCA85CCB",
+			"toPinName": "HalfHeight"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "5417FCD54D756F0B5FFFAFB3DABD2DC7",
+			"fromPinId": "8A08AD5C4A0CFEC0A9C4959D8AA66B25",
+			"fromPinName": "DebugType",
+			"toNodeGuid": "ED382DAC4D7BA2C0E75ACC8FCC2CB0AE",
+			"toPinId": "9F4D75B547D5393340D16486B82E1A98",
+			"toPinName": "DrawDebugType"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "ED382DAC4D7BA2C0E75ACC8FCC2CB0AE",
+			"fromPinId": "15F380F44F86E75B941393A8A8F5FF80",
+			"fromPinName": "OutHit",
+			"toNodeGuid": "83D3B7744E702CB9E7A04FBB2B305F9C",
+			"toPinId": "70C6545D4F4D216A0BDF0D9ECC533763",
+			"toPinName": "Hit"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "ED382DAC4D7BA2C0E75ACC8FCC2CB0AE",
+			"fromPinId": "15F380F44F86E75B941393A8A8F5FF80",
+			"fromPinName": "OutHit",
+			"toNodeGuid": "8161DC6C47B5F4FE192B8089B0C3EA29",
+			"toPinId": "1169268943B05F1AC6586197DA623FB4",
+			"toPinName": "Hit"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "BAEC68DF465981A2888549B7B9C98649",
+			"fromPinId": "C66CFD6D4A49A5511D49D0A1C2C263D7",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "64A047444925FC6C00544EBA16B5745C",
+			"toPinId": "52088A00404EF5C6A1912D9F179D0764",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "B73C426B4F515494B6321B97EA6566F2",
+			"fromPinId": "4ED35B62463D9DE4B60DE6ABC840CB5A",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "64A047444925FC6C00544EBA16B5745C",
+			"toPinId": "3A93BC074F64328A18A0A78033BC4AA0",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "FFDB01D748544FA273DBC8BEE925C392",
+			"fromPinId": "5D40C35944D070D0ED6AE49C696B0F7B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "66592F99494FCCA7FCC43FB94397E76D",
+			"toPinId": "69467F724BD11B51449A0B85148A8ABD",
+			"toPinName": "A_Z"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "66592F99494FCCA7FCC43FB94397E76D",
+			"fromPinId": "1B30D9ED4A13283DF9CC02AB80ED09F4",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "B73C426B4F515494B6321B97EA6566F2",
+			"toPinId": "4C0EB3AC43D312C2349544AA2BA1F0CF",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "D6A34F9244ED9BBB022FFA88E4FD7028",
+			"fromPinId": "C203E7504074D6A480874F82F876AC74",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "B73C426B4F515494B6321B97EA6566F2",
+			"toPinId": "5481C45948F5622490C231BD347A3892",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "87CDFA474500E9DEFF9799A6FDC5902F",
+			"fromPinId": "74DDF8E440AEDD2BD7E3D6902B104AC6",
+			"fromPinName": "CharacterMovement",
+			"toNodeGuid": "83D3B7744E702CB9E7A04FBB2B305F9C",
+			"toPinId": "913517B8411AA5F17DDB75B5EA38A38A",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "0B3BCA924B6525B913CC96AB8024FA9A",
+			"fromPinId": "422833D347D673A1A6F5E8BB30248BF6",
+			"fromPinName": "Character",
+			"toNodeGuid": "87CDFA474500E9DEFF9799A6FDC5902F",
+			"toPinId": "9F0B18BE4A649A59A2B4FD814AFFCD62",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "E4715C2F4410B782A43C82839AB427FE",
+			"fromPinId": "AF6A3B1843E7117FD4499A9C9F870909",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "EB6BF2D04399AA6A8C118F81AF618DAA",
+			"toPinId": "381359E34A8B27CA48EA2B95C3F0B307",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "exec",
+			"fromNodeGuid": "EB6BF2D04399AA6A8C118F81AF618DAA",
+			"fromPinId": "8760D7094CE13A263C1B1FABAC663EF8",
+			"fromPinName": "then",
+			"toNodeGuid": "624791994D40DA4035DA179CDEEB1C2F",
+			"toPinId": "3F976E754DC035FB4C156DB633FF9AC3",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "exec",
+			"fromNodeGuid": "EB6BF2D04399AA6A8C118F81AF618DAA",
+			"fromPinId": "CD620A624ABBEFF2FD0577AFC80AFBDD",
+			"fromPinName": "else",
+			"toNodeGuid": "58DD089E4B695AD0C5EBE1AF1DE9D230",
+			"toPinId": "3F976E754DC035FB4C156DB633FF9AC3",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "CCD894AD4F1ABB23FE167697198CB7F0",
+			"fromPinId": "9DC92E4649E04BCFB07CD5AF63312DD2",
+			"fromPinName": "LandPredictionCurve",
+			"toNodeGuid": "1B8247EC4BF1B321AAB0C0B3F7CC0841",
+			"toPinId": "A6D2866F4E57280A0F50319346CB5122",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "8161DC6C47B5F4FE192B8089B0C3EA29",
+			"fromPinId": "92A56B764F09C7CBE194B890D9B64B68",
+			"fromPinName": "Time",
+			"toNodeGuid": "1B8247EC4BF1B321AAB0C0B3F7CC0841",
+			"toPinId": "CDA009E1410D9821463E9E8176916EAF",
+			"toPinName": "InTime"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "1B8247EC4BF1B321AAB0C0B3F7CC0841",
+			"fromPinId": "5495DBB54A53558CB633DDB81202D5C7",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "9421C4044D45ACE8B61FDEBB9EC5A856",
+			"toPinId": "3ABD11DC4ED7072B60E5FD938F0BBC04",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "A9BA6119476BEAC877A37DBC059B5E53",
+			"fromPinId": "5BC51EDA4F3D894A38386AB793BA68B2",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "B49EEEAB4161D3761667D4AF29E1EDA2",
+			"toPinId": "3A96ED6E423DB7FDC1B8E69476E87EA9",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "exec",
+			"fromNodeGuid": "B49EEEAB4161D3761667D4AF29E1EDA2",
+			"fromPinId": "969D186149B908C1F8B7359FAF8CD5DF",
+			"fromPinName": "else",
+			"toNodeGuid": "30FB5B974DEDC84DF500DBB8ACC4F224",
+			"toPinId": "EFBBCCBA48246EFD8FA165AC8C2D5AF4",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "36BD4868460204D98A4A3788A779B25E",
+			"fromPinId": "9F333D1F436514EB68874FADD2BFD7B8",
+			"fromPinName": "FallSpeed",
+			"toNodeGuid": "A9BA6119476BEAC877A37DBC059B5E53",
+			"toPinId": "D44ACD184DC78B499890D7A1E6D5E093",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "85647A154529E906BD15E78001B3D5FA",
+			"fromPinId": "E88AEA8B49B69B113351FF85EBADA8E6",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "9421C4044D45ACE8B61FDEBB9EC5A856",
+			"toPinId": "43E3B5694B6FA3874E71DE9FEF4FF8C0",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "9421C4044D45ACE8B61FDEBB9EC5A856",
+			"fromPinId": "7211E9C942B96089045DA7B7C8F274C9",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "624791994D40DA4035DA179CDEEB1C2F",
+			"toPinId": "5CEAA19D4E749792E1604C9B54FB93CB",
+			"toPinName": "LandPrediction"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "83D3B7744E702CB9E7A04FBB2B305F9C",
+			"fromPinId": "5A22BD7E48502A48B0EFCA9A95AE4D5F",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "E4715C2F4410B782A43C82839AB427FE",
+			"toPinId": "2D8C26E24B7035C466CDD9AE501CE5E3",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateLandPrediction",
+			"edgeType": "data",
+			"fromNodeGuid": "8161DC6C47B5F4FE192B8089B0C3EA29",
+			"fromPinId": "937461924469635F7B4ED2A33FB5A091",
+			"fromPinName": "bBlockingHit",
+			"toNodeGuid": "E4715C2F4410B782A43C82839AB427FE",
+			"toPinId": "2839BDD544D058A1CAEAD188D555438B",
+			"toPinName": "B"
+		}
+	],
+	"variablesRead": [
+		"Get CapsuleComponent",
+		"Get CapsuleHalfHeight",
+		"Get CapsuleRadius",
+		"Get Character",
+		"Get CharacterMovement",
+		"Get FallSpeed",
+		"Get LandPredictionCurve",
+		"Ottieni"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Break Hit Result",
+		"Capsule Trace By Profile",
+		"Clamp (Float)",
+		"float < float",
+		"Get Curve Value\nLa destinazione è Istanza animazione",
+		"Get Debug Trace Type",
+		"Get Float Value\nLa destinazione è Curve Float",
+		"Get World Location\nLa destinazione è Componente di scena",
+		"Is Walkable\nLa destinazione è Componente movimento personaggio",
+		"Lerp",
+		"Map Range Clamped",
+		"Normal Unsafe (Vector)",
+		"vector * float"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Break Hit Result",
+		"Capsule Trace By Profile",
+		"Clamp (Float)",
+		"float < float",
+		"Get Curve Value\nLa destinazione è Istanza animazione",
+		"Get Debug Trace Type",
+		"Get Float Value\nLa destinazione è Curve Float",
+		"Get World Location\nLa destinazione è Componente di scena",
+		"Is Walkable\nLa destinazione è Componente movimento personaggio",
+		"Lerp",
+		"Map Range Clamped",
+		"Normal Unsafe (Vector)",
+		"vector * float"
+	],
+	"flowId": "F001",
+	"graphId": "G283",
+	"assetName": "ALS_AnimBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP"
+}

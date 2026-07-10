@@ -1,0 +1,106 @@
+{
+	"assetName": "WBP_HUD",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD.WBP_HUD",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_01_HUD_WBP_HUD",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"widgets": [
+		{
+			"name": "Set Brush from Texture\nLa destinazione è Immagine",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Text\nLa destinazione è Rich Text Block",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get WeaponImage",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Txt_AmmoText",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Visibility\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Brush from Texture\nLa destinazione è Immagine",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get WeaponImage",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Txt_AmmoText",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Visibility\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Visibility\nLa destinazione è Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Txt_AmmoText",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Set Brush from Texture\nLa destinazione è Immagine",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get WeaponImage",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Get Owning Player Pawn\nLa destinazione è User Widget",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		}
+	]
+}

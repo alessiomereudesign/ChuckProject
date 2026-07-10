@@ -1,0 +1,61 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "CameraShake_Notify",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/CameraShake_Notify.CameraShake_Notify",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_CameraShake_Notify",
+	"shortAssetFolder": "CameraShake_Notify__83E7DE54",
+	"pathHash": "83E7DE54",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/Engine.AnimNotify",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 2,
+		"components": 1,
+		"widgets": 0,
+		"graphs": 1,
+		"nodes": 11,
+		"edges": 15,
+		"flows": 1
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/CameraShake_Notify__83E7DE54/SUMMARY.md",
+		"variables": "Assets/Blueprints/CameraShake_Notify__83E7DE54/VARIABLES.json",
+		"components": "Assets/Blueprints/CameraShake_Notify__83E7DE54/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/CameraShake_Notify__83E7DE54/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/CameraShake_Notify__83E7DE54/NODES.jsonl",
+		"edges": "Assets/Blueprints/CameraShake_Notify__83E7DE54/EDGES.jsonl",
+		"search": "Assets/Blueprints/CameraShake_Notify__83E7DE54/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "Received_Notify",
+			"graphName": "Received_Notify",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 11,
+			"edgeCount": 15,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/CameraShake_Notify__83E7DE54/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/CameraShake_Notify__83E7DE54/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/CameraShake_Notify__83E7DE54/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Received Notify",
+					"entryNodeGuid": "16EAF510452B6944985562B3311397A7",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/CameraShake_Notify__83E7DE54/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/CameraShake_Notify__83E7DE54/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 11
+				}
+			]
+		}
+	]
+}

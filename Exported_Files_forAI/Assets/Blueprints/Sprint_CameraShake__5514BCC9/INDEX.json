@@ -1,0 +1,50 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "Sprint_CameraShake",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Misc/Sprint_CameraShake.Sprint_CameraShake",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Misc_Sprint_CameraShake",
+	"shortAssetFolder": "Sprint_CameraShake__5514BCC9",
+	"pathHash": "5514BCC9",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/GameplayCameras.LegacyCameraShake",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 1,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/Sprint_CameraShake__5514BCC9/SUMMARY.md",
+		"variables": "Assets/Blueprints/Sprint_CameraShake__5514BCC9/VARIABLES.json",
+		"components": "Assets/Blueprints/Sprint_CameraShake__5514BCC9/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/Sprint_CameraShake__5514BCC9/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/Sprint_CameraShake__5514BCC9/NODES.jsonl",
+		"edges": "Assets/Blueprints/Sprint_CameraShake__5514BCC9/EDGES.jsonl",
+		"search": "Assets/Blueprints/Sprint_CameraShake__5514BCC9/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 0,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/Sprint_CameraShake__5514BCC9/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/Sprint_CameraShake__5514BCC9/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/Sprint_CameraShake__5514BCC9/Graphs/G001/EDGES.jsonl",
+			"flows": []
+		}
+	]
+}

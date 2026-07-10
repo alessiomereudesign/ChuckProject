@@ -1,0 +1,86 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "BP_CharacterPreview",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/CharacterPreview/BP_CharacterPreview.BP_CharacterPreview",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_CharacterPreview_BP_CharacterPreview",
+	"shortAssetFolder": "BP_CharacterPreview__C1B9A1F5",
+	"pathHash": "C1B9A1F5",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/Engine.Actor",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 8,
+		"widgets": 0,
+		"graphs": 2,
+		"nodes": 17,
+		"edges": 16,
+		"flows": 2
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/SUMMARY.md",
+		"variables": "Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/VARIABLES.json",
+		"components": "Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/NODES.jsonl",
+		"edges": "Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/EDGES.jsonl",
+		"search": "Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 16,
+			"edgeCount": 16,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "InitializeStudio\nCustom Event",
+					"entryNodeGuid": "95B0A7CB47B9AD6D1837D097AE05BEAA",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 16
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "UserConstructionScript",
+			"graphName": "UserConstructionScript",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 1,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Construction Script",
+					"entryNodeGuid": "9C6F2D9741F070F21C35E2960E749D1A",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_CharacterPreview__C1B9A1F5/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 1
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,47 @@
+{
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+	"graph": "OnSlotSelected",
+	"entryName": "On Slot Selected",
+	"entryNodeGuid": "AD09FBE3413794487DEE01A2F419472B",
+	"nodes": [
+		{
+			"nodeGuid": "AD09FBE3413794487DEE01A2F419472B",
+			"class": "K2Node_FunctionEntry",
+			"title": "On Slot Selected",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A54C29A841EE88EE20AE65BCE573F6C0",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FD4AD5E94818254D7177ADB40FEE3D71",
+					"name": "SelectedCharacterData",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/F_CharacterData.F_CharacterData",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G001",
+	"assetName": "WBP_TabIntersect_CharacterSlot",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot"
+}

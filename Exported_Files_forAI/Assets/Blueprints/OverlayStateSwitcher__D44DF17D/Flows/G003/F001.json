@@ -1,0 +1,1788 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+	"graph": "CycleState",
+	"entryName": "Cycle State",
+	"entryNodeGuid": "8762DE554130B90443218189ACC5E9FD",
+	"nodes": [
+		{
+			"nodeGuid": "8762DE554130B90443218189ACC5E9FD",
+			"class": "K2Node_FunctionEntry",
+			"title": "Cycle State",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6DE60C6846EF4D7E5DCAEEB0FFB0D2B5",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "12EB49B4438DD0A6B743489B0284553A",
+					"name": "Up",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "692E97D245927654778730BAD025EF67",
+			"class": "K2Node_ExecutionSequence",
+			"title": "Sequenza",
+			"comment": "",
+			"x": 144,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5D7EE59249743C77B44EA2BFCC1513A7",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B089E5D0475B4D02773E7CBAA3E0DD11",
+					"name": "then_0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7B0B38AD42F72C5ED5E33BB306BCE964",
+					"name": "then_1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F50DD6AC49F9E7DB9B296C8853FD26D6",
+			"class": "K2Node_CallFunction",
+			"title": "Update Button Focus\nLa destinazione è Overlay State Switcher",
+			"comment": "",
+			"x": 288,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1B9ED92B4FFBCD6B0D8145AD958733F9",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "912EB6184B13B4F0AC1B6EB77D134809",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5219615F4E44C717B2F9CC844C834B3C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "81C9EBD844473E8810B2C985E6F28939",
+			"class": "K2Node_VariableGet",
+			"title": "Get TempEnum",
+			"comment": "",
+			"x": 528,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "28A6B56244821B523B87F9B7C3647669",
+					"name": "TempEnum",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState|container=Array",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "DD70D3AA4BCA20891F49BA9019020AB4",
+			"class": "K2Node_CallArrayFunction",
+			"title": "Cancella",
+			"comment": "",
+			"x": 528,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7F34162943FEF6BFCC984481338FFF66",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B954ACFA4C813F98167D69AF00535162",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F5E7EAA54B1E3E3DBBC5A89E4935D3F7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetArrayLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetArrayLibrary"
+				},
+				{
+					"pinId": "A2AC71704AAF65B8AB294BA0EE7313F0",
+					"name": "TargetArray",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState|container=Array|ref|const",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C1B1735F493FF20844A09C8D27621D66",
+			"class": "K2Node_VariableGet",
+			"title": "Get TempEnum",
+			"comment": "",
+			"x": 2816,
+			"y": 53,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "28A6B56244821B523B87F9B7C3647669",
+					"name": "TempEnum",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState|container=Array",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "C0E88C8A4B490CEBAE1046B32D286F75",
+			"class": "K2Node_ForEachElementInEnum",
+			"title": "ForEach ALS_OverlayState",
+			"comment": "",
+			"x": 720,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B98262724F7D9DDE449CC5A02329713A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EEB7E90B4FC041F6B4923C8BBB0308E3",
+					"name": "SkipHidden",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C322254F41453DC2424A41A64AF0F374",
+					"name": "LoopBody",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EEC8D4A74E7708D2200C14AC64EA7B29",
+					"name": "EnumValue",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A815CDF448094BD3FE4849B39A4348CA",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "73A55EF24B97AEA11B71FCA139D1FCAE",
+			"class": "K2Node_CallArrayFunction",
+			"title": "Aggiungi",
+			"comment": "",
+			"x": 2960,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E8C6BAA142F40B2535D05888115F9346",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BE23FACE43481AA3059C1583469EEC91",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "96B413E14469D76197A3E18010B5CA47",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetArrayLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetArrayLibrary"
+				},
+				{
+					"pinId": "F0034B0849E6FE45700F299BC6027E6D",
+					"name": "TargetArray",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState|container=Array|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A4BDE10C4BBAFCBF72A3239BD54A3796",
+					"name": "NewItem",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState|ref|const",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "CB0FB2C544632C6C4E9C739434C07A12",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "EA4A05C74D941A40829D0B972C855802",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 3152,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "19456C464C8530D4BFD213B6869D0BFF",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F36E155940E5309AA5047B8DB8D0853E",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "BF3A0BC043934C86744132827089CB5B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E2B4E8D64B30E5D423539D90E9E5B155",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "46C26E4647AE4E34BD5B0C85EDF6CFDF",
+			"class": "K2Node_VariableGet",
+			"title": "Get TempEnum",
+			"comment": "",
+			"x": 3376,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "28A6B56244821B523B87F9B7C3647669",
+					"name": "TempEnum",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState|container=Array",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E8CB131D45005D8F9CEFAE8F94A7F013",
+			"class": "K2Node_VariableGet",
+			"title": "Get NewOverlayState",
+			"comment": "",
+			"x": 3360,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D6D9A1034770491BD34891B9CB2952E6",
+					"name": "NewOverlayState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "6245ABB649E734DE2369B0A65F246FAD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateSwitcher.OverlayStateSwitcher_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "02F34FD248E3A6EB6595DD8C9136449B",
+			"class": "K2Node_VariableGet",
+			"title": "Get Up",
+			"comment": "",
+			"x": 3152,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B021D1D44FB47559F8D3C0AB06F3C62E",
+					"name": "Up",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "03602BF7443B3AF6ED1E52B84373A922",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 3344,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BF990B5A4E966B78888B7C8A0B910296",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "556D69A84127F93F3E8F88BF7D668143",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "548DC7644FB07A2DA180E09D5A738467",
+			"class": "K2Node_VariableSet",
+			"title": "Set NewOverlayState",
+			"comment": "",
+			"x": 3808,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DCBD3D5C4BAB6A71753368BB4E774E23",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B89055D144C44F57738A42AEAE98A0B0",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F3E31A474024D685B555EC856176294C",
+					"name": "NewOverlayState",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "7F0CCF5C450231A9CB04949FC53DCA9E",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "11FEBC53498365FDD8DBF7A10D886D20",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateSwitcher.OverlayStateSwitcher_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AF79DC31458F1592F2FE3FB8A871ED65",
+			"class": "K2Node_VariableGet",
+			"title": "Get NewOverlayState",
+			"comment": "",
+			"x": 3360,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D6D9A1034770491BD34891B9CB2952E6",
+					"name": "NewOverlayState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "6245ABB649E734DE2369B0A65F246FAD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateSwitcher.OverlayStateSwitcher_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F9D8BB8948795896E3DE2E81D42523F8",
+			"class": "K2Node_VariableGet",
+			"title": "Get TempEnum",
+			"comment": "",
+			"x": 3376,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "28A6B56244821B523B87F9B7C3647669",
+					"name": "TempEnum",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState|container=Array",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "38F2C8064417E6222514DCA6A07DD9CE",
+			"class": "K2Node_VariableSet",
+			"title": "Set NewOverlayState",
+			"comment": "",
+			"x": 3808,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DCBD3D5C4BAB6A71753368BB4E774E23",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B89055D144C44F57738A42AEAE98A0B0",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F3E31A474024D685B555EC856176294C",
+					"name": "NewOverlayState",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "7F0CCF5C450231A9CB04949FC53DCA9E",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "11FEBC53498365FDD8DBF7A10D886D20",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateSwitcher.OverlayStateSwitcher_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8661F6A34FBF4E544C53E2B356A0A081",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 3344,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "356A6430433874FAB32179BC56DEB51D",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7D531274434E11359F1EFB90CF68FD37",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "464EA22247E712396E22DEAF1C6BFEB1",
+			"class": "K2Node_MacroInstance",
+			"title": "ML Get Previous Array Item",
+			"comment": "",
+			"x": 3520,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2C0E465545182931C3FF4AB8F4CA6A01",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F22B9CC4407623729DC1D48C6F258F6D",
+					"name": "Array",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState|container=Array",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "611B5CC64553DD581E714EBAAABA91CE",
+					"name": "CurrentArrayItem",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "1B5676734EA4A9ACB8A77196156AA402",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9AC69F0049626ECC1C068B901F97F888",
+					"name": "NewArrayItem",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8E0E824C43AAD7C2A2AC4CB30B9A6D06",
+			"class": "K2Node_MacroInstance",
+			"title": "ML Get Next Array Item",
+			"comment": "",
+			"x": 3520,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1181F6A6495CFC7A62774DB851DBB66B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "64751FA0487AC80CB2DCC1BAD1396CA6",
+					"name": "Array",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState|container=Array",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "E2D326F94D3C8292523AE6AC8123EC1D",
+					"name": "CurrentArrayItem",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "3903F9B348177CD0086E7E9ADA240A3F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0F93DDC043521649BBCB0DB635CB8DCE",
+					"name": "NewArrayItem",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BDDE16834402D94B65F3E2977D02A14E",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on ALS_OverlayState",
+			"comment": "",
+			"x": 1040,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "234D46F24A0E07E631DD5DA783E4EF67",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4E4940B94C844B07227ADFAF18371911",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "A851C0ED4CD8BBDEAD3AFAB575391DA5",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "34962E2C47D06987FBF25CA4A928CAF7",
+					"name": "NewEnumerator0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3420A4234CBD16F2F18B6AB7D612C7CB",
+					"name": "NewEnumerator12",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5F9353D14A3DAE9011BF608EB531A979",
+					"name": "NewEnumerator13",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "53B32645484E4D09FE75F599358017BC",
+					"name": "NewEnumerator14",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F014AC26469AC257A1E80DAA235B3DE9",
+					"name": "NewEnumerator15",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F141601149DC8DAF539E00B7DEB3EE2A",
+					"name": "NewEnumerator1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "97F5BEE64CBD2AE28CDDA9946AEB5ACB",
+					"name": "NewEnumerator5",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "81B208074F25715CEAEB1D8A7E4D0600",
+					"name": "NewEnumerator10",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D8F5AD2A4D1B2C34D0478EBE6DDDF596",
+					"name": "NewEnumerator6",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "92BE65214D17348F7FDF74B85DCB479D",
+					"name": "NewEnumerator7",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FD166C434EBCB748F84E07BA2AC8980E",
+					"name": "NewEnumerator8",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "42A94F474EE4D65E579206A1AD6F22C9",
+					"name": "NewEnumerator9",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C877FFDF44F8E9A5400D77AD38EEBEC6",
+					"name": "NewEnumerator11",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D5EF3AB04586B06C5844438CB0419AC7",
+					"name": "NewEnumerator17",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9E53B2D84FA2BA5AE39B65B008EC48BB",
+					"name": "NewEnumerator18",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1B38664043FE7092588B36A76E7DA4D3",
+			"class": "K2Node_DynamicCast",
+			"title": "Cast To ALS_ChuckBP",
+			"comment": "",
+			"x": 1440,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9519447E41B3B84BAA5B689F4C28C8DB",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CF54D5884E5654E35F9F87B34ABFD414",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "130DB01148EE883F8D8C06ACEEDFACC8",
+					"name": "CastFailed",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "36020515463CE14019D36A8238693328",
+					"name": "Object",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "401B02F54609BCCFA765D38A36FEAF71",
+					"name": "AsALS Chuck BP",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7E7FDAA849CEC47BE9F4E5AD215392DA",
+					"name": "bSuccess",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "13C72D2B45BA9CDB0B98E39D61C5D90A",
+			"class": "K2Node_CallFunction",
+			"title": "Get Player Character",
+			"comment": "",
+			"x": 1424,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "663529F44CD755699CF9629E77AB6C90",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "17A65D9D485C31E11B53379ABE09A087",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B6BB2C0246587E2E73EEFB89E4DBE86E",
+					"name": "PlayerIndex",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "8BF77065432A9357EF786B8237482253",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "52AB20A547D75194BB4C08ADFA5C5E8C",
+			"class": "K2Node_VariableGet",
+			"title": "Get Mesh_BigWeapon",
+			"comment": "",
+			"x": 1696,
+			"y": 247,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "550D2C33476B29396DAB88A8C40A8D2D",
+					"name": "Mesh_BigWeapon",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BB09B8CF439BCA420F592CABE066BFB1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C5B0BD35499D55E4CBCCB0870047EA38",
+			"class": "K2Node_CallFunction",
+			"title": "Get Skinned Asset\nLa destinazione è Componente della mesh con pelle",
+			"comment": "",
+			"x": 1984,
+			"y": 207,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "793D2DE5482A668A5662EC8032031125",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkinnedMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D1546783411A4225DE628480C64B9374",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkinnedAsset",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1847B14747BDEF5F6778ECA01645BE3F",
+			"class": "K2Node_MacroInstance",
+			"title": "Is Valid",
+			"comment": "",
+			"x": 2272,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "52C9A82C4065A1F4F2B8B3A025776049",
+					"name": "exec",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5FAAF8F04DBA2C7A0FEC7585337DE4AF",
+					"name": "InputObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BA2A29E74C024A301D18B491F3C6730C",
+					"name": "Is Valid",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "227056D04AD1C848044E9AB998968CF8",
+					"name": "Is Not Valid",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2E5CA3254110BB01555329BA13491E3A",
+			"class": "EdGraphNode_Comment",
+			"title": "CustomAdded",
+			"comment": "CustomAdded",
+			"x": 976,
+			"y": -64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "8976440A41E476CCF2F95395C1B0CA27",
+			"class": "K2Node_DynamicCast",
+			"title": "Cast To ALS_ChuckBP",
+			"comment": "",
+			"x": 1440,
+			"y": 416,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9519447E41B3B84BAA5B689F4C28C8DB",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CF54D5884E5654E35F9F87B34ABFD414",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "130DB01148EE883F8D8C06ACEEDFACC8",
+					"name": "CastFailed",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "36020515463CE14019D36A8238693328",
+					"name": "Object",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "401B02F54609BCCFA765D38A36FEAF71",
+					"name": "AsALS Chuck BP",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7E7FDAA849CEC47BE9F4E5AD215392DA",
+					"name": "bSuccess",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "9489DE1A45571F772904A0A971791FD1",
+			"class": "K2Node_CallFunction",
+			"title": "Get Player Character",
+			"comment": "",
+			"x": 1424,
+			"y": 560,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "663529F44CD755699CF9629E77AB6C90",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "17A65D9D485C31E11B53379ABE09A087",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B6BB2C0246587E2E73EEFB89E4DBE86E",
+					"name": "PlayerIndex",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "8BF77065432A9357EF786B8237482253",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0A8C096B44B134499CCF6EA2F6BCC03B",
+			"class": "K2Node_CallFunction",
+			"title": "Get Skinned Asset\nLa destinazione è Componente della mesh con pelle",
+			"comment": "",
+			"x": 1984,
+			"y": 463,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "793D2DE5482A668A5662EC8032031125",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkinnedMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D1546783411A4225DE628480C64B9374",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkinnedAsset",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "611BCF60432B47CBDBABF788BB2C81FD",
+			"class": "K2Node_MacroInstance",
+			"title": "Is Valid",
+			"comment": "",
+			"x": 2272,
+			"y": 416,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "52C9A82C4065A1F4F2B8B3A025776049",
+					"name": "exec",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5FAAF8F04DBA2C7A0FEC7585337DE4AF",
+					"name": "InputObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BA2A29E74C024A301D18B491F3C6730C",
+					"name": "Is Valid",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "227056D04AD1C848044E9AB998968CF8",
+					"name": "Is Not Valid",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DCE7A8D140424AB43B4FF09DF4DC9359",
+			"class": "K2Node_VariableGet",
+			"title": "Get Mesh_SmallWeapon",
+			"comment": "",
+			"x": 1680,
+			"y": 503,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "17FF69574D9CBDAB8F1D749BC69866D7",
+					"name": "Mesh_SmallWeapon",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D3F6E56C49F7D3A1621461B541208CA1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6C2D5F5245DFCE9942FE3EA6348F9610",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 2528,
+			"y": 416,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1BE70AC94F6C94CDCD63628FAC995B98",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "40AE556B405E60031ADBBE879DBF8B90",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "CD209A9E4E52B1F617B7568D2570FFF2",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3407BB3445586F279688B4B33242852A",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "8762DE554130B90443218189ACC5E9FD",
+			"fromPinId": "6DE60C6846EF4D7E5DCAEEB0FFB0D2B5",
+			"fromPinName": "then",
+			"toNodeGuid": "692E97D245927654778730BAD025EF67",
+			"toPinId": "5D7EE59249743C77B44EA2BFCC1513A7",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "692E97D245927654778730BAD025EF67",
+			"fromPinId": "B089E5D0475B4D02773E7CBAA3E0DD11",
+			"fromPinName": "then_0",
+			"toNodeGuid": "DD70D3AA4BCA20891F49BA9019020AB4",
+			"toPinId": "7F34162943FEF6BFCC984481338FFF66",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "692E97D245927654778730BAD025EF67",
+			"fromPinId": "7B0B38AD42F72C5ED5E33BB306BCE964",
+			"fromPinName": "then_1",
+			"toNodeGuid": "F50DD6AC49F9E7DB9B296C8853FD26D6",
+			"toPinId": "1B9ED92B4FFBCD6B0D8145AD958733F9",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "81C9EBD844473E8810B2C985E6F28939",
+			"fromPinId": "28A6B56244821B523B87F9B7C3647669",
+			"fromPinName": "TempEnum",
+			"toNodeGuid": "DD70D3AA4BCA20891F49BA9019020AB4",
+			"toPinId": "A2AC71704AAF65B8AB294BA0EE7313F0",
+			"toPinName": "TargetArray"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "DD70D3AA4BCA20891F49BA9019020AB4",
+			"fromPinId": "B954ACFA4C813F98167D69AF00535162",
+			"fromPinName": "then",
+			"toNodeGuid": "C0E88C8A4B490CEBAE1046B32D286F75",
+			"toPinId": "B98262724F7D9DDE449CC5A02329713A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "C1B1735F493FF20844A09C8D27621D66",
+			"fromPinId": "28A6B56244821B523B87F9B7C3647669",
+			"fromPinName": "TempEnum",
+			"toNodeGuid": "73A55EF24B97AEA11B71FCA139D1FCAE",
+			"toPinId": "F0034B0849E6FE45700F299BC6027E6D",
+			"toPinName": "TargetArray"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "C0E88C8A4B490CEBAE1046B32D286F75",
+			"fromPinId": "C322254F41453DC2424A41A64AF0F374",
+			"fromPinName": "LoopBody",
+			"toNodeGuid": "BDDE16834402D94B65F3E2977D02A14E",
+			"toPinId": "234D46F24A0E07E631DD5DA783E4EF67",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "C0E88C8A4B490CEBAE1046B32D286F75",
+			"fromPinId": "EEC8D4A74E7708D2200C14AC64EA7B29",
+			"fromPinName": "EnumValue",
+			"toNodeGuid": "73A55EF24B97AEA11B71FCA139D1FCAE",
+			"toPinId": "A4BDE10C4BBAFCBF72A3239BD54A3796",
+			"toPinName": "NewItem"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "C0E88C8A4B490CEBAE1046B32D286F75",
+			"fromPinId": "EEC8D4A74E7708D2200C14AC64EA7B29",
+			"fromPinName": "EnumValue",
+			"toNodeGuid": "BDDE16834402D94B65F3E2977D02A14E",
+			"toPinId": "4E4940B94C844B07227ADFAF18371911",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "C0E88C8A4B490CEBAE1046B32D286F75",
+			"fromPinId": "A815CDF448094BD3FE4849B39A4348CA",
+			"fromPinName": "then",
+			"toNodeGuid": "EA4A05C74D941A40829D0B972C855802",
+			"toPinId": "19456C464C8530D4BFD213B6869D0BFF",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "1847B14747BDEF5F6778ECA01645BE3F",
+			"fromPinId": "BA2A29E74C024A301D18B491F3C6730C",
+			"fromPinName": "Is Valid",
+			"toNodeGuid": "73A55EF24B97AEA11B71FCA139D1FCAE",
+			"toPinId": "E8C6BAA142F40B2535D05888115F9346",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "6C2D5F5245DFCE9942FE3EA6348F9610",
+			"fromPinId": "CD209A9E4E52B1F617B7568D2570FFF2",
+			"fromPinName": "then",
+			"toNodeGuid": "73A55EF24B97AEA11B71FCA139D1FCAE",
+			"toPinId": "E8C6BAA142F40B2535D05888115F9346",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "BDDE16834402D94B65F3E2977D02A14E",
+			"fromPinId": "34962E2C47D06987FBF25CA4A928CAF7",
+			"fromPinName": "NewEnumerator0",
+			"toNodeGuid": "73A55EF24B97AEA11B71FCA139D1FCAE",
+			"toPinId": "E8C6BAA142F40B2535D05888115F9346",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "BDDE16834402D94B65F3E2977D02A14E",
+			"fromPinId": "92BE65214D17348F7FDF74B85DCB479D",
+			"fromPinName": "NewEnumerator7",
+			"toNodeGuid": "73A55EF24B97AEA11B71FCA139D1FCAE",
+			"toPinId": "E8C6BAA142F40B2535D05888115F9346",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "BDDE16834402D94B65F3E2977D02A14E",
+			"fromPinId": "FD166C434EBCB748F84E07BA2AC8980E",
+			"fromPinName": "NewEnumerator8",
+			"toNodeGuid": "73A55EF24B97AEA11B71FCA139D1FCAE",
+			"toPinId": "E8C6BAA142F40B2535D05888115F9346",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "02F34FD248E3A6EB6595DD8C9136449B",
+			"fromPinId": "B021D1D44FB47559F8D3C0AB06F3C62E",
+			"fromPinName": "Up",
+			"toNodeGuid": "EA4A05C74D941A40829D0B972C855802",
+			"toPinId": "F36E155940E5309AA5047B8DB8D0853E",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "EA4A05C74D941A40829D0B972C855802",
+			"fromPinId": "BF3A0BC043934C86744132827089CB5B",
+			"fromPinName": "then",
+			"toNodeGuid": "8661F6A34FBF4E544C53E2B356A0A081",
+			"toPinId": "356A6430433874FAB32179BC56DEB51D",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "EA4A05C74D941A40829D0B972C855802",
+			"fromPinId": "E2B4E8D64B30E5D423539D90E9E5B155",
+			"fromPinName": "else",
+			"toNodeGuid": "03602BF7443B3AF6ED1E52B84373A922",
+			"toPinId": "BF990B5A4E966B78888B7C8A0B910296",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "46C26E4647AE4E34BD5B0C85EDF6CFDF",
+			"fromPinId": "28A6B56244821B523B87F9B7C3647669",
+			"fromPinName": "TempEnum",
+			"toNodeGuid": "8E0E824C43AAD7C2A2AC4CB30B9A6D06",
+			"toPinId": "64751FA0487AC80CB2DCC1BAD1396CA6",
+			"toPinName": "Array"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "E8CB131D45005D8F9CEFAE8F94A7F013",
+			"fromPinId": "D6D9A1034770491BD34891B9CB2952E6",
+			"fromPinName": "NewOverlayState",
+			"toNodeGuid": "8E0E824C43AAD7C2A2AC4CB30B9A6D06",
+			"toPinId": "E2D326F94D3C8292523AE6AC8123EC1D",
+			"toPinName": "CurrentArrayItem"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "03602BF7443B3AF6ED1E52B84373A922",
+			"fromPinId": "556D69A84127F93F3E8F88BF7D668143",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "8E0E824C43AAD7C2A2AC4CB30B9A6D06",
+			"toPinId": "1181F6A6495CFC7A62774DB851DBB66B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "8E0E824C43AAD7C2A2AC4CB30B9A6D06",
+			"fromPinId": "3903F9B348177CD0086E7E9ADA240A3F",
+			"fromPinName": "then",
+			"toNodeGuid": "548DC7644FB07A2DA180E09D5A738467",
+			"toPinId": "DCBD3D5C4BAB6A71753368BB4E774E23",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "8E0E824C43AAD7C2A2AC4CB30B9A6D06",
+			"fromPinId": "0F93DDC043521649BBCB0DB635CB8DCE",
+			"fromPinName": "NewArrayItem",
+			"toNodeGuid": "548DC7644FB07A2DA180E09D5A738467",
+			"toPinId": "F3E31A474024D685B555EC856176294C",
+			"toPinName": "NewOverlayState"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "AF79DC31458F1592F2FE3FB8A871ED65",
+			"fromPinId": "D6D9A1034770491BD34891B9CB2952E6",
+			"fromPinName": "NewOverlayState",
+			"toNodeGuid": "464EA22247E712396E22DEAF1C6BFEB1",
+			"toPinId": "611B5CC64553DD581E714EBAAABA91CE",
+			"toPinName": "CurrentArrayItem"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "F9D8BB8948795896E3DE2E81D42523F8",
+			"fromPinId": "28A6B56244821B523B87F9B7C3647669",
+			"fromPinName": "TempEnum",
+			"toNodeGuid": "464EA22247E712396E22DEAF1C6BFEB1",
+			"toPinId": "F22B9CC4407623729DC1D48C6F258F6D",
+			"toPinName": "Array"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "464EA22247E712396E22DEAF1C6BFEB1",
+			"fromPinId": "1B5676734EA4A9ACB8A77196156AA402",
+			"fromPinName": "then",
+			"toNodeGuid": "38F2C8064417E6222514DCA6A07DD9CE",
+			"toPinId": "DCBD3D5C4BAB6A71753368BB4E774E23",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "464EA22247E712396E22DEAF1C6BFEB1",
+			"fromPinId": "9AC69F0049626ECC1C068B901F97F888",
+			"fromPinName": "NewArrayItem",
+			"toNodeGuid": "38F2C8064417E6222514DCA6A07DD9CE",
+			"toPinId": "F3E31A474024D685B555EC856176294C",
+			"toPinName": "NewOverlayState"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "8661F6A34FBF4E544C53E2B356A0A081",
+			"fromPinId": "7D531274434E11359F1EFB90CF68FD37",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "464EA22247E712396E22DEAF1C6BFEB1",
+			"toPinId": "2C0E465545182931C3FF4AB8F4CA6A01",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "BDDE16834402D94B65F3E2977D02A14E",
+			"fromPinId": "F141601149DC8DAF539E00B7DEB3EE2A",
+			"fromPinName": "NewEnumerator1",
+			"toNodeGuid": "1B38664043FE7092588B36A76E7DA4D3",
+			"toPinId": "9519447E41B3B84BAA5B689F4C28C8DB",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "BDDE16834402D94B65F3E2977D02A14E",
+			"fromPinId": "97F5BEE64CBD2AE28CDDA9946AEB5ACB",
+			"fromPinName": "NewEnumerator5",
+			"toNodeGuid": "8976440A41E476CCF2F95395C1B0CA27",
+			"toPinId": "9519447E41B3B84BAA5B689F4C28C8DB",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "BDDE16834402D94B65F3E2977D02A14E",
+			"fromPinId": "81B208074F25715CEAEB1D8A7E4D0600",
+			"fromPinName": "NewEnumerator10",
+			"toNodeGuid": "8976440A41E476CCF2F95395C1B0CA27",
+			"toPinId": "9519447E41B3B84BAA5B689F4C28C8DB",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "1B38664043FE7092588B36A76E7DA4D3",
+			"fromPinId": "CF54D5884E5654E35F9F87B34ABFD414",
+			"fromPinName": "then",
+			"toNodeGuid": "1847B14747BDEF5F6778ECA01645BE3F",
+			"toPinId": "52C9A82C4065A1F4F2B8B3A025776049",
+			"toPinName": "exec"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "13C72D2B45BA9CDB0B98E39D61C5D90A",
+			"fromPinId": "8BF77065432A9357EF786B8237482253",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "1B38664043FE7092588B36A76E7DA4D3",
+			"toPinId": "36020515463CE14019D36A8238693328",
+			"toPinName": "Object"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "1B38664043FE7092588B36A76E7DA4D3",
+			"fromPinId": "401B02F54609BCCFA765D38A36FEAF71",
+			"fromPinName": "AsALS Chuck BP",
+			"toNodeGuid": "52AB20A547D75194BB4C08ADFA5C5E8C",
+			"toPinId": "BB09B8CF439BCA420F592CABE066BFB1",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "52AB20A547D75194BB4C08ADFA5C5E8C",
+			"fromPinId": "550D2C33476B29396DAB88A8C40A8D2D",
+			"fromPinName": "Mesh_BigWeapon",
+			"toNodeGuid": "C5B0BD35499D55E4CBCCB0870047EA38",
+			"toPinId": "793D2DE5482A668A5662EC8032031125",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "C5B0BD35499D55E4CBCCB0870047EA38",
+			"fromPinId": "D1546783411A4225DE628480C64B9374",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "1847B14747BDEF5F6778ECA01645BE3F",
+			"toPinId": "5FAAF8F04DBA2C7A0FEC7585337DE4AF",
+			"toPinName": "InputObject"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "8976440A41E476CCF2F95395C1B0CA27",
+			"fromPinId": "CF54D5884E5654E35F9F87B34ABFD414",
+			"fromPinName": "then",
+			"toNodeGuid": "611BCF60432B47CBDBABF788BB2C81FD",
+			"toPinId": "52C9A82C4065A1F4F2B8B3A025776049",
+			"toPinName": "exec"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "9489DE1A45571F772904A0A971791FD1",
+			"fromPinId": "8BF77065432A9357EF786B8237482253",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "8976440A41E476CCF2F95395C1B0CA27",
+			"toPinId": "36020515463CE14019D36A8238693328",
+			"toPinName": "Object"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "8976440A41E476CCF2F95395C1B0CA27",
+			"fromPinId": "401B02F54609BCCFA765D38A36FEAF71",
+			"fromPinName": "AsALS Chuck BP",
+			"toNodeGuid": "DCE7A8D140424AB43B4FF09DF4DC9359",
+			"toPinId": "D3F6E56C49F7D3A1621461B541208CA1",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "DCE7A8D140424AB43B4FF09DF4DC9359",
+			"fromPinId": "17FF69574D9CBDAB8F1D749BC69866D7",
+			"fromPinName": "Mesh_SmallWeapon",
+			"toNodeGuid": "0A8C096B44B134499CCF6EA2F6BCC03B",
+			"toPinId": "793D2DE5482A668A5662EC8032031125",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "data",
+			"fromNodeGuid": "0A8C096B44B134499CCF6EA2F6BCC03B",
+			"fromPinId": "D1546783411A4225DE628480C64B9374",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "611BCF60432B47CBDBABF788BB2C81FD",
+			"toPinId": "5FAAF8F04DBA2C7A0FEC7585337DE4AF",
+			"toPinName": "InputObject"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "CycleState",
+			"edgeType": "exec",
+			"fromNodeGuid": "611BCF60432B47CBDBABF788BB2C81FD",
+			"fromPinId": "BA2A29E74C024A301D18B491F3C6730C",
+			"fromPinName": "Is Valid",
+			"toNodeGuid": "6C2D5F5245DFCE9942FE3EA6348F9610",
+			"toPinId": "1BE70AC94F6C94CDCD63628FAC995B98",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [
+		"Get Mesh_BigWeapon",
+		"Get Mesh_SmallWeapon",
+		"Get NewOverlayState",
+		"Get TempEnum",
+		"Get Up"
+	],
+	"variablesWritten": [
+		"Set NewOverlayState"
+	],
+	"functionsCalled": [
+		"Get Player Character",
+		"Get Skinned Asset\nLa destinazione è Componente della mesh con pelle",
+		"Update Button Focus\nLa destinazione è Overlay State Switcher"
+	],
+	"widgetsTouched": [
+		"Update Button Focus\nLa destinazione è Overlay State Switcher"
+	],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Cast To ALS_ChuckBP",
+		"Get Player Character",
+		"Get Skinned Asset\nLa destinazione è Componente della mesh con pelle",
+		"Update Button Focus\nLa destinazione è Overlay State Switcher"
+	],
+	"flowId": "F001",
+	"graphId": "G003",
+	"assetName": "OverlayStateSwitcher",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateSwitcher.OverlayStateSwitcher"
+}

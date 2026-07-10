@@ -1,0 +1,14 @@
+{
+	"graphId": "G091",
+	"name": "(CLF) Locomotion States",
+	"graphName": "(CLF) Locomotion States",
+	"type": "AnimationStateMachineGraph",
+	"graphType": "AnimationStateMachineGraph",
+	"graphGuid": "",
+	"nodeCount": 18,
+	"edgeCount": 25,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G091/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G091/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G091/EDGES.jsonl",
+	"flows": []
+}

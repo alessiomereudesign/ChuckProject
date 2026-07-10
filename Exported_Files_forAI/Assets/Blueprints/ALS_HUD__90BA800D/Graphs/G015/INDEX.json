@@ -1,0 +1,25 @@
+{
+	"graphId": "G015",
+	"name": "GetVisibility_0",
+	"graphName": "GetVisibility_0",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 4,
+	"edgeCount": 2,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G015/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G015/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G015/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Get Visibility 0",
+			"entryNodeGuid": "AAF43A6B40C2B8E5237A39A8C15072C4",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G015/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G015/F001.json",
+			"textFile": "Flows/G015/F001.txt",
+			"jsonFile": "Flows/G015/F001.json",
+			"nodeCount": 4
+		}
+	]
+}

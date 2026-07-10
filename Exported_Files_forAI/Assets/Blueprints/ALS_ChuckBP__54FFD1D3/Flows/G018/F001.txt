@@ -1,0 +1,46 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G018
+Graph: On Begin Play
+FlowId: F001
+Entry: On Begin Play
+NodeGuid: 7F51293E493911A7524B628A1E786F9E
+
+Exec Flow:
+1. On Begin Play [K2Node_FunctionEntry] 7F51293E493911A7524B628A1E786F9E
+2. Genitore: On Begin Play [K2Node_CallParentFunction] A2A47C40470702C182C801AB5A48DAFB
+3. Sequenza [K2Node_ExecutionSequence] BB86792C462033353FE1B5A6E0B785DE
+4. Cast To ALS_Player_Controller [K2Node_DynamicCast] E49FB51F4CDAB126BD6BD2B5B0EED77B
+5. Get Player Controller [K2Node_CallFunction] BFAA67774A629EBE29C07AB92330D04B
+6. Set As ALS Player Controller [K2Node_VariableSet] 3AF920E94E970ABFC5FF28985FAEFD0C
+7. Update Weapon Display
+La destinazione è WBP HUD [K2Node_CallFunction] 45DBB41949B0C95CBF0676B6532DEDC0
+8. Is Valid [K2Node_MacroInstance] CD2B428B49F62F1A56EF8E8DCA5285E1
+9. Nodo di reindirizzamento [K2Node_Knot] A1CFA823462D8925743B51A159BA6FFA
+10. Get As ALS Player Controller [K2Node_VariableGet] DC02C81746203B35007AD6923FF77FE1
+11. Get Chuck_HUD [K2Node_VariableGet] AC2E38364415B5CE72F888B1ABC651F5
+
+Variables Read:
+- Get As ALS Player Controller
+- Get Chuck_HUD
+
+Variables Written:
+- Set As ALS Player Controller
+
+External Calls:
+- Get Player Controller
+- Update Weapon Display
+La destinazione è WBP HUD
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Cast To ALS_Player_Controller
+- Get Player Controller
+- Update Weapon Display
+La destinazione è WBP HUD

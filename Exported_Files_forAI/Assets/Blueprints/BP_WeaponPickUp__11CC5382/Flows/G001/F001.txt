@@ -1,0 +1,32 @@
+Asset: BP_WeaponPickUp
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponPickUp.BP_WeaponPickUp
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponPickUp
+GraphId: G001
+Graph: GetInteractionPrompt
+FlowId: F001
+Entry: Get Interaction Prompt
+NodeGuid: 702CAC334F71E96F90ED92B5188BBF9B
+
+Exec Flow:
+1. Get Interaction Prompt [K2Node_FunctionEntry] 702CAC334F71E96F90ED92B5188BBF9B
+2. Nodo di restituzione [K2Node_FunctionResult] 39B5AE4C428EDF86DF0DBC91FD24A570
+3. Make S_InteractionPrompt [K2Node_MakeStruct] 5682DBE44117254ADA54E8AB69F7AC29
+4. Get DisplayName [K2Node_VariableGet] F18AF4F9489F3EF6439CC89A6E06057D
+
+Variables Read:
+- Get DisplayName
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

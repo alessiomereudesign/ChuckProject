@@ -1,0 +1,34 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G021
+Graph: RagdollStart
+FlowId: F001
+Entry: Ragdoll Start
+NodeGuid: C022401942C64022C7E478A7ACD71F74
+
+Exec Flow:
+1. Ragdoll Start [K2Node_FunctionEntry] C022401942C64022C7E478A7ACD71F74
+2. Genitore: Ragdoll Start [K2Node_CallParentFunction] AD429D9448A15A865247E2BA487406EA
+3. Clear Held Object
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 617A686344BEB20B2AA7E09B353FE7E9
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- Clear Held Object
+La destinazione è ALS Chuck BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Clear Held Object
+La destinazione è ALS Chuck BP

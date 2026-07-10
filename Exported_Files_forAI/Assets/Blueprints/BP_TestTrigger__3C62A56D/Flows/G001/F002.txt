@@ -1,0 +1,44 @@
+Asset: BP_TestTrigger
+AssetPath: /Game/ChuckContent/Blueprints/BP_TestTrigger.BP_TestTrigger
+AssetKey: Game_ChuckContent_Blueprints_BP_TestTrigger
+GraphId: G001
+Graph: EventGraph
+FlowId: F002
+Entry: Evento BeginPlay
+NodeGuid: 0B5DD33242F7470C0A0E7F8ED9B60913
+
+Exec Flow:
+1. Evento BeginPlay [K2Node_Event] 0B5DD33242F7470C0A0E7F8ED9B60913
+2. Evento ActorBeginOverlap [K2Node_Event] 31622EAE4DB720FE87C0D38756F1CC3B
+3. Evento Tick [K2Node_Event] C24BC56A4BDB3DDEB725508122CE763B
+4. On Component Begin Overlap (Box) [K2Node_ComponentBoundEvent] 85CEF48043C0FD34EE86E198A0503A10
+5. Cast To ALS_ChuckBP [K2Node_DynamicCast] 74DFA4784F9FD505D038DFBE2D7925FB
+6. Add Item to Inventory
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 0E152FCA4ECCD3381082EEA6E59F3968
+7. Destroy Actor
+La destinazione è Actor [K2Node_CallFunction] 478CBA22420EEEACA8A184BB1C0C5576
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- Add Item to Inventory
+La destinazione è ALS Chuck BP
+- Destroy Actor
+La destinazione è Actor
+
+Widgets Touched:
+- none
+
+Components Touched:
+- On Component Begin Overlap (Box)
+
+External Blueprint References:
+- Add Item to Inventory
+La destinazione è ALS Chuck BP
+- Cast To ALS_ChuckBP
+- Destroy Actor
+La destinazione è Actor

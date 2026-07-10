@@ -1,0 +1,33 @@
+Asset: GroundedEntryState_AnimNotify
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/GroundedEntryState_AnimNotify.GroundedEntryState_AnimNotify
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_GroundedEntryState_AnimNotify
+GraphId: G001
+Graph: GetNotifyName
+FlowId: F001
+Entry: Get Notify Name
+NodeGuid: 4B3482134899F9476F4CC783A31B2366
+
+Exec Flow:
+1. Get Notify Name [K2Node_FunctionEntry] 4B3482134899F9476F4CC783A31B2366
+2. Nodo di restituzione [K2Node_FunctionResult] 0D1716B946230B1430CBAB97EF5EB9EA
+3. Get Grounded Entry State [K2Node_VariableGet] 5AD39D424EF080ADAD6975B19C95197F
+4. Aggiungere [K2Node_CommutativeAssociativeBinaryOperator] 4FDBFFB04941B327B2C1488DFA571F20
+5. Enum a Stringa [K2Node_GetEnumeratorNameAsString] E5E8267744E6B62D5D5F25898F4C751F
+
+Variables Read:
+- Get Grounded Entry State
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

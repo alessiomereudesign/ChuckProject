@@ -1,0 +1,15 @@
+{
+	"assetName": "ALS_Controller_BPI",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Controller_BPI.ALS_Controller_BPI",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Controller_BPI",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "BPI Get Debug Info",
+			"graph": "BPI_Get_DebugInfo",
+			"nodeGuid": "38B0E87A4AC834E3830AFE879FD07E13",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

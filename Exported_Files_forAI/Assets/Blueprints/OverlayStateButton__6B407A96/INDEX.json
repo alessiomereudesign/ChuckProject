@@ -1,0 +1,75 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "OverlayStateButton",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateButton.OverlayStateButton",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateButton",
+	"shortAssetFolder": "OverlayStateButton__6B407A96",
+	"pathHash": "6B407A96",
+	"assetType": "Blueprint",
+	"unrealClass": "WidgetBlueprint",
+	"parentClass": "/Script/UMG.UserWidget",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 4,
+		"components": 0,
+		"widgets": 4,
+		"graphs": 2,
+		"nodes": 16,
+		"edges": 16,
+		"flows": 1
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/OverlayStateButton__6B407A96/SUMMARY.md",
+		"variables": "Assets/Blueprints/OverlayStateButton__6B407A96/VARIABLES.json",
+		"components": "Assets/Blueprints/OverlayStateButton__6B407A96/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/OverlayStateButton__6B407A96/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/OverlayStateButton__6B407A96/NODES.jsonl",
+		"edges": "Assets/Blueprints/OverlayStateButton__6B407A96/EDGES.jsonl",
+		"search": "Assets/Blueprints/OverlayStateButton__6B407A96/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 0,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/OverlayStateButton__6B407A96/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/OverlayStateButton__6B407A96/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/OverlayStateButton__6B407A96/Graphs/G001/EDGES.jsonl",
+			"flows": []
+		},
+		{
+			"graphId": "G002",
+			"name": "SetVisualParameters",
+			"graphName": "SetVisualParameters",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 16,
+			"edgeCount": 16,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/OverlayStateButton__6B407A96/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/OverlayStateButton__6B407A96/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/OverlayStateButton__6B407A96/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Set Visual Parameters",
+					"entryNodeGuid": "5D2901F0467F9E6763AF3484B3A3C7D7",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/OverlayStateButton__6B407A96/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/OverlayStateButton__6B407A96/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 16
+				}
+			]
+		}
+	]
+}

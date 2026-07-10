@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "VelocityBlend",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/VelocityBlend.VelocityBlend",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Structs_VelocityBlend",
+	"shortAssetFolder": "VelocityBlend__12000E82",
+	"pathHash": "12000E82",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/VelocityBlend__12000E82/SUMMARY.md",
+		"variables": "Assets/Structs/VelocityBlend__12000E82/VARIABLES.json",
+		"components": "Assets/Structs/VelocityBlend__12000E82/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/VelocityBlend__12000E82/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/VelocityBlend__12000E82/NODES.jsonl",
+		"edges": "Assets/Structs/VelocityBlend__12000E82/EDGES.jsonl",
+		"search": "Assets/Structs/VelocityBlend__12000E82/SEARCH.jsonl"
+	},
+	"graphs": []
+}

@@ -1,0 +1,25 @@
+{
+	"graphId": "G007",
+	"name": "OnWeaponSlotClicked",
+	"graphName": "OnWeaponSlotClicked",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 17,
+	"edgeCount": 22,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G007/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G007/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G007/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "On Weapon Slot Clicked",
+			"entryNodeGuid": "35F2003C4980D91857B1889C8B8381C9",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G007/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G007/F001.json",
+			"textFile": "Flows/G007/F001.txt",
+			"jsonFile": "Flows/G007/F001.json",
+			"nodeCount": 17
+		}
+	]
+}

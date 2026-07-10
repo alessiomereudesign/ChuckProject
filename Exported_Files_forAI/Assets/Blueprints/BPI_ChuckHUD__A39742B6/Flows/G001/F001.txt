@@ -1,0 +1,29 @@
+Asset: BPI_ChuckHUD
+AssetPath: /Game/ChuckContent/UI/Interfaces/BPI_ChuckHUD.BPI_ChuckHUD
+AssetKey: Game_ChuckContent_UI_Interfaces_BPI_ChuckHUD
+GraphId: G001
+Graph: ShowTip
+FlowId: F001
+Entry: Show Tip
+NodeGuid: DFA3B9AA45FC0D1F34A109A23E951445
+
+Exec Flow:
+1. Show Tip [K2Node_FunctionEntry] DFA3B9AA45FC0D1F34A109A23E951445
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

@@ -1,0 +1,68 @@
+Asset: ALS_AnimBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP
+GraphId: G303
+Graph: RotateInPlaceCheck
+FlowId: F001
+Entry: Rotate in Place Check
+NodeGuid: DE6EF2F54DF25FB512078ABD0DFA77D6
+
+Exec Flow:
+1. Rotate in Place Check [K2Node_FunctionEntry] DE6EF2F54DF25FB512078ABD0DFA77D6
+2. float < float [K2Node_CallFunction] 21AC08F7434D6EDBCE79F3AAD4D9C0A2
+3. Get AimYawRate [K2Node_VariableGet] E5AFC8B34C787FE0BD6047B1DA7A1CF9
+4. Map Range Clamped [K2Node_CallFunction] 753659114D79B77D701A25AECC9F4B6D
+5. Ottieni [K2Node_VariableGet] 63FAAE904C9C253F8E4320A90510B6DE
+6. Ottieni [K2Node_VariableGet] A90A7ABE4728C4E00A23328A917E7AA5
+7. float > float [K2Node_CallFunction] 62B608D4403F0C31A7F02B926F2D1EA6
+8. Set RotateRate [K2Node_VariableSet] 4A9D60D048C743F703B47B8DCDD9C61E
+9. Get RotateMinThreshold [K2Node_VariableGet] 6E1071D3491DAD9B859020B0CD1784F0
+10. Get RotateMaxThreshold [K2Node_VariableGet] 1BF7CC1A450BF76A022DD3A1075AB660
+11. Set Rotate_L [K2Node_VariableSet] EA4107FA42DCC9F7C6298894DCFE2E73
+12. Set Rotate_R [K2Node_VariableSet] AA5DEF24417476A05FB13FADD6C6A100
+13. Get AimYawRateMinRange [K2Node_VariableGet] 6545B6DB46EE951BA863C79519B557B0
+14. Get AimYawRateMaxRange [K2Node_VariableGet] DB7776CE48971C715359AD8A6FE1AE4A
+15. Get MinPlayRate [K2Node_VariableGet] 2108934943D6A884C3D52FA3DC221AF7
+16. Get MaxPlayRate [K2Node_VariableGet] 2B1358FD478D7F61B7344994F599A326
+17. Ramo [K2Node_IfThenElse] CEFB8E024A71A2E42BD1E8977E621959
+18. OR Boolean [K2Node_CommutativeAssociativeBinaryOperator] F059C6F245A6BA4FF05D65AA76ECAFC9
+19. Get Rotate_L [K2Node_VariableGet] D22D26B14909372D5359128214DC426C
+20. Get Rotate_R [K2Node_VariableGet] E8E982404E54BE235A92C4A368AF3EDF
+21. Sequenza [K2Node_ExecutionSequence] A6EFB9D645AE75E573B9E09E42B26323
+22. Nodo di reindirizzamento [K2Node_Knot] 73B0842B4B7447D5C8C5A6AF12494F19
+23. Step 1: Check if the character should rotate left or right by checking if the Aiming Angle exceeds the threshold. [EdGraphNode_Comment] EF2112964C45491A47DB968A49982EC1
+24. Step 2: If the character should be rotating, set the Rotate Rate to scale with the Aim Yaw Rate. This makes the character rotate faster when moving the camera faster. [EdGraphNode_Comment] D1266CF244DC3027F0A571ADBC13DB15
+25. Nodo di reindirizzamento [K2Node_Knot] A66DCA6940A62789FDE7B8B4053EF914
+
+Variables Read:
+- Get AimYawRate
+- Get AimYawRateMaxRange
+- Get AimYawRateMinRange
+- Get MaxPlayRate
+- Get MinPlayRate
+- Get Rotate_L
+- Get Rotate_R
+- Get RotateMaxThreshold
+- Get RotateMinThreshold
+- Ottieni
+
+Variables Written:
+- Set Rotate_L
+- Set Rotate_R
+- Set RotateRate
+
+External Calls:
+- float < float
+- float > float
+- Map Range Clamped
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- float < float
+- float > float
+- Map Range Clamped

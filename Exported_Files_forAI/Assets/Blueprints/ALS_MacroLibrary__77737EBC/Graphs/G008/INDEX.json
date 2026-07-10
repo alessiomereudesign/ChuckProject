@@ -1,0 +1,14 @@
+{
+	"graphId": "G008",
+	"name": "ML_SetPreviousAndNewValue",
+	"graphName": "ML_SetPreviousAndNewValue",
+	"type": "Macro",
+	"graphType": "Macro",
+	"graphGuid": "",
+	"nodeCount": 4,
+	"edgeCount": 7,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_MacroLibrary__77737EBC/Graphs/G008/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_MacroLibrary__77737EBC/Graphs/G008/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_MacroLibrary__77737EBC/Graphs/G008/EDGES.jsonl",
+	"flows": []
+}

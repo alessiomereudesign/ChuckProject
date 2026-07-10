@@ -1,0 +1,38 @@
+{
+	"assetName": "WBP_WeaponSelector",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector.WBP_WeaponSelector",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_WeaponSelector",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "As ChuckRef",
+			"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "IsWeapon?",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "TargetWeaponSlot",
+			"type": "byte|/Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot.E_WeaponSlot",
+			"defaultValue": ""
+		},
+		{
+			"name": "TargetArmorSlot",
+			"type": "byte|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot.E_ArmorSlot",
+			"defaultValue": ""
+		},
+		{
+			"name": "ItemCount",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "MenuArchiveRef",
+			"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+			"defaultValue": ""
+		}
+	]
+}

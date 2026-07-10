@@ -1,0 +1,25 @@
+{
+	"graphId": "G001",
+	"name": "BPI_Get_3P_PivotTarget",
+	"graphName": "BPI_Get_3P_PivotTarget",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 2,
+	"edgeCount": 1,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "BPI Get 3P Pivot Target",
+			"entryNodeGuid": "657CA0394B8C0200402E71A6C6A83248",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Camera_BPI__FBCEB935/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 2
+		}
+	]
+}

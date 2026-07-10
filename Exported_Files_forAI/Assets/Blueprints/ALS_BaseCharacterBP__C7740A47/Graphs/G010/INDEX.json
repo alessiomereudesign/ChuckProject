@@ -1,0 +1,25 @@
+{
+	"graphId": "G010",
+	"name": "AddToCharacterRotation",
+	"graphName": "AddToCharacterRotation",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 7,
+	"edgeCount": 6,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Graphs/G010/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Graphs/G010/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Graphs/G010/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Add to Character Rotation",
+			"entryNodeGuid": "943F31C04DD356D777B052A98CF32EF0",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G010/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G010/F001.json",
+			"textFile": "Flows/G010/F001.txt",
+			"jsonFile": "Flows/G010/F001.json",
+			"nodeCount": 7
+		}
+	]
+}

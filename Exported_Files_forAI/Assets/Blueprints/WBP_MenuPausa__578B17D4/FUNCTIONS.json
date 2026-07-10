@@ -1,0 +1,143 @@
+{
+	"assetName": "WBP_MenuPausa",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/WBP_MenuPausa.WBP_MenuPausa",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"functions": [
+		{
+			"name": "OnKeyDown",
+			"graph": "OnKeyDown",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 15,
+			"file": "Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "OnKeyDown",
+			"graph": "OnKeyDown",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 15,
+			"file": "Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "OnKeyDown",
+			"graph": "OnKeyDown",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 15,
+			"file": "Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "OnKeyDown",
+			"graph": "OnKeyDown",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 15,
+			"file": "Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "OnKeyDown",
+			"graph": "OnKeyDown",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 15,
+			"file": "Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "OnKeyDown",
+			"graph": "OnKeyDown",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 15,
+			"file": "Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "OnKeyDown",
+			"graph": "OnKeyDown",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 15,
+			"file": "Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "OnKeyDown",
+			"graph": "OnKeyDown",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 15,
+			"file": "Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "OnKeyDown",
+			"graph": "OnKeyDown",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 15,
+			"file": "Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "OnKeyDown",
+			"graph": "OnKeyDown",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 15,
+			"file": "Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "OnKeyDown",
+			"graph": "OnKeyDown",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 15,
+			"file": "Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "OnKeyDown",
+			"graph": "OnKeyDown",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 15,
+			"file": "Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "OnKeyDown",
+			"graph": "OnKeyDown",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 15,
+			"file": "Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "OnKeyDown",
+			"graph": "OnKeyDown",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 15,
+			"file": "Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "OnKeyDown",
+			"graph": "OnKeyDown",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 15,
+			"file": "Assets/Blueprints/WBP_MenuPausa__578B17D4/Graphs/G002/INDEX.json"
+		}
+	]
+}

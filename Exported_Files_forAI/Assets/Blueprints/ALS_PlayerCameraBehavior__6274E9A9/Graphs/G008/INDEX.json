@@ -1,0 +1,25 @@
+{
+	"graphId": "G008",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 3,
+	"edgeCount": 1,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G008/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G008/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G008/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Evento Blueprint Update Animation",
+			"entryNodeGuid": "A22BFC3A4F27F5FE4B9193AC000CF6AE",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Flows/G008/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Flows/G008/F001.json",
+			"textFile": "Flows/G008/F001.txt",
+			"jsonFile": "Flows/G008/F001.json",
+			"nodeCount": 3
+		}
+	]
+}

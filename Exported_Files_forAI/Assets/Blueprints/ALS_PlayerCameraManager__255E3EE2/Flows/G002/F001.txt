@@ -1,0 +1,48 @@
+Asset: ALS_PlayerCameraManager
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CameraSystem/ALS_PlayerCameraManager.ALS_PlayerCameraManager
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraManager
+GraphId: G002
+Graph: BlueprintUpdateCamera
+FlowId: F001
+Entry: Blueprint Update Camera
+NodeGuid: 333262A2468F65B8B097A9812E27C9F3
+
+Exec Flow:
+1. Blueprint Update Camera [K2Node_FunctionEntry] 333262A2468F65B8B097A9812E27C9F3
+2. Actor Has Tag
+La destinazione è Actor [K2Node_CallFunction] AEB35E984859305695FC7B8EF8F422F5
+3. Ramo [K2Node_IfThenElse] CB572E82491595CA7C78D9AF3A67FF08
+4. Nodo di restituzione [K2Node_FunctionResult] DAD233E6431232755F63A4A3C2B6C040
+5. Custom Camera Behavior
+La destinazione è ALS Player Camera Manager [K2Node_CallFunction] 9B365A9C4FED98147D57DEB29A7859B2
+6. Nodo di restituzione [K2Node_FunctionResult] C46B444A46077112FB278393A75C4982
+7. Check the Camera Target actor for the "ALS_Character" tag. This will let the camera manager know if it should use the custom camera behavior [EdGraphNode_Comment] 3868C2854E39218090EDD0B5E9D36E44
+8. Genitore: Blueprint Update Camera [K2Node_CallParentFunction] 303E655E44F323471EDA878DE24E57BD
+9. Get CameraTarget [K2Node_VariableGet] 508334594495A5DA938E999BE38ECAA6
+10. Calculate custom camera parameters [EdGraphNode_Comment] 7B7F34564BC839EF65C0F1A7407FDFA1
+11. Run Parent Function to return the default camera parameters [EdGraphNode_Comment] 22CE307944C20740A98D319AC20C313C
+12. Nodo di reindirizzamento [K2Node_Knot] 0B53AF0945DA1B44F9A511B401A717BA
+
+Variables Read:
+- Get CameraTarget
+
+Variables Written:
+- none
+
+External Calls:
+- Actor Has Tag
+La destinazione è Actor
+- Custom Camera Behavior
+La destinazione è ALS Player Camera Manager
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Actor Has Tag
+La destinazione è Actor
+- Custom Camera Behavior
+La destinazione è ALS Player Camera Manager

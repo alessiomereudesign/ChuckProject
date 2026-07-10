@@ -1,0 +1,2046 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+	"graph": "Received_NotifyTick",
+	"entryName": "Received Notify Tick",
+	"entryNodeGuid": "448745DE40AF1DCC2A673AA4D87FC6F5",
+	"nodes": [
+		{
+			"nodeGuid": "448745DE40AF1DCC2A673AA4D87FC6F5",
+			"class": "K2Node_FunctionEntry",
+			"title": "Received Notify Tick",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "643B49C84B0B614682C03C8A3E1FBA59",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7EEAB9F84F8F04FD28D9539DD1144ED7",
+					"name": "MeshComp",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "69995AA0410F0D98972464A350589F8A",
+					"name": "Animation",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimSequenceBase",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5E33BA064654FA574AA2EA9387D2A6A7",
+					"name": "FrameDeltaTime",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "CA614C4F4E2130CDD771919E2FD81A33",
+					"name": "EventReference",
+					"direction": "Output",
+					"type": "struct|/Script/Engine.AnimNotifyEventReference|ref|const",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E80FCA05462D9A37A2BD9DA500EC2EB7",
+			"class": "K2Node_Message",
+			"title": "BPI Get Essential Values\nTarget is ALS Character BPI",
+			"comment": "",
+			"x": 1376,
+			"y": 352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1958BC8B4A196A5E3303F799DFEC66EC",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E3AC5BCC40E45C940012FD89C03C15AA",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "422A1DF04E83CF230D0323A147CDC0D9",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "674D5C6F489673CCBC424BB06902B6D8",
+					"name": "Velocity",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "28451A474B983931F2AA1D86CC9BC507",
+					"name": "Acceleration",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "0DCBBD4745E1A73CDA4F61BC9F2E9669",
+					"name": "MovementInput",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "B80243E54D5E43C90AEC0A99CA10F163",
+					"name": "IsMoving",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "F2D5D5E64267562954CACD8F2628F6BF",
+					"name": "HasMovementInput",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "ADC7AAFD4071E3023D214686A8FDB471",
+					"name": "Speed",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "F673988C48EDD175E46C47874C981A3D",
+					"name": "MovementInputAmount",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "BB724C5A43E6C995CF5F41ADFAE7AAED",
+					"name": "AimingRotation",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "6613DB464B69D65AE15052BADDC66376",
+					"name": "AimYawRate",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "C690469C42B3B56B759588A4A24F04FA",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1664,
+			"y": 368,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "949CB776423E57174ADF9A93E40A1F31",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7A2F878442AF075344A033BBFA0C3917",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "815B6B234F4872A35B2998B98BB1EF4C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "55E271EC4B594CA55DBF6CBCCB31ED15",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "44F7417D4BEC6CD0B4AB41833D0C1CE1",
+			"class": "K2Node_Message",
+			"title": "BPI Get Current States\nTarget is ALS Character BPI",
+			"comment": "",
+			"x": 1376,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5EEE078C4367AF92FC5C039FD837E3AC",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9ECB93AA4D9FFE8ED48EB9BAB7D3815D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2A9DC9D04DF8402747B3A0BC727591CC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9F385D2C4000E04F2BF35EBD5E7D058A",
+					"name": "PawnMovementMode",
+					"direction": "Output",
+					"type": "byte|/Script/Engine.EMovementMode",
+					"defaultValue": "MOVE_None"
+				},
+				{
+					"pinId": "EC1778304C157E4BD9A82393D40A3167",
+					"name": "MovementState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "9CF624B246959EBE407AE2A0097E9BD1",
+					"name": "PrevMovementState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "6AD590B44823C5FE7E051EB9AFA39842",
+					"name": "MovementAction",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementAction.ALS_MovementAction",
+					"defaultValue": "NewEnumerator4"
+				},
+				{
+					"pinId": "D4DAE51943128D582C5D2DB595FA79C5",
+					"name": "RotationMode",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "8597D7DF40D3BE138E3C5292E65A727E",
+					"name": "ActualGait",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "8EC71DC747930F76EE8A04BE8000F99F",
+					"name": "ActualStance",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "9CEF1BBD42C08BD7EAAB4C8D1E037C57",
+					"name": "ViewMode",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode.ALS_ViewMode",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "6DEA8462423B2FB1442BD78E3A0626CB",
+					"name": "OverlayState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "74D6741448D1CD008CB283B40EE95801",
+			"class": "K2Node_ExecutionSequence",
+			"title": "Sequenza",
+			"comment": "",
+			"x": 832,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EBB4D7F84DF386B5AB3A1B9EEEAB6875",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "901466EE41F27607FBE421AFF3E646CE",
+					"name": "then_0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AE0D3FFD4CF6BB61A952A09B25EF2A11",
+					"name": "then_1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D30FC9C9418B99D662CF0D9733A7B0AC",
+					"name": "then_2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "22847A7B4A72678256A452BF9C654468",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1664,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "949CB776423E57174ADF9A93E40A1F31",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7A2F878442AF075344A033BBFA0C3917",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "815B6B234F4872A35B2998B98BB1EF4C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "55E271EC4B594CA55DBF6CBCCB31ED15",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "39160CC1438EDDC0E38BD788CA389ECB",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 2208,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7AC06ED74908F6B797A2BBA7F6886C73",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "89A620F941E3E3D736AF6A8F23030E31",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				}
+			]
+		},
+		{
+			"nodeGuid": "031D20C748C38961C5D1E0878026AE07",
+			"class": "K2Node_VariableGet",
+			"title": "Get CheckMovementInput",
+			"comment": "",
+			"x": 1152,
+			"y": 448,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7D7E513D4A07DD2E4F06648AFA448FE0",
+					"name": "CheckMovementInput",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "39E1D4BE4643DF6A4873499E70D426C7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/EarlyBlendOut_NotifyState.EarlyBlendOut_NotifyState_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "700073774C38EF1137CA22BCB6D63283",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1152,
+			"y": 368,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C30E154C468CFEDA3085C394217D4367",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B9862CDB4149255304C8BB9DC70E6408",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "7DD210DA415B1985A22496A3D73FB3BC",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D3D40A204AFB7B1470E87C9CDAFF194E",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "58B40EE247A83FB1F12A34A59EBA8B6F",
+			"class": "K2Node_VariableGet",
+			"title": "Get CheckStance",
+			"comment": "",
+			"x": 1152,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7D7E513D4A07DD2E4F06648AFA448FE0",
+					"name": "CheckStance",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "39E1D4BE4643DF6A4873499E70D426C7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/EarlyBlendOut_NotifyState.EarlyBlendOut_NotifyState_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B7EE82E342F3F251A0F94D8720B7287B",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1152,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C30E154C468CFEDA3085C394217D4367",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B9862CDB4149255304C8BB9DC70E6408",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "7DD210DA415B1985A22496A3D73FB3BC",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D3D40A204AFB7B1470E87C9CDAFF194E",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "807DB16D42013A95DBECDA8B95AF63C6",
+			"class": "K2Node_VariableGet",
+			"title": "Get StanceEquals",
+			"comment": "",
+			"x": 1504,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1A28ED7C475A1DE6477A22BD2BC8843B",
+					"name": "StanceEquals",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "5F8D2B6244A34EDBFCBF2BA022C38BA0",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/EarlyBlendOut_NotifyState.EarlyBlendOut_NotifyState_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BD7B8A9C4D5701BA3AC65591A061B5DE",
+			"class": "K2Node_CallFunction",
+			"title": "Montage Stop\nLa destinazione è Istanza animazione",
+			"comment": "",
+			"x": 2000,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7552BD264BCBB6AA9E67768610068B77",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "107069F646CFD1A29EEA9EAD52510BB9",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AE7FE7764F0D12F8E7F07ABE7EC092F1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "77B11DA64D909AAECF5489961D128751",
+					"name": "InBlendOutTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "E97D4B7F4E734709322020B5282CDC42",
+					"name": "Montage",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage|const",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5DC6AE9B451067770D2D1F884DECEC28",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Instance\nLa destinazione è Componente mesh scheletrica",
+			"comment": "",
+			"x": 192,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B5A64D2847D4BCF3A02EBEA59B82391C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DA2BF45746184D4F5F4CC6889F44D593",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D0523520423651B28A2D1EAE0F1ADB58",
+			"class": "K2Node_VariableSet",
+			"title": "Set AnimInstance",
+			"comment": "",
+			"x": 464,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1A2F5D5C457C63EEE07071B408090D82",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EA71F8E1410DD1A0365C3D865B0F0570",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3876B44A41F70FF95B863296AE2084B0",
+					"name": "AnimInstance",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6A1BAFE248D75CF378CEBFA106BECA4F",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "590602B0453DB93BC0E4B7AC50588D31",
+			"class": "K2Node_CallFunction",
+			"title": "Get Owner\nLa destinazione è Actor Component",
+			"comment": "",
+			"x": 192,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EFE6939B48C184204E832AA9D39FC3BF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.ActorComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "27EB6BB3403D35AB0B3A1499ECFEE938",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F25D435745D9E2A0E37C3EA00B685287",
+			"class": "K2Node_VariableSet",
+			"title": "Set OwningActor",
+			"comment": "",
+			"x": 656,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C7446BF943537225A961FCB0E7F83438",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9A63ED95482AF1133049E59DC2A3C535",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "66E4AADC4CA438D3CDBFEA978D350D7F",
+					"name": "OwningActor",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D2EF8C4841E8CB0151ACF992CDFB06DD",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7F0543BD4FC7D3033F234D81DBAE86CF",
+			"class": "K2Node_VariableGet",
+			"title": "Get AnimInstance",
+			"comment": "",
+			"x": 1856,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6AC952C74BC8DD8FB2C9B4A6C1D90A6B",
+					"name": "AnimInstance",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F971E591440B36CC1D4A22992BE23442",
+			"class": "K2Node_VariableGet",
+			"title": "Get BlendOutTime",
+			"comment": "",
+			"x": 1856,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "851AA6064CD127BCE3CC07BCF9C48D38",
+					"name": "BlendOutTime",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "5F6C48C847C429BDA6730CA2690FE428",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/EarlyBlendOut_NotifyState.EarlyBlendOut_NotifyState_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8EA7A6754F6D682793C0DEBA02996ED4",
+			"class": "K2Node_VariableGet",
+			"title": "Get ThisMontage",
+			"comment": "",
+			"x": 1856,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4550E87B424C1543102F0FB24B38677A",
+					"name": "ThisMontage",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "72FDAADC4252611DDBB6E790C20D3CF7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/EarlyBlendOut_NotifyState.EarlyBlendOut_NotifyState_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "784F289342881AD156079B9851457DC8",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 2208,
+			"y": 368,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7AC06ED74908F6B797A2BBA7F6886C73",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "89A620F941E3E3D736AF6A8F23030E31",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				}
+			]
+		},
+		{
+			"nodeGuid": "33EDE2174B054A603C8B1D9E4495BB26",
+			"class": "K2Node_CallFunction",
+			"title": "Montage Stop\nLa destinazione è Istanza animazione",
+			"comment": "",
+			"x": 2000,
+			"y": 352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7552BD264BCBB6AA9E67768610068B77",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "107069F646CFD1A29EEA9EAD52510BB9",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AE7FE7764F0D12F8E7F07ABE7EC092F1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "77B11DA64D909AAECF5489961D128751",
+					"name": "InBlendOutTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "E97D4B7F4E734709322020B5282CDC42",
+					"name": "Montage",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage|const",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "06DAE5C84E44860D28221B9D216F3406",
+			"class": "K2Node_VariableGet",
+			"title": "Get AnimInstance",
+			"comment": "",
+			"x": 1856,
+			"y": 432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6AC952C74BC8DD8FB2C9B4A6C1D90A6B",
+					"name": "AnimInstance",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "71DFAF44479975072F277EBC265D06E0",
+			"class": "K2Node_VariableGet",
+			"title": "Get BlendOutTime",
+			"comment": "",
+			"x": 1856,
+			"y": 464,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "851AA6064CD127BCE3CC07BCF9C48D38",
+					"name": "BlendOutTime",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "5F6C48C847C429BDA6730CA2690FE428",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/EarlyBlendOut_NotifyState.EarlyBlendOut_NotifyState_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3DC9540941902E6219DC74B5C58EC57F",
+			"class": "K2Node_VariableGet",
+			"title": "Get ThisMontage",
+			"comment": "",
+			"x": 1856,
+			"y": 496,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4550E87B424C1543102F0FB24B38677A",
+					"name": "ThisMontage",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "72FDAADC4252611DDBB6E790C20D3CF7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/EarlyBlendOut_NotifyState.EarlyBlendOut_NotifyState_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "03A1E18748E1517B7F154B8E9BB1D1C1",
+			"class": "K2Node_VariableGet",
+			"title": "Get OwningActor",
+			"comment": "",
+			"x": 1200,
+			"y": 496,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C3FCCDEA4E82C893573C0F89F692C563",
+					"name": "OwningActor",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D53F787949A941B7F755EF837E45132F",
+			"class": "K2Node_VariableGet",
+			"title": "Get OwningActor",
+			"comment": "",
+			"x": 1200,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BE9A23FC46E5006279AF458D18C424D9",
+					"name": "OwningActor",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C7A0FD8E41888E8B7904ED830E282EB7",
+			"class": "K2Node_Message",
+			"title": "BPI Get Current States\nTarget is ALS Character BPI",
+			"comment": "",
+			"x": 1376,
+			"y": -400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5EEE078C4367AF92FC5C039FD837E3AC",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9ECB93AA4D9FFE8ED48EB9BAB7D3815D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2A9DC9D04DF8402747B3A0BC727591CC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9F385D2C4000E04F2BF35EBD5E7D058A",
+					"name": "PawnMovementMode",
+					"direction": "Output",
+					"type": "byte|/Script/Engine.EMovementMode",
+					"defaultValue": "MOVE_None"
+				},
+				{
+					"pinId": "EC1778304C157E4BD9A82393D40A3167",
+					"name": "MovementState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "9CF624B246959EBE407AE2A0097E9BD1",
+					"name": "PrevMovementState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "6AD590B44823C5FE7E051EB9AFA39842",
+					"name": "MovementAction",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementAction.ALS_MovementAction",
+					"defaultValue": "NewEnumerator4"
+				},
+				{
+					"pinId": "D4DAE51943128D582C5D2DB595FA79C5",
+					"name": "RotationMode",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "8597D7DF40D3BE138E3C5292E65A727E",
+					"name": "ActualGait",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "8EC71DC747930F76EE8A04BE8000F99F",
+					"name": "ActualStance",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "9CEF1BBD42C08BD7EAAB4C8D1E037C57",
+					"name": "ViewMode",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode.ALS_ViewMode",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "6DEA8462423B2FB1442BD78E3A0626CB",
+					"name": "OverlayState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "771022564EDE6665C15E2382F2ABC595",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1664,
+			"y": -384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "949CB776423E57174ADF9A93E40A1F31",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7A2F878442AF075344A033BBFA0C3917",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "815B6B234F4872A35B2998B98BB1EF4C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "55E271EC4B594CA55DBF6CBCCB31ED15",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "79095F664067B5DC7D0A3D82C28DABB7",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 2208,
+			"y": -384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7AC06ED74908F6B797A2BBA7F6886C73",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "89A620F941E3E3D736AF6A8F23030E31",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				}
+			]
+		},
+		{
+			"nodeGuid": "98AA66F64E781291528CB49C215CD833",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1152,
+			"y": -384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C30E154C468CFEDA3085C394217D4367",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B9862CDB4149255304C8BB9DC70E6408",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "7DD210DA415B1985A22496A3D73FB3BC",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D3D40A204AFB7B1470E87C9CDAFF194E",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0E2E8A1A47375599C4B23A80E7A7B2AD",
+			"class": "K2Node_CallFunction",
+			"title": "Montage Stop\nLa destinazione è Istanza animazione",
+			"comment": "",
+			"x": 2000,
+			"y": -400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7552BD264BCBB6AA9E67768610068B77",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "107069F646CFD1A29EEA9EAD52510BB9",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AE7FE7764F0D12F8E7F07ABE7EC092F1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "77B11DA64D909AAECF5489961D128751",
+					"name": "InBlendOutTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "E97D4B7F4E734709322020B5282CDC42",
+					"name": "Montage",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage|const",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0691C8D1495DB02EEA8CCB81AC9F0B75",
+			"class": "K2Node_VariableGet",
+			"title": "Get AnimInstance",
+			"comment": "",
+			"x": 1856,
+			"y": -320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6AC952C74BC8DD8FB2C9B4A6C1D90A6B",
+					"name": "AnimInstance",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A8E777474F0D90375EB851AC30799830",
+			"class": "K2Node_VariableGet",
+			"title": "Get BlendOutTime",
+			"comment": "",
+			"x": 1856,
+			"y": -288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "851AA6064CD127BCE3CC07BCF9C48D38",
+					"name": "BlendOutTime",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "5F6C48C847C429BDA6730CA2690FE428",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/EarlyBlendOut_NotifyState.EarlyBlendOut_NotifyState_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E5CDD3CB4E3EFD8FE9BB6EA7EBEF0761",
+			"class": "K2Node_VariableGet",
+			"title": "Get ThisMontage",
+			"comment": "",
+			"x": 1856,
+			"y": -256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4550E87B424C1543102F0FB24B38677A",
+					"name": "ThisMontage",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "72FDAADC4252611DDBB6E790C20D3CF7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/EarlyBlendOut_NotifyState.EarlyBlendOut_NotifyState_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AA75ABBA4D60D4FAA6A0A0819B35A341",
+			"class": "K2Node_VariableGet",
+			"title": "Get OwningActor",
+			"comment": "",
+			"x": 1200,
+			"y": -256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BE9A23FC46E5006279AF458D18C424D9",
+					"name": "OwningActor",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3F21B6254592AD3B373E0DB47A5A700E",
+			"class": "K2Node_CallFunction",
+			"title": "Equal (Byte)",
+			"comment": "",
+			"x": 1664,
+			"y": -192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D6C677D3437D74C0AEE452AE0B95FE76",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "915C7F104018E59C750B93BBC03CAB50",
+					"name": "A",
+					"direction": "Input",
+					"type": "byte",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "51F1A82D46AA51CBDD92958AB90ADA72",
+					"name": "B",
+					"direction": "Input",
+					"type": "byte",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "DC5020B14D0365B38E78EBACACB22075",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "BF19AEA4424C1C92728315AAA2B8486D",
+			"class": "K2Node_VariableGet",
+			"title": "Get MovementStateEquals",
+			"comment": "",
+			"x": 1456,
+			"y": -80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "51CE154943A2B5FE776F8DA242417402",
+					"name": "MovementStateEquals",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "EBDD4A3D4CE8EB7D0A0C4EB694467B99",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/EarlyBlendOut_NotifyState.EarlyBlendOut_NotifyState_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2F71E6E24AC8134B6A17359F323E5E0A",
+			"class": "K2Node_VariableGet",
+			"title": "Get CheckMovementState",
+			"comment": "",
+			"x": 1152,
+			"y": -304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DF8E2989429EA6986ECD22BD0C595FC7",
+					"name": "CheckMovementState",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "E20968C64285D83AF0CE558E60AA4233",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/EarlyBlendOut_NotifyState.EarlyBlendOut_NotifyState_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A8620FF244561B4D54D48AB113107FFA",
+			"class": "K2Node_EnumEquality",
+			"title": "Uguale (enum)",
+			"comment": "",
+			"x": 1664,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "47FABB35477F7ECC28F28D97945475AC",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9325356A456911ABC7F83699FB9F0238",
+					"name": "A",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "64D29A7A47E6E3D1794D5D829176103D",
+					"name": "B",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "448745DE40AF1DCC2A673AA4D87FC6F5",
+			"fromPinId": "643B49C84B0B614682C03C8A3E1FBA59",
+			"fromPinName": "then",
+			"toNodeGuid": "D0523520423651B28A2D1EAE0F1ADB58",
+			"toPinId": "1A2F5D5C457C63EEE07071B408090D82",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "448745DE40AF1DCC2A673AA4D87FC6F5",
+			"fromPinId": "7EEAB9F84F8F04FD28D9539DD1144ED7",
+			"fromPinName": "MeshComp",
+			"toNodeGuid": "5DC6AE9B451067770D2D1F884DECEC28",
+			"toPinId": "B5A64D2847D4BCF3A02EBEA59B82391C",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "448745DE40AF1DCC2A673AA4D87FC6F5",
+			"fromPinId": "7EEAB9F84F8F04FD28D9539DD1144ED7",
+			"fromPinName": "MeshComp",
+			"toNodeGuid": "590602B0453DB93BC0E4B7AC50588D31",
+			"toPinId": "EFE6939B48C184204E832AA9D39FC3BF",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "700073774C38EF1137CA22BCB6D63283",
+			"fromPinId": "7DD210DA415B1985A22496A3D73FB3BC",
+			"fromPinName": "then",
+			"toNodeGuid": "E80FCA05462D9A37A2BD9DA500EC2EB7",
+			"toPinId": "1958BC8B4A196A5E3303F799DFEC66EC",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "E80FCA05462D9A37A2BD9DA500EC2EB7",
+			"fromPinId": "E3AC5BCC40E45C940012FD89C03C15AA",
+			"fromPinName": "then",
+			"toNodeGuid": "C690469C42B3B56B759588A4A24F04FA",
+			"toPinId": "949CB776423E57174ADF9A93E40A1F31",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "03A1E18748E1517B7F154B8E9BB1D1C1",
+			"fromPinId": "C3FCCDEA4E82C893573C0F89F692C563",
+			"fromPinName": "OwningActor",
+			"toNodeGuid": "E80FCA05462D9A37A2BD9DA500EC2EB7",
+			"toPinId": "422A1DF04E83CF230D0323A147CDC0D9",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "E80FCA05462D9A37A2BD9DA500EC2EB7",
+			"fromPinId": "F2D5D5E64267562954CACD8F2628F6BF",
+			"fromPinName": "HasMovementInput",
+			"toNodeGuid": "C690469C42B3B56B759588A4A24F04FA",
+			"toPinId": "7A2F878442AF075344A033BBFA0C3917",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "C690469C42B3B56B759588A4A24F04FA",
+			"fromPinId": "815B6B234F4872A35B2998B98BB1EF4C",
+			"fromPinName": "then",
+			"toNodeGuid": "33EDE2174B054A603C8B1D9E4495BB26",
+			"toPinId": "7552BD264BCBB6AA9E67768610068B77",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "B7EE82E342F3F251A0F94D8720B7287B",
+			"fromPinId": "7DD210DA415B1985A22496A3D73FB3BC",
+			"fromPinName": "then",
+			"toNodeGuid": "44F7417D4BEC6CD0B4AB41833D0C1CE1",
+			"toPinId": "5EEE078C4367AF92FC5C039FD837E3AC",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "44F7417D4BEC6CD0B4AB41833D0C1CE1",
+			"fromPinId": "9ECB93AA4D9FFE8ED48EB9BAB7D3815D",
+			"fromPinName": "then",
+			"toNodeGuid": "22847A7B4A72678256A452BF9C654468",
+			"toPinId": "949CB776423E57174ADF9A93E40A1F31",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "D53F787949A941B7F755EF837E45132F",
+			"fromPinId": "BE9A23FC46E5006279AF458D18C424D9",
+			"fromPinName": "OwningActor",
+			"toNodeGuid": "44F7417D4BEC6CD0B4AB41833D0C1CE1",
+			"toPinId": "2A9DC9D04DF8402747B3A0BC727591CC",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "44F7417D4BEC6CD0B4AB41833D0C1CE1",
+			"fromPinId": "8EC71DC747930F76EE8A04BE8000F99F",
+			"fromPinName": "ActualStance",
+			"toNodeGuid": "A8620FF244561B4D54D48AB113107FFA",
+			"toPinId": "9325356A456911ABC7F83699FB9F0238",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "F25D435745D9E2A0E37C3EA00B685287",
+			"fromPinId": "9A63ED95482AF1133049E59DC2A3C535",
+			"fromPinName": "then",
+			"toNodeGuid": "74D6741448D1CD008CB283B40EE95801",
+			"toPinId": "EBB4D7F84DF386B5AB3A1B9EEEAB6875",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "74D6741448D1CD008CB283B40EE95801",
+			"fromPinId": "901466EE41F27607FBE421AFF3E646CE",
+			"fromPinName": "then_0",
+			"toNodeGuid": "98AA66F64E781291528CB49C215CD833",
+			"toPinId": "C30E154C468CFEDA3085C394217D4367",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "74D6741448D1CD008CB283B40EE95801",
+			"fromPinId": "AE0D3FFD4CF6BB61A952A09B25EF2A11",
+			"fromPinName": "then_1",
+			"toNodeGuid": "B7EE82E342F3F251A0F94D8720B7287B",
+			"toPinId": "C30E154C468CFEDA3085C394217D4367",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "74D6741448D1CD008CB283B40EE95801",
+			"fromPinId": "D30FC9C9418B99D662CF0D9733A7B0AC",
+			"fromPinName": "then_2",
+			"toNodeGuid": "700073774C38EF1137CA22BCB6D63283",
+			"toPinId": "C30E154C468CFEDA3085C394217D4367",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "A8620FF244561B4D54D48AB113107FFA",
+			"fromPinId": "47FABB35477F7ECC28F28D97945475AC",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "22847A7B4A72678256A452BF9C654468",
+			"toPinId": "7A2F878442AF075344A033BBFA0C3917",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "22847A7B4A72678256A452BF9C654468",
+			"fromPinId": "815B6B234F4872A35B2998B98BB1EF4C",
+			"fromPinName": "then",
+			"toNodeGuid": "BD7B8A9C4D5701BA3AC65591A061B5DE",
+			"toPinId": "7552BD264BCBB6AA9E67768610068B77",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "BD7B8A9C4D5701BA3AC65591A061B5DE",
+			"fromPinId": "107069F646CFD1A29EEA9EAD52510BB9",
+			"fromPinName": "then",
+			"toNodeGuid": "39160CC1438EDDC0E38BD788CA389ECB",
+			"toPinId": "7AC06ED74908F6B797A2BBA7F6886C73",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "031D20C748C38961C5D1E0878026AE07",
+			"fromPinId": "7D7E513D4A07DD2E4F06648AFA448FE0",
+			"fromPinName": "CheckMovementInput",
+			"toNodeGuid": "700073774C38EF1137CA22BCB6D63283",
+			"toPinId": "B9862CDB4149255304C8BB9DC70E6408",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "58B40EE247A83FB1F12A34A59EBA8B6F",
+			"fromPinId": "7D7E513D4A07DD2E4F06648AFA448FE0",
+			"fromPinName": "CheckStance",
+			"toNodeGuid": "B7EE82E342F3F251A0F94D8720B7287B",
+			"toPinId": "B9862CDB4149255304C8BB9DC70E6408",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "807DB16D42013A95DBECDA8B95AF63C6",
+			"fromPinId": "1A28ED7C475A1DE6477A22BD2BC8843B",
+			"fromPinName": "StanceEquals",
+			"toNodeGuid": "A8620FF244561B4D54D48AB113107FFA",
+			"toPinId": "64D29A7A47E6E3D1794D5D829176103D",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "7F0543BD4FC7D3033F234D81DBAE86CF",
+			"fromPinId": "6AC952C74BC8DD8FB2C9B4A6C1D90A6B",
+			"fromPinName": "AnimInstance",
+			"toNodeGuid": "BD7B8A9C4D5701BA3AC65591A061B5DE",
+			"toPinId": "AE7FE7764F0D12F8E7F07ABE7EC092F1",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "F971E591440B36CC1D4A22992BE23442",
+			"fromPinId": "851AA6064CD127BCE3CC07BCF9C48D38",
+			"fromPinName": "BlendOutTime",
+			"toNodeGuid": "BD7B8A9C4D5701BA3AC65591A061B5DE",
+			"toPinId": "77B11DA64D909AAECF5489961D128751",
+			"toPinName": "InBlendOutTime"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "8EA7A6754F6D682793C0DEBA02996ED4",
+			"fromPinId": "4550E87B424C1543102F0FB24B38677A",
+			"fromPinName": "ThisMontage",
+			"toNodeGuid": "BD7B8A9C4D5701BA3AC65591A061B5DE",
+			"toPinId": "E97D4B7F4E734709322020B5282CDC42",
+			"toPinName": "Montage"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "5DC6AE9B451067770D2D1F884DECEC28",
+			"fromPinId": "DA2BF45746184D4F5F4CC6889F44D593",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "D0523520423651B28A2D1EAE0F1ADB58",
+			"toPinId": "3876B44A41F70FF95B863296AE2084B0",
+			"toPinName": "AnimInstance"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "D0523520423651B28A2D1EAE0F1ADB58",
+			"fromPinId": "EA71F8E1410DD1A0365C3D865B0F0570",
+			"fromPinName": "then",
+			"toNodeGuid": "F25D435745D9E2A0E37C3EA00B685287",
+			"toPinId": "C7446BF943537225A961FCB0E7F83438",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "590602B0453DB93BC0E4B7AC50588D31",
+			"fromPinId": "27EB6BB3403D35AB0B3A1499ECFEE938",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "F25D435745D9E2A0E37C3EA00B685287",
+			"toPinId": "66E4AADC4CA438D3CDBFEA978D350D7F",
+			"toPinName": "OwningActor"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "33EDE2174B054A603C8B1D9E4495BB26",
+			"fromPinId": "107069F646CFD1A29EEA9EAD52510BB9",
+			"fromPinName": "then",
+			"toNodeGuid": "784F289342881AD156079B9851457DC8",
+			"toPinId": "7AC06ED74908F6B797A2BBA7F6886C73",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "06DAE5C84E44860D28221B9D216F3406",
+			"fromPinId": "6AC952C74BC8DD8FB2C9B4A6C1D90A6B",
+			"fromPinName": "AnimInstance",
+			"toNodeGuid": "33EDE2174B054A603C8B1D9E4495BB26",
+			"toPinId": "AE7FE7764F0D12F8E7F07ABE7EC092F1",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "71DFAF44479975072F277EBC265D06E0",
+			"fromPinId": "851AA6064CD127BCE3CC07BCF9C48D38",
+			"fromPinName": "BlendOutTime",
+			"toNodeGuid": "33EDE2174B054A603C8B1D9E4495BB26",
+			"toPinId": "77B11DA64D909AAECF5489961D128751",
+			"toPinName": "InBlendOutTime"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "3DC9540941902E6219DC74B5C58EC57F",
+			"fromPinId": "4550E87B424C1543102F0FB24B38677A",
+			"fromPinName": "ThisMontage",
+			"toNodeGuid": "33EDE2174B054A603C8B1D9E4495BB26",
+			"toPinId": "E97D4B7F4E734709322020B5282CDC42",
+			"toPinName": "Montage"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "98AA66F64E781291528CB49C215CD833",
+			"fromPinId": "7DD210DA415B1985A22496A3D73FB3BC",
+			"fromPinName": "then",
+			"toNodeGuid": "C7A0FD8E41888E8B7904ED830E282EB7",
+			"toPinId": "5EEE078C4367AF92FC5C039FD837E3AC",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "C7A0FD8E41888E8B7904ED830E282EB7",
+			"fromPinId": "9ECB93AA4D9FFE8ED48EB9BAB7D3815D",
+			"fromPinName": "then",
+			"toNodeGuid": "771022564EDE6665C15E2382F2ABC595",
+			"toPinId": "949CB776423E57174ADF9A93E40A1F31",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "AA75ABBA4D60D4FAA6A0A0819B35A341",
+			"fromPinId": "BE9A23FC46E5006279AF458D18C424D9",
+			"fromPinName": "OwningActor",
+			"toNodeGuid": "C7A0FD8E41888E8B7904ED830E282EB7",
+			"toPinId": "2A9DC9D04DF8402747B3A0BC727591CC",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "C7A0FD8E41888E8B7904ED830E282EB7",
+			"fromPinId": "EC1778304C157E4BD9A82393D40A3167",
+			"fromPinName": "MovementState",
+			"toNodeGuid": "3F21B6254592AD3B373E0DB47A5A700E",
+			"toPinId": "915C7F104018E59C750B93BBC03CAB50",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "3F21B6254592AD3B373E0DB47A5A700E",
+			"fromPinId": "DC5020B14D0365B38E78EBACACB22075",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "771022564EDE6665C15E2382F2ABC595",
+			"toPinId": "7A2F878442AF075344A033BBFA0C3917",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "771022564EDE6665C15E2382F2ABC595",
+			"fromPinId": "815B6B234F4872A35B2998B98BB1EF4C",
+			"fromPinName": "then",
+			"toNodeGuid": "0E2E8A1A47375599C4B23A80E7A7B2AD",
+			"toPinId": "7552BD264BCBB6AA9E67768610068B77",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "exec",
+			"fromNodeGuid": "0E2E8A1A47375599C4B23A80E7A7B2AD",
+			"fromPinId": "107069F646CFD1A29EEA9EAD52510BB9",
+			"fromPinName": "then",
+			"toNodeGuid": "79095F664067B5DC7D0A3D82C28DABB7",
+			"toPinId": "7AC06ED74908F6B797A2BBA7F6886C73",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "2F71E6E24AC8134B6A17359F323E5E0A",
+			"fromPinId": "DF8E2989429EA6986ECD22BD0C595FC7",
+			"fromPinName": "CheckMovementState",
+			"toNodeGuid": "98AA66F64E781291528CB49C215CD833",
+			"toPinId": "B9862CDB4149255304C8BB9DC70E6408",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "0691C8D1495DB02EEA8CCB81AC9F0B75",
+			"fromPinId": "6AC952C74BC8DD8FB2C9B4A6C1D90A6B",
+			"fromPinName": "AnimInstance",
+			"toNodeGuid": "0E2E8A1A47375599C4B23A80E7A7B2AD",
+			"toPinId": "AE7FE7764F0D12F8E7F07ABE7EC092F1",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "A8E777474F0D90375EB851AC30799830",
+			"fromPinId": "851AA6064CD127BCE3CC07BCF9C48D38",
+			"fromPinName": "BlendOutTime",
+			"toNodeGuid": "0E2E8A1A47375599C4B23A80E7A7B2AD",
+			"toPinId": "77B11DA64D909AAECF5489961D128751",
+			"toPinName": "InBlendOutTime"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "E5CDD3CB4E3EFD8FE9BB6EA7EBEF0761",
+			"fromPinId": "4550E87B424C1543102F0FB24B38677A",
+			"fromPinName": "ThisMontage",
+			"toNodeGuid": "0E2E8A1A47375599C4B23A80E7A7B2AD",
+			"toPinId": "E97D4B7F4E734709322020B5282CDC42",
+			"toPinName": "Montage"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_EarlyBlendOut_NotifyState",
+			"graph": "Received_NotifyTick",
+			"edgeType": "data",
+			"fromNodeGuid": "BF19AEA4424C1C92728315AAA2B8486D",
+			"fromPinId": "51CE154943A2B5FE776F8DA242417402",
+			"fromPinName": "MovementStateEquals",
+			"toNodeGuid": "3F21B6254592AD3B373E0DB47A5A700E",
+			"toPinId": "51F1A82D46AA51CBDD92958AB90ADA72",
+			"toPinName": "B"
+		}
+	],
+	"variablesRead": [
+		"Get AnimInstance",
+		"Get BlendOutTime",
+		"Get CheckMovementInput",
+		"Get CheckMovementState",
+		"Get CheckStance",
+		"Get MovementStateEquals",
+		"Get OwningActor",
+		"Get StanceEquals",
+		"Get ThisMontage"
+	],
+	"variablesWritten": [
+		"Set AnimInstance",
+		"Set OwningActor"
+	],
+	"functionsCalled": [
+		"Equal (Byte)",
+		"Get Anim Instance\nLa destinazione è Componente mesh scheletrica",
+		"Get Owner\nLa destinazione è Actor Component",
+		"Montage Stop\nLa destinazione è Istanza animazione"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Equal (Byte)",
+		"Get Anim Instance\nLa destinazione è Componente mesh scheletrica",
+		"Get Owner\nLa destinazione è Actor Component",
+		"Montage Stop\nLa destinazione è Istanza animazione"
+	],
+	"flowId": "F001",
+	"graphId": "G002",
+	"assetName": "EarlyBlendOut_NotifyState",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/EarlyBlendOut_NotifyState.EarlyBlendOut_NotifyState"
+}

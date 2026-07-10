@@ -1,0 +1,45 @@
+{
+	"graphId": "G001",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 66,
+	"edgeCount": 69,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPrincipale__DCA7591F/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPrincipale__DCA7591F/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPrincipale__DCA7591F/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "ChangeColorOnFocus\nCustom Event",
+			"entryNodeGuid": "E72F21A749E48CA33FC5868EFC4110ED",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPrincipale__DCA7591F/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPrincipale__DCA7591F/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 66
+		},
+		{
+			"flowId": "F002",
+			"entryName": "Evento Construct",
+			"entryNodeGuid": "2E0279ED4837B6B5E7F6DD95B7B779E5",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPrincipale__DCA7591F/Flows/G001/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPrincipale__DCA7591F/Flows/G001/F002.json",
+			"textFile": "Flows/G001/F002.txt",
+			"jsonFile": "Flows/G001/F002.json",
+			"nodeCount": 66
+		},
+		{
+			"flowId": "F003",
+			"entryName": "VerifyFocusGamepad\nCustom Event",
+			"entryNodeGuid": "0365EE6149B3AC16512895923D845A16",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPrincipale__DCA7591F/Flows/G001/F003.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuPrincipale__DCA7591F/Flows/G001/F003.json",
+			"textFile": "Flows/G001/F003.txt",
+			"jsonFile": "Flows/G001/F003.json",
+			"nodeCount": 66
+		}
+	]
+}

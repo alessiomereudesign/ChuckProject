@@ -1,0 +1,1609 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+	"graph": "UpdateMovementValues",
+	"entryName": "Update Movement Values",
+	"entryNodeGuid": "31F97FC5413E80589FEBEF84706E6761",
+	"nodes": [
+		{
+			"nodeGuid": "31F97FC5413E80589FEBEF84706E6761",
+			"class": "K2Node_FunctionEntry",
+			"title": "Update Movement Values",
+			"comment": "",
+			"x": -128,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "34E37AB5486984D39147008EAA2864A6",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "27AA90054FFCF01A1074AAB9D44F848F",
+			"class": "K2Node_ExecutionSequence",
+			"title": "Sequenza",
+			"comment": "",
+			"x": 128,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CA9610484416EEA6493DA8BA192542C0",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F8A60C2F4332C64D6B25F5A60F68195F",
+					"name": "then_0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FA37C9C946C5CC2DB6E84599EFE74A4B",
+					"name": "then_1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D3A963CB4AAAA1BF3FE11AAD98ACFD21",
+					"name": "then_2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0E378C6B4917887AE0B7378132429E2E",
+					"name": "then_3",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "88A9EF8A4D3FD0331C520F9C15C8824D",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 400,
+			"y": 512,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "463F369A4A3EF5E221510FB71B49D2A1",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CED31E9E45010C35804E0DB733EA23C3",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7DC198D345EAF301CA818B8BC99BCC57",
+			"class": "K2Node_VariableSet",
+			"title": "Set StandingPlayRate",
+			"comment": "",
+			"x": 1536,
+			"y": 496,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9066565F43656D2A30202180D0B5E51F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "51EF57D649A97474C5A8C99C3D5D135B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FCD3B1074616F3FF5445B586A76651C5",
+					"name": "StandingPlayRate",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "1783C9C34CFF9B99B0B825A8B88F4434",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "5E7D005846AC13427D08E7A93E61AA40",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F55E6C1F4E559DB5DBD5C7A3C0CDA3A9",
+			"class": "K2Node_CallFunction",
+			"title": "Calculate Standing Play Rate",
+			"comment": "",
+			"x": 1296,
+			"y": 528,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E8B7DAF74085CFE7E5636D8E1A90BD5C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "92F1BCDD4E3448446C5700A093F8222B",
+					"name": "PlayRate",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E2CB8FA545550135D38283840FAC7ED7",
+			"class": "K2Node_CallFunction",
+			"title": "Calculate Velocity Blend",
+			"comment": "",
+			"x": 416,
+			"y": -256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DA1F0B3445593BAF9F0324A5C91784E3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B568C732483A8B35237236993CFC1BC1",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/VelocityBlend.VelocityBlend",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B3B1E96E43DB447E1716D696866CD119",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 400,
+			"y": -304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5755A94540237AE44CACBBB3BB9ABA9B",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AC0961594ADAA87B1D8DFA9C9035DEC0",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E6CA63144EE99DDACDE83188538022C4",
+			"class": "K2Node_VariableSet",
+			"title": "Set DiagonalScaleAmount",
+			"comment": "",
+			"x": 688,
+			"y": -32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E7F06E284B3CE870312B12B9B230E23B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0CFE733E4428DBE78772928195D5262F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "959282AB4A30D59A03D131AFFA0449FA",
+					"name": "DiagonalScaleAmount",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "B931AFF44354A2A5304C99A815CF36C4",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "59B8D062436BD0E2302B86AED69245E6",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EFA0FC48460ED792B84B9BA5F80C5E65",
+			"class": "K2Node_VariableSet",
+			"title": "Set LeanAmount",
+			"comment": "",
+			"x": 1584,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "42524DD441D1421B8CDA569445D3E72D",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3A8A16E0427B17F605B32693981399A3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D8D456664E3B6F9970C1A48C9640F70B",
+					"name": "LeanAmount",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4187D20948A9ED0CF2D59DA5C4CC51A5",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EEBC0D3E4B4455683CCA4089408DCCAE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C19F8E4F4528DE0BD5144EABCF515B50",
+			"class": "K2Node_VariableGet",
+			"title": "Get LeanAmount",
+			"comment": "",
+			"x": 1184,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8459071C40382063AAB2789D69E198EF",
+					"name": "LeanAmount",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5E734589415AFB37448D8FB4BACD5953",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FFC99C4F4B5789ACAECDB1A0142CBF8A",
+			"class": "K2Node_VariableSet",
+			"title": "Set VelocityBlend",
+			"comment": "",
+			"x": 880,
+			"y": -320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1D6B54B4460C0434CB980AA7F05AE884",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1E85A07B47568C786D5794A8A09273E2",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "98FB4A9C4C47CC867076BBA8D9CE74FD",
+					"name": "VelocityBlend",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/VelocityBlend.VelocityBlend",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "70A97449437D19B2450E7D8ADF439FD7",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/VelocityBlend.VelocityBlend",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E7DC278246DB1525B6A4959179FCA913",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "9888864D4A98572AA6BED5AA331F02BD",
+			"class": "K2Node_VariableSet",
+			"title": "Set WalkRunBlend",
+			"comment": "",
+			"x": 640,
+			"y": 496,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9FCEC820403DBDE891F964A57813B0AA",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A063969F447579E2BE44C283BCF1E51A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6F9FE1B04C83FC12AC6C9692F2DB2617",
+					"name": "WalkRunBlend",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "04BC71AC4B5C70671ABA458DB7E2EE9C",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "F6287D6F4BBD3E6454B159A37C14272F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "12C2EFE247EFCCDF116492BB435E7422",
+			"class": "K2Node_CallFunction",
+			"title": "Calculate Walk Run Blend",
+			"comment": "",
+			"x": 416,
+			"y": 528,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "628024364CC8D0AE89960E95EB77DC9C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C2C20DB40CE55042BB4AEBBCC847BA5",
+					"name": "WalkRunBlend",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E37BF9C544D396A0EDB7F79D128D9817",
+			"class": "K2Node_CallFunction",
+			"title": "Calculate Stride Blend",
+			"comment": "",
+			"x": 880,
+			"y": 528,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E856DB62440EC50D18199A92FF457A88",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F3EF2BBE45BF587D754D579EAE5F4224",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "C03450C84FD029C973FD1092EECFACD5",
+			"class": "K2Node_VariableSet",
+			"title": "Set StrideBlend",
+			"comment": "",
+			"x": 1072,
+			"y": 496,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "89CCE86543C7B2F040EBB9A3D7765524",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6C12D8944106C2DE38C089A7F45680C1",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4FBA52F64D22E851BC1F83A290FAC7A9",
+					"name": "StrideBlend",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "C29566F6448ECE18305C1494FBD19061",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "445D43344D2F8627584232BB39F7C937",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "679602D3447D65481B2D05B60B98F93F",
+			"class": "K2Node_CallFunction",
+			"title": "Calculate Crouching Play Rate",
+			"comment": "",
+			"x": 1760,
+			"y": 528,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BC9A817E450412FC278924A228BC1776",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6949E3F44A507C19FEE0479BCFAB849E",
+					"name": "PlayRate",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "72BA204A4195C0C8C92183920C2DF3B3",
+			"class": "K2Node_VariableSet",
+			"title": "Set CrouchingPlayRate",
+			"comment": "",
+			"x": 2016,
+			"y": 496,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CA783F314BF80BC2E0121090D225725E",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9A12409345786D91CD7C9E9D945AE1D0",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "317959D946B773EB3430ADB9414C44B3",
+					"name": "CrouchingPlayRate",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "3F14690844F26B59BDB5F9BE65614BF4",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "0E32C2624775234846E7B1BDE56D8690",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0D211FEA41292008DD3A25A673BA90B2",
+			"class": "K2Node_CallFunction",
+			"title": "Calculate Diagonal Scale Amount",
+			"comment": "",
+			"x": 416,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9B59955C4CF718C6A37A0595AEB894CE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "33C5F2BD493A8A17E590ABAA7FD0F0E5",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "29E250304C8680C33C2D34B86647D7CC",
+			"class": "K2Node_VariableGet",
+			"title": "Get VelocityBlend",
+			"comment": "",
+			"x": 480,
+			"y": -288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E9A28E9443A20AEBB9D594843AFC04E0",
+					"name": "VelocityBlend",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/VelocityBlend.VelocityBlend",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "23CF7EFA43CE11ED5695869AE9C3D6D7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "80845EA44EC91835B8AC99892C141F61",
+			"class": "K2Node_VariableGet",
+			"title": "Get DeltaTimeX",
+			"comment": "",
+			"x": 480,
+			"y": -176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BDD4254E4782B23A4EE39AAE3EC703EC",
+					"name": "DeltaTimeX",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "32E24F5A40EDC3E99B0DA0BF6756BF37",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8D1418EE45F8A7CCE0DDB8AC1EA0961D",
+			"class": "K2Node_VariableSet",
+			"title": "Set RelativeAccelerationAmount",
+			"comment": "",
+			"x": 720,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FA639F624D408CD11162D187D387F246",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E4E0942F4AC63B7CC96E22A55CE4A68D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C4459A4D4C9DB9FA498572B8B88E4801",
+					"name": "RelativeAccelerationAmount",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "D41E30F049F99268CEEB6D9F37E29024",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "96905C2140EAB20E4E2795A5BB95C6C3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F6D2E38D482F3A73DDE2DF9B1595F9C9",
+			"class": "K2Node_CallFunction",
+			"title": "Calculate Relative Acceleration Amount",
+			"comment": "",
+			"x": 416,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5DFD42C94A27855B3B9DE6B1D406D8A1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B192010543C1F2154A42199B4F17EA29",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "457245E74909E55865D7EEBE0F782008",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 400,
+			"y": 192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "63E50FB84D78F6CD1F8F5F9ABF245E8C",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E22EC2704F93BD4BDE820FBE33F943C7",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5732649E4751992E0490E08B44FD0E53",
+			"class": "K2Node_VariableGet",
+			"title": "Get VelocityBlendInterpSpeed",
+			"comment": "",
+			"x": 416,
+			"y": -208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3A12963D46B0782B604B4F802431974B",
+					"name": "VelocityBlendInterpSpeed",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "E2EAF672439583EAD88A3EB12E817AB8",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2D4D3457404B6412F70F4B89AD052E7E",
+			"class": "K2Node_CallFunction",
+			"title": "Interp Velocity Blend",
+			"comment": "",
+			"x": 640,
+			"y": -288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5AF1B1ED40E841C5D55FA28D0EB28E8C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "146C40FF45D526EBD1C2C598A876E1CA",
+					"name": "Current",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/VelocityBlend.VelocityBlend",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C4DF0A0E41AA72B74CD0B9A6D1463C84",
+					"name": "Target",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/VelocityBlend.VelocityBlend",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5EEBF038439E8361B3A58BA498979CFD",
+					"name": "InterpSpeed",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "0CA6661B496F0C35FA5F7A957558EBB6",
+					"name": "DeltaTime",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "5985C5F44EC60450A4759993FC744CFB",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/VelocityBlend.VelocityBlend",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F7DE98774CFAAF352831E2B34641ADCB",
+			"class": "K2Node_CallFunction",
+			"title": "Interp Lean Amount",
+			"comment": "",
+			"x": 1344,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "31D29D03448CED725B2F5087173180DB",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "37A84D084B3773040EAF5190E637B80B",
+					"name": "Current",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "54B823574F612070B96D2CAE07DE70AA",
+					"name": "Target",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F1027AA64940691DDF91F5B9A482BA5C",
+					"name": "InterpSpeed",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "34B8534147D89612AE5C708D369BA50C",
+					"name": "DeltaTime",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "A654CDD14DAAF081BDDB61B2FDB959A1",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "67A21BBF41AE4EBD72D19F906EA90DC0",
+			"class": "K2Node_VariableGet",
+			"title": "Get DeltaTimeX",
+			"comment": "",
+			"x": 1200,
+			"y": 352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BDD4254E4782B23A4EE39AAE3EC703EC",
+					"name": "DeltaTimeX",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "32E24F5A40EDC3E99B0DA0BF6756BF37",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "347430C54B1336BC37749BBA4DC2C1FC",
+			"class": "K2Node_VariableGet",
+			"title": "Get GroundedLeanInterpSpeed",
+			"comment": "",
+			"x": 1120,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "887CE95548EFAD7A303274843EF83EE1",
+					"name": "GroundedLeanInterpSpeed",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "B52FF68D482723A26DFFFEB30128C243",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "82E6D19147DD6DB10418748572F49E28",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 400,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6770552143B137AD75B8568E0C7BA8A6",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "06D7BE9E428FBF3DAB452FAEA3E4A8A9",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AAF843B64323BE01448D89902B77FD85",
+			"class": "EdGraphNode_Comment",
+			"title": "Interp and set the Velocity Blend.",
+			"comment": "Interp and set the Velocity Blend.",
+			"x": 384,
+			"y": -384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "56D7A2EF4B02C625889A55924E0AC1E5",
+			"class": "EdGraphNode_Comment",
+			"title": "Set the Diagnal Scale Amount.",
+			"comment": "Set the Diagnal Scale Amount.",
+			"x": 384,
+			"y": -96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "C63AB2B34CD4521C9314D08E9EBAEF16",
+			"class": "EdGraphNode_Comment",
+			"title": "Set the Relative Acceleration Amount and Interp the Lean Amount.",
+			"comment": "Set the Relative Acceleration Amount and Interp the Lean Amount.",
+			"x": 384,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "706000E54CE5BD9FE53FB0B5B3F6BAEF",
+			"class": "K2Node_MakeStruct",
+			"title": "Make LeanAmount",
+			"comment": "",
+			"x": 1136,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "306FE02D451D366246E35899C9883E6E",
+					"name": "LeanAmount",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/LeanAmount.LeanAmount",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C0BD905C4B0B117F945FDEA56EE159F7",
+					"name": "LR_17_ADF99333493B27F5B49BA89100DC4C05",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.000000"
+				},
+				{
+					"pinId": "6319989447C908C6FED628A432B3EC87",
+					"name": "FB_15_297866804FB14F4B81FB4A976A7F57D1",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.000000"
+				}
+			]
+		},
+		{
+			"nodeGuid": "FB58F5B04A9B71FE071B4BBCE29691D5",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 896,
+			"y": 256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4731914B431E120BEB7200942E8B3643",
+					"name": "RelativeAccelerationAmount",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "6885C749456083436E81628D17048C20",
+					"name": "RelativeAccelerationAmount_X",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "331B51D84A93AE96F7131E9B8607D57E",
+					"name": "RelativeAccelerationAmount_Y",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "AA0942E148EB37F4E4B692B73F6B6C48",
+					"name": "RelativeAccelerationAmount_Z",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "B99A5A5F4610AD8CC5C5738A50E3154A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BFD516194F137B21FAF971BD70A28CBB",
+			"class": "EdGraphNode_Comment",
+			"title": "Set the Walk Run Blend",
+			"comment": "Set the Walk Run Blend",
+			"x": 384,
+			"y": 432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "356ADA6443D454A8EA816A817A409554",
+			"class": "EdGraphNode_Comment",
+			"title": "Set the Stride Blend",
+			"comment": "Set the Stride Blend",
+			"x": 864,
+			"y": 432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "263933704F71CB1F40F4C7A9CFBD457C",
+			"class": "EdGraphNode_Comment",
+			"title": "Set the Standing and Crouching Play Rates",
+			"comment": "Set the Standing and Crouching Play Rates",
+			"x": 1280,
+			"y": 432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "exec",
+			"fromNodeGuid": "31F97FC5413E80589FEBEF84706E6761",
+			"fromPinId": "34E37AB5486984D39147008EAA2864A6",
+			"fromPinName": "then",
+			"toNodeGuid": "27AA90054FFCF01A1074AAB9D44F848F",
+			"toPinId": "CA9610484416EEA6493DA8BA192542C0",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "exec",
+			"fromNodeGuid": "27AA90054FFCF01A1074AAB9D44F848F",
+			"fromPinId": "F8A60C2F4332C64D6B25F5A60F68195F",
+			"fromPinName": "then_0",
+			"toNodeGuid": "B3B1E96E43DB447E1716D696866CD119",
+			"toPinId": "5755A94540237AE44CACBBB3BB9ABA9B",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "exec",
+			"fromNodeGuid": "27AA90054FFCF01A1074AAB9D44F848F",
+			"fromPinId": "FA37C9C946C5CC2DB6E84599EFE74A4B",
+			"fromPinName": "then_1",
+			"toNodeGuid": "82E6D19147DD6DB10418748572F49E28",
+			"toPinId": "6770552143B137AD75B8568E0C7BA8A6",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "exec",
+			"fromNodeGuid": "27AA90054FFCF01A1074AAB9D44F848F",
+			"fromPinId": "D3A963CB4AAAA1BF3FE11AAD98ACFD21",
+			"fromPinName": "then_2",
+			"toNodeGuid": "457245E74909E55865D7EEBE0F782008",
+			"toPinId": "63E50FB84D78F6CD1F8F5F9ABF245E8C",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "exec",
+			"fromNodeGuid": "27AA90054FFCF01A1074AAB9D44F848F",
+			"fromPinId": "0E378C6B4917887AE0B7378132429E2E",
+			"fromPinName": "then_3",
+			"toNodeGuid": "88A9EF8A4D3FD0331C520F9C15C8824D",
+			"toPinId": "463F369A4A3EF5E221510FB71B49D2A1",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "exec",
+			"fromNodeGuid": "88A9EF8A4D3FD0331C520F9C15C8824D",
+			"fromPinId": "CED31E9E45010C35804E0DB733EA23C3",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "9888864D4A98572AA6BED5AA331F02BD",
+			"toPinId": "9FCEC820403DBDE891F964A57813B0AA",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "exec",
+			"fromNodeGuid": "C03450C84FD029C973FD1092EECFACD5",
+			"fromPinId": "6C12D8944106C2DE38C089A7F45680C1",
+			"fromPinName": "then",
+			"toNodeGuid": "7DC198D345EAF301CA818B8BC99BCC57",
+			"toPinId": "9066565F43656D2A30202180D0B5E51F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "exec",
+			"fromNodeGuid": "7DC198D345EAF301CA818B8BC99BCC57",
+			"fromPinId": "51EF57D649A97474C5A8C99C3D5D135B",
+			"fromPinName": "then",
+			"toNodeGuid": "72BA204A4195C0C8C92183920C2DF3B3",
+			"toPinId": "CA783F314BF80BC2E0121090D225725E",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "F55E6C1F4E559DB5DBD5C7A3C0CDA3A9",
+			"fromPinId": "92F1BCDD4E3448446C5700A093F8222B",
+			"fromPinName": "PlayRate",
+			"toNodeGuid": "7DC198D345EAF301CA818B8BC99BCC57",
+			"toPinId": "FCD3B1074616F3FF5445B586A76651C5",
+			"toPinName": "StandingPlayRate"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "E2CB8FA545550135D38283840FAC7ED7",
+			"fromPinId": "B568C732483A8B35237236993CFC1BC1",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "2D4D3457404B6412F70F4B89AD052E7E",
+			"toPinId": "C4DF0A0E41AA72B74CD0B9A6D1463C84",
+			"toPinName": "Target"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "exec",
+			"fromNodeGuid": "B3B1E96E43DB447E1716D696866CD119",
+			"fromPinId": "AC0961594ADAA87B1D8DFA9C9035DEC0",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "FFC99C4F4B5789ACAECDB1A0142CBF8A",
+			"toPinId": "1D6B54B4460C0434CB980AA7F05AE884",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "exec",
+			"fromNodeGuid": "82E6D19147DD6DB10418748572F49E28",
+			"fromPinId": "06D7BE9E428FBF3DAB452FAEA3E4A8A9",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "E6CA63144EE99DDACDE83188538022C4",
+			"toPinId": "E7F06E284B3CE870312B12B9B230E23B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "0D211FEA41292008DD3A25A673BA90B2",
+			"fromPinId": "33C5F2BD493A8A17E590ABAA7FD0F0E5",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "E6CA63144EE99DDACDE83188538022C4",
+			"toPinId": "959282AB4A30D59A03D131AFFA0449FA",
+			"toPinName": "DiagonalScaleAmount"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "exec",
+			"fromNodeGuid": "8D1418EE45F8A7CCE0DDB8AC1EA0961D",
+			"fromPinId": "E4E0942F4AC63B7CC96E22A55CE4A68D",
+			"fromPinName": "then",
+			"toNodeGuid": "EFA0FC48460ED792B84B9BA5F80C5E65",
+			"toPinId": "42524DD441D1421B8CDA569445D3E72D",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "F7DE98774CFAAF352831E2B34641ADCB",
+			"fromPinId": "A654CDD14DAAF081BDDB61B2FDB959A1",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "EFA0FC48460ED792B84B9BA5F80C5E65",
+			"toPinId": "D8D456664E3B6F9970C1A48C9640F70B",
+			"toPinName": "LeanAmount"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "C19F8E4F4528DE0BD5144EABCF515B50",
+			"fromPinId": "8459071C40382063AAB2789D69E198EF",
+			"fromPinName": "LeanAmount",
+			"toNodeGuid": "F7DE98774CFAAF352831E2B34641ADCB",
+			"toPinId": "37A84D084B3773040EAF5190E637B80B",
+			"toPinName": "Current"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "2D4D3457404B6412F70F4B89AD052E7E",
+			"fromPinId": "5985C5F44EC60450A4759993FC744CFB",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "FFC99C4F4B5789ACAECDB1A0142CBF8A",
+			"toPinId": "98FB4A9C4C47CC867076BBA8D9CE74FD",
+			"toPinName": "VelocityBlend"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "exec",
+			"fromNodeGuid": "9888864D4A98572AA6BED5AA331F02BD",
+			"fromPinId": "A063969F447579E2BE44C283BCF1E51A",
+			"fromPinName": "then",
+			"toNodeGuid": "C03450C84FD029C973FD1092EECFACD5",
+			"toPinId": "89CCE86543C7B2F040EBB9A3D7765524",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "12C2EFE247EFCCDF116492BB435E7422",
+			"fromPinId": "7C2C20DB40CE55042BB4AEBBCC847BA5",
+			"fromPinName": "WalkRunBlend",
+			"toNodeGuid": "9888864D4A98572AA6BED5AA331F02BD",
+			"toPinId": "6F9FE1B04C83FC12AC6C9692F2DB2617",
+			"toPinName": "WalkRunBlend"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "E37BF9C544D396A0EDB7F79D128D9817",
+			"fromPinId": "F3EF2BBE45BF587D754D579EAE5F4224",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "C03450C84FD029C973FD1092EECFACD5",
+			"toPinId": "4FBA52F64D22E851BC1F83A290FAC7A9",
+			"toPinName": "StrideBlend"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "679602D3447D65481B2D05B60B98F93F",
+			"fromPinId": "6949E3F44A507C19FEE0479BCFAB849E",
+			"fromPinName": "PlayRate",
+			"toNodeGuid": "72BA204A4195C0C8C92183920C2DF3B3",
+			"toPinId": "317959D946B773EB3430ADB9414C44B3",
+			"toPinName": "CrouchingPlayRate"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "29E250304C8680C33C2D34B86647D7CC",
+			"fromPinId": "E9A28E9443A20AEBB9D594843AFC04E0",
+			"fromPinName": "VelocityBlend",
+			"toNodeGuid": "2D4D3457404B6412F70F4B89AD052E7E",
+			"toPinId": "146C40FF45D526EBD1C2C598A876E1CA",
+			"toPinName": "Current"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "80845EA44EC91835B8AC99892C141F61",
+			"fromPinId": "BDD4254E4782B23A4EE39AAE3EC703EC",
+			"fromPinName": "DeltaTimeX",
+			"toNodeGuid": "2D4D3457404B6412F70F4B89AD052E7E",
+			"toPinId": "0CA6661B496F0C35FA5F7A957558EBB6",
+			"toPinName": "DeltaTime"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "exec",
+			"fromNodeGuid": "457245E74909E55865D7EEBE0F782008",
+			"fromPinId": "E22EC2704F93BD4BDE820FBE33F943C7",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "8D1418EE45F8A7CCE0DDB8AC1EA0961D",
+			"toPinId": "FA639F624D408CD11162D187D387F246",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "F6D2E38D482F3A73DDE2DF9B1595F9C9",
+			"fromPinId": "B192010543C1F2154A42199B4F17EA29",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "8D1418EE45F8A7CCE0DDB8AC1EA0961D",
+			"toPinId": "C4459A4D4C9DB9FA498572B8B88E4801",
+			"toPinName": "RelativeAccelerationAmount"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "5732649E4751992E0490E08B44FD0E53",
+			"fromPinId": "3A12963D46B0782B604B4F802431974B",
+			"fromPinName": "VelocityBlendInterpSpeed",
+			"toNodeGuid": "2D4D3457404B6412F70F4B89AD052E7E",
+			"toPinId": "5EEBF038439E8361B3A58BA498979CFD",
+			"toPinName": "InterpSpeed"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "706000E54CE5BD9FE53FB0B5B3F6BAEF",
+			"fromPinId": "306FE02D451D366246E35899C9883E6E",
+			"fromPinName": "LeanAmount",
+			"toNodeGuid": "F7DE98774CFAAF352831E2B34641ADCB",
+			"toPinId": "54B823574F612070B96D2CAE07DE70AA",
+			"toPinName": "Target"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "347430C54B1336BC37749BBA4DC2C1FC",
+			"fromPinId": "887CE95548EFAD7A303274843EF83EE1",
+			"fromPinName": "GroundedLeanInterpSpeed",
+			"toNodeGuid": "F7DE98774CFAAF352831E2B34641ADCB",
+			"toPinId": "F1027AA64940691DDF91F5B9A482BA5C",
+			"toPinName": "InterpSpeed"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "67A21BBF41AE4EBD72D19F906EA90DC0",
+			"fromPinId": "BDD4254E4782B23A4EE39AAE3EC703EC",
+			"fromPinName": "DeltaTimeX",
+			"toNodeGuid": "F7DE98774CFAAF352831E2B34641ADCB",
+			"toPinId": "34B8534147D89612AE5C708D369BA50C",
+			"toPinName": "DeltaTime"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "FB58F5B04A9B71FE071B4BBCE29691D5",
+			"fromPinId": "331B51D84A93AE96F7131E9B8607D57E",
+			"fromPinName": "RelativeAccelerationAmount_Y",
+			"toNodeGuid": "706000E54CE5BD9FE53FB0B5B3F6BAEF",
+			"toPinId": "C0BD905C4B0B117F945FDEA56EE159F7",
+			"toPinName": "LR_17_ADF99333493B27F5B49BA89100DC4C05"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateMovementValues",
+			"edgeType": "data",
+			"fromNodeGuid": "FB58F5B04A9B71FE071B4BBCE29691D5",
+			"fromPinId": "6885C749456083436E81628D17048C20",
+			"fromPinName": "RelativeAccelerationAmount_X",
+			"toNodeGuid": "706000E54CE5BD9FE53FB0B5B3F6BAEF",
+			"toPinId": "6319989447C908C6FED628A432B3EC87",
+			"toPinName": "FB_15_297866804FB14F4B81FB4A976A7F57D1"
+		}
+	],
+	"variablesRead": [
+		"Get DeltaTimeX",
+		"Get GroundedLeanInterpSpeed",
+		"Get LeanAmount",
+		"Get VelocityBlend",
+		"Get VelocityBlendInterpSpeed",
+		"Ottieni"
+	],
+	"variablesWritten": [
+		"Set CrouchingPlayRate",
+		"Set DiagonalScaleAmount",
+		"Set LeanAmount",
+		"Set RelativeAccelerationAmount",
+		"Set StandingPlayRate",
+		"Set StrideBlend",
+		"Set VelocityBlend",
+		"Set WalkRunBlend"
+	],
+	"functionsCalled": [
+		"Calculate Crouching Play Rate",
+		"Calculate Diagonal Scale Amount",
+		"Calculate Relative Acceleration Amount",
+		"Calculate Standing Play Rate",
+		"Calculate Stride Blend",
+		"Calculate Velocity Blend",
+		"Calculate Walk Run Blend",
+		"Interp Lean Amount",
+		"Interp Velocity Blend"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Calculate Crouching Play Rate",
+		"Calculate Diagonal Scale Amount",
+		"Calculate Relative Acceleration Amount",
+		"Calculate Standing Play Rate",
+		"Calculate Stride Blend",
+		"Calculate Velocity Blend",
+		"Calculate Walk Run Blend",
+		"Interp Lean Amount",
+		"Interp Velocity Blend"
+	],
+	"flowId": "F001",
+	"graphId": "G316",
+	"assetName": "ALS_AnimBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP"
+}

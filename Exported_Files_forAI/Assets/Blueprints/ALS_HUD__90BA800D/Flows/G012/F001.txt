@@ -1,0 +1,40 @@
+Asset: ALS_HUD
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/ALS_HUD.ALS_HUD
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD
+GraphId: G012
+Graph: Get_ShowLayerColors_Color
+FlowId: F001
+Entry: Get Show Layer Colors Color
+NodeGuid: 9C1AC217453829ED5792648559DE2CC8
+
+Exec Flow:
+1. Get Show Layer Colors Color [K2Node_FunctionEntry] 9C1AC217453829ED5792648559DE2CC8
+2. Nodo di restituzione [K2Node_FunctionResult] DB5AA4054B99C4608B85E3B58A45D1D1
+3. Ramo [K2Node_IfThenElse] AF9750654785ECBA16F5EA886905993A
+4. Make SlateColor [K2Node_MakeStruct] EB5E189B498FD953181271AB4553101C
+5. Nodo di restituzione [K2Node_FunctionResult] 3F84D36340A2CCAED950B3B4EE07354C
+6. Make SlateColor [K2Node_MakeStruct] 4AE694DB43FD6F1A5E4FACB8D803C074
+7. Nodo di reindirizzamento [K2Node_Knot] 0D056BC34553AD6C10DB6893FDC49B3A
+8. Get EnabledColor [K2Node_VariableGet] 68DCE57B417C24994BD9EEA933B1C1F4
+9. Get DisabledColor [K2Node_VariableGet] F568FC6E4FFDE1AC18E765B29B25743C
+10. Get ShowLayerColors [K2Node_VariableGet] 0A77A5C84C632F41297F2988E2EA90CA
+
+Variables Read:
+- Get DisabledColor
+- Get EnabledColor
+- Get ShowLayerColors
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

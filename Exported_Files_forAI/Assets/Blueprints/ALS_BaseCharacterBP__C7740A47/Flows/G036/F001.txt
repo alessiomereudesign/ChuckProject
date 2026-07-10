@@ -1,0 +1,117 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G036
+Graph: MantleUpdate
+FlowId: F001
+Entry: Mantle Update
+NodeGuid: BC7A848B40D3587B72BDAD9CDD0A3EE2
+
+Exec Flow:
+1. Mantle Update [K2Node_FunctionEntry] BC7A848B40D3587B72BDAD9CDD0A3EE2
+2. Get MantleTarget [K2Node_VariableGet] C1E048174D8B3612823905B34539B5F0
+3. Lerp (Transform) [K2Node_CallFunction] 41F64D4548C03027676CC7BBF0B32381
+4. Get MantleTarget [K2Node_VariableGet] B5CEB26A41EE48A06C302797A2CE5327
+5. Get MantleActualStartOffset [K2Node_VariableGet] F5CA4F3F4A32B3D7A86BBBA26300AE11
+6. Ottieni [K2Node_VariableGet] 972C13E24F4A378E890E26BF2296CB79
+7. Make Transform [K2Node_CallFunction] A250EDE0462BF0AC73EA7B85EC5DA651
+8. Lerp (Transform) [K2Node_CallFunction] C35158844DAC269E6B0F19A4C9C091F4
+9. Make Transform [K2Node_CallFunction] BB79B1004DA8CE249D9B2F8A7B3FB45D
+10. Ottieni [K2Node_VariableGet] 2CFEFB1B4C5DC4D15733F0944D4D25CE
+11. Get MantleActualStartOffset [K2Node_VariableGet] 4118C3FD45501B50D1E510A70D7797FC
+12. Ottieni [K2Node_VariableGet] 4955CCC542BBCAC681D8A38FD4C6A98C
+13. Lerp (Transform) [K2Node_CallFunction] 1526C9A243BF76B58EC1908AEB65E087
+14. Make Transform [K2Node_CallFunction] 7D5BDB384280AA58BA3C7585BBE24883
+15. Ottieni [K2Node_VariableGet] 2547266D4871CCCFC023469BC3FD95B5
+16. Get PositionAlpha [K2Node_VariableGet] DE49537A45BDFC7A5E59F4A48D4AFEF3
+17. Get XYCorrectionAlpha [K2Node_VariableGet] 2C94A78945B16F7B10A4D2984AFD443C
+18. Get ZCorrectionAlpha [K2Node_VariableGet] 3277DBDB4D3180433B5BDC968BF7FC15
+19. Lerp (Transform) [K2Node_CallFunction] 28C800F04D5D2A149B03D2946EF759F1
+20. Get MantleActualStartOffset [K2Node_VariableGet] D07FA1F04E4E62BF4CA9829D496FB26C
+21. Get MantleTarget [K2Node_VariableGet] 66BAAFB9474D7C0A8007F7A15D780B4E
+22. ML Transform+ Transform [K2Node_MacroInstance] 9F4F1EE5425A51BB575826A49CAA1B86
+23. ML Transform+ Transform [K2Node_MacroInstance] E214B6464D2BF04909D03B86AC8E7D0C
+24. Get Vector Value
+La destinazione è Curve Vector [K2Node_CallFunction] CD315659490B31296039BC933176285B
+25. Get MantleParams [K2Node_VariableGet] 746E33F74BD1D7152839328BDA7AC9ED
+26. Get MantleTimeline [K2Node_VariableGet] A88922C54F373B1B0258329AB0245D10
+27. Get Playback Position
+La destinazione è Timeline Component [K2Node_CallFunction] C075600E405DF32C693C408AAD194967
+28. float + float [K2Node_CommutativeAssociativeBinaryOperator] 10E24CCC48AF56DC7FD68EA198DDE85D
+29. Break Mantle_Params [K2Node_BreakStruct] B20768F945AB57A4AC21C4A12B4C7893
+30. Break Vector [K2Node_CallFunction] 0B768FB74CF411AD5C765AA526454525
+31. Set PositionAlpha [K2Node_VariableSet] B886B159460B24D66A6F29A4BEB44D92
+32. Set XYCorrectionAlpha [K2Node_VariableSet] 3C533CAD41A697C218DCFCBE1C835F54
+33. Set ZCorrectionAlpha [K2Node_VariableSet] ADF41BEB43D15262EA21218EDF461992
+34. Get BlendIn [K2Node_VariableGet] E0EDF6824EF60910F0D7CB9BC7DFE599
+35. Sequenza [K2Node_ExecutionSequence] FA66663542989DA7DB8D769FE70E36E2
+36. Nodo di reindirizzamento [K2Node_Knot] 0C62D9DE4A6DF17DFE1371AAEF6EC06E
+37. Nodo di reindirizzamento [K2Node_Knot] 24EF3E544D687AD1C8E4E99CBEDF2FB6
+38. Step 2: Update the Position and Correction Alphas using the Position/Correction curve set for each Mantle. [EdGraphNode_Comment] D16963C545A96112AFAAED88EBACB566
+39. Break Transform [K2Node_CallFunction] 0E56777C47BEE7771B497EB6E0C6C86B
+40. Break Transform [K2Node_CallFunction] D02C7B9745A3651A7D8593A207D1F25B
+41. Step 3: Lerp multiple transforms together for independent control over the horizontal and vertical blend to the animated start position, as well as the target position. [EdGraphNode_Comment] 3ADE6AFF408BC553C4A92BBDC0A17CC5
+42. Initial Blend In (controlled in the timeline curve) to allow the actor to blend into the Position/Correction curve at the midoint. This prevents pops when mantling an object lower than the animated mantle. [EdGraphNode_Comment] 70A65FFD4D79B020B317418464912DF6
+43. Blend from the currently blending transforms into the final mantle target using the X value of the Position/Correction Curve. [EdGraphNode_Comment] EA90DC124E49C2B118B23A83938D8E46
+44. Blend into the animated horizontal and rotation offset using the Y value of the Position/Correction Curve. [EdGraphNode_Comment] 3B7F4707417C9AEDD0B71482A44BC203
+45. Blend into the animated vertical offset using the Z value of the Position/Correction Curve. [EdGraphNode_Comment] 63CA4CA54117D28EACBB62907EA342A7
+46. Set Actor Location and Rotation(Update Target)
+La destinazione è ALS Base Character BP [K2Node_CallFunction] BCC30E814AE938E0AFDDEAB925309DEF
+47. Nodo di reindirizzamento [K2Node_Knot] 20D0233C4B0BFB3C4ADE2CAC043AA5D0
+48. ML Component Local to World [K2Node_MacroInstance] 17093F174ACC51A8189763AEA841E54B
+49. Get MantleLedgeLS [K2Node_VariableGet] 371F6B4D45E37C9C6361229385214240
+50. Set MantleTarget [K2Node_VariableSet] 392F056440FBA338E9A223B91FF1D72B
+51. Step 1: Continually update the mantle target from the stored local transform to follow along with moving objects. [EdGraphNode_Comment] 5689E8FB4BCC5E48B6188F8FBF799A71
+52. Step 4: Set the actors location and rotation to the Lerped Target. [EdGraphNode_Comment] C2A19CD341617E41A701D3A96A6C8AA6
+53. Set LerpedTarget [K2Node_VariableSet] D2EC5F3040CB9246151200B05FA88BA7
+54. Ottieni [K2Node_VariableGet] DE36EB3D49A37FB69CC2DB99B9C03B77
+55. Nodo di reindirizzamento [K2Node_Knot] 5CE1E11344B7FE2F7561039EBB166DE0
+
+Variables Read:
+- Get BlendIn
+- Get MantleActualStartOffset
+- Get MantleLedgeLS
+- Get MantleParams
+- Get MantleTarget
+- Get MantleTimeline
+- Get PositionAlpha
+- Get XYCorrectionAlpha
+- Get ZCorrectionAlpha
+- Ottieni
+
+Variables Written:
+- Set LerpedTarget
+- Set MantleTarget
+- Set PositionAlpha
+- Set XYCorrectionAlpha
+- Set ZCorrectionAlpha
+
+External Calls:
+- Break Transform
+- Break Vector
+- Get Playback Position
+La destinazione è Timeline Component
+- Get Vector Value
+La destinazione è Curve Vector
+- Lerp (Transform)
+- Make Transform
+- Set Actor Location and Rotation(Update Target)
+La destinazione è ALS Base Character BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Break Transform
+- Break Vector
+- Get Playback Position
+La destinazione è Timeline Component
+- Get Vector Value
+La destinazione è Curve Vector
+- Lerp (Transform)
+- Make Transform
+- Set Actor Location and Rotation(Update Target)
+La destinazione è ALS Base Character BP

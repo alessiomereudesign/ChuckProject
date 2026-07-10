@@ -1,0 +1,14 @@
+{
+	"graphId": "G081",
+	"name": "Plant Right Foot",
+	"graphName": "Plant Right Foot",
+	"type": "AnimationStateGraph",
+	"graphType": "AnimationStateGraph",
+	"graphGuid": "",
+	"nodeCount": 28,
+	"edgeCount": 18,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G081/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G081/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G081/EDGES.jsonl",
+	"flows": []
+}

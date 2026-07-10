@@ -1,0 +1,29 @@
+Asset: ALS_GameMode_SP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/GameModes/ALS_GameMode_SP.ALS_GameMode_SP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_GameModes_ALS_GameMode_SP
+GraphId: G002
+Graph: UserConstructionScript
+FlowId: F001
+Entry: Construction Script
+NodeGuid: 4886C62844386452A09DDAB2912CB307
+
+Exec Flow:
+1. Construction Script [K2Node_FunctionEntry] 4886C62844386452A09DDAB2912CB307
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

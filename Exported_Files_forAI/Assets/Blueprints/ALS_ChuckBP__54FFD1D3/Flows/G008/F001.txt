@@ -1,0 +1,35 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G008
+Graph: BPI_Get_FP_CameraTarget
+FlowId: F001
+Entry: BPI Get FP Camera Target
+NodeGuid: 81C577E04B78A7E05DA98D81BF7A32F4
+
+Exec Flow:
+1. BPI Get FP Camera Target [K2Node_FunctionEntry] 81C577E04B78A7E05DA98D81BF7A32F4
+2. Nodo di restituzione [K2Node_FunctionResult] EC41CE65407678C7356770B2A8E6509B
+3. Get Mesh [K2Node_VariableGet] 28138C1C4D1EFF4293F868B9F4BB643F
+4. Get Socket Location
+La destinazione è Componente di scena [K2Node_CallFunction] F7D277F8474210F34EF597868F2F0733
+
+Variables Read:
+- Get Mesh
+
+Variables Written:
+- none
+
+External Calls:
+- Get Socket Location
+La destinazione è Componente di scena
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Socket Location
+La destinazione è Componente di scena

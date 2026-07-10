@@ -1,0 +1,14 @@
+{
+	"graphId": "G104",
+	"name": "Main Movement States",
+	"graphName": "Main Movement States",
+	"type": "AnimationStateMachineGraph",
+	"graphType": "AnimationStateMachineGraph",
+	"graphGuid": "",
+	"nodeCount": 29,
+	"edgeCount": 35,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G104/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G104/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G104/EDGES.jsonl",
+	"flows": []
+}

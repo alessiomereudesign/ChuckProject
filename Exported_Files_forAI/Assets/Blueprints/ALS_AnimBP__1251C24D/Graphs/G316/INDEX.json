@@ -1,0 +1,25 @@
+{
+	"graphId": "G316",
+	"name": "UpdateMovementValues",
+	"graphName": "UpdateMovementValues",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 37,
+	"edgeCount": 31,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G316/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G316/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G316/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Update Movement Values",
+			"entryNodeGuid": "31F97FC5413E80589FEBEF84706E6761",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G316/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G316/F001.json",
+			"textFile": "Flows/G316/F001.txt",
+			"jsonFile": "Flows/G316/F001.json",
+			"nodeCount": 37
+		}
+	]
+}

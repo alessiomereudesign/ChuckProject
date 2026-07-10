@@ -1,0 +1,38 @@
+{
+	"assetName": "BP_WeaponBase",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "WeaponData",
+			"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+			"defaultValue": ""
+		},
+		{
+			"name": "OwnerChuck",
+			"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "bIsEquipped",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "AttachLocationOffset",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "AttachScaleOffset",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "AttachRotationOffset",
+			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		}
+	]
+}

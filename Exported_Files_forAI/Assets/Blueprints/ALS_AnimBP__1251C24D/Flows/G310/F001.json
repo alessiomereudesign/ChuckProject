@@ -1,0 +1,3632 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+	"graph": "TurnInPlace",
+	"entryName": "Turn in Place",
+	"entryNodeGuid": "C9BC95C24B86D8244F521DB14C9E0144",
+	"nodes": [
+		{
+			"nodeGuid": "C9BC95C24B86D8244F521DB14C9E0144",
+			"class": "K2Node_FunctionEntry",
+			"title": "Turn in Place",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A370A084D1F0DF2849634BCE4AC3CA0",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DB318A1146CCB0EA8B3D149FB9B32E09",
+					"name": "TargetRotation",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "648D58E04823889F6FEC3BAE0AC8F38E",
+					"name": "PlayRateScale",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "1.000000"
+				},
+				{
+					"pinId": "5FE3E3624068EFD8C81FB8BFBA61324F",
+					"name": "StartTime",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1B3D5B984B8FE7B861FA84A4018DD514",
+					"name": "OverrideCurrent",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BF3494454F13185F25D102BBBB5770D1",
+			"class": "K2Node_ExecutionSequence",
+			"title": "Sequenza",
+			"comment": "",
+			"x": 160,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EFFFABE14A59C0007CE5C18D184B68CA",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E4F78ED94A5499C69EBDCCA4DAECA9FE",
+					"name": "then_0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B932072C43E72B52AD650382026B28FF",
+					"name": "then_1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6C78A7ED4D491F98B2A0CAB845ADF6BE",
+					"name": "then_2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E7E4D548401F0DCDE523929CCD4C79D0",
+			"class": "K2Node_VariableGet",
+			"title": "Get Character",
+			"comment": "",
+			"x": 544,
+			"y": -448,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3399073E400545410DFEFFABC5D3877F",
+					"name": "Character",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "009CEE454CA4117D2BFB72A7A35573DD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D0BFF4034650F940921A25AB7B4E326E",
+			"class": "K2Node_CallFunction",
+			"title": "Get Actor Rotation\nLa destinazione è Actor",
+			"comment": "",
+			"x": 688,
+			"y": -480,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E6ED98484B543F8C905D3DAA3935C15C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AB13362448BD577E1CEA578E467C119A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "3B663F6F491C4B03802C6D9129329A46",
+			"class": "K2Node_VariableGet",
+			"title": "Get TargetRotation",
+			"comment": "",
+			"x": 752,
+			"y": -528,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4B9741BE4C275A88EDEDC3B1E8F33B57",
+					"name": "TargetRotation",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "69616B0449BA825F26B4EA88D5A900EB",
+			"class": "K2Node_CallFunction",
+			"title": "Delta (Rotator)",
+			"comment": "",
+			"x": 912,
+			"y": -528,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "373ABE4446013CA6B79F0DA06E9E568F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "138D686E4280D0FE57073592E26C3B8D",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "8E6C7A55496CDE6C56E06CAF352D717A",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "A8EB02B946E95AA3CB2DA6B7C017460F",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "83B551884566FC8388BDC2B5D369CEC8",
+					"name": "ReturnValue_Roll",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "CC69E1D94F719FD7C8AFF1AD9A4A0502",
+					"name": "ReturnValue_Pitch",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "B5C8C5674DA8ACCCE42B70856204F3F1",
+					"name": "ReturnValue_Yaw",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "2397BAA14C634E0598B53E90D47BFE15",
+			"class": "K2Node_VariableSet",
+			"title": "Set TurnAngle",
+			"comment": "",
+			"x": 1152,
+			"y": -576,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A772306D48F93D8C71159EB4FC8AAE3B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BF1501A843CE940C628A12AAD732E096",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2703DD9447100DB9A73AB2B17AD48833",
+					"name": "TurnAngle",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "666BCFE244D732E220B340BDB0C8EB72",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "FE2DF1BE4C133FC8CC9395AFCDCABEFC",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 528,
+			"y": -560,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "88721ECF4C2958384363B4AD2ABD59A4",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A28C48BC4AF923A141DF5DBCA9C5B5AF",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1E8C755A464CD55B09DD2EB432017112",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 944,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "420F964B4769A669887E71BFE9330BD5",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "696F10204F0A30DABB4FCD812B3467EF",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "08257FDB415FE06E96D1DE99CD69CB70",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "23BCDA5B4CE229A1F1AD4194AC7D5D9E",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FD30E6D04A7880770D6EB3BBD45FD6F8",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 528,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2C6728F24BFB8FED299DF0A66AE132F3",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E68713284D4BF2D4660BD1B989FA6A60",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C4D76E2642E0BD85EFC72D8BBEA44E82",
+			"class": "K2Node_VariableGet",
+			"title": "Get TurnAngle",
+			"comment": "",
+			"x": 544,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8E59F7ED43959A9C5FB46BB8681333B8",
+					"name": "TurnAngle",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A50AEC7F4B6B81588F79DA90F881FE1A",
+			"class": "K2Node_CallFunction",
+			"title": "Absolute (Float)",
+			"comment": "",
+			"x": 688,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2FE4AE8A4FDBA31A0CB362B2253A1800",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "1C91668C4F7944A6F5BC118EFCA8867F",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "7FD361BB420F7B9C4211D9AECEE1D9C0",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "EE73BDDE4EA0120B832221A1C7E683EC",
+			"class": "K2Node_VariableGet",
+			"title": "Get Turn180Threshold",
+			"comment": "",
+			"x": 672,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "723739B84F5779147351FA9014248189",
+					"name": "Turn180Threshold",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "4608E9B54D8F15A579FA77AA992640ED",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C468256341AD26318D826CB380E0DF99",
+			"class": "EdGraphNode_Comment",
+			"title": "Step 1: Set Turn Angle",
+			"comment": "Step 1: Set Turn Angle",
+			"x": 512,
+			"y": -640,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "DAB4907E4F4E0A0A90E192B30CC9198A",
+			"class": "K2Node_CallFunction",
+			"title": "float < float",
+			"comment": "",
+			"x": 832,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C32BF6624D6082FF754718BF95CD9530",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "59CD406B4904336E63C4C49989203919",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "17C58986413DFAF71FBC75846887D1C4",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "E70F5F624C79D2D9984E56AD09604143",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "0E86CDCB45DF7B505ABDCCA292EA357F",
+			"class": "K2Node_VariableSet",
+			"title": "Set TargetTurnAsset",
+			"comment": "",
+			"x": 1952,
+			"y": -112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ABC262794F9B0A5C5D18A8B45D47DEA3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+					"name": "TargetTurnAsset",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FFEEB947489B009B0109E985CA293BA0",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "96DDEA3D49BFDA31C82696ACB6C370D9",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1504,
+			"y": -208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6EA67A22471B798E2A6759878E55ADF1",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7BABB890445D02F043D8E18FC4A28879",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "A4AD1E9B40AA851680F58080F9C23B6D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "593DEA754D07177CB34CAABAA0EBDF52",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "744C6E4340E7F290AD7CD39994DA0A95",
+			"class": "K2Node_VariableSet",
+			"title": "Set TargetTurnAsset",
+			"comment": "",
+			"x": 1952,
+			"y": -304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ABC262794F9B0A5C5D18A8B45D47DEA3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+					"name": "TargetTurnAsset",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FFEEB947489B009B0109E985CA293BA0",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "423E8E284B407723CB1D40AFE27888D7",
+			"class": "K2Node_VariableGet",
+			"title": "Get N_TurnIP_R90",
+			"comment": "",
+			"x": 1952,
+			"y": -48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "85F22BDF442B0D2605B10A99667CB1E4",
+					"name": "N_TurnIP_R90",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1E4C8C8D479D59E607D06E8A3320E3D4",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "18CB53834D75FB4ECB84D8B0412DBEBE",
+			"class": "K2Node_VariableGet",
+			"title": "Get N_TurnIP_L90",
+			"comment": "",
+			"x": 1952,
+			"y": -240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7997EFFB4135AEDC60568387DBBA7788",
+					"name": "N_TurnIP_L90",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FF255DE04751177966A490AFB45E142B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "85C637C04BFB6D01965EBCA99A5D49B8",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1504,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6EA67A22471B798E2A6759878E55ADF1",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7BABB890445D02F043D8E18FC4A28879",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "A4AD1E9B40AA851680F58080F9C23B6D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "593DEA754D07177CB34CAABAA0EBDF52",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4F40244246D2834D61997DA42029A80F",
+			"class": "K2Node_VariableGet",
+			"title": "Get Stance",
+			"comment": "",
+			"x": 1728,
+			"y": -208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E2A24E974F0C23BCB66E89890B3C6067",
+					"name": "Stance",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "51E5BE964AB18D35963CD497E4E34EBD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5CA9456B422054F197F03E9966296A62",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on ALS_Stance",
+			"comment": "",
+			"x": 1728,
+			"y": -288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4B53F25E4F5D353726A719A94EA7B6C1",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "48B737164EB6F0FED1160C94F3C687D0",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "4F20A959422E983248FC028645F7D5A4",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "7AC5C8A94D07157EBC0A90B9027AFF3F",
+					"name": "NewEnumerator0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "602EE4044FC94639606BC3A3781AC554",
+					"name": "NewEnumerator1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2637322F451A5A400CE074AFB578633C",
+			"class": "K2Node_VariableGet",
+			"title": "Get Stance",
+			"comment": "",
+			"x": 1728,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E2A24E974F0C23BCB66E89890B3C6067",
+					"name": "Stance",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "51E5BE964AB18D35963CD497E4E34EBD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D17B3F59434864D98ECACC9C783BBF75",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on ALS_Stance",
+			"comment": "",
+			"x": 1728,
+			"y": -96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4B53F25E4F5D353726A719A94EA7B6C1",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "48B737164EB6F0FED1160C94F3C687D0",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "4F20A959422E983248FC028645F7D5A4",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "7AC5C8A94D07157EBC0A90B9027AFF3F",
+					"name": "NewEnumerator0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "602EE4044FC94639606BC3A3781AC554",
+					"name": "NewEnumerator1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F54179914E001ABD290697839567960C",
+			"class": "K2Node_VariableSet",
+			"title": "Set TargetTurnAsset",
+			"comment": "",
+			"x": 1952,
+			"y": -208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ABC262794F9B0A5C5D18A8B45D47DEA3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+					"name": "TargetTurnAsset",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FFEEB947489B009B0109E985CA293BA0",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AD0DF88A4611FD08118A319094670002",
+			"class": "K2Node_VariableGet",
+			"title": "Get CLF_TurnIP_L90",
+			"comment": "",
+			"x": 1952,
+			"y": -144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7997EFFB4135AEDC60568387DBBA7788",
+					"name": "CLF_TurnIP_L90",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FF255DE04751177966A490AFB45E142B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D66F4A604E1CFF22A360119C2753B189",
+			"class": "K2Node_VariableSet",
+			"title": "Set TargetTurnAsset",
+			"comment": "",
+			"x": 1952,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ABC262794F9B0A5C5D18A8B45D47DEA3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+					"name": "TargetTurnAsset",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FFEEB947489B009B0109E985CA293BA0",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "53CA98ED40790115AE93418CB05A3D45",
+			"class": "K2Node_VariableGet",
+			"title": "Get CLF_TurnIP_R90",
+			"comment": "",
+			"x": 1952,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "85F22BDF442B0D2605B10A99667CB1E4",
+					"name": "CLF_TurnIP_R90",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1E4C8C8D479D59E607D06E8A3320E3D4",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "706CFC564F5F4ADBCC0D50BF608F783F",
+			"class": "K2Node_VariableSet",
+			"title": "Set TargetTurnAsset",
+			"comment": "",
+			"x": 1952,
+			"y": 272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ABC262794F9B0A5C5D18A8B45D47DEA3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+					"name": "TargetTurnAsset",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FFEEB947489B009B0109E985CA293BA0",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B71998BB4FBDFBEAE2B993AC95ABEA2E",
+			"class": "K2Node_VariableSet",
+			"title": "Set TargetTurnAsset",
+			"comment": "",
+			"x": 1952,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ABC262794F9B0A5C5D18A8B45D47DEA3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+					"name": "TargetTurnAsset",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FFEEB947489B009B0109E985CA293BA0",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2FCE7D8540F556C0E3F7698774CEA6C2",
+			"class": "K2Node_VariableGet",
+			"title": "Get N_TurnIP_R180",
+			"comment": "",
+			"x": 1952,
+			"y": 336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "85F22BDF442B0D2605B10A99667CB1E4",
+					"name": "N_TurnIP_R180",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1E4C8C8D479D59E607D06E8A3320E3D4",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3B68F0764FEC1810902B99B61232F7FF",
+			"class": "K2Node_VariableGet",
+			"title": "Get N_TurnIP_L180",
+			"comment": "",
+			"x": 1952,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7997EFFB4135AEDC60568387DBBA7788",
+					"name": "N_TurnIP_L180",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FF255DE04751177966A490AFB45E142B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1969735E40C53344090F67858C24A8A7",
+			"class": "K2Node_VariableGet",
+			"title": "Get Stance",
+			"comment": "",
+			"x": 1728,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E2A24E974F0C23BCB66E89890B3C6067",
+					"name": "Stance",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "51E5BE964AB18D35963CD497E4E34EBD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0EE416AF4E254833A1A2F5B0DE811024",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on ALS_Stance",
+			"comment": "",
+			"x": 1728,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4B53F25E4F5D353726A719A94EA7B6C1",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "48B737164EB6F0FED1160C94F3C687D0",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "4F20A959422E983248FC028645F7D5A4",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "7AC5C8A94D07157EBC0A90B9027AFF3F",
+					"name": "NewEnumerator0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "602EE4044FC94639606BC3A3781AC554",
+					"name": "NewEnumerator1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6ADBB8E5410AA3A4DB6790A8C5A1550D",
+			"class": "K2Node_VariableGet",
+			"title": "Get Stance",
+			"comment": "",
+			"x": 1728,
+			"y": 368,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E2A24E974F0C23BCB66E89890B3C6067",
+					"name": "Stance",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "51E5BE964AB18D35963CD497E4E34EBD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5E67370C450B49F2A885D9BA22B6F78A",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on ALS_Stance",
+			"comment": "",
+			"x": 1728,
+			"y": 288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4B53F25E4F5D353726A719A94EA7B6C1",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "48B737164EB6F0FED1160C94F3C687D0",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "4F20A959422E983248FC028645F7D5A4",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "7AC5C8A94D07157EBC0A90B9027AFF3F",
+					"name": "NewEnumerator0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "602EE4044FC94639606BC3A3781AC554",
+					"name": "NewEnumerator1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "750C20094C2D538A4C17159420491258",
+			"class": "K2Node_VariableSet",
+			"title": "Set TargetTurnAsset",
+			"comment": "",
+			"x": 1952,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ABC262794F9B0A5C5D18A8B45D47DEA3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+					"name": "TargetTurnAsset",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FFEEB947489B009B0109E985CA293BA0",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FCF0E1B949417032E5524EBE8EEC04F0",
+			"class": "K2Node_VariableGet",
+			"title": "Get CLF_TurnIP_L180",
+			"comment": "",
+			"x": 1952,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7997EFFB4135AEDC60568387DBBA7788",
+					"name": "CLF_TurnIP_L180",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FF255DE04751177966A490AFB45E142B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1D5C599A4D8BB73029D4DEB5DEC708DC",
+			"class": "K2Node_VariableSet",
+			"title": "Set TargetTurnAsset",
+			"comment": "",
+			"x": 1952,
+			"y": 368,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ABC262794F9B0A5C5D18A8B45D47DEA3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+					"name": "TargetTurnAsset",
+					"direction": "Input",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FFEEB947489B009B0109E985CA293BA0",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "65BEB63741DBDFC0D99955AD05409F00",
+			"class": "K2Node_VariableGet",
+			"title": "Get CLF_TurnIP_R180",
+			"comment": "",
+			"x": 1952,
+			"y": 432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "85F22BDF442B0D2605B10A99667CB1E4",
+					"name": "CLF_TurnIP_R180",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1E4C8C8D479D59E607D06E8A3320E3D4",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "243BCF6E43658D74E10BCAAF4356C899",
+			"class": "K2Node_VariableGet",
+			"title": "Get TurnAngle",
+			"comment": "",
+			"x": 1216,
+			"y": -160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8E59F7ED43959A9C5FB46BB8681333B8",
+					"name": "TurnAngle",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "5E73949046B45A457EFD9A826E6402CB",
+			"class": "K2Node_CallFunction",
+			"title": "float < float",
+			"comment": "",
+			"x": 1360,
+			"y": -160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "182643B648E9A48B7DE4F2A898574510",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "9DD6B4524C3948FD5CDCE198DDA778D3",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "1A1D44864435588B35E06FB371BDBAEA",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "49640906415A0414A27381A00566E112",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "B63792454D8B9C7AAFD0928E78C43B33",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1200,
+			"y": -176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E7148A2947EABE30F38C5F9A6F2417D2",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "10D95415433EA37C3672AB8A64EEF188",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "306A51F04648517CF407DCAF4C64801C",
+			"class": "K2Node_VariableGet",
+			"title": "Get TurnAngle",
+			"comment": "",
+			"x": 1216,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8E59F7ED43959A9C5FB46BB8681333B8",
+					"name": "TurnAngle",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "02839C5E419BDA4F1F130EA7C455F7D2",
+			"class": "K2Node_CallFunction",
+			"title": "float < float",
+			"comment": "",
+			"x": 1360,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "182643B648E9A48B7DE4F2A898574510",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "9DD6B4524C3948FD5CDCE198DDA778D3",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "1A1D44864435588B35E06FB371BDBAEA",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "49640906415A0414A27381A00566E112",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "8AB1260C4E08844FFB44D5A2BBE654A5",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1200,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D45058374ABBC056E1D70AB9974A75D9",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D62C7C4A4094C51D409FD29378DCAE1C",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DA182F3C4BED1AB04B433DA5B8534C91",
+			"class": "EdGraphNode_Comment",
+			"title": "Step 2: Choose Turn Asset based on the Turn Angle and Stance",
+			"comment": "Step 2: Choose Turn Asset based on the Turn Angle and Stance",
+			"x": 512,
+			"y": -368,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "55CEDB5745A744294BE4EEADC193C702",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1376,
+			"y": 592,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3CB6FB29465E0DD43310B3AC8FD2F1A4",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8596645B4E38AF9C961EDC800C9D83A9",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "7412FF0A42002718067C10A50AE008A1",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "76333502496C9D394044798A664259A2",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FD6AF8764CCFA117FDC456A37C92A08F",
+			"class": "K2Node_CallFunction",
+			"title": "Is Playing Slot Animation\nLa destinazione è Istanza animazione",
+			"comment": "",
+			"x": 800,
+			"y": 656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8181C9DB44AAEE536FF33CA5D937C59A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4EFE7718440B1B15C9E9E1AA58989749",
+					"name": "Asset",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimSequenceBase|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5D5B3BF94C070A6BE08A549B8180C4AF",
+					"name": "SlotNodeName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "DD01B16748B124FCCFEDA5A75BC7EB76",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "F3D0A4D946D5C714F0073EB794948282",
+			"class": "K2Node_CallFunction",
+			"title": "Play Slot Animation as Dynamic Montage\nLa destinazione è Istanza animazione",
+			"comment": "",
+			"x": 1824,
+			"y": 576,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9B782FDE4C7BD4185778268940E03EDF",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BF394EFE4DC39993304285BCD2C47339",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B18C64FF44DFB3C03CC4C9B998242E8C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7084BD964424B4B5D8CA7894BDF5C6F7",
+					"name": "Asset",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimSequenceBase",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2D84F0B447E391633BB0DCA15AC479C5",
+					"name": "SlotNodeName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "156C6A204A5B39389169818AD099B242",
+					"name": "BlendInTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.200000"
+				},
+				{
+					"pinId": "1583B54F4FE69DEE01B84EA0ADB5F9A1",
+					"name": "BlendOutTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.200000"
+				},
+				{
+					"pinId": "9F77D863413CA9E5EEB90C9E789F2A69",
+					"name": "InPlayRate",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "1.000000"
+				},
+				{
+					"pinId": "7E089502416C55A94BF788AFB3B14B28",
+					"name": "LoopCount",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "1"
+				},
+				{
+					"pinId": "0FB9B8144D52C3CE8FD2D28C32A4C338",
+					"name": "BlendOutTriggerTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.000000"
+				},
+				{
+					"pinId": "909B5060466F98C37BEE2CB75D2A264A",
+					"name": "InTimeToStartMontageAt",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.000000"
+				},
+				{
+					"pinId": "F43761AC4F6213CB8BCB08803F4D08DF",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B2278C2D4AADF02CBC1AC5B045D5D079",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 544,
+			"y": 720,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "88A1D51C4D78D2EFBA267BB0C110AD06",
+					"name": "TargetTurnAsset",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "166237B9426902B5A1F05AAF7FF132E1",
+					"name": "TargetTurnAsset_Animation_2_7BA2980D4E85CC9E320EB98B57C73B3A",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimSequenceBase",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A0E4248D4D95E480622C17AE37BBF8CE",
+					"name": "TargetTurnAsset_AnimatedAngle_11_0BE5A89E455AEBE851DAA49A1FCA81A5",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0A56225944CB1718B31E95BDEBBD6267",
+					"name": "TargetTurnAsset_SlotName_5_73864C9E40AE26D9F294038C7099722B",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9F0BBA1343C3C09CF419589B0C0D7957",
+					"name": "TargetTurnAsset_PlayRate_8_47A596764C9AFE145D75C49448F776A8",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "191CBB0745810A2C6C935098334C20CD",
+					"name": "TargetTurnAsset_ScaleTurnAngle_14_ED8450744340CD92E19052A9E8766866",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1DA8B9F74C7357D98E17FB85D33F96D6",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 1376,
+			"y": 672,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "88A1D51C4D78D2EFBA267BB0C110AD06",
+					"name": "TargetTurnAsset",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "166237B9426902B5A1F05AAF7FF132E1",
+					"name": "TargetTurnAsset_Animation_2_7BA2980D4E85CC9E320EB98B57C73B3A",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimSequenceBase",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5F3A9A4045144F0DC39F1F87E3FCD276",
+					"name": "TargetTurnAsset_AnimatedAngle_11_0BE5A89E455AEBE851DAA49A1FCA81A5",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0A56225944CB1718B31E95BDEBBD6267",
+					"name": "TargetTurnAsset_SlotName_5_73864C9E40AE26D9F294038C7099722B",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9F0BBA1343C3C09CF419589B0C0D7957",
+					"name": "TargetTurnAsset_PlayRate_8_47A596764C9AFE145D75C49448F776A8",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1C1F127F4A1231F4FF9AEC9B53DFA686",
+					"name": "TargetTurnAsset_ScaleTurnAngle_14_ED8450744340CD92E19052A9E8766866",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "202520794ED6D5EFD622D4B5A475EE4C",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "float * float",
+			"comment": "",
+			"x": 3232,
+			"y": 608,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5D1C61D24FAC2F7FE7C7A7BE4CE43FBA",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "D831E54D4B9265142EE12383A31E8BAC",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "3431CFE3417E54EA9A90DDB0220D88D0",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "9D99202D4E4C3390BE9D8DB819810CE2",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "56855DBF46DE36C1E4A2F98C76258498",
+					"name": "C",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "61D31B1244BD57D261D3DEB5E25C9147",
+			"class": "K2Node_VariableSet",
+			"title": "Set RotationScale",
+			"comment": "",
+			"x": 3344,
+			"y": 464,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "42A025464F6CDB200E9CEFB6F1A75B35",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D1A7670742A911B977F706AE20EF2788",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FFA614E44FEF14616648F78BBDDB0A1B",
+					"name": "RotationScale",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "87DB8B894187F8DFF7173FB745A8F08E",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "1CDFB4054B441713F0D9F2A85AE710D1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3F7DE23D482CE45E806F91A7D49ACD77",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 2816,
+			"y": 560,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "88A1D51C4D78D2EFBA267BB0C110AD06",
+					"name": "TargetTurnAsset",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "166237B9426902B5A1F05AAF7FF132E1",
+					"name": "TargetTurnAsset_Animation_2_7BA2980D4E85CC9E320EB98B57C73B3A",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimSequenceBase",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1C558182422CB9EEBB75958443330CD6",
+					"name": "TargetTurnAsset_AnimatedAngle_11_0BE5A89E455AEBE851DAA49A1FCA81A5",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0A56225944CB1718B31E95BDEBBD6267",
+					"name": "TargetTurnAsset_SlotName_5_73864C9E40AE26D9F294038C7099722B",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9F0BBA1343C3C09CF419589B0C0D7957",
+					"name": "TargetTurnAsset_PlayRate_8_47A596764C9AFE145D75C49448F776A8",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "850795E9485E56C86B6AD59FB1FA0689",
+					"name": "TargetTurnAsset_ScaleTurnAngle_14_ED8450744340CD92E19052A9E8766866",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4C99657247CCE1DDECB6D680B0535018",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 528,
+			"y": 624,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C7468ABB4013DB1F99243CAA40F474D9",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "125EB57D42D7C6D9F5CA3E9DE4E390B0",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E12107CF4DE7646E8F53C99DC590B2D1",
+			"class": "K2Node_CallFunction",
+			"title": "NOT Boolean",
+			"comment": "",
+			"x": 1072,
+			"y": 688,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2ACF6D574275333DD87B0D9D288A249D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "962C9D3943E1185BBA9475B1DC9ADF53",
+					"name": "A",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "CAE2BF50477CAB11AABEB6BDB35CA21E",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "69BF900C45F1A904AEB663BC5FE4FF4C",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "OR Boolean",
+			"comment": "",
+			"x": 1232,
+			"y": 656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A63EF3144B507798507705B3EF95D3A6",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "7FFF8AC84AD9F435842C7AA6D16BFAF7",
+					"name": "A",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "B44B4DFF4FE5B454C2AD92B91A2AF91D",
+					"name": "B",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "9D81C8684F0190A1AC7DBDB737FC9FB1",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "3E3CE9E042D253BE734022A6DD3C4274",
+			"class": "K2Node_VariableGet",
+			"title": "Get OverrideCurrent",
+			"comment": "",
+			"x": 1072,
+			"y": 640,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "37EB12DF40401ED15A91CC8736EF65E0",
+					"name": "OverrideCurrent",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "FA8BED4D4A7D0D38D9FB2B82C3EA4DAE",
+			"class": "K2Node_VariableGet",
+			"title": "Get TurnAngle",
+			"comment": "",
+			"x": 2944,
+			"y": 512,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8E59F7ED43959A9C5FB46BB8681333B8",
+					"name": "TurnAngle",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "B454C77E4B2988FCFE7D26BD76BB0084",
+			"class": "K2Node_CallFunction",
+			"title": "float / float",
+			"comment": "",
+			"x": 3104,
+			"y": 544,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "191518514DB213DC246F3C97FC2A27F4",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "980A065445B7C6C768E054A2069EFD52",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "E1FB33A94209BC8551DC5A98ED1AD1AE",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "1.000000"
+				},
+				{
+					"pinId": "6E649A3D44D861E392719C8A78256460",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "3DEFAE154F066A49DDBFCDBA040E0707",
+			"class": "K2Node_VariableGet",
+			"title": "Get PlayRateScale",
+			"comment": "",
+			"x": 3088,
+			"y": 688,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "84E4B0FA4A493C021E0010B870AE00DE",
+					"name": "PlayRateScale",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "3C91E34F4F206B3FD45441B1D4A56E5C",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "float * float",
+			"comment": "",
+			"x": 1664,
+			"y": 784,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E99EB8684E30E5A6F54D1F923F49C523",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "35C699DF4E9791F989705CA2976EEE14",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "8EC019984FB7B840516B8DBA1DCF395E",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "F17F355E48C45BF8B9F34DB9681BF358",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E44B523D43654A814D4ADD80EADE5BBC",
+			"class": "K2Node_VariableGet",
+			"title": "Get PlayRateScale",
+			"comment": "",
+			"x": 1520,
+			"y": 816,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "84E4B0FA4A493C021E0010B870AE00DE",
+					"name": "PlayRateScale",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "B2E515B74B41F281A0A7668F1FF57F93",
+			"class": "EdGraphNode_Comment",
+			"title": "Step 3: If the Target Turn Animation is not playing or set to be overriden, play the turn animation as a dynamic montage.",
+			"comment": "Step 3: If the Target Turn Animation is not playing or set to be overriden, play the turn animation as a dynamic montage.",
+			"x": 512,
+			"y": 512,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "4B37153B4ACD772AEC24CFBF2392886D",
+			"class": "EdGraphNode_Comment",
+			"title": "Step 4: Scale the rotation amount (gets scaled in animgraph) to compensate for turn angle (If Allowed) and play rate.",
+			"comment": "Step 4: Scale the rotation amount (gets scaled in animgraph) to compensate for turn angle (If Allowed) and play rate.",
+			"x": 2192,
+			"y": 400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "1B938E92400EAC58A20CAA96B8AFCA50",
+			"class": "K2Node_VariableGet",
+			"title": "Get StartTime",
+			"comment": "",
+			"x": 1680,
+			"y": 896,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "01E6229A47DBC76DA931B0A73753DA14",
+					"name": "StartTime",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "9DFC102040AF32F771FCA08B4730647A",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 2544,
+			"y": 592,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6B1811A641EF9648F0B80E81CB96BFB9",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "52DFC1264C3D8A1B48A04BB2FD08DE59",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "43EE404B46503C149AA1E5B807869CB8",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EA2BB80D42A3BC2C033F14ABADD7C941",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8161402B442D91E3479A7FBBE8465E90",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 2224,
+			"y": 656,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "88A1D51C4D78D2EFBA267BB0C110AD06",
+					"name": "TargetTurnAsset",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "166237B9426902B5A1F05AAF7FF132E1",
+					"name": "TargetTurnAsset_Animation_2_7BA2980D4E85CC9E320EB98B57C73B3A",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimSequenceBase",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5F3A9A4045144F0DC39F1F87E3FCD276",
+					"name": "TargetTurnAsset_AnimatedAngle_11_0BE5A89E455AEBE851DAA49A1FCA81A5",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0A56225944CB1718B31E95BDEBBD6267",
+					"name": "TargetTurnAsset_SlotName_5_73864C9E40AE26D9F294038C7099722B",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9F0BBA1343C3C09CF419589B0C0D7957",
+					"name": "TargetTurnAsset_PlayRate_8_47A596764C9AFE145D75C49448F776A8",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1C1F127F4A1231F4FF9AEC9B53DFA686",
+					"name": "TargetTurnAsset_ScaleTurnAngle_14_ED8450744340CD92E19052A9E8766866",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "21D57FFC4C55531F778317804313C1F4",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 2800,
+			"y": 480,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F230E9E640C6E4A347A6D88E69A4731C",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1683E40846AA7F3C59DFDD8698C01C73",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "032162A14DD3A44472D88FB1408405C3",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "float * float",
+			"comment": "",
+			"x": 3120,
+			"y": 848,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5D1C61D24FAC2F7FE7C7A7BE4CE43FBA",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "3431CFE3417E54EA9A90DDB0220D88D0",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "56855DBF46DE36C1E4A2F98C76258498",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "9D99202D4E4C3390BE9D8DB819810CE2",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "20AA8E8A4AC834C4642F8F8CEF8D7CF4",
+			"class": "K2Node_VariableSet",
+			"title": "Set RotationScale",
+			"comment": "",
+			"x": 3248,
+			"y": 720,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "42A025464F6CDB200E9CEFB6F1A75B35",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D1A7670742A911B977F706AE20EF2788",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FFA614E44FEF14616648F78BBDDB0A1B",
+					"name": "RotationScale",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "87DB8B894187F8DFF7173FB745A8F08E",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "1CDFB4054B441713F0D9F2A85AE710D1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "264811714625F974AC233893B0A06B03",
+			"class": "K2Node_VariableGet",
+			"title": "Ottieni",
+			"comment": "",
+			"x": 2816,
+			"y": 752,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "88A1D51C4D78D2EFBA267BB0C110AD06",
+					"name": "TargetTurnAsset",
+					"direction": "Output",
+					"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "166237B9426902B5A1F05AAF7FF132E1",
+					"name": "TargetTurnAsset_Animation_2_7BA2980D4E85CC9E320EB98B57C73B3A",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimSequenceBase",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1C558182422CB9EEBB75958443330CD6",
+					"name": "TargetTurnAsset_AnimatedAngle_11_0BE5A89E455AEBE851DAA49A1FCA81A5",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0A56225944CB1718B31E95BDEBBD6267",
+					"name": "TargetTurnAsset_SlotName_5_73864C9E40AE26D9F294038C7099722B",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9F0BBA1343C3C09CF419589B0C0D7957",
+					"name": "TargetTurnAsset_PlayRate_8_47A596764C9AFE145D75C49448F776A8",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "850795E9485E56C86B6AD59FB1FA0689",
+					"name": "TargetTurnAsset_ScaleTurnAngle_14_ED8450744340CD92E19052A9E8766866",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0CECAC0D4B861E36A802E3B360911D6C",
+			"class": "K2Node_VariableGet",
+			"title": "Get PlayRateScale",
+			"comment": "",
+			"x": 2960,
+			"y": 896,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "84E4B0FA4A493C021E0010B870AE00DE",
+					"name": "PlayRateScale",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "21A6643F46BC443AF8035783BC1515AA",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 2800,
+			"y": 736,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F230E9E640C6E4A347A6D88E69A4731C",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1683E40846AA7F3C59DFDD8698C01C73",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "C9BC95C24B86D8244F521DB14C9E0144",
+			"fromPinId": "4A370A084D1F0DF2849634BCE4AC3CA0",
+			"fromPinName": "then",
+			"toNodeGuid": "BF3494454F13185F25D102BBBB5770D1",
+			"toPinId": "EFFFABE14A59C0007CE5C18D184B68CA",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "BF3494454F13185F25D102BBBB5770D1",
+			"fromPinId": "E4F78ED94A5499C69EBDCCA4DAECA9FE",
+			"fromPinName": "then_0",
+			"toNodeGuid": "FE2DF1BE4C133FC8CC9395AFCDCABEFC",
+			"toPinId": "88721ECF4C2958384363B4AD2ABD59A4",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "BF3494454F13185F25D102BBBB5770D1",
+			"fromPinId": "B932072C43E72B52AD650382026B28FF",
+			"fromPinName": "then_1",
+			"toNodeGuid": "FD30E6D04A7880770D6EB3BBD45FD6F8",
+			"toPinId": "2C6728F24BFB8FED299DF0A66AE132F3",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "BF3494454F13185F25D102BBBB5770D1",
+			"fromPinId": "6C78A7ED4D491F98B2A0CAB845ADF6BE",
+			"fromPinName": "then_2",
+			"toNodeGuid": "4C99657247CCE1DDECB6D680B0535018",
+			"toPinId": "C7468ABB4013DB1F99243CAA40F474D9",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "E7E4D548401F0DCDE523929CCD4C79D0",
+			"fromPinId": "3399073E400545410DFEFFABC5D3877F",
+			"fromPinName": "Character",
+			"toNodeGuid": "D0BFF4034650F940921A25AB7B4E326E",
+			"toPinId": "E6ED98484B543F8C905D3DAA3935C15C",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "D0BFF4034650F940921A25AB7B4E326E",
+			"fromPinId": "AB13362448BD577E1CEA578E467C119A",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "69616B0449BA825F26B4EA88D5A900EB",
+			"toPinId": "8E6C7A55496CDE6C56E06CAF352D717A",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "3B663F6F491C4B03802C6D9129329A46",
+			"fromPinId": "4B9741BE4C275A88EDEDC3B1E8F33B57",
+			"fromPinName": "TargetRotation",
+			"toNodeGuid": "69616B0449BA825F26B4EA88D5A900EB",
+			"toPinId": "138D686E4280D0FE57073592E26C3B8D",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "69616B0449BA825F26B4EA88D5A900EB",
+			"fromPinId": "B5C8C5674DA8ACCCE42B70856204F3F1",
+			"fromPinName": "ReturnValue_Yaw",
+			"toNodeGuid": "2397BAA14C634E0598B53E90D47BFE15",
+			"toPinId": "2703DD9447100DB9A73AB2B17AD48833",
+			"toPinName": "TurnAngle"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "FE2DF1BE4C133FC8CC9395AFCDCABEFC",
+			"fromPinId": "A28C48BC4AF923A141DF5DBCA9C5B5AF",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "2397BAA14C634E0598B53E90D47BFE15",
+			"toPinId": "A772306D48F93D8C71159EB4FC8AAE3B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "FD30E6D04A7880770D6EB3BBD45FD6F8",
+			"fromPinId": "E68713284D4BF2D4660BD1B989FA6A60",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "1E8C755A464CD55B09DD2EB432017112",
+			"toPinId": "420F964B4769A669887E71BFE9330BD5",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "DAB4907E4F4E0A0A90E192B30CC9198A",
+			"fromPinId": "E70F5F624C79D2D9984E56AD09604143",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "1E8C755A464CD55B09DD2EB432017112",
+			"toPinId": "696F10204F0A30DABB4FCD812B3467EF",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "1E8C755A464CD55B09DD2EB432017112",
+			"fromPinId": "08257FDB415FE06E96D1DE99CD69CB70",
+			"fromPinName": "then",
+			"toNodeGuid": "B63792454D8B9C7AAFD0928E78C43B33",
+			"toPinId": "E7148A2947EABE30F38C5F9A6F2417D2",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "1E8C755A464CD55B09DD2EB432017112",
+			"fromPinId": "23BCDA5B4CE229A1F1AD4194AC7D5D9E",
+			"fromPinName": "else",
+			"toNodeGuid": "8AB1260C4E08844FFB44D5A2BBE654A5",
+			"toPinId": "D45058374ABBC056E1D70AB9974A75D9",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "C4D76E2642E0BD85EFC72D8BBEA44E82",
+			"fromPinId": "8E59F7ED43959A9C5FB46BB8681333B8",
+			"fromPinName": "TurnAngle",
+			"toNodeGuid": "A50AEC7F4B6B81588F79DA90F881FE1A",
+			"toPinId": "1C91668C4F7944A6F5BC118EFCA8867F",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "A50AEC7F4B6B81588F79DA90F881FE1A",
+			"fromPinId": "7FD361BB420F7B9C4211D9AECEE1D9C0",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "DAB4907E4F4E0A0A90E192B30CC9198A",
+			"toPinId": "59CD406B4904336E63C4C49989203919",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "EE73BDDE4EA0120B832221A1C7E683EC",
+			"fromPinId": "723739B84F5779147351FA9014248189",
+			"fromPinName": "Turn180Threshold",
+			"toNodeGuid": "DAB4907E4F4E0A0A90E192B30CC9198A",
+			"toPinId": "17C58986413DFAF71FBC75846887D1C4",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "D17B3F59434864D98ECACC9C783BBF75",
+			"fromPinId": "7AC5C8A94D07157EBC0A90B9027AFF3F",
+			"fromPinName": "NewEnumerator0",
+			"toNodeGuid": "0E86CDCB45DF7B505ABDCCA292EA357F",
+			"toPinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "423E8E284B407723CB1D40AFE27888D7",
+			"fromPinId": "85F22BDF442B0D2605B10A99667CB1E4",
+			"fromPinName": "N_TurnIP_R90",
+			"toNodeGuid": "0E86CDCB45DF7B505ABDCCA292EA357F",
+			"toPinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+			"toPinName": "TargetTurnAsset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "B63792454D8B9C7AAFD0928E78C43B33",
+			"fromPinId": "10D95415433EA37C3672AB8A64EEF188",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "96DDEA3D49BFDA31C82696ACB6C370D9",
+			"toPinId": "6EA67A22471B798E2A6759878E55ADF1",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "5E73949046B45A457EFD9A826E6402CB",
+			"fromPinId": "49640906415A0414A27381A00566E112",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "96DDEA3D49BFDA31C82696ACB6C370D9",
+			"toPinId": "7BABB890445D02F043D8E18FC4A28879",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "96DDEA3D49BFDA31C82696ACB6C370D9",
+			"fromPinId": "A4AD1E9B40AA851680F58080F9C23B6D",
+			"fromPinName": "then",
+			"toNodeGuid": "5CA9456B422054F197F03E9966296A62",
+			"toPinId": "4B53F25E4F5D353726A719A94EA7B6C1",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "96DDEA3D49BFDA31C82696ACB6C370D9",
+			"fromPinId": "593DEA754D07177CB34CAABAA0EBDF52",
+			"fromPinName": "else",
+			"toNodeGuid": "D17B3F59434864D98ECACC9C783BBF75",
+			"toPinId": "4B53F25E4F5D353726A719A94EA7B6C1",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "5CA9456B422054F197F03E9966296A62",
+			"fromPinId": "7AC5C8A94D07157EBC0A90B9027AFF3F",
+			"fromPinName": "NewEnumerator0",
+			"toNodeGuid": "744C6E4340E7F290AD7CD39994DA0A95",
+			"toPinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "18CB53834D75FB4ECB84D8B0412DBEBE",
+			"fromPinId": "7997EFFB4135AEDC60568387DBBA7788",
+			"fromPinName": "N_TurnIP_L90",
+			"toNodeGuid": "744C6E4340E7F290AD7CD39994DA0A95",
+			"toPinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+			"toPinName": "TargetTurnAsset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "8AB1260C4E08844FFB44D5A2BBE654A5",
+			"fromPinId": "D62C7C4A4094C51D409FD29378DCAE1C",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "85C637C04BFB6D01965EBCA99A5D49B8",
+			"toPinId": "6EA67A22471B798E2A6759878E55ADF1",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "02839C5E419BDA4F1F130EA7C455F7D2",
+			"fromPinId": "49640906415A0414A27381A00566E112",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "85C637C04BFB6D01965EBCA99A5D49B8",
+			"toPinId": "7BABB890445D02F043D8E18FC4A28879",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "85C637C04BFB6D01965EBCA99A5D49B8",
+			"fromPinId": "A4AD1E9B40AA851680F58080F9C23B6D",
+			"fromPinName": "then",
+			"toNodeGuid": "0EE416AF4E254833A1A2F5B0DE811024",
+			"toPinId": "4B53F25E4F5D353726A719A94EA7B6C1",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "85C637C04BFB6D01965EBCA99A5D49B8",
+			"fromPinId": "593DEA754D07177CB34CAABAA0EBDF52",
+			"fromPinName": "else",
+			"toNodeGuid": "5E67370C450B49F2A885D9BA22B6F78A",
+			"toPinId": "4B53F25E4F5D353726A719A94EA7B6C1",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "4F40244246D2834D61997DA42029A80F",
+			"fromPinId": "E2A24E974F0C23BCB66E89890B3C6067",
+			"fromPinName": "Stance",
+			"toNodeGuid": "5CA9456B422054F197F03E9966296A62",
+			"toPinId": "48B737164EB6F0FED1160C94F3C687D0",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "5CA9456B422054F197F03E9966296A62",
+			"fromPinId": "602EE4044FC94639606BC3A3781AC554",
+			"fromPinName": "NewEnumerator1",
+			"toNodeGuid": "F54179914E001ABD290697839567960C",
+			"toPinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "2637322F451A5A400CE074AFB578633C",
+			"fromPinId": "E2A24E974F0C23BCB66E89890B3C6067",
+			"fromPinName": "Stance",
+			"toNodeGuid": "D17B3F59434864D98ECACC9C783BBF75",
+			"toPinId": "48B737164EB6F0FED1160C94F3C687D0",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "D17B3F59434864D98ECACC9C783BBF75",
+			"fromPinId": "602EE4044FC94639606BC3A3781AC554",
+			"fromPinName": "NewEnumerator1",
+			"toNodeGuid": "D66F4A604E1CFF22A360119C2753B189",
+			"toPinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "AD0DF88A4611FD08118A319094670002",
+			"fromPinId": "7997EFFB4135AEDC60568387DBBA7788",
+			"fromPinName": "CLF_TurnIP_L90",
+			"toNodeGuid": "F54179914E001ABD290697839567960C",
+			"toPinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+			"toPinName": "TargetTurnAsset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "53CA98ED40790115AE93418CB05A3D45",
+			"fromPinId": "85F22BDF442B0D2605B10A99667CB1E4",
+			"fromPinName": "CLF_TurnIP_R90",
+			"toNodeGuid": "D66F4A604E1CFF22A360119C2753B189",
+			"toPinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+			"toPinName": "TargetTurnAsset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "5E67370C450B49F2A885D9BA22B6F78A",
+			"fromPinId": "7AC5C8A94D07157EBC0A90B9027AFF3F",
+			"fromPinName": "NewEnumerator0",
+			"toNodeGuid": "706CFC564F5F4ADBCC0D50BF608F783F",
+			"toPinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "2FCE7D8540F556C0E3F7698774CEA6C2",
+			"fromPinId": "85F22BDF442B0D2605B10A99667CB1E4",
+			"fromPinName": "N_TurnIP_R180",
+			"toNodeGuid": "706CFC564F5F4ADBCC0D50BF608F783F",
+			"toPinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+			"toPinName": "TargetTurnAsset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "0EE416AF4E254833A1A2F5B0DE811024",
+			"fromPinId": "7AC5C8A94D07157EBC0A90B9027AFF3F",
+			"fromPinName": "NewEnumerator0",
+			"toNodeGuid": "B71998BB4FBDFBEAE2B993AC95ABEA2E",
+			"toPinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "3B68F0764FEC1810902B99B61232F7FF",
+			"fromPinId": "7997EFFB4135AEDC60568387DBBA7788",
+			"fromPinName": "N_TurnIP_L180",
+			"toNodeGuid": "B71998BB4FBDFBEAE2B993AC95ABEA2E",
+			"toPinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+			"toPinName": "TargetTurnAsset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "1969735E40C53344090F67858C24A8A7",
+			"fromPinId": "E2A24E974F0C23BCB66E89890B3C6067",
+			"fromPinName": "Stance",
+			"toNodeGuid": "0EE416AF4E254833A1A2F5B0DE811024",
+			"toPinId": "48B737164EB6F0FED1160C94F3C687D0",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "0EE416AF4E254833A1A2F5B0DE811024",
+			"fromPinId": "602EE4044FC94639606BC3A3781AC554",
+			"fromPinName": "NewEnumerator1",
+			"toNodeGuid": "750C20094C2D538A4C17159420491258",
+			"toPinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "6ADBB8E5410AA3A4DB6790A8C5A1550D",
+			"fromPinId": "E2A24E974F0C23BCB66E89890B3C6067",
+			"fromPinName": "Stance",
+			"toNodeGuid": "5E67370C450B49F2A885D9BA22B6F78A",
+			"toPinId": "48B737164EB6F0FED1160C94F3C687D0",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "5E67370C450B49F2A885D9BA22B6F78A",
+			"fromPinId": "602EE4044FC94639606BC3A3781AC554",
+			"fromPinName": "NewEnumerator1",
+			"toNodeGuid": "1D5C599A4D8BB73029D4DEB5DEC708DC",
+			"toPinId": "5FC6D7CF46C14A8ED2DFC7ADB87EAE0B",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "FCF0E1B949417032E5524EBE8EEC04F0",
+			"fromPinId": "7997EFFB4135AEDC60568387DBBA7788",
+			"fromPinName": "CLF_TurnIP_L180",
+			"toNodeGuid": "750C20094C2D538A4C17159420491258",
+			"toPinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+			"toPinName": "TargetTurnAsset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "65BEB63741DBDFC0D99955AD05409F00",
+			"fromPinId": "85F22BDF442B0D2605B10A99667CB1E4",
+			"fromPinName": "CLF_TurnIP_R180",
+			"toNodeGuid": "1D5C599A4D8BB73029D4DEB5DEC708DC",
+			"toPinId": "AB6FA8D1452C10CFE085FBAE13FC0F95",
+			"toPinName": "TargetTurnAsset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "243BCF6E43658D74E10BCAAF4356C899",
+			"fromPinId": "8E59F7ED43959A9C5FB46BB8681333B8",
+			"fromPinName": "TurnAngle",
+			"toNodeGuid": "5E73949046B45A457EFD9A826E6402CB",
+			"toPinId": "9DD6B4524C3948FD5CDCE198DDA778D3",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "306A51F04648517CF407DCAF4C64801C",
+			"fromPinId": "8E59F7ED43959A9C5FB46BB8681333B8",
+			"fromPinName": "TurnAngle",
+			"toNodeGuid": "02839C5E419BDA4F1F130EA7C455F7D2",
+			"toPinId": "9DD6B4524C3948FD5CDCE198DDA778D3",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "4C99657247CCE1DDECB6D680B0535018",
+			"fromPinId": "125EB57D42D7C6D9F5CA3E9DE4E390B0",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "55CEDB5745A744294BE4EEADC193C702",
+			"toPinId": "3CB6FB29465E0DD43310B3AC8FD2F1A4",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "69BF900C45F1A904AEB663BC5FE4FF4C",
+			"fromPinId": "9D81C8684F0190A1AC7DBDB737FC9FB1",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "55CEDB5745A744294BE4EEADC193C702",
+			"toPinId": "8596645B4E38AF9C961EDC800C9D83A9",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "55CEDB5745A744294BE4EEADC193C702",
+			"fromPinId": "7412FF0A42002718067C10A50AE008A1",
+			"fromPinName": "then",
+			"toNodeGuid": "F3D0A4D946D5C714F0073EB794948282",
+			"toPinId": "9B782FDE4C7BD4185778268940E03EDF",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "B2278C2D4AADF02CBC1AC5B045D5D079",
+			"fromPinId": "166237B9426902B5A1F05AAF7FF132E1",
+			"fromPinName": "TargetTurnAsset_Animation_2_7BA2980D4E85CC9E320EB98B57C73B3A",
+			"toNodeGuid": "FD6AF8764CCFA117FDC456A37C92A08F",
+			"toPinId": "4EFE7718440B1B15C9E9E1AA58989749",
+			"toPinName": "Asset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "B2278C2D4AADF02CBC1AC5B045D5D079",
+			"fromPinId": "0A56225944CB1718B31E95BDEBBD6267",
+			"fromPinName": "TargetTurnAsset_SlotName_5_73864C9E40AE26D9F294038C7099722B",
+			"toNodeGuid": "FD6AF8764CCFA117FDC456A37C92A08F",
+			"toPinId": "5D5B3BF94C070A6BE08A549B8180C4AF",
+			"toPinName": "SlotNodeName"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "FD6AF8764CCFA117FDC456A37C92A08F",
+			"fromPinId": "DD01B16748B124FCCFEDA5A75BC7EB76",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "E12107CF4DE7646E8F53C99DC590B2D1",
+			"toPinId": "962C9D3943E1185BBA9475B1DC9ADF53",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "F3D0A4D946D5C714F0073EB794948282",
+			"fromPinId": "BF394EFE4DC39993304285BCD2C47339",
+			"fromPinName": "then",
+			"toNodeGuid": "9DFC102040AF32F771FCA08B4730647A",
+			"toPinId": "6B1811A641EF9648F0B80E81CB96BFB9",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "1DA8B9F74C7357D98E17FB85D33F96D6",
+			"fromPinId": "166237B9426902B5A1F05AAF7FF132E1",
+			"fromPinName": "TargetTurnAsset_Animation_2_7BA2980D4E85CC9E320EB98B57C73B3A",
+			"toNodeGuid": "F3D0A4D946D5C714F0073EB794948282",
+			"toPinId": "7084BD964424B4B5D8CA7894BDF5C6F7",
+			"toPinName": "Asset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "1DA8B9F74C7357D98E17FB85D33F96D6",
+			"fromPinId": "0A56225944CB1718B31E95BDEBBD6267",
+			"fromPinName": "TargetTurnAsset_SlotName_5_73864C9E40AE26D9F294038C7099722B",
+			"toNodeGuid": "F3D0A4D946D5C714F0073EB794948282",
+			"toPinId": "2D84F0B447E391633BB0DCA15AC479C5",
+			"toPinName": "SlotNodeName"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "3C91E34F4F206B3FD45441B1D4A56E5C",
+			"fromPinId": "F17F355E48C45BF8B9F34DB9681BF358",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "F3D0A4D946D5C714F0073EB794948282",
+			"toPinId": "9F77D863413CA9E5EEB90C9E789F2A69",
+			"toPinName": "InPlayRate"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "1B938E92400EAC58A20CAA96B8AFCA50",
+			"fromPinId": "01E6229A47DBC76DA931B0A73753DA14",
+			"fromPinName": "StartTime",
+			"toNodeGuid": "F3D0A4D946D5C714F0073EB794948282",
+			"toPinId": "909B5060466F98C37BEE2CB75D2A264A",
+			"toPinName": "InTimeToStartMontageAt"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "1DA8B9F74C7357D98E17FB85D33F96D6",
+			"fromPinId": "9F0BBA1343C3C09CF419589B0C0D7957",
+			"fromPinName": "TargetTurnAsset_PlayRate_8_47A596764C9AFE145D75C49448F776A8",
+			"toNodeGuid": "3C91E34F4F206B3FD45441B1D4A56E5C",
+			"toPinId": "35C699DF4E9791F989705CA2976EEE14",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "B454C77E4B2988FCFE7D26BD76BB0084",
+			"fromPinId": "6E649A3D44D861E392719C8A78256460",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "202520794ED6D5EFD622D4B5A475EE4C",
+			"toPinId": "D831E54D4B9265142EE12383A31E8BAC",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "3F7DE23D482CE45E806F91A7D49ACD77",
+			"fromPinId": "9F0BBA1343C3C09CF419589B0C0D7957",
+			"fromPinName": "TargetTurnAsset_PlayRate_8_47A596764C9AFE145D75C49448F776A8",
+			"toNodeGuid": "202520794ED6D5EFD622D4B5A475EE4C",
+			"toPinId": "3431CFE3417E54EA9A90DDB0220D88D0",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "202520794ED6D5EFD622D4B5A475EE4C",
+			"fromPinId": "9D99202D4E4C3390BE9D8DB819810CE2",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "61D31B1244BD57D261D3DEB5E25C9147",
+			"toPinId": "FFA614E44FEF14616648F78BBDDB0A1B",
+			"toPinName": "RotationScale"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "3DEFAE154F066A49DDBFCDBA040E0707",
+			"fromPinId": "84E4B0FA4A493C021E0010B870AE00DE",
+			"fromPinName": "PlayRateScale",
+			"toNodeGuid": "202520794ED6D5EFD622D4B5A475EE4C",
+			"toPinId": "56855DBF46DE36C1E4A2F98C76258498",
+			"toPinName": "C"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "21D57FFC4C55531F778317804313C1F4",
+			"fromPinId": "1683E40846AA7F3C59DFDD8698C01C73",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "61D31B1244BD57D261D3DEB5E25C9147",
+			"toPinId": "42A025464F6CDB200E9CEFB6F1A75B35",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "3F7DE23D482CE45E806F91A7D49ACD77",
+			"fromPinId": "1C558182422CB9EEBB75958443330CD6",
+			"fromPinName": "TargetTurnAsset_AnimatedAngle_11_0BE5A89E455AEBE851DAA49A1FCA81A5",
+			"toNodeGuid": "B454C77E4B2988FCFE7D26BD76BB0084",
+			"toPinId": "E1FB33A94209BC8551DC5A98ED1AD1AE",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "E12107CF4DE7646E8F53C99DC590B2D1",
+			"fromPinId": "CAE2BF50477CAB11AABEB6BDB35CA21E",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "69BF900C45F1A904AEB663BC5FE4FF4C",
+			"toPinId": "B44B4DFF4FE5B454C2AD92B91A2AF91D",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "3E3CE9E042D253BE734022A6DD3C4274",
+			"fromPinId": "37EB12DF40401ED15A91CC8736EF65E0",
+			"fromPinName": "OverrideCurrent",
+			"toNodeGuid": "69BF900C45F1A904AEB663BC5FE4FF4C",
+			"toPinId": "7FFF8AC84AD9F435842C7AA6D16BFAF7",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "FA8BED4D4A7D0D38D9FB2B82C3EA4DAE",
+			"fromPinId": "8E59F7ED43959A9C5FB46BB8681333B8",
+			"fromPinName": "TurnAngle",
+			"toNodeGuid": "B454C77E4B2988FCFE7D26BD76BB0084",
+			"toPinId": "980A065445B7C6C768E054A2069EFD52",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "E44B523D43654A814D4ADD80EADE5BBC",
+			"fromPinId": "84E4B0FA4A493C021E0010B870AE00DE",
+			"fromPinName": "PlayRateScale",
+			"toNodeGuid": "3C91E34F4F206B3FD45441B1D4A56E5C",
+			"toPinId": "8EC019984FB7B840516B8DBA1DCF395E",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "8161402B442D91E3479A7FBBE8465E90",
+			"fromPinId": "1C1F127F4A1231F4FF9AEC9B53DFA686",
+			"fromPinName": "TargetTurnAsset_ScaleTurnAngle_14_ED8450744340CD92E19052A9E8766866",
+			"toNodeGuid": "9DFC102040AF32F771FCA08B4730647A",
+			"toPinId": "52DFC1264C3D8A1B48A04BB2FD08DE59",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "9DFC102040AF32F771FCA08B4730647A",
+			"fromPinId": "43EE404B46503C149AA1E5B807869CB8",
+			"fromPinName": "then",
+			"toNodeGuid": "21D57FFC4C55531F778317804313C1F4",
+			"toPinId": "F230E9E640C6E4A347A6D88E69A4731C",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "9DFC102040AF32F771FCA08B4730647A",
+			"fromPinId": "EA2BB80D42A3BC2C033F14ABADD7C941",
+			"fromPinName": "else",
+			"toNodeGuid": "21A6643F46BC443AF8035783BC1515AA",
+			"toPinId": "F230E9E640C6E4A347A6D88E69A4731C",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "264811714625F974AC233893B0A06B03",
+			"fromPinId": "9F0BBA1343C3C09CF419589B0C0D7957",
+			"fromPinName": "TargetTurnAsset_PlayRate_8_47A596764C9AFE145D75C49448F776A8",
+			"toNodeGuid": "032162A14DD3A44472D88FB1408405C3",
+			"toPinId": "3431CFE3417E54EA9A90DDB0220D88D0",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "0CECAC0D4B861E36A802E3B360911D6C",
+			"fromPinId": "84E4B0FA4A493C021E0010B870AE00DE",
+			"fromPinName": "PlayRateScale",
+			"toNodeGuid": "032162A14DD3A44472D88FB1408405C3",
+			"toPinId": "56855DBF46DE36C1E4A2F98C76258498",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "data",
+			"fromNodeGuid": "032162A14DD3A44472D88FB1408405C3",
+			"fromPinId": "9D99202D4E4C3390BE9D8DB819810CE2",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "20AA8E8A4AC834C4642F8F8CEF8D7CF4",
+			"toPinId": "FFA614E44FEF14616648F78BBDDB0A1B",
+			"toPinName": "RotationScale"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "TurnInPlace",
+			"edgeType": "exec",
+			"fromNodeGuid": "21A6643F46BC443AF8035783BC1515AA",
+			"fromPinId": "1683E40846AA7F3C59DFDD8698C01C73",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "20AA8E8A4AC834C4642F8F8CEF8D7CF4",
+			"toPinId": "42A025464F6CDB200E9CEFB6F1A75B35",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [
+		"Get Character",
+		"Get CLF_TurnIP_L180",
+		"Get CLF_TurnIP_L90",
+		"Get CLF_TurnIP_R180",
+		"Get CLF_TurnIP_R90",
+		"Get N_TurnIP_L180",
+		"Get N_TurnIP_L90",
+		"Get N_TurnIP_R180",
+		"Get N_TurnIP_R90",
+		"Get OverrideCurrent",
+		"Get PlayRateScale",
+		"Get Stance",
+		"Get StartTime",
+		"Get TargetRotation",
+		"Get Turn180Threshold",
+		"Get TurnAngle",
+		"Ottieni"
+	],
+	"variablesWritten": [
+		"Set RotationScale",
+		"Set TargetTurnAsset",
+		"Set TurnAngle"
+	],
+	"functionsCalled": [
+		"Absolute (Float)",
+		"Delta (Rotator)",
+		"float / float",
+		"float < float",
+		"Get Actor Rotation\nLa destinazione è Actor",
+		"Is Playing Slot Animation\nLa destinazione è Istanza animazione",
+		"NOT Boolean",
+		"Play Slot Animation as Dynamic Montage\nLa destinazione è Istanza animazione"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Absolute (Float)",
+		"Delta (Rotator)",
+		"float / float",
+		"float < float",
+		"Get Actor Rotation\nLa destinazione è Actor",
+		"Is Playing Slot Animation\nLa destinazione è Istanza animazione",
+		"NOT Boolean",
+		"Play Slot Animation as Dynamic Montage\nLa destinazione è Istanza animazione"
+	],
+	"flowId": "F001",
+	"graphId": "G310",
+	"assetName": "ALS_AnimBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP"
+}

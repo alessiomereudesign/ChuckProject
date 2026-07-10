@@ -1,0 +1,83 @@
+Asset: BP_WeaponProjectileData
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData
+GraphId: G001
+Graph: EventGraph
+FlowId: F001
+Entry: Evento BeginPlay
+NodeGuid: FB27CCAB494299D0E0AB9AB0D718071B
+
+Exec Flow:
+1. Get ProjectileMesh [K2Node_VariableGet] 5E6B4B804DB62E310195FA829240915A
+2. Set Static Mesh
+La destinazione è Componente con mesh statica [K2Node_CallFunction] 5895340E4264F76264586496A4CEBDF7
+3. Get StaticMesh [K2Node_VariableGet] B99C14DF43B2C69B93B4CBB973E9C32A
+4. Evento BeginPlay [K2Node_Event] FB27CCAB494299D0E0AB9AB0D718071B
+5. Spawn Emitter Attached [K2Node_CallFunction] 2B3A348947EF068F00353893C46E6789
+6. Get StaticMesh [K2Node_VariableGet] 20E6282649B835951CF67F8511AEDB35
+7. Get TrailFX [K2Node_VariableGet] 726273794ED294542B80A9882C3B4771
+8. Get ProjectileMovement [K2Node_VariableGet] F8AD9782424CFEE0F2AA0A89BECD5840
+9. Set InitialSpeed [K2Node_VariableSet] 38FD8DB947CCC651E91622BB99E5CB23
+10. Set MaxSpeed [K2Node_VariableSet] F2E90FC5406407CF58AFE78B0C2D316D
+11. Get ProjectileSpeed [K2Node_VariableGet] 775681C6408F1E978AC4519C2F445D7B
+12. Get ProjectileSpeed [K2Node_VariableGet] 5EE55128483C6411C7E5A78F2BFE15D7
+13. Nodo di reindirizzamento [K2Node_Knot] DA9784E941C4712D264B6299D138C675
+14. Spawn Emitter at Location [K2Node_CallFunction] C289E2A748A92B3B3B4200BA16135A4A
+15. Destroy Actor
+La destinazione è Actor [K2Node_CallFunction] FC462BAA482C23176648BF839E1A5E57
+16. Get ExplosionFX [K2Node_VariableGet] 0E1E210B41DA2E42580C56B0341A18C3
+17. Nodo di reindirizzamento [K2Node_Knot] 07D6F0A648736C8F6A500BBEB9F7D404
+18. Nodo di reindirizzamento [K2Node_Knot] 7725112A4FB2B2FCF5BE04A36D376642
+19. On Component Hit (Sphere) [K2Node_ComponentBoundEvent] 61BB570649B88990E5F2A7AB66567BF2
+20. Set Updated Component
+La destinazione è Componente movimento [K2Node_CallFunction] F0AF23BC43D9833DFFC0B58EDCAECE7E
+21. Get ProjectileMovement [K2Node_VariableGet] 4ED137D942AC7F09772E27A15BB73DF4
+22. Get Sphere [K2Node_VariableGet] 5097F15148F1F346C397A386E6ABCAA6
+23. Apply Radial Damage with Falloff [K2Node_CallFunction] 370BCF1947EF6FE00B989096046FA4D2
+24. Crea array [K2Node_MakeArray] 14B8CA00434DE2B465F8648763572C87
+25. Auto-riferimento [K2Node_Self] 18D423AC4BDB5AF1A24850B7CA7AC291
+26. Get DamageRadius [K2Node_VariableGet] 402BB002490F014760DE678CD3CCC907
+27. Get Damage [K2Node_VariableGet] 57C964D74C0A704DCC6F76A79A53F30B
+
+Variables Read:
+- Get Damage
+- Get DamageRadius
+- Get ExplosionFX
+- Get ProjectileMesh
+- Get ProjectileMovement
+- Get ProjectileSpeed
+- Get Sphere
+- Get StaticMesh
+- Get TrailFX
+
+Variables Written:
+- Set InitialSpeed
+- Set MaxSpeed
+
+External Calls:
+- Apply Radial Damage with Falloff
+- Destroy Actor
+La destinazione è Actor
+- Set Static Mesh
+La destinazione è Componente con mesh statica
+- Set Updated Component
+La destinazione è Componente movimento
+- Spawn Emitter at Location
+- Spawn Emitter Attached
+
+Widgets Touched:
+- none
+
+Components Touched:
+- On Component Hit (Sphere)
+
+External Blueprint References:
+- Apply Radial Damage with Falloff
+- Destroy Actor
+La destinazione è Actor
+- Set Static Mesh
+La destinazione è Componente con mesh statica
+- Set Updated Component
+La destinazione è Componente movimento
+- Spawn Emitter at Location
+- Spawn Emitter Attached

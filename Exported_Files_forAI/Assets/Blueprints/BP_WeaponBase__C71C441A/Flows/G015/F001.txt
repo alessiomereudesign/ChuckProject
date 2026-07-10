@@ -1,0 +1,36 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G015
+Graph: SpawnWeaponProjectile
+FlowId: F001
+Entry: Spawn Weapon Projectile
+NodeGuid: CF1C0BF84FD47D5A74BB428CFDBFC4CE
+
+Exec Flow:
+1. Spawn Weapon Projectile [K2Node_FunctionEntry] CF1C0BF84FD47D5A74BB428CFDBFC4CE
+2. Get WeaponData [K2Node_VariableGet] AF6B4C214BB1BAC4563FEA9DA2DED484
+3. Break S_WeaponData [K2Node_BreakStruct] E4D833A44E8DAFDAE5E5539BC5FBD124
+4. Get Muzzle Transform
+La destinazione è BP Weapon Base [K2Node_CallFunction] FFA1C8634B19BD81C64F8E8D3FAACCE6
+5. SpawnActor BP Weapon Projectile Data [K2Node_SpawnActorFromClass] E0144FDD4CB4E1DAED54B193E717FF6B
+
+Variables Read:
+- Get WeaponData
+
+Variables Written:
+- none
+
+External Calls:
+- Get Muzzle Transform
+La destinazione è BP Weapon Base
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Muzzle Transform
+La destinazione è BP Weapon Base

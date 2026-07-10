@@ -1,0 +1,35 @@
+{
+	"graphId": "G002",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 32,
+	"edgeCount": 38,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G002/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Evento BeginPlay",
+			"entryNodeGuid": "99206FB84757DE67DB5EB6B94B7E7032",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Flows/G002/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Flows/G002/F001.json",
+			"textFile": "Flows/G002/F001.txt",
+			"jsonFile": "Flows/G002/F001.json",
+			"nodeCount": 32
+		},
+		{
+			"flowId": "F002",
+			"entryName": "Evento Interact\nDa BPI Interaction",
+			"entryNodeGuid": "DB159FE04847E5309D7358B6DC35A214",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Flows/G002/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Flows/G002/F002.json",
+			"textFile": "Flows/G002/F002.txt",
+			"jsonFile": "Flows/G002/F002.json",
+			"nodeCount": 32
+		}
+	]
+}

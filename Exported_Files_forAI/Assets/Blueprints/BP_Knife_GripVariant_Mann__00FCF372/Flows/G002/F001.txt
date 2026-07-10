@@ -1,0 +1,29 @@
+Asset: BP_Knife_GripVariant_Mann
+AssetPath: /Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/Demo/Mannequin/Character/Mesh/BP_Knife_GripVariant_Mann.BP_Knife_GripVariant_Mann
+AssetKey: Game_AdditionalContents_RamsterZ_FreeAnims_Volume1_Demo_Mannequin_Character_Mesh_BP_Knife_GripVariant_Mann
+GraphId: G002
+Graph: UserConstructionScript
+FlowId: F001
+Entry: Construction Script
+NodeGuid: 8FF18BC647B0DBE94661D09B6EC81407
+
+Exec Flow:
+1. Construction Script [K2Node_FunctionEntry] 8FF18BC647B0DBE94661D09B6EC81407
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

@@ -1,0 +1,86 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "Chuck_HUD",
+	"assetPath": "/Game/ChuckContent/UI/Interfaces/Chuck_HUD.Chuck_HUD",
+	"assetKey": "Game_ChuckContent_UI_Interfaces_Chuck_HUD",
+	"shortAssetFolder": "Chuck_HUD__FBF63D4E",
+	"pathHash": "FBF63D4E",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/Engine.HUD",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 1,
+		"components": 0,
+		"widgets": 4,
+		"graphs": 2,
+		"nodes": 18,
+		"edges": 23,
+		"flows": 2
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/Chuck_HUD__FBF63D4E/SUMMARY.md",
+		"variables": "Assets/Blueprints/Chuck_HUD__FBF63D4E/VARIABLES.json",
+		"components": "Assets/Blueprints/Chuck_HUD__FBF63D4E/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/Chuck_HUD__FBF63D4E/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/Chuck_HUD__FBF63D4E/NODES.jsonl",
+		"edges": "Assets/Blueprints/Chuck_HUD__FBF63D4E/EDGES.jsonl",
+		"search": "Assets/Blueprints/Chuck_HUD__FBF63D4E/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 17,
+			"edgeCount": 23,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "ShowTip_1\nCustom Event",
+					"entryNodeGuid": "DE3B296D4259410A8BBEE2974B6030C3",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 17
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "UserConstructionScript",
+			"graphName": "UserConstructionScript",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 1,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Construction Script",
+					"entryNodeGuid": "5A6615234564CECC2B3E77BE78AE46AD",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 1
+				}
+			]
+		}
+	]
+}

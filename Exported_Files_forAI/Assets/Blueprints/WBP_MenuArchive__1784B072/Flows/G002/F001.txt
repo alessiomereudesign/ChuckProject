@@ -1,0 +1,240 @@
+Asset: WBP_MenuArchive
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive
+GraphId: G002
+Graph: IntersectGraph
+FlowId: F001
+Entry: Evento Construct
+NodeGuid: 70790197477F04B012D5A68D59F1C60D
+
+Exec Flow:
+1. Evento Construct [K2Node_Event] 70790197477F04B012D5A68D59F1C60D
+2. Get Data Table Row Names [K2Node_CallFunction] 9E32D5F042239EDDD94E2F8D6CF8356E
+3. For Each Loop [K2Node_MacroInstance] BE2E92094388DBCE3C7D869C4D236EFB
+4. Get Data Table Row DT_CharacterData [K2Node_GetDataTableRow] B7FA6BEE4FF792629F2435A268922FF3
+5. Create WBP Tab Intersect Character Slot Widget [K2Node_CreateWidget] DE6DCCAE4E4AEE47616614897AA7433C
+6. Nodo di reindirizzamento [K2Node_Knot] 19C2D0F741857B0D3717F5910CE79F77
+7. Nodo di reindirizzamento [K2Node_Knot] BF8C32CA4F74F125AECF2C9F0C678ECD
+8. Inizialize Character Slot
+La destinazione è WBP Tab Intersect Character Slot [K2Node_CallFunction] 6EF1743B4DD11EFF79C3B8857F08438A
+9. Nodo di reindirizzamento [K2Node_Knot] 8B08A3DE4F2567A0E396CC90FDF26BEA
+10. Bind Event to On Slot Selected [K2Node_AddDelegate] 50F637B4454718FAD50452A29055A98E
+11. OpenCharacterSlot
+Custom Event [K2Node_CustomEvent] 0F015DC949B88A9861D156BE6B97F60F
+12. Create WBP Tab Intersect Character Card Widget [K2Node_CreateWidget] F727DF7D447FE5B56B6161860A1931C6
+13. Inizialize Character Card
+La destinazione è WBP Tab Intersect Character Card [K2Node_CallFunction] C7A480634DB772B976D98BB144341FF5
+14. Get Brd_ContainerCharacterSlot [K2Node_VariableGet] 830D126648CFD70A911409BBD780FEF7
+15. Set Content
+La destinazione è Content Widget [K2Node_CallFunction] A0548BE4493DB11CBA7F7D86B637F927
+16. Nodo di reindirizzamento [K2Node_Knot] 576DBB494EF668536B17969F4F2AFA41
+17. Nodo di reindirizzamento [K2Node_Knot] B44F547E4465726373652EB8A12B3B3E
+18. Get MenuIntersect [K2Node_VariableGet] EDA17FB5425FF5E347656F8DA49F8D6E
+19. Set Active Widget Index
+La destinazione è Widget Switcher [K2Node_CallFunction] 78AC8B4C4286E1A56F71938A970860E9
+20. Ritardo [K2Node_CallFunction] E9B49457407844669DA13EB4F54C2E0A
+21. Nodo di reindirizzamento [K2Node_Knot] F79D091B4CCB490E43880A86A6DC8164
+22. Nodo di reindirizzamento [K2Node_Knot] 363BFF7043FE426A1928E49274B41DE2
+23. Nodo di reindirizzamento [K2Node_Knot] E7BE3A41486E6ADAB384A0A58D806154
+24. Nodo di reindirizzamento [K2Node_Knot] 2D0B87B448EA22FFB523648D9EBEAE08
+25. Intersect > Characters > Data Table Loading + Initialize Slot and Card [EdGraphNode_Comment] 89980C514A10EACAE1981C916A8849DF
+26. On Clicked (Btn_Personaggi) [K2Node_ComponentBoundEvent] 7B92856F400A1217C29F69BEDBAF1B13
+27. Get Child At
+La destinazione è Panel Widget [K2Node_CallFunction] 37B6437D449CCA6EDFBC8FAD6112A81E
+28. Cast To WBP_TabIntersect_CharacterSlot [K2Node_DynamicCast] 158BEB1545E7B55438AB03BE6946A5E5
+29. Get Btn_Slot [K2Node_VariableGet] 1CD96B104B75AB5BFCAB4E916A86BE26
+30. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] 0ED58CDB49FDD68D8C2C0DAD51D722DF
+31. Get MenuIntersect [K2Node_VariableGet] 8469F2EB480AC7FB111E3EBE8C63FDDC
+32. Set Active Widget Index
+La destinazione è Widget Switcher [K2Node_CallFunction] 31F63312467CB8270ACA1C9FF0DC5E89
+33. Button_Personaggi > Pagina Slot [EdGraphNode_Comment] 5FF18659403D91CBC141E99F0EE84A3F
+34. Ritardo [K2Node_CallFunction] 70B0FE70404202A4B883E1A493715803
+35. Nodo di reindirizzamento [K2Node_Knot] 2F8347774D1EEC03B423B5A9425749C4
+36. Set Input Mode Game And UI [K2Node_CallFunction] 32F1F11F48DE709107FFFFBF728878A8
+37. Nodo di reindirizzamento [K2Node_Knot] CB670A424803D6AC2E3AB1AD53C38A4D
+38. Nodo di reindirizzamento [K2Node_Knot] 5A8E195C4CFCCCB07DABEFAF9AB35C0E
+39. Get Player Controller [K2Node_CallFunction] 66F6DCD4462BD776F0EECEBE5CC0E668
+40. Nodo di reindirizzamento [K2Node_Knot] FF49AADC45B34D1ED9171C88FA81BB0B
+41. Auto-riferimento [K2Node_Self] B66736D84A8AC856577A5FB68F0B16D2
+42. Ritardo [K2Node_CallFunction] 026095B7405834F929B9339E20039440
+43. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] 026F12204F61FE69F16548B1C9F4745A
+44. Set Keyboard Focus
+La destinazione è Widget [K2Node_CallFunction] E8636E7A4D4639E0728D80A43226602E
+45. Get Player Controller [K2Node_CallFunction] 5BC7C26A4778F5EA9C97B48047A9F2A2
+46. Get Btn_Back [K2Node_VariableGet] E47F391942ABC450F2EDE49326EC156F
+47. Get Btn_Back [K2Node_VariableGet] FD6DE9054B7C6BB186849489E4F000F2
+48. WhenOpeningCharacterSlot [EdGraphNode_Comment] 01FABE5F4A3D62F318957A9240C823FF
+49. Get CharacterData and Inizialize Slots on Menu [EdGraphNode_Comment] CC455F3F4EACF06758870981924BD9BE
+50. Set Color and Opacity
+La destinazione è Pulsante [K2Node_CallFunction] DB8C09B04E5768BCC23733B263FB6F9A
+51. Get BtnTab_Intersect [K2Node_VariableGet] FFF5D03844F87C8D1069BBABF2F1F793
+52. Get BtnTab_Inventory [K2Node_VariableGet] 72ADAB224E89A2E21F41D0974FFE2CBF
+53. Get BtnTab_Settings [K2Node_VariableGet] 59F37815480DF7764BF93EB470D6A34A
+54. Sequenza [K2Node_ExecutionSequence] 665B25CB40EC775E40DB48A2FE05B555
+55. Get BtnTab_Quests [K2Node_VariableGet] EAA5DFF5470E294E315395AA9A99018E
+56. Set Color and Opacity
+La destinazione è Pulsante [K2Node_CallFunction] C0417E864981D7C54B92AA8C68E632C2
+57. Tab Colors on Start Menu [EdGraphNode_Comment] 6788F5A946A345AAE8337B842C8DE819
+58. Get TabsSelect [K2Node_VariableGet] CD8E14F64FE71FC48935B8AA7DAAAE4A
+59. Set Active Widget Index
+La destinazione è Widget Switcher [K2Node_CallFunction] 70FD4DCE4FF40F4A52FBCB9D52EFB011
+60. Set User Focus
+La destinazione è Widget [K2Node_CallFunction] 19F76869410EEA24A87DB0BB3CEB5533
+61. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 58E5ADFF4279FC6D4624F8AC57C2D389
+62. Set Keyboard Focus
+La destinazione è Widget [K2Node_CallFunction] 99C9DEAD4F6117EEF365F7ACFB863E36
+63. Nodo di reindirizzamento [K2Node_Knot] 4D6735EA48B50534E902D6A248B01D49
+64. Get BtnSlot_BigWeapon [K2Node_VariableGet] F0ADF27B418B0A013D443F913191FEE6
+65. Ritardo [K2Node_CallFunction] A1370B8E4C56B4C8214C5DADAE4A3A32
+66. Ritardo [K2Node_CallFunction] 0D4882A34FD04AD99AF97F8B52701559
+67. Get Player Character [K2Node_CallFunction] A34A630D49BB38152B4B7CBCC9D92EC2
+68. Cast To ALS_ChuckBP [K2Node_DynamicCast] A26362E14CF2BC75D55B21878A2DD86F
+69. Set As ChuckRef [K2Node_VariableSet] 419F20BD43EF8F70344014AE2ABB1598
+70. Update Weapon Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] ADD10D0E4C9FA408D952E883D792BF94
+71. Update Equipment Slots
+La destinazione è WBP Menu Archive [K2Node_CallFunction] DBEDC654437CD2D75E58339EA864ACAD
+72. Get Actor Location
+La destinazione è Actor [K2Node_CallFunction] 8D8FE3634A3587665FC92D843C3BF0A7
+73. vector - vector [K2Node_PromotableOperator] CDF573EB4AF4FC29A9411F8F1257C167
+74. Make Transform [K2Node_CallFunction] D301184547E8120886A3828FB0760FC4
+75. SpawnActor BP Character Preview [K2Node_SpawnActorFromClass] A5963C1E4E02CE70E0180B9B85AFBACF
+76. Set SpawnedStudioRef [K2Node_VariableSet] 82EBDB5F4A759882D22962864ED0BD18
+77. Get SpawnedStudioRef [K2Node_VariableGet] 450832A8462948AA8141C0BCCEE80B41
+78. Initialize Studio
+La destinazione è BP Character Preview [K2Node_CallFunction] 4A0EB97542A09FB021CA8DBD2248AEF0
+79. Initialize InventoryMenu (Weapon, PreviewCharacter, Equipment) [EdGraphNode_Comment] BC8E85374F04A8C0832CE8BD71DE6549
+80. Evento Destruct [K2Node_Event] 51728D6341E0AEA800333DBECC5225BD
+81. Get SpawnedStudioRef [K2Node_VariableGet] C4BBDFAE430A6C5AA6B65CA62B0857F4
+82. Is Valid [K2Node_MacroInstance] CA46261A404DAF3EEA2387B6F97AC399
+83. Destroy Actor
+La destinazione è Actor [K2Node_CallFunction] 0EA025E24BF398C7D1D6B19AA1249F88
+84. Nodo di reindirizzamento [K2Node_Knot] 59BF3E7B43025676C7973785718F43A4
+85. Get Player Character [K2Node_CallFunction] EFAEDE5C4631EB571EB7CB84FC9B4CFB
+86. Refresh Menu Focus
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 5715A35E4A5378675276FEB0413DC530
+87. Get ColorUnfocused [K2Node_VariableGet] E6F9305F4A772FBF33481E8C6A1629D8
+88. Get ColorFocused [K2Node_VariableGet] A8D818284DCB2053105EE78611EA9706
+89. Get CharacterGrid [K2Node_VariableGet] 6B06AE7747C0EFCD674BB59DB72C33AC
+90. Get CharacterGrid [K2Node_VariableGet] 7FB2CACE4E010A81F076D9A45F29F734
+91. Add Child to Uniform Grid
+La destinazione è Uniform Grid Panel [K2Node_CallFunction] 434075384887F2F5F5C20F8798B55B30
+92. % (Integer) [K2Node_CallFunction] F9ABB5FE4A0E68257389F7A9BADA2BE0
+93. Nodo di reindirizzamento [K2Node_Knot] 3E42D7A44E81F8A4FD6857B945E940AA
+94. int / int [K2Node_PromotableOperator] D38FB96E479121C9388CAABD9D6A3389
+95. Play Sound 2D [K2Node_CallFunction] B87421F541E75E24373D6583FB5AD40E
+
+Variables Read:
+- Get Brd_ContainerCharacterSlot
+- Get Btn_Back
+- Get Btn_Slot
+- Get BtnSlot_BigWeapon
+- Get BtnTab_Intersect
+- Get BtnTab_Inventory
+- Get BtnTab_Quests
+- Get BtnTab_Settings
+- Get CharacterGrid
+- Get ColorFocused
+- Get ColorUnfocused
+- Get MenuIntersect
+- Get SpawnedStudioRef
+- Get TabsSelect
+
+Variables Written:
+- Set As ChuckRef
+- Set SpawnedStudioRef
+
+External Calls:
+- % (Integer)
+- Add Child to Uniform Grid
+La destinazione è Uniform Grid Panel
+- Destroy Actor
+La destinazione è Actor
+- Get Actor Location
+La destinazione è Actor
+- Get Child At
+La destinazione è Panel Widget
+- Get Data Table Row Names
+- Get Owning Player
+La destinazione è Widget
+- Get Player Character
+- Get Player Controller
+- Initialize Studio
+La destinazione è BP Character Preview
+- Inizialize Character Card
+La destinazione è WBP Tab Intersect Character Card
+- Inizialize Character Slot
+La destinazione è WBP Tab Intersect Character Slot
+- Make Transform
+- Play Sound 2D
+- Refresh Menu Focus
+La destinazione è WBP Menu Archive
+- Ritardo
+- Set Active Widget Index
+La destinazione è Widget Switcher
+- Set Color and Opacity
+La destinazione è Pulsante
+- Set Content
+La destinazione è Content Widget
+- Set Input Mode Game And UI
+- Set Keyboard Focus
+La destinazione è Widget
+- Set User Focus
+La destinazione è Widget
+- Update Equipment Slots
+La destinazione è WBP Menu Archive
+- Update Weapon Slots
+La destinazione è WBP Menu Archive
+
+Widgets Touched:
+- Button_Personaggi > Pagina Slot
+
+Components Touched:
+- On Clicked (Btn_Personaggi)
+
+External Blueprint References:
+- % (Integer)
+- Add Child to Uniform Grid
+La destinazione è Uniform Grid Panel
+- Cast To ALS_ChuckBP
+- Cast To WBP_TabIntersect_CharacterSlot
+- Destroy Actor
+La destinazione è Actor
+- Get Actor Location
+La destinazione è Actor
+- Get Child At
+La destinazione è Panel Widget
+- Get Data Table Row Names
+- Get Owning Player
+La destinazione è Widget
+- Get Player Character
+- Get Player Controller
+- Initialize Studio
+La destinazione è BP Character Preview
+- Inizialize Character Card
+La destinazione è WBP Tab Intersect Character Card
+- Inizialize Character Slot
+La destinazione è WBP Tab Intersect Character Slot
+- Make Transform
+- Play Sound 2D
+- Refresh Menu Focus
+La destinazione è WBP Menu Archive
+- Ritardo
+- Set Active Widget Index
+La destinazione è Widget Switcher
+- Set Color and Opacity
+La destinazione è Pulsante
+- Set Content
+La destinazione è Content Widget
+- Set Input Mode Game And UI
+- Set Keyboard Focus
+La destinazione è Widget
+- Set User Focus
+La destinazione è Widget
+- Update Equipment Slots
+La destinazione è WBP Menu Archive
+- Update Weapon Slots
+La destinazione è WBP Menu Archive

@@ -1,0 +1,43 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G027
+Graph: UpdateHeldObjectAnimations
+FlowId: F001
+Entry: Update Held Object Animations
+NodeGuid: 398D809B4C50A96285EDF588F98D3DCA
+
+Exec Flow:
+1. Update Held Object Animations [K2Node_FunctionEntry] 398D809B4C50A96285EDF588F98D3DCA
+2. Switch on ALS_OverlayState [K2Node_SwitchEnum] 888C26B14DCA46154BD74CA38A3D5F93
+3. Get OverlayState [K2Node_VariableGet] A6D8E2FE46333270F1AE879F2E79AC32
+4. Get SkeletalMesh [K2Node_VariableGet] DCA545734A49760C6F215B8312EDFAC1
+5. Get Anim Instance
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 90A7268845D7753F973AD8AD3624057B
+6. Cast To Bow_AnimBP [K2Node_DynamicCast] 2222AE1342AFF40F15CEF9968E79DE61
+7. Set Draw [K2Node_VariableSet] 2C98339C41338B3C3550B69906B2A9AF
+8. Get Anim Curve Value [K2Node_CallFunction] C38B1AE2466C4E7CA06F9DAC88A197B0
+
+Variables Read:
+- Get OverlayState
+- Get SkeletalMesh
+
+Variables Written:
+- Set Draw
+
+External Calls:
+- Get Anim Curve Value
+- Get Anim Instance
+La destinazione è Componente mesh scheletrica
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Cast To Bow_AnimBP
+- Get Anim Curve Value
+- Get Anim Instance
+La destinazione è Componente mesh scheletrica

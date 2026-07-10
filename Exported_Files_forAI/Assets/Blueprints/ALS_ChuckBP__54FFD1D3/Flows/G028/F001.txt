@@ -1,0 +1,94 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G028
+Graph: UpdateHeldObject
+FlowId: F001
+Entry: Update Held Object
+NodeGuid: 9EDC2C424F6E5F3B9811BFA1F05D01E5
+
+Exec Flow:
+1. Update Held Object [K2Node_FunctionEntry] 9EDC2C424F6E5F3B9811BFA1F05D01E5
+2. Switch on ALS_OverlayState [K2Node_SwitchEnum] 4B51B958445836A56B236C97A682A9B1
+3. Get OverlayState [K2Node_VariableGet] 2D0EBBD747301E0283C3F9A5EB933CC1
+4. Nodo di reindirizzamento [K2Node_Knot] 45D035D947D9FE814A90AA8086FABAC0
+5. Attach to Hand
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 3DA2A3C54C200FAFAC1328B80918ED9C
+6. Attach to Hand
+La destinazione è ALS Chuck BP [K2Node_CallFunction] FE43213043EB335614022AAB198A0592
+7. Clear Held Object
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 8CE9017E4CD61DD61F8E3B984586EE33
+8. Equip Big Weapon
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 8AFBAE0A4FC89C7047DC4AB9B56CD297
+9. Equip Small Weapon
+La destinazione è ALS Chuck BP [K2Node_CallFunction] DB248B7F4A74EB8CCFD9F8B3A908926B
+10. Get Mesh_SmallWeapon [K2Node_VariableGet] B9DCB9FE4A9B6A38A25E8B80B5ED7336
+11. Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 93DC43FE4F6A734D8DB9A7968EE6C142
+12. Get Mesh_BigWeapon [K2Node_VariableGet] 29D2C56F481902642EC109B119EF3A9A
+13. Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] BB401994400330290C1466ABB2446887
+14. Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] FF645FAA459AA0C16C3E38AD4B54089E
+15. Equip Melee
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 5157C91A4780C603EAC7E794BAB66733
+16. Get Mesh_Melee [K2Node_VariableGet] BD2A9798413EDAA60FD6D59912385745
+17. Unarmed State
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 30DC9651473F3466FF259FBCFB638172
+18. Unarmed State
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 1A0A0E0B412CD703CCE7AE95F7FCCEC8
+19. Unarmed State
+La destinazione è ALS Chuck BP [K2Node_CallFunction] BCCCC7F74C8E23190A8A1187732895EF
+20. Fists State
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 272856624D05F97D0F1D91964364B40D
+
+Variables Read:
+- Get Mesh_BigWeapon
+- Get Mesh_Melee
+- Get Mesh_SmallWeapon
+- Get OverlayState
+
+Variables Written:
+- none
+
+External Calls:
+- Attach to Hand
+La destinazione è ALS Chuck BP
+- Clear Held Object
+La destinazione è ALS Chuck BP
+- Equip Big Weapon
+La destinazione è ALS Chuck BP
+- Equip Melee
+La destinazione è ALS Chuck BP
+- Equip Small Weapon
+La destinazione è ALS Chuck BP
+- Fists State
+La destinazione è ALS Chuck BP
+- Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica
+- Unarmed State
+La destinazione è ALS Chuck BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Attach to Hand
+La destinazione è ALS Chuck BP
+- Clear Held Object
+La destinazione è ALS Chuck BP
+- Equip Big Weapon
+La destinazione è ALS Chuck BP
+- Equip Melee
+La destinazione è ALS Chuck BP
+- Equip Small Weapon
+La destinazione è ALS Chuck BP
+- Fists State
+La destinazione è ALS Chuck BP
+- Get Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica
+- Unarmed State
+La destinazione è ALS Chuck BP

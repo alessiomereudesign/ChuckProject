@@ -1,0 +1,25 @@
+{
+	"graphId": "G006",
+	"name": "OnKeyDown",
+	"graphName": "OnKeyDown",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 245,
+	"edgeCount": 258,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G006/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G006/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G006/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "On Key Down",
+			"entryNodeGuid": "D914DB934D5240A3BE9F6CA949B80798",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G006/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G006/F001.json",
+			"textFile": "Flows/G006/F001.txt",
+			"jsonFile": "Flows/G006/F001.json",
+			"nodeCount": 245
+		}
+	]
+}

@@ -1,0 +1,222 @@
+{
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponPickUp",
+	"graph": "UserConstructionScript",
+	"entryName": "Construction Script",
+	"entryNodeGuid": "1A14284242C33EC16594D0B1576B58B8",
+	"nodes": [
+		{
+			"nodeGuid": "1A14284242C33EC16594D0B1576B58B8",
+			"class": "K2Node_FunctionEntry",
+			"title": "Construction Script",
+			"comment": "",
+			"x": 0,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DEAE56C94518214E409BF99149563CD8",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F428F8DB4058933309629D865C4F812A",
+			"class": "K2Node_VariableGet",
+			"title": "Get Pickup_RowName",
+			"comment": "",
+			"x": 32,
+			"y": 189,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2BB05C7B4BAD61DE2C6361886FA62A0B",
+					"name": "Pickup_RowName",
+					"direction": "Output",
+					"type": "name",
+					"defaultValue": "None"
+				},
+				{
+					"pinId": "016054F94244D3B9A2714B92FD693304",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponPickUp.BP_WeaponPickUp_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "CD395FB84630428C17E935A8F35D9CE5",
+			"class": "K2Node_GetDataTableRow",
+			"title": "Get Data Table Row DT_Weapon",
+			"comment": "",
+			"x": 224,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0F830247473755D18520F6B5D79A4D4E",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A34A4CD842D562CB5C63CF89C7076A57",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A1AB806246986AFC4E99B6B09B55D3F6",
+					"name": "RowNotFound",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D802A7314FADE5E8E5B54B8BA3D6CDA8",
+					"name": "DataTable",
+					"direction": "Input",
+					"type": "object|/Script/Engine.DataTable",
+					"defaultValue": "/Game/ChuckContent/Systems/Weapons/Data/DT_Weapon.DT_Weapon"
+				},
+				{
+					"pinId": "E934999943AB8D4ED8E045BB3DCDFAC5",
+					"name": "RowName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "PistolA"
+				},
+				{
+					"pinId": "0EDAFBAA44B28654BEA39D981EED45CD",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1A4FF44846827D149D7F5B83C755FC49",
+			"class": "K2Node_VariableSet",
+			"title": "Set InstanceWeaponData",
+			"comment": "",
+			"x": 560,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7767803349656BFBC13C00929D0BEBC2",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B242FA61466EDDA4BD4C0FA848CF3D74",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0F5ABCC1436C7240CFA40BA6E6817A0C",
+					"name": "InstanceWeaponData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9C29CC9A40C3A691A26B4E8721C91CEB",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "184D08D34319FB843B74608AA1758F69",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponPickUp.BP_WeaponPickUp_C",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponPickUp",
+			"graph": "UserConstructionScript",
+			"edgeType": "exec",
+			"fromNodeGuid": "1A14284242C33EC16594D0B1576B58B8",
+			"fromPinId": "DEAE56C94518214E409BF99149563CD8",
+			"fromPinName": "then",
+			"toNodeGuid": "CD395FB84630428C17E935A8F35D9CE5",
+			"toPinId": "0F830247473755D18520F6B5D79A4D4E",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponPickUp",
+			"graph": "UserConstructionScript",
+			"edgeType": "data",
+			"fromNodeGuid": "F428F8DB4058933309629D865C4F812A",
+			"fromPinId": "2BB05C7B4BAD61DE2C6361886FA62A0B",
+			"fromPinName": "Pickup_RowName",
+			"toNodeGuid": "CD395FB84630428C17E935A8F35D9CE5",
+			"toPinId": "E934999943AB8D4ED8E045BB3DCDFAC5",
+			"toPinName": "RowName"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponPickUp",
+			"graph": "UserConstructionScript",
+			"edgeType": "exec",
+			"fromNodeGuid": "CD395FB84630428C17E935A8F35D9CE5",
+			"fromPinId": "A34A4CD842D562CB5C63CF89C7076A57",
+			"fromPinName": "then",
+			"toNodeGuid": "1A4FF44846827D149D7F5B83C755FC49",
+			"toPinId": "7767803349656BFBC13C00929D0BEBC2",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponPickUp",
+			"graph": "UserConstructionScript",
+			"edgeType": "data",
+			"fromNodeGuid": "CD395FB84630428C17E935A8F35D9CE5",
+			"fromPinId": "0EDAFBAA44B28654BEA39D981EED45CD",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "1A4FF44846827D149D7F5B83C755FC49",
+			"toPinId": "0F5ABCC1436C7240CFA40BA6E6817A0C",
+			"toPinName": "InstanceWeaponData"
+		}
+	],
+	"variablesRead": [
+		"Get Pickup_RowName"
+	],
+	"variablesWritten": [
+		"Set InstanceWeaponData"
+	],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G004",
+	"assetName": "BP_WeaponPickUp",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponPickUp.BP_WeaponPickUp"
+}

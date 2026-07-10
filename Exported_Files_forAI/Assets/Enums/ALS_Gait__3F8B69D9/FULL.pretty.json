@@ -1,0 +1,70 @@
+{
+	"schemaVersion": "2.2",
+	"unrealEngineVersion": "5.4.4-35576357+++UE5+Release-5.4",
+	"name": "ALS_Gait",
+	"path": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+	"assetName": "ALS_Gait",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Enums_ALS_Gait",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetType": "Enum",
+	"unrealClass": "UserDefinedEnum",
+	"values": [
+		{
+			"index": 0,
+			"value": 0,
+			"name": "NewEnumerator0",
+			"authoredName": "Walking",
+			"displayName": "Walking",
+			"hidden": false
+		},
+		{
+			"index": 1,
+			"value": 1,
+			"name": "NewEnumerator1",
+			"authoredName": "Running",
+			"displayName": "Running",
+			"hidden": false
+		},
+		{
+			"index": 2,
+			"value": 2,
+			"name": "NewEnumerator2",
+			"authoredName": "Sprinting",
+			"displayName": "Sprinting",
+			"hidden": false
+		},
+		{
+			"index": 3,
+			"value": 3,
+			"name": "ALS_MAX",
+			"authoredName": "ALS_MAX",
+			"displayName": "ALS MAX",
+			"hidden": false
+		}
+	],
+	"dependencies": [],
+	"relations": [],
+	"semanticSummary":
+	{
+		"probableSystem": "ALS / Locomotion",
+		"classificationConfidence": "heuristic",
+		"summary": "Enum dati descritta tramite valori, display name e relazioni statiche rilevate.",
+		"importantVariables": [],
+		"importantFunctions": [],
+		"importantEvents": [],
+		"relatedAssets": [],
+		"complexity":
+		{
+			"graphCount": 0,
+			"nodeCount": 0,
+			"pinCount": 0,
+			"linkCount": 0
+		},
+		"notes": [
+			"Classificazione euristica dedotta da nome, path e tipo asset (ALS / Locomotion)."
+		]
+	},
+	"shortAssetFolder": "ALS_Gait__3F8B69D9",
+	"pathHash": "3F8B69D9"
+}

@@ -1,0 +1,71 @@
+Asset: ALS_AnimBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP
+GraphId: G318
+Graph: UpdateRotationValues
+FlowId: F001
+Entry: Update Rotation Values
+NodeGuid: 8E3E9D134C8DCF1A06E2B990F72CBC6F
+
+Exec Flow:
+1. Update Rotation Values [K2Node_FunctionEntry] 8E3E9D134C8DCF1A06E2B990F72CBC6F
+2. Calculate Movement Direction [K2Node_CallFunction] 473BBFFD4B1BCDE3AC1D64BD3C2A053A
+3. Get YawOffset_FB [K2Node_VariableGet] D65E5B8D4D1BE5CB51B54AA6150F082B
+4. Get Vector Value
+La destinazione è Curve Vector [K2Node_CallFunction] 9954F78841E66FB8E05AB48F473A3D83
+5. Set FYaw [K2Node_VariableSet] 4D77FB754FE78BF145B5B8A4171C87B9
+6. Get YawOffset_LR [K2Node_VariableGet] 4FB141B1485786EC84E796AC233F8A63
+7. Get Vector Value
+La destinazione è Curve Vector [K2Node_CallFunction] 7EFF006642136B9C65247B9D3F544F77
+8. Set BYaw [K2Node_VariableSet] AAF7BEF248506B651CBE5CA43A2C0DE8
+9. Set LYaw [K2Node_VariableSet] C57FBEFB417696B2A8B40DB7D9F65938
+10. Set RYaw [K2Node_VariableSet] 2013B5D74868B6B5CCB4EA9A55908661
+11. Get Velocity [K2Node_VariableGet] 6EA43C0B4B20C8E7F139C7936FCC99D0
+12. Rotation From X Vector [K2Node_CallFunction] 100E22CA471096894230B9BF0E3BD1F8
+13. Delta (Rotator) [K2Node_CallFunction] 8E55C41446C59E09FEC2E4B496501671
+14. Get Character [K2Node_VariableGet] 33AE43C7436A56FABA39A983803CB91B
+15. Get Control Rotation
+La destinazione è Pedina [K2Node_CallFunction] 279D859A4B79E1D03ADA499AAFCC22F5
+16. Sequenza [K2Node_ExecutionSequence] D84AE0A6476AAF0D3FBFCDB5343B154E
+17. Nodo di reindirizzamento [K2Node_Knot] 76F8A3ED4D4DCE75DFFB2BB2879B1249
+18. Set MovementDirection [K2Node_VariableSet] A1A958974E0328551FA0239C623E8817
+19. Nodo di reindirizzamento [K2Node_Knot] 4DD31DBE4F5BEDC9012FB29CFC6F4E51
+20. Set the Movement Direction [EdGraphNode_Comment] E86A111F43ADEE5D97E0319B64C23A09
+21. Set the Yaw Offsets. These values influence the "YawOffset" curve in the animgraph and are used to offset the characters rotation for more natural movement. The curves allow for fine control over how the offset behaves for each movement direction. [EdGraphNode_Comment] 8C6EA7364371C5E08F7DF6A15F8D101D
+
+Variables Read:
+- Get Character
+- Get Velocity
+- Get YawOffset_FB
+- Get YawOffset_LR
+
+Variables Written:
+- Set BYaw
+- Set FYaw
+- Set LYaw
+- Set MovementDirection
+- Set RYaw
+
+External Calls:
+- Calculate Movement Direction
+- Delta (Rotator)
+- Get Control Rotation
+La destinazione è Pedina
+- Get Vector Value
+La destinazione è Curve Vector
+- Rotation From X Vector
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Calculate Movement Direction
+- Delta (Rotator)
+- Get Control Rotation
+La destinazione è Pedina
+- Get Vector Value
+La destinazione è Curve Vector
+- Rotation From X Vector

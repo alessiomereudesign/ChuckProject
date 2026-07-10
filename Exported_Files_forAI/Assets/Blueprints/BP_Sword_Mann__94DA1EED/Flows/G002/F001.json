@@ -1,0 +1,40 @@
+{
+	"assetKey": "Game_AdditionalContents_RamsterZ_FreeAnims_Volume1_Demo_Mannequin_Character_Mesh_BP_Sword_Mann",
+	"graph": "UserConstructionScript",
+	"entryName": "Construction Script",
+	"entryNodeGuid": "3D3BC59145546E015859699090C711BA",
+	"nodes": [
+		{
+			"nodeGuid": "3D3BC59145546E015859699090C711BA",
+			"class": "K2Node_FunctionEntry",
+			"title": "Construction Script",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7297466E44270A91884B718D3F606BD4",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G002",
+	"assetName": "BP_Sword_Mann",
+	"assetPath": "/Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/Demo/Mannequin/Character/Mesh/BP_Sword_Mann.BP_Sword_Mann"
+}

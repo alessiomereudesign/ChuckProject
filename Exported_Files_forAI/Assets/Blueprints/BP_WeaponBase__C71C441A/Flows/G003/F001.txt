@@ -1,0 +1,65 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G003
+Graph: DoHitScan
+FlowId: F001
+Entry: Do Hit Scan
+NodeGuid: EE96F1CE4DAD86AD3D16C9B20FEF3643
+
+Exec Flow:
+1. Do Hit Scan [K2Node_FunctionEntry] EE96F1CE4DAD86AD3D16C9B20FEF3643
+2. Get WeaponData [K2Node_VariableGet] C0A820AD4D567B35BB34A7977633CD69
+3. Break S_WeaponData [K2Node_BreakStruct] 8E513471453567D9BD4EEBA5680AEA86
+4. float > float [K2Node_PromotableOperator] D9B29CB5415B243A4447E79550E52448
+5. Ramo [K2Node_IfThenElse] 40482E14477275837124178619633845
+6. Sphere Trace By Channel [K2Node_CallFunction] 43936B4A403125F7D793D5B6684393A1
+7. Nodo di reindirizzamento [K2Node_Knot] 89A099174609D2D4DCCE69B4BEAF7966
+8. Nodo di reindirizzamento [K2Node_Knot] B5E48293472ED60A2BC03BB628C95F2F
+9. Line Trace By Channel [K2Node_CallFunction] E5B125B5451542D6100B98B79E1B9656
+10. Nodo di reindirizzamento [K2Node_Knot] 1F8875B54D0A92123B3BBF81854A4506
+11. Nodo di reindirizzamento [K2Node_Knot] 0C905C214A7674EB8F4450A8DECA4AB9
+12. Ramo [K2Node_IfThenElse] 53BA899A4ECBA5591409479FB259F8AD
+13. Ramo [K2Node_IfThenElse] C3D36023467B5C090B8229942F350B9D
+14. Apply Damage [K2Node_CallFunction] E353DC924F1720404430C48403F1CE3E
+15. Spawn Emitter at Location [K2Node_CallFunction] 8ABBE75C4150CE1D4DBDE2967FB7F5D9
+16. Make Rot from Z [K2Node_CallFunction] E044F5204AC5850629D7C1AF985ADDF8
+17. Apply Damage [K2Node_CallFunction] 4B1CFFAA4300D1161196DDBD4A04D592
+18. Nodo di reindirizzamento [K2Node_Knot] 1FF789FC4BC7FA4284051B93699E720B
+19. Spawn Emitter at Location [K2Node_CallFunction] 6ED812394103E428DC07B28319E518C1
+20. Make Rot from Z [K2Node_CallFunction] 8C56E05E4131D01CC7C6C0A9DC541135
+21. Get WeaponData [K2Node_VariableGet] 08DB58284ACC933799B93C92F3C623B6
+22. Break S_WeaponData [K2Node_BreakStruct] A61C326B4DDE900B91B573B2BB1F04B1
+23. Nodo di reindirizzamento [K2Node_Knot] 480DF58E4185F79810059BA7B52F3BF0
+24. Nodo di reindirizzamento [K2Node_Knot] BDFD29BF4C236A993FFCD592C67344E3
+25. Print String [K2Node_CallFunction] 0186AAE64C490966B7B47E98F84585F1
+26. Print String [K2Node_CallFunction] 29E91F0A419FBA0CF9D9BAB21DE94E7D
+27. Nodo di reindirizzamento [K2Node_Knot] F41899FF4EA935DCD4037A8B487DDAE7
+
+Variables Read:
+- Get WeaponData
+
+Variables Written:
+- none
+
+External Calls:
+- Apply Damage
+- Line Trace By Channel
+- Make Rot from Z
+- Print String
+- Spawn Emitter at Location
+- Sphere Trace By Channel
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Apply Damage
+- Line Trace By Channel
+- Make Rot from Z
+- Print String
+- Spawn Emitter at Location
+- Sphere Trace By Channel

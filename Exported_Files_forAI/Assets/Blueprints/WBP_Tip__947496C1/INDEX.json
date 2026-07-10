@@ -1,0 +1,96 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "WBP_Tip",
+	"assetPath": "/Game/ChuckContent/UI/Interfaces/WBP_Tip.WBP_Tip",
+	"assetKey": "Game_ChuckContent_UI_Interfaces_WBP_Tip",
+	"shortAssetFolder": "WBP_Tip__947496C1",
+	"pathHash": "947496C1",
+	"assetType": "Blueprint",
+	"unrealClass": "WidgetBlueprint",
+	"parentClass": "/Script/UMG.UserWidget",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 1,
+		"components": 0,
+		"widgets": 8,
+		"graphs": 2,
+		"nodes": 24,
+		"edges": 20,
+		"flows": 3
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/WBP_Tip__947496C1/SUMMARY.md",
+		"variables": "Assets/Blueprints/WBP_Tip__947496C1/VARIABLES.json",
+		"components": "Assets/Blueprints/WBP_Tip__947496C1/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/WBP_Tip__947496C1/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/WBP_Tip__947496C1/NODES.jsonl",
+		"edges": "Assets/Blueprints/WBP_Tip__947496C1/EDGES.jsonl",
+		"search": "Assets/Blueprints/WBP_Tip__947496C1/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 6,
+			"edgeCount": 5,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Evento Construct",
+					"entryNodeGuid": "395426D9417824F6EE1D3B9559F9E96F",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 6
+				},
+				{
+					"flowId": "F002",
+					"entryName": "ShowTip\nCustom Event",
+					"entryNodeGuid": "349184484140FEF3963284BA07252C97",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Flows/G001/F002.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Flows/G001/F002.json",
+					"textFile": "Flows/G001/F002.txt",
+					"jsonFile": "Flows/G001/F002.json",
+					"nodeCount": 6
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "GetInputKeys",
+			"graphName": "GetInputKeys",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 18,
+			"edgeCount": 15,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Input Keys",
+					"entryNodeGuid": "047C47D7477B5AC5C8C7158788D1A412",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 18
+				}
+			]
+		}
+	]
+}

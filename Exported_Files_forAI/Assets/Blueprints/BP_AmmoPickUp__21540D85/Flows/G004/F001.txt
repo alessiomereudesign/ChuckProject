@@ -1,0 +1,29 @@
+Asset: BP_AmmoPickUp
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_AmmoPickUp.BP_AmmoPickUp
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_AmmoPickUp
+GraphId: G004
+Graph: UserConstructionScript
+FlowId: F001
+Entry: Construction Script
+NodeGuid: BB3A143044CCD24BF774FCB7C45DA5BD
+
+Exec Flow:
+1. Construction Script [K2Node_FunctionEntry] BB3A143044CCD24BF774FCB7C45DA5BD
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

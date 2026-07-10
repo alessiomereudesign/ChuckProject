@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "MovementSettings_Stance",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/MovementSettings_Stance.MovementSettings_Stance",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Structs_MovementSettings_Stance",
+	"shortAssetFolder": "MovementSettings_Stance__AACE35F6",
+	"pathHash": "AACE35F6",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/MovementSettings_Stance__AACE35F6/SUMMARY.md",
+		"variables": "Assets/Structs/MovementSettings_Stance__AACE35F6/VARIABLES.json",
+		"components": "Assets/Structs/MovementSettings_Stance__AACE35F6/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/MovementSettings_Stance__AACE35F6/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/MovementSettings_Stance__AACE35F6/NODES.jsonl",
+		"edges": "Assets/Structs/MovementSettings_Stance__AACE35F6/EDGES.jsonl",
+		"search": "Assets/Structs/MovementSettings_Stance__AACE35F6/SEARCH.jsonl"
+	},
+	"graphs": []
+}

@@ -1,0 +1,67 @@
+Asset: Chuck_HUD
+AssetPath: /Game/ChuckContent/UI/Interfaces/Chuck_HUD.Chuck_HUD
+AssetKey: Game_ChuckContent_UI_Interfaces_Chuck_HUD
+GraphId: G001
+Graph: EventGraph
+FlowId: F001
+Entry: ShowTip_1
+Custom Event
+NodeGuid: DE3B296D4259410A8BBEE2974B6030C3
+
+Exec Flow:
+1. ShowTip_1
+Custom Event [K2Node_CustomEvent] DE3B296D4259410A8BBEE2974B6030C3
+2. Create WBP Tip Widget [K2Node_CreateWidget] 3ABE26DB49E0F01A7BFB40A47D84BC7C
+3. Set Wdg Tip [K2Node_VariableSet] FF39C2874FBA11D4CF22588E2C0FE8A7
+4. Get Wdg Tip [K2Node_VariableGet] 508BA25444940AEA2F6CB380D1344ACB
+5. Is Valid [K2Node_MacroInstance] 0685C2B242F8553BA0C04EAD3DBC6236
+6. Get Wdg Tip [K2Node_VariableGet] 87DA3AE640C87F87491CD4A2ED69D161
+7. Show Tip
+La destinazione è WBP Tip [K2Node_CallFunction] B5EB291E4A88E965301260800F2D1EAA
+8. Nodo di reindirizzamento [K2Node_Knot] 92CE09FA4112FF00CF43F38F58AEC675
+9. Add to Viewport
+La destinazione è User Widget [K2Node_CallFunction] 6630C5C5440A80F1F2472DA6E7275E5B
+10. Nodo di reindirizzamento [K2Node_Knot] DACF4F2E4B9BE09026E680A49C38B6BB
+11. Is in Viewport
+La destinazione è Widget [K2Node_CallFunction] AFEB785C412F8BDC457182AC8AA1B9E9
+12. Ramo [K2Node_IfThenElse] 4E482BD444ECA4DBB551E4AD509481F0
+13. Retriggerable Delay [K2Node_CallFunction] 79B29C30403FF16235A8AFB244D2FA46
+14. Nodo di reindirizzamento [K2Node_Knot] DCB6E0E44C0E386EC747C79E0B511CC8
+15. Nodo di reindirizzamento [K2Node_Knot] BF92C40F4E4A461E693DE79A1E2907E8
+16. Get Wdg Tip [K2Node_VariableGet] 7A83E0AE4A5AA1D8FE3B2E812DBF09F3
+17. Remove from Parent
+La destinazione è Widget [K2Node_CallFunction] C41DE45E45756CC80E533FA049E38C72
+
+Variables Read:
+- Get Wdg Tip
+
+Variables Written:
+- Set Wdg Tip
+
+External Calls:
+- Add to Viewport
+La destinazione è User Widget
+- Is in Viewport
+La destinazione è Widget
+- Remove from Parent
+La destinazione è Widget
+- Retriggerable Delay
+- Show Tip
+La destinazione è WBP Tip
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Add to Viewport
+La destinazione è User Widget
+- Is in Viewport
+La destinazione è Widget
+- Remove from Parent
+La destinazione è Widget
+- Retriggerable Delay
+- Show Tip
+La destinazione è WBP Tip

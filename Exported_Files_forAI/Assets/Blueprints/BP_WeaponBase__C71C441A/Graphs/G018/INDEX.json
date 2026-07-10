@@ -1,0 +1,25 @@
+{
+	"graphId": "G018",
+	"name": "UserConstructionScript",
+	"graphName": "UserConstructionScript",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 1,
+	"edgeCount": 0,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G018/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G018/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G018/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Construction Script",
+			"entryNodeGuid": "E49F0BEE47F1B82E87A5A897CEC0257B",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G018/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G018/F001.json",
+			"textFile": "Flows/G018/F001.txt",
+			"jsonFile": "Flows/G018/F001.json",
+			"nodeCount": 1
+		}
+	]
+}

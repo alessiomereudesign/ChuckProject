@@ -1,0 +1,29 @@
+Asset: BP_TestTrigger
+AssetPath: /Game/ChuckContent/Blueprints/BP_TestTrigger.BP_TestTrigger
+AssetKey: Game_ChuckContent_Blueprints_BP_TestTrigger
+GraphId: G002
+Graph: UserConstructionScript
+FlowId: F001
+Entry: Construction Script
+NodeGuid: 15C647B6420E157EEDC0578EA3752591
+
+Exec Flow:
+1. Construction Script [K2Node_FunctionEntry] 15C647B6420E157EEDC0578EA3752591
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

@@ -1,0 +1,29 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G016
+Graph: Unequip
+FlowId: F001
+Entry: Unequip
+NodeGuid: 64B2593E466B242D7BCB7B9D9E3C1752
+
+Exec Flow:
+1. Unequip [K2Node_FunctionEntry] 64B2593E466B242D7BCB7B9D9E3C1752
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

@@ -1,0 +1,15 @@
+{
+	"assetName": "Create_Curves",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimModifiers/Create_Curves.Create_Curves",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimModifiers_Create_Curves",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Evento On Apply",
+			"graph": "EventGraph",
+			"nodeGuid": "D27A6CBA493E451F1E25879E3E70B46C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

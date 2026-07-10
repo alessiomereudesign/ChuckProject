@@ -1,0 +1,87 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_Enemies_BP_EnemyALS",
+	"graph": "UserConstructionScript",
+	"entryName": "Construction Script",
+	"entryNodeGuid": "1C16CF6046628789CD4B7ABFE50FFF41",
+	"nodes": [
+		{
+			"nodeGuid": "1C16CF6046628789CD4B7ABFE50FFF41",
+			"class": "K2Node_FunctionEntry",
+			"title": "Construction Script",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "907CBA504C457005F70C8FB3B7B64F1D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "501FFF2B41F374127B6FA5A95DAD2A1E",
+			"class": "K2Node_CallParentFunction",
+			"title": "Genitore: Construction Script",
+			"comment": "",
+			"x": 200,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5676856A4F0FB29DB804B78727DCE6EE",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "226CCE134CD6881B5EAA568573DE0A9D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "03DD744B47310E30FAED6C9F36843B7D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_Enemies_BP_EnemyALS",
+			"graph": "UserConstructionScript",
+			"edgeType": "exec",
+			"fromNodeGuid": "1C16CF6046628789CD4B7ABFE50FFF41",
+			"fromPinId": "907CBA504C457005F70C8FB3B7B64F1D",
+			"fromPinName": "then",
+			"toNodeGuid": "501FFF2B41F374127B6FA5A95DAD2A1E",
+			"toPinId": "5676856A4F0FB29DB804B78727DCE6EE",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G002",
+	"assetName": "BP_EnemyALS",
+	"assetPath": "/Game/ChuckContent/Blueprints/Enemies/BP_EnemyALS.BP_EnemyALS"
+}

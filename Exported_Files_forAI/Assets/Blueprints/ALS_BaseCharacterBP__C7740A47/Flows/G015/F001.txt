@@ -1,0 +1,48 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G015
+Graph: CanUpdateMovingRotation
+FlowId: F001
+Entry: Can Update Moving Rotation
+NodeGuid: 1BEAC6764F2CFB84F46C7FB59DE395AC
+
+Exec Flow:
+1. Can Update Moving Rotation [K2Node_FunctionEntry] 1BEAC6764F2CFB84F46C7FB59DE395AC
+2. Has Any Root Motion
+La destinazione è Personaggio [K2Node_CallFunction] 47EABAD745E7E086A750DF9C03DD7C6E
+3. Nodo di restituzione [K2Node_FunctionResult] 0BBCC2284152CF2910B7DBA38F269418
+4. Get IsMoving [K2Node_VariableGet] 509E21454F3760BE4892F3967F68C875
+5. Get HasMovementInput [K2Node_VariableGet] EE3312FC428761E864E2FB8420CD6213
+6. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 7387FDD24A51A777CDEEB5B1D99492E6
+7. OR Boolean [K2Node_CommutativeAssociativeBinaryOperator] 19130E9748BD0084331240811D2F5ED6
+8. Get Speed [K2Node_VariableGet] A4EF14694CEDEA29CA9489A13589E319
+9. float > float [K2Node_CallFunction] EE77318C404C96D07BC3B2BD8744378A
+10. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] BC0CF273477130CE7A29CBB740E4AC3F
+11. NOT Boolean [K2Node_CallFunction] 6050745249EFE16FF205D69583CAAB66
+
+Variables Read:
+- Get HasMovementInput
+- Get IsMoving
+- Get Speed
+
+Variables Written:
+- none
+
+External Calls:
+- float > float
+- Has Any Root Motion
+La destinazione è Personaggio
+- NOT Boolean
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- float > float
+- Has Any Root Motion
+La destinazione è Personaggio
+- NOT Boolean

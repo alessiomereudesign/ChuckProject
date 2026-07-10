@@ -1,0 +1,162 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "OnOverlayStateChanged",
+	"entryName": "On Overlay State Changed",
+	"entryNodeGuid": "ACF857AB4FD102E94F353296BE1D5F97",
+	"nodes": [
+		{
+			"nodeGuid": "ACF857AB4FD102E94F353296BE1D5F97",
+			"class": "K2Node_FunctionEntry",
+			"title": "On Overlay State Changed",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "687DAAA34FA3F54088520B956F96E444",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "210FBECB42C9502750AB9BB8F0877E5F",
+					"name": "NewOverlayState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "B37124584454C6D4CA00C681CD067910",
+			"class": "K2Node_CallParentFunction",
+			"title": "Genitore: On Overlay State Changed",
+			"comment": "",
+			"x": 256,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "85511C0D41D8BC3483DDF3B6B1EA644F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "88FCFF8C4C1BD66A93D8B8AC2DA41217",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8C86906C4D5C3D3847E68886482A2A02",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AA3D129B448DB868456FBBA4152503C5",
+					"name": "NewOverlayState",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "3D895F5D430D2990016C97B673E391C9",
+			"class": "K2Node_CallFunction",
+			"title": "Update Held Object\nLa destinazione è ALS Chuck BP",
+			"comment": "",
+			"x": 544,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FEA5FCFF4826E1AA5A0AB0BB1B05CA87",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BC853EB44CC629EE448B6AA1655C8164",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4B45A7BC4EA0F812388153A3CC219920",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "OnOverlayStateChanged",
+			"edgeType": "exec",
+			"fromNodeGuid": "ACF857AB4FD102E94F353296BE1D5F97",
+			"fromPinId": "687DAAA34FA3F54088520B956F96E444",
+			"fromPinName": "then",
+			"toNodeGuid": "B37124584454C6D4CA00C681CD067910",
+			"toPinId": "85511C0D41D8BC3483DDF3B6B1EA644F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "OnOverlayStateChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "ACF857AB4FD102E94F353296BE1D5F97",
+			"fromPinId": "210FBECB42C9502750AB9BB8F0877E5F",
+			"fromPinName": "NewOverlayState",
+			"toNodeGuid": "B37124584454C6D4CA00C681CD067910",
+			"toPinId": "AA3D129B448DB868456FBBA4152503C5",
+			"toPinName": "NewOverlayState"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "OnOverlayStateChanged",
+			"edgeType": "exec",
+			"fromNodeGuid": "B37124584454C6D4CA00C681CD067910",
+			"fromPinId": "88FCFF8C4C1BD66A93D8B8AC2DA41217",
+			"fromPinName": "then",
+			"toNodeGuid": "3D895F5D430D2990016C97B673E391C9",
+			"toPinId": "FEA5FCFF4826E1AA5A0AB0BB1B05CA87",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Update Held Object\nLa destinazione è ALS Chuck BP"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Update Held Object\nLa destinazione è ALS Chuck BP"
+	],
+	"flowId": "F001",
+	"graphId": "G019",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

@@ -1,0 +1,64 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G032
+Graph: LimitRotation
+FlowId: F001
+Entry: Limit Rotation
+NodeGuid: 7AA7841A46053821775AA4B81272D4FA
+
+Exec Flow:
+1. Limit Rotation [K2Node_FunctionEntry] 7AA7841A46053821775AA4B81272D4FA
+2. Smooth Character Rotation
+La destinazione è ALS Base Character BP [K2Node_CallFunction] AD9AD9024D526DEF499C829B83F8134A
+3. Ramo [K2Node_IfThenElse] BE67BBCF4BA458787B963189FFD7716C
+4. Get Control Rotation
+La destinazione è Pedina [K2Node_CallFunction] F9862A3B43BAE74060B663B69EC3B42F
+5. Delta (Rotator) [K2Node_CallFunction] BA7C8C3D4F6C294EF66FE3A933B5CC53
+6. Get Actor Rotation
+La destinazione è Actor [K2Node_CallFunction] E88D3CBF40E48824670796BA329C4F2A
+7. In Range (Float) [K2Node_CallFunction] 5E24E8B949727D2929CA03B78B05EFCD
+8. float + float [K2Node_CommutativeAssociativeBinaryOperator] 4257CCA14A053E366118F4B0E0203850
+9. float + float [K2Node_CommutativeAssociativeBinaryOperator] D43B414B46EA13950E872094824B589D
+10. Get Control Rotation
+La destinazione è Pedina [K2Node_CallFunction] D90A85504E78EC412C2DB893B60BC850
+11. float > float [K2Node_CallFunction] C1C8A1AD42C7831C69270C9C9204CB0F
+12. Get InterpSpeed [K2Node_VariableGet] 23D97E7A4AE0CBFD507BCFB72DE72499
+13. Select Float [K2Node_CallFunction] 9DD9CC2B435CA75511A6FD8214CE7984
+14. Prevent the character from rotating past a certain angle. [EdGraphNode_Comment] 545798E44EEAC351FD72E0A3EA91D46B
+
+Variables Read:
+- Get InterpSpeed
+
+Variables Written:
+- none
+
+External Calls:
+- Delta (Rotator)
+- float > float
+- Get Actor Rotation
+La destinazione è Actor
+- Get Control Rotation
+La destinazione è Pedina
+- In Range (Float)
+- Select Float
+- Smooth Character Rotation
+La destinazione è ALS Base Character BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Delta (Rotator)
+- float > float
+- Get Actor Rotation
+La destinazione è Actor
+- Get Control Rotation
+La destinazione è Pedina
+- In Range (Float)
+- Select Float
+- Smooth Character Rotation
+La destinazione è ALS Base Character BP

@@ -1,0 +1,25 @@
+{
+	"graphId": "G289",
+	"name": "CalculateVelocityBlend",
+	"graphName": "CalculateVelocityBlend",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 29,
+	"edgeCount": 32,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G289/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G289/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G289/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Calculate Velocity Blend",
+			"entryNodeGuid": "E3FBD3E94E592933318D7DA7571D8121",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G289/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G289/F001.json",
+			"textFile": "Flows/G289/F001.txt",
+			"jsonFile": "Flows/G289/F001.json",
+			"nodeCount": 29
+		}
+	]
+}

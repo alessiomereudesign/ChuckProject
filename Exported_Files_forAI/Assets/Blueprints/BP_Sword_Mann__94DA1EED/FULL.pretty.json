@@ -1,0 +1,185 @@
+{
+	"schemaVersion": "2.2",
+	"unrealEngineVersion": "5.4.4-35576357+++UE5+Release-5.4",
+	"name": "BP_Sword_Mann",
+	"path": "/Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/Demo/Mannequin/Character/Mesh/BP_Sword_Mann.BP_Sword_Mann",
+	"assetName": "BP_Sword_Mann",
+	"assetPath": "/Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/Demo/Mannequin/Character/Mesh/BP_Sword_Mann.BP_Sword_Mann",
+	"assetKey": "Game_AdditionalContents_RamsterZ_FreeAnims_Volume1_Demo_Mannequin_Character_Mesh_BP_Sword_Mann",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"mainClass": "/Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/Demo/Mannequin/Character/Mesh/BP_Sword_Mann.BP_Sword_Mann_C",
+	"parentClass": "/Script/Engine.Actor",
+	"compileStatus": "UpToDate",
+	"implementedInterfaces": [],
+	"variables": [],
+	"graphs": [
+		{
+			"name": "UserConstructionScript",
+			"type": "Function",
+			"nodes": [
+				{
+					"nodeGuid": "3D3BC59145546E015859699090C711BA",
+					"class": "K2Node_FunctionEntry",
+					"title": "Construction Script",
+					"comment": "",
+					"x": 0,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "7297466E44270A91884B718D3F606BD4",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				}
+			],
+			"links": []
+		},
+		{
+			"name": "EventGraph",
+			"type": "EventGraph",
+			"nodes": [
+				{
+					"nodeGuid": "5099198341C70792E69BB6817C023095",
+					"class": "K2Node_Event",
+					"title": "Evento BeginPlay",
+					"comment": "This node is disabled and will not be called.\nDrag off pins to build functionality.",
+					"x": 0,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "C289428544C58ECB2B3832965F1CBB26",
+							"name": "OutputDelegate",
+							"direction": "Output",
+							"type": "delegate",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "E3A988A7444BE42DC84B91B058E0B8D2",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "C9B398294D7C4CC34AB9BF9741948643",
+					"class": "K2Node_Event",
+					"title": "Evento ActorBeginOverlap",
+					"comment": "This node is disabled and will not be called.\nDrag off pins to build functionality.",
+					"x": 0,
+					"y": 208,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "F905CA1448905FE733C903810DEC2D1D",
+							"name": "OutputDelegate",
+							"direction": "Output",
+							"type": "delegate",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "89881E3A4434857A98776BAD4F342376",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "B93E7D234EA2E5B7CE095293BE76A0BB",
+							"name": "OtherActor",
+							"direction": "Output",
+							"type": "object|/Script/Engine.Actor",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "D07413084FD6822E9DA033833AFDA183",
+					"class": "K2Node_Event",
+					"title": "Evento Tick",
+					"comment": "This node is disabled and will not be called.\nDrag off pins to build functionality.",
+					"x": 0,
+					"y": 416,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "AA52A57F43DB00528B381CBB8825B3A2",
+							"name": "OutputDelegate",
+							"direction": "Output",
+							"type": "delegate",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "902E4BDD4C5FD287F6D8F18B08861441",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "0738A78E466C64E09ECE4181C5E4A8A6",
+							"name": "DeltaSeconds",
+							"direction": "Output",
+							"type": "real|float",
+							"defaultValue": "0.0"
+						}
+					]
+				}
+			],
+			"links": []
+		}
+	],
+	"dependencies": [
+		"/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/Meshes/AnimMan",
+		"/Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/Demo/Props/OneHandSword_Mesh"
+	],
+	"relations": [],
+	"semanticSummary":
+	{
+		"probableSystem": "Player / Character",
+		"classificationConfidence": "heuristic",
+		"summary": "Blueprint probabilmente collegato a 'Player / Character' in base a nome e path; riepilogo statico da metadati e struttura dei grafi.",
+		"importantVariables": [],
+		"importantFunctions": [
+			"UserConstructionScript"
+		],
+		"importantEvents": [
+			"Evento ActorBeginOverlap",
+			"Evento BeginPlay",
+			"Evento Tick"
+		],
+		"relatedAssets": [],
+		"complexity":
+		{
+			"graphCount": 2,
+			"nodeCount": 4,
+			"pinCount": 9,
+			"linkCount": 0
+		},
+		"notes": [
+			"Classificazione euristica dedotta da nome, path e tipo asset (Player / Character)."
+		]
+	},
+	"shortAssetFolder": "BP_Sword_Mann__94DA1EED",
+	"pathHash": "94DA1EED"
+}

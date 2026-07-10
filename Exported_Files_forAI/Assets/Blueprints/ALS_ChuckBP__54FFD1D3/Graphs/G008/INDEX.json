@@ -1,0 +1,25 @@
+{
+	"graphId": "G008",
+	"name": "BPI_Get_FP_CameraTarget",
+	"graphName": "BPI_Get_FP_CameraTarget",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 4,
+	"edgeCount": 3,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G008/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G008/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G008/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "BPI Get FP Camera Target",
+			"entryNodeGuid": "81C577E04B78A7E05DA98D81BF7A32F4",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G008/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G008/F001.json",
+			"textFile": "Flows/G008/F001.txt",
+			"jsonFile": "Flows/G008/F001.json",
+			"nodeCount": 4
+		}
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"graphId": "G002",
+	"name": "GetInputKeys",
+	"graphName": "GetInputKeys",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 18,
+	"edgeCount": 15,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Graphs/G002/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Get Input Keys",
+			"entryNodeGuid": "047C47D7477B5AC5C8C7158788D1A412",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Flows/G002/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Flows/G002/F001.json",
+			"textFile": "Flows/G002/F001.txt",
+			"jsonFile": "Flows/G002/F001.json",
+			"nodeCount": 18
+		}
+	]
+}

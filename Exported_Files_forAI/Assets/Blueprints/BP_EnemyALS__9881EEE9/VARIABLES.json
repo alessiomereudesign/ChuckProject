@@ -1,0 +1,13 @@
+{
+	"assetName": "BP_EnemyALS",
+	"assetPath": "/Game/ChuckContent/Blueprints/Enemies/BP_EnemyALS.BP_EnemyALS",
+	"assetKey": "Game_ChuckContent_Blueprints_Enemies_BP_EnemyALS",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "Health",
+			"type": "real|double",
+			"defaultValue": ""
+		}
+	]
+}

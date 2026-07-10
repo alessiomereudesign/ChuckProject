@@ -1,0 +1,183 @@
+# ALS_ChuckBP
+
+Path: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+Class: Blueprint
+Parent: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C
+Generated: 2026-07-10T21:13:02.714Z
+
+## Variables
+- DefaultColor: struct|/Script/CoreUObject.LinearColor
+- SkinColor: struct|/Script/CoreUObject.LinearColor
+- ShirtColor: struct|/Script/CoreUObject.LinearColor
+- PantsColor: struct|/Script/CoreUObject.LinearColor
+- ShoesColor: struct|/Script/CoreUObject.LinearColor
+- GlovesColor: struct|/Script/CoreUObject.LinearColor
+- ShirtType: int
+- PantsType: int
+- Shoes: bool
+- Gloves: bool
+- SolidColor: bool
+- BaseLayerColor: struct|/Script/CoreUObject.LinearColor
+- OverlayLayerColor: struct|/Script/CoreUObject.LinearColor
+- AdditiveAmount_Color: struct|/Script/CoreUObject.LinearColor
+- Hand_Color: struct|/Script/CoreUObject.LinearColor
+- HandIK_Color: struct|/Script/CoreUObject.LinearColor
+- Head: object|/Script/Engine.MaterialInstanceDynamic
+- Torso: object|/Script/Engine.MaterialInstanceDynamic
+- Pelvis: object|/Script/Engine.MaterialInstanceDynamic
+- Feet: object|/Script/Engine.MaterialInstanceDynamic
+- Shoulder_L: object|/Script/Engine.MaterialInstanceDynamic
+- UpperArm_L: object|/Script/Engine.MaterialInstanceDynamic
+- LowerArm_L: object|/Script/Engine.MaterialInstanceDynamic
+- Hand_L: object|/Script/Engine.MaterialInstanceDynamic
+- Shoulder_R: object|/Script/Engine.MaterialInstanceDynamic
+- UpperArm_R: object|/Script/Engine.MaterialInstanceDynamic
+- LowerArm_R: object|/Script/Engine.MaterialInstanceDynamic
+- Hand_R: object|/Script/Engine.MaterialInstanceDynamic
+- UpperLegs: object|/Script/Engine.MaterialInstanceDynamic
+- LowerLegs: object|/Script/Engine.MaterialInstanceDynamic
+- Mantle_2m_Default: struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Asset.Mantle_Asset
+- Mantle_1m_Default: struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Asset.Mantle_Asset
+- Mantle_1m_RH: struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Asset.Mantle_Asset
+- Mantle_1m_LH: struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Asset.Mantle_Asset
+- Mantle_1m_2H: struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Asset.Mantle_Asset
+- Mantle_1m_Box: struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Asset.Mantle_Asset
+- LandRoll_Default: object|/Script/Engine.AnimMontage
+- GetUpFront_Default: object|/Script/Engine.AnimMontage
+- LandRoll_RH: object|/Script/Engine.AnimMontage
+- LandRoll_LH: object|/Script/Engine.AnimMontage
+- LandRoll_2H: object|/Script/Engine.AnimMontage
+- GetUpFront_RH: object|/Script/Engine.AnimMontage
+- GetUpFront_LH: object|/Script/Engine.AnimMontage
+- GetUpFront_2H: object|/Script/Engine.AnimMontage
+- GetUpBack_Default: object|/Script/Engine.AnimMontage
+- GetUpBack_RH: object|/Script/Engine.AnimMontage
+- GetUpBack_LH: object|/Script/Engine.AnimMontage
+- GetUpBack_2H: object|/Script/Engine.AnimMontage
+- InteractObjects: object|/Script/Engine.Actor
+- WidgetInteract: object|/Game/ChuckContent/UI/Interfaces/WBP_Tip.WBP_Tip_C
+- Inventory: struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array
+- OwnedWeapons: struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array
+- CurrentWeaponData: struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData
+- CurrentWeaponActor: object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C
+- CurrentWeaponSlot: byte|/Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot.E_WeaponSlot
+- CurrentWeaponIndex: int
+- CurrentMeleeBaseDamage: real|double
+- bCanAttack?: bool
+- bAreWeaponsVisible: bool
+- bIsReloading?: bool
+- IsAttackingWithKnife: bool
+- bCanNextCombo: bool
+- EquippedSmallFirearmIndex: int
+- EquippedBigWeaponIndex: int
+- EquippedMeleeIndex: int
+- InventoryAmmo: byte|/Game/ChuckContent/Systems/Weapons/Data/E_AmmoType.E_AmmoType|container=Map|value=int
+- AvailableAmmo: int
+- NeededAmmo: int
+- AmmoToLoad: int
+- NewAmmoAfterShot: int
+- PunchComboInteger: int
+- LoopedWeaponTimeHandle: struct|/Script/Engine.TimerHandle
+- ComboTimerHandle: struct|/Script/Engine.TimerHandle
+- Equipped_SmallFirearm: name
+- Equipped_BigWeapon: name
+- Equipped_Melee: name
+- Equipped_Item: name
+- EquippedHead: name
+- EquippedChest: name
+- EquippedLegs: name
+- EquippedFeet: name
+- EquippedAccessory1: name
+- EquippedAccessory2: name
+- OwnedArmor: name|container=Array
+- OwnedItems: name|container=Array
+- OwnedConsumables: name|container=Array
+- bIsArmorVisible: bool
+- As ALS Player Controller: object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller.ALS_Player_Controller_C
+- As WBP HUD: object|/Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD.WBP_HUD_C
+
+## Graphs
+- GetInteractionPrompt (EdGraph): 2 nodes, 1 edges
+- AttackGraph (EventGraph): 448 nodes, 534 edges
+- EventGraph (EventGraph): 370 nodes, 397 edges
+- AddWeaponToInventory (Function): 20 nodes, 23 edges
+- AttachToHand (Function): 19 nodes, 21 edges
+- BPI_Get_3P_PivotTarget (Function): 9 nodes, 9 edges
+- BPI_Get_3P_TraceParams (Function): 11 nodes, 10 edges
+- BPI_Get_FP_CameraTarget (Function): 4 nodes, 3 edges
+- ClearHeldObject (Function): 6 nodes, 6 edges
+- ConsumeOneAmmoFromCurrentWeapon (Function): 28 nodes, 34 edges
+- GetCurrentWeaponFromInventory (Function): 15 nodes, 14 edges
+- GetGetUpAnimation (Function): 46 nodes, 56 edges
+- GetMantleAsset (Function): 27 nodes, 32 edges
+- GetRollAnimation (Function): 28 nodes, 29 edges
+- Has Weapon? (Function): 16 nodes, 16 edges
+- MantleEnd (Function): 3 nodes, 2 edges
+- MantleStart (Function): 5 nodes, 8 edges
+- On Begin Play (Function): 11 nodes, 12 edges
+- OnOverlayStateChanged (Function): 3 nodes, 3 edges
+- RagdollEnd (Function): 3 nodes, 2 edges
+- RagdollStart (Function): 3 nodes, 2 edges
+- Set/ResetColors (Function): 104 nodes, 103 edges
+- SetDynamicMaterials (Function): 48 nodes, 61 edges
+- SpawnCurrentWeaponActor (Function): 18 nodes, 22 edges
+- SpawnMuzzleFX (Function): 15 nodes, 22 edges
+- UpdateColoringSystem (Function): 11 nodes, 12 edges
+- UpdateHeldObjectAnimations (Function): 8 nodes, 8 edges
+- UpdateHeldObject (Function): 20 nodes, 24 edges
+- UpdateLayeringColors (Function): 80 nodes, 81 edges
+- UserConstructionScript (Function): 7 nodes, 6 edges
+
+## Important References
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_N_Mantle_1m_Montage_2H
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_N_LandRoll_F_Montage_LH
+- /Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/H2H/AM_MM_H2H_RightBigPunch
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_N_Mantle_1m_Montage_Default
+- /Game/ChuckContent/UI/WIDGET_MENU/WBP_MenuPausa
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_N_LandRoll_F_Montage_2H
+- /Game/AdditionalContents/AdvancedLocomotionV4/Props/Meshes/Torch
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_CLF_GetUp_Back_Montage_Default
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_N_Mantle_2m_Montage_Default
+- /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/MINIMAP/RT_Minimap
+- /Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/H2H/AM_MM_H2H_LeftPunch
+- /Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/H2H/AM_MM_H2H_RightPunch
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_CLF_GetUp_Back_Montage_2H
+- /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_N_LandRoll_F_Montage_RH
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_CLF_GetUp_Back_Montage_RH
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_CLF_GetUp_Front_Montage_LH
+- /Game/ChuckContent/UI/Interfaces/WBP_Tip
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Controller_BPI
+- /Game/AdditionalContents/AdvancedLocomotionV4/Props/Meshes/Binoculars
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_CLF_GetUp_Front_Montage_2H
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/Meshes/Mannequin
+- /Game/AdditionalContents/AdvancedLocomotionV4/Audio/Footsteps/Concrete_Pivot_03
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_N_Mantle_1m_Montage_Box
+- /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_N_Mantle_1m_Montage_RH
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Curves/MantleCurves/Mantle_2m
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_CLF_GetUp_Front_Montage_Default
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/MantleType
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/Meshes/AnimMan
+- /Game/AdditionalContents/AdvancedLocomotionV4/Props/Meshes/Bow_AnimBP
+- /Game/ChuckContent/Blueprints/S_InteractionPrompt
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/ALS_ComponentAndTransform
+- /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_CLF_GetUp_Front_Montage_RH
+- /Game/ChuckContent/Blueprints/BPI_Interaction
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Curves/MantleCurves/Mantle_1m
+- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData
+- /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_N_Mantle_1m_Montage_LH
+- /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Sound/Knife/Wavs/Knife_ImpactBody01
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_N_LandRoll_F_Montage_Default
+- /Engine/EditorBlueprintResources/StandardMacros
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Asset
+- /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_CLF_GetUp_Back_Montage_LH
+- /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Camera_BPI
+- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase
+- /Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode

@@ -1,0 +1,215 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"graph": "BPI_Get_CameraParameters",
+	"entryName": "BPI Get Camera Parameters",
+	"entryNodeGuid": "1A3AF9224D9A2E00A4A097B3CA640344",
+	"nodes": [
+		{
+			"nodeGuid": "1A3AF9224D9A2E00A4A097B3CA640344",
+			"class": "K2Node_FunctionEntry",
+			"title": "BPI Get Camera Parameters",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4E89C53F4606DBA288C82297AB9E925E",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1B73E430464A50C27C6A96BFD44F03FF",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 256,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6022D0F04A2FF40F719400905AE95B7C",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BAD81F4C4235FD84409D0F93D2F0BBB3",
+					"name": "TP_FOV",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "DDE3CA8C43D6F1CAA1C2F098B8412B47",
+					"name": "FP_FOV",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "27B2C090437C6C3FB46108866A907200",
+					"name": "RightShoulder",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A020573B4A3728043CD666AB5EDB1B86",
+			"class": "K2Node_VariableGet",
+			"title": "Get ThirdPersonFOV",
+			"comment": "",
+			"x": 80,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "05621FFE4AB0527B62BF6F80408D85E8",
+					"name": "ThirdPersonFOV",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "D9EC6E8646E4C60618FC2EBFA8840EF2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "96CB4FDC4E8252D73ED17F98BC71EFD6",
+			"class": "K2Node_VariableGet",
+			"title": "Get FirstPersonFOV",
+			"comment": "",
+			"x": 80,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B8DA7234446CD583466737987F8BC6C8",
+					"name": "FirstPersonFOV",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "DEDCD281460C0A7E1E273BAA38C91A60",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "451743404CDB501A1264379001B9E3EC",
+			"class": "K2Node_VariableGet",
+			"title": "Get RightShoulder",
+			"comment": "",
+			"x": 96,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "929BC4CF4C2162E2DA9F60A2B9DFC0D7",
+					"name": "RightShoulder",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "CBD268BE477C30B07CF11887F5E6FCB3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_CameraParameters",
+			"edgeType": "exec",
+			"fromNodeGuid": "1A3AF9224D9A2E00A4A097B3CA640344",
+			"fromPinId": "4E89C53F4606DBA288C82297AB9E925E",
+			"fromPinName": "then",
+			"toNodeGuid": "1B73E430464A50C27C6A96BFD44F03FF",
+			"toPinId": "6022D0F04A2FF40F719400905AE95B7C",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_CameraParameters",
+			"edgeType": "data",
+			"fromNodeGuid": "A020573B4A3728043CD666AB5EDB1B86",
+			"fromPinId": "05621FFE4AB0527B62BF6F80408D85E8",
+			"fromPinName": "ThirdPersonFOV",
+			"toNodeGuid": "1B73E430464A50C27C6A96BFD44F03FF",
+			"toPinId": "BAD81F4C4235FD84409D0F93D2F0BBB3",
+			"toPinName": "TP_FOV"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_CameraParameters",
+			"edgeType": "data",
+			"fromNodeGuid": "96CB4FDC4E8252D73ED17F98BC71EFD6",
+			"fromPinId": "B8DA7234446CD583466737987F8BC6C8",
+			"fromPinName": "FirstPersonFOV",
+			"toNodeGuid": "1B73E430464A50C27C6A96BFD44F03FF",
+			"toPinId": "DDE3CA8C43D6F1CAA1C2F098B8412B47",
+			"toPinName": "FP_FOV"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_CameraParameters",
+			"edgeType": "data",
+			"fromNodeGuid": "451743404CDB501A1264379001B9E3EC",
+			"fromPinId": "929BC4CF4C2162E2DA9F60A2B9DFC0D7",
+			"fromPinName": "RightShoulder",
+			"toNodeGuid": "1B73E430464A50C27C6A96BFD44F03FF",
+			"toPinId": "27B2C090437C6C3FB46108866A907200",
+			"toPinName": "RightShoulder"
+		}
+	],
+	"variablesRead": [
+		"Get FirstPersonFOV",
+		"Get RightShoulder",
+		"Get ThirdPersonFOV"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G003",
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP"
+}

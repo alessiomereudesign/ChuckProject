@@ -1,0 +1,111 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G051
+Graph: SetActorLocationDuringRagdoll
+FlowId: F001
+Entry: Set Actor Location During Ragdoll
+NodeGuid: 89D5B216454BAE8D1B0888B77D34C84A
+
+Exec Flow:
+1. Set Actor Location During Ragdoll [K2Node_FunctionEntry] 89D5B216454BAE8D1B0888B77D34C84A
+2. Line Trace By Channel [K2Node_CallFunction] D489B1854CB2C8EBF7B052B9311BFEBF
+3. Break Vector [K2Node_CallFunction] AE0F6A384D21223D289F9CBD8404A185
+4. Make Vector [K2Node_CallFunction] 179900214932C7D9E0436F872CD49F78
+5. float - float [K2Node_CallFunction] 0D4D5F2E4431838567373BB3FDB522EC
+6. Get Scaled Capsule Half Height
+La destinazione è Capsule Collision [K2Node_CallFunction] D23F1E944FB8EA8F5358F6A411081F83
+7. float - float [K2Node_CallFunction] 256078404893DBF8691A2D9FC5C0DCEB
+8. Get CapsuleComponent [K2Node_VariableGet] A159E039453B1886159986A288B7810D
+9. Get Scaled Capsule Half Height
+La destinazione è Capsule Collision [K2Node_CallFunction] A9F266C347837B0D0B341889AD317F17
+10. float - float [K2Node_CallFunction] BE50DBD84236A59C65CD8D8DCE749118
+11. Absolute (Float) [K2Node_CallFunction] CF47AC964732C466E069FDBCE4BA1143
+12. float + float [K2Node_CommutativeAssociativeBinaryOperator] DE49F20C4BAEF8D6F3F17397049A98D3
+13. Break Vector [K2Node_CallFunction] F42AC1F84F955EFC8330F8ADE99C941F
+14. Make Vector [K2Node_CallFunction] B8CC405D4AAF1913001B71A72B6C3B4E
+15. Get CapsuleComponent [K2Node_VariableGet] 1B1A8407453F648C2127B9B489E78E7C
+16. float - float [K2Node_CallFunction] 491711D34AB0C4008041999D145B6C65
+17. Make Rotator [K2Node_CallFunction] 8E8C547945A67F9C4AC1FEA31715D963
+18. Ramo [K2Node_IfThenElse] 4902B99546A63BCD1C9E8CB52FCF30E0
+19. Set TargetRagdollRotation [K2Node_VariableSet] 353FAF884A7C7F1857CF3CB61571FB06
+20. Set Actor Location and Rotation(Update Target)
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 166115FA443FE7A8B0C20A9A4D4FB970
+21. Set Actor Location and Rotation(Update Target)
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 1904BF7C4F460FD2A88580B3744101DB
+22. Get Mesh [K2Node_VariableGet] 7B9A68EC47EA4784E7F54D86C260A93B
+23. Get Socket Rotation
+La destinazione è Componente di scena [K2Node_CallFunction] 9CCD808544480EF2D7EC788A19D08868
+24. Sequenza [K2Node_ExecutionSequence] 7749732941E7D930712916B1D513094B
+25. Nodo di reindirizzamento [K2Node_Knot] 7667A73645ABF2B82399D39D540CDECD
+26. Set TargetRagdollLocation [K2Node_VariableSet] 0A94E58948255B426B87CCBF79B52A13
+27. Get Socket Location
+La destinazione è Componente di scena [K2Node_CallFunction] 484514F142ED112C240E3DB92288B318
+28. Get Mesh [K2Node_VariableGet] 5C281A5B49F83DE7FBE09CA48009D778
+29. Nodo di reindirizzamento [K2Node_Knot] B7FB6E234BB65059FEF287B6A2BD9AE9
+30. Get TargetRagdollLocation [K2Node_VariableGet] 25C9FC2E45AEB8F0F6D15F97A4CC2434
+31. Get TargetRagdollLocation [K2Node_VariableGet] 5FA46B274B8EFD7F0AE33EADA9FEFC12
+32. Nodo di reindirizzamento [K2Node_Knot] C57ED6C14595343EDDA7CCBC3FC30328
+33. Get TargetRagdollLocation [K2Node_VariableGet] 5A875FA4496309122CB91C91F959B956
+34. Get TargetRagdollRotation [K2Node_VariableGet] 4F5F63D6480F4B4036FF909871F35F65
+35. Get TargetRagdollRotation [K2Node_VariableGet] 7DB91B884A914F3002389FAC77668854
+36. Get TargetRagdollLocation [K2Node_VariableGet] 6702AA7B4A7BE632428097B176D2F79E
+37. Set RagdollOnGround [K2Node_VariableSet] F9B1678D4C766F18EF8D2488FA629827
+38. Set RagdollFaceUp [K2Node_VariableSet] 5039E1D34C4CC654359DBE9907AF6DFE
+39. Seleziona [K2Node_Select] 9DF5E3A04A1B613B60577CA234ACC49E
+40. float < float [K2Node_CallFunction] DA5D9DB947493D209D6CB7BD52857CBA
+41. Set the pelvis as the target location. [EdGraphNode_Comment] B2545A1249B0567C7EA899B1A994DAB8
+42. Determine wether the ragdoll is facing up or down and set the target rotation accordingly. [EdGraphNode_Comment] 7301CA4A4E181A47602F08BAD00B408A
+43. Trace downward from the target location to offset the target location, preventing the lower half of the capsule from going through the floor when the ragdoll is laying on the ground. [EdGraphNode_Comment] 0874D7644CC377B9AB74D4BCACA41D3A
+
+Variables Read:
+- Get CapsuleComponent
+- Get Mesh
+- Get TargetRagdollLocation
+- Get TargetRagdollRotation
+
+Variables Written:
+- Set RagdollFaceUp
+- Set RagdollOnGround
+- Set TargetRagdollLocation
+- Set TargetRagdollRotation
+
+External Calls:
+- Absolute (Float)
+- Break Vector
+- float - float
+- float < float
+- Get Scaled Capsule Half Height
+La destinazione è Capsule Collision
+- Get Socket Location
+La destinazione è Componente di scena
+- Get Socket Rotation
+La destinazione è Componente di scena
+- Line Trace By Channel
+- Make Rotator
+- Make Vector
+- Set Actor Location and Rotation(Update Target)
+La destinazione è ALS Base Character BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Absolute (Float)
+- Break Vector
+- float - float
+- float < float
+- Get Scaled Capsule Half Height
+La destinazione è Capsule Collision
+- Get Socket Location
+La destinazione è Componente di scena
+- Get Socket Rotation
+La destinazione è Componente di scena
+- Line Trace By Channel
+- Make Rotator
+- Make Vector
+- Set Actor Location and Rotation(Update Target)
+La destinazione è ALS Base Character BP

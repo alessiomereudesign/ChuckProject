@@ -1,0 +1,29 @@
+{
+	"assetName": "WBP_CustomRadialMenu",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/WBP_CustomRadialMenu.WBP_CustomRadialMenu",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_2_MENU_RAPIDO_WBP_CustomRadialMenu",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Evento Construct",
+			"graph": "EventGraph",
+			"nodeGuid": "11413D2C43D55225923FEDA8DA3B65F2",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento Tick",
+			"graph": "EventGraph",
+			"nodeGuid": "E4B02A5D40386A87F7757E8A2C031648",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "CloseRadialMenu\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "CBADCDE349E5CD262B777ABF98D6BB8C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

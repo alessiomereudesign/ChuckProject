@@ -1,0 +1,25 @@
+{
+	"graphId": "G001",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 31,
+	"edgeCount": 37,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/Copy_Curves__2E7DCEF3/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/Copy_Curves__2E7DCEF3/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/Copy_Curves__2E7DCEF3/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Evento On Apply",
+			"entryNodeGuid": "BC7E8C7D4E9BD7E9CFA067B7A68CFDC2",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/Copy_Curves__2E7DCEF3/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/Copy_Curves__2E7DCEF3/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 31
+		}
+	]
+}

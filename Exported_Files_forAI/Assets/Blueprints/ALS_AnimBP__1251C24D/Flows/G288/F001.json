@@ -1,0 +1,676 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+	"graph": "CalculateStrideBlend",
+	"entryName": "Calculate Stride Blend",
+	"entryNodeGuid": "F40540A540D02EA5DD5FB2BF95B1CB7F",
+	"nodes": [
+		{
+			"nodeGuid": "F40540A540D02EA5DD5FB2BF95B1CB7F",
+			"class": "K2Node_FunctionEntry",
+			"title": "Calculate Stride Blend",
+			"comment": "",
+			"x": 32,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7CFB9A124211CD17D6B79F8B684A5339",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "14CDD9404718CB87E60221A853957BEC",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 1328,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D9AF3F0E405934935298238EF25AD26D",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DB2F67194007253A96478286BA989D31",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "F65D60CD47B2A4D4EE6F1EBD2CCE1078",
+			"class": "K2Node_VariableGet",
+			"title": "Get Speed",
+			"comment": "",
+			"x": 48,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "10BFEACC477CE0EDD449D48686254033",
+					"name": "Speed",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "44579EFC41F220565E9389BEA8218830",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A7C1DA9048D0298983E96DBD7B632C6C",
+			"class": "K2Node_VariableGet",
+			"title": "Get Speed",
+			"comment": "",
+			"x": 720,
+			"y": 416,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "10BFEACC477CE0EDD449D48686254033",
+					"name": "Speed",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "44579EFC41F220565E9389BEA8218830",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "28ACB1614C42BD0487CEBF8612FB185C",
+			"class": "K2Node_CallFunction",
+			"title": "Get Curve Value\nLa destinazione è Istanza animazione",
+			"comment": "",
+			"x": 1088,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C15AD9A343EB68370D7E60A34DA08555",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimInstance",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "067697744AE943E9DA00EEACB9820587",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BasePose_CLF"
+				},
+				{
+					"pinId": "8A7A60CA434600CA772B59A6A9EFF7EC",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "5EF0E5B7485CF6C12A6D66AF65D91597",
+			"class": "K2Node_MacroInstance",
+			"title": "Get Anim Curve Clamped",
+			"comment": "",
+			"x": 432,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BB2409A4457A44D21C6F5387966EC4AA",
+					"name": "Name",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Weight_Gait"
+				},
+				{
+					"pinId": "023338B34CCFE86CE4DDC48EB1C3DA07",
+					"name": "Bias",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "-1.000000"
+				},
+				{
+					"pinId": "9E621E864E846C4FC7DB79B000B06B0E",
+					"name": "ClampMin",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9D30555A4AEC67E11718FA87EB4EA320",
+					"name": "ClampMax",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "1.000000"
+				},
+				{
+					"pinId": "6A8B1D3A4DB630D79580F9B7A7680EA6",
+					"name": "Value",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B486482C42B2BFC8C58A84A03B4B6A36",
+			"class": "EdGraphNode_Comment",
+			"title": "Calculate the Stride Blend. This value is used within the blendspaces to scale the stride (distance feet travel) so that the character can walk or run at different movement speeds. It also allows the walk or run gait animations to blend independently while still matching the animation speed to the movement speed, preventing the character from needing to play a half walk+half run blend. The curves are used to map the stride amount to the speed for maximum control.",
+			"comment": "Calculate the Stride Blend. This value is used within the blendspaces to scale the stride (distance feet travel) so that the character can walk or run at different movement speeds. It also allows the walk or run gait animations to blend independently while still matching the animation speed to the movement speed, preventing the character from needing to play a half walk+half run blend. The curves are used to map the stride amount to the speed for maximum control.",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "111A63204C9938BF5179BDA73B909E04",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp",
+			"comment": "",
+			"x": 1104,
+			"y": 256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F578E8E147B64D3E3A6C0FA0FB1F2788",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "55C432854C77D3FD84E2E589D1503BEC",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "21109B0749B7568B37E21A8D36E483DA",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "59BBD85A437B9BFB300AB0A374AFADDB",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "F2BB673B41A5C3658979E4BFCA84307A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "05A2E5EC49E5D9E1568DF78416D9A022",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp",
+			"comment": "",
+			"x": 448,
+			"y": 256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F578E8E147B64D3E3A6C0FA0FB1F2788",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "55C432854C77D3FD84E2E589D1503BEC",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "21109B0749B7568B37E21A8D36E483DA",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "59BBD85A437B9BFB300AB0A374AFADDB",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "F2BB673B41A5C3658979E4BFCA84307A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "1FA9B80E4AFA11DB43E6338B8E7A67F2",
+			"class": "K2Node_VariableGet",
+			"title": "Get StrideBlend_N_Walk",
+			"comment": "",
+			"x": 32,
+			"y": 256,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5B41B21A4309D880085FA7B3179AEF04",
+					"name": "StrideBlend_N_Walk",
+					"direction": "Output",
+					"type": "object|/Script/Engine.CurveFloat",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7F0E6477444D738F765FBCAB38D57819",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2978AE30492A83FB5EDE2ABC62632A38",
+			"class": "K2Node_CallFunction",
+			"title": "Get Float Value\nLa destinazione è Curve Float",
+			"comment": "",
+			"x": 208,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CF45399542186489AFAC1A8F8579F22C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.CurveFloat",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1C042D84456A91FD6018E090FD866A9A",
+					"name": "InTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "D0DCC51C4B5AAEEBD37DBE88CC8BDECB",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A9BF040F4E4BB5BED2533690E060A34A",
+			"class": "K2Node_CallFunction",
+			"title": "Get Float Value\nLa destinazione è Curve Float",
+			"comment": "",
+			"x": 208,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CF45399542186489AFAC1A8F8579F22C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.CurveFloat",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1C042D84456A91FD6018E090FD866A9A",
+					"name": "InTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "D0DCC51C4B5AAEEBD37DBE88CC8BDECB",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "63BB59D0411D508CE32661AD328656FC",
+			"class": "K2Node_VariableGet",
+			"title": "Get StrideBlend_N_Run",
+			"comment": "",
+			"x": 16,
+			"y": 352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BCD6AE80474084D372A5A7A9834EFFB2",
+					"name": "StrideBlend_N_Run",
+					"direction": "Output",
+					"type": "object|/Script/Engine.CurveFloat",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2999F0FA4D414EC75BF0DEBB8E4E1F3A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B17584A3402B3AEBFDAD388083F3856F",
+			"class": "K2Node_CallFunction",
+			"title": "Get Float Value\nLa destinazione è Curve Float",
+			"comment": "",
+			"x": 864,
+			"y": 336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CF45399542186489AFAC1A8F8579F22C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.CurveFloat",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1C042D84456A91FD6018E090FD866A9A",
+					"name": "InTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "D0DCC51C4B5AAEEBD37DBE88CC8BDECB",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "EB97C06546F2B91DAC58F79953E6060A",
+			"class": "K2Node_VariableGet",
+			"title": "Get StrideBlend_C_Walk",
+			"comment": "",
+			"x": 688,
+			"y": 368,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "34D29F7C437F5A42218F608C6E5CCB03",
+					"name": "StrideBlend_C_Walk",
+					"direction": "Output",
+					"type": "object|/Script/Engine.CurveFloat",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E9AAE8324CC1426FB4008383BF1DC02A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateStrideBlend",
+			"edgeType": "exec",
+			"fromNodeGuid": "F40540A540D02EA5DD5FB2BF95B1CB7F",
+			"fromPinId": "7CFB9A124211CD17D6B79F8B684A5339",
+			"fromPinName": "then",
+			"toNodeGuid": "14CDD9404718CB87E60221A853957BEC",
+			"toPinId": "D9AF3F0E405934935298238EF25AD26D",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateStrideBlend",
+			"edgeType": "data",
+			"fromNodeGuid": "111A63204C9938BF5179BDA73B909E04",
+			"fromPinId": "F2BB673B41A5C3658979E4BFCA84307A",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "14CDD9404718CB87E60221A853957BEC",
+			"toPinId": "DB2F67194007253A96478286BA989D31",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateStrideBlend",
+			"edgeType": "data",
+			"fromNodeGuid": "F65D60CD47B2A4D4EE6F1EBD2CCE1078",
+			"fromPinId": "10BFEACC477CE0EDD449D48686254033",
+			"fromPinName": "Speed",
+			"toNodeGuid": "2978AE30492A83FB5EDE2ABC62632A38",
+			"toPinId": "1C042D84456A91FD6018E090FD866A9A",
+			"toPinName": "InTime"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateStrideBlend",
+			"edgeType": "data",
+			"fromNodeGuid": "F65D60CD47B2A4D4EE6F1EBD2CCE1078",
+			"fromPinId": "10BFEACC477CE0EDD449D48686254033",
+			"fromPinName": "Speed",
+			"toNodeGuid": "A9BF040F4E4BB5BED2533690E060A34A",
+			"toPinId": "1C042D84456A91FD6018E090FD866A9A",
+			"toPinName": "InTime"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateStrideBlend",
+			"edgeType": "data",
+			"fromNodeGuid": "A7C1DA9048D0298983E96DBD7B632C6C",
+			"fromPinId": "10BFEACC477CE0EDD449D48686254033",
+			"fromPinName": "Speed",
+			"toNodeGuid": "B17584A3402B3AEBFDAD388083F3856F",
+			"toPinId": "1C042D84456A91FD6018E090FD866A9A",
+			"toPinName": "InTime"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateStrideBlend",
+			"edgeType": "data",
+			"fromNodeGuid": "28ACB1614C42BD0487CEBF8612FB185C",
+			"fromPinId": "8A7A60CA434600CA772B59A6A9EFF7EC",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "111A63204C9938BF5179BDA73B909E04",
+			"toPinId": "59BBD85A437B9BFB300AB0A374AFADDB",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateStrideBlend",
+			"edgeType": "data",
+			"fromNodeGuid": "5EF0E5B7485CF6C12A6D66AF65D91597",
+			"fromPinId": "6A8B1D3A4DB630D79580F9B7A7680EA6",
+			"fromPinName": "Value",
+			"toNodeGuid": "05A2E5EC49E5D9E1568DF78416D9A022",
+			"toPinId": "59BBD85A437B9BFB300AB0A374AFADDB",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateStrideBlend",
+			"edgeType": "data",
+			"fromNodeGuid": "05A2E5EC49E5D9E1568DF78416D9A022",
+			"fromPinId": "F2BB673B41A5C3658979E4BFCA84307A",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "111A63204C9938BF5179BDA73B909E04",
+			"toPinId": "55C432854C77D3FD84E2E589D1503BEC",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateStrideBlend",
+			"edgeType": "data",
+			"fromNodeGuid": "B17584A3402B3AEBFDAD388083F3856F",
+			"fromPinId": "D0DCC51C4B5AAEEBD37DBE88CC8BDECB",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "111A63204C9938BF5179BDA73B909E04",
+			"toPinId": "21109B0749B7568B37E21A8D36E483DA",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateStrideBlend",
+			"edgeType": "data",
+			"fromNodeGuid": "2978AE30492A83FB5EDE2ABC62632A38",
+			"fromPinId": "D0DCC51C4B5AAEEBD37DBE88CC8BDECB",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "05A2E5EC49E5D9E1568DF78416D9A022",
+			"toPinId": "55C432854C77D3FD84E2E589D1503BEC",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateStrideBlend",
+			"edgeType": "data",
+			"fromNodeGuid": "A9BF040F4E4BB5BED2533690E060A34A",
+			"fromPinId": "D0DCC51C4B5AAEEBD37DBE88CC8BDECB",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "05A2E5EC49E5D9E1568DF78416D9A022",
+			"toPinId": "21109B0749B7568B37E21A8D36E483DA",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateStrideBlend",
+			"edgeType": "data",
+			"fromNodeGuid": "1FA9B80E4AFA11DB43E6338B8E7A67F2",
+			"fromPinId": "5B41B21A4309D880085FA7B3179AEF04",
+			"fromPinName": "StrideBlend_N_Walk",
+			"toNodeGuid": "2978AE30492A83FB5EDE2ABC62632A38",
+			"toPinId": "CF45399542186489AFAC1A8F8579F22C",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateStrideBlend",
+			"edgeType": "data",
+			"fromNodeGuid": "63BB59D0411D508CE32661AD328656FC",
+			"fromPinId": "BCD6AE80474084D372A5A7A9834EFFB2",
+			"fromPinName": "StrideBlend_N_Run",
+			"toNodeGuid": "A9BF040F4E4BB5BED2533690E060A34A",
+			"toPinId": "CF45399542186489AFAC1A8F8579F22C",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "CalculateStrideBlend",
+			"edgeType": "data",
+			"fromNodeGuid": "EB97C06546F2B91DAC58F79953E6060A",
+			"fromPinId": "34D29F7C437F5A42218F608C6E5CCB03",
+			"fromPinName": "StrideBlend_C_Walk",
+			"toNodeGuid": "B17584A3402B3AEBFDAD388083F3856F",
+			"toPinId": "CF45399542186489AFAC1A8F8579F22C",
+			"toPinName": "self"
+		}
+	],
+	"variablesRead": [
+		"Get Speed",
+		"Get StrideBlend_C_Walk",
+		"Get StrideBlend_N_Run",
+		"Get StrideBlend_N_Walk"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Curve Value\nLa destinazione è Istanza animazione",
+		"Get Float Value\nLa destinazione è Curve Float",
+		"Lerp"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Curve Value\nLa destinazione è Istanza animazione",
+		"Get Float Value\nLa destinazione è Curve Float",
+		"Lerp"
+	],
+	"flowId": "F001",
+	"graphId": "G288",
+	"assetName": "ALS_AnimBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP"
+}

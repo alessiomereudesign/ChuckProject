@@ -1,0 +1,477 @@
+{
+	"assetName": "ALS_AnimBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Evento Blueprint Initialize Animation",
+			"graph": "EventGraph",
+			"nodeGuid": "F80368264A261C187AF18C8061151AC9",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_->CLF Stop",
+			"graph": "EventGraph",
+			"nodeGuid": "3E58B0BE4A5924529E8E88A7C7FBA671",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_StopTransition",
+			"graph": "EventGraph",
+			"nodeGuid": "2904A3EA4B2DF7CBF7223FA262004617",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "PlayTransition\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "032FF1F8408B1D8A0909A1A114662D28",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Roll->Idle",
+			"graph": "EventGraph",
+			"nodeGuid": "34914FE4403DDCEBB8FB139FC1C0ED19",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_->N Stop L",
+			"graph": "EventGraph",
+			"nodeGuid": "ADD86C344F7F5804C28DA78D5CCD8741",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_->N Stop R",
+			"graph": "EventGraph",
+			"nodeGuid": "5B8C09A94371AFDE87BC6F9703293D88",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Land->Idle",
+			"graph": "EventGraph",
+			"nodeGuid": "3034293A440AABE881561CAB56AD8B0C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_->N QuickStop ",
+			"graph": "EventGraph",
+			"nodeGuid": "FF60AC5743D8A89278643B99247A6941",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento BPI Jumped\nDa ALS Animation BPI",
+			"graph": "EventGraph",
+			"nodeGuid": "A6C7696545F055129DB0EBB248D2041B",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento BPI Set Grounded Entry State\nDa ALS Animation BPI",
+			"graph": "EventGraph",
+			"nodeGuid": "8179E4724B48B47512D7CC89EF088533",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Reset-GroundedEntryState",
+			"graph": "EventGraph",
+			"nodeGuid": "931120EB422A0EF6660660BBD8B4AF85",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Bow Ready->Relaxed",
+			"graph": "EventGraph",
+			"nodeGuid": "982B26474E3D7B2400BD64B8500FADD5",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Bow Relaxed->Ready",
+			"graph": "EventGraph",
+			"nodeGuid": "104C9A5D465E1CEBAE746CA3B2077BC1",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_M4A1 Ready->Relaxed",
+			"graph": "EventGraph",
+			"nodeGuid": "9BCADAE0409A79C89B7A0283DEFF798C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_M4A1 Relaxed->Ready",
+			"graph": "EventGraph",
+			"nodeGuid": "1C647D704C878106FDDC7CB2B235C148",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Pistol 1H Ready->Relaxed",
+			"graph": "EventGraph",
+			"nodeGuid": "57809B984B19D3EA500A79906A3B401D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Pistol 1H Relaxed->Ready",
+			"graph": "EventGraph",
+			"nodeGuid": "5634D56A4FA3C52EFF4FFBB22846967A",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Hips F",
+			"graph": "EventGraph",
+			"nodeGuid": "0793F165437330EA7A6ABB89D1BE098B",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Hips B",
+			"graph": "EventGraph",
+			"nodeGuid": "7EF4DD8B4CAC7EB304352A95E611BF0D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Hips LB",
+			"graph": "EventGraph",
+			"nodeGuid": "1410BB5C439EC59C3DBADD805D4B8B9F",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Hips LF",
+			"graph": "EventGraph",
+			"nodeGuid": "B853E0C449BB81805A2955A7EE983C6D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Hips RB",
+			"graph": "EventGraph",
+			"nodeGuid": "FECED87B441A109270C12B83FFABEB79",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Hips RF",
+			"graph": "EventGraph",
+			"nodeGuid": "C4CDC2264355C06FA1FCD69F1271D85D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Pivot",
+			"graph": "EventGraph",
+			"nodeGuid": "9EE0EBBB4FC245C3181878A35B2F22DD",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "PlayDynamicTransition\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "D9295EBC445E5F1F2BCC3991A9A5F40C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento BPI Set Overlay Override State\nDa ALS Animation BPI",
+			"graph": "EventGraph",
+			"nodeGuid": "AF5DFD0A4135A43BA54D8DB02024BFB0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Pistol 2H Ready->Relaxed",
+			"graph": "EventGraph",
+			"nodeGuid": "470AAB82408E44645C3D1CA8F6D762AE",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AnimNotify_Pistol 2H Relaxed->Ready",
+			"graph": "EventGraph",
+			"nodeGuid": "B7D42A9C4E58C95830C6FB8008252564",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento Blueprint Update Animation",
+			"graph": "UpdateGraph",
+			"nodeGuid": "0DF7962045511DD855EBEAAF9F14C3CC",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Angle in Range",
+			"graph": "AngleInRange",
+			"nodeGuid": "D43CEEE2494BCEDCEED4F3A6263C3A85",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Calculate Crouching Play Rate",
+			"graph": "CalculateCrouchingPlayRate",
+			"nodeGuid": "B73C18864AFF57551C5E399239CB98C0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Calculate Diagonal Scale Amount",
+			"graph": "CalculateDiagonalScaleAmount",
+			"nodeGuid": "FAC8996D4B1949CC08D7F0961C82265D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Calculate in Air Lean Amount",
+			"graph": "CalculateInAirLeanAmount",
+			"nodeGuid": "59C873A643F2B365F13457B08F3A411B",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Calculate Land Prediction",
+			"graph": "CalculateLandPrediction",
+			"nodeGuid": "E457E0904E80206FE4B9DDBC4F035200",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Calculate Movement Direction",
+			"graph": "CalculateMovementDirection",
+			"nodeGuid": "42DF2B5A49B70BFDDF7A0983BC45BC38",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Calculate Quadrant",
+			"graph": "CalculateQuadrant",
+			"nodeGuid": "C52A0F4B4BA79AF687B9AB90F3D63D88",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Calculate Relative Acceleration Amount",
+			"graph": "CalculateRelativeAccelerationAmount",
+			"nodeGuid": "02EF61164C9901BE72FB7B8DA66F359C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Calculate Standing Play Rate",
+			"graph": "CalculateStandingPlayRate",
+			"nodeGuid": "C1F708DD4C323FC702A07080DFF46EB5",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Calculate Stride Blend",
+			"graph": "CalculateStrideBlend",
+			"nodeGuid": "F40540A540D02EA5DD5FB2BF95B1CB7F",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Calculate Velocity Blend",
+			"graph": "CalculateVelocityBlend",
+			"nodeGuid": "E3FBD3E94E592933318D7DA7571D8121",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Calculate Walk Run Blend",
+			"graph": "CalculateWalkRunBlend",
+			"nodeGuid": "2320637140CE0B75D99E0F9025B1DE9B",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Can Dynamic Transition",
+			"graph": "CanDynamicTransition",
+			"nodeGuid": "92DBF0B94CC2A4E0DD4BF785DB6DD218",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Can Overlay Transition",
+			"graph": "CanOverlayTransition",
+			"nodeGuid": "2A6799C043F438E1CB8FC384749EE6FA",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Can Rotate in Place",
+			"graph": "CanRotateInPlace",
+			"nodeGuid": "F9BDE62F4727CC2B91FD6BA94BF918CE",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Can Turn in Place",
+			"graph": "CanTurnInPlace",
+			"nodeGuid": "470A00DB4F22AEF8EEB80DBB8F1ABFA0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Dynamic Transition Check",
+			"graph": "DynamicTransitionCheck",
+			"nodeGuid": "812BD08F452593DED2397DB8E7186874",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Debug Trace Type",
+			"graph": "GetDebugTraceType",
+			"nodeGuid": "D4F8B7BA484F888FAAD3DAAEF91C9D16",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Interp Lean Amount",
+			"graph": "InterpLeanAmount",
+			"nodeGuid": "7E25B786407BFB6EA0B78F8ED6B60A3D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Interp Velocity Blend",
+			"graph": "InterpVelocityBlend",
+			"nodeGuid": "77C784FA44F5189063A21BBCF95FE853",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Reset IKOffsets",
+			"graph": "ResetIKOffsets",
+			"nodeGuid": "185386BA4344CB468E934D85D97048AA",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Rotate in Place Check",
+			"graph": "RotateInPlaceCheck",
+			"nodeGuid": "DE6EF2F54DF25FB512078ABD0DFA77D6",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Set Foot Locking",
+			"graph": "SetFootLocking",
+			"nodeGuid": "94D155E945082DD14723D29EEE9E5A82",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Set Foot Lock Offsets",
+			"graph": "SetFootLockOffsets",
+			"nodeGuid": "2477D3174F3C02F68AE66FB14D4B47D0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Set Foot Offsets",
+			"graph": "SetFootOffsets",
+			"nodeGuid": "4560DEA34FFB5521BD3008899CB53BCD",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Set Pelvis IKOffset",
+			"graph": "SetPelvisIKOffset",
+			"nodeGuid": "05391B2D45C81C7AA059C69ED7F6917D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Should Move Check",
+			"graph": "ShouldMoveCheck",
+			"nodeGuid": "3A7B49AD4394A5355BF4249E85AB98DF",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Turn in Place Check",
+			"graph": "TurnInPlaceCheck",
+			"nodeGuid": "1B81C4C9400176C84565D596179BCA26",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Turn in Place",
+			"graph": "TurnInPlace",
+			"nodeGuid": "C9BC95C24B86D8244F521DB14C9E0144",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Aiming Values",
+			"graph": "UpdateAimingValues",
+			"nodeGuid": "609239CB4180BAAC6272819AF2493581",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Character Info",
+			"graph": "UpdateCharacterInfo",
+			"nodeGuid": "4DEB0EDE40DA403D482670A70D424258",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Foot IK",
+			"graph": "UpdateFootIK",
+			"nodeGuid": "8FE823724E0758EAA75F47BAE61E2FED",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update in Air Values",
+			"graph": "UpdateInAirValues",
+			"nodeGuid": "E9AFD68C46352A04981D68B2AC193999",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Layer Values",
+			"graph": "UpdateLayerValues",
+			"nodeGuid": "D29B92A14A4A31DC6A134489F888DEB3",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Movement Values",
+			"graph": "UpdateMovementValues",
+			"nodeGuid": "31F97FC5413E80589FEBEF84706E6761",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Ragdoll Values",
+			"graph": "UpdateRagdollValues",
+			"nodeGuid": "26B5391B40796600BB3F4D801527C9CA",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Rotation Values",
+			"graph": "UpdateRotationValues",
+			"nodeGuid": "8E3E9D134C8DCF1A06E2B990F72CBC6F",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

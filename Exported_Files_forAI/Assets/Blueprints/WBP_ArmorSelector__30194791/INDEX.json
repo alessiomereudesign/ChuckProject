@@ -1,0 +1,71 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "WBP_ArmorSelector",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_ArmorSelector.WBP_ArmorSelector",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_ArmorSelector",
+	"shortAssetFolder": "WBP_ArmorSelector__30194791",
+	"pathHash": "30194791",
+	"assetType": "Blueprint",
+	"unrealClass": "WidgetBlueprint",
+	"parentClass": "/Script/UMG.UserWidget",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 6,
+		"components": 0,
+		"widgets": 18,
+		"graphs": 1,
+		"nodes": 108,
+		"edges": 161,
+		"flows": 2
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/WBP_ArmorSelector__30194791/SUMMARY.md",
+		"variables": "Assets/Blueprints/WBP_ArmorSelector__30194791/VARIABLES.json",
+		"components": "Assets/Blueprints/WBP_ArmorSelector__30194791/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/WBP_ArmorSelector__30194791/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/WBP_ArmorSelector__30194791/NODES.jsonl",
+		"edges": "Assets/Blueprints/WBP_ArmorSelector__30194791/EDGES.jsonl",
+		"search": "Assets/Blueprints/WBP_ArmorSelector__30194791/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 108,
+			"edgeCount": 161,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_ArmorSelector__30194791/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_ArmorSelector__30194791/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_ArmorSelector__30194791/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "EquipAndClose\nCustom Event",
+					"entryNodeGuid": "ECF448864BA314EB406EE89FEDE0E1D5",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_ArmorSelector__30194791/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_ArmorSelector__30194791/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 108
+				},
+				{
+					"flowId": "F002",
+					"entryName": "Evento Construct",
+					"entryNodeGuid": "C571FEEF406F70C8A2A4718B593516B1",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_ArmorSelector__30194791/Flows/G001/F002.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_ArmorSelector__30194791/Flows/G001/F002.json",
+					"textFile": "Flows/G001/F002.txt",
+					"jsonFile": "Flows/G001/F002.json",
+					"nodeCount": 108
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,36 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G014
+Graph: SpawnMuzzleFX
+FlowId: F001
+Entry: Spawn Muzzle FX
+NodeGuid: 22D576E7422AFF2E6148C39C1D242DB9
+
+Exec Flow:
+1. Spawn Muzzle FX [K2Node_FunctionEntry] 22D576E7422AFF2E6148C39C1D242DB9
+2. Get WeaponData [K2Node_VariableGet] 1F311DD74159A5C967F2FF94792C6FD3
+3. Break S_WeaponData [K2Node_BreakStruct] 8D241E9C44DDA65F32C0D0A3B0FC0F02
+4. Is Valid [K2Node_MacroInstance] 66D04D5D49C06E54AB1F02970CB6A0A3
+5. Spawn Emitter Attached [K2Node_CallFunction] 23EEF998422B11810082B4B1566AB6CF
+6. Nodo di reindirizzamento [K2Node_Knot] 57460F774C5C4B47F395B7916452BF96
+7. Get SK_Weapon [K2Node_VariableGet] F9DE3BE646F2EEFE617414AF34FD5AF6
+
+Variables Read:
+- Get SK_Weapon
+- Get WeaponData
+
+Variables Written:
+- none
+
+External Calls:
+- Spawn Emitter Attached
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Spawn Emitter Attached

@@ -1,0 +1,43 @@
+{
+	"assetName": "BP_AmmoPickUp",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_AmmoPickUp.BP_AmmoPickUp",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_AmmoPickUp",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Get Interaction Prompt",
+			"graph": "GetInteractionPrompt",
+			"nodeGuid": "88FE528C4F9ABF36BB07D78F7A0F8AB1",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento BeginPlay",
+			"graph": "EventGraph",
+			"nodeGuid": "99206FB84757DE67DB5EB6B94B7E7032",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento Interact\nDa BPI Interaction",
+			"graph": "EventGraph",
+			"nodeGuid": "DB159FE04847E5309D7358B6DC35A214",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Collect Ammo",
+			"graph": "CollectAmmo",
+			"nodeGuid": "422E961D47B35F1564825289EF45BC71",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Construction Script",
+			"graph": "UserConstructionScript",
+			"nodeGuid": "BB3A143044CCD24BF774FCB7C45DA5BD",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

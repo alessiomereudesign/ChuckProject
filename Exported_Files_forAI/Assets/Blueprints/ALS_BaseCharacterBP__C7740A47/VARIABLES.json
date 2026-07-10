@@ -1,0 +1,243 @@
+{
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "MovementState",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+			"defaultValue": ""
+		},
+		{
+			"name": "PrevMovementState",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+			"defaultValue": ""
+		},
+		{
+			"name": "DesiredRotationMode",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+			"defaultValue": ""
+		},
+		{
+			"name": "MovementAction",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementAction.ALS_MovementAction",
+			"defaultValue": ""
+		},
+		{
+			"name": "RotationMode",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+			"defaultValue": ""
+		},
+		{
+			"name": "DesiredGait",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+			"defaultValue": ""
+		},
+		{
+			"name": "Gait",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+			"defaultValue": ""
+		},
+		{
+			"name": "Stance",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+			"defaultValue": ""
+		},
+		{
+			"name": "ViewMode",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode.ALS_ViewMode",
+			"defaultValue": ""
+		},
+		{
+			"name": "PreviousVelocity",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "Acceleration",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "IsMoving",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "HasMovementInput",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "LastVelocityRotation",
+			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		},
+		{
+			"name": "LastMovementInputRotation",
+			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		},
+		{
+			"name": "Speed",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "MovementInputAmount",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "PreviousAimYaw",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "TargetRotation",
+			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		},
+		{
+			"name": "InAirRotation",
+			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		},
+		{
+			"name": "YawOffset",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "MovementModel",
+			"type": "struct|/Script/Engine.DataTableRowHandle",
+			"defaultValue": ""
+		},
+		{
+			"name": "MovementData",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/MovementSettings_State.MovementSettings_State",
+			"defaultValue": ""
+		},
+		{
+			"name": "MantleParams",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_Params.Mantle_Params",
+			"defaultValue": ""
+		},
+		{
+			"name": "MantleLedgeLS",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/ALS_ComponentAndTransform.ALS_ComponentAndTransform",
+			"defaultValue": ""
+		},
+		{
+			"name": "MantleTarget",
+			"type": "struct|/Script/CoreUObject.Transform",
+			"defaultValue": ""
+		},
+		{
+			"name": "MantleActualStartOffset",
+			"type": "struct|/Script/CoreUObject.Transform",
+			"defaultValue": ""
+		},
+		{
+			"name": "MantleAnimatedStartOffset",
+			"type": "struct|/Script/CoreUObject.Transform",
+			"defaultValue": ""
+		},
+		{
+			"name": "GroundedTraceSettings",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_TraceSettings.Mantle_TraceSettings",
+			"defaultValue": ""
+		},
+		{
+			"name": "AutomaticTraceSettings",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_TraceSettings.Mantle_TraceSettings",
+			"defaultValue": ""
+		},
+		{
+			"name": "FallingTraceSettings",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/Mantle_TraceSettings.Mantle_TraceSettings",
+			"defaultValue": ""
+		},
+		{
+			"name": "DesiredStance",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+			"defaultValue": ""
+		},
+		{
+			"name": "LookUp/DownRate",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "LookLeftRightRate",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "AimYawRate",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "OverlayState",
+			"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+			"defaultValue": ""
+		},
+		{
+			"name": "TimesPressedStance",
+			"type": "int",
+			"defaultValue": ""
+		},
+		{
+			"name": "BreakFall",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "SprintHeld",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "MainAnimInstance",
+			"type": "object|/Script/Engine.AnimInstance",
+			"defaultValue": ""
+		},
+		{
+			"name": "RagdollOnGround",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "RagdollFaceUp",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "LastRagdollVelocity",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "ThirdPersonFOV",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "FirstPersonFOV",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "RightShoulder",
+			"type": "bool",
+			"defaultValue": ""
+		},
+		{
+			"name": "Movement Settings",
+			"type": "struct|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/MovementSettings.MovementSettings",
+			"defaultValue": ""
+		}
+	]
+}

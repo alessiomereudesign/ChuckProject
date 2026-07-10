@@ -1,0 +1,103 @@
+{
+	"schemaVersion": "2.2",
+	"unrealEngineVersion": "5.4.4-35576357+++UE5+Release-5.4",
+	"name": "S_ArmorData",
+	"path": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData.S_ArmorData",
+	"assetName": "S_ArmorData",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/S_ArmorData.S_ArmorData",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_Armor_S_ArmorData",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"status": "UpToDate",
+	"guid": "FA047A0B4FE980ECEE40FAB8A89B15DC",
+	"sizeBytes": 40,
+	"fields": [
+		{
+			"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+			"authoredName": "Name",
+			"type": "FText",
+			"propertyClass": "TextProperty",
+			"arrayDim": 1,
+			"defaultValue": "",
+			"metadata":
+			{
+				"DisplayName": "Name",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "Icon_36_A8272ED24A449CC6084C88B1C8FF3C5A",
+			"authoredName": "Icon",
+			"type": "UTexture2D*",
+			"propertyClass": "ObjectProperty",
+			"arrayDim": 1,
+			"defaultValue": "None",
+			"metadata":
+			{
+				"DisplayName": "Icon",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "SlotType_37_6A80ABC24B17EFCD8135D98F80F1052A",
+			"authoredName": "SlotType",
+			"type": "TEnumAsByte<E_ArmorSlot>",
+			"propertyClass": "ByteProperty",
+			"arrayDim": 1,
+			"defaultValue": "NewEnumerator0",
+			"metadata":
+			{
+				"DisplayName": "SlotType",
+				"ToolTip": ""
+			}
+		},
+		{
+			"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+			"authoredName": "SkeletalMesh",
+			"type": "USkeletalMesh*",
+			"propertyClass": "ObjectProperty",
+			"arrayDim": 1,
+			"defaultValue": "None",
+			"metadata":
+			{
+				"DisplayName": "SkeletalMesh",
+				"ToolTip": ""
+			}
+		}
+	],
+	"dependencies": [
+		"/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot"
+	],
+	"relations": [
+		{
+			"name": "E_ArmorSlot",
+			"path": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot.E_ArmorSlot",
+			"assetType": "Enum"
+		}
+	],
+	"semanticSummary":
+	{
+		"probableSystem": "UI / Widgets",
+		"classificationConfidence": "heuristic",
+		"summary": "Struct dati descritta tramite campi, default e relazioni statiche rilevate.",
+		"importantVariables": [],
+		"importantFunctions": [],
+		"importantEvents": [],
+		"relatedAssets": [
+			"E_ArmorSlot"
+		],
+		"complexity":
+		{
+			"graphCount": 0,
+			"nodeCount": 0,
+			"pinCount": 0,
+			"linkCount": 0
+		},
+		"notes": [
+			"Classificazione euristica dedotta da nome, path e tipo asset (UI / Widgets)."
+		]
+	},
+	"shortAssetFolder": "S_ArmorData__AE5FFF7D",
+	"pathHash": "AE5FFF7D"
+}

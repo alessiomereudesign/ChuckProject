@@ -1,0 +1,505 @@
+{
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "BPI Get 3P Pivot Target",
+			"graph": "BPI_Get_3P_PivotTarget",
+			"nodeGuid": "2EC868EE4EF65EC3DA0C63862096B8E3",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Get 3P Trace Params",
+			"graph": "BPI_Get_3P_TraceParams",
+			"nodeGuid": "6C19922A4537B1940B64F58DA7FB35EE",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Get Camera Parameters",
+			"graph": "BPI_Get_CameraParameters",
+			"nodeGuid": "1A3AF9224D9A2E00A4A097B3CA640344",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Get Current States",
+			"graph": "BPI_Get_CurrentStates",
+			"nodeGuid": "76BE5B9B42FBB18BE2662C9AD16D5AB1",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Get Essential Values",
+			"graph": "BPI_Get_EssentialValues",
+			"nodeGuid": "2C1975924F24C0A682D349AD77D61B4E",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Get FP Camera Target",
+			"graph": "BPI_Get_FP_CameraTarget",
+			"nodeGuid": "C3719B304047267775F7F5981B08058F",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento BeginPlay",
+			"graph": "EventGraph",
+			"nodeGuid": "CA27EDEA42A6BF35DFF63A861EE70ABC",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento OnStartCrouch",
+			"graph": "EventGraph",
+			"nodeGuid": "72382A374C559514843EABABE94F5D3C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento OnEndCrouch",
+			"graph": "EventGraph",
+			"nodeGuid": "BE69C236464C7F3BEFDF89B1F99F27F3",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento OnMovementModeChanged",
+			"graph": "EventGraph",
+			"nodeGuid": "36F36BF5473F8B9D2FA09B9A62CDF445",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento On Jumped",
+			"graph": "EventGraph",
+			"nodeGuid": "41F4E35848155D1E0B55A798E4C05F69",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento On Landed",
+			"graph": "EventGraph",
+			"nodeGuid": "0C27AF8746030A35DFAEF388B3074B1D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Breakfall Event\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "6941C8F74737101DCDF602ABEBAFF439",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Roll Event\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "D96293A24E8B665B4BBA3D924F957530",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento BPI Set Movement State\nDa ALS Character BPI",
+			"graph": "EventGraph",
+			"nodeGuid": "2CF8071D4FA7C17927CF44B78B86EBDE",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento BPI Set Movement Action\nDa ALS Character BPI",
+			"graph": "EventGraph",
+			"nodeGuid": "C836D52141BDAEEAF96FB8B3DA6CD673",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento BPI Set Rotation Mode\nDa ALS Character BPI",
+			"graph": "EventGraph",
+			"nodeGuid": "9516E95146A87D771B0B318DBF54C2D0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento BPI Set Gait\nDa ALS Character BPI",
+			"graph": "EventGraph",
+			"nodeGuid": "C18F5F404422560B8F65F7AEB5308DF9",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento BPI Set View Mode\nDa ALS Character BPI",
+			"graph": "EventGraph",
+			"nodeGuid": "EBB5D3CD476853EB0829E08D5BFFB9C0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento BPI Set Overlay State\nDa ALS Character BPI",
+			"graph": "EventGraph",
+			"nodeGuid": "DCC51F0449BE3B6CCF639EB384AB43A4",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento Tick",
+			"graph": "TickGraph",
+			"nodeGuid": "0A4333614BC884C5B3E02384E2B0B00D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Add to Character Rotation",
+			"graph": "AddToCharacterRotation",
+			"nodeGuid": "943F31C04DD356D777B052A98CF32EF0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Cache Values",
+			"graph": "CacheValues",
+			"nodeGuid": "124D3FEB4096EB58CB21489ABB076E96",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Calculate Acceleration",
+			"graph": "CalculateAcceleration",
+			"nodeGuid": "59EBC0574A09377E14565C9A0EAE1FDB",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Calculate Grounded Rotation Rate",
+			"graph": "CalculateGroundedRotationRate",
+			"nodeGuid": "08B3A25E4B27D47F9BDC44B9C3FB409E",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Can Sprint",
+			"graph": "CanSprint",
+			"nodeGuid": "144A8B3649AC177B3AFFA3B02BCD8C5C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Can Update Moving Rotation",
+			"graph": "CanUpdateMovingRotation",
+			"nodeGuid": "1BEAC6764F2CFB84F46C7FB59DE395AC",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Capsule Has Room Check",
+			"graph": "CapsuleHasRoomCheck",
+			"nodeGuid": "7151FA2B473896746C7FC39B6D4465AD",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Draw Debug Shapes",
+			"graph": "DrawDebugShapes",
+			"nodeGuid": "91AECA8749A6431D00D7068ECC586844",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Fix Diagonal Gamepad Values",
+			"graph": "FixDiagonalGamepadValues",
+			"nodeGuid": "5263185D4F55D97DED2A7193C136281A",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Actual Gait",
+			"graph": "GetActualGait",
+			"nodeGuid": "5E3C8A904F4C1CBB314AC5A7413EA3ED",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Allowed Gait",
+			"graph": "GetAllowedGait",
+			"nodeGuid": "8650F2554FCA82CA76A687A178D92E98",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Anim Curve Value",
+			"graph": "GetAnimCurveValue",
+			"nodeGuid": "C77ED19740F176F511831C86EF601C37",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Calpsule Base Location",
+			"graph": "GetCalpsuleBaseLocation",
+			"nodeGuid": "3C64767B4D25A8BA5CAE34A4DD66756D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Capsule Location from Base",
+			"graph": "GetCapsuleLocationFromBase",
+			"nodeGuid": "AD589DEE4C5945FEFC620DA8680F5A40",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Control Forward/ Right Vector",
+			"graph": "GetControlForward/RightVector",
+			"nodeGuid": "48A88EBF452DED567E3740826BC8B181",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Get Up Animation",
+			"graph": "GetGetUpAnimation",
+			"nodeGuid": "AF197DBB45B2B7EA4CEE3B82DAA4C4AE",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Mantle Asset",
+			"graph": "GetMantleAsset",
+			"nodeGuid": "2662E3B84865C7144BBFAB85A5B177C0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Mapped Speed",
+			"graph": "GetMappedSpeed",
+			"nodeGuid": "339DAA464765D06260D06DAA65D82E6B",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Player Movement Input",
+			"graph": "GetPlayerMovementInput",
+			"nodeGuid": "0A1A2008434076A02486448BF96471BC",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Roll Animation",
+			"graph": "GetRollAnimation",
+			"nodeGuid": "29482DCA4DC50CEC07CA5CB5911E1199",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Target Movement Settings",
+			"graph": "GetTargetMovementSettings",
+			"nodeGuid": "BCB1B37740000141F68E91B9EDC2E2A0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Trace Debug Type",
+			"graph": "GetTraceDebugType",
+			"nodeGuid": "035981C64749A33407AFEF9F8A72E777",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Limit Rotation",
+			"graph": "LimitRotation",
+			"nodeGuid": "7AA7841A46053821775AA4B81272D4FA",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Mantle Check",
+			"graph": "MantleCheck",
+			"nodeGuid": "58A13E514DAFBA06B31D6BAEA7611FE0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Mantle End",
+			"graph": "MantleEnd",
+			"nodeGuid": "BF2D75CE465C0588F9B6DEB47EF627B1",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Mantle Start",
+			"graph": "MantleStart",
+			"nodeGuid": "D979905C4921809158F0A58993BA6ECE",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Mantle Update",
+			"graph": "MantleUpdate",
+			"nodeGuid": "BC7A848B40D3587B72BDAD9CDD0A3EE2",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "On Begin Play",
+			"graph": "On Begin Play",
+			"nodeGuid": "870241CF465034DAB6874496E68CE016",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "On Character Movement Mode Changed",
+			"graph": "OnCharacterMovementModeChanged",
+			"nodeGuid": "239EA719434F33A0702393B9A8F28A8A",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "On Gait Changed",
+			"graph": "OnGaitChanged",
+			"nodeGuid": "B0B4A06745A3050F30290B904FCAB5E4",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "On Movement Action Changed",
+			"graph": "OnMovementActionChanged",
+			"nodeGuid": "F2B6B7AF45DEAA6019B07CBAE3953CB0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "On Movement State Changed",
+			"graph": "OnMovementStateChanged",
+			"nodeGuid": "8DAA87614BEB843ECE7B61805A0992AF",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "On Overlay State Changed",
+			"graph": "OnOverlayStateChanged",
+			"nodeGuid": "CE71223447D3723996DC64BBC1C0A6BD",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "On Rotation Mode Changed",
+			"graph": "OnRotationModeChanged",
+			"nodeGuid": "EA8D88184B62CDFD81BA27800F61AEC1",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "On Stance Changed",
+			"graph": "OnStanceChanged",
+			"nodeGuid": "FDBE9A814225989CBB08559D97F8939C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "On View Mode Changed",
+			"graph": "OnViewModeChanged",
+			"nodeGuid": "07DC2D5943571F3FC4D3359C594F7459",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Player Movement Input",
+			"graph": "PlayerMovementInput",
+			"nodeGuid": "7BED3D5E41AB84DD4167F6879888CA46",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Ragdoll End",
+			"graph": "RagdollEnd",
+			"nodeGuid": "8545CFE44C3B3A8E954A149512333D15",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Ragdoll Start",
+			"graph": "RagdollStart",
+			"nodeGuid": "D021F60D4B4A803E5C7C5D8BA1000865",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Ragdoll Update",
+			"graph": "RagdollUpdate",
+			"nodeGuid": "3ABB331E4864B0EA49BDF99374585119",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Set Actor Location and Rotation(Update Target)",
+			"graph": "SetActorLocationAndRotation(UpdateTarget)",
+			"nodeGuid": "83177BE041CB5719101150AB5FEF5810",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Set Actor Location During Ragdoll",
+			"graph": "SetActorLocationDuringRagdoll",
+			"nodeGuid": "89D5B216454BAE8D1B0888B77D34C84A",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Set Essential Values",
+			"graph": "SetEssentialValues",
+			"nodeGuid": "420A472F4FC7705E27671F8F7EFCD71A",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Set Movement Model",
+			"graph": "SetMovementModel",
+			"nodeGuid": "8CC5AE3943E64AC30AED1399D3E97C66",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Smooth Character Rotation",
+			"graph": "SmoothCharacterRotation",
+			"nodeGuid": "990AE45B412E15DF6C2A379707E85AD7",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Character Movement",
+			"graph": "UpdateCharacterMovement",
+			"nodeGuid": "091831864F716506C03AB5B01B8F0A58",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Dynamic Movement Settings",
+			"graph": "UpdateDynamicMovementSettings",
+			"nodeGuid": "6CEC52A340A05331C58F7D9CBCB7B6D6",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Grouded Rotation",
+			"graph": "UpdateGroudedRotation",
+			"nodeGuid": "E0F743BB4D6218BE6955269A7023083E",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update in Air Rotation",
+			"graph": "UpdateInAirRotation",
+			"nodeGuid": "D423D922408643A4A506EF9E9899EFED",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Construction Script",
+			"graph": "UserConstructionScript",
+			"nodeGuid": "FFB0BE5D409745DF1FC74996858188D8",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

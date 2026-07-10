@@ -1,0 +1,155 @@
+{
+	"graphId": "G007",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 88,
+	"edgeCount": 86,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Graphs/G007/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Graphs/G007/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Graphs/G007/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Breakfall Event\nCustom Event",
+			"entryNodeGuid": "6941C8F74737101DCDF602ABEBAFF439",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F001.json",
+			"textFile": "Flows/G007/F001.txt",
+			"jsonFile": "Flows/G007/F001.json",
+			"nodeCount": 88
+		},
+		{
+			"flowId": "F002",
+			"entryName": "Evento BeginPlay",
+			"entryNodeGuid": "CA27EDEA42A6BF35DFF63A861EE70ABC",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F002.json",
+			"textFile": "Flows/G007/F002.txt",
+			"jsonFile": "Flows/G007/F002.json",
+			"nodeCount": 88
+		},
+		{
+			"flowId": "F003",
+			"entryName": "Evento BPI Set Gait\nDa ALS Character BPI",
+			"entryNodeGuid": "C18F5F404422560B8F65F7AEB5308DF9",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F003.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F003.json",
+			"textFile": "Flows/G007/F003.txt",
+			"jsonFile": "Flows/G007/F003.json",
+			"nodeCount": 88
+		},
+		{
+			"flowId": "F004",
+			"entryName": "Evento BPI Set Movement Action\nDa ALS Character BPI",
+			"entryNodeGuid": "C836D52141BDAEEAF96FB8B3DA6CD673",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F004.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F004.json",
+			"textFile": "Flows/G007/F004.txt",
+			"jsonFile": "Flows/G007/F004.json",
+			"nodeCount": 88
+		},
+		{
+			"flowId": "F005",
+			"entryName": "Evento BPI Set Movement State\nDa ALS Character BPI",
+			"entryNodeGuid": "2CF8071D4FA7C17927CF44B78B86EBDE",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F005.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F005.json",
+			"textFile": "Flows/G007/F005.txt",
+			"jsonFile": "Flows/G007/F005.json",
+			"nodeCount": 88
+		},
+		{
+			"flowId": "F006",
+			"entryName": "Evento BPI Set Overlay State\nDa ALS Character BPI",
+			"entryNodeGuid": "DCC51F0449BE3B6CCF639EB384AB43A4",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F006.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F006.json",
+			"textFile": "Flows/G007/F006.txt",
+			"jsonFile": "Flows/G007/F006.json",
+			"nodeCount": 88
+		},
+		{
+			"flowId": "F007",
+			"entryName": "Evento BPI Set Rotation Mode\nDa ALS Character BPI",
+			"entryNodeGuid": "9516E95146A87D771B0B318DBF54C2D0",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F007.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F007.json",
+			"textFile": "Flows/G007/F007.txt",
+			"jsonFile": "Flows/G007/F007.json",
+			"nodeCount": 88
+		},
+		{
+			"flowId": "F008",
+			"entryName": "Evento BPI Set View Mode\nDa ALS Character BPI",
+			"entryNodeGuid": "EBB5D3CD476853EB0829E08D5BFFB9C0",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F008.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F008.json",
+			"textFile": "Flows/G007/F008.txt",
+			"jsonFile": "Flows/G007/F008.json",
+			"nodeCount": 88
+		},
+		{
+			"flowId": "F009",
+			"entryName": "Evento On Jumped",
+			"entryNodeGuid": "41F4E35848155D1E0B55A798E4C05F69",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F009.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F009.json",
+			"textFile": "Flows/G007/F009.txt",
+			"jsonFile": "Flows/G007/F009.json",
+			"nodeCount": 88
+		},
+		{
+			"flowId": "F010",
+			"entryName": "Evento On Landed",
+			"entryNodeGuid": "0C27AF8746030A35DFAEF388B3074B1D",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F010.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F010.json",
+			"textFile": "Flows/G007/F010.txt",
+			"jsonFile": "Flows/G007/F010.json",
+			"nodeCount": 88
+		},
+		{
+			"flowId": "F011",
+			"entryName": "Evento OnEndCrouch",
+			"entryNodeGuid": "BE69C236464C7F3BEFDF89B1F99F27F3",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F011.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F011.json",
+			"textFile": "Flows/G007/F011.txt",
+			"jsonFile": "Flows/G007/F011.json",
+			"nodeCount": 88
+		},
+		{
+			"flowId": "F012",
+			"entryName": "Evento OnMovementModeChanged",
+			"entryNodeGuid": "36F36BF5473F8B9D2FA09B9A62CDF445",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F012.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F012.json",
+			"textFile": "Flows/G007/F012.txt",
+			"jsonFile": "Flows/G007/F012.json",
+			"nodeCount": 88
+		},
+		{
+			"flowId": "F013",
+			"entryName": "Evento OnStartCrouch",
+			"entryNodeGuid": "72382A374C559514843EABABE94F5D3C",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F013.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F013.json",
+			"textFile": "Flows/G007/F013.txt",
+			"jsonFile": "Flows/G007/F013.json",
+			"nodeCount": 88
+		},
+		{
+			"flowId": "F014",
+			"entryName": "Roll Event\nCustom Event",
+			"entryNodeGuid": "D96293A24E8B665B4BBA3D924F957530",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F014.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G007/F014.json",
+			"textFile": "Flows/G007/F014.txt",
+			"jsonFile": "Flows/G007/F014.json",
+			"nodeCount": 88
+		}
+	]
+}

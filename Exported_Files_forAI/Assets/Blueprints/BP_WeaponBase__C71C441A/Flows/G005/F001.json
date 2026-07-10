@@ -1,0 +1,160 @@
+{
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+	"graph": "GetFireMontage",
+	"entryName": "Get Fire Montage",
+	"entryNodeGuid": "36A4BE5144DB0493D0E7CABCB393E800",
+	"nodes": [
+		{
+			"nodeGuid": "36A4BE5144DB0493D0E7CABCB393E800",
+			"class": "K2Node_FunctionEntry",
+			"title": "Get Fire Montage",
+			"comment": "",
+			"x": -320,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0B8107A6470C9D83F44620B82DAFD9A0",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F2D3A72B43061B2B3348F19A93CAF16D",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 304,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "06567B22492F537DE8C07BB199C02B75",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2FF5CE5245908C9B9C1670885D887975",
+					"name": "FireMontage",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5959EE4B496033AE47D3B3A1C0D3D911",
+			"class": "K2Node_VariableGet",
+			"title": "Get WeaponData",
+			"comment": "",
+			"x": -128,
+			"y": 55,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4227D4F14EBD6F6D404B7391CEC43737",
+					"name": "WeaponData",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3748E5EB4AB2E50D0D39B195E170FE53",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E516E02C4C0A9B1CF539FAB758848DA3",
+			"class": "K2Node_BreakStruct",
+			"title": "Break S_WeaponData",
+			"comment": "",
+			"x": 16,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C858B8914529DE51F58B969C30FF4649",
+					"name": "S_WeaponData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4818C42E4551D7FEBA7161950BC664A9",
+					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "GetFireMontage",
+			"edgeType": "exec",
+			"fromNodeGuid": "36A4BE5144DB0493D0E7CABCB393E800",
+			"fromPinId": "0B8107A6470C9D83F44620B82DAFD9A0",
+			"fromPinName": "then",
+			"toNodeGuid": "F2D3A72B43061B2B3348F19A93CAF16D",
+			"toPinId": "06567B22492F537DE8C07BB199C02B75",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "GetFireMontage",
+			"edgeType": "data",
+			"fromNodeGuid": "E516E02C4C0A9B1CF539FAB758848DA3",
+			"fromPinId": "4818C42E4551D7FEBA7161950BC664A9",
+			"fromPinName": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
+			"toNodeGuid": "F2D3A72B43061B2B3348F19A93CAF16D",
+			"toPinId": "2FF5CE5245908C9B9C1670885D887975",
+			"toPinName": "FireMontage"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "GetFireMontage",
+			"edgeType": "data",
+			"fromNodeGuid": "5959EE4B496033AE47D3B3A1C0D3D911",
+			"fromPinId": "4227D4F14EBD6F6D404B7391CEC43737",
+			"fromPinName": "WeaponData",
+			"toNodeGuid": "E516E02C4C0A9B1CF539FAB758848DA3",
+			"toPinId": "C858B8914529DE51F58B969C30FF4649",
+			"toPinName": "S_WeaponData"
+		}
+	],
+	"variablesRead": [
+		"Get WeaponData"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G005",
+	"assetName": "BP_WeaponBase",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase"
+}

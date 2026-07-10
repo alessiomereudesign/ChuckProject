@@ -1,0 +1,1163 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+	"graph": "EventGraph",
+	"entryName": "Evento Tick",
+	"entryNodeGuid": "1EA377B74016CFEB412CC196A2F921AF",
+	"nodes": [
+		{
+			"nodeGuid": "69508C0146655DA47EA099A2442E57A0",
+			"class": "K2Node_Event",
+			"title": "Evento Construct",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "412F81FD42B0CEDE7EC6329CB158FFDD",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E31BB6154B16845599B76CB85D421069",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D4A7547540CC271C8933FD8AF80A9C09",
+			"class": "K2Node_VariableSet",
+			"title": "Set NewOverlayState",
+			"comment": "",
+			"x": 768,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4016910E4E1E7A606A8828AD39BBBE29",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "897991424EA19BBFECDF8DB1BE643663",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E8FD09E4413EE333174D35B2DB0872EC",
+					"name": "NewOverlayState",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "47AD569141BAB6762148AABB3C2EAC45",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "708687D34E5289D299CE029A3528DD67",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateSwitcher.OverlayStateSwitcher_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5B9F379D493A283E315C0680116DCC96",
+			"class": "K2Node_CallFunction",
+			"title": "Get Owning Player\nLa destinazione è Widget",
+			"comment": "",
+			"x": 0,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EC7B8F674EE959AD027B51896698824D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "31E4088B424CF9CE04A0B3A74F42C819",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "71C2A2934898915A9B846CA9E6B39A7C",
+			"class": "K2Node_CallFunction",
+			"title": "Get Controlled Pawn\nLa destinazione è Controller",
+			"comment": "",
+			"x": 240,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FDEE68F7403DED345B0CCE8308F2972F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Controller",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4868D1C74FBDE97339297DA70C536A64",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Pawn",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F2D2EDE74FE6EEBC4571EA8F928B0294",
+			"class": "K2Node_Message",
+			"title": "BPI Get Current States\nTarget is ALS Character BPI",
+			"comment": "",
+			"x": 464,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6EB597BB46815EFAB7100A92E26AE571",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D6863D224A6BA2FD127FE39F4E767E9C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2EDA5496450DC7A1D2301099A8E9CD9B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "49A6DD8B4B72CACF72272383ECCAD02D",
+					"name": "PawnMovementMode",
+					"direction": "Output",
+					"type": "byte|/Script/Engine.EMovementMode",
+					"defaultValue": "MOVE_None"
+				},
+				{
+					"pinId": "4CA2D62142DC9F0AA563EBB36B70EF01",
+					"name": "MovementState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "35ED758C4DE8CDD8DB1F5BA1F5747360",
+					"name": "PrevMovementState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "9469FC6A4647841C97C163B13DE045C0",
+					"name": "MovementAction",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementAction.ALS_MovementAction",
+					"defaultValue": "NewEnumerator4"
+				},
+				{
+					"pinId": "BD87EDC04E266B80BC00CD9A559F7B3C",
+					"name": "RotationMode",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_RotationMode.ALS_RotationMode",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "01AFAE6547C421BF5BD0E19FA823D93F",
+					"name": "ActualGait",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Gait.ALS_Gait",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "25F1D8AD49B65DD36DDC6CBC77D2922D",
+					"name": "ActualStance",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_Stance.ALS_Stance",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "26BBC9164497E5394DB8BCAC969D1E26",
+					"name": "ViewMode",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_ViewMode.ALS_ViewMode",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "D8CF8AE844067E42FFEFDFA43D4C97EE",
+					"name": "OverlayState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "412460F24C5F2EA688246D85421CC584",
+			"class": "K2Node_CustomEvent",
+			"title": "SelectOverlayState\nCustom Event",
+			"comment": "",
+			"x": 0,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "458EF44B4DC185F4D904A696780DADC7",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "433E22874A069733E1B552B34A0BE64B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D62EBC3D4DED2F8093E859971292ABD6",
+			"class": "K2Node_VariableGet",
+			"title": "Get NewOverlayState",
+			"comment": "",
+			"x": 464,
+			"y": 512,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B5CDA59F487140578BA26683BBC15E61",
+					"name": "NewOverlayState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "2189FB244F0EDBB0C22DC9AC409A11D5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateSwitcher.OverlayStateSwitcher_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D062AD5E4C2239A8D16BC18E988156E1",
+			"class": "K2Node_CallFunction",
+			"title": "Get Owning Player\nLa destinazione è Widget",
+			"comment": "",
+			"x": 0,
+			"y": 464,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EC7B8F674EE959AD027B51896698824D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "31E4088B424CF9CE04A0B3A74F42C819",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FF429E864EA4C54094E4E68D86B09C77",
+			"class": "K2Node_CallFunction",
+			"title": "Get Controlled Pawn\nLa destinazione è Controller",
+			"comment": "",
+			"x": 240,
+			"y": 464,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FDEE68F7403DED345B0CCE8308F2972F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Controller",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4868D1C74FBDE97339297DA70C536A64",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Pawn",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5A30A3A247C3AED50C67B2A46300471D",
+			"class": "K2Node_Message",
+			"title": "BPI Set Overlay State\nTarget is ALS Character BPI",
+			"comment": "",
+			"x": 464,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1B4515E64B9022BBC06AB091C491DADA",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C20D466047C015E2B177199012B7E7F3",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4266F6D8414188046AD1DD87D9B4EB99",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "56248B784B4664B81485FCAE152CF32A",
+					"name": "NewOverlayState",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_OverlayState.ALS_OverlayState",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "A0D1021D400DF2558B689A9DFA341B8B",
+			"class": "K2Node_CallFunction",
+			"title": "Update Button Focus\nLa destinazione è Overlay State Switcher",
+			"comment": "",
+			"x": 1280,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "578C97714307AF523939E699A722AFDD",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "28F26B454D7B654D6C356EB9D8088A2C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4061A3AB4BE2419B956313AADBE6EB6A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1A9758EB42DB110DE7FC42AD8366D45A",
+			"class": "K2Node_CallFunction",
+			"title": "Create Buttons\nLa destinazione è Overlay State Switcher",
+			"comment": "",
+			"x": 1024,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DD2CB4C24116E7D237EA1CBAFB301980",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DD00A131484E920F2FB38BB94A09AC7E",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "34059ECF4C3E8AD81714ACBDE461D707",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1EA377B74016CFEB412CC196A2F921AF",
+			"class": "K2Node_Event",
+			"title": "Evento Tick",
+			"comment": "",
+			"x": 0,
+			"y": 640,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "15DEF6014CC7F8FC4132BD979A2642D4",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9BC6C5154D07A40C23A038ADA82F7F6B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CDD715684AFF8CC1EB86E68347C872D9",
+					"name": "MyGeometry",
+					"direction": "Output",
+					"type": "struct|/Script/SlateCore.Geometry",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "65C2975545D178881FADEDA4B5705F05",
+					"name": "InDeltaTime",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "9CED183D406749819AFB26B18711161B",
+			"class": "K2Node_CallFunction",
+			"title": "Slot as Canvas Slot",
+			"comment": "",
+			"x": 1360,
+			"y": 688,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0923CC3844474781907A34A3FA6135B1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.WidgetLayoutLibrary",
+					"defaultValue": "/Script/UMG.Default__WidgetLayoutLibrary"
+				},
+				{
+					"pinId": "4D53298343223B14197DA28BCD02A242",
+					"name": "Widget",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2BC226434511F59F2709DFBD45B1EA68",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/UMG.CanvasPanelSlot",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E3F75E8C4270B69EF17E11886386406E",
+			"class": "K2Node_CallFunction",
+			"title": "Set Position\nLa destinazione è Canvas Panel Slot",
+			"comment": "",
+			"x": 1584,
+			"y": 624,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9A02E4514F47D659CDCD2A939E35B9D2",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "712E36D34F92933A7DBEF99EA1513C04",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "91B9CD294BE62B44C474E8B47C5B35CC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.CanvasPanelSlot",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C1B5D3F84BABB01F202659A236B70DCA",
+					"name": "InPosition",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector2D",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C085CAFB48374C901C50069E6F75DD60",
+			"class": "K2Node_CallFunction",
+			"title": "Project World Location to Widget Position",
+			"comment": "",
+			"x": 1264,
+			"y": 752,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2AB1FAD0420F034157ACF583D186E5C1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.WidgetLayoutLibrary",
+					"defaultValue": "/Script/UMG.Default__WidgetLayoutLibrary"
+				},
+				{
+					"pinId": "4921A52A48F89C6649E81C90D96B0E9B",
+					"name": "PlayerController",
+					"direction": "Input",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "664365D44D1CE1448A31109E51FF7774",
+					"name": "WorldLocation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "5560F73140B6402AB89096A3FF817946",
+					"name": "ScreenPosition",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector2D",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EBB51F0846BFA26F9CF9F1A3BE95B82C",
+					"name": "bPlayerViewportRelative",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "0B5F56ED4D210D6FAC9B3C9997345044",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "CF5206FD452DC21C04441795806BB1E8",
+			"class": "K2Node_CallFunction",
+			"title": "Get Owning Player\nLa destinazione è Widget",
+			"comment": "",
+			"x": 1008,
+			"y": 736,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7846476640A51F4AC3B7A582D82385E1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4507105D4D481D9EA616F7A915AAA547",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4416ACFB40C5E70C57349EAE44225515",
+			"class": "K2Node_Message",
+			"title": "BPI Get 3P Pivot Target\nTarget is ALS Camera BPI",
+			"comment": "",
+			"x": 576,
+			"y": 624,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A53C646047360923DB550085530BCE4D",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6E3962DF4941CFD80850A185759BE386",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A76835C34DFCB150D50DEDB00B18A751",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CC50144C4C9A629E6477398650A4977F",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Transform",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "87DDBB2F45C026FC249A34B87095F010",
+			"class": "K2Node_CallFunction",
+			"title": "Break Transform",
+			"comment": "",
+			"x": 784,
+			"y": 800,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "98435CBC40265CFE51417883B6D0D0FF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "2B676DAD4CAB68A034424A83BEAE5E4C",
+					"name": "InTransform",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Transform|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F9FFF79C4ABBB7E64F99059FFCCF9BE6",
+					"name": "Location",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "F18F07AE438B5F99A3762ABC5D449415",
+					"name": "Rotation",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "8A2CDCE54A8E4C89948ADF89D7FC0AC7",
+					"name": "Scale",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "8E146D494FAF882A977D6390FA5D02F5",
+			"class": "K2Node_CommutativeAssociativeBinaryOperator",
+			"title": "vector + vector",
+			"comment": "",
+			"x": 1008,
+			"y": 832,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5E4143844960AD2FFBD2A098C93DEFF8",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "6DB5179046B79EF53EBF9A9890897998",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "D389D9914626D57484AB7E8AD542BC12",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0,100.000000"
+				},
+				{
+					"pinId": "9FA0F86B4E502EE769D3E1911BD50898",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "5AA767E24B741BFD5D223C9AEC80FD0B",
+			"class": "K2Node_CallFunction",
+			"title": "Get Owning Player\nLa destinazione è Widget",
+			"comment": "",
+			"x": 128,
+			"y": 688,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EC7B8F674EE959AD027B51896698824D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "31E4088B424CF9CE04A0B3A74F42C819",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "22849EA247C8C66012FE79AB011F8AD8",
+			"class": "K2Node_CallFunction",
+			"title": "Get Controlled Pawn\nLa destinazione è Controller",
+			"comment": "",
+			"x": 368,
+			"y": 688,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FDEE68F7403DED345B0CCE8308F2972F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Controller",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4868D1C74FBDE97339297DA70C536A64",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Pawn",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "60201FEC4260C3E5CA18EB8B1EC25526",
+			"class": "K2Node_VariableGet",
+			"title": "Get MovablePanel",
+			"comment": "",
+			"x": 1216,
+			"y": 704,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8ADAE01C42E3EEA084914C8BC484D831",
+					"name": "MovablePanel",
+					"direction": "Output",
+					"type": "object|/Script/UMG.CanvasPanel",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F6CC806D4213C7C40E3C179334957184",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateSwitcher.OverlayStateSwitcher_C",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "69508C0146655DA47EA099A2442E57A0",
+			"fromPinId": "E31BB6154B16845599B76CB85D421069",
+			"fromPinName": "then",
+			"toNodeGuid": "F2D2EDE74FE6EEBC4571EA8F928B0294",
+			"toPinId": "6EB597BB46815EFAB7100A92E26AE571",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "F2D2EDE74FE6EEBC4571EA8F928B0294",
+			"fromPinId": "D6863D224A6BA2FD127FE39F4E767E9C",
+			"fromPinName": "then",
+			"toNodeGuid": "D4A7547540CC271C8933FD8AF80A9C09",
+			"toPinId": "4016910E4E1E7A606A8828AD39BBBE29",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "D4A7547540CC271C8933FD8AF80A9C09",
+			"fromPinId": "897991424EA19BBFECDF8DB1BE643663",
+			"fromPinName": "then",
+			"toNodeGuid": "1A9758EB42DB110DE7FC42AD8366D45A",
+			"toPinId": "DD2CB4C24116E7D237EA1CBAFB301980",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "F2D2EDE74FE6EEBC4571EA8F928B0294",
+			"fromPinId": "D8CF8AE844067E42FFEFDFA43D4C97EE",
+			"fromPinName": "OverlayState",
+			"toNodeGuid": "D4A7547540CC271C8933FD8AF80A9C09",
+			"toPinId": "E8FD09E4413EE333174D35B2DB0872EC",
+			"toPinName": "NewOverlayState"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "5B9F379D493A283E315C0680116DCC96",
+			"fromPinId": "31E4088B424CF9CE04A0B3A74F42C819",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "71C2A2934898915A9B846CA9E6B39A7C",
+			"toPinId": "FDEE68F7403DED345B0CCE8308F2972F",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "71C2A2934898915A9B846CA9E6B39A7C",
+			"fromPinId": "4868D1C74FBDE97339297DA70C536A64",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "F2D2EDE74FE6EEBC4571EA8F928B0294",
+			"toPinId": "2EDA5496450DC7A1D2301099A8E9CD9B",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "412460F24C5F2EA688246D85421CC584",
+			"fromPinId": "433E22874A069733E1B552B34A0BE64B",
+			"fromPinName": "then",
+			"toNodeGuid": "5A30A3A247C3AED50C67B2A46300471D",
+			"toPinId": "1B4515E64B9022BBC06AB091C491DADA",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "D62EBC3D4DED2F8093E859971292ABD6",
+			"fromPinId": "B5CDA59F487140578BA26683BBC15E61",
+			"fromPinName": "NewOverlayState",
+			"toNodeGuid": "5A30A3A247C3AED50C67B2A46300471D",
+			"toPinId": "56248B784B4664B81485FCAE152CF32A",
+			"toPinName": "NewOverlayState"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "D062AD5E4C2239A8D16BC18E988156E1",
+			"fromPinId": "31E4088B424CF9CE04A0B3A74F42C819",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "FF429E864EA4C54094E4E68D86B09C77",
+			"toPinId": "FDEE68F7403DED345B0CCE8308F2972F",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "FF429E864EA4C54094E4E68D86B09C77",
+			"fromPinId": "4868D1C74FBDE97339297DA70C536A64",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "5A30A3A247C3AED50C67B2A46300471D",
+			"toPinId": "4266F6D8414188046AD1DD87D9B4EB99",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "1A9758EB42DB110DE7FC42AD8366D45A",
+			"fromPinId": "DD00A131484E920F2FB38BB94A09AC7E",
+			"fromPinName": "then",
+			"toNodeGuid": "A0D1021D400DF2558B689A9DFA341B8B",
+			"toPinId": "578C97714307AF523939E699A722AFDD",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "1EA377B74016CFEB412CC196A2F921AF",
+			"fromPinId": "9BC6C5154D07A40C23A038ADA82F7F6B",
+			"fromPinName": "then",
+			"toNodeGuid": "4416ACFB40C5E70C57349EAE44225515",
+			"toPinId": "A53C646047360923DB550085530BCE4D",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "60201FEC4260C3E5CA18EB8B1EC25526",
+			"fromPinId": "8ADAE01C42E3EEA084914C8BC484D831",
+			"fromPinName": "MovablePanel",
+			"toNodeGuid": "9CED183D406749819AFB26B18711161B",
+			"toPinId": "4D53298343223B14197DA28BCD02A242",
+			"toPinName": "Widget"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "9CED183D406749819AFB26B18711161B",
+			"fromPinId": "2BC226434511F59F2709DFBD45B1EA68",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "E3F75E8C4270B69EF17E11886386406E",
+			"toPinId": "91B9CD294BE62B44C474E8B47C5B35CC",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "4416ACFB40C5E70C57349EAE44225515",
+			"fromPinId": "6E3962DF4941CFD80850A185759BE386",
+			"fromPinName": "then",
+			"toNodeGuid": "E3F75E8C4270B69EF17E11886386406E",
+			"toPinId": "9A02E4514F47D659CDCD2A939E35B9D2",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "C085CAFB48374C901C50069E6F75DD60",
+			"fromPinId": "5560F73140B6402AB89096A3FF817946",
+			"fromPinName": "ScreenPosition",
+			"toNodeGuid": "E3F75E8C4270B69EF17E11886386406E",
+			"toPinId": "C1B5D3F84BABB01F202659A236B70DCA",
+			"toPinName": "InPosition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "CF5206FD452DC21C04441795806BB1E8",
+			"fromPinId": "4507105D4D481D9EA616F7A915AAA547",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "C085CAFB48374C901C50069E6F75DD60",
+			"toPinId": "4921A52A48F89C6649E81C90D96B0E9B",
+			"toPinName": "PlayerController"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "8E146D494FAF882A977D6390FA5D02F5",
+			"fromPinId": "9FA0F86B4E502EE769D3E1911BD50898",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "C085CAFB48374C901C50069E6F75DD60",
+			"toPinId": "664365D44D1CE1448A31109E51FF7774",
+			"toPinName": "WorldLocation"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "22849EA247C8C66012FE79AB011F8AD8",
+			"fromPinId": "4868D1C74FBDE97339297DA70C536A64",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "4416ACFB40C5E70C57349EAE44225515",
+			"toPinId": "A76835C34DFCB150D50DEDB00B18A751",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "4416ACFB40C5E70C57349EAE44225515",
+			"fromPinId": "CC50144C4C9A629E6477398650A4977F",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "87DDBB2F45C026FC249A34B87095F010",
+			"toPinId": "2B676DAD4CAB68A034424A83BEAE5E4C",
+			"toPinName": "InTransform"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "87DDBB2F45C026FC249A34B87095F010",
+			"fromPinId": "F9FFF79C4ABBB7E64F99059FFCCF9BE6",
+			"fromPinName": "Location",
+			"toNodeGuid": "8E146D494FAF882A977D6390FA5D02F5",
+			"toPinId": "6DB5179046B79EF53EBF9A9890897998",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_OverlayStateSwitcher",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "5AA767E24B741BFD5D223C9AEC80FD0B",
+			"fromPinId": "31E4088B424CF9CE04A0B3A74F42C819",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "22849EA247C8C66012FE79AB011F8AD8",
+			"toPinId": "FDEE68F7403DED345B0CCE8308F2972F",
+			"toPinName": "self"
+		}
+	],
+	"variablesRead": [
+		"Get MovablePanel",
+		"Get NewOverlayState"
+	],
+	"variablesWritten": [
+		"Set NewOverlayState"
+	],
+	"functionsCalled": [
+		"Break Transform",
+		"Create Buttons\nLa destinazione è Overlay State Switcher",
+		"Get Controlled Pawn\nLa destinazione è Controller",
+		"Get Owning Player\nLa destinazione è Widget",
+		"Project World Location to Widget Position",
+		"Set Position\nLa destinazione è Canvas Panel Slot",
+		"Slot as Canvas Slot",
+		"Update Button Focus\nLa destinazione è Overlay State Switcher"
+	],
+	"widgetsTouched": [
+		"Create Buttons\nLa destinazione è Overlay State Switcher",
+		"Update Button Focus\nLa destinazione è Overlay State Switcher"
+	],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Break Transform",
+		"Create Buttons\nLa destinazione è Overlay State Switcher",
+		"Get Controlled Pawn\nLa destinazione è Controller",
+		"Get Owning Player\nLa destinazione è Widget",
+		"Project World Location to Widget Position",
+		"Set Position\nLa destinazione è Canvas Panel Slot",
+		"Slot as Canvas Slot",
+		"Update Button Focus\nLa destinazione è Overlay State Switcher"
+	],
+	"flowId": "F002",
+	"graphId": "G001",
+	"assetName": "OverlayStateSwitcher",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/OverlayStateSwitcher.OverlayStateSwitcher"
+}

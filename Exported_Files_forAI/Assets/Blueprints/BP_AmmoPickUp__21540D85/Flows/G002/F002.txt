@@ -1,0 +1,98 @@
+Asset: BP_AmmoPickUp
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_AmmoPickUp.BP_AmmoPickUp
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_AmmoPickUp
+GraphId: G002
+Graph: EventGraph
+FlowId: F002
+Entry: Evento Interact
+Da BPI Interaction
+NodeGuid: DB159FE04847E5309D7358B6DC35A214
+
+Exec Flow:
+1. Evento BeginPlay [K2Node_Event] 99206FB84757DE67DB5EB6B94B7E7032
+2. On Component Begin Overlap (Sphere) [K2Node_ComponentBoundEvent] 95D9001D49E5F1B12F6FB799A5CDB86F
+3. On Component End Overlap (Sphere) [K2Node_ComponentBoundEvent] EFF7868F4B5D824859541F845E03BCF2
+4. Cast To ALS_ChuckBP [K2Node_DynamicCast] B96267944051ED7DD2C0EEA35717DA78
+5. Enable Input
+La destinazione è Actor [K2Node_CallFunction] 19F0E51A424557AF78EE4F8C5682C8C6
+6. Get Player Controller [K2Node_CallFunction] 75EC9DDF47DD77E50DD573BA50A6DBFC
+7. Cast To ALS_ChuckBP [K2Node_DynamicCast] 9C8FBA004D2AA91CFD29008AF51C2298
+8. Disable Input
+La destinazione è Actor [K2Node_CallFunction] 12A0AB1849A502D43FE168BE45459D78
+9. Set Overlay Material
+La destinazione è Componente mesh [K2Node_CallFunction] 497C7CFA4013060EF67C8A8B37D8F838
+10. Get StaticMesh [K2Node_VariableGet] FA4AD29C42CA9D749B2691BE4465C7F9
+11. Set Overlay Material
+La destinazione è Componente mesh [K2Node_CallFunction] 44E8B29743BA02C9F30B8D9B3485A24F
+12. Cast To ALS_Player_Controller [K2Node_DynamicCast] E9E0B6F1427B0BF89A0900A16B4B0557
+13. Get Player Controller [K2Node_CallFunction] 0565928B4AAF2E1D635B469819EF649D
+14. Set As ALS Player Controller [K2Node_VariableSet] 87F9DD2D41D8D6A3D2E09A98132F7767
+15. Cast To ALS_Player_Controller [K2Node_DynamicCast] 7F5535534E1E30091AD24C9B98CF1993
+16. Get Player Controller [K2Node_CallFunction] 10ACB23C441A0C0A8B17C1B82B815089
+17. Get Interaction Prompt
+Target is BPI Interaction [K2Node_Message] A4D201EB4B2453E5CAB500B0AC2E9283
+18. Show Interaction Prompt
+La destinazione è ALS Player Controller [K2Node_CallFunction] EBC4B7EF491F6165E19AEEA8E5F02DBF
+19. Nodo di reindirizzamento [K2Node_Knot] CD7B87B849D3A9E401CBEC9A9250F8D1
+20. Cast To ALS_Player_Controller [K2Node_DynamicCast] 3BED73CB42BCE6738980B79C8875E896
+21. Get Player Controller [K2Node_CallFunction] DFC6217A4787D9032C07448283E1C99C
+22. Hide Interaction Prompt
+La destinazione è ALS Player Controller [K2Node_CallFunction] F09FD56740E7A5CE9D71DBA24E83C647
+23. Auto-riferimento [K2Node_Self] C5C11501495112865BF2ECBBD8888F7C
+24. Collect Ammo
+La destinazione è BP Ammo Pick Up [K2Node_CallFunction] 9E36E0124E632520EEEBE691C4F8F6BF
+25. Evento Interact
+Da BPI Interaction [K2Node_Event] DB159FE04847E5309D7358B6DC35A214
+26. Set InteractObjects [K2Node_VariableSet] 275F5F7A479A6DEE86D4D18EC8DD1642
+27. Auto-riferimento [K2Node_Self] 0FDF11CE4B2E2270E5A54EB4479FE4B5
+28. Nodo di reindirizzamento [K2Node_Knot] E4910B9E4D418A67566E7C9BD03271CF
+29. Set InteractObjects [K2Node_VariableSet] 6F2BB3B9464296FB03BF20B90B6DFD16
+30. Nodo di reindirizzamento [K2Node_Knot] 4083538746F854EEFDB829A0ECB68AA8
+31. Nodo di reindirizzamento [K2Node_Knot] A899406145E4C42CC373D59466E38E4B
+32. Nodo di reindirizzamento [K2Node_Knot] 5AF207D8479D1A15AA2C73AC63F64531
+
+Variables Read:
+- Get StaticMesh
+
+Variables Written:
+- Set As ALS Player Controller
+- Set InteractObjects
+
+External Calls:
+- Collect Ammo
+La destinazione è BP Ammo Pick Up
+- Disable Input
+La destinazione è Actor
+- Enable Input
+La destinazione è Actor
+- Get Player Controller
+- Hide Interaction Prompt
+La destinazione è ALS Player Controller
+- Set Overlay Material
+La destinazione è Componente mesh
+- Show Interaction Prompt
+La destinazione è ALS Player Controller
+
+Widgets Touched:
+- none
+
+Components Touched:
+- On Component Begin Overlap (Sphere)
+- On Component End Overlap (Sphere)
+
+External Blueprint References:
+- Cast To ALS_ChuckBP
+- Cast To ALS_Player_Controller
+- Collect Ammo
+La destinazione è BP Ammo Pick Up
+- Disable Input
+La destinazione è Actor
+- Enable Input
+La destinazione è Actor
+- Get Player Controller
+- Hide Interaction Prompt
+La destinazione è ALS Player Controller
+- Set Overlay Material
+La destinazione è Componente mesh
+- Show Interaction Prompt
+La destinazione è ALS Player Controller

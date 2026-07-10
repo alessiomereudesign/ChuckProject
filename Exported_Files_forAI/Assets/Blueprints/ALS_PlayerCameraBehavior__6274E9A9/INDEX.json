@@ -1,0 +1,198 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "ALS_PlayerCameraBehavior",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CameraSystem/ALS_PlayerCameraBehavior.ALS_PlayerCameraBehavior",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CameraSystem_ALS_PlayerCameraBehavior",
+	"shortAssetFolder": "ALS_PlayerCameraBehavior__6274E9A9",
+	"pathHash": "6274E9A9",
+	"assetType": "Blueprint",
+	"unrealClass": "AnimBlueprint",
+	"parentClass": "/Script/Engine.AnimInstance",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 10,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 10,
+		"nodes": 129,
+		"edges": 122,
+		"flows": 2
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/SUMMARY.md",
+		"variables": "Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/VARIABLES.json",
+		"components": "Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/NODES.jsonl",
+		"edges": "Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/EDGES.jsonl",
+		"search": "Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "Aiming",
+			"graphName": "Aiming",
+			"type": "AnimationStateGraph",
+			"graphType": "AnimationStateGraph",
+			"graphGuid": "",
+			"nodeCount": 16,
+			"edgeCount": 15,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G001/EDGES.jsonl",
+			"flows": []
+		},
+		{
+			"graphId": "G002",
+			"name": "Looking Direction",
+			"graphName": "Looking Direction",
+			"type": "AnimationStateGraph",
+			"graphType": "AnimationStateGraph",
+			"graphGuid": "",
+			"nodeCount": 16,
+			"edgeCount": 15,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G002/EDGES.jsonl",
+			"flows": []
+		},
+		{
+			"graphId": "G003",
+			"name": "Velocity Direction",
+			"graphName": "Velocity Direction",
+			"type": "AnimationStateGraph",
+			"graphType": "AnimationStateGraph",
+			"graphGuid": "",
+			"nodeCount": 16,
+			"edgeCount": 15,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G003/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G003/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G003/EDGES.jsonl",
+			"flows": []
+		},
+		{
+			"graphId": "G004",
+			"name": "Main Camera States",
+			"graphName": "Main Camera States",
+			"type": "AnimationStateMachineGraph",
+			"graphType": "AnimationStateMachineGraph",
+			"graphGuid": "",
+			"nodeCount": 10,
+			"edgeCount": 13,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G004/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G004/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G004/EDGES.jsonl",
+			"flows": []
+		},
+		{
+			"graphId": "G005",
+			"name": "Transition",
+			"graphName": "Transition",
+			"type": "AnimationTransitionGraph",
+			"graphType": "AnimationTransitionGraph",
+			"graphGuid": "",
+			"nodeCount": 3,
+			"edgeCount": 2,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G005/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G005/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G005/EDGES.jsonl",
+			"flows": []
+		},
+		{
+			"graphId": "G006",
+			"name": "Transition",
+			"graphName": "Transition",
+			"type": "AnimationTransitionGraph",
+			"graphType": "AnimationTransitionGraph",
+			"graphGuid": "",
+			"nodeCount": 3,
+			"edgeCount": 2,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G006/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G006/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G006/EDGES.jsonl",
+			"flows": []
+		},
+		{
+			"graphId": "G007",
+			"name": "Transition",
+			"graphName": "Transition",
+			"type": "AnimationTransitionGraph",
+			"graphType": "AnimationTransitionGraph",
+			"graphGuid": "",
+			"nodeCount": 3,
+			"edgeCount": 2,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G007/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G007/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G007/EDGES.jsonl",
+			"flows": []
+		},
+		{
+			"graphId": "G008",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 3,
+			"edgeCount": 1,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G008/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G008/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G008/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Evento Blueprint Update Animation",
+					"entryNodeGuid": "A22BFC3A4F27F5FE4B9193AC000CF6AE",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Flows/G008/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Flows/G008/F001.json",
+					"textFile": "Flows/G008/F001.txt",
+					"jsonFile": "Flows/G008/F001.json",
+					"nodeCount": 3
+				}
+			]
+		},
+		{
+			"graphId": "G009",
+			"name": "AnimGraph",
+			"graphName": "AnimGraph",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 43,
+			"edgeCount": 31,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G009/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G009/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G009/EDGES.jsonl",
+			"flows": []
+		},
+		{
+			"graphId": "G010",
+			"name": "UpdateCharacterInfo",
+			"graphName": "UpdateCharacterInfo",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 16,
+			"edgeCount": 26,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G010/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G010/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Graphs/G010/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Update Character Info",
+					"entryNodeGuid": "4ED0B2EC42768329E1943BB39937508B",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Flows/G010/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraBehavior__6274E9A9/Flows/G010/F001.json",
+					"textFile": "Flows/G010/F001.txt",
+					"jsonFile": "Flows/G010/F001.json",
+					"nodeCount": 16
+				}
+			]
+		}
+	]
+}

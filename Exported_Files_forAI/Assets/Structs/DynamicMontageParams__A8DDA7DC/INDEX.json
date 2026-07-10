@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "DynamicMontageParams",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/DynamicMontageParams.DynamicMontageParams",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Structs_DynamicMontageParams",
+	"shortAssetFolder": "DynamicMontageParams__A8DDA7DC",
+	"pathHash": "A8DDA7DC",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/DynamicMontageParams__A8DDA7DC/SUMMARY.md",
+		"variables": "Assets/Structs/DynamicMontageParams__A8DDA7DC/VARIABLES.json",
+		"components": "Assets/Structs/DynamicMontageParams__A8DDA7DC/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/DynamicMontageParams__A8DDA7DC/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/DynamicMontageParams__A8DDA7DC/NODES.jsonl",
+		"edges": "Assets/Structs/DynamicMontageParams__A8DDA7DC/EDGES.jsonl",
+		"search": "Assets/Structs/DynamicMontageParams__A8DDA7DC/SEARCH.jsonl"
+	},
+	"graphs": []
+}

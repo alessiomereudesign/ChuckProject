@@ -1,0 +1,85 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G048
+Graph: RagdollStart
+FlowId: F001
+Entry: Ragdoll Start
+NodeGuid: D021F60D4B4A803E5C7C5D8BA1000865
+
+Exec Flow:
+1. Ragdoll Start [K2Node_FunctionEntry] D021F60D4B4A803E5C7C5D8BA1000865
+2. Get CapsuleComponent [K2Node_VariableGet] 4897D97D488711630563BB98BF72EB71
+3. Set Collision Enabled
+La destinazione è Componente primitivo [K2Node_CallFunction] 46557B254F34B5391BFFA29E14805EFC
+4. Get Mesh [K2Node_VariableGet] 25544FEA499CAA1BC3F73EA6F4676BBC
+5. Set Collision Object Type
+La destinazione è Componente primitivo [K2Node_CallFunction] DEB4EA4A4A93984FB8C39E994573303A
+6. Set Collision Enabled
+La destinazione è Componente primitivo [K2Node_CallFunction] 97085B3A4A9424355FE26FAAADA63884
+7. Set All Bodies Below Simulate Physics
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 934F8FF84F6D32A97D3DABADFDFA44CA
+8. Make Literal Name [K2Node_CallFunction] F778F8E94AA2E5F526D2BEB98B7B4CA7
+9. Get CharacterMovement [K2Node_VariableGet] 9061A2E44A4BD99D704301B7021CFB60
+10. Set Movement Mode
+La destinazione è Componente movimento personaggio [K2Node_CallFunction] DDD17DB940404949C84BEC984EF9508A
+11. Nodo di reindirizzamento [K2Node_Knot] 533A7F85448AFBAEF01D058E7D13D97B
+12. Sequenza [K2Node_ExecutionSequence] 813DE0804A03855E4F38449735B95583
+13. Nodo di reindirizzamento [K2Node_Knot] 6ECAB474449BE5DD4B054AB307F33FB5
+14. Nodo di reindirizzamento [K2Node_Knot] D372DFAD427B113F5E94B69A46ECA302
+15. Nodo di reindirizzamento [K2Node_Knot] 7C642B964746E9491D8D8483479DEFE7
+16. Nodo di reindirizzamento [K2Node_Knot] CC48818C4E143D9417D2BEB5468B4E28
+17. BPI Set Movement State
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 537758C04463BD0A26F30F83D762FE11
+18. Step 1: Clear the Character Movement Mode and set teh Movement State to Ragdoll [EdGraphNode_Comment] 542E0B7D4E5B435601F8549BFA7FED74
+19. Step 2: Disable capsule collision and enable mesh physics simulation starting from the pelvis. [EdGraphNode_Comment] 2B5BEDD9498FC53F4600379649871714
+20. Get MainAnimInstance [K2Node_VariableGet] AAEC915B46381FC0FA961F82A4D9C59B
+21. Montage Stop
+La destinazione è Istanza animazione [K2Node_CallFunction] 16397D0743623247C80EF69FA316A4A7
+22. Nodo di reindirizzamento [K2Node_Knot] D413681141330D03385F1486AE89D468
+23. Step 3: Stop any active montages. [EdGraphNode_Comment] B1E2C96E4B9017B572034C83CF3FC6BD
+
+Variables Read:
+- Get CapsuleComponent
+- Get CharacterMovement
+- Get MainAnimInstance
+- Get Mesh
+
+Variables Written:
+- none
+
+External Calls:
+- BPI Set Movement State
+La destinazione è ALS Base Character BP
+- Make Literal Name
+- Montage Stop
+La destinazione è Istanza animazione
+- Set All Bodies Below Simulate Physics
+La destinazione è Componente mesh scheletrica
+- Set Collision Enabled
+La destinazione è Componente primitivo
+- Set Collision Object Type
+La destinazione è Componente primitivo
+- Set Movement Mode
+La destinazione è Componente movimento personaggio
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- BPI Set Movement State
+La destinazione è ALS Base Character BP
+- Make Literal Name
+- Montage Stop
+La destinazione è Istanza animazione
+- Set All Bodies Below Simulate Physics
+La destinazione è Componente mesh scheletrica
+- Set Collision Enabled
+La destinazione è Componente primitivo
+- Set Collision Object Type
+La destinazione è Componente primitivo
+- Set Movement Mode
+La destinazione è Componente movimento personaggio

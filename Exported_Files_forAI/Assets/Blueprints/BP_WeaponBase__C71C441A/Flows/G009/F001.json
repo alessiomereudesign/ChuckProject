@@ -1,0 +1,160 @@
+{
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+	"graph": "GetReloadMontage",
+	"entryName": "Get Reload Montage",
+	"entryNodeGuid": "777A9FF4468CD4D10CC2768230EB3550",
+	"nodes": [
+		{
+			"nodeGuid": "777A9FF4468CD4D10CC2768230EB3550",
+			"class": "K2Node_FunctionEntry",
+			"title": "Get Reload Montage",
+			"comment": "",
+			"x": -368,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "68E51CA041B8FFC5F7BA40B8A3A5A5A2",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "954F3A2E4060F3AAF3EB20B52BA1D6C9",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 272,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7DFCF20A49B6002FF373CF9B9362603F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C72FD0F94A70F8E0148535B100CF6173",
+					"name": "ReloadMontage",
+					"direction": "Input",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3AAFECA046CABD91D7099DB86129C328",
+			"class": "K2Node_VariableGet",
+			"title": "Get WeaponData",
+			"comment": "",
+			"x": -160,
+			"y": 55,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "50C69DB043A354834AFB6BB0259CCB31",
+					"name": "WeaponData",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9315C4D942089B9F9BF73F9E8078B76A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B9D0E1564C6109233A752E9F984F7A19",
+			"class": "K2Node_BreakStruct",
+			"title": "Break S_WeaponData",
+			"comment": "",
+			"x": -16,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "61F632A34E172DC880E3FCB5831DD346",
+					"name": "S_WeaponData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "089631B447C2AC30C35E2CA4FF1CB382",
+					"name": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+					"direction": "Output",
+					"type": "object|/Script/Engine.AnimMontage",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "GetReloadMontage",
+			"edgeType": "exec",
+			"fromNodeGuid": "777A9FF4468CD4D10CC2768230EB3550",
+			"fromPinId": "68E51CA041B8FFC5F7BA40B8A3A5A5A2",
+			"fromPinName": "then",
+			"toNodeGuid": "954F3A2E4060F3AAF3EB20B52BA1D6C9",
+			"toPinId": "7DFCF20A49B6002FF373CF9B9362603F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "GetReloadMontage",
+			"edgeType": "data",
+			"fromNodeGuid": "B9D0E1564C6109233A752E9F984F7A19",
+			"fromPinId": "089631B447C2AC30C35E2CA4FF1CB382",
+			"fromPinName": "ReloadMontage_42_70E4B0D745DD79FC954BD8BA6A7CFB18",
+			"toNodeGuid": "954F3A2E4060F3AAF3EB20B52BA1D6C9",
+			"toPinId": "C72FD0F94A70F8E0148535B100CF6173",
+			"toPinName": "ReloadMontage"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "GetReloadMontage",
+			"edgeType": "data",
+			"fromNodeGuid": "3AAFECA046CABD91D7099DB86129C328",
+			"fromPinId": "50C69DB043A354834AFB6BB0259CCB31",
+			"fromPinName": "WeaponData",
+			"toNodeGuid": "B9D0E1564C6109233A752E9F984F7A19",
+			"toPinId": "61F632A34E172DC880E3FCB5831DD346",
+			"toPinName": "S_WeaponData"
+		}
+	],
+	"variablesRead": [
+		"Get WeaponData"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G009",
+	"assetName": "BP_WeaponBase",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase"
+}

@@ -1,0 +1,54 @@
+{
+	"assetKey": "Game_ChuckContent_UI_Interfaces_BPI_ChuckHUD",
+	"graph": "ShowTip",
+	"entryName": "Show Tip",
+	"entryNodeGuid": "DFA3B9AA45FC0D1F34A109A23E951445",
+	"nodes": [
+		{
+			"nodeGuid": "DFA3B9AA45FC0D1F34A109A23E951445",
+			"class": "K2Node_FunctionEntry",
+			"title": "Show Tip",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BD677CA042A21BD880F836844E83D222",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E19AEAF64A155FBECEAF7F83B13817B6",
+					"name": "Tip",
+					"direction": "Output",
+					"type": "string",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D93E4A7345320B26520325A81EB85B44",
+					"name": "Timeout",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [],
+	"flowId": "F001",
+	"graphId": "G001",
+	"assetName": "BPI_ChuckHUD",
+	"assetPath": "/Game/ChuckContent/UI/Interfaces/BPI_ChuckHUD.BPI_ChuckHUD"
+}

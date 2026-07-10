@@ -1,0 +1,25 @@
+{
+	"graphId": "G003",
+	"name": "GetKeyTextForInputAction",
+	"graphName": "GetKeyTextForInputAction",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 13,
+	"edgeCount": 14,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G003/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G003/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Graphs/G003/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Get Key Text for Input Action",
+			"entryNodeGuid": "3907E78740D50B86860F62A53D7F4504",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G003/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Player_Controller__8DAB5C2D/Flows/G003/F001.json",
+			"textFile": "Flows/G003/F001.txt",
+			"jsonFile": "Flows/G003/F001.json",
+			"nodeCount": 13
+		}
+	]
+}

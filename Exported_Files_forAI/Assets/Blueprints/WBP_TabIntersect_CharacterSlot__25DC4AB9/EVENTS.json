@@ -1,0 +1,43 @@
+{
+	"assetName": "WBP_TabIntersect_CharacterSlot",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot",
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_WBP_TabIntersect_CharacterSlot",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "On Slot Selected",
+			"graph": "OnSlotSelected",
+			"nodeGuid": "AD09FBE3413794487DEE01A2F419472B",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento Pre Construct",
+			"graph": "EventGraph",
+			"nodeGuid": "D36E4EC04050F902208F03A7222ADFBF",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "InizializeCharacterSlot\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "0AFF8609480CC056029BA6AA1E7363DB",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento On Added to Focus Path",
+			"graph": "EventGraph",
+			"nodeGuid": "F7A30D314DC8048F2C654AAD34955749",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento On Removed from Focus Path",
+			"graph": "EventGraph",
+			"nodeGuid": "EE1195DD460CA350183A0ABEF793747E",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

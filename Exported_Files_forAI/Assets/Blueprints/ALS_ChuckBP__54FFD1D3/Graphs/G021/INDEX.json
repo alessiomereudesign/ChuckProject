@@ -1,0 +1,25 @@
+{
+	"graphId": "G021",
+	"name": "RagdollStart",
+	"graphName": "RagdollStart",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 3,
+	"edgeCount": 2,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G021/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G021/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G021/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Ragdoll Start",
+			"entryNodeGuid": "C022401942C64022C7E478A7ACD71F74",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G021/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G021/F001.json",
+			"textFile": "Flows/G021/F001.txt",
+			"jsonFile": "Flows/G021/F001.json",
+			"nodeCount": 3
+		}
+	]
+}

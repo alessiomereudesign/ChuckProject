@@ -1,0 +1,33 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G002
+Graph: CanFire
+FlowId: F001
+Entry: Can Fire
+NodeGuid: 2492A371435702A552B6BBA1C87ABD3C
+
+Exec Flow:
+1. Can Fire [K2Node_FunctionEntry] 2492A371435702A552B6BBA1C87ABD3C
+2. Nodo di restituzione [K2Node_FunctionResult] AB4B7FE8485AE03E2F1FECA7226522E5
+3. Get WeaponData [K2Node_VariableGet] 58F04E50489AF2290D4786B3DCD54CE5
+4. Break S_WeaponData [K2Node_BreakStruct] 2160649645E174E63813DFB7715F9975
+5. integer > integer [K2Node_PromotableOperator] 8E841D124235DB09ED5B0AA21F90854D
+
+Variables Read:
+- Get WeaponData
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

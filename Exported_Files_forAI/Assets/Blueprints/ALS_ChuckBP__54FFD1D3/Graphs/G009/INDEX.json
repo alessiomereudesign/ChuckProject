@@ -1,0 +1,25 @@
+{
+	"graphId": "G009",
+	"name": "ClearHeldObject",
+	"graphName": "ClearHeldObject",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 6,
+	"edgeCount": 6,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G009/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G009/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G009/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Clear Held Object",
+			"entryNodeGuid": "B858521146CE783F90EE968BFBF767DB",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G009/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G009/F001.json",
+			"textFile": "Flows/G009/F001.txt",
+			"jsonFile": "Flows/G009/F001.json",
+			"nodeCount": 6
+		}
+	]
+}

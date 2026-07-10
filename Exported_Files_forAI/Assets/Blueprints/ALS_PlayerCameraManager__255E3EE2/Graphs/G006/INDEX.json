@@ -1,0 +1,25 @@
+{
+	"graphId": "G006",
+	"name": "GetDebugTraceType",
+	"graphName": "GetDebugTraceType",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 6,
+	"edgeCount": 7,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Graphs/G006/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Graphs/G006/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Graphs/G006/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Get Debug Trace Type",
+			"entryNodeGuid": "3019FE7944FF8878CD5F26AF5E0EC1B9",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Flows/G006/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_PlayerCameraManager__255E3EE2/Flows/G006/F001.json",
+			"textFile": "Flows/G006/F001.txt",
+			"jsonFile": "Flows/G006/F001.json",
+			"nodeCount": 6
+		}
+	]
+}

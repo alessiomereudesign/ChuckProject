@@ -1,0 +1,38 @@
+{
+	"assetName": "BP_WeaponProjectileData",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"variables": [
+		{
+			"name": "Damage",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "DamageRadius",
+			"type": "real|double",
+			"defaultValue": ""
+		},
+		{
+			"name": "TrailFX",
+			"type": "object|/Script/Engine.ParticleSystem",
+			"defaultValue": ""
+		},
+		{
+			"name": "ExplosionFX",
+			"type": "object|/Script/Engine.ParticleSystem",
+			"defaultValue": ""
+		},
+		{
+			"name": "ProjectileMesh",
+			"type": "object|/Script/Engine.StaticMesh",
+			"defaultValue": ""
+		},
+		{
+			"name": "ProjectileSpeed",
+			"type": "real|double",
+			"defaultValue": ""
+		}
+	]
+}

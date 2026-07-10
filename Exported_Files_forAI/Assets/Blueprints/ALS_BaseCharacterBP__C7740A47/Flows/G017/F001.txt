@@ -1,0 +1,185 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G017
+Graph: DrawDebugShapes
+FlowId: F001
+Entry: Draw Debug Shapes
+NodeGuid: 91AECA8749A6431D00D7068ECC586844
+
+Exec Flow:
+1. Draw Debug Shapes [K2Node_FunctionEntry] 91AECA8749A6431D00D7068ECC586844
+2. Get Player Controller [K2Node_CallFunction] 457551D6458E41415A1F56B3AE6AF0CB
+3. Get Socket Location
+La destinazione è Componente di scena [K2Node_CallFunction] 0B6FAEA94298CEE3339C8395C9B46C5C
+4. Get Mesh [K2Node_VariableGet] F75B174B4F9BD975B7B657841125491E
+5. Normal Unsafe (Vector) [K2Node_CallFunction] D59137C048376E4AB13C45BF4EF7C355
+6. Normal Unsafe (Vector) [K2Node_CallFunction] 9EFC9909417F5AEA283E80A1C1588961
+7. Normal Unsafe (Vector) [K2Node_CallFunction] 3C77F7674481677EAEB046A3A8CE4983
+8. Get Actor Rotation
+La destinazione è Actor [K2Node_CallFunction] 809DC2E5431A850C952484B9EE8AAB0F
+9. Get Actor Location
+La destinazione è Actor [K2Node_CallFunction] 6B3458BE437F42DBA68C67ACD5B0E36F
+10. Get Scaled Capsule Radius
+La destinazione è Capsule Collision [K2Node_CallFunction] C7ED4B47463520349804B1B6155B89B2
+11. Get Scaled Capsule Half Height
+La destinazione è Capsule Collision [K2Node_CallFunction] 0FB03724425668A88916B8BA691CA84D
+12. Get CapsuleComponent [K2Node_VariableGet] 6AC914C44F8D7A3C8F8FDE9E7BC18BB1
+13. Draw Debug Capsule [K2Node_CallFunction] 723FF42343FC5F29E57BEEB6C5EB3464
+14. Get Rotation X Vector [K2Node_CallFunction] 16C59B1E4D75A09C84570E97B34FA0C0
+15. Get Control Rotation
+La destinazione è Pedina [K2Node_CallFunction] 8013530849CD7980856F729FE215195F
+16. Draw Debug Cone [K2Node_CallFunction] 7FA98F9C40D713FDF42ACD9DD128E66A
+17. float - float [K2Node_CallFunction] A7544B7A4D7F7FFD1710FB9029520CB5
+18. Get Max Acceleration
+La destinazione è Componente movimento personaggio [K2Node_CallFunction] 964016194AA2E97F07868D91536F5949
+19. float / float [K2Node_CallFunction] EFF599BF460D3F924D57A4BAB4129229
+20. Get Current Acceleration
+La destinazione è Componente movimento personaggio [K2Node_CallFunction] AD4889124853D5C20E8BCE9CD77E4229
+21. Get CharacterMovement [K2Node_VariableGet] 3C8AB1404D4DBD77A60DB48C6681104A
+22. Ramo [K2Node_IfThenElse] 4C8CE79C4781464E4AACD28C24C2D9D5
+23. Select Color [K2Node_CallFunction] B2871ECC4833452F0F5D3AAA79634C95
+24. Vector Length [K2Node_CallFunction] 11BCD961499CCF3B2CC4A7B1F2362762
+25. Get Rotation X Vector [K2Node_CallFunction] 6A2E6530490FF50E022DDC9DDCC154E8
+26. Get LastMovementInputRotation [K2Node_VariableGet] ADA2C1864E145063DFCB86B3EB492036
+27. Select Vector [K2Node_CallFunction] 1108C23342D7580B947241AFB8D5D73A
+28. Equal (Vector) [K2Node_CallFunction] E3E3DA5440E6F7BB97CED79D61D7C00A
+29. Map Range Clamped [K2Node_CallFunction] 3137E3C842F99B500E22F08428C67599
+30. vector * float [K2Node_CallFunction] 3CF6E0734B943A2C006BA392F3124C8E
+31. vector + vector [K2Node_CommutativeAssociativeBinaryOperator] C1BA69624E60263F21004887194BBAE9
+32. vector - vector [K2Node_CallFunction] 550C85B24238B1FDB3F66DB5BEF5DB10
+33. Get CapsuleComponent [K2Node_VariableGet] B2DBE60143A1E159ECEF0AAABBEE82A0
+34. Get Scaled Capsule Half Height
+La destinazione è Capsule Collision [K2Node_CallFunction] 0E83336E49127DD3D0BB9BB0E8F66848
+35. Get Actor Location
+La destinazione è Actor [K2Node_CallFunction] 6E457AD741CFA5D932E4CE9950C43B38
+36. Draw Debug Arrow [K2Node_CallFunction] 39E2AA6C435E6FC0D878FEB95FA20BCF
+37. Select Color [K2Node_CallFunction] 6567BFD74BBBE0D5AE93408AE92DB0DF
+38. Vector Length [K2Node_CallFunction] 01C7407346F4F041688AE9BFA9E9CF4C
+39. Get Rotation X Vector [K2Node_CallFunction] B440607648053439435E5585EC57C5FA
+40. Get LastVelocityRotation [K2Node_VariableGet] A537C6C34538164F80F2EF9FE345AB91
+41. Select Vector [K2Node_CallFunction] DCA2183A49CD0B7815912588F01B4240
+42. Equal (Vector) [K2Node_CallFunction] 0B3162D946BD274CEC31E38966467B47
+43. Map Range Clamped [K2Node_CallFunction] D877591C4F1C1425DE8BC3A99F8979FA
+44. Get MaxWalkSpeed [K2Node_VariableGet] 53C0E8DB429A5A70033E97B4F80CE232
+45. Get CharacterMovement [K2Node_VariableGet] 60CFE4A5472E2D593480C89D39D0CEB1
+46. vector * float [K2Node_CallFunction] F13D30C74F768A28EA38469B1398C61F
+47. vector + vector [K2Node_CommutativeAssociativeBinaryOperator] 4154185847718C17D81E5CA78291DCD6
+48. vector - vector [K2Node_CallFunction] 83C2A34249CE516F2BB09EB437C3E9A0
+49. Get CapsuleComponent [K2Node_VariableGet] 331FAD994A6DB07C427B4781C0142AC6
+50. Get Scaled Capsule Half Height
+La destinazione è Capsule Collision [K2Node_CallFunction] F9CD689D413A898A03699EBF1013F31B
+51. Get Actor Location
+La destinazione è Actor [K2Node_CallFunction] 5886E0A843A05450CFCDFE957B8F4E52
+52. Draw Debug Arrow [K2Node_CallFunction] 3A05D26344CD88118EA369B37CA8B670
+53. BPI Get Debug Info
+Target is ALS Controller BPI [K2Node_Message] F90A897C44BACAFB4671BE91B7B74CC3
+54. Velocity Arrow [EdGraphNode_Comment] D192FDDB4FC8EC5E2D3FB98D1DE37577
+55. Movement Input Arrow [EdGraphNode_Comment] C33DF8454D28712B00F099914EB2CE79
+56. Aiming Rotation Cone [EdGraphNode_Comment] 6C1FEF274063427EED4138B74A1FB4BC
+57. Capsule  [EdGraphNode_Comment] 99479683474F5DCF8D6903A72F29BE8C
+58. Get Debug Info from Player Controller [EdGraphNode_Comment] A908475B413D93CA6C8C78983F875850
+59. Get Velocity
+La destinazione è Actor [K2Node_CallFunction] 072FFC6D4162761C7C3A289AB77BD9EE
+60. Get TargetRotation [K2Node_VariableGet] 147A774045FF91FACFA9D68D7F3324B8
+61. Draw Debug Arrow [K2Node_CallFunction] 2F7B04204E079C3008DDC9A99FB48864
+62. float - float [K2Node_CallFunction] 6B8654DA4B44750B5340A589E1D6A715
+63. vector + vector [K2Node_CommutativeAssociativeBinaryOperator] 41947E454CE242798C817F9A55F57D6B
+64. vector - vector [K2Node_CallFunction] CCD12F5B4BA1933DD684B5A8B0381326
+65. Get CapsuleComponent [K2Node_VariableGet] 08C223E64573FF469DC0FDB26149412F
+66. Get Scaled Capsule Half Height
+La destinazione è Capsule Collision [K2Node_CallFunction] 5127D1624C68D18C9174C585A8DF29FC
+67. Get Actor Location
+La destinazione è Actor [K2Node_CallFunction] F93C2307419138A29AAC10BD8DB29041
+68. Normal Unsafe (Vector) [K2Node_CallFunction] 8DE1516449B1BFC0ED2EC5BE1AED3C60
+69. Get Rotation X Vector [K2Node_CallFunction] DC94B5F549AD8336596BA5BA73B4E056
+70. vector * float [K2Node_CallFunction] FD0C2FC3494F433A72779585FADAE6C0
+71. Target Rotation Arrow [EdGraphNode_Comment] CF76B2E64A3EAE258A4E4C9D097C6236
+
+Variables Read:
+- Get CapsuleComponent
+- Get CharacterMovement
+- Get LastMovementInputRotation
+- Get LastVelocityRotation
+- Get MaxWalkSpeed
+- Get Mesh
+- Get TargetRotation
+
+Variables Written:
+- none
+
+External Calls:
+- Draw Debug Arrow
+- Draw Debug Capsule
+- Draw Debug Cone
+- Equal (Vector)
+- float - float
+- float / float
+- Get Actor Location
+La destinazione è Actor
+- Get Actor Rotation
+La destinazione è Actor
+- Get Control Rotation
+La destinazione è Pedina
+- Get Current Acceleration
+La destinazione è Componente movimento personaggio
+- Get Max Acceleration
+La destinazione è Componente movimento personaggio
+- Get Player Controller
+- Get Rotation X Vector
+- Get Scaled Capsule Half Height
+La destinazione è Capsule Collision
+- Get Scaled Capsule Radius
+La destinazione è Capsule Collision
+- Get Socket Location
+La destinazione è Componente di scena
+- Get Velocity
+La destinazione è Actor
+- Map Range Clamped
+- Normal Unsafe (Vector)
+- Select Color
+- Select Vector
+- vector * float
+- vector - vector
+- Vector Length
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Draw Debug Arrow
+- Draw Debug Capsule
+- Draw Debug Cone
+- Equal (Vector)
+- float - float
+- float / float
+- Get Actor Location
+La destinazione è Actor
+- Get Actor Rotation
+La destinazione è Actor
+- Get Control Rotation
+La destinazione è Pedina
+- Get Current Acceleration
+La destinazione è Componente movimento personaggio
+- Get Max Acceleration
+La destinazione è Componente movimento personaggio
+- Get Player Controller
+- Get Rotation X Vector
+- Get Scaled Capsule Half Height
+La destinazione è Capsule Collision
+- Get Scaled Capsule Radius
+La destinazione è Capsule Collision
+- Get Socket Location
+La destinazione è Componente di scena
+- Get Velocity
+La destinazione è Actor
+- Map Range Clamped
+- Normal Unsafe (Vector)
+- Select Color
+- Select Vector
+- vector * float
+- vector - vector
+- Vector Length

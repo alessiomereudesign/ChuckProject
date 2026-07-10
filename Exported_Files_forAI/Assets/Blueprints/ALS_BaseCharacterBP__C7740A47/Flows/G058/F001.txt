@@ -1,0 +1,57 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G058
+Graph: UpdateInAirRotation
+FlowId: F001
+Entry: Update in Air Rotation
+NodeGuid: D423D922408643A4A506EF9E9899EFED
+
+Exec Flow:
+1. Update in Air Rotation [K2Node_FunctionEntry] D423D922408643A4A506EF9E9899EFED
+2. Switch on ALS_RotationMode [K2Node_SwitchEnum] E3DF6DCC487E586693C4EAA99BBDC8F0
+3. Get RotationMode [K2Node_VariableGet] CBEB11814AEC1C57144A829AE3C2DDC3
+4. Get Actor Rotation
+La destinazione è Actor [K2Node_CallFunction] 838D0ACE4E54943FB1AD48AA92A2EAE4
+5. Set InAirRotation [K2Node_VariableSet] 61C340CB4953EA4D479EFEBF36E45942
+6. Ottieni [K2Node_VariableGet] 08C80659490735914D8DF0BD9701E7AE
+7. Smooth Character Rotation
+La destinazione è ALS Base Character BP [K2Node_CallFunction] F804013C41C63A63D048909253EEB696
+8. Smooth Character Rotation
+La destinazione è ALS Base Character BP [K2Node_CallFunction] DA4D7A384F6F815FE50DF4B67154CDD3
+9. Get Control Rotation
+La destinazione è Pedina [K2Node_CallFunction] 0C7D28E644FE0676227B06B99B3B5873
+10. Velocity / Looking Direction Rotation [EdGraphNode_Comment] 29D38FBC46DD20A991BB349E114A98FF
+11. Nodo di reindirizzamento [K2Node_Knot] 9A768ACA46364CE1C37DC285D798AA91
+12. Nodo di reindirizzamento [K2Node_Knot] 708FEFE34A50B3CFD4A65486F226417B
+13. Aiming Rotation [EdGraphNode_Comment] A8E66EB046E8B93051138AA052B50E03
+14. Nodo di reindirizzamento [K2Node_Knot] 70A677AB47CC96ADE4C884810AF3E1FB
+
+Variables Read:
+- Get RotationMode
+- Ottieni
+
+Variables Written:
+- Set InAirRotation
+
+External Calls:
+- Get Actor Rotation
+La destinazione è Actor
+- Get Control Rotation
+La destinazione è Pedina
+- Smooth Character Rotation
+La destinazione è ALS Base Character BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Actor Rotation
+La destinazione è Actor
+- Get Control Rotation
+La destinazione è Pedina
+- Smooth Character Rotation
+La destinazione è ALS Base Character BP

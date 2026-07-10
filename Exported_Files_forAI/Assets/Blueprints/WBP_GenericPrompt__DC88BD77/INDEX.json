@@ -1,0 +1,61 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "WBP_GenericPrompt",
+	"assetPath": "/Game/ChuckContent/Blueprints/WBP_GenericPrompt.WBP_GenericPrompt",
+	"assetKey": "Game_ChuckContent_Blueprints_WBP_GenericPrompt",
+	"shortAssetFolder": "WBP_GenericPrompt__DC88BD77",
+	"pathHash": "DC88BD77",
+	"assetType": "Blueprint",
+	"unrealClass": "WidgetBlueprint",
+	"parentClass": "/Script/UMG.UserWidget",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 2,
+		"graphs": 1,
+		"nodes": 8,
+		"edges": 10,
+		"flows": 1
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/WBP_GenericPrompt__DC88BD77/SUMMARY.md",
+		"variables": "Assets/Blueprints/WBP_GenericPrompt__DC88BD77/VARIABLES.json",
+		"components": "Assets/Blueprints/WBP_GenericPrompt__DC88BD77/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/WBP_GenericPrompt__DC88BD77/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/WBP_GenericPrompt__DC88BD77/NODES.jsonl",
+		"edges": "Assets/Blueprints/WBP_GenericPrompt__DC88BD77/EDGES.jsonl",
+		"search": "Assets/Blueprints/WBP_GenericPrompt__DC88BD77/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 8,
+			"edgeCount": 10,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_GenericPrompt__DC88BD77/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_GenericPrompt__DC88BD77/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_GenericPrompt__DC88BD77/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "UpdatePrompt\nCustom Event",
+					"entryNodeGuid": "F8E3B2BE46C44DA7ACBABEA213813E42",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_GenericPrompt__DC88BD77/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_GenericPrompt__DC88BD77/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 8
+				}
+			]
+		}
+	]
+}

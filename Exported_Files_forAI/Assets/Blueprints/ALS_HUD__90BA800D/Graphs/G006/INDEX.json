@@ -1,0 +1,25 @@
+{
+	"graphId": "G006",
+	"name": "Get_DebugCharacterName",
+	"graphName": "Get_DebugCharacterName",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 7,
+	"edgeCount": 7,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G006/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G006/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Graphs/G006/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Get Debug Character Name",
+			"entryNodeGuid": "BBD228AA43A839A4D70AAFAF2458759E",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G006/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_HUD__90BA800D/Flows/G006/F001.json",
+			"textFile": "Flows/G006/F001.txt",
+			"jsonFile": "Flows/G006/F001.json",
+			"nodeCount": 7
+		}
+	]
+}

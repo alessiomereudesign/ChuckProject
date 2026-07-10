@@ -1,0 +1,31 @@
+Asset: BP_Sword_Mann
+AssetPath: /Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/Demo/Mannequin/Character/Mesh/BP_Sword_Mann.BP_Sword_Mann
+AssetKey: Game_AdditionalContents_RamsterZ_FreeAnims_Volume1_Demo_Mannequin_Character_Mesh_BP_Sword_Mann
+GraphId: G001
+Graph: EventGraph
+FlowId: F001
+Entry: Evento ActorBeginOverlap
+NodeGuid: C9B398294D7C4CC34AB9BF9741948643
+
+Exec Flow:
+1. Evento BeginPlay [K2Node_Event] 5099198341C70792E69BB6817C023095
+2. Evento ActorBeginOverlap [K2Node_Event] C9B398294D7C4CC34AB9BF9741948643
+3. Evento Tick [K2Node_Event] D07413084FD6822E9DA033833AFDA183
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

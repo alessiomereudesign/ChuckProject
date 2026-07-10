@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "Text",
+	"assetPath": "/Game/ChuckContent/UI/files/Text/Text.Text",
+	"assetKey": "Game_ChuckContent_UI_files_Text_Text",
+	"shortAssetFolder": "Text__6B9B7F73",
+	"pathHash": "6B9B7F73",
+	"assetType": "DataTable",
+	"unrealClass": "DataTable",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "NotApplicable",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/DataTables/Text__6B9B7F73/SUMMARY.md",
+		"variables": "Assets/DataTables/Text__6B9B7F73/VARIABLES.json",
+		"components": "Assets/DataTables/Text__6B9B7F73/COMPONENTS.json",
+		"widgetTree": "Assets/DataTables/Text__6B9B7F73/WIDGET_TREE.json",
+		"nodes": "Assets/DataTables/Text__6B9B7F73/NODES.jsonl",
+		"edges": "Assets/DataTables/Text__6B9B7F73/EDGES.jsonl",
+		"search": "Assets/DataTables/Text__6B9B7F73/SEARCH.jsonl"
+	},
+	"graphs": []
+}

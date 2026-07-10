@@ -1,0 +1,25 @@
+{
+	"graphId": "G002",
+	"name": "Interact",
+	"graphName": "Interact",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 1,
+	"edgeCount": 0,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BPI_Interaction__2C5AD677/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BPI_Interaction__2C5AD677/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BPI_Interaction__2C5AD677/Graphs/G002/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Interact",
+			"entryNodeGuid": "ABECF59F46C701F20F4C0D8CF9EB6EC2",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BPI_Interaction__2C5AD677/Flows/G002/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BPI_Interaction__2C5AD677/Flows/G002/F001.json",
+			"textFile": "Flows/G002/F001.txt",
+			"jsonFile": "Flows/G002/F001.json",
+			"nodeCount": 1
+		}
+	]
+}

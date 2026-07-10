@@ -1,0 +1,33 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G053
+Graph: SetMovementModel
+FlowId: F001
+Entry: Set Movement Model
+NodeGuid: 8CC5AE3943E64AC30AED1399D3E97C66
+
+Exec Flow:
+1. Set Movement Model [K2Node_FunctionEntry] 8CC5AE3943E64AC30AED1399D3E97C66
+2. Ottieni [K2Node_VariableGet] DD34C1B446D71A9896B9BCBA1F8CF010
+3. Ottieni riga tabella dati [K2Node_GetDataTableRow] 6EEB2FC747DCB462A14623BD9C8678D3
+4. Set MovementData [K2Node_VariableSet] EB5DD73347FF649FA00855BAD1AB03F3
+5. Get movement data from the Movement Model Data table and set the Movement Data Struct. This allows you to easily switch out movement behaviors. [EdGraphNode_Comment] 53EEB46B4B293A23B2797D9386B1C54C
+
+Variables Read:
+- Ottieni
+
+Variables Written:
+- Set MovementData
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

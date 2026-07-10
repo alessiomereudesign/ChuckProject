@@ -1,0 +1,25 @@
+{
+	"graphId": "G045",
+	"name": "OnViewModeChanged",
+	"graphName": "OnViewModeChanged",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 15,
+	"edgeCount": 14,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Graphs/G045/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Graphs/G045/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Graphs/G045/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "On View Mode Changed",
+			"entryNodeGuid": "07DC2D5943571F3FC4D3359C594F7459",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G045/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G045/F001.json",
+			"textFile": "Flows/G045/F001.txt",
+			"jsonFile": "Flows/G045/F001.json",
+			"nodeCount": 15
+		}
+	]
+}

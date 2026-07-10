@@ -1,0 +1,44 @@
+Asset: ALS_AnimBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP
+GraphId: G294
+Graph: CanTurnInPlace
+FlowId: F001
+Entry: Can Turn in Place
+NodeGuid: 470A00DB4F22AEF8EEB80DBB8F1ABFA0
+
+Exec Flow:
+1. Can Turn in Place [K2Node_FunctionEntry] 470A00DB4F22AEF8EEB80DBB8F1ABFA0
+2. Nodo di restituzione [K2Node_FunctionResult] 55B512EA437FCF87231A31B18CDEFCAE
+3. Get RotationMode [K2Node_VariableGet] 1321101E454384EEA6FFB39040955D59
+4. Uguale (enum) [K2Node_EnumEquality] C0E25F644BC2F6D25293C19B627C8EB9
+5. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] E86EA7BE4A600ED7E1741D9862104C8F
+6. Get ViewMode [K2Node_VariableGet] A943783A41DC836DCDBC75AE655132B1
+7. Uguale (enum) [K2Node_EnumEquality] FCE2AC584A7A7145E6A74EAAC4F59CA5
+8. Get Curve Value
+La destinazione è Istanza animazione [K2Node_CallFunction] 9E8D82F3450AACC112B374865D198372
+9. Only perform a Turn In Place check if the character is looking toward the camera in Third Person, and if the "Enable Transition" curve is fully weighted. The Enable_Transition curve is modified within certain states of the AnimBP so that the character can only turn while in those states. [EdGraphNode_Comment] 135F5F32475C2C4007B277B80860050B
+10. float > float [K2Node_CallFunction] 7985232A4ACC7336E7E710970E1E83D1
+
+Variables Read:
+- Get RotationMode
+- Get ViewMode
+
+Variables Written:
+- none
+
+External Calls:
+- float > float
+- Get Curve Value
+La destinazione è Istanza animazione
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- float > float
+- Get Curve Value
+La destinazione è Istanza animazione

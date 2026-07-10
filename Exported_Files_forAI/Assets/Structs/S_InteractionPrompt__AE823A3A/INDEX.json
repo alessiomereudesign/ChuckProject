@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "S_InteractionPrompt",
+	"assetPath": "/Game/ChuckContent/Blueprints/S_InteractionPrompt.S_InteractionPrompt",
+	"assetKey": "Game_ChuckContent_Blueprints_S_InteractionPrompt",
+	"shortAssetFolder": "S_InteractionPrompt__AE823A3A",
+	"pathHash": "AE823A3A",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/S_InteractionPrompt__AE823A3A/SUMMARY.md",
+		"variables": "Assets/Structs/S_InteractionPrompt__AE823A3A/VARIABLES.json",
+		"components": "Assets/Structs/S_InteractionPrompt__AE823A3A/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/S_InteractionPrompt__AE823A3A/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/S_InteractionPrompt__AE823A3A/NODES.jsonl",
+		"edges": "Assets/Structs/S_InteractionPrompt__AE823A3A/EDGES.jsonl",
+		"search": "Assets/Structs/S_InteractionPrompt__AE823A3A/SEARCH.jsonl"
+	},
+	"graphs": []
+}

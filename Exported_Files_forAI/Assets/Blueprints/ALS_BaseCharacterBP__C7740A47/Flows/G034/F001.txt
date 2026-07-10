@@ -1,0 +1,35 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G034
+Graph: MantleEnd
+FlowId: F001
+Entry: Mantle End
+NodeGuid: BF2D75CE465C0588F9B6DEB47EF627B1
+
+Exec Flow:
+1. Mantle End [K2Node_FunctionEntry] BF2D75CE465C0588F9B6DEB47EF627B1
+2. Set Movement Mode
+La destinazione è Componente movimento personaggio [K2Node_CallFunction] 98F00B9B447DA1027F66E39068390737
+3. Get CharacterMovement [K2Node_VariableGet] B330E7C34341C7C21D9B98B3CB411387
+4. Set the Character Movement Mode to Walking [EdGraphNode_Comment] 8A96B9C648C6A2220EFBD9B0C866FA38
+
+Variables Read:
+- Get CharacterMovement
+
+Variables Written:
+- none
+
+External Calls:
+- Set Movement Mode
+La destinazione è Componente movimento personaggio
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Set Movement Mode
+La destinazione è Componente movimento personaggio

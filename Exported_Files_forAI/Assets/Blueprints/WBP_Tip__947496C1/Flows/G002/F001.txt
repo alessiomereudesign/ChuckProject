@@ -1,0 +1,68 @@
+Asset: WBP_Tip
+AssetPath: /Game/ChuckContent/UI/Interfaces/WBP_Tip.WBP_Tip
+AssetKey: Game_ChuckContent_UI_Interfaces_WBP_Tip
+GraphId: G002
+Graph: GetInputKeys
+FlowId: F001
+Entry: Get Input Keys
+NodeGuid: 047C47D7477B5AC5C8C7158788D1A412
+
+Exec Flow:
+1. Get Input Keys [K2Node_FunctionEntry] 047C47D7477B5AC5C8C7158788D1A412
+2. Get Player Controller [K2Node_CallFunction] ECF69C75401DF6CEEADCFB86399FA6CA
+3. Enhanced Input Local Player Subsystem [K2Node_GetSubsystemFromPC] 82F897FB47A3762721D4839C3EF31DB9
+4. Query Keys Mapped to Action
+La destinazione è Enhanced Input Subsystem Interface [K2Node_CallFunction] D5C5E1AF476F32AEBBCBEF97742B1FD5
+5. OTTIENI [K2Node_GetArrayItem] 10FAD8BF49D4FF63310CC0AA813C3096
+6. Get Key Display Name [K2Node_CallFunction] 4D8A75524C206F2A80ACA4A101325C13
+7. Aggiungere [K2Node_CommutativeAssociativeBinaryOperator] 6539AC734D627798ADAAB68F753FDF0C
+8. To String (Text) [K2Node_CallFunction] 98DE07274F842DBC9D7DB386CA917A23
+9. To Text (String) [K2Node_CallFunction] BCB1E019428264017DF455A150ABF396
+10. Attiva nome [K2Node_SwitchName] 9648EE4D442B9404A974EC92D0F59A64
+11. String To Name [K2Node_CallFunction] 9A21A21842043307F5CF9A8CC4846E51
+12. Set Txt_Translated [K2Node_VariableSet] 649D0B5648AC4D519A8D06A0DEDE9F98
+13. To String (Text) [K2Node_CallFunction] E28F48B746958F5FDFEB4EA4902D0559
+14. Get Input Keys and Map [EdGraphNode_Comment] 88C16A3B46B3F4C4D4C77CBB4F1138F5
+15. Translate Command to --> [EdGraphNode_Comment] EF3933834B1D67AF011CBBB31CFFF493
+16. Show Command Translated [EdGraphNode_Comment] 25791DDE4497D7DF761AE79540638F3A
+17. Get RichTextBlock_123 [K2Node_VariableGet] 7626417A44F70CE6232A5998DAF19DEA
+18. Set Text
+La destinazione è Rich Text Block [K2Node_CallFunction] ACDD234743DCA56E9FB0879553EBEA2F
+
+Variables Read:
+- Get RichTextBlock_123
+
+Variables Written:
+- Set Txt_Translated
+
+External Calls:
+- Get Key Display Name
+- Get Player Controller
+- Query Keys Mapped to Action
+La destinazione è Enhanced Input Subsystem Interface
+- Set Text
+La destinazione è Rich Text Block
+- String To Name
+- To String (Text)
+- To Text (String)
+
+Widgets Touched:
+- Get RichTextBlock_123
+- Set Text
+La destinazione è Rich Text Block
+- To String (Text)
+- To Text (String)
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Key Display Name
+- Get Player Controller
+- Query Keys Mapped to Action
+La destinazione è Enhanced Input Subsystem Interface
+- Set Text
+La destinazione è Rich Text Block
+- String To Name
+- To String (Text)
+- To Text (String)

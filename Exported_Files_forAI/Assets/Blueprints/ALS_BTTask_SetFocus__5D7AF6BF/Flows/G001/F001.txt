@@ -1,0 +1,48 @@
+Asset: ALS_BTTask_SetFocus
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_BTTask_SetFocus.ALS_BTTask_SetFocus
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_AI_ALS_BTTask_SetFocus
+GraphId: G001
+Graph: EventGraph
+FlowId: F001
+Entry: Evento Receive Execute AI
+NodeGuid: 6C5F8D0641E3CF69F8682CACD62F4D57
+
+Exec Flow:
+1. Evento Receive Execute AI [K2Node_Event] 6C5F8D0641E3CF69F8682CACD62F4D57
+2. Finish Execute
+La destinazione è BTTask Blueprint Base [K2Node_CallFunction] CFD8EEB24B51A8AB9308C8B7EF7724C3
+3. Get Controlled Pawn
+La destinazione è Controller [K2Node_CallFunction] D6A0F27647A10373CB888CA425AA4341
+4. SetFocus
+La destinazione è AIController [K2Node_CallFunction] 53E9795E4666E8557E3B6EA14B00C84D
+5. Get Player Controller [K2Node_CallFunction] 27FBD35A4460815368FA63B48A1CDF9C
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- Finish Execute
+La destinazione è BTTask Blueprint Base
+- Get Controlled Pawn
+La destinazione è Controller
+- Get Player Controller
+- SetFocus
+La destinazione è AIController
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Finish Execute
+La destinazione è BTTask Blueprint Base
+- Get Controlled Pawn
+La destinazione è Controller
+- Get Player Controller
+- SetFocus
+La destinazione è AIController

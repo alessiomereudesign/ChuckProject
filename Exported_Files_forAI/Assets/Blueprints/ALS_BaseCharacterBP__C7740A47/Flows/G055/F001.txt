@@ -1,0 +1,64 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G055
+Graph: UpdateCharacterMovement
+FlowId: F001
+Entry: Update Character Movement
+NodeGuid: 091831864F716506C03AB5B01B8F0A58
+
+Exec Flow:
+1. Update Character Movement [K2Node_FunctionEntry] 091831864F716506C03AB5B01B8F0A58
+2. Get Allowed Gait [K2Node_CallFunction] A38CC852489BEA776C2D80ABC5A7757E
+3. Nodo di reindirizzamento [K2Node_Knot] F77A03AE4C8AD91FCAC79C98F75A1F90
+4. Sequenza [K2Node_ExecutionSequence] A23D2F984C2B78434A56749047DE4832
+5. Get Actual Gait [K2Node_CallFunction] 2EA842D14E690C5DAFFAD7B446B519BB
+6. Nodo di reindirizzamento [K2Node_Knot] 6593FDA242C16A37290A5685172711DC
+7. Non uguale (enum) [K2Node_EnumInequality] 4152E36B466A7D1507F4CA86593B6B51
+8. Get Gait [K2Node_VariableGet] C53733584584FA3185D733B4BC948EA4
+9. Ramo [K2Node_IfThenElse] A9EC1B4A4953FD4F2E2970A7EE72B331
+10. Update Dynamic Movement Settings
+La destinazione è ALS Base Character BP [K2Node_CallFunction] DA873B884BDA61C607D7E785D00EC1A2
+11. BPI Set Gait
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 57345C494352CB51378E30B3FB8DF294
+12. Set AllowedGait [K2Node_VariableSet] 5330160542B0A84F923ABC8E06BC63E5
+13. Set ActualGait [K2Node_VariableSet] 4A7CBF22468D3C190C70BA8A6F2B8775
+14. Get ActualGait [K2Node_VariableGet] C3CF745648AD05B2837FC3A9112EA3E3
+15. Get ActualGait [K2Node_VariableGet] E5D3619345325C4A0DC80D8AF7C6DCC4
+16. Get AllowedGait [K2Node_VariableGet] 17C9DC1A422F6AE8AD47C7BD80B60491
+17. Get AllowedGait [K2Node_VariableGet] 97C92F5D459FFCB2AD0BD38E6CA3A425
+18. Set the Allowed Gait [EdGraphNode_Comment] 8518C5B242445D0BFF7D07B58EAA4E36
+19. Determine the Actual Gait. If it is different from the current Gait, Set the new Gait Event. [EdGraphNode_Comment] 2078F40A43BF5A5AA199C09B911742DF
+20. Use the allowed gait to update the movement settings. [EdGraphNode_Comment] EC82EA11403F12AADF628ABB7AD969A1
+21. Nodo di reindirizzamento [K2Node_Knot] 702FA0D146548C129AB7CBA9C516AE51
+
+Variables Read:
+- Get ActualGait
+- Get AllowedGait
+- Get Gait
+
+Variables Written:
+- Set ActualGait
+- Set AllowedGait
+
+External Calls:
+- BPI Set Gait
+La destinazione è ALS Base Character BP
+- Get Actual Gait
+- Get Allowed Gait
+- Update Dynamic Movement Settings
+La destinazione è ALS Base Character BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- BPI Set Gait
+La destinazione è ALS Base Character BP
+- Get Actual Gait
+- Get Allowed Gait
+- Update Dynamic Movement Settings
+La destinazione è ALS Base Character BP

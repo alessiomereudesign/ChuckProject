@@ -1,0 +1,34 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G001
+Graph: BPI_Get_3P_PivotTarget
+FlowId: F001
+Entry: BPI Get 3P Pivot Target
+NodeGuid: 2EC868EE4EF65EC3DA0C63862096B8E3
+
+Exec Flow:
+1. BPI Get 3P Pivot Target [K2Node_FunctionEntry] 2EC868EE4EF65EC3DA0C63862096B8E3
+2. Nodo di restituzione [K2Node_FunctionResult] 8E981FF546DAF4262B193B9F1F3BF2D5
+3. Get Actor Transform
+La destinazione è Actor [K2Node_CallFunction] FB311C2C4703C6C678E70A90187C4841
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- Get Actor Transform
+La destinazione è Actor
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Actor Transform
+La destinazione è Actor

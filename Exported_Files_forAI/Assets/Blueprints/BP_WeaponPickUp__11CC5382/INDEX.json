@@ -1,0 +1,146 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "BP_WeaponPickUp",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponPickUp.BP_WeaponPickUp",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponPickUp",
+	"shortAssetFolder": "BP_WeaponPickUp__11CC5382",
+	"pathHash": "11CC5382",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/Engine.Actor",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 6,
+		"components": 5,
+		"widgets": 0,
+		"graphs": 4,
+		"nodes": 64,
+		"edges": 72,
+		"flows": 5
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/SUMMARY.md",
+		"variables": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/VARIABLES.json",
+		"components": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/NODES.jsonl",
+		"edges": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/EDGES.jsonl",
+		"search": "Assets/Blueprints/BP_WeaponPickUp__11CC5382/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "GetInteractionPrompt",
+			"graphName": "GetInteractionPrompt",
+			"type": "EdGraph",
+			"graphType": "EdGraph",
+			"graphGuid": "",
+			"nodeCount": 4,
+			"edgeCount": 3,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Interaction Prompt",
+					"entryNodeGuid": "702CAC334F71E96F90ED92B5188BBF9B",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 4
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 38,
+			"edgeCount": 44,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Evento BeginPlay",
+					"entryNodeGuid": "A7661D0849DB1DAEBC02CFBA389B401F",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 38
+				},
+				{
+					"flowId": "F002",
+					"entryName": "Evento Interact\nDa BPI Interaction",
+					"entryNodeGuid": "4DB0F13F4C4BD2C1118FA2A0F9F9F74E",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G002/F002.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G002/F002.json",
+					"textFile": "Flows/G002/F002.txt",
+					"jsonFile": "Flows/G002/F002.json",
+					"nodeCount": 38
+				}
+			]
+		},
+		{
+			"graphId": "G003",
+			"name": "CollectWeapon",
+			"graphName": "CollectWeapon",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 18,
+			"edgeCount": 21,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G003/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Collect Weapon",
+					"entryNodeGuid": "5D4BF7EE48F86A70C2DD5193993D4FF7",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G003/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G003/F001.json",
+					"textFile": "Flows/G003/F001.txt",
+					"jsonFile": "Flows/G003/F001.json",
+					"nodeCount": 18
+				}
+			]
+		},
+		{
+			"graphId": "G004",
+			"name": "UserConstructionScript",
+			"graphName": "UserConstructionScript",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 4,
+			"edgeCount": 4,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G004/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G004/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Graphs/G004/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Construction Script",
+					"entryNodeGuid": "1A14284242C33EC16594D0B1576B58B8",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G004/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponPickUp__11CC5382/Flows/G004/F001.json",
+					"textFile": "Flows/G004/F001.txt",
+					"jsonFile": "Flows/G004/F001.json",
+					"nodeCount": 4
+				}
+			]
+		}
+	]
+}

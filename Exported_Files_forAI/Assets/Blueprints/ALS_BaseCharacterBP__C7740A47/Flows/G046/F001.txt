@@ -1,0 +1,52 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G046
+Graph: PlayerMovementInput
+FlowId: F001
+Entry: Player Movement Input
+NodeGuid: 7BED3D5E41AB84DD4167F6879888CA46
+
+Exec Flow:
+1. Player Movement Input [K2Node_FunctionEntry] 7BED3D5E41AB84DD4167F6879888CA46
+2. Nodo di reindirizzamento [K2Node_Knot] 35082AF9435E3E6C579FF889E0102EEF
+3. Switch on ALS_MovementState [K2Node_SwitchEnum] 29389FAE44A3EEA6E17BA6B036568F40
+4. Get MovementState [K2Node_VariableGet] D653442049222CB8719079838A576CEC
+5. Nodo di reindirizzamento [K2Node_Knot] 13C1A1C24D3BC0BE59CE5DA0B55D4846
+6. Get IsForwardAxis [K2Node_VariableGet] DE51E90D40B58D3C19139D9548B3F97F
+7. Ramo [K2Node_IfThenElse] D61A162745FE0E1CEB42B78F4B4FDCBF
+8. Get Control Forward/ Right Vector [K2Node_CallFunction] 80D5FE97478CAB314861A19C28891013
+9. Fix Diagonal Gamepad Values [K2Node_CallFunction] F04B658E48E10F85FFCC63B2DAD57947
+10. Nodo di reindirizzamento [K2Node_Knot] C8ED68624FD1CA6C67B8ABB1682B7683
+11. Get MoveRight/Left [K2Node_GetInputAxisValue] 1BD49BF04D6959EFC420CBB3227E3D00
+12. Add Movement Input
+La destinazione è Pedina [K2Node_CallFunction] 2CD698C642978FCE923ED7A2E452A25B
+13. Get MoveForward/Backwards [K2Node_GetInputAxisValue] AB6952CF4A055A8E23C598B3926BC123
+14. Add Movement Input
+La destinazione è Pedina [K2Node_CallFunction] D793A9824AE04272019CAEA91B25C34C
+15. Default camera relative movement behavior [EdGraphNode_Comment] 2A7C19594EA1EB456E2FA794DC42A813
+
+Variables Read:
+- Get IsForwardAxis
+- Get MovementState
+
+Variables Written:
+- none
+
+External Calls:
+- Add Movement Input
+La destinazione è Pedina
+- Fix Diagonal Gamepad Values
+- Get Control Forward/ Right Vector
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Add Movement Input
+La destinazione è Pedina
+- Fix Diagonal Gamepad Values
+- Get Control Forward/ Right Vector

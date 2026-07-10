@@ -1,0 +1,98 @@
+{
+	"assetName": "ALS_Character_BPI",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Character_BPI.ALS_Character_BPI",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Character_BPI",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"functions": [
+		{
+			"name": "BPI_Get_CurrentStates",
+			"graph": "BPI_Get_CurrentStates",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G001/INDEX.json"
+		},
+		{
+			"name": "BPI_Get_CurrentStates",
+			"graph": "BPI_Get_CurrentStates",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G001/INDEX.json"
+		},
+		{
+			"name": "BPI_Get_EssentialValues",
+			"graph": "BPI_Get_EssentialValues",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "BPI_Get_EssentialValues",
+			"graph": "BPI_Get_EssentialValues",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 2,
+			"file": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G002/INDEX.json"
+		},
+		{
+			"name": "BPI_Set_Gait",
+			"graph": "BPI_Set_Gait",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 1,
+			"file": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G003/INDEX.json"
+		},
+		{
+			"name": "BPI_Set_MovementAction",
+			"graph": "BPI_Set_MovementAction",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 1,
+			"file": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G004/INDEX.json"
+		},
+		{
+			"name": "BPI_Set_MovementState",
+			"graph": "BPI_Set_MovementState",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 1,
+			"file": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G005/INDEX.json"
+		},
+		{
+			"name": "BPI_Set_OverlayState",
+			"graph": "BPI_Set_OverlayState",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 1,
+			"file": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G006/INDEX.json"
+		},
+		{
+			"name": "BPI_Set_RotationMode",
+			"graph": "BPI_Set_RotationMode",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 1,
+			"file": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G007/INDEX.json"
+		},
+		{
+			"name": "BPI_Set_ViewMode",
+			"graph": "BPI_Set_ViewMode",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 1,
+			"file": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G008/INDEX.json"
+		}
+	]
+}

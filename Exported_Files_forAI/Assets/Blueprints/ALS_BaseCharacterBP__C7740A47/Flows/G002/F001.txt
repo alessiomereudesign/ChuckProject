@@ -1,0 +1,34 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G002
+Graph: BPI_Get_3P_TraceParams
+FlowId: F001
+Entry: BPI Get 3P Trace Params
+NodeGuid: 6C19922A4537B1940B64F58DA7FB35EE
+
+Exec Flow:
+1. BPI Get 3P Trace Params [K2Node_FunctionEntry] 6C19922A4537B1940B64F58DA7FB35EE
+2. Nodo di restituzione [K2Node_FunctionResult] B8E7ADC1436477FB7D7A6D97B536E151
+3. Get Actor Location
+La destinazione è Actor [K2Node_CallFunction] D31B93F540E4651BEB1226BDCF5ECAD9
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- Get Actor Location
+La destinazione è Actor
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Actor Location
+La destinazione è Actor

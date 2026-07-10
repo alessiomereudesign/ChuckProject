@@ -1,0 +1,123 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"graph": "BPI_Get_3P_PivotTarget",
+	"entryName": "BPI Get 3P Pivot Target",
+	"entryNodeGuid": "2EC868EE4EF65EC3DA0C63862096B8E3",
+	"nodes": [
+		{
+			"nodeGuid": "2EC868EE4EF65EC3DA0C63862096B8E3",
+			"class": "K2Node_FunctionEntry",
+			"title": "BPI Get 3P Pivot Target",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "566652024FE79448C073008D29D1ECBB",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8E981FF546DAF4262B193B9F1F3BF2D5",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 288,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E4CE9177404DC35F0691B691445F68F2",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2BD4EF284476919F9341B589EF082D70",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Transform",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FB311C2C4703C6C678E70A90187C4841",
+			"class": "K2Node_CallFunction",
+			"title": "Get Actor Transform\nLa destinazione è Actor",
+			"comment": "",
+			"x": 0,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "410D11164F48DF5995BC4B82118D6C9B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4F9B3CEF41FD4C7FE483FE89C19AA91A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Transform|ref|const",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_3P_PivotTarget",
+			"edgeType": "exec",
+			"fromNodeGuid": "2EC868EE4EF65EC3DA0C63862096B8E3",
+			"fromPinId": "566652024FE79448C073008D29D1ECBB",
+			"fromPinName": "then",
+			"toNodeGuid": "8E981FF546DAF4262B193B9F1F3BF2D5",
+			"toPinId": "E4CE9177404DC35F0691B691445F68F2",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "BPI_Get_3P_PivotTarget",
+			"edgeType": "data",
+			"fromNodeGuid": "FB311C2C4703C6C678E70A90187C4841",
+			"fromPinId": "4F9B3CEF41FD4C7FE483FE89C19AA91A",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "8E981FF546DAF4262B193B9F1F3BF2D5",
+			"toPinId": "2BD4EF284476919F9341B589EF082D70",
+			"toPinName": "ReturnValue"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Actor Transform\nLa destinazione è Actor"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Actor Transform\nLa destinazione è Actor"
+	],
+	"flowId": "F001",
+	"graphId": "G001",
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP"
+}

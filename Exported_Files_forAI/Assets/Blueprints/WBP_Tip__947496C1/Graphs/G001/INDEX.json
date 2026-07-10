@@ -1,0 +1,35 @@
+{
+	"graphId": "G001",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 6,
+	"edgeCount": 5,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Evento Construct",
+			"entryNodeGuid": "395426D9417824F6EE1D3B9559F9E96F",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 6
+		},
+		{
+			"flowId": "F002",
+			"entryName": "ShowTip\nCustom Event",
+			"entryNodeGuid": "349184484140FEF3963284BA07252C97",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Flows/G001/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_Tip__947496C1/Flows/G001/F002.json",
+			"textFile": "Flows/G001/F002.txt",
+			"jsonFile": "Flows/G001/F002.json",
+			"nodeCount": 6
+		}
+	]
+}

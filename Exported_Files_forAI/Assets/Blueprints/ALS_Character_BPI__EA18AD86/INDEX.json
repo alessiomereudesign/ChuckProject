@@ -1,0 +1,236 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "ALS_Character_BPI",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/Interfaces/ALS_Character_BPI.ALS_Character_BPI",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_Interfaces_ALS_Character_BPI",
+	"shortAssetFolder": "ALS_Character_BPI__EA18AD86",
+	"pathHash": "EA18AD86",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/CoreUObject.Interface",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 8,
+		"nodes": 10,
+		"edges": 2,
+		"flows": 8
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/SUMMARY.md",
+		"variables": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/VARIABLES.json",
+		"components": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/NODES.jsonl",
+		"edges": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/EDGES.jsonl",
+		"search": "Assets/Blueprints/ALS_Character_BPI__EA18AD86/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "BPI_Get_CurrentStates",
+			"graphName": "BPI_Get_CurrentStates",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 2,
+			"edgeCount": 1,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "BPI Get Current States",
+					"entryNodeGuid": "ABB93A414D9CC5828308489321B69E92",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 2
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "BPI_Get_EssentialValues",
+			"graphName": "BPI_Get_EssentialValues",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 2,
+			"edgeCount": 1,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "BPI Get Essential Values",
+					"entryNodeGuid": "7EB6B71849B447D056B8BEAABD8409B3",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 2
+				}
+			]
+		},
+		{
+			"graphId": "G003",
+			"name": "BPI_Set_Gait",
+			"graphName": "BPI_Set_Gait",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 1,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G003/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G003/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G003/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "BPI Set Gait",
+					"entryNodeGuid": "4E54B081419C6BF99ED3C28D62EF90B5",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G003/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G003/F001.json",
+					"textFile": "Flows/G003/F001.txt",
+					"jsonFile": "Flows/G003/F001.json",
+					"nodeCount": 1
+				}
+			]
+		},
+		{
+			"graphId": "G004",
+			"name": "BPI_Set_MovementAction",
+			"graphName": "BPI_Set_MovementAction",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 1,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G004/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G004/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G004/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "BPI Set Movement Action",
+					"entryNodeGuid": "7A44009143825ECE63B4A8986845E542",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G004/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G004/F001.json",
+					"textFile": "Flows/G004/F001.txt",
+					"jsonFile": "Flows/G004/F001.json",
+					"nodeCount": 1
+				}
+			]
+		},
+		{
+			"graphId": "G005",
+			"name": "BPI_Set_MovementState",
+			"graphName": "BPI_Set_MovementState",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 1,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G005/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G005/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G005/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "BPI Set Movement State",
+					"entryNodeGuid": "9A8B99F8466A98E7FDD15398245916EC",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G005/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G005/F001.json",
+					"textFile": "Flows/G005/F001.txt",
+					"jsonFile": "Flows/G005/F001.json",
+					"nodeCount": 1
+				}
+			]
+		},
+		{
+			"graphId": "G006",
+			"name": "BPI_Set_OverlayState",
+			"graphName": "BPI_Set_OverlayState",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 1,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G006/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G006/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G006/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "BPI Set Overlay State",
+					"entryNodeGuid": "975CBFF0431677475FA76E995B7644BA",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G006/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G006/F001.json",
+					"textFile": "Flows/G006/F001.txt",
+					"jsonFile": "Flows/G006/F001.json",
+					"nodeCount": 1
+				}
+			]
+		},
+		{
+			"graphId": "G007",
+			"name": "BPI_Set_RotationMode",
+			"graphName": "BPI_Set_RotationMode",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 1,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G007/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G007/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G007/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "BPI Set Rotation Mode",
+					"entryNodeGuid": "68A9504041993A172AB5B0971B31397E",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G007/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G007/F001.json",
+					"textFile": "Flows/G007/F001.txt",
+					"jsonFile": "Flows/G007/F001.json",
+					"nodeCount": 1
+				}
+			]
+		},
+		{
+			"graphId": "G008",
+			"name": "BPI_Set_ViewMode",
+			"graphName": "BPI_Set_ViewMode",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 1,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G008/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G008/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Graphs/G008/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "BPI Set View Mode",
+					"entryNodeGuid": "B9722A7D499EB49E1EE2A99E2DB8718C",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G008/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_Character_BPI__EA18AD86/Flows/G008/F001.json",
+					"textFile": "Flows/G008/F001.txt",
+					"jsonFile": "Flows/G008/F001.json",
+					"nodeCount": 1
+				}
+			]
+		}
+	]
+}

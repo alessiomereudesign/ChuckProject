@@ -1,0 +1,96 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "AIC_EnemyALS",
+	"assetPath": "/Game/ChuckContent/Blueprints/Enemies/AIC_EnemyALS.AIC_EnemyALS",
+	"assetKey": "Game_ChuckContent_Blueprints_Enemies_AIC_EnemyALS",
+	"shortAssetFolder": "AIC_EnemyALS__9665E851",
+	"pathHash": "9665E851",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/AI/ALS_AI_Controller.ALS_AI_Controller_C",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 2,
+		"nodes": 4,
+		"edges": 1,
+		"flows": 3
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/AIC_EnemyALS__9665E851/SUMMARY.md",
+		"variables": "Assets/Blueprints/AIC_EnemyALS__9665E851/VARIABLES.json",
+		"components": "Assets/Blueprints/AIC_EnemyALS__9665E851/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/AIC_EnemyALS__9665E851/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/AIC_EnemyALS__9665E851/NODES.jsonl",
+		"edges": "Assets/Blueprints/AIC_EnemyALS__9665E851/EDGES.jsonl",
+		"search": "Assets/Blueprints/AIC_EnemyALS__9665E851/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 2,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Evento BeginPlay",
+					"entryNodeGuid": "0C721D224DEAE1F1951FD99E3A10FB60",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 2
+				},
+				{
+					"flowId": "F002",
+					"entryName": "Evento Tick",
+					"entryNodeGuid": "E647113B45AEE9F71517D3BC048C39D7",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Flows/G001/F002.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Flows/G001/F002.json",
+					"textFile": "Flows/G001/F002.txt",
+					"jsonFile": "Flows/G001/F002.json",
+					"nodeCount": 2
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "UserConstructionScript",
+			"graphName": "UserConstructionScript",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 2,
+			"edgeCount": 1,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Construction Script",
+					"entryNodeGuid": "3437D82C44665DB6CB98C0AB9D8A9FEA",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/AIC_EnemyALS__9665E851/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 2
+				}
+			]
+		}
+	]
+}

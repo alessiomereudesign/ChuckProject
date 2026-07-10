@@ -1,0 +1,45 @@
+{
+	"graphId": "G001",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 4,
+	"edgeCount": 0,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Evento Construct",
+			"entryNodeGuid": "7A6AD75F44D18447AE080A9DF5829F93",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 4
+		},
+		{
+			"flowId": "F002",
+			"entryName": "Evento Pre Construct",
+			"entryNodeGuid": "3A8BF9B04268B3C929F8D4A4AA6655F6",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Flows/G001/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Flows/G001/F002.json",
+			"textFile": "Flows/G001/F002.txt",
+			"jsonFile": "Flows/G001/F002.json",
+			"nodeCount": 4
+		},
+		{
+			"flowId": "F003",
+			"entryName": "Evento Tick",
+			"entryNodeGuid": "A49B794D47778F0CEE9C9482D55A528D",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Flows/G001/F003.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Flows/G001/F003.json",
+			"textFile": "Flows/G001/F003.txt",
+			"jsonFile": "Flows/G001/F003.json",
+			"nodeCount": 4
+		}
+	]
+}

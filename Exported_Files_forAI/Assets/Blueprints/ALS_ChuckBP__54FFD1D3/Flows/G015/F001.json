@@ -1,0 +1,717 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "Has Weapon?",
+	"entryName": "Has Weapon?",
+	"entryNodeGuid": "F28A932F47722406A0E400BB78377122",
+	"nodes": [
+		{
+			"nodeGuid": "F28A932F47722406A0E400BB78377122",
+			"class": "K2Node_FunctionEntry",
+			"title": "Has Weapon?",
+			"comment": "",
+			"x": 304,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B7F76A8948515B2E0A83C5999277FDA5",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "275746FA408D3D092740598C677B26FE",
+					"name": "WeaponSlot",
+					"direction": "Output",
+					"type": "byte|/Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot.E_WeaponSlot",
+					"defaultValue": "NewEnumerator0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "D71A2C7D4BA2951956064E9D09750E4F",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on E_WeaponSlot",
+			"comment": "",
+			"x": 480,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "185B5C5A4569AFBB480549987F9098A3",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "15A3D1794C82E138A34DF792D8C2206B",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot.E_WeaponSlot",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "3A3BA31F43CAC98CF1F5DE939C68D0C3",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "3C32EB0F4A5157E8255B308D713CEE29",
+					"name": "NewEnumerator0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "6FE4889A42A4F55798970E90335AC50B",
+					"name": "NewEnumerator1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "68F496C74B99430A53844CAD79F6AE7E",
+					"name": "NewEnumerator2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C3C78AD6467903382210AE9286E21D54",
+					"name": "NewEnumerator3",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C723F1F1492A97A52EF5EA82291DC063",
+					"name": "NewEnumerator5",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BC1F35EC4741AC5D90FD3590ED131DBD",
+			"class": "K2Node_VariableGet",
+			"title": "Get Mesh_SmallWeapon",
+			"comment": "",
+			"x": 752,
+			"y": 8,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5B5C261E4C56907DE8DD748FE34DCF18",
+					"name": "Mesh_SmallWeapon",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F6E2ED2447F2819A1CA1D5AB62126519",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6C9C37A04B21EA7E415506AC37A05722",
+			"class": "K2Node_VariableGet",
+			"title": "Get Mesh_BigWeapon",
+			"comment": "",
+			"x": 784,
+			"y": 310,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3E9994304A67F555BA5A04824AA80C70",
+					"name": "Mesh_BigWeapon",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E4C0D5A945F5705F0DE02ABCDD833ADB",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "13D0DEFA409511F7216EAE9807705E1C",
+			"class": "K2Node_VariableGet",
+			"title": "Get Mesh_Melee",
+			"comment": "",
+			"x": 800,
+			"y": 166,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "119E0D2E4C0EF611E4DBAA9D915FC9B5",
+					"name": "Mesh_Melee",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9C4B34ED465280CCF8DB3999774E5714",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2E8E7C9D4331E2C1D4750EA11141DD69",
+			"class": "K2Node_CallFunction",
+			"title": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+			"comment": "",
+			"x": 992,
+			"y": -32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "943C419A4CFF967F97FE4581F8DD8B7C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5226AF7E4B6524EBFD8E08B74D731EE1",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1CEA639D4B6194F401F1668E524359EC",
+			"class": "K2Node_CallFunction",
+			"title": "Is Valid",
+			"comment": "",
+			"x": 1296,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3F7ECA9B4D72635D7283698A89AAED5A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetSystemLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"pinId": "E8FEC953454651EA8B4B668D1E4996AF",
+					"name": "Object",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "61654F284D50B7160AC22FAAB2643FE7",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "EF7135A34EDA452633BDFF8FB8636647",
+			"class": "K2Node_CallFunction",
+			"title": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+			"comment": "",
+			"x": 992,
+			"y": 270,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "943C419A4CFF967F97FE4581F8DD8B7C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5226AF7E4B6524EBFD8E08B74D731EE1",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "351D285A4C162D460C19848D8B6BFF96",
+			"class": "K2Node_CallFunction",
+			"title": "Is Valid",
+			"comment": "",
+			"x": 1296,
+			"y": 288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3F7ECA9B4D72635D7283698A89AAED5A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetSystemLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"pinId": "E8FEC953454651EA8B4B668D1E4996AF",
+					"name": "Object",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "61654F284D50B7160AC22FAAB2643FE7",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "3C61807643993D6C44A32AB3BB7878F1",
+			"class": "K2Node_CallFunction",
+			"title": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+			"comment": "",
+			"x": 992,
+			"y": 126,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "943C419A4CFF967F97FE4581F8DD8B7C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5226AF7E4B6524EBFD8E08B74D731EE1",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2BB4DE8B49502D1D739A94BC55039220",
+			"class": "K2Node_CallFunction",
+			"title": "Is Valid",
+			"comment": "",
+			"x": 1296,
+			"y": 144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3F7ECA9B4D72635D7283698A89AAED5A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetSystemLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetSystemLibrary"
+				},
+				{
+					"pinId": "E8FEC953454651EA8B4B668D1E4996AF",
+					"name": "Object",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "61654F284D50B7160AC22FAAB2643FE7",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "EE1E5CEB4A5B57950B77FA96F23E69D5",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 768,
+			"y": -64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "54ECD397440C052C4FB22BBAC8FD11D7",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4EC3A30E48C001D640CF479A7DFEB208",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "AC6C4EB14D52DBED1D74ACBA77C6A85A",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 768,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0BF65EAA4E75C50C1F7B4FB07C00A5E8",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A26D9C5749ACBF22F27EC59465F8DA0C",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A2DCE8974972D4E0A8BC349E733F688D",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 1552,
+			"y": -96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1A86262F4024BF5ED6B474B5E0A8E16E",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "910A601D4E247DAF2B5C48918A119A60",
+					"name": "Yes/No",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "85900ACC4476B998E5CC93B83476F840",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 1552,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "540A3AC541D80D378F5BAA8C3089A385",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "91F621334861BF6D6C8CCEA2F3642D85",
+					"name": "Yes/No",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "2C6D27F145090DA97ECC3EA9BE3EFDEC",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 1552,
+			"y": 208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B727AEB74BF2CC424ACBB984A09E998F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "52261A5746DB11B10DFA98A8C489AA71",
+					"name": "Yes/No",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "exec",
+			"fromNodeGuid": "F28A932F47722406A0E400BB78377122",
+			"fromPinId": "B7F76A8948515B2E0A83C5999277FDA5",
+			"fromPinName": "then",
+			"toNodeGuid": "D71A2C7D4BA2951956064E9D09750E4F",
+			"toPinId": "185B5C5A4569AFBB480549987F9098A3",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "data",
+			"fromNodeGuid": "F28A932F47722406A0E400BB78377122",
+			"fromPinId": "275746FA408D3D092740598C677B26FE",
+			"fromPinName": "WeaponSlot",
+			"toNodeGuid": "D71A2C7D4BA2951956064E9D09750E4F",
+			"toPinId": "15A3D1794C82E138A34DF792D8C2206B",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "exec",
+			"fromNodeGuid": "D71A2C7D4BA2951956064E9D09750E4F",
+			"fromPinId": "6FE4889A42A4F55798970E90335AC50B",
+			"fromPinName": "NewEnumerator1",
+			"toNodeGuid": "EE1E5CEB4A5B57950B77FA96F23E69D5",
+			"toPinId": "54ECD397440C052C4FB22BBAC8FD11D7",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "exec",
+			"fromNodeGuid": "D71A2C7D4BA2951956064E9D09750E4F",
+			"fromPinId": "68F496C74B99430A53844CAD79F6AE7E",
+			"fromPinName": "NewEnumerator2",
+			"toNodeGuid": "85900ACC4476B998E5CC93B83476F840",
+			"toPinId": "540A3AC541D80D378F5BAA8C3089A385",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "exec",
+			"fromNodeGuid": "D71A2C7D4BA2951956064E9D09750E4F",
+			"fromPinId": "C3C78AD6467903382210AE9286E21D54",
+			"fromPinName": "NewEnumerator3",
+			"toNodeGuid": "AC6C4EB14D52DBED1D74ACBA77C6A85A",
+			"toPinId": "0BF65EAA4E75C50C1F7B4FB07C00A5E8",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "data",
+			"fromNodeGuid": "BC1F35EC4741AC5D90FD3590ED131DBD",
+			"fromPinId": "5B5C261E4C56907DE8DD748FE34DCF18",
+			"fromPinName": "Mesh_SmallWeapon",
+			"toNodeGuid": "2E8E7C9D4331E2C1D4750EA11141DD69",
+			"toPinId": "943C419A4CFF967F97FE4581F8DD8B7C",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "data",
+			"fromNodeGuid": "6C9C37A04B21EA7E415506AC37A05722",
+			"fromPinId": "3E9994304A67F555BA5A04824AA80C70",
+			"fromPinName": "Mesh_BigWeapon",
+			"toNodeGuid": "EF7135A34EDA452633BDFF8FB8636647",
+			"toPinId": "943C419A4CFF967F97FE4581F8DD8B7C",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "data",
+			"fromNodeGuid": "13D0DEFA409511F7216EAE9807705E1C",
+			"fromPinId": "119E0D2E4C0EF611E4DBAA9D915FC9B5",
+			"fromPinName": "Mesh_Melee",
+			"toNodeGuid": "3C61807643993D6C44A32AB3BB7878F1",
+			"toPinId": "943C419A4CFF967F97FE4581F8DD8B7C",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "data",
+			"fromNodeGuid": "2E8E7C9D4331E2C1D4750EA11141DD69",
+			"fromPinId": "5226AF7E4B6524EBFD8E08B74D731EE1",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "1CEA639D4B6194F401F1668E524359EC",
+			"toPinId": "E8FEC953454651EA8B4B668D1E4996AF",
+			"toPinName": "Object"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "data",
+			"fromNodeGuid": "1CEA639D4B6194F401F1668E524359EC",
+			"fromPinId": "61654F284D50B7160AC22FAAB2643FE7",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "A2DCE8974972D4E0A8BC349E733F688D",
+			"toPinId": "910A601D4E247DAF2B5C48918A119A60",
+			"toPinName": "Yes/No"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "data",
+			"fromNodeGuid": "EF7135A34EDA452633BDFF8FB8636647",
+			"fromPinId": "5226AF7E4B6524EBFD8E08B74D731EE1",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "351D285A4C162D460C19848D8B6BFF96",
+			"toPinId": "E8FEC953454651EA8B4B668D1E4996AF",
+			"toPinName": "Object"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "data",
+			"fromNodeGuid": "351D285A4C162D460C19848D8B6BFF96",
+			"fromPinId": "61654F284D50B7160AC22FAAB2643FE7",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "2C6D27F145090DA97ECC3EA9BE3EFDEC",
+			"toPinId": "52261A5746DB11B10DFA98A8C489AA71",
+			"toPinName": "Yes/No"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "data",
+			"fromNodeGuid": "3C61807643993D6C44A32AB3BB7878F1",
+			"fromPinId": "5226AF7E4B6524EBFD8E08B74D731EE1",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "2BB4DE8B49502D1D739A94BC55039220",
+			"toPinId": "E8FEC953454651EA8B4B668D1E4996AF",
+			"toPinName": "Object"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "data",
+			"fromNodeGuid": "2BB4DE8B49502D1D739A94BC55039220",
+			"fromPinId": "61654F284D50B7160AC22FAAB2643FE7",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "85900ACC4476B998E5CC93B83476F840",
+			"toPinId": "91F621334861BF6D6C8CCEA2F3642D85",
+			"toPinName": "Yes/No"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "exec",
+			"fromNodeGuid": "EE1E5CEB4A5B57950B77FA96F23E69D5",
+			"fromPinId": "4EC3A30E48C001D640CF479A7DFEB208",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "A2DCE8974972D4E0A8BC349E733F688D",
+			"toPinId": "1A86262F4024BF5ED6B474B5E0A8E16E",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "Has Weapon?",
+			"edgeType": "exec",
+			"fromNodeGuid": "AC6C4EB14D52DBED1D74ACBA77C6A85A",
+			"fromPinId": "A26D9C5749ACBF22F27EC59465F8DA0C",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "2C6D27F145090DA97ECC3EA9BE3EFDEC",
+			"toPinId": "B727AEB74BF2CC424ACBB984A09E998F",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [
+		"Get Mesh_BigWeapon",
+		"Get Mesh_Melee",
+		"Get Mesh_SmallWeapon"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+		"Is Valid"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+		"Is Valid"
+	],
+	"flowId": "F001",
+	"graphId": "G015",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

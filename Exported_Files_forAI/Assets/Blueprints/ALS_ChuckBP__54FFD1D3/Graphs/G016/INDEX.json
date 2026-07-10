@@ -1,0 +1,25 @@
+{
+	"graphId": "G016",
+	"name": "MantleEnd",
+	"graphName": "MantleEnd",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 3,
+	"edgeCount": 2,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G016/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G016/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G016/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Mantle End",
+			"entryNodeGuid": "2E4C18D04A0193A0FAC94B84632A043F",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G016/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G016/F001.json",
+			"textFile": "Flows/G016/F001.txt",
+			"jsonFile": "Flows/G016/F001.json",
+			"nodeCount": 3
+		}
+	]
+}

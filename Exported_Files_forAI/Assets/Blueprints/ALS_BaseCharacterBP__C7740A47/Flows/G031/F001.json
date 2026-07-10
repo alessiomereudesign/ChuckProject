@@ -1,0 +1,360 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+	"graph": "GetTraceDebugType",
+	"entryName": "Get Trace Debug Type",
+	"entryNodeGuid": "035981C64749A33407AFEF9F8A72E777",
+	"nodes": [
+		{
+			"nodeGuid": "035981C64749A33407AFEF9F8A72E777",
+			"class": "K2Node_FunctionEntry",
+			"title": "Get Trace Debug Type",
+			"comment": "",
+			"x": 1024,
+			"y": -224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BE778724407C4F55C5B0F78B6FFD1178",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D0132D10446AB545C07E7CBA1291F918",
+					"name": "ShowTraceType",
+					"direction": "Output",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "B4AB868B49E17628807EE0A2EB18593F",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 1792,
+			"y": -128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CA47AFCC431162EF8B7398AFA9905BC6",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7AC3F8824DE931640CB30A8FAD5EAFA5",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "EF7A298E4A9A5A73229757A80AF01802",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 1584,
+			"y": -224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1DABBE704E074FED3E0A0C95D1375F5D",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "59FCCCAB41074C0CF1AEF4951CFB3880",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "EAF1DB7C4D45D335884AC49065FD399C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B8BC8CDC4D16D7525603979A6049FA9E",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3CBC396B491BB328A3F03FB05059682D",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 1792,
+			"y": -224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "CA47AFCC431162EF8B7398AFA9905BC6",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7AC3F8824DE931640CB30A8FAD5EAFA5",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "byte|/Script/Engine.EDrawDebugTrace",
+					"defaultValue": "None"
+				}
+			]
+		},
+		{
+			"nodeGuid": "81295536449C34467710A2905A0B5D5B",
+			"class": "K2Node_CallFunction",
+			"title": "Get Player Controller",
+			"comment": "",
+			"x": 1024,
+			"y": -128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "911ACF9F4C58292A403BD89451DD0F0B",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "746EA6224E3EB7782297CE8E049AB18C",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E2785FF2457C8366CF44C49F259B5B2B",
+					"name": "PlayerIndex",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "830A65CF40A4A51674BF878F3263CF26",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A4EE4FE640A3F90D81D5D4881C0138B4",
+			"class": "K2Node_Message",
+			"title": "BPI Get Debug Info\nTarget is ALS Controller BPI",
+			"comment": "",
+			"x": 1296,
+			"y": -240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "16BBFCEA4C8B2C92E751F1A2D94AB0EC",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "727441C244E854B38DBC3C9B74C95893",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E1A3AA6D4B71B2083ADE2B833C12F3C1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "63B88BE04791EE259EF05FA7600E1F9C",
+					"name": "DebugFocusCharacter",
+					"direction": "Output",
+					"type": "object|/Script/Engine.Character",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9116F784457AD47D0F41BC854D6F757C",
+					"name": "DebugView",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "9406AD6A415FACFFF2C35D9F3009EA39",
+					"name": "ShowHUD",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "5188A19748CD756C51EB3C96AF93D942",
+					"name": "ShowTraces",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "DAA7EB064E02B79130E1E7AF32C34031",
+					"name": "ShowDebugShapes",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "D1E1B9D4485DA44B841A63BC840444D1",
+					"name": "ShowLayerColors",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "A0016B3647D59BFE8DAD72A359F594DE",
+					"name": "Slomo",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "C510B3834570D20D3F6704B36ABB6AA5",
+					"name": "ShowCharacterInfo",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "GetTraceDebugType",
+			"edgeType": "exec",
+			"fromNodeGuid": "035981C64749A33407AFEF9F8A72E777",
+			"fromPinId": "BE778724407C4F55C5B0F78B6FFD1178",
+			"fromPinName": "then",
+			"toNodeGuid": "A4EE4FE640A3F90D81D5D4881C0138B4",
+			"toPinId": "16BBFCEA4C8B2C92E751F1A2D94AB0EC",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "GetTraceDebugType",
+			"edgeType": "data",
+			"fromNodeGuid": "035981C64749A33407AFEF9F8A72E777",
+			"fromPinId": "D0132D10446AB545C07E7CBA1291F918",
+			"fromPinName": "ShowTraceType",
+			"toNodeGuid": "3CBC396B491BB328A3F03FB05059682D",
+			"toPinId": "7AC3F8824DE931640CB30A8FAD5EAFA5",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "GetTraceDebugType",
+			"edgeType": "exec",
+			"fromNodeGuid": "EF7A298E4A9A5A73229757A80AF01802",
+			"fromPinId": "B8BC8CDC4D16D7525603979A6049FA9E",
+			"fromPinName": "else",
+			"toNodeGuid": "B4AB868B49E17628807EE0A2EB18593F",
+			"toPinId": "CA47AFCC431162EF8B7398AFA9905BC6",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "GetTraceDebugType",
+			"edgeType": "exec",
+			"fromNodeGuid": "A4EE4FE640A3F90D81D5D4881C0138B4",
+			"fromPinId": "727441C244E854B38DBC3C9B74C95893",
+			"fromPinName": "then",
+			"toNodeGuid": "EF7A298E4A9A5A73229757A80AF01802",
+			"toPinId": "1DABBE704E074FED3E0A0C95D1375F5D",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "GetTraceDebugType",
+			"edgeType": "data",
+			"fromNodeGuid": "A4EE4FE640A3F90D81D5D4881C0138B4",
+			"fromPinId": "5188A19748CD756C51EB3C96AF93D942",
+			"fromPinName": "ShowTraces",
+			"toNodeGuid": "EF7A298E4A9A5A73229757A80AF01802",
+			"toPinId": "59FCCCAB41074C0CF1AEF4951CFB3880",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "GetTraceDebugType",
+			"edgeType": "exec",
+			"fromNodeGuid": "EF7A298E4A9A5A73229757A80AF01802",
+			"fromPinId": "EAF1DB7C4D45D335884AC49065FD399C",
+			"fromPinName": "then",
+			"toNodeGuid": "3CBC396B491BB328A3F03FB05059682D",
+			"toPinId": "CA47AFCC431162EF8B7398AFA9905BC6",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP",
+			"graph": "GetTraceDebugType",
+			"edgeType": "data",
+			"fromNodeGuid": "81295536449C34467710A2905A0B5D5B",
+			"fromPinId": "830A65CF40A4A51674BF878F3263CF26",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "A4EE4FE640A3F90D81D5D4881C0138B4",
+			"toPinId": "E1A3AA6D4B71B2083ADE2B833C12F3C1",
+			"toPinName": "self"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Player Controller"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Player Controller"
+	],
+	"flowId": "F001",
+	"graphId": "G031",
+	"assetName": "ALS_BaseCharacterBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP"
+}

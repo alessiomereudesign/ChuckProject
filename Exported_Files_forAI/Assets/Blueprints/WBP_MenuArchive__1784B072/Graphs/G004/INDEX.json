@@ -1,0 +1,25 @@
+{
+	"graphId": "G004",
+	"name": "OnAnalogValueChanged",
+	"graphName": "OnAnalogValueChanged",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 26,
+	"edgeCount": 28,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G004/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G004/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G004/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "On Analog Value Changed",
+			"entryNodeGuid": "00220CD04DC4E663234E8F93BCC940A0",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G004/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G004/F001.json",
+			"textFile": "Flows/G004/F001.txt",
+			"jsonFile": "Flows/G004/F001.json",
+			"nodeCount": 26
+		}
+	]
+}

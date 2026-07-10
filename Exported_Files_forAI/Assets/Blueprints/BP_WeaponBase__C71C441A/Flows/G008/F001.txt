@@ -1,0 +1,35 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G008
+Graph: GetMuzzleTransform
+FlowId: F001
+Entry: Get Muzzle Transform
+NodeGuid: 2F5E8DB94E2A4A9FF2F147AFF10B08D0
+
+Exec Flow:
+1. Get Muzzle Transform [K2Node_FunctionEntry] 2F5E8DB94E2A4A9FF2F147AFF10B08D0
+2. Nodo di restituzione [K2Node_FunctionResult] F37C27834A2BCF93070F9A86ACF96C35
+3. Get SK_Weapon [K2Node_VariableGet] 4DEEE7DD4C657A13BBD76CA05EC0BFB7
+4. Get Socket Transform
+La destinazione è Componente di scena [K2Node_CallFunction] 457741024ED0D42D53DCBC80CFCABE0D
+
+Variables Read:
+- Get SK_Weapon
+
+Variables Written:
+- none
+
+External Calls:
+- Get Socket Transform
+La destinazione è Componente di scena
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Get Socket Transform
+La destinazione è Componente di scena

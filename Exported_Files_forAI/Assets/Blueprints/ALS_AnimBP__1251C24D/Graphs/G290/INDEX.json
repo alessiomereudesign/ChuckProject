@@ -1,0 +1,25 @@
+{
+	"graphId": "G290",
+	"name": "CalculateWalkRunBlend",
+	"graphName": "CalculateWalkRunBlend",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 6,
+	"edgeCount": 5,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G290/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G290/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G290/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Calculate Walk Run Blend",
+			"entryNodeGuid": "2320637140CE0B75D99E0F9025B1DE9B",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G290/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G290/F001.json",
+			"textFile": "Flows/G290/F001.txt",
+			"jsonFile": "Flows/G290/F001.json",
+			"nodeCount": 6
+		}
+	]
+}

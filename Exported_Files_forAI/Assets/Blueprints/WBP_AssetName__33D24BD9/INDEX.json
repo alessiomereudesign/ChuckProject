@@ -1,0 +1,106 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "WBP_AssetName",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/WBP_AssetName.WBP_AssetName",
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_WBP_AssetName",
+	"shortAssetFolder": "WBP_AssetName__33D24BD9",
+	"pathHash": "33D24BD9",
+	"assetType": "Blueprint",
+	"unrealClass": "WidgetBlueprint",
+	"parentClass": "/Script/UMG.UserWidget",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 1,
+		"graphs": 2,
+		"nodes": 9,
+		"edges": 5,
+		"flows": 4
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/WBP_AssetName__33D24BD9/SUMMARY.md",
+		"variables": "Assets/Blueprints/WBP_AssetName__33D24BD9/VARIABLES.json",
+		"components": "Assets/Blueprints/WBP_AssetName__33D24BD9/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/WBP_AssetName__33D24BD9/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/WBP_AssetName__33D24BD9/NODES.jsonl",
+		"edges": "Assets/Blueprints/WBP_AssetName__33D24BD9/EDGES.jsonl",
+		"search": "Assets/Blueprints/WBP_AssetName__33D24BD9/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "EventGraph",
+			"graphName": "EventGraph",
+			"type": "EventGraph",
+			"graphType": "EventGraph",
+			"graphGuid": "",
+			"nodeCount": 4,
+			"edgeCount": 0,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Evento Construct",
+					"entryNodeGuid": "7A6AD75F44D18447AE080A9DF5829F93",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 4
+				},
+				{
+					"flowId": "F002",
+					"entryName": "Evento Pre Construct",
+					"entryNodeGuid": "3A8BF9B04268B3C929F8D4A4AA6655F6",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Flows/G001/F002.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Flows/G001/F002.json",
+					"textFile": "Flows/G001/F002.txt",
+					"jsonFile": "Flows/G001/F002.json",
+					"nodeCount": 4
+				},
+				{
+					"flowId": "F003",
+					"entryName": "Evento Tick",
+					"entryNodeGuid": "A49B794D47778F0CEE9C9482D55A528D",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Flows/G001/F003.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Flows/G001/F003.json",
+					"textFile": "Flows/G001/F003.txt",
+					"jsonFile": "Flows/G001/F003.json",
+					"nodeCount": 4
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "SetAssetName",
+			"graphName": "SetAssetName",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 5,
+			"edgeCount": 5,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Set Asset Name",
+					"entryNodeGuid": "1E16B376489075D244E8A084836F11B7",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_AssetName__33D24BD9/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 5
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,93 @@
+Asset: WBP_SelectorButton
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_SelectorButton.WBP_SelectorButton
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_SelectorButton
+GraphId: G001
+Graph: EventGraph
+FlowId: F001
+Entry: Evento Construct
+NodeGuid: 9A1F535A4C046FC809050A87C2BB6C4D
+
+Exec Flow:
+1. Evento Construct [K2Node_Event] 9A1F535A4C046FC809050A87C2BB6C4D
+2. Get Txt_ItemName [K2Node_VariableGet] 678F9A75450022669630FBBAB239A734
+3. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 02EDC53B461F614D5C04E98FA83BB160
+4. Get Img_Selector [K2Node_VariableGet] C107CC65487AEF6A7A01FA891E8DDDE2
+5. Get Txt_Selector [K2Node_VariableGet] DFCDC6824B812D81223831A795EC8B4E
+6. Get Icon_Item [K2Node_VariableGet] 3C64DBD24FC83D8E45832EA23FE6E104
+7. Set Brush from Texture
+La destinazione è Immagine [K2Node_CallFunction] B03AC6C74ED971C99CD9F5B3C5BF8C63
+8. On Clicked (Btn_Selector) [K2Node_ComponentBoundEvent] 21A67B6242EF8244BE3A949A62849606
+9. Equip and Close
+La destinazione è WBP Weapon Selector [K2Node_CallFunction] 8FC562B644DF473C18CA0DBACDA90DFA
+10. Get RowName_Item [K2Node_VariableGet] 521B960243298641E628EC97C8FA2594
+11. Get ParentSelectorRef [K2Node_VariableGet] A4C60D064F287D5D96CE6F8475363884
+12. Is Valid [K2Node_MacroInstance] E71A46EA42C36C4D62C0B98126875B5E
+13. Get ParentSelectorRef [K2Node_VariableGet] EAA5345240E0A0F8503F838C7D7D2063
+14. Cast To ALS_ChuckBP [K2Node_DynamicCast] 2953842E4498AC5B9812248FC38CC429
+15. Commit Equip Item
+La destinazione è ALS Chuck BP [K2Node_CallFunction] FC055A3549A22A7ACA1538AB77FF9EAB
+16. Get Player Character [K2Node_CallFunction] 64DD047F4E0330E47AAFA5B8268EF81A
+17. Evento On Added to Focus Path [K2Node_Event] 90B76D0F42145C6895293B81477E00B9
+18. Evento On Removed from Focus Path [K2Node_Event] 3D457EE5452141D1D92B729E025FB00F
+19. Get Btn_Selector [K2Node_VariableGet] A094B19E462D68732C4877B4F9D5851D
+20. Get Btn_Selector [K2Node_VariableGet] 2F74D0024F6C547476E496AEF43AA89E
+21. Set Background Color
+La destinazione è Pulsante [K2Node_CallFunction] A8FEA6894A7637FC421570BE511430E5
+22. Set Background Color
+La destinazione è Pulsante [K2Node_CallFunction] 7C765F8D4FB43CC6373D728B15D74D00
+23. Play Sound 2D [K2Node_CallFunction] 404E523A42788637E69C11BF1F5029B6
+24. Get WeaponData [K2Node_VariableGet] 0AE0E4C3492C74F75D26788D1E670A97
+25. Get WeaponIndex [K2Node_VariableGet] C3E4F8B64180DFC7B0539BB375E5FE9A
+
+Variables Read:
+- Get Btn_Selector
+- Get Icon_Item
+- Get Img_Selector
+- Get ParentSelectorRef
+- Get RowName_Item
+- Get Txt_ItemName
+- Get Txt_Selector
+- Get WeaponData
+- Get WeaponIndex
+
+Variables Written:
+- none
+
+External Calls:
+- Commit Equip Item
+La destinazione è ALS Chuck BP
+- Equip and Close
+La destinazione è WBP Weapon Selector
+- Get Player Character
+- Play Sound 2D
+- Set Background Color
+La destinazione è Pulsante
+- Set Brush from Texture
+La destinazione è Immagine
+- SetText (Text)
+La destinazione è Testo
+
+Widgets Touched:
+- Set Brush from Texture
+La destinazione è Immagine
+- SetText (Text)
+La destinazione è Testo
+
+Components Touched:
+- On Clicked (Btn_Selector)
+
+External Blueprint References:
+- Cast To ALS_ChuckBP
+- Commit Equip Item
+La destinazione è ALS Chuck BP
+- Equip and Close
+La destinazione è WBP Weapon Selector
+- Get Player Character
+- Play Sound 2D
+- Set Background Color
+La destinazione è Pulsante
+- Set Brush from Texture
+La destinazione è Immagine
+- SetText (Text)
+La destinazione è Testo

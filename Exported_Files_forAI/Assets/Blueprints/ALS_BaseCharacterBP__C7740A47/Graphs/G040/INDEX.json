@@ -1,0 +1,25 @@
+{
+	"graphId": "G040",
+	"name": "OnMovementActionChanged",
+	"graphName": "OnMovementActionChanged",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 16,
+	"edgeCount": 14,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Graphs/G040/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Graphs/G040/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Graphs/G040/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "On Movement Action Changed",
+			"entryNodeGuid": "F2B6B7AF45DEAA6019B07CBAE3953CB0",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G040/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_BaseCharacterBP__C7740A47/Flows/G040/F001.json",
+			"textFile": "Flows/G040/F001.txt",
+			"jsonFile": "Flows/G040/F001.json",
+			"nodeCount": 16
+		}
+	]
+}

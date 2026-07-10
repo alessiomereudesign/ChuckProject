@@ -1,0 +1,1223 @@
+{
+	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+	"graph": "OnAnalogValueChanged",
+	"entryName": "On Analog Value Changed",
+	"entryNodeGuid": "00220CD04DC4E663234E8F93BCC940A0",
+	"nodes": [
+		{
+			"nodeGuid": "00220CD04DC4E663234E8F93BCC940A0",
+			"class": "K2Node_FunctionEntry",
+			"title": "On Analog Value Changed",
+			"comment": "",
+			"x": -208,
+			"y": -208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A31DA18F416093D35F84CCA0EF1A77F1",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AE8E3D1E49A4299CF262EA95B01883C0",
+					"name": "MyGeometry",
+					"direction": "Output",
+					"type": "struct|/Script/SlateCore.Geometry",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "825DF877485C645F9F3FBFBD17D32BD7",
+					"name": "InAnalogInputEvent",
+					"direction": "Output",
+					"type": "struct|/Script/SlateCore.AnalogInputEvent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0A8686C9467FEB7367E23B9EE86C13B2",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 3824,
+			"y": -383,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "25D171C24773EE9407AD8E93A2158FDB",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "262702614982C0458191AEBD965940FD",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "struct|/Script/UMG.EventReply",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E05056554DD6060848B11FBBB4206BAB",
+			"class": "K2Node_CallFunction",
+			"title": "Get Key",
+			"comment": "",
+			"x": 208,
+			"y": -103,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "38FCC11F46E880E37BBDFD9C9CCC08A6",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetInputLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetInputLibrary"
+				},
+				{
+					"pinId": "7F2FB13F465F0B03CA348C88F81BF4EA",
+					"name": "Input",
+					"direction": "Input",
+					"type": "struct|/Script/SlateCore.KeyEvent|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0B12F2924A5A982202BB30A8C693C002",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/InputCore.Key",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "416046414BD15BD8F3676FB376E95562",
+			"class": "K2Node_CallFunction",
+			"title": "Get Key Event from Analog Input Event",
+			"comment": "",
+			"x": 64,
+			"y": -80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "27826EAA45B91A153BCD9A82EB43A18F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.WidgetBlueprintLibrary",
+					"defaultValue": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"pinId": "51C58E8B4132231D35E46181AD715EDA",
+					"name": "Event",
+					"direction": "Input",
+					"type": "struct|/Script/SlateCore.AnalogInputEvent|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7C8C5F3B463D64470B735CBFCFE19742",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/SlateCore.KeyEvent",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6E07B23C44255B7EE3C40F9732F795B1",
+			"class": "K2Node_PromotableOperator",
+			"title": "Equal (Key)",
+			"comment": "",
+			"x": 416,
+			"y": -79,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BA47362A498006EC884C8A80797FEF0C",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/InputCore.Key",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3FBF4DB64AAB1563C952A2B82C8593B7",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/InputCore.Key",
+					"defaultValue": "Gamepad_RightY"
+				},
+				{
+					"pinId": "072D2C9A4A87EE876539279FDD804B1D",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "76AE9DF342A39648B5C49CA61CD72EBC",
+					"name": "ErrorTolerance",
+					"direction": "Input",
+					"type": "None",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "9145304D4A4D7647819562BD189A7868",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 896,
+			"y": -208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "374CEE6645A9946A0AF31FB940561651",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "39E18DC042CA7474678727895197E6F1",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "919D6BE544B11EA026988F9F7BD7D969",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A75841564EA0642617959F939E5F4DE5",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C77C00B647C0AD83D7258C9E27EDCC84",
+			"class": "K2Node_CallFunction",
+			"title": "Get Analog Value",
+			"comment": "",
+			"x": 1232,
+			"y": -144,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E20E8F6642B9C59BF1A12D8AA909075F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetInputLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetInputLibrary"
+				},
+				{
+					"pinId": "BB05F1C6425AC4B4D6A1A280E81B585B",
+					"name": "Input",
+					"direction": "Input",
+					"type": "struct|/Script/SlateCore.AnalogInputEvent|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2E08EFA44A71308B019474AF3FA494C4",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "AD8CF85346BF28153D75B094E96969A1",
+			"class": "K2Node_PromotableOperator",
+			"title": "float * float",
+			"comment": "",
+			"x": 1504,
+			"y": -120,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "15255DED4EFDA845F153E499FA9C7C5C",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "65496C0B48D8ECF94A9F039E4EA58546",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "20.000000"
+				},
+				{
+					"pinId": "43D6FB724BF5146359192582564A9B1D",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "9ACB507C414321D8E3BFCD9684C0992E",
+			"class": "K2Node_VariableGet",
+			"title": "Get CharactersPage",
+			"comment": "",
+			"x": 1264,
+			"y": -327,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DE6AC59D42F8C0ADDD8DBB92590443B9",
+					"name": "CharactersPage",
+					"direction": "Output",
+					"type": "object|/Script/UMG.ScrollBox",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "565CB33B4AB5EBAFEDC9ED8A2DF71696",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5D77169046131BF8387F4DAD4E5BCFA2",
+			"class": "K2Node_CallFunction",
+			"title": "Get Scroll Offset\nLa destinazione è Scroll Box",
+			"comment": "",
+			"x": 1472,
+			"y": -224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8DC918924423A33EFD9838B8B819E450",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.ScrollBox",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C98E9F7043ABB5F7AD2CDABAD87AAE0C",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "3E96B18A4BCC3136F7B90B88FB270A35",
+			"class": "K2Node_PromotableOperator",
+			"title": "float - float",
+			"comment": "",
+			"x": 1728,
+			"y": -128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F047E4B742EFEC28741DBD9CBA05EABA",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DD1E9B4A49975E7B16593C9384E8ED12",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "05EC5DE740CF8A8DE7C332A485F2D308",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5D4AB4FF49230631061B149029679804",
+			"class": "K2Node_CallFunction",
+			"title": "Set Scroll Offset\nLa destinazione è Scroll Box",
+			"comment": "",
+			"x": 1824,
+			"y": -400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2708697E4FBFF5E64A0444B256CBBBD7",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "72B2E14B4CC2E2D07BF4959B2038EDDF",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5AA1B1D34A3060807E9BB0AA3A6F36F5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.ScrollBox",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A7B0A2034FB61896E30E5691918C70E6",
+					"name": "NewScrollOffset",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "B1D2E83649EF1AEF59CC49A4CD055D6B",
+			"class": "K2Node_CallFunction",
+			"title": "Gestito",
+			"comment": "",
+			"x": 3664,
+			"y": -304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C0C8EC68488C0AC7B77A48943808B986",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.WidgetBlueprintLibrary",
+					"defaultValue": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"pinId": "E28A04B946CA13B885570495541F10E1",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/UMG.EventReply",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EC22493F4F918D255212F798D1EE282F",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 1744,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6E901FF54BC99FC4AE8A528CCA38D29A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F463A31D484038B2329FABAF433B84A0",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "struct|/Script/UMG.EventReply",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6684D87A4DE144EAD26409B7AA82414C",
+			"class": "K2Node_CallFunction",
+			"title": "Unhandled",
+			"comment": "",
+			"x": 1584,
+			"y": 112,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E352680444A06EFF0E8951B78C9759A5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.WidgetBlueprintLibrary",
+					"defaultValue": "/Script/UMG.Default__WidgetBlueprintLibrary"
+				},
+				{
+					"pinId": "26C2686C48FA5D73EF2DC9A5A0235EC3",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/UMG.EventReply",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "701B31BE441723BD8362D488CA8B0F02",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1232,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "83A489E847D4AB53625E458A975AFCD9",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4864852548BEBF88900E8A8082352CFD",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7FB393D44630565199A0E090A00D4FC0",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1232,
+			"y": -352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "57BD5C2645121F5611235EAFABDED56D",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "90F28E1F46491F1E4A9097A17F484280",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8D92CD374192D1734111C78FEA06494D",
+			"class": "EdGraphNode_Comment",
+			"title": "Setting Left Thumb Y per scrollare",
+			"comment": "Setting Left Thumb Y per scrollare",
+			"x": -272,
+			"y": -464,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "62EBE5134BEAB2A6E1390F8DFB47A8E5",
+			"class": "K2Node_DynamicCast",
+			"title": "Cast To WBP_TabIntersect_CharacterSlot",
+			"comment": "",
+			"x": 2880,
+			"y": -384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2BA1297842D63D0F790561881275126D",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "88C3100E4BE82096691A07B1EBDBB690",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F2FDD8FE456F83BC782A2D98FA906540",
+					"name": "CastFailed",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "18D85AE24A5122B3EC726A8952299F01",
+					"name": "Object",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "01C320A848D49B9677A68195B97E1D71",
+					"name": "AsWBP Tab Intersect Character Slot",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C4363DEF4E70218F79E80C8AE1402A78",
+					"name": "bSuccess",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "43A1968C4468E1BEB0312C977BB12F80",
+			"class": "K2Node_PromotableOperator",
+			"title": "float / float",
+			"comment": "",
+			"x": 1984,
+			"y": -176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C97FBB804CE578C9A2F427830D701E7B",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EEC66514414AF7E08A20C79C5F136AA1",
+					"name": "B",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "380.000000"
+				},
+				{
+					"pinId": "A458834E4F51AB415535D6A536631B17",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E89C03D94166750C96FD3E899142979D",
+			"class": "K2Node_CallFunction",
+			"title": "Truncate",
+			"comment": "",
+			"x": 2208,
+			"y": -208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2851163D4A25829A20122A92D828A223",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "DD2A6DB141E66E4F33A48B9CBB9865D5",
+					"name": "A",
+					"direction": "Input",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "DC81578B4AB4B20C34490F8A81392555",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": "0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "85E774AC4E3CB36A94ECF3B53CC06FDC",
+			"class": "K2Node_PromotableOperator",
+			"title": "int * int",
+			"comment": "",
+			"x": 2416,
+			"y": -240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D4C0B6C84A5A641C583A6AAF14667E63",
+					"name": "A",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "762D25DF45CFF574F802EAAAD7FF3C97",
+					"name": "B",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "4"
+				},
+				{
+					"pinId": "EB37BFC5475EC3869F39EAAB4826D6DD",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "int",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3BC057FA41602665E78C8BA2928BDBC1",
+			"class": "K2Node_CallFunction",
+			"title": "Get Child At\nLa destinazione è Panel Widget",
+			"comment": "",
+			"x": 2624,
+			"y": -320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "82C1EF764990C04F181BD4A6A5A9F50A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.PanelWidget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8B2B3B364C7A92A11F88B3B1B4BC2573",
+					"name": "Index",
+					"direction": "Input",
+					"type": "int",
+					"defaultValue": "0"
+				},
+				{
+					"pinId": "7CBF6D90401685E24DB97DAC5A9A7E0E",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FD608F6041D217E053C7F8A11E0E6F2D",
+			"class": "K2Node_VariableGet",
+			"title": "Get Btn_Slot",
+			"comment": "",
+			"x": 3232,
+			"y": -327,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "48475F4B411E0B08A97783A28A0554D5",
+					"name": "Btn_Slot",
+					"direction": "Output",
+					"type": "object|/Script/UMG.Button",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EE4817A94FBC898455A782A1B2B95468",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/WBP_TabIntersect_CharacterSlot.WBP_TabIntersect_CharacterSlot_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EC07C8F2489443A6F69A8D9DA251DEE8",
+			"class": "K2Node_CallFunction",
+			"title": "Set User Focus\nLa destinazione è Widget",
+			"comment": "",
+			"x": 3456,
+			"y": -400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D8A5CF47495A75840541C88E0E2E3091",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BDBB82724DA78534FEB5AC83C0A795E6",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7530E4D04F3B95769634D6BEC99C2B96",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "08AAF74E44D0AA502DC7A8A99AF8A019",
+					"name": "PlayerController",
+					"direction": "Input",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2EED3B0C4F60645EB93FE18014F2998B",
+			"class": "K2Node_CallFunction",
+			"title": "Get Owning Player\nLa destinazione è Widget",
+			"comment": "",
+			"x": 3200,
+			"y": -224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BD4129164A08531642500B901E6E1D71",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FD2B9D5845999D72DAFD1B953C4F4572",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "00220CD04DC4E663234E8F93BCC940A0",
+			"fromPinId": "825DF877485C645F9F3FBFBD17D32BD7",
+			"fromPinName": "InAnalogInputEvent",
+			"toNodeGuid": "416046414BD15BD8F3676FB376E95562",
+			"toPinId": "51C58E8B4132231D35E46181AD715EDA",
+			"toPinName": "Event"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "00220CD04DC4E663234E8F93BCC940A0",
+			"fromPinId": "825DF877485C645F9F3FBFBD17D32BD7",
+			"fromPinName": "InAnalogInputEvent",
+			"toNodeGuid": "C77C00B647C0AD83D7258C9E27EDCC84",
+			"toPinId": "BB05F1C6425AC4B4D6A1A280E81B585B",
+			"toPinName": "Input"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "B1D2E83649EF1AEF59CC49A4CD055D6B",
+			"fromPinId": "E28A04B946CA13B885570495541F10E1",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "0A8686C9467FEB7367E23B9EE86C13B2",
+			"toPinId": "262702614982C0458191AEBD965940FD",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "416046414BD15BD8F3676FB376E95562",
+			"fromPinId": "7C8C5F3B463D64470B735CBFCFE19742",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "E05056554DD6060848B11FBBB4206BAB",
+			"toPinId": "7F2FB13F465F0B03CA348C88F81BF4EA",
+			"toPinName": "Input"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "E05056554DD6060848B11FBBB4206BAB",
+			"fromPinId": "0B12F2924A5A982202BB30A8C693C002",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "6E07B23C44255B7EE3C40F9732F795B1",
+			"toPinId": "BA47362A498006EC884C8A80797FEF0C",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "6E07B23C44255B7EE3C40F9732F795B1",
+			"fromPinId": "072D2C9A4A87EE876539279FDD804B1D",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "9145304D4A4D7647819562BD189A7868",
+			"toPinId": "39E18DC042CA7474678727895197E6F1",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "exec",
+			"fromNodeGuid": "9145304D4A4D7647819562BD189A7868",
+			"fromPinId": "919D6BE544B11EA026988F9F7BD7D969",
+			"fromPinName": "then",
+			"toNodeGuid": "7FB393D44630565199A0E090A00D4FC0",
+			"toPinId": "57BD5C2645121F5611235EAFABDED56D",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "exec",
+			"fromNodeGuid": "9145304D4A4D7647819562BD189A7868",
+			"fromPinId": "A75841564EA0642617959F939E5F4DE5",
+			"fromPinName": "else",
+			"toNodeGuid": "701B31BE441723BD8362D488CA8B0F02",
+			"toPinId": "83A489E847D4AB53625E458A975AFCD9",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "C77C00B647C0AD83D7258C9E27EDCC84",
+			"fromPinId": "2E08EFA44A71308B019474AF3FA494C4",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "AD8CF85346BF28153D75B094E96969A1",
+			"toPinId": "15255DED4EFDA845F153E499FA9C7C5C",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "AD8CF85346BF28153D75B094E96969A1",
+			"fromPinId": "43D6FB724BF5146359192582564A9B1D",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "3E96B18A4BCC3136F7B90B88FB270A35",
+			"toPinId": "DD1E9B4A49975E7B16593C9384E8ED12",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "9ACB507C414321D8E3BFCD9684C0992E",
+			"fromPinId": "DE6AC59D42F8C0ADDD8DBB92590443B9",
+			"fromPinName": "CharactersPage",
+			"toNodeGuid": "5D77169046131BF8387F4DAD4E5BCFA2",
+			"toPinId": "8DC918924423A33EFD9838B8B819E450",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "9ACB507C414321D8E3BFCD9684C0992E",
+			"fromPinId": "DE6AC59D42F8C0ADDD8DBB92590443B9",
+			"fromPinName": "CharactersPage",
+			"toNodeGuid": "5D4AB4FF49230631061B149029679804",
+			"toPinId": "5AA1B1D34A3060807E9BB0AA3A6F36F5",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "9ACB507C414321D8E3BFCD9684C0992E",
+			"fromPinId": "DE6AC59D42F8C0ADDD8DBB92590443B9",
+			"fromPinName": "CharactersPage",
+			"toNodeGuid": "3BC057FA41602665E78C8BA2928BDBC1",
+			"toPinId": "82C1EF764990C04F181BD4A6A5A9F50A",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "5D77169046131BF8387F4DAD4E5BCFA2",
+			"fromPinId": "C98E9F7043ABB5F7AD2CDABAD87AAE0C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "3E96B18A4BCC3136F7B90B88FB270A35",
+			"toPinId": "F047E4B742EFEC28741DBD9CBA05EABA",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "5D77169046131BF8387F4DAD4E5BCFA2",
+			"fromPinId": "C98E9F7043ABB5F7AD2CDABAD87AAE0C",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "43A1968C4468E1BEB0312C977BB12F80",
+			"toPinId": "C97FBB804CE578C9A2F427830D701E7B",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "3E96B18A4BCC3136F7B90B88FB270A35",
+			"fromPinId": "05EC5DE740CF8A8DE7C332A485F2D308",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "5D4AB4FF49230631061B149029679804",
+			"toPinId": "A7B0A2034FB61896E30E5691918C70E6",
+			"toPinName": "NewScrollOffset"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "exec",
+			"fromNodeGuid": "7FB393D44630565199A0E090A00D4FC0",
+			"fromPinId": "90F28E1F46491F1E4A9097A17F484280",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "5D4AB4FF49230631061B149029679804",
+			"toPinId": "2708697E4FBFF5E64A0444B256CBBBD7",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "exec",
+			"fromNodeGuid": "5D4AB4FF49230631061B149029679804",
+			"fromPinId": "72B2E14B4CC2E2D07BF4959B2038EDDF",
+			"fromPinName": "then",
+			"toNodeGuid": "62EBE5134BEAB2A6E1390F8DFB47A8E5",
+			"toPinId": "2BA1297842D63D0F790561881275126D",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "exec",
+			"fromNodeGuid": "701B31BE441723BD8362D488CA8B0F02",
+			"fromPinId": "4864852548BEBF88900E8A8082352CFD",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "EC22493F4F918D255212F798D1EE282F",
+			"toPinId": "6E901FF54BC99FC4AE8A528CCA38D29A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "6684D87A4DE144EAD26409B7AA82414C",
+			"fromPinId": "26C2686C48FA5D73EF2DC9A5A0235EC3",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "EC22493F4F918D255212F798D1EE282F",
+			"toPinId": "F463A31D484038B2329FABAF433B84A0",
+			"toPinName": "ReturnValue"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "exec",
+			"fromNodeGuid": "62EBE5134BEAB2A6E1390F8DFB47A8E5",
+			"fromPinId": "88C3100E4BE82096691A07B1EBDBB690",
+			"fromPinName": "then",
+			"toNodeGuid": "EC07C8F2489443A6F69A8D9DA251DEE8",
+			"toPinId": "D8A5CF47495A75840541C88E0E2E3091",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "3BC057FA41602665E78C8BA2928BDBC1",
+			"fromPinId": "7CBF6D90401685E24DB97DAC5A9A7E0E",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "62EBE5134BEAB2A6E1390F8DFB47A8E5",
+			"toPinId": "18D85AE24A5122B3EC726A8952299F01",
+			"toPinName": "Object"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "62EBE5134BEAB2A6E1390F8DFB47A8E5",
+			"fromPinId": "01C320A848D49B9677A68195B97E1D71",
+			"fromPinName": "AsWBP Tab Intersect Character Slot",
+			"toNodeGuid": "FD608F6041D217E053C7F8A11E0E6F2D",
+			"toPinId": "EE4817A94FBC898455A782A1B2B95468",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "43A1968C4468E1BEB0312C977BB12F80",
+			"fromPinId": "A458834E4F51AB415535D6A536631B17",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "E89C03D94166750C96FD3E899142979D",
+			"toPinId": "DD2A6DB141E66E4F33A48B9CBB9865D5",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "E89C03D94166750C96FD3E899142979D",
+			"fromPinId": "DC81578B4AB4B20C34490F8A81392555",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "85E774AC4E3CB36A94ECF3B53CC06FDC",
+			"toPinId": "D4C0B6C84A5A641C583A6AAF14667E63",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "85E774AC4E3CB36A94ECF3B53CC06FDC",
+			"fromPinId": "EB37BFC5475EC3869F39EAAB4826D6DD",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "3BC057FA41602665E78C8BA2928BDBC1",
+			"toPinId": "8B2B3B364C7A92A11F88B3B1B4BC2573",
+			"toPinName": "Index"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "FD608F6041D217E053C7F8A11E0E6F2D",
+			"fromPinId": "48475F4B411E0B08A97783A28A0554D5",
+			"fromPinName": "Btn_Slot",
+			"toNodeGuid": "EC07C8F2489443A6F69A8D9DA251DEE8",
+			"toPinId": "7530E4D04F3B95769634D6BEC99C2B96",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "OnAnalogValueChanged",
+			"edgeType": "data",
+			"fromNodeGuid": "2EED3B0C4F60645EB93FE18014F2998B",
+			"fromPinId": "FD2B9D5845999D72DAFD1B953C4F4572",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "EC07C8F2489443A6F69A8D9DA251DEE8",
+			"toPinId": "08AAF74E44D0AA502DC7A8A99AF8A019",
+			"toPinName": "PlayerController"
+		}
+	],
+	"variablesRead": [
+		"Get Btn_Slot",
+		"Get CharactersPage"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Gestito",
+		"Get Analog Value",
+		"Get Child At\nLa destinazione è Panel Widget",
+		"Get Key",
+		"Get Key Event from Analog Input Event",
+		"Get Owning Player\nLa destinazione è Widget",
+		"Get Scroll Offset\nLa destinazione è Scroll Box",
+		"Set Scroll Offset\nLa destinazione è Scroll Box",
+		"Set User Focus\nLa destinazione è Widget",
+		"Truncate",
+		"Unhandled"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Cast To WBP_TabIntersect_CharacterSlot",
+		"Gestito",
+		"Get Analog Value",
+		"Get Child At\nLa destinazione è Panel Widget",
+		"Get Key",
+		"Get Key Event from Analog Input Event",
+		"Get Owning Player\nLa destinazione è Widget",
+		"Get Scroll Offset\nLa destinazione è Scroll Box",
+		"Set Scroll Offset\nLa destinazione è Scroll Box",
+		"Set User Focus\nLa destinazione è Widget",
+		"Truncate",
+		"Unhandled"
+	],
+	"flowId": "F001",
+	"graphId": "G004",
+	"assetName": "WBP_MenuArchive",
+	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive"
+}

@@ -1,0 +1,180 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+	"graph": "GetVisibility_0",
+	"entryName": "Get Visibility 0",
+	"entryNodeGuid": "AAF43A6B40C2B8E5237A39A8C15072C4",
+	"nodes": [
+		{
+			"nodeGuid": "AAF43A6B40C2B8E5237A39A8C15072C4",
+			"class": "K2Node_FunctionEntry",
+			"title": "Get Visibility 0",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6AB5872D4F9D6537E9A8B9A2CCCFDB5E",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BECFC1DC4DEF057F442E2F8FD4D491B9",
+			"class": "K2Node_FunctionResult",
+			"title": "Nodo di restituzione",
+			"comment": "",
+			"x": 688,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "3B4EFD984DA6E007675732B3A66A4BA3",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8E4F3B784FAFA415FF934BA2FC48F49B",
+					"name": "ReturnValue",
+					"direction": "Input",
+					"type": "byte|/Script/UMG.ESlateVisibility",
+					"defaultValue": "Visible"
+				}
+			]
+		},
+		{
+			"nodeGuid": "96DCFB484EF311777BC9A7B182ADBCA3",
+			"class": "K2Node_DynamicCast",
+			"title": "Cast To ALS_ChuckBP",
+			"comment": "",
+			"x": 224,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B9C298424539155C7BC358B516570F9C",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "20C8E930434DCB466AD5228C24227A6F",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "902B0FFA4884974BE10D2BB6F03324E5",
+					"name": "CastFailed",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "94E12E99479EC33CA6D4FEA8EA88DF26",
+					"name": "Object",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DE9E68494F2245DD3DDB848F5231C60D",
+					"name": "AsALS Chuck BP",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CC5D28294B1A5499F8F69D8F057F1A64",
+					"name": "bSuccess",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "911A548343FF01F19C53E49E5A7085D5",
+			"class": "K2Node_CallFunction",
+			"title": "Get Owning Player\nLa destinazione è Widget",
+			"comment": "",
+			"x": 224,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BA84DACC4C761C2B6C7442BF056C0C35",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/UMG.Widget",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4DFFEE8A45346EF2FA606D9FC86D61DE",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "object|/Script/Engine.PlayerController",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+			"graph": "GetVisibility_0",
+			"edgeType": "exec",
+			"fromNodeGuid": "AAF43A6B40C2B8E5237A39A8C15072C4",
+			"fromPinId": "6AB5872D4F9D6537E9A8B9A2CCCFDB5E",
+			"fromPinName": "then",
+			"toNodeGuid": "96DCFB484EF311777BC9A7B182ADBCA3",
+			"toPinId": "B9C298424539155C7BC358B516570F9C",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_UI_ALS_HUD",
+			"graph": "GetVisibility_0",
+			"edgeType": "data",
+			"fromNodeGuid": "911A548343FF01F19C53E49E5A7085D5",
+			"fromPinId": "4DFFEE8A45346EF2FA606D9FC86D61DE",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "96DCFB484EF311777BC9A7B182ADBCA3",
+			"toPinId": "94E12E99479EC33CA6D4FEA8EA88DF26",
+			"toPinName": "Object"
+		}
+	],
+	"variablesRead": [],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Owning Player\nLa destinazione è Widget"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Cast To ALS_ChuckBP",
+		"Get Owning Player\nLa destinazione è Widget"
+	],
+	"flowId": "F001",
+	"graphId": "G015",
+	"assetName": "ALS_HUD",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/UI/ALS_HUD.ALS_HUD"
+}

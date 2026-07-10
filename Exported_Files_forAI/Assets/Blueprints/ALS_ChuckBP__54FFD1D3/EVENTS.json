@@ -1,0 +1,372 @@
+{
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP",
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "Get Interaction Prompt",
+			"graph": "GetInteractionPrompt",
+			"nodeGuid": "F4D7BAEE4E9E14085532669939125DC1",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "ResetCombo\nCustom Event",
+			"graph": "AttackGraph",
+			"nodeGuid": "B7CC852242E51A1ED40C2E9261CC6C93",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "EventLoopHit\nCustom Event",
+			"graph": "AttackGraph",
+			"nodeGuid": "88F6E8D246FFBBB5F1A27FB299A6901D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "ReloadCurrentWeapon\nCustom Event",
+			"graph": "AttackGraph",
+			"nodeGuid": "C96E461945D9CD20DAD6BB86B6DBD077",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "TryAutoReloadCurrentWeapon\nCustom Event",
+			"graph": "AttackGraph",
+			"nodeGuid": "BA8E72CF42A50FB6D1B4A8A263D1BB4C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "ExecuteFireSequence\nCustom Event",
+			"graph": "AttackGraph",
+			"nodeGuid": "0B09FA824400074A0208C6BFC5250F00",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "RefreshWeaponVisuals\nCustom Event",
+			"graph": "AttackGraph",
+			"nodeGuid": "988D92D546556A05C432AAB2E6E32B8B",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento Tick",
+			"graph": "EventGraph",
+			"nodeGuid": "029222144A27D3E93A445B9E4F3A1C8E",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento ActorBeginOverlap",
+			"graph": "EventGraph",
+			"nodeGuid": "1DBBD7204A4D576C4122A48D0857071A",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Evento ActorEndOverlap",
+			"graph": "EventGraph",
+			"nodeGuid": "5E7A61F94FF97BF0043290A0FC87A42F",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "AddItemToInventory\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "60E948EE482A679DE849BF8F64BA7CC9",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "CommitEquipItem\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "1DC9DF9D47261C94F70CD684ED23C863",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "ToggleWeaponsVisibility\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "11F6F32144F9FBC92FC4FE9F59534E3F",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "ToggleArmorVisibility\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "1ADCACBF4E512569C940C3A4548C83B0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "UseConsumable\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "88CB67AF46F986D2B201B79780C07DD1",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Flash\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "FCEAFD8B4E16E4731A8CBEA2ED77AFDD",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "EquipSmallWeapon\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "BC9985E84173E4C421F9B4997CD02A18",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "EquipBigWeapon\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "406F671D476AD6D861B6C28057C80DC1",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "EquipMelee\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "C98206444F45FE6E51FD6494F40A559C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "UnarmedState\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "57298E964ADC31232837B092864F1F48",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "ClearWeaponSlot\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "C69095974B76A0EB3E7FDDA3B83FEBB7",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "FistsState\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "15FB40C84EF2C9F58A14CAAE9FF06A43",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "FinalizeEquipWeapon\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "5719D4094C7930180F1B63B91DE9ABF3",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "ApplyOverlayForCurrentSlot\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "1CA2B036423B5C5C163B758016D99738",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "SyncHolsterMeshes\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "5EFD4D984788296E8404C1ADCEB06B80",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Add Weapon to Inventory",
+			"graph": "AddWeaponToInventory",
+			"nodeGuid": "F4AD71194D771F2A6505C086A8A65A21",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Attach to Hand",
+			"graph": "AttachToHand",
+			"nodeGuid": "89095DF244DD1E2B436179B5DBFF7A13",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Get 3P Pivot Target",
+			"graph": "BPI_Get_3P_PivotTarget",
+			"nodeGuid": "DA12BC3047D046DCEF5E03BFCECDE500",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Get 3P Trace Params",
+			"graph": "BPI_Get_3P_TraceParams",
+			"nodeGuid": "654EC2BE4C69F8E3D4D7DD89A076B0D6",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "BPI Get FP Camera Target",
+			"graph": "BPI_Get_FP_CameraTarget",
+			"nodeGuid": "81C577E04B78A7E05DA98D81BF7A32F4",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Clear Held Object",
+			"graph": "ClearHeldObject",
+			"nodeGuid": "B858521146CE783F90EE968BFBF767DB",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Consume One Ammo from Current Weapon",
+			"graph": "ConsumeOneAmmoFromCurrentWeapon",
+			"nodeGuid": "D9EB4EEF4B94D34F5512B5A22F9D0C7C",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Current Weapon from Inventory",
+			"graph": "GetCurrentWeaponFromInventory",
+			"nodeGuid": "5092D4F64536424DDAAF3BB310421452",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Get Up Animation",
+			"graph": "GetGetUpAnimation",
+			"nodeGuid": "30E82AF04092CA2BA2AFEA9F59E0FBDE",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Mantle Asset",
+			"graph": "GetMantleAsset",
+			"nodeGuid": "DF4CC8C6413154CD6790ADB8C3F2F6D5",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Get Roll Animation",
+			"graph": "GetRollAnimation",
+			"nodeGuid": "435D6B6443A1D24342849DBBDE2806F0",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Has Weapon?",
+			"graph": "Has Weapon?",
+			"nodeGuid": "F28A932F47722406A0E400BB78377122",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Mantle End",
+			"graph": "MantleEnd",
+			"nodeGuid": "2E4C18D04A0193A0FAC94B84632A043F",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Mantle Start",
+			"graph": "MantleStart",
+			"nodeGuid": "0ACCEBC34966C3F75F4521AE25B31DA3",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "On Begin Play",
+			"graph": "On Begin Play",
+			"nodeGuid": "7F51293E493911A7524B628A1E786F9E",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "On Overlay State Changed",
+			"graph": "OnOverlayStateChanged",
+			"nodeGuid": "ACF857AB4FD102E94F353296BE1D5F97",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Ragdoll End",
+			"graph": "RagdollEnd",
+			"nodeGuid": "8F0CF407428A4ED3BCC915A31C48F26E",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Ragdoll Start",
+			"graph": "RagdollStart",
+			"nodeGuid": "C022401942C64022C7E478A7ACD71F74",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Set/ Reset Colors",
+			"graph": "Set/ResetColors",
+			"nodeGuid": "29107F49475C1958B4BC4F889FAC9664",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Set Dynamic Materials",
+			"graph": "SetDynamicMaterials",
+			"nodeGuid": "DA210B3D4B3BCDA8402173A30FA6D47B",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Spawn Current Weapon Actor",
+			"graph": "SpawnCurrentWeaponActor",
+			"nodeGuid": "2959A24F4A294EFB5AAF63ABCA6AF98D",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Spawn Muzzle FX",
+			"graph": "SpawnMuzzleFX",
+			"nodeGuid": "522DF8F24DBF9E37151CBD98668C5E06",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Coloring System",
+			"graph": "UpdateColoringSystem",
+			"nodeGuid": "6358DCEA485FCB79C6E733BB2C9EC117",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Held Object Animations",
+			"graph": "UpdateHeldObjectAnimations",
+			"nodeGuid": "398D809B4C50A96285EDF588F98D3DCA",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Held Object",
+			"graph": "UpdateHeldObject",
+			"nodeGuid": "9EDC2C424F6E5F3B9811BFA1F05D01E5",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Update Layering Colors",
+			"graph": "UpdateLayeringColors",
+			"nodeGuid": "84A58B2F41F746577763FFA5F82DF9F3",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Construction Script",
+			"graph": "UserConstructionScript",
+			"nodeGuid": "D53DD5EC48F93B5B257AD0BC6D7B4E86",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

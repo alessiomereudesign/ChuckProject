@@ -1,0 +1,22 @@
+{
+	"assetName": "Chuck_HUD",
+	"assetPath": "/Game/ChuckContent/UI/Interfaces/Chuck_HUD.Chuck_HUD",
+	"assetKey": "Game_ChuckContent_UI_Interfaces_Chuck_HUD",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"events": [
+		{
+			"eventName": "ShowTip_1\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "DE3B296D4259410A8BBEE2974B6030C3",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "Construction Script",
+			"graph": "UserConstructionScript",
+			"nodeGuid": "5A6615234564CECC2B3E77BE78AE46AD",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		}
+	]
+}

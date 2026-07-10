@@ -1,0 +1,35 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "TurnInPlace_Asset",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Data/Structs/TurnInPlace_Asset.TurnInPlace_Asset",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Data_Structs_TurnInPlace_Asset",
+	"shortAssetFolder": "TurnInPlace_Asset__F6F24FA3",
+	"pathHash": "F6F24FA3",
+	"assetType": "Struct",
+	"unrealClass": "UserDefinedStruct",
+	"parentClass": "",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 0,
+		"components": 0,
+		"widgets": 0,
+		"graphs": 0,
+		"nodes": 0,
+		"edges": 0,
+		"flows": 0
+	},
+	"files":
+	{
+		"summary": "Assets/Structs/TurnInPlace_Asset__F6F24FA3/SUMMARY.md",
+		"variables": "Assets/Structs/TurnInPlace_Asset__F6F24FA3/VARIABLES.json",
+		"components": "Assets/Structs/TurnInPlace_Asset__F6F24FA3/COMPONENTS.json",
+		"widgetTree": "Assets/Structs/TurnInPlace_Asset__F6F24FA3/WIDGET_TREE.json",
+		"nodes": "Assets/Structs/TurnInPlace_Asset__F6F24FA3/NODES.jsonl",
+		"edges": "Assets/Structs/TurnInPlace_Asset__F6F24FA3/EDGES.jsonl",
+		"search": "Assets/Structs/TurnInPlace_Asset__F6F24FA3/SEARCH.jsonl"
+	},
+	"graphs": []
+}

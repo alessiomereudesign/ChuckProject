@@ -1,0 +1,25 @@
+{
+	"graphId": "G283",
+	"name": "CalculateLandPrediction",
+	"graphName": "CalculateLandPrediction",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 31,
+	"edgeCount": 38,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G283/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G283/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G283/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Calculate Land Prediction",
+			"entryNodeGuid": "E457E0904E80206FE4B9DDBC4F035200",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G283/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G283/F001.json",
+			"textFile": "Flows/G283/F001.txt",
+			"jsonFile": "Flows/G283/F001.json",
+			"nodeCount": 31
+		}
+	]
+}

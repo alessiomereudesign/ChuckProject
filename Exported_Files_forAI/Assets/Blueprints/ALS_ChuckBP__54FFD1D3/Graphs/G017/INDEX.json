@@ -1,0 +1,25 @@
+{
+	"graphId": "G017",
+	"name": "MantleStart",
+	"graphName": "MantleStart",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 5,
+	"edgeCount": 8,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G017/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G017/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G017/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Mantle Start",
+			"entryNodeGuid": "0ACCEBC34966C3F75F4521AE25B31DA3",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G017/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G017/F001.json",
+			"textFile": "Flows/G017/F001.txt",
+			"jsonFile": "Flows/G017/F001.json",
+			"nodeCount": 5
+		}
+	]
+}

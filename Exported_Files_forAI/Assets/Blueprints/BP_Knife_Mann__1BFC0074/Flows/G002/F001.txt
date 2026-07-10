@@ -1,0 +1,29 @@
+Asset: BP_Knife_Mann
+AssetPath: /Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/Demo/Mannequin/Character/Mesh/BP_Knife_Mann.BP_Knife_Mann
+AssetKey: Game_AdditionalContents_RamsterZ_FreeAnims_Volume1_Demo_Mannequin_Character_Mesh_BP_Knife_Mann
+GraphId: G002
+Graph: UserConstructionScript
+FlowId: F001
+Entry: Construction Script
+NodeGuid: D5FD242043712C806C13BBB56FB6165C
+
+Exec Flow:
+1. Construction Script [K2Node_FunctionEntry] D5FD242043712C806C13BBB56FB6165C
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

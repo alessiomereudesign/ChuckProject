@@ -1,0 +1,14 @@
+{
+	"graphId": "G106",
+	"name": "Pistol 1H States",
+	"graphName": "Pistol 1H States",
+	"type": "AnimationStateMachineGraph",
+	"graphType": "AnimationStateMachineGraph",
+	"graphGuid": "",
+	"nodeCount": 10,
+	"edgeCount": 13,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G106/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G106/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G106/EDGES.jsonl",
+	"flows": []
+}

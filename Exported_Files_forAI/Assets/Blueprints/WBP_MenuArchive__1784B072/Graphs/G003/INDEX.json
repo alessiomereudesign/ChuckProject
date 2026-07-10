@@ -1,0 +1,65 @@
+{
+	"graphId": "G003",
+	"name": "InventoryGraph",
+	"graphName": "InventoryGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 183,
+	"edgeCount": 198,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G003/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G003/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G003/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "OnClickedInventoryButtons",
+			"entryNodeGuid": "1BF19B89429DC3FE262DEABFA1C01D31",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F001.json",
+			"textFile": "Flows/G003/F001.txt",
+			"jsonFile": "Flows/G003/F001.json",
+			"nodeCount": 183
+		},
+		{
+			"flowId": "F002",
+			"entryName": "PopulateItemGrid\nCustom Event",
+			"entryNodeGuid": "A8316402431249613FC1E48A42F17EB5",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F002.json",
+			"textFile": "Flows/G003/F002.txt",
+			"jsonFile": "Flows/G003/F002.json",
+			"nodeCount": 183
+		},
+		{
+			"flowId": "F003",
+			"entryName": "ShowAllItems\nCustom Event",
+			"entryNodeGuid": "CD152E5643DCD6F348E0BCAAB8879E90",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F003.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F003.json",
+			"textFile": "Flows/G003/F003.txt",
+			"jsonFile": "Flows/G003/F003.json",
+			"nodeCount": 183
+		},
+		{
+			"flowId": "F004",
+			"entryName": "ShowArmorItems\nCustom Event",
+			"entryNodeGuid": "995AFA6B4668BFC03D4E5C952BC14A70",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F004.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F004.json",
+			"textFile": "Flows/G003/F004.txt",
+			"jsonFile": "Flows/G003/F004.json",
+			"nodeCount": 183
+		},
+		{
+			"flowId": "F005",
+			"entryName": "ShowWeapons Items\nCustom Event",
+			"entryNodeGuid": "6FBBFFF64FA3B6E2F643839E1EC2A4C7",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F005.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F005.json",
+			"textFile": "Flows/G003/F005.txt",
+			"jsonFile": "Flows/G003/F005.json",
+			"nodeCount": 183
+		}
+	]
+}

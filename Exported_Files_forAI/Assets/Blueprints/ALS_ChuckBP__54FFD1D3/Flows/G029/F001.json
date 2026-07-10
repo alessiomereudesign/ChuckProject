@@ -1,0 +1,3797 @@
+{
+	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+	"graph": "UpdateLayeringColors",
+	"entryName": "Update Layering Colors",
+	"entryNodeGuid": "84A58B2F41F746577763FFA5F82DF9F3",
+	"nodes": [
+		{
+			"nodeGuid": "84A58B2F41F746577763FFA5F82DF9F3",
+			"class": "K2Node_FunctionEntry",
+			"title": "Update Layering Colors",
+			"comment": "",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2996764F44FE6E06D8EC7AA6504A774E",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "848A6A6D48702989E3EA2D828F4A62B1",
+			"class": "K2Node_ExecutionSequence",
+			"title": "Sequenza",
+			"comment": "",
+			"x": 256,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6C3BA7C34779CF14279A6EB1E4A1F094",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "15D04EF94A45CB0AEBBAB49A0590A889",
+					"name": "then_0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7F8184484E81EDBFFE61F3B017369BDE",
+					"name": "then_1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2AA7587B404059AE054F94B25F0D7D29",
+					"name": "then_2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3F3FDD434137F8498EA68EB448B9F652",
+					"name": "then_3",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0E367CB343C74BFD936C6395D53FE0AD",
+			"class": "K2Node_VariableGet",
+			"title": "Get Head",
+			"comment": "",
+			"x": 1280,
+			"y": -448,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A3DE4C7E4FBC45C7398477B3265F068F",
+					"name": "Head",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D36898BD426DB95719F11C9650362C37",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4A9F04954D2789DB629B07B149FA4D0B",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 752,
+			"y": -464,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1B1D3CFC490FD8410905D1BB775C0A96",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FC5779B242C8FB44875712B8C60E5DB4",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D2BB8D0C4E52C6CF7D52F9878AD29B3F",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 880,
+			"y": -240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0564842F47CA56A177CA1FB9E99DB0DC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0521CF8347B72294EED51A8224182E40",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Layering_Head_Add"
+				},
+				{
+					"pinId": "E0C5860E440785BAABAD739AD7432E4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "22749CC943244BAED584EE80CECB2A5B",
+			"class": "K2Node_VariableGet",
+			"title": "Get AdditiveAmount_Color",
+			"comment": "",
+			"x": 768,
+			"y": -304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FCF8586D4150D33C4366908EE31E0503",
+					"name": "AdditiveAmount_Color",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EB8429B94516BF64DE0B27B46101FC1C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "94D6376141F9C6BD71FDCC92245C84C5",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp (LinearColor)",
+			"comment": "",
+			"x": 960,
+			"y": -352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "518E0E674385B2E7CE8889AE85ABF709",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "07D349C64514F2E9E3B0328D5EB2E905",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F126FF434AF92C7017059DB9F2460CD8",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ACBE4BC84D227D65F30DE1870DF967FF",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "21D86F4B41600BB75AE7679BE473034F",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5C9B662145A6E64CF93EFA96AAD215AA",
+			"class": "K2Node_VariableGet",
+			"title": "Get OverlayLayerColor",
+			"comment": "",
+			"x": 784,
+			"y": -336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9C1796DF49C95409665F1A9D4F421FAF",
+					"name": "OverlayLayerColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2D06150C406395D896126B8CE2DCA7CD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "403BB36B43E4BFC8708305974FE0CA55",
+			"class": "K2Node_VariableGet",
+			"title": "Get BaseLayerColor",
+			"comment": "",
+			"x": 1008,
+			"y": -384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "94902F0B4EAC0BBC77D1D59B96EE89D2",
+					"name": "BaseLayerColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A4D74EE04C5BB7DA8EAA4598AC6F6CB1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "9136EDF845A46EA02AA95C933C24AC89",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp (LinearColor)",
+			"comment": "",
+			"x": 1216,
+			"y": -400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1E46BFBA4CF0A842ADA576BE3A1D04D3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "778C43DD49B0B6B5794F4D8B6AF3655A",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A7C09BB14431D550E79B41912973EF4E",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D3017C104285E596E07E9383D4F63DD4",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "46E8D63A476EB37D629C649B58A7B3BB",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E2A111054AA8678D5483E989912835DD",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 1440,
+			"y": -512,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "100EB9654CEE00757EDFCBB23914A340",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C7D1FD38429C2E56DCBB8380AEF59144",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F06A97E54418A25F05333E91CAA399C7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2142C5BD4418C01D264D39B8B2DF4580",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "476457E14D3A06E68A187DAD471A208D",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "CF99951C4A2EEDCF61E2378ECE7EA24E",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 1184,
+			"y": -288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0564842F47CA56A177CA1FB9E99DB0DC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0521CF8347B72294EED51A8224182E40",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Layering_Head"
+				},
+				{
+					"pinId": "E0C5860E440785BAABAD739AD7432E4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "D87105CB4133B5822E7E8B8445AC48FC",
+			"class": "K2Node_VariableGet",
+			"title": "Get Torso",
+			"comment": "",
+			"x": 2208,
+			"y": -448,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A3DE4C7E4FBC45C7398477B3265F068F",
+					"name": "Torso",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D36898BD426DB95719F11C9650362C37",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6A6E1DBA40DBBA9A7FF0139AB754FA7C",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 1808,
+			"y": -240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0564842F47CA56A177CA1FB9E99DB0DC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0521CF8347B72294EED51A8224182E40",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Layering_Spine_Add"
+				},
+				{
+					"pinId": "E0C5860E440785BAABAD739AD7432E4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "8BE071C945DB8DC9DB164C9761CF60B8",
+			"class": "K2Node_VariableGet",
+			"title": "Get AdditiveAmount_Color",
+			"comment": "",
+			"x": 1696,
+			"y": -304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FCF8586D4150D33C4366908EE31E0503",
+					"name": "AdditiveAmount_Color",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EB8429B94516BF64DE0B27B46101FC1C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "769848294B363B018DD57F90721829ED",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp (LinearColor)",
+			"comment": "",
+			"x": 1888,
+			"y": -352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "518E0E674385B2E7CE8889AE85ABF709",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "07D349C64514F2E9E3B0328D5EB2E905",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F126FF434AF92C7017059DB9F2460CD8",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ACBE4BC84D227D65F30DE1870DF967FF",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "21D86F4B41600BB75AE7679BE473034F",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "986D289044EB60C65FDC7190DBAFED11",
+			"class": "K2Node_VariableGet",
+			"title": "Get OverlayLayerColor",
+			"comment": "",
+			"x": 1712,
+			"y": -336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9C1796DF49C95409665F1A9D4F421FAF",
+					"name": "OverlayLayerColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2D06150C406395D896126B8CE2DCA7CD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "00F0109D40D8D6CABB39958526F40A49",
+			"class": "K2Node_VariableGet",
+			"title": "Get BaseLayerColor",
+			"comment": "",
+			"x": 1936,
+			"y": -384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "94902F0B4EAC0BBC77D1D59B96EE89D2",
+					"name": "BaseLayerColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A4D74EE04C5BB7DA8EAA4598AC6F6CB1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1D5E70BD4135E95EABBCFAA8F380798B",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp (LinearColor)",
+			"comment": "",
+			"x": 2144,
+			"y": -400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1E46BFBA4CF0A842ADA576BE3A1D04D3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "778C43DD49B0B6B5794F4D8B6AF3655A",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A7C09BB14431D550E79B41912973EF4E",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D3017C104285E596E07E9383D4F63DD4",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "46E8D63A476EB37D629C649B58A7B3BB",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F736C20D4BDE050C451E5C966CCB6001",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2368,
+			"y": -512,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "100EB9654CEE00757EDFCBB23914A340",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C7D1FD38429C2E56DCBB8380AEF59144",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F06A97E54418A25F05333E91CAA399C7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2142C5BD4418C01D264D39B8B2DF4580",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "476457E14D3A06E68A187DAD471A208D",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1AE216EF45ABC1046B09F687CF193815",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 2112,
+			"y": -288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0564842F47CA56A177CA1FB9E99DB0DC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0521CF8347B72294EED51A8224182E40",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Layering_Spine"
+				},
+				{
+					"pinId": "E0C5860E440785BAABAD739AD7432E4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "9BE28451456F4FE2B3402DA559D7F070",
+			"class": "K2Node_VariableGet",
+			"title": "Get AdditiveAmount_Color",
+			"comment": "",
+			"x": 848,
+			"y": 16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FCF8586D4150D33C4366908EE31E0503",
+					"name": "AdditiveAmount_Color",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EB8429B94516BF64DE0B27B46101FC1C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E7ED6928405E79C2E300E1B85B3142A1",
+			"class": "K2Node_VariableGet",
+			"title": "Get BaseLayerColor",
+			"comment": "",
+			"x": 880,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "94902F0B4EAC0BBC77D1D59B96EE89D2",
+					"name": "BaseLayerColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A4D74EE04C5BB7DA8EAA4598AC6F6CB1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "35C0E6F54CE2CED1AB868188D2701A19",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp (LinearColor)",
+			"comment": "",
+			"x": 1040,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1E46BFBA4CF0A842ADA576BE3A1D04D3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "778C43DD49B0B6B5794F4D8B6AF3655A",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A7C09BB14431D550E79B41912973EF4E",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D3017C104285E596E07E9383D4F63DD4",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "46E8D63A476EB37D629C649B58A7B3BB",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7EECD7F54C8A7AE0C5DCE6B7A1CF3136",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 1264,
+			"y": -128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "100EB9654CEE00757EDFCBB23914A340",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C7D1FD38429C2E56DCBB8380AEF59144",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F06A97E54418A25F05333E91CAA399C7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2142C5BD4418C01D264D39B8B2DF4580",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "476457E14D3A06E68A187DAD471A208D",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A4830B2342B70782005BF3B6A6E6DE2D",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 768,
+			"y": 48,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0564842F47CA56A177CA1FB9E99DB0DC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0521CF8347B72294EED51A8224182E40",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Layering_Pelvis"
+				},
+				{
+					"pinId": "E0C5860E440785BAABAD739AD7432E4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E43345064402E1D6DEADECA9A09BF563",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 752,
+			"y": -80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "14C1E4464B12D216FFB551970E78A4C4",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4FD725A1415CFF7BD7BA9185EAC7871A",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "CF24F1254001ABC9D761F499955C9F33",
+			"class": "K2Node_VariableGet",
+			"title": "Get AdditiveAmount_Color",
+			"comment": "",
+			"x": 1600,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FCF8586D4150D33C4366908EE31E0503",
+					"name": "AdditiveAmount_Color",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EB8429B94516BF64DE0B27B46101FC1C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C8AF6F2C40C1B97A76A814AD6078AA24",
+			"class": "K2Node_VariableGet",
+			"title": "Get BaseLayerColor",
+			"comment": "",
+			"x": 1632,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "94902F0B4EAC0BBC77D1D59B96EE89D2",
+					"name": "BaseLayerColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A4D74EE04C5BB7DA8EAA4598AC6F6CB1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BE1CCAAF4B74AC314782318630B5AE7E",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp (LinearColor)",
+			"comment": "",
+			"x": 1792,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1E46BFBA4CF0A842ADA576BE3A1D04D3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "778C43DD49B0B6B5794F4D8B6AF3655A",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A7C09BB14431D550E79B41912973EF4E",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D3017C104285E596E07E9383D4F63DD4",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "46E8D63A476EB37D629C649B58A7B3BB",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A9B355D7404EC8EA93EB529CCDDC421E",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2016,
+			"y": -128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "100EB9654CEE00757EDFCBB23914A340",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C7D1FD38429C2E56DCBB8380AEF59144",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F06A97E54418A25F05333E91CAA399C7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2142C5BD4418C01D264D39B8B2DF4580",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "476457E14D3A06E68A187DAD471A208D",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8A863B4F49AB933E49060ABE12A6FFD5",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 1520,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0564842F47CA56A177CA1FB9E99DB0DC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0521CF8347B72294EED51A8224182E40",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Layering_Legs"
+				},
+				{
+					"pinId": "E0C5860E440785BAABAD739AD7432E4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "84C45C18465A5A67A67E5BA2AAD834EE",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 752,
+			"y": 272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1B1D3CFC490FD8410905D1BB775C0A96",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FC5779B242C8FB44875712B8C60E5DB4",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3AFC75234EEDFDE017F3C78549F04E3C",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 880,
+			"y": 544,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0564842F47CA56A177CA1FB9E99DB0DC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0521CF8347B72294EED51A8224182E40",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Layering_Arm_L_Add"
+				},
+				{
+					"pinId": "E0C5860E440785BAABAD739AD7432E4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "2D03978F4390CFB3E6B112AE031D37DB",
+			"class": "K2Node_VariableGet",
+			"title": "Get AdditiveAmount_Color",
+			"comment": "",
+			"x": 768,
+			"y": 480,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FCF8586D4150D33C4366908EE31E0503",
+					"name": "AdditiveAmount_Color",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EB8429B94516BF64DE0B27B46101FC1C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "CDB87B4844A34D131E8715ADAE8F770A",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp (LinearColor)",
+			"comment": "",
+			"x": 960,
+			"y": 432,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "518E0E674385B2E7CE8889AE85ABF709",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "07D349C64514F2E9E3B0328D5EB2E905",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F126FF434AF92C7017059DB9F2460CD8",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ACBE4BC84D227D65F30DE1870DF967FF",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "21D86F4B41600BB75AE7679BE473034F",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "5E78FC1C4F36B7AAEBBF6F9DAC63F7B6",
+			"class": "K2Node_VariableGet",
+			"title": "Get OverlayLayerColor",
+			"comment": "",
+			"x": 784,
+			"y": 448,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9C1796DF49C95409665F1A9D4F421FAF",
+					"name": "OverlayLayerColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2D06150C406395D896126B8CE2DCA7CD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EB630AD14AAD00309AF542B3D9B18761",
+			"class": "K2Node_VariableGet",
+			"title": "Get BaseLayerColor",
+			"comment": "",
+			"x": 1008,
+			"y": 400,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "94902F0B4EAC0BBC77D1D59B96EE89D2",
+					"name": "BaseLayerColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A4D74EE04C5BB7DA8EAA4598AC6F6CB1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "185C16E24C7D6A6F6A3012A3B44E3F4D",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp (LinearColor)",
+			"comment": "",
+			"x": 1216,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1E46BFBA4CF0A842ADA576BE3A1D04D3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "778C43DD49B0B6B5794F4D8B6AF3655A",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A7C09BB14431D550E79B41912973EF4E",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D3017C104285E596E07E9383D4F63DD4",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "46E8D63A476EB37D629C649B58A7B3BB",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "95C5BFCA42FD9ABF84BDB9B5F06BF5DD",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 1440,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "100EB9654CEE00757EDFCBB23914A340",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C7D1FD38429C2E56DCBB8380AEF59144",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F06A97E54418A25F05333E91CAA399C7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2142C5BD4418C01D264D39B8B2DF4580",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "476457E14D3A06E68A187DAD471A208D",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0D729B044A3449BE492250B841CB219F",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 1184,
+			"y": 496,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0564842F47CA56A177CA1FB9E99DB0DC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0521CF8347B72294EED51A8224182E40",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Layering_Arm_L"
+				},
+				{
+					"pinId": "E0C5860E440785BAABAD739AD7432E4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "CB3E8A494487FC5542069EBB1971E1D4",
+			"class": "K2Node_VariableGet",
+			"title": "Get Hand_L",
+			"comment": "",
+			"x": 2544,
+			"y": 288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A3DE4C7E4FBC45C7398477B3265F068F",
+					"name": "Hand_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D36898BD426DB95719F11C9650362C37",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "173E45A94D997E929C7C6A8AC31985EB",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2704,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "100EB9654CEE00757EDFCBB23914A340",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C7D1FD38429C2E56DCBB8380AEF59144",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F06A97E54418A25F05333E91CAA399C7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2142C5BD4418C01D264D39B8B2DF4580",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "476457E14D3A06E68A187DAD471A208D",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "92A4057D499D2A2F131D82BB82EB10EF",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp (LinearColor)",
+			"comment": "",
+			"x": 2480,
+			"y": 336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DEECFF7F48CCB2AD6B1BCAA2A6873C6A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "42EC4B064BA0DE792F91EE98DED754F5",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "27B5FF9E4852D761869795BCA5542BEB",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "103FC7A8475E6423F05C7D8A266E7FA6",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "89E538114CE6BB1D6C509ABAE75188A9",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A0FF306543E3A402C2213C86B51C09B7",
+			"class": "K2Node_VariableGet",
+			"title": "Get Hand_Color",
+			"comment": "",
+			"x": 1968,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C376D8784FBB0112329B51A7E80278E5",
+					"name": "Hand_Color",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "385D07B244CD6D624928DC9A647924CE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "DF88040C417050A0239C9C890CC6BA37",
+			"class": "K2Node_CallFunction",
+			"title": "Get Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 1856,
+			"y": 224,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "77C9907D422FDA110D50D2993A666058",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3A30FBB14DD51A294BA2828DC840FD12",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2C797E9647BDF68748DDC4BCCDDC5FB9",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D057923C4ABDD607ED412AB142336283",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "6A87FC2F44ACB646A80892AFC4B434C6",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "28BF3B464E44ED0646DF3694D2A53F20",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 752,
+			"y": 688,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1B1D3CFC490FD8410905D1BB775C0A96",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FC5779B242C8FB44875712B8C60E5DB4",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A45B0CA54824E22EA175DEBF7006ED09",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 880,
+			"y": 960,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0564842F47CA56A177CA1FB9E99DB0DC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0521CF8347B72294EED51A8224182E40",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Layering_Arm_R_Add"
+				},
+				{
+					"pinId": "E0C5860E440785BAABAD739AD7432E4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "39EE120B409F6D5B9940218ABE10636C",
+			"class": "K2Node_VariableGet",
+			"title": "Get AdditiveAmount_Color",
+			"comment": "",
+			"x": 768,
+			"y": 896,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "FCF8586D4150D33C4366908EE31E0503",
+					"name": "AdditiveAmount_Color",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EB8429B94516BF64DE0B27B46101FC1C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0E8DB08D48DC39D1FC6F23B91B1086CA",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp (LinearColor)",
+			"comment": "",
+			"x": 960,
+			"y": 848,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "518E0E674385B2E7CE8889AE85ABF709",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "07D349C64514F2E9E3B0328D5EB2E905",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F126FF434AF92C7017059DB9F2460CD8",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "ACBE4BC84D227D65F30DE1870DF967FF",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "21D86F4B41600BB75AE7679BE473034F",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "A2E0461C4EAAD399FA6FF980292685CB",
+			"class": "K2Node_VariableGet",
+			"title": "Get OverlayLayerColor",
+			"comment": "",
+			"x": 784,
+			"y": 864,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9C1796DF49C95409665F1A9D4F421FAF",
+					"name": "OverlayLayerColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2D06150C406395D896126B8CE2DCA7CD",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "94DF8ABC492AD1B51A74988AC5111DAB",
+			"class": "K2Node_VariableGet",
+			"title": "Get BaseLayerColor",
+			"comment": "",
+			"x": 1008,
+			"y": 816,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "94902F0B4EAC0BBC77D1D59B96EE89D2",
+					"name": "BaseLayerColor",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A4D74EE04C5BB7DA8EAA4598AC6F6CB1",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F2C1616641F830FD580DDFAFC9656540",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp (LinearColor)",
+			"comment": "",
+			"x": 1216,
+			"y": 800,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1E46BFBA4CF0A842ADA576BE3A1D04D3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "778C43DD49B0B6B5794F4D8B6AF3655A",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A7C09BB14431D550E79B41912973EF4E",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D3017C104285E596E07E9383D4F63DD4",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "46E8D63A476EB37D629C649B58A7B3BB",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6CA5B2DB4C1438A78A30E7A936E6DB9F",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 1440,
+			"y": 640,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "100EB9654CEE00757EDFCBB23914A340",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C7D1FD38429C2E56DCBB8380AEF59144",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F06A97E54418A25F05333E91CAA399C7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2142C5BD4418C01D264D39B8B2DF4580",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "476457E14D3A06E68A187DAD471A208D",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "75CF256E4D2707B5041C28B49B9E6E4F",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 1184,
+			"y": 912,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0564842F47CA56A177CA1FB9E99DB0DC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0521CF8347B72294EED51A8224182E40",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Layering_Arm_R"
+				},
+				{
+					"pinId": "E0C5860E440785BAABAD739AD7432E4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "2E823A2346D164B155B05FA1AF853B2E",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 2096,
+			"y": 448,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0564842F47CA56A177CA1FB9E99DB0DC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0521CF8347B72294EED51A8224182E40",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Layering_Hand_L"
+				},
+				{
+					"pinId": "E0C5860E440785BAABAD739AD7432E4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "169DD553434157FF0C26B49C6DDD4EF4",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 2432,
+			"y": 448,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0564842F47CA56A177CA1FB9E99DB0DC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0521CF8347B72294EED51A8224182E40",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Enable_HandIK_L"
+				},
+				{
+					"pinId": "E0C5860E440785BAABAD739AD7432E4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "714000C04DE32D81895FD7A2E30AD569",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp (LinearColor)",
+			"comment": "",
+			"x": 2128,
+			"y": 336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F9BB75724215E225689B639C1A03A4E3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "ACC9960147BCA87F11A710BC7564270F",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A9AA881C45C21C0B2BA168A21CEA6489",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E10CCCCA4F646CCC5DF1268FBE99CE90",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "01A3F02D4435A871DE2499BB4FAC885A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "EF95877A46B4DDD29AA3469E2CA3EF87",
+			"class": "K2Node_VariableGet",
+			"title": "Get HandIK_Color",
+			"comment": "",
+			"x": 2336,
+			"y": 384,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A7ED0954047E6E4B34A8E91D1048F77",
+					"name": "HandIK_Color",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E3BD496F4573B9960FF5A69F25E8E5C8",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "17CB0F544628390921EFE99C108BA29A",
+			"class": "K2Node_VariableGet",
+			"title": "Get Hand_R",
+			"comment": "",
+			"x": 2544,
+			"y": 704,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A3DE4C7E4FBC45C7398477B3265F068F",
+					"name": "Hand_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D36898BD426DB95719F11C9650362C37",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "46149E7F49AFEE16A75B87B75832A631",
+			"class": "K2Node_CallFunction",
+			"title": "Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 2704,
+			"y": 640,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "100EB9654CEE00757EDFCBB23914A340",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C7D1FD38429C2E56DCBB8380AEF59144",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F06A97E54418A25F05333E91CAA399C7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2142C5BD4418C01D264D39B8B2DF4580",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "476457E14D3A06E68A187DAD471A208D",
+					"name": "Value",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C074F1144A0A97E5B81565ABC788BDD4",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp (LinearColor)",
+			"comment": "",
+			"x": 2480,
+			"y": 752,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DEECFF7F48CCB2AD6B1BCAA2A6873C6A",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "42EC4B064BA0DE792F91EE98DED754F5",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "27B5FF9E4852D761869795BCA5542BEB",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "103FC7A8475E6423F05C7D8A266E7FA6",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "89E538114CE6BB1D6C509ABAE75188A9",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "954D130345758701A3B3D6A43924D0F6",
+			"class": "K2Node_VariableGet",
+			"title": "Get Hand_Color",
+			"comment": "",
+			"x": 1968,
+			"y": 800,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C376D8784FBB0112329B51A7E80278E5",
+					"name": "Hand_Color",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "385D07B244CD6D624928DC9A647924CE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "800C861240F49939346CD1B75DCBE524",
+			"class": "K2Node_CallFunction",
+			"title": "Get Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+			"comment": "",
+			"x": 1856,
+			"y": 640,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "77C9907D422FDA110D50D2993A666058",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "3A30FBB14DD51A294BA2828DC840FD12",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2C797E9647BDF68748DDC4BCCDDC5FB9",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D057923C4ABDD607ED412AB142336283",
+					"name": "ParameterName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "BaseColor"
+				},
+				{
+					"pinId": "6A87FC2F44ACB646A80892AFC4B434C6",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4E68030D4C96BACAA99E8CBB59BA5D74",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 2096,
+			"y": 864,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0564842F47CA56A177CA1FB9E99DB0DC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0521CF8347B72294EED51A8224182E40",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Layering_Hand_R"
+				},
+				{
+					"pinId": "E0C5860E440785BAABAD739AD7432E4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "ECDF30FF4FAF6728079D8481C8137F3E",
+			"class": "K2Node_CallFunction",
+			"title": "Get Anim Curve Value",
+			"comment": "",
+			"x": 2432,
+			"y": 864,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0564842F47CA56A177CA1FB9E99DB0DC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0521CF8347B72294EED51A8224182E40",
+					"name": "CurveName",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Enable_HandIK_R"
+				},
+				{
+					"pinId": "E0C5860E440785BAABAD739AD7432E4B",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "DEF010F34FDFB4C7F6369388736E1153",
+			"class": "K2Node_CallFunction",
+			"title": "Lerp (LinearColor)",
+			"comment": "",
+			"x": 2128,
+			"y": 752,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F9BB75724215E225689B639C1A03A4E3",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "ACC9960147BCA87F11A710BC7564270F",
+					"name": "A",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A9AA881C45C21C0B2BA168A21CEA6489",
+					"name": "B",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E10CCCCA4F646CCC5DF1268FBE99CE90",
+					"name": "Alpha",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "01A3F02D4435A871DE2499BB4FAC885A",
+					"name": "ReturnValue",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B4BBE33648A6EA97612619B389B673D4",
+			"class": "K2Node_VariableGet",
+			"title": "Get HandIK_Color",
+			"comment": "",
+			"x": 2336,
+			"y": 800,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A7ED0954047E6E4B34A8E91D1048F77",
+					"name": "HandIK_Color",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.LinearColor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E3BD496F4573B9960FF5A69F25E8E5C8",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "206BE86340E43C5ECF24F4A62EB8E03C",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperLegs",
+			"comment": "",
+			"x": 1856,
+			"y": -64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8805999D4965791657FB2FBC4572B587",
+					"name": "UpperLegs",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8A5347764C3918B7D190EABED74699AB",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0154D9DD460B0D323242F1A43097C407",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerLegs",
+			"comment": "",
+			"x": 1856,
+			"y": -32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "EC79C1604B72D70535ABDF9435F535F2",
+					"name": "LowerLegs",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8C11A6694EF5BC0ADF2EE6923D850C5D",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "695CBFD94BB111D7453BDFA3223FEE83",
+			"class": "K2Node_VariableGet",
+			"title": "Get Feet",
+			"comment": "",
+			"x": 1856,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "08AE028F460A454023F1A8B174140EFE",
+					"name": "Feet",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9AB681164BBEFA275640EC8C4C8A3FCF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "BD1781C640C3E4DEF5EA0FAF1FBE9E2B",
+			"class": "K2Node_VariableGet",
+			"title": "Get Shoulder_L",
+			"comment": "",
+			"x": 1280,
+			"y": 288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "8F7826B0402B00221D512E87B5B919C7",
+					"name": "Shoulder_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2FCDDED44083266A97A42AB693AB11A6",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4FC4C1B345CA150DB250759DC1FAB48E",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperArm_L",
+			"comment": "",
+			"x": 1280,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E0D585104D36889BA396FCB8BC0D2D1A",
+					"name": "UpperArm_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "62F5313C47DF466D7D46D2B3F0C4C37E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F0A2DE3E465E0F985D3E108546274220",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerArm_L",
+			"comment": "",
+			"x": 1280,
+			"y": 352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "10D700FD49E1CBAB67727BA7FFDFAF56",
+					"name": "LowerArm_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2A1688E149214DEEC67F059C1BECCFC5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "20A974404E3DC32927BE95979E7E9B79",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerArm_L",
+			"comment": "",
+			"x": 1712,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "10D700FD49E1CBAB67727BA7FFDFAF56",
+					"name": "LowerArm_L",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2A1688E149214DEEC67F059C1BECCFC5",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "70DFAC4F455ECCB4674A988A10CAB01D",
+			"class": "K2Node_VariableGet",
+			"title": "Get Shoulder_R",
+			"comment": "",
+			"x": 1280,
+			"y": 704,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C8E5484B4361820412B79D93385E7E95",
+					"name": "Shoulder_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "442619534E4A86D2F1A7E2AA6452CCFF",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "426660B34833C43F3BFFCB9D229AF119",
+			"class": "K2Node_VariableGet",
+			"title": "Get UpperArm_R",
+			"comment": "",
+			"x": 1280,
+			"y": 736,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "47ED669849768EE3F625EC9B09B7AA14",
+					"name": "UpperArm_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EADE056844AEB1845DAE29B6D9755176",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0207F8574F78559E40CB6683EA33A4B0",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerArm_R",
+			"comment": "",
+			"x": 1280,
+			"y": 768,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C85D7FAA482F1837484B6DA1177A2DA1",
+					"name": "LowerArm_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "292CB36740C490FBC569AC856C80F2E7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "583E714448C31BF8C30BB7BFFB440E6C",
+			"class": "K2Node_VariableGet",
+			"title": "Get LowerArm_R",
+			"comment": "",
+			"x": 1712,
+			"y": 720,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "07AA34F9403EA04D024B09B347BFCB3D",
+					"name": "LowerArm_R",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0B5D515A4CC18A03BF3596ACE79C2587",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "46B3510744A60D221F400FB9614263B0",
+			"class": "K2Node_VariableGet",
+			"title": "Get Pelvis",
+			"comment": "",
+			"x": 1104,
+			"y": -64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "2CA97A39481D67DDF55325A84E5B2797",
+					"name": "Pelvis",
+					"direction": "Output",
+					"type": "object|/Script/Engine.MaterialInstanceDynamic",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8786B5BD42B3F7BFBFBBF6B4833F5207",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "84A58B2F41F746577763FFA5F82DF9F3",
+			"fromPinId": "2996764F44FE6E06D8EC7AA6504A774E",
+			"fromPinName": "then",
+			"toNodeGuid": "848A6A6D48702989E3EA2D828F4A62B1",
+			"toPinId": "6C3BA7C34779CF14279A6EB1E4A1F094",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "848A6A6D48702989E3EA2D828F4A62B1",
+			"fromPinId": "15D04EF94A45CB0AEBBAB49A0590A889",
+			"fromPinName": "then_0",
+			"toNodeGuid": "4A9F04954D2789DB629B07B149FA4D0B",
+			"toPinId": "1B1D3CFC490FD8410905D1BB775C0A96",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "848A6A6D48702989E3EA2D828F4A62B1",
+			"fromPinId": "7F8184484E81EDBFFE61F3B017369BDE",
+			"fromPinName": "then_1",
+			"toNodeGuid": "E43345064402E1D6DEADECA9A09BF563",
+			"toPinId": "14C1E4464B12D216FFB551970E78A4C4",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "848A6A6D48702989E3EA2D828F4A62B1",
+			"fromPinId": "2AA7587B404059AE054F94B25F0D7D29",
+			"fromPinName": "then_2",
+			"toNodeGuid": "84C45C18465A5A67A67E5BA2AAD834EE",
+			"toPinId": "1B1D3CFC490FD8410905D1BB775C0A96",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "848A6A6D48702989E3EA2D828F4A62B1",
+			"fromPinId": "3F3FDD434137F8498EA68EB448B9F652",
+			"fromPinName": "then_3",
+			"toNodeGuid": "28BF3B464E44ED0646DF3694D2A53F20",
+			"toPinId": "1B1D3CFC490FD8410905D1BB775C0A96",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "0E367CB343C74BFD936C6395D53FE0AD",
+			"fromPinId": "A3DE4C7E4FBC45C7398477B3265F068F",
+			"fromPinName": "Head",
+			"toNodeGuid": "E2A111054AA8678D5483E989912835DD",
+			"toPinId": "F06A97E54418A25F05333E91CAA399C7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "4A9F04954D2789DB629B07B149FA4D0B",
+			"fromPinId": "FC5779B242C8FB44875712B8C60E5DB4",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "E2A111054AA8678D5483E989912835DD",
+			"toPinId": "100EB9654CEE00757EDFCBB23914A340",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "D2BB8D0C4E52C6CF7D52F9878AD29B3F",
+			"fromPinId": "E0C5860E440785BAABAD739AD7432E4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "94D6376141F9C6BD71FDCC92245C84C5",
+			"toPinId": "ACBE4BC84D227D65F30DE1870DF967FF",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "22749CC943244BAED584EE80CECB2A5B",
+			"fromPinId": "FCF8586D4150D33C4366908EE31E0503",
+			"fromPinName": "AdditiveAmount_Color",
+			"toNodeGuid": "94D6376141F9C6BD71FDCC92245C84C5",
+			"toPinId": "F126FF434AF92C7017059DB9F2460CD8",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "5C9B662145A6E64CF93EFA96AAD215AA",
+			"fromPinId": "9C1796DF49C95409665F1A9D4F421FAF",
+			"fromPinName": "OverlayLayerColor",
+			"toNodeGuid": "94D6376141F9C6BD71FDCC92245C84C5",
+			"toPinId": "07D349C64514F2E9E3B0328D5EB2E905",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "94D6376141F9C6BD71FDCC92245C84C5",
+			"fromPinId": "21D86F4B41600BB75AE7679BE473034F",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "9136EDF845A46EA02AA95C933C24AC89",
+			"toPinId": "A7C09BB14431D550E79B41912973EF4E",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "403BB36B43E4BFC8708305974FE0CA55",
+			"fromPinId": "94902F0B4EAC0BBC77D1D59B96EE89D2",
+			"fromPinName": "BaseLayerColor",
+			"toNodeGuid": "9136EDF845A46EA02AA95C933C24AC89",
+			"toPinId": "778C43DD49B0B6B5794F4D8B6AF3655A",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "CF99951C4A2EEDCF61E2378ECE7EA24E",
+			"fromPinId": "E0C5860E440785BAABAD739AD7432E4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "9136EDF845A46EA02AA95C933C24AC89",
+			"toPinId": "D3017C104285E596E07E9383D4F63DD4",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "9136EDF845A46EA02AA95C933C24AC89",
+			"fromPinId": "46E8D63A476EB37D629C649B58A7B3BB",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "E2A111054AA8678D5483E989912835DD",
+			"toPinId": "476457E14D3A06E68A187DAD471A208D",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "E2A111054AA8678D5483E989912835DD",
+			"fromPinId": "C7D1FD38429C2E56DCBB8380AEF59144",
+			"fromPinName": "then",
+			"toNodeGuid": "F736C20D4BDE050C451E5C966CCB6001",
+			"toPinId": "100EB9654CEE00757EDFCBB23914A340",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "D87105CB4133B5822E7E8B8445AC48FC",
+			"fromPinId": "A3DE4C7E4FBC45C7398477B3265F068F",
+			"fromPinName": "Torso",
+			"toNodeGuid": "F736C20D4BDE050C451E5C966CCB6001",
+			"toPinId": "F06A97E54418A25F05333E91CAA399C7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "6A6E1DBA40DBBA9A7FF0139AB754FA7C",
+			"fromPinId": "E0C5860E440785BAABAD739AD7432E4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "769848294B363B018DD57F90721829ED",
+			"toPinId": "ACBE4BC84D227D65F30DE1870DF967FF",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "8BE071C945DB8DC9DB164C9761CF60B8",
+			"fromPinId": "FCF8586D4150D33C4366908EE31E0503",
+			"fromPinName": "AdditiveAmount_Color",
+			"toNodeGuid": "769848294B363B018DD57F90721829ED",
+			"toPinId": "F126FF434AF92C7017059DB9F2460CD8",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "986D289044EB60C65FDC7190DBAFED11",
+			"fromPinId": "9C1796DF49C95409665F1A9D4F421FAF",
+			"fromPinName": "OverlayLayerColor",
+			"toNodeGuid": "769848294B363B018DD57F90721829ED",
+			"toPinId": "07D349C64514F2E9E3B0328D5EB2E905",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "769848294B363B018DD57F90721829ED",
+			"fromPinId": "21D86F4B41600BB75AE7679BE473034F",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "1D5E70BD4135E95EABBCFAA8F380798B",
+			"toPinId": "A7C09BB14431D550E79B41912973EF4E",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "00F0109D40D8D6CABB39958526F40A49",
+			"fromPinId": "94902F0B4EAC0BBC77D1D59B96EE89D2",
+			"fromPinName": "BaseLayerColor",
+			"toNodeGuid": "1D5E70BD4135E95EABBCFAA8F380798B",
+			"toPinId": "778C43DD49B0B6B5794F4D8B6AF3655A",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "1AE216EF45ABC1046B09F687CF193815",
+			"fromPinId": "E0C5860E440785BAABAD739AD7432E4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "1D5E70BD4135E95EABBCFAA8F380798B",
+			"toPinId": "D3017C104285E596E07E9383D4F63DD4",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "1D5E70BD4135E95EABBCFAA8F380798B",
+			"fromPinId": "46E8D63A476EB37D629C649B58A7B3BB",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "F736C20D4BDE050C451E5C966CCB6001",
+			"toPinId": "476457E14D3A06E68A187DAD471A208D",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "9BE28451456F4FE2B3402DA559D7F070",
+			"fromPinId": "FCF8586D4150D33C4366908EE31E0503",
+			"fromPinName": "AdditiveAmount_Color",
+			"toNodeGuid": "35C0E6F54CE2CED1AB868188D2701A19",
+			"toPinId": "A7C09BB14431D550E79B41912973EF4E",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "E7ED6928405E79C2E300E1B85B3142A1",
+			"fromPinId": "94902F0B4EAC0BBC77D1D59B96EE89D2",
+			"fromPinName": "BaseLayerColor",
+			"toNodeGuid": "35C0E6F54CE2CED1AB868188D2701A19",
+			"toPinId": "778C43DD49B0B6B5794F4D8B6AF3655A",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "A4830B2342B70782005BF3B6A6E6DE2D",
+			"fromPinId": "E0C5860E440785BAABAD739AD7432E4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "35C0E6F54CE2CED1AB868188D2701A19",
+			"toPinId": "D3017C104285E596E07E9383D4F63DD4",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "35C0E6F54CE2CED1AB868188D2701A19",
+			"fromPinId": "46E8D63A476EB37D629C649B58A7B3BB",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "7EECD7F54C8A7AE0C5DCE6B7A1CF3136",
+			"toPinId": "476457E14D3A06E68A187DAD471A208D",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "E43345064402E1D6DEADECA9A09BF563",
+			"fromPinId": "4FD725A1415CFF7BD7BA9185EAC7871A",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "7EECD7F54C8A7AE0C5DCE6B7A1CF3136",
+			"toPinId": "100EB9654CEE00757EDFCBB23914A340",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "7EECD7F54C8A7AE0C5DCE6B7A1CF3136",
+			"fromPinId": "C7D1FD38429C2E56DCBB8380AEF59144",
+			"fromPinName": "then",
+			"toNodeGuid": "A9B355D7404EC8EA93EB529CCDDC421E",
+			"toPinId": "100EB9654CEE00757EDFCBB23914A340",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "46B3510744A60D221F400FB9614263B0",
+			"fromPinId": "2CA97A39481D67DDF55325A84E5B2797",
+			"fromPinName": "Pelvis",
+			"toNodeGuid": "7EECD7F54C8A7AE0C5DCE6B7A1CF3136",
+			"toPinId": "F06A97E54418A25F05333E91CAA399C7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "CF24F1254001ABC9D761F499955C9F33",
+			"fromPinId": "FCF8586D4150D33C4366908EE31E0503",
+			"fromPinName": "AdditiveAmount_Color",
+			"toNodeGuid": "BE1CCAAF4B74AC314782318630B5AE7E",
+			"toPinId": "A7C09BB14431D550E79B41912973EF4E",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "C8AF6F2C40C1B97A76A814AD6078AA24",
+			"fromPinId": "94902F0B4EAC0BBC77D1D59B96EE89D2",
+			"fromPinName": "BaseLayerColor",
+			"toNodeGuid": "BE1CCAAF4B74AC314782318630B5AE7E",
+			"toPinId": "778C43DD49B0B6B5794F4D8B6AF3655A",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "8A863B4F49AB933E49060ABE12A6FFD5",
+			"fromPinId": "E0C5860E440785BAABAD739AD7432E4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "BE1CCAAF4B74AC314782318630B5AE7E",
+			"toPinId": "D3017C104285E596E07E9383D4F63DD4",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "BE1CCAAF4B74AC314782318630B5AE7E",
+			"fromPinId": "46E8D63A476EB37D629C649B58A7B3BB",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "A9B355D7404EC8EA93EB529CCDDC421E",
+			"toPinId": "476457E14D3A06E68A187DAD471A208D",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "206BE86340E43C5ECF24F4A62EB8E03C",
+			"fromPinId": "8805999D4965791657FB2FBC4572B587",
+			"fromPinName": "UpperLegs",
+			"toNodeGuid": "A9B355D7404EC8EA93EB529CCDDC421E",
+			"toPinId": "F06A97E54418A25F05333E91CAA399C7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "0154D9DD460B0D323242F1A43097C407",
+			"fromPinId": "EC79C1604B72D70535ABDF9435F535F2",
+			"fromPinName": "LowerLegs",
+			"toNodeGuid": "A9B355D7404EC8EA93EB529CCDDC421E",
+			"toPinId": "F06A97E54418A25F05333E91CAA399C7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "695CBFD94BB111D7453BDFA3223FEE83",
+			"fromPinId": "08AE028F460A454023F1A8B174140EFE",
+			"fromPinName": "Feet",
+			"toNodeGuid": "A9B355D7404EC8EA93EB529CCDDC421E",
+			"toPinId": "F06A97E54418A25F05333E91CAA399C7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "84C45C18465A5A67A67E5BA2AAD834EE",
+			"fromPinId": "FC5779B242C8FB44875712B8C60E5DB4",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "95C5BFCA42FD9ABF84BDB9B5F06BF5DD",
+			"toPinId": "100EB9654CEE00757EDFCBB23914A340",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "3AFC75234EEDFDE017F3C78549F04E3C",
+			"fromPinId": "E0C5860E440785BAABAD739AD7432E4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "CDB87B4844A34D131E8715ADAE8F770A",
+			"toPinId": "ACBE4BC84D227D65F30DE1870DF967FF",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "2D03978F4390CFB3E6B112AE031D37DB",
+			"fromPinId": "FCF8586D4150D33C4366908EE31E0503",
+			"fromPinName": "AdditiveAmount_Color",
+			"toNodeGuid": "CDB87B4844A34D131E8715ADAE8F770A",
+			"toPinId": "F126FF434AF92C7017059DB9F2460CD8",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "5E78FC1C4F36B7AAEBBF6F9DAC63F7B6",
+			"fromPinId": "9C1796DF49C95409665F1A9D4F421FAF",
+			"fromPinName": "OverlayLayerColor",
+			"toNodeGuid": "CDB87B4844A34D131E8715ADAE8F770A",
+			"toPinId": "07D349C64514F2E9E3B0328D5EB2E905",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "CDB87B4844A34D131E8715ADAE8F770A",
+			"fromPinId": "21D86F4B41600BB75AE7679BE473034F",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "185C16E24C7D6A6F6A3012A3B44E3F4D",
+			"toPinId": "A7C09BB14431D550E79B41912973EF4E",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "EB630AD14AAD00309AF542B3D9B18761",
+			"fromPinId": "94902F0B4EAC0BBC77D1D59B96EE89D2",
+			"fromPinName": "BaseLayerColor",
+			"toNodeGuid": "185C16E24C7D6A6F6A3012A3B44E3F4D",
+			"toPinId": "778C43DD49B0B6B5794F4D8B6AF3655A",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "0D729B044A3449BE492250B841CB219F",
+			"fromPinId": "E0C5860E440785BAABAD739AD7432E4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "185C16E24C7D6A6F6A3012A3B44E3F4D",
+			"toPinId": "D3017C104285E596E07E9383D4F63DD4",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "185C16E24C7D6A6F6A3012A3B44E3F4D",
+			"fromPinId": "46E8D63A476EB37D629C649B58A7B3BB",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "95C5BFCA42FD9ABF84BDB9B5F06BF5DD",
+			"toPinId": "476457E14D3A06E68A187DAD471A208D",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "95C5BFCA42FD9ABF84BDB9B5F06BF5DD",
+			"fromPinId": "C7D1FD38429C2E56DCBB8380AEF59144",
+			"fromPinName": "then",
+			"toNodeGuid": "DF88040C417050A0239C9C890CC6BA37",
+			"toPinId": "77C9907D422FDA110D50D2993A666058",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "BD1781C640C3E4DEF5EA0FAF1FBE9E2B",
+			"fromPinId": "8F7826B0402B00221D512E87B5B919C7",
+			"fromPinName": "Shoulder_L",
+			"toNodeGuid": "95C5BFCA42FD9ABF84BDB9B5F06BF5DD",
+			"toPinId": "F06A97E54418A25F05333E91CAA399C7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "4FC4C1B345CA150DB250759DC1FAB48E",
+			"fromPinId": "E0D585104D36889BA396FCB8BC0D2D1A",
+			"fromPinName": "UpperArm_L",
+			"toNodeGuid": "95C5BFCA42FD9ABF84BDB9B5F06BF5DD",
+			"toPinId": "F06A97E54418A25F05333E91CAA399C7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "F0A2DE3E465E0F985D3E108546274220",
+			"fromPinId": "10D700FD49E1CBAB67727BA7FFDFAF56",
+			"fromPinName": "LowerArm_L",
+			"toNodeGuid": "95C5BFCA42FD9ABF84BDB9B5F06BF5DD",
+			"toPinId": "F06A97E54418A25F05333E91CAA399C7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "CB3E8A494487FC5542069EBB1971E1D4",
+			"fromPinId": "A3DE4C7E4FBC45C7398477B3265F068F",
+			"fromPinName": "Hand_L",
+			"toNodeGuid": "173E45A94D997E929C7C6A8AC31985EB",
+			"toPinId": "F06A97E54418A25F05333E91CAA399C7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "DF88040C417050A0239C9C890CC6BA37",
+			"fromPinId": "3A30FBB14DD51A294BA2828DC840FD12",
+			"fromPinName": "then",
+			"toNodeGuid": "173E45A94D997E929C7C6A8AC31985EB",
+			"toPinId": "100EB9654CEE00757EDFCBB23914A340",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "92A4057D499D2A2F131D82BB82EB10EF",
+			"fromPinId": "89E538114CE6BB1D6C509ABAE75188A9",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "173E45A94D997E929C7C6A8AC31985EB",
+			"toPinId": "476457E14D3A06E68A187DAD471A208D",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "714000C04DE32D81895FD7A2E30AD569",
+			"fromPinId": "01A3F02D4435A871DE2499BB4FAC885A",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "92A4057D499D2A2F131D82BB82EB10EF",
+			"toPinId": "42EC4B064BA0DE792F91EE98DED754F5",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "EF95877A46B4DDD29AA3469E2CA3EF87",
+			"fromPinId": "4A7ED0954047E6E4B34A8E91D1048F77",
+			"fromPinName": "HandIK_Color",
+			"toNodeGuid": "92A4057D499D2A2F131D82BB82EB10EF",
+			"toPinId": "27B5FF9E4852D761869795BCA5542BEB",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "169DD553434157FF0C26B49C6DDD4EF4",
+			"fromPinId": "E0C5860E440785BAABAD739AD7432E4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "92A4057D499D2A2F131D82BB82EB10EF",
+			"toPinId": "103FC7A8475E6423F05C7D8A266E7FA6",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "A0FF306543E3A402C2213C86B51C09B7",
+			"fromPinId": "C376D8784FBB0112329B51A7E80278E5",
+			"fromPinName": "Hand_Color",
+			"toNodeGuid": "714000C04DE32D81895FD7A2E30AD569",
+			"toPinId": "A9AA881C45C21C0B2BA168A21CEA6489",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "20A974404E3DC32927BE95979E7E9B79",
+			"fromPinId": "10D700FD49E1CBAB67727BA7FFDFAF56",
+			"fromPinName": "LowerArm_L",
+			"toNodeGuid": "DF88040C417050A0239C9C890CC6BA37",
+			"toPinId": "2C797E9647BDF68748DDC4BCCDDC5FB9",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "DF88040C417050A0239C9C890CC6BA37",
+			"fromPinId": "6A87FC2F44ACB646A80892AFC4B434C6",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "714000C04DE32D81895FD7A2E30AD569",
+			"toPinId": "ACC9960147BCA87F11A710BC7564270F",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "28BF3B464E44ED0646DF3694D2A53F20",
+			"fromPinId": "FC5779B242C8FB44875712B8C60E5DB4",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "6CA5B2DB4C1438A78A30E7A936E6DB9F",
+			"toPinId": "100EB9654CEE00757EDFCBB23914A340",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "A45B0CA54824E22EA175DEBF7006ED09",
+			"fromPinId": "E0C5860E440785BAABAD739AD7432E4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "0E8DB08D48DC39D1FC6F23B91B1086CA",
+			"toPinId": "ACBE4BC84D227D65F30DE1870DF967FF",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "39EE120B409F6D5B9940218ABE10636C",
+			"fromPinId": "FCF8586D4150D33C4366908EE31E0503",
+			"fromPinName": "AdditiveAmount_Color",
+			"toNodeGuid": "0E8DB08D48DC39D1FC6F23B91B1086CA",
+			"toPinId": "F126FF434AF92C7017059DB9F2460CD8",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "A2E0461C4EAAD399FA6FF980292685CB",
+			"fromPinId": "9C1796DF49C95409665F1A9D4F421FAF",
+			"fromPinName": "OverlayLayerColor",
+			"toNodeGuid": "0E8DB08D48DC39D1FC6F23B91B1086CA",
+			"toPinId": "07D349C64514F2E9E3B0328D5EB2E905",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "0E8DB08D48DC39D1FC6F23B91B1086CA",
+			"fromPinId": "21D86F4B41600BB75AE7679BE473034F",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "F2C1616641F830FD580DDFAFC9656540",
+			"toPinId": "A7C09BB14431D550E79B41912973EF4E",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "94DF8ABC492AD1B51A74988AC5111DAB",
+			"fromPinId": "94902F0B4EAC0BBC77D1D59B96EE89D2",
+			"fromPinName": "BaseLayerColor",
+			"toNodeGuid": "F2C1616641F830FD580DDFAFC9656540",
+			"toPinId": "778C43DD49B0B6B5794F4D8B6AF3655A",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "75CF256E4D2707B5041C28B49B9E6E4F",
+			"fromPinId": "E0C5860E440785BAABAD739AD7432E4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "F2C1616641F830FD580DDFAFC9656540",
+			"toPinId": "D3017C104285E596E07E9383D4F63DD4",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "F2C1616641F830FD580DDFAFC9656540",
+			"fromPinId": "46E8D63A476EB37D629C649B58A7B3BB",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "6CA5B2DB4C1438A78A30E7A936E6DB9F",
+			"toPinId": "476457E14D3A06E68A187DAD471A208D",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "6CA5B2DB4C1438A78A30E7A936E6DB9F",
+			"fromPinId": "C7D1FD38429C2E56DCBB8380AEF59144",
+			"fromPinName": "then",
+			"toNodeGuid": "800C861240F49939346CD1B75DCBE524",
+			"toPinId": "77C9907D422FDA110D50D2993A666058",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "70DFAC4F455ECCB4674A988A10CAB01D",
+			"fromPinId": "C8E5484B4361820412B79D93385E7E95",
+			"fromPinName": "Shoulder_R",
+			"toNodeGuid": "6CA5B2DB4C1438A78A30E7A936E6DB9F",
+			"toPinId": "F06A97E54418A25F05333E91CAA399C7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "426660B34833C43F3BFFCB9D229AF119",
+			"fromPinId": "47ED669849768EE3F625EC9B09B7AA14",
+			"fromPinName": "UpperArm_R",
+			"toNodeGuid": "6CA5B2DB4C1438A78A30E7A936E6DB9F",
+			"toPinId": "F06A97E54418A25F05333E91CAA399C7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "0207F8574F78559E40CB6683EA33A4B0",
+			"fromPinId": "C85D7FAA482F1837484B6DA1177A2DA1",
+			"fromPinName": "LowerArm_R",
+			"toNodeGuid": "6CA5B2DB4C1438A78A30E7A936E6DB9F",
+			"toPinId": "F06A97E54418A25F05333E91CAA399C7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "2E823A2346D164B155B05FA1AF853B2E",
+			"fromPinId": "E0C5860E440785BAABAD739AD7432E4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "714000C04DE32D81895FD7A2E30AD569",
+			"toPinId": "E10CCCCA4F646CCC5DF1268FBE99CE90",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "17CB0F544628390921EFE99C108BA29A",
+			"fromPinId": "A3DE4C7E4FBC45C7398477B3265F068F",
+			"fromPinName": "Hand_R",
+			"toNodeGuid": "46149E7F49AFEE16A75B87B75832A631",
+			"toPinId": "F06A97E54418A25F05333E91CAA399C7",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "exec",
+			"fromNodeGuid": "800C861240F49939346CD1B75DCBE524",
+			"fromPinId": "3A30FBB14DD51A294BA2828DC840FD12",
+			"fromPinName": "then",
+			"toNodeGuid": "46149E7F49AFEE16A75B87B75832A631",
+			"toPinId": "100EB9654CEE00757EDFCBB23914A340",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "C074F1144A0A97E5B81565ABC788BDD4",
+			"fromPinId": "89E538114CE6BB1D6C509ABAE75188A9",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "46149E7F49AFEE16A75B87B75832A631",
+			"toPinId": "476457E14D3A06E68A187DAD471A208D",
+			"toPinName": "Value"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "DEF010F34FDFB4C7F6369388736E1153",
+			"fromPinId": "01A3F02D4435A871DE2499BB4FAC885A",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "C074F1144A0A97E5B81565ABC788BDD4",
+			"toPinId": "42EC4B064BA0DE792F91EE98DED754F5",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "B4BBE33648A6EA97612619B389B673D4",
+			"fromPinId": "4A7ED0954047E6E4B34A8E91D1048F77",
+			"fromPinName": "HandIK_Color",
+			"toNodeGuid": "C074F1144A0A97E5B81565ABC788BDD4",
+			"toPinId": "27B5FF9E4852D761869795BCA5542BEB",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "ECDF30FF4FAF6728079D8481C8137F3E",
+			"fromPinId": "E0C5860E440785BAABAD739AD7432E4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "C074F1144A0A97E5B81565ABC788BDD4",
+			"toPinId": "103FC7A8475E6423F05C7D8A266E7FA6",
+			"toPinName": "Alpha"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "954D130345758701A3B3D6A43924D0F6",
+			"fromPinId": "C376D8784FBB0112329B51A7E80278E5",
+			"fromPinName": "Hand_Color",
+			"toNodeGuid": "DEF010F34FDFB4C7F6369388736E1153",
+			"toPinId": "A9AA881C45C21C0B2BA168A21CEA6489",
+			"toPinName": "B"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "583E714448C31BF8C30BB7BFFB440E6C",
+			"fromPinId": "07AA34F9403EA04D024B09B347BFCB3D",
+			"fromPinName": "LowerArm_R",
+			"toNodeGuid": "800C861240F49939346CD1B75DCBE524",
+			"toPinId": "2C797E9647BDF68748DDC4BCCDDC5FB9",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "800C861240F49939346CD1B75DCBE524",
+			"fromPinId": "6A87FC2F44ACB646A80892AFC4B434C6",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "DEF010F34FDFB4C7F6369388736E1153",
+			"toPinId": "ACC9960147BCA87F11A710BC7564270F",
+			"toPinName": "A"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
+			"graph": "UpdateLayeringColors",
+			"edgeType": "data",
+			"fromNodeGuid": "4E68030D4C96BACAA99E8CBB59BA5D74",
+			"fromPinId": "E0C5860E440785BAABAD739AD7432E4B",
+			"fromPinName": "ReturnValue",
+			"toNodeGuid": "DEF010F34FDFB4C7F6369388736E1153",
+			"toPinId": "E10CCCCA4F646CCC5DF1268FBE99CE90",
+			"toPinName": "Alpha"
+		}
+	],
+	"variablesRead": [
+		"Get AdditiveAmount_Color",
+		"Get BaseLayerColor",
+		"Get Feet",
+		"Get Hand_Color",
+		"Get Hand_L",
+		"Get Hand_R",
+		"Get HandIK_Color",
+		"Get Head",
+		"Get LowerArm_L",
+		"Get LowerArm_R",
+		"Get LowerLegs",
+		"Get OverlayLayerColor",
+		"Get Pelvis",
+		"Get Shoulder_L",
+		"Get Shoulder_R",
+		"Get Torso",
+		"Get UpperArm_L",
+		"Get UpperArm_R",
+		"Get UpperLegs"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Get Anim Curve Value",
+		"Get Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+		"Lerp (LinearColor)",
+		"Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Get Anim Curve Value",
+		"Get Vector Parameter Value\nLa destinazione è Dinamica istanza materiali",
+		"Lerp (LinearColor)",
+		"Set Vector Parameter Value\nLa destinazione è Dinamica istanza materiali"
+	],
+	"flowId": "F001",
+	"graphId": "G029",
+	"assetName": "ALS_ChuckBP",
+	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP"
+}

@@ -1,0 +1,1321 @@
+{
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+	"graph": "UpdateFootIK",
+	"entryName": "Update Foot IK",
+	"entryNodeGuid": "8FE823724E0758EAA75F47BAE61E2FED",
+	"nodes": [
+		{
+			"nodeGuid": "8FE823724E0758EAA75F47BAE61E2FED",
+			"class": "K2Node_FunctionEntry",
+			"title": "Update Foot IK",
+			"comment": "",
+			"x": 32,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B884BB744BFFA7405A562FB1FF74E26A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6663E76347152606C9A701BB298A9528",
+			"class": "K2Node_CallFunction",
+			"title": "Set Foot Locking\nLa destinazione è ALS Anim BP",
+			"comment": "",
+			"x": 224,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F53A433847287DF669DD47AD907F90DA",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F849AD50484F4B76EDABEC8ED89FAF3D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8AAA68EA4118D4B222E6D69D8F60D637",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5F18C0D145DEB546C14D7AAC355A1346",
+					"name": "Enable_FootIK_Curve",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Enable_FootIK_L"
+				},
+				{
+					"pinId": "0F49022E40D7FC6BAE89019BAF8CD51F",
+					"name": "FootLockCurve",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "FootLock_L"
+				},
+				{
+					"pinId": "4492C9AD42AC9C3E105ACBB855C8036E",
+					"name": "IKFootBone",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "ik_foot_l"
+				},
+				{
+					"pinId": "9800B7A8455CA990B156C5ABAD3BB837",
+					"name": "CurrentFootLockAlpha",
+					"direction": "Input",
+					"type": "real|double|ref",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "EADC56E6474192E9806F6D8AB84FECE3",
+					"name": "CurrentFootLockLocation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector|ref",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "7B246B054B78968A30494487993742C0",
+					"name": "CurrentFootLockRotation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator|ref",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "8058CFB2458CF4C34E92AABEFD040777",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootLock_L_Alpha",
+			"comment": "",
+			"x": 32,
+			"y": 272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C47180874D27882914474482144820CB",
+					"name": "FootLock_L_Alpha",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "89902BA24AF5FBE16B6A25B9EB1D95E2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F84C098A4C3D4349232A0BBA541E2AA8",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootLock_L_Location",
+			"comment": "",
+			"x": 32,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "58325E0E442FA6D46411EE92F770A27E",
+					"name": "FootLock_L_Location",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "5BCEC2A247B02B7DE2776A99FC41E9CC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B29B850D4234F4B62F7AA1AAEAF6F77B",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootLock_L_Rotation",
+			"comment": "",
+			"x": 32,
+			"y": 336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B69758DD4789199FD22D8C8ABFCC25A3",
+					"name": "FootLock_L_Rotation",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "2A9F6F1E41BB26FB8503259901F9C551",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "18344C0C45A1B7543F45E4BEBC4D604C",
+			"class": "K2Node_CallFunction",
+			"title": "Set Foot Locking\nLa destinazione è ALS Anim BP",
+			"comment": "",
+			"x": 656,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "F53A433847287DF669DD47AD907F90DA",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F849AD50484F4B76EDABEC8ED89FAF3D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8AAA68EA4118D4B222E6D69D8F60D637",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1A5CFBE843C71480F2C82CB1560E23F2",
+					"name": "Enable_FootIK_Curve",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Enable_FootIK_R"
+				},
+				{
+					"pinId": "0F49022E40D7FC6BAE89019BAF8CD51F",
+					"name": "FootLockCurve",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "FootLock_R"
+				},
+				{
+					"pinId": "4492C9AD42AC9C3E105ACBB855C8036E",
+					"name": "IKFootBone",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "ik_foot_r"
+				},
+				{
+					"pinId": "9800B7A8455CA990B156C5ABAD3BB837",
+					"name": "CurrentFootLockAlpha",
+					"direction": "Input",
+					"type": "real|double|ref",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "EADC56E6474192E9806F6D8AB84FECE3",
+					"name": "CurrentFootLockLocation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector|ref",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "7B246B054B78968A30494487993742C0",
+					"name": "CurrentFootLockRotation",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator|ref",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "E39491614A352D1850DBE69DA02AEE95",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootLock_R_Alpha",
+			"comment": "",
+			"x": 464,
+			"y": 272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C47180874D27882914474482144820CB",
+					"name": "FootLock_R_Alpha",
+					"direction": "Output",
+					"type": "real|double",
+					"defaultValue": "0.0"
+				},
+				{
+					"pinId": "89902BA24AF5FBE16B6A25B9EB1D95E2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "1067527246811F12D97320B0D13FDB5F",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootLock_R_Location",
+			"comment": "",
+			"x": 464,
+			"y": 304,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "58325E0E442FA6D46411EE92F770A27E",
+					"name": "FootLock_R_Location",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "5BCEC2A247B02B7DE2776A99FC41E9CC",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "547AFCBE4B205E99C9E3148F2B77B5CF",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootLock_R_Rotation",
+			"comment": "",
+			"x": 464,
+			"y": 336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B69758DD4789199FD22D8C8ABFCC25A3",
+					"name": "FootLock_R_Rotation",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "2A9F6F1E41BB26FB8503259901F9C551",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "31A26BE34DC94F9D142E9DB53303F58D",
+			"class": "K2Node_CallFunction",
+			"title": "Set Foot Offsets\nLa destinazione è ALS Anim BP",
+			"comment": "",
+			"x": 1536,
+			"y": -64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "650DBF9F49D0A2ADE33B3696C869A54F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AFBA1A3544F1FD05230E3090133A1702",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EA9672514A206FC073764D8A6B386EF7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BDA613A3425DF521E7675FA076DF07FF",
+					"name": "Enable_FootIK_Curve",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Enable_FootIK_L"
+				},
+				{
+					"pinId": "02C92E1F4DE9EEEB88F64B9336AC1AA5",
+					"name": "IKFootBone",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "ik_foot_l"
+				},
+				{
+					"pinId": "CC0791484BE95D725FF790AF0C275AA1",
+					"name": "RootBone",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "root"
+				},
+				{
+					"pinId": "DDF7100B4947CC612FC4429194274C70",
+					"name": "CurrentLocationTarget",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector|ref",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "BECAFB8E4DBA123C5F1A15ADB3F2BD3C",
+					"name": "CurrentLocationOffset",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector|ref",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "10CC0C2C479EE88F81BE34A2A45FC3C5",
+					"name": "CurrentRotationOffset",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator|ref",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "9AB88D5F498C43875154B38A6F93274A",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootOffset_L_Location",
+			"comment": "",
+			"x": 1344,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DEFE89B94A9A5695352A55BA4A1547BD",
+					"name": "FootOffset_L_Location",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "A9F5BC804F0E8952E392229492DB8171",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "E302C9E94AE5A7CAFC26F689C5FFF228",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootOffset_L_Rotation",
+			"comment": "",
+			"x": 1344,
+			"y": 192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "54EA985E4310DA715E522491A255AA47",
+					"name": "FootOffset_L_Rotation",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "04593E694A3B3A393DCEA78E5E677520",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "C096077E4BBBF89AE8096E974BBD4C4C",
+			"class": "K2Node_CallFunction",
+			"title": "Set Foot Offsets\nLa destinazione è ALS Anim BP",
+			"comment": "",
+			"x": 1968,
+			"y": -64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "650DBF9F49D0A2ADE33B3696C869A54F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "AFBA1A3544F1FD05230E3090133A1702",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "EA9672514A206FC073764D8A6B386EF7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0853D96F46F7E385C6E15CAFA6BF5F23",
+					"name": "Enable_FootIK_Curve",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "Enable_FootIK_R"
+				},
+				{
+					"pinId": "02C92E1F4DE9EEEB88F64B9336AC1AA5",
+					"name": "IKFootBone",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "ik_foot_r"
+				},
+				{
+					"pinId": "CC0791484BE95D725FF790AF0C275AA1",
+					"name": "RootBone",
+					"direction": "Input",
+					"type": "name",
+					"defaultValue": "root"
+				},
+				{
+					"pinId": "A287813B48C4D656DACE37B108DBD473",
+					"name": "CurrentLocationTarget",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector|ref",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "BECAFB8E4DBA123C5F1A15ADB3F2BD3C",
+					"name": "CurrentLocationOffset",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector|ref",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "10CC0C2C479EE88F81BE34A2A45FC3C5",
+					"name": "CurrentRotationOffset",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Rotator|ref",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "02B2A8814D7242177250C380851AA004",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootOffset_R_Location",
+			"comment": "",
+			"x": 1776,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DEFE89B94A9A5695352A55BA4A1547BD",
+					"name": "FootOffset_R_Location",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "A9F5BC804F0E8952E392229492DB8171",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "468A002944BF54BC689FF0BEB0AEEED3",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootOffset_R_Rotation",
+			"comment": "",
+			"x": 1776,
+			"y": 192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "54EA985E4310DA715E522491A255AA47",
+					"name": "FootOffset_R_Rotation",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Rotator",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "04593E694A3B3A393DCEA78E5E677520",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "22432AE04881208BA46AEF9702F77854",
+			"class": "K2Node_SwitchEnum",
+			"title": "Switch on ALS_MovementState",
+			"comment": "",
+			"x": 992,
+			"y": 80,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B70374704B36AC3439699383B551B17C",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D025862849D818AF011C89888EFA824A",
+					"name": "Selection",
+					"direction": "Input",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "9F0E30F848ED651B7925EDA566D652EC",
+					"name": "NotEqual_ByteByte",
+					"direction": "Input",
+					"type": "object|/Script/Engine.KismetMathLibrary",
+					"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+				},
+				{
+					"pinId": "016E07634FD9FBD713222AA65A6D6D19",
+					"name": "NewEnumerator0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8D3D0BB54500B2AA99092BA882DDDD0E",
+					"name": "NewEnumerator1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7D16984C4F3253B2FA688FBB52FC7A25",
+					"name": "NewEnumerator2",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "642C6F2D4B86BE6F64E64794564DF415",
+					"name": "NewEnumerator4",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "A28732494CDB281F7AD8D4960623C155",
+					"name": "NewEnumerator3",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "9C31F8DB43F4A7377015D197793DA81A",
+			"class": "K2Node_VariableGet",
+			"title": "Get MovementState",
+			"comment": "",
+			"x": 992,
+			"y": 240,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "787B60434381FC05552FC9923A857AD1",
+					"name": "MovementState",
+					"direction": "Output",
+					"type": "byte|/Game/AdditionalContents/AdvancedLocomotionV4/Data/Enums/ALS_MovementState.ALS_MovementState",
+					"defaultValue": "NewEnumerator0"
+				},
+				{
+					"pinId": "C096A44E4EF1AE2A9CEC06BB28E98814",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "3D82926643854930A3616F8EB3B947F2",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootOffset_L_Target",
+			"comment": "",
+			"x": 1344,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1F0B27F741A4B0766723DABDF19F460C",
+					"name": "FootOffset_L_Target",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "272767844259E35B29AC5CADA7214200",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootOffset_R_Target",
+			"comment": "",
+			"x": 1776,
+			"y": 128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "BAAACB7F4A6E67CEB8094FA7E86154A7",
+					"name": "FootOffset_R_Target",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "4C09557C497C4647C4715B8903E1A6E0",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1328,
+			"y": -16,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "9C6AE3DF4FBB04946FD65F88BF549175",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2161793641AA3CEF93A3849CC1DED66F",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "978AEF0E4DEB8A8EC58B10A51866C2BC",
+			"class": "K2Node_CallFunction",
+			"title": "Set Pelvis IKOffset\nLa destinazione è ALS Anim BP",
+			"comment": "",
+			"x": 2400,
+			"y": -64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "643B067C4F7FA278D712C4AFAE91DF49",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9764311A469CB5DB6B991E8B00A24D91",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B938952F45305098150172A2EBEA9DE2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5F38DB204A38CBC9AA3CDBABB3A3C851",
+					"name": "FootOffset_L_Target",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "13B5EB5A4AD7E08DF66D50815687D75A",
+					"name": "FootOffset_R_Target",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "BF94FB7745E448696277298795F564BC",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootOffset_L_Target",
+			"comment": "",
+			"x": 2208,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6BE51952492FD42E13216485E1AD54EB",
+					"name": "FootOffset_L_Target",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "4141E4484F1952A90496FE8AEDA8F594",
+			"class": "K2Node_VariableGet",
+			"title": "Get FootOffset_R_Target",
+			"comment": "",
+			"x": 2208,
+			"y": 64,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "11BAA93446A2C59E803AF1BD86E753FB",
+					"name": "FootOffset_R_Target",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "4D8BF79E4DDB66C77CC9E5B100538D6E",
+			"class": "EdGraphNode_Comment",
+			"title": "Update all Foot Lock and Foot Offset values when not In Air",
+			"comment": "Update all Foot Lock and Foot Offset values when not In Air",
+			"x": 1312,
+			"y": -128,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "D74831A34CE81241DB95288E1B8C98B2",
+			"class": "EdGraphNode_Comment",
+			"title": "Reset IK Offsets if In Air",
+			"comment": "Reset IK Offsets if In Air",
+			"x": 1312,
+			"y": 272,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "984A08944F4A7E3A810358993F978CB7",
+			"class": "EdGraphNode_Comment",
+			"title": "Update Foot Locking values.",
+			"comment": "Update Foot Locking values.",
+			"x": 0,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": []
+		},
+		{
+			"nodeGuid": "9BE11D6C460398E034F29E8E79C9D338",
+			"class": "K2Node_CallFunction",
+			"title": "Set Pelvis IKOffset\nLa destinazione è ALS Anim BP",
+			"comment": "",
+			"x": 1344,
+			"y": 336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "643B067C4F7FA278D712C4AFAE91DF49",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9764311A469CB5DB6B991E8B00A24D91",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B938952F45305098150172A2EBEA9DE2",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5F38DB204A38CBC9AA3CDBABB3A3C851",
+					"name": "FootOffset_L_Target",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "13B5EB5A4AD7E08DF66D50815687D75A",
+					"name": "FootOffset_R_Target",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "EA4568BB4902F0F9C2684EA0A9C21BD9",
+			"class": "K2Node_CallFunction",
+			"title": "Reset IKOffsets\nLa destinazione è ALS Anim BP",
+			"comment": "",
+			"x": 1600,
+			"y": 336,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "7DE4020347DADCEC786ADC8E1119EDF2",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "673FA4914538AF408E93BFB1CD92847A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D9CD60D648FD4719B905988CDE524D27",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "exec",
+			"fromNodeGuid": "8FE823724E0758EAA75F47BAE61E2FED",
+			"fromPinId": "B884BB744BFFA7405A562FB1FF74E26A",
+			"fromPinName": "then",
+			"toNodeGuid": "6663E76347152606C9A701BB298A9528",
+			"toPinId": "F53A433847287DF669DD47AD907F90DA",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "exec",
+			"fromNodeGuid": "6663E76347152606C9A701BB298A9528",
+			"fromPinId": "F849AD50484F4B76EDABEC8ED89FAF3D",
+			"fromPinName": "then",
+			"toNodeGuid": "18344C0C45A1B7543F45E4BEBC4D604C",
+			"toPinId": "F53A433847287DF669DD47AD907F90DA",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "data",
+			"fromNodeGuid": "8058CFB2458CF4C34E92AABEFD040777",
+			"fromPinId": "C47180874D27882914474482144820CB",
+			"fromPinName": "FootLock_L_Alpha",
+			"toNodeGuid": "6663E76347152606C9A701BB298A9528",
+			"toPinId": "9800B7A8455CA990B156C5ABAD3BB837",
+			"toPinName": "CurrentFootLockAlpha"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "data",
+			"fromNodeGuid": "F84C098A4C3D4349232A0BBA541E2AA8",
+			"fromPinId": "58325E0E442FA6D46411EE92F770A27E",
+			"fromPinName": "FootLock_L_Location",
+			"toNodeGuid": "6663E76347152606C9A701BB298A9528",
+			"toPinId": "EADC56E6474192E9806F6D8AB84FECE3",
+			"toPinName": "CurrentFootLockLocation"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "data",
+			"fromNodeGuid": "B29B850D4234F4B62F7AA1AAEAF6F77B",
+			"fromPinId": "B69758DD4789199FD22D8C8ABFCC25A3",
+			"fromPinName": "FootLock_L_Rotation",
+			"toNodeGuid": "6663E76347152606C9A701BB298A9528",
+			"toPinId": "7B246B054B78968A30494487993742C0",
+			"toPinName": "CurrentFootLockRotation"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "exec",
+			"fromNodeGuid": "18344C0C45A1B7543F45E4BEBC4D604C",
+			"fromPinId": "F849AD50484F4B76EDABEC8ED89FAF3D",
+			"fromPinName": "then",
+			"toNodeGuid": "22432AE04881208BA46AEF9702F77854",
+			"toPinId": "B70374704B36AC3439699383B551B17C",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "data",
+			"fromNodeGuid": "E39491614A352D1850DBE69DA02AEE95",
+			"fromPinId": "C47180874D27882914474482144820CB",
+			"fromPinName": "FootLock_R_Alpha",
+			"toNodeGuid": "18344C0C45A1B7543F45E4BEBC4D604C",
+			"toPinId": "9800B7A8455CA990B156C5ABAD3BB837",
+			"toPinName": "CurrentFootLockAlpha"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "data",
+			"fromNodeGuid": "1067527246811F12D97320B0D13FDB5F",
+			"fromPinId": "58325E0E442FA6D46411EE92F770A27E",
+			"fromPinName": "FootLock_R_Location",
+			"toNodeGuid": "18344C0C45A1B7543F45E4BEBC4D604C",
+			"toPinId": "EADC56E6474192E9806F6D8AB84FECE3",
+			"toPinName": "CurrentFootLockLocation"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "data",
+			"fromNodeGuid": "547AFCBE4B205E99C9E3148F2B77B5CF",
+			"fromPinId": "B69758DD4789199FD22D8C8ABFCC25A3",
+			"fromPinName": "FootLock_R_Rotation",
+			"toNodeGuid": "18344C0C45A1B7543F45E4BEBC4D604C",
+			"toPinId": "7B246B054B78968A30494487993742C0",
+			"toPinName": "CurrentFootLockRotation"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "exec",
+			"fromNodeGuid": "4C09557C497C4647C4715B8903E1A6E0",
+			"fromPinId": "2161793641AA3CEF93A3849CC1DED66F",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "31A26BE34DC94F9D142E9DB53303F58D",
+			"toPinId": "650DBF9F49D0A2ADE33B3696C869A54F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "exec",
+			"fromNodeGuid": "31A26BE34DC94F9D142E9DB53303F58D",
+			"fromPinId": "AFBA1A3544F1FD05230E3090133A1702",
+			"fromPinName": "then",
+			"toNodeGuid": "C096077E4BBBF89AE8096E974BBD4C4C",
+			"toPinId": "650DBF9F49D0A2ADE33B3696C869A54F",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "data",
+			"fromNodeGuid": "3D82926643854930A3616F8EB3B947F2",
+			"fromPinId": "1F0B27F741A4B0766723DABDF19F460C",
+			"fromPinName": "FootOffset_L_Target",
+			"toNodeGuid": "31A26BE34DC94F9D142E9DB53303F58D",
+			"toPinId": "DDF7100B4947CC612FC4429194274C70",
+			"toPinName": "CurrentLocationTarget"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "data",
+			"fromNodeGuid": "9AB88D5F498C43875154B38A6F93274A",
+			"fromPinId": "DEFE89B94A9A5695352A55BA4A1547BD",
+			"fromPinName": "FootOffset_L_Location",
+			"toNodeGuid": "31A26BE34DC94F9D142E9DB53303F58D",
+			"toPinId": "BECAFB8E4DBA123C5F1A15ADB3F2BD3C",
+			"toPinName": "CurrentLocationOffset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "data",
+			"fromNodeGuid": "E302C9E94AE5A7CAFC26F689C5FFF228",
+			"fromPinId": "54EA985E4310DA715E522491A255AA47",
+			"fromPinName": "FootOffset_L_Rotation",
+			"toNodeGuid": "31A26BE34DC94F9D142E9DB53303F58D",
+			"toPinId": "10CC0C2C479EE88F81BE34A2A45FC3C5",
+			"toPinName": "CurrentRotationOffset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "exec",
+			"fromNodeGuid": "C096077E4BBBF89AE8096E974BBD4C4C",
+			"fromPinId": "AFBA1A3544F1FD05230E3090133A1702",
+			"fromPinName": "then",
+			"toNodeGuid": "978AEF0E4DEB8A8EC58B10A51866C2BC",
+			"toPinId": "643B067C4F7FA278D712C4AFAE91DF49",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "data",
+			"fromNodeGuid": "272767844259E35B29AC5CADA7214200",
+			"fromPinId": "BAAACB7F4A6E67CEB8094FA7E86154A7",
+			"fromPinName": "FootOffset_R_Target",
+			"toNodeGuid": "C096077E4BBBF89AE8096E974BBD4C4C",
+			"toPinId": "A287813B48C4D656DACE37B108DBD473",
+			"toPinName": "CurrentLocationTarget"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "data",
+			"fromNodeGuid": "02B2A8814D7242177250C380851AA004",
+			"fromPinId": "DEFE89B94A9A5695352A55BA4A1547BD",
+			"fromPinName": "FootOffset_R_Location",
+			"toNodeGuid": "C096077E4BBBF89AE8096E974BBD4C4C",
+			"toPinId": "BECAFB8E4DBA123C5F1A15ADB3F2BD3C",
+			"toPinName": "CurrentLocationOffset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "data",
+			"fromNodeGuid": "468A002944BF54BC689FF0BEB0AEEED3",
+			"fromPinId": "54EA985E4310DA715E522491A255AA47",
+			"fromPinName": "FootOffset_R_Rotation",
+			"toNodeGuid": "C096077E4BBBF89AE8096E974BBD4C4C",
+			"toPinId": "10CC0C2C479EE88F81BE34A2A45FC3C5",
+			"toPinName": "CurrentRotationOffset"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "data",
+			"fromNodeGuid": "9C31F8DB43F4A7377015D197793DA81A",
+			"fromPinId": "787B60434381FC05552FC9923A857AD1",
+			"fromPinName": "MovementState",
+			"toNodeGuid": "22432AE04881208BA46AEF9702F77854",
+			"toPinId": "D025862849D818AF011C89888EFA824A",
+			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "exec",
+			"fromNodeGuid": "22432AE04881208BA46AEF9702F77854",
+			"fromPinId": "016E07634FD9FBD713222AA65A6D6D19",
+			"fromPinName": "NewEnumerator0",
+			"toNodeGuid": "4C09557C497C4647C4715B8903E1A6E0",
+			"toPinId": "9C6AE3DF4FBB04946FD65F88BF549175",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "exec",
+			"fromNodeGuid": "22432AE04881208BA46AEF9702F77854",
+			"fromPinId": "8D3D0BB54500B2AA99092BA882DDDD0E",
+			"fromPinName": "NewEnumerator1",
+			"toNodeGuid": "4C09557C497C4647C4715B8903E1A6E0",
+			"toPinId": "9C6AE3DF4FBB04946FD65F88BF549175",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "exec",
+			"fromNodeGuid": "22432AE04881208BA46AEF9702F77854",
+			"fromPinId": "7D16984C4F3253B2FA688FBB52FC7A25",
+			"fromPinName": "NewEnumerator2",
+			"toNodeGuid": "9BE11D6C460398E034F29E8E79C9D338",
+			"toPinId": "643B067C4F7FA278D712C4AFAE91DF49",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "exec",
+			"fromNodeGuid": "22432AE04881208BA46AEF9702F77854",
+			"fromPinId": "642C6F2D4B86BE6F64E64794564DF415",
+			"fromPinName": "NewEnumerator4",
+			"toNodeGuid": "4C09557C497C4647C4715B8903E1A6E0",
+			"toPinId": "9C6AE3DF4FBB04946FD65F88BF549175",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "data",
+			"fromNodeGuid": "BF94FB7745E448696277298795F564BC",
+			"fromPinId": "6BE51952492FD42E13216485E1AD54EB",
+			"fromPinName": "FootOffset_L_Target",
+			"toNodeGuid": "978AEF0E4DEB8A8EC58B10A51866C2BC",
+			"toPinId": "5F38DB204A38CBC9AA3CDBABB3A3C851",
+			"toPinName": "FootOffset_L_Target"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "data",
+			"fromNodeGuid": "4141E4484F1952A90496FE8AEDA8F594",
+			"fromPinId": "11BAA93446A2C59E803AF1BD86E753FB",
+			"fromPinName": "FootOffset_R_Target",
+			"toNodeGuid": "978AEF0E4DEB8A8EC58B10A51866C2BC",
+			"toPinId": "13B5EB5A4AD7E08DF66D50815687D75A",
+			"toPinName": "FootOffset_R_Target"
+		},
+		{
+			"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_CharacterAssets_MannequinSkeleton_ALS_AnimBP",
+			"graph": "UpdateFootIK",
+			"edgeType": "exec",
+			"fromNodeGuid": "9BE11D6C460398E034F29E8E79C9D338",
+			"fromPinId": "9764311A469CB5DB6B991E8B00A24D91",
+			"fromPinName": "then",
+			"toNodeGuid": "EA4568BB4902F0F9C2684EA0A9C21BD9",
+			"toPinId": "7DE4020347DADCEC786ADC8E1119EDF2",
+			"toPinName": "execute"
+		}
+	],
+	"variablesRead": [
+		"Get FootLock_L_Alpha",
+		"Get FootLock_L_Location",
+		"Get FootLock_L_Rotation",
+		"Get FootLock_R_Alpha",
+		"Get FootLock_R_Location",
+		"Get FootLock_R_Rotation",
+		"Get FootOffset_L_Location",
+		"Get FootOffset_L_Rotation",
+		"Get FootOffset_L_Target",
+		"Get FootOffset_R_Location",
+		"Get FootOffset_R_Rotation",
+		"Get FootOffset_R_Target",
+		"Get MovementState"
+	],
+	"variablesWritten": [],
+	"functionsCalled": [
+		"Reset IKOffsets\nLa destinazione è ALS Anim BP",
+		"Set Foot Locking\nLa destinazione è ALS Anim BP",
+		"Set Foot Offsets\nLa destinazione è ALS Anim BP",
+		"Set Pelvis IKOffset\nLa destinazione è ALS Anim BP"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Reset IKOffsets\nLa destinazione è ALS Anim BP",
+		"Set Foot Locking\nLa destinazione è ALS Anim BP",
+		"Set Foot Offsets\nLa destinazione è ALS Anim BP",
+		"Set Pelvis IKOffset\nLa destinazione è ALS Anim BP"
+	],
+	"flowId": "F001",
+	"graphId": "G313",
+	"assetName": "ALS_AnimBP",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/ALS_AnimBP.ALS_AnimBP"
+}

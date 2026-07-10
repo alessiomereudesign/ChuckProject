@@ -1,0 +1,111 @@
+{
+	"schemaVersion": "2.5-ai-readable-short-paths",
+	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"assetName": "MovementAction_NotifyState",
+	"assetPath": "/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/AnimNotifys/MovementAction_NotifyState.MovementAction_NotifyState",
+	"assetKey": "Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_AnimNotifys_MovementAction_NotifyState",
+	"shortAssetFolder": "MovementAction_NotifyState__0C9A12FE",
+	"pathHash": "0C9A12FE",
+	"assetType": "Blueprint",
+	"unrealClass": "Blueprint",
+	"parentClass": "/Script/Engine.AnimNotifyState",
+	"implementedInterfaces": [],
+	"compileStatus": "UpToDate",
+	"counts":
+	{
+		"variables": 1,
+		"components": 4,
+		"widgets": 0,
+		"graphs": 3,
+		"nodes": 21,
+		"edges": 21,
+		"flows": 3
+	},
+	"files":
+	{
+		"summary": "Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/SUMMARY.md",
+		"variables": "Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/VARIABLES.json",
+		"components": "Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/COMPONENTS.json",
+		"widgetTree": "Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/WIDGET_TREE.json",
+		"nodes": "Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/NODES.jsonl",
+		"edges": "Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/EDGES.jsonl",
+		"search": "Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/SEARCH.jsonl"
+	},
+	"graphs": [
+		{
+			"graphId": "G001",
+			"name": "GetNotifyName",
+			"graphName": "GetNotifyName",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 5,
+			"edgeCount": 4,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Graphs/G001/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Graphs/G001/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Graphs/G001/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Get Notify Name",
+					"entryNodeGuid": "67990A994B2437611A4A31BF9ECDD8D1",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Flows/G001/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Flows/G001/F001.json",
+					"textFile": "Flows/G001/F001.txt",
+					"jsonFile": "Flows/G001/F001.json",
+					"nodeCount": 5
+				}
+			]
+		},
+		{
+			"graphId": "G002",
+			"name": "Received_NotifyBegin",
+			"graphName": "Received_NotifyBegin",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 5,
+			"edgeCount": 5,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Graphs/G002/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Graphs/G002/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Graphs/G002/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Received Notify Begin",
+					"entryNodeGuid": "7167050C4A3494E721E92EB33950C2B3",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Flows/G002/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Flows/G002/F001.json",
+					"textFile": "Flows/G002/F001.txt",
+					"jsonFile": "Flows/G002/F001.json",
+					"nodeCount": 5
+				}
+			]
+		},
+		{
+			"graphId": "G003",
+			"name": "Received_NotifyEnd",
+			"graphName": "Received_NotifyEnd",
+			"type": "Function",
+			"graphType": "Function",
+			"graphGuid": "",
+			"nodeCount": 11,
+			"edgeCount": 12,
+			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Graphs/G003/INDEX.json",
+			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Graphs/G003/NODES.jsonl",
+			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Graphs/G003/EDGES.jsonl",
+			"flows": [
+				{
+					"flowId": "F001",
+					"entryName": "Received Notify End",
+					"entryNodeGuid": "20F6F3834AB5E8D383C2F5AA3D4C52CD",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Flows/G003/F001.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/MovementAction_NotifyState__0C9A12FE/Flows/G003/F001.json",
+					"textFile": "Flows/G003/F001.txt",
+					"jsonFile": "Flows/G003/F001.json",
+					"nodeCount": 11
+				}
+			]
+		}
+	]
+}

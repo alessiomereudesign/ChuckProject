@@ -1,0 +1,25 @@
+{
+	"graphId": "G001",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 17,
+	"edgeCount": 23,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "ShowTip_1\nCustom Event",
+			"entryNodeGuid": "DE3B296D4259410A8BBEE2974B6030C3",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 17
+		}
+	]
+}

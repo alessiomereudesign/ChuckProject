@@ -1,0 +1,14 @@
+{
+	"graphId": "G320",
+	"name": "GetAnimCurve_Compact",
+	"graphName": "GetAnimCurve_Compact",
+	"type": "Macro",
+	"graphType": "Macro",
+	"graphGuid": "",
+	"nodeCount": 3,
+	"edgeCount": 2,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G320/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G320/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G320/EDGES.jsonl",
+	"flows": []
+}

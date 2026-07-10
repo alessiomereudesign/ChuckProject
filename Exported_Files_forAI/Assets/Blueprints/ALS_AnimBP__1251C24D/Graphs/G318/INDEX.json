@@ -1,0 +1,25 @@
+{
+	"graphId": "G318",
+	"name": "UpdateRotationValues",
+	"graphName": "UpdateRotationValues",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 21,
+	"edgeCount": 21,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G318/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G318/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Graphs/G318/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Update Rotation Values",
+			"entryNodeGuid": "8E3E9D134C8DCF1A06E2B990F72CBC6F",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G318/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_AnimBP__1251C24D/Flows/G318/F001.json",
+			"textFile": "Flows/G318/F001.txt",
+			"jsonFile": "Flows/G318/F001.json",
+			"nodeCount": 21
+		}
+	]
+}

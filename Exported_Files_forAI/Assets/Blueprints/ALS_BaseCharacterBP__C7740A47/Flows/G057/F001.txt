@@ -1,0 +1,129 @@
+Asset: ALS_BaseCharacterBP
+AssetPath: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP
+AssetKey: Game_AdditionalContents_AdvancedLocomotionV4_Blueprints_CharacterLogic_ALS_BaseCharacterBP
+GraphId: G057
+Graph: UpdateGroudedRotation
+FlowId: F001
+Entry: Update Grouded Rotation
+NodeGuid: E0F743BB4D6218BE6955269A7023083E
+
+Exec Flow:
+1. Update Grouded Rotation [K2Node_FunctionEntry] E0F743BB4D6218BE6955269A7023083E
+2. Switch on ALS_RotationMode [K2Node_SwitchEnum] D2EC256F461AE580E311E09A4E58EE36
+3. Get RotationMode [K2Node_VariableGet] 190567C8457ADEBDA180879A3D41BDE6
+4. Limit Rotation
+La destinazione è ALS Base Character BP [K2Node_CallFunction] F086C9B3441C52361AB3628A194B3A32
+5. Switch on ALS_RotationMode [K2Node_SwitchEnum] 7F743A9E467DB63DAE3BA493D77A6180
+6. Get RotationMode [K2Node_VariableGet] 869CCF7B480FB6D065256A98FD82F9A4
+7. float * float [K2Node_CommutativeAssociativeBinaryOperator] D92E44A54B1F51D1D0C3D4940E1F72F5
+8. float / float [K2Node_CallFunction] EF3D9934450427C0829509A62382C6B9
+9. float / float [K2Node_CallFunction] B0B76FCF4667473D30C510B93EC34F6B
+10. Ramo [K2Node_IfThenElse] 52E0E599425A8A374BBB069C1242E131
+11. Calculate Grounded Rotation Rate [K2Node_CallFunction] DCA3784544CCF36DE1AF9F87F31D0CFE
+12. Smooth Character Rotation
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 56D32FA34730F9448759C2A9A5B22879
+13. float + float [K2Node_CommutativeAssociativeBinaryOperator] E7F32BBE498F0B09C6EAB3BD1EB4BE57
+14. Get Control Rotation
+La destinazione è Pedina [K2Node_CallFunction] 28B0959F4A376BED6FA9E6BBFF663820
+15. Ottieni [K2Node_VariableGet] 7327B1714303FC5B3899D9B540BC08B7
+16. Calculate Grounded Rotation Rate [K2Node_CallFunction] F9C56268428594649C995FBBD45B31A5
+17. Smooth Character Rotation
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 4362AFF5482A2B86426CAFB6EAB4E19C
+18. Smooth Character Rotation
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 5B692818413AF02143BDBF933FFEF04C
+19. Ottieni [K2Node_VariableGet] 0FEBE971429A9E3A69CEB6A999B85FD3
+20. Ramo [K2Node_IfThenElse] DC281FAC475FB334629C189B9B92A66A
+21. Get HasMovementInput [K2Node_VariableGet] 55130347407D5DECABF8F5A227129181
+22. Get ViewMode [K2Node_VariableGet] 66C05C7041B9E606246016B21CCFBD49
+23. Switch on ALS_ViewMode [K2Node_SwitchEnum] C49B42644E702AA42FE5E7813B209679
+24. Get Anim Curve Value [K2Node_CallFunction] 3D5A893549FD8237A01A5488B34AC522
+25. Nodo di reindirizzamento [K2Node_Knot] 88043A824E6EF8D236A67BB758819647
+26. Get Anim Curve Value [K2Node_CallFunction] FEC1F5A9418789EF144C7496C4526F35
+27. float > float [K2Node_CallFunction] 148A630543F0A3664D44F3BBCF690B99
+28. Nodo di reindirizzamento [K2Node_Knot] C0AA43DE4D8F225F774281B9BD65B5BE
+29. Nodo di reindirizzamento [K2Node_Knot] A22DEFD64E13D51FD2B7AE8918E1FB31
+30. Absolute (Float) [K2Node_CallFunction] 8ED77B0E460F05057D2EAE910844B4D9
+31. Switch on ALS_Gait [K2Node_SwitchEnum] 319634C74DE47CC2F7BB8A85FF777F6A
+32. Get Gait [K2Node_VariableGet] 34F1A060494B0CCDF8BDDEAB9E8E30DC
+33. Ottieni [K2Node_VariableGet] 16D5B64D4C522C58FB8E319DF7C18471
+34. Calculate Grounded Rotation Rate [K2Node_CallFunction] 72FE1ACE49AAFB5B4D90EC8496B401BA
+35. Smooth Character Rotation
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 91371F544B4FA3045A96A6B6F7A759D8
+36. Nodo di reindirizzamento [K2Node_Knot] A32E4013436E679CF16733886411DF4D
+37. Calculate Grounded Rotation Rate [K2Node_CallFunction] AAEA97834171962E4228B1A3CCA9239D
+38. Smooth Character Rotation
+La destinazione è ALS Base Character BP [K2Node_CallFunction] 2A57E9E24712958B369C73BA742AA8A0
+39. Get Control Rotation
+La destinazione è Pedina [K2Node_CallFunction] D706AF2C45711C0E87854790FEEE90DE
+40. Nodo di reindirizzamento [K2Node_Knot] EEE2A9554EFD7C011E2D6E9A96FF038E
+41. Rolling Rotation [EdGraphNode_Comment] EA44090A445DDE496E27628E873AA791
+42. Not Moving [EdGraphNode_Comment] 551C21AE46D394CBD4050397E8FB8AE6
+43. Apply the RotationAmount curve from Turn In Place Animations. The Rotation Amount curve defines how much rotation should be applied each frame, and is calculated for animations that are animated at 30fps.  [EdGraphNode_Comment] 50A654464A8FB0062D32C3811B032635
+44. Velocity Direction Rotation [EdGraphNode_Comment] 710844614FDBC8715BEE53998C8013CA
+45. Looking Direction Rotation [EdGraphNode_Comment] 3B1679034FD27885647CF9A4DBEE99DF
+46. Aiming Rotation [EdGraphNode_Comment] 4086394C40D4370290B24A85A0DE84C5
+47. Switch on ALS_MovementAction [K2Node_SwitchEnum] A20347F34B2F8B9ED44CE59B0EBB3E17
+48. Get MovementAction [K2Node_VariableGet] 7146A442468760144B70288CA4C24234
+49. Can Update Moving Rotation [K2Node_CallFunction] 30B7E9864A784FF387681CAD5BFE2C9F
+50. Ramo [K2Node_IfThenElse] 3EABA51640BD43495D12CBAEDE93755A
+51. Get World Delta Seconds [K2Node_CallFunction] 0DC407F9447E7AB2F2AAE5A47965DB3A
+52. Add Actor World Rotation
+La destinazione è Actor [K2Node_CallFunction] FDF7AC5243D696E367371687EE1016CE
+53. Set TargetRotation [K2Node_VariableSet] 3049A28941473215BC828FB9FE20B877
+54. Get Actor Rotation
+La destinazione è Actor [K2Node_CallFunction] 24A7B6E44C68E3C6967949A7EFD30627
+
+Variables Read:
+- Get Gait
+- Get HasMovementInput
+- Get MovementAction
+- Get RotationMode
+- Get ViewMode
+- Ottieni
+
+Variables Written:
+- Set TargetRotation
+
+External Calls:
+- Absolute (Float)
+- Add Actor World Rotation
+La destinazione è Actor
+- Calculate Grounded Rotation Rate
+- Can Update Moving Rotation
+- float / float
+- float > float
+- Get Actor Rotation
+La destinazione è Actor
+- Get Anim Curve Value
+- Get Control Rotation
+La destinazione è Pedina
+- Get World Delta Seconds
+- Limit Rotation
+La destinazione è ALS Base Character BP
+- Smooth Character Rotation
+La destinazione è ALS Base Character BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Absolute (Float)
+- Add Actor World Rotation
+La destinazione è Actor
+- Calculate Grounded Rotation Rate
+- Can Update Moving Rotation
+- float / float
+- float > float
+- Get Actor Rotation
+La destinazione è Actor
+- Get Anim Curve Value
+- Get Control Rotation
+La destinazione è Pedina
+- Get World Delta Seconds
+- Limit Rotation
+La destinazione è ALS Base Character BP
+- Smooth Character Rotation
+La destinazione è ALS Base Character BP

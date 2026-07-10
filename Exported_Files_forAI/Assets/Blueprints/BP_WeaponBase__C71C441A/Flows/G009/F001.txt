@@ -1,0 +1,32 @@
+Asset: BP_WeaponBase
+AssetPath: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
+AssetKey: Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase
+GraphId: G009
+Graph: GetReloadMontage
+FlowId: F001
+Entry: Get Reload Montage
+NodeGuid: 777A9FF4468CD4D10CC2768230EB3550
+
+Exec Flow:
+1. Get Reload Montage [K2Node_FunctionEntry] 777A9FF4468CD4D10CC2768230EB3550
+2. Nodo di restituzione [K2Node_FunctionResult] 954F3A2E4060F3AAF3EB20B52BA1D6C9
+3. Get WeaponData [K2Node_VariableGet] 3AAFECA046CABD91D7099DB86129C328
+4. Break S_WeaponData [K2Node_BreakStruct] B9D0E1564C6109233A752E9F984F7A19
+
+Variables Read:
+- Get WeaponData
+
+Variables Written:
+- none
+
+External Calls:
+- none
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- none

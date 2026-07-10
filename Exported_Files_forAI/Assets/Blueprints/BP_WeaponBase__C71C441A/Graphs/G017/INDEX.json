@@ -1,0 +1,25 @@
+{
+	"graphId": "G017",
+	"name": "UpdateWeaponData",
+	"graphName": "UpdateWeaponData",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 2,
+	"edgeCount": 2,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G017/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G017/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G017/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Update Weapon Data",
+			"entryNodeGuid": "AD941C624A1A332477249886558E5D64",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G017/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G017/F001.json",
+			"textFile": "Flows/G017/F001.txt",
+			"jsonFile": "Flows/G017/F001.json",
+			"nodeCount": 2
+		}
+	]
+}

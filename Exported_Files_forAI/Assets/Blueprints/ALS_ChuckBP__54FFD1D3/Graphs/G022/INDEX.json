@@ -1,0 +1,25 @@
+{
+	"graphId": "G022",
+	"name": "Set/ResetColors",
+	"graphName": "Set/ResetColors",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 104,
+	"edgeCount": 103,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G022/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G022/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G022/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Set/ Reset Colors",
+			"entryNodeGuid": "29107F49475C1958B4BC4F889FAC9664",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G022/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G022/F001.json",
+			"textFile": "Flows/G022/F001.txt",
+			"jsonFile": "Flows/G022/F001.json",
+			"nodeCount": 104
+		}
+	]
+}

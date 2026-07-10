@@ -1,0 +1,302 @@
+Asset: WBP_CustomRadialMenu
+AssetPath: /Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/WBP_CustomRadialMenu.WBP_CustomRadialMenu
+AssetKey: Game_ChuckContent_UI_WIDGET_MENU_2_MENU_RAPIDO_WBP_CustomRadialMenu
+GraphId: G001
+Graph: EventGraph
+FlowId: F003
+Entry: Evento Tick
+NodeGuid: E4B02A5D40386A87F7757E8A2C031648
+
+Exec Flow:
+1. Evento Construct [K2Node_Event] 11413D2C43D55225923FEDA8DA3B65F2
+2. Evento Tick [K2Node_Event] E4B02A5D40386A87F7757E8A2C031648
+3. Atan2 (Degrees) [K2Node_CallFunction] 6EEEF3584542AC97506AB7BC6CF4B078
+4. float + float [K2Node_PromotableOperator] 5471CC81472AE30C58D1B1B5B31678B6
+5. float / float [K2Node_PromotableOperator] 2A152B9E4BA3A25E6DBC9A9DE06C2A4C
+6. Limite minimo [K2Node_CallFunction] 3B3DA0D0467F8FDAE913889D12EE7A22
+7. % (Integer) [K2Node_CallFunction] 26FA6B874847B5FB294AFE8ECCEDCC5C
+8. float + float [K2Node_PromotableOperator] E1EAB054435AC16449D362A4D7D7DFE0
+9. % (Float) [K2Node_CallFunction] F1FD0DBD4A3619AEFB78B08BFA662941
+10. Set TargetIndex [K2Node_VariableSet] FA93280B402B8639CAD417A6820DEF32
+11. Get TargetIndex [K2Node_VariableGet] 26B63F6A44A29741DEEB23B1CEFB1F8F
+12. Set CurrentSelectedSlot [K2Node_VariableSet] 9A95755F4D372AC33FE5F3A980587497
+13. For Each Loop [K2Node_MacroInstance] DC75C6544D89C8332906099C652F90C0
+14. Equal (Integer) [K2Node_PromotableOperator] 401986694EAD3BE153B1E687EB280A37
+15. Get CurrentSelectedSlot [K2Node_VariableGet] 1CC99CEA401655467DFB988B8719B14D
+16. Ramo [K2Node_IfThenElse] 55220DB142534D6A36624D8794AD87D1
+17. Set Background Color
+La destinazione è Pulsante [K2Node_CallFunction] 91619814442C25060B0AD69CCB8B7D6C
+18. Set Background Color
+La destinazione è Pulsante [K2Node_CallFunction] 97C8C4744FD3AECC91D8A0A68A10A16D
+19. Nodo di reindirizzamento [K2Node_Knot] F1CEC809482E4AE3BF432894909BF530
+20. CloseRadialMenu
+Custom Event [K2Node_CustomEvent] CBADCDE349E5CD262B777ABF98D6BB8C
+21. Set bShowMouseCursor [K2Node_VariableSet] FD40311F46BE1DB55D7722967E899AAF
+22. Set Input Mode Game Only [K2Node_CallFunction] AC3AAFB148E588B1DC59BB8A9EF6588C
+23. Nodo di reindirizzamento [K2Node_Knot] D0F1258A4B9FAB4DADC1A1A9D5CBDBF2
+24. Get CurrentSelectedSlot [K2Node_VariableGet] 392A6E414CD07A117182A18C6187B6CF
+25. Get 0_PunchSlot [K2Node_VariableGet] F86D44434FD8C0A40FC23999511C69E2
+26. Get 1_PistolSlot [K2Node_VariableGet] 96EFF39948B49ECB7D2FB1B0D043DD35
+27. Get 2_MeleeSlot [K2Node_VariableGet] 796CCAEC44F70DC2436A8EAF854F36F0
+28. Get 3_RifleSlot [K2Node_VariableGet] 671D38164B438D709D3F829934849109
+29. Get 4_ConsumbaleSlot [K2Node_VariableGet] A3FDCB1D474C540EEC110AB2DFA59CAD
+30. Get 5_FlashSlot [K2Node_VariableGet] 545E186F42280497D066B58A1202A169
+31. Get 6_ConsumableSlot [K2Node_VariableGet] B938667E4EAF93E3AE45AE80F55FBCA7
+32. Nodo di reindirizzamento [K2Node_Knot] 2F1D2423434B703A1CD033AE8CFA910A
+33. Get Player Controller [K2Node_CallFunction] 7F4B94734D1E8271AF142788E8D33B52
+34. Use Consumable
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 31DC9B3F437C76124D1CD39254129ED5
+35. Flash
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 8F2663A34D973E0BA5BB32A3E0702F66
+36. Use Consumable
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 83341A9B45492BD0AAF0B8B5E846D09B
+37. Remove from Parent
+La destinazione è Widget [K2Node_CallFunction] DA28D1324D45B83B2D06618CB9779C57
+38. Nodo di reindirizzamento [K2Node_Knot] C28C66A04EDFC0FD45BA148667BF1D1F
+39. Get Owning Player
+La destinazione è Widget [K2Node_CallFunction] 10EBD05548D59EC3B8BE65A151C3B1B4
+40. Get Input Analog Stick State
+La destinazione è Player Controller [K2Node_CallFunction] CFA5D44F45BA46E28B8F6AB5D49EAAE0
+41. float * float [K2Node_PromotableOperator] 91803CE14558393FF01998B9C188D85D
+42. Unarmed State
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 225EB2BA4B6C2D96D066E58E7FE19201
+43. Vector2D Length [K2Node_CallFunction] 664FD850474EF475109530BC3C464E6F
+44. float > float [K2Node_PromotableOperator] 6F89E40C49787BD0BFBEDA9D2903CC33
+45. Ramo [K2Node_IfThenElse] 497FB51640FDFD54BCB5A18B8D36815D
+46. Unarmed State
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 4686EE084E5153F71B02A5BD382DB80D
+47. Unarmed State
+La destinazione è ALS Chuck BP [K2Node_CallFunction] D5BD67C84AF5571E953DFD89B8EE233E
+48. Unarmed State
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 702287F8416DD0A2D5DBEBB19C186EB6
+49. Sequenza [K2Node_ExecutionSequence] BC1797574AF6D235DE5A119637518296
+50. Cast To ALS_ChuckBP [K2Node_DynamicCast] F3739D4F47FC2A5019F740B217B6BFB0
+51. Set AsChuckRef [K2Node_VariableSet] 6A464ABE48FF408B1022AABF19E5B235
+52. Has Weapon?
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 1A04A46545ECB9CA8BAF8BA512B15587
+53. Ramo [K2Node_IfThenElse] 2A206410443D4365CC7E4E8081383260
+54. Set Visibility
+La destinazione è Widget [K2Node_CallFunction] 5098519846D9F2CFDB412084C828FE73
+55. Get Player Character [K2Node_CallFunction] 95C89B674A2AE051E4338EB12CFC515E
+56. Get 1_PistolSlot [K2Node_VariableGet] C98F6A554CEBCE252523B7BC4FDD55C7
+57. Set Visibility
+La destinazione è Widget [K2Node_CallFunction] C55AD06749315B9DDDA362AA38318928
+58. Has Weapon?
+La destinazione è ALS Chuck BP [K2Node_CallFunction] C42C8D6D4576BC5C19933C887DEBD67A
+59. Ramo [K2Node_IfThenElse] DA4C2E324F78A159F0A3F7AEBAA0FFAF
+60. Set Visibility
+La destinazione è Widget [K2Node_CallFunction] 850AC9D84D53E9671B2869AAB49A61CE
+61. Set Visibility
+La destinazione è Widget [K2Node_CallFunction] EF57E7954EC93EDBD78D199A7FB1EEA2
+62. Nodo di reindirizzamento [K2Node_Knot] 167E360744BA65968C11F0A4D5A3BD6C
+63. Has Weapon?
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 5ADB98464984F6EFC6E724995B6EA964
+64. Ramo [K2Node_IfThenElse] 2384C59049CEB3201D23F9AF8221A1D4
+65. Set Visibility
+La destinazione è Widget [K2Node_CallFunction] C27EDECC474EA8078A68658BD86989B4
+66. Set Visibility
+La destinazione è Widget [K2Node_CallFunction] 378BABA74C041388AB1D62BA5FD498E2
+67. Nodo di reindirizzamento [K2Node_Knot] B0A2E7474D0D5660500FE191BF8EBCB9
+68. Get AsChuckRef [K2Node_VariableGet] 679B32A14548D75AB54E9FAB8AA5D424
+69. Nodo di reindirizzamento [K2Node_Knot] 525F224A4B61198549295CBA82D1B784
+70. float * float [K2Node_PromotableOperator] 5B6D4D2F45C4409DE66A1AA22FB7EA10
+71. Show/Hide Overlay Button on RapidMenu [EdGraphNode_Comment] 5B0ED08C4D6B0E465A6EF587C0CA18B1
+72. Set OverlayMenuAnalog [EdGraphNode_Comment] B2F336DB4ED8D6E16BA45AB83D61FDF5
+73. Select Overlay From RapidMenu [EdGraphNode_Comment] 1161302B4E28EB73BA73FE8B3C3F1960
+74. Uguale (enum) [K2Node_EnumEquality] ECFA3FFC404440CAF22260A5941BB6F8
+75. Ramo [K2Node_IfThenElse] 9E6D4A8C4CC5CA148391AE88EFD7A56B
+76. Crea array [K2Node_MakeArray] 86CBB6774766AA9E717B98A092CA51BE
+77. Set WheelsSlotArray [K2Node_VariableSet] 9EB7BDBF4D797C8FDF41E89D9CB0FDEE
+78. Get WheelsSlotArray [K2Node_VariableGet] CEA545D74DF83D018A1AFC9207318620
+79. OTTIENI [K2Node_GetArrayItem] D031E1234BA59A3326092FAECAC41502
+80. Get Visibility
+La destinazione è Widget [K2Node_CallFunction] B7C5B6C54D4F753740B5B9A9FA8E6AEF
+81. Attiva Int [K2Node_SwitchInteger] 992075004F51C09DFBD17D82AE5CA79E
+82. Nodo di reindirizzamento [K2Node_Knot] 7C63E93C41F7616EB8CFC2A16AE9F91C
+83. Nodo di reindirizzamento [K2Node_Knot] 1DFA1E694168AA866FEA149A6924CA9F
+84. Nodo di reindirizzamento [K2Node_Knot] 1E0D64D04E1C70F4CA89DE8DD837351B
+85. Nodo di reindirizzamento [K2Node_Knot] CB7AE11246C11F921695CE8D20B28521
+86. Nodo di reindirizzamento [K2Node_Knot] EF141E434617E21EB9F15490A3DF056F
+87. Nodo di reindirizzamento [K2Node_Knot] 8C198605478513652139059665D99358
+88. Nodo di reindirizzamento [K2Node_Knot] 7842F9CE46996733270269B1B292E96D
+89. Nodo di reindirizzamento [K2Node_Knot] F7A7D531493DA699E9326987F456668D
+90. Commit Equip Item
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 45A5B3C045F1B4EAA5FD8497841BC892
+91. Get AsChuckRef [K2Node_VariableGet] 0C34ECA843DA7D48EF08BCB78A792F4F
+92. Get OwnedWeapons [K2Node_VariableGet] 554E996246259344227177B01B72725C
+93. Nodo di reindirizzamento [K2Node_Knot] F1C1CB124C4ADA0C104488BFD7F63A9A
+94. Get AsChuckRef [K2Node_VariableGet] 68AE543A42D81515B6E0A78C70BFA4F0
+95. Get EquippedSmallFirearmIndex [K2Node_VariableGet] F483C207406C45722F24FE9DFC8FB7FB
+96. integer >= integer [K2Node_PromotableOperator] 8DA5EB184F3F8F0262A146926573AC13
+97. Ramo [K2Node_IfThenElse] 20003F0A4CE52A2EE572A9989ED29B07
+98. OTTIENI [K2Node_GetArrayItem] 7C2A08094CF1A9E8B0D46BA0FEF956E7
+99. Nodo di reindirizzamento [K2Node_Knot] 26AABED649195E4B18DF089181D836E9
+100. Nodo di reindirizzamento [K2Node_Knot] 422BE23446443CC7D87AFE930B5322A6
+101. Nodo di reindirizzamento [K2Node_Knot] B80F858440ED371AD892F4A6136718E4
+102. Nodo di reindirizzamento [K2Node_Knot] F176B2774FD8681DD857338271DC59B6
+103. Commit Equip Item
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 9C78D4B7455EDA720B75F9A5165F6CD4
+104. Get AsChuckRef [K2Node_VariableGet] BE13ABF94F8A679EF9D3D88FB3574C67
+105. integer >= integer [K2Node_PromotableOperator] 7FF3AB9048EBC96458CB268C9D889377
+106. Ramo [K2Node_IfThenElse] 414D52B54B76730E766170AE5D296DD2
+107. OTTIENI [K2Node_GetArrayItem] AEB9C68246D76B408827E68FA731814A
+108. Nodo di reindirizzamento [K2Node_Knot] 47E257704EF8C39FD08D959C01802B20
+109. Nodo di reindirizzamento [K2Node_Knot] 71FA2B94437E380D06557ABEB723E3F9
+110. Nodo di reindirizzamento [K2Node_Knot] EE39F18C4ED2F3AB66352DA944C5238A
+111. Get EquippedMeleeIndex [K2Node_VariableGet] 40C9A6AF4C1C8B0DDBDF54B774143D79
+112. Nodo di reindirizzamento [K2Node_Knot] 5630F00D4B263C92C73C5BBD1B45C6EB
+113. Nodo di reindirizzamento [K2Node_Knot] 2D88BA0A46FA0F091D4409A2D8C93B8D
+114. Play Sound 2D [K2Node_CallFunction] 3EAD3B3B4D2C52E05C212D8A28E34A64
+115. Commit Equip Item
+La destinazione è ALS Chuck BP [K2Node_CallFunction] C1811BAC4AD9F1CB252A36BC46C901FA
+116. Get AsChuckRef [K2Node_VariableGet] FCFCCCBD418DACC9335848869C8A00B1
+117. integer >= integer [K2Node_PromotableOperator] 995ADD204444D577E079C1BB020029A0
+118. Ramo [K2Node_IfThenElse] 3FAE18774D3C068AE1E41289E044D111
+119. OTTIENI [K2Node_GetArrayItem] 2659B47543F4F499E9D1C4BBF2F4EF8F
+120. Nodo di reindirizzamento [K2Node_Knot] 4370646C4CCF06B20E5380B246CC8D9B
+121. Nodo di reindirizzamento [K2Node_Knot] 351574244AFDF87B8F774E8CECA1476F
+122. Nodo di reindirizzamento [K2Node_Knot] 6E3853FE47E14BF91BE2FDBF42960EDD
+123. Nodo di reindirizzamento [K2Node_Knot] C7C91B1E4DD090E17640E3AF890D0625
+124. Nodo di reindirizzamento [K2Node_Knot] C4B0E77C41DB43A1A097CE98ECF0DB3C
+125. Get EquippedBigWeaponIndex [K2Node_VariableGet] 2AE366004BB6141052F0F7BF5BA49B8D
+126. Get 2_MeleeSlot [K2Node_VariableGet] FB8952A747CA337030A9C5925333DCD1
+127. Get 3_RifleSlot [K2Node_VariableGet] 53E37A434F280939A037A3B0CE8FD39B
+128. Update Weapon Display
+La destinazione è WBP HUD [K2Node_CallFunction] 051045194F56FF18E9528787176C475D
+129. Get Chuck_HUD [K2Node_VariableGet] 121A8B824C9F8CD37E9BE4B6B91403BE
+130. Is Valid [K2Node_MacroInstance] 82D7DFA74CCB6819B38570A50B99D1FE
+131. Cast To ALS_Player_Controller [K2Node_DynamicCast] A0FBF38745D1802E9072EDAA9E152083
+132. Get Player Controller [K2Node_CallFunction] C79FD7E247C9A0478BB043A013A9E0B0
+133. Set As ALS Player Controller [K2Node_VariableSet] 10C2ACF240C6AEFCE6AFFDA110421885
+134. Get As ALS Player Controller [K2Node_VariableGet] 37D9C9DD43C39AA6EDB0E99C5FCECF98
+135. Nodo di reindirizzamento [K2Node_Knot] 459F3E6441640749FD367D86B983F00B
+136. Spawn Current Weapon Actor
+La destinazione è ALS Chuck BP [K2Node_CallFunction] A53D722B4A003F18773D87B25CC8F647
+137. Get AsChuckRef [K2Node_VariableGet] E490030045381B3FA0C03F877F46C56D
+138. Refresh Weapon Visuals
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 343CD2FF40FC82D7BE22E4B8A1AC7C61
+139. Nodo di reindirizzamento [K2Node_Knot] B6A9A024499C1848647A7D8AD693CD5F
+140. Get Chuck_HUD [K2Node_VariableGet] 1C177BB3494FDB2C626145ABB1FCC210
+141. Get As ALS Player Controller [K2Node_VariableGet] 569D18CC464A22B5BB756F9BC28C40C2
+142. Update Weapon Display
+La destinazione è WBP HUD [K2Node_CallFunction] CB8A25D14D5CB60A9DFA058055DD0C82
+143. Try Auto Reload Current Weapon
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 5971C40347D36EE48CF9A58AFD2B2C1B
+144. Nodo di reindirizzamento [K2Node_Knot] 7885EC0E4DA21CE2E71C82AC86CDB6B6
+
+Variables Read:
+- Get 0_PunchSlot
+- Get 1_PistolSlot
+- Get 2_MeleeSlot
+- Get 3_RifleSlot
+- Get 4_ConsumbaleSlot
+- Get 5_FlashSlot
+- Get 6_ConsumableSlot
+- Get As ALS Player Controller
+- Get AsChuckRef
+- Get Chuck_HUD
+- Get CurrentSelectedSlot
+- Get EquippedBigWeaponIndex
+- Get EquippedMeleeIndex
+- Get EquippedSmallFirearmIndex
+- Get OwnedWeapons
+- Get TargetIndex
+- Get WheelsSlotArray
+
+Variables Written:
+- Set As ALS Player Controller
+- Set AsChuckRef
+- Set bShowMouseCursor
+- Set CurrentSelectedSlot
+- Set TargetIndex
+- Set WheelsSlotArray
+
+External Calls:
+- % (Float)
+- % (Integer)
+- Atan2 (Degrees)
+- Commit Equip Item
+La destinazione è ALS Chuck BP
+- Flash
+La destinazione è ALS Chuck BP
+- Get Input Analog Stick State
+La destinazione è Player Controller
+- Get Owning Player
+La destinazione è Widget
+- Get Player Character
+- Get Player Controller
+- Get Visibility
+La destinazione è Widget
+- Has Weapon?
+La destinazione è ALS Chuck BP
+- Limite minimo
+- Play Sound 2D
+- Refresh Weapon Visuals
+La destinazione è ALS Chuck BP
+- Remove from Parent
+La destinazione è Widget
+- Set Background Color
+La destinazione è Pulsante
+- Set Input Mode Game Only
+- Set Visibility
+La destinazione è Widget
+- Spawn Current Weapon Actor
+La destinazione è ALS Chuck BP
+- Try Auto Reload Current Weapon
+La destinazione è ALS Chuck BP
+- Unarmed State
+La destinazione è ALS Chuck BP
+- Update Weapon Display
+La destinazione è WBP HUD
+- Use Consumable
+La destinazione è ALS Chuck BP
+- Vector2D Length
+
+Widgets Touched:
+- Show/Hide Overlay Button on RapidMenu
+
+Components Touched:
+- none
+
+External Blueprint References:
+- % (Float)
+- % (Integer)
+- Atan2 (Degrees)
+- Cast To ALS_ChuckBP
+- Cast To ALS_Player_Controller
+- Commit Equip Item
+La destinazione è ALS Chuck BP
+- Flash
+La destinazione è ALS Chuck BP
+- Get Input Analog Stick State
+La destinazione è Player Controller
+- Get Owning Player
+La destinazione è Widget
+- Get Player Character
+- Get Player Controller
+- Get Visibility
+La destinazione è Widget
+- Has Weapon?
+La destinazione è ALS Chuck BP
+- Limite minimo
+- Play Sound 2D
+- Refresh Weapon Visuals
+La destinazione è ALS Chuck BP
+- Remove from Parent
+La destinazione è Widget
+- Set Background Color
+La destinazione è Pulsante
+- Set Input Mode Game Only
+- Set Visibility
+La destinazione è Widget
+- Spawn Current Weapon Actor
+La destinazione è ALS Chuck BP
+- Try Auto Reload Current Weapon
+La destinazione è ALS Chuck BP
+- Unarmed State
+La destinazione è ALS Chuck BP
+- Update Weapon Display
+La destinazione è WBP HUD
+- Use Consumable
+La destinazione è ALS Chuck BP
+- Vector2D Length

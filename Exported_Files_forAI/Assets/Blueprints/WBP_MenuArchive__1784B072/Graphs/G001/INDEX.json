@@ -1,0 +1,105 @@
+{
+	"graphId": "G001",
+	"name": "EventGraph",
+	"graphName": "EventGraph",
+	"type": "EventGraph",
+	"graphType": "EventGraph",
+	"graphGuid": "",
+	"nodeCount": 260,
+	"edgeCount": 300,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G001/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G001/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G001/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Background Grey Dark/Light\nCustom Event",
+			"entryNodeGuid": "F06A33814BBCFF8FE8BE3081A19E9023",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F001.json",
+			"textFile": "Flows/G001/F001.txt",
+			"jsonFile": "Flows/G001/F001.json",
+			"nodeCount": 260
+		},
+		{
+			"flowId": "F002",
+			"entryName": "CharacterCard > CharacterSlotPage\nCustom Event",
+			"entryNodeGuid": "370FAB414B8A48B8EF3C0F99179FFB42",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F002.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F002.json",
+			"textFile": "Flows/G001/F002.txt",
+			"jsonFile": "Flows/G001/F002.json",
+			"nodeCount": 260
+		},
+		{
+			"flowId": "F003",
+			"entryName": "CharacterSlotPage > IntersectPage\nCustom Event",
+			"entryNodeGuid": "CDDFDE6048085ED7F92F5D8597F19A06",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F003.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F003.json",
+			"textFile": "Flows/G001/F003.txt",
+			"jsonFile": "Flows/G001/F003.json",
+			"nodeCount": 260
+		},
+		{
+			"flowId": "F004",
+			"entryName": "Content Whitee Dark/Light\nCustom Event",
+			"entryNodeGuid": "01EA2CDA4A8C69E6A06DC98C04F0223A",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F004.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F004.json",
+			"textFile": "Flows/G001/F004.txt",
+			"jsonFile": "Flows/G001/F004.json",
+			"nodeCount": 260
+		},
+		{
+			"flowId": "F005",
+			"entryName": "Evento Tick",
+			"entryNodeGuid": "80161E244A06E77AB9560CBCAAA6CE68",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F005.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F005.json",
+			"textFile": "Flows/G001/F005.txt",
+			"jsonFile": "Flows/G001/F005.json",
+			"nodeCount": 260
+		},
+		{
+			"flowId": "F006",
+			"entryName": "FocusedTabColor\nCustom Event",
+			"entryNodeGuid": "1F682B8E4C3EF9334EF9C8AF9A31C68E",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F006.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F006.json",
+			"textFile": "Flows/G001/F006.txt",
+			"jsonFile": "Flows/G001/F006.json",
+			"nodeCount": 260
+		},
+		{
+			"flowId": "F007",
+			"entryName": "RefreshMenuFocus\nCustom Event",
+			"entryNodeGuid": "8EFCC6564CE05F5E079AD3A4D53BBFC0",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F007.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F007.json",
+			"textFile": "Flows/G001/F007.txt",
+			"jsonFile": "Flows/G001/F007.json",
+			"nodeCount": 260
+		},
+		{
+			"flowId": "F008",
+			"entryName": "ReturnBackManage\nCustom Event",
+			"entryNodeGuid": "A48A603E40735027B86F9E940EFAA910",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F008.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F008.json",
+			"textFile": "Flows/G001/F008.txt",
+			"jsonFile": "Flows/G001/F008.json",
+			"nodeCount": 260
+		},
+		{
+			"flowId": "F009",
+			"entryName": "UnfocusedTabColor\nCustom Event",
+			"entryNodeGuid": "7EA5F3BF463AE6C1431186A027A02E3B",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F009.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F009.json",
+			"textFile": "Flows/G001/F009.txt",
+			"jsonFile": "Flows/G001/F009.json",
+			"nodeCount": 260
+		}
+	]
+}

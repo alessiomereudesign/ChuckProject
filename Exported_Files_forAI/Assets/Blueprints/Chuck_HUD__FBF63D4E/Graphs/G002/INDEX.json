@@ -1,0 +1,25 @@
+{
+	"graphId": "G002",
+	"name": "UserConstructionScript",
+	"graphName": "UserConstructionScript",
+	"type": "Function",
+	"graphType": "Function",
+	"graphGuid": "",
+	"nodeCount": 1,
+	"edgeCount": 0,
+	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Graphs/G002/INDEX.json",
+	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Graphs/G002/NODES.jsonl",
+	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Graphs/G002/EDGES.jsonl",
+	"flows": [
+		{
+			"flowId": "F001",
+			"entryName": "Construction Script",
+			"entryNodeGuid": "5A6615234564CECC2B3E77BE78AE46AD",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Flows/G002/F001.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/Chuck_HUD__FBF63D4E/Flows/G002/F001.json",
+			"textFile": "Flows/G002/F001.txt",
+			"jsonFile": "Flows/G002/F001.json",
+			"nodeCount": 1
+		}
+	]
+}

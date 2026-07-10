@@ -1,0 +1,34 @@
+Asset: ALS_ChuckBP
+AssetPath: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
+AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
+GraphId: G016
+Graph: MantleEnd
+FlowId: F001
+Entry: Mantle End
+NodeGuid: 2E4C18D04A0193A0FAC94B84632A043F
+
+Exec Flow:
+1. Mantle End [K2Node_FunctionEntry] 2E4C18D04A0193A0FAC94B84632A043F
+2. Genitore: Mantle End [K2Node_CallParentFunction] 807EC4C64267882026520D9D179F0E95
+3. Update Held Object
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 96B96F0241BCD1106CAFBCA71BABAAEF
+
+Variables Read:
+- none
+
+Variables Written:
+- none
+
+External Calls:
+- Update Held Object
+La destinazione è ALS Chuck BP
+
+Widgets Touched:
+- none
+
+Components Touched:
+- none
+
+External Blueprint References:
+- Update Held Object
+La destinazione è ALS Chuck BP

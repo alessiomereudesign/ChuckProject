@@ -1,0 +1,44 @@
+Asset: WBP_GenericPrompt
+AssetPath: /Game/ChuckContent/Blueprints/WBP_GenericPrompt.WBP_GenericPrompt
+AssetKey: Game_ChuckContent_Blueprints_WBP_GenericPrompt
+GraphId: G001
+Graph: EventGraph
+FlowId: F001
+Entry: UpdatePrompt
+Custom Event
+NodeGuid: F8E3B2BE46C44DA7ACBABEA213813E42
+
+Exec Flow:
+1. UpdatePrompt
+Custom Event [K2Node_CustomEvent] F8E3B2BE46C44DA7ACBABEA213813E42
+2. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 4E1C9C13404777E74D6D39B16F240B06
+3. Get TxtVar_Action [K2Node_VariableGet] 00F14CB94FFC610F22152C82B472F2CB
+4. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] F4E4A82745D4505C883B99AB1968EB6D
+5. Get TxtVar_ObjectName [K2Node_VariableGet] B3F994B74B59B3023B0BECA1D14ABBC4
+6. Break S_InteractionPrompt [K2Node_BreakStruct] 3C237D464843DE007DE3C6BC3924536A
+7. Nodo di reindirizzamento [K2Node_Knot] 6B7ED1784472FC2AB3C33190D823F69E
+8. Formatta testo [K2Node_FormatText] A94BE4CC436148E07705DD8D2C62A873
+
+Variables Read:
+- Get TxtVar_Action
+- Get TxtVar_ObjectName
+
+Variables Written:
+- none
+
+External Calls:
+- SetText (Text)
+La destinazione è Testo
+
+Widgets Touched:
+- SetText (Text)
+La destinazione è Testo
+
+Components Touched:
+- none
+
+External Blueprint References:
+- SetText (Text)
+La destinazione è Testo
