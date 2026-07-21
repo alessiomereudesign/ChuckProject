@@ -4,9 +4,8 @@ AssetKey: Game_ChuckContent_Blueprints_ALS_ChuckBP
 GraphId: G003
 Graph: EventGraph
 FlowId: F011
-Entry: FinalizeEquipWeapon
-Custom Event
-NodeGuid: 5719D4094C7930180F1B63B91DE9ABF3
+Entry: Evento Tick
+NodeGuid: 029222144A27D3E93A445B9E4F3A1C8E
 
 Exec Flow:
 1. M [K2Node_InputKey] 08097B6E41489B312C75DABAB4B1F622
@@ -474,6 +473,273 @@ La destinazione è Componente di scena [K2Node_CallFunction] 984139D040A8D456E47
 368. Get EquippedMeleeIndex [K2Node_VariableGet] 5E974EF84F092B97F11B4EAB849BC062
 369. Get Mesh_Melee [K2Node_VariableGet] 8A3492A7426B0C5E099066822781BBCC
 370. Get Mesh_Melee [K2Node_VariableGet] 09B5B396478C5E49E66C02B031D09CD1
+371. SpawnOrUpdateHolsteredWeapon
+Custom Event [K2Node_CustomEvent] 5F08A1D74D418835EF6402AD7525AA7E
+372. Switch on E_WeaponSlot [K2Node_SwitchEnum] 34D56E6442F596A31F30DBB9D7552A5F
+373. integer >= integer [K2Node_PromotableOperator] 390DC92E408005EBCB22BA9CD360AF56
+374. Nodo di reindirizzamento [K2Node_Knot] C94ACF814BA92D72444FBE9AB4038BB4
+375. Is Valid [K2Node_MacroInstance] 42C6C4E445A268E78B9FF69C8A0C6796
+376. Destroy Actor
+La destinazione è Actor [K2Node_CallFunction] 59519C3148071EFAFD0E7190E2DBB15D
+377. Nodo di reindirizzamento [K2Node_Knot] 6DED2C3D4A48653D98AEB1AC5B4AA508
+378. Length [K2Node_CallArrayFunction] 7E09922642D1C83E504AD48B85C8FF7B
+379. integer < integer [K2Node_PromotableOperator] 6295548641A641FDADAFACA7AEBEA3F0
+380. Ramo [K2Node_IfThenElse] 280A6AC049524147D54E51BD00C28FF2
+381. OTTIENI [K2Node_GetArrayItem] 9A4AF60E427A1CD60516449575023473
+382. Nodo di reindirizzamento [K2Node_Knot] A241E328453A894E6666BD801FA45D8B
+383. Get HolsteredSmallWeaponActor [K2Node_VariableGet] 3A6D36D14C8125162AD540B03EB10243
+384. Get OwnedWeapons [K2Node_VariableGet] 37B17B1147DC3453CAE3CCAA696A82FF
+385. Get EquippedSmallFirearmIndex [K2Node_VariableGet] FBBA167D4784B55B280523833A2C7FAF
+386. Set HolsteredSmallWeaponActor [K2Node_VariableSet] C4E8C0B74F4C3FA190A33AA0CF8692AF
+387. Set LocalWeaponData [K2Node_VariableSet] A7B7665742BBBCED0457F19A72FA4034
+388. Attach Actor To Component
+La destinazione è Actor [K2Node_CallFunction] 9F0CB3FA41C949217253F69D195ECD1F
+389. Get Mesh [K2Node_VariableGet] 0B1759B3457FC045695F3F886371E048
+390. Break S_WeaponData [K2Node_BreakStruct] 2D29DD39414DE04A60819F980FB56170
+391. Get bAreWeaponsVisible [K2Node_VariableGet] 9FA6541D4A487EBDFF77509ECC0F3B8D
+392. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] FEC134D143CAF37784CA07A1CCD264C7
+393. Get CurrentWeaponSlot [K2Node_VariableGet] 49893AA24CB2EFE61290F2A11FC7D7E0
+394. Non uguale (enum) [K2Node_EnumInequality] 79433FF640C2C00D856D5A8940A28A02
+395. Set Actor Hidden In Game
+La destinazione è Actor [K2Node_CallFunction] CFBECBBE492BCB0BAF3241AFEA89EA65
+396. Nodo di reindirizzamento [K2Node_Knot] CE870D5241388A6F1AF369A9C30D47FF
+397. Nodo di reindirizzamento [K2Node_Knot] 8B9FE2F64D355EAFA934D9B8E1242712
+398. NOT Boolean [K2Node_CallFunction] 81097B504618CE6670A4DC8B9A7933AD
+399. ShoulShow [EdGraphNode_Comment] 67BE2917451D97768F5360B1791ACFE9
+400. SyncHolsterActors
+Custom Event [K2Node_CustomEvent] 63AE1E624F4C5A5D7D45169E6B679EF9
+401. Sequenza [K2Node_ExecutionSequence] BF6BC2854BE07686615F58A25F0E4F57
+402. Spawn or Update Holstered Weapon
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 25C8BF6D446C00E43C91D58C22E3E0DB
+403. Spawn or Update Holstered Weapon
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 2EF14D57404B03A289B9D0B70C10B919
+404. Spawn or Update Holstered Weapon
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 1E4FEE4643203BA5F278E58046193434
+405. Refresh Weapon Visuals
+La destinazione è ALS Chuck BP [K2Node_CallFunction] C94D1E2B48FB4227C3E67580EE60E304
+406. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] B0CA6B0244F482A3590407BB46741E12
+407. Not Equal (Name) [K2Node_PromotableOperator] 411FADDF43E0E7F0CEDBD39883B82B49
+408. Ramo [K2Node_IfThenElse] 7631DE624574E99E0D30D180DDA88D17
+409. Is Valid [K2Node_MacroInstance] 300312C5465AD4ADB8AA65A2D80B8212
+410. Destroy Actor
+La destinazione è Actor [K2Node_CallFunction] C2B6AE8F4D069587464F4AADA8776AA1
+411. Nodo di reindirizzamento [K2Node_Knot] CA110FB24744588CA32637BF9C913CFE
+412. Get HolsteredSmallWeaponActor [K2Node_VariableGet] 71A7355643BCA6430C951C9152A55AD0
+413. Set HolsteredSmallWeaponActor [K2Node_VariableSet] 44BC693344A0B053C170AE9595A2F301
+414. Nodo di reindirizzamento [K2Node_Knot] 983799674533C23C51FC40847109363E
+415. SpawnActor BP Weapon Base [K2Node_SpawnActorFromClass] A9046EEF4B2066DFBF102283F70BAB54
+416. Get Actor Transform
+La destinazione è Actor [K2Node_CallFunction] BF17839144672982EDA6C894E323DCC1
+417. Set HolsteredSmallWeaponActor [K2Node_VariableSet] 087831174AACC482CDC6D59054E992AE
+418. Is Valid [K2Node_MacroInstance] 052369A94C46EFAC37FED7BBCF8D7409
+419. Nodo di reindirizzamento [K2Node_Knot] 95D4BC2B4DBE6CFECC0DC9BA10092471
+420. Get HolsteredSmallWeaponActor [K2Node_VariableGet] A2A086B148F1A61A898EE69B3F861067
+421. Set HolsteredSmallWeaponActor [K2Node_VariableSet] 24D607AB47042A1BDA98258CF00AD701
+422. Nodo di reindirizzamento [K2Node_Knot] 2848F7F24E1B39262694CE9AD145E81C
+423. Initialize Holster Weapon
+La destinazione è BP Weapon Base [K2Node_CallFunction] 7D55B21749A3F3EBC4A0FCAC8908042C
+424. Initialize Holster Weapon
+La destinazione è BP Weapon Base [K2Node_CallFunction] 29CE95084BA6E89E003A8AAEF04215E2
+425. Get LocalWeaponData [K2Node_VariableGet] 091836A9492E7C9312380C994C4CFF61
+426. Auto-riferimento [K2Node_Self] 24ABA6294269331CBFEFB9A6827B7FCB
+427. Get LocalWeaponData [K2Node_VariableGet] 51F834354E856CA9CA2705A959352CAE
+428. Auto-riferimento [K2Node_Self] AB289CC14D3E1F84590270AA3250C4C0
+429. Attach Actor To Component
+La destinazione è Actor [K2Node_CallFunction] 400399AA4D9F23C77DBE14A2C7DF3F68
+430. Get Mesh [K2Node_VariableGet] 6DA5973944FD255EC6620E99E848C380
+431. Set Actor Hidden In Game
+La destinazione è Actor [K2Node_CallFunction] 863D8B2A490F3A4667CC1DB02B8C5565
+432. Nodo di reindirizzamento [K2Node_Knot] 370F75E74077063027882CA43D0F78B0
+433. Nodo di reindirizzamento [K2Node_Knot] 2ED41DA34FED29FD36D59E9321AD4D69
+434. Nodo di reindirizzamento [K2Node_Knot] 0569A66A4BAE30B478ED8AAC82451728
+435. Nodo di reindirizzamento [K2Node_Knot] E911159047613C50A5DFE7A98A012CE8
+436. integer >= integer [K2Node_PromotableOperator] 665DDD8B466AEA14C1C0318F55C4BC81
+437. Nodo di reindirizzamento [K2Node_Knot] 025F678C4DA778D9E0413F972BE24551
+438. Is Valid [K2Node_MacroInstance] BE36A88B42260A3EADCA59BC3CA158BA
+439. Destroy Actor
+La destinazione è Actor [K2Node_CallFunction] B85CB68C4B8EC1245B98D9B791E33954
+440. Nodo di reindirizzamento [K2Node_Knot] CACE93D24B41CDFB3DB04BBC77120B6F
+441. Length [K2Node_CallArrayFunction] 767C20F146E9AD56BF5CCB901162E918
+442. integer < integer [K2Node_PromotableOperator] 0CC8568D472370D930C914A48FA53F31
+443. Ramo [K2Node_IfThenElse] 4F4FCEB64CB7F113AABAF49AD6B2BA99
+444. OTTIENI [K2Node_GetArrayItem] 01D2A2AF47FAFC3FBCC0938AE6FB0226
+445. Nodo di reindirizzamento [K2Node_Knot] EC9BC6B44EC5DFF1C1DC59AEACBC0322
+446. Get OwnedWeapons [K2Node_VariableGet] CE9FE8BC4CEAE0B7DD01ECB2B0141854
+447. Set LocalWeaponData [K2Node_VariableSet] 691B1C9841FAFD8D3A619AA97352A546
+448. Attach Actor To Component
+La destinazione è Actor [K2Node_CallFunction] C35F90A441E394DEC8CFAFBE3D7A89C9
+449. Get Mesh [K2Node_VariableGet] D50183004682D8D7247DD38E234328A6
+450. Break S_WeaponData [K2Node_BreakStruct] 1DCEA8D74AFF51001F5ACF8020890C89
+451. Get bAreWeaponsVisible [K2Node_VariableGet] 32C97D5D4709C172403805A5E4996BA4
+452. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 417A7D1E4B238519851CE9BCA20F3363
+453. Get CurrentWeaponSlot [K2Node_VariableGet] 20948D6D4F7908E1F6825199A477A0FB
+454. Non uguale (enum) [K2Node_EnumInequality] 5A7199CC4F9B7EC8E39C6B813AFF5489
+455. Set Actor Hidden In Game
+La destinazione è Actor [K2Node_CallFunction] 3CD4DB134A17035F96E28DA9AD973F23
+456. Nodo di reindirizzamento [K2Node_Knot] A8E6E0224459AF98D628C1A23E2F06FD
+457. Nodo di reindirizzamento [K2Node_Knot] 5B604E8C411F5ACF644C9C84EF1EE954
+458. NOT Boolean [K2Node_CallFunction] 54F700CD49CA14DD60D45C9E8D9323DF
+459. ShoulShow [EdGraphNode_Comment] DE441287447853C54E18569E2FB071D1
+460. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 7DE33EC542A68F656BBC91B2FBC25564
+461. Not Equal (Name) [K2Node_PromotableOperator] 4F8009914614DAD993D0848371D61996
+462. Ramo [K2Node_IfThenElse] 5C4262F1409259EFAD35B7B90A1E9426
+463. Is Valid [K2Node_MacroInstance] BF62B5F14CA0181A65901E83DCCB5A24
+464. Destroy Actor
+La destinazione è Actor [K2Node_CallFunction] FA8E09CD477549F75E88BCAF6C5783D7
+465. Nodo di reindirizzamento [K2Node_Knot] D0D9B2D9464CDCA9BE3082A9BC836BE6
+466. Nodo di reindirizzamento [K2Node_Knot] 0E6613C646C0D511DDA322AA797C920D
+467. SpawnActor BP Weapon Base [K2Node_SpawnActorFromClass] 148D6392436D04F0C7CA69A3F2FC3BDC
+468. Get Actor Transform
+La destinazione è Actor [K2Node_CallFunction] 4F94FA464420B25BAC6DCA8ECF7B27A5
+469. Is Valid [K2Node_MacroInstance] C1B198B74C984151CC7957B7170200A0
+470. Nodo di reindirizzamento [K2Node_Knot] 077D1179441BD38032EA72A23D73BEAE
+471. Nodo di reindirizzamento [K2Node_Knot] EB28D0D74E132C52342E7E83A218E4A8
+472. Initialize Holster Weapon
+La destinazione è BP Weapon Base [K2Node_CallFunction] F3546043452EDBCC1AE1D9B8BFCDBF64
+473. Initialize Holster Weapon
+La destinazione è BP Weapon Base [K2Node_CallFunction] 2A7077F74B60F287EAAB54B972564406
+474. Get LocalWeaponData [K2Node_VariableGet] 3482C8934916BF183208BABA81719D77
+475. Auto-riferimento [K2Node_Self] 464AA31D4A3C79826D38DE95F44A9E19
+476. Get LocalWeaponData [K2Node_VariableGet] 56EEAE0B423C18343C46CF992B3CDE51
+477. Auto-riferimento [K2Node_Self] 9CC8793B40024DF0A47AD28F55D7DA6B
+478. Attach Actor To Component
+La destinazione è Actor [K2Node_CallFunction] A8591C1443C9B3E2279C04B4A7760FDD
+479. Get Mesh [K2Node_VariableGet] B21A2BAB41C8DBC454E45B993033B20F
+480. Set Actor Hidden In Game
+La destinazione è Actor [K2Node_CallFunction] E7396DB84233A3D7C17E79B5571A07A6
+481. Nodo di reindirizzamento [K2Node_Knot] 47C514BB4D7B398E678D06885E364F24
+482. Nodo di reindirizzamento [K2Node_Knot] EAE72F544A4EED10543C4C9F4B4D59AB
+483. Nodo di reindirizzamento [K2Node_Knot] 7AEB1EEC401200ED1DE2088C1FD2159A
+484. Nodo di reindirizzamento [K2Node_Knot] FEE08DFE4E405E86D8D93CA53855EDFE
+485. Get EquippedBigWeaponIndex [K2Node_VariableGet] F6EE4CAF4551FC9E968F639CB4E4A92C
+486. Get HolsteredBigWeaponActor [K2Node_VariableGet] FF65912B4271E04505BC0791421C90C3
+487. Set HolsteredBigWeaponActor [K2Node_VariableSet] 98F1FFC74D882A7641BA56828B139607
+488. Set HolsteredBigWeaponActor [K2Node_VariableSet] 8D0F7E9E4C2D1B5A9B8BECA0431A090D
+489. Get HolsteredBigWeaponActor [K2Node_VariableGet] 5706FC0C473D906EFB9079B8779A4F2C
+490. Get HolsteredBigWeaponActor [K2Node_VariableGet] B7C3FB85435ACA27F4A6229A63683E1C
+491. Set HolsteredBigWeaponActor [K2Node_VariableSet] 772BA9EC4DDF4655B84CA6A55D5398F6
+492. Set HolsteredBigWeaponActor [K2Node_VariableSet] F1C46BD44B445799120A028CB877F21E
+493. integer >= integer [K2Node_PromotableOperator] 9DC4226544A99F124A196CAA659B52B2
+494. Is Valid [K2Node_MacroInstance] 674109DB474FF7C2E0D1308B84E59BF0
+495. Destroy Actor
+La destinazione è Actor [K2Node_CallFunction] D3F131AC4AA08D0CD4EA96BA52520A03
+496. Nodo di reindirizzamento [K2Node_Knot] 6B79AF2A4356837D0ADA798175B061B9
+497. Length [K2Node_CallArrayFunction] D1CABE37441E8502C27DBAA15073B3B6
+498. integer < integer [K2Node_PromotableOperator] C0472E324304EBB3A3B0F08DDB6B65BF
+499. Ramo [K2Node_IfThenElse] BDBBC2C04D98C561FE6C598047E388F1
+500. OTTIENI [K2Node_GetArrayItem] CD76EC6F4C662569C41366BB64779B8F
+501. Nodo di reindirizzamento [K2Node_Knot] 549252CF463A1F464FAA7F97F38B671A
+502. Set LocalWeaponData [K2Node_VariableSet] 6D4E927345CFC4B2F2B40D9193655F67
+503. Attach Actor To Component
+La destinazione è Actor [K2Node_CallFunction] 41852CE444DD8DBE20C7CAA998D74869
+504. Get Mesh [K2Node_VariableGet] BD2C393D4EEF61D5B790C785D2F6C9DF
+505. Break S_WeaponData [K2Node_BreakStruct] 4F0DEC6B476B8463EF6A97BA1AE7624F
+506. Get bAreWeaponsVisible [K2Node_VariableGet] B754CAB549F10941CD33FD963E091838
+507. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 2FE866CF491F9CA0409C9E9401E3BC36
+508. Get CurrentWeaponSlot [K2Node_VariableGet] BF91A32347F26EA7EF847DAE11C51FBA
+509. Non uguale (enum) [K2Node_EnumInequality] A04DFAC74F295D60FAF3339B8D0C75A3
+510. Set Actor Hidden In Game
+La destinazione è Actor [K2Node_CallFunction] 1AFF05A04271C83016297EBA454C368B
+511. Nodo di reindirizzamento [K2Node_Knot] 4F0709A54552346668E258A1805314E7
+512. Nodo di reindirizzamento [K2Node_Knot] 06FAEE314342799AFD018BA8080A1C2A
+513. NOT Boolean [K2Node_CallFunction] 2D79126142DB3E0092021F96496F2B13
+514. ShoulShow [EdGraphNode_Comment] 29D943284AF6F4680B8437867AF8293E
+515. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 5D6262EF42A7921FB3AB1A8BC9DED99F
+516. Not Equal (Name) [K2Node_PromotableOperator] 0CDE7E95469159EB33696781B44E26EC
+517. Ramo [K2Node_IfThenElse] A5251BE34C7E11C3C24DCBA3B89909F4
+518. Is Valid [K2Node_MacroInstance] 1E8DC8B840EDDDCDBBB4F9A75DFEF6AB
+519. Destroy Actor
+La destinazione è Actor [K2Node_CallFunction] 9C0D802C49C3C335F5453DB56BB4E7D3
+520. Nodo di reindirizzamento [K2Node_Knot] CA1480AF484533B57261CBAE75F23E37
+521. Nodo di reindirizzamento [K2Node_Knot] 20DE83F0429B15146E5AD6AB003D9738
+522. SpawnActor BP Weapon Base [K2Node_SpawnActorFromClass] 6E1C2B9E4953B2D56B2B30911DDBDA6A
+523. Get Actor Transform
+La destinazione è Actor [K2Node_CallFunction] 0045426D4C401D726B0301ADEE90C3DB
+524. Is Valid [K2Node_MacroInstance] 0AA4E1944F9F7A18D7CC9082396E2E01
+525. Nodo di reindirizzamento [K2Node_Knot] 27397543410E5084C2AA56B7737C99A6
+526. Nodo di reindirizzamento [K2Node_Knot] 406B89D44A15D0B09E72EABDBBE9A4BB
+527. Initialize Holster Weapon
+La destinazione è BP Weapon Base [K2Node_CallFunction] 0E003DF24DE408D1ABF780B70CB0D0ED
+528. Initialize Holster Weapon
+La destinazione è BP Weapon Base [K2Node_CallFunction] B19863604F8E6549EFCB1FB7E3A46A93
+529. Get LocalWeaponData [K2Node_VariableGet] 790423E344B6F6EDD6FD6E882A765EA6
+530. Auto-riferimento [K2Node_Self] 3AFEA60044C1B4E1BD040EBC489C704A
+531. Get LocalWeaponData [K2Node_VariableGet] EB9D21B6485F3DEE8126DA846618AAAD
+532. Auto-riferimento [K2Node_Self] B5EE0C4848F753D6C7A0ECA2E9AEE317
+533. Attach Actor To Component
+La destinazione è Actor [K2Node_CallFunction] 33410E9040FFB28ED7D9DF81C1126B71
+534. Get Mesh [K2Node_VariableGet] B04531824387D44BD296C8991C57B510
+535. Set Actor Hidden In Game
+La destinazione è Actor [K2Node_CallFunction] 4C01B2CC47AC27BFC7C442B9AD33F4D9
+536. Nodo di reindirizzamento [K2Node_Knot] A5B36F1D44F7C763A9CC41BF38897135
+537. Nodo di reindirizzamento [K2Node_Knot] 57E2DF0A4BAEAB5E824257922AD93A7F
+538. Nodo di reindirizzamento [K2Node_Knot] D2FACB364BF0F494C774ADB274AAE514
+539. Nodo di reindirizzamento [K2Node_Knot] E3E827B64ED506EE026A51837E90F669
+540. Get OwnedWeapons [K2Node_VariableGet] B4A2AD2448ABE08D96F459B0CBE92B0E
+541. Get EquippedMeleeIndex [K2Node_VariableGet] 032CEB434C73D51C9EE082964E9B26B0
+542. Get HolsteredMeleeActor [K2Node_VariableGet] 379FB0BF4BFEA62C649F7D9ACEEFC145
+543. Set HolsteredMeleeActor [K2Node_VariableSet] E66D2C39483D927224C1B2A633FC4456
+544. Set HolsteredMeleeActor [K2Node_VariableSet] CF14A83742E83A1CC74FB09DF231EA9D
+545. Get HolsteredMeleeActor [K2Node_VariableGet] C665243C46C6FB2251E06FB4F90447B6
+546. Get HolsteredMeleeActor [K2Node_VariableGet] EDD2575C4917DAB8766BA2ACAE53DEED
+547. Set HolsteredMeleeActor [K2Node_VariableSet] 882C477947D3C729380B4EB18773CC82
+548. Set HolsteredMeleeActor [K2Node_VariableSet] 9E18DC264A7DF86FC0FAFAB0ABE1B063
+549. EquipSlotFromRadial
+Custom Event [K2Node_CustomEvent] 54330EB94355AAB42DAAB09B5B482240
+550. Switch on E_WeaponSlot [K2Node_SwitchEnum] A529E89C482E5943163391A30D4FCE44
+551. Unarmed State
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 05446D804972D627BEE44DB328FF17DB
+552. Ramo [K2Node_IfThenElse] 8C37EF1E4F3C41BD5D7404831CA39EEB
+553. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] B56D05694CAA0B98BF5F7C98CE7119ED
+554. Get EquippedSmallFirearmIndex [K2Node_VariableGet] FEFAE7B74C4354E04C0F299FF14606B9
+555. integer >= integer [K2Node_PromotableOperator] 5563EEEC47DE7259F94C1C8E9B39B1B1
+556. Get OwnedWeapons [K2Node_VariableGet] D16B1DE44E00655630CC92B3209C268F
+557. Length [K2Node_CallArrayFunction] F31059394937CECCACEE7AB7516600DC
+558. integer < integer [K2Node_PromotableOperator] B1040C7644F36E0B6B7E518A6C5641BD
+559. OTTIENI [K2Node_GetArrayItem] D87C1F29412A45B0D018ABB6702C664C
+560. Nodo di reindirizzamento [K2Node_Knot] AF03C3CA43768E648C2F21A06B11580D
+561. Nodo di reindirizzamento [K2Node_Knot] EF0F740E4722B45E2ED3F3B1F1C4E72A
+562. Nodo di reindirizzamento [K2Node_Knot] 1577386A41FC1D56C65D4D967D3EB5A3
+563. Commit Equip Item
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 12DD639044155712F041B0B68FA49618
+564. Nodo di reindirizzamento [K2Node_Knot] 7768F4C64DF5B6459885B1A1AB442C68
+565. Nodo di reindirizzamento [K2Node_Knot] F797C56A468DB5A16D2EA5A334DD055F
+566. Nodo di reindirizzamento [K2Node_Knot] 3837A294495072E3FA6ACEA3FC13CDE2
+567. Ramo [K2Node_IfThenElse] 3F501B504C081FE3E5CB84B0C27F91A4
+568. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 5C5C45434C813F5217E6E7A56187AB2C
+569. integer >= integer [K2Node_PromotableOperator] C20A3892424463C260483A93D7FAFA57
+570. Get OwnedWeapons [K2Node_VariableGet] 4A4BCABD4F8EBAD7FAE5F7BD74BC005B
+571. Length [K2Node_CallArrayFunction] 489C237A4C38C7B844C3F3B297A6D9FF
+572. integer < integer [K2Node_PromotableOperator] AF839EB94E0A565508BF6D961D0B4563
+573. OTTIENI [K2Node_GetArrayItem] 143F9A5847C11EA0806284821B9B73DD
+574. Nodo di reindirizzamento [K2Node_Knot] 0F97DE174EFE40A43B7C4FBA5C2520F2
+575. Nodo di reindirizzamento [K2Node_Knot] 830EA40341756CC5BE691FBBDD58882E
+576. Nodo di reindirizzamento [K2Node_Knot] E03C141940C9F124C251FD9A24BB4EF6
+577. Commit Equip Item
+La destinazione è ALS Chuck BP [K2Node_CallFunction] AC3BAC1C43F577BAB55FED809BFD210C
+578. Nodo di reindirizzamento [K2Node_Knot] D047B3FF436D1B9E653D3F813222CA5C
+579. Nodo di reindirizzamento [K2Node_Knot] B16F043647590CF111C462A9C5FF79A2
+580. Nodo di reindirizzamento [K2Node_Knot] DADB4B2344558866B9F24B8EA7539C27
+581. Nodo di reindirizzamento [K2Node_Knot] 8D88EE8542D5FE6349D2E58ADBEFBBBD
+582. Get EquippedBigWeaponIndex [K2Node_VariableGet] 646E6B1047850E144D29B7B896B28E25
+583. Ramo [K2Node_IfThenElse] 01C925BE42B625D8F52FD8B36072DD95
+584. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 0A571670456C194D8D364BAF3F6F5413
+585. integer >= integer [K2Node_PromotableOperator] 2563BF574EAAFE234A753EB402FF3473
+586. Get OwnedWeapons [K2Node_VariableGet] 0F002CFE4632592C055F4685A9B0648B
+587. Length [K2Node_CallArrayFunction] 77D74D60403B9B215751B3BF0A98B6ED
+588. integer < integer [K2Node_PromotableOperator] 4583ECFA404F99762D57188E012F0683
+589. OTTIENI [K2Node_GetArrayItem] F512A92444982FB84302009B04FC9CF2
+590. Nodo di reindirizzamento [K2Node_Knot] 3E6EA7B3491A1351387CA28E7085FC9C
+591. Nodo di reindirizzamento [K2Node_Knot] 6A2F626940B562941C9A2DB30AC73749
+592. Nodo di reindirizzamento [K2Node_Knot] A3131BB149D693D50C23C1B1F390AD0E
+593. Commit Equip Item
+La destinazione è ALS Chuck BP [K2Node_CallFunction] FA021E3D43F0778BCF67DA9D45BC0580
+594. Nodo di reindirizzamento [K2Node_Knot] E3E5ACD840943BF7B2D87B9B2A1DF80D
+595. Nodo di reindirizzamento [K2Node_Knot] A56E8D324EC4FC292162C680AC80EB05
+596. Nodo di reindirizzamento [K2Node_Knot] FD7F06284AA9D446B1698B8AB8BA6D35
+597. Nodo di reindirizzamento [K2Node_Knot] 231803E04E3C9DB2014D59B9A954A598
+598. Get EquippedMeleeIndex [K2Node_VariableGet] 1106DAFE4FF962E1F8053AA3C06D3F1D
+599. Nodo di reindirizzamento [K2Node_Knot] CB2E8FFC44673C03BDCE10897FF86713
 
 Variables Read:
 - Get bAreWeaponsVisible
@@ -486,7 +752,11 @@ Variables Read:
 - Get EquippedBigWeaponIndex
 - Get EquippedMeleeIndex
 - Get EquippedSmallFirearmIndex
+- Get HolsteredBigWeaponActor
+- Get HolsteredMeleeActor
+- Get HolsteredSmallWeaponActor
 - Get InteractObjects
+- Get LocalWeaponData
 - Get LoopedWeaponTimeHandle
 - Get Mesh
 - Get Mesh_Armor_Accessory1
@@ -520,7 +790,11 @@ Variables Written:
 - Set EquippedBigWeaponIndex
 - Set EquippedMeleeIndex
 - Set EquippedSmallFirearmIndex
+- Set HolsteredBigWeaponActor
+- Set HolsteredMeleeActor
+- Set HolsteredSmallWeaponActor
 - Set InteractObjects
+- Set LocalWeaponData
 - Set OverlayState
 
 External Calls:
@@ -528,6 +802,8 @@ External Calls:
 La destinazione è User Widget
 - Apply Overlay for Current Slot
 La destinazione è ALS Chuck BP
+- Attach Actor To Component
+La destinazione è Actor
 - Clear and Invalidate Timer by Handle
 - Commit Equip Item
 La destinazione è ALS Chuck BP
@@ -536,13 +812,19 @@ La destinazione è Actor
 - Does Object Implement Interface
 - Finalize Equip Weapon
 La destinazione è ALS Chuck BP
+- Get Actor Transform
+La destinazione è Actor
 - Get Player Controller
+- Initialize Holster Weapon
+La destinazione è BP Weapon Base
 - NOT Boolean
 - Open and Inizialize Menu
 La destinazione è WBP Menu Pausa
 - Play Sound 2D
 - Refresh Weapon Visuals
 La destinazione è ALS Chuck BP
+- Set Actor Hidden In Game
+La destinazione è Actor
 - Set Game Paused
 - Set Skeletal Mesh Asset
 La destinazione è Componente mesh scheletrica
@@ -551,6 +833,8 @@ La destinazione è Componente della mesh con pelle
 - Set Visibility
 La destinazione è Componente di scena
 - Spawn Current Weapon Actor
+La destinazione è ALS Chuck BP
+- Spawn or Update Holstered Weapon
 La destinazione è ALS Chuck BP
 - Try Auto Reload Current Weapon
 La destinazione è ALS Chuck BP
@@ -574,6 +858,8 @@ External Blueprint References:
 La destinazione è User Widget
 - Apply Overlay for Current Slot
 La destinazione è ALS Chuck BP
+- Attach Actor To Component
+La destinazione è Actor
 - Cast To ALS_Player_Controller
 - Clear and Invalidate Timer by Handle
 - Commit Equip Item
@@ -583,13 +869,19 @@ La destinazione è Actor
 - Does Object Implement Interface
 - Finalize Equip Weapon
 La destinazione è ALS Chuck BP
+- Get Actor Transform
+La destinazione è Actor
 - Get Player Controller
+- Initialize Holster Weapon
+La destinazione è BP Weapon Base
 - NOT Boolean
 - Open and Inizialize Menu
 La destinazione è WBP Menu Pausa
 - Play Sound 2D
 - Refresh Weapon Visuals
 La destinazione è ALS Chuck BP
+- Set Actor Hidden In Game
+La destinazione è Actor
 - Set Game Paused
 - Set Skeletal Mesh Asset
 La destinazione è Componente mesh scheletrica
@@ -598,6 +890,8 @@ La destinazione è Componente della mesh con pelle
 - Set Visibility
 La destinazione è Componente di scena
 - Spawn Current Weapon Actor
+La destinazione è ALS Chuck BP
+- Spawn or Update Holstered Weapon
 La destinazione è ALS Chuck BP
 - Try Auto Reload Current Weapon
 La destinazione è ALS Chuck BP

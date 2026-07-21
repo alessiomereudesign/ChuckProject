@@ -5,8 +5,8 @@
 	"type": "EventGraph",
 	"graphType": "EventGraph",
 	"graphGuid": "",
-	"nodeCount": 448,
-	"edgeCount": 534,
+	"nodeCount": 351,
+	"edgeCount": 425,
 	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G002/INDEX.json",
 	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G002/NODES.jsonl",
 	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G002/EDGES.jsonl",
@@ -19,7 +19,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F001.json",
 			"textFile": "Flows/G002/F001.txt",
 			"jsonFile": "Flows/G002/F001.json",
-			"nodeCount": 448
+			"nodeCount": 351
 		},
 		{
 			"flowId": "F002",
@@ -29,7 +29,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F002.json",
 			"textFile": "Flows/G002/F002.txt",
 			"jsonFile": "Flows/G002/F002.json",
-			"nodeCount": 448
+			"nodeCount": 351
 		},
 		{
 			"flowId": "F003",
@@ -39,7 +39,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F003.json",
 			"textFile": "Flows/G002/F003.txt",
 			"jsonFile": "Flows/G002/F003.json",
-			"nodeCount": 448
+			"nodeCount": 351
 		},
 		{
 			"flowId": "F004",
@@ -49,7 +49,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F004.json",
 			"textFile": "Flows/G002/F004.txt",
 			"jsonFile": "Flows/G002/F004.json",
-			"nodeCount": 448
+			"nodeCount": 351
 		},
 		{
 			"flowId": "F005",
@@ -59,7 +59,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F005.json",
 			"textFile": "Flows/G002/F005.txt",
 			"jsonFile": "Flows/G002/F005.json",
-			"nodeCount": 448
+			"nodeCount": 351
 		},
 		{
 			"flowId": "F006",
@@ -69,7 +69,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G002/F006.json",
 			"textFile": "Flows/G002/F006.txt",
 			"jsonFile": "Flows/G002/F006.json",
-			"nodeCount": 448
+			"nodeCount": 351
 		}
 	]
 }

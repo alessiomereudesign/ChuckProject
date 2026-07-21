@@ -6,7 +6,7 @@
 	"assetName": "DT_Weapon",
 	"assetPath": "/Game/ChuckContent/Systems/Weapons/Data/DT_Weapon.DT_Weapon",
 	"assetKey": "Game_ChuckContent_Systems_Weapons_Data_DT_Weapon",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"assetType": "DataTable",
 	"unrealClass": "DataTable",
 	"rowStruct": "/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
@@ -449,7 +449,7 @@
 				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Fire.AM_MM_Rifle_Fire'",
 				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Reload.AM_MM_Rifle_Reload'",
 				"holsterSocket": "Rifle",
-				"handSocket": "Weapon_R",
+				"handSocket": "VB RHS_ik_hand_gun",
 				"baseDamage": 12,
 				"damageRadius": 0,
 				"traceRadius": 15,
@@ -548,7 +548,7 @@
 				{
 					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
 					"type": "FName",
-					"valueText": "Weapon_R"
+					"valueText": "VB RHS_ik_hand_gun"
 				},
 				{
 					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
@@ -682,7 +682,7 @@
 				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Fire.AM_MM_Rifle_Fire'",
 				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Reload.AM_MM_Rifle_Reload'",
 				"holsterSocket": "Rifle",
-				"handSocket": "Weapon_R",
+				"handSocket": "VB RHS_ik_hand_gun",
 				"baseDamage": 12,
 				"damageRadius": 0,
 				"traceRadius": 15,
@@ -781,7 +781,7 @@
 				{
 					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
 					"type": "FName",
-					"valueText": "Weapon_R"
+					"valueText": "VB RHS_ik_hand_gun"
 				},
 				{
 					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
@@ -915,7 +915,7 @@
 				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Anims/AM_MM_Fire_GrenadeLauncher_W.AM_MM_Fire_GrenadeLauncher_W'",
 				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_GrenadeLauncher_Reload.AM_MM_GrenadeLauncher_Reload'",
 				"holsterSocket": "Rifle",
-				"handSocket": "Weapon_R",
+				"handSocket": "VB RHS_ik_hand_gun",
 				"baseDamage": 50,
 				"damageRadius": 400,
 				"traceRadius": 0,
@@ -1014,7 +1014,7 @@
 				{
 					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
 					"type": "FName",
-					"valueText": "Weapon_R"
+					"valueText": "VB RHS_ik_hand_gun"
 				},
 				{
 					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
@@ -1148,7 +1148,7 @@
 				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Anims/AM_MM_Fire_GrenadeLauncher_W.AM_MM_Fire_GrenadeLauncher_W'",
 				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_GrenadeLauncher_Reload.AM_MM_GrenadeLauncher_Reload'",
 				"holsterSocket": "Rifle",
-				"handSocket": "Weapon_R",
+				"handSocket": "VB RHS_ik_hand_gun",
 				"baseDamage": 50,
 				"damageRadius": 3000,
 				"traceRadius": 0,
@@ -1247,7 +1247,7 @@
 				{
 					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
 					"type": "FName",
-					"valueText": "Weapon_R"
+					"valueText": "VB RHS_ik_hand_gun"
 				},
 				{
 					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
@@ -1377,11 +1377,11 @@
 				"technical_Info": "Colpo singolo",
 				"slotType": "Melee",
 				"skeletalMesh": "/Script/Engine.SkeletalMesh'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapSilver/Weapons/Knife_A.Knife_A'",
-				"aLS_OverlayState": "Pistol 2H",
+				"aLS_OverlayState": "Knife",
 				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/Paired/MM_AM_Knife_Attack.MM_AM_Knife_Attack'",
 				"reloadMontage": "None",
 				"holsterSocket": "Knife_R",
-				"handSocket": "Weapon_R",
+				"handSocket": "VB RHS_ik_hand_gun",
 				"baseDamage": 20,
 				"damageRadius": 0,
 				"traceRadius": 0,
@@ -1460,7 +1460,7 @@
 				{
 					"name": "ALS_OverlayState_16_84ACF4C94D2D7CFCD490FEA5E94AF136",
 					"type": "TEnumAsByte<ALS_OverlayState>",
-					"valueText": "NewEnumerator10"
+					"valueText": "NewEnumerator17"
 				},
 				{
 					"name": "AttackMontage_41_1AC39D4A4FCDB6A8A8C8B5AD841AEDB9",
@@ -1480,7 +1480,7 @@
 				{
 					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
 					"type": "FName",
-					"valueText": "Weapon_R"
+					"valueText": "VB RHS_ik_hand_gun"
 				},
 				{
 					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
@@ -1614,7 +1614,7 @@
 				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/RamsterZ_FreeAnims_Volume1/AnimationSequence/Paired/MM_AM_Knife_Attack.MM_AM_Knife_Attack'",
 				"reloadMontage": "None",
 				"holsterSocket": "Knife_R",
-				"handSocket": "Weapon_R",
+				"handSocket": "VB RHS_ik_hand_gun",
 				"baseDamage": 20,
 				"damageRadius": 0,
 				"traceRadius": 0,
@@ -1713,7 +1713,7 @@
 				{
 					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
 					"type": "FName",
-					"valueText": "Weapon_R"
+					"valueText": "VB RHS_ik_hand_gun"
 				},
 				{
 					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
@@ -1847,7 +1847,7 @@
 				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Pistol_Fire.AM_MM_Pistol_Fire'",
 				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Pistol_Reload.AM_MM_Pistol_Reload'",
 				"holsterSocket": "Pistol_R",
-				"handSocket": "Weapon_R",
+				"handSocket": "VB RHS_ik_hand_gun",
 				"baseDamage": 25,
 				"damageRadius": 0,
 				"traceRadius": 0,
@@ -1946,7 +1946,7 @@
 				{
 					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
 					"type": "FName",
-					"valueText": "Weapon_R"
+					"valueText": "VB RHS_ik_hand_gun"
 				},
 				{
 					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
@@ -2080,7 +2080,7 @@
 				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Pistol_Fire.AM_MM_Pistol_Fire'",
 				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Pistol_Reload.AM_MM_Pistol_Reload'",
 				"holsterSocket": "Pistol_R",
-				"handSocket": "Weapon_R",
+				"handSocket": "VB RHS_ik_hand_gun",
 				"baseDamage": 25,
 				"damageRadius": 0,
 				"traceRadius": 0,
@@ -2179,7 +2179,7 @@
 				{
 					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
 					"type": "FName",
-					"valueText": "Weapon_R"
+					"valueText": "VB RHS_ik_hand_gun"
 				},
 				{
 					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
@@ -2313,7 +2313,7 @@
 				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Anims/AM_MM_Fire_RocketLauncher_W.AM_MM_Fire_RocketLauncher_W'",
 				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_RocketLauncher_Reload.AM_MM_RocketLauncher_Reload'",
 				"holsterSocket": "Rifle",
-				"handSocket": "Weapon_R",
+				"handSocket": "VB RHS_ik_hand_gun",
 				"baseDamage": 85,
 				"damageRadius": 500,
 				"traceRadius": 0,
@@ -2412,7 +2412,7 @@
 				{
 					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
 					"type": "FName",
-					"valueText": "Weapon_R"
+					"valueText": "VB RHS_ik_hand_gun"
 				},
 				{
 					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
@@ -2546,7 +2546,7 @@
 				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Weapons/Anims/AM_MM_Fire_RocketLauncher_W.AM_MM_Fire_RocketLauncher_W'",
 				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_RocketLauncher_Reload.AM_MM_RocketLauncher_Reload'",
 				"holsterSocket": "Rifle",
-				"handSocket": "Weapon_R",
+				"handSocket": "VB RHS_ik_hand_gun",
 				"baseDamage": 85,
 				"damageRadius": 2000,
 				"traceRadius": 0,
@@ -2645,7 +2645,7 @@
 				{
 					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
 					"type": "FName",
-					"valueText": "Weapon_R"
+					"valueText": "VB RHS_ik_hand_gun"
 				},
 				{
 					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
@@ -2779,7 +2779,7 @@
 				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Shotgun_Fire.AM_MM_Shotgun_Fire'",
 				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Shotgun_Reload.AM_MM_Shotgun_Reload'",
 				"holsterSocket": "Pistol_R",
-				"handSocket": "Weapon_R",
+				"handSocket": "VB RHS_ik_hand_gun",
 				"baseDamage": 35,
 				"damageRadius": 0,
 				"traceRadius": 30,
@@ -2878,7 +2878,7 @@
 				{
 					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
 					"type": "FName",
-					"valueText": "Weapon_R"
+					"valueText": "VB RHS_ik_hand_gun"
 				},
 				{
 					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
@@ -3012,7 +3012,7 @@
 				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Shotgun_Fire.AM_MM_Shotgun_Fire'",
 				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Shotgun_Reload.AM_MM_Shotgun_Reload'",
 				"holsterSocket": "Pistol_R",
-				"handSocket": "Weapon_R",
+				"handSocket": "VB RHS_ik_hand_gun",
 				"baseDamage": 35,
 				"damageRadius": 0,
 				"traceRadius": 30,
@@ -3111,7 +3111,7 @@
 				{
 					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
 					"type": "FName",
-					"valueText": "Weapon_R"
+					"valueText": "VB RHS_ik_hand_gun"
 				},
 				{
 					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
@@ -3245,7 +3245,7 @@
 				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Fire.AM_MM_Rifle_Fire'",
 				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_SniperRifle_Reload.AM_MM_SniperRifle_Reload'",
 				"holsterSocket": "Rifle",
-				"handSocket": "Weapon_R",
+				"handSocket": "VB RHS_ik_hand_gun",
 				"baseDamage": 75,
 				"damageRadius": 0,
 				"traceRadius": 0,
@@ -3344,7 +3344,7 @@
 				{
 					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
 					"type": "FName",
-					"valueText": "Weapon_R"
+					"valueText": "VB RHS_ik_hand_gun"
 				},
 				{
 					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",
@@ -3478,7 +3478,7 @@
 				"attackMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_Rifle_Fire.AM_MM_Rifle_Fire'",
 				"reloadMontage": "/Script/Engine.AnimMontage'/Game/AdditionalContents/_AnimationLibrary/Lyra/AM_MM_SniperRifle_Reload.AM_MM_SniperRifle_Reload'",
 				"holsterSocket": "Rifle",
-				"handSocket": "Weapon_R",
+				"handSocket": "VB RHS_ik_hand_gun",
 				"baseDamage": 75,
 				"damageRadius": 0,
 				"traceRadius": 0,
@@ -3577,7 +3577,7 @@
 				{
 					"name": "HandSocket_24_89A03DC24973F91DA8FD2990B14E6F5E",
 					"type": "FName",
-					"valueText": "Weapon_R"
+					"valueText": "VB RHS_ik_hand_gun"
 				},
 				{
 					"name": "BaseDamage_45_F289CC934ED7259D6122668BE2919E95",

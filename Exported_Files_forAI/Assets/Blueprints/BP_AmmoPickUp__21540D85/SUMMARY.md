@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_AmmoPickUp.BP_AmmoPickUp
 Class: Blueprint
 Parent: /Script/Engine.Actor
-Generated: 2026-07-10T21:13:02.714Z
+Generated: 2026-07-21T14:07:27.544Z
 
 ## Variables
 - As ALS Chuck BP: object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C

@@ -5,8 +5,8 @@
 	"type": "EventGraph",
 	"graphType": "EventGraph",
 	"graphGuid": "",
-	"nodeCount": 370,
-	"edgeCount": 397,
+	"nodeCount": 599,
+	"edgeCount": 677,
 	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G003/INDEX.json",
 	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G003/NODES.jsonl",
 	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G003/EDGES.jsonl",
@@ -19,7 +19,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F001.json",
 			"textFile": "Flows/G003/F001.txt",
 			"jsonFile": "Flows/G003/F001.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F002",
@@ -29,7 +29,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F002.json",
 			"textFile": "Flows/G003/F002.txt",
 			"jsonFile": "Flows/G003/F002.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F003",
@@ -39,7 +39,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F003.json",
 			"textFile": "Flows/G003/F003.txt",
 			"jsonFile": "Flows/G003/F003.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F004",
@@ -49,7 +49,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F004.json",
 			"textFile": "Flows/G003/F004.txt",
 			"jsonFile": "Flows/G003/F004.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F005",
@@ -59,7 +59,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F005.json",
 			"textFile": "Flows/G003/F005.txt",
 			"jsonFile": "Flows/G003/F005.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F006",
@@ -69,127 +69,157 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F006.json",
 			"textFile": "Flows/G003/F006.txt",
 			"jsonFile": "Flows/G003/F006.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F007",
-			"entryName": "EquipSmallWeapon\nCustom Event",
-			"entryNodeGuid": "BC9985E84173E4C421F9B4997CD02A18",
+			"entryName": "EquipSlotFromRadial\nCustom Event",
+			"entryNodeGuid": "54330EB94355AAB42DAAB09B5B482240",
 			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F007.txt",
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F007.json",
 			"textFile": "Flows/G003/F007.txt",
 			"jsonFile": "Flows/G003/F007.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F008",
-			"entryName": "Evento ActorBeginOverlap",
-			"entryNodeGuid": "1DBBD7204A4D576C4122A48D0857071A",
+			"entryName": "EquipSmallWeapon\nCustom Event",
+			"entryNodeGuid": "BC9985E84173E4C421F9B4997CD02A18",
 			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F008.txt",
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F008.json",
 			"textFile": "Flows/G003/F008.txt",
 			"jsonFile": "Flows/G003/F008.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F009",
-			"entryName": "Evento ActorEndOverlap",
-			"entryNodeGuid": "5E7A61F94FF97BF0043290A0FC87A42F",
+			"entryName": "Evento ActorBeginOverlap",
+			"entryNodeGuid": "1DBBD7204A4D576C4122A48D0857071A",
 			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F009.txt",
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F009.json",
 			"textFile": "Flows/G003/F009.txt",
 			"jsonFile": "Flows/G003/F009.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F010",
-			"entryName": "Evento Tick",
-			"entryNodeGuid": "029222144A27D3E93A445B9E4F3A1C8E",
+			"entryName": "Evento ActorEndOverlap",
+			"entryNodeGuid": "5E7A61F94FF97BF0043290A0FC87A42F",
 			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F010.txt",
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F010.json",
 			"textFile": "Flows/G003/F010.txt",
 			"jsonFile": "Flows/G003/F010.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F011",
-			"entryName": "FinalizeEquipWeapon\nCustom Event",
-			"entryNodeGuid": "5719D4094C7930180F1B63B91DE9ABF3",
+			"entryName": "Evento Tick",
+			"entryNodeGuid": "029222144A27D3E93A445B9E4F3A1C8E",
 			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F011.txt",
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F011.json",
 			"textFile": "Flows/G003/F011.txt",
 			"jsonFile": "Flows/G003/F011.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F012",
-			"entryName": "FistsState\nCustom Event",
-			"entryNodeGuid": "15FB40C84EF2C9F58A14CAAE9FF06A43",
+			"entryName": "FinalizeEquipWeapon\nCustom Event",
+			"entryNodeGuid": "5719D4094C7930180F1B63B91DE9ABF3",
 			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F012.txt",
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F012.json",
 			"textFile": "Flows/G003/F012.txt",
 			"jsonFile": "Flows/G003/F012.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F013",
-			"entryName": "Flash\nCustom Event",
-			"entryNodeGuid": "FCEAFD8B4E16E4731A8CBEA2ED77AFDD",
+			"entryName": "FistsState\nCustom Event",
+			"entryNodeGuid": "15FB40C84EF2C9F58A14CAAE9FF06A43",
 			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F013.txt",
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F013.json",
 			"textFile": "Flows/G003/F013.txt",
 			"jsonFile": "Flows/G003/F013.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F014",
-			"entryName": "SyncHolsterMeshes\nCustom Event",
-			"entryNodeGuid": "5EFD4D984788296E8404C1ADCEB06B80",
+			"entryName": "Flash\nCustom Event",
+			"entryNodeGuid": "FCEAFD8B4E16E4731A8CBEA2ED77AFDD",
 			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F014.txt",
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F014.json",
 			"textFile": "Flows/G003/F014.txt",
 			"jsonFile": "Flows/G003/F014.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F015",
-			"entryName": "ToggleArmorVisibility\nCustom Event",
-			"entryNodeGuid": "1ADCACBF4E512569C940C3A4548C83B0",
+			"entryName": "SpawnOrUpdateHolsteredWeapon\nCustom Event",
+			"entryNodeGuid": "5F08A1D74D418835EF6402AD7525AA7E",
 			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F015.txt",
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F015.json",
 			"textFile": "Flows/G003/F015.txt",
 			"jsonFile": "Flows/G003/F015.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F016",
-			"entryName": "ToggleWeaponsVisibility\nCustom Event",
-			"entryNodeGuid": "11F6F32144F9FBC92FC4FE9F59534E3F",
+			"entryName": "SyncHolsterActors\nCustom Event",
+			"entryNodeGuid": "63AE1E624F4C5A5D7D45169E6B679EF9",
 			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F016.txt",
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F016.json",
 			"textFile": "Flows/G003/F016.txt",
 			"jsonFile": "Flows/G003/F016.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F017",
-			"entryName": "UnarmedState\nCustom Event",
-			"entryNodeGuid": "57298E964ADC31232837B092864F1F48",
+			"entryName": "SyncHolsterMeshes\nCustom Event",
+			"entryNodeGuid": "5EFD4D984788296E8404C1ADCEB06B80",
 			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F017.txt",
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F017.json",
 			"textFile": "Flows/G003/F017.txt",
 			"jsonFile": "Flows/G003/F017.json",
-			"nodeCount": 370
+			"nodeCount": 599
 		},
 		{
 			"flowId": "F018",
-			"entryName": "UseConsumable\nCustom Event",
-			"entryNodeGuid": "88CB67AF46F986D2B201B79780C07DD1",
+			"entryName": "ToggleArmorVisibility\nCustom Event",
+			"entryNodeGuid": "1ADCACBF4E512569C940C3A4548C83B0",
 			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F018.txt",
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F018.json",
 			"textFile": "Flows/G003/F018.txt",
 			"jsonFile": "Flows/G003/F018.json",
-			"nodeCount": 370
+			"nodeCount": 599
+		},
+		{
+			"flowId": "F019",
+			"entryName": "ToggleWeaponsVisibility\nCustom Event",
+			"entryNodeGuid": "11F6F32144F9FBC92FC4FE9F59534E3F",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F019.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F019.json",
+			"textFile": "Flows/G003/F019.txt",
+			"jsonFile": "Flows/G003/F019.json",
+			"nodeCount": 599
+		},
+		{
+			"flowId": "F020",
+			"entryName": "UnarmedState\nCustom Event",
+			"entryNodeGuid": "57298E964ADC31232837B092864F1F48",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F020.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F020.json",
+			"textFile": "Flows/G003/F020.txt",
+			"jsonFile": "Flows/G003/F020.json",
+			"nodeCount": 599
+		},
+		{
+			"flowId": "F021",
+			"entryName": "UseConsumable\nCustom Event",
+			"entryNodeGuid": "88CB67AF46F986D2B201B79780C07DD1",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F021.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F021.json",
+			"textFile": "Flows/G003/F021.txt",
+			"jsonFile": "Flows/G003/F021.json",
+			"nodeCount": 599
 		}
 	]
 }

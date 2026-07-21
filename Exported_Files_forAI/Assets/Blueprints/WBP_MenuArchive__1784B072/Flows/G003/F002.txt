@@ -183,43 +183,62 @@ La destinazione è WBP Menu Archive [K2Node_CallFunction] BEED5C434522F7ABF6BEDD
 La destinazione è ALS Chuck BP [K2Node_CallFunction] B0AF973943FDF68DE9C1129E9C712233
 146. Toggle Armor Visibility
 La destinazione è ALS Chuck BP [K2Node_CallFunction] DBB1658E40967F1401192995AED1C3D5
-147. Get bAreWeaponsVisible [K2Node_VariableGet] 96402DEB47ED2E9F42A1B4847358917C
-148. Get bIsArmorVisible [K2Node_VariableGet] 59DCFC244D409562455F5FB5DDD2D911
-149. Seleziona [K2Node_Select] 45AB28944705957A38E426A46823E99D
-150. To Text (String) [K2Node_CallFunction] 7D9F12A24E416B13B57041A7D03ADA72
-151. Get TxtVar_WeaponsVisibility [K2Node_VariableGet] EA3A8E274E33CB37C1AE73BA6444C6DB
-152. Set Text [K2Node_VariableSet] B11B90E248EA105D79E90FA9DD7AAC9F
-153. Nodo di reindirizzamento [K2Node_Knot] C0168DF6410C52B539D4659CE3654DEC
-154. Seleziona [K2Node_Select] BD46885145DC8256BE274E9BBEB5A8A0
-155. To Text (String) [K2Node_CallFunction] 01BA0E294C7D80807054A1872C370737
-156. Set Text [K2Node_VariableSet] FD98901646DDF63342D894B8C2483857
-157. Nodo di reindirizzamento [K2Node_Knot] FB06108B4DE4942044A6F7BCDC1E4C7A
-158. Get TxtVar_ArmorVisibility [K2Node_VariableGet] 20D66DBC474C43CBE3C9EE9168806E7F
-159. Nodo di reindirizzamento [K2Node_Knot] 2313E3024DD8806935F95584F1F625AB
-160. EQUIPMENT TAB [EdGraphNode_Comment] 0B8943024C74B20FB1DC078365E9FD85
-161. INVENTORY TAB [EdGraphNode_Comment] 8C6986544F85F913BDD75981683382EA
-162. Play Sound 2D [K2Node_CallFunction] 28462F694577366F6D253E95C15AF50F
-163. Play Sound 2D [K2Node_CallFunction] A5CCD4FA450591E1B182AF9684741283
-164. Play Sound 2D [K2Node_CallFunction] B56A5BD548F5677FF3AABFBFF6ECBDDC
-165. Play Sound 2D [K2Node_CallFunction] B08BC4D942A20D1CF5A889BDE48B36A9
-166. Play Sound 2D [K2Node_CallFunction] 59C5E72A48F59B3D1A1F6BAC44DD2E8B
-167. Play Sound 2D [K2Node_CallFunction] E3DC66184ACEF33C9E05349198B3E443
-168. Play Sound 2D [K2Node_CallFunction] AED07DE344CADF1CC8FADDB0C235FCEB
-169. Play Sound 2D [K2Node_CallFunction] 84E156AB46B3C65EE1D19BB2DD9CFDFD
-170. Play Sound 2D [K2Node_CallFunction] BDAA46E146C9B2F58E231C90D2069029
-171. Play Sound 2D [K2Node_CallFunction] FEECF775455B5B4E5D99A8AE5FA05E90
-172. Play Sound 2D [K2Node_CallFunction] D31DAF5544660C18C011A0A737ACACBB
-173. Play Sound 2D [K2Node_CallFunction] 5284791E40EEF7D0E3259FB86EA53A59
-174. Play Sound 2D [K2Node_CallFunction] 1923775E4BDF91192340AA9AF1837124
-175. Play Sound 2D [K2Node_CallFunction] D26C80E041872EB28C9ECC847179B322
-176. Play Sound 2D [K2Node_CallFunction] 35B00D484BA2AA84EE4F2BBFE14DC279
-177. For Each Loop [K2Node_MacroInstance] EB7BD47F415B72067AFB509CDB0973A8
-178. Break S_WeaponData [K2Node_BreakStruct] 2A6244284AF2C4523D6FC48320108E24
-179. Aggiungi [K2Node_CallArrayFunction] D1E840594A972713369F39976690E02C
-180. For Each Loop [K2Node_MacroInstance] F771E2A945166FE183522783B45149D7
-181. Break S_WeaponData [K2Node_BreakStruct] 520D03904DDA74BDB45D0BAD21D6628A
-182. Aggiungi [K2Node_CallArrayFunction] 79EB3F02483216DE4E2CC38730B46180
-183. Nodo di reindirizzamento [K2Node_Knot] 720464EE4F8AE89A92DF078910459D98
+147. EQUIPMENT TAB [EdGraphNode_Comment] 0B8943024C74B20FB1DC078365E9FD85
+148. INVENTORY TAB [EdGraphNode_Comment] 8C6986544F85F913BDD75981683382EA
+149. Play Sound 2D [K2Node_CallFunction] 28462F694577366F6D253E95C15AF50F
+150. Play Sound 2D [K2Node_CallFunction] A5CCD4FA450591E1B182AF9684741283
+151. Play Sound 2D [K2Node_CallFunction] B56A5BD548F5677FF3AABFBFF6ECBDDC
+152. Play Sound 2D [K2Node_CallFunction] B08BC4D942A20D1CF5A889BDE48B36A9
+153. Play Sound 2D [K2Node_CallFunction] 59C5E72A48F59B3D1A1F6BAC44DD2E8B
+154. Play Sound 2D [K2Node_CallFunction] E3DC66184ACEF33C9E05349198B3E443
+155. Play Sound 2D [K2Node_CallFunction] AED07DE344CADF1CC8FADDB0C235FCEB
+156. Play Sound 2D [K2Node_CallFunction] 84E156AB46B3C65EE1D19BB2DD9CFDFD
+157. Play Sound 2D [K2Node_CallFunction] BDAA46E146C9B2F58E231C90D2069029
+158. Play Sound 2D [K2Node_CallFunction] FEECF775455B5B4E5D99A8AE5FA05E90
+159. Play Sound 2D [K2Node_CallFunction] D31DAF5544660C18C011A0A737ACACBB
+160. Play Sound 2D [K2Node_CallFunction] 5284791E40EEF7D0E3259FB86EA53A59
+161. Play Sound 2D [K2Node_CallFunction] 1923775E4BDF91192340AA9AF1837124
+162. Play Sound 2D [K2Node_CallFunction] D26C80E041872EB28C9ECC847179B322
+163. Play Sound 2D [K2Node_CallFunction] 35B00D484BA2AA84EE4F2BBFE14DC279
+164. For Each Loop [K2Node_MacroInstance] EB7BD47F415B72067AFB509CDB0973A8
+165. Break S_WeaponData [K2Node_BreakStruct] 2A6244284AF2C4523D6FC48320108E24
+166. Aggiungi [K2Node_CallArrayFunction] D1E840594A972713369F39976690E02C
+167. For Each Loop [K2Node_MacroInstance] F771E2A945166FE183522783B45149D7
+168. Break S_WeaponData [K2Node_BreakStruct] 520D03904DDA74BDB45D0BAD21D6628A
+169. Aggiungi [K2Node_CallArrayFunction] 79EB3F02483216DE4E2CC38730B46180
+170. Nodo di reindirizzamento [K2Node_Knot] 720464EE4F8AE89A92DF078910459D98
+171. Is Valid [K2Node_MacroInstance] 088195D843A167A361C881AD8263A2EF
+172. Is Valid [K2Node_MacroInstance] FFC71D944A46A2E38A6C07B06FE5928C
+173. RefreshWeaponsVisibilityButton
+Custom Event [K2Node_CustomEvent] 8674E5BD43F270C12A0D368826475A19
+174. Get As ChuckRef [K2Node_VariableGet] 98F60B7F401E41BFEC9868936119D067
+175. Is Valid [K2Node_MacroInstance] B1E940DF43F52B282E36FAB1D62C495B
+176. Get bAreWeaponsVisible [K2Node_VariableGet] 4E08F474416D76CC51CF14890234D5FF
+177. Ramo [K2Node_IfThenElse] 628E55F146373AE09398E880D1932D22
+178. Get TxtVar_WeaponsVisibility [K2Node_VariableGet] 90E00A6C4C285B2F0032978BA28C2FC1
+179. Get TxtVar_ArmorVisibility [K2Node_VariableGet] 16607E73472F10089054C6B8CD66C8C2
+180. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] E2A906E74E7ACC39035A84A75048B205
+181. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 21E863D54B6962629BA8A38933CA9572
+182. Refresh Weapons Visibility Button
+La destinazione è WBP Menu Archive [K2Node_CallFunction] ACFF7DB74BCCC3ECC276BC8F0FB362C0
+183. RefreshArmorVisibilityButton
+Custom Event [K2Node_CustomEvent] AA5F062E47830A71DC94E8BD1CC35A7C
+184. Refresh Armor Visibility Button
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 27EC4BE640392D71CBD218BDF02D4A09
+185. Nodo di reindirizzamento [K2Node_Knot] C99F9E57451AB459AF6264AED57D0951
+186. Nodo di reindirizzamento [K2Node_Knot] 2CD20904412CE00E626A13A323934716
+187. Get bIsArmorVisible [K2Node_VariableGet] 511734C14B98B04F12EC87A26E189D73
+188. Get As ChuckRef [K2Node_VariableGet] CEA386894112C2D8DCA760956A849816
+189. Is Valid [K2Node_MacroInstance] E4B06CAB44609E8C322E86BEFDF224D8
+190. Ramo [K2Node_IfThenElse] 0C1077734C8C0EF297F2DE80B3D492E4
+191. Nodo di reindirizzamento [K2Node_Knot] DB3449E14AF971090ADB8E80904D7F8E
+192. Nodo di reindirizzamento [K2Node_Knot] B70F8420446000289E047B9257802999
+193. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 9AE71AD84D8DB757A7E0D3A3D8B8AD41
+194. SetText (Text)
+La destinazione è Testo [K2Node_CallFunction] 5DD807AC44EBA6514AD76DAD9A04F1F4
 
 Variables Read:
 - Get As ChuckRef
@@ -249,7 +268,6 @@ Variables Read:
 Variables Written:
 - Set LocalItemIcon
 - Set LocalItemName
-- Set Text
 
 External Calls:
 - % (Integer)
@@ -264,13 +282,18 @@ La destinazione è WBP Menu Archive
 - Play Sound 2D
 - Populate Item Grid
 La destinazione è WBP Menu Archive
+- Refresh Armor Visibility Button
+La destinazione è WBP Menu Archive
+- Refresh Weapons Visibility Button
+La destinazione è WBP Menu Archive
+- SetText (Text)
+La destinazione è Testo
 - Show All Items
 La destinazione è WBP Menu Archive
 - Show Armor Items
 La destinazione è WBP Menu Archive
 - Show Weapons Items
 La destinazione è WBP Menu Archive
-- To Text (String)
 - Toggle Armor Visibility
 La destinazione è ALS Chuck BP
 - Toggle Weapons Visibility
@@ -282,8 +305,16 @@ Widgets Touched:
 - InventoryButton ARMOR Only
 - InventoryButton WEAPONS ONLY
 - OnClickedInventoryButtons
-- Set Text
-- To Text (String)
+- Refresh Armor Visibility Button
+La destinazione è WBP Menu Archive
+- Refresh Weapons Visibility Button
+La destinazione è WBP Menu Archive
+- RefreshArmorVisibilityButton
+Custom Event
+- RefreshWeaponsVisibilityButton
+Custom Event
+- SetText (Text)
+La destinazione è Testo
 
 Components Touched:
 - On Clicked (Btn_AllInventory)
@@ -315,13 +346,18 @@ La destinazione è WBP Menu Archive
 - Play Sound 2D
 - Populate Item Grid
 La destinazione è WBP Menu Archive
+- Refresh Armor Visibility Button
+La destinazione è WBP Menu Archive
+- Refresh Weapons Visibility Button
+La destinazione è WBP Menu Archive
+- SetText (Text)
+La destinazione è Testo
 - Show All Items
 La destinazione è WBP Menu Archive
 - Show Armor Items
 La destinazione è WBP Menu Archive
 - Show Weapons Items
 La destinazione è WBP Menu Archive
-- To Text (String)
 - Toggle Armor Visibility
 La destinazione è ALS Chuck BP
 - Toggle Weapons Visibility

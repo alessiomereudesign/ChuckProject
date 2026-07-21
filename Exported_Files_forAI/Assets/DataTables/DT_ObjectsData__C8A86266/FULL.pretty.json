@@ -6,7 +6,7 @@
 	"assetName": "DT_ObjectsData",
 	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/DT_ObjectsData.DT_ObjectsData",
 	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Intersect_Data_DT_ObjectsData",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"assetType": "DataTable",
 	"unrealClass": "DataTable",
 	"rowStruct": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/F_ObjectData.F_ObjectData",

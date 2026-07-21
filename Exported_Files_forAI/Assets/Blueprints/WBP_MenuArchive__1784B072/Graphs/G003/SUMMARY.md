@@ -1,12 +1,16 @@
 # InventoryGraph
 
 Type: EventGraph
-Nodes: 183
-Edges: 198
+Nodes: 194
+Edges: 211
 
 ## Entry Nodes
 - OnClickedInventoryButtons
 - PopulateItemGrid
+Custom Event
+- RefreshArmorVisibilityButton
+Custom Event
+- RefreshWeaponsVisibilityButton
 Custom Event
 - ShowAllItems
 Custom Event

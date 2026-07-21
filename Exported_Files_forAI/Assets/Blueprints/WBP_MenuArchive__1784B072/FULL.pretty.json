@@ -6,7 +6,7 @@
 	"assetName": "WBP_MenuArchive",
 	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive",
 	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"assetType": "Blueprint",
 	"unrealClass": "WidgetBlueprint",
 	"mainClass": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
@@ -212,7 +212,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "7253A9F5427C08C103A0F79C92E2C27D",
+							"pinId": "6F5BCD234C01AE0AF6390883C01E07F4",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -282,7 +282,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "CF80AFE54EA325506CBE63967071A956",
+							"pinId": "26920D8A408D9DA1F03D0B9C1ACC3776",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -324,7 +324,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "9390CF2E4A63C33A80EEA093FA93FDC0",
+							"pinId": "1A88D3974F2E2D3574D1AC81F95C1A0A",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -4573,7 +4573,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "D52144584D1B356FCAD6E78758B8A218",
+							"pinId": "BE63339240532015C381999C71E56327",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -10728,7 +10728,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "76AE9DF342A39648B5C49CA61CD72EBC",
+							"pinId": "53E0592B4D9A327D33CB4EB45AC9A9A6",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -11710,96 +11710,12 @@
 					]
 				},
 				{
-					"nodeGuid": "2149E6C348EB8E83C255A29E8704F2BD",
-					"class": "K2Node_VariableGet",
-					"title": "Get Equipped_BigWeapon",
-					"comment": "",
-					"x": 672,
-					"y": 288,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "7E47A37B4BD75696E9DC899D9CE27116",
-							"name": "Equipped_BigWeapon",
-							"direction": "Output",
-							"type": "name",
-							"defaultValue": "None"
-						},
-						{
-							"pinId": "21508688466DF487AAB18FBFED1FD4DF",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "C685ED45462F35C7B7B85C8AA08C982B",
-					"class": "K2Node_GetDataTableRow",
-					"title": "Get Data Table Row DT_Weapon",
-					"comment": "",
-					"x": 1008,
-					"y": 3,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "F775CBB242A35A1A9490BF9D6390B2B8",
-							"name": "execute",
-							"direction": "Input",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "DBD953EC4CE8B17D30BFF5AF71F5F0DB",
-							"name": "then",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "FC08D8224AD84D5C0CDF229FB6EBF977",
-							"name": "RowNotFound",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "AD658C414A240A3EE8723CB1BA64327F",
-							"name": "DataTable",
-							"direction": "Input",
-							"type": "object|/Script/Engine.DataTable",
-							"defaultValue": "/Game/ChuckContent/Systems/Weapons/Data/DT_Weapon.DT_Weapon"
-						},
-						{
-							"pinId": "ADF8F9CA48DB804050B63BA725D56F8B",
-							"name": "RowName",
-							"direction": "Input",
-							"type": "name",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "277A6496429A73652DB87AB16ED02FB7",
-							"name": "ReturnValue",
-							"direction": "Output",
-							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
 					"nodeGuid": "73ECB2C242867A2D871F36BAB2F606D1",
 					"class": "K2Node_BreakStruct",
 					"title": "Break S_WeaponData",
 					"comment": "",
-					"x": 1424,
-					"y": 67,
+					"x": 1760,
+					"y": 108,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -11833,7 +11749,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get Img_BigWeapon",
 					"comment": "",
-					"x": 1856,
+					"x": 2048,
 					"y": 263,
 					"memberName": "",
 					"functionName": "",
@@ -11861,7 +11777,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get TxtVar_BigWeapon",
 					"comment": "",
-					"x": 1856,
+					"x": 2048,
 					"y": 55,
 					"memberName": "",
 					"functionName": "",
@@ -11889,7 +11805,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Set Brush from Texture\nLa destinazione è Immagine",
 					"comment": "",
-					"x": 2016,
+					"x": 2208,
 					"y": 192,
 					"memberName": "",
 					"functionName": "",
@@ -11938,7 +11854,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "SetText (Text)\nLa destinazione è Testo",
 					"comment": "",
-					"x": 2016,
+					"x": 2208,
 					"y": -16,
 					"memberName": "",
 					"functionName": "",
@@ -11976,102 +11892,11 @@
 					]
 				},
 				{
-					"nodeGuid": "9A57535E4022734C147BA3B6D73DC5DC",
-					"class": "K2Node_GetDataTableRow",
-					"title": "Get Data Table Row DT_Weapon",
-					"comment": "",
-					"x": 1008,
-					"y": 480,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "F775CBB242A35A1A9490BF9D6390B2B8",
-							"name": "execute",
-							"direction": "Input",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "DBD953EC4CE8B17D30BFF5AF71F5F0DB",
-							"name": "then",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "FC08D8224AD84D5C0CDF229FB6EBF977",
-							"name": "RowNotFound",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "AD658C414A240A3EE8723CB1BA64327F",
-							"name": "DataTable",
-							"direction": "Input",
-							"type": "object|/Script/Engine.DataTable",
-							"defaultValue": "/Game/ChuckContent/Systems/Weapons/Data/DT_Weapon.DT_Weapon"
-						},
-						{
-							"pinId": "ADF8F9CA48DB804050B63BA725D56F8B",
-							"name": "RowName",
-							"direction": "Input",
-							"type": "name",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "277A6496429A73652DB87AB16ED02FB7",
-							"name": "ReturnValue",
-							"direction": "Output",
-							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "C135765345827F08905169963434F811",
-					"class": "K2Node_BreakStruct",
-					"title": "Break S_WeaponData",
-					"comment": "",
-					"x": 1424,
-					"y": 544,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "5E1213B442FEDD26275CD18CFCFFDEC3",
-							"name": "S_WeaponData",
-							"direction": "Input",
-							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|ref|const",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "0F58DFAF4142EE0052A00480FED59304",
-							"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
-							"direction": "Output",
-							"type": "text",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "6023F4BE45293BE47B085F89E2951A66",
-							"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
-							"direction": "Output",
-							"type": "object|/Script/Engine.Texture2D",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
 					"nodeGuid": "4FAE955F4B9F0D8BB24E098296F8DD18",
 					"class": "K2Node_CallFunction",
 					"title": "Set Brush from Texture\nLa destinazione è Immagine",
 					"comment": "",
-					"x": 2016,
+					"x": 2208,
 					"y": 672,
 					"memberName": "",
 					"functionName": "",
@@ -12120,7 +11945,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "SetText (Text)\nLa destinazione è Testo",
 					"comment": "",
-					"x": 2016,
+					"x": 2208,
 					"y": 464,
 					"memberName": "",
 					"functionName": "",
@@ -12153,62 +11978,6 @@
 							"name": "InText",
 							"direction": "Input",
 							"type": "text",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "0C20CCCE43AF6DDADA7FB9864318A6B5",
-					"class": "K2Node_VariableGet",
-					"title": "Get Equipped_SmallFirearm",
-					"comment": "",
-					"x": 688,
-					"y": 752,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "4AB85EFF49574B3FFB1D5A908C51DF6A",
-							"name": "Equipped_SmallFirearm",
-							"direction": "Output",
-							"type": "name",
-							"defaultValue": "None"
-						},
-						{
-							"pinId": "A361D270452E2EFA946FE7B9DC9F37B3",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "47C388A24723C735D250E9AC0440E035",
-					"class": "K2Node_VariableGet",
-					"title": "Get Equipped_Melee",
-					"comment": "",
-					"x": 720,
-					"y": 1261,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "9029B1174A515015643EBAA64E6805CE",
-							"name": "Equipped_Melee",
-							"direction": "Output",
-							"type": "name",
-							"defaultValue": "None"
-						},
-						{
-							"pinId": "3DE959E34C5833BD40C4DCB87593F544",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
 							"defaultValue": ""
 						}
 					]
@@ -12295,7 +12064,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get Img_SmallFirearm",
 					"comment": "",
-					"x": 1856,
+					"x": 2048,
 					"y": 744,
 					"memberName": "",
 					"functionName": "",
@@ -12323,7 +12092,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get TxtVar_SmallFirearm",
 					"comment": "",
-					"x": 1840,
+					"x": 2016,
 					"y": 536,
 					"memberName": "",
 					"functionName": "",
@@ -12347,68 +12116,12 @@
 					]
 				},
 				{
-					"nodeGuid": "071590574D5C2D888042AFAADB48EDDD",
-					"class": "K2Node_GetDataTableRow",
-					"title": "Get Data Table Row DT_Weapon",
-					"comment": "",
-					"x": 1008,
-					"y": 992,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "F775CBB242A35A1A9490BF9D6390B2B8",
-							"name": "execute",
-							"direction": "Input",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "DBD953EC4CE8B17D30BFF5AF71F5F0DB",
-							"name": "then",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "FC08D8224AD84D5C0CDF229FB6EBF977",
-							"name": "RowNotFound",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "AD658C414A240A3EE8723CB1BA64327F",
-							"name": "DataTable",
-							"direction": "Input",
-							"type": "object|/Script/Engine.DataTable",
-							"defaultValue": "/Game/ChuckContent/Systems/Weapons/Data/DT_Weapon.DT_Weapon"
-						},
-						{
-							"pinId": "ADF8F9CA48DB804050B63BA725D56F8B",
-							"name": "RowName",
-							"direction": "Input",
-							"type": "name",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "277A6496429A73652DB87AB16ED02FB7",
-							"name": "ReturnValue",
-							"direction": "Output",
-							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
 					"nodeGuid": "C0D560BB4FB69938AAB240A4112D0D63",
 					"class": "K2Node_BreakStruct",
 					"title": "Break S_WeaponData",
 					"comment": "",
-					"x": 1424,
-					"y": 1056,
+					"x": 1760,
+					"y": 1100,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -12442,7 +12155,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Set Brush from Texture\nLa destinazione è Immagine",
 					"comment": "",
-					"x": 2016,
+					"x": 2208,
 					"y": 1184,
 					"memberName": "",
 					"functionName": "",
@@ -12491,7 +12204,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "SetText (Text)\nLa destinazione è Testo",
 					"comment": "",
-					"x": 2016,
+					"x": 2208,
 					"y": 976,
 					"memberName": "",
 					"functionName": "",
@@ -12715,7 +12428,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get Img_Melee",
 					"comment": "",
-					"x": 1856,
+					"x": 2048,
 					"y": 1255,
 					"memberName": "",
 					"functionName": "",
@@ -12743,7 +12456,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get TxtVar_Melee",
 					"comment": "",
-					"x": 1856,
+					"x": 2048,
 					"y": 1047,
 					"memberName": "",
 					"functionName": "",
@@ -12827,8 +12540,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get Img_BigWeapon",
 					"comment": "",
-					"x": 2320,
-					"y": 296,
+					"x": 2448,
+					"y": 184,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -12855,8 +12568,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get TxtVar_BigWeapon",
 					"comment": "",
-					"x": 2320,
-					"y": 88,
+					"x": 2448,
+					"y": -24,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -12883,8 +12596,8 @@
 					"class": "K2Node_CallFunction",
 					"title": "Set Brush from Texture\nLa destinazione è Immagine",
 					"comment": "",
-					"x": 2496,
-					"y": 224,
+					"x": 2624,
+					"y": 112,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -12932,8 +12645,8 @@
 					"class": "K2Node_CallFunction",
 					"title": "SetText (Text)\nLa destinazione è Testo",
 					"comment": "",
-					"x": 2496,
-					"y": 16,
+					"x": 2624,
+					"y": -96,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -12974,8 +12687,8 @@
 					"class": "K2Node_CallFunction",
 					"title": "Set Brush from Texture\nLa destinazione è Immagine",
 					"comment": "",
-					"x": 2496,
-					"y": 704,
+					"x": 2624,
+					"y": 608,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -13023,8 +12736,8 @@
 					"class": "K2Node_CallFunction",
 					"title": "SetText (Text)\nLa destinazione è Testo",
 					"comment": "",
-					"x": 2496,
-					"y": 496,
+					"x": 2624,
+					"y": 400,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -13065,8 +12778,8 @@
 					"class": "K2Node_CallFunction",
 					"title": "Set Brush from Texture\nLa destinazione è Immagine",
 					"comment": "",
-					"x": 2496,
-					"y": 1216,
+					"x": 2624,
+					"y": 1104,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -13114,8 +12827,8 @@
 					"class": "K2Node_CallFunction",
 					"title": "SetText (Text)\nLa destinazione è Testo",
 					"comment": "",
-					"x": 2496,
-					"y": 1008,
+					"x": 2624,
+					"y": 896,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -13247,8 +12960,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get Img_SmallFirearm",
 					"comment": "",
-					"x": 2304,
-					"y": 775,
+					"x": 2432,
+					"y": 679,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -13275,8 +12988,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get TxtVar_SmallFirearm",
 					"comment": "",
-					"x": 2288,
-					"y": 567,
+					"x": 2416,
+					"y": 471,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -13303,8 +13016,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get TxtVar_Melee",
 					"comment": "",
-					"x": 2320,
-					"y": 1079,
+					"x": 2448,
+					"y": 967,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -13331,8 +13044,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get Img_Melee",
 					"comment": "",
-					"x": 2336,
-					"y": 1287,
+					"x": 2464,
+					"y": 1175,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -13411,39 +13124,11 @@
 					]
 				},
 				{
-					"nodeGuid": "65642BFB41DD091C3574A685D8401EDD",
-					"class": "K2Node_VariableGet",
-					"title": "Get Mesh_BigWeapon",
-					"comment": "",
-					"x": 672,
-					"y": 224,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "E4B2365E4EC001359C00958B5F7ABF93",
-							"name": "Mesh_BigWeapon",
-							"direction": "Output",
-							"type": "object|/Script/Engine.SkeletalMeshComponent",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "08F1EDD4405713DCF535258F5E136211",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
 					"nodeGuid": "B3934C89404BCCE834FA989BAB6AA650",
 					"class": "K2Node_MacroInstance",
 					"title": "Is Valid",
 					"comment": "",
-					"x": 688,
+					"x": 768,
 					"y": 2,
 					"memberName": "",
 					"functionName": "",
@@ -13485,7 +13170,7 @@
 					"class": "K2Node_Knot",
 					"title": "Nodo di reindirizzamento",
 					"comment": "",
-					"x": 1008,
+					"x": 1088,
 					"y": -48,
 					"memberName": "",
 					"functionName": "",
@@ -13504,62 +13189,6 @@
 							"name": "OutputPin",
 							"direction": "Output",
 							"type": "exec",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "7D698EEB4C18ADB0249DD484FCB9ED13",
-					"class": "K2Node_Knot",
-					"title": "Nodo di reindirizzamento",
-					"comment": "",
-					"x": 2240,
-					"y": -48,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "FDF8146B49EC1227BD8499A3D0BB47AC",
-							"name": "InputPin",
-							"direction": "Input",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "8A1A568146D69652C7A2B9A515EFBAA2",
-							"name": "OutputPin",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "BB04F00A4D830B1161BF439352BD3288",
-					"class": "K2Node_VariableGet",
-					"title": "Get Mesh_SmallWeapon",
-					"comment": "",
-					"x": 672,
-					"y": 688,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "87FC976A45F63DD996F45E84647F3C8C",
-							"name": "Mesh_SmallWeapon",
-							"direction": "Output",
-							"type": "object|/Script/Engine.SkeletalMeshComponent",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "992D0F9E4431C3DE4DCC1C8F05493B23",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
 							"defaultValue": ""
 						}
 					]
@@ -13635,62 +13264,6 @@
 					]
 				},
 				{
-					"nodeGuid": "91E144514C3ECAA97A6700A8670ECF43",
-					"class": "K2Node_Knot",
-					"title": "Nodo di reindirizzamento",
-					"comment": "",
-					"x": 2208,
-					"y": 448,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "3ED537034CB566E7BB2698B902BF331F",
-							"name": "InputPin",
-							"direction": "Input",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "E7B7AD7F410EA4A47FC9D6818D41332D",
-							"name": "OutputPin",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "EB057E474AAF5B83E9D2B09B895378DA",
-					"class": "K2Node_VariableGet",
-					"title": "Get Mesh_Melee",
-					"comment": "",
-					"x": 704,
-					"y": 1200,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "84684B794ED0391AEB2D708E81620A3D",
-							"name": "Mesh_Melee",
-							"direction": "Output",
-							"type": "object|/Script/Engine.SkeletalMeshComponent",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "A278F5E8404A7172849C73BEACAA8475",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
 					"nodeGuid": "B10F85EB43B47DB347A786A612979C87",
 					"class": "K2Node_MacroInstance",
 					"title": "Is Valid",
@@ -13733,34 +13306,6 @@
 					]
 				},
 				{
-					"nodeGuid": "6BA009914AC1B7EAD025CAB4701A4E6D",
-					"class": "K2Node_Knot",
-					"title": "Nodo di reindirizzamento",
-					"comment": "",
-					"x": 2144,
-					"y": 944,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "6E05597949011A088C0257B51A298FA7",
-							"name": "InputPin",
-							"direction": "Input",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "EC9C9F9640C588CF6B18F39342A01C79",
-							"name": "OutputPin",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
 					"nodeGuid": "649FDD36417785B65C72AB85E88E74E4",
 					"class": "K2Node_Knot",
 					"title": "Nodo di reindirizzamento",
@@ -13789,39 +13334,270 @@
 					]
 				},
 				{
-					"nodeGuid": "1257D3084EA5426317867BA00A1A846C",
-					"class": "K2Node_CallFunction",
-					"title": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+					"nodeGuid": "710F4D9D4EB4CCFBCE21D7A40C37671D",
+					"class": "K2Node_VariableGet",
+					"title": "Get EquippedSmallFirearmIndex",
 					"comment": "",
-					"x": 672,
-					"y": 128,
+					"x": 736,
+					"y": 622,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
 					"targetClass": "",
 					"pins": [
 						{
-							"pinId": "F2C8310B457694BD0A67C3AA738B4766",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Script/Engine.SkeletalMeshComponent",
-							"defaultValue": ""
+							"pinId": "7AF6B01D406986B199DE1BAB9648386C",
+							"name": "EquippedSmallFirearmIndex",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": "0"
 						},
 						{
-							"pinId": "CFAAEE5348BC2986FA4647AD279989D9",
-							"name": "ReturnValue",
-							"direction": "Output",
-							"type": "object|/Script/Engine.SkeletalMesh",
+							"pinId": "91725BAC4B91751716CB219977D58660",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
 							"defaultValue": ""
 						}
 					]
 				},
 				{
-					"nodeGuid": "DD364FBE4A0C872691C80DB1BB277331",
-					"class": "K2Node_CallFunction",
-					"title": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+					"nodeGuid": "F6BF8AF74C71F0789BE2C88256DA8966",
+					"class": "K2Node_VariableGet",
+					"title": "Get OwnedWeapons",
 					"comment": "",
-					"x": 688,
+					"x": 592,
+					"y": 738,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "20BD310A458798A714AF8EA2F9F1E967",
+							"name": "OwnedWeapons",
+							"direction": "Output",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "9780DF144BEA4846DCEB22B5AD6BCFD5",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "4DE25030407123A6ADF8358554A4B7CD",
+					"class": "K2Node_CallArrayFunction",
+					"title": "Length",
+					"comment": "",
+					"x": 848,
+					"y": 720,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "F229B8164B48AB96D7FAEE8ABF4482F6",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetArrayLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetArrayLibrary"
+						},
+						{
+							"pinId": "A5C6B07C4CA79E45A24967B809C385ED",
+							"name": "TargetArray",
+							"direction": "Input",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array|ref|const",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "6CA05218495DF37823A998B53E6551D7",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": "0"
+						}
+					]
+				},
+				{
+					"nodeGuid": "2921C7FA470BE9F56E7DB0A9756CDB23",
+					"class": "K2Node_PromotableOperator",
+					"title": "integer >= integer",
+					"comment": "",
+					"x": 1088,
+					"y": 624,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "CE50D40144029ED448A20C9A89B0A3E5",
+							"name": "A",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "F13FD68946467B3FABB309AAA7486DBF",
+							"name": "B",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "495A6A2C4ADF995A639CE8827A436133",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "B4A30D3B4BAB6D2787B0D88C29EC0D81",
+							"name": "ErrorTolerance",
+							"direction": "Input",
+							"type": "None",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "03C47BF141612B93E74D63A2B6C58AB8",
+					"class": "K2Node_CommutativeAssociativeBinaryOperator",
+					"title": "AND Boolean",
+					"comment": "",
+					"x": 1280,
+					"y": 674,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "F58B9F6A4ED857CFFAA8A69D5F88F382",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetMathLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+						},
+						{
+							"pinId": "7B38A67648A6BD503CDF3DA7E52BDB77",
+							"name": "A",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "55D59C754D7FEAF2FFD17E9900D8EF17",
+							"name": "B",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "7B7F145F4DD7DDFBFACD6A85E87BF75D",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": "false"
+						}
+					]
+				},
+				{
+					"nodeGuid": "FE494DDE4D49EB72CFF0F78DE3620924",
+					"class": "K2Node_PromotableOperator",
+					"title": "integer < integer",
+					"comment": "",
+					"x": 1104,
+					"y": 710,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "28738B5449EFA674FFBAC9ABCD10BE60",
+							"name": "A",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "A20608A442056B0C5EBDB0A9696174B3",
+							"name": "B",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "57BDCE784DF77ABFB90269BC99090DB1",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "9AB507D7477169149BF59288C148BBDC",
+							"name": "ErrorTolerance",
+							"direction": "Input",
+							"type": "None",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "4C3413284534E5398AA72CA70C37948A",
+					"class": "K2Node_IfThenElse",
+					"title": "Ramo",
+					"comment": "",
+					"x": 1520,
+					"y": 480,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "D3C9312647410E9BD04E3C81EEB78072",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "75F38F0B4A887092FB3169BE9862FD0B",
+							"name": "Condition",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "true"
+						},
+						{
+							"pinId": "A3D72007498CBA1614219D8916FD3C55",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "D61CF2A0428793A504176292160F36C2",
+							"name": "else",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "539402CC42707132F351DD8B49AAB13F",
+					"class": "K2Node_GetArrayItem",
+					"title": "OTTIENI",
+					"comment": "",
+					"x": 1536,
 					"y": 592,
 					"memberName": "",
 					"functionName": "",
@@ -13829,27 +13605,860 @@
 					"targetClass": "",
 					"pins": [
 						{
-							"pinId": "D4FEFDEA437D025F5BE372A3E97A8EFC",
-							"name": "self",
+							"pinId": "AEA124A6426E7D1D982FAA8D48B8FB56",
+							"name": "Array",
 							"direction": "Input",
-							"type": "object|/Script/Engine.SkeletalMeshComponent",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
 							"defaultValue": ""
 						},
 						{
-							"pinId": "B649E15F41AA08F2F75B82BC9842D7B8",
-							"name": "ReturnValue",
+							"pinId": "963787524363AF69BACD34982ED32AB1",
+							"name": "Dimension 1",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": "0"
+						},
+						{
+							"pinId": "80250AC94811CAB9B3FDBBB06B010F7C",
+							"name": "Output",
 							"direction": "Output",
-							"type": "object|/Script/Engine.SkeletalMesh",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|ref",
 							"defaultValue": ""
 						}
 					]
 				},
 				{
-					"nodeGuid": "2F67C30C4053BCE615C836AA44A4B787",
-					"class": "K2Node_CallFunction",
-					"title": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+					"nodeGuid": "83EE1B1D4905663DA4FC9B8EAF499687",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
 					"comment": "",
-					"x": 704,
+					"x": 832,
+					"y": 800,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "83609092469C87E543E443AC3168B356",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "0689B0014774D7BA8831E39FF41F4B48",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "E0DE98554AD66DC7060581B5896333DB",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 1424,
+					"y": 800,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "D981B0E74D962DBA9BA957A09E25E13C",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "976250D04CF382ABC6B1D584EBBFF98C",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "6637C0D54A429975A59584A60A8FE621",
+					"class": "K2Node_BreakStruct",
+					"title": "Break S_WeaponData",
+					"comment": "",
+					"x": 1760,
+					"y": 587,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "03949D1D4E6972B24397E0837BEE38AB",
+							"name": "S_WeaponData",
+							"direction": "Input",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|ref|const",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "55DCE29D403386A011969CB936AA65E6",
+							"name": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+							"direction": "Output",
+							"type": "text",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "9A29847F475985A616DBD4A58E908D4F",
+							"name": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+							"direction": "Output",
+							"type": "object|/Script/Engine.Texture2D",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "7CAF1C8D4B22651041401BB132B5A473",
+					"class": "K2Node_VariableGet",
+					"title": "Get EquippedBigWeaponIndex",
+					"comment": "",
+					"x": 736,
+					"y": 142,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "CFF0A686426A211338FA1F857F7580E9",
+							"name": "EquippedBigWeaponIndex",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": "0"
+						},
+						{
+							"pinId": "FC6C2D514BC5CF6A5C75B0BBBA5DB303",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "F9DA69014F7D659B85A14F91DE28D02E",
+					"class": "K2Node_VariableGet",
+					"title": "Get OwnedWeapons",
+					"comment": "",
+					"x": 592,
+					"y": 252,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "20BD310A458798A714AF8EA2F9F1E967",
+							"name": "OwnedWeapons",
+							"direction": "Output",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "9780DF144BEA4846DCEB22B5AD6BCFD5",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "9C82A7CD4A9958C664882594D06E7094",
+					"class": "K2Node_CallArrayFunction",
+					"title": "Length",
+					"comment": "",
+					"x": 848,
+					"y": 234,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "F229B8164B48AB96D7FAEE8ABF4482F6",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetArrayLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetArrayLibrary"
+						},
+						{
+							"pinId": "A5C6B07C4CA79E45A24967B809C385ED",
+							"name": "TargetArray",
+							"direction": "Input",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array|ref|const",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "6CA05218495DF37823A998B53E6551D7",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": "0"
+						}
+					]
+				},
+				{
+					"nodeGuid": "A46A9C80478741F6BD830A925B331389",
+					"class": "K2Node_PromotableOperator",
+					"title": "integer >= integer",
+					"comment": "",
+					"x": 1088,
+					"y": 144,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "CE50D40144029ED448A20C9A89B0A3E5",
+							"name": "A",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "F13FD68946467B3FABB309AAA7486DBF",
+							"name": "B",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "495A6A2C4ADF995A639CE8827A436133",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "05B1B03D4D890879544A23A5325CA87B",
+							"name": "ErrorTolerance",
+							"direction": "Input",
+							"type": "None",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "4C97E5C14A7724FBFB6BB2BB3CFAA0C8",
+					"class": "K2Node_CommutativeAssociativeBinaryOperator",
+					"title": "AND Boolean",
+					"comment": "",
+					"x": 1280,
+					"y": 192,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "F58B9F6A4ED857CFFAA8A69D5F88F382",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetMathLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+						},
+						{
+							"pinId": "7B38A67648A6BD503CDF3DA7E52BDB77",
+							"name": "A",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "55D59C754D7FEAF2FFD17E9900D8EF17",
+							"name": "B",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "7B7F145F4DD7DDFBFACD6A85E87BF75D",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": "false"
+						}
+					]
+				},
+				{
+					"nodeGuid": "55ED76DC471F7FD7FF63208859A1A9A1",
+					"class": "K2Node_PromotableOperator",
+					"title": "integer < integer",
+					"comment": "",
+					"x": 1104,
+					"y": 224,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "28738B5449EFA674FFBAC9ABCD10BE60",
+							"name": "A",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "A20608A442056B0C5EBDB0A9696174B3",
+							"name": "B",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "57BDCE784DF77ABFB90269BC99090DB1",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "CCA867874536F07873E0DF8EFEF888A4",
+							"name": "ErrorTolerance",
+							"direction": "Input",
+							"type": "None",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "275F030C41A278A8F18B4A92622F51BC",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 832,
+					"y": 320,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "83609092469C87E543E443AC3168B356",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "0689B0014774D7BA8831E39FF41F4B48",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "3D40295343835C3AB941F09C0A736A78",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 1424,
+					"y": 320,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "D981B0E74D962DBA9BA957A09E25E13C",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "976250D04CF382ABC6B1D584EBBFF98C",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "847F935540E67ECBC3212881E4B35DBE",
+					"class": "K2Node_IfThenElse",
+					"title": "Ramo",
+					"comment": "",
+					"x": 1520,
+					"y": 0,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "D3C9312647410E9BD04E3C81EEB78072",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "75F38F0B4A887092FB3169BE9862FD0B",
+							"name": "Condition",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "true"
+						},
+						{
+							"pinId": "A3D72007498CBA1614219D8916FD3C55",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "D61CF2A0428793A504176292160F36C2",
+							"name": "else",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "7D0340694F71238EE332C1A6720B698B",
+					"class": "K2Node_GetArrayItem",
+					"title": "OTTIENI",
+					"comment": "",
+					"x": 1536,
+					"y": 112,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "AEA124A6426E7D1D982FAA8D48B8FB56",
+							"name": "Array",
+							"direction": "Input",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "963787524363AF69BACD34982ED32AB1",
+							"name": "Dimension 1",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": "0"
+						},
+						{
+							"pinId": "80250AC94811CAB9B3FDBBB06B010F7C",
+							"name": "Output",
+							"direction": "Output",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|ref",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "B8349A904694980BCC8644A71FCF45BB",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 1072,
+					"y": 112,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "EA4294914799F38F4EBE5F882194B453",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "6554F3974FB7998A9F26DFA935536E87",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "2AC0BBB842499DB9481FCAAD665025FF",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 1456,
+					"y": 112,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "55B892024E55F154E05D0AAD022484BA",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "B2F61253426292C86714729A1E3D166C",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "EEB5960E4F7A10AC5008CDB8E4DEDC6A",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 1088,
+					"y": 592,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "B3FBFE7D41D7B3E330EDD1972D7E565F",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "FBA7632144DE6D3B1E422097B2A0BCCA",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "8F39083E4CB1348BD7CB9BAD0E62FD92",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 1456,
+					"y": 592,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "013DC8A34DBFE02B4F9C4FB1E924C0A8",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "0B0C48704A59BBADEF66D5B8FEBD2979",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "675D0F70436E0F4111F22195B8A0D30E",
+					"class": "K2Node_VariableGet",
+					"title": "Get EquippedMeleeIndex",
+					"comment": "",
+					"x": 720,
+					"y": 1136,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "03299B474DD5986AF24716BB24DCAF80",
+							"name": "EquippedMeleeIndex",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": "0"
+						},
+						{
+							"pinId": "E54948324641FADD1DF73DA840145CF1",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "4E869C5D4C3EC982EBC0DBB57508025A",
+					"class": "K2Node_VariableGet",
+					"title": "Get OwnedWeapons",
+					"comment": "",
+					"x": 592,
+					"y": 1251,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "20BD310A458798A714AF8EA2F9F1E967",
+							"name": "OwnedWeapons",
+							"direction": "Output",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "9780DF144BEA4846DCEB22B5AD6BCFD5",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "994C85224458B23F2E005C82150BA484",
+					"class": "K2Node_CallArrayFunction",
+					"title": "Length",
+					"comment": "",
+					"x": 848,
+					"y": 1232,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "F229B8164B48AB96D7FAEE8ABF4482F6",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetArrayLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetArrayLibrary"
+						},
+						{
+							"pinId": "A5C6B07C4CA79E45A24967B809C385ED",
+							"name": "TargetArray",
+							"direction": "Input",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array|ref|const",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "6CA05218495DF37823A998B53E6551D7",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": "0"
+						}
+					]
+				},
+				{
+					"nodeGuid": "4F2CC6D24089C0EE567BADB65E47E71D",
+					"class": "K2Node_CommutativeAssociativeBinaryOperator",
+					"title": "AND Boolean",
+					"comment": "",
+					"x": 1280,
+					"y": 1184,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "F58B9F6A4ED857CFFAA8A69D5F88F382",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/Engine.KismetMathLibrary",
+							"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
+						},
+						{
+							"pinId": "7B38A67648A6BD503CDF3DA7E52BDB77",
+							"name": "A",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "55D59C754D7FEAF2FFD17E9900D8EF17",
+							"name": "B",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "7B7F145F4DD7DDFBFACD6A85E87BF75D",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": "false"
+						}
+					]
+				},
+				{
+					"nodeGuid": "D11C74F94FAE99622850CDA9A7E78DDF",
+					"class": "K2Node_PromotableOperator",
+					"title": "integer < integer",
+					"comment": "",
+					"x": 1104,
+					"y": 1222,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "28738B5449EFA674FFBAC9ABCD10BE60",
+							"name": "A",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "A20608A442056B0C5EBDB0A9696174B3",
+							"name": "B",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "57BDCE784DF77ABFB90269BC99090DB1",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "BD37D7314628B4B63DA63C932E7A83E6",
+							"name": "ErrorTolerance",
+							"direction": "Input",
+							"type": "None",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "58C670B9467546648D1A8089BCC108FF",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 832,
+					"y": 1312,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "83609092469C87E543E443AC3168B356",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "0689B0014774D7BA8831E39FF41F4B48",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "028033BB44EB580A8E0EC19AEE2488AB",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 1424,
+					"y": 1312,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "D981B0E74D962DBA9BA957A09E25E13C",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "976250D04CF382ABC6B1D584EBBFF98C",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "C230FDEE425DA5C90D315BB2D60F6449",
+					"class": "K2Node_PromotableOperator",
+					"title": "integer >= integer",
+					"comment": "",
+					"x": 1088,
+					"y": 1136,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "CE50D40144029ED448A20C9A89B0A3E5",
+							"name": "A",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "F13FD68946467B3FABB309AAA7486DBF",
+							"name": "B",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "495A6A2C4ADF995A639CE8827A436133",
+							"name": "ReturnValue",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "299C79EB49D4DA93E4B02BAE8D9D9C8E",
+							"name": "ErrorTolerance",
+							"direction": "Input",
+							"type": "None",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "31B754684343E9DC8EA0EE8A5CB80541",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 1088,
 					"y": 1104,
 					"memberName": "",
 					"functionName": "",
@@ -13857,17 +14466,206 @@
 					"targetClass": "",
 					"pins": [
 						{
-							"pinId": "FF6F1C414C938CF9A61D4F9571C6BAD3",
-							"name": "self",
+							"pinId": "B3FBFE7D41D7B3E330EDD1972D7E565F",
+							"name": "InputPin",
 							"direction": "Input",
-							"type": "object|/Script/Engine.SkeletalMeshComponent",
+							"type": "int",
 							"defaultValue": ""
 						},
 						{
-							"pinId": "5B39B8CA4896EBCDA237588F0C37F5A8",
-							"name": "ReturnValue",
+							"pinId": "FBA7632144DE6D3B1E422097B2A0BCCA",
+							"name": "OutputPin",
 							"direction": "Output",
-							"type": "object|/Script/Engine.SkeletalMesh",
+							"type": "int",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "E5C8D94A45992B031AEAB4AE6B470AD7",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 1456,
+					"y": 1104,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "013DC8A34DBFE02B4F9C4FB1E924C0A8",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "0B0C48704A59BBADEF66D5B8FEBD2979",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "int",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "9D98E43047C65E8CE2D9C48FB09E5110",
+					"class": "K2Node_IfThenElse",
+					"title": "Ramo",
+					"comment": "",
+					"x": 1520,
+					"y": 992,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "D3C9312647410E9BD04E3C81EEB78072",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "75F38F0B4A887092FB3169BE9862FD0B",
+							"name": "Condition",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "true"
+						},
+						{
+							"pinId": "A3D72007498CBA1614219D8916FD3C55",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "D61CF2A0428793A504176292160F36C2",
+							"name": "else",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "612102744F47EE9E81C535A03931B530",
+					"class": "K2Node_GetArrayItem",
+					"title": "OTTIENI",
+					"comment": "",
+					"x": 1536,
+					"y": 1104,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "AEA124A6426E7D1D982FAA8D48B8FB56",
+							"name": "Array",
+							"direction": "Input",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "963787524363AF69BACD34982ED32AB1",
+							"name": "Dimension 1",
+							"direction": "Input",
+							"type": "int",
+							"defaultValue": "0"
+						},
+						{
+							"pinId": "80250AC94811CAB9B3FDBBB06B010F7C",
+							"name": "Output",
+							"direction": "Output",
+							"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|ref",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "73B13D17400004D6B58476BD2A574E1F",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 1744,
+					"y": 944,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "221789484806DDDEBBFCF1A436EA15C4",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "6EAF26F94648481A684420909774E694",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "4F3482CE4D79A289FFBC99BF8A8A4FE4",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 1760,
+					"y": 448,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "F0FCE2294462096529B4FAA4A7F9618B",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "8E669AA94660812EC8A2A89CFDA18BDE",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "BF4FDCD24169F4F76425E4B0C1A31E7F",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 1776,
+					"y": -48,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "3ED2D0EE4EFD335D134BADAA6382A148",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "AD86E6FE476993DB701A7584EF31F609",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "exec",
 							"defaultValue": ""
 						}
 					]
@@ -13886,30 +14684,6 @@
 					"fromNodeGuid": "1B9F2EBD48F647DA540DB6A39C12AA5B",
 					"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
 					"fromPinName": "As ChuckRef",
-					"toNodeGuid": "2149E6C348EB8E83C255A29E8704F2BD",
-					"toPinId": "21508688466DF487AAB18FBFED1FD4DF",
-					"toPinName": "self"
-				},
-				{
-					"fromNodeGuid": "1B9F2EBD48F647DA540DB6A39C12AA5B",
-					"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
-					"fromPinName": "As ChuckRef",
-					"toNodeGuid": "0C20CCCE43AF6DDADA7FB9864318A6B5",
-					"toPinId": "A361D270452E2EFA946FE7B9DC9F37B3",
-					"toPinName": "self"
-				},
-				{
-					"fromNodeGuid": "1B9F2EBD48F647DA540DB6A39C12AA5B",
-					"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
-					"fromPinName": "As ChuckRef",
-					"toNodeGuid": "47C388A24723C735D250E9AC0440E035",
-					"toPinId": "3DE959E34C5833BD40C4DCB87593F544",
-					"toPinName": "self"
-				},
-				{
-					"fromNodeGuid": "1B9F2EBD48F647DA540DB6A39C12AA5B",
-					"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
-					"fromPinName": "As ChuckRef",
 					"toNodeGuid": "4D964C49439525D8FBBA499F12A69091",
 					"toPinId": "F59D5011441BB01466A359A666F725CA",
 					"toPinName": "self"
@@ -13918,62 +14692,78 @@
 					"fromNodeGuid": "1B9F2EBD48F647DA540DB6A39C12AA5B",
 					"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
 					"fromPinName": "As ChuckRef",
-					"toNodeGuid": "65642BFB41DD091C3574A685D8401EDD",
-					"toPinId": "08F1EDD4405713DCF535258F5E136211",
+					"toNodeGuid": "A7A72808452DA4D5C7D70FAD48A0F6E2",
+					"toPinId": "9BCD44874080EDEAB3F1EB9F83B55517",
+					"toPinName": "InputObject"
+				},
+				{
+					"fromNodeGuid": "1B9F2EBD48F647DA540DB6A39C12AA5B",
+					"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
+					"fromPinName": "As ChuckRef",
+					"toNodeGuid": "710F4D9D4EB4CCFBCE21D7A40C37671D",
+					"toPinId": "91725BAC4B91751716CB219977D58660",
 					"toPinName": "self"
 				},
 				{
 					"fromNodeGuid": "1B9F2EBD48F647DA540DB6A39C12AA5B",
 					"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
 					"fromPinName": "As ChuckRef",
-					"toNodeGuid": "BB04F00A4D830B1161BF439352BD3288",
-					"toPinId": "992D0F9E4431C3DE4DCC1C8F05493B23",
+					"toNodeGuid": "F6BF8AF74C71F0789BE2C88256DA8966",
+					"toPinId": "9780DF144BEA4846DCEB22B5AD6BCFD5",
 					"toPinName": "self"
 				},
 				{
 					"fromNodeGuid": "1B9F2EBD48F647DA540DB6A39C12AA5B",
 					"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
 					"fromPinName": "As ChuckRef",
-					"toNodeGuid": "EB057E474AAF5B83E9D2B09B895378DA",
-					"toPinId": "A278F5E8404A7172849C73BEACAA8475",
+					"toNodeGuid": "B3934C89404BCCE834FA989BAB6AA650",
+					"toPinId": "C3AE679C42DEACA1FA5E668DEA0B0FFE",
+					"toPinName": "InputObject"
+				},
+				{
+					"fromNodeGuid": "1B9F2EBD48F647DA540DB6A39C12AA5B",
+					"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
+					"fromPinName": "As ChuckRef",
+					"toNodeGuid": "7CAF1C8D4B22651041401BB132B5A473",
+					"toPinId": "FC6C2D514BC5CF6A5C75B0BBBA5DB303",
 					"toPinName": "self"
 				},
 				{
-					"fromNodeGuid": "2149E6C348EB8E83C255A29E8704F2BD",
-					"fromPinId": "7E47A37B4BD75696E9DC899D9CE27116",
-					"fromPinName": "Equipped_BigWeapon",
-					"toNodeGuid": "C685ED45462F35C7B7B85C8AA08C982B",
-					"toPinId": "ADF8F9CA48DB804050B63BA725D56F8B",
-					"toPinName": "RowName"
+					"fromNodeGuid": "1B9F2EBD48F647DA540DB6A39C12AA5B",
+					"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
+					"fromPinName": "As ChuckRef",
+					"toNodeGuid": "F9DA69014F7D659B85A14F91DE28D02E",
+					"toPinId": "9780DF144BEA4846DCEB22B5AD6BCFD5",
+					"toPinName": "self"
 				},
 				{
-					"fromNodeGuid": "B3934C89404BCCE834FA989BAB6AA650",
-					"fromPinId": "42C85A334CF4232C67F10DBAC4128A1A",
-					"fromPinName": "Is Valid",
-					"toNodeGuid": "C685ED45462F35C7B7B85C8AA08C982B",
-					"toPinId": "F775CBB242A35A1A9490BF9D6390B2B8",
-					"toPinName": "execute"
+					"fromNodeGuid": "1B9F2EBD48F647DA540DB6A39C12AA5B",
+					"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
+					"fromPinName": "As ChuckRef",
+					"toNodeGuid": "675D0F70436E0F4111F22195B8A0D30E",
+					"toPinId": "E54948324641FADD1DF73DA840145CF1",
+					"toPinName": "self"
 				},
 				{
-					"fromNodeGuid": "C685ED45462F35C7B7B85C8AA08C982B",
-					"fromPinId": "DBD953EC4CE8B17D30BFF5AF71F5F0DB",
-					"fromPinName": "then",
-					"toNodeGuid": "1FC14A194CBF1742C44D16A848613B4F",
-					"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
-					"toPinName": "execute"
+					"fromNodeGuid": "1B9F2EBD48F647DA540DB6A39C12AA5B",
+					"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
+					"fromPinName": "As ChuckRef",
+					"toNodeGuid": "B10F85EB43B47DB347A786A612979C87",
+					"toPinId": "9E63B7004D782364B119F681DA2B4115",
+					"toPinName": "InputObject"
 				},
 				{
-					"fromNodeGuid": "C685ED45462F35C7B7B85C8AA08C982B",
-					"fromPinId": "FC08D8224AD84D5C0CDF229FB6EBF977",
-					"fromPinName": "RowNotFound",
-					"toNodeGuid": "33805A3142849174B101C7AABF3D8FD2",
-					"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
-					"toPinName": "execute"
+					"fromNodeGuid": "1B9F2EBD48F647DA540DB6A39C12AA5B",
+					"fromPinId": "E3525FDB435E69EFFBBBF484DB79061F",
+					"fromPinName": "As ChuckRef",
+					"toNodeGuid": "4E869C5D4C3EC982EBC0DBB57508025A",
+					"toPinId": "9780DF144BEA4846DCEB22B5AD6BCFD5",
+					"toPinName": "self"
 				},
 				{
-					"fromNodeGuid": "C685ED45462F35C7B7B85C8AA08C982B",
-					"fromPinId": "277A6496429A73652DB87AB16ED02FB7",
-					"fromPinName": "ReturnValue",
+					"fromNodeGuid": "7D0340694F71238EE332C1A6720B698B",
+					"fromPinId": "80250AC94811CAB9B3FDBBB06B010F7C",
+					"fromPinName": "Output",
 					"toNodeGuid": "73ECB2C242867A2D871F36BAB2F606D1",
 					"toPinId": "5E1213B442FEDD26275CD18CFCFFDEC3",
 					"toPinName": "S_WeaponData"
@@ -14019,60 +14809,12 @@
 					"toPinName": "execute"
 				},
 				{
-					"fromNodeGuid": "A7A72808452DA4D5C7D70FAD48A0F6E2",
-					"fromPinId": "4C9D40194ECD8BBFCD8E5AB694FAA07F",
-					"fromPinName": "Is Valid",
-					"toNodeGuid": "9A57535E4022734C147BA3B6D73DC5DC",
-					"toPinId": "F775CBB242A35A1A9490BF9D6390B2B8",
-					"toPinName": "execute"
-				},
-				{
-					"fromNodeGuid": "9A57535E4022734C147BA3B6D73DC5DC",
-					"fromPinId": "DBD953EC4CE8B17D30BFF5AF71F5F0DB",
+					"fromNodeGuid": "847F935540E67ECBC3212881E4B35DBE",
+					"fromPinId": "A3D72007498CBA1614219D8916FD3C55",
 					"fromPinName": "then",
-					"toNodeGuid": "73EC71534D5485681174FFB676B0B39D",
+					"toNodeGuid": "1FC14A194CBF1742C44D16A848613B4F",
 					"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
 					"toPinName": "execute"
-				},
-				{
-					"fromNodeGuid": "9A57535E4022734C147BA3B6D73DC5DC",
-					"fromPinId": "FC08D8224AD84D5C0CDF229FB6EBF977",
-					"fromPinName": "RowNotFound",
-					"toNodeGuid": "518237AD48FBF4CD28041C873A51D658",
-					"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
-					"toPinName": "execute"
-				},
-				{
-					"fromNodeGuid": "0C20CCCE43AF6DDADA7FB9864318A6B5",
-					"fromPinId": "4AB85EFF49574B3FFB1D5A908C51DF6A",
-					"fromPinName": "Equipped_SmallFirearm",
-					"toNodeGuid": "9A57535E4022734C147BA3B6D73DC5DC",
-					"toPinId": "ADF8F9CA48DB804050B63BA725D56F8B",
-					"toPinName": "RowName"
-				},
-				{
-					"fromNodeGuid": "9A57535E4022734C147BA3B6D73DC5DC",
-					"fromPinId": "277A6496429A73652DB87AB16ED02FB7",
-					"fromPinName": "ReturnValue",
-					"toNodeGuid": "C135765345827F08905169963434F811",
-					"toPinId": "5E1213B442FEDD26275CD18CFCFFDEC3",
-					"toPinName": "S_WeaponData"
-				},
-				{
-					"fromNodeGuid": "C135765345827F08905169963434F811",
-					"fromPinId": "0F58DFAF4142EE0052A00480FED59304",
-					"fromPinName": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
-					"toNodeGuid": "73EC71534D5485681174FFB676B0B39D",
-					"toPinId": "5C2E269040967B3AD11FA3898529CB8B",
-					"toPinName": "InText"
-				},
-				{
-					"fromNodeGuid": "C135765345827F08905169963434F811",
-					"fromPinId": "6023F4BE45293BE47B085F89E2951A66",
-					"fromPinName": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
-					"toNodeGuid": "4FAE955F4B9F0D8BB24E098296F8DD18",
-					"toPinId": "60B791884F5FF3B09006DCB2893E4229",
-					"toPinName": "Texture"
 				},
 				{
 					"fromNodeGuid": "73EC71534D5485681174FFB676B0B39D",
@@ -14091,6 +14833,22 @@
 					"toPinName": "self"
 				},
 				{
+					"fromNodeGuid": "6637C0D54A429975A59584A60A8FE621",
+					"fromPinId": "9A29847F475985A616DBD4A58E908D4F",
+					"fromPinName": "Weapon_Icon_67_A8272ED24A449CC6084C88B1C8FF3C5A",
+					"toNodeGuid": "4FAE955F4B9F0D8BB24E098296F8DD18",
+					"toPinId": "60B791884F5FF3B09006DCB2893E4229",
+					"toPinName": "Texture"
+				},
+				{
+					"fromNodeGuid": "4C3413284534E5398AA72CA70C37948A",
+					"fromPinId": "A3D72007498CBA1614219D8916FD3C55",
+					"fromPinName": "then",
+					"toNodeGuid": "73EC71534D5485681174FFB676B0B39D",
+					"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+					"toPinName": "execute"
+				},
+				{
 					"fromNodeGuid": "367302D345DC818E172285B6A85A734A",
 					"fromPinId": "EFEBB063478C75848978FA960C0C1B28",
 					"fromPinName": "TxtVar_SmallFirearm",
@@ -14099,12 +14857,12 @@
 					"toPinName": "self"
 				},
 				{
-					"fromNodeGuid": "47C388A24723C735D250E9AC0440E035",
-					"fromPinId": "9029B1174A515015643EBAA64E6805CE",
-					"fromPinName": "Equipped_Melee",
-					"toNodeGuid": "071590574D5C2D888042AFAADB48EDDD",
-					"toPinId": "ADF8F9CA48DB804050B63BA725D56F8B",
-					"toPinName": "RowName"
+					"fromNodeGuid": "6637C0D54A429975A59584A60A8FE621",
+					"fromPinId": "55DCE29D403386A011969CB936AA65E6",
+					"fromPinName": "Name_2_E0EAA52E4A6C9440143913B681C970CA",
+					"toNodeGuid": "73EC71534D5485681174FFB676B0B39D",
+					"toPinId": "5C2E269040967B3AD11FA3898529CB8B",
+					"toPinName": "InText"
 				},
 				{
 					"fromNodeGuid": "4D964C49439525D8FBBA499F12A69091",
@@ -14147,33 +14905,9 @@
 					"toPinName": "execute"
 				},
 				{
-					"fromNodeGuid": "B10F85EB43B47DB347A786A612979C87",
-					"fromPinId": "8535387041B7887FDED5CBB32AE372C7",
-					"fromPinName": "Is Valid",
-					"toNodeGuid": "071590574D5C2D888042AFAADB48EDDD",
-					"toPinId": "F775CBB242A35A1A9490BF9D6390B2B8",
-					"toPinName": "execute"
-				},
-				{
-					"fromNodeGuid": "071590574D5C2D888042AFAADB48EDDD",
-					"fromPinId": "DBD953EC4CE8B17D30BFF5AF71F5F0DB",
-					"fromPinName": "then",
-					"toNodeGuid": "AB39757D44D5D8B57156E8A5B789506C",
-					"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
-					"toPinName": "execute"
-				},
-				{
-					"fromNodeGuid": "071590574D5C2D888042AFAADB48EDDD",
-					"fromPinId": "FC08D8224AD84D5C0CDF229FB6EBF977",
-					"fromPinName": "RowNotFound",
-					"toNodeGuid": "579D8DB44F7DDAF78E3FDCB68C1C8D91",
-					"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
-					"toPinName": "execute"
-				},
-				{
-					"fromNodeGuid": "071590574D5C2D888042AFAADB48EDDD",
-					"fromPinId": "277A6496429A73652DB87AB16ED02FB7",
-					"fromPinName": "ReturnValue",
+					"fromNodeGuid": "612102744F47EE9E81C535A03931B530",
+					"fromPinId": "80250AC94811CAB9B3FDBBB06B010F7C",
+					"fromPinName": "Output",
 					"toNodeGuid": "C0D560BB4FB69938AAB240A4112D0D63",
 					"toPinId": "5E1213B442FEDD26275CD18CFCFFDEC3",
 					"toPinName": "S_WeaponData"
@@ -14209,6 +14943,14 @@
 					"toNodeGuid": "C796E85D44DF35FCA3DE0FA8B16DCA9A",
 					"toPinId": "5256140C494107E70C9F9B8E72E22E99",
 					"toPinName": "self"
+				},
+				{
+					"fromNodeGuid": "9D98E43047C65E8CE2D9C48FB09E5110",
+					"fromPinId": "A3D72007498CBA1614219D8916FD3C55",
+					"fromPinName": "then",
+					"toNodeGuid": "AB39757D44D5D8B57156E8A5B789506C",
+					"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
+					"toPinName": "execute"
 				},
 				{
 					"fromNodeGuid": "3AB4EA664F4D2910DA2544B097A8E6DA",
@@ -14307,8 +15049,8 @@
 					"toPinName": "execute"
 				},
 				{
-					"fromNodeGuid": "7D698EEB4C18ADB0249DD484FCB9ED13",
-					"fromPinId": "8A1A568146D69652C7A2B9A515EFBAA2",
+					"fromNodeGuid": "BF4FDCD24169F4F76425E4B0C1A31E7F",
+					"fromPinId": "AD86E6FE476993DB701A7584EF31F609",
 					"fromPinName": "OutputPin",
 					"toNodeGuid": "33805A3142849174B101C7AABF3D8FD2",
 					"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
@@ -14331,8 +15073,8 @@
 					"toPinName": "self"
 				},
 				{
-					"fromNodeGuid": "91E144514C3ECAA97A6700A8670ECF43",
-					"fromPinId": "E7B7AD7F410EA4A47FC9D6818D41332D",
+					"fromNodeGuid": "4F3482CE4D79A289FFBC99BF8A8A4FE4",
+					"fromPinId": "8E669AA94660812EC8A2A89CFDA18BDE",
 					"fromPinName": "OutputPin",
 					"toNodeGuid": "518237AD48FBF4CD28041C873A51D658",
 					"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
@@ -14363,8 +15105,8 @@
 					"toPinName": "self"
 				},
 				{
-					"fromNodeGuid": "6BA009914AC1B7EAD025CAB4701A4E6D",
-					"fromPinId": "EC9C9F9640C588CF6B18F39342A01C79",
+					"fromNodeGuid": "73B13D17400004D6B58476BD2A574E1F",
+					"fromPinId": "6EAF26F94648481A684420909774E694",
 					"fromPinName": "OutputPin",
 					"toNodeGuid": "579D8DB44F7DDAF78E3FDCB68C1C8D91",
 					"toPinId": "4AEB847542EC63AC18E61C91F0BC6C61",
@@ -14403,20 +15145,12 @@
 					"toPinName": "self"
 				},
 				{
-					"fromNodeGuid": "65642BFB41DD091C3574A685D8401EDD",
-					"fromPinId": "E4B2365E4EC001359C00958B5F7ABF93",
-					"fromPinName": "Mesh_BigWeapon",
-					"toNodeGuid": "1257D3084EA5426317867BA00A1A846C",
-					"toPinId": "F2C8310B457694BD0A67C3AA738B4766",
-					"toPinName": "self"
-				},
-				{
-					"fromNodeGuid": "1257D3084EA5426317867BA00A1A846C",
-					"fromPinId": "CFAAEE5348BC2986FA4647AD279989D9",
-					"fromPinName": "ReturnValue",
-					"toNodeGuid": "B3934C89404BCCE834FA989BAB6AA650",
-					"toPinId": "C3AE679C42DEACA1FA5E668DEA0B0FFE",
-					"toPinName": "InputObject"
+					"fromNodeGuid": "B3934C89404BCCE834FA989BAB6AA650",
+					"fromPinId": "42C85A334CF4232C67F10DBAC4128A1A",
+					"fromPinName": "Is Valid",
+					"toNodeGuid": "847F935540E67ECBC3212881E4B35DBE",
+					"toPinId": "D3C9312647410E9BD04E3C81EEB78072",
+					"toPinName": "execute"
 				},
 				{
 					"fromNodeGuid": "B3934C89404BCCE834FA989BAB6AA650",
@@ -14430,25 +15164,17 @@
 					"fromNodeGuid": "C9ACEE1D4218B9E75F614D8E052FB991",
 					"fromPinId": "EFA0884A44F7D55C3096D4A165403DF6",
 					"fromPinName": "OutputPin",
-					"toNodeGuid": "7D698EEB4C18ADB0249DD484FCB9ED13",
-					"toPinId": "FDF8146B49EC1227BD8499A3D0BB47AC",
+					"toNodeGuid": "BF4FDCD24169F4F76425E4B0C1A31E7F",
+					"toPinId": "3ED2D0EE4EFD335D134BADAA6382A148",
 					"toPinName": "InputPin"
 				},
 				{
-					"fromNodeGuid": "BB04F00A4D830B1161BF439352BD3288",
-					"fromPinId": "87FC976A45F63DD996F45E84647F3C8C",
-					"fromPinName": "Mesh_SmallWeapon",
-					"toNodeGuid": "DD364FBE4A0C872691C80DB1BB277331",
-					"toPinId": "D4FEFDEA437D025F5BE372A3E97A8EFC",
-					"toPinName": "self"
-				},
-				{
-					"fromNodeGuid": "DD364FBE4A0C872691C80DB1BB277331",
-					"fromPinId": "B649E15F41AA08F2F75B82BC9842D7B8",
-					"fromPinName": "ReturnValue",
-					"toNodeGuid": "A7A72808452DA4D5C7D70FAD48A0F6E2",
-					"toPinId": "9BCD44874080EDEAB3F1EB9F83B55517",
-					"toPinName": "InputObject"
+					"fromNodeGuid": "A7A72808452DA4D5C7D70FAD48A0F6E2",
+					"fromPinId": "4C9D40194ECD8BBFCD8E5AB694FAA07F",
+					"fromPinName": "Is Valid",
+					"toNodeGuid": "4C3413284534E5398AA72CA70C37948A",
+					"toPinId": "D3C9312647410E9BD04E3C81EEB78072",
+					"toPinName": "execute"
 				},
 				{
 					"fromNodeGuid": "A7A72808452DA4D5C7D70FAD48A0F6E2",
@@ -14462,25 +15188,17 @@
 					"fromNodeGuid": "60B0F83A48F4C444230B21A727C62734",
 					"fromPinId": "023554D5472617E58F05BD9CCEB2A354",
 					"fromPinName": "OutputPin",
-					"toNodeGuid": "91E144514C3ECAA97A6700A8670ECF43",
-					"toPinId": "3ED537034CB566E7BB2698B902BF331F",
+					"toNodeGuid": "4F3482CE4D79A289FFBC99BF8A8A4FE4",
+					"toPinId": "F0FCE2294462096529B4FAA4A7F9618B",
 					"toPinName": "InputPin"
 				},
 				{
-					"fromNodeGuid": "EB057E474AAF5B83E9D2B09B895378DA",
-					"fromPinId": "84684B794ED0391AEB2D708E81620A3D",
-					"fromPinName": "Mesh_Melee",
-					"toNodeGuid": "2F67C30C4053BCE615C836AA44A4B787",
-					"toPinId": "FF6F1C414C938CF9A61D4F9571C6BAD3",
-					"toPinName": "self"
-				},
-				{
-					"fromNodeGuid": "2F67C30C4053BCE615C836AA44A4B787",
-					"fromPinId": "5B39B8CA4896EBCDA237588F0C37F5A8",
-					"fromPinName": "ReturnValue",
-					"toNodeGuid": "B10F85EB43B47DB347A786A612979C87",
-					"toPinId": "9E63B7004D782364B119F681DA2B4115",
-					"toPinName": "InputObject"
+					"fromNodeGuid": "B10F85EB43B47DB347A786A612979C87",
+					"fromPinId": "8535387041B7887FDED5CBB32AE372C7",
+					"fromPinName": "Is Valid",
+					"toNodeGuid": "9D98E43047C65E8CE2D9C48FB09E5110",
+					"toPinId": "D3C9312647410E9BD04E3C81EEB78072",
+					"toPinName": "execute"
 				},
 				{
 					"fromNodeGuid": "B10F85EB43B47DB347A786A612979C87",
@@ -14494,8 +15212,352 @@
 					"fromNodeGuid": "649FDD36417785B65C72AB85E88E74E4",
 					"fromPinId": "41A6563A4138C2880897599A3BC3A90C",
 					"fromPinName": "OutputPin",
-					"toNodeGuid": "6BA009914AC1B7EAD025CAB4701A4E6D",
-					"toPinId": "6E05597949011A088C0257B51A298FA7",
+					"toNodeGuid": "73B13D17400004D6B58476BD2A574E1F",
+					"toPinId": "221789484806DDDEBBFCF1A436EA15C4",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "710F4D9D4EB4CCFBCE21D7A40C37671D",
+					"fromPinId": "7AF6B01D406986B199DE1BAB9648386C",
+					"fromPinName": "EquippedSmallFirearmIndex",
+					"toNodeGuid": "2921C7FA470BE9F56E7DB0A9756CDB23",
+					"toPinId": "CE50D40144029ED448A20C9A89B0A3E5",
+					"toPinName": "A"
+				},
+				{
+					"fromNodeGuid": "710F4D9D4EB4CCFBCE21D7A40C37671D",
+					"fromPinId": "7AF6B01D406986B199DE1BAB9648386C",
+					"fromPinName": "EquippedSmallFirearmIndex",
+					"toNodeGuid": "FE494DDE4D49EB72CFF0F78DE3620924",
+					"toPinId": "28738B5449EFA674FFBAC9ABCD10BE60",
+					"toPinName": "A"
+				},
+				{
+					"fromNodeGuid": "710F4D9D4EB4CCFBCE21D7A40C37671D",
+					"fromPinId": "7AF6B01D406986B199DE1BAB9648386C",
+					"fromPinName": "EquippedSmallFirearmIndex",
+					"toNodeGuid": "EEB5960E4F7A10AC5008CDB8E4DEDC6A",
+					"toPinId": "B3FBFE7D41D7B3E330EDD1972D7E565F",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "F6BF8AF74C71F0789BE2C88256DA8966",
+					"fromPinId": "20BD310A458798A714AF8EA2F9F1E967",
+					"fromPinName": "OwnedWeapons",
+					"toNodeGuid": "4DE25030407123A6ADF8358554A4B7CD",
+					"toPinId": "A5C6B07C4CA79E45A24967B809C385ED",
+					"toPinName": "TargetArray"
+				},
+				{
+					"fromNodeGuid": "F6BF8AF74C71F0789BE2C88256DA8966",
+					"fromPinId": "20BD310A458798A714AF8EA2F9F1E967",
+					"fromPinName": "OwnedWeapons",
+					"toNodeGuid": "83EE1B1D4905663DA4FC9B8EAF499687",
+					"toPinId": "83609092469C87E543E443AC3168B356",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "4DE25030407123A6ADF8358554A4B7CD",
+					"fromPinId": "6CA05218495DF37823A998B53E6551D7",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "FE494DDE4D49EB72CFF0F78DE3620924",
+					"toPinId": "A20608A442056B0C5EBDB0A9696174B3",
+					"toPinName": "B"
+				},
+				{
+					"fromNodeGuid": "2921C7FA470BE9F56E7DB0A9756CDB23",
+					"fromPinId": "495A6A2C4ADF995A639CE8827A436133",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "03C47BF141612B93E74D63A2B6C58AB8",
+					"toPinId": "7B38A67648A6BD503CDF3DA7E52BDB77",
+					"toPinName": "A"
+				},
+				{
+					"fromNodeGuid": "FE494DDE4D49EB72CFF0F78DE3620924",
+					"fromPinId": "57BDCE784DF77ABFB90269BC99090DB1",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "03C47BF141612B93E74D63A2B6C58AB8",
+					"toPinId": "55D59C754D7FEAF2FFD17E9900D8EF17",
+					"toPinName": "B"
+				},
+				{
+					"fromNodeGuid": "03C47BF141612B93E74D63A2B6C58AB8",
+					"fromPinId": "7B7F145F4DD7DDFBFACD6A85E87BF75D",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "4C3413284534E5398AA72CA70C37948A",
+					"toPinId": "75F38F0B4A887092FB3169BE9862FD0B",
+					"toPinName": "Condition"
+				},
+				{
+					"fromNodeGuid": "4C3413284534E5398AA72CA70C37948A",
+					"fromPinId": "D61CF2A0428793A504176292160F36C2",
+					"fromPinName": "else",
+					"toNodeGuid": "4F3482CE4D79A289FFBC99BF8A8A4FE4",
+					"toPinId": "F0FCE2294462096529B4FAA4A7F9618B",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "E0DE98554AD66DC7060581B5896333DB",
+					"fromPinId": "976250D04CF382ABC6B1D584EBBFF98C",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "539402CC42707132F351DD8B49AAB13F",
+					"toPinId": "AEA124A6426E7D1D982FAA8D48B8FB56",
+					"toPinName": "Array"
+				},
+				{
+					"fromNodeGuid": "8F39083E4CB1348BD7CB9BAD0E62FD92",
+					"fromPinId": "0B0C48704A59BBADEF66D5B8FEBD2979",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "539402CC42707132F351DD8B49AAB13F",
+					"toPinId": "963787524363AF69BACD34982ED32AB1",
+					"toPinName": "Dimension 1"
+				},
+				{
+					"fromNodeGuid": "539402CC42707132F351DD8B49AAB13F",
+					"fromPinId": "80250AC94811CAB9B3FDBBB06B010F7C",
+					"fromPinName": "Output",
+					"toNodeGuid": "6637C0D54A429975A59584A60A8FE621",
+					"toPinId": "03949D1D4E6972B24397E0837BEE38AB",
+					"toPinName": "S_WeaponData"
+				},
+				{
+					"fromNodeGuid": "83EE1B1D4905663DA4FC9B8EAF499687",
+					"fromPinId": "0689B0014774D7BA8831E39FF41F4B48",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "E0DE98554AD66DC7060581B5896333DB",
+					"toPinId": "D981B0E74D962DBA9BA957A09E25E13C",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "7CAF1C8D4B22651041401BB132B5A473",
+					"fromPinId": "CFF0A686426A211338FA1F857F7580E9",
+					"fromPinName": "EquippedBigWeaponIndex",
+					"toNodeGuid": "A46A9C80478741F6BD830A925B331389",
+					"toPinId": "CE50D40144029ED448A20C9A89B0A3E5",
+					"toPinName": "A"
+				},
+				{
+					"fromNodeGuid": "7CAF1C8D4B22651041401BB132B5A473",
+					"fromPinId": "CFF0A686426A211338FA1F857F7580E9",
+					"fromPinName": "EquippedBigWeaponIndex",
+					"toNodeGuid": "55ED76DC471F7FD7FF63208859A1A9A1",
+					"toPinId": "28738B5449EFA674FFBAC9ABCD10BE60",
+					"toPinName": "A"
+				},
+				{
+					"fromNodeGuid": "7CAF1C8D4B22651041401BB132B5A473",
+					"fromPinId": "CFF0A686426A211338FA1F857F7580E9",
+					"fromPinName": "EquippedBigWeaponIndex",
+					"toNodeGuid": "B8349A904694980BCC8644A71FCF45BB",
+					"toPinId": "EA4294914799F38F4EBE5F882194B453",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "F9DA69014F7D659B85A14F91DE28D02E",
+					"fromPinId": "20BD310A458798A714AF8EA2F9F1E967",
+					"fromPinName": "OwnedWeapons",
+					"toNodeGuid": "9C82A7CD4A9958C664882594D06E7094",
+					"toPinId": "A5C6B07C4CA79E45A24967B809C385ED",
+					"toPinName": "TargetArray"
+				},
+				{
+					"fromNodeGuid": "F9DA69014F7D659B85A14F91DE28D02E",
+					"fromPinId": "20BD310A458798A714AF8EA2F9F1E967",
+					"fromPinName": "OwnedWeapons",
+					"toNodeGuid": "275F030C41A278A8F18B4A92622F51BC",
+					"toPinId": "83609092469C87E543E443AC3168B356",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "9C82A7CD4A9958C664882594D06E7094",
+					"fromPinId": "6CA05218495DF37823A998B53E6551D7",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "55ED76DC471F7FD7FF63208859A1A9A1",
+					"toPinId": "A20608A442056B0C5EBDB0A9696174B3",
+					"toPinName": "B"
+				},
+				{
+					"fromNodeGuid": "A46A9C80478741F6BD830A925B331389",
+					"fromPinId": "495A6A2C4ADF995A639CE8827A436133",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "4C97E5C14A7724FBFB6BB2BB3CFAA0C8",
+					"toPinId": "7B38A67648A6BD503CDF3DA7E52BDB77",
+					"toPinName": "A"
+				},
+				{
+					"fromNodeGuid": "55ED76DC471F7FD7FF63208859A1A9A1",
+					"fromPinId": "57BDCE784DF77ABFB90269BC99090DB1",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "4C97E5C14A7724FBFB6BB2BB3CFAA0C8",
+					"toPinId": "55D59C754D7FEAF2FFD17E9900D8EF17",
+					"toPinName": "B"
+				},
+				{
+					"fromNodeGuid": "4C97E5C14A7724FBFB6BB2BB3CFAA0C8",
+					"fromPinId": "7B7F145F4DD7DDFBFACD6A85E87BF75D",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "847F935540E67ECBC3212881E4B35DBE",
+					"toPinId": "75F38F0B4A887092FB3169BE9862FD0B",
+					"toPinName": "Condition"
+				},
+				{
+					"fromNodeGuid": "275F030C41A278A8F18B4A92622F51BC",
+					"fromPinId": "0689B0014774D7BA8831E39FF41F4B48",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "3D40295343835C3AB941F09C0A736A78",
+					"toPinId": "D981B0E74D962DBA9BA957A09E25E13C",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "3D40295343835C3AB941F09C0A736A78",
+					"fromPinId": "976250D04CF382ABC6B1D584EBBFF98C",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "7D0340694F71238EE332C1A6720B698B",
+					"toPinId": "AEA124A6426E7D1D982FAA8D48B8FB56",
+					"toPinName": "Array"
+				},
+				{
+					"fromNodeGuid": "847F935540E67ECBC3212881E4B35DBE",
+					"fromPinId": "D61CF2A0428793A504176292160F36C2",
+					"fromPinName": "else",
+					"toNodeGuid": "BF4FDCD24169F4F76425E4B0C1A31E7F",
+					"toPinId": "3ED2D0EE4EFD335D134BADAA6382A148",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "2AC0BBB842499DB9481FCAAD665025FF",
+					"fromPinId": "B2F61253426292C86714729A1E3D166C",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "7D0340694F71238EE332C1A6720B698B",
+					"toPinId": "963787524363AF69BACD34982ED32AB1",
+					"toPinName": "Dimension 1"
+				},
+				{
+					"fromNodeGuid": "B8349A904694980BCC8644A71FCF45BB",
+					"fromPinId": "6554F3974FB7998A9F26DFA935536E87",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "2AC0BBB842499DB9481FCAAD665025FF",
+					"toPinId": "55B892024E55F154E05D0AAD022484BA",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "EEB5960E4F7A10AC5008CDB8E4DEDC6A",
+					"fromPinId": "FBA7632144DE6D3B1E422097B2A0BCCA",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "8F39083E4CB1348BD7CB9BAD0E62FD92",
+					"toPinId": "013DC8A34DBFE02B4F9C4FB1E924C0A8",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "675D0F70436E0F4111F22195B8A0D30E",
+					"fromPinId": "03299B474DD5986AF24716BB24DCAF80",
+					"fromPinName": "EquippedMeleeIndex",
+					"toNodeGuid": "31B754684343E9DC8EA0EE8A5CB80541",
+					"toPinId": "B3FBFE7D41D7B3E330EDD1972D7E565F",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "675D0F70436E0F4111F22195B8A0D30E",
+					"fromPinId": "03299B474DD5986AF24716BB24DCAF80",
+					"fromPinName": "EquippedMeleeIndex",
+					"toNodeGuid": "C230FDEE425DA5C90D315BB2D60F6449",
+					"toPinId": "CE50D40144029ED448A20C9A89B0A3E5",
+					"toPinName": "A"
+				},
+				{
+					"fromNodeGuid": "675D0F70436E0F4111F22195B8A0D30E",
+					"fromPinId": "03299B474DD5986AF24716BB24DCAF80",
+					"fromPinName": "EquippedMeleeIndex",
+					"toNodeGuid": "D11C74F94FAE99622850CDA9A7E78DDF",
+					"toPinId": "28738B5449EFA674FFBAC9ABCD10BE60",
+					"toPinName": "A"
+				},
+				{
+					"fromNodeGuid": "4E869C5D4C3EC982EBC0DBB57508025A",
+					"fromPinId": "20BD310A458798A714AF8EA2F9F1E967",
+					"fromPinName": "OwnedWeapons",
+					"toNodeGuid": "994C85224458B23F2E005C82150BA484",
+					"toPinId": "A5C6B07C4CA79E45A24967B809C385ED",
+					"toPinName": "TargetArray"
+				},
+				{
+					"fromNodeGuid": "4E869C5D4C3EC982EBC0DBB57508025A",
+					"fromPinId": "20BD310A458798A714AF8EA2F9F1E967",
+					"fromPinName": "OwnedWeapons",
+					"toNodeGuid": "58C670B9467546648D1A8089BCC108FF",
+					"toPinId": "83609092469C87E543E443AC3168B356",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "994C85224458B23F2E005C82150BA484",
+					"fromPinId": "6CA05218495DF37823A998B53E6551D7",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "D11C74F94FAE99622850CDA9A7E78DDF",
+					"toPinId": "A20608A442056B0C5EBDB0A9696174B3",
+					"toPinName": "B"
+				},
+				{
+					"fromNodeGuid": "C230FDEE425DA5C90D315BB2D60F6449",
+					"fromPinId": "495A6A2C4ADF995A639CE8827A436133",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "4F2CC6D24089C0EE567BADB65E47E71D",
+					"toPinId": "7B38A67648A6BD503CDF3DA7E52BDB77",
+					"toPinName": "A"
+				},
+				{
+					"fromNodeGuid": "D11C74F94FAE99622850CDA9A7E78DDF",
+					"fromPinId": "57BDCE784DF77ABFB90269BC99090DB1",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "4F2CC6D24089C0EE567BADB65E47E71D",
+					"toPinId": "55D59C754D7FEAF2FFD17E9900D8EF17",
+					"toPinName": "B"
+				},
+				{
+					"fromNodeGuid": "4F2CC6D24089C0EE567BADB65E47E71D",
+					"fromPinId": "7B7F145F4DD7DDFBFACD6A85E87BF75D",
+					"fromPinName": "ReturnValue",
+					"toNodeGuid": "9D98E43047C65E8CE2D9C48FB09E5110",
+					"toPinId": "75F38F0B4A887092FB3169BE9862FD0B",
+					"toPinName": "Condition"
+				},
+				{
+					"fromNodeGuid": "58C670B9467546648D1A8089BCC108FF",
+					"fromPinId": "0689B0014774D7BA8831E39FF41F4B48",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "028033BB44EB580A8E0EC19AEE2488AB",
+					"toPinId": "D981B0E74D962DBA9BA957A09E25E13C",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "028033BB44EB580A8E0EC19AEE2488AB",
+					"fromPinId": "976250D04CF382ABC6B1D584EBBFF98C",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "612102744F47EE9E81C535A03931B530",
+					"toPinId": "AEA124A6426E7D1D982FAA8D48B8FB56",
+					"toPinName": "Array"
+				},
+				{
+					"fromNodeGuid": "31B754684343E9DC8EA0EE8A5CB80541",
+					"fromPinId": "FBA7632144DE6D3B1E422097B2A0BCCA",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "E5C8D94A45992B031AEAB4AE6B470AD7",
+					"toPinId": "013DC8A34DBFE02B4F9C4FB1E924C0A8",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "E5C8D94A45992B031AEAB4AE6B470AD7",
+					"fromPinId": "0B0C48704A59BBADEF66D5B8FEBD2979",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "612102744F47EE9E81C535A03931B530",
+					"toPinId": "963787524363AF69BACD34982ED32AB1",
+					"toPinName": "Dimension 1"
+				},
+				{
+					"fromNodeGuid": "9D98E43047C65E8CE2D9C48FB09E5110",
+					"fromPinId": "D61CF2A0428793A504176292160F36C2",
+					"fromPinName": "else",
+					"toNodeGuid": "73B13D17400004D6B58476BD2A574E1F",
+					"toPinId": "221789484806DDDEBBFCF1A436EA15C4",
 					"toPinName": "InputPin"
 				}
 			]
@@ -21721,7 +22783,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_BigWeapon",
 					"comment": "",
-					"x": 1751,
+					"x": 2007,
 					"y": -855,
 					"memberName": "",
 					"functionName": "",
@@ -21749,7 +22811,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_Item",
 					"comment": "",
-					"x": 1776,
+					"x": 2032,
 					"y": -795,
 					"memberName": "",
 					"functionName": "",
@@ -21777,7 +22839,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_SmallFirearm",
 					"comment": "",
-					"x": 1735,
+					"x": 1991,
 					"y": -825,
 					"memberName": "",
 					"functionName": "",
@@ -21805,7 +22867,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_Melee",
 					"comment": "",
-					"x": 1776,
+					"x": 2032,
 					"y": -765,
 					"memberName": "",
 					"functionName": "",
@@ -21833,7 +22895,7 @@
 					"class": "K2Node_MakeArray",
 					"title": "Crea array",
 					"comment": "",
-					"x": 1959,
+					"x": 2215,
 					"y": -878,
 					"memberName": "",
 					"functionName": "",
@@ -21945,7 +23007,7 @@
 					"class": "K2Node_MacroInstance",
 					"title": "For Each Loop",
 					"comment": "",
-					"x": 2199,
+					"x": 2439,
 					"y": -942,
 					"memberName": "",
 					"functionName": "",
@@ -22001,8 +23063,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_AccessoryEquip",
 					"comment": "",
-					"x": 1712,
-					"y": -614,
+					"x": 1968,
+					"y": -616,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -22029,7 +23091,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_ChestEquip",
 					"comment": "",
-					"x": 1744,
+					"x": 2000,
 					"y": -705,
 					"memberName": "",
 					"functionName": "",
@@ -22057,7 +23119,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_HeadEquip",
 					"comment": "",
-					"x": 1744,
+					"x": 2000,
 					"y": -735,
 					"memberName": "",
 					"functionName": "",
@@ -22085,8 +23147,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_Accessory1Equip",
 					"comment": "",
-					"x": 1712,
-					"y": -585,
+					"x": 1968,
+					"y": -586,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -22113,8 +23175,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_LegsEquip",
 					"comment": "",
-					"x": 1744,
-					"y": -675,
+					"x": 2000,
+					"y": -676,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -22141,8 +23203,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_FeetEquip",
 					"comment": "",
-					"x": 1744,
-					"y": -645,
+					"x": 2000,
+					"y": -646,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -22169,8 +23231,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_Inventory",
 					"comment": "",
-					"x": 1751,
-					"y": -555,
+					"x": 2007,
+					"y": -556,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -23603,7 +24665,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "5942ED2A4BDBE6B0053105AE0B32F6F6",
+							"pinId": "76E7C4724067FEB0460828891EB72A6B",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -24156,7 +25218,7 @@
 					"title": "Get Btn_ItemsInventory",
 					"comment": "",
 					"x": 1600,
-					"y": -298,
+					"y": -299,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -24212,7 +25274,7 @@
 					"title": "Get Btn_ConsumableInventory",
 					"comment": "",
 					"x": 1616,
-					"y": -208,
+					"y": -209,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -24240,7 +25302,7 @@
 					"title": "Get Btn_ArmorInventory",
 					"comment": "",
 					"x": 1616,
-					"y": -238,
+					"y": -239,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -24722,7 +25784,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Has Keyboard Focus\nLa destinazione è Widget",
 					"comment": "",
-					"x": 2480,
+					"x": 2672,
 					"y": -816,
 					"memberName": "",
 					"functionName": "",
@@ -25269,7 +26331,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Background Grey Dark/ Light\nLa destinazione è WBP Menu Archive",
 					"comment": "",
-					"x": 2720,
+					"x": 2896,
 					"y": -960,
 					"memberName": "",
 					"functionName": "",
@@ -25968,8 +27030,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get ToggleVisibWeapons",
 					"comment": "",
-					"x": 1728,
-					"y": -525,
+					"x": 1984,
+					"y": -526,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -25996,8 +27058,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get ToggleVisibArmor",
 					"comment": "",
-					"x": 1744,
-					"y": -495,
+					"x": 2000,
+					"y": -497,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -26073,7 +27135,7 @@
 					"class": "K2Node_IfThenElse",
 					"title": "Ramo",
 					"comment": "",
-					"x": 3008,
+					"x": 3168,
 					"y": -944,
 					"memberName": "",
 					"functionName": "",
@@ -26115,7 +27177,7 @@
 					"class": "K2Node_Knot",
 					"title": "Nodo di reindirizzamento",
 					"comment": "",
-					"x": 2960,
+					"x": 3120,
 					"y": -766,
 					"memberName": "",
 					"functionName": "",
@@ -26143,7 +27205,7 @@
 					"class": "K2Node_SwitchInteger",
 					"title": "Attiva Int",
 					"comment": "",
-					"x": 3280,
+					"x": 3376,
 					"y": -944,
 					"memberName": "",
 					"functionName": "",
@@ -26361,7 +27423,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "6AE3C1D74C7E28A7CC1A81A7EF78D481",
+							"pinId": "CEEC59144E00EE0A312CF4AD794DFD37",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -26529,7 +27591,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "1174DE264685C37558E76286875ABA73",
+							"pinId": "FB49B74749F8A4ACB5DDA18383BFA7E2",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -26725,7 +27787,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "51ECA75D4B99E53D21A25E9080BACA1A",
+							"pinId": "B1B2030043489461994882A32610B81E",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -27180,7 +28242,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "C794AD27423D669E7FCB688767FFA8AC",
+							"pinId": "97B9A8D84D9C51C10FD8EFBBC1675EA2",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -27432,7 +28494,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "EAB400744925D4B1D1AF6DAD35634F26",
+							"pinId": "4AEFC32744B728A6285269A3FBA5E95E",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -27600,7 +28662,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "0CD891B64CCB1C60CDA6FCA22DFB59F1",
+							"pinId": "D65715894D8BC89C879E9C85D074C035",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -27768,7 +28830,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "218042964D4B9214D8F6BBBA692BF63C",
+							"pinId": "C64146B3457D9E51DDBF639BC3CBFD6A",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -27907,7 +28969,7 @@
 					"class": "K2Node_Knot",
 					"title": "Nodo di reindirizzamento",
 					"comment": "",
-					"x": 2464,
+					"x": 2672,
 					"y": -704,
 					"memberName": "",
 					"functionName": "",
@@ -27935,7 +28997,7 @@
 					"class": "K2Node_Knot",
 					"title": "Nodo di reindirizzamento",
 					"comment": "",
-					"x": 3136,
+					"x": 3296,
 					"y": -704,
 					"memberName": "",
 					"functionName": "",
@@ -27992,7 +29054,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "5BD8DACF4305134F34E8668A72EE2142",
+							"pinId": "7A53E9AE48254D6E19907A9954D2AF65",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -28286,7 +29348,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "9D2A9E44406D2B8431B2BDA97C813B4B",
+							"pinId": "663814A24ABC843782D36D800D4C8E63",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -28454,7 +29516,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "996674B04EF5A9BB823506AF9CBC7C5B",
+							"pinId": "A4826E294254388A4AC90C849028E231",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",
@@ -28572,6 +29634,76 @@
 					"variableName": "",
 					"targetClass": "",
 					"pins": []
+				},
+				{
+					"nodeGuid": "A7DC37E64ABA884D8313F8BA43BFAE81",
+					"class": "K2Node_ExecutionSequence",
+					"title": "Sequenza",
+					"comment": "",
+					"x": 1696,
+					"y": -944,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "07CAF531427127C1D529629A48EBDC4F",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "F1F38F1246358F002EA53D9EB6736808",
+							"name": "then_0",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "152356FC49597C57FBCAB2BB5C9C604D",
+							"name": "then_1",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "330FF2F547E5B5C8407FD5AC72C3D403",
+					"class": "K2Node_CallFunction",
+					"title": "Refresh Weapons Visibility Button\nLa destinazione è WBP Menu Archive",
+					"comment": "",
+					"x": 1712,
+					"y": -784,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "6E945BA44DF3AD97DCC56DB871584AA6",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "450E5ED341F7CE9925DC709A4D0201DC",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "5D8C48FE414280288DE6FDBC78DC2CEE",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|self",
+							"defaultValue": ""
+						}
+					]
 				}
 			],
 			"links": [
@@ -29304,9 +30436,9 @@
 					"toPinName": "[12]"
 				},
 				{
-					"fromNodeGuid": "E716923041E2351A430BD8B23CDF284F",
-					"fromPinId": "2FA2F951467636C547F532BDFBBFE4A7",
-					"fromPinName": "0",
+					"fromNodeGuid": "A7DC37E64ABA884D8313F8BA43BFAE81",
+					"fromPinId": "F1F38F1246358F002EA53D9EB6736808",
+					"fromPinName": "then_0",
 					"toNodeGuid": "5FB9BD2C472D9CE14F12248A1C745035",
 					"toPinId": "4EFF618847C2534EA2C501BE2562903E",
 					"toPinName": "Exec"
@@ -29854,6 +30986,14 @@
 					"toNodeGuid": "E716923041E2351A430BD8B23CDF284F",
 					"toPinId": "BC16EAF743C1B3E8A5DD2CBD25196FDF",
 					"toPinName": "Selection"
+				},
+				{
+					"fromNodeGuid": "E716923041E2351A430BD8B23CDF284F",
+					"fromPinId": "2FA2F951467636C547F532BDFBBFE4A7",
+					"fromPinName": "0",
+					"toNodeGuid": "A7DC37E64ABA884D8313F8BA43BFAE81",
+					"toPinId": "07CAF531427127C1D529629A48EBDC4F",
+					"toPinName": "execute"
 				},
 				{
 					"fromNodeGuid": "E716923041E2351A430BD8B23CDF284F",
@@ -30974,6 +32114,14 @@
 					"toNodeGuid": "9EE6688145851E6287D2D19BB28E6219",
 					"toPinId": "80ADFB724F0A3552ACAE11BFB9AB947D",
 					"toPinName": "self"
+				},
+				{
+					"fromNodeGuid": "A7DC37E64ABA884D8313F8BA43BFAE81",
+					"fromPinId": "152356FC49597C57FBCAB2BB5C9C604D",
+					"fromPinName": "then_1",
+					"toNodeGuid": "330FF2F547E5B5C8407FD5AC72C3D403",
+					"toPinId": "6E945BA44DF3AD97DCC56DB871584AA6",
+					"toPinName": "execute"
 				}
 			]
 		},
@@ -39591,7 +40739,7 @@
 					"class": "K2Node_ComponentBoundEvent",
 					"title": "On Clicked (BtnSlot_BigWeapon)",
 					"comment": "",
-					"x": -2400,
+					"x": -2832,
 					"y": -163,
 					"memberName": "",
 					"functionName": "",
@@ -39619,7 +40767,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "On Weapon Slot Clicked\nLa destinazione è WBP Menu Archive",
 					"comment": "",
-					"x": -1696,
+					"x": -2128,
 					"y": -176,
 					"memberName": "",
 					"functionName": "",
@@ -39668,7 +40816,7 @@
 					"class": "K2Node_ComponentBoundEvent",
 					"title": "On Clicked (BtnSlot_Item)",
 					"comment": "",
-					"x": -2368,
+					"x": -2800,
 					"y": 542,
 					"memberName": "",
 					"functionName": "",
@@ -39696,7 +40844,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "On Weapon Slot Clicked\nLa destinazione è WBP Menu Archive",
 					"comment": "",
-					"x": -1696,
+					"x": -2128,
 					"y": 528,
 					"memberName": "",
 					"functionName": "",
@@ -39745,7 +40893,7 @@
 					"class": "K2Node_ComponentBoundEvent",
 					"title": "On Clicked (BtnSlot_SmallFirearm)",
 					"comment": "",
-					"x": -2416,
+					"x": -2848,
 					"y": 64,
 					"memberName": "",
 					"functionName": "",
@@ -39773,7 +40921,7 @@
 					"class": "K2Node_ComponentBoundEvent",
 					"title": "On Clicked (BtnSlot_Melee)",
 					"comment": "",
-					"x": -2368,
+					"x": -2800,
 					"y": 304,
 					"memberName": "",
 					"functionName": "",
@@ -39801,7 +40949,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "On Weapon Slot Clicked\nLa destinazione è WBP Menu Archive",
 					"comment": "",
-					"x": -1696,
+					"x": -2128,
 					"y": 48,
 					"memberName": "",
 					"functionName": "",
@@ -39850,7 +40998,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "On Weapon Slot Clicked\nLa destinazione è WBP Menu Archive",
 					"comment": "",
-					"x": -1696,
+					"x": -2128,
 					"y": 288,
 					"memberName": "",
 					"functionName": "",
@@ -39899,7 +41047,7 @@
 					"class": "K2Node_ComponentBoundEvent",
 					"title": "On Clicked (BtnSlot_HeadEquip)",
 					"comment": "",
-					"x": -1312,
+					"x": -1744,
 					"y": -160,
 					"memberName": "",
 					"functionName": "",
@@ -39927,7 +41075,7 @@
 					"class": "K2Node_ComponentBoundEvent",
 					"title": "On Clicked (BtnSlot_ChestEquip)",
 					"comment": "",
-					"x": -1312,
+					"x": -1744,
 					"y": 61,
 					"memberName": "",
 					"functionName": "",
@@ -39955,7 +41103,7 @@
 					"class": "K2Node_ComponentBoundEvent",
 					"title": "On Clicked (BtnSlot_LegsEquip)",
 					"comment": "",
-					"x": -1312,
+					"x": -1744,
 					"y": 301,
 					"memberName": "",
 					"functionName": "",
@@ -39983,7 +41131,7 @@
 					"class": "K2Node_ComponentBoundEvent",
 					"title": "On Clicked (BtnSlot_FeetEquip)",
 					"comment": "",
-					"x": -1312,
+					"x": -1744,
 					"y": 541,
 					"memberName": "",
 					"functionName": "",
@@ -40011,7 +41159,7 @@
 					"class": "K2Node_ComponentBoundEvent",
 					"title": "On Clicked (BtnSlot_AccessoryEquip)",
 					"comment": "",
-					"x": -1344,
+					"x": -1776,
 					"y": 797,
 					"memberName": "",
 					"functionName": "",
@@ -40039,7 +41187,7 @@
 					"class": "K2Node_ComponentBoundEvent",
 					"title": "On Clicked (BtnSlot_Accessory1Equip)",
 					"comment": "",
-					"x": -1344,
+					"x": -1776,
 					"y": 1037,
 					"memberName": "",
 					"functionName": "",
@@ -40067,7 +41215,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "On Armor Slot Clicked\nLa destinazione è WBP Menu Archive",
 					"comment": "",
-					"x": -736,
+					"x": -1168,
 					"y": -176,
 					"memberName": "",
 					"functionName": "",
@@ -40116,7 +41264,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "On Armor Slot Clicked\nLa destinazione è WBP Menu Archive",
 					"comment": "",
-					"x": -736,
+					"x": -1168,
 					"y": 48,
 					"memberName": "",
 					"functionName": "",
@@ -40165,7 +41313,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "On Armor Slot Clicked\nLa destinazione è WBP Menu Archive",
 					"comment": "",
-					"x": -736,
+					"x": -1168,
 					"y": 288,
 					"memberName": "",
 					"functionName": "",
@@ -40214,7 +41362,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "On Armor Slot Clicked\nLa destinazione è WBP Menu Archive",
 					"comment": "",
-					"x": -736,
+					"x": -1168,
 					"y": 528,
 					"memberName": "",
 					"functionName": "",
@@ -40263,7 +41411,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "On Armor Slot Clicked\nLa destinazione è WBP Menu Archive",
 					"comment": "",
-					"x": -736,
+					"x": -1168,
 					"y": 784,
 					"memberName": "",
 					"functionName": "",
@@ -40312,7 +41460,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "On Armor Slot Clicked\nLa destinazione è WBP Menu Archive",
 					"comment": "",
-					"x": -736,
+					"x": -1168,
 					"y": 1024,
 					"memberName": "",
 					"functionName": "",
@@ -40361,7 +41509,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_BigWeapon",
 					"comment": "",
-					"x": -1888,
+					"x": -2320,
 					"y": -12,
 					"memberName": "",
 					"functionName": "",
@@ -40389,7 +41537,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_SmallFirearm",
 					"comment": "",
-					"x": -1904,
+					"x": -2336,
 					"y": 212,
 					"memberName": "",
 					"functionName": "",
@@ -40417,7 +41565,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_Melee",
 					"comment": "",
-					"x": -1872,
+					"x": -2304,
 					"y": 452,
 					"memberName": "",
 					"functionName": "",
@@ -40445,7 +41593,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_Item",
 					"comment": "",
-					"x": -1856,
+					"x": -2288,
 					"y": 692,
 					"memberName": "",
 					"functionName": "",
@@ -40473,7 +41621,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_HeadEquip",
 					"comment": "",
-					"x": -928,
+					"x": -1360,
 					"y": 16,
 					"memberName": "",
 					"functionName": "",
@@ -40501,7 +41649,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_LegsEquip",
 					"comment": "",
-					"x": -928,
+					"x": -1360,
 					"y": 480,
 					"memberName": "",
 					"functionName": "",
@@ -40529,7 +41677,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_ChestEquip",
 					"comment": "",
-					"x": -928,
+					"x": -1360,
 					"y": 240,
 					"memberName": "",
 					"functionName": "",
@@ -40557,7 +41705,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_FeetEquip",
 					"comment": "",
-					"x": -912,
+					"x": -1344,
 					"y": 720,
 					"memberName": "",
 					"functionName": "",
@@ -40585,7 +41733,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_AccessoryEquip",
 					"comment": "",
-					"x": -944,
+					"x": -1376,
 					"y": 976,
 					"memberName": "",
 					"functionName": "",
@@ -40613,7 +41761,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get BtnSlot_Accessory1Equip",
 					"comment": "",
-					"x": -944,
+					"x": -1376,
 					"y": 1216,
 					"memberName": "",
 					"functionName": "",
@@ -40641,7 +41789,7 @@
 					"class": "K2Node_ComponentBoundEvent",
 					"title": "On Clicked (ToggleVisibWeapons)",
 					"comment": "",
-					"x": -416,
+					"x": -816,
 					"y": -163,
 					"memberName": "",
 					"functionName": "",
@@ -40669,7 +41817,7 @@
 					"class": "K2Node_ComponentBoundEvent",
 					"title": "On Clicked (ToggleVisibArmor)",
 					"comment": "",
-					"x": -416,
+					"x": -816,
 					"y": 109,
 					"memberName": "",
 					"functionName": "",
@@ -40697,7 +41845,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get As ChuckRef",
 					"comment": "",
-					"x": 48,
+					"x": -352,
 					"y": 21,
 					"memberName": "",
 					"functionName": "",
@@ -40725,7 +41873,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Toggle Weapons Visibility\nLa destinazione è ALS Chuck BP",
 					"comment": "",
-					"x": 304,
+					"x": 96,
 					"y": -176,
 					"memberName": "",
 					"functionName": "",
@@ -40760,7 +41908,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Toggle Armor Visibility\nLa destinazione è ALS Chuck BP",
 					"comment": "",
-					"x": 304,
+					"x": 112,
 					"y": 96,
 					"memberName": "",
 					"functionName": "",
@@ -40791,459 +41939,11 @@
 					]
 				},
 				{
-					"nodeGuid": "96402DEB47ED2E9F42A1B4847358917C",
-					"class": "K2Node_VariableGet",
-					"title": "Get bAreWeaponsVisible",
-					"comment": "",
-					"x": 528,
-					"y": 22,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "6694E0B7437B9548D03835982037FF7F",
-							"name": "bAreWeaponsVisible",
-							"direction": "Output",
-							"type": "bool",
-							"defaultValue": "false"
-						},
-						{
-							"pinId": "626B06614A00130DC0F9898AA1110FA7",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "59DCFC244D409562455F5FB5DDD2D911",
-					"class": "K2Node_VariableGet",
-					"title": "Get bIsArmorVisible",
-					"comment": "",
-					"x": 560,
-					"y": 272,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "EA7202BA49CC1E91296B31842C9F2ABE",
-							"name": "bIsArmorVisible",
-							"direction": "Output",
-							"type": "bool",
-							"defaultValue": "false"
-						},
-						{
-							"pinId": "5394B8E244A8FAE37C7530835C7D0E01",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "45AB28944705957A38E426A46823E99D",
-					"class": "K2Node_Select",
-					"title": "Seleziona",
-					"comment": "",
-					"x": 816,
-					"y": -88,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "CA2EA5544F1D5FDF0DBCC98E8A872D6B",
-							"name": "Option 0",
-							"direction": "Input",
-							"type": "string",
-							"defaultValue": "Weapons: Hidden"
-						},
-						{
-							"pinId": "7C52AA6843BACFE302D81B99F5F24283",
-							"name": "Option 1",
-							"direction": "Input",
-							"type": "string",
-							"defaultValue": "Weapons: Visible"
-						},
-						{
-							"pinId": "CDE84F9F4AA729BD8CD76988D0875D00",
-							"name": "Index",
-							"direction": "Input",
-							"type": "bool",
-							"defaultValue": "false"
-						},
-						{
-							"pinId": "BC3979164549157A02A9459A2077060E",
-							"name": "ReturnValue",
-							"direction": "Output",
-							"type": "string",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "7D9F12A24E416B13B57041A7D03ADA72",
-					"class": "K2Node_CallFunction",
-					"title": "To Text (String)",
-					"comment": "",
-					"x": 1152,
-					"y": -88,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "5F46AC2243DD05B4495B29AFC76624AF",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Script/Engine.KismetTextLibrary",
-							"defaultValue": "/Script/Engine.Default__KismetTextLibrary"
-						},
-						{
-							"pinId": "5C0A09C44D694A0DF9859FAF83CE2D1E",
-							"name": "InString",
-							"direction": "Input",
-							"type": "string",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "4A99BC9844246DFF65604D8C4A12A20A",
-							"name": "ReturnValue",
-							"direction": "Output",
-							"type": "text",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "EA3A8E274E33CB37C1AE73BA6444C6DB",
-					"class": "K2Node_VariableGet",
-					"title": "Get TxtVar_WeaponsVisibility",
-					"comment": "",
-					"x": 1392,
-					"y": 0,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "FDCF379A4CE5502BA492328BF4C55286",
-							"name": "TxtVar_WeaponsVisibility",
-							"direction": "Output",
-							"type": "object|/Script/UMG.TextBlock",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "C44E7BA243212CB08737D8AE8925F75B",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "B11B90E248EA105D79E90FA9DD7AAC9F",
-					"class": "K2Node_VariableSet",
-					"title": "Set Text",
-					"comment": "",
-					"x": 1408,
-					"y": -128,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "AF696A0447EF61AD014FE8A92FDA0EF9",
-							"name": "execute",
-							"direction": "Input",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "527F816B499C5ED08B0BBB807CBDE9F8",
-							"name": "then",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "1234324C41D0C660A335669215B84FB7",
-							"name": "Text",
-							"direction": "Input",
-							"type": "text",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "70D0C4764822F3D395D174AF802ED09A",
-							"name": "Output_Get",
-							"direction": "Output",
-							"type": "text",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "C5A076C0445A5A6BF1902484F28F0D1D",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Script/UMG.TextBlock",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "C0168DF6410C52B539D4659CE3654DEC",
-					"class": "K2Node_Knot",
-					"title": "Nodo di reindirizzamento",
-					"comment": "",
-					"x": 1360,
-					"y": -128,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "A9B0100E413D02D8A1F98EA7FA88BD62",
-							"name": "InputPin",
-							"direction": "Input",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "BE67AC2E4C97265A347D4CB36AD77934",
-							"name": "OutputPin",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "BD46885145DC8256BE274E9BBEB5A8A0",
-					"class": "K2Node_Select",
-					"title": "Seleziona",
-					"comment": "",
-					"x": 816,
-					"y": 176,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "CA2EA5544F1D5FDF0DBCC98E8A872D6B",
-							"name": "Option 0",
-							"direction": "Input",
-							"type": "string",
-							"defaultValue": "Armor: Hidden"
-						},
-						{
-							"pinId": "7C52AA6843BACFE302D81B99F5F24283",
-							"name": "Option 1",
-							"direction": "Input",
-							"type": "string",
-							"defaultValue": "Armor: Visible"
-						},
-						{
-							"pinId": "CDE84F9F4AA729BD8CD76988D0875D00",
-							"name": "Index",
-							"direction": "Input",
-							"type": "bool",
-							"defaultValue": "false"
-						},
-						{
-							"pinId": "BC3979164549157A02A9459A2077060E",
-							"name": "ReturnValue",
-							"direction": "Output",
-							"type": "string",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "01BA0E294C7D80807054A1872C370737",
-					"class": "K2Node_CallFunction",
-					"title": "To Text (String)",
-					"comment": "",
-					"x": 1152,
-					"y": 176,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "5F46AC2243DD05B4495B29AFC76624AF",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Script/Engine.KismetTextLibrary",
-							"defaultValue": "/Script/Engine.Default__KismetTextLibrary"
-						},
-						{
-							"pinId": "5C0A09C44D694A0DF9859FAF83CE2D1E",
-							"name": "InString",
-							"direction": "Input",
-							"type": "string",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "4A99BC9844246DFF65604D8C4A12A20A",
-							"name": "ReturnValue",
-							"direction": "Output",
-							"type": "text",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "FD98901646DDF63342D894B8C2483857",
-					"class": "K2Node_VariableSet",
-					"title": "Set Text",
-					"comment": "",
-					"x": 1408,
-					"y": 144,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "AF696A0447EF61AD014FE8A92FDA0EF9",
-							"name": "execute",
-							"direction": "Input",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "527F816B499C5ED08B0BBB807CBDE9F8",
-							"name": "then",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "1234324C41D0C660A335669215B84FB7",
-							"name": "Text",
-							"direction": "Input",
-							"type": "text",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "70D0C4764822F3D395D174AF802ED09A",
-							"name": "Output_Get",
-							"direction": "Output",
-							"type": "text",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "C5A076C0445A5A6BF1902484F28F0D1D",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Script/UMG.TextBlock",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "FB06108B4DE4942044A6F7BCDC1E4C7A",
-					"class": "K2Node_Knot",
-					"title": "Nodo di reindirizzamento",
-					"comment": "",
-					"x": 1360,
-					"y": 144,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "A9B0100E413D02D8A1F98EA7FA88BD62",
-							"name": "InputPin",
-							"direction": "Input",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "BE67AC2E4C97265A347D4CB36AD77934",
-							"name": "OutputPin",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "20D66DBC474C43CBE3C9EE9168806E7F",
-					"class": "K2Node_VariableGet",
-					"title": "Get TxtVar_ArmorVisibility",
-					"comment": "",
-					"x": 1408,
-					"y": 272,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "41EFBAFD4DFD3D2D45BC389A676BDB8D",
-							"name": "TxtVar_ArmorVisibility",
-							"direction": "Output",
-							"type": "object|/Script/UMG.TextBlock",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "B5C2219B446EB894BC0778BC9D85E81E",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "2313E3024DD8806935F95584F1F625AB",
-					"class": "K2Node_Knot",
-					"title": "Nodo di reindirizzamento",
-					"comment": "",
-					"x": 368,
-					"y": 31,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "EC3CC64F4727F3F80AE64294C7EF5370",
-							"name": "InputPin",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "B801A4FB4E90923B26B03797D98D5BC8",
-							"name": "OutputPin",
-							"direction": "Output",
-							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
 					"nodeGuid": "0B8943024C74B20FB1DC078365E9FD85",
 					"class": "EdGraphNode_Comment",
 					"title": "EQUIPMENT TAB",
 					"comment": "EQUIPMENT TAB",
-					"x": -2448,
+					"x": -2880,
 					"y": -288,
 					"memberName": "",
 					"functionName": "",
@@ -41269,7 +41969,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Play Sound 2D",
 					"comment": "",
-					"x": -2096,
+					"x": -2528,
 					"y": -160,
 					"memberName": "",
 					"functionName": "",
@@ -41360,7 +42060,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Play Sound 2D",
 					"comment": "",
-					"x": -2096,
+					"x": -2528,
 					"y": 67,
 					"memberName": "",
 					"functionName": "",
@@ -41451,7 +42151,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Play Sound 2D",
 					"comment": "",
-					"x": -2096,
+					"x": -2528,
 					"y": 307,
 					"memberName": "",
 					"functionName": "",
@@ -41542,7 +42242,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Play Sound 2D",
 					"comment": "",
-					"x": -2096,
+					"x": -2528,
 					"y": 545,
 					"memberName": "",
 					"functionName": "",
@@ -41633,7 +42333,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Play Sound 2D",
 					"comment": "",
-					"x": -1008,
+					"x": -1440,
 					"y": -157,
 					"memberName": "",
 					"functionName": "",
@@ -41724,7 +42424,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Play Sound 2D",
 					"comment": "",
-					"x": -1008,
+					"x": -1440,
 					"y": 64,
 					"memberName": "",
 					"functionName": "",
@@ -41815,7 +42515,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Play Sound 2D",
 					"comment": "",
-					"x": -1008,
+					"x": -1440,
 					"y": 304,
 					"memberName": "",
 					"functionName": "",
@@ -41906,7 +42606,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Play Sound 2D",
 					"comment": "",
-					"x": -1008,
+					"x": -1440,
 					"y": 544,
 					"memberName": "",
 					"functionName": "",
@@ -41997,7 +42697,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Play Sound 2D",
 					"comment": "",
-					"x": -1008,
+					"x": -1440,
 					"y": 800,
 					"memberName": "",
 					"functionName": "",
@@ -42088,7 +42788,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Play Sound 2D",
 					"comment": "",
-					"x": -1008,
+					"x": -1440,
 					"y": 1040,
 					"memberName": "",
 					"functionName": "",
@@ -42179,7 +42879,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Play Sound 2D",
 					"comment": "",
-					"x": -64,
+					"x": -496,
 					"y": -160,
 					"memberName": "",
 					"functionName": "",
@@ -42270,7 +42970,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Play Sound 2D",
 					"comment": "",
-					"x": -64,
+					"x": -496,
 					"y": 112,
 					"memberName": "",
 					"functionName": "",
@@ -43116,6 +43816,832 @@
 							"direction": "Output",
 							"type": "name|container=Array",
 							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "088195D843A167A361C881AD8263A2EF",
+					"class": "K2Node_MacroInstance",
+					"title": "Is Valid",
+					"comment": "",
+					"x": -192,
+					"y": -160,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "A4DF4142427ECD91C468A5BD1B1A5E02",
+							"name": "exec",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "87AE2DBC41177997DA47D5A754B56FDF",
+							"name": "InputObject",
+							"direction": "Input",
+							"type": "object|/Script/CoreUObject.Object",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "7CE1D02040806462DECC9E92C535FD56",
+							"name": "Is Valid",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "26FE14434EE6D791FB468BB20A055508",
+							"name": "Is Not Valid",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "FFC71D944A46A2E38A6C07B06FE5928C",
+					"class": "K2Node_MacroInstance",
+					"title": "Is Valid",
+					"comment": "",
+					"x": -192,
+					"y": 112,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "A4DF4142427ECD91C468A5BD1B1A5E02",
+							"name": "exec",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "87AE2DBC41177997DA47D5A754B56FDF",
+							"name": "InputObject",
+							"direction": "Input",
+							"type": "object|/Script/CoreUObject.Object",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "7CE1D02040806462DECC9E92C535FD56",
+							"name": "Is Valid",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "26FE14434EE6D791FB468BB20A055508",
+							"name": "Is Not Valid",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "8674E5BD43F270C12A0D368826475A19",
+					"class": "K2Node_CustomEvent",
+					"title": "RefreshWeaponsVisibilityButton\nCustom Event",
+					"comment": "",
+					"x": -704,
+					"y": 462,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "257A42DB42EBD270FDB0A084347A90EA",
+							"name": "OutputDelegate",
+							"direction": "Output",
+							"type": "delegate",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "77CBDEFD4DF9469193C11EAD98708A52",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "98F60B7F401E41BFEC9868936119D067",
+					"class": "K2Node_VariableGet",
+					"title": "Get As ChuckRef",
+					"comment": "",
+					"x": -576,
+					"y": 592,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "C4F680DF40BA4C6F490BB1B54664D59D",
+							"name": "As ChuckRef",
+							"direction": "Output",
+							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "729817F94E2CB56CCFC20F9F7B590A46",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "B1E940DF43F52B282E36FAB1D62C495B",
+					"class": "K2Node_MacroInstance",
+					"title": "Is Valid",
+					"comment": "",
+					"x": -416,
+					"y": 480,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "053F2B4B4783432937788D9DCBBC2540",
+							"name": "exec",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "3D121B6B47C81613A40F9DA01D14C932",
+							"name": "InputObject",
+							"direction": "Input",
+							"type": "object|/Script/CoreUObject.Object",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "2EC8DF4B41837A135BAADF8B6D72A98F",
+							"name": "Is Valid",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "D5C8F4FE4788A90CE2C710A477E5C84A",
+							"name": "Is Not Valid",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "4E08F474416D76CC51CF14890234D5FF",
+					"class": "K2Node_VariableGet",
+					"title": "Get bAreWeaponsVisible",
+					"comment": "",
+					"x": -432,
+					"y": 592,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "6F2542A842AE582A550574B8EF5FC9F8",
+							"name": "bAreWeaponsVisible",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "475AF47447E17AC073AA2D8EDAB34051",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "628E55F146373AE09398E880D1932D22",
+					"class": "K2Node_IfThenElse",
+					"title": "Ramo",
+					"comment": "",
+					"x": -160,
+					"y": 480,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "F9F1023247CA56EF0CF5C6A65D4A86FF",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "0689E0FE4ED64CA6C890308259E10C7F",
+							"name": "Condition",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "true"
+						},
+						{
+							"pinId": "820EC9FF422780FA4D502693E510B896",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "7ABAF3C449734018C935DBA6F055EAAE",
+							"name": "else",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "90E00A6C4C285B2F0032978BA28C2FC1",
+					"class": "K2Node_VariableGet",
+					"title": "Get TxtVar_WeaponsVisibility",
+					"comment": "",
+					"x": 32,
+					"y": 512,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "FDCF379A4CE5502BA492328BF4C55286",
+							"name": "TxtVar_WeaponsVisibility",
+							"direction": "Output",
+							"type": "object|/Script/UMG.TextBlock",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "C44E7BA243212CB08737D8AE8925F75B",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "16607E73472F10089054C6B8CD66C8C2",
+					"class": "K2Node_VariableGet",
+					"title": "Get TxtVar_ArmorVisibility",
+					"comment": "",
+					"x": 48,
+					"y": 880,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "41EFBAFD4DFD3D2D45BC389A676BDB8D",
+							"name": "TxtVar_ArmorVisibility",
+							"direction": "Output",
+							"type": "object|/Script/UMG.TextBlock",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "B5C2219B446EB894BC0778BC9D85E81E",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "E2A906E74E7ACC39035A84A75048B205",
+					"class": "K2Node_CallFunction",
+					"title": "SetText (Text)\nLa destinazione è Testo",
+					"comment": "",
+					"x": 256,
+					"y": 368,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "2BA4943A4B317CFDAF982AA2DBE009D8",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "25AB67FB4DDDF334D17EA5A2D19780E2",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "9AE1283A457E624E6C5909A2AE6B5CA2",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/UMG.TextBlock",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "4E1239C64AB7A355A17AF2A57D50AF93",
+							"name": "InText",
+							"direction": "Input",
+							"type": "text",
+							"defaultValue": "Weapons: Visible"
+						}
+					]
+				},
+				{
+					"nodeGuid": "21E863D54B6962629BA8A38933CA9572",
+					"class": "K2Node_CallFunction",
+					"title": "SetText (Text)\nLa destinazione è Testo",
+					"comment": "",
+					"x": 256,
+					"y": 544,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "2BA4943A4B317CFDAF982AA2DBE009D8",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "25AB67FB4DDDF334D17EA5A2D19780E2",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "9AE1283A457E624E6C5909A2AE6B5CA2",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/UMG.TextBlock",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "4E1239C64AB7A355A17AF2A57D50AF93",
+							"name": "InText",
+							"direction": "Input",
+							"type": "text",
+							"defaultValue": "Weapons: Hidden"
+						}
+					]
+				},
+				{
+					"nodeGuid": "ACFF7DB74BCCC3ECC276BC8F0FB362C0",
+					"class": "K2Node_CallFunction",
+					"title": "Refresh Weapons Visibility Button\nLa destinazione è WBP Menu Archive",
+					"comment": "",
+					"x": 352,
+					"y": -176,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "A72CA68A4C99C4DCF1944EB5A75AFF08",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "085A69644564FBD83EC8C79016175272",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "1197216B4ED4917B8CFD288FE1CC88DA",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|self",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "AA5F062E47830A71DC94E8BD1CC35A7C",
+					"class": "K2Node_CustomEvent",
+					"title": "RefreshArmorVisibilityButton\nCustom Event",
+					"comment": "",
+					"x": -688,
+					"y": 830,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "821E5F744A2EB485958BDBA5459BDFC6",
+							"name": "OutputDelegate",
+							"direction": "Output",
+							"type": "delegate",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "BC0CA07849C6958CC2D4DEACC6E84E09",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "27EC4BE640392D71CBD218BDF02D4A09",
+					"class": "K2Node_CallFunction",
+					"title": "Refresh Armor Visibility Button\nLa destinazione è WBP Menu Archive",
+					"comment": "",
+					"x": 352,
+					"y": 96,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "D3C3528E443D8CF0092EA887D07200FA",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "679B77B140E72EA088376EA0A36D2C7F",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "149DE1744088192601E03B8417DD4256",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|self",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "C99F9E57451AB459AF6264AED57D0951",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 80,
+					"y": 418,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "87DF7A33459DF45816C0A2BC1B1105A6",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "442AF0C044976D14F96FAF85060AB146",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "2CD20904412CE00E626A13A323934716",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 80,
+					"y": 594,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "65FEF0074EB5FEE52F4418B4F6716248",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "B2D2F46A493A1615C5160E98A7C1970F",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "511734C14B98B04F12EC87A26E189D73",
+					"class": "K2Node_VariableGet",
+					"title": "Get bIsArmorVisible",
+					"comment": "",
+					"x": -432,
+					"y": 960,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "EA7202BA49CC1E91296B31842C9F2ABE",
+							"name": "bIsArmorVisible",
+							"direction": "Output",
+							"type": "bool",
+							"defaultValue": "false"
+						},
+						{
+							"pinId": "5394B8E244A8FAE37C7530835C7D0E01",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "CEA386894112C2D8DCA760956A849816",
+					"class": "K2Node_VariableGet",
+					"title": "Get As ChuckRef",
+					"comment": "",
+					"x": -576,
+					"y": 960,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "C4F680DF40BA4C6F490BB1B54664D59D",
+							"name": "As ChuckRef",
+							"direction": "Output",
+							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "729817F94E2CB56CCFC20F9F7B590A46",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "E4B06CAB44609E8C322E86BEFDF224D8",
+					"class": "K2Node_MacroInstance",
+					"title": "Is Valid",
+					"comment": "",
+					"x": -416,
+					"y": 848,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "053F2B4B4783432937788D9DCBBC2540",
+							"name": "exec",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "3D121B6B47C81613A40F9DA01D14C932",
+							"name": "InputObject",
+							"direction": "Input",
+							"type": "object|/Script/CoreUObject.Object",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "2EC8DF4B41837A135BAADF8B6D72A98F",
+							"name": "Is Valid",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "D5C8F4FE4788A90CE2C710A477E5C84A",
+							"name": "Is Not Valid",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "0C1077734C8C0EF297F2DE80B3D492E4",
+					"class": "K2Node_IfThenElse",
+					"title": "Ramo",
+					"comment": "",
+					"x": -160,
+					"y": 848,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "F9F1023247CA56EF0CF5C6A65D4A86FF",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "0689E0FE4ED64CA6C890308259E10C7F",
+							"name": "Condition",
+							"direction": "Input",
+							"type": "bool",
+							"defaultValue": "true"
+						},
+						{
+							"pinId": "820EC9FF422780FA4D502693E510B896",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "7ABAF3C449734018C935DBA6F055EAAE",
+							"name": "else",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "DB3449E14AF971090ADB8E80904D7F8E",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 80,
+					"y": 786,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "87DF7A33459DF45816C0A2BC1B1105A6",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "442AF0C044976D14F96FAF85060AB146",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "B70F8420446000289E047B9257802999",
+					"class": "K2Node_Knot",
+					"title": "Nodo di reindirizzamento",
+					"comment": "",
+					"x": 80,
+					"y": 962,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "65FEF0074EB5FEE52F4418B4F6716248",
+							"name": "InputPin",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "B2D2F46A493A1615C5160E98A7C1970F",
+							"name": "OutputPin",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						}
+					]
+				},
+				{
+					"nodeGuid": "9AE71AD84D8DB757A7E0D3A3D8B8AD41",
+					"class": "K2Node_CallFunction",
+					"title": "SetText (Text)\nLa destinazione è Testo",
+					"comment": "",
+					"x": 256,
+					"y": 912,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "2BA4943A4B317CFDAF982AA2DBE009D8",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "25AB67FB4DDDF334D17EA5A2D19780E2",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "9AE1283A457E624E6C5909A2AE6B5CA2",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/UMG.TextBlock",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "4E1239C64AB7A355A17AF2A57D50AF93",
+							"name": "InText",
+							"direction": "Input",
+							"type": "text",
+							"defaultValue": "Armor: Hidden"
+						}
+					]
+				},
+				{
+					"nodeGuid": "5DD807AC44EBA6514AD76DAD9A04F1F4",
+					"class": "K2Node_CallFunction",
+					"title": "SetText (Text)\nLa destinazione è Testo",
+					"comment": "",
+					"x": 256,
+					"y": 736,
+					"memberName": "",
+					"functionName": "",
+					"variableName": "",
+					"targetClass": "",
+					"pins": [
+						{
+							"pinId": "2BA4943A4B317CFDAF982AA2DBE009D8",
+							"name": "execute",
+							"direction": "Input",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "25AB67FB4DDDF334D17EA5A2D19780E2",
+							"name": "then",
+							"direction": "Output",
+							"type": "exec",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "9AE1283A457E624E6C5909A2AE6B5CA2",
+							"name": "self",
+							"direction": "Input",
+							"type": "object|/Script/UMG.TextBlock",
+							"defaultValue": ""
+						},
+						{
+							"pinId": "4E1239C64AB7A355A17AF2A57D50AF93",
+							"name": "InText",
+							"direction": "Input",
+							"type": "text",
+							"defaultValue": "Armor: Visible"
 						}
 					]
 				}
@@ -44525,14 +46051,22 @@
 					"fromNodeGuid": "460EE1374B4EF37BE983E2B00F382058",
 					"fromPinId": "AF5844CF458971DD1D790DB4AE58F4D0",
 					"fromPinName": "As ChuckRef",
-					"toNodeGuid": "2313E3024DD8806935F95584F1F625AB",
-					"toPinId": "EC3CC64F4727F3F80AE64294C7EF5370",
-					"toPinName": "InputPin"
+					"toNodeGuid": "088195D843A167A361C881AD8263A2EF",
+					"toPinId": "87AE2DBC41177997DA47D5A754B56FDF",
+					"toPinName": "InputObject"
 				},
 				{
-					"fromNodeGuid": "D31DAF5544660C18C011A0A737ACACBB",
-					"fromPinId": "2E22D6EC4588DEA6171D25838A669B6C",
-					"fromPinName": "then",
+					"fromNodeGuid": "460EE1374B4EF37BE983E2B00F382058",
+					"fromPinId": "AF5844CF458971DD1D790DB4AE58F4D0",
+					"fromPinName": "As ChuckRef",
+					"toNodeGuid": "FFC71D944A46A2E38A6C07B06FE5928C",
+					"toPinId": "87AE2DBC41177997DA47D5A754B56FDF",
+					"toPinName": "InputObject"
+				},
+				{
+					"fromNodeGuid": "088195D843A167A361C881AD8263A2EF",
+					"fromPinId": "7CE1D02040806462DECC9E92C535FD56",
+					"fromPinName": "Is Valid",
 					"toNodeGuid": "B0AF973943FDF68DE9C1129E9C712233",
 					"toPinId": "34B5AA5A4020DE11ABF585814833E7D0",
 					"toPinName": "execute"
@@ -44541,14 +46075,14 @@
 					"fromNodeGuid": "B0AF973943FDF68DE9C1129E9C712233",
 					"fromPinId": "9A110E9B4746A0C086C3A1A0F0A01526",
 					"fromPinName": "then",
-					"toNodeGuid": "C0168DF6410C52B539D4659CE3654DEC",
-					"toPinId": "A9B0100E413D02D8A1F98EA7FA88BD62",
-					"toPinName": "InputPin"
+					"toNodeGuid": "ACFF7DB74BCCC3ECC276BC8F0FB362C0",
+					"toPinId": "A72CA68A4C99C4DCF1944EB5A75AFF08",
+					"toPinName": "execute"
 				},
 				{
-					"fromNodeGuid": "5284791E40EEF7D0E3259FB86EA53A59",
-					"fromPinId": "2E22D6EC4588DEA6171D25838A669B6C",
-					"fromPinName": "then",
+					"fromNodeGuid": "FFC71D944A46A2E38A6C07B06FE5928C",
+					"fromPinId": "7CE1D02040806462DECC9E92C535FD56",
+					"fromPinName": "Is Valid",
 					"toNodeGuid": "DBB1658E40967F1401192995AED1C3D5",
 					"toPinId": "3861756141458FB499645B8327A2FF54",
 					"toPinName": "execute"
@@ -44557,105 +46091,25 @@
 					"fromNodeGuid": "DBB1658E40967F1401192995AED1C3D5",
 					"fromPinId": "DB6C9B334518EC56D2347EB49F807A27",
 					"fromPinName": "then",
-					"toNodeGuid": "FB06108B4DE4942044A6F7BCDC1E4C7A",
-					"toPinId": "A9B0100E413D02D8A1F98EA7FA88BD62",
-					"toPinName": "InputPin"
-				},
-				{
-					"fromNodeGuid": "96402DEB47ED2E9F42A1B4847358917C",
-					"fromPinId": "6694E0B7437B9548D03835982037FF7F",
-					"fromPinName": "bAreWeaponsVisible",
-					"toNodeGuid": "45AB28944705957A38E426A46823E99D",
-					"toPinId": "CDE84F9F4AA729BD8CD76988D0875D00",
-					"toPinName": "Index"
-				},
-				{
-					"fromNodeGuid": "2313E3024DD8806935F95584F1F625AB",
-					"fromPinId": "B801A4FB4E90923B26B03797D98D5BC8",
-					"fromPinName": "OutputPin",
-					"toNodeGuid": "96402DEB47ED2E9F42A1B4847358917C",
-					"toPinId": "626B06614A00130DC0F9898AA1110FA7",
-					"toPinName": "self"
-				},
-				{
-					"fromNodeGuid": "59DCFC244D409562455F5FB5DDD2D911",
-					"fromPinId": "EA7202BA49CC1E91296B31842C9F2ABE",
-					"fromPinName": "bIsArmorVisible",
-					"toNodeGuid": "BD46885145DC8256BE274E9BBEB5A8A0",
-					"toPinId": "CDE84F9F4AA729BD8CD76988D0875D00",
-					"toPinName": "Index"
-				},
-				{
-					"fromNodeGuid": "2313E3024DD8806935F95584F1F625AB",
-					"fromPinId": "B801A4FB4E90923B26B03797D98D5BC8",
-					"fromPinName": "OutputPin",
-					"toNodeGuid": "59DCFC244D409562455F5FB5DDD2D911",
-					"toPinId": "5394B8E244A8FAE37C7530835C7D0E01",
-					"toPinName": "self"
-				},
-				{
-					"fromNodeGuid": "45AB28944705957A38E426A46823E99D",
-					"fromPinId": "BC3979164549157A02A9459A2077060E",
-					"fromPinName": "ReturnValue",
-					"toNodeGuid": "7D9F12A24E416B13B57041A7D03ADA72",
-					"toPinId": "5C0A09C44D694A0DF9859FAF83CE2D1E",
-					"toPinName": "InString"
-				},
-				{
-					"fromNodeGuid": "7D9F12A24E416B13B57041A7D03ADA72",
-					"fromPinId": "4A99BC9844246DFF65604D8C4A12A20A",
-					"fromPinName": "ReturnValue",
-					"toNodeGuid": "B11B90E248EA105D79E90FA9DD7AAC9F",
-					"toPinId": "1234324C41D0C660A335669215B84FB7",
-					"toPinName": "Text"
-				},
-				{
-					"fromNodeGuid": "EA3A8E274E33CB37C1AE73BA6444C6DB",
-					"fromPinId": "FDCF379A4CE5502BA492328BF4C55286",
-					"fromPinName": "TxtVar_WeaponsVisibility",
-					"toNodeGuid": "B11B90E248EA105D79E90FA9DD7AAC9F",
-					"toPinId": "C5A076C0445A5A6BF1902484F28F0D1D",
-					"toPinName": "self"
-				},
-				{
-					"fromNodeGuid": "C0168DF6410C52B539D4659CE3654DEC",
-					"fromPinId": "BE67AC2E4C97265A347D4CB36AD77934",
-					"fromPinName": "OutputPin",
-					"toNodeGuid": "B11B90E248EA105D79E90FA9DD7AAC9F",
-					"toPinId": "AF696A0447EF61AD014FE8A92FDA0EF9",
+					"toNodeGuid": "27EC4BE640392D71CBD218BDF02D4A09",
+					"toPinId": "D3C3528E443D8CF0092EA887D07200FA",
 					"toPinName": "execute"
 				},
 				{
-					"fromNodeGuid": "BD46885145DC8256BE274E9BBEB5A8A0",
-					"fromPinId": "BC3979164549157A02A9459A2077060E",
-					"fromPinName": "ReturnValue",
-					"toNodeGuid": "01BA0E294C7D80807054A1872C370737",
-					"toPinId": "5C0A09C44D694A0DF9859FAF83CE2D1E",
-					"toPinName": "InString"
+					"fromNodeGuid": "D31DAF5544660C18C011A0A737ACACBB",
+					"fromPinId": "2E22D6EC4588DEA6171D25838A669B6C",
+					"fromPinName": "then",
+					"toNodeGuid": "088195D843A167A361C881AD8263A2EF",
+					"toPinId": "A4DF4142427ECD91C468A5BD1B1A5E02",
+					"toPinName": "exec"
 				},
 				{
-					"fromNodeGuid": "01BA0E294C7D80807054A1872C370737",
-					"fromPinId": "4A99BC9844246DFF65604D8C4A12A20A",
-					"fromPinName": "ReturnValue",
-					"toNodeGuid": "FD98901646DDF63342D894B8C2483857",
-					"toPinId": "1234324C41D0C660A335669215B84FB7",
-					"toPinName": "Text"
-				},
-				{
-					"fromNodeGuid": "FB06108B4DE4942044A6F7BCDC1E4C7A",
-					"fromPinId": "BE67AC2E4C97265A347D4CB36AD77934",
-					"fromPinName": "OutputPin",
-					"toNodeGuid": "FD98901646DDF63342D894B8C2483857",
-					"toPinId": "AF696A0447EF61AD014FE8A92FDA0EF9",
-					"toPinName": "execute"
-				},
-				{
-					"fromNodeGuid": "20D66DBC474C43CBE3C9EE9168806E7F",
-					"fromPinId": "41EFBAFD4DFD3D2D45BC389A676BDB8D",
-					"fromPinName": "TxtVar_ArmorVisibility",
-					"toNodeGuid": "FD98901646DDF63342D894B8C2483857",
-					"toPinId": "C5A076C0445A5A6BF1902484F28F0D1D",
-					"toPinName": "self"
+					"fromNodeGuid": "5284791E40EEF7D0E3259FB86EA53A59",
+					"fromPinId": "2E22D6EC4588DEA6171D25838A669B6C",
+					"fromPinName": "then",
+					"toNodeGuid": "FFC71D944A46A2E38A6C07B06FE5928C",
+					"toPinId": "A4DF4142427ECD91C468A5BD1B1A5E02",
+					"toPinName": "exec"
 				},
 				{
 					"fromNodeGuid": "EB7BD47F415B72067AFB509CDB0973A8",
@@ -44704,6 +46158,182 @@
 					"toNodeGuid": "79EB3F02483216DE4E2CC38730B46180",
 					"toPinId": "CFD17F70477A709E3EB123915492672E",
 					"toPinName": "NewItem"
+				},
+				{
+					"fromNodeGuid": "8674E5BD43F270C12A0D368826475A19",
+					"fromPinId": "77CBDEFD4DF9469193C11EAD98708A52",
+					"fromPinName": "then",
+					"toNodeGuid": "B1E940DF43F52B282E36FAB1D62C495B",
+					"toPinId": "053F2B4B4783432937788D9DCBBC2540",
+					"toPinName": "exec"
+				},
+				{
+					"fromNodeGuid": "98F60B7F401E41BFEC9868936119D067",
+					"fromPinId": "C4F680DF40BA4C6F490BB1B54664D59D",
+					"fromPinName": "As ChuckRef",
+					"toNodeGuid": "B1E940DF43F52B282E36FAB1D62C495B",
+					"toPinId": "3D121B6B47C81613A40F9DA01D14C932",
+					"toPinName": "InputObject"
+				},
+				{
+					"fromNodeGuid": "98F60B7F401E41BFEC9868936119D067",
+					"fromPinId": "C4F680DF40BA4C6F490BB1B54664D59D",
+					"fromPinName": "As ChuckRef",
+					"toNodeGuid": "4E08F474416D76CC51CF14890234D5FF",
+					"toPinId": "475AF47447E17AC073AA2D8EDAB34051",
+					"toPinName": "self"
+				},
+				{
+					"fromNodeGuid": "B1E940DF43F52B282E36FAB1D62C495B",
+					"fromPinId": "2EC8DF4B41837A135BAADF8B6D72A98F",
+					"fromPinName": "Is Valid",
+					"toNodeGuid": "628E55F146373AE09398E880D1932D22",
+					"toPinId": "F9F1023247CA56EF0CF5C6A65D4A86FF",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "4E08F474416D76CC51CF14890234D5FF",
+					"fromPinId": "6F2542A842AE582A550574B8EF5FC9F8",
+					"fromPinName": "bAreWeaponsVisible",
+					"toNodeGuid": "628E55F146373AE09398E880D1932D22",
+					"toPinId": "0689E0FE4ED64CA6C890308259E10C7F",
+					"toPinName": "Condition"
+				},
+				{
+					"fromNodeGuid": "628E55F146373AE09398E880D1932D22",
+					"fromPinId": "820EC9FF422780FA4D502693E510B896",
+					"fromPinName": "then",
+					"toNodeGuid": "C99F9E57451AB459AF6264AED57D0951",
+					"toPinId": "87DF7A33459DF45816C0A2BC1B1105A6",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "628E55F146373AE09398E880D1932D22",
+					"fromPinId": "7ABAF3C449734018C935DBA6F055EAAE",
+					"fromPinName": "else",
+					"toNodeGuid": "2CD20904412CE00E626A13A323934716",
+					"toPinId": "65FEF0074EB5FEE52F4418B4F6716248",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "90E00A6C4C285B2F0032978BA28C2FC1",
+					"fromPinId": "FDCF379A4CE5502BA492328BF4C55286",
+					"fromPinName": "TxtVar_WeaponsVisibility",
+					"toNodeGuid": "E2A906E74E7ACC39035A84A75048B205",
+					"toPinId": "9AE1283A457E624E6C5909A2AE6B5CA2",
+					"toPinName": "self"
+				},
+				{
+					"fromNodeGuid": "90E00A6C4C285B2F0032978BA28C2FC1",
+					"fromPinId": "FDCF379A4CE5502BA492328BF4C55286",
+					"fromPinName": "TxtVar_WeaponsVisibility",
+					"toNodeGuid": "21E863D54B6962629BA8A38933CA9572",
+					"toPinId": "9AE1283A457E624E6C5909A2AE6B5CA2",
+					"toPinName": "self"
+				},
+				{
+					"fromNodeGuid": "16607E73472F10089054C6B8CD66C8C2",
+					"fromPinId": "41EFBAFD4DFD3D2D45BC389A676BDB8D",
+					"fromPinName": "TxtVar_ArmorVisibility",
+					"toNodeGuid": "5DD807AC44EBA6514AD76DAD9A04F1F4",
+					"toPinId": "9AE1283A457E624E6C5909A2AE6B5CA2",
+					"toPinName": "self"
+				},
+				{
+					"fromNodeGuid": "16607E73472F10089054C6B8CD66C8C2",
+					"fromPinId": "41EFBAFD4DFD3D2D45BC389A676BDB8D",
+					"fromPinName": "TxtVar_ArmorVisibility",
+					"toNodeGuid": "9AE71AD84D8DB757A7E0D3A3D8B8AD41",
+					"toPinId": "9AE1283A457E624E6C5909A2AE6B5CA2",
+					"toPinName": "self"
+				},
+				{
+					"fromNodeGuid": "C99F9E57451AB459AF6264AED57D0951",
+					"fromPinId": "442AF0C044976D14F96FAF85060AB146",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "E2A906E74E7ACC39035A84A75048B205",
+					"toPinId": "2BA4943A4B317CFDAF982AA2DBE009D8",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "2CD20904412CE00E626A13A323934716",
+					"fromPinId": "B2D2F46A493A1615C5160E98A7C1970F",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "21E863D54B6962629BA8A38933CA9572",
+					"toPinId": "2BA4943A4B317CFDAF982AA2DBE009D8",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "AA5F062E47830A71DC94E8BD1CC35A7C",
+					"fromPinId": "BC0CA07849C6958CC2D4DEACC6E84E09",
+					"fromPinName": "then",
+					"toNodeGuid": "E4B06CAB44609E8C322E86BEFDF224D8",
+					"toPinId": "053F2B4B4783432937788D9DCBBC2540",
+					"toPinName": "exec"
+				},
+				{
+					"fromNodeGuid": "511734C14B98B04F12EC87A26E189D73",
+					"fromPinId": "EA7202BA49CC1E91296B31842C9F2ABE",
+					"fromPinName": "bIsArmorVisible",
+					"toNodeGuid": "0C1077734C8C0EF297F2DE80B3D492E4",
+					"toPinId": "0689E0FE4ED64CA6C890308259E10C7F",
+					"toPinName": "Condition"
+				},
+				{
+					"fromNodeGuid": "CEA386894112C2D8DCA760956A849816",
+					"fromPinId": "C4F680DF40BA4C6F490BB1B54664D59D",
+					"fromPinName": "As ChuckRef",
+					"toNodeGuid": "511734C14B98B04F12EC87A26E189D73",
+					"toPinId": "5394B8E244A8FAE37C7530835C7D0E01",
+					"toPinName": "self"
+				},
+				{
+					"fromNodeGuid": "CEA386894112C2D8DCA760956A849816",
+					"fromPinId": "C4F680DF40BA4C6F490BB1B54664D59D",
+					"fromPinName": "As ChuckRef",
+					"toNodeGuid": "E4B06CAB44609E8C322E86BEFDF224D8",
+					"toPinId": "3D121B6B47C81613A40F9DA01D14C932",
+					"toPinName": "InputObject"
+				},
+				{
+					"fromNodeGuid": "E4B06CAB44609E8C322E86BEFDF224D8",
+					"fromPinId": "2EC8DF4B41837A135BAADF8B6D72A98F",
+					"fromPinName": "Is Valid",
+					"toNodeGuid": "0C1077734C8C0EF297F2DE80B3D492E4",
+					"toPinId": "F9F1023247CA56EF0CF5C6A65D4A86FF",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "0C1077734C8C0EF297F2DE80B3D492E4",
+					"fromPinId": "820EC9FF422780FA4D502693E510B896",
+					"fromPinName": "then",
+					"toNodeGuid": "DB3449E14AF971090ADB8E80904D7F8E",
+					"toPinId": "87DF7A33459DF45816C0A2BC1B1105A6",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "0C1077734C8C0EF297F2DE80B3D492E4",
+					"fromPinId": "7ABAF3C449734018C935DBA6F055EAAE",
+					"fromPinName": "else",
+					"toNodeGuid": "B70F8420446000289E047B9257802999",
+					"toPinId": "65FEF0074EB5FEE52F4418B4F6716248",
+					"toPinName": "InputPin"
+				},
+				{
+					"fromNodeGuid": "DB3449E14AF971090ADB8E80904D7F8E",
+					"fromPinId": "442AF0C044976D14F96FAF85060AB146",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "5DD807AC44EBA6514AD76DAD9A04F1F4",
+					"toPinId": "2BA4943A4B317CFDAF982AA2DBE009D8",
+					"toPinName": "execute"
+				},
+				{
+					"fromNodeGuid": "B70F8420446000289E047B9257802999",
+					"fromPinId": "B2D2F46A493A1615C5160E98A7C1970F",
+					"fromPinName": "OutputPin",
+					"toNodeGuid": "9AE71AD84D8DB757A7E0D3A3D8B8AD41",
+					"toPinId": "2BA4943A4B317CFDAF982AA2DBE009D8",
+					"toPinName": "execute"
 				}
 			]
 		}
@@ -44875,9 +46505,9 @@
 		"complexity":
 		{
 			"graphCount": 9,
-			"nodeCount": 976,
-			"pinCount": 3173,
-			"linkCount": 1090
+			"nodeCount": 1013,
+			"pinCount": 3277,
+			"linkCount": 1138
 		},
 		"notes": [
 			"Classificazione euristica dedotta da nome, path e tipo asset (UI / Widgets)."

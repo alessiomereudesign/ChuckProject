@@ -2,7 +2,7 @@
 	"assetName": "ALS_ChuckBP",
 	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP",
 	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"variables": [
 		{
 			"name": "DefaultColor",
@@ -270,7 +270,27 @@
 			"defaultValue": ""
 		},
 		{
+			"name": "LocalWeaponData",
+			"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+			"defaultValue": ""
+		},
+		{
 			"name": "CurrentWeaponActor",
+			"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "HolsteredBigWeaponActor",
+			"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "HolsteredMeleeActor",
+			"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
+			"defaultValue": ""
+		},
+		{
+			"name": "HolsteredSmallWeaponActor",
 			"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
 			"defaultValue": ""
 		},

@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
 Class: Blueprint
 Parent: /Script/Engine.Actor
-Generated: 2026-07-10T21:13:02.714Z
+Generated: 2026-07-21T14:07:27.544Z
 
 ## Variables
 - WeaponData: struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData
@@ -14,7 +14,7 @@ Generated: 2026-07-10T21:13:02.714Z
 - AttachRotationOffset: struct|/Script/CoreUObject.Rotator
 
 ## Graphs
-- EventGraph (EventGraph): 16 nodes, 16 edges
+- EventGraph (EventGraph): 26 nodes, 28 edges
 - CanFire (Function): 5 nodes, 4 edges
 - DoHitScan (Function): 27 nodes, 42 edges
 - Equip (Function): 1 nodes, 0 edges

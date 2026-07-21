@@ -2,7 +2,7 @@
 	"assetName": "WBP_MenuArchive",
 	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive",
 	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"widgets": [
 		{
 			"name": "Get Active Widget Index\nLa destinazione è Widget Switcher",
@@ -495,6 +495,13 @@
 			"events": []
 		},
 		{
+			"name": "Refresh Weapons Visibility Button\nLa destinazione è WBP Menu Archive",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
 			"name": "Create WBP Tab Intersect Character Slot Widget",
 			"class": "K2Node_CreateWidget",
 			"parent": "",
@@ -665,29 +672,57 @@
 			"events": []
 		},
 		{
-			"name": "To Text (String)",
+			"name": "RefreshWeaponsVisibilityButton\nCustom Event",
+			"class": "K2Node_CustomEvent",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "SetText (Text)\nLa destinazione è Testo",
 			"class": "K2Node_CallFunction",
 			"parent": "",
 			"isVariable": true,
 			"events": []
 		},
 		{
-			"name": "Set Text",
-			"class": "K2Node_VariableSet",
-			"parent": "",
-			"isVariable": true,
-			"events": []
-		},
-		{
-			"name": "To Text (String)",
+			"name": "SetText (Text)\nLa destinazione è Testo",
 			"class": "K2Node_CallFunction",
 			"parent": "",
 			"isVariable": true,
 			"events": []
 		},
 		{
-			"name": "Set Text",
-			"class": "K2Node_VariableSet",
+			"name": "Refresh Weapons Visibility Button\nLa destinazione è WBP Menu Archive",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "RefreshArmorVisibilityButton\nCustom Event",
+			"class": "K2Node_CustomEvent",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "Refresh Armor Visibility Button\nLa destinazione è WBP Menu Archive",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "SetText (Text)\nLa destinazione è Testo",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"isVariable": true,
+			"events": []
+		},
+		{
+			"name": "SetText (Text)\nLa destinazione è Testo",
+			"class": "K2Node_CallFunction",
 			"parent": "",
 			"isVariable": true,
 			"events": []

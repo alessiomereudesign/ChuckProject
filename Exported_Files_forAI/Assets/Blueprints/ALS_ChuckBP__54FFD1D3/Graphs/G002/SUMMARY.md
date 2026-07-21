@@ -1,8 +1,8 @@
 # AttackGraph
 
 Type: EventGraph
-Nodes: 448
-Edges: 534
+Nodes: 351
+Edges: 425
 
 ## Entry Nodes
 - EventLoopHit

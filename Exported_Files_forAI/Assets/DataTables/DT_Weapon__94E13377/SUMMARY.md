@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/Systems/Weapons/Data/DT_Weapon.DT_Weapon
 Class: DataTable
 Parent: 
-Generated: 2026-07-10T21:13:02.714Z
+Generated: 2026-07-21T14:07:27.544Z
 
 ## Variables
 - none

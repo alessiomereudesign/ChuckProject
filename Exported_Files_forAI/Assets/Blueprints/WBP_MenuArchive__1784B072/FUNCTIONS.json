@@ -2,7 +2,7 @@
 	"assetName": "WBP_MenuArchive",
 	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive",
 	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"functions": [
 		{
 			"name": "OnAnalogValueChanged",
@@ -3394,7 +3394,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3403,7 +3403,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3412,7 +3412,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3421,7 +3421,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3430,7 +3430,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3439,7 +3439,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3448,7 +3448,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3457,7 +3457,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3466,7 +3466,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3475,7 +3475,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3484,7 +3484,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3493,7 +3493,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3502,7 +3502,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3511,7 +3511,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3520,7 +3520,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3529,7 +3529,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3538,7 +3538,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3547,7 +3547,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3556,7 +3556,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3565,7 +3565,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3574,7 +3574,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3583,7 +3583,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3592,7 +3592,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3601,7 +3601,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3610,7 +3610,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3619,7 +3619,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3628,7 +3628,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3637,7 +3637,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3646,7 +3646,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3655,7 +3655,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3664,7 +3664,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3673,7 +3673,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3682,7 +3682,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3691,7 +3691,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3700,7 +3700,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3709,7 +3709,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3718,7 +3718,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3727,7 +3727,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3736,7 +3736,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3745,7 +3745,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3754,7 +3754,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3763,7 +3763,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3772,7 +3772,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3781,7 +3781,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3790,7 +3790,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3799,7 +3799,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3808,7 +3808,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3817,7 +3817,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3826,7 +3826,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3835,7 +3835,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3844,7 +3844,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3853,7 +3853,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3862,7 +3862,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3871,7 +3871,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3880,7 +3880,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3889,7 +3889,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3898,7 +3898,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3907,7 +3907,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3916,7 +3916,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3925,7 +3925,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3934,7 +3934,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		},
 		{
@@ -3943,7 +3943,223 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 62,
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
+			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
+		},
+		{
+			"name": "UpdateWeaponSlots",
+			"graph": "UpdateWeaponSlots",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 86,
 			"file": "Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json"
 		}
 	]

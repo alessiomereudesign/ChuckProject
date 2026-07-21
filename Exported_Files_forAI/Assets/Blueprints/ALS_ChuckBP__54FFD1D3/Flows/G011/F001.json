@@ -94,7 +94,7 @@
 					"defaultValue": ""
 				},
 				{
-					"pinId": "CDCFE42B437D2C5BFEF5A2AAED842D96",
+					"pinId": "287BA69146E9A82F7B4A52B589C268DA",
 					"name": "ErrorTolerance",
 					"direction": "Input",
 					"type": "None",
@@ -227,7 +227,7 @@
 					"defaultValue": ""
 				},
 				{
-					"pinId": "95EF1C9B49BAA24FF9974A986360CDB2",
+					"pinId": "E4763E1B4FE81DEC216B108AD97C8FCC",
 					"name": "ErrorTolerance",
 					"direction": "Input",
 					"type": "None",

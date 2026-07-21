@@ -2,7 +2,7 @@
 	"assetName": "WBP_MenuPrincipale",
 	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/0_MAIN_MENU/WBP_MenuPrincipale.WBP_MenuPrincipale",
 	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_0_MAIN_MENU_WBP_MenuPrincipale",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"components": [
 		{
 			"name": "On Clicked (Btn_Inizia)",

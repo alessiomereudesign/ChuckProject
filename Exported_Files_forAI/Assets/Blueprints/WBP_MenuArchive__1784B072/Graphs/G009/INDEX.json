@@ -5,8 +5,8 @@
 	"type": "Function",
 	"graphType": "Function",
 	"graphGuid": "",
-	"nodeCount": 62,
-	"edgeCount": 78,
+	"nodeCount": 86,
+	"edgeCount": 111,
 	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json",
 	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/NODES.jsonl",
 	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/EDGES.jsonl",
@@ -19,7 +19,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G009/F001.json",
 			"textFile": "Flows/G009/F001.txt",
 			"jsonFile": "Flows/G009/F001.json",
-			"nodeCount": 62
+			"nodeCount": 86
 		}
 	]
 }

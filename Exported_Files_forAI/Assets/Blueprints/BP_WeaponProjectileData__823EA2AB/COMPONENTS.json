@@ -2,7 +2,7 @@
 	"assetName": "BP_WeaponProjectileData",
 	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData",
 	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"components": [
 		{
 			"name": "Get ProjectileMesh",

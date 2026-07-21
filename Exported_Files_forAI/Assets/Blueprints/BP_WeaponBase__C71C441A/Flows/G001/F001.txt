@@ -29,17 +29,34 @@ La destinazione è BP Weapon Base [K2Node_CallFunction] 8ED1B9F3497014F772FB9F9E
 14. Nodo di reindirizzamento [K2Node_Knot] F35A25B44ABD0BF4987F9594229CD883
 15. Nodo di reindirizzamento [K2Node_Knot] 383A15534C6DFA621A894AB21B3BC56F
 16. Nodo di reindirizzamento [K2Node_Knot] D5896E5A470631866D5BDFAFC64743CA
+17. InitializeHolsterWeapon
+Custom Event [K2Node_CustomEvent] FB2C7697451C0E34820940B5F1FDB9DF
+18. Set WeaponData [K2Node_VariableSet] F6F45E3146B1A69D9C0D5EB5149E6A26
+19. Set OwnerChuck [K2Node_VariableSet] 8A75F3D0407E5FA0D3D20293020963FA
+20. Nodo di reindirizzamento [K2Node_Knot] 67FDF4554AF5C131E5E07F9A73A56E62
+21. Set bIsEquipped [K2Node_VariableSet] 6913BD54449B600B1DCD0CB46CE45BA1
+22. Break S_WeaponData [K2Node_BreakStruct] 87E90528406F2746AD2F849E1CBBAB8D
+23. Get SK_Weapon [K2Node_VariableGet] B4BC606B4AD6DB4EFE545089DFA2E6DB
+24. Set Skeletal Mesh Asset
+La destinazione è Componente mesh scheletrica [K2Node_CallFunction] 6F7C00DD4116D69870266886D7E7F05A
+25. Set Actor Enable Collision
+La destinazione è Actor [K2Node_CallFunction] 6BEEAFCE44C3D5C7CC82EBA9D53C6919
+26. Nodo di reindirizzamento [K2Node_Knot] 1CDF42DC4AB8620F277C07BD14B548B3
 
 Variables Read:
 - Get SK_Weapon
 - Get WeaponData
 
 Variables Written:
-- none
+- Set bIsEquipped
+- Set OwnerChuck
+- Set WeaponData
 
 External Calls:
 - Do Hit Scan
 La destinazione è BP Weapon Base
+- Set Actor Enable Collision
+La destinazione è Actor
 - Set Skeletal Mesh Asset
 La destinazione è Componente mesh scheletrica
 - Spawn Muzzle FX
@@ -56,6 +73,8 @@ Components Touched:
 External Blueprint References:
 - Do Hit Scan
 La destinazione è BP Weapon Base
+- Set Actor Enable Collision
+La destinazione è Actor
 - Set Skeletal Mesh Asset
 La destinazione è Componente mesh scheletrica
 - Spawn Muzzle FX

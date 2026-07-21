@@ -1,6 +1,6 @@
 {
 	"schemaVersion": "2.5-ai-readable-short-paths",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"assetName": "WBP_MenuArchive",
 	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive",
 	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
@@ -14,12 +14,12 @@
 	"counts":
 	{
 		"variables": 12,
-		"components": 24,
-		"widgets": 199,
+		"components": 18,
+		"widgets": 204,
 		"graphs": 9,
-		"nodes": 976,
-		"edges": 1090,
-		"flows": 23
+		"nodes": 1013,
+		"edges": 1138,
+		"flows": 25
 	},
 	"files":
 	{
@@ -39,8 +39,8 @@
 			"type": "EventGraph",
 			"graphType": "EventGraph",
 			"graphGuid": "",
-			"nodeCount": 260,
-			"edgeCount": 300,
+			"nodeCount": 262,
+			"edgeCount": 302,
 			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G001/INDEX.json",
 			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G001/NODES.jsonl",
 			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G001/EDGES.jsonl",
@@ -53,7 +53,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F001.json",
 					"textFile": "Flows/G001/F001.txt",
 					"jsonFile": "Flows/G001/F001.json",
-					"nodeCount": 260
+					"nodeCount": 262
 				},
 				{
 					"flowId": "F002",
@@ -63,7 +63,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F002.json",
 					"textFile": "Flows/G001/F002.txt",
 					"jsonFile": "Flows/G001/F002.json",
-					"nodeCount": 260
+					"nodeCount": 262
 				},
 				{
 					"flowId": "F003",
@@ -73,7 +73,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F003.json",
 					"textFile": "Flows/G001/F003.txt",
 					"jsonFile": "Flows/G001/F003.json",
-					"nodeCount": 260
+					"nodeCount": 262
 				},
 				{
 					"flowId": "F004",
@@ -83,7 +83,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F004.json",
 					"textFile": "Flows/G001/F004.txt",
 					"jsonFile": "Flows/G001/F004.json",
-					"nodeCount": 260
+					"nodeCount": 262
 				},
 				{
 					"flowId": "F005",
@@ -93,7 +93,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F005.json",
 					"textFile": "Flows/G001/F005.txt",
 					"jsonFile": "Flows/G001/F005.json",
-					"nodeCount": 260
+					"nodeCount": 262
 				},
 				{
 					"flowId": "F006",
@@ -103,7 +103,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F006.json",
 					"textFile": "Flows/G001/F006.txt",
 					"jsonFile": "Flows/G001/F006.json",
-					"nodeCount": 260
+					"nodeCount": 262
 				},
 				{
 					"flowId": "F007",
@@ -113,7 +113,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F007.json",
 					"textFile": "Flows/G001/F007.txt",
 					"jsonFile": "Flows/G001/F007.json",
-					"nodeCount": 260
+					"nodeCount": 262
 				},
 				{
 					"flowId": "F008",
@@ -123,7 +123,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F008.json",
 					"textFile": "Flows/G001/F008.txt",
 					"jsonFile": "Flows/G001/F008.json",
-					"nodeCount": 260
+					"nodeCount": 262
 				},
 				{
 					"flowId": "F009",
@@ -133,7 +133,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F009.json",
 					"textFile": "Flows/G001/F009.txt",
 					"jsonFile": "Flows/G001/F009.json",
-					"nodeCount": 260
+					"nodeCount": 262
 				}
 			]
 		},
@@ -189,8 +189,8 @@
 			"type": "EventGraph",
 			"graphType": "EventGraph",
 			"graphGuid": "",
-			"nodeCount": 183,
-			"edgeCount": 198,
+			"nodeCount": 194,
+			"edgeCount": 211,
 			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G003/INDEX.json",
 			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G003/NODES.jsonl",
 			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G003/EDGES.jsonl",
@@ -203,7 +203,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F001.json",
 					"textFile": "Flows/G003/F001.txt",
 					"jsonFile": "Flows/G003/F001.json",
-					"nodeCount": 183
+					"nodeCount": 194
 				},
 				{
 					"flowId": "F002",
@@ -213,37 +213,57 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F002.json",
 					"textFile": "Flows/G003/F002.txt",
 					"jsonFile": "Flows/G003/F002.json",
-					"nodeCount": 183
+					"nodeCount": 194
 				},
 				{
 					"flowId": "F003",
-					"entryName": "ShowAllItems\nCustom Event",
-					"entryNodeGuid": "CD152E5643DCD6F348E0BCAAB8879E90",
+					"entryName": "RefreshArmorVisibilityButton\nCustom Event",
+					"entryNodeGuid": "AA5F062E47830A71DC94E8BD1CC35A7C",
 					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F003.txt",
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F003.json",
 					"textFile": "Flows/G003/F003.txt",
 					"jsonFile": "Flows/G003/F003.json",
-					"nodeCount": 183
+					"nodeCount": 194
 				},
 				{
 					"flowId": "F004",
-					"entryName": "ShowArmorItems\nCustom Event",
-					"entryNodeGuid": "995AFA6B4668BFC03D4E5C952BC14A70",
+					"entryName": "RefreshWeaponsVisibilityButton\nCustom Event",
+					"entryNodeGuid": "8674E5BD43F270C12A0D368826475A19",
 					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F004.txt",
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F004.json",
 					"textFile": "Flows/G003/F004.txt",
 					"jsonFile": "Flows/G003/F004.json",
-					"nodeCount": 183
+					"nodeCount": 194
 				},
 				{
 					"flowId": "F005",
-					"entryName": "ShowWeapons Items\nCustom Event",
-					"entryNodeGuid": "6FBBFFF64FA3B6E2F643839E1EC2A4C7",
+					"entryName": "ShowAllItems\nCustom Event",
+					"entryNodeGuid": "CD152E5643DCD6F348E0BCAAB8879E90",
 					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F005.txt",
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F005.json",
 					"textFile": "Flows/G003/F005.txt",
 					"jsonFile": "Flows/G003/F005.json",
-					"nodeCount": 183
+					"nodeCount": 194
+				},
+				{
+					"flowId": "F006",
+					"entryName": "ShowArmorItems\nCustom Event",
+					"entryNodeGuid": "995AFA6B4668BFC03D4E5C952BC14A70",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F006.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F006.json",
+					"textFile": "Flows/G003/F006.txt",
+					"jsonFile": "Flows/G003/F006.json",
+					"nodeCount": 194
+				},
+				{
+					"flowId": "F007",
+					"entryName": "ShowWeapons Items\nCustom Event",
+					"entryNodeGuid": "6FBBFFF64FA3B6E2F643839E1EC2A4C7",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F007.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F007.json",
+					"textFile": "Flows/G003/F007.txt",
+					"jsonFile": "Flows/G003/F007.json",
+					"nodeCount": 194
 				}
 			]
 		},
@@ -379,8 +399,8 @@
 			"type": "Function",
 			"graphType": "Function",
 			"graphGuid": "",
-			"nodeCount": 62,
-			"edgeCount": 78,
+			"nodeCount": 86,
+			"edgeCount": 111,
 			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/INDEX.json",
 			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/NODES.jsonl",
 			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G009/EDGES.jsonl",
@@ -393,7 +413,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G009/F001.json",
 					"textFile": "Flows/G009/F001.txt",
 					"jsonFile": "Flows/G009/F001.json",
-					"nodeCount": 62
+					"nodeCount": 86
 				}
 			]
 		}

@@ -5,8 +5,8 @@
 	"type": "EventGraph",
 	"graphType": "EventGraph",
 	"graphGuid": "",
-	"nodeCount": 16,
-	"edgeCount": 16,
+	"nodeCount": 26,
+	"edgeCount": 28,
 	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G001/INDEX.json",
 	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G001/NODES.jsonl",
 	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G001/EDGES.jsonl",
@@ -19,7 +19,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G001/F001.json",
 			"textFile": "Flows/G001/F001.txt",
 			"jsonFile": "Flows/G001/F001.json",
-			"nodeCount": 16
+			"nodeCount": 26
 		},
 		{
 			"flowId": "F002",
@@ -29,7 +29,17 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G001/F002.json",
 			"textFile": "Flows/G001/F002.txt",
 			"jsonFile": "Flows/G001/F002.json",
-			"nodeCount": 16
+			"nodeCount": 26
+		},
+		{
+			"flowId": "F003",
+			"entryName": "InitializeHolsterWeapon\nCustom Event",
+			"entryNodeGuid": "FB2C7697451C0E34820940B5F1FDB9DF",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G001/F003.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G001/F003.json",
+			"textFile": "Flows/G001/F003.txt",
+			"jsonFile": "Flows/G001/F003.json",
+			"nodeCount": 26
 		}
 	]
 }

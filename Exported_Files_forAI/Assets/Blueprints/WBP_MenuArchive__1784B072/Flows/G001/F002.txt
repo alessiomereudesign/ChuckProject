@@ -357,6 +357,9 @@ La destinazione è Widget [K2Node_CallFunction] 9EE6688145851E6287D2D19BB28E6219
 258. Nodo di reindirizzamento [K2Node_Knot] 8CC5B659456479AD30EAE9B83AF8084A
 259. Nodo di reindirizzamento [K2Node_Knot] 222C226846C99C7499517FB498FA04D3
 260. Show/Hide ClearButton [EdGraphNode_Comment] CB0BC3AA48300AC30722E192DC968F96
+261. Sequenza [K2Node_ExecutionSequence] A7DC37E64ABA884D8313F8BA43BFAE81
+262. Refresh Weapons Visibility Button
+La destinazione è WBP Menu Archive [K2Node_CallFunction] 330FF2F547E5B5C8407FD5AC72C3D403
 
 Variables Read:
 - Get ActiveArmorSelectorRef
@@ -439,6 +442,8 @@ La destinazione è WBP Menu Pausa
 La destinazione è WBP Menu Archive
 - Refresh Menu Focus
 La destinazione è WBP Menu Archive
+- Refresh Weapons Visibility Button
+La destinazione è WBP Menu Archive
 - Remove from Parent
 La destinazione è Widget
 - Return Back Manage
@@ -464,6 +469,8 @@ Widgets Touched:
 - Button Indietro > Menu Pausa
 - FocusButton Settings
 - Get LastClickedButton
+- Refresh Weapons Visibility Button
+La destinazione è WBP Menu Archive
 - Show/Hide ClearButton
 
 Components Touched:
@@ -499,6 +506,8 @@ La destinazione è WBP Menu Pausa
 - Populate Item Grid
 La destinazione è WBP Menu Archive
 - Refresh Menu Focus
+La destinazione è WBP Menu Archive
+- Refresh Weapons Visibility Button
 La destinazione è WBP Menu Archive
 - Remove from Parent
 La destinazione è Widget

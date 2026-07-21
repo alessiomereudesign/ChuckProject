@@ -2,7 +2,7 @@
 	"assetName": "ALS_ChuckBP",
 	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP",
 	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"events": [
 		{
 			"eventName": "Get Interaction Prompt",
@@ -176,6 +176,27 @@
 			"eventName": "SyncHolsterMeshes\nCustom Event",
 			"graph": "EventGraph",
 			"nodeGuid": "5EFD4D984788296E8404C1ADCEB06B80",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "SpawnOrUpdateHolsteredWeapon\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "5F08A1D74D418835EF6402AD7525AA7E",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "SyncHolsterActors\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "63AE1E624F4C5A5D7D45169E6B679EF9",
+			"flowTextFile": "",
+			"flowJsonFile": ""
+		},
+		{
+			"eventName": "EquipSlotFromRadial\nCustom Event",
+			"graph": "EventGraph",
+			"nodeGuid": "54330EB94355AAB42DAAB09B5B482240",
 			"flowTextFile": "",
 			"flowJsonFile": ""
 		},

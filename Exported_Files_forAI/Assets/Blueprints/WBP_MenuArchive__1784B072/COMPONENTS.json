@@ -2,7 +2,7 @@
 	"assetName": "WBP_MenuArchive",
 	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive",
 	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"components": [
 		{
 			"name": "On Clicked (Btn_Back)",
@@ -126,48 +126,6 @@
 		{
 			"name": "On Clicked (ToggleVisibArmor)",
 			"class": "K2Node_ComponentBoundEvent",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_BigWeapon",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_SmallWeapon",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_Melee",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
-			"class": "K2Node_CallFunction",
 			"parent": "",
 			"attachSocket": "",
 			"visibility": ""

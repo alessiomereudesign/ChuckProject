@@ -2,7 +2,7 @@
 	"assetName": "ALS_ChuckBP",
 	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP",
 	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"components": [
 		{
 			"name": "Get Forward Vector\nLa destinazione è Componente di scena",
@@ -70,223 +70,6 @@
 		{
 			"name": "Get Mesh",
 			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_SmallWeapon",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Componente di scena",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_BigWeapon",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Componente di scena",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_SmallWeapon",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Componente di scena",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_Melee",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Componente di scena",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_BigWeapon",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Componente di scena",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_Melee",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Componente di scena",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_SmallWeapon",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Componente di scena",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_Melee",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Componente di scena",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_Melee",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Componente di scena",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_SmallWeapon",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Componente di scena",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_Melee",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Componente di scena",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_BigWeapon",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Componente di scena",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_BigWeapon",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Componente di scena",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_SmallWeapon",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Componente di scena",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Get Mesh_Melee",
-			"class": "K2Node_VariableGet",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Componente di scena",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"attachSocket": "",
-			"visibility": ""
-		},
-		{
-			"name": "Sync Holster Meshes\nLa destinazione è ALS Chuck BP",
-			"class": "K2Node_CallFunction",
 			"parent": "",
 			"attachSocket": "",
 			"visibility": ""
@@ -671,6 +454,90 @@
 		},
 		{
 			"name": "Get Mesh_Melee",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Attach Actor To Component\nLa destinazione è Actor",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Mesh",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Attach Actor To Component\nLa destinazione è Actor",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Mesh",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Attach Actor To Component\nLa destinazione è Actor",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Mesh",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Attach Actor To Component\nLa destinazione è Actor",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Mesh",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Attach Actor To Component\nLa destinazione è Actor",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Mesh",
+			"class": "K2Node_VariableGet",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Attach Actor To Component\nLa destinazione è Actor",
+			"class": "K2Node_CallFunction",
+			"parent": "",
+			"attachSocket": "",
+			"visibility": ""
+		},
+		{
+			"name": "Get Mesh",
 			"class": "K2Node_VariableGet",
 			"parent": "",
 			"attachSocket": "",

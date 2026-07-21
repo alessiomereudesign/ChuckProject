@@ -397,127 +397,14 @@ La destinazione è BP Weapon Base [K2Node_CallFunction] C30861834E9794BEAE02C08F
 349. Set bIsReloading? [K2Node_VariableSet] 9C0124EF480E40DBE574D19C5EC71E25
 350. RefreshWeaponVisuals
 Custom Event [K2Node_CustomEvent] 988D92D546556A05C432AAB2E6E32B8B
-351. Get CurrentWeaponSlot [K2Node_VariableGet] 08EB94A94F316AFDB687F18305DCA2CD
-352. Switch on E_WeaponSlot [K2Node_SwitchEnum] 9B04E48C404C8457863F82BED764289C
-353. Get Mesh_SmallWeapon [K2Node_VariableGet] 31BEC0C14F8CF034C38FB398AE7AA5F1
-354. Set Visibility
-La destinazione è Componente di scena [K2Node_CallFunction] A94C60874DAFC7FD10EFD9A0BE967E66
-355. Nodo di reindirizzamento [K2Node_Knot] 875A6B4F491A1AD27A975F8E09AF997A
-356. Nodo di reindirizzamento [K2Node_Knot] AE66A651450BF954D52F12AAD82B6D60
-357. Nodo di reindirizzamento [K2Node_Knot] B47D9EF84ED5BA1EB95716BEA708F66E
-358. Get Mesh_BigWeapon [K2Node_VariableGet] 57DC302E41659E93FB57B5A4A7AEA0AC
-359. Set Visibility
-La destinazione è Componente di scena [K2Node_CallFunction] 30AC4BCA47721573ED16039820603CF3
-360. Get Mesh_SmallWeapon [K2Node_VariableGet] CAC700C7427E89AC43AC08A5F038D5E0
-361. Set Visibility
-La destinazione è Componente di scena [K2Node_CallFunction] 44135549473964C80FB422B1FCB61A9E
-362. Get Mesh_Melee [K2Node_VariableGet] 402C275B45307CB5BD36E2B65075229E
-363. Set Visibility
-La destinazione è Componente di scena [K2Node_CallFunction] 7E5E66114B1FD21409827B88FA353883
-364. Get EquippedSmallFirearmIndex [K2Node_VariableGet] C71E742B4CE2C4CFAB479399B6B7386B
-365. integer >= integer [K2Node_PromotableOperator] 8F957CCA4DB185F8FD2C889FAA8FA478
-366. Ramo [K2Node_IfThenElse] 8D0FEF7A4405B3BC7121B487E3757B75
-367. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 033EECAF4AE01D4B1CDB1882506B7C88
-368. Get bAreWeaponsVisible [K2Node_VariableGet] 2DBBE1E24DAF2595B95B498D33B49379
-369. Nodo di reindirizzamento [K2Node_Knot] 4132687F48B10DB58C8ACDABFE81BBB2
-370. integer >= integer [K2Node_PromotableOperator] E8B5837947A5FDE9EBF00CAA3C4E442B
-371. Ramo [K2Node_IfThenElse] 67AF92624200C52A4576918926D70F94
-372. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 38127927420CA4E6D091FB8B1B35AAF6
-373. Get bAreWeaponsVisible [K2Node_VariableGet] 0E101AAC483B513AF6CF28AA8462B849
-374. Get EquippedBigWeaponIndex [K2Node_VariableGet] 2D6CE79E41E71CBEDA8692B96BF45D02
-375. integer >= integer [K2Node_PromotableOperator] D6C302CE47E3199FE3BFF1922B3AF5C4
-376. Ramo [K2Node_IfThenElse] A26BE90A4A8F7E4D677135A31F6C837B
-377. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 69F80C994B51B42B5AA3C082549BE225
-378. Get bAreWeaponsVisible [K2Node_VariableGet] 0610DA694CBECDE474CD9A821EAC6095
-379. Get EquippedMeleeIndex [K2Node_VariableGet] 183FE7864CAC8EAC83B8BBBF59A89A73
-380. Get Mesh_BigWeapon [K2Node_VariableGet] 90C269A74BF07DE5E86878A3C50F1BC4
-381. Set Visibility
-La destinazione è Componente di scena [K2Node_CallFunction] CF1EF2664D972EA4132B0BB1C39E74B1
-382. integer >= integer [K2Node_PromotableOperator] CAAD1DA7440B3457ECDF399E0B9CC190
-383. Ramo [K2Node_IfThenElse] BDA17BF949C8D06EB97C9C953C587EF4
-384. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 90AC34BC43DC82979CA51CAE0C8D057B
-385. Get bAreWeaponsVisible [K2Node_VariableGet] FA57A8CD4572AC1B6D3A15A901542382
-386. Get EquippedBigWeaponIndex [K2Node_VariableGet] 8C548C2E4615EDA3143E65908BDA269B
-387. Get Mesh_Melee [K2Node_VariableGet] 7D6617734E9E2B2CDC1E07ABCB252C54
-388. Set Visibility
-La destinazione è Componente di scena [K2Node_CallFunction] 547B8CD34E4908802EDAE98C0E5CF127
-389. integer >= integer [K2Node_PromotableOperator] 5409108F4DDE38CA4CCB0B9C6692B1BF
-390. Ramo [K2Node_IfThenElse] E25EB1524CE7628D1558BD9CDC01D4A7
-391. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 29E3C3B74AB5CF490979B48294A41729
-392. Get bAreWeaponsVisible [K2Node_VariableGet] 1996D0344EE050A5DE95988CC86F8991
-393. Get EquippedMeleeIndex [K2Node_VariableGet] 45139F074C147FE79671EEAE59960ACC
-394. Get Mesh_SmallWeapon [K2Node_VariableGet] 01006939491DFD0C990A0E852C850083
-395. Set Visibility
-La destinazione è Componente di scena [K2Node_CallFunction] A3D3481C4B817DB1EDFFFE96C5D09FCC
-396. Get EquippedSmallFirearmIndex [K2Node_VariableGet] 00E163B04C262DCD609BCDA090E84380
-397. integer >= integer [K2Node_PromotableOperator] 979BC2164383F979D3A5DFA53848E9A8
-398. Ramo [K2Node_IfThenElse] EB3BCD154E9F0D4AD7027F8A97AA20E5
-399. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 242B101244371962596C3897E8F97866
-400. Get bAreWeaponsVisible [K2Node_VariableGet] DD307701438FD330A67778BEF358041C
-401. Get Mesh_Melee [K2Node_VariableGet] B6E1428A4167B4BAABC26BA013794F84
-402. Set Visibility
-La destinazione è Componente di scena [K2Node_CallFunction] 2EA1A95446DC6AF0CF2C5BA5F327D091
-403. integer >= integer [K2Node_PromotableOperator] 788B27324F3A978D7865DC94F7014689
-404. Ramo [K2Node_IfThenElse] 77B1BB47482F916E13702E8E3DF16873
-405. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] D2A1273242361829249C1CB85A79DFA8
-406. Get bAreWeaponsVisible [K2Node_VariableGet] 68033DE64F501BEF11DB0CA14D6F1D0E
-407. Get EquippedMeleeIndex [K2Node_VariableGet] 1850EECA47A26B37E992D49B65A4AA3F
-408. Get Mesh_Melee [K2Node_VariableGet] C7C517AB493DB8D0A68266A725A29B7F
-409. Set Visibility
-La destinazione è Componente di scena [K2Node_CallFunction] 71A8769445A6901DA3F4069C2F320CAE
-410. Get Mesh_SmallWeapon [K2Node_VariableGet] D3C6C37F4D04A7FF7F24BE826206D719
-411. Set Visibility
-La destinazione è Componente di scena [K2Node_CallFunction] CADE922C4A5888372BF4D2AC9B5C3935
-412. Get EquippedSmallFirearmIndex [K2Node_VariableGet] AE3FBDE146E7E0751FA65BA5699F83DF
-413. integer >= integer [K2Node_PromotableOperator] 5B51B2674B9F47B62A7E5B9CFFB4ED55
-414. Ramo [K2Node_IfThenElse] 51EED2854A5D0CC5F098A1A62D0683E6
-415. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 7BE0FDAF4E06B6055F90D1923D3EACFD
-416. Get bAreWeaponsVisible [K2Node_VariableGet] 72437D484365AA5A98084EA553B777EB
-417. Get Mesh_Melee [K2Node_VariableGet] 6CB716FF4088581651235D9E1797259F
-418. Set Visibility
-La destinazione è Componente di scena [K2Node_CallFunction] 7A769DA447743340D64C34B15C2C6779
-419. integer >= integer [K2Node_PromotableOperator] 35DAFFCB4711628BE14EF2BCB8A0EEE9
-420. Ramo [K2Node_IfThenElse] 88DE63BA43765A746BC41DAB11A729C2
-421. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 8C0C0E834CB4DC8F3B46FC86AA09B79D
-422. Get bAreWeaponsVisible [K2Node_VariableGet] B05684124166677B4E7525BC87D433CB
-423. Get EquippedMeleeIndex [K2Node_VariableGet] 75C842C84F0FF93AB0E9EE96551E0F5F
-424. Get Mesh_BigWeapon [K2Node_VariableGet] 19B39C5845A756BB38ADF990B514BB4A
-425. Set Visibility
-La destinazione è Componente di scena [K2Node_CallFunction] 721F8D1446D7BF68964022BEBC16935F
-426. Get Mesh_BigWeapon [K2Node_VariableGet] B9468C004312E4AB024C08AC84F7F53D
-427. Set Visibility
-La destinazione è Componente di scena [K2Node_CallFunction] C2A098C74E0EE63FC7E0EA92B24DF021
-428. Get Mesh_SmallWeapon [K2Node_VariableGet] 67077A3D43978957E2F063ABE2A4FC85
-429. Set Visibility
-La destinazione è Componente di scena [K2Node_CallFunction] 561C6CD24C3F8B02579009800A8BF4D7
-430. Get Mesh_Melee [K2Node_VariableGet] 15FB8AD646F5C1DFBA16EC9F19C9271B
-431. Set Visibility
-La destinazione è Componente di scena [K2Node_CallFunction] 1647D63349174E7F9177CAAF9A418EED
-432. Get EquippedSmallFirearmIndex [K2Node_VariableGet] 0029B26F484734CD77EDA19D94562CFE
-433. integer >= integer [K2Node_PromotableOperator] 15C9530240D18AD5E66FBD8A81C80C9A
-434. Ramo [K2Node_IfThenElse] AAEE31954E89CB73C95CF982508350B7
-435. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 8756925446EA482043C1F0B327D24BB9
-436. Get bAreWeaponsVisible [K2Node_VariableGet] CB10F2C443293394C04AA99B38ED3631
-437. Nodo di reindirizzamento [K2Node_Knot] 821EBD304FC05E0DF102288729871BDF
-438. integer >= integer [K2Node_PromotableOperator] 50D23B2D4648D2863150FB8420D08AE5
-439. Ramo [K2Node_IfThenElse] E0FABDFE44E7DAE0BA94388ED9B7767F
-440. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] FA53BB76410E6E4BD519D58741184A8D
-441. Get bAreWeaponsVisible [K2Node_VariableGet] DAE14CE84021D231AADC0BABCADF5F6E
-442. Get EquippedBigWeaponIndex [K2Node_VariableGet] EEEFFA9A4CC03149A931108F0A4C187E
-443. integer >= integer [K2Node_PromotableOperator] 59F401034D8E4F4B039EB1A5E032B08C
-444. Ramo [K2Node_IfThenElse] 1AB1D8B0403335E90C9507A0AF04C497
-445. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] BD5774F647ED4BB5DB41C88C4EBE78EE
-446. Get bAreWeaponsVisible [K2Node_VariableGet] FC36221040F9E55954FB689566671A46
-447. Get EquippedMeleeIndex [K2Node_VariableGet] 7ACC9D2A402A87D370885ABF1CBA311B
-448. Sync Holster Meshes
-La destinazione è ALS Chuck BP [K2Node_CallFunction] F7E684C1450C2BE2A9B93FA4D0B860D3
+351. Sync Holster Actors
+La destinazione è ALS Chuck BP [K2Node_CallFunction] 627E94FF4BF77288CA7B5EB0EAB03E01
 
 Variables Read:
 - Get AmmoToLoad
 - Get As ALS Player Controller
 - Get As WBP HUD
 - Get AvailableAmmo
-- Get bAreWeaponsVisible
 - Get bCanAttack?
 - Get bCanNextCombo
 - Get bIsReloading?
@@ -526,15 +413,10 @@ Variables Read:
 - Get CurrentWeaponActor
 - Get CurrentWeaponIndex
 - Get CurrentWeaponSlot
-- Get EquippedBigWeaponIndex
-- Get EquippedMeleeIndex
-- Get EquippedSmallFirearmIndex
 - Get InventoryAmmo
 - Get LoopedWeaponTimeHandle
 - Get Mesh
-- Get Mesh_BigWeapon
 - Get Mesh_Melee
-- Get Mesh_SmallWeapon
 - Get Mirino
 - Get OverlayState
 - Get OwnedWeapons
@@ -595,11 +477,9 @@ La destinazione è BP Weapon Base
 La destinazione è ALS Chuck BP
 - Set Timer by Event
 - Set Visibility
-La destinazione è Componente di scena
-- Set Visibility
 La destinazione è Widget
 - Sphere Trace By Channel
-- Sync Holster Meshes
+- Sync Holster Actors
 La destinazione è ALS Chuck BP
 - Trova
 - Unarmed State
@@ -656,11 +536,9 @@ La destinazione è BP Weapon Base
 La destinazione è ALS Chuck BP
 - Set Timer by Event
 - Set Visibility
-La destinazione è Componente di scena
-- Set Visibility
 La destinazione è Widget
 - Sphere Trace By Channel
-- Sync Holster Meshes
+- Sync Holster Actors
 La destinazione è ALS Chuck BP
 - Trova
 - Unarmed State

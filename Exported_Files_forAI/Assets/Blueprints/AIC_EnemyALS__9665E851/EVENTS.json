@@ -2,7 +2,7 @@
 	"assetName": "AIC_EnemyALS",
 	"assetPath": "/Game/ChuckContent/Blueprints/Enemies/AIC_EnemyALS.AIC_EnemyALS",
 	"assetKey": "Game_ChuckContent_Blueprints_Enemies_AIC_EnemyALS",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"events": [
 		{
 			"eventName": "Evento BeginPlay",

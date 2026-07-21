@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
 Class: Blueprint
 Parent: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C
-Generated: 2026-07-10T21:13:02.714Z
+Generated: 2026-07-21T14:07:27.544Z
 
 ## Variables
 - DefaultColor: struct|/Script/CoreUObject.LinearColor
@@ -59,7 +59,11 @@ Generated: 2026-07-10T21:13:02.714Z
 - Inventory: struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array
 - OwnedWeapons: struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|container=Array
 - CurrentWeaponData: struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData
+- LocalWeaponData: struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData
 - CurrentWeaponActor: object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C
+- HolsteredBigWeaponActor: object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C
+- HolsteredMeleeActor: object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C
+- HolsteredSmallWeaponActor: object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C
 - CurrentWeaponSlot: byte|/Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot.E_WeaponSlot
 - CurrentWeaponIndex: int
 - CurrentMeleeBaseDamage: real|double
@@ -98,8 +102,8 @@ Generated: 2026-07-10T21:13:02.714Z
 
 ## Graphs
 - GetInteractionPrompt (EdGraph): 2 nodes, 1 edges
-- AttackGraph (EventGraph): 448 nodes, 534 edges
-- EventGraph (EventGraph): 370 nodes, 397 edges
+- AttackGraph (EventGraph): 351 nodes, 425 edges
+- EventGraph (EventGraph): 599 nodes, 677 edges
 - AddWeaponToInventory (Function): 20 nodes, 23 edges
 - AttachToHand (Function): 19 nodes, 21 edges
 - BPI_Get_3P_PivotTarget (Function): 9 nodes, 9 edges

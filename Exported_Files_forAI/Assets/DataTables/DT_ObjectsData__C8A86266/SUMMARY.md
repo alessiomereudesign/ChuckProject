@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Intersect/Data/DT_ObjectsData.DT_ObjectsData
 Class: DataTable
 Parent: 
-Generated: 2026-07-10T21:13:02.714Z
+Generated: 2026-07-21T14:07:27.544Z
 
 ## Variables
 - none

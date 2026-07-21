@@ -1,0 +1,1257 @@
+{
+	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+	"graph": "EventGraph",
+	"entryName": "InitializeHolsterWeapon\nCustom Event",
+	"entryNodeGuid": "FB2C7697451C0E34820940B5F1FDB9DF",
+	"nodes": [
+		{
+			"nodeGuid": "8EFE03B845734BC1E075CC9028A3917D",
+			"class": "K2Node_Event",
+			"title": "Evento BeginPlay",
+			"comment": "",
+			"x": 0,
+			"y": -193,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0283FFD24E5836E419AA478D098D5D1E",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BA06E96D458DC0F1081AF88ECD1EF03C",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "2E756D194D02708E43EF1B865A765576",
+			"class": "K2Node_VariableGet",
+			"title": "Get WeaponData",
+			"comment": "",
+			"x": 192,
+			"y": -106,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6E9DC41A4D62F280F19D7BA70C498287",
+					"name": "WeaponData",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "135D24F54B396BB611520C8311C9FAF7",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F60349D045B29E62E0F0C8A324CD2FEA",
+			"class": "K2Node_BreakStruct",
+			"title": "Break S_WeaponData",
+			"comment": "",
+			"x": 336,
+			"y": -129,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "71DBD6EF474B0D0FF2B30C9060D0E080",
+					"name": "S_WeaponData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "387373AA42A33BF8C775728C9502E164",
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D732493E473FE26D81411795B5CE2007",
+			"class": "K2Node_CallFunction",
+			"title": "Set Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+			"comment": "",
+			"x": 624,
+			"y": -208,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "962AF38E4F0EE1A38DAF78841B76B00A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4DDC78574CAF1A221EA5A7A672BB617A",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4D9A45F9405B3F13F843708171AC2113",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "235A376244170ECDE42F7EAEDCC60305",
+					"name": "NewMesh",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "4B150BFC45609D84730478BEEC7EFADC",
+			"class": "K2Node_VariableGet",
+			"title": "Get SK_Weapon",
+			"comment": "",
+			"x": 453,
+			"y": -212,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "22080A1542BF9F5EF244A0B63B90D867",
+					"name": "SK_Weapon",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5003B70F498B2DC953EA1E8492692956",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0B7C41DD42421640369875AB6EF793CE",
+			"class": "K2Node_CustomEvent",
+			"title": "Fire\nCustom Event",
+			"comment": "",
+			"x": 16,
+			"y": 78,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D263142F4610D2A104641E872A3984D4",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "DFE08512492941C402DE9BA93C98E2E5",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2253CA0D463A97A7C983AB9BB3A6DEAB",
+					"name": "TraceStart",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "D9ACF7AF4F2FD5B856144FBA29904F2D",
+					"name": "TraceEnd",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "7FA715E44CA2016742606E9612CA3BD3",
+			"class": "K2Node_CallFunction",
+			"title": "Spawn Muzzle FX\nLa destinazione è BP Weapon Base",
+			"comment": "",
+			"x": 288,
+			"y": 78,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6750CA4143A85FDE958EB48958ECF0F4",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "10BFF1D749D70A978A350FADF5C48574",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4F86CC5D45D05E291A211FBADB2D0445",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "42DDD0CD4D78AABBE21B03A9B33D0030",
+			"class": "K2Node_VariableGet",
+			"title": "Get WeaponData",
+			"comment": "",
+			"x": 128,
+			"y": 375,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "53FA184F4FC56348B0D731BA2ED4B59B",
+					"name": "WeaponData",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "831F53C24EF0E8F9D393AD8A76B23B1F",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "831F93E64A55438A8F8D28A603F7DE75",
+			"class": "K2Node_BreakStruct",
+			"title": "Break S_WeaponData",
+			"comment": "",
+			"x": 272,
+			"y": 352,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "0D19ED0547746955BA7A09B3CF38F2CC",
+					"name": "S_WeaponData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "986CEFBE42C6E46AF02816B05D5ABEC4",
+					"name": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "0FC739EE46919ACF5F6BB8A773F293BA",
+			"class": "K2Node_IfThenElse",
+			"title": "Ramo",
+			"comment": "",
+			"x": 544,
+			"y": 96,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "899EE8E94CD5C44058E00EB6E85614F6",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1B73F5B746D1DE8CAA3753A0AFA94F2F",
+					"name": "Condition",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				},
+				{
+					"pinId": "75A3590246E3C11D95B03CB528668391",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "666B32A04A10BDDD4D5CA49E8EFBCD18",
+					"name": "else",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "76DF53F947456461A75541A6AF664070",
+			"class": "K2Node_CallFunction",
+			"title": "Spawn Weapon Projectile\nLa destinazione è BP Weapon Base",
+			"comment": "",
+			"x": 816,
+			"y": 32,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "605FEB974C484404FD4565B6005C6910",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "858BC8404DF770976019099230B46798",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B0D2E4A44B0F85B2650508B73A6AEBD8",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8ED1B9F3497014F772FB9F9E5F76C4A1",
+			"class": "K2Node_CallFunction",
+			"title": "Do Hit Scan\nLa destinazione è BP Weapon Base",
+			"comment": "",
+			"x": 816,
+			"y": 176,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "1651FBEB48B1DBBFFD812C9B627F0196",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E9DCBD504CEF45A2902646B4605EBE21",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "73955E4841757AA5D8B013B68EE40F55",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "E7B2627849E1454598B1F68D3077EB36",
+					"name": "Start",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				},
+				{
+					"pinId": "28DB29C24D08D3EACAD3B1B4889ABA57",
+					"name": "End",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": "0, 0, 0"
+				}
+			]
+		},
+		{
+			"nodeGuid": "4C229A7A4F8ABBF7AB2DDDBC0F3AC29C",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 208,
+			"y": 160,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C2593BA94583A421F79511AE761487C4",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B16D3DE54F3FC016736C2E8B68507542",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F35A25B44ABD0BF4987F9594229CD883",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 192,
+			"y": 192,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "51AF3CF447320EB808F7A2A228BA1E24",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "BE52E9D043D59786DCCC7280E801BDA9",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "383A15534C6DFA621A894AB21B3BC56F",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 272,
+			"y": 320,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "D57F65504354EB241F3B8FA6A4F0E8D3",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "374E52FF4FFE383D67C902A172B6706A",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "D5896E5A470631866D5BDFAFC64743CA",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 304,
+			"y": 288,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C667BCA04151F098B304E797405559DE",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "CEE7E45E41AE85200EB4A49A61867EF4",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "struct|/Script/CoreUObject.Vector",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "FB2C7697451C0E34820940B5F1FDB9DF",
+			"class": "K2Node_CustomEvent",
+			"title": "InitializeHolsterWeapon\nCustom Event",
+			"comment": "",
+			"x": 16,
+			"y": 608,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "C6226CC546EE1F4CC50C559992D977D6",
+					"name": "OutputDelegate",
+					"direction": "Output",
+					"type": "delegate",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "18B85833454DAB52CCFC4AA0A0D3D7B0",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FA6D47FD4EB342657C6608AB21F511D4",
+					"name": "NewWeaponData",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "91BAE2DE4812FA613E1276BFDD762B80",
+					"name": "NewOwnerChuck",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "F6F45E3146B1A69D9C0D5EB5149E6A26",
+			"class": "K2Node_VariableSet",
+			"title": "Set WeaponData",
+			"comment": "",
+			"x": 272,
+			"y": 640,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "B3351CA54AA3854565DA67B820CF40D0",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "436B9EC343E19A4DA2256D865C02ABCC",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "1A07F347435DB25937571092A8A54120",
+					"name": "WeaponData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "95686D6F4C2A7EF5A435FE9F22CD4861",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F53D7823443F222A13A5C2BBA9F84B24",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "8A75F3D0407E5FA0D3D20293020963FA",
+			"class": "K2Node_VariableSet",
+			"title": "Set OwnerChuck",
+			"comment": "",
+			"x": 480,
+			"y": 640,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "A79A9E4240F6EC3720E7FBB85EEAF025",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4D3A420B4C5EC56252A0E993D279AE20",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "4A1114FD4D3F8923BBEF18BBDE3229BA",
+					"name": "OwnerChuck",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "84B6AE4749478E51CBF46FB349AF5942",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8F9F734D4D99AF3583D5C491B8F7EC39",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "67FDF4554AF5C131E5E07F9A73A56E62",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 432,
+			"y": 720,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "5CD6A96E42488990D747F38C4FE73F1E",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C58ACD834E1F9D5FF0EE28A19A97048B",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6913BD54449B600B1DCD0CB46CE45BA1",
+			"class": "K2Node_VariableSet",
+			"title": "Set bIsEquipped",
+			"comment": "",
+			"x": 672,
+			"y": 640,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "134D89704FF3821B741B9F8FB0F28C2A",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "7E2A34774980A09A689EF0B901F8402B",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "8B0537324C0ADAD385E939AC52140B51",
+					"name": "bIsEquipped",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "F0B0FD2A4509426111B22DBF45D8DDB5",
+					"name": "Output_Get",
+					"direction": "Output",
+					"type": "bool",
+					"defaultValue": "false"
+				},
+				{
+					"pinId": "78F8446A49EF2A1DD57BB7BB05E5BA80",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "87E90528406F2746AD2F849E1CBBAB8D",
+			"class": "K2Node_BreakStruct",
+			"title": "Break S_WeaponData",
+			"comment": "",
+			"x": 496,
+			"y": 736,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "261998F74AFA49665093FDA1289C43C9",
+					"name": "S_WeaponData",
+					"direction": "Input",
+					"type": "struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData|ref|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "9E1759D049EEE0834304AE88A619771F",
+					"name": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "B4BC606B4AD6DB4EFE545089DFA2E6DB",
+			"class": "K2Node_VariableGet",
+			"title": "Get SK_Weapon",
+			"comment": "",
+			"x": 768,
+			"y": 736,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "DECDD8294627D868D19A028F97640F2B",
+					"name": "SK_Weapon",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "10D221334AB0CB1B4ABCF5BD474CF66C",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase_C",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6F7C00DD4116D69870266886D7E7F05A",
+			"class": "K2Node_CallFunction",
+			"title": "Set Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+			"comment": "",
+			"x": 912,
+			"y": 608,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "ABB9FA5C48B581CDD15566B328762B73",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B6E21ED94C843519136CBB8E15D62990",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "91104A2543560D93881B04AF57C64287",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMeshComponent",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0E725C3B48C283E370E945BD04D306CF",
+					"name": "NewMesh",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "6BEEAFCE44C3D5C7CC82EBA9D53C6919",
+			"class": "K2Node_CallFunction",
+			"title": "Set Actor Enable Collision\nLa destinazione è Actor",
+			"comment": "",
+			"x": 1200,
+			"y": 608,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "4A1FBAA24C34670EF30095B938DE9067",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "0CFD73474A7F2E574E354C9EB2039376",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F8074973401749DF50C2029DD1E36E85",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "FD5F4954427C5D71EBC6C7AED28470B1",
+					"name": "bNewActorEnableCollision",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "false"
+				}
+			]
+		},
+		{
+			"nodeGuid": "1CDF42DC4AB8620F277C07BD14B548B3",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 864,
+			"y": 768,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "111234074894E8435B4F35B3B2E9592D",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "72A8E56442B1FEA6398C419323C3B4BE",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Script/Engine.SkeletalMesh",
+					"defaultValue": ""
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "8EFE03B845734BC1E075CC9028A3917D",
+			"fromPinId": "BA06E96D458DC0F1081AF88ECD1EF03C",
+			"fromPinName": "then",
+			"toNodeGuid": "D732493E473FE26D81411795B5CE2007",
+			"toPinId": "962AF38E4F0EE1A38DAF78841B76B00A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "2E756D194D02708E43EF1B865A765576",
+			"fromPinId": "6E9DC41A4D62F280F19D7BA70C498287",
+			"fromPinName": "WeaponData",
+			"toNodeGuid": "F60349D045B29E62E0F0C8A324CD2FEA",
+			"toPinId": "71DBD6EF474B0D0FF2B30C9060D0E080",
+			"toPinName": "S_WeaponData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "F60349D045B29E62E0F0C8A324CD2FEA",
+			"fromPinId": "387373AA42A33BF8C775728C9502E164",
+			"fromPinName": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+			"toNodeGuid": "D732493E473FE26D81411795B5CE2007",
+			"toPinId": "235A376244170ECDE42F7EAEDCC60305",
+			"toPinName": "NewMesh"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "4B150BFC45609D84730478BEEC7EFADC",
+			"fromPinId": "22080A1542BF9F5EF244A0B63B90D867",
+			"fromPinName": "SK_Weapon",
+			"toNodeGuid": "D732493E473FE26D81411795B5CE2007",
+			"toPinId": "4D9A45F9405B3F13F843708171AC2113",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "0B7C41DD42421640369875AB6EF793CE",
+			"fromPinId": "DFE08512492941C402DE9BA93C98E2E5",
+			"fromPinName": "then",
+			"toNodeGuid": "7FA715E44CA2016742606E9612CA3BD3",
+			"toPinId": "6750CA4143A85FDE958EB48958ECF0F4",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "0B7C41DD42421640369875AB6EF793CE",
+			"fromPinId": "2253CA0D463A97A7C983AB9BB3A6DEAB",
+			"fromPinName": "TraceStart",
+			"toNodeGuid": "4C229A7A4F8ABBF7AB2DDDBC0F3AC29C",
+			"toPinId": "C2593BA94583A421F79511AE761487C4",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "0B7C41DD42421640369875AB6EF793CE",
+			"fromPinId": "D9ACF7AF4F2FD5B856144FBA29904F2D",
+			"fromPinName": "TraceEnd",
+			"toNodeGuid": "F35A25B44ABD0BF4987F9594229CD883",
+			"toPinId": "51AF3CF447320EB808F7A2A228BA1E24",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "7FA715E44CA2016742606E9612CA3BD3",
+			"fromPinId": "10BFF1D749D70A978A350FADF5C48574",
+			"fromPinName": "then",
+			"toNodeGuid": "0FC739EE46919ACF5F6BB8A773F293BA",
+			"toPinId": "899EE8E94CD5C44058E00EB6E85614F6",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "42DDD0CD4D78AABBE21B03A9B33D0030",
+			"fromPinId": "53FA184F4FC56348B0D731BA2ED4B59B",
+			"fromPinName": "WeaponData",
+			"toNodeGuid": "831F93E64A55438A8F8D28A603F7DE75",
+			"toPinId": "0D19ED0547746955BA7A09B3CF38F2CC",
+			"toPinName": "S_WeaponData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "831F93E64A55438A8F8D28A603F7DE75",
+			"fromPinId": "986CEFBE42C6E46AF02816B05D5ABEC4",
+			"fromPinName": "IsExplosive?_47_96E770804A49F8E44F6A818192D7A8BA",
+			"toNodeGuid": "0FC739EE46919ACF5F6BB8A773F293BA",
+			"toPinId": "1B73F5B746D1DE8CAA3753A0AFA94F2F",
+			"toPinName": "Condition"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "0FC739EE46919ACF5F6BB8A773F293BA",
+			"fromPinId": "75A3590246E3C11D95B03CB528668391",
+			"fromPinName": "then",
+			"toNodeGuid": "76DF53F947456461A75541A6AF664070",
+			"toPinId": "605FEB974C484404FD4565B6005C6910",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "0FC739EE46919ACF5F6BB8A773F293BA",
+			"fromPinId": "666B32A04A10BDDD4D5CA49E8EFBCD18",
+			"fromPinName": "else",
+			"toNodeGuid": "8ED1B9F3497014F772FB9F9E5F76C4A1",
+			"toPinId": "1651FBEB48B1DBBFFD812C9B627F0196",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "D5896E5A470631866D5BDFAFC64743CA",
+			"fromPinId": "CEE7E45E41AE85200EB4A49A61867EF4",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "8ED1B9F3497014F772FB9F9E5F76C4A1",
+			"toPinId": "E7B2627849E1454598B1F68D3077EB36",
+			"toPinName": "Start"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "383A15534C6DFA621A894AB21B3BC56F",
+			"fromPinId": "374E52FF4FFE383D67C902A172B6706A",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "8ED1B9F3497014F772FB9F9E5F76C4A1",
+			"toPinId": "28DB29C24D08D3EACAD3B1B4889ABA57",
+			"toPinName": "End"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "4C229A7A4F8ABBF7AB2DDDBC0F3AC29C",
+			"fromPinId": "B16D3DE54F3FC016736C2E8B68507542",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "D5896E5A470631866D5BDFAFC64743CA",
+			"toPinId": "C667BCA04151F098B304E797405559DE",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "F35A25B44ABD0BF4987F9594229CD883",
+			"fromPinId": "BE52E9D043D59786DCCC7280E801BDA9",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "383A15534C6DFA621A894AB21B3BC56F",
+			"toPinId": "D57F65504354EB241F3B8FA6A4F0E8D3",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "FB2C7697451C0E34820940B5F1FDB9DF",
+			"fromPinId": "18B85833454DAB52CCFC4AA0A0D3D7B0",
+			"fromPinName": "then",
+			"toNodeGuid": "F6F45E3146B1A69D9C0D5EB5149E6A26",
+			"toPinId": "B3351CA54AA3854565DA67B820CF40D0",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "FB2C7697451C0E34820940B5F1FDB9DF",
+			"fromPinId": "FA6D47FD4EB342657C6608AB21F511D4",
+			"fromPinName": "NewWeaponData",
+			"toNodeGuid": "F6F45E3146B1A69D9C0D5EB5149E6A26",
+			"toPinId": "1A07F347435DB25937571092A8A54120",
+			"toPinName": "WeaponData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "FB2C7697451C0E34820940B5F1FDB9DF",
+			"fromPinId": "91BAE2DE4812FA613E1276BFDD762B80",
+			"fromPinName": "NewOwnerChuck",
+			"toNodeGuid": "67FDF4554AF5C131E5E07F9A73A56E62",
+			"toPinId": "5CD6A96E42488990D747F38C4FE73F1E",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "F6F45E3146B1A69D9C0D5EB5149E6A26",
+			"fromPinId": "436B9EC343E19A4DA2256D865C02ABCC",
+			"fromPinName": "then",
+			"toNodeGuid": "8A75F3D0407E5FA0D3D20293020963FA",
+			"toPinId": "A79A9E4240F6EC3720E7FBB85EEAF025",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "F6F45E3146B1A69D9C0D5EB5149E6A26",
+			"fromPinId": "95686D6F4C2A7EF5A435FE9F22CD4861",
+			"fromPinName": "Output_Get",
+			"toNodeGuid": "87E90528406F2746AD2F849E1CBBAB8D",
+			"toPinId": "261998F74AFA49665093FDA1289C43C9",
+			"toPinName": "S_WeaponData"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "8A75F3D0407E5FA0D3D20293020963FA",
+			"fromPinId": "4D3A420B4C5EC56252A0E993D279AE20",
+			"fromPinName": "then",
+			"toNodeGuid": "6913BD54449B600B1DCD0CB46CE45BA1",
+			"toPinId": "134D89704FF3821B741B9F8FB0F28C2A",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "67FDF4554AF5C131E5E07F9A73A56E62",
+			"fromPinId": "C58ACD834E1F9D5FF0EE28A19A97048B",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "8A75F3D0407E5FA0D3D20293020963FA",
+			"toPinId": "4A1114FD4D3F8923BBEF18BBDE3229BA",
+			"toPinName": "OwnerChuck"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "6913BD54449B600B1DCD0CB46CE45BA1",
+			"fromPinId": "7E2A34774980A09A689EF0B901F8402B",
+			"fromPinName": "then",
+			"toNodeGuid": "6F7C00DD4116D69870266886D7E7F05A",
+			"toPinId": "ABB9FA5C48B581CDD15566B328762B73",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "87E90528406F2746AD2F849E1CBBAB8D",
+			"fromPinId": "9E1759D049EEE0834304AE88A619771F",
+			"fromPinName": "SkeletalMesh_13_98296F844317640264908E9852ED5A07",
+			"toNodeGuid": "1CDF42DC4AB8620F277C07BD14B548B3",
+			"toPinId": "111234074894E8435B4F35B3B2E9592D",
+			"toPinName": "InputPin"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "B4BC606B4AD6DB4EFE545089DFA2E6DB",
+			"fromPinId": "DECDD8294627D868D19A028F97640F2B",
+			"fromPinName": "SK_Weapon",
+			"toNodeGuid": "6F7C00DD4116D69870266886D7E7F05A",
+			"toPinId": "91104A2543560D93881B04AF57C64287",
+			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "6F7C00DD4116D69870266886D7E7F05A",
+			"fromPinId": "B6E21ED94C843519136CBB8E15D62990",
+			"fromPinName": "then",
+			"toNodeGuid": "6BEEAFCE44C3D5C7CC82EBA9D53C6919",
+			"toPinId": "4A1FBAA24C34670EF30095B938DE9067",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "1CDF42DC4AB8620F277C07BD14B548B3",
+			"fromPinId": "72A8E56442B1FEA6398C419323C3B4BE",
+			"fromPinName": "OutputPin",
+			"toNodeGuid": "6F7C00DD4116D69870266886D7E7F05A",
+			"toPinId": "0E725C3B48C283E370E945BD04D306CF",
+			"toPinName": "NewMesh"
+		}
+	],
+	"variablesRead": [
+		"Get SK_Weapon",
+		"Get WeaponData"
+	],
+	"variablesWritten": [
+		"Set bIsEquipped",
+		"Set OwnerChuck",
+		"Set WeaponData"
+	],
+	"functionsCalled": [
+		"Do Hit Scan\nLa destinazione è BP Weapon Base",
+		"Set Actor Enable Collision\nLa destinazione è Actor",
+		"Set Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+		"Spawn Muzzle FX\nLa destinazione è BP Weapon Base",
+		"Spawn Weapon Projectile\nLa destinazione è BP Weapon Base"
+	],
+	"widgetsTouched": [],
+	"componentsTouched": [],
+	"externalBlueprintReferences": [
+		"Do Hit Scan\nLa destinazione è BP Weapon Base",
+		"Set Actor Enable Collision\nLa destinazione è Actor",
+		"Set Skeletal Mesh Asset\nLa destinazione è Componente mesh scheletrica",
+		"Spawn Muzzle FX\nLa destinazione è BP Weapon Base",
+		"Spawn Weapon Projectile\nLa destinazione è BP Weapon Base"
+	],
+	"flowId": "F003",
+	"graphId": "G001",
+	"assetName": "BP_WeaponBase",
+	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase"
+}

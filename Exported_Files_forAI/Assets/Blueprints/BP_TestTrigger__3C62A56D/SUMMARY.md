@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/Blueprints/BP_TestTrigger.BP_TestTrigger
 Class: Blueprint
 Parent: /Script/Engine.Actor
-Generated: 2026-07-10T21:13:02.714Z
+Generated: 2026-07-21T14:07:27.544Z
 
 ## Variables
 - none

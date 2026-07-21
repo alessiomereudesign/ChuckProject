@@ -5,8 +5,8 @@
 	"type": "EventGraph",
 	"graphType": "EventGraph",
 	"graphGuid": "",
-	"nodeCount": 183,
-	"edgeCount": 198,
+	"nodeCount": 194,
+	"edgeCount": 211,
 	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G003/INDEX.json",
 	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G003/NODES.jsonl",
 	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G003/EDGES.jsonl",
@@ -19,7 +19,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F001.json",
 			"textFile": "Flows/G003/F001.txt",
 			"jsonFile": "Flows/G003/F001.json",
-			"nodeCount": 183
+			"nodeCount": 194
 		},
 		{
 			"flowId": "F002",
@@ -29,37 +29,57 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F002.json",
 			"textFile": "Flows/G003/F002.txt",
 			"jsonFile": "Flows/G003/F002.json",
-			"nodeCount": 183
+			"nodeCount": 194
 		},
 		{
 			"flowId": "F003",
-			"entryName": "ShowAllItems\nCustom Event",
-			"entryNodeGuid": "CD152E5643DCD6F348E0BCAAB8879E90",
+			"entryName": "RefreshArmorVisibilityButton\nCustom Event",
+			"entryNodeGuid": "AA5F062E47830A71DC94E8BD1CC35A7C",
 			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F003.txt",
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F003.json",
 			"textFile": "Flows/G003/F003.txt",
 			"jsonFile": "Flows/G003/F003.json",
-			"nodeCount": 183
+			"nodeCount": 194
 		},
 		{
 			"flowId": "F004",
-			"entryName": "ShowArmorItems\nCustom Event",
-			"entryNodeGuid": "995AFA6B4668BFC03D4E5C952BC14A70",
+			"entryName": "RefreshWeaponsVisibilityButton\nCustom Event",
+			"entryNodeGuid": "8674E5BD43F270C12A0D368826475A19",
 			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F004.txt",
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F004.json",
 			"textFile": "Flows/G003/F004.txt",
 			"jsonFile": "Flows/G003/F004.json",
-			"nodeCount": 183
+			"nodeCount": 194
 		},
 		{
 			"flowId": "F005",
-			"entryName": "ShowWeapons Items\nCustom Event",
-			"entryNodeGuid": "6FBBFFF64FA3B6E2F643839E1EC2A4C7",
+			"entryName": "ShowAllItems\nCustom Event",
+			"entryNodeGuid": "CD152E5643DCD6F348E0BCAAB8879E90",
 			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F005.txt",
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F005.json",
 			"textFile": "Flows/G003/F005.txt",
 			"jsonFile": "Flows/G003/F005.json",
-			"nodeCount": 183
+			"nodeCount": 194
+		},
+		{
+			"flowId": "F006",
+			"entryName": "ShowArmorItems\nCustom Event",
+			"entryNodeGuid": "995AFA6B4668BFC03D4E5C952BC14A70",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F006.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F006.json",
+			"textFile": "Flows/G003/F006.txt",
+			"jsonFile": "Flows/G003/F006.json",
+			"nodeCount": 194
+		},
+		{
+			"flowId": "F007",
+			"entryName": "ShowWeapons Items\nCustom Event",
+			"entryNodeGuid": "6FBBFFF64FA3B6E2F643839E1EC2A4C7",
+			"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F007.txt",
+			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G003/F007.json",
+			"textFile": "Flows/G003/F007.txt",
+			"jsonFile": "Flows/G003/F007.json",
+			"nodeCount": 194
 		}
 	]
 }

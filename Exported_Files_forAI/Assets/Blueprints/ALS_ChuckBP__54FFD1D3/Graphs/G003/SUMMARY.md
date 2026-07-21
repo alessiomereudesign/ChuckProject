@@ -1,8 +1,8 @@
 # EventGraph
 
 Type: EventGraph
-Nodes: 370
-Edges: 397
+Nodes: 599
+Edges: 677
 
 ## Entry Nodes
 - AddItemToInventory
@@ -17,6 +17,8 @@ Custom Event
 Custom Event
 - EquipMelee
 Custom Event
+- EquipSlotFromRadial
+Custom Event
 - EquipSmallWeapon
 Custom Event
 - Evento ActorBeginOverlap
@@ -27,6 +29,10 @@ Custom Event
 - FistsState
 Custom Event
 - Flash
+Custom Event
+- SpawnOrUpdateHolsteredWeapon
+Custom Event
+- SyncHolsterActors
 Custom Event
 - SyncHolsterMeshes
 Custom Event

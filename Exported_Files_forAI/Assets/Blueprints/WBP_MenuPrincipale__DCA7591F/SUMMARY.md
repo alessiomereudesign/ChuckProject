@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/UI/WIDGET_MENU/0_MAIN_MENU/WBP_MenuPrincipale.WBP_MenuPrincipale
 Class: Blueprint
 Parent: /Script/UMG.UserWidget
-Generated: 2026-07-10T21:13:02.714Z
+Generated: 2026-07-21T14:07:27.544Z
 
 ## Variables
 - MenuArchiveRef: object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C

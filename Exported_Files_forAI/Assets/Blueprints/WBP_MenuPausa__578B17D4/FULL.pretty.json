@@ -6,7 +6,7 @@
 	"assetName": "WBP_MenuPausa",
 	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/WBP_MenuPausa.WBP_MenuPausa",
 	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_WBP_MenuPausa",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"assetType": "Blueprint",
 	"unrealClass": "WidgetBlueprint",
 	"mainClass": "/Game/ChuckContent/UI/WIDGET_MENU/WBP_MenuPausa.WBP_MenuPausa_C",
@@ -167,7 +167,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "3CE59242408C5FCD4C68FE9982AF38D2",
+							"pinId": "3463A08E4C2161E637499AB5E862C222",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",

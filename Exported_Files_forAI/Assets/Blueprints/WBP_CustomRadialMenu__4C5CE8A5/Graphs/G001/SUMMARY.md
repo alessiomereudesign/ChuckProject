@@ -1,11 +1,13 @@
 # EventGraph
 
 Type: EventGraph
-Nodes: 144
-Edges: 180
+Nodes: 155
+Edges: 190
 
 ## Entry Nodes
 - CloseRadialMenu
 Custom Event
 - Evento Construct
 - Evento Tick
+- RefreshRadialSlot
+Custom Event

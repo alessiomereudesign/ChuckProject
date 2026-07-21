@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/WBP_CustomRadialMenu.WBP_CustomRadialMenu
 Class: Blueprint
 Parent: /Script/UMG.UserWidget
-Generated: 2026-07-10T21:13:02.714Z
+Generated: 2026-07-21T14:07:27.544Z
 
 ## Variables
 - TargetIndex: int
@@ -13,7 +13,7 @@ Generated: 2026-07-10T21:13:02.714Z
 - As ALS Player Controller: object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller.ALS_Player_Controller_C
 
 ## Graphs
-- EventGraph (EventGraph): 144 nodes, 180 edges
+- EventGraph (EventGraph): 155 nodes, 190 edges
 
 ## Important References
 - /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Sound/Pistol/Wavs/Pistol_Reload01

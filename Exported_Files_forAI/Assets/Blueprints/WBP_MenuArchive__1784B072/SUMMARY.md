@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive
 Class: Blueprint
 Parent: /Script/UMG.UserWidget
-Generated: 2026-07-10T21:13:02.714Z
+Generated: 2026-07-21T14:07:27.544Z
 
 ## Variables
 - MenuPausaRef: object|/Game/ChuckContent/UI/WIDGET_MENU/WBP_MenuPausa.WBP_MenuPausa_C
@@ -20,15 +20,15 @@ Generated: 2026-07-10T21:13:02.714Z
 - CurrentSlot: byte|/Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot.E_WeaponSlot
 
 ## Graphs
-- EventGraph (EventGraph): 260 nodes, 300 edges
+- EventGraph (EventGraph): 262 nodes, 302 edges
 - IntersectGraph (EventGraph): 95 nodes, 103 edges
-- InventoryGraph (EventGraph): 183 nodes, 198 edges
+- InventoryGraph (EventGraph): 194 nodes, 211 edges
 - OnAnalogValueChanged (Function): 26 nodes, 28 edges
 - OnArmorSlotClicked (Function): 18 nodes, 23 edges
 - OnKeyDown (Function): 245 nodes, 258 edges
 - OnWeaponSlotClicked (Function): 17 nodes, 22 edges
 - UpdateEquipmentSlots (Function): 70 nodes, 80 edges
-- UpdateWeaponSlots (Function): 62 nodes, 78 edges
+- UpdateWeaponSlots (Function): 86 nodes, 111 edges
 
 ## Important References
 - /Game/ChuckContent/UI/WIDGET_MENU/ICONS/ICONS_EMPTY/feet

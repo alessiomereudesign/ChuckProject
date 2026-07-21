@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/Blueprints/Enemies/BP_EnemyALS.BP_EnemyALS
 Class: Blueprint
 Parent: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C
-Generated: 2026-07-10T21:13:02.714Z
+Generated: 2026-07-21T14:07:27.544Z
 
 ## Variables
 - Health: real|double

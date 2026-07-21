@@ -1,6 +1,6 @@
 {
 	"schemaVersion": "2.5-ai-readable-short-paths",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"assetName": "BP_WeaponBase",
 	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase",
 	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
@@ -14,12 +14,12 @@
 	"counts":
 	{
 		"variables": 6,
-		"components": 6,
+		"components": 7,
 		"widgets": 0,
 		"graphs": 18,
-		"nodes": 111,
-		"edges": 126,
-		"flows": 19
+		"nodes": 121,
+		"edges": 138,
+		"flows": 20
 	},
 	"files":
 	{
@@ -39,8 +39,8 @@
 			"type": "EventGraph",
 			"graphType": "EventGraph",
 			"graphGuid": "",
-			"nodeCount": 16,
-			"edgeCount": 16,
+			"nodeCount": 26,
+			"edgeCount": 28,
 			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G001/INDEX.json",
 			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G001/NODES.jsonl",
 			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G001/EDGES.jsonl",
@@ -53,7 +53,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G001/F001.json",
 					"textFile": "Flows/G001/F001.txt",
 					"jsonFile": "Flows/G001/F001.json",
-					"nodeCount": 16
+					"nodeCount": 26
 				},
 				{
 					"flowId": "F002",
@@ -63,7 +63,17 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G001/F002.json",
 					"textFile": "Flows/G001/F002.txt",
 					"jsonFile": "Flows/G001/F002.json",
-					"nodeCount": 16
+					"nodeCount": 26
+				},
+				{
+					"flowId": "F003",
+					"entryName": "InitializeHolsterWeapon\nCustom Event",
+					"entryNodeGuid": "FB2C7697451C0E34820940B5F1FDB9DF",
+					"flowTextFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G001/F003.txt",
+					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G001/F003.json",
+					"textFile": "Flows/G001/F003.txt",
+					"jsonFile": "Flows/G001/F003.json",
+					"nodeCount": 26
 				}
 			]
 		},

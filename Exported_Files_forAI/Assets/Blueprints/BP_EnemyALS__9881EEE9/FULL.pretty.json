@@ -6,7 +6,7 @@
 	"assetName": "BP_EnemyALS",
 	"assetPath": "/Game/ChuckContent/Blueprints/Enemies/BP_EnemyALS.BP_EnemyALS",
 	"assetKey": "Game_ChuckContent_Blueprints_Enemies_BP_EnemyALS",
-	"generatedAt": "2026-07-10T21:13:02.714Z",
+	"generatedAt": "2026-07-21T14:07:27.544Z",
 	"assetType": "Blueprint",
 	"unrealClass": "Blueprint",
 	"mainClass": "/Game/ChuckContent/Blueprints/Enemies/BP_EnemyALS.BP_EnemyALS_C",
@@ -341,7 +341,7 @@
 							"defaultValue": ""
 						},
 						{
-							"pinId": "A8F5157041D0A58F93C261B2EF09B056",
+							"pinId": "F770DDF3488496FDFFD0EE9A19F50A7D",
 							"name": "ErrorTolerance",
 							"direction": "Input",
 							"type": "None",

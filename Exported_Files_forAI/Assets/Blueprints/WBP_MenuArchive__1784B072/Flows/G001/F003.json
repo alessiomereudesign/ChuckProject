@@ -2222,7 +2222,7 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get BtnSlot_BigWeapon",
 			"comment": "",
-			"x": 1751,
+			"x": 2007,
 			"y": -855,
 			"memberName": "",
 			"functionName": "",
@@ -2250,7 +2250,7 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get BtnSlot_Item",
 			"comment": "",
-			"x": 1776,
+			"x": 2032,
 			"y": -795,
 			"memberName": "",
 			"functionName": "",
@@ -2278,7 +2278,7 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get BtnSlot_SmallFirearm",
 			"comment": "",
-			"x": 1735,
+			"x": 1991,
 			"y": -825,
 			"memberName": "",
 			"functionName": "",
@@ -2306,7 +2306,7 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get BtnSlot_Melee",
 			"comment": "",
-			"x": 1776,
+			"x": 2032,
 			"y": -765,
 			"memberName": "",
 			"functionName": "",
@@ -2334,7 +2334,7 @@
 			"class": "K2Node_MakeArray",
 			"title": "Crea array",
 			"comment": "",
-			"x": 1959,
+			"x": 2215,
 			"y": -878,
 			"memberName": "",
 			"functionName": "",
@@ -2446,7 +2446,7 @@
 			"class": "K2Node_MacroInstance",
 			"title": "For Each Loop",
 			"comment": "",
-			"x": 2199,
+			"x": 2439,
 			"y": -942,
 			"memberName": "",
 			"functionName": "",
@@ -2502,8 +2502,8 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get BtnSlot_AccessoryEquip",
 			"comment": "",
-			"x": 1712,
-			"y": -614,
+			"x": 1968,
+			"y": -616,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -2530,7 +2530,7 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get BtnSlot_ChestEquip",
 			"comment": "",
-			"x": 1744,
+			"x": 2000,
 			"y": -705,
 			"memberName": "",
 			"functionName": "",
@@ -2558,7 +2558,7 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get BtnSlot_HeadEquip",
 			"comment": "",
-			"x": 1744,
+			"x": 2000,
 			"y": -735,
 			"memberName": "",
 			"functionName": "",
@@ -2586,8 +2586,8 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get BtnSlot_Accessory1Equip",
 			"comment": "",
-			"x": 1712,
-			"y": -585,
+			"x": 1968,
+			"y": -586,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -2614,8 +2614,8 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get BtnSlot_LegsEquip",
 			"comment": "",
-			"x": 1744,
-			"y": -675,
+			"x": 2000,
+			"y": -676,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -2642,8 +2642,8 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get BtnSlot_FeetEquip",
 			"comment": "",
-			"x": 1744,
-			"y": -645,
+			"x": 2000,
+			"y": -646,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -2670,8 +2670,8 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get BtnSlot_Inventory",
 			"comment": "",
-			"x": 1751,
-			"y": -555,
+			"x": 2007,
+			"y": -556,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -4104,7 +4104,7 @@
 					"defaultValue": ""
 				},
 				{
-					"pinId": "5942ED2A4BDBE6B0053105AE0B32F6F6",
+					"pinId": "76E7C4724067FEB0460828891EB72A6B",
 					"name": "ErrorTolerance",
 					"direction": "Input",
 					"type": "None",
@@ -4657,7 +4657,7 @@
 			"title": "Get Btn_ItemsInventory",
 			"comment": "",
 			"x": 1600,
-			"y": -298,
+			"y": -299,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -4713,7 +4713,7 @@
 			"title": "Get Btn_ConsumableInventory",
 			"comment": "",
 			"x": 1616,
-			"y": -208,
+			"y": -209,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -4741,7 +4741,7 @@
 			"title": "Get Btn_ArmorInventory",
 			"comment": "",
 			"x": 1616,
-			"y": -238,
+			"y": -239,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -5223,7 +5223,7 @@
 			"class": "K2Node_CallFunction",
 			"title": "Has Keyboard Focus\nLa destinazione è Widget",
 			"comment": "",
-			"x": 2480,
+			"x": 2672,
 			"y": -816,
 			"memberName": "",
 			"functionName": "",
@@ -5770,7 +5770,7 @@
 			"class": "K2Node_CallFunction",
 			"title": "Background Grey Dark/ Light\nLa destinazione è WBP Menu Archive",
 			"comment": "",
-			"x": 2720,
+			"x": 2896,
 			"y": -960,
 			"memberName": "",
 			"functionName": "",
@@ -6469,8 +6469,8 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get ToggleVisibWeapons",
 			"comment": "",
-			"x": 1728,
-			"y": -525,
+			"x": 1984,
+			"y": -526,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -6497,8 +6497,8 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get ToggleVisibArmor",
 			"comment": "",
-			"x": 1744,
-			"y": -495,
+			"x": 2000,
+			"y": -497,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -6574,7 +6574,7 @@
 			"class": "K2Node_IfThenElse",
 			"title": "Ramo",
 			"comment": "",
-			"x": 3008,
+			"x": 3168,
 			"y": -944,
 			"memberName": "",
 			"functionName": "",
@@ -6616,7 +6616,7 @@
 			"class": "K2Node_Knot",
 			"title": "Nodo di reindirizzamento",
 			"comment": "",
-			"x": 2960,
+			"x": 3120,
 			"y": -766,
 			"memberName": "",
 			"functionName": "",
@@ -6644,7 +6644,7 @@
 			"class": "K2Node_SwitchInteger",
 			"title": "Attiva Int",
 			"comment": "",
-			"x": 3280,
+			"x": 3376,
 			"y": -944,
 			"memberName": "",
 			"functionName": "",
@@ -6862,7 +6862,7 @@
 					"defaultValue": ""
 				},
 				{
-					"pinId": "6AE3C1D74C7E28A7CC1A81A7EF78D481",
+					"pinId": "CEEC59144E00EE0A312CF4AD794DFD37",
 					"name": "ErrorTolerance",
 					"direction": "Input",
 					"type": "None",
@@ -7030,7 +7030,7 @@
 					"defaultValue": ""
 				},
 				{
-					"pinId": "1174DE264685C37558E76286875ABA73",
+					"pinId": "FB49B74749F8A4ACB5DDA18383BFA7E2",
 					"name": "ErrorTolerance",
 					"direction": "Input",
 					"type": "None",
@@ -7226,7 +7226,7 @@
 					"defaultValue": ""
 				},
 				{
-					"pinId": "51ECA75D4B99E53D21A25E9080BACA1A",
+					"pinId": "B1B2030043489461994882A32610B81E",
 					"name": "ErrorTolerance",
 					"direction": "Input",
 					"type": "None",
@@ -7681,7 +7681,7 @@
 					"defaultValue": ""
 				},
 				{
-					"pinId": "C794AD27423D669E7FCB688767FFA8AC",
+					"pinId": "97B9A8D84D9C51C10FD8EFBBC1675EA2",
 					"name": "ErrorTolerance",
 					"direction": "Input",
 					"type": "None",
@@ -7933,7 +7933,7 @@
 					"defaultValue": ""
 				},
 				{
-					"pinId": "EAB400744925D4B1D1AF6DAD35634F26",
+					"pinId": "4AEFC32744B728A6285269A3FBA5E95E",
 					"name": "ErrorTolerance",
 					"direction": "Input",
 					"type": "None",
@@ -8101,7 +8101,7 @@
 					"defaultValue": ""
 				},
 				{
-					"pinId": "0CD891B64CCB1C60CDA6FCA22DFB59F1",
+					"pinId": "D65715894D8BC89C879E9C85D074C035",
 					"name": "ErrorTolerance",
 					"direction": "Input",
 					"type": "None",
@@ -8269,7 +8269,7 @@
 					"defaultValue": ""
 				},
 				{
-					"pinId": "218042964D4B9214D8F6BBBA692BF63C",
+					"pinId": "C64146B3457D9E51DDBF639BC3CBFD6A",
 					"name": "ErrorTolerance",
 					"direction": "Input",
 					"type": "None",
@@ -8408,7 +8408,7 @@
 			"class": "K2Node_Knot",
 			"title": "Nodo di reindirizzamento",
 			"comment": "",
-			"x": 2464,
+			"x": 2672,
 			"y": -704,
 			"memberName": "",
 			"functionName": "",
@@ -8436,7 +8436,7 @@
 			"class": "K2Node_Knot",
 			"title": "Nodo di reindirizzamento",
 			"comment": "",
-			"x": 3136,
+			"x": 3296,
 			"y": -704,
 			"memberName": "",
 			"functionName": "",
@@ -8493,7 +8493,7 @@
 					"defaultValue": ""
 				},
 				{
-					"pinId": "5BD8DACF4305134F34E8668A72EE2142",
+					"pinId": "7A53E9AE48254D6E19907A9954D2AF65",
 					"name": "ErrorTolerance",
 					"direction": "Input",
 					"type": "None",
@@ -8787,7 +8787,7 @@
 					"defaultValue": ""
 				},
 				{
-					"pinId": "9D2A9E44406D2B8431B2BDA97C813B4B",
+					"pinId": "663814A24ABC843782D36D800D4C8E63",
 					"name": "ErrorTolerance",
 					"direction": "Input",
 					"type": "None",
@@ -8955,7 +8955,7 @@
 					"defaultValue": ""
 				},
 				{
-					"pinId": "996674B04EF5A9BB823506AF9CBC7C5B",
+					"pinId": "A4826E294254388A4AC90C849028E231",
 					"name": "ErrorTolerance",
 					"direction": "Input",
 					"type": "None",
@@ -9073,6 +9073,76 @@
 			"variableName": "",
 			"targetClass": "",
 			"pins": []
+		},
+		{
+			"nodeGuid": "A7DC37E64ABA884D8313F8BA43BFAE81",
+			"class": "K2Node_ExecutionSequence",
+			"title": "Sequenza",
+			"comment": "",
+			"x": 1696,
+			"y": -944,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "07CAF531427127C1D529629A48EBDC4F",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "F1F38F1246358F002EA53D9EB6736808",
+					"name": "then_0",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "152356FC49597C57FBCAB2BB5C9C604D",
+					"name": "then_1",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				}
+			]
+		},
+		{
+			"nodeGuid": "330FF2F547E5B5C8407FD5AC72C3D403",
+			"class": "K2Node_CallFunction",
+			"title": "Refresh Weapons Visibility Button\nLa destinazione è WBP Menu Archive",
+			"comment": "",
+			"x": 1712,
+			"y": -784,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "6E945BA44DF3AD97DCC56DB871584AA6",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "450E5ED341F7CE9925DC709A4D0201DC",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5D8C48FE414280288DE6FDBC78DC2CEE",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|self",
+					"defaultValue": ""
+				}
+			]
 		}
 	],
 	"edges": [
@@ -10081,9 +10151,9 @@
 			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
 			"graph": "EventGraph",
 			"edgeType": "exec",
-			"fromNodeGuid": "E716923041E2351A430BD8B23CDF284F",
-			"fromPinId": "2FA2F951467636C547F532BDFBBFE4A7",
-			"fromPinName": "0",
+			"fromNodeGuid": "A7DC37E64ABA884D8313F8BA43BFAE81",
+			"fromPinId": "F1F38F1246358F002EA53D9EB6736808",
+			"fromPinName": "then_0",
 			"toNodeGuid": "5FB9BD2C472D9CE14F12248A1C745035",
 			"toPinId": "4EFF618847C2534EA2C501BE2562903E",
 			"toPinName": "Exec"
@@ -10835,6 +10905,17 @@
 			"toNodeGuid": "E716923041E2351A430BD8B23CDF284F",
 			"toPinId": "BC16EAF743C1B3E8A5DD2CBD25196FDF",
 			"toPinName": "Selection"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "E716923041E2351A430BD8B23CDF284F",
+			"fromPinId": "2FA2F951467636C547F532BDFBBFE4A7",
+			"fromPinName": "0",
+			"toNodeGuid": "A7DC37E64ABA884D8313F8BA43BFAE81",
+			"toPinId": "07CAF531427127C1D529629A48EBDC4F",
+			"toPinName": "execute"
 		},
 		{
 			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
@@ -12375,6 +12456,17 @@
 			"toNodeGuid": "9EE6688145851E6287D2D19BB28E6219",
 			"toPinId": "80ADFB724F0A3552ACAE11BFB9AB947D",
 			"toPinName": "self"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_WBP_MenuArchive",
+			"graph": "EventGraph",
+			"edgeType": "exec",
+			"fromNodeGuid": "A7DC37E64ABA884D8313F8BA43BFAE81",
+			"fromPinId": "152356FC49597C57FBCAB2BB5C9C604D",
+			"fromPinName": "then_1",
+			"toNodeGuid": "330FF2F547E5B5C8407FD5AC72C3D403",
+			"toPinId": "6E945BA44DF3AD97DCC56DB871584AA6",
+			"toPinName": "execute"
 		}
 	],
 	"variablesRead": [
@@ -12445,6 +12537,7 @@
 		"Play Sound 2D",
 		"Populate Item Grid\nLa destinazione è WBP Menu Archive",
 		"Refresh Menu Focus\nLa destinazione è WBP Menu Archive",
+		"Refresh Weapons Visibility Button\nLa destinazione è WBP Menu Archive",
 		"Remove from Parent\nLa destinazione è Widget",
 		"Return Back Manage\nLa destinazione è WBP Menu Archive",
 		"Ritardo",
@@ -12461,6 +12554,7 @@
 		"Button Indietro > Menu Pausa",
 		"FocusButton Settings",
 		"Get LastClickedButton",
+		"Refresh Weapons Visibility Button\nLa destinazione è WBP Menu Archive",
 		"Show/Hide ClearButton"
 	],
 	"componentsTouched": [
@@ -12484,6 +12578,7 @@
 		"Play Sound 2D",
 		"Populate Item Grid\nLa destinazione è WBP Menu Archive",
 		"Refresh Menu Focus\nLa destinazione è WBP Menu Archive",
+		"Refresh Weapons Visibility Button\nLa destinazione è WBP Menu Archive",
 		"Remove from Parent\nLa destinazione è Widget",
 		"Return Back Manage\nLa destinazione è WBP Menu Archive",
 		"Ritardo",

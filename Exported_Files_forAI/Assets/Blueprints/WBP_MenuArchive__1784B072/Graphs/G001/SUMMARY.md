@@ -1,8 +1,8 @@
 # EventGraph
 
 Type: EventGraph
-Nodes: 260
-Edges: 300
+Nodes: 262
+Edges: 302
 
 ## Entry Nodes
 - Background Grey Dark/Light
