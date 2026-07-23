@@ -5,8 +5,8 @@
 	"type": "EventGraph",
 	"graphType": "EventGraph",
 	"graphGuid": "",
-	"nodeCount": 262,
-	"edgeCount": 302,
+	"nodeCount": 278,
+	"edgeCount": 321,
 	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G001/INDEX.json",
 	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G001/NODES.jsonl",
 	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Graphs/G001/EDGES.jsonl",
@@ -19,7 +19,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F001.json",
 			"textFile": "Flows/G001/F001.txt",
 			"jsonFile": "Flows/G001/F001.json",
-			"nodeCount": 262
+			"nodeCount": 278
 		},
 		{
 			"flowId": "F002",
@@ -29,7 +29,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F002.json",
 			"textFile": "Flows/G001/F002.txt",
 			"jsonFile": "Flows/G001/F002.json",
-			"nodeCount": 262
+			"nodeCount": 278
 		},
 		{
 			"flowId": "F003",
@@ -39,7 +39,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F003.json",
 			"textFile": "Flows/G001/F003.txt",
 			"jsonFile": "Flows/G001/F003.json",
-			"nodeCount": 262
+			"nodeCount": 278
 		},
 		{
 			"flowId": "F004",
@@ -49,7 +49,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F004.json",
 			"textFile": "Flows/G001/F004.txt",
 			"jsonFile": "Flows/G001/F004.json",
-			"nodeCount": 262
+			"nodeCount": 278
 		},
 		{
 			"flowId": "F005",
@@ -59,7 +59,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F005.json",
 			"textFile": "Flows/G001/F005.txt",
 			"jsonFile": "Flows/G001/F005.json",
-			"nodeCount": 262
+			"nodeCount": 278
 		},
 		{
 			"flowId": "F006",
@@ -69,7 +69,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F006.json",
 			"textFile": "Flows/G001/F006.txt",
 			"jsonFile": "Flows/G001/F006.json",
-			"nodeCount": 262
+			"nodeCount": 278
 		},
 		{
 			"flowId": "F007",
@@ -79,7 +79,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F007.json",
 			"textFile": "Flows/G001/F007.txt",
 			"jsonFile": "Flows/G001/F007.json",
-			"nodeCount": 262
+			"nodeCount": 278
 		},
 		{
 			"flowId": "F008",
@@ -89,7 +89,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F008.json",
 			"textFile": "Flows/G001/F008.txt",
 			"jsonFile": "Flows/G001/F008.json",
-			"nodeCount": 262
+			"nodeCount": 278
 		},
 		{
 			"flowId": "F009",
@@ -99,7 +99,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_MenuArchive__1784B072/Flows/G001/F009.json",
 			"textFile": "Flows/G001/F009.txt",
 			"jsonFile": "Flows/G001/F009.json",
-			"nodeCount": 262
+			"nodeCount": 278
 		}
 	]
 }

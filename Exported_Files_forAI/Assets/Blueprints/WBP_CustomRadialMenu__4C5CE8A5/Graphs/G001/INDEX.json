@@ -5,8 +5,8 @@
 	"type": "EventGraph",
 	"graphType": "EventGraph",
 	"graphGuid": "",
-	"nodeCount": 155,
-	"edgeCount": 190,
+	"nodeCount": 125,
+	"edgeCount": 151,
 	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Graphs/G001/INDEX.json",
 	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Graphs/G001/NODES.jsonl",
 	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Graphs/G001/EDGES.jsonl",
@@ -19,7 +19,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Flows/G001/F001.json",
 			"textFile": "Flows/G001/F001.txt",
 			"jsonFile": "Flows/G001/F001.json",
-			"nodeCount": 155
+			"nodeCount": 125
 		},
 		{
 			"flowId": "F002",
@@ -29,7 +29,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Flows/G001/F002.json",
 			"textFile": "Flows/G001/F002.txt",
 			"jsonFile": "Flows/G001/F002.json",
-			"nodeCount": 155
+			"nodeCount": 125
 		},
 		{
 			"flowId": "F003",
@@ -39,7 +39,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Flows/G001/F003.json",
 			"textFile": "Flows/G001/F003.txt",
 			"jsonFile": "Flows/G001/F003.json",
-			"nodeCount": 155
+			"nodeCount": 125
 		},
 		{
 			"flowId": "F004",
@@ -49,7 +49,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_CustomRadialMenu__4C5CE8A5/Flows/G001/F004.json",
 			"textFile": "Flows/G001/F004.txt",
 			"jsonFile": "Flows/G001/F004.json",
-			"nodeCount": 155
+			"nodeCount": 125
 		}
 	]
 }

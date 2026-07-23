@@ -276,89 +276,105 @@ La destinazione è WBP Menu Archive [K2Node_CallFunction] F7DE577A4BDD06AC757F97
 199. Nodo di reindirizzamento [K2Node_Knot] 99F380894DFDE16F7B7120A01F8B5BDD
 200. Attiva Int [K2Node_SwitchInteger] 292DFFB6414767BFE77AB7BC6121E2BB
 201. Get As ChuckRef [K2Node_VariableGet] CBF7C7AC4C878DAAF016018831D7EBAB
-202. Get Equipped_BigWeapon [K2Node_VariableGet] CDDE748946CE1B4C09DA48B19DE00748
-203. Not Equal (Name) [K2Node_PromotableOperator] 8C3EB4E94720800582A980837546DE4B
-204. Ramo [K2Node_IfThenElse] FC48AD184ED0917C3103168862D097F9
-205. Set Visibility
+202. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] FB441E6B45E75B8974CAE08EEFD6072D
-206. Set Visibility
+203. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] C9763C234FB8D06C5793F8809DAA45A6
-207. Not Equal (Name) [K2Node_PromotableOperator] C98CC80544BFF63DAE992795954E961C
-208. Ramo [K2Node_IfThenElse] 049D51714577C970317DA8ACBDFA41D1
-209. Set Visibility
+204. Ramo [K2Node_IfThenElse] 049D51714577C970317DA8ACBDFA41D1
+205. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] 0FA8AD5F4BE57EF39353FFBB1BB68F88
-210. Set Visibility
+206. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] 8A83BEE542BB5F6F0C92FAB28962B7E3
-211. Get Equipped_SmallFirearm [K2Node_VariableGet] 61CBCAF04D7231CE0E3105B500146E38
-212. Not Equal (Name) [K2Node_PromotableOperator] 2A30893042A1F1C008C67BB63F4A8412
-213. Ramo [K2Node_IfThenElse] 0E40AE05421CD05EFD7BCC9163576014
-214. Set Visibility
+207. Ramo [K2Node_IfThenElse] 0E40AE05421CD05EFD7BCC9163576014
+208. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] A1F1F1E34673B26EA576B08B31BBCE12
-215. Set Visibility
+209. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] FDB9242C46949892DD1020AECB45A8AC
-216. Get Equipped_Melee [K2Node_VariableGet] AA7395FE433EC63B7C2B30B10DDAB6C8
-217. Get Btn_Clear [K2Node_VariableGet] 376D4426481D46ADAB377293BAA6F769
-218. Get CharacterGrid [K2Node_VariableGet] 4D53D56841AD735070183D93A159943F
-219. Play Sound 2D [K2Node_CallFunction] 91861B4140E9B19EBA2CCC9564A5B192
-220. Set Visibility
+210. Get Btn_Clear [K2Node_VariableGet] 376D4426481D46ADAB377293BAA6F769
+211. Get CharacterGrid [K2Node_VariableGet] 4D53D56841AD735070183D93A159943F
+212. Play Sound 2D [K2Node_CallFunction] 91861B4140E9B19EBA2CCC9564A5B192
+213. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] A5D8084D4DF724CEED83E094C2035BFC
-221. Set Visibility
+214. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] 90729BA747984359D279E688EA30A1E2
-222. Get Equipped_Item [K2Node_VariableGet] DBB2FDBE4CEDA2717AB2FD99411E72D1
-223. Not Equal (Name) [K2Node_PromotableOperator] 22DE9C314E143BFBB04149963DDC2171
-224. Ramo [K2Node_IfThenElse] F94F249F44EF3417F580BD83E9321F3F
-225. Get EquippedHead [K2Node_VariableGet] 0D3C3FA3439D37A17D5597BBE54965FE
-226. Get EquippedChest [K2Node_VariableGet] 94D6CDDC49AEDFB6F1F2C3A9BABCDAF7
-227. Get EquippedLegs [K2Node_VariableGet] E79121504E93498F8444E298D15322F3
-228. Get EquippedFeet [K2Node_VariableGet] 6A1F649741651CCAF808DB922AA94157
-229. Get EquippedAccessory1 [K2Node_VariableGet] 3F77E6014F0522DBE09B05BFDB384B0C
-230. Get EquippedAccessory2 [K2Node_VariableGet] E23966A64CC08F9888149D8059B56B26
-231. Not Equal (Name) [K2Node_PromotableOperator] 6B4156B2421DEF06F8D619B109DF4575
-232. Ramo [K2Node_IfThenElse] 8F2F21634137D5D15A3105A019A36CF6
-233. Set Visibility
+215. Get Equipped_Item [K2Node_VariableGet] DBB2FDBE4CEDA2717AB2FD99411E72D1
+216. Not Equal (Name) [K2Node_PromotableOperator] 22DE9C314E143BFBB04149963DDC2171
+217. Ramo [K2Node_IfThenElse] F94F249F44EF3417F580BD83E9321F3F
+218. Get EquippedHead [K2Node_VariableGet] 0D3C3FA3439D37A17D5597BBE54965FE
+219. Get EquippedChest [K2Node_VariableGet] 94D6CDDC49AEDFB6F1F2C3A9BABCDAF7
+220. Get EquippedLegs [K2Node_VariableGet] E79121504E93498F8444E298D15322F3
+221. Get EquippedFeet [K2Node_VariableGet] 6A1F649741651CCAF808DB922AA94157
+222. Get EquippedAccessory1 [K2Node_VariableGet] 3F77E6014F0522DBE09B05BFDB384B0C
+223. Get EquippedAccessory2 [K2Node_VariableGet] E23966A64CC08F9888149D8059B56B26
+224. Not Equal (Name) [K2Node_PromotableOperator] 6B4156B2421DEF06F8D619B109DF4575
+225. Ramo [K2Node_IfThenElse] 8F2F21634137D5D15A3105A019A36CF6
+226. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] 1492087042FA34B3191FB998441BB9C9
-234. Set Visibility
+227. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] 38B457EF49430782B8FB2DB83E8726AC
-235. Not Equal (Name) [K2Node_PromotableOperator] 50EDB84949F0FA640C3DB4B07F410314
-236. Ramo [K2Node_IfThenElse] D15C2D0C44937E3D156B069CACCCA3CE
-237. Set Visibility
+228. Not Equal (Name) [K2Node_PromotableOperator] 50EDB84949F0FA640C3DB4B07F410314
+229. Ramo [K2Node_IfThenElse] D15C2D0C44937E3D156B069CACCCA3CE
+230. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] D6C5335540AE6C5CB0151AAF9297B2E6
-238. Set Visibility
+231. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] 95AEDE7F4F11B9C0F5402784AE2A73A9
-239. Not Equal (Name) [K2Node_PromotableOperator] 2645C3F242B4DC1078B8F68D6D3CE5A5
-240. Ramo [K2Node_IfThenElse] C5E94FB24F2B66AEB2629BACD3029A7B
-241. Set Visibility
+232. Not Equal (Name) [K2Node_PromotableOperator] 2645C3F242B4DC1078B8F68D6D3CE5A5
+233. Ramo [K2Node_IfThenElse] C5E94FB24F2B66AEB2629BACD3029A7B
+234. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] CDC588624F9788906F823BB2530914FF
-242. Set Visibility
+235. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] 1B69CAE1495EFDF55B42B5A524BFFB8F
-243. Nodo di reindirizzamento [K2Node_Knot] 06CC512A492996CF663DB0B918047DD6
-244. Nodo di reindirizzamento [K2Node_Knot] B17A59E34A52B6CE5298CAB344FE9529
-245. Not Equal (Name) [K2Node_PromotableOperator] 42B2833C4B6EAE9CFD8F65AFF4ACC03D
-246. Ramo [K2Node_IfThenElse] 144F56F2476C7EEBDA5B45823ECE26C2
-247. Set Visibility
+236. Nodo di reindirizzamento [K2Node_Knot] 06CC512A492996CF663DB0B918047DD6
+237. Nodo di reindirizzamento [K2Node_Knot] B17A59E34A52B6CE5298CAB344FE9529
+238. Not Equal (Name) [K2Node_PromotableOperator] 42B2833C4B6EAE9CFD8F65AFF4ACC03D
+239. Ramo [K2Node_IfThenElse] 144F56F2476C7EEBDA5B45823ECE26C2
+240. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] 05B355704EFB0B5BF6BD3D917ABAB379
-248. Set Visibility
+241. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] 72676CC24695830D1AA4AB8AE9834C41
-249. Ramo [K2Node_IfThenElse] 54A822E54B5C05DCCE6D67BC200DFE36
-250. Set Visibility
+242. Ramo [K2Node_IfThenElse] 54A822E54B5C05DCCE6D67BC200DFE36
+243. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] 8FC8D1B44321196D65E355A3810C238B
-251. Set Visibility
+244. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] 12C343EE422BF7416401CDAF39846B44
-252. Not Equal (Name) [K2Node_PromotableOperator] D5FA28E64E2B2224E4BC589662EAED60
-253. Ramo [K2Node_IfThenElse] 3524FEA743CB053DEF0F42BC55D893D3
-254. Set Visibility
+245. Not Equal (Name) [K2Node_PromotableOperator] D5FA28E64E2B2224E4BC589662EAED60
+246. Ramo [K2Node_IfThenElse] 3524FEA743CB053DEF0F42BC55D893D3
+247. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] AB8BE5DF4D6D389DF9ECFA99B7BD4F8A
-255. Set Visibility
+248. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] B0246E1C458826AC799A79A718A74C09
-256. Not Equal (Name) [K2Node_PromotableOperator] C655A10B43435852F1AE42A77EC99BA6
-257. Set Visibility
+249. Not Equal (Name) [K2Node_PromotableOperator] C655A10B43435852F1AE42A77EC99BA6
+250. Set Visibility
 La destinazione è Widget [K2Node_CallFunction] 9EE6688145851E6287D2D19BB28E6219
-258. Nodo di reindirizzamento [K2Node_Knot] 8CC5B659456479AD30EAE9B83AF8084A
-259. Nodo di reindirizzamento [K2Node_Knot] 222C226846C99C7499517FB498FA04D3
-260. Show/Hide ClearButton [EdGraphNode_Comment] CB0BC3AA48300AC30722E192DC968F96
-261. Sequenza [K2Node_ExecutionSequence] A7DC37E64ABA884D8313F8BA43BFAE81
-262. Refresh Weapons Visibility Button
+251. Nodo di reindirizzamento [K2Node_Knot] 8CC5B659456479AD30EAE9B83AF8084A
+252. Nodo di reindirizzamento [K2Node_Knot] 222C226846C99C7499517FB498FA04D3
+253. Show/Hide ClearButton [EdGraphNode_Comment] CB0BC3AA48300AC30722E192DC968F96
+254. Sequenza [K2Node_ExecutionSequence] A7DC37E64ABA884D8313F8BA43BFAE81
+255. Refresh Weapons Visibility Button
 La destinazione è WBP Menu Archive [K2Node_CallFunction] 330FF2F547E5B5C8407FD5AC72C3D403
+256. Get EquippedBigWeaponIndex [K2Node_VariableGet] D47AB3124747ADA8D588559C2DEF78FA
+257. integer >= integer [K2Node_PromotableOperator] 2375F1A34E7111B0BFAA3E9B27F8F17F
+258. Get OwnedWeapons [K2Node_VariableGet] 7CA7EEBF46594538CE87BA99411793CE
+259. Length [K2Node_CallArrayFunction] 415C4A7F473DC81362B4FCBB8249480B
+260. integer < integer [K2Node_PromotableOperator] F8CB93FB474022D88C1B809DD8309397
+261. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] FAAFCC004486850C28BBD1A7AF1CDBC4
+262. Ramo [K2Node_IfThenElse] 3A66EEBC43090166575EBB970089E537
+263. Nodo di reindirizzamento [K2Node_Knot] B1977D6E4F44B47B0479A89F012E7AEE
+264. Get EquippedSmallFirearmIndex [K2Node_VariableGet] AEC782E246AEC5764D0931A806679FC0
+265. Get OwnedWeapons [K2Node_VariableGet] F1110F984720F11DEF52ACA58B39B371
+266. Length [K2Node_CallArrayFunction] D084A22B46CD83626BE18497017D3351
+267. integer < integer [K2Node_PromotableOperator] C0756AA649276490448C20B93FC89CCB
+268. integer >= integer [K2Node_PromotableOperator] 015FAB324894D3711A54339B0DE78A6A
+269. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 5492028944E42C50B80FF7ABC81D8A52
+270. Get As ChuckRef [K2Node_VariableGet] 6EAC4F39457507DC7FFD09952A2978A5
+271. Get As ChuckRef [K2Node_VariableGet] EA6657564643F5CB21206AA138E8EDDC
+272. Get As ChuckRef [K2Node_VariableGet] DCACFD5643AC22154A27B5B1A2E39DD9
+273. Get EquippedMeleeIndex [K2Node_VariableGet] 13B4021B4C11B17F9FF953AFDFC97496
+274. Get OwnedWeapons [K2Node_VariableGet] 43ECEC204DF207CEDEAEBDAFB9C7CA20
+275. Length [K2Node_CallArrayFunction] 664B0A6840CD3E06DE3C79BBDDE66A63
+276. integer < integer [K2Node_PromotableOperator] A18DCDD145D94199326678891869EDF8
+277. integer >= integer [K2Node_PromotableOperator] DB01CAF449124999ACE17BBB0E273A39
+278. AND Boolean [K2Node_CommutativeAssociativeBinaryOperator] 72A14949487DDCC4A37A9699F8CA6762
 
 Variables Read:
 - Get ActiveArmorSelectorRef
@@ -390,21 +406,22 @@ Variables Read:
 - Get CharactersPage
 - Get ColorFocused
 - Get ColorUnfocused
-- Get Equipped_BigWeapon
 - Get Equipped_Item
-- Get Equipped_Melee
-- Get Equipped_SmallFirearm
 - Get EquippedAccessory1
 - Get EquippedAccessory2
+- Get EquippedBigWeaponIndex
 - Get EquippedChest
 - Get EquippedFeet
 - Get EquippedHead
 - Get EquippedLegs
+- Get EquippedMeleeIndex
+- Get EquippedSmallFirearmIndex
 - Get InventorySwitcher
 - Get InventoryTab
 - Get LastClickedButton
 - Get MenuIntersect
 - Get MenuPausaRef
+- Get OwnedWeapons
 - Get TabsSelect
 - Get ToggleVisibArmor
 - Get ToggleVisibWeapons

@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/WBP_CustomRadialMenu.WBP_CustomRadialMenu
 Class: Blueprint
 Parent: /Script/UMG.UserWidget
-Generated: 2026-07-21T14:07:27.544Z
+Generated: 2026-07-23T10:16:32.724Z
 
 ## Variables
 - TargetIndex: int
@@ -13,10 +13,9 @@ Generated: 2026-07-21T14:07:27.544Z
 - As ALS Player Controller: object|/Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller.ALS_Player_Controller_C
 
 ## Graphs
-- EventGraph (EventGraph): 155 nodes, 190 edges
+- EventGraph (EventGraph): 125 nodes, 151 edges
 
 ## Important References
-- /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Sound/Pistol/Wavs/Pistol_Reload01
 - /Game/ChuckContent/UI/files/ICONS/medikit
 - /Game/ChuckContent/UI/files/ICONS/sandwitch
 - /Game/ChuckContent/UI/files/ICONS/Fist
@@ -25,7 +24,6 @@ Generated: 2026-07-21T14:07:27.544Z
 - /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData
 - /Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/tast
 - /Game/ChuckContent/Blueprints/ALS_ChuckBP
-- /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD
 - /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_Player_Controller
 - /Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot
 - /Game/ChuckContent/UI/files/ICONS/glasses

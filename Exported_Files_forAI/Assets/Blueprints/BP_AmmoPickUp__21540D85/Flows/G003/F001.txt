@@ -32,6 +32,7 @@ La destinazione è WBP HUD [K2Node_CallFunction] 21B3A8BB47D290552DDE869FBA1AA9E
 La destinazione è ALS Chuck BP [K2Node_CallFunction] EF6596E34566BB9070068281DCB0BA65
 20. Nodo di reindirizzamento [K2Node_Knot] 4456BC954D094962C984B8A040433F27
 21. Nodo di reindirizzamento [K2Node_Knot] D9163DDA4324262B2485828178106764
+22. Play Sound 2D [K2Node_CallFunction] D3B47D70447EBCB1277D9C98FC0EC718
 
 Variables Read:
 - Get AmmoAmount
@@ -48,6 +49,7 @@ External Calls:
 - Destroy Actor
 La destinazione è Actor
 - Get Player Character
+- Play Sound 2D
 - Reload Current Weapon
 La destinazione è ALS Chuck BP
 - Trova
@@ -66,6 +68,7 @@ External Blueprint References:
 - Destroy Actor
 La destinazione è Actor
 - Get Player Character
+- Play Sound 2D
 - Reload Current Weapon
 La destinazione è ALS Chuck BP
 - Trova

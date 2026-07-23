@@ -1,8 +1,8 @@
 # EventGraph
 
 Type: EventGraph
-Nodes: 155
-Edges: 190
+Nodes: 125
+Edges: 151
 
 ## Entry Nodes
 - CloseRadialMenu

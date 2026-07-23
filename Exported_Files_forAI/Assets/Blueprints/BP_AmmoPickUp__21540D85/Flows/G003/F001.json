@@ -408,7 +408,7 @@
 			"class": "K2Node_CallFunction",
 			"title": "Destroy Actor\nLa destinazione è Actor",
 			"comment": "",
-			"x": 2912,
+			"x": 2992,
 			"y": -16,
 			"memberName": "",
 			"functionName": "",
@@ -766,6 +766,97 @@
 					"defaultValue": ""
 				}
 			]
+		},
+		{
+			"nodeGuid": "D3B47D70447EBCB1277D9C98FC0EC718",
+			"class": "K2Node_CallFunction",
+			"title": "Play Sound 2D",
+			"comment": "",
+			"x": 2688,
+			"y": 0,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "AA15433E40A76BCCF2F1F3A5C83C1EFF",
+					"name": "execute",
+					"direction": "Input",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5FFFD1324A3915FC20F32682D76F587D",
+					"name": "then",
+					"direction": "Output",
+					"type": "exec",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "B0490A9045B17D4D7163239280B1B23E",
+					"name": "self",
+					"direction": "Input",
+					"type": "object|/Script/Engine.GameplayStatics",
+					"defaultValue": "/Script/Engine.Default__GameplayStatics"
+				},
+				{
+					"pinId": "C702326B40213F82F43541B206EE5405",
+					"name": "WorldContextObject",
+					"direction": "Input",
+					"type": "object|/Script/CoreUObject.Object|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "5FAACBAD497F0BED1A71BBB776FABED9",
+					"name": "Sound",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SoundBase",
+					"defaultValue": "/Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Sound/Rifle/Wavs/Rifle_AmmoPickup.Rifle_AmmoPickup"
+				},
+				{
+					"pinId": "70EFB850464271E08D922D94A1B023C3",
+					"name": "VolumeMultiplier",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "1.000000"
+				},
+				{
+					"pinId": "3A2981614592E636FCA16CB889DBD10A",
+					"name": "PitchMultiplier",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "1.000000"
+				},
+				{
+					"pinId": "5B2FA3E14F443B6DFBE173A892C073AE",
+					"name": "StartTime",
+					"direction": "Input",
+					"type": "real|float",
+					"defaultValue": "0.000000"
+				},
+				{
+					"pinId": "62709D7D4166C757E62FF7B73D4FA474",
+					"name": "ConcurrencySettings",
+					"direction": "Input",
+					"type": "object|/Script/Engine.SoundConcurrency",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "708472E14A380C9322D9B9980CF1E2EF",
+					"name": "OwningActor",
+					"direction": "Input",
+					"type": "object|/Script/Engine.Actor|const",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "2B9A8F5B47323617103DBA8CBCBD8106",
+					"name": "bIsUISound",
+					"direction": "Input",
+					"type": "bool",
+					"defaultValue": "true"
+				}
+			]
 		}
 	],
 	"edges": [
@@ -916,8 +1007,8 @@
 			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_AmmoPickUp",
 			"graph": "CollectAmmo",
 			"edgeType": "exec",
-			"fromNodeGuid": "EF6596E34566BB9070068281DCB0BA65",
-			"fromPinId": "5B5989E34C718C7342E8ACA4D2A985ED",
+			"fromNodeGuid": "D3B47D70447EBCB1277D9C98FC0EC718",
+			"fromPinId": "5FFFD1324A3915FC20F32682D76F587D",
 			"fromPinName": "then",
 			"toNodeGuid": "D91FACDE408F36D0CB68828464E25593",
 			"toPinId": "2E28B8C543AEC1D88E7A2B8319F5CA12",
@@ -1014,6 +1105,17 @@
 		{
 			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_AmmoPickUp",
 			"graph": "CollectAmmo",
+			"edgeType": "exec",
+			"fromNodeGuid": "EF6596E34566BB9070068281DCB0BA65",
+			"fromPinId": "5B5989E34C718C7342E8ACA4D2A985ED",
+			"fromPinName": "then",
+			"toNodeGuid": "D3B47D70447EBCB1277D9C98FC0EC718",
+			"toPinId": "AA15433E40A76BCCF2F1F3A5C83C1EFF",
+			"toPinName": "execute"
+		},
+		{
+			"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_AmmoPickUp",
+			"graph": "CollectAmmo",
 			"edgeType": "data",
 			"fromNodeGuid": "D9163DDA4324262B2485828178106764",
 			"fromPinId": "D418CA174532580CD0C83DAF759940DC",
@@ -1048,6 +1150,7 @@
 		"Aggiungi",
 		"Destroy Actor\nLa destinazione è Actor",
 		"Get Player Character",
+		"Play Sound 2D",
 		"Reload Current Weapon\nLa destinazione è ALS Chuck BP",
 		"Trova",
 		"Update Weapon Display\nLa destinazione è WBP HUD"
@@ -1059,6 +1162,7 @@
 		"Cast To ALS_ChuckBP",
 		"Destroy Actor\nLa destinazione è Actor",
 		"Get Player Character",
+		"Play Sound 2D",
 		"Reload Current Weapon\nLa destinazione è ALS Chuck BP",
 		"Trova",
 		"Update Weapon Display\nLa destinazione è WBP HUD"

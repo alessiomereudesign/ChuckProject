@@ -2,7 +2,7 @@
 	"assetName": "BP_WeaponBase",
 	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase",
 	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"variables": [
 		{
 			"name": "WeaponData",
@@ -32,6 +32,26 @@
 		{
 			"name": "AttachRotationOffset",
 			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		},
+		{
+			"name": "AimPoint",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "ProjectileRotation",
+			"type": "struct|/Script/CoreUObject.Rotator",
+			"defaultValue": ""
+		},
+		{
+			"name": "ProjectileSpawnLocation",
+			"type": "struct|/Script/CoreUObject.Vector",
+			"defaultValue": ""
+		},
+		{
+			"name": "MuzzleLocation",
+			"type": "struct|/Script/CoreUObject.Vector",
 			"defaultValue": ""
 		}
 	]

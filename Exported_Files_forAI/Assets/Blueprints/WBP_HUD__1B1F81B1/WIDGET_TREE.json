@@ -2,7 +2,7 @@
 	"assetName": "WBP_HUD",
 	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD.WBP_HUD",
 	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_01_HUD_WBP_HUD",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"widgets": [
 		{
 			"name": "Set Brush from Texture\nLa destinazione è Immagine",

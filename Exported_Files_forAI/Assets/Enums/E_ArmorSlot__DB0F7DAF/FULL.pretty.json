@@ -6,7 +6,7 @@
 	"assetName": "E_ArmorSlot",
 	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/Armor/E_ArmorSlot.E_ArmorSlot",
 	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_Armor_E_ArmorSlot",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"assetType": "Enum",
 	"unrealClass": "UserDefinedEnum",
 	"values": [

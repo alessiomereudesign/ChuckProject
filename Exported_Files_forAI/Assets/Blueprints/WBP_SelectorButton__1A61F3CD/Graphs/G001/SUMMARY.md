@@ -2,7 +2,7 @@
 
 Type: EventGraph
 Nodes: 25
-Edges: 22
+Edges: 23
 
 ## Entry Nodes
 - Evento Construct

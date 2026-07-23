@@ -1,8 +1,8 @@
 # EventGraph
 
 Type: EventGraph
-Nodes: 108
-Edges: 161
+Nodes: 100
+Edges: 143
 
 ## Entry Nodes
 - EquipAndClose

@@ -2,7 +2,7 @@
 	"assetName": "WBP_CustomRadialMenu",
 	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/2_MENU_RAPIDO/WBP_CustomRadialMenu.WBP_CustomRadialMenu",
 	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_2_MENU_RAPIDO_WBP_CustomRadialMenu",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"widgets": [
 		{
 			"name": "Remove from Parent\nLa destinazione è Widget",
@@ -13,48 +13,6 @@
 		},
 		{
 			"name": "Get Owning Player\nLa destinazione è Widget",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"isVariable": true,
-			"events": []
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Widget",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"isVariable": true,
-			"events": []
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Widget",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"isVariable": true,
-			"events": []
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Widget",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"isVariable": true,
-			"events": []
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Widget",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"isVariable": true,
-			"events": []
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Widget",
-			"class": "K2Node_CallFunction",
-			"parent": "",
-			"isVariable": true,
-			"events": []
-		},
-		{
-			"name": "Set Visibility\nLa destinazione è Widget",
 			"class": "K2Node_CallFunction",
 			"parent": "",
 			"isVariable": true,

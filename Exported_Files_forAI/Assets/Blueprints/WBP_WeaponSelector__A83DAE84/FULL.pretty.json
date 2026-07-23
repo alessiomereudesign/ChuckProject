@@ -6,7 +6,7 @@
 	"assetName": "WBP_WeaponSelector",
 	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector.WBP_WeaponSelector",
 	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_WeaponSelector",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"assetType": "Blueprint",
 	"unrealClass": "WidgetBlueprint",
 	"mainClass": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector.WBP_WeaponSelector_C",
@@ -1721,8 +1721,8 @@
 					"class": "K2Node_CustomEvent",
 					"title": "EquipAndClose\nCustom Event",
 					"comment": "",
-					"x": 240,
-					"y": 2480,
+					"x": 368,
+					"y": 2672,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -1756,8 +1756,8 @@
 					"class": "K2Node_IfThenElse",
 					"title": "Ramo",
 					"comment": "",
-					"x": 432,
-					"y": 2496,
+					"x": 560,
+					"y": 2688,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -1798,8 +1798,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get IsWeapon?",
 					"comment": "",
-					"x": 448,
-					"y": 2608,
+					"x": 576,
+					"y": 2800,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -1822,236 +1822,12 @@
 					]
 				},
 				{
-					"nodeGuid": "359DE9F84EBEDC6D360F16BDABF4C726",
-					"class": "K2Node_SwitchEnum",
-					"title": "Switch on E_WeaponSlot",
-					"comment": "",
-					"x": 704,
-					"y": 2192,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "FD07F74E48AD7FB7491A0C996A57E5CC",
-							"name": "execute",
-							"direction": "Input",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "8A76AA2A41E1E6B12E181A80935427DC",
-							"name": "Selection",
-							"direction": "Input",
-							"type": "byte|/Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot.E_WeaponSlot",
-							"defaultValue": "NewEnumerator0"
-						},
-						{
-							"pinId": "CBC4F0344BE2590437CA67A0F9B17900",
-							"name": "NotEqual_ByteByte",
-							"direction": "Input",
-							"type": "object|/Script/Engine.KismetMathLibrary",
-							"defaultValue": "/Script/Engine.Default__KismetMathLibrary"
-						},
-						{
-							"pinId": "325D78DF4341A8FD80AD3A9D7720398F",
-							"name": "NewEnumerator0",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "FA331B8C420D3F8F837BF796F866567E",
-							"name": "NewEnumerator1",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "7890F0EE46F93562F4E089B00AA9020F",
-							"name": "NewEnumerator2",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "E42130CD4FCA491948EFFFA7A045E8E0",
-							"name": "NewEnumerator3",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "F6099B2740654971A487F79EE5A7FC5A",
-							"name": "NewEnumerator5",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "8A93ACFB4068F2EFE8CCABB1B823A84F",
-					"class": "K2Node_VariableGet",
-					"title": "Get TargetWeaponSlot",
-					"comment": "",
-					"x": 480,
-					"y": 2247,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "B905D7AD4D4752CB08FB84A7E733DABE",
-							"name": "TargetWeaponSlot",
-							"direction": "Output",
-							"type": "byte|/Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot.E_WeaponSlot",
-							"defaultValue": "NewEnumerator0"
-						},
-						{
-							"pinId": "9ED870D345E3CF2E764A6BB8DF622892",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector.WBP_WeaponSelector_C",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "1C8EBF4C460EB07CECA0E6ACABD54772",
-					"class": "K2Node_VariableGet",
-					"title": "Get As ChuckRef",
-					"comment": "",
-					"x": 1040,
-					"y": 2693,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "6769F6EC454017039C5B1FAEE8C3F67D",
-							"name": "As ChuckRef",
-							"direction": "Output",
-							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "A84C088649D64B8AF0CB2CAE2730CA01",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector.WBP_WeaponSelector_C",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "BF2AEF4247BF372322698DA08EE06FC2",
-					"class": "K2Node_VariableSet",
-					"title": "Set Equipped_SmallFirearm",
-					"comment": "",
-					"x": 1616,
-					"y": 2240,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "889907774C1AE425671FCF85D151FCCA",
-							"name": "execute",
-							"direction": "Input",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "A59456B64AFBB968C0F4FD9F10AABA29",
-							"name": "then",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "7DE6814D423B93913707E9B774E82458",
-							"name": "Equipped_SmallFirearm",
-							"direction": "Input",
-							"type": "name",
-							"defaultValue": "None"
-						},
-						{
-							"pinId": "76BDC92F4C367E0705FE22933BC8266E",
-							"name": "Output_Get",
-							"direction": "Output",
-							"type": "name",
-							"defaultValue": "None"
-						},
-						{
-							"pinId": "01AA6A764454D6EB19B23286702A6E38",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "1801B2FD43AA9E83EFBC5DB3477B4711",
-					"class": "K2Node_VariableSet",
-					"title": "Set Equipped_Melee",
-					"comment": "",
-					"x": 1616,
-					"y": 2368,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "8F73BF194F3D09C201A55280648D4B73",
-							"name": "execute",
-							"direction": "Input",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "A0B24BD14DE95F590006268C2C41313E",
-							"name": "then",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "3A0B0C2F45272F826A3D61A43110437D",
-							"name": "Equipped_Melee",
-							"direction": "Input",
-							"type": "name",
-							"defaultValue": "None"
-						},
-						{
-							"pinId": "43371521453A3CADF2E9B19D9846123B",
-							"name": "Output_Get",
-							"direction": "Output",
-							"type": "name",
-							"defaultValue": "None"
-						},
-						{
-							"pinId": "8B9A76884A45607BCA1EF0B92001A7E2",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
 					"nodeGuid": "76C84A574DA5B49F53DF55B88519E889",
 					"class": "K2Node_Knot",
 					"title": "Nodo di reindirizzamento",
 					"comment": "",
-					"x": 432,
-					"y": 2656,
+					"x": 560,
+					"y": 2848,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -2074,138 +1850,12 @@
 					]
 				},
 				{
-					"nodeGuid": "CCB8B447431166FF70C25486A403E4EA",
-					"class": "K2Node_Knot",
-					"title": "Nodo di reindirizzamento",
-					"comment": "",
-					"x": 1056,
-					"y": 2448,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "EE0BD16442B74CE3FE5C5E961F0F0D81",
-							"name": "InputPin",
-							"direction": "Input",
-							"type": "name",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "728071444907441F4EC37F830AE7612D",
-							"name": "OutputPin",
-							"direction": "Output",
-							"type": "name",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "0CB4F82C4D6390780AB290AB3A820476",
-					"class": "K2Node_VariableSet",
-					"title": "Set Equipped_BigWeapon",
-					"comment": "",
-					"x": 1616,
-					"y": 2496,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "9579D162433BC7836D612199D17FD2E5",
-							"name": "execute",
-							"direction": "Input",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "29C06FA84C15E5A1C91CA98EF35BFCCA",
-							"name": "then",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "A5FB5C0142DA1F5B12F0A7BF8BFC8F2B",
-							"name": "Equipped_BigWeapon",
-							"direction": "Input",
-							"type": "name",
-							"defaultValue": "None"
-						},
-						{
-							"pinId": "AFC663E9447ECD09282092BEBF7551BD",
-							"name": "Output_Get",
-							"direction": "Output",
-							"type": "name",
-							"defaultValue": "None"
-						},
-						{
-							"pinId": "BABF89CF41A5651F36842EA2AFB40B92",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
-					"nodeGuid": "E289513348983640AA07CD822735FF2E",
-					"class": "K2Node_VariableSet",
-					"title": "Set Equipped_Item",
-					"comment": "",
-					"x": 1616,
-					"y": 2624,
-					"memberName": "",
-					"functionName": "",
-					"variableName": "",
-					"targetClass": "",
-					"pins": [
-						{
-							"pinId": "0BA4F4C3426E58BC6E16C5A915EF1F27",
-							"name": "execute",
-							"direction": "Input",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "02253A604B6453F6B88B9AA14A36AA6A",
-							"name": "then",
-							"direction": "Output",
-							"type": "exec",
-							"defaultValue": ""
-						},
-						{
-							"pinId": "04535E9D49A35687DB09A780FAD48339",
-							"name": "Equipped_Item",
-							"direction": "Input",
-							"type": "name",
-							"defaultValue": "None"
-						},
-						{
-							"pinId": "0F6ED12548BD3DD6E032DFB1AF04511C",
-							"name": "Output_Get",
-							"direction": "Output",
-							"type": "name",
-							"defaultValue": "None"
-						},
-						{
-							"pinId": "2563C16F45366CFF917581966616A392",
-							"name": "self",
-							"direction": "Input",
-							"type": "object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C",
-							"defaultValue": ""
-						}
-					]
-				},
-				{
 					"nodeGuid": "D3D2A6A246AFFDB8F440368EA1AF7ED4",
 					"class": "K2Node_SwitchEnum",
 					"title": "Switch on E_ArmorSlot",
 					"comment": "",
-					"x": 704,
-					"y": 2832,
+					"x": 864,
+					"y": 3024,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -2281,8 +1931,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get TargetArmorSlot",
 					"comment": "",
-					"x": 480,
-					"y": 2886,
+					"x": 688,
+					"y": 3078,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -2309,8 +1959,8 @@
 					"class": "K2Node_VariableSet",
 					"title": "Set EquippedHead",
 					"comment": "",
-					"x": 1616,
-					"y": 2848,
+					"x": 1520,
+					"y": 2784,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -2358,8 +2008,8 @@
 					"class": "K2Node_Knot",
 					"title": "Nodo di reindirizzamento",
 					"comment": "",
-					"x": 816,
-					"y": 2656,
+					"x": 1152,
+					"y": 2848,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -2386,8 +2036,8 @@
 					"class": "K2Node_Knot",
 					"title": "Nodo di reindirizzamento",
 					"comment": "",
-					"x": 1056,
-					"y": 3200,
+					"x": 1392,
+					"y": 3168,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -2414,8 +2064,8 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get As ChuckRef",
 					"comment": "",
-					"x": 1040,
-					"y": 3605,
+					"x": 1104,
+					"y": 3120,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -2442,8 +2092,8 @@
 					"class": "K2Node_VariableSet",
 					"title": "Set EquippedChest",
 					"comment": "",
-					"x": 1616,
-					"y": 2976,
+					"x": 1520,
+					"y": 2912,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -2491,8 +2141,8 @@
 					"class": "K2Node_VariableSet",
 					"title": "Set EquippedLegs",
 					"comment": "",
-					"x": 1616,
-					"y": 3120,
+					"x": 1520,
+					"y": 3056,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -2540,8 +2190,8 @@
 					"class": "K2Node_VariableSet",
 					"title": "Set EquippedFeet",
 					"comment": "",
-					"x": 1616,
-					"y": 3248,
+					"x": 1520,
+					"y": 3184,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -2589,8 +2239,8 @@
 					"class": "K2Node_VariableSet",
 					"title": "Set EquippedAccessory1",
 					"comment": "",
-					"x": 1616,
-					"y": 3392,
+					"x": 1520,
+					"y": 3328,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -2638,8 +2288,8 @@
 					"class": "K2Node_VariableSet",
 					"title": "Set EquippedAccessory2",
 					"comment": "",
-					"x": 1616,
-					"y": 3536,
+					"x": 1520,
+					"y": 3472,
 					"memberName": "",
 					"functionName": "",
 					"variableName": "",
@@ -2687,7 +2337,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Update Weapon Slots\nLa destinazione è WBP Menu Archive",
 					"comment": "",
-					"x": 2576,
+					"x": 2496,
 					"y": 2672,
 					"memberName": "",
 					"functionName": "",
@@ -2722,7 +2372,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Update Equipment Slots\nLa destinazione è WBP Menu Archive",
 					"comment": "",
-					"x": 2832,
+					"x": 2752,
 					"y": 2672,
 					"memberName": "",
 					"functionName": "",
@@ -2757,7 +2407,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Remove from Parent\nLa destinazione è Widget",
 					"comment": "",
-					"x": 4128,
+					"x": 4048,
 					"y": 2672,
 					"memberName": "",
 					"functionName": "",
@@ -2792,7 +2442,7 @@
 					"class": "K2Node_Self",
 					"title": "Auto-riferimento",
 					"comment": "",
-					"x": 4144,
+					"x": 4064,
 					"y": 2816,
 					"memberName": "",
 					"functionName": "",
@@ -3471,7 +3121,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get MenuArchiveRef",
 					"comment": "",
-					"x": 2080,
+					"x": 2000,
 					"y": 2838,
 					"memberName": "",
 					"functionName": "",
@@ -3499,7 +3149,7 @@
 					"class": "K2Node_Knot",
 					"title": "Nodo di reindirizzamento",
 					"comment": "",
-					"x": 2736,
+					"x": 2656,
 					"y": 2848,
 					"memberName": "",
 					"functionName": "",
@@ -3527,7 +3177,7 @@
 					"class": "K2Node_Knot",
 					"title": "Nodo di reindirizzamento",
 					"comment": "",
-					"x": 2192,
+					"x": 2112,
 					"y": 2722,
 					"memberName": "",
 					"functionName": "",
@@ -3555,7 +3205,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Set Is Enabled\nLa destinazione è Widget",
 					"comment": "",
-					"x": 3088,
+					"x": 3008,
 					"y": 2672,
 					"memberName": "",
 					"functionName": "",
@@ -3597,7 +3247,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get InventoryTab",
 					"comment": "",
-					"x": 2768,
+					"x": 2688,
 					"y": 2912,
 					"memberName": "",
 					"functionName": "",
@@ -3625,7 +3275,7 @@
 					"class": "K2Node_MacroInstance",
 					"title": "Is Valid",
 					"comment": "",
-					"x": 3360,
+					"x": 3280,
 					"y": 2688,
 					"memberName": "",
 					"functionName": "",
@@ -3667,7 +3317,7 @@
 					"class": "K2Node_Knot",
 					"title": "Nodo di reindirizzamento",
 					"comment": "",
-					"x": 3040,
+					"x": 2960,
 					"y": 2848,
 					"memberName": "",
 					"functionName": "",
@@ -3695,7 +3345,7 @@
 					"class": "K2Node_VariableGet",
 					"title": "Get LastClickedButton",
 					"comment": "",
-					"x": 3104,
+					"x": 3024,
 					"y": 2912,
 					"memberName": "",
 					"functionName": "",
@@ -3723,7 +3373,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Set User Focus\nLa destinazione è Widget",
 					"comment": "",
-					"x": 3616,
+					"x": 3536,
 					"y": 2672,
 					"memberName": "",
 					"functionName": "",
@@ -3765,7 +3415,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Get Owning Player\nLa destinazione è Widget",
 					"comment": "",
-					"x": 3312,
+					"x": 3232,
 					"y": 2960,
 					"memberName": "",
 					"functionName": "",
@@ -3793,7 +3443,7 @@
 					"class": "K2Node_Knot",
 					"title": "Nodo di reindirizzamento",
 					"comment": "",
-					"x": 3424,
+					"x": 3344,
 					"y": 2921,
 					"memberName": "",
 					"functionName": "",
@@ -3821,7 +3471,7 @@
 					"class": "K2Node_VariableSet",
 					"title": "Set ActiveWeaponSelectorRef",
 					"comment": "",
-					"x": 3824,
+					"x": 3744,
 					"y": 2704,
 					"memberName": "",
 					"functionName": "",
@@ -3870,7 +3520,7 @@
 					"class": "K2Node_Knot",
 					"title": "Nodo di reindirizzamento",
 					"comment": "",
-					"x": 3776,
+					"x": 3696,
 					"y": 2848,
 					"memberName": "",
 					"functionName": "",
@@ -3898,7 +3548,7 @@
 					"class": "K2Node_MacroInstance",
 					"title": "Is Valid",
 					"comment": "",
-					"x": 2256,
+					"x": 2176,
 					"y": 2688,
 					"memberName": "",
 					"functionName": "",
@@ -3940,7 +3590,7 @@
 					"class": "K2Node_Knot",
 					"title": "Nodo di reindirizzamento",
 					"comment": "",
-					"x": 2512,
+					"x": 2432,
 					"y": 2848,
 					"memberName": "",
 					"functionName": "",
@@ -3968,7 +3618,7 @@
 					"class": "K2Node_CallFunction",
 					"title": "Remove from Parent\nLa destinazione è Widget",
 					"comment": "",
-					"x": 2464,
+					"x": 2384,
 					"y": 2992,
 					"memberName": "",
 					"functionName": "",
@@ -4824,9 +4474,9 @@
 					"fromNodeGuid": "0E9DC61C4EB31A2E4795D895C9AA9FBC",
 					"fromPinId": "38F3C07548B0B485F5A4FF9398C30F8E",
 					"fromPinName": "then",
-					"toNodeGuid": "359DE9F84EBEDC6D360F16BDABF4C726",
-					"toPinId": "FD07F74E48AD7FB7491A0C996A57E5CC",
-					"toPinName": "execute"
+					"toNodeGuid": "47D2C57849E01F39AAB37796FE303AF9",
+					"toPinId": "1A98971E4801BECCE6DA74957FF76834",
+					"toPinName": "InputPin"
 				},
 				{
 					"fromNodeGuid": "0E9DC61C4EB31A2E4795D895C9AA9FBC",
@@ -4837,155 +4487,11 @@
 					"toPinName": "execute"
 				},
 				{
-					"fromNodeGuid": "8A93ACFB4068F2EFE8CCABB1B823A84F",
-					"fromPinId": "B905D7AD4D4752CB08FB84A7E733DABE",
-					"fromPinName": "TargetWeaponSlot",
-					"toNodeGuid": "359DE9F84EBEDC6D360F16BDABF4C726",
-					"toPinId": "8A76AA2A41E1E6B12E181A80935427DC",
-					"toPinName": "Selection"
-				},
-				{
-					"fromNodeGuid": "359DE9F84EBEDC6D360F16BDABF4C726",
-					"fromPinId": "FA331B8C420D3F8F837BF796F866567E",
-					"fromPinName": "NewEnumerator1",
-					"toNodeGuid": "BF2AEF4247BF372322698DA08EE06FC2",
-					"toPinId": "889907774C1AE425671FCF85D151FCCA",
-					"toPinName": "execute"
-				},
-				{
-					"fromNodeGuid": "359DE9F84EBEDC6D360F16BDABF4C726",
-					"fromPinId": "7890F0EE46F93562F4E089B00AA9020F",
-					"fromPinName": "NewEnumerator2",
-					"toNodeGuid": "1801B2FD43AA9E83EFBC5DB3477B4711",
-					"toPinId": "8F73BF194F3D09C201A55280648D4B73",
-					"toPinName": "execute"
-				},
-				{
-					"fromNodeGuid": "359DE9F84EBEDC6D360F16BDABF4C726",
-					"fromPinId": "E42130CD4FCA491948EFFFA7A045E8E0",
-					"fromPinName": "NewEnumerator3",
-					"toNodeGuid": "0CB4F82C4D6390780AB290AB3A820476",
-					"toPinId": "9579D162433BC7836D612199D17FD2E5",
-					"toPinName": "execute"
-				},
-				{
-					"fromNodeGuid": "359DE9F84EBEDC6D360F16BDABF4C726",
-					"fromPinId": "F6099B2740654971A487F79EE5A7FC5A",
-					"fromPinName": "NewEnumerator5",
-					"toNodeGuid": "E289513348983640AA07CD822735FF2E",
-					"toPinId": "0BA4F4C3426E58BC6E16C5A915EF1F27",
-					"toPinName": "execute"
-				},
-				{
-					"fromNodeGuid": "1C8EBF4C460EB07CECA0E6ACABD54772",
-					"fromPinId": "6769F6EC454017039C5B1FAEE8C3F67D",
-					"fromPinName": "As ChuckRef",
-					"toNodeGuid": "BF2AEF4247BF372322698DA08EE06FC2",
-					"toPinId": "01AA6A764454D6EB19B23286702A6E38",
-					"toPinName": "self"
-				},
-				{
-					"fromNodeGuid": "1C8EBF4C460EB07CECA0E6ACABD54772",
-					"fromPinId": "6769F6EC454017039C5B1FAEE8C3F67D",
-					"fromPinName": "As ChuckRef",
-					"toNodeGuid": "1801B2FD43AA9E83EFBC5DB3477B4711",
-					"toPinId": "8B9A76884A45607BCA1EF0B92001A7E2",
-					"toPinName": "self"
-				},
-				{
-					"fromNodeGuid": "1C8EBF4C460EB07CECA0E6ACABD54772",
-					"fromPinId": "6769F6EC454017039C5B1FAEE8C3F67D",
-					"fromPinName": "As ChuckRef",
-					"toNodeGuid": "0CB4F82C4D6390780AB290AB3A820476",
-					"toPinId": "BABF89CF41A5651F36842EA2AFB40B92",
-					"toPinName": "self"
-				},
-				{
-					"fromNodeGuid": "1C8EBF4C460EB07CECA0E6ACABD54772",
-					"fromPinId": "6769F6EC454017039C5B1FAEE8C3F67D",
-					"fromPinName": "As ChuckRef",
-					"toNodeGuid": "E289513348983640AA07CD822735FF2E",
-					"toPinId": "2563C16F45366CFF917581966616A392",
-					"toPinName": "self"
-				},
-				{
-					"fromNodeGuid": "BF2AEF4247BF372322698DA08EE06FC2",
-					"fromPinId": "A59456B64AFBB968C0F4FD9F10AABA29",
-					"fromPinName": "then",
-					"toNodeGuid": "47D2C57849E01F39AAB37796FE303AF9",
-					"toPinId": "1A98971E4801BECCE6DA74957FF76834",
-					"toPinName": "InputPin"
-				},
-				{
-					"fromNodeGuid": "CCB8B447431166FF70C25486A403E4EA",
-					"fromPinId": "728071444907441F4EC37F830AE7612D",
-					"fromPinName": "OutputPin",
-					"toNodeGuid": "BF2AEF4247BF372322698DA08EE06FC2",
-					"toPinId": "7DE6814D423B93913707E9B774E82458",
-					"toPinName": "Equipped_SmallFirearm"
-				},
-				{
-					"fromNodeGuid": "1801B2FD43AA9E83EFBC5DB3477B4711",
-					"fromPinId": "A0B24BD14DE95F590006268C2C41313E",
-					"fromPinName": "then",
-					"toNodeGuid": "47D2C57849E01F39AAB37796FE303AF9",
-					"toPinId": "1A98971E4801BECCE6DA74957FF76834",
-					"toPinName": "InputPin"
-				},
-				{
-					"fromNodeGuid": "CCB8B447431166FF70C25486A403E4EA",
-					"fromPinId": "728071444907441F4EC37F830AE7612D",
-					"fromPinName": "OutputPin",
-					"toNodeGuid": "1801B2FD43AA9E83EFBC5DB3477B4711",
-					"toPinId": "3A0B0C2F45272F826A3D61A43110437D",
-					"toPinName": "Equipped_Melee"
-				},
-				{
 					"fromNodeGuid": "76C84A574DA5B49F53DF55B88519E889",
 					"fromPinId": "C5AE8D214E916E81095F8782D1029718",
 					"fromPinName": "OutputPin",
 					"toNodeGuid": "9C376CBC481F16950EC4DBA007A70C26",
 					"toPinId": "F426A87E4AEF3F86B204529F0143C556",
-					"toPinName": "InputPin"
-				},
-				{
-					"fromNodeGuid": "9C376CBC481F16950EC4DBA007A70C26",
-					"fromPinId": "6BEBB3E04CA2B5FD8E86A487E8F65E80",
-					"fromPinName": "OutputPin",
-					"toNodeGuid": "CCB8B447431166FF70C25486A403E4EA",
-					"toPinId": "EE0BD16442B74CE3FE5C5E961F0F0D81",
-					"toPinName": "InputPin"
-				},
-				{
-					"fromNodeGuid": "CCB8B447431166FF70C25486A403E4EA",
-					"fromPinId": "728071444907441F4EC37F830AE7612D",
-					"fromPinName": "OutputPin",
-					"toNodeGuid": "0CB4F82C4D6390780AB290AB3A820476",
-					"toPinId": "A5FB5C0142DA1F5B12F0A7BF8BFC8F2B",
-					"toPinName": "Equipped_BigWeapon"
-				},
-				{
-					"fromNodeGuid": "CCB8B447431166FF70C25486A403E4EA",
-					"fromPinId": "728071444907441F4EC37F830AE7612D",
-					"fromPinName": "OutputPin",
-					"toNodeGuid": "E289513348983640AA07CD822735FF2E",
-					"toPinId": "04535E9D49A35687DB09A780FAD48339",
-					"toPinName": "Equipped_Item"
-				},
-				{
-					"fromNodeGuid": "0CB4F82C4D6390780AB290AB3A820476",
-					"fromPinId": "29C06FA84C15E5A1C91CA98EF35BFCCA",
-					"fromPinName": "then",
-					"toNodeGuid": "47D2C57849E01F39AAB37796FE303AF9",
-					"toPinId": "1A98971E4801BECCE6DA74957FF76834",
-					"toPinName": "InputPin"
-				},
-				{
-					"fromNodeGuid": "E289513348983640AA07CD822735FF2E",
-					"fromPinId": "02253A604B6453F6B88B9AA14A36AA6A",
-					"fromPinName": "then",
-					"toNodeGuid": "47D2C57849E01F39AAB37796FE303AF9",
-					"toPinId": "1A98971E4801BECCE6DA74957FF76834",
 					"toPinName": "InputPin"
 				},
 				{
@@ -5689,9 +5195,9 @@
 		"complexity":
 		{
 			"graphCount": 1,
-			"nodeCount": 108,
-			"pinCount": 392,
-			"linkCount": 161
+			"nodeCount": 100,
+			"pinCount": 358,
+			"linkCount": 143
 		},
 		"notes": [
 			"Classificazione euristica dedotta da nome, path e tipo asset (UI / Widgets)."

@@ -5,8 +5,8 @@
 	"type": "Function",
 	"graphType": "Function",
 	"graphGuid": "",
-	"nodeCount": 5,
-	"edgeCount": 10,
+	"nodeCount": 33,
+	"edgeCount": 44,
 	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json",
 	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/NODES.jsonl",
 	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/EDGES.jsonl",
@@ -19,7 +19,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Flows/G015/F001.json",
 			"textFile": "Flows/G015/F001.txt",
 			"jsonFile": "Flows/G015/F001.json",
-			"nodeCount": 5
+			"nodeCount": 33
 		}
 	]
 }

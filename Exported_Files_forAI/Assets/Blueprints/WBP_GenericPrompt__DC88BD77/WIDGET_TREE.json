@@ -2,7 +2,7 @@
 	"assetName": "WBP_GenericPrompt",
 	"assetPath": "/Game/ChuckContent/Blueprints/WBP_GenericPrompt.WBP_GenericPrompt",
 	"assetKey": "Game_ChuckContent_Blueprints_WBP_GenericPrompt",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"widgets": [
 		{
 			"name": "SetText (Text)\nLa destinazione è Testo",

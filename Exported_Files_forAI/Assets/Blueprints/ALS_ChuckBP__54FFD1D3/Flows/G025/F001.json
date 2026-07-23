@@ -311,94 +311,10 @@
 					"defaultValue": ""
 				},
 				{
-					"pinId": "F5D9D267440A56A7BB12AC98FFAD9A22",
-					"name": "TraceRadius_118_B0D837064F49FEDF1DD885AF55D54B84",
-					"direction": "Output",
-					"type": "real|double",
-					"defaultValue": ""
-				},
-				{
 					"pinId": "EAAAA71A4B7DFB8C242ED0BBE73D3300",
 					"name": "MuzzleFX_88_427443474634B234F9B526A88FA4E232",
 					"direction": "Output",
 					"type": "object|/Script/Engine.ParticleSystem",
-					"defaultValue": ""
-				},
-				{
-					"pinId": "C66E0847470D202AC55D369BBA5A1043",
-					"name": "TrailFX_94_7630F88044032394DFE85B8471864128",
-					"direction": "Output",
-					"type": "object|/Script/Engine.ParticleSystem",
-					"defaultValue": ""
-				},
-				{
-					"pinId": "CD35B9714C3BBC0E53475B992575815E",
-					"name": "ImpactFX_97_3AF5DF2E4B6DB5A236B80096D754596A",
-					"direction": "Output",
-					"type": "object|/Script/Engine.ParticleSystem",
-					"defaultValue": ""
-				},
-				{
-					"pinId": "08E0490E4AAD42F97334B889ACAE9CE6",
-					"name": "ExplosionFX_98_C2595F5940DECE86B2E3EBB60841AE77",
-					"direction": "Output",
-					"type": "object|/Script/Engine.ParticleSystem",
-					"defaultValue": ""
-				},
-				{
-					"pinId": "29D219D640B27AD5648EBEA6451BD67A",
-					"name": "ProjectileClass_110_7D027F1643A36111E2428D94852EFD7D",
-					"direction": "Output",
-					"type": "class|/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData_C",
-					"defaultValue": ""
-				},
-				{
-					"pinId": "CB97FF5B448C1FB0CA9EA9B186976B79",
-					"name": "bUsesProjectile_102_79A168584A8CB2ACF8A3B9A5AE4962E0",
-					"direction": "Output",
-					"type": "bool",
-					"defaultValue": ""
-				},
-				{
-					"pinId": "26E0F62A4F7B269D928B0B8A492BF7A2",
-					"name": "ProjectileMesh_105_746AFA884B46AC4393B21CB5A81561E8",
-					"direction": "Output",
-					"type": "object|/Script/Engine.StaticMesh",
-					"defaultValue": ""
-				},
-				{
-					"pinId": "EFBC308744F921A59873C5B97D042978",
-					"name": "ProjectileSpeed_108_AF0BF6D24C5C79648E94E8A1524BC6D5",
-					"direction": "Output",
-					"type": "real|double",
-					"defaultValue": ""
-				},
-				{
-					"pinId": "9CB7CF6C4DD1B76CF08A329467BABB94",
-					"name": "AmmoType_115_D22F449C48769E5D871EEC991DAEE4F4",
-					"direction": "Output",
-					"type": "byte|/Game/ChuckContent/Systems/Weapons/Data/E_AmmoType.E_AmmoType",
-					"defaultValue": ""
-				},
-				{
-					"pinId": "6DB4731F42695E29E82FCDA159819088",
-					"name": "AttachLocationOffset_125_EFAC370C4A59E2A8C4F582A3CEADE4C1",
-					"direction": "Output",
-					"type": "struct|/Script/CoreUObject.Vector",
-					"defaultValue": ""
-				},
-				{
-					"pinId": "A195919D441BD40803BA16BC3F96133D",
-					"name": "AttachRotationOffset_127_A2C74BBA40F18D52039342AA7D76FDFC",
-					"direction": "Output",
-					"type": "struct|/Script/CoreUObject.Rotator",
-					"defaultValue": ""
-				},
-				{
-					"pinId": "BA0FBF594F8F85461BCDB1AF29B16869",
-					"name": "AttachScaleOffset_126_122F9C7843428F6E45FA2F822E1AEF24",
-					"direction": "Output",
-					"type": "struct|/Script/CoreUObject.Vector",
 					"defaultValue": ""
 				}
 			]

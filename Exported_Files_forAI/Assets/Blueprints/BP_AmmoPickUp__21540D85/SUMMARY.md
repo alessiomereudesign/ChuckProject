@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_AmmoPickUp.BP_AmmoPickUp
 Class: Blueprint
 Parent: /Script/Engine.Actor
-Generated: 2026-07-21T14:07:27.544Z
+Generated: 2026-07-23T10:16:32.724Z
 
 ## Variables
 - As ALS Chuck BP: object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C
@@ -15,10 +15,11 @@ Generated: 2026-07-21T14:07:27.544Z
 ## Graphs
 - GetInteractionPrompt (EdGraph): 4 nodes, 3 edges
 - EventGraph (EventGraph): 32 nodes, 38 edges
-- CollectAmmo (Function): 21 nodes, 24 edges
+- CollectAmmo (Function): 22 nodes, 25 edges
 - UserConstructionScript (Function): 1 nodes, 0 edges
 
 ## Important References
+- /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Sound/Rifle/Wavs/Rifle_AmmoPickup
 - /Game/ChuckContent/Blueprints/ALS_ChuckBP
 - /Game/ChuckContent/UI/WIDGET_MENU/01_HUD/WBP_HUD
 - /Game/ChuckContent/Blueprints/S_InteractionPrompt

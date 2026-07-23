@@ -268,7 +268,7 @@
 			"class": "K2Node_CallFunction",
 			"title": "Equip and Close\nLa destinazione è WBP Weapon Selector",
 			"comment": "",
-			"x": 1376,
+			"x": 1488,
 			"y": 544,
 			"memberName": "",
 			"functionName": "",
@@ -310,7 +310,7 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get RowName_Item",
 			"comment": "",
-			"x": 1216,
+			"x": 1328,
 			"y": 646,
 			"memberName": "",
 			"functionName": "",
@@ -334,39 +334,11 @@
 			]
 		},
 		{
-			"nodeGuid": "A4C60D064F287D5D96CE6F8475363884",
-			"class": "K2Node_VariableGet",
-			"title": "Get ParentSelectorRef",
-			"comment": "",
-			"x": 1200,
-			"y": 616,
-			"memberName": "",
-			"functionName": "",
-			"variableName": "",
-			"targetClass": "",
-			"pins": [
-				{
-					"pinId": "1C04704247A5135BBDF7CB999D3F9B92",
-					"name": "ParentSelectorRef",
-					"direction": "Output",
-					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector.WBP_WeaponSelector_C",
-					"defaultValue": ""
-				},
-				{
-					"pinId": "C92EAA724F9EBFE99B4C30ACF9C38B8F",
-					"name": "self",
-					"direction": "Input",
-					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_SelectorButton.WBP_SelectorButton_C",
-					"defaultValue": ""
-				}
-			]
-		},
-		{
 			"nodeGuid": "E71A46EA42C36C4D62C0B98126875B5E",
 			"class": "K2Node_MacroInstance",
 			"title": "Is Valid",
 			"comment": "",
-			"x": 960,
+			"x": 1104,
 			"y": 560,
 			"memberName": "",
 			"functionName": "",
@@ -408,7 +380,7 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get ParentSelectorRef",
 			"comment": "",
-			"x": 992,
+			"x": 944,
 			"y": 672,
 			"memberName": "",
 			"functionName": "",
@@ -583,8 +555,8 @@
 			"class": "K2Node_Event",
 			"title": "Evento On Added to Focus Path",
 			"comment": "",
-			"x": 0,
-			"y": 976,
+			"x": -128,
+			"y": 832,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -618,8 +590,8 @@
 			"class": "K2Node_Event",
 			"title": "Evento On Removed from Focus Path",
 			"comment": "",
-			"x": 0,
-			"y": 1200,
+			"x": -128,
+			"y": 1056,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -653,8 +625,8 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get Btn_Selector",
 			"comment": "",
-			"x": 320,
-			"y": 1032,
+			"x": 192,
+			"y": 888,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -681,8 +653,8 @@
 			"class": "K2Node_VariableGet",
 			"title": "Get Btn_Selector",
 			"comment": "",
-			"x": 304,
-			"y": 1256,
+			"x": 176,
+			"y": 1112,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -709,8 +681,8 @@
 			"class": "K2Node_CallFunction",
 			"title": "Set Background Color\nLa destinazione è Pulsante",
 			"comment": "",
-			"x": 464,
-			"y": 1184,
+			"x": 336,
+			"y": 1040,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -751,8 +723,8 @@
 			"class": "K2Node_CallFunction",
 			"title": "Set Background Color\nLa destinazione è Pulsante",
 			"comment": "",
-			"x": 464,
-			"y": 960,
+			"x": 336,
+			"y": 816,
 			"memberName": "",
 			"functionName": "",
 			"variableName": "",
@@ -934,6 +906,34 @@
 					"defaultValue": ""
 				}
 			]
+		},
+		{
+			"nodeGuid": "1BDF3F6D46B3B546773250BB5433EC56",
+			"class": "K2Node_Knot",
+			"title": "Nodo di reindirizzamento",
+			"comment": "",
+			"x": 1424,
+			"y": 681,
+			"memberName": "",
+			"functionName": "",
+			"variableName": "",
+			"targetClass": "",
+			"pins": [
+				{
+					"pinId": "E5DFCD1645C5C838164685A93A62FD62",
+					"name": "InputPin",
+					"direction": "Input",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector.WBP_WeaponSelector_C",
+					"defaultValue": ""
+				},
+				{
+					"pinId": "C0EB83114718054ED84FD1BE0F8AB18D",
+					"name": "OutputPin",
+					"direction": "Output",
+					"type": "object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector.WBP_WeaponSelector_C",
+					"defaultValue": ""
+				}
+			]
 		}
 	],
 	"edges": [
@@ -1029,9 +1029,9 @@
 			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_SelectorButton",
 			"graph": "EventGraph",
 			"edgeType": "data",
-			"fromNodeGuid": "A4C60D064F287D5D96CE6F8475363884",
-			"fromPinId": "1C04704247A5135BBDF7CB999D3F9B92",
-			"fromPinName": "ParentSelectorRef",
+			"fromNodeGuid": "1BDF3F6D46B3B546773250BB5433EC56",
+			"fromPinId": "C0EB83114718054ED84FD1BE0F8AB18D",
+			"fromPinName": "OutputPin",
 			"toNodeGuid": "8FC562B644DF473C18CA0DBACDA90DFA",
 			"toPinId": "7774752C437482C10A0CA4BC7FBC7327",
 			"toPinName": "self"
@@ -1068,6 +1068,17 @@
 			"toNodeGuid": "E71A46EA42C36C4D62C0B98126875B5E",
 			"toPinId": "8D370B9F4ACD7A28D1A520B174C9F26D",
 			"toPinName": "InputObject"
+		},
+		{
+			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_SelectorButton",
+			"graph": "EventGraph",
+			"edgeType": "data",
+			"fromNodeGuid": "EAA5345240E0A0F8503F838C7D7D2063",
+			"fromPinId": "35D8B36B414AC4A3FA90C0A59277E5AB",
+			"fromPinName": "ParentSelectorRef",
+			"toNodeGuid": "1BDF3F6D46B3B546773250BB5433EC56",
+			"toPinId": "E5DFCD1645C5C838164685A93A62FD62",
+			"toPinName": "InputPin"
 		},
 		{
 			"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_SelectorButton",

@@ -5,8 +5,8 @@
 	"type": "EventGraph",
 	"graphType": "EventGraph",
 	"graphGuid": "",
-	"nodeCount": 108,
-	"edgeCount": 161,
+	"nodeCount": 100,
+	"edgeCount": 143,
 	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Graphs/G001/INDEX.json",
 	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Graphs/G001/NODES.jsonl",
 	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Graphs/G001/EDGES.jsonl",
@@ -19,7 +19,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Flows/G001/F001.json",
 			"textFile": "Flows/G001/F001.txt",
 			"jsonFile": "Flows/G001/F001.json",
-			"nodeCount": 108
+			"nodeCount": 100
 		},
 		{
 			"flowId": "F002",
@@ -29,7 +29,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Flows/G001/F002.json",
 			"textFile": "Flows/G001/F002.txt",
 			"jsonFile": "Flows/G001/F002.json",
-			"nodeCount": 108
+			"nodeCount": 100
 		}
 	]
 }

@@ -1,6 +1,6 @@
 {
 	"schemaVersion": "2.5-ai-readable-short-paths",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"assetName": "BP_AmmoPickUp",
 	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_AmmoPickUp.BP_AmmoPickUp",
 	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_AmmoPickUp",
@@ -17,8 +17,8 @@
 		"components": 5,
 		"widgets": 0,
 		"graphs": 4,
-		"nodes": 58,
-		"edges": 65,
+		"nodes": 59,
+		"edges": 66,
 		"flows": 5
 	},
 	"files":
@@ -99,8 +99,8 @@
 			"type": "Function",
 			"graphType": "Function",
 			"graphGuid": "",
-			"nodeCount": 21,
-			"edgeCount": 24,
+			"nodeCount": 22,
+			"edgeCount": 25,
 			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/INDEX.json",
 			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/NODES.jsonl",
 			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Graphs/G003/EDGES.jsonl",
@@ -113,7 +113,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_AmmoPickUp__21540D85/Flows/G003/F001.json",
 					"textFile": "Flows/G003/F001.txt",
 					"jsonFile": "Flows/G003/F001.json",
-					"nodeCount": 21
+					"nodeCount": 22
 				}
 			]
 		},

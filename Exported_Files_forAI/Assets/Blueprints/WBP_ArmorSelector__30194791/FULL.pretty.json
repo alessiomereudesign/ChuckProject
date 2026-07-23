@@ -6,7 +6,7 @@
 	"assetName": "WBP_ArmorSelector",
 	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_ArmorSelector.WBP_ArmorSelector",
 	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_ArmorSelector",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"assetType": "Blueprint",
 	"unrealClass": "WidgetBlueprint",
 	"mainClass": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_ArmorSelector.WBP_ArmorSelector_C",

@@ -5,8 +5,8 @@
 	"type": "EventGraph",
 	"graphType": "EventGraph",
 	"graphGuid": "",
-	"nodeCount": 27,
-	"edgeCount": 30,
+	"nodeCount": 33,
+	"edgeCount": 38,
 	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Graphs/G001/INDEX.json",
 	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Graphs/G001/NODES.jsonl",
 	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Graphs/G001/EDGES.jsonl",
@@ -19,7 +19,7 @@
 			"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Flows/G001/F001.json",
 			"textFile": "Flows/G001/F001.txt",
 			"jsonFile": "Flows/G001/F001.json",
-			"nodeCount": 27
+			"nodeCount": 33
 		}
 	]
 }

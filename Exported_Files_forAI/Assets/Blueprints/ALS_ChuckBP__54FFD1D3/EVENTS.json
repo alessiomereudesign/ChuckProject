@@ -2,7 +2,7 @@
 	"assetName": "ALS_ChuckBP",
 	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP",
 	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"events": [
 		{
 			"eventName": "Get Interaction Prompt",

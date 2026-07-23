@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive
 Class: Blueprint
 Parent: /Script/UMG.UserWidget
-Generated: 2026-07-21T14:07:27.544Z
+Generated: 2026-07-23T10:16:32.724Z
 
 ## Variables
 - MenuPausaRef: object|/Game/ChuckContent/UI/WIDGET_MENU/WBP_MenuPausa.WBP_MenuPausa_C
@@ -20,7 +20,7 @@ Generated: 2026-07-21T14:07:27.544Z
 - CurrentSlot: byte|/Game/ChuckContent/Systems/Weapons/Data/E_WeaponSlot.E_WeaponSlot
 
 ## Graphs
-- EventGraph (EventGraph): 262 nodes, 302 edges
+- EventGraph (EventGraph): 278 nodes, 321 edges
 - IntersectGraph (EventGraph): 95 nodes, 103 edges
 - InventoryGraph (EventGraph): 194 nodes, 211 edges
 - OnAnalogValueChanged (Function): 26 nodes, 28 edges

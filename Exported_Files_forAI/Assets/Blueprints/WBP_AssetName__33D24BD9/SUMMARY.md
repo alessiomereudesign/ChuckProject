@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/Systems/Weapons/Blueprints/WBP_AssetName.WBP_AssetName
 Class: Blueprint
 Parent: /Script/UMG.UserWidget
-Generated: 2026-07-21T14:07:27.544Z
+Generated: 2026-07-23T10:16:32.724Z
 
 ## Variables
 - none

@@ -1,6 +1,6 @@
 {
 	"schemaVersion": "2.5-ai-readable-short-paths",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"assetName": "WBP_SelectorButton",
 	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_SelectorButton.WBP_SelectorButton",
 	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_SelectorButton",
@@ -18,7 +18,7 @@
 		"widgets": 2,
 		"graphs": 1,
 		"nodes": 25,
-		"edges": 22,
+		"edges": 23,
 		"flows": 3
 	},
 	"files":
@@ -40,7 +40,7 @@
 			"graphType": "EventGraph",
 			"graphGuid": "",
 			"nodeCount": 25,
-			"edgeCount": 22,
+			"edgeCount": 23,
 			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_SelectorButton__1A61F3CD/Graphs/G001/INDEX.json",
 			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_SelectorButton__1A61F3CD/Graphs/G001/NODES.jsonl",
 			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_SelectorButton__1A61F3CD/Graphs/G001/EDGES.jsonl",

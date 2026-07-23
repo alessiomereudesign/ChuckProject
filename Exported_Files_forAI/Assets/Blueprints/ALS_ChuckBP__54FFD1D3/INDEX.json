@@ -1,6 +1,6 @@
 {
 	"schemaVersion": "2.5-ai-readable-short-paths",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"assetName": "ALS_ChuckBP",
 	"assetPath": "/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP",
 	"assetKey": "Game_ChuckContent_Blueprints_ALS_ChuckBP",
@@ -14,11 +14,11 @@
 	"counts":
 	{
 		"variables": 93,
-		"components": 151,
+		"components": 128,
 		"widgets": 5,
 		"graphs": 30,
-		"nodes": 1520,
-		"edges": 1724,
+		"nodes": 1490,
+		"edges": 1693,
 		"flows": 55
 	},
 	"files":
@@ -139,8 +139,8 @@
 			"type": "EventGraph",
 			"graphType": "EventGraph",
 			"graphGuid": "",
-			"nodeCount": 599,
-			"edgeCount": 677,
+			"nodeCount": 569,
+			"edgeCount": 646,
 			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G003/INDEX.json",
 			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G003/NODES.jsonl",
 			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Graphs/G003/EDGES.jsonl",
@@ -153,7 +153,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F001.json",
 					"textFile": "Flows/G003/F001.txt",
 					"jsonFile": "Flows/G003/F001.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F002",
@@ -163,7 +163,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F002.json",
 					"textFile": "Flows/G003/F002.txt",
 					"jsonFile": "Flows/G003/F002.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F003",
@@ -173,7 +173,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F003.json",
 					"textFile": "Flows/G003/F003.txt",
 					"jsonFile": "Flows/G003/F003.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F004",
@@ -183,7 +183,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F004.json",
 					"textFile": "Flows/G003/F004.txt",
 					"jsonFile": "Flows/G003/F004.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F005",
@@ -193,7 +193,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F005.json",
 					"textFile": "Flows/G003/F005.txt",
 					"jsonFile": "Flows/G003/F005.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F006",
@@ -203,7 +203,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F006.json",
 					"textFile": "Flows/G003/F006.txt",
 					"jsonFile": "Flows/G003/F006.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F007",
@@ -213,7 +213,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F007.json",
 					"textFile": "Flows/G003/F007.txt",
 					"jsonFile": "Flows/G003/F007.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F008",
@@ -223,7 +223,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F008.json",
 					"textFile": "Flows/G003/F008.txt",
 					"jsonFile": "Flows/G003/F008.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F009",
@@ -233,7 +233,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F009.json",
 					"textFile": "Flows/G003/F009.txt",
 					"jsonFile": "Flows/G003/F009.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F010",
@@ -243,7 +243,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F010.json",
 					"textFile": "Flows/G003/F010.txt",
 					"jsonFile": "Flows/G003/F010.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F011",
@@ -253,7 +253,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F011.json",
 					"textFile": "Flows/G003/F011.txt",
 					"jsonFile": "Flows/G003/F011.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F012",
@@ -263,7 +263,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F012.json",
 					"textFile": "Flows/G003/F012.txt",
 					"jsonFile": "Flows/G003/F012.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F013",
@@ -273,7 +273,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F013.json",
 					"textFile": "Flows/G003/F013.txt",
 					"jsonFile": "Flows/G003/F013.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F014",
@@ -283,7 +283,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F014.json",
 					"textFile": "Flows/G003/F014.txt",
 					"jsonFile": "Flows/G003/F014.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F015",
@@ -293,7 +293,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F015.json",
 					"textFile": "Flows/G003/F015.txt",
 					"jsonFile": "Flows/G003/F015.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F016",
@@ -303,7 +303,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F016.json",
 					"textFile": "Flows/G003/F016.txt",
 					"jsonFile": "Flows/G003/F016.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F017",
@@ -313,7 +313,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F017.json",
 					"textFile": "Flows/G003/F017.txt",
 					"jsonFile": "Flows/G003/F017.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F018",
@@ -323,7 +323,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F018.json",
 					"textFile": "Flows/G003/F018.txt",
 					"jsonFile": "Flows/G003/F018.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F019",
@@ -333,7 +333,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F019.json",
 					"textFile": "Flows/G003/F019.txt",
 					"jsonFile": "Flows/G003/F019.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F020",
@@ -343,7 +343,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F020.json",
 					"textFile": "Flows/G003/F020.txt",
 					"jsonFile": "Flows/G003/F020.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				},
 				{
 					"flowId": "F021",
@@ -353,7 +353,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/ALS_ChuckBP__54FFD1D3/Flows/G003/F021.json",
 					"textFile": "Flows/G003/F021.txt",
 					"jsonFile": "Flows/G003/F021.json",
-					"nodeCount": 599
+					"nodeCount": 569
 				}
 			]
 		},

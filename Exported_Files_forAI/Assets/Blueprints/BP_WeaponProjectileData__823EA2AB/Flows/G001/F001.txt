@@ -26,23 +26,32 @@ La destinazione è Componente con mesh statica [K2Node_CallFunction] 5895340E426
 15. Destroy Actor
 La destinazione è Actor [K2Node_CallFunction] FC462BAA482C23176648BF839E1A5E57
 16. Get ExplosionFX [K2Node_VariableGet] 0E1E210B41DA2E42580C56B0341A18C3
-17. Nodo di reindirizzamento [K2Node_Knot] 07D6F0A648736C8F6A500BBEB9F7D404
-18. Nodo di reindirizzamento [K2Node_Knot] 7725112A4FB2B2FCF5BE04A36D376642
-19. On Component Hit (Sphere) [K2Node_ComponentBoundEvent] 61BB570649B88990E5F2A7AB66567BF2
-20. Set Updated Component
+17. On Component Hit (Sphere) [K2Node_ComponentBoundEvent] 61BB570649B88990E5F2A7AB66567BF2
+18. Set Updated Component
 La destinazione è Componente movimento [K2Node_CallFunction] F0AF23BC43D9833DFFC0B58EDCAECE7E
-21. Get ProjectileMovement [K2Node_VariableGet] 4ED137D942AC7F09772E27A15BB73DF4
-22. Get Sphere [K2Node_VariableGet] 5097F15148F1F346C397A386E6ABCAA6
-23. Apply Radial Damage with Falloff [K2Node_CallFunction] 370BCF1947EF6FE00B989096046FA4D2
-24. Crea array [K2Node_MakeArray] 14B8CA00434DE2B465F8648763572C87
-25. Auto-riferimento [K2Node_Self] 18D423AC4BDB5AF1A24850B7CA7AC291
-26. Get DamageRadius [K2Node_VariableGet] 402BB002490F014760DE678CD3CCC907
-27. Get Damage [K2Node_VariableGet] 57C964D74C0A704DCC6F76A79A53F30B
+19. Get ProjectileMovement [K2Node_VariableGet] 4ED137D942AC7F09772E27A15BB73DF4
+20. Get Sphere [K2Node_VariableGet] 5097F15148F1F346C397A386E6ABCAA6
+21. Apply Radial Damage with Falloff [K2Node_CallFunction] 370BCF1947EF6FE00B989096046FA4D2
+22. Crea array [K2Node_MakeArray] 14B8CA00434DE2B465F8648763572C87
+23. Auto-riferimento [K2Node_Self] 18D423AC4BDB5AF1A24850B7CA7AC291
+24. Get DamageRadius [K2Node_VariableGet] 402BB002490F014760DE678CD3CCC907
+25. Get Damage [K2Node_VariableGet] 57C964D74C0A704DCC6F76A79A53F30B
+26. Ignore Actor when Moving
+La destinazione è Componente primitivo [K2Node_CallFunction] 278D3284409BB45E2CBEBFA5D5CD2270
+27. Get Owner
+La destinazione è Actor [K2Node_CallFunction] 7A97EABA4D752195426018A4A876014A
+28. Nodo di reindirizzamento [K2Node_Knot] B13AC705423C873F02B315848687E0E7
+29. vector * vector [K2Node_PromotableOperator] DF9693E448D3A959FF7CA885A7015EC4
+30. vector + vector [K2Node_PromotableOperator] 926A93A24A81A9052BCA5D83D4C292A0
+31. Set ExplosionOrigin [K2Node_VariableSet] BA32AE6D402EA996327AF0BA2E0D9955
+32. Get ExplosionOrigin [K2Node_VariableGet] 570A294C49113B68073F2EAA060ACF50
+33. Nodo di reindirizzamento [K2Node_Knot] 502D7F334C88B15EC02512861D86366B
 
 Variables Read:
 - Get Damage
 - Get DamageRadius
 - Get ExplosionFX
+- Get ExplosionOrigin
 - Get ProjectileMesh
 - Get ProjectileMovement
 - Get ProjectileSpeed
@@ -51,6 +60,7 @@ Variables Read:
 - Get TrailFX
 
 Variables Written:
+- Set ExplosionOrigin
 - Set InitialSpeed
 - Set MaxSpeed
 
@@ -58,6 +68,10 @@ External Calls:
 - Apply Radial Damage with Falloff
 - Destroy Actor
 La destinazione è Actor
+- Get Owner
+La destinazione è Actor
+- Ignore Actor when Moving
+La destinazione è Componente primitivo
 - Set Static Mesh
 La destinazione è Componente con mesh statica
 - Set Updated Component
@@ -75,6 +89,10 @@ External Blueprint References:
 - Apply Radial Damage with Falloff
 - Destroy Actor
 La destinazione è Actor
+- Get Owner
+La destinazione è Actor
+- Ignore Actor when Moving
+La destinazione è Componente primitivo
 - Set Static Mesh
 La destinazione è Componente con mesh statica
 - Set Updated Component

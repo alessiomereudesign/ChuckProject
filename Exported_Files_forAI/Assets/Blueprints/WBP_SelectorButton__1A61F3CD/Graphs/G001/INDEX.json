@@ -6,7 +6,7 @@
 	"graphType": "EventGraph",
 	"graphGuid": "",
 	"nodeCount": 25,
-	"edgeCount": 22,
+	"edgeCount": 23,
 	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_SelectorButton__1A61F3CD/Graphs/G001/INDEX.json",
 	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_SelectorButton__1A61F3CD/Graphs/G001/NODES.jsonl",
 	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_SelectorButton__1A61F3CD/Graphs/G001/EDGES.jsonl",

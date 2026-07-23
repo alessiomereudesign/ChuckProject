@@ -2,7 +2,7 @@
 	"assetName": "BP_WeaponBase",
 	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase",
 	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponBase",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"functions": [
 		{
 			"name": "CanFire",
@@ -784,7 +784,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 5,
+			"nodeCount": 33,
 			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
 		},
 		{
@@ -793,7 +793,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 5,
+			"nodeCount": 33,
 			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
 		},
 		{
@@ -802,7 +802,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 5,
+			"nodeCount": 33,
 			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
 		},
 		{
@@ -811,7 +811,7 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 5,
+			"nodeCount": 33,
 			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
 		},
 		{
@@ -820,7 +820,259 @@
 			"inputPins": [],
 			"outputPins": [],
 			"localVariables": [],
-			"nodeCount": 5,
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
+			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
+		},
+		{
+			"name": "SpawnWeaponProjectile",
+			"graph": "SpawnWeaponProjectile",
+			"inputPins": [],
+			"outputPins": [],
+			"localVariables": [],
+			"nodeCount": 33,
 			"file": "Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G015/INDEX.json"
 		},
 		{

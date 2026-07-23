@@ -6,7 +6,7 @@
 	"assetName": "DT_Weapon",
 	"assetPath": "/Game/ChuckContent/Systems/Weapons/Data/DT_Weapon.DT_Weapon",
 	"assetKey": "Game_ChuckContent_Systems_Weapons_Data_DT_Weapon",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"assetType": "DataTable",
 	"unrealClass": "DataTable",
 	"rowStruct": "/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData",
@@ -920,7 +920,7 @@
 				"damageRadius": 400,
 				"traceRadius": 0,
 				"hitRange": 1500,
-				"fireRate": 1,
+				"fireRate": 1.5,
 				"maxMagazineCapacity": 15,
 				"currentAmmoInMagazine": 0,
 				"currentReservedAmmo": 0,
@@ -1039,7 +1039,7 @@
 				{
 					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
 					"type": "double",
-					"valueText": "1.000000"
+					"valueText": "1.500000"
 				},
 				{
 					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
@@ -1153,7 +1153,7 @@
 				"damageRadius": 3000,
 				"traceRadius": 0,
 				"hitRange": 1500,
-				"fireRate": 1,
+				"fireRate": 1.5,
 				"maxMagazineCapacity": 15,
 				"currentAmmoInMagazine": 0,
 				"currentReservedAmmo": 0,
@@ -1272,7 +1272,7 @@
 				{
 					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
 					"type": "double",
-					"valueText": "1.000000"
+					"valueText": "1.500000"
 				},
 				{
 					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
@@ -1852,7 +1852,7 @@
 				"damageRadius": 0,
 				"traceRadius": 0,
 				"hitRange": 2100,
-				"fireRate": 1,
+				"fireRate": 0.90000000000000002,
 				"maxMagazineCapacity": 12,
 				"currentAmmoInMagazine": 0,
 				"currentReservedAmmo": 0,
@@ -1971,7 +1971,7 @@
 				{
 					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
 					"type": "double",
-					"valueText": "1.000000"
+					"valueText": "0.900000"
 				},
 				{
 					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
@@ -2085,7 +2085,7 @@
 				"damageRadius": 0,
 				"traceRadius": 0,
 				"hitRange": 2100,
-				"fireRate": 1,
+				"fireRate": 0.90000000000000002,
 				"maxMagazineCapacity": 12,
 				"currentAmmoInMagazine": 0,
 				"currentReservedAmmo": 0,
@@ -2204,7 +2204,7 @@
 				{
 					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
 					"type": "double",
-					"valueText": "1.000000"
+					"valueText": "0.900000"
 				},
 				{
 					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
@@ -2318,7 +2318,7 @@
 				"damageRadius": 500,
 				"traceRadius": 0,
 				"hitRange": 8000,
-				"fireRate": 1,
+				"fireRate": 3,
 				"maxMagazineCapacity": 1,
 				"currentAmmoInMagazine": 0,
 				"currentReservedAmmo": 0,
@@ -2437,7 +2437,7 @@
 				{
 					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
 					"type": "double",
-					"valueText": "1.000000"
+					"valueText": "3.000000"
 				},
 				{
 					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
@@ -2551,7 +2551,7 @@
 				"damageRadius": 2000,
 				"traceRadius": 0,
 				"hitRange": 8000,
-				"fireRate": 1,
+				"fireRate": 3,
 				"maxMagazineCapacity": 1,
 				"currentAmmoInMagazine": 0,
 				"currentReservedAmmo": 0,
@@ -2670,7 +2670,7 @@
 				{
 					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
 					"type": "double",
-					"valueText": "1.000000"
+					"valueText": "3.000000"
 				},
 				{
 					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
@@ -2784,7 +2784,7 @@
 				"damageRadius": 0,
 				"traceRadius": 30,
 				"hitRange": 1500,
-				"fireRate": 1,
+				"fireRate": 1.3,
 				"maxMagazineCapacity": 20,
 				"currentAmmoInMagazine": 0,
 				"currentReservedAmmo": 0,
@@ -2903,7 +2903,7 @@
 				{
 					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
 					"type": "double",
-					"valueText": "1.000000"
+					"valueText": "1.300000"
 				},
 				{
 					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
@@ -3017,7 +3017,7 @@
 				"damageRadius": 0,
 				"traceRadius": 30,
 				"hitRange": 1500,
-				"fireRate": 1,
+				"fireRate": 1.3,
 				"maxMagazineCapacity": 20,
 				"currentAmmoInMagazine": 0,
 				"currentReservedAmmo": 0,
@@ -3136,7 +3136,7 @@
 				{
 					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
 					"type": "double",
-					"valueText": "1.000000"
+					"valueText": "1.300000"
 				},
 				{
 					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
@@ -3250,7 +3250,7 @@
 				"damageRadius": 0,
 				"traceRadius": 0,
 				"hitRange": 8000,
-				"fireRate": 1,
+				"fireRate": 2,
 				"maxMagazineCapacity": 1,
 				"currentAmmoInMagazine": 0,
 				"currentReservedAmmo": 0,
@@ -3369,7 +3369,7 @@
 				{
 					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
 					"type": "double",
-					"valueText": "1.000000"
+					"valueText": "2.000000"
 				},
 				{
 					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",
@@ -3483,7 +3483,7 @@
 				"damageRadius": 0,
 				"traceRadius": 0,
 				"hitRange": 8000,
-				"fireRate": 1,
+				"fireRate": 2,
 				"maxMagazineCapacity": 1,
 				"currentAmmoInMagazine": 0,
 				"currentReservedAmmo": 0,
@@ -3602,7 +3602,7 @@
 				{
 					"name": "FireRate_85_D4AF7CD849600FE131B142B9432BB57A",
 					"type": "double",
-					"valueText": "1.000000"
+					"valueText": "2.000000"
 				},
 				{
 					"name": "MaxMagazineCapacity_72_D0C5AAE44C4A57660DC71B8A4310666D",

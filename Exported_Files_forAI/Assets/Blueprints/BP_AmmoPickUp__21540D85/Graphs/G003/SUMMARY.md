@@ -1,8 +1,8 @@
 # CollectAmmo
 
 Type: Function
-Nodes: 21
-Edges: 24
+Nodes: 22
+Edges: 25
 
 ## Entry Nodes
 - Collect Ammo

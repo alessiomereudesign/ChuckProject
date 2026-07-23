@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP
 Class: Blueprint
 Parent: /Game/AdditionalContents/AdvancedLocomotionV4/Blueprints/CharacterLogic/ALS_BaseCharacterBP.ALS_BaseCharacterBP_C
-Generated: 2026-07-21T14:07:27.544Z
+Generated: 2026-07-23T10:16:32.724Z
 
 ## Variables
 - DefaultColor: struct|/Script/CoreUObject.LinearColor
@@ -103,7 +103,7 @@ Generated: 2026-07-21T14:07:27.544Z
 ## Graphs
 - GetInteractionPrompt (EdGraph): 2 nodes, 1 edges
 - AttackGraph (EventGraph): 351 nodes, 425 edges
-- EventGraph (EventGraph): 599 nodes, 677 edges
+- EventGraph (EventGraph): 569 nodes, 646 edges
 - AddWeaponToInventory (Function): 20 nodes, 23 edges
 - AttachToHand (Function): 19 nodes, 21 edges
 - BPI_Get_3P_PivotTarget (Function): 9 nodes, 9 edges
@@ -174,7 +174,6 @@ Generated: 2026-07-21T14:07:27.544Z
 - /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_CLF_GetUp_Front_Montage_RH
 - /Game/ChuckContent/Blueprints/BPI_Interaction
 - /Game/AdditionalContents/AdvancedLocomotionV4/Data/Curves/MantleCurves/Mantle_1m
-- /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData
 - /Game/ChuckContent/Systems/Weapons/Data/E_AmmoType
 - /Game/AdditionalContents/AdvancedLocomotionV4/CharacterAssets/MannequinSkeleton/AnimationExamples/Actions/ALS_N_Mantle_1m_Montage_LH
 - /Game/AdditionalContents/_WeaponsPacks/MilitaryWeapDark/Sound/Knife/Wavs/Knife_ImpactBody01

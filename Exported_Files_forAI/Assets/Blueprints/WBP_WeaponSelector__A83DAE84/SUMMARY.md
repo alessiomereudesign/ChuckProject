@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector.WBP_WeaponSelector
 Class: Blueprint
 Parent: /Script/UMG.UserWidget
-Generated: 2026-07-21T14:07:27.544Z
+Generated: 2026-07-23T10:16:32.724Z
 
 ## Variables
 - As ChuckRef: object|/Game/ChuckContent/Blueprints/ALS_ChuckBP.ALS_ChuckBP_C
@@ -14,7 +14,7 @@ Generated: 2026-07-21T14:07:27.544Z
 - MenuArchiveRef: object|/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/WBP_MenuArchive.WBP_MenuArchive_C
 
 ## Graphs
-- EventGraph (EventGraph): 108 nodes, 161 edges
+- EventGraph (EventGraph): 100 nodes, 143 edges
 
 ## Important References
 - /Game/ChuckContent/Systems/Weapons/Data/S_WeaponData

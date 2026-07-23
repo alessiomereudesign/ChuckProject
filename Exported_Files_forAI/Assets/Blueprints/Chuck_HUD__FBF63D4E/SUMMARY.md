@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/UI/Interfaces/Chuck_HUD.Chuck_HUD
 Class: Blueprint
 Parent: /Script/Engine.HUD
-Generated: 2026-07-21T14:07:27.544Z
+Generated: 2026-07-23T10:16:32.724Z
 
 ## Variables
 - Wdg Tip: object|/Game/ChuckContent/UI/Interfaces/WBP_Tip.WBP_Tip_C

@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponPickUp.BP_WeaponPickUp
 Class: Blueprint
 Parent: /Script/Engine.Actor
-Generated: 2026-07-21T14:07:27.544Z
+Generated: 2026-07-23T10:16:32.724Z
 
 ## Variables
 - Pickup_RowName: name

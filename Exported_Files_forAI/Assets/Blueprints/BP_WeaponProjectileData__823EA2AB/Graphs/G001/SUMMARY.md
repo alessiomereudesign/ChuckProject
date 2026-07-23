@@ -1,8 +1,8 @@
 # EventGraph
 
 Type: EventGraph
-Nodes: 27
-Edges: 30
+Nodes: 33
+Edges: 38
 
 ## Entry Nodes
 - Evento BeginPlay

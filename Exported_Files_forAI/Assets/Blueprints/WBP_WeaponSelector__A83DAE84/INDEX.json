@@ -1,6 +1,6 @@
 {
 	"schemaVersion": "2.5-ai-readable-short-paths",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"assetName": "WBP_WeaponSelector",
 	"assetPath": "/Game/ChuckContent/UI/WIDGET_MENU/1_MENU_ARCHIVE/Equipment/WBP_WeaponSelector.WBP_WeaponSelector",
 	"assetKey": "Game_ChuckContent_UI_WIDGET_MENU_1_MENU_ARCHIVE_Equipment_WBP_WeaponSelector",
@@ -17,8 +17,8 @@
 		"components": 0,
 		"widgets": 18,
 		"graphs": 1,
-		"nodes": 108,
-		"edges": 161,
+		"nodes": 100,
+		"edges": 143,
 		"flows": 2
 	},
 	"files":
@@ -39,8 +39,8 @@
 			"type": "EventGraph",
 			"graphType": "EventGraph",
 			"graphGuid": "",
-			"nodeCount": 108,
-			"edgeCount": 161,
+			"nodeCount": 100,
+			"edgeCount": 143,
 			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Graphs/G001/INDEX.json",
 			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Graphs/G001/NODES.jsonl",
 			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Graphs/G001/EDGES.jsonl",
@@ -53,7 +53,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Flows/G001/F001.json",
 					"textFile": "Flows/G001/F001.txt",
 					"jsonFile": "Flows/G001/F001.json",
-					"nodeCount": 108
+					"nodeCount": 100
 				},
 				{
 					"flowId": "F002",
@@ -63,7 +63,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/WBP_WeaponSelector__A83DAE84/Flows/G001/F002.json",
 					"textFile": "Flows/G001/F002.txt",
 					"jsonFile": "Flows/G001/F002.json",
-					"nodeCount": 108
+					"nodeCount": 100
 				}
 			]
 		}

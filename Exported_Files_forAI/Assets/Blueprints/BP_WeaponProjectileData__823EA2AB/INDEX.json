@@ -1,6 +1,6 @@
 {
 	"schemaVersion": "2.5-ai-readable-short-paths",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"assetName": "BP_WeaponProjectileData",
 	"assetPath": "/Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponProjectileData.BP_WeaponProjectileData",
 	"assetKey": "Game_ChuckContent_Systems_Weapons_Blueprints_BP_WeaponProjectileData",
@@ -10,15 +10,15 @@
 	"unrealClass": "Blueprint",
 	"parentClass": "/Script/Engine.Actor",
 	"implementedInterfaces": [],
-	"compileStatus": "UpToDate",
+	"compileStatus": "Dirty",
 	"counts":
 	{
-		"variables": 6,
-		"components": 6,
+		"variables": 7,
+		"components": 7,
 		"widgets": 0,
 		"graphs": 2,
-		"nodes": 28,
-		"edges": 30,
+		"nodes": 34,
+		"edges": 38,
 		"flows": 2
 	},
 	"files":
@@ -39,8 +39,8 @@
 			"type": "EventGraph",
 			"graphType": "EventGraph",
 			"graphGuid": "",
-			"nodeCount": 27,
-			"edgeCount": 30,
+			"nodeCount": 33,
+			"edgeCount": 38,
 			"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Graphs/G001/INDEX.json",
 			"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Graphs/G001/NODES.jsonl",
 			"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Graphs/G001/EDGES.jsonl",
@@ -53,7 +53,7 @@
 					"flowJsonFile": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/Flows/G001/F001.json",
 					"textFile": "Flows/G001/F001.txt",
 					"jsonFile": "Flows/G001/F001.json",
-					"nodeCount": 27
+					"nodeCount": 33
 				}
 			]
 		},

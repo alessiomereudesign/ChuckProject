@@ -1,8 +1,8 @@
 # SpawnWeaponProjectile
 
 Type: Function
-Nodes: 5
-Edges: 10
+Nodes: 33
+Edges: 44
 
 ## Entry Nodes
 - Spawn Weapon Projectile

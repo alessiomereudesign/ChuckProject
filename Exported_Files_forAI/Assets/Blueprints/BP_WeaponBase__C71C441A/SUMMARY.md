@@ -3,7 +3,7 @@
 Path: /Game/ChuckContent/Systems/Weapons/Blueprints/BP_WeaponBase.BP_WeaponBase
 Class: Blueprint
 Parent: /Script/Engine.Actor
-Generated: 2026-07-21T14:07:27.544Z
+Generated: 2026-07-23T10:16:32.724Z
 
 ## Variables
 - WeaponData: struct|/Game/ChuckContent/Systems/Weapons/Data/S_WeaponData.S_WeaponData
@@ -12,9 +12,13 @@ Generated: 2026-07-21T14:07:27.544Z
 - AttachLocationOffset: struct|/Script/CoreUObject.Vector
 - AttachScaleOffset: struct|/Script/CoreUObject.Vector
 - AttachRotationOffset: struct|/Script/CoreUObject.Rotator
+- AimPoint: struct|/Script/CoreUObject.Vector
+- ProjectileRotation: struct|/Script/CoreUObject.Rotator
+- ProjectileSpawnLocation: struct|/Script/CoreUObject.Vector
+- MuzzleLocation: struct|/Script/CoreUObject.Vector
 
 ## Graphs
-- EventGraph (EventGraph): 26 nodes, 28 edges
+- EventGraph (EventGraph): 26 nodes, 30 edges
 - CanFire (Function): 5 nodes, 4 edges
 - DoHitScan (Function): 27 nodes, 42 edges
 - Equip (Function): 1 nodes, 0 edges
@@ -28,7 +32,7 @@ Generated: 2026-07-21T14:07:27.544Z
 - PlayFireEffects (Function): 1 nodes, 0 edges
 - Reload (Function): 2 nodes, 1 edges
 - SpawnMuzzleFX (Function): 7 nodes, 7 edges
-- SpawnWeaponProjectile (Function): 5 nodes, 10 edges
+- SpawnWeaponProjectile (Function): 33 nodes, 44 edges
 - Unequip (Function): 1 nodes, 0 edges
 - UpdateWeaponData (Function): 2 nodes, 2 edges
 - UserConstructionScript (Function): 1 nodes, 0 edges

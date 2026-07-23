@@ -6,7 +6,7 @@
 	"graphType": "EventGraph",
 	"graphGuid": "",
 	"nodeCount": 26,
-	"edgeCount": 28,
+	"edgeCount": 30,
 	"fileIndex": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G001/INDEX.json",
 	"fileNodes": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G001/NODES.jsonl",
 	"fileEdges": "Exported_Files_forAI/Assets/Blueprints/BP_WeaponBase__C71C441A/Graphs/G001/EDGES.jsonl",

@@ -1,8 +1,8 @@
 # EventGraph
 
 Type: EventGraph
-Nodes: 599
-Edges: 677
+Nodes: 569
+Edges: 646
 
 ## Entry Nodes
 - AddItemToInventory

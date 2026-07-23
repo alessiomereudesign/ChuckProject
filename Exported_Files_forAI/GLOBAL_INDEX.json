@@ -1,12 +1,12 @@
 {
 	"schemaVersion": "2.5-ai-readable-short-paths",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"assetCount": 46,
-	"fileCount": 1266,
+	"fileCount": 1269,
 	"graphCount": 96,
-	"nodeCount": 3580,
-	"edgeCount": 4091,
-	"splitFileCount": 34,
+	"nodeCount": 3563,
+	"edgeCount": 4068,
+	"splitFileCount": 37,
 	"assets": [
 		{
 			"assetName": "ALS_ChuckBP",
@@ -20,12 +20,12 @@
 			"summaryPath": "Assets/Blueprints/ALS_ChuckBP__54FFD1D3/SUMMARY.md",
 			"searchPath": "Assets/Blueprints/ALS_ChuckBP__54FFD1D3/SEARCH.jsonl",
 			"variableCount": 93,
-			"componentCount": 151,
+			"componentCount": 128,
 			"graphCount": 30,
-			"nodeCount": 1520,
-			"edgeCount": 1724,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "b63ce5e13be485d110a4f13ed38c1d3d"
+			"nodeCount": 1490,
+			"edgeCount": 1693,
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "c6856bd34bf750678e7d5fa755c26c99"
 		},
 		{
 			"assetName": "BPI_Interaction",
@@ -43,8 +43,8 @@
 			"graphCount": 2,
 			"nodeCount": 3,
 			"edgeCount": 1,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "a276628fd345828e811c7cfa520a15bf"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "60f3341ae209e8995b830aad2ef8939f"
 		},
 		{
 			"assetName": "BP_WeaponProjectileData",
@@ -57,13 +57,13 @@
 			"fullPrettyJsonPath": "Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/FULL.pretty.json",
 			"summaryPath": "Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/SUMMARY.md",
 			"searchPath": "Assets/Blueprints/BP_WeaponProjectileData__823EA2AB/SEARCH.jsonl",
-			"variableCount": 6,
-			"componentCount": 6,
+			"variableCount": 7,
+			"componentCount": 7,
 			"graphCount": 2,
-			"nodeCount": 28,
-			"edgeCount": 30,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "16dfd189137c0b4640fc6dad192741a6"
+			"nodeCount": 34,
+			"edgeCount": 38,
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "6ca27bf1f85b794632f5ab21b611804a"
 		},
 		{
 			"assetName": "BP_WeaponBase",
@@ -76,13 +76,13 @@
 			"fullPrettyJsonPath": "Assets/Blueprints/BP_WeaponBase__C71C441A/FULL.pretty.json",
 			"summaryPath": "Assets/Blueprints/BP_WeaponBase__C71C441A/SUMMARY.md",
 			"searchPath": "Assets/Blueprints/BP_WeaponBase__C71C441A/SEARCH.jsonl",
-			"variableCount": 6,
+			"variableCount": 10,
 			"componentCount": 7,
 			"graphCount": 18,
-			"nodeCount": 121,
-			"edgeCount": 138,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "96764fcfb19a53e97f2741b1f50035d3"
+			"nodeCount": 149,
+			"edgeCount": 174,
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "d895b6f80dcb2bb3fb01751445417029"
 		},
 		{
 			"assetName": "BP_CharacterPreview",
@@ -100,8 +100,8 @@
 			"graphCount": 2,
 			"nodeCount": 17,
 			"edgeCount": 16,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "ea855253a3a1161382c0222ce8fca24d"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "d8e0478e9cd2905a5f18dac66a5da920"
 		},
 		{
 			"assetName": "AIC_EnemyALS",
@@ -119,8 +119,8 @@
 			"graphCount": 2,
 			"nodeCount": 4,
 			"edgeCount": 1,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "1a84482b96009e7bf8c75345c0b83972"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "af8d7fbcbcca23812a9e00aa26002c4b"
 		},
 		{
 			"assetName": "BP_EnemyALS",
@@ -138,8 +138,8 @@
 			"graphCount": 2,
 			"nodeCount": 21,
 			"edgeCount": 21,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "098233dd708294fc0a1161b65ffbd73e"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "fc744e410b054d1c93d501c7e5d1813f"
 		},
 		{
 			"assetName": "BP_AmmoPickUp",
@@ -155,10 +155,10 @@
 			"variableCount": 5,
 			"componentCount": 5,
 			"graphCount": 4,
-			"nodeCount": 58,
-			"edgeCount": 65,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "47b10c847f7c6a9e206e166f940b7bbf"
+			"nodeCount": 59,
+			"edgeCount": 66,
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "8a6c222b259db84b18bc1cc3f0af037d"
 		},
 		{
 			"assetName": "BP_WeaponPickUp",
@@ -176,8 +176,8 @@
 			"graphCount": 4,
 			"nodeCount": 64,
 			"edgeCount": 72,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "cac7fe04a7454ee76315b7b4d4ba03c4"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "a7628b242908f3be8dc25bc424107442"
 		},
 		{
 			"assetName": "Text",
@@ -195,8 +195,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "97892c1b77cf8e61502f629a533d277f"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "234ea0ef5f9e658998be95cb9574d5a3"
 		},
 		{
 			"assetName": "DT_Armor",
@@ -214,8 +214,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "e26c9185f84120ddb126ec8450db3226"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "d959faece9f9988091a5bf2dd6497acd"
 		},
 		{
 			"assetName": "DT_Weapon",
@@ -233,8 +233,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "5f999293684e277f3d78768cfc89264f"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "bd300fca840fa8c9d8a1a518bd5e93eb"
 		},
 		{
 			"assetName": "DT_CharacterData",
@@ -252,8 +252,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "698948421cb2e7be9e8c7ebafcb3b322"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "d320edc2ee9eb87bb4b9c157ef1a1195"
 		},
 		{
 			"assetName": "S_WeaponData",
@@ -271,8 +271,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "2a94edfd836935e1fb09143a127d659c"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "bdaea688650ec88b8f5c9eb1e3c8fce8"
 		},
 		{
 			"assetName": "S_InteractionPrompt",
@@ -290,8 +290,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "9d1ed6e011dada17a9a6551ecb323f80"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "d869b1c69e31c3a63f10bb4c3f5fc803"
 		},
 		{
 			"assetName": "S_ArmorData",
@@ -309,8 +309,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "9e66a8dd7940bcab7a8b404c9c3ba712"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "8bd65dd7be66d475451031073c30dd31"
 		},
 		{
 			"assetName": "F_CharacterData",
@@ -328,8 +328,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "2805175745125eedb495f1c6601d01a4"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "36cb5def79e93a818736d331c3ca0876"
 		},
 		{
 			"assetName": "E_WeaponSlot",
@@ -347,8 +347,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "529ce4d11b01a6f33794e8ab24d46421"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "a2f055be2debdf95a13b88b5cb8c79d5"
 		},
 		{
 			"assetName": "E_AmmoType",
@@ -366,8 +366,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "d6589e9a56a8d47d1f8413bef2754da4"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "5c789b8734e7841fae597b54a07e82ec"
 		},
 		{
 			"assetName": "E_ArmorSlot",
@@ -385,8 +385,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "1a8ba84a8110750cc067caf346249608"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "b624828e484d3252215d79b080e4eb01"
 		},
 		{
 			"assetName": "E_CharactersAffiliates",
@@ -404,8 +404,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "ffc987ff26950d285523e752b1bde827"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "3c3a390e75cff3463ad2fc0216020714"
 		},
 		{
 			"assetName": "E_WheelActionType",
@@ -423,8 +423,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "399a2535ed08420137a27990e1c660d5"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "a8867ae1c9943848c8c51caa86e298ec"
 		},
 		{
 			"assetName": "E_ObjectsCategory",
@@ -442,8 +442,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "5f1c2143d0850b11affae82801f71516"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "4e89f9a5fecc92b96823ef1b68dcdd8e"
 		},
 		{
 			"assetName": "WBP_Tip",
@@ -461,8 +461,8 @@
 			"graphCount": 2,
 			"nodeCount": 24,
 			"edgeCount": 20,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "d173bf56e16cd8fe0d2a7fe93ca17642"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "6a8ebb413c795c32ab754f0309f81f34"
 		},
 		{
 			"assetName": "WBP_HUD",
@@ -480,8 +480,8 @@
 			"graphCount": 1,
 			"nodeCount": 35,
 			"edgeCount": 43,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "272ca9febeaec7805e112bda85028625"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "971da8e31bbb9e9a9067ee8f94548e4c"
 		},
 		{
 			"assetName": "WBP_MenuArchive",
@@ -497,10 +497,10 @@
 			"variableCount": 12,
 			"componentCount": 18,
 			"graphCount": 9,
-			"nodeCount": 1013,
-			"edgeCount": 1138,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "70dbf57c9d16d0beba5290550c645b42"
+			"nodeCount": 1029,
+			"edgeCount": 1157,
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "4f265c6508942f978817da395fc155a0"
 		},
 		{
 			"assetName": "WBP_TabIntersect_CharacterSlot",
@@ -518,8 +518,8 @@
 			"graphCount": 2,
 			"nodeCount": 34,
 			"edgeCount": 33,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "edd6b15504525797cddb0c6974f00c46"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "0b3e3d86227c62d4f9e4077db02d8932"
 		},
 		{
 			"assetName": "WBP_SelectorButton",
@@ -536,9 +536,9 @@
 			"componentCount": 1,
 			"graphCount": 1,
 			"nodeCount": 25,
-			"edgeCount": 22,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "facb40ac8c78c45c95ba13a67a36a9ad"
+			"edgeCount": 23,
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "acb71b8de19cce09ce2ff2405cd53233"
 		},
 		{
 			"assetName": "WBP_WeaponSelector",
@@ -554,10 +554,10 @@
 			"variableCount": 6,
 			"componentCount": 0,
 			"graphCount": 1,
-			"nodeCount": 108,
-			"edgeCount": 161,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "3c5cdc49c5f3c1c6e681c46e5233492e"
+			"nodeCount": 100,
+			"edgeCount": 143,
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "522f506025514f4335d77661eb13a9b1"
 		},
 		{
 			"assetName": "WBP_MenuPausa",
@@ -575,8 +575,8 @@
 			"graphCount": 2,
 			"nodeCount": 88,
 			"edgeCount": 87,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "013d3380db8a84b9bdea85ecd912082b"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "068cba5fb1bc2a62d37a463ca94786fa"
 		},
 		{
 			"assetName": "WBP_TabIntersect_CharacterCard",
@@ -594,8 +594,8 @@
 			"graphCount": 1,
 			"nodeCount": 44,
 			"edgeCount": 56,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "d90412633a6bd564f1fcfcb8a4e84f34"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "36399a50f2b59ae40882369675a1b249"
 		},
 		{
 			"assetName": "WBP_GenericPrompt",
@@ -613,8 +613,8 @@
 			"graphCount": 1,
 			"nodeCount": 8,
 			"edgeCount": 10,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "4bee7554481778437428fab032fe5db9"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "c41b0f7d6eb2a2407f525673bc0ca2a0"
 		},
 		{
 			"assetName": "WBP_CustomRadialMenu",
@@ -630,10 +630,10 @@
 			"variableCount": 5,
 			"componentCount": 0,
 			"graphCount": 1,
-			"nodeCount": 155,
-			"edgeCount": 190,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "ba79871f041fedd63af49006214a106e"
+			"nodeCount": 125,
+			"edgeCount": 151,
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "3b4a2cb294cee34ef49a6e54009f3736"
 		},
 		{
 			"assetName": "WBP_MenuPrincipale",
@@ -651,8 +651,8 @@
 			"graphCount": 1,
 			"nodeCount": 66,
 			"edgeCount": 69,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "c711d82a40033a116f38a2805ff7bfbd"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "f93a7685902c2e84d874565c2d65cc1a"
 		},
 		{
 			"assetName": "WBP_AssetName",
@@ -670,8 +670,8 @@
 			"graphCount": 2,
 			"nodeCount": 9,
 			"edgeCount": 5,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "f5197c258123a2c1ae0a612c3e724ca6"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "5024cb4a3ecc10bf67b4735a66fc5ebf"
 		},
 		{
 			"assetName": "BP_TestTrigger",
@@ -689,8 +689,8 @@
 			"graphCount": 2,
 			"nodeCount": 8,
 			"edgeCount": 5,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "4e1685471cd36861d8a66b3a1c5a5bac"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "4ebe3f96f14a1fea264b7ee80262a2be"
 		},
 		{
 			"assetName": "Chuck_HUD",
@@ -708,8 +708,8 @@
 			"graphCount": 2,
 			"nodeCount": 18,
 			"edgeCount": 23,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "dd31e3302e9b19bcf04c5f30556055af"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "383f05e60803b0b410e7ab7a4c9de456"
 		},
 		{
 			"assetName": "BPI_ChuckHUD",
@@ -727,8 +727,8 @@
 			"graphCount": 1,
 			"nodeCount": 1,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "6f05a912616e954895ba25e5462bb89d"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "7019ccecd597a06d025e6f1124c467ca"
 		},
 		{
 			"assetName": "DT_ObjectsData",
@@ -746,8 +746,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "8e37602d91caa0bbff6d248f145171aa"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "972e0a4e483c61cd66419fe805868df0"
 		},
 		{
 			"assetName": "DT_Items",
@@ -765,8 +765,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "6fd2d0c8b8714652bdb08c4cf2aa142a"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "cf7f67c253d9fa9468c8e963d52eb2a5"
 		},
 		{
 			"assetName": "DT_Consumable",
@@ -784,8 +784,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "de1e14f1f30cc8de7fce7da46d15bda2"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "47ee326d829694236054be408e23313c"
 		},
 		{
 			"assetName": "S_WheelSlotData",
@@ -803,8 +803,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "9764e6ba8be753b81d073a5ff8d6ecdb"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "b1df593e59c513ef77633a42569f849e"
 		},
 		{
 			"assetName": "F_ObjectData",
@@ -822,8 +822,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "8732720d1576e1c3407cdc7cd6b0343f"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "4a06fb113863775976db8435b36d5b96"
 		},
 		{
 			"assetName": "S_ItemsData",
@@ -841,8 +841,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "b2fb72b00363626fe47469142720e520"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "02d6a50665225a9ec6d3f106a19f13d5"
 		},
 		{
 			"assetName": "S_ConsumableData",
@@ -860,8 +860,8 @@
 			"graphCount": 0,
 			"nodeCount": 0,
 			"edgeCount": 0,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "7afcf001f58657673300c58b51be9fd9"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "b9f713d39da4951503dead066e48d0cc"
 		},
 		{
 			"assetName": "WBP_ArmorSelector",
@@ -879,8 +879,8 @@
 			"graphCount": 1,
 			"nodeCount": 108,
 			"edgeCount": 161,
-			"generatedAt": "2026-07-21T14:07:27.544Z",
-			"contentHash": "1c9816209fa67b913ffc29d5799d6dc0"
+			"generatedAt": "2026-07-23T10:16:32.724Z",
+			"contentHash": "5322a0530a8ba251d9d3873260b2939a"
 		}
 	]
 }

@@ -2,7 +2,7 @@
 	"assetName": "BP_EnemyALS",
 	"assetPath": "/Game/ChuckContent/Blueprints/Enemies/BP_EnemyALS.BP_EnemyALS",
 	"assetKey": "Game_ChuckContent_Blueprints_Enemies_BP_EnemyALS",
-	"generatedAt": "2026-07-21T14:07:27.544Z",
+	"generatedAt": "2026-07-23T10:16:32.724Z",
 	"functions": [
 		{
 			"name": "UserConstructionScript",
